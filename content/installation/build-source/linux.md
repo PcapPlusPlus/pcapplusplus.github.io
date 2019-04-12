@@ -34,7 +34,7 @@ Run the configuration script from PcapPlusPlus main directory:
 ./configure-linux.sh
 ```
 
-Ths script has several modes of operation:
+Ths script has two modes of operation:
 
 * Wizard mode - the script will walk you through the paths and parameters you need to provide
 * Params mode - all parameters are provided in the script command line

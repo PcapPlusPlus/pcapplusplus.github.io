@@ -66,7 +66,14 @@ Please notice that __x64__ compilation is not supported (and will not work) on e
 
 ### Configuration
 
-Run the `configure-windows-mingw.bat` batch file from PcapPlusPlus main directory. The script will ask you for WinPcap developer's pack location and MinGW location. For MinGW-w64 please make sure to set the `mingw32\i686-w64-mingw32` folder, for example: `C:\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\i686-w64-mingw32`.
+Run the `configure-windows-mingw.bat` batch file from PcapPlusPlus main directory. The script creates a makefile `mk\PcapPlusPlus.mk` that contains paths for 3rd-party libraries being used to build PcapPlusPlus.
+
+Ths script has two modes of operation:
+
+* Wizard mode - the script will walk you through the paths and parameters you need to provide
+* Params mode - all parameters are provided in the script command line
+
+In wizard mode the script will ask you for WinPcap developer's pack location and MinGW location. For MinGW-w64 please make sure to set the `mingw32\i686-w64-mingw32` folder, for example: `C:\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\i686-w64-mingw32`.
 
 Here is examples of running the script for MinGW32:
 
@@ -133,7 +140,7 @@ PcapPlusPlus configuration is complete. Files created (or modified): mk\platform
 
 ```
 
-You can also provide these paths as the script params:
+In params mode you need to provide these paths as script params. You can use the `--help` switch to query these params:
 
 ```shell
 C:\PcapPlusPlus>configure-windows-mingw.bat --help
