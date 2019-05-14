@@ -1,70 +1,72 @@
-+++
-title = "Windows (MinGW32/MinGW-w64)"
-description = ""
-weight = 4
-+++
+---
+layout: page
+title: Windows (MinGW)
+parent: Build From Source
+nav_order: 1
+---
 
-Build from source on Windows - MinGW32 / MinGW-w64
-<!--more-->
+# Build From Source on Windows - MinGW32 / MinGW-w64
 
-{{% panel theme="success" header="Prerequisites for building with MinGW" %}}
+## Prerequisites for building with MinGW
+
 In order to compile PcapPlusPlus on Windows using MinGW32 you need the following components:
 
-* The fastest way I found for installing mingw32 was through this link: <http://www.mingw.org/wiki/Getting_Started>
-* Download `mingw-get-setup.exe`, run it and follow the instructions
-* By default the pthreads library is not installed so you need to ask to install it. It can be done during the installation process or afterwards with `mingw-get.exe` (MinGW installation manager)
-* In the MinGW installation manager search for all packages containing `pthreads` and mark them for installation. Make sure the `pthreads-win32` version you install is __2.10__ or later
-* Choose Installation->Update Catalogue
+1. The fastest way I found for installing mingw32 was through this link: <http://www.mingw.org/wiki/Getting_Started>
+2. Download `mingw-get-setup.exe`, run it and follow the instructions
+3. By default the pthreads library is not installed so you need to ask to install it. It can be done during the installation process or afterwards with `mingw-get.exe` (MinGW installation manager)
+4. In the MinGW installation manager search for all packages containing `pthreads` and mark them for installation. Make sure the `pthreads-win32` version you install is __2.10__ or later
+5. Choose `Installation->Update Catalogue`
 
-{{%expand "If you prefer to install pthreads manually please follow these steps:"%}}
+### If you prefer to install pthreads manually please follow these steps:
 
-* Download [pthreads for MinGW](http://ftp.ntua.gr/mirror/mingw/MinGW/Base/pthreads-w32/pthreads-w32-2.10-pre-20160821-1/pthreads-GC-w32-2.10-mingw32-pre-20160821-1-dev.tar.xz)
-* Extract it with 7-Zip:
+1. Download [pthreads for MinGW](http://ftp.ntua.gr/mirror/mingw/MinGW/Base/pthreads-w32/pthreads-w32-2.10-pre-20160821-1/pthreads-GC-w32-2.10-mingw32-pre-20160821-1-dev.tar.xz)
+2. Extract it with 7-Zip
 
-```shell
-7z.exe e pthreads-GC-w32-2.10-mingw32-pre-20160821-1-dev.tar.xz -oC:\pthreads
-7z.exe x C:\pthreads\pthreads-GC-w32-2.10-mingw32-pre-20160821-1-dev.tar -oC:\pthreads
-```
+    ```shell
+    7z.exe e pthreads-GC-w32-2.10-mingw32-pre-20160821-1-dev.tar.xz -oC:\pthreads
+    7z.exe x C:\pthreads\pthreads-GC-w32-2.10-mingw32-pre-20160821-1-dev.tar -oC:\pthreads
+    ```
 
-* Copy the include files to MinGW folder:
+3. Copy the include files to MinGW folder:
 
-```shell
-xcopy /Y C:\pthreads\include\* C:\MinGW\include
-```
+    ```shell
+    xcopy /Y C:\pthreads\include\* C:\MinGW\include
+    ```
 
-* Copy the lib files to MinGW folder:
+4. Copy the lib files to MinGW folder:
 
-```shell
-xcopy /Y C:\pthreads\lib\* C:\MinGW\lib
-```
+    ```shell
+    xcopy /Y C:\pthreads\lib\* C:\MinGW\lib
+    ```
 
-{{% /expand%}}
-{{% /panel %}}
+## Prerequisites for building with MinGW-w64
 
-{{% panel theme="success" header="Prerequisites for building with MinGW-w64" %}}
 In order to compile PcapPlusPlus on Windows using MinGW-w64 you need the following components:
 
-* Download and run mingw-w64 installer from here: <https://sourceforge.net/projects/mingw-w64/>
-* Make sure the installation path doesn't contain spaces (otherwise PcapPlusPlus compilation may fail)
-* Make sure to choose the i686 option (which is 32-bit). PcapPlusPlus doesn't support MinGW-w64 64-bit (x86_64)
-* Make sure to choose POSIX threads and not win32 threads
-* Follow the instruction in the installation wizard
-* Install `MSYS` or `MSYS2`. `MSYS2` installer can be downloaded from here: <http://msys2.github.io/>
-* Make sure to download and install the `msys2-i686` installer and not the `msys2-x86_64` installer
-* Add the following folders to your `PATH` environment variable:
-  * The MinGW-w64 folder that contains `g++.exe`, `mingw32-make`, etc. It should be under `[MinGW-w64_install_folder]\mingw32\bin`, for example: `C:\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin`
-  * The MSYS2 `usr\bin` folder, for example: `C:\msys32\usr\bin`
-{{% /panel %}}
+1. Download and run mingw-w64 installer from here: <https://sourceforge.net/projects/mingw-w64/>
+2. Make sure the installation path doesn't contain spaces (otherwise PcapPlusPlus compilation may fail)
+3. Make sure to choose the i686 option (which is 32-bit). PcapPlusPlus doesn't support MinGW-w64 64-bit (x86_64)
+4. Make sure to choose POSIX threads and not win32 threads
+5. Follow the instruction in the installation wizard
+6. Install `MSYS` or `MSYS2`. `MSYS2` installer can be downloaded from here: <http://msys2.github.io/>
+7. Make sure to download and install the `msys2-i686` installer and not the `msys2-x86_64` installer
+8. Add the following folders to your `PATH` environment variable:
+   1. The MinGW-w64 folder that contains `g++.exe`, `mingw32-make`, etc. It should be under `[MinGW-w64_install_folder]\mingw32\bin`, for example: `C:\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin`
+   2. The MSYS2 `usr\bin` folder, for example: `C:\msys32\usr\bin`
 
-{{% panel theme="success" header="Additional prerequisites" %}}
-WinPcap developer's pack - containing the `wpcap` library PcapPlusPlus is linking with plus relevant `h` files. You can download it from here: <https://www.winpcap.org/devel.htm>
-{{% /panel %}}
+## Additional prerequisites
 
-{{% panel theme="warning" header="x64 is not supported!" %}}
+1. WinPcap developer's pack - containing the `wpcap` library PcapPlusPlus is linking with plus relevant `h` files. You can download it from here: <https://www.winpcap.org/devel.htm>
+
+## x64 is not supported
+{: .d-inline-block }
+
+Warning
+{: .label .label-yellow } 
+
 Please notice that __x64__ compilation is not supported (and will not work) on either MinGW32 nor MinGW-w64!
-{{% /panel %}}
 
-### Configuration
+## Configuration
 
 Run the `configure-windows-mingw.bat` batch file from PcapPlusPlus main directory. The script creates a makefile `mk\PcapPlusPlus.mk` that contains paths for 3rd-party libraries being used to build PcapPlusPlus.
 
@@ -192,7 +194,7 @@ PcapPlusPlus Windows configuration script
 PcapPlusPlus configuration is complete. Files created (or modified): mk\platform.mk, mk\PcapPlusPlus.mk
 ```
 
-### Build the code
+## Build the code
 
 After running the config script, you're can safely build the code:
 
