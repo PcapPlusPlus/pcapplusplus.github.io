@@ -3,6 +3,7 @@ layout: page
 title: Build From Source
 parent: Installation
 has_children: true
+permalink: /docs/install/build-source
 nav_order: 2
 ---
 

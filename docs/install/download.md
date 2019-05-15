@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Pre Compiled Binaries
+title: Download
 parent: Installation
+permalink: /docs/install/pre-compiled-bins
 nav_order: 1
 ---
 

@@ -2,10 +2,12 @@
 layout: page
 title: Linux
 parent: Build From Source
-nav_order: 3
+grand_parent: Installation
+permalink: /docs/install/build-source/linux
+nav_order: 1
 ---
 
-# Build from source on Linux
+# Build From Source on Linux
 
 ## Prerequisites
 

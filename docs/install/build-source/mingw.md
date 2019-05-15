@@ -2,7 +2,9 @@
 layout: page
 title: Windows (MinGW)
 parent: Build From Source
-nav_order: 1
+grand_parent: Installation
+permalink: /docs/install/build-source/mingw
+nav_order: 4
 ---
 
 # Build From Source on Windows - MinGW32 / MinGW-w64

@@ -2,9 +2,11 @@
 layout: page
 title: Installation
 has_children: true
+permalink: /docs/install
+nav_order: 2
 ---
 
-# Setting up PcapPlusPlus
+# Setting Up PcapPlusPlus
 
 PcapPlusPlus is available for Windows, Linux and MacOS.
 
