@@ -37,6 +37,8 @@ You can also find a link to the PcapPlusPlus page in Bintray here: <https://bint
 
 ## Download From GitHub
 
+[Download {{ site.pcapplusplus-ver }} pre compiled binaries](https://github.com/seladb/PcapPlusPlus/releases/latest){: .btn .btn-blue }
+
 Each release of PcapPlusPlus ships with pre-compiled libraries for a variety of operating systems and GCC versions including:
 
 * Windows (MinGW, MinGW-w64, Visual Studio 2015)
@@ -52,7 +54,3 @@ Each package includes the following content:
 * A simple code example showing how to build applications using PcapPlusPlus compiled binaries
 
 There is an additional Linux package shipped with every release that contains the source code and installation scripts to automatically build and install PcapPlusPlus. Those scripts can be used on any Linux platform and include options to build PcapPlusPlus with DPDK or PF_RING.
-
-Please check out the latest version on GitHub (__{{ site.pcapplusplus-ver }}__) to download these packages:
-
-<https://github.com/seladb/PcapPlusPlus/releases/latest>
