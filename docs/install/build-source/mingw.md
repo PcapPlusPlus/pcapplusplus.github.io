@@ -8,6 +8,13 @@ nav_order: 4
 ---
 
 # Build From Source on Windows - MinGW32 / MinGW-w64
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 ## Prerequisites for building with MinGW
 
@@ -20,6 +27,7 @@ In order to compile PcapPlusPlus on Windows using MinGW32 you need the following
 5. Choose `Installation->Update Catalogue`
 
 ### If you prefer to install pthreads manually please follow these steps:
+{: .no_toc }
 
 1. Download [pthreads for MinGW](http://ftp.ntua.gr/mirror/mingw/MinGW/Base/pthreads-w32/pthreads-w32-2.10-pre-20160821-1/pthreads-GC-w32-2.10-mingw32-pre-20160821-1-dev.tar.xz)
 2. Extract it with 7-Zip
