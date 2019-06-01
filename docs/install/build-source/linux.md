@@ -18,9 +18,9 @@ nav_order: 1
 
 ## Prerequisites
 
-In order to compile PcapPlusPlus on Linux you need the following components:
+In order to compile PcapPlusPlus on Linux please make sure you have the following components installed:
 
-1. __libpcap developers pack__ - contains the libpcap library PcapPlusPlus is linking with and relevant header files. You can download it from <http://www.tcpdump.org/#latest-release> or through the standard Linux package managers such as apt-get/yum:
+1. __libpcap developers pack__ - contains the libpcap library PcapPlusPlus is linking with and relevant the header files. You can download it from <http://www.tcpdump.org/#latest-release> or through the standard Linux package managers such as `apt-get` or `yum`:
 
     ```bash
     sudo apt-get install libpcap-dev
@@ -32,7 +32,7 @@ In order to compile PcapPlusPlus on Linux you need the following components:
     sudo yum install libpcap-devel
     ```
 
-2. Make sure you have the `libstdc++-static` package. If not, you can install it via yum or apt-get
+2. `libstdc++-static` package. If it's not already installed you can install it using `apt-get` or `yum`
 
 ## Configuration
 
@@ -45,12 +45,16 @@ Run the configuration script from PcapPlusPlus main directory:
 Ths script has two modes of operation:
 
 * Wizard mode - the script will walk you through the paths and parameters you need to provide
-* Params mode - all parameters are provided in the script command line
+* Params mode - you provide the different parameters in the script's command line
 
-The script also enables several types of configuration:
+It also enables several types of configuration:
 
 * With libpcap only
 * With DPDK
 * With PF_RING
 
-We'll cover the ....
+Let's cover the different options. We'll begin with the wizard mode and later cover the params mode.
+
+### Wizard mode
+
+This mode is pretty much self explanatory and the wizard will guide you through the paths you need to provide.

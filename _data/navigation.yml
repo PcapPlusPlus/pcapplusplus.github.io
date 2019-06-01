@@ -1,0 +1,9 @@
+- name: Home
+  link: /
+  new_window: false
+- name: Docs
+  link: /docs/
+  new_window: false
+- name: Contact
+  link: /contact/
+  new_window: false

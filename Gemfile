@@ -29,5 +29,10 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 # Just The Docs theme
-gem "just-the-docs"
+# gem "just-the-docs"
+
+# Remote theme gem use modified verison of Just The Docs theme
+gem "jekyll-remote-theme"
+
+gem "rake"
 

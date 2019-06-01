@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: PcapPlusPlus Web-Site
+title: PcapPlusPlus Docs
 email: pcapplusplus@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -26,12 +26,16 @@ github_username:  seladb
 
 # Build settings
 markdown: kramdown
-theme: just-the-docs
+remote_theme: seladb/just-the-docs
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Enable or disable the site search
 search_enabled: true
+
+# Enable or disable top navigation panel
+navigation_enabled: true
 
 # PcapPlusPlus specific variables
 pcapplusplus-ver-num: 19.04
