@@ -1,7 +1,15 @@
+// Doc colors
+
+$btn-primary-color: $blue-100 !default;
+$link-color: $blue-000;
+
 // Change top nav color to black
 
 $topnav-background-color: $grey-dk-300;
 $topnav-items-color: $white;
+
+
+// Landing page
 
 .lp-header {
     background-color: $grey-dk-300;
