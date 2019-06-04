@@ -2,3 +2,24 @@
 
 $topnav-background-color: $grey-dk-300;
 $topnav-items-color: $white;
+
+.lp-header {
+    background-color: $grey-dk-300;
+    position: absolute;
+    width: 100%;
+
+    h1 {
+        //color: #61dafb;
+        color: $blue-000;
+    }
+
+    h2 {
+        color: $grey-lt-100;
+    }
+}
+
+.lp-center {
+    text-align: center;
+    max-width: 800px;
+    margin: auto; 
+}
