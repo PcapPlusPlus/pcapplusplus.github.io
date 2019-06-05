@@ -11,9 +11,14 @@ $topnav-items-color: $white;
 
 // Landing page
 
+.lp-container {
+    position: absolute;
+    width: 100%;
+}
+
 .lp-header {
     background-color: $grey-dk-300;
-    position: absolute;
+    display: inline-block;
     width: 100%;
 
     h1 {
@@ -26,8 +31,23 @@ $topnav-items-color: $white;
     }
 }
 
+.lp-section {
+    display: block;
+}
+
 .lp-center {
     text-align: center;
     max-width: 800px;
     margin: auto; 
+}
+
+.lp-section-container {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.lp-col {
+    width: 50%;
+    text-align: left;
 }
