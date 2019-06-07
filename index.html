@@ -12,7 +12,7 @@ layout: generic-page
   </header>
   <section class="lp-section">
     <div class="lp-center lp-section-container">
-      <div class="lp-col lp-col-left">
+      <div class="lp-col lp-col-left lp-mobile-top">
         <h2>Capture and send network traffic</h2>
         <p>PcapPlusPlus enables capturing and sending network packets through an easy to use C++ wrappers for the most popular packet 
           processing engines such as 
@@ -22,14 +22,14 @@ layout: generic-page
           <a href="https://www.ntop.org/products/packet-capture/pf_ring/">PF_RING</a> 
         </p> 
       </div>
-      <div class="lp-col">
-        <img src="resources/capture-engines.png"/>
+      <div class="lp-col lp-mobile-bottom">
+        <img src="resources/capture-engines.png" class="lp-image"/>
       </div>
     </div>
   </section>
-  <section class="lp-section">
+  <section class="lp-section lp-section-invert">
     <div class="lp-center lp-section-container">
-      <div class="lp-col lp-col-left">
+      <div class="lp-col lp-col-left lp-mobile-bottom">
 {% highlight cpp %}
 // parse the raw packet into a parsed packet
 pcpp::Packet parsedPacket(&rawPacket);
@@ -48,7 +48,7 @@ if (parsedPacket.isPacketOfType(pcpp::IPv4)) {
 }
 {% endhighlight %}
       </div>
-      <div class="lp-col">
+      <div class="lp-col lp-mobile-top">
         <h2>Decode and forge packets</h2>
         <p>PcapPlusPlus enables decoding and forging capabilities for a large variety of <a href="">network protocols</a></p>
       </div>
@@ -56,18 +56,18 @@ if (parsedPacket.isPacketOfType(pcpp::IPv4)) {
   </section>
   <section class="lp-section">
     <div class="lp-center lp-section-container">
-      <div class="lp-col lp-col-left">
+      <div class="lp-col lp-col-left lp-mobile-top">
         <h2>Multiplatform support</h2>
         <p>PcapPlusPlus is fully supported on Windows, MacOS and Linux</p>
       </div>
-      <div class="lp-col">
-        <img src="resources/win-linux-macos.png">
+      <div class="lp-col lp-mobile-bottom">
+        <img src="resources/win-linux-macos.png" class="lp-image">
       </div>
     </div>
   </section>
-  <section class="lp-section">
+  <section class="lp-section lp-section-invert">
     <div class="lp-center lp-section-container">
-      <div class="lp-col lp-col-left">
+      <div class="lp-col lp-col-left lp-mobile-bottom">
 {% highlight cpp %}
 // create a pcap file reader
 pcpp::PcapFileReaderDevice pcapReader("input.pcap");
@@ -80,14 +80,13 @@ pcapNgWriter.open();
 // raw packet object
 pcpp::RawPacket rawPacket;
 
-// read all packets from the pcap file and write
-// to the pcapng file
+// read packets from pcap reader and write pcapng writer
 while (pcapReader->getNextPacket(rawPacket)) {
   pcapNgWriter.writePacket(rawPacket);
 }
 {% endhighlight %}
       </div>
-      <div class="lp-col">
+      <div class="lp-col lp-mobile-top">
         <h2>Read and write packets to files</h2>
         <p>PcapPlusPlus provides an easy to use interface for reading and writing network packets into files. 
           It currently supports the most popular file formats which are 
@@ -105,7 +104,7 @@ while (pcapReader->getNextPacket(rawPacket)) {
         <p><strong>IP Fragmentation and Defragmentation</strong> to create and reassemble IPv4 and IPv6 fragments</p>
       </div>
       <div class="lp-col">
-          <img src="resources/stream.png">
+          <img src="resources/stream.png" class="lp-image">
       </div>
     </div>
   </section>
