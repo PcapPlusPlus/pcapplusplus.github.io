@@ -6,28 +6,106 @@ layout: generic-page
     <div class="lp-center">
       <h1>Welcome To PcapPlusPlus!</h1>
       <h2>A multiplatform C++ library for capturing, parsing and crafting of network packets. It is designed to be efficient, powerful and easy to use.</h2>
-      <a href="/docs/" class="btn btn-blue fs-5 mb-3 mb-md-5 mr-5">Get started</a>
-      <a href="/docs/tutorials/" class="btn btn-blue fs-5 mb-3 mb-md-5">View Tutorials</a>
+      <a href="{{ site.baseurl }}/docs/" class="btn btn-blue fs-5 mb-3 mb-md-5 mr-5">Get started</a>
+      <a href="{{ site.baseurl }}/docs/install/" class="btn btn-blue fs-5 mb-3 mb-md-5">Download</a>
     </div>
   </header>
   <section class="lp-section">
     <div class="lp-center lp-section-container">
-      <div class="lp-col">
-        <h2>Capture and send packets</h2>
-        <p>PcapPlusPlus enables capturing and sending network packet through an easy to use C++ wrappers for the most popular packet processing engines such as libpcap, WinPcap, DPDK and PF_RING.</p> 
+      <div class="lp-col lp-col-left">
+        <h2>Capture and send network traffic</h2>
+        <p>PcapPlusPlus enables capturing and sending network packets through an easy to use C++ wrappers for the most popular packet 
+          processing engines such as 
+          <a href="https://www.tcpdump.org/">libpcap</a>,
+          <a href="https://www.winpcap.org/">WinPcap</a>,
+          <a href="https://www.dpdk.org/">DPDK</a> and
+          <a href="https://www.ntop.org/products/packet-capture/pf_ring/">PF_RING</a> 
+        </p> 
       </div>
       <div class="lp-col">
-        <img src=""/>
+        <img src="resources/capture-engines.png"/>
       </div>
     </div>
   </section>
   <section class="lp-section">
     <div class="lp-center lp-section-container">
-      <div class="lp-col">
+      <div class="lp-col lp-col-left">
+{% highlight cpp %}
+// parse the raw packet into a parsed packet
+pcpp::Packet parsedPacket(&rawPacket);
+
+// verify the packet is IPv4
+if (parsedPacket.isPacketOfType(pcpp::IPv4)) {
+  // extract source and dest IPs
+  pcpp::IPv4Address srcIP = 
+    parsedPacket.getLayerOfType()->getSrcIpAddress();
+  pcpp::IPv4Address destIP = 
+    parsedPacket.getLayerOfType()->getDstIpAddress();
+
+  // print source and dest IPs
+  printf("Source IP is '%s'; Dest IP is '%s'\n", 
+    srcIP.toString().c_str(), destIP.toString().c_str());
+}
+{% endhighlight %}
       </div>
       <div class="lp-col">
         <h2>Decode and forge packets</h2>
-        <p>PcapPlusPlus enables decoding and forging capabilities for a large variety of network protocols</p>
+        <p>PcapPlusPlus enables decoding and forging capabilities for a large variety of <a href="">network protocols</a></p>
+      </div>
+    </div>
+  </section>
+  <section class="lp-section">
+    <div class="lp-center lp-section-container">
+      <div class="lp-col lp-col-left">
+        <h2>Multiplatform support</h2>
+        <p>PcapPlusPlus is fully supported on Windows, MacOS and Linux</p>
+      </div>
+      <div class="lp-col">
+        <img src="resources/win-linux-macos.png">
+      </div>
+    </div>
+  </section>
+  <section class="lp-section">
+    <div class="lp-center lp-section-container">
+      <div class="lp-col lp-col-left">
+{% highlight cpp %}
+// create a pcap file reader
+pcpp::PcapFileReaderDevice pcapReader("input.pcap");
+pcapReader.open();
+
+// create a pcapng file writer
+pcpp::PcapNgFileWriterDevice pcapNgWriter("output.pcapng");
+pcapNgWriter.open();
+
+// raw packet object
+pcpp::RawPacket rawPacket;
+
+// read all packets from the pcap file and write
+// to the pcapng file
+while (pcapReader->getNextPacket(rawPacket)) {
+  pcapNgWriter.writePacket(rawPacket);
+}
+{% endhighlight %}
+      </div>
+      <div class="lp-col">
+        <h2>Read and write packets to files</h2>
+        <p>PcapPlusPlus provides an easy to use interface for reading and writing network packets into files. 
+          It currently supports the most popular file formats which are 
+          <a href="https://en.wikipedia.org/wiki/Pcap">PCAP</a> and 
+          <a href="https://github.com/pcapng/pcapng">PCAPNG</a></p>
+      </div>
+    </div>
+  </section>
+  <section class="lp-section">
+    <div class="lp-center lp-section-container">
+      <div class="lp-col lp-col-left">
+        <h2>Packet reassembly</h2>
+        <p>PcapPlusPlus contains unique implementation of packet reassembly techniques such as:</p>
+        <p><strong>TCP Reassembly</strong> which includes support of TCP retransmission, out-of-order TCP packets and missing TCP data</p>
+        <p><strong>IP Fragmentation and Defragmentation</strong> to create and reassemble IPv4 and IPv6 fragments</p>
+      </div>
+      <div class="lp-col">
+          <img src="resources/stream.png">
       </div>
     </div>
   </section>

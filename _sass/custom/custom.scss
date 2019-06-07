@@ -20,6 +20,7 @@ $topnav-items-color: $white;
     background-color: $grey-dk-300;
     display: inline-block;
     width: 100%;
+    padding-bottom: 40px;
 
     h1 {
         //color: #61dafb;
@@ -33,11 +34,12 @@ $topnav-items-color: $white;
 
 .lp-section {
     display: block;
+    margin: 30px;
 }
 
 .lp-center {
     text-align: center;
-    max-width: 800px;
+    max-width: 900px;
     margin: auto; 
 }
 
@@ -50,4 +52,22 @@ $topnav-items-color: $white;
 .lp-col {
     width: 50%;
     text-align: left;
+    margin: auto;
+}
+
+.lp-col-left {
+    margin-right: 30px;
+}
+
+.highlight pre {
+    padding: 15px;
+    font-size: 15px;
+}
+
+.highlight {
+    border-radius: 5px;
+}
+
+code {
+    font-size: inherit;
 }
