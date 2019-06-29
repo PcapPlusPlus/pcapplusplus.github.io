@@ -3,7 +3,7 @@ layout: page
 title: Tutorials
 has_children: true
 permalink: /docs/tutorials
-nav_order: 3
+nav_order: 4
 ---
 
 # Tutorials
