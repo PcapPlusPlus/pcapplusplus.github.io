@@ -36,8 +36,6 @@ $lp-section-height: 370px;
 
 .lp-section {
     display: block;
-    margin-top: 30px;
-    margin-bottom: 30px;
 
     @include mq(md) {
         height: $lp-section-height;
@@ -50,14 +48,12 @@ $lp-section-height: 370px;
 
 .lp-center {
     text-align: center;
-    max-width: 900px;
+    max-width: 950px;
     margin: auto; 
 }
 
 .lp-section-container {
     display: block;
-    margin-top: 30px;
-    margin-bottom: 30px;
     padding: 10px;
 
     @include mq(md) {
@@ -78,22 +74,7 @@ $lp-section-height: 370px;
 .lp-col-left {
     @include mq(md) {
         margin-right: 30px;
-    }
-}
-
-.lp-mobile-top {
-    display: table-header-group;
-
-    @include mq(md) {
-        display: block;
-    }
-}
-
-.lp-mobile-bottom {
-    display: table-footer-group;
-
-    @include mq(md) {
-        display: block;
+        order: -1;
     }
 }
 

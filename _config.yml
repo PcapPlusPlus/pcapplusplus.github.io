@@ -37,7 +37,7 @@ plugins:
 search_enabled: true
 
 # Enable or disable top navigation panel
-navigation_enabled: true
+top_navigation_enabled: true
 
 # PcapPlusPlus specific variables
 pcapplusplus-ver-num: 19.04
