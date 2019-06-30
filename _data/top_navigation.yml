@@ -1,9 +1,9 @@
 - name: Docs
   link: /docs/
-  new_window: false
+  external_link: false
 - name: Contact
   link: /contact/
-  new_window: false
+  external_link: false
 - name: GitHub
   link: https://github.com/seladb/PcapPlusPlus
-  new_window: true
+  external_link: true
