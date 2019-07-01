@@ -2,7 +2,7 @@
   link: /docs/
   external_link: false
 - name: Contact
-  link: /contact/
+  link: /contact
   external_link: false
 - name: GitHub
   link: https://github.com/seladb/PcapPlusPlus
