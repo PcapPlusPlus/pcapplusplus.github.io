@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Feature Overview
-has_children: true
 permalink: /docs/features
 nav_order: 3
 ---
@@ -90,6 +89,8 @@ andFilter.addFilter(&ipFilter);
 dev->setFilter(andFilter);
 ```
 
+You can read more in the `PcapFilter.h` API documentation and in the exampl
+
 ## Supported network protocols
 
 PcapPlusPlus currently supports parsing, editing and creation of packets of the following protocols:
@@ -119,3 +120,7 @@ PcapPlusPlus currently supports parsing, editing and creation of packets of the 
 23. SSL/TLS - parsing only (no editing capabilities)
 24. Packet trailer (a.k.a footer or padding)
 25. Generic payload
+
+## License
+
+PcapPlusPlus is released under the [Unlicense license](https://unlicense.org/).

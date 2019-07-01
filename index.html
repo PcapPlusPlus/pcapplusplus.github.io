@@ -9,7 +9,7 @@ nav_exclude: true
       <h1>Welcome To PcapPlusPlus!</h1>
       <h2>A multiplatform C++ library for capturing, parsing and crafting of network packets. It is designed to be efficient, powerful and easy to use.</h2>
       <a href="{{ site.baseurl }}/docs/" class="btn btn-blue fs-5 mb-3 mb-md-5 mr-5">Get started</a>
-      <a href="{{ site.baseurl }}/docs/install/" class="btn btn-blue fs-5 mb-3 mb-md-5">Download</a>
+      <a href="{{ site.baseurl }}/docs/install" class="btn btn-blue fs-5 mb-3 mb-md-5">Download</a>
     </div>
   </header>
   <section class="lp-section">
@@ -23,7 +23,7 @@ nav_exclude: true
           <a href="https://www.dpdk.org/">DPDK</a> and
           <a href="https://www.ntop.org/products/packet-capture/pf_ring/">PF_RING</a> 
         </p>
-        <a href="{{ site.baseurl }}/docs/features/packet-capture/" class="btn btn-blue fs-5 mb-3 mb-md-5">Learn More</a>
+        <a href="{{ site.baseurl }}/docs/features#packet-capture" class="btn btn-blue fs-5 mb-3 mb-md-5">Learn More</a>
       </div>
       <div class="lp-col">
         <img src="resources/capture-engines.png" class="lp-image"/>
@@ -35,7 +35,7 @@ nav_exclude: true
       <div class="lp-col">
           <h2>Decode and forge packets</h2>
           <p>PcapPlusPlus enables decoding and forging capabilities for a large variety of <a href="">network protocols</a></p>
-          <a href="{{ site.baseurl }}/docs/features/packet-crafting/" class="btn btn-blue fs-5 mb-3 mb-md-5">Learn More</a>
+          <a href="{{ site.baseurl }}/docs/features#packet-decoding-and-forging" class="btn btn-blue fs-5 mb-3 mb-md-5">Learn More</a>
       </div>  
       <div class="lp-col lp-col-left">
 {% highlight cpp %}
@@ -65,7 +65,7 @@ if (parsedPacket.isPacketOfType(pcpp::IPv4)) {
         <p>PcapPlusPlus is fully supported on Windows, MacOS and Linux. You can download pre-built binaries for each platform or
           build it from source. PcapPlusPlus is available in popular package managers such as Homebrew and Conan.
         </p>
-        <a href="{{ site.baseurl }}/docs/install/" class="btn btn-blue fs-5 mb-3 mb-md-5">View Installation Guide</a>
+        <a href="{{ site.baseurl }}/docs/install" class="btn btn-blue fs-5 mb-3 mb-md-5">View Installation Guide</a>
       </div>
       <div class="lp-col">
         <img src="resources/win-linux-macos.png" class="lp-image">
@@ -81,7 +81,7 @@ if (parsedPacket.isPacketOfType(pcpp::IPv4)) {
           <a href="https://en.wikipedia.org/wiki/Pcap">PCAP</a> and 
           <a href="https://github.com/pcapng/pcapng">PCAPNG</a>
         </p>
-        <a href="{{ site.baseurl }}/docs/features/capture-files/" class="btn btn-blue fs-5 mb-3 mb-md-5">Learn More</a>
+        <a href="{{ site.baseurl }}/docs/features#read-and-write-packets-fromto-files" class="btn btn-blue fs-5 mb-3 mb-md-5">Learn More</a>
       </div>      
       <div class="lp-col lp-col-left">
 {% highlight cpp %}
@@ -123,10 +123,10 @@ while (pcapReader->getNextPacket(rawPacket)) {
       <div>
         <h3>Docs</h3>
         <ul>
-          <li><a href="/docs/install/" class="lp-footer-item">Installation</a></li>
-          <li><a href="/docs/tutorials/" class="lp-footer-item">Tutorials</a></li>
-          <li><a class="lp-footer-item">DPDK</a></li>
-          <li><a class="lp-footer-item">Examples</a></li>
+          <li><a href="{{ site.baseurl }}/docs/install" class="lp-footer-item">Installation</a></li>
+          <li><a href="{{ site.baseurl }}/docs/tutorials" class="lp-footer-item">Tutorials</a></li>
+          <li><a href="{{ site.baseurl }}/docs/dpdk" class="lp-footer-item">DPDK</a></li>
+          <li><a href="{{ site.baseurl }}/docs/examples" class="lp-footer-item">Examples</a></li>
           <li><a class="lp-footer-item">API Documentation</a></li>
         </ul>
       </div>
@@ -143,8 +143,8 @@ while (pcapReader->getNextPacket(rawPacket)) {
         <h3>More</h3>
         <ul>
           <li><a target="_blank" href="https://github.com/seladb/PcapPlusPlus/releases" class="lp-footer-item">Releases</a></li>
-          <li><a class="lp-footer-item">Benchmarks</a></li>
-          <li><a class="lp-footer-item">License</a></li> 
+          <li><a href="{{ site.baseurl }}/docs/benchmark" class="lp-footer-item">Benchmarks</a></li>
+          <li><a href="{{ site.baseurl }}/docs/features#license" class="lp-footer-item">License</a></li> 
         </ul>
       </div>  
     </div>
