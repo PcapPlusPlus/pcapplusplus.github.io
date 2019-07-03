@@ -35,7 +35,7 @@ nav_exclude: true
       <div class="lp-col">
           <h2>Decode and forge packets</h2>
           <p>PcapPlusPlus enables decoding and forging capabilities for a large variety of <a href="">network protocols</a></p>
-          <a href="{{ site.baseurl }}/docs/features#packet-decoding-and-forging" class="btn btn-blue fs-5 mb-3 mb-md-5">Learn More</a>
+          <a href="{{ site.baseurl }}/docs/features#packet-parsing-and-crafting" class="btn btn-blue fs-5 mb-3 mb-md-5">Learn More</a>
       </div>  
       <div class="lp-col lp-col-left">
 {% highlight cpp %}
@@ -77,8 +77,8 @@ if (parsedPacket.isPacketOfType(pcpp::IPv4)) {
       <div class="lp-col">
         <h2>Read and write packets to files</h2>
         <p>PcapPlusPlus provides an easy to use interface for reading and writing network packets into files. 
-          It currently supports the most popular file formats which are 
-          <a href="https://en.wikipedia.org/wiki/Pcap">PCAP</a> and 
+          It supports the most popular file formats which are 
+          <a href="hhttps://wiki.wireshark.org/Development/LibpcapFileFormat">PCAP</a> and 
           <a href="https://github.com/pcapng/pcapng">PCAPNG</a>
         </p>
         <a href="{{ site.baseurl }}/docs/features#read-and-write-packets-fromto-files" class="btn btn-blue fs-5 mb-3 mb-md-5">Learn More</a>
@@ -111,7 +111,7 @@ while (pcapReader->getNextPacket(rawPacket)) {
         <p>PcapPlusPlus contains unique implementation of packet reassembly techniques such as:</p>
         <p><strong>TCP Reassembly</strong> which includes support of TCP retransmission, out-of-order TCP packets and missing TCP data</p>
         <p><strong>IP Fragmentation and Defragmentation</strong> to create and reassemble IPv4 and IPv6 fragments</p>
-        <a href="{{ site.baseurl }}/docs/features/reassembly/" class="btn btn-blue fs-5 mb-3 mb-md-5">Learn More</a>
+        <a href="{{ site.baseurl }}/docs/features#packet-reassembly" class="btn btn-blue fs-5 mb-3 mb-md-5">Learn More</a>
       </div>
       <div class="lp-col">
           <img src="resources/stream.png" class="lp-image">

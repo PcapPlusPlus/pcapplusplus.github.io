@@ -16,22 +16,122 @@ nav_order: 3
 
 ## Packet capture
 
-PcapPlusPlus currently works with the following packet capture engines:
+Packet capture (A.K.A packet sniffing or network tapping) is the process of intercepting and logging traffic that passes over a digital network or part of a network (taken from [Wikipedia](https://en.wikipedia.org/wiki/Packet_analyzer)). It is one of the most important and popular features of PcapPlusPlus and it is what PcapPlusPlus is basically all about.
+
+There are multiple packet capture engines out there, the most popular are [libpcap](https://www.tcpdump.org/), [WinPcap](https://www.winpcap.org/) (which is libpcap for Windows), [Npcap](https://nmap.org/npcap/) (WinPcap's successor), [Intel DPDK](https://www.dpdk.org/), [ntop's PF_RING](https://www.ntop.org/products/packet-capture/pf_ring/) and [raw sockets](https://en.wikipedia.org/wiki/Network_socket#Raw_socket). Each engine has different strengths, purposes and features, works on different platforms and obviously has different APIs and setup process. Most of them are written in C (to achieve the best performance) and don't expose a C++ interface.
+
+PcapPlusPlus aims to create a consolidated and easy-to-use C++ API for all of these engines which simplifies their complexity and provides a common infrastructure for capturing, processing, analyzing and forging of network packets.
+
+Here is a list of of the packet capture engines currently supported:
 
 - [libpcap](https://www.tcpdump.org/) live capture (on Linux and MacOS)
-- [WinPcap](https://www.winpcap.org/) live capture (on Windows)
-- [Intel DPDK](https://www.dpdk.org/) engine (on Linux)
-- ntop's Vanilla [PF_RING](https://www.ntop.org/products/packet-capture/pf_ring/) engine (on Linux)
-- [WinPcap](https://www.winpcap.org/) Remote live capture (on Windows)
-- PCAP and PCAPNG file devices (reading and writing)
+- [WinPcap](https://www.winpcap.org/)/[Npcap](https://nmap.org/npcap/) live capture (on Windows)
+- [Intel DPDK](https://www.dpdk.org/) (on Linux)
+- [ntop's Vanilla PF_RING](https://www.ntop.org/products/packet-capture/pf_ring/) (on Linux)
+- [WinPcap Remote capture](https://www.winpcap.org/docs/docs_412/html/group__remote.html) (on Windows)
 
-## Packet decoding and forging
+The main features provided for each one are:
 
-PcapPlusPlus provide decoding and forging capabilities for a large variety of network protocols (see the full list [here](#supported-network-protocols))
+- Browse all interfaces available on the machine
+- Capture network traffic on a specific interface
+- Send packets to the network
+- Filter packets
+
+### What's next?
+{: .no_toc }
+
+You can find out more information in the [API documentation](), [tutorial pages](/docs/tutorials) and browse through the code of the [example apps](/docs/examples).
+
+## Packet parsing and crafting
+
+PcapPlusPlus provides advanced capabilities for packet analysis. These include:
+
+- Packet parsing, which is a detailed analysis of the protocols and layers a packet is built from
+- Packet crafting which is manually generating and editing of network packets
+
+A large variety of network protocols are supported, see the full list [here](#supported-network-protocols)).
+
+Packets can be analyzed from any source including packets captured from the network, packets stored in PCAP/PCAPNG files, etc.
+The design of PcapPlusPlus allows similar analysis capabilities for each packet, regardless of where it came from. For example, you can write the same code for parsing packets regardless of whether they come from DPDK, libpcap, WinPcap, raw sockets or read from a PCAP/PCAPNG file. Same goes for packet crafting.
+
+Consider this simple code snippet that shows how to read a packet from a PCAP file, parse it, and if it's an IPv4 packet extract and print the source and dest IP addresses:
+
+```cpp
+#include "IPv4Layer.h"
+#include "Packet.h"
+#include "PcapFileDevice.h"
+
+int main(int argc, char* argv[])
+{
+    // open a pcap file for reading
+    pcpp::PcapFileReaderDevice reader("1_packet.pcap");
+    if (!reader.open())
+    {
+        printf("Error opening the pcap file\n");
+        return 1;
+    }
+
+    // read the first (and only) packet from the file
+    pcpp::RawPacket rawPacket;
+    if (!reader.getNextPacket(rawPacket))
+    {
+        printf("Couldn't read the first packet in the file\n");
+        return 1;
+    }
+
+    // parse the raw packet into a parsed packet
+    pcpp::Packet parsedPacket(&rawPacket);
+
+    // verify the packet is IPv4
+    if (parsedPacket.isPacketOfType(pcpp::IPv4))
+    {
+        // extract source and dest IPs
+        pcpp::IPv4Address srcIP = parsedPacket.getLayerOfType()->getSrcIpAddress();
+        pcpp::IPv4Address destIP = parsedPacket.getLayerOfType()->getDstIpAddress();
+
+        // print source and dest IPs
+        printf("Source IP is '%s'; Dest IP is '%s'\n", srcIP.toString().c_str(), destIP.toString().c_str());
+    }
+
+    // close the file
+    reader.close();
+
+    return 0;
+}
+```
 
 ## Read and write packets from/to files
 
-sfsdf
+Network packets can be stored in files, usually for offline analysis. [PCAP](https://wiki.wireshark.org/Development/LibpcapFileFormat) and [PCAPNG](https://github.com/pcapng/pcapng) are the two most popular file formats and both are supported in PcapPlusPlus.
+
+The main feature include:
+
+- Read packets from PCAP/PCAPNG files
+- Use the [packet filtering mechanism](#packet-filtering) to read only packets that match the filter
+- Create new PCAP/PCAPNG files and write packets to them
+- Append packets to existing PCAP/PCAPNG files
+
+Consider this simple code snippet that shows how to open a PCAP file for reading and another PCAPNG file for writing, and then read all packets from the PCAP file and write them to the PCAPNG file:
+
+```cpp
+// create a pcap file reader
+pcpp::PcapFileReaderDevice pcapReader("input.pcap");
+pcapReader.open();
+
+// create a pcapng file writer
+pcpp::PcapNgFileWriterDevice pcapNgWriter("output.pcapng");
+pcapNgWriter.open();
+
+// raw packet object
+pcpp::RawPacket rawPacket;
+
+// read packets from pcap reader and write pcapng writer
+while (pcapReader->getNextPacket(rawPacket)) {
+  pcapNgWriter.writePacket(rawPacket);
+}
+```
+
+For more information please refer to the [Read/Write Pcap Files tutorial](/docs/tutorials/read-write-pcap), look at the [API documentation]() or browse through the code of the [example apps](/docs/examples).
 
 ## DPDK support
 
@@ -63,7 +163,18 @@ sudo insmod <PF_RING_LOCATION>/kernel/pf_ring.ko
 
 ## Packet reassembly
 
-sdfsd
+Network protocols often need to transport large chunks of data which are complete in themselves, e.g. when transferring a file. The underlying protocol might not be able to handle that chunk size (e.g. limitation of the network packet size), or is stream-based like TCP, which doesn’t know data chunks at all.
+
+In that case the network protocol has to handle the chunk boundaries itself and (if required) spread the data over multiple packets. It obviously also needs a mechanism to determine the chunk boundaries on the receiving side.
+
+This mechanism is called reassembly, although a specific protocol specification might use a different term for this (e.g. desegmentation, defragmentation, etc). 
+
+(this description is taken from [Wireshark documentation](https://www.wireshark.org/docs/wsug_html_chunked/ChAdvReassemblySection.html)).
+
+PcapPlusPlus currently supports two types of packets reassembly:
+
+- IPv4 and IPv6 defragmentation which is a Layer 3 (Network later) packet reassembly. You can read about IP fragmentation [here](https://en.wikipedia.org/wiki/IP_fragmentation). To get more information on how it works and the API to use it please refer to the [API documentation]() and browse through the code of the [IPDefragUtil](/docs/examples#ipdefragutil) and [IPFragUtil](/docs/examples#ipfragutil) example apps
+- TCP reassembly which is a Layer 4 (Transport layer) packet reassembly. To get more information on how it works and the API to use it please refer to the [API documentation]() and browse through the code of the [TcpReassembly](/docs/examples#tcpreassembly) example app
 
 ## Packet filtering
 
