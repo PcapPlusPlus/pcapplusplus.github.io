@@ -1,8 +1,7 @@
 ---
 layout: page
-title: Windows (MinGW)
-parent: Build From Source
-grand_parent: Installation
+title: Build on Windows (MinGW)
+parent: Installation
 permalink: /docs/install/build-source/mingw
 nav_order: 4
 ---
