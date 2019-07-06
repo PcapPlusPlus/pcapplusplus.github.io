@@ -112,7 +112,7 @@ The next parts of the tutorial will dive deep into the various device types and 
 
 Creating applications using PcapPlusPlus is rather easy. Let's have a guided tour demonstrating how to create a simple application and its Makefile or Visual Studio 2015 project.
 
-First let's make sure PcapPlusPlus is configured and built successfully. Please follow [the download page](download.html) for building instructions.
+First let's make sure PcapPlusPlus is configured and built successfully. Please follow [the download page](/docs/install) for building instructions.
 
 Another option is to download a pre-compiled version of PcapPlusPlus, please download the [latest release](https://github.com/seladb/PcapPlusPlus/releases/latest) for your platform and follow the instructions on how to configure it.
 

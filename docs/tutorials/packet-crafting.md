@@ -17,7 +17,7 @@ nav_order: 5
 
 ## Introduction
 
-In the previous [Packet editing](packet-parsing) tutorial we demonstrated how PcapPlusPlus parses packets and how to read data out the various layers. In this tutorial we'll focus on editing packets - meaning change existing protocol data, add more data and add/remove layers, and also how to craft new packets from scratch.
+In the previous [Packet parsing](/docs/tutorials/packet-parsing) tutorial we demonstrated how PcapPlusPlus parses packets and how to read data out the various layers. In this tutorial we'll focus on editing packets - meaning change existing protocol data, add more data and add/remove layers, and also how to craft new packets from scratch.
 
 Of course we won't go over all the protocols, we'll focus on a few which are popular:
 
@@ -98,7 +98,7 @@ The next step is to let PcapPlusPlus parse the packet by creating an instance of
 pcpp::Packet parsedPacket(&rawPacket);
 ```
 
-You may notice this is exactly the same packet as we used in the [Packet parsing](tutorial_packet_parsing.html) tutorial but this time we won't just read data from the various layers but actually change it. First thing we'll do is get the **Ethernet** layer and change it:
+You may notice this is exactly the same packet as we used in the [Packet parsing](/docs/tutorials/packet-parsing) tutorial but this time we won't just read data from the various layers but actually change it. First thing we'll do is get the **Ethernet** layer and change it:
 
 ```cpp
 // now let's get the Ethernet layer

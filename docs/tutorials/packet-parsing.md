@@ -92,7 +92,7 @@ The next step is to let PcapPlusPlus parse the packet. We do this by creating an
 pcpp::Packet parsedPacket(&rawPacket);
 ```
 
-Before we dive into the protocols, let's remember how the `Packet` class is [built](tutorial_intro.html#packets_layers): it contains a link list of `Layer` instances, each layer points to the next layer in the packet. In our example: Ethernet layer will be the first one, it will point to IPv4 layer which will point to TCP layer and finally we'll have HTTP request layer. The `Packet` class exposes this link list so we can iterate over the layers and retrieve basic information like the protocols they represent, sizes, etc. Let's see the code:
+Before we dive into the protocols, let's remember how the `Packet` class is [built](/docs/tutorials/intro#packets-and-layers): it contains a link list of `Layer` instances, each layer points to the next layer in the packet. In our example: Ethernet layer will be the first one, it will point to IPv4 layer which will point to TCP layer and finally we'll have HTTP request layer. The `Packet` class exposes this link list so we can iterate over the layers and retrieve basic information like the protocols they represent, sizes, etc. Let's see the code:
 
 ```cpp
 // first let's go over the layers one by one and find out its type, its total length, its header length and its payload length
