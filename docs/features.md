@@ -40,7 +40,7 @@ The main features provided for each one are:
 ### What's next?
 {: .no_toc }
 
-You can find out more information in the [API documentation](/docs/api-docs), [tutorial pages](/docs/tutorials) and browse through the code of the [example apps](/docs/examples).
+You can find out more information in the [API documentation](/api-docs), [tutorial pages](/docs/tutorials) and browse through the code of the [example apps](/docs/examples).
 
 ## Packet parsing and crafting
 

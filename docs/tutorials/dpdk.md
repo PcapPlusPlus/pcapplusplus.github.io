@@ -25,7 +25,7 @@ This specific example was chosen because it corresponds to a similar example in 
 
 Before starting this tutorial it is highly recommended to have a basic understanding of what DPDK is (you can find a lot of reading material in [DPDK web-site](http://dpdk.org/)) and also read the page describing [PcapPlusPlus support for DPDK](/docs/dpdk).
 
-For further information about the APIs and classes please refer to the [API documentation](/docs/api-docs).
+For further information about the APIs and classes please refer to the [API documentation](/api-docs).
 
 Before diving into the code, let's see how our L2 forwarding (bridge) application will be built:
 

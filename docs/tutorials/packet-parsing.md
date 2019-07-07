@@ -26,7 +26,7 @@ This tutorial will go through the packet parsing fundamentals and the next tutor
 * TCP
 * HTTP
 
-For further information about these protocols and the other protocols supported in PcapPlusPlus please go to the [API documentation](/docs/api-docs)
+For further information about these protocols and the other protocols supported in PcapPlusPlus please go to the [API documentation](/api-docs)
 
 ## Packet parsing basics
 

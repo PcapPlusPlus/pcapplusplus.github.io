@@ -1,6 +1,9 @@
 - name: Docs
   link: /docs/
   external_link: false
+- name: Features
+  link: /docs/features
+  external_link: false
 - name: API
   link: /api-docs
   external_link: false

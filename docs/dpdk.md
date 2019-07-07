@@ -1,6 +1,6 @@
 ---
 layout: page
-title: DPDK support
+title: DPDK Support
 permalink: /docs/dpdk
 nav_order: 4
 ---

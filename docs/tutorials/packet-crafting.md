@@ -29,7 +29,7 @@ Of course we won't go over all the protocols, we'll focus on a few which are pop
 * HTTP
 * DNS
 
-For further information about these protocols and the other protocols supported in PcapPlusPlus please go to the [API documentation](/docs/api-docs)
+For further information about these protocols and the other protocols supported in PcapPlusPlus please go to the [API documentation](/api-docs)
 
 ## Packet editing
 
