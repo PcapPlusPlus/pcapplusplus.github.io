@@ -23,8 +23,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://pcapplusplus.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: seladb
 github_username:  seladb
-logo-source: /resources/logo_white.png
-logo-width: 180
+logo_source: /resources/logo_white.png
+logo_width: 180
 
 # Build settings
 markdown: kramdown
