@@ -17,7 +17,7 @@ nav_order: 4
 
 ## Introduction
 
-Packet parsing, editing and crafting are a major part of PcapPlusPlus and is the essence of the Packet++ library. There is a long list of [protocols currently supported](TODO), each of them is represented by a `Layer` class which (in most cases) supports both parsing of the protocol, editing and creation of new layers from scratch.
+Packet parsing, editing and crafting are a major part of PcapPlusPlus and is the essence of the Packet++ library. There is a long list of [protocols currently supported](/docs/features#supported-network-protocols), each of them is represented by a `Layer` class which (in most cases) supports both parsing of the protocol, editing and creation of new layers from scratch.
 
 This tutorial will go through the packet parsing fundamentals and the next tutorial will focus on packet crafting and editing. The tutorial demonstrate parsing on a few popular protocols:
 
@@ -26,7 +26,7 @@ This tutorial will go through the packet parsing fundamentals and the next tutor
 * TCP
 * HTTP
 
-For further information about these protocols and the other protocols supported in PcapPlusPlus please go to the [API documentation](TODO)
+For further information about these protocols and the other protocols supported in PcapPlusPlus please go to the [API documentation](/docs/api-docs)
 
 ## Packet parsing basics
 

@@ -1,6 +1,9 @@
 - name: Docs
   link: /docs/
   external_link: false
+- name: API
+  link: /api-docs
+  external_link: false
 - name: Contact
   link: /contact
   external_link: false

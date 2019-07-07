@@ -22,7 +22,7 @@ As you could probably already notice, PcapPlusPlus is built of 3 libraries: Comm
 ### Packet++
 {: .no_toc }
 
-A library for parsing, creating and editing packets of various [supported protocols](TODO). This library can be used stand-alone and doesn't depend on Pcap++, libpcap/WinPcap, etc. Main classes and utilities:
+A library for parsing, creating and editing packets of various [supported protocols](/docs/features#supported-network-protocols). This library can be used stand-alone and doesn't depend on Pcap++, libpcap/WinPcap, etc. Main classes and utilities:
 
 1. `RawPacket` - representing the raw data captured from the network
 2. `Layer` - the base class for all protocol layers. Each protocol layer is in-charge of parsing the specific bytes in the packet that belong to this protocol
@@ -69,7 +69,7 @@ There are 2 types of packets in PcapPlusPlus: **raw packets** and **parsed packe
 ### Layers
 {: .no_toc }
 
-A layer in PcapPlusPlus means protocol layer. Parsed packets contain layers, each one represents a protocol the packet is built from. For example: an HTTP packet may contain an Ethernet layer, an IPv4 (or IPv6) layer, a TCP layer and an HTTP layer. Each supported protocol is represented by a corresponding layer class. A layer class exposes the protocol's data for the user to read and usually also to write or modify. For example: A TCP layer exposes all TCP fields like ports, flags, sequence numbers, TCP options, etc. and also allows editing of all of those fields and also adding/removing/editing TCP options. Layers inside a parsed packet are ordered in a link list so the parsed packet actually points only to the first (lowest) layer (for example: Ethernet), this layer points to the next layer (for example: IPv4), and so on. A list of all supported protocols (and layers) can be found [here](TODO).
+A layer in PcapPlusPlus means protocol layer. Parsed packets contain layers, each one represents a protocol the packet is built from. For example: an HTTP packet may contain an Ethernet layer, an IPv4 (or IPv6) layer, a TCP layer and an HTTP layer. Each supported protocol is represented by a corresponding layer class. A layer class exposes the protocol's data for the user to read and usually also to write or modify. For example: A TCP layer exposes all TCP fields like ports, flags, sequence numbers, TCP options, etc. and also allows editing of all of those fields and also adding/removing/editing TCP options. Layers inside a parsed packet are ordered in a link list so the parsed packet actually points only to the first (lowest) layer (for example: Ethernet), this layer points to the next layer (for example: IPv4), and so on. A list of all supported protocols (and layers) can be found [here](/docs/features#supported-network-protocols).
 
 ### Packet and Layers schematic structure
 {: .no_toc }

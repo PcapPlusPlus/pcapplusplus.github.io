@@ -29,7 +29,7 @@ Of course we won't go over all the protocols, we'll focus on a few which are pop
 * HTTP
 * DNS
 
-For further information about these protocols and the other protocols supported in PcapPlusPlus please go to the [API documentation](TODO)
+For further information about these protocols and the other protocols supported in PcapPlusPlus please go to the [API documentation](/docs/api-docs)
 
 ## Packet editing
 
@@ -161,7 +161,7 @@ pcpp::HttpField* xForwardedForField = httpRequestLayer->insertField(httpRequestL
 httpRequestLayer->insertField(xForwardedForField, "Cache-Control", "max-age=0");
 ```
 
-We already discussed the highlights of the `HttpLayer` API in the [Packet parsing](tutorial_packet_parsing.html) tutorial so we won't repeat all of it again. But as you can see the API provides setters for all of the relevant data:
+We already discussed the highlights of the `HttpLayer` API in the [Packet parsing](/docs/tutorials/packet-parsing) tutorial so we won't repeat all of it again. But as you can see the API provides setters for all of the relevant data:
 
 * `HttpRequestFirstLine` exposes is a setter for the HTTP method `setMethod()` where we change it to `TRACE`. Similar methods exist for the URI and version
 * When retrieving HTTP fields, the `HttpField` class exposes a method of `setFieldValue()` for setting the field value (demonstrated above for `"Host"` and `"Referer"` fields)

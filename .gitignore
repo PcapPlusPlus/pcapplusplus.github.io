@@ -5,7 +5,10 @@ _site/
 .jekyll-metadata
 Gemfile.lock
 
-#Visual studio code
+# Visual studio code
 .cproject
 .project
 .vscode
+
+# doxygen
+api-docs/html

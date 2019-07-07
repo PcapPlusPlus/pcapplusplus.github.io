@@ -43,6 +43,15 @@ top_navigation_enabled: true
 pcapplusplus-ver-num: 19.04
 pcapplusplus-ver: v19.04
 
+include:
+  - _*_8h.html
+  - _*_8h_source.html
+  - _*_8h.js
+
+exclude:
+  - /api-docs/doxygen/
+  - /api-docs/html/
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
