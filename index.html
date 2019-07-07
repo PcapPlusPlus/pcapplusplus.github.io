@@ -34,7 +34,7 @@ nav_exclude: true
     <div class="lp-center lp-section-container">
       <div class="lp-col">
           <h2>Decode and forge packets</h2>
-          <p>PcapPlusPlus enables decoding and forging capabilities for a large variety of <a href="">network protocols</a></p>
+          <p>PcapPlusPlus enables decoding and forging capabilities for a large variety of <a href="{{ site.baseurl }}/docs/features#supported-network-protocols">network protocols</a></p>
           <a href="{{ site.baseurl }}/docs/features#packet-parsing-and-crafting" class="btn btn-blue fs-5 mb-3 mb-md-5">Learn More</a>
       </div>  
       <div class="lp-col lp-col-left">
@@ -61,20 +61,33 @@ if (parsedPacket.isPacketOfType(pcpp::IPv4)) {
   <section class="lp-section">
     <div class="lp-center lp-section-container">
       <div class="lp-col lp-col-left">
-        <h2>Multiplatform support</h2>
-        <p>PcapPlusPlus is fully supported on Windows, MacOS and Linux. You can download pre-built binaries for each platform or
-          build it from source. PcapPlusPlus is available in popular package managers such as Homebrew and Conan.
+        <h2>Super Fast!</h2>
+        <p>PcapPlusPlus is designed to be efficient and lightweight. It enables amazingly fast packet processing with minimum overhead.
         </p>
-        <a href="{{ site.baseurl }}/docs/install" class="btn btn-blue fs-5 mb-3 mb-md-5">View Installation Guide</a>
+        <a href="{{ site.baseurl }}/docs/benchmark" class="btn btn-blue fs-5 mb-3 mb-md-5">View Benchmarks</a>
       </div>
       <div class="lp-col">
-        <img src="resources/win-linux-macos.png" class="lp-image">
+        <img src="resources/rocket.png" class="lp-image">
       </div>
     </div>
   </section>
   <section class="lp-section lp-section-invert">
     <div class="lp-center lp-section-container">
       <div class="lp-col">
+        <h2>Multiplatform support</h2>
+        <p>PcapPlusPlus is fully supported on Windows, MacOS and Linux. You can download pre-built binaries for each platform or
+          build it from source. PcapPlusPlus is available in popular package managers such as Homebrew and Conan.
+        </p>
+        <a href="{{ site.baseurl }}/docs/install" class="btn btn-blue fs-5 mb-3 mb-md-5">View Installation Guide</a>
+      </div>
+      <div class="lp-col lp-col-left">
+        <img src="resources/win-linux-macos.png" class="lp-image">
+      </div>
+    </div>
+  </section>
+  <section class="lp-section">
+    <div class="lp-center lp-section-container">
+      <div class="lp-col lp-col-left">
         <h2>Read and write packets to files</h2>
         <p>PcapPlusPlus provides an easy to use interface for reading and writing network packets into files. 
           It supports the most popular file formats which are 
@@ -83,7 +96,7 @@ if (parsedPacket.isPacketOfType(pcpp::IPv4)) {
         </p>
         <a href="{{ site.baseurl }}/docs/features#read-and-write-packets-fromto-files" class="btn btn-blue fs-5 mb-3 mb-md-5">Learn More</a>
       </div>      
-      <div class="lp-col lp-col-left">
+      <div class="lp-col">
 {% highlight cpp %}
 // create a pcap file reader
 pcpp::PcapFileReaderDevice pcapReader("input.pcap");
@@ -104,16 +117,16 @@ while (pcapReader->getNextPacket(rawPacket)) {
       </div>
     </div>
   </section>
-  <section class="lp-section">
+  <section class="lp-section lp-section-invert">
     <div class="lp-center lp-section-container">
-      <div class="lp-col lp-col-left">
+      <div class="lp-col">
         <h2>Packet reassembly</h2>
         <p>PcapPlusPlus contains unique implementation of packet reassembly techniques such as:</p>
         <p><strong>TCP Reassembly</strong> which includes support of TCP retransmission, out-of-order TCP packets and missing TCP data</p>
         <p><strong>IP Fragmentation and Defragmentation</strong> to create and reassemble IPv4 and IPv6 fragments</p>
         <a href="{{ site.baseurl }}/docs/features#packet-reassembly" class="btn btn-blue fs-5 mb-3 mb-md-5">Learn More</a>
       </div>
-      <div class="lp-col">
+      <div class="lp-col lp-col-left">
           <img src="resources/stream.png" class="lp-image">
       </div>
     </div>
