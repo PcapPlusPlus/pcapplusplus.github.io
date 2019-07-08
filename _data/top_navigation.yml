@@ -7,8 +7,8 @@
 - name: API
   link: /api-docs
   external_link: false
-- name: Contact
-  link: /contact
+- name: Community
+  link: /docs/community
   external_link: false
 - name: GitHub
   link: https://github.com/seladb/PcapPlusPlus
