@@ -31,7 +31,7 @@ Thank you for using PcapPlusPlus! If you'd like to support us you can do it in v
 
 - <script async defer src="https://buttons.github.io/buttons.js"></script><a class="github-button" href="https://github.com/seladb/pcapplusplus" data-icon="octicon-star" data-show-count="true" aria-label="Star seladb/pcapplusplus on GitHub">Star</a> Give us a star on GitHub, that helps ⭐⭐!
 - Spread the word about PcapPlusPlus in the social media, articles, web-sites or wherever you can
-- If you're ready to share your use-case please contact me. We're planning to create a showcase page and we'll be more than happy to include yours
+- If you're ready to share your use-case please contact us. We're planning to create a showcase page and we'll be more than happy to include yours
 
 ## Contribute
 
