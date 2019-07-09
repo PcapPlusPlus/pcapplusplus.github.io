@@ -139,7 +139,7 @@ The Data Plane Development Kit (DPDK) is a set of data plane libraries and netwo
 
 DPDK provides packet processing in line rate using kernel bypass for a large range of network interface cards. Notice that not every NIC supports DPDK as the NIC needs to support the kernel bypass feature. You can read more about DPDK in [DPDK's web-site](https://www.dpdk.org/) and get a list of supported NICs [here](http://core.dpdk.org/supported/).
 
-As DPDK API is written in C, PcapPlusPlus wraps the main functionality in a C++ easy-to-use classes which should have minimum affect on performance and packet processing rate. In addition it brings DPDK to the PcapPlusPlus framework and API so you can use DPDK together with other PcapPlusPlus features such as packet parsing and editing, etc.
+As DPDK API is written in C, PcapPlusPlus wraps its main functionality in easy-to-use C++ classes which should have minimum impact on performance and packet processing rate. In addition it brings DPDK to the PcapPlusPlus framework and APIs so you can use DPDK together with other PcapPlusPlus features such as packet parsing and editing, etc.
 
 You can find more information about setting up DPDK and the API in [DPDK support page](/docs/dpdk) and also in [DPDK tutorial](/docs/tutorials/dpdk).
 
