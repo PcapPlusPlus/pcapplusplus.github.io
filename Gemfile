@@ -34,5 +34,8 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 # Remote theme gem use modified verison of Just The Docs theme
 gem "jekyll-remote-theme"
 
+# Create a sitemap
+gem "jekyll-sitemap"
+
 gem "rake"
 
