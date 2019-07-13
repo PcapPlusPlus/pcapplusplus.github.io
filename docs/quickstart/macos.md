@@ -26,7 +26,7 @@ The easiest way to get PcapPlusPlus is from Homebrew:
 brew install pcapplusplus
 ```
 
-If you prefer not to use Homebrew you can also found pre-compiled packages for various versions of MacOS and Xcode in the [latest release page](https://github.com/seladb/PcapPlusPlus/latest). After downloading and extracting the archive file go to: `/path/to/your/package/` and run the installation script:
+If you prefer not to use Homebrew you can also found pre-compiled packages for various versions of MacOS and Xcode in the [latest release page](https://github.com/seladb/PcapPlusPlus/releases/latest). After downloading and extracting the archive file go to: `/path/to/your/package/` and run the installation script:
 
 ```shell
 ./install.sh

@@ -20,7 +20,7 @@ This guide will help you install and build your first PcapPlusPlus application o
 
 Before installing PcapPlusPlus make sure you have the prerequisites installed for [Visual Studio 2015](/docs/install/build-source/vs2015#prerequisites).
 
-Download the pre-compiled package for Visual Studio 2015 from the [latest release page](https://github.com/seladb/PcapPlusPlus/latest).
+Download the pre-compiled package for Visual Studio 2015 from the [latest release page](https://github.com/seladb/PcapPlusPlus/releases/latest).
 
 ## Step 2 - create your first app
 

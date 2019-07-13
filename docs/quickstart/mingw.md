@@ -20,7 +20,7 @@ This guide will help you install and build your first PcapPlusPlus application o
 
 Before installing PcapPlusPlus make sure you have the prerequisites installed for [MinGW32](/docs/install/build-source/mingw#prerequisites-for-building-with-mingw) or [MinGW-w64](/docs/install/build-source/mingw#prerequisites-for-building-with-mingw-w64).
 
-If you have MinGW with GCC version 5.3.0 or MinGW-w64 with GCC version 6.3.0 you can download a pre-compiled package from the [latest release page](https://github.com/seladb/PcapPlusPlus/latest).
+If you have MinGW with GCC version 5.3.0 or MinGW-w64 with GCC version 6.3.0 you can download a pre-compiled package from the [latest release page](https://github.com/seladb/PcapPlusPlus/releases/latest).
 
 Otherwise you need to [build PcapPlusPlus from source](/docs/install/build-source/mingw).
 
