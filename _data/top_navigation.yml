@@ -21,9 +21,9 @@ right_items:
     tooltip: PcapPlusPlus on Twitter
     image: /resources/logo-twitter.png
     link: https://twitter.com/seladb
-  - name: Gmail
-    tooltip: Send us an email
-    image: /resources/logo-gmail.webp
+  - name: Email
+    tooltip: Send us an Email
+    image: /resources/logo-email.png
     link: mailto:pcapplusplus@gmail.com
   - name: Google Group
     tooltip: PcapPlusPlus Google Group

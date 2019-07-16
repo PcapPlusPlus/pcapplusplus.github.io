@@ -22,7 +22,7 @@ There are multiple ways to contact us. Please feel free to reach out for any iss
 
 | [<img src="/resources/logo-github.png" alt="drawing" width="40"/>](https://github.com/seladb/PcapPlusPlus/issues) | Open an issue on GitHub: <https://github.com/seladb/PcapPlusPlus/issues> |
 | [<img src="/resources/logo-google.png" alt="drawing" width="40"/>](https://groups.google.com/d/forum/pcapplusplus-support) | PcapPlusPlus Google Group: <https://groups.google.com/d/forum/pcapplusplus-support> |
-| [<img src="/resources/logo-gmail.webp" alt="drawing" width="40"/>](mailto:pcapplusplus@gmail.com) | Send an email to <pcapplusplus@gmail.com> |
+| [<img src="/resources/logo-email.png" alt="drawing" width="40"/>](mailto:pcapplusplus@gmail.com) | Send an email to <pcapplusplus@gmail.com> |
 | [<img src="/resources/logo-twitter.png" alt="drawing" width="40"/>](https://twitter.com/seladb) | Follow us on Twitter: <https://twitter.com/seladb> |
 
 ## Support Us
