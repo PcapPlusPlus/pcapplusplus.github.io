@@ -1,15 +1,31 @@
-- name: Docs
-  link: /docs/
-  external_link: false
-- name: Features
-  link: /docs/features
-  external_link: false
-- name: API
-  link: /api-docs
-  external_link: false
-- name: Community
-  link: /docs/community
-  external_link: false
-- name: GitHub
-  link: https://github.com/seladb/PcapPlusPlus
-  external_link: true
+left_items:
+  - name: Docs
+    link: /docs/
+    external_link: false
+  - name: Features
+    link: /docs/features
+    external_link: false
+  - name: API
+    link: /api-docs
+    external_link: false
+  - name: Community
+    link: /docs/community
+    external_link: false
+
+right_items:
+  - name: GitHub
+    tooltip: PcapPlusPlus on GitHub
+    image: /resources/logo-github-invert.png
+    link: https://github.com/seladb/PcapPlusPlus
+  - name: Twitter
+    tooltip: PcapPlusPlus on Twitter
+    image: /resources/logo-twitter.png
+    link: https://twitter.com/seladb
+  - name: Gmail
+    tooltip: Send us an email
+    image: /resources/logo-gmail.webp
+    link: mailto:pcapplusplus@gmail.com
+  - name: Google Group
+    tooltip: PcapPlusPlus Google Group
+    image: /resources/logo-google.png
+    link: https://groups.google.com/d/forum/pcapplusplus-support
