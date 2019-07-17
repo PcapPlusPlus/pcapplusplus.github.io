@@ -8,35 +8,35 @@ nav_order: 7
 # Benchmarks
 {: .no_toc }
 
-{% assign tcp_no_options_pcapplusplus_sec = 180000 %}
-{% assign tcp_no_options_libtins_sec = 180000 %}
-{% assign tcp_no_options_libcrafter_sec = 180000 %}
-{% assign tcp_no_options_libpcap_sec = 180000 %}
+{% assign tcp_no_options_pcapplusplus_sec = 0.219 %}
+{% assign tcp_no_options_libtins_sec = 0.241 %}
+{% assign tcp_no_options_libcrafter_sec = 6.26 %}
+{% assign tcp_no_options_libpcap_sec = 0.12 %}
 
-{% assign tcp_no_options_pcapplusplus_pps = 180000 %}
-{% assign tcp_no_options_libtins_pps = 180000 %}
-{% assign tcp_no_options_libcrafter_pps = 180000 %}
-{% assign tcp_no_options_libpcap_pps = 180000 %}
+{% assign tcp_no_options_pcapplusplus_pps = 2283105 %}
+{% assign tcp_no_options_libtins_pps = 2074688 %}
+{% assign tcp_no_options_libcrafter_pps = 79872 %}
+{% assign tcp_no_options_libpcap_pps = 4166666 %}
 
-{% assign tcp_with_options_pcapplusplus_sec = 180000 %}
-{% assign tcp_with_options_libtins_sec = 180000 %}
-{% assign tcp_with_options_libcrafter_sec = 180000 %}
-{% assign tcp_with_options_libpcap_sec = 180000 %}
+{% assign tcp_with_options_pcapplusplus_sec = 0.218 %}
+{% assign tcp_with_options_libtins_sec = 0.288 %}
+{% assign tcp_with_options_libcrafter_sec = 10.569 %}
+{% assign tcp_with_options_libpcap_sec = 0.12 %}
 
-{% assign tcp_with_options_pcapplusplus_pps = 180000 %}
-{% assign tcp_with_options_libtins_pps = 180000 %}
-{% assign tcp_with_options_libcrafter_pps = 180000 %}
-{% assign tcp_with_options_libpcap_pps = 180000 %}
+{% assign tcp_with_options_pcapplusplus_pps = 2293577 %}
+{% assign tcp_with_options_libtins_pps = 1736111 %}
+{% assign tcp_with_options_libcrafter_pps = 47308 %}
+{% assign tcp_with_options_libpcap_pps = 4166666 %}
 
-{% assign dns_pcapplusplus_sec = 180000 %}
-{% assign dns_libtins_sec = 180000 %}
-{% assign dns_libcrafter_sec = 180000 %}
-{% assign dns_libpcap_sec = 180000 %}
+{% assign dns_pcapplusplus_sec = 0.234 %}
+{% assign dns_libtins_sec = 0.245 %}
+{% assign dns_libcrafter_sec = 6.791 %}
+{% assign dns_libpcap_sec = 0.028 %}
 
-{% assign dns_pcapplusplus_pps = 180000 %}
-{% assign dns_libtins_pps = 180000 %}
-{% assign dns_libcrafter_pps = 180000 %}
-{% assign dns_libpcap_pps = 180000 %}
+{% assign dns_pcapplusplus_pps = 2136752 %}
+{% assign dns_libtins_pps = 2040816 %}
+{% assign dns_libcrafter_pps = 73626 %}
+{% assign dns_libpcap_pps = 17857142 %}
 
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script type="text/javascript">
@@ -69,7 +69,7 @@ nav_order: 7
                 return a[1] > b[1];
             }
         );
-        data.addRows(convert_to_seconds(input));
+        data.addRows(input);
 
         // Set chart options
         var options = {
@@ -115,61 +115,63 @@ nav_order: 7
 
 PcapPlusPlus was only compared to similar C/C++ projects such as libtins and libcrafter because projects written higher level languages (such as Python or Java) cannot compete with the performance of native libraries. Here are the versions used for the benchmarks:
 
-- libpcap 1.8.1
-- PcapPlusPlus - commit f6e04a7
-- libtins - commit f4635a6
-- libcrafter - commit 3db70ab
+- libpcap-dev [v0.8.1](https://www.tcpdump.org/#old-releases)
+- PcapPlusPlus [v19.04](https://github.com/seladb/PcapPlusPlus/releases/tag/v19.04)
+- libtins [v4.2](https://github.com/mfontanini/libtins/releases/tag/v4.2)
+- libcrafter - commit [#3db70ab](https://github.com/pellegre/libcrafter/tree/3db70ab6fd62ade25de7328aaf8e9ba92696c92e)
 
 ## Testing environment
 
 All 3 benchmarks provided in packet-capture-benchmarks were run on the following environment:
 
-- Linux Ubuntu 16.04 64-bit running as a VirtualBox VM
+- Linux Ubuntu 16.04 64-bit running as a VirtualBox VM with 4 virtual cores and 8GB RAM
 - Compiler is GCC 5.4.0
-- Host platform is a dual-core Intel Core i5 760 2.8GHz with 8GB RAM system running Windows 10 64-bit
+- Host platform is a MacBook Pro model 2017 with Intel Core i7 760 3.1GHz processor and 16GB RAM running macOS High Sierra 10.13
 
-The benchmark application can be found in [PcapPlusPlus examples](/docs/examples#pcapplusplus-benchmark).
+Benchmark applications:
+- The PcapPlusPlus benchmark application can be found in [PcapPlusPlus examples](/docs/examples#pcapplusplus-benchmark)
+- The other benchmark applications can be found in [Matias Fontanini's packet-capture-benchmarks project](https://github.com/mfontanini/packet-capture-benchmarks)
 
 ## Test results
 
 ### Benchmark #1 - TCP parsing
 
-__PcapPlusPlus is ~35% faster than libtins and ~x72 faster than libcrafter__
+__PcapPlusPlus is ~10% faster than libtins and ~x28 faster than libcrafter__
 {: .label .label-green }
 
 | Library      | Time taken(seconds) | Packets per second |
 |---------------------------------------------------------|
-| libpcap      | {{ tcp_no_options_libpcap_sec | divided_by: 1000 }} | {{ tcp_no_options_libpcap_pps }} |
-| PcapPlusPlus | {{ tcp_no_options_pcapplusplus_sec | divided_by: 1000 }} | {{ tcp_no_options_pcapplusplus_pps }} |
-| libtins      | {{ tcp_no_options_libtins_sec | divided_by: 1000 }} | {{ tcp_no_options_libtins_pps }} |
-| libcrafter   | {{ tcp_no_options_libcrafter_sec | divided_by: 1000 }} | {{ tcp_no_options_libcrafter_pps }} |
+| libpcap      | {{ tcp_no_options_libpcap_sec }} | {{ tcp_no_options_libpcap_pps }} |
+| __PcapPlusPlus__ | __{{ tcp_no_options_pcapplusplus_sec }}__ | __{{ tcp_no_options_pcapplusplus_pps }}__ |
+| libtins      | {{ tcp_no_options_libtins_sec }} | {{ tcp_no_options_libtins_pps }} |
+| libcrafter   | {{ tcp_no_options_libcrafter_sec }} | {{ tcp_no_options_libcrafter_pps }} |
 
 <div id="tcp_no_options"></div>
 
 ### Benchmark #2 - TCP + TCP Options parsing
 
-__PcapPlusPlus is ~35% faster than libtins and ~x72 faster than libcrafter__
+__PcapPlusPlus is ~32% faster than libtins and ~x48 faster than libcrafter__
 {: .label .label-green }
 
 | Library      | Time taken(seconds) | Packets per second |
 |---------------------------------------------------------|
-| libpcap      | {{ tcp_with_options_libpcap_sec | divided_by: 1000 }} | {{ tcp_with_options_libpcap_pps }} |
-| PcapPlusPlus | {{ tcp_with_options_pcapplusplus_sec | divided_by: 1000 }} | {{ tcp_with_options_pcapplusplus_pps }} |
-| libtins      | {{ tcp_with_options_libtins_sec | divided_by: 1000 }} | {{ tcp_with_options_libtins_pps }} |
-| libcrafter   | {{ tcp_with_options_libcrafter_sec | divided_by: 1000 }} | {{ tcp_with_options_libcrafter_pps }} |
+| libpcap      | {{ tcp_with_options_libpcap_sec }} | {{ tcp_with_options_libpcap_pps }} |
+| __PcapPlusPlus__ | __{{ tcp_with_options_pcapplusplus_sec }}__ | __{{ tcp_with_options_pcapplusplus_pps }}__ |
+| libtins      | {{ tcp_with_options_libtins_sec }} | {{ tcp_with_options_libtins_pps }} |
+| libcrafter   | {{ tcp_with_options_libcrafter_sec }} | {{ tcp_with_options_libcrafter_pps }} |
 
 <div id="tcp_with_options"></div>
 
 ### Benchmark #3 - DNS parsing
 
-__PcapPlusPlus is ~35% faster than libtins and ~x72 faster than libcrafter__
+__PcapPlusPlus is ~5% faster than libtins and ~x29 faster than libcrafter__
 {: .label .label-green }
 
 | Library      | Time taken(seconds) | Packets per second |
 |---------------------------------------------------------|
-| libpcap      | {{ dns_libpcap_sec | divided_by: 1000 }} | {{ dns_libpcap_pps }} |
-| PcapPlusPlus | {{ dns_pcapplusplus_sec | divided_by: 1000 }} | {{ dns_pcapplusplus_pps }} |
-| libtins      | {{ dns_libtins_sec | divided_by: 1000 }} | {{ dns_libtins_pps }} |
-| libcrafter   | {{ dns_libcrafter_sec | divided_by: 1000 }} | {{ dns_libcrafter_pps }} |
+| libpcap      | {{ dns_libpcap_sec }} | {{ dns_libpcap_pps }} |
+| __PcapPlusPlus__ | __{{ dns_pcapplusplus_sec }}__ | __{{ dns_pcapplusplus_pps }}__ |
+| libtins      | {{ dns_libtins_sec }} | {{ dns_libtins_pps }} |
+| libcrafter   | {{ dns_libcrafter_sec }} | {{ dns_libcrafter_pps }} |
 
 <div id="dns"></div>
