@@ -29,7 +29,7 @@ top_navigation_enabled: true
 pcapplusplus-ver-num: 19.04
 pcapplusplus-ver: v19.04
 
-# Google Analytics Tracking
+# Google Analytics Tracking Id
 ga_tracking: UA-74037205-2
 
 include:
