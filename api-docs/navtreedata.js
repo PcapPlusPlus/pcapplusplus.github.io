@@ -1,7 +1,7 @@
 var NAVTREE =
 [
   [ "PcapPlusPlus", "index.html", [
-    [ "Documentation", "index.html", [
+    [ "API Documentation", "index.html", [
       [ "Introduction", "index.html#intro_sec", null ],
       [ "API Reference", "index.html#api_reference_sec", null ]
     ] ],
