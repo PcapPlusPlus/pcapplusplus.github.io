@@ -40,4 +40,5 @@ include:
 exclude:
   - /api-docs/doxygen/
   - /api-docs/html/
+  - README.md
 
