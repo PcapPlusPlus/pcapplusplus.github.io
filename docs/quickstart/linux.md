@@ -34,7 +34,7 @@ If you downloaded a pre-compiled package go to: `/path/to/your/package/example-a
 
 If you built it from source go to: `/path/to/pcapplusplus/source/Tutorials/Tutorial-HelloWorld`.
 
-You can find the following files there:
+Make sure you see the following files:
 
 ```shell
  |-- main.cpp
@@ -52,7 +52,7 @@ If you downloaded a pre-compiled package you can find a Makefile in `/path/to/yo
 If you built it from source:
 
 - go to `/path/to/pcapplusplus/source/Tutorials/Tutorial-HelloWorld`
-- rename `Makefile.non_windows` to `Makefile`.
+- rename `Makefile.non_windows` to `Makefile`
 
 ## Step 4 - build and run your app
 

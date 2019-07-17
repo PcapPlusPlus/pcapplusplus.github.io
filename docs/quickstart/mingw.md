@@ -30,7 +30,7 @@ If you downloaded a pre-compiled package go to: `Drive:\path\to\your\package\exa
 
 If you built it from source go to: `Drive:\path\to\pcapplusplus\source\Tutorials\Tutorial-HelloWorld`.
 
-You can find the following files there:
+Make sure you see the following files:
 
 ```shell
  |-- main.cpp
@@ -48,7 +48,7 @@ If you downloaded a pre-compiled package you can find a Makefile in `Drive:\path
 If you built it from source:
 
 - go to `Drive:\path\to\pcapplusplus\source\Tutorials\Tutorial-HelloWorld`
-- rename `Makefile.windows` to `Makefile`.
+- rename `Makefile.windows` to `Makefile`
 
 ## Step 4 - build and run your app
 

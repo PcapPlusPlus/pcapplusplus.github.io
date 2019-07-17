@@ -12,6 +12,16 @@
  * @author Zeno Rocha <hi@zenorocha.com>
  */
 
+ code.highlighter-rouge {
+    margin-bottom: .75rem;
+    overflow: hidden;
+    border-radius: 4px;
+    padding: 0.2em 0.15em;
+    font-weight: 400;
+    background-color: #e1e3ec;
+    border: 1px solid #eeebee;
+  }
+
  .highlight .hll { background-color: #f1fa8c }
  .highlight  { background: #282a36; color: #f8f8f2 }
  .highlight .c { color: #6272a4 } /* Comment */
