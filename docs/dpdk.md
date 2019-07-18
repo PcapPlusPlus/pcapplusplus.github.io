@@ -14,7 +14,7 @@ The Data Plane Development Kit (DPDK) is a set of data plane libraries and netwo
 
 DPDK provides packet processing in line rate using kernel bypass for a large range of network interface cards. Notice that not every NIC supports DPDK as the NIC needs to support the kernel bypass feature. You can read more about DPDK in [DPDK's web-site](https://www.dpdk.org/) and get a list of supported NICs [here](http://core.dpdk.org/supported/).
 
-As DPDK API is written in C, PcapPlusPlus wraps its main functionality in easy-to-use C++ classes which should have minimum impact on performance and packet processing rate. In addition it brings DPDK to the PcapPlusPlus framework and APIs so you can use DPDK together with other PcapPlusPlus features such as packet parsing and editing, etc.
+As DPDK API is written in C, PcapPlusPlus wraps its main functionality in easy-to-use C++ wrappers which have minimum impact on performance and packet processing rate. In addition it brings DPDK to the PcapPlusPlus framework and APIs so you can use DPDK together with other PcapPlusPlus features such as packet analysis, etc.
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -24,7 +24,7 @@ As DPDK API is written in C, PcapPlusPlus wraps its main functionality in easy-t
 
 ## What does PcapPlusPlus offer for DPDK?
 
-PcapPlusPlus tries to cover the main functionality of DPDK and its most important features. Here is what PcapPlusPlus offers for DPDK:
+PcapPlusPlus tries to cover the main functionality of DPDK and its most important and popular features. Here is what PcapPlusPlus offers for DPDK:
 
 - Encapsulation of DPDK's initialization process - both outside and inside of the application - using simple scripts and methods
 - A C++ class wrapper for DPDK's packet structure (mbuf) which offers the most commonly used functionality
@@ -39,7 +39,7 @@ PcapPlusPlus tries to cover the main functionality of DPDK and its most importan
 
 ### Supported DPDK versions
 
-Please note that the following DPDK versions are currently supported:
+The following DPDK versions are currently supported:
 
 - DPDK 19.02
 - DPDK 18.11 (LTS)
@@ -65,7 +65,7 @@ The following operating systems and configurations were tested:
 
 You can find DPDK installation instructions in [DPDK web-site](http://dpdk.org/download).
 
-The build and install process for DPDK is pretty straight-forward and in a nutshell goes like this:
+Building and installing DPDK is pretty straight-forward and in a nutshell goes like this:
 
 ```shell
 $ cd /dpdk/source/location

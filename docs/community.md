@@ -30,7 +30,7 @@ There are multiple ways to contact us. Please feel free to reach out for any iss
 Thank you for using PcapPlusPlus! If you'd like to support us you can do it in various ways:
 
 - <script async defer src="https://buttons.github.io/buttons.js"></script><a class="github-button" href="https://github.com/seladb/pcapplusplus" data-icon="octicon-star" data-show-count="true" aria-label="Star seladb/pcapplusplus on GitHub">Star</a> Give us a star on GitHub, that helps ⭐⭐!
-- Spread the word about PcapPlusPlus in the social media, articles, web-sites or wherever you can
+- Spread the word about PcapPlusPlus in the social media, articles, web-sites or anywhere you can
 - If you're ready to share your use-case please contact us. We're planning to create a showcase page and we'll be more than happy to include yours
 
 ## Contribute
@@ -54,4 +54,4 @@ If you already looked at the code and found the root cause - that's great! You c
 
 ### Code contributions
 
-If you'd like to fix bugs or add a new feature to PcapPlusPlus, please make sure to read the [CONTRIBUTING](https://github.com/seladb/PcapPlusPlus/blob/master/CONTRIBUTING.md) document. This document should provide you with all the necessary information on how to create the pull request, what it should contain and how the review process works.
+If you'd like to fix bugs or add a new feature to PcapPlusPlus, please make sure to read the [CONTRIBUTING](https://github.com/seladb/PcapPlusPlus/blob/master/CONTRIBUTING.md) document. This document should provide you with all the necessary information on how to create the pull request, what it should include and how the review process works.

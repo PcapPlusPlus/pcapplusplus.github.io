@@ -34,14 +34,12 @@ Available for: <img src="/resources/logo-windows.png" alt="drawing" width="24" t
 
 PcapPlusPlus  pre-built binaries are available in Conan for Windows (VS2015), Linux and MacOS. The package is managed by the [Bincrafters](https://bincrafters.github.io/) team and is available in [Bintray](https://bintray.com/bincrafters/public-conan/pcapplusplus%3Abincrafters).
 
-To install the package please run the following commands from the command-line:
+To install the package run the following commands from the command-line:
 
 ```bash
 conan remote add public-conan https://api.bintray.com/conan/bincrafters/public-conan
 conan install pcapplusplus/{{ site.pcapplusplus-ver-num }}@bincrafters/stable -r public-conan
 ```
-
-You can also find a link to the PcapPlusPlus page in Bintray here: <https://bintray.com/bincrafters/public-conan/pcapplusplus%3Abincrafters>
 
 ## Latest Release From GitHub
 

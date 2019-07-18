@@ -103,7 +103,7 @@ nav_order: 7
     }
 </script>
 
-[Matias Fontanini's packet-capture-benchmarks project](https://github.com/mfontanini/packet-capture-benchmarks) was used to compare the performance of PcapPlusPlus with other similar C++ libraries (libtins and libcrafter).
+In order to benchmark the performance of PcapPlusPlus and compare it with similar C++ libraries we used [Matias Fontanini's packet-capture-benchmarks project](https://github.com/mfontanini/packet-capture-benchmarks). The benchmark compared PcapPlusPlus, [libtins](http://libtins.github.io/), [libcrafter](https://github.com/pellegre/libcrafter) and libpcap.
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -113,7 +113,7 @@ nav_order: 7
 
 ## Tested projects
 
-PcapPlusPlus was only compared to similar C/C++ projects such as libtins and libcrafter because projects written higher level languages (such as Python or Java) cannot compete with the performance of native libraries. Here are the versions used for the benchmarks:
+PcapPlusPlus was only compared to similar C/C++ projects such as [libtins](http://libtins.github.io/) and [libcrafter](https://github.com/pellegre/libcrafter) because projects written higher level languages (such as Python or Java) cannot compete with the performance of native libraries. The following versions were used for the benchmarks:
 
 - libpcap-dev [v0.8.1](https://www.tcpdump.org/#old-releases)
 - PcapPlusPlus [v19.04](https://github.com/seladb/PcapPlusPlus/releases/tag/v19.04)
@@ -122,11 +122,11 @@ PcapPlusPlus was only compared to similar C/C++ projects such as libtins and lib
 
 ## Testing environment
 
-All 3 benchmarks provided in packet-capture-benchmarks were run on the following environment:
+All 3 benchmarks provided in [packet-capture-benchmarks](https://github.com/mfontanini/packet-capture-benchmarks) were run on the following environment:
 
 - Linux Ubuntu 16.04 64-bit running as a VirtualBox VM with 4 virtual cores and 8GB RAM
-- Compiler is GCC 5.4.0
-- Host platform is a MacBook Pro model 2017 with Intel Core i7 760 3.1GHz processor and 16GB RAM running macOS High Sierra 10.13
+- GCC 5.4.0 compiler
+- The host platform is a MacBook Pro model 2017 with Intel Core i7 760 3.1GHz processor and 16GB RAM running macOS High Sierra 10.13
 
 Benchmark applications:
 - The PcapPlusPlus benchmark application can be found in [PcapPlusPlus examples](/docs/examples#pcapplusplus-benchmark)

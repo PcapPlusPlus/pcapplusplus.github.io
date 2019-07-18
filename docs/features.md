@@ -44,17 +44,17 @@ You can find out more information in the [API documentation](/api-docs), [tutori
 
 ## Packet parsing and crafting
 
-PcapPlusPlus provides advanced capabilities for packet analysis. These include:
+PcapPlusPlus provides advanced capabilities for packet analysis which include:
 
-- Packet parsing, which is a detailed analysis of the protocols and layers a packet is built from
-- Packet crafting which is manually generating and editing of network packets
+- Packet parsing, which is a detailed analysis of the protocols and layers of a packet
+- Packet crafting which is generation and editing of network packets
 
-A large variety of network protocols are supported, see the full list [here](#supported-network-protocols)).
+A large variety of network protocols are supported, see the full list [here](#supported-network-protocols).
 
-Packets can be analyzed from any source including packets captured from the network, packets stored in PCAP/PCAPNG files, etc.
-The design of PcapPlusPlus allows similar analysis capabilities for each packet, regardless of where it came from. For example, you can write the same code for parsing packets regardless of whether they come from DPDK, libpcap, WinPcap, raw sockets or read from a PCAP/PCAPNG file. Same goes for packet crafting.
+Packets can be analyzed from any source including those captured from the network, packets stored in PCAP/PCAPNG files, and more.
+The design of PcapPlusPlus allows similar analysis capabilities for each packet, regardless of where it came from. For example, you can write the same code for parsing packets that are captured using DPDK, libpcap, WinPcap, raw sockets or read from a PCAP/PCAPNG file. Same goes for packet crafting.
 
-Consider this simple code snippet that shows how to read a packet from a PCAP file, parse it, and if it's an IPv4 packet extract and print the source and dest IP addresses:
+Consider this simple code snippet that shows how to read a packet from a PCAP file, parse it, identify if it's an IPv4 packet and print the source and dest IP addresses:
 
 ```cpp
 #include "IPv4Layer.h"
@@ -71,7 +71,8 @@ int main(int argc, char* argv[])
         return 1;
     }
 
-    // read the first (and only) packet from the file
+    // read the first packet from the file (in this case the
+    // file contains only one packet)
     pcpp::RawPacket rawPacket;
     if (!reader.getNextPacket(rawPacket))
     {
@@ -82,7 +83,7 @@ int main(int argc, char* argv[])
     // parse the raw packet into a parsed packet
     pcpp::Packet parsedPacket(&rawPacket);
 
-    // verify the packet is IPv4
+    // check if it's an IPv4 packet
     if (parsedPacket.isPacketOfType(pcpp::IPv4))
     {
         // extract source and dest IPs
@@ -139,7 +140,7 @@ The Data Plane Development Kit (DPDK) is a set of data plane libraries and netwo
 
 DPDK provides packet processing in line rate using kernel bypass for a large range of network interface cards. Notice that not every NIC supports DPDK as the NIC needs to support the kernel bypass feature. You can read more about DPDK in [DPDK's web-site](https://www.dpdk.org/) and get a list of supported NICs [here](http://core.dpdk.org/supported/).
 
-As DPDK API is written in C, PcapPlusPlus wraps its main functionality in easy-to-use C++ classes which should have minimum impact on performance and packet processing rate. In addition it brings DPDK to the PcapPlusPlus framework and APIs so you can use DPDK together with other PcapPlusPlus features such as packet parsing and editing, etc.
+As DPDK API is written in C, PcapPlusPlus wraps its main functionality in easy-to-use C++ wrappers which have minimum impact on performance and packet processing rate. In addition it brings DPDK to the PcapPlusPlus framework and APIs so you can use DPDK together with other PcapPlusPlus features such as packet analysis, etc.
 
 You can find more information about setting up DPDK and the API in [DPDK support page](/docs/dpdk) and also in [DPDK tutorial](/docs/tutorials/dpdk).
 
@@ -147,7 +148,7 @@ You can find more information about setting up DPDK and the API in [DPDK support
 
 PF_RING™ is a new type of network socket that dramatically improves the packet capture speed. It's providing high-speed packet capture, filtering and analysis (taken from [ntop's website](https://www.ntop.org/products/packet-capture/pf_ring/)).
 
-PcapPlusPlus provides a clean and simple C++ wrapper API for [Vanilla PF_RING](https://www.ntop.org/products/packet-capture/pf_ring/). Currently only Vanilla PF_RING is supported which provides significant performance improvement in comparison to libpcap or Linux kernel, but [PF_RING Zero Copy](https://www.ntop.org/products/packet-capture/pf_ring/pf_ring-zc-zero-copy/) (which allows kernel bypass and zero-copy of packets from NIC to user-space) is not supported.
+PcapPlusPlus provides a clean and simple C++ wrapper API for [Vanilla PF_RING](https://www.ntop.org/products/packet-capture/pf_ring/). Currently only Vanilla PF_RING is supported which provides significant performance improvement in comparison to libpcap or Linux kernel, but [PF_RING Zero Copy](https://www.ntop.org/products/packet-capture/pf_ring/pf_ring-zc-zero-copy/) (which allows kernel bypass and zero-copy of packets from NIC to user-space) is not yet supported.
 
 In order to compile PcapPlusPlus with PF_RING you need to:
 
@@ -173,14 +174,14 @@ This mechanism is called reassembly, although a specific protocol specification 
 
 PcapPlusPlus currently supports two types of packets reassembly:
 
-- IPv4 and IPv6 defragmentation which is a Layer 3 (Network later) packet reassembly. You can read about IP fragmentation [here](https://en.wikipedia.org/wiki/IP_fragmentation). To get more information on how it works and the API to use it please refer to the [API documentation](/api-docs) and browse through the code of the [IPDefragUtil](/docs/examples#ipdefragutil) and [IPFragUtil](/docs/examples#ipfragutil) example apps
+- IPv4 and IPv6 defragmentation which is a Layer 3 (Network layer) packet reassembly. You can read more about IP fragmentation [here](https://en.wikipedia.org/wiki/IP_fragmentation). To get more information about how it works and the API to use it please refer to the [API documentation](/api-docs) and browse through the code of the [IPDefragUtil](/docs/examples#ipdefragutil) and [IPFragUtil](/docs/examples#ipfragutil) example apps
 - TCP reassembly which is a Layer 4 (Transport layer) packet reassembly. To get more information on how it works and the API to use it please refer to the [API documentation](/api-docs) and browse through the code of the [TcpReassembly](/docs/examples#tcpreassembly) example app
 
 ## Packet filtering
 
-Most packet capture engines contain packet filtering capabilities. In order to set the filters there should be a known syntax user can use. The most popular syntax is [Berkeley Packet Filter (BPF)](http://en.wikipedia.org/wiki/Berkeley_Packet_Filter). Detailed explanation of the syntax can be found here: http://www.tcpdump.org/manpages/pcap-filter.7.html.
+Most packet capture engines contain packet filtering capabilities. In order to set the filters there should be a known syntax user can use. The most popular syntax is [Berkeley Packet Filter (BPF)](http://en.wikipedia.org/wiki/Berkeley_Packet_Filter). Detailed explanation of the syntax can be found [here](http://www.tcpdump.org/manpages/pcap-filter.7.html).
 
-The problem with BPF is that, for my opinion, the syntax is too complicated and too poorly documented. In addition the BPF filter compilers may output syntax errors that are hard to understand. My experience with BPF was not good, so I decided to include in PcapPlusPlus a filter mechanism which is more structured, easier to understand and less error-prone by creating classes that represent filters. Each possible filter phrase is represented by a class. The filter, in the end, is that class.
+The challenge with BPF is that it is too complicated and poorly documented. When compiling BPF filters you often get syntax errors that are hard to understand and debug. Our experience with BPF was not good, so we decided to include in PcapPlusPlus a filter mechanism which is more structured, easier to understand and less error-prone by creating classes that represent filters. Each possible filter phrase is represented by a class. The filter, in the end, is that class.
 
 Consider the following code snippet for creating the filter `src ip 1.1.1.1 and dst port 80` and setting it up on a packet capture device:
 
@@ -204,7 +205,7 @@ You can read more in the [PcapFilter.h API documentation](/api-docs/_pcap_filter
 
 ## Supported network protocols
 
-PcapPlusPlus currently supports parsing, editing and creation of packets of the following protocols:
+PcapPlusPlus currently supports parsing, editing and generation of packets of the following protocols:
 
 1. Ethernet
 2. SLL (Linux cooked capture)
