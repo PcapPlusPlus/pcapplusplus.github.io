@@ -3,7 +3,7 @@ layout: page
 title: Build on Linux
 parent: Installation
 permalink: /docs/install/build-source/linux
-nav_order: 1
+nav_order: 2
 ---
 
 # Build From Source on Linux

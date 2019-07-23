@@ -9,7 +9,7 @@ nav_order: 2
 # Setting Up PcapPlusPlus
 {: .no_toc }
 
-PcapPlusPlus is available for <img src="/resources/logo-windows.png" alt="drawing" width="24" title="Windows"/> Windows, <img src="/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> Linux and <img src="/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/> MacOS.
+PcapPlusPlus is available for <img src="/resources/logo-windows.png" alt="drawing" width="24" title="Windows"/> Windows, <img src="/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> Linux and <img src="/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/> MacOS (see more details [here](/docs/install/platforms)).
 
 You can choose between downloading pre-built binaries or build it from source. The different options are described below:
 

@@ -3,7 +3,7 @@ layout: page
 title: Build on MacOS
 parent: Installation
 permalink: /docs/install/build-source/macos
-nav_order: 2
+nav_order: 3
 ---
 
 # Build From Source on MacOS

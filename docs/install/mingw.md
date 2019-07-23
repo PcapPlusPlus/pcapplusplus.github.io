@@ -3,7 +3,7 @@ layout: page
 title: Build on Windows (MinGW)
 parent: Installation
 permalink: /docs/install/build-source/mingw
-nav_order: 4
+nav_order: 5
 ---
 
 # Build From Source on Windows - MinGW32 / MinGW-w64

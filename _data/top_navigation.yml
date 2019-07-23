@@ -6,7 +6,7 @@ left_items:
     link: /docs/features
     external_link: false
   - name: API
-    link: /api-docs
+    link: /docs/api
     external_link: false
   - name: Community
     link: /docs/community
