@@ -1,11 +1,8 @@
 title: PcapPlusPlus
 email: pcapplusplus@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: A multiplatform C++ library for capturing, parsing and crafting of network packets. It is designed to be efficient, powerful and easy to use
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://pcapplusplus.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://pcapplusplus.github.io"
 twitter_username: seladb
 github_username:  seladb
 logo_source: /resources/logo_white.png
@@ -15,6 +12,7 @@ logo_width: 180
 markdown: kramdown
 remote_theme: seladb/just-the-docs
 plugins:
+  - jekyll-seo-tag
   - jekyll-feed
   - jekyll-remote-theme
   - jekyll-sitemap
