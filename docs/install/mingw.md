@@ -25,6 +25,12 @@ In order to compile PcapPlusPlus on Windows using MinGW32 you need the following
 4. In the MinGW installation manager search for all packages containing `pthreads` and mark them for installation. Make sure the `pthreads-win32` version you install is __2.10__ or later
 5. Choose `Installation->Update Catalogue`
 
+Notice: {: .label .label-yellow } There is a bug in MinGW32 that makes PcapPlusPlus build to fail. Here is how to fix it:
+
+1. Go to the file `<YOUR_MINGW_INSTALL_PATH>\MinGW\include\ptw32_errno.h`
+2. Search for the line that has `include <winsock.h>`. You'll see a comment above this line saying this line is incompatible with any application which uses `<winsock2.h>` (PcapPlusPlus is one of them)
+3. Simply comment this line, like that: `//# include <winsock.h>`
+
 ### If you prefer to install pthreads manually please follow these steps:
 {: .no_toc }
 
