@@ -45,6 +45,7 @@
 *   - pcpp::IPv6Layer, IPv6Layer.h - IPv6 protocol
 *   - pcpp::TcpLayer, TcpLayer.h - TCP protocol
 *   - pcpp::UdpLayer, UdpLayer.h - UDP protocol
+*   - pcpp::GtpV1Layer, GtpLayer.h - GTP (v1) protocol
 *   - pcpp::IcmpLayer, IcmpLayer.h - ICMP protocol
 *   - pcpp::IgmpLayer, IgmpLayer.h - IGMP protocol
 *   - pcpp::SipRequestLayer, SipLayer.h - SIP request protocol
