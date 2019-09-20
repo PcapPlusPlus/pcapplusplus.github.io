@@ -24,6 +24,7 @@ var hierarchy =
     [ "pcpp::GeneralFilter", "classpcpp_1_1_general_filter.html", [
       [ "pcpp::AndFilter", "classpcpp_1_1_and_filter.html", null ],
       [ "pcpp::ArpFilter", "classpcpp_1_1_arp_filter.html", null ],
+      [ "pcpp::BPFStringFilter", "classpcpp_1_1_b_p_f_string_filter.html", null ],
       [ "pcpp::EtherTypeFilter", "classpcpp_1_1_ether_type_filter.html", null ],
       [ "pcpp::IFilterWithDirection", "classpcpp_1_1_i_filter_with_direction.html", [
         [ "pcpp::IPFilter", "classpcpp_1_1_i_p_filter.html", null ],
@@ -46,6 +47,8 @@ var hierarchy =
     [ "pcpp::gre_basic_header", "structpcpp_1_1gre__basic__header.html", [
       [ "pcpp::gre1_header", "structpcpp_1_1gre1__header.html", null ]
     ] ],
+    [ "pcpp::GtpV1Layer::GtpExtension", "classpcpp_1_1_gtp_v1_layer_1_1_gtp_extension.html", null ],
+    [ "pcpp::gtpv1_header", "structpcpp_1_1gtpv1__header.html", null ],
     [ "pcpp::HeaderField", "classpcpp_1_1_header_field.html", null ],
     [ "pcpp::HttpRequestFirstLine", "classpcpp_1_1_http_request_first_line.html", null ],
     [ "pcpp::HttpResponseFirstLine", "classpcpp_1_1_http_response_first_line.html", null ],
@@ -73,6 +76,7 @@ var hierarchy =
           [ "pcpp::GREv0Layer", "classpcpp_1_1_g_r_ev0_layer.html", null ],
           [ "pcpp::GREv1Layer", "classpcpp_1_1_g_r_ev1_layer.html", null ]
         ] ],
+        [ "pcpp::GtpV1Layer", "classpcpp_1_1_gtp_v1_layer.html", null ],
         [ "pcpp::IcmpLayer", "classpcpp_1_1_icmp_layer.html", null ],
         [ "pcpp::IgmpLayer", "classpcpp_1_1_igmp_layer.html", [
           [ "pcpp::IgmpV1Layer", "classpcpp_1_1_igmp_v1_layer.html", null ],

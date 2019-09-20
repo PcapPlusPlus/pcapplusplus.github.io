@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['layer',['Layer',['../classpcpp_1_1_layer.html',1,'pcpp']]],
-  ['linkstatus',['LinkStatus',['../structpcpp_1_1_dpdk_device_1_1_link_status.html',1,'pcpp::DpdkDevice']]],
-  ['linuxnicinformationsocket',['LinuxNicInformationSocket',['../classpcpp_1_1_linux_nic_information_socket.html',1,'pcpp']]],
-  ['loggerpp',['LoggerPP',['../classpcpp_1_1_logger_p_p.html',1,'pcpp']]],
-  ['lrulist',['LRUList',['../classpcpp_1_1_l_r_u_list.html',1,'pcpp']]],
-  ['lrulist_3c_20uint32_5ft_20_3e',['LRUList&lt; uint32_t &gt;',['../classpcpp_1_1_l_r_u_list.html',1,'pcpp']]]
+  ['knidevice_2717',['KniDevice',['../classpcpp_1_1_kni_device.html',1,'pcpp']]],
+  ['knideviceconfiguration_2718',['KniDeviceConfiguration',['../structpcpp_1_1_kni_device_1_1_kni_device_configuration.html',1,'pcpp::KniDevice']]],
+  ['knidevicelist_2719',['KniDeviceList',['../classpcpp_1_1_kni_device_list.html',1,'pcpp']]],
+  ['kniioctlcallbacks_2720',['KniIoctlCallbacks',['../structpcpp_1_1_kni_device_1_1_kni_ioctl_callbacks.html',1,'pcpp::KniDevice']]],
+  ['knioldioctlcallbacks_2721',['KniOldIoctlCallbacks',['../structpcpp_1_1_kni_device_1_1_kni_old_ioctl_callbacks.html',1,'pcpp::KniDevice']]]
 ];

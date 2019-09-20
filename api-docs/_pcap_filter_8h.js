@@ -1,6 +1,7 @@
 var _pcap_filter_8h =
 [
     [ "GeneralFilter", "classpcpp_1_1_general_filter.html", "classpcpp_1_1_general_filter" ],
+    [ "BPFStringFilter", "classpcpp_1_1_b_p_f_string_filter.html", "classpcpp_1_1_b_p_f_string_filter" ],
     [ "IFilterWithDirection", "classpcpp_1_1_i_filter_with_direction.html", "classpcpp_1_1_i_filter_with_direction" ],
     [ "IFilterWithOperator", "classpcpp_1_1_i_filter_with_operator.html", "classpcpp_1_1_i_filter_with_operator" ],
     [ "IPFilter", "classpcpp_1_1_i_p_filter.html", "classpcpp_1_1_i_p_filter" ],

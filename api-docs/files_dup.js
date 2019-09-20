@@ -1,4 +1,4 @@
-var files =
+var files_dup =
 [
     [ "ArpLayer.h", "_arp_layer_8h.html", "_arp_layer_8h" ],
     [ "Device.h", "_device_8h.html", "_device_8h" ],
@@ -30,6 +30,7 @@ var files =
       [ "GREv1Layer", "classpcpp_1_1_g_r_ev1_layer.html", "classpcpp_1_1_g_r_ev1_layer" ],
       [ "PPP_PPTPLayer", "classpcpp_1_1_p_p_p___p_p_t_p_layer.html", "classpcpp_1_1_p_p_p___p_p_t_p_layer" ]
     ] ],
+    [ "GtpLayer.h", "_gtp_layer_8h.html", "_gtp_layer_8h" ],
     [ "HttpLayer.h", "_http_layer_8h.html", "_http_layer_8h" ],
     [ "IcmpLayer.h", "_icmp_layer_8h.html", "_icmp_layer_8h" ],
     [ "IgmpLayer.h", "_igmp_layer_8h.html", "_igmp_layer_8h" ],

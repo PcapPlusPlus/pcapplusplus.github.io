@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['connectiondata',['ConnectionData',['../structpcpp_1_1_connection_data.html',1,'pcpp']]]
+  ['bpfstringfilter_2615',['BPFStringFilter',['../classpcpp_1_1_b_p_f_string_filter.html',1,'pcpp']]]
 ];

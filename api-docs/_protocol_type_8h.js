@@ -48,6 +48,8 @@ var _protocol_type_8h =
       [ "SIP", "_protocol_type_8h.html#a1d761f7cf37d3b1efb1574fb1177e6eba69e4ca4f73af14bbb8aaf9a14fb1ad48", null ],
       [ "SDP", "_protocol_type_8h.html#a1d761f7cf37d3b1efb1574fb1177e6eba013e3d285a5d960ab902775e0cb6b9c7", null ],
       [ "PacketTrailer", "_protocol_type_8h.html#a1d761f7cf37d3b1efb1574fb1177e6eba2a589d1a26901cda9f6a130483121f35", null ],
-      [ "Radius", "_protocol_type_8h.html#a1d761f7cf37d3b1efb1574fb1177e6eba704d72177da6dfe876629eadf3df2c63", null ]
+      [ "Radius", "_protocol_type_8h.html#a1d761f7cf37d3b1efb1574fb1177e6eba704d72177da6dfe876629eadf3df2c63", null ],
+      [ "GTPv1", "_protocol_type_8h.html#a1d761f7cf37d3b1efb1574fb1177e6eba7a1c8f2ba5c4b28c768f34cd27b9b9f2", null ],
+      [ "GTP", "_protocol_type_8h.html#a1d761f7cf37d3b1efb1574fb1177e6eba9857e12ea213df930d1b7936cbe0b842", null ]
     ] ]
 ];
