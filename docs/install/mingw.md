@@ -25,8 +25,10 @@ In order to compile PcapPlusPlus on Windows using MinGW32 you need the following
 4. In the MinGW installation manager search for all packages containing `pthreads` and mark them for installation. Make sure the `pthreads-win32` version you install is __2.10__ or later
 5. Choose `Installation->Update Catalogue`
 
-Notice: 
-{: .label .label-yellow }
+{% include alert.html alert-type="important" title="Notice" content="There is a bug in MinGW32 that makes PcapPlusPlus build to fail. Here is how to fix it:<br/><br/>
+1. Go to the file: <code>&lt;YOUR_MINGW_INSTALL_PATH&gt;\MinGW\include\ptw32_errno.h</code><br/>
+2. Search for the line that has <code>#include &lt;winsock.h&gt;</code>. You'll see a comment above this line saying this line is incompatible with any application which uses <code>&lt;winsock2.h&gt;</code> (PcapPlusPlus is one of them)<br/>
+3. Simply comment this line, like that: <code>//# include &lt;winsock.h&gt;</code><br/>" %}
 
 There is a bug in MinGW32 that makes PcapPlusPlus build to fail. Here is how to fix it:
 
@@ -76,13 +78,7 @@ In order to compile PcapPlusPlus on Windows using MinGW-w64 you need the followi
 
 1. WinPcap developer's pack - containing the `wpcap` library PcapPlusPlus is linking with plus relevant `h` files. You can download it from here: <https://www.winpcap.org/devel.htm>
 
-## x64 is not supported
-{: .d-inline-block }
-
-Warning
-{: .label .label-yellow } 
-
-Please notice that __x64__ compilation is not supported (and will not work) on either MinGW32 nor MinGW-w64!
+{% include alert.html alert-type="danger" title="x64 is not supported" content="please notice that <b>x64</b> compilation is not supported (and will not work) on either MinGW32 nor MinGW-w64!" %}
 
 ## Configuration
 

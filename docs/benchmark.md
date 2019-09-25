@@ -136,8 +136,7 @@ Benchmark applications:
 
 ### Benchmark #1 - TCP parsing
 
-__PcapPlusPlus is ~10% faster than libtins and ~x28 faster than libcrafter__
-{: .label .label-green }
+{% include alert.html alert-type="tip" content="PcapPlusPlus is ~10% faster than libtins and ~x28 faster than libcrafter" %}
 
 | Library      | Time taken(seconds) | Packets per second |
 |---------------------------------------------------------|
@@ -150,8 +149,7 @@ __PcapPlusPlus is ~10% faster than libtins and ~x28 faster than libcrafter__
 
 ### Benchmark #2 - TCP + TCP Options parsing
 
-__PcapPlusPlus is ~32% faster than libtins and ~x48 faster than libcrafter__
-{: .label .label-green }
+{% include alert.html alert-type="tip" content="PcapPlusPlus is ~32% faster than libtins and ~x48 faster than libcrafter" %}
 
 | Library      | Time taken(seconds) | Packets per second |
 |---------------------------------------------------------|
@@ -164,8 +162,7 @@ __PcapPlusPlus is ~32% faster than libtins and ~x48 faster than libcrafter__
 
 ### Benchmark #3 - DNS parsing
 
-__PcapPlusPlus is ~5% faster than libtins and ~x29 faster than libcrafter__
-{: .label .label-green }
+{% include alert.html alert-type="tip" content="PcapPlusPlus is ~5% faster than libtins and ~x29 faster than libcrafter" %}
 
 | Library      | Time taken(seconds) | Packets per second |
 |---------------------------------------------------------|
