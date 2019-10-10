@@ -41,6 +41,7 @@ PcapPlusPlus tries to cover the main functionality of DPDK and its most importan
 
 The following DPDK versions are currently supported:
 
+- DPDK 19.08
 - DPDK 19.02
 - DPDK 18.11 (LTS)
 - DPDK 18.08
