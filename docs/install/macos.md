@@ -26,12 +26,6 @@ In order to compile PcapPlusPlus on Linux please make sure you have the followin
     xcode-select --install
     ```
 
-3. In MacOS Mojave 10.14 you need to run an extra step because `/usr/include` is [not installed by default](https://developer.apple.com/documentation/xcode_release_notes/xcode_10_release_notes):
-
-    ```shell
-    sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
-    ```
-
 ## Configuration
 
 Run the configuration script from PcapPlusPlus main directory:
