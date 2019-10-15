@@ -252,6 +252,7 @@ var hierarchy =
     [ "pcpp::TablePrinter", "classpcpp_1_1_table_printer.html", null ],
     [ "pcpp::tcphdr", "structpcpp_1_1tcphdr.html", null ],
     [ "pcpp::TcpReassembly", "classpcpp_1_1_tcp_reassembly.html", null ],
+    [ "pcpp::TcpReassemblyConfiguration", "structpcpp_1_1_tcp_reassembly_configuration.html", null ],
     [ "pcpp::TcpStreamData", "classpcpp_1_1_tcp_stream_data.html", null ],
     [ "pcpp::TLVRecord::TLVRawData", "structpcpp_1_1_t_l_v_record_1_1_t_l_v_raw_data.html", null ],
     [ "pcpp::TLVRecord", "classpcpp_1_1_t_l_v_record.html", [

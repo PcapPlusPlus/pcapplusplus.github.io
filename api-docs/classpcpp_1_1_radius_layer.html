@@ -179,6 +179,8 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a996d2c1ac847a287624623149f512d19"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_radius_layer.html#a996d2c1ac847a287624623149f512d19">getRadiusMessageString</a> (uint8_t radiusMessageCode)</td></tr>
 <tr class="separator:a996d2c1ac847a287624623149f512d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dc571fce75cf3acccdb3f9de0fa3897"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_radius_layer.html#a3dc571fce75cf3acccdb3f9de0fa3897">isDataValid</a> (const uint8_t *udpData, size_t udpDataLen)</td></tr>
+<tr class="separator:a3dc571fce75cf3acccdb3f9de0fa3897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a RADIUS (Remote Authentication Dial-In User Service) protocol layer </p>
@@ -379,7 +381,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classpcpp_1_1_radius_attribute.html">RadiusAttribute</a> object containing the newly added RADIUS attribute data or logical NULL (<a class="el" href="classpcpp_1_1_t_l_v_record.html#a80a1bb2e42bf886ba8a9ff2d2f74084c">RadiusAttribute::isNull()</a> == true) if addition failed </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classpcpp_1_1_radius_attribute.html">RadiusAttribute</a> object containing the newly added RADIUS attribute data or logical NULL (<a class="el" href="classpcpp_1_1_t_l_v_record.html#ac1cd877753e605b2fb671510d21597b3">RadiusAttribute::isNull()</a> == true) if addition failed </dd></dl>
 
 </div>
 </div>
@@ -415,7 +417,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classpcpp_1_1_radius_attribute.html">RadiusAttribute</a> object containing the newly added RADIUS attribute data or logical NULL (<a class="el" href="classpcpp_1_1_t_l_v_record.html#a80a1bb2e42bf886ba8a9ff2d2f74084c">RadiusAttribute::isNull()</a> == true) if addition failed </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classpcpp_1_1_radius_attribute.html">RadiusAttribute</a> object containing the newly added RADIUS attribute data or logical NULL (<a class="el" href="classpcpp_1_1_t_l_v_record.html#ac1cd877753e605b2fb671510d21597b3">RadiusAttribute::isNull()</a> == true) if addition failed </dd></dl>
 
 </div>
 </div>
@@ -468,7 +470,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classpcpp_1_1_radius_attribute.html">RadiusAttribute</a> object containing the first attribute data that matches this type, or logical NULL (<a class="el" href="classpcpp_1_1_t_l_v_record.html#a80a1bb2e42bf886ba8a9ff2d2f74084c">RadiusAttribute::isNull()</a> == true) if no such attribute found </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classpcpp_1_1_radius_attribute.html">RadiusAttribute</a> object containing the first attribute data that matches this type, or logical NULL (<a class="el" href="classpcpp_1_1_t_l_v_record.html#ac1cd877753e605b2fb671510d21597b3">RadiusAttribute::isNull()</a> == true) if no such attribute found </dd></dl>
 
 </div>
 </div>
@@ -522,7 +524,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The first RADIUS attribute in the packet. If there are no attributes the returned value will contain a logical NULL (<a class="el" href="classpcpp_1_1_t_l_v_record.html#a80a1bb2e42bf886ba8a9ff2d2f74084c">RadiusAttribute::isNull()</a> == true) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The first RADIUS attribute in the packet. If there are no attributes the returned value will contain a logical NULL (<a class="el" href="classpcpp_1_1_t_l_v_record.html#ac1cd877753e605b2fb671510d21597b3">RadiusAttribute::isNull()</a> == true) </dd></dl>
 
 </div>
 </div>
@@ -569,7 +571,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the RADIUS attribute that comes after a given attribute. If the given attribute was the last one, the returned value will contain a logical NULL (<a class="el" href="classpcpp_1_1_t_l_v_record.html#a80a1bb2e42bf886ba8a9ff2d2f74084c">RadiusAttribute::isNull()</a> == true) </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get the RADIUS attribute that comes after a given attribute. If the given attribute was the last one, the returned value will contain a logical NULL (<a class="el" href="classpcpp_1_1_t_l_v_record.html#ac1cd877753e605b2fb671510d21597b3">RadiusAttribute::isNull()</a> == true) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">attr</td><td>A given attribute </td></tr>
   </table>
@@ -663,6 +665,50 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>RADIUS message string </dd></dl>
+
+</div>
+</div>
+<a id="a3dc571fce75cf3acccdb3f9de0fa3897"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dc571fce75cf3acccdb3f9de0fa3897">&#9670;&nbsp;</a></span>isDataValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool pcpp::RadiusLayer::isDataValid </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>udpData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>udpDataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The static method makes validation of UDP data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">udpData</td><td>The pointer to the UDP payload data. It points to the first byte of RADIUS header. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">udpDataLen</td><td>The payload data size </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the data is valid and can represent the RADIUS packet </dd></dl>
 
 </div>
 </div>
@@ -795,7 +841,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_radius_layer.html">RadiusLayer</a></li>
-    <li class="footer">Generated on Thu Sep 19 2019 23:21:45 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Oct 14 2019 23:00:23 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

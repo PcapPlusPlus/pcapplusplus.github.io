@@ -186,6 +186,7 @@ var namespacepcpp =
     [ "TcpOption", "classpcpp_1_1_tcp_option.html", "classpcpp_1_1_tcp_option" ],
     [ "TcpOptionBuilder", "classpcpp_1_1_tcp_option_builder.html", "classpcpp_1_1_tcp_option_builder" ],
     [ "TcpReassembly", "classpcpp_1_1_tcp_reassembly.html", "classpcpp_1_1_tcp_reassembly" ],
+    [ "TcpReassemblyConfiguration", "structpcpp_1_1_tcp_reassembly_configuration.html", "structpcpp_1_1_tcp_reassembly_configuration" ],
     [ "TcpStreamData", "classpcpp_1_1_tcp_stream_data.html", "classpcpp_1_1_tcp_stream_data" ],
     [ "TcpWindowSizeFilter", "classpcpp_1_1_tcp_window_size_filter.html", "classpcpp_1_1_tcp_window_size_filter" ],
     [ "TextBasedProtocolMessage", "classpcpp_1_1_text_based_protocol_message.html", "classpcpp_1_1_text_based_protocol_message" ],

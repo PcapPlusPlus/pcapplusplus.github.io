@@ -106,6 +106,8 @@ Public Types</h2></td></tr>
 <a class="el" href="classpcpp_1_1_tcp_reassembly.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9">TcpReassemblyConnectionClosedManually</a>
  }</td></tr>
 <tr class="separator:aea5fdf7b5322d1bb8f6fe43b59a9edc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d3377f5af316ec54bb70595c2d5418e"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; uint32_t, <a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a3d3377f5af316ec54bb70595c2d5418e">ConnectionInfoList</a></td></tr>
+<tr class="separator:a3d3377f5af316ec54bb70595c2d5418e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6698eb002363dc18e664f15418fc1eb"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#ab6698eb002363dc18e664f15418fc1eb">OnTcpMessageReady</a>) (int side, <a class="el" href="classpcpp_1_1_tcp_stream_data.html">TcpStreamData</a> tcpData, void *userCookie)</td></tr>
 <tr class="separator:ab6698eb002363dc18e664f15418fc1eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abda8219de68412e0ce7f7116601243a8"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#abda8219de68412e0ce7f7116601243a8">OnTcpConnectionStart</a>) (<a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a> connectionData, void *userCookie)</td></tr>
@@ -115,8 +117,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a49281471fb379fdae6c8df5ed7844c92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a49281471fb379fdae6c8df5ed7844c92">TcpReassembly</a> (<a class="el" href="classpcpp_1_1_tcp_reassembly.html#ab6698eb002363dc18e664f15418fc1eb">OnTcpMessageReady</a> onMessageReadyCallback, void *userCookie=NULL, <a class="el" href="classpcpp_1_1_tcp_reassembly.html#abda8219de68412e0ce7f7116601243a8">OnTcpConnectionStart</a> onConnectionStartCallback=NULL, <a class="el" href="classpcpp_1_1_tcp_reassembly.html#abbcb38ac950666833df4084f80beb056">OnTcpConnectionEnd</a> onConnectionEndCallback=NULL)</td></tr>
-<tr class="separator:a49281471fb379fdae6c8df5ed7844c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66205ac4b99b320454c875d0348c10b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a66205ac4b99b320454c875d0348c10b1">TcpReassembly</a> (<a class="el" href="classpcpp_1_1_tcp_reassembly.html#ab6698eb002363dc18e664f15418fc1eb">OnTcpMessageReady</a> onMessageReadyCallback, void *userCookie=NULL, <a class="el" href="classpcpp_1_1_tcp_reassembly.html#abda8219de68412e0ce7f7116601243a8">OnTcpConnectionStart</a> onConnectionStartCallback=NULL, <a class="el" href="classpcpp_1_1_tcp_reassembly.html#abbcb38ac950666833df4084f80beb056">OnTcpConnectionEnd</a> onConnectionEndCallback=NULL, const <a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html">TcpReassemblyConfiguration</a> &amp;config=<a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html">TcpReassemblyConfiguration</a>())</td></tr>
+<tr class="separator:a66205ac4b99b320454c875d0348c10b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1797ebded60f0637ae95223653b9f78"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#aa1797ebded60f0637ae95223653b9f78">~TcpReassembly</a> ()</td></tr>
 <tr class="separator:aa1797ebded60f0637ae95223653b9f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbe7a908f4367cc9234096998dc6d56e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#acbe7a908f4367cc9234096998dc6d56e">reassemblePacket</a> (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> &amp;tcpData)</td></tr>
@@ -127,14 +129,31 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae173fc16a427b5e46b1a5417de19d735"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf940b05f75a129f595301012be46005"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#acf940b05f75a129f595301012be46005">closeAllConnections</a> ()</td></tr>
 <tr class="separator:acf940b05f75a129f595301012be46005"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b92c2d8b3116190504e8d60ca0b7e7e"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a6b92c2d8b3116190504e8d60ca0b7e7e">getConnectionInformation</a> () const</td></tr>
-<tr class="separator:a6b92c2d8b3116190504e8d60ca0b7e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac34344adb7d2289814841096ce971e4d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classpcpp_1_1_tcp_reassembly.html#a3d3377f5af316ec54bb70595c2d5418e">ConnectionInfoList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#ac34344adb7d2289814841096ce971e4d">getConnectionInformation</a> () const</td></tr>
+<tr class="separator:ac34344adb7d2289814841096ce971e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ef6d80966ab0b0547665b68fde86fbc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a4ef6d80966ab0b0547665b68fde86fbc">isConnectionOpen</a> (const <a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a> &amp;connection) const</td></tr>
 <tr class="separator:a4ef6d80966ab0b0547665b68fde86fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdad37632836cd8f9d92f6a40ab53b74"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#acdad37632836cd8f9d92f6a40ab53b74">purgeClosedConnections</a> (uint32_t maxNumToClean=0)</td></tr>
+<tr class="separator:acdad37632836cd8f9d92f6a40ab53b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class containing the TCP reassembly logic. Please refer to the documentation at the top of <a class="el" href="_tcp_reassembly_8h.html">TcpReassembly.h</a> for understanding how to use this class </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a3d3377f5af316ec54bb70595c2d5418e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d3377f5af316ec54bb70595c2d5418e">&#9670;&nbsp;</a></span>ConnectionInfoList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;uint32_t, <a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a>&gt; <a class="el" href="classpcpp_1_1_tcp_reassembly.html#a3d3377f5af316ec54bb70595c2d5418e">pcpp::TcpReassembly::ConnectionInfoList</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The type for storing the connection information </p>
+
+</div>
+</div>
 <a id="abbcb38ac950666833df4084f80beb056"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abbcb38ac950666833df4084f80beb056">&#9670;&nbsp;</a></span>OnTcpConnectionEnd</h2>
 
@@ -223,8 +242,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a49281471fb379fdae6c8df5ed7844c92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49281471fb379fdae6c8df5ed7844c92">&#9670;&nbsp;</a></span>TcpReassembly()</h2>
+<a id="a66205ac4b99b320454c875d0348c10b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66205ac4b99b320454c875d0348c10b1">&#9670;&nbsp;</a></span>TcpReassembly()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -251,7 +270,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#abbcb38ac950666833df4084f80beb056">OnTcpConnectionEnd</a>&#160;</td>
-          <td class="paramname"><em>onConnectionEndCallback</em> = <code>NULL</code>&#160;</td>
+          <td class="paramname"><em>onConnectionEndCallback</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html">TcpReassemblyConfiguration</a> &amp;&#160;</td>
+          <td class="paramname"><em>config</em> = <code><a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html">TcpReassemblyConfiguration</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -266,6 +291,7 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to an object provided by the user. This pointer will be returned when invoking the various callbacks. This parameter is optional, default cookie is NULL </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">onConnectionStartCallback</td><td>The callback to be invoked when a new connection is identified. This parameter is optional </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">onConnectionEndCallback</td><td>The callback to be invoked when a new connection is terminated (either by a FIN/RST packet or manually by the user). This parameter is optional </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>Optional parameter for defining special configuration parameters. If not set the default parameters will be set </td></tr>
   </table>
   </dd>
 </dl>
@@ -333,21 +359,29 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6b92c2d8b3116190504e8d60ca0b7e7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b92c2d8b3116190504e8d60ca0b7e7e">&#9670;&nbsp;</a></span>getConnectionInformation()</h2>
+<a id="ac34344adb7d2289814841096ce971e4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac34344adb7d2289814841096ce971e4d">&#9670;&nbsp;</a></span>getConnectionInformation()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt;<a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a>&gt;&amp; pcpp::TcpReassembly::getConnectionInformation </td>
+          <td class="memname">const <a class="el" href="classpcpp_1_1_tcp_reassembly.html#a3d3377f5af316ec54bb70595c2d5418e">ConnectionInfoList</a>&amp; pcpp::TcpReassembly::getConnectionInformation </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Get a list of all connections managed by this <a class="el" href="classpcpp_1_1_tcp_reassembly.html">TcpReassembly</a> instance (both connections that are open and those that are already closed) </p><dl class="section return"><dt>Returns</dt><dd>A list of all connections managed. Notice this list is constant and cannot be changed by the user </dd></dl>
+<p>Get a map of all connections managed by this <a class="el" href="classpcpp_1_1_tcp_reassembly.html">TcpReassembly</a> instance (both connections that are open and those that are already closed) </p><dl class="section return"><dt>Returns</dt><dd>A map of all connections managed. Notice this map is constant and cannot be changed by the user </dd></dl>
 
 </div>
 </div>
@@ -373,6 +407,31 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A positive number (&gt; 0) if connection is opened, zero (0) if connection is closed, and a negative number (&lt; 0) if this connection isn't managed by this <a class="el" href="classpcpp_1_1_tcp_reassembly.html">TcpReassembly</a> instance </dd></dl>
+
+</div>
+</div>
+<a id="acdad37632836cd8f9d92f6a40ab53b74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdad37632836cd8f9d92f6a40ab53b74">&#9670;&nbsp;</a></span>purgeClosedConnections()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t pcpp::TcpReassembly::purgeClosedConnections </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>maxNumToClean</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Clean up the closed connections from the memory </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxNumToClean</td><td>The maximum number of items to be cleaned up per one call. This parameter, when its value is not zero, overrides the value that was set by the constructor. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of cleared items </dd></dl>
 
 </div>
 </div>
@@ -430,7 +489,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_tcp_reassembly.html">TcpReassembly</a></li>
-    <li class="footer">Generated on Thu Sep 19 2019 23:21:46 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Oct 14 2019 23:00:24 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

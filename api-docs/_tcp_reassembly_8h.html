@@ -99,6 +99,8 @@ $(document).ready(function(){initNavTree('_tcp_reassembly_8h.html','');});
 <code>#include &quot;<a class="el" href="_ip_address_8h_source.html">IpAddress.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_pointer_vector_8h_source.html">PointerVector.h</a>&quot;</code><br />
 <code>#include &lt;map&gt;</code><br />
+<code>#include &lt;list&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
 </div>
 <p><a href="_tcp_reassembly_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -107,6 +109,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_connection_data.html">pcpp::ConnectionData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_stream_data.html">pcpp::TcpStreamData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html">pcpp::TcpReassemblyConfiguration</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html">pcpp::TcpReassembly</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,12 +147,21 @@ Namespaces</h2></td></tr>
 </ul>
 <p><b>Basic Usage and APIs:</b></p><ul>
 <li><a class="el" href="classpcpp_1_1_tcp_reassembly.html">pcpp::TcpReassembly</a> c'tor - Create an instance, provide the callbacks and the user cookie to the instance</li>
-<li>pcpp::TcpReassembly::ReassemblePacket() - Feed <a class="el" href="classpcpp_1_1_tcp_reassembly.html">pcpp::TcpReassembly</a> instance with packets</li>
+<li><a class="el" href="classpcpp_1_1_tcp_reassembly.html#acbe7a908f4367cc9234096998dc6d56e">pcpp::TcpReassembly::reassemblePacket()</a> - Feed <a class="el" href="classpcpp_1_1_tcp_reassembly.html">pcpp::TcpReassembly</a> instance with packets</li>
 <li><a class="el" href="classpcpp_1_1_tcp_reassembly.html#ae173fc16a427b5e46b1a5417de19d735">pcpp::TcpReassembly::closeConnection()</a> - Manually close a connection by a flow key</li>
 <li><a class="el" href="classpcpp_1_1_tcp_reassembly.html#acf940b05f75a129f595301012be46005">pcpp::TcpReassembly::closeAllConnections()</a> - Manually close all currently opened connections</li>
 <li><a class="el" href="classpcpp_1_1_tcp_reassembly.html#ab6698eb002363dc18e664f15418fc1eb">pcpp::TcpReassembly::OnTcpMessageReady</a> callback - Invoked when new data arrives on a certain connection. Contains the new data as well as connection data (5-tuple, flow key)</li>
 <li><a class="el" href="classpcpp_1_1_tcp_reassembly.html#abda8219de68412e0ce7f7116601243a8">pcpp::TcpReassembly::OnTcpConnectionStart</a> callback - Invoked when a new connection is identified</li>
-<li><a class="el" href="classpcpp_1_1_tcp_reassembly.html#abbcb38ac950666833df4084f80beb056">pcpp::TcpReassembly::OnTcpConnectionEnd</a> callback - Invoked when a connection ends (either by FIN/RST or manually by the user) </li>
+<li><a class="el" href="classpcpp_1_1_tcp_reassembly.html#abbcb38ac950666833df4084f80beb056">pcpp::TcpReassembly::OnTcpConnectionEnd</a> callback - Invoked when a connection ends (either by FIN/RST or manually by the user)</li>
+</ul>
+<p><b>Additional information:</b> When the connection is closed the information is not being deleted from memory immediately. There is a delay between these moments. Existence of this delay is caused by two reasons:</p><ul>
+<li><a class="el" href="classpcpp_1_1_tcp_reassembly.html#acbe7a908f4367cc9234096998dc6d56e">pcpp::TcpReassembly::reassemblePacket()</a> should detect the packets that arrive after the FIN packet has been received</li>
+<li>the user can use the information about connections managed by <a class="el" href="classpcpp_1_1_tcp_reassembly.html">pcpp::TcpReassembly</a> instance. Following methods are used for this purpose: <a class="el" href="classpcpp_1_1_tcp_reassembly.html#ac34344adb7d2289814841096ce971e4d">pcpp::TcpReassembly::getConnectionInformation</a> and <a class="el" href="classpcpp_1_1_tcp_reassembly.html#a4ef6d80966ab0b0547665b68fde86fbc">pcpp::TcpReassembly::isConnectionOpen</a>. Cleaning of memory can be performed automatically (the default behavior) by <a class="el" href="classpcpp_1_1_tcp_reassembly.html#acbe7a908f4367cc9234096998dc6d56e">pcpp::TcpReassembly::reassemblePacket()</a> or manually by calling <a class="el" href="classpcpp_1_1_tcp_reassembly.html#acdad37632836cd8f9d92f6a40ab53b74">pcpp::TcpReassembly::purgeClosedConnections</a> in the user code. Automatic cleaning is performed once per second.</li>
+</ul>
+<p>The struct <a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html">pcpp::TcpReassemblyConfiguration</a> allows to setup the parameters of cleanup. Following parameters are supported:</p><ul>
+<li>pcpp::TcpReassemblyConfiguration::doNotRemoveConnInfo - if this member is set to false the automatic cleanup mode is applied</li>
+<li><a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html#a291ecac743fe0e44af8998bb9e48479a">pcpp::TcpReassemblyConfiguration::closedConnectionDelay</a> - the value of delay expressed in seconds. The minimum value is 1</li>
+<li><a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html#a5391d9cd04aa14a608fdfab7ca249e31">pcpp::TcpReassemblyConfiguration::maxNumToClean</a> - to avoid performance overhead when the cleanup is being performed, this parameter is used. It defines the maximum number of items to be removed per one call of <a class="el" href="classpcpp_1_1_tcp_reassembly.html#acdad37632836cd8f9d92f6a40ab53b74">pcpp::TcpReassembly::purgeClosedConnections</a> </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
@@ -156,7 +169,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="_tcp_reassembly_8h.html">TcpReassembly.h</a></li>
-    <li class="footer">Generated on Thu Sep 19 2019 23:21:43 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Oct 14 2019 23:00:21 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

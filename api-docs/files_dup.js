@@ -175,6 +175,7 @@ var files_dup =
     [ "TcpReassembly.h", "_tcp_reassembly_8h.html", [
       [ "ConnectionData", "structpcpp_1_1_connection_data.html", "structpcpp_1_1_connection_data" ],
       [ "TcpStreamData", "classpcpp_1_1_tcp_stream_data.html", "classpcpp_1_1_tcp_stream_data" ],
+      [ "TcpReassemblyConfiguration", "structpcpp_1_1_tcp_reassembly_configuration.html", "structpcpp_1_1_tcp_reassembly_configuration" ],
       [ "TcpReassembly", "classpcpp_1_1_tcp_reassembly.html", "classpcpp_1_1_tcp_reassembly" ]
     ] ],
     [ "TextBasedProtocol.h", "_text_based_protocol_8h.html", "_text_based_protocol_8h" ],
