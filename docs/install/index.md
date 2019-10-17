@@ -9,7 +9,7 @@ nav_order: 2
 # Setting Up PcapPlusPlus
 {: .no_toc }
 
-PcapPlusPlus is available for <img src="/resources/logo-windows.png" alt="drawing" width="24" title="Windows"/> Windows, <img src="/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> Linux and <img src="/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/> MacOS (see more details [here](/docs/install/platforms)).
+PcapPlusPlus is available on <img src="/resources/logo-windows.png" alt="drawing" width="24" title="Windows"/> Windows, <img src="/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> Linux and <img src="/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/> MacOS (see more details [here](/docs/install/platforms)).
 
 You can choose between downloading pre-built binaries or build it from source. The different options are described below:
 
@@ -32,7 +32,7 @@ You can also find the PcapPlusPlus formula here: <https://formulae.brew.sh/formu
 
 Available for: <img src="/resources/logo-windows.png" alt="drawing" width="24" title="Windows"/> <img src="/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> <img src="/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/>
 
-PcapPlusPlus  pre-built binaries are available in Conan for Windows (VS2015), Linux and MacOS. The package is managed by the [Bincrafters](https://bincrafters.github.io/) team and is available in [Bintray](https://bintray.com/bincrafters/public-conan/pcapplusplus%3Abincrafters).
+PcapPlusPlus pre-built binaries are available in Conan for Windows (Visual Studio 2015), Linux and MacOS. The package is managed by the [Bincrafters](https://bincrafters.github.io/) team and is available in [Bintray](https://bintray.com/bincrafters/public-conan/pcapplusplus%3Abincrafters).
 
 To install the package run the following commands from the command-line:
 
@@ -49,7 +49,7 @@ Available for: <img src="/resources/logo-windows.png" alt="drawing" width="24" t
 
 Each release of PcapPlusPlus ships with pre-compiled libraries for a variety of operating systems and GCC versions including:
 
-- Windows (MinGW, MinGW-w64, Visual Studio 2015)
+- Windows (MinGW, MinGW-w64, Visual Studio)
 - Linux (multiple versions of Ubuntu, Fedora, CentOS)
 - MacOS (multiple versions combined with multiple Xcode versions)
 

@@ -110,7 +110,7 @@ The next parts of the tutorial will dive deep into the various device types and 
 
 ## Writing a simple app including a makefile
 
-Creating applications using PcapPlusPlus is rather easy. Let's have a guided tour demonstrating how to create a simple application and its Makefile or Visual Studio 2015 project.
+Creating applications using PcapPlusPlus is rather easy. Let's have a guided tour demonstrating how to create a simple application and its Makefile or Visual Studio project.
 
 First let's make sure PcapPlusPlus is configured and built successfully. Please follow [the download page](/docs/install) for building instructions.
 
@@ -220,17 +220,17 @@ Now that we have the code and the Makefile let's compile and run the code. Here 
 Source IP is '10.0.0.138'; Dest IP is '10.0.0.1'
 ```
 
-## Writing a simple app in Visual Studio 2015
+## Writing a simple app in Visual Studio
 
-So far we demonstrated how to compile using GNU compilers (`g++`). Now let's explore how to do it in Visual Studio 2015\. We'll use the same code we wrote in the previous section and see how to build it using VS 2015.
+So far we demonstrated how to compile using GNU compilers (`g++`). Now let's explore how to do it in Visual Studio. We'll use the same code we wrote in the previous section and see how to build it using Visual Studio.
 
-There are Visual Studio 2015 solution + VC projects for all tutorials under the `mk\vs2015` directory. I strongly advise to use them as a template for your VS 2015 projects. Let's examine the **Tutorial-HelloWorld.vcxproj** VC project:
+There are Visual Studio solution + VC projects for all tutorials under the `mk\[vs_version]` directory. `[vs_version]` is the Visual Studio version you choose to work with out of the [supported Visual Studio versions](/docs/install/platforms) and is determined while running PcapPlusPlus configuration script. I strongly advise to use them as a template for your Visual Studio projects. Let's examine the **Tutorial-HelloWorld.vcxproj** VC project:
 
 First of all let's take a look at the **Property Manager**:
 
 ![]({{ 'resources/PropertyManager.PNG' | relative_url }})
 
-You can see that we added a PcapPlusPlus property sheet file: **PcapPlusPlusPropertySheet.props**. This file contains paths to the PcapPlusPlus libraries and other external libraries PcapPlusPlus is using. This file is generated automatically when you run the PcapPlusPlus VS2015 configuration file: **configure-windows-visual-studio.bat** and resides under `mk\vs2015` folder. Let's see the content of this file in my PC:
+You can see that we added a PcapPlusPlus property sheet file: **PcapPlusPlusPropertySheet.props**. This file contains paths to the PcapPlusPlus libraries and other external libraries PcapPlusPlus is using. This file is generated automatically when you run the PcapPlusPlus Visual Studio configuration file: **configure-windows-visual-studio.bat** and resides under `mk\[vs_version]` folder. Let's see the content of this file in my PC:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -269,7 +269,7 @@ Last thing is to add a post-build event to copy **pthreadVC2.dll** file from the
 
 ![]({{ 'resources/VS_PostBuildEvents.PNG' | relative_url }})
 
-That's it! The project will now build successfully! Again, I strongly advise to use this tutorial project as a template for your VS 2015 projects, it's always easier that way (but that's my opinion)
+That's it! The project will now build successfully! Again, I strongly advise to use this tutorial project as a template for your Visual Studio projects, it's always easier that way (but that's my opinion)
 
 ## Running the example
 
@@ -277,6 +277,6 @@ All code that was covered in this tutorial can be found [here](https://github.co
 
 * Linux and MacOS - make sure PcapPlusPlus is installed (by running **sudo make install** in PcapPlusPlus main directory). Then either change the `Makefile.non_windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.non_windows all`
 * Windows using MinGW or MinGW-w64 - either change the `Makefile.windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.windows all`
-* Windows using Visual Studio 2015 - there is a Visual Studio 2015 solution containing all tutorials [here](https://github.com/seladb/PcapPlusPlus/tree/master/mk/vs2015/Tutorials.sln). Just open it and compile all tutorials
+* Windows using Visual Studio - there is a Visual Studio solution containing all tutorials: `mk\[vs_version]\Tutorials.sln`. Just open it and compile all tutorials
 
 In all options the compiled executable will be inside the tutorial directory (`[PcapPlusPlus Folder]/Examples/Tutorials/Tutorial-HelloWorld`)

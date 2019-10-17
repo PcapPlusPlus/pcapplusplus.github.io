@@ -208,6 +208,15 @@ PcapPlusPlus Windows configuration script
 PcapPlusPlus configuration is complete. Files created (or modified): mk\platform.mk, mk\PcapPlusPlus.mk
 ```
 
+Here are the available switches:
+
+| __`MINGW_COMPILER`__             | MinGW compiler to use. Options are `mingw32` or `mingw-w64` |
+| __`-m`__ , __`--mingw-home`__    | MinGW home directory (the folder that includes `bin`, `lib` and `include` directories) |
+| __`-s`__ , __`--msys-home`__     | MSYS or MSYS2 home directory. Required only for MinGW-w64 |
+| __`-w`__ , __`--winpcap-home`__  | WinPcap Developer Pack (WpdPack) directory |
+| __`-h`__ , __`--help`__          | Display the help message and exit. No further actions are performed |
+
+
 ## Build the code
 
 After running the config script, you're can safely build the code:

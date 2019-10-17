@@ -293,6 +293,6 @@ All code that was covered in this tutorial can be found [here](https://github.co
 
 * Linux and MacOS - make sure PcapPlusPlus is installed (by running **sudo make install** in PcapPlusPlus main directory). Then either change the `Makefile.non_windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.non_windows all`
 * Windows using MinGW or MinGW-w64 - either change the `Makefile.windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.windows all`
-* Windows using Visual Studio 2015 - there is a Visual Studio 2015 solution containing all tutorials [here](https://github.com/seladb/PcapPlusPlus/tree/master/mk/vs2015/Tutorials.sln). Just open it and compile all tutorials
+* Windows using Visual Studio - there is a Visual Studio solution containing all tutorials: `mk\[vs_version]\Tutorials.sln`. Just open it and compile all tutorials
 
 In all options the compiled executable will be inside the tutorial directory (`[PcapPlusPlus Folder]/Examples/Tutorials/Tutorial-PacketCraftAndEdit`)

@@ -12,9 +12,15 @@ The following platforms and toolchains are supported and being continuously test
 
 <img src="/resources/logo-windows.png" alt="drawing" width="24" title="Windows"/> Windows:
 
-- [Microsoft Visual Studio 2015](https://visualstudio.microsoft.com/) (32-bit + 64-bit compilation)
+- [Microsoft Visual Studio](https://visualstudio.microsoft.com/) (32-bit + 64-bit compilation):
+  - Visual Studio 2015
+  - Visual Studio 2017
+  - Visual Studio 2019
 - [MinGW32](http://www.mingw.org/) (32-bit compilation only)
 - [MinGW-w64](https://mingw-w64.org) (32-bit compilation only)
+
+{% include alert.html alert-type="important" title="Notice" content="Visual Studio 2017 and 2019 are only supported in the latest code in <code>master</code>. The current official release (v19.04) only supports Visual Studio 2015" %}
+
 
 <img src="/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> Linux:
 

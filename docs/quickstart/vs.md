@@ -10,6 +10,9 @@ permalink: /docs/quickstart/vs
 
 This guide will help you install and build your first PcapPlusPlus application on Windows using Visual Studio 2015 in a few simple steps.
 
+{% include alert.html alert-type="important" title="Notice" content="If you want to build a PcapPlusPlus application using Visual Studio 2017 or 2019 please build the code from source first using <a href='/docs/install/build-source/vs'>this guide</a>. This quick start guide uses PcapPlusPlus official release which currently supports only Visual Studio 2015" %}
+
+
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -18,7 +21,7 @@ This guide will help you install and build your first PcapPlusPlus application o
 
 ## Step 1 - install PcapPlusPlus
 
-Before installing PcapPlusPlus make sure you have the prerequisites installed for [Visual Studio 2015](/docs/install/build-source/vs2015#prerequisites).
+Before installing PcapPlusPlus make sure you have the prerequisites installed for [Visual Studio](/docs/install/build-source/vs#prerequisites).
 
 Download the pre-compiled package for Visual Studio 2015 from the [latest release page](https://github.com/seladb/PcapPlusPlus/releases/latest).
 
