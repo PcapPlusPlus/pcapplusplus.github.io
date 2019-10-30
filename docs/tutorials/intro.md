@@ -37,7 +37,7 @@ A library for parsing, creating and editing packets of various [supported protoc
 
 A library for intercepting and sending packets, providing network and NIC info, stats, etc. This library is mostly a C++ wrapper for packet capturing engines such as libpcap, WinPcap, DPDK and PF_RING, but also provide some unique features and capabilities that doesn't exist in any of these engines. Main classes and utilities:
 
-1. `PcapLiveDevice` - representing a Linux/MacOS network interface and enables capturing and sending packets as well as retrieving interface information
+1. `PcapLiveDevice` - representing a Linux/MacOS/FreeBSD network interface and enables capturing and sending packets as well as retrieving interface information
 2. `WinPcapLiveDevice` - representing a Windows network interface and contains all functionality exposed in `PcapLiveDevice`. This class actually inherits `PcapLiveDevice` and does the relevant adjustments for WinPcap and Windows OS
 3. `DpdkDevice` - representing a DPDK-enabled network interface and wraps DPDK basic functionality for capturing and sending packets as well as retrieving interface information
 4. `PfRingDevice` - representing PF_RING-enabled network interface and wraps PF_RING functionality for capturing and sending packets as well as retrieving interface information
@@ -189,9 +189,12 @@ all:
 clean:
     del main.o
     del Tutorial-LiveTraffic.exe
+```
 
-#### Linux and MacOS Makefile
+### Linux, MacOS, FreeBSD Makefile
+{: .no_toc }
 
+```makefile
 include /usr/local/etc/PcapPlusPlus.mk
 
 # All Target
@@ -275,7 +278,7 @@ That's it! The project will now build successfully! Again, I strongly advise to 
 
 All code that was covered in this tutorial can be found [here](https://github.com/seladb/PcapPlusPlus/tree/master/Examples/Tutorials/Tutorial-HelloWorld). In order to compile and run the code please first download and compile PcapPlusPlus code or downloaded a pre-compiled version from [the latest PcapPlusPlus release](https://github.com/seladb/PcapPlusPlus/releases/latest). Then follow these instruction, according to your platform:
 
-* Linux and MacOS - make sure PcapPlusPlus is installed (by running **sudo make install** in PcapPlusPlus main directory). Then either change the `Makefile.non_windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.non_windows all`
+* Linux, MacOS, FreeBSD - make sure PcapPlusPlus is installed (by running **sudo make install** in PcapPlusPlus main directory). Then either change the `Makefile.non_windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.non_windows all`
 * Windows using MinGW or MinGW-w64 - either change the `Makefile.windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.windows all`
 * Windows using Visual Studio - there is a Visual Studio solution containing all tutorials: `mk\[vs_version]\Tutorials.sln`. Just open it and compile all tutorials
 

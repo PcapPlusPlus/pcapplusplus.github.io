@@ -9,7 +9,7 @@ nav_order: 2
 # Setting Up PcapPlusPlus
 {: .no_toc }
 
-PcapPlusPlus is available on <img src="/resources/logo-windows.png" alt="drawing" width="24" title="Windows"/> Windows, <img src="/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> Linux and <img src="/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/> MacOS (see more details [here](/docs/install/platforms)).
+PcapPlusPlus is available on <img src="/resources/logo-windows.png" alt="drawing" width="24" title="Windows"/> Windows, <img src="/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> Linux, <img src="/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/> MacOS and <img src="/resources/logo-freebsd.png" alt="drawing" width="24" title="FreeBSD"/> FreeBSD (see more details [here](/docs/install/platforms)).
 
 You can choose between downloading pre-built binaries or build it from source. The different options are described below:
 
@@ -43,7 +43,9 @@ conan install pcapplusplus/{{ site.pcapplusplus-ver-num }}@bincrafters/stable -r
 
 ## Latest Release From GitHub
 
-Available for: <img src="/resources/logo-windows.png" alt="drawing" width="24" title="Windows"/> <img src="/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> <img src="/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/>
+Available for: <img src="/resources/logo-windows.png" alt="drawing" width="24" title="Windows"/> <img src="/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> <img src="/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/> 
+
+{% include alert.html alert-type="notice" content="FreeBSD is not yet supported in an official release. It's only available in master branch" %}
 
 [Download {{ site.pcapplusplus-ver }} pre compiled binaries](https://github.com/seladb/PcapPlusPlus/releases/latest){: .btn .btn-blue }
 

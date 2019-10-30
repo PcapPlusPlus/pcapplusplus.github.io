@@ -126,7 +126,7 @@ All 3 benchmarks provided in [packet-capture-benchmarks](https://github.com/mfon
 
 - Linux Ubuntu 16.04 64-bit running as a VirtualBox VM with 4 virtual cores and 8GB RAM
 - GCC 5.4.0 compiler
-- The host platform is a MacBook Pro model 2017 with Intel Core i7 760 3.1GHz processor and 16GB RAM running macOS High Sierra 10.13
+- The host platform is a MacBook Pro model 2017 with Intel Core i7 760 3.1GHz processor and 16GB RAM running MacOS High Sierra 10.13
 
 Benchmark applications:
 - The PcapPlusPlus benchmark application can be found in [PcapPlusPlus examples](/docs/examples#pcapplusplus-benchmark)

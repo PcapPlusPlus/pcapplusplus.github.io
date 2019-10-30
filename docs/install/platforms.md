@@ -7,10 +7,14 @@ nav_order: 1
 ---
 
 # Supported platforms
+{: .no_toc }
 
-The following platforms and toolchains are supported and being continuously tested:
+The platforms and toolchains described below are supported and being continuously tested.
 
-<img src="/resources/logo-windows.png" alt="drawing" width="24" title="Windows"/> Windows:
+1. TOC
+{:toc}
+
+## <img src="/resources/logo-windows.png" alt="drawing" width="24" title="Windows"/> Windows
 
 - [Microsoft Visual Studio](https://visualstudio.microsoft.com/) (32-bit + 64-bit compilation):
   - Visual Studio 2015
@@ -22,7 +26,7 @@ The following platforms and toolchains are supported and being continuously test
 {% include alert.html alert-type="important" title="Notice" content="Visual Studio 2017 and 2019 are only supported in the latest code in <code>master</code>. The current official release (v19.04) only supports Visual Studio 2015" %}
 
 
-<img src="/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> Linux:
+## <img src="/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> Linux
 
 Basically every x86 GCC toolchain should work, but PcapPlusPlus is being continuously tested on the following platforms:
 
@@ -30,21 +34,27 @@ Basically every x86 GCC toolchain should work, but PcapPlusPlus is being continu
 - [Fedora](https://getfedora.org/) 26 & 29
 - [CentOS](https://www.centos.org/) 7
 
-<img src="/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/> MacOS:
+## <img src="/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/> MacOS
 
 - Mojave (10.14)
 - High Sierra (10.13)
 - Sierra (10.12)
 - El Capitan (10.11)
 
-Other platforms and toolchains may work as well, but the support is not guaranteed. If you'd like us to add more please [contact us](/docs/community).
+## <img src="/resources/logo-freebsd.png" alt="drawing" width="24" title="FreeBSD"/> FreeBSD
 
-You can see the latest status of each platform in our CI reports:
+Versions 11.1 and above are supported
 
-__Travis-CI:__
+{% include alert.html alert-type="important" title="Notice" content="FreeBSD is only supported in the latest code in <code>master</code>. The current official release (v19.04) does not offer FreeBSD support" %}
 
-[![Build Status](https://travis-ci.org/seladb/PcapPlusPlus.svg?branch=master)](https://travis-ci.org/seladb/PcapPlusPlus)
+## Other platforms
 
-__AppVeyor:__
+Other platforms and toolchains may work as well, but the support is not guaranteed. If you'd like us to add additional platforms please [contact us](/docs/community).
 
-[![Build status](https://ci.appveyor.com/api/projects/status/4u5ui21ibbevkstc?svg=true)](https://ci.appveyor.com/project/seladb/pcapplusplus/branch/master)
+## CI reports
+
+You can view the status of each supported platform in our CI reports:
+
+| __Travis CI__ (Linux and MacOS): | [![Build Status](https://travis-ci.org/seladb/PcapPlusPlus.svg?branch=master)](https://travis-ci.org/seladb/PcapPlusPlus) |
+|__AppVeyor__ (Windows): | [![Build status](https://ci.appveyor.com/api/projects/status/4u5ui21ibbevkstc?svg=true)](https://ci.appveyor.com/project/seladb/pcapplusplus/branch/master) |
+| __Cirrus CI__ (FreeBSD): | [![Build Status](https://api.cirrus-ci.com/github/seladb/PcapPlusPlus.svg)](https://cirrus-ci.com/github/seladb/PcapPlusPlus) |

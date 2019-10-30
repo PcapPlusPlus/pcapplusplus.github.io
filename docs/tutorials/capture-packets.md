@@ -20,7 +20,7 @@ nav_order: 3
 PcapPlusPlus provides simple and easy-to-use wrappers for libpcap/WinPcap APIs for capturing and sending packets over network interfaces. These wrappers pretty much sum up in the following classes:
 
 * `PcapLiveDevice` - wraps libpcap functionality of capturing and sending packets and also provide information and statistics on the network interface
-* `WinPcapLiveDevice` - wraps WinPcap functionality which is basically similar to libpcap but provides adjustments for Windows OS. This class inherits PcapLiveDevice and provides the necessary changes for Windows vs. Linux/MacOS
+* `WinPcapLiveDevice` - wraps WinPcap functionality which is basically similar to libpcap but provides adjustments for Windows OS. This class inherits PcapLiveDevice and provides the necessary changes for Windows vs. Linux/MacOS/FreeBSD
 * `PcapLiveDeviceList` - A singleton class that creates, stores and provides access to all PcapLiveDevice or WinPcapLiveDevice instances. These instances are initialized on startup and wrap all the network interfaces installed on the machine
 * `PcapRemoteDevice` - wraps WinPcap functionality for [remote packet capture](https://www.winpcap.org/docs/docs_412/html/group__remote.html). As this functionality is less common and less used, it won't be covered in this tutorial. You can take a look at PcapPlusPlus documentation for a comprehensive overview and API description
 
@@ -492,7 +492,7 @@ As you can see the filter worked as there are no UDP, SSL or DNS packets, althou
 
 All code that was covered in this tutorial can be found [here](https://github.com/seladb/PcapPlusPlus/tree/master/Examples/Tutorials/Tutorial-LiveTraffic). In order to compile and run the code please first download and compile PcapPlusPlus code or downloaded a pre-compiled version from [the latest PcapPlusPlus release](https://github.com/seladb/PcapPlusPlus/releases/latest). Then follow these instruction, according to your platform:
 
-* Linux and MacOS - make sure PcapPlusPlus is installed (by running **sudo make install** in PcapPlusPlus main directory). Then either change the `Makefile.non_windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.non_windows all`
+* Linux, MacOS, FreeBSD - make sure PcapPlusPlus is installed (by running **sudo make install** in PcapPlusPlus main directory). Then either change the `Makefile.non_windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.non_windows all`
 * Windows using MinGW or MinGW-w64 - either change the `Makefile.windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.windows all`
 * Windows using Visual Studio - there is a Visual Studio solution containing all tutorials: `mk\[vs_version]\Tutorials.sln`. Just open it and compile all tutorials
 

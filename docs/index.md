@@ -26,3 +26,5 @@ Please choose your platform:
 [<img src="/resources/logo-linux.png" alt="drawing" width="16" title="Linux"/> Linux](/docs/quickstart/linux){: .btn .btn-blue }
 
 [<img src="/resources/logo-apple.png" alt="drawing" width="16" title="MacOS"/> MacOS](/docs/quickstart/macos){: .btn .btn-blue }
+
+[<img src="/resources/logo-freebsd.png" alt="drawing" width="16" title="FreeBSD"/> FreeBSD](/docs/quickstart/freebsd){: .btn .btn-blue }
