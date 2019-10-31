@@ -30,7 +30,7 @@ The platforms and toolchains described below are supported and being continuousl
 
 Basically every x86 GCC toolchain should work, but PcapPlusPlus is being continuously tested on the following platforms:
 
-- [Ubuntu](https://ubuntu.com/) (12.04 LTS, 14.04 LTS, 16.04 LTS, 18.04 LTS)
+- [Ubuntu](https://ubuntu.com/) (14.04 LTS, 16.04 LTS, 18.04 LTS)
 - [Fedora](https://getfedora.org/) 26 & 29
 - [CentOS](https://www.centos.org/) 7
 
