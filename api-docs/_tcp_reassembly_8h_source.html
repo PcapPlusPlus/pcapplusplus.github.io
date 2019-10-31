@@ -263,37 +263,35 @@ $(document).ready(function(){initNavTree('_tcp_reassembly_8h_source.html','');})
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        TcpReassemblyData() { numOfSides = 0; prevSide = -1; }</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    };</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    </div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <span class="keyword">typedef</span> std::map&lt;uint32_t, bool&gt; ClosedConnectionList;</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="keyword">typedef</span> std::map&lt;uint32_t, TcpReassemblyData *&gt; ConnectionList;</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="keyword">typedef</span> std::map&lt;time_t, std::list&lt;uint32_t&gt; &gt; CleanupList;</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160; </div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <a class="code" href="classpcpp_1_1_tcp_reassembly.html#ab6698eb002363dc18e664f15418fc1eb">OnTcpMessageReady</a> m_OnMessageReadyCallback;</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <a class="code" href="classpcpp_1_1_tcp_reassembly.html#abda8219de68412e0ce7f7116601243a8">OnTcpConnectionStart</a> m_OnConnStart;</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <a class="code" href="classpcpp_1_1_tcp_reassembly.html#abbcb38ac950666833df4084f80beb056">OnTcpConnectionEnd</a> m_OnConnEnd;</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="keywordtype">void</span>* m_UserCookie;</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    ConnectionList m_ConnectionList;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    ClosedConnectionList m_ClosedConnectionList;</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <a class="code" href="classpcpp_1_1_tcp_reassembly.html#a3d3377f5af316ec54bb70595c2d5418e">ConnectionInfoList</a> m_ConnectionInfo;</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    CleanupList m_CleanupList;</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="keywordtype">bool</span> m_RemoveConnInfo;</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    uint32_t m_ClosedConnectionDelay;</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    uint32_t m_MaxNumToClean;</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    time_t m_PurgeTimepoint;</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <span class="keyword">typedef</span> std::map&lt;uint32_t, TcpReassemblyData *&gt; ConnectionList;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="keyword">typedef</span> std::map&lt;time_t, std::list&lt;uint32_t&gt; &gt; CleanupList;</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160; </div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <a class="code" href="classpcpp_1_1_tcp_reassembly.html#ab6698eb002363dc18e664f15418fc1eb">OnTcpMessageReady</a> m_OnMessageReadyCallback;</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <a class="code" href="classpcpp_1_1_tcp_reassembly.html#abda8219de68412e0ce7f7116601243a8">OnTcpConnectionStart</a> m_OnConnStart;</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <a class="code" href="classpcpp_1_1_tcp_reassembly.html#abbcb38ac950666833df4084f80beb056">OnTcpConnectionEnd</a> m_OnConnEnd;</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="keywordtype">void</span>* m_UserCookie;</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    ConnectionList m_ConnectionList;</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <a class="code" href="classpcpp_1_1_tcp_reassembly.html#a3d3377f5af316ec54bb70595c2d5418e">ConnectionInfoList</a> m_ConnectionInfo;</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    CleanupList m_CleanupList;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <span class="keywordtype">bool</span> m_RemoveConnInfo;</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    uint32_t m_ClosedConnectionDelay;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    uint32_t m_MaxNumToClean;</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    time_t m_PurgeTimepoint;</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160; </div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <span class="keywordtype">void</span> checkOutOfOrderFragments(TcpReassemblyData* tcpReassemblyData, <span class="keywordtype">int</span> sideIndex, <span class="keywordtype">bool</span> cleanWholeFragList);</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160; </div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <span class="keywordtype">void</span> checkOutOfOrderFragments(TcpReassemblyData* tcpReassemblyData, <span class="keywordtype">int</span> sideIndex, <span class="keywordtype">bool</span> cleanWholeFragList);</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    std::string prepareMissingDataMessage(uint32_t missingDataLen);</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160; </div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    std::string prepareMissingDataMessage(uint32_t missingDataLen);</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <span class="keywordtype">void</span> handleFinOrRst(TcpReassemblyData* tcpReassemblyData, <span class="keywordtype">int</span> sideIndex, uint32_t flowKey);</div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160; </div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    <span class="keywordtype">void</span> handleFinOrRst(TcpReassemblyData* tcpReassemblyData, <span class="keywordtype">int</span> sideIndex, uint32_t flowKey);</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    <span class="keywordtype">void</span> closeConnectionInternal(uint32_t flowKey, <a class="code" href="classpcpp_1_1_tcp_reassembly.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0">ConnectionEndReason</a> reason);</div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160; </div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    <span class="keywordtype">void</span> closeConnectionInternal(uint32_t flowKey, <a class="code" href="classpcpp_1_1_tcp_reassembly.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0">ConnectionEndReason</a> reason);</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160; </div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="keywordtype">void</span> insertIntoCleanupList(uint32_t flowKey);</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;};</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    <span class="keywordtype">void</span> insertIntoCleanupList(uint32_t flowKey);</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;};</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160; </div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;}</div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160; </div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;}</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160; </div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_TCP_REASSEMBLY */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_TCP_REASSEMBLY */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructpcpp_1_1_connection_data_html_a54e23e30163a3d62d14f2cfca774109f"><div class="ttname"><a href="structpcpp_1_1_connection_data.html#a54e23e30163a3d62d14f2cfca774109f">pcpp::ConnectionData::setDstIpAddress</a></div><div class="ttdeci">void setDstIpAddress(const IPAddress *destIP)</div><div class="ttdef"><b>Definition:</b> TcpReassembly.h:125</div></div>
@@ -352,7 +350,7 @@ $(document).ready(function(){initNavTree('_tcp_reassembly_8h_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="_tcp_reassembly_8h.html">TcpReassembly.h</a></li>
-    <li class="footer">Generated on Mon Oct 14 2019 23:00:21 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Oct 30 2019 23:13:05 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

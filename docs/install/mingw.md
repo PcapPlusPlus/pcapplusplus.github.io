@@ -223,4 +223,5 @@ After running the config script, you're can safely build the code:
 
 1. Run `mingw32-make.exe all` from PcapPlusPlus main directory
 2. This should compile all libraries, unit-tests and examples
-3. After compilation you can find the libraries, examples, header files and helpful makefiles under the `Dist\` directory
+3. To build the libraries only (without the unit-tests and examples) run `mingw32-make.exe libs` instead of `mingw32-make.exe all`
+4. After compilation you can find the libraries, examples, header files and helpful makefiles under the `Dist\` directory

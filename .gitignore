@@ -4,6 +4,8 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 Gemfile.lock
+jekyll.bat
+jekyll.sh
 
 # Visual studio code
 .cproject
