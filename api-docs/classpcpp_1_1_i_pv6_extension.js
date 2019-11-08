@@ -10,6 +10,6 @@ var classpcpp_1_1_i_pv6_extension =
     ] ],
     [ "~IPv6Extension", "classpcpp_1_1_i_pv6_extension.html#a8925687d2b0eeae8fbdcf8999e7c60c2", null ],
     [ "getExtensionLen", "classpcpp_1_1_i_pv6_extension.html#ae976fcb7f5de313017356da7ceec23e3", null ],
-    [ "getExtensionType", "classpcpp_1_1_i_pv6_extension.html#a973139f3b152f49125f87c3b442b0b93", null ],
+    [ "getExtensionType", "classpcpp_1_1_i_pv6_extension.html#ae4a1868491c4ad09e95a8649c2fad8f0", null ],
     [ "getNextHeader", "classpcpp_1_1_i_pv6_extension.html#a9c978a65986486e476edc3d2eb5e927b", null ]
 ];

@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('_mac_address_8h_source.html','');});
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#if __cplusplus &gt; 199711L || _MSC_VER &gt;= 1800</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="classpcpp_1_1_mac_address.html">MacAddress</a> &amp;operator=(std::initializer_list&lt;uint8_t&gt; octets)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="classpcpp_1_1_mac_address.html">MacAddress</a>&amp; operator=(std::initializer_list&lt;uint8_t&gt; octets)</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        {</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            m_IsValid = (octets.size() == <span class="keyword">sizeof</span> m_Address);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keywordflow">if</span>(m_IsValid)</div>
@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('_mac_address_8h_source.html','');});
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        }</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classpcpp_1_1_mac_address.html#ac97e371aec192c213ea444f0094255d2">  122</a></span>&#160;        <span class="keyword">const</span> uint8_t *<a class="code" href="classpcpp_1_1_mac_address.html#ac97e371aec192c213ea444f0094255d2">getRawData</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Address; }</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classpcpp_1_1_mac_address.html#ac97e371aec192c213ea444f0094255d2">  122</a></span>&#160;        <span class="keyword">const</span> uint8_t* <a class="code" href="classpcpp_1_1_mac_address.html#ac97e371aec192c213ea444f0094255d2">getRawData</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Address; }</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
 <div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="classpcpp_1_1_mac_address.html#a16c78d3efcb5a63bc1bb95f98d418ca0">  129</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_mac_address.html#a16c78d3efcb5a63bc1bb95f98d418ca0">isValid</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_IsValid; }</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
@@ -214,7 +214,7 @@ $(document).ready(function(){initNavTree('_mac_address_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="_mac_address_8h.html">MacAddress.h</a></li>
-    <li class="footer">Generated on Wed Oct 30 2019 23:13:04 for PcapPlusPlus by
+    <li class="footer">Generated on Thu Nov 7 2019 22:30:07 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

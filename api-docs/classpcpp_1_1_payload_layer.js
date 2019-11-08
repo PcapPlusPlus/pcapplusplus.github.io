@@ -5,8 +5,8 @@ var classpcpp_1_1_payload_layer =
     [ "computeCalculateFields", "classpcpp_1_1_payload_layer.html#a06b137b6b0f0a81cfd6fda7f2e44640f", null ],
     [ "getHeaderLen", "classpcpp_1_1_payload_layer.html#a03f5cea04a120367b2b1b808ec2e38ef", null ],
     [ "getOsiModelLayer", "classpcpp_1_1_payload_layer.html#ad9198d157ca3e550933096eb4b89ce35", null ],
-    [ "getPayload", "classpcpp_1_1_payload_layer.html#af46528184f2f9cff223f631422ae8b24", null ],
-    [ "getPayloadLen", "classpcpp_1_1_payload_layer.html#aee6b8085ad904ba8044bf95b802255f5", null ],
+    [ "getPayload", "classpcpp_1_1_payload_layer.html#a0883f46fee516b697d6c44997b6f775a", null ],
+    [ "getPayloadLen", "classpcpp_1_1_payload_layer.html#a8170561229aec118c826b523bace4565", null ],
     [ "parseNextLayer", "classpcpp_1_1_payload_layer.html#a462003b0863dd9891d989f847608c1fb", null ],
     [ "toString", "classpcpp_1_1_payload_layer.html#ab9117eddc57a2c6e3d3e5ef1626a4aac", null ]
 ];

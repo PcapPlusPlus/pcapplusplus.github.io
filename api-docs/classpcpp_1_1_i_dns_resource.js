@@ -1,7 +1,7 @@
 var classpcpp_1_1_i_dns_resource =
 [
     [ "getDnsClass", "classpcpp_1_1_i_dns_resource.html#a87626a0aa08614d98e94fc1fda31fd03", null ],
-    [ "getDnsType", "classpcpp_1_1_i_dns_resource.html#ae44ba669fc827f7b8bb6c8f9ce783d8d", null ],
+    [ "getDnsType", "classpcpp_1_1_i_dns_resource.html#ade6a140a8bba212a15bf58b0e5e6fe4a", null ],
     [ "getName", "classpcpp_1_1_i_dns_resource.html#ab292d09bec0fd302ad2a0e87e4d9076d", null ],
     [ "getNameOffset", "classpcpp_1_1_i_dns_resource.html#ac2dc6e9007932e38c1deed4826a50776", null ],
     [ "getSize", "classpcpp_1_1_i_dns_resource.html#a0581453e507b721f27eb2e148bc45ef9", null ],

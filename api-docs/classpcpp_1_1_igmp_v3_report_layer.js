@@ -6,7 +6,7 @@ var classpcpp_1_1_igmp_v3_report_layer =
     [ "addGroupRecordAtIndex", "classpcpp_1_1_igmp_v3_report_layer.html#a1794a460a7850f676a2fafa1ff57f70d", null ],
     [ "computeCalculateFields", "classpcpp_1_1_igmp_v3_report_layer.html#a4e41980f2b4d98c30f4caffea255b3af", null ],
     [ "getFirstGroupRecord", "classpcpp_1_1_igmp_v3_report_layer.html#a54518fc6655b31f041fbc570e255fc84", null ],
-    [ "getGroupRecordCount", "classpcpp_1_1_igmp_v3_report_layer.html#a520b1eb367ae67b472e6cc994da588e8", null ],
+    [ "getGroupRecordCount", "classpcpp_1_1_igmp_v3_report_layer.html#a7204efeaf096e87f9ab9576ad8f8bfd8", null ],
     [ "getHeaderLen", "classpcpp_1_1_igmp_v3_report_layer.html#a69bf1bc34b4d5b2660e8a55e96abc815", null ],
     [ "getNextGroupRecord", "classpcpp_1_1_igmp_v3_report_layer.html#a8964c61b90952f84408a7bfcffd22ca9", null ],
     [ "getReportHeader", "classpcpp_1_1_igmp_v3_report_layer.html#a65fc0656bb5883395fe3cd85a9133ab3", null ],

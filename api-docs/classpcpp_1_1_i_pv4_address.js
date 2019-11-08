@@ -12,6 +12,6 @@ var classpcpp_1_1_i_pv4_address =
     [ "operator!=", "classpcpp_1_1_i_pv4_address.html#ae40e1dfbb7b1c78e825af482fcc302ff", null ],
     [ "operator=", "classpcpp_1_1_i_pv4_address.html#a086c40b049355635699e3b3c18678fb6", null ],
     [ "operator==", "classpcpp_1_1_i_pv4_address.html#aa8a201db40014bd54910598935ae2eaa", null ],
-    [ "toInAddr", "classpcpp_1_1_i_pv4_address.html#a00a39c8f5d881a3fddfff5f6163c7370", null ],
+    [ "toInAddr", "classpcpp_1_1_i_pv4_address.html#a69fb83e8fafd0f09823b5c0e22d6b93c", null ],
     [ "toInt", "classpcpp_1_1_i_pv4_address.html#abccc9bbc341ea0e3d58387c24bd74a3c", null ]
 ];

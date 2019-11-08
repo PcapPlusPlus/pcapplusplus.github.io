@@ -86,8 +86,8 @@ var classpcpp_1_1_http_response_layer =
     [ "HttpResponseLayer", "classpcpp_1_1_http_response_layer.html#a47e92e0f0065f5601b7e895b2321469b", null ],
     [ "HttpResponseLayer", "classpcpp_1_1_http_response_layer.html#a8b517c19b23d18c18e410a8c041e6ea2", null ],
     [ "HttpResponseLayer", "classpcpp_1_1_http_response_layer.html#af703a52f7688298d6ce5fae231264071", null ],
-    [ "getContentLength", "classpcpp_1_1_http_response_layer.html#a9e35cb52f524ee88973d4b43a508ca30", null ],
-    [ "getFirstLine", "classpcpp_1_1_http_response_layer.html#a01cf4ee47d91418d266ecb148707742d", null ],
+    [ "getContentLength", "classpcpp_1_1_http_response_layer.html#ad1087377a32f9565f3b6ab2417d3739c", null ],
+    [ "getFirstLine", "classpcpp_1_1_http_response_layer.html#ab148620064a99b47a9b249e9607d112a", null ],
     [ "operator=", "classpcpp_1_1_http_response_layer.html#ac7945a197547eb5819528502ea30a636", null ],
     [ "setContentLength", "classpcpp_1_1_http_response_layer.html#a99b9bc0ece59bce01b7023b302472d91", null ],
     [ "toString", "classpcpp_1_1_http_response_layer.html#ad3375f6bc401127bccb08942ed9ab423", null ]

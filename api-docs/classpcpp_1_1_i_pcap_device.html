@@ -121,8 +121,8 @@ Inheritance diagram for pcpp::IPcapDevice:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ace3640f2330899687e34aa3789f4cd05"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#ace3640f2330899687e34aa3789f4cd05">getStatistics</a> (pcap_stat &amp;stats)=0</td></tr>
-<tr class="separator:ace3640f2330899687e34aa3789f4cd05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbcda9c7a5b530fa071e76d60c2eff2d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#adbcda9c7a5b530fa071e76d60c2eff2d">getStatistics</a> (pcap_stat &amp;stats) const =0</td></tr>
+<tr class="separator:adbcda9c7a5b530fa071e76d60c2eff2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a134f061d7883abbdb256abd48d53e66c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#a134f061d7883abbdb256abd48d53e66c">setFilter</a> (std::string filterAsString)</td></tr>
 <tr class="separator:a134f061d7883abbdb256abd48d53e66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ca7eb3d99231a8cfd9d68cde0b5067c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#a8ca7eb3d99231a8cfd9d68cde0b5067c">clearFilter</a> ()</td></tr>
@@ -210,8 +210,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ace3640f2330899687e34aa3789f4cd05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace3640f2330899687e34aa3789f4cd05">&#9670;&nbsp;</a></span>getStatistics()</h2>
+<a id="adbcda9c7a5b530fa071e76d60c2eff2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbcda9c7a5b530fa071e76d60c2eff2d">&#9670;&nbsp;</a></span>getStatistics()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -224,7 +224,7 @@ Static Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">pcap_stat &amp;&#160;</td>
           <td class="paramname"><em>stats</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -245,7 +245,7 @@ Static Public Member Functions</h2></td></tr>
 </li>
 </ul>
 
-<p>Implemented in <a class="el" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a55a11ff6431efc054fd4a47bbaab9852">pcpp::PcapNgFileWriterDevice</a>, <a class="el" href="classpcpp_1_1_pcap_live_device.html#a68f87416b25abe3b625f0f9993bb7e1b">pcpp::PcapLiveDevice</a>, <a class="el" href="classpcpp_1_1_pcap_file_writer_device.html#a3f72c11bc118609f84c5b462f27cdc1f">pcpp::PcapFileWriterDevice</a>, <a class="el" href="classpcpp_1_1_pcap_ng_file_reader_device.html#a32ecbe14fa25297ee599a5d52c4e15e1">pcpp::PcapNgFileReaderDevice</a>, <a class="el" href="classpcpp_1_1_pcap_file_reader_device.html#a6c07f1cc3675dfa8ff7157d09be311c7">pcpp::PcapFileReaderDevice</a>, and <a class="el" href="classpcpp_1_1_pcap_remote_device.html#ac4f3b9ace451b38aa9930950dc695273">pcpp::PcapRemoteDevice</a>.</p>
+<p>Implemented in <a class="el" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a6707801831ede06fd5991123491df542">pcpp::PcapNgFileWriterDevice</a>, <a class="el" href="classpcpp_1_1_pcap_live_device.html#af3f2a7f926d21d1073a8b873b3998bd3">pcpp::PcapLiveDevice</a>, <a class="el" href="classpcpp_1_1_pcap_file_writer_device.html#a231676775c633bd7564242e9fc62f24e">pcpp::PcapFileWriterDevice</a>, <a class="el" href="classpcpp_1_1_pcap_ng_file_reader_device.html#a00c9833914549282c13336f04cd6782a">pcpp::PcapNgFileReaderDevice</a>, <a class="el" href="classpcpp_1_1_pcap_file_reader_device.html#a9432a993ad2a893cfd2e436e500f652a">pcpp::PcapFileReaderDevice</a>, and <a class="el" href="classpcpp_1_1_pcap_remote_device.html#ad94ccf7e25215b50d350ae27c8a8870e">pcpp::PcapRemoteDevice</a>.</p>
 
 </div>
 </div>
@@ -463,7 +463,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_pcap_device.html">IPcapDevice</a></li>
-    <li class="footer">Generated on Wed Oct 30 2019 23:13:06 for PcapPlusPlus by
+    <li class="footer">Generated on Thu Nov 7 2019 22:30:09 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

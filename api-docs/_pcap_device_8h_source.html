@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('_pcap_device_8h_source.html','');});
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classpcpp_1_1_i_pcap_device.html">IPcapDevice</a>();</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_i_pcap_device.html#ace3640f2330899687e34aa3789f4cd05">getStatistics</a>(pcap_stat&amp; stats) = 0;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_i_pcap_device.html#adbcda9c7a5b530fa071e76d60c2eff2d">getStatistics</a>(pcap_stat&amp; stats) <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">static</span> std::string <a class="code" href="classpcpp_1_1_i_pcap_device.html#ac9e91fa6b66ced9a92d09068712ccffc">getPcapLibVersionInfo</a>();</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
@@ -151,8 +151,8 @@ $(document).ready(function(){initNavTree('_pcap_device_8h_source.html','');});
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclasspcpp_1_1_i_pcap_device_html_ac9e91fa6b66ced9a92d09068712ccffc"><div class="ttname"><a href="classpcpp_1_1_i_pcap_device.html#ac9e91fa6b66ced9a92d09068712ccffc">pcpp::IPcapDevice::getPcapLibVersionInfo</a></div><div class="ttdeci">static std::string getPcapLibVersionInfo()</div></div>
+<div class="ttc" id="aclasspcpp_1_1_i_pcap_device_html_adbcda9c7a5b530fa071e76d60c2eff2d"><div class="ttname"><a href="classpcpp_1_1_i_pcap_device.html#adbcda9c7a5b530fa071e76d60c2eff2d">pcpp::IPcapDevice::getStatistics</a></div><div class="ttdeci">virtual void getStatistics(pcap_stat &amp;stats) const =0</div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_filterable_device_html_af334503822ac7076373c64109f3e6d64"><div class="ttname"><a href="classpcpp_1_1_i_filterable_device.html#af334503822ac7076373c64109f3e6d64">pcpp::IFilterableDevice::setFilter</a></div><div class="ttdeci">virtual bool setFilter(GeneralFilter &amp;filter)</div><div class="ttdef"><b>Definition:</b> Device.h:76</div></div>
-<div class="ttc" id="aclasspcpp_1_1_i_pcap_device_html_ace3640f2330899687e34aa3789f4cd05"><div class="ttname"><a href="classpcpp_1_1_i_pcap_device.html#ace3640f2330899687e34aa3789f4cd05">pcpp::IPcapDevice::getStatistics</a></div><div class="ttdeci">virtual void getStatistics(pcap_stat &amp;stats)=0</div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_filterable_device_html"><div class="ttname"><a href="classpcpp_1_1_i_filterable_device.html">pcpp::IFilterableDevice</a></div><div class="ttdef"><b>Definition:</b> Device.h:60</div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_pcap_device_html_a134f061d7883abbdb256abd48d53e66c"><div class="ttname"><a href="classpcpp_1_1_i_pcap_device.html#a134f061d7883abbdb256abd48d53e66c">pcpp::IPcapDevice::setFilter</a></div><div class="ttdeci">virtual bool setFilter(std::string filterAsString)</div></div>
 <div class="ttc" id="a_device_8h_html"><div class="ttname"><a href="_device_8h.html">Device.h</a></div></div>
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('_pcap_device_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="_pcap_device_8h.html">PcapDevice.h</a></li>
-    <li class="footer">Generated on Wed Oct 30 2019 23:13:04 for PcapPlusPlus by
+    <li class="footer">Generated on Thu Nov 7 2019 22:30:08 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

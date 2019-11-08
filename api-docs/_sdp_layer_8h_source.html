@@ -149,9 +149,9 @@ $(document).ready(function(){initNavTree('_sdp_layer_8h_source.html','');});
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
 <div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classpcpp_1_1_sdp_layer.html#aa6ca3ae82b3e5cbfa0781a68c231e605">  112</a></span>&#160;        <a class="code" href="classpcpp_1_1_sdp_layer.html">SdpLayer</a>&amp; <a class="code" href="classpcpp_1_1_sdp_layer.html#aa6ca3ae82b3e5cbfa0781a68c231e605">operator=</a>(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_sdp_layer.html">SdpLayer</a>&amp; other) { TextBasedProtocolMessage::operator=(other); <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> <a class="code" href="classpcpp_1_1_sdp_layer.html#a14f4a728d68929c829e93b0de336d538">getOwnerIPv4Address</a>();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> <a class="code" href="classpcpp_1_1_sdp_layer.html#a4711a2970f57ab1661002afd132b3d85">getOwnerIPv4Address</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        uint16_t <a class="code" href="classpcpp_1_1_sdp_layer.html#a5fae788a725d57e2e9fe6a7d8f046885">getMediaPort</a>(std::string mediaType);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        uint16_t <a class="code" href="classpcpp_1_1_sdp_layer.html#a01322ec2f2a3e441d91ff6c0d2deda68">getMediaPort</a>(std::string mediaType) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_sdp_layer.html#a9df93bfb9cd914625bbd8f20895f8b8b">addMediaDescription</a>(std::string mediaType, uint16_t mediaPort, std::string mediaProtocol, std::string mediaFormat, std::vector&lt;std::string&gt; mediaAttributes);</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
@@ -177,11 +177,11 @@ $(document).ready(function(){initNavTree('_sdp_layer_8h_source.html','');});
 <div class="ttc" id="anamespacepcpp_html_a69e2ee6a9dc68797612cf8dc38461025"><div class="ttname"><a href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a></div><div class="ttdeci">OsiModelLayer</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:224</div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_pv4_address_html"><div class="ttname"><a href="classpcpp_1_1_i_pv4_address.html">pcpp::IPv4Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:119</div></div>
 <div class="ttc" id="aclasspcpp_1_1_packet_html"><div class="ttname"><a href="classpcpp_1_1_packet.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:26</div></div>
-<div class="ttc" id="aclasspcpp_1_1_sdp_layer_html_a14f4a728d68929c829e93b0de336d538"><div class="ttname"><a href="classpcpp_1_1_sdp_layer.html#a14f4a728d68929c829e93b0de336d538">pcpp::SdpLayer::getOwnerIPv4Address</a></div><div class="ttdeci">IPv4Address getOwnerIPv4Address()</div></div>
 <div class="ttc" id="aclasspcpp_1_1_sdp_layer_html_acdb3cc196fd8bb453d4293f93d5ff514"><div class="ttname"><a href="classpcpp_1_1_sdp_layer.html#acdb3cc196fd8bb453d4293f93d5ff514">pcpp::SdpLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
+<div class="ttc" id="aclasspcpp_1_1_sdp_layer_html_a01322ec2f2a3e441d91ff6c0d2deda68"><div class="ttname"><a href="classpcpp_1_1_sdp_layer.html#a01322ec2f2a3e441d91ff6c0d2deda68">pcpp::SdpLayer::getMediaPort</a></div><div class="ttdeci">uint16_t getMediaPort(std::string mediaType) const</div></div>
 <div class="ttc" id="aclasspcpp_1_1_sdp_layer_html_add15c986ba55f22fe64c9e21b0475949"><div class="ttname"><a href="classpcpp_1_1_sdp_layer.html#add15c986ba55f22fe64c9e21b0475949">pcpp::SdpLayer::SdpLayer</a></div><div class="ttdeci">SdpLayer()</div></div>
 <div class="ttc" id="aclasspcpp_1_1_sdp_layer_html"><div class="ttname"><a href="classpcpp_1_1_sdp_layer.html">pcpp::SdpLayer</a></div><div class="ttdef"><b>Definition:</b> SdpLayer.h:59</div></div>
-<div class="ttc" id="aclasspcpp_1_1_sdp_layer_html_a5fae788a725d57e2e9fe6a7d8f046885"><div class="ttname"><a href="classpcpp_1_1_sdp_layer.html#a5fae788a725d57e2e9fe6a7d8f046885">pcpp::SdpLayer::getMediaPort</a></div><div class="ttdeci">uint16_t getMediaPort(std::string mediaType)</div></div>
+<div class="ttc" id="aclasspcpp_1_1_sdp_layer_html_a4711a2970f57ab1661002afd132b3d85"><div class="ttname"><a href="classpcpp_1_1_sdp_layer.html#a4711a2970f57ab1661002afd132b3d85">pcpp::SdpLayer::getOwnerIPv4Address</a></div><div class="ttdeci">IPv4Address getOwnerIPv4Address() const</div></div>
 <div class="ttc" id="aclasspcpp_1_1_sdp_layer_html_a9df93bfb9cd914625bbd8f20895f8b8b"><div class="ttname"><a href="classpcpp_1_1_sdp_layer.html#a9df93bfb9cd914625bbd8f20895f8b8b">pcpp::SdpLayer::addMediaDescription</a></div><div class="ttdeci">bool addMediaDescription(std::string mediaType, uint16_t mediaPort, std::string mediaProtocol, std::string mediaFormat, std::vector&lt; std::string &gt; mediaAttributes)</div></div>
 <div class="ttc" id="a_ip_address_8h_html"><div class="ttname"><a href="_ip_address_8h.html">IpAddress.h</a></div></div>
 <div class="ttc" id="aclasspcpp_1_1_text_based_protocol_message_html"><div class="ttname"><a href="classpcpp_1_1_text_based_protocol_message.html">pcpp::TextBasedProtocolMessage</a></div><div class="ttdef"><b>Definition:</b> TextBasedProtocol.h:104</div></div>
@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('_sdp_layer_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="_sdp_layer_8h.html">SdpLayer.h</a></li>
-    <li class="footer">Generated on Wed Oct 30 2019 23:13:05 for PcapPlusPlus by
+    <li class="footer">Generated on Thu Nov 7 2019 22:30:08 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

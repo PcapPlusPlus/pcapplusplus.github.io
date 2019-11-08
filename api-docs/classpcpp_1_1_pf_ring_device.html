@@ -134,8 +134,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3a783b9949814723e1e3e7dc76c5e4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d897e1f5c1f9ef15987b82eff1a736b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#a3d897e1f5c1f9ef15987b82eff1a736b">isHwClockEnabledForDevice</a> ()</td></tr>
 <tr class="separator:a3d897e1f5c1f9ef15987b82eff1a736b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83f9514b06cef4dd7abed9a76ffd5344"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#a83f9514b06cef4dd7abed9a76ffd5344">getDeviceName</a> ()</td></tr>
-<tr class="separator:a83f9514b06cef4dd7abed9a76ffd5344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ac18b4561b579975dfd6c89722eab9e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#a9ac18b4561b579975dfd6c89722eab9e">getDeviceName</a> () const</td></tr>
+<tr class="separator:a9ac18b4561b579975dfd6c89722eab9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d15fc696287e4a5dc16bd809fdce893"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#a2d15fc696287e4a5dc16bd809fdce893">startCaptureSingleThread</a> (OnPfRingPacketsArriveCallback onPacketsArrive, void *onPacketsArriveUserCookie)</td></tr>
 <tr class="separator:a2d15fc696287e4a5dc16bd809fdce893"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2267f74af554b8651d771ab7f453dc50"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#a2267f74af554b8651d771ab7f453dc50">startCaptureMultiThread</a> (OnPfRingPacketsArriveCallback onPacketsArrive, void *onPacketsArriveUserCookie, CoreMask coreMask)</td></tr>
@@ -148,20 +148,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a923fa6c928456417a5985be210e3e487"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42fa0b515215e8801f3e5f955dff095c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#a42fa0b515215e8801f3e5f955dff095c">openMultiRxChannels</a> (uint8_t numOfRxChannelsToOpen, <a class="el" href="classpcpp_1_1_pf_ring_device.html#a2a7113725490fea52c9702998e6a8f78">ChannelDistribution</a> dist)</td></tr>
 <tr class="separator:a42fa0b515215e8801f3e5f955dff095c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a984de29bb1e6f42231c1b650c92f0969"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#a984de29bb1e6f42231c1b650c92f0969">getNumOfOpenedRxChannels</a> ()</td></tr>
-<tr class="separator:a984de29bb1e6f42231c1b650c92f0969"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0454ec800c301f67d9679b8159e91c14"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#a0454ec800c301f67d9679b8159e91c14">getTotalNumOfRxChannels</a> ()</td></tr>
-<tr class="separator:a0454ec800c301f67d9679b8159e91c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45e51de995525ddc5f1bfd8dd20fd3bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpcpp_1_1_system_core.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#a45e51de995525ddc5f1bfd8dd20fd3bf">getCurrentCoreId</a> ()</td></tr>
-<tr class="separator:a45e51de995525ddc5f1bfd8dd20fd3bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affdeb66520ebab51ef6f55abb5bd6d9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#affdeb66520ebab51ef6f55abb5bd6d9e">getThreadStatistics</a> (<a class="el" href="structpcpp_1_1_system_core.html">SystemCore</a> core, <a class="el" href="structpcpp_1_1_pf_ring_device_1_1_pf_ring_stats.html">PfRingStats</a> &amp;stats)</td></tr>
-<tr class="separator:affdeb66520ebab51ef6f55abb5bd6d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af94071b23b5dedf7801c7534cbccc22c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#af94071b23b5dedf7801c7534cbccc22c">getCurrentThreadStatistics</a> (<a class="el" href="structpcpp_1_1_pf_ring_device_1_1_pf_ring_stats.html">PfRingStats</a> &amp;stats)</td></tr>
-<tr class="separator:af94071b23b5dedf7801c7534cbccc22c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d8a5430150a05fd10af98b13afa7e48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#a1d8a5430150a05fd10af98b13afa7e48">getStatistics</a> (<a class="el" href="structpcpp_1_1_pf_ring_device_1_1_pf_ring_stats.html">PfRingStats</a> &amp;stats)</td></tr>
-<tr class="separator:a1d8a5430150a05fd10af98b13afa7e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad955fa2fcd4634a27196118782040fca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#ad955fa2fcd4634a27196118782040fca">isFilterCurrentlySet</a> ()</td></tr>
-<tr class="separator:ad955fa2fcd4634a27196118782040fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9954fb008030336858d57be7f3ccbc78"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#a9954fb008030336858d57be7f3ccbc78">getNumOfOpenedRxChannels</a> () const</td></tr>
+<tr class="separator:a9954fb008030336858d57be7f3ccbc78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a540956cbcbac10ca854a76e15227aec1"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#a540956cbcbac10ca854a76e15227aec1">getTotalNumOfRxChannels</a> () const</td></tr>
+<tr class="separator:a540956cbcbac10ca854a76e15227aec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7a1e30e857daf58422bbf82b57c68d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpcpp_1_1_system_core.html">SystemCore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#aa7a1e30e857daf58422bbf82b57c68d5">getCurrentCoreId</a> () const</td></tr>
+<tr class="separator:aa7a1e30e857daf58422bbf82b57c68d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6953e3efa57b5a8698586db135d87569"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#a6953e3efa57b5a8698586db135d87569">getThreadStatistics</a> (<a class="el" href="structpcpp_1_1_system_core.html">SystemCore</a> core, <a class="el" href="structpcpp_1_1_pf_ring_device_1_1_pf_ring_stats.html">PfRingStats</a> &amp;stats) const</td></tr>
+<tr class="separator:a6953e3efa57b5a8698586db135d87569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab087acddadc1c3f65058f4cf54b09c78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#ab087acddadc1c3f65058f4cf54b09c78">getCurrentThreadStatistics</a> (<a class="el" href="structpcpp_1_1_pf_ring_device_1_1_pf_ring_stats.html">PfRingStats</a> &amp;stats) const</td></tr>
+<tr class="separator:ab087acddadc1c3f65058f4cf54b09c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeade33242ac31b8e7ddff4888853cc19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#aeade33242ac31b8e7ddff4888853cc19">getStatistics</a> (<a class="el" href="structpcpp_1_1_pf_ring_device_1_1_pf_ring_stats.html">PfRingStats</a> &amp;stats) const</td></tr>
+<tr class="separator:aeade33242ac31b8e7ddff4888853cc19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4088e46b8bd058c6b0832731586dc51"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#aa4088e46b8bd058c6b0832731586dc51">isFilterCurrentlySet</a> () const</td></tr>
+<tr class="separator:aa4088e46b8bd058c6b0832731586dc51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a5f1744d29145bf929e943c02f35a6b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#a1a5f1744d29145bf929e943c02f35a6b">sendPacket</a> (const <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> &amp;rawPacket)</td></tr>
 <tr class="separator:a1a5f1744d29145bf929e943c02f35a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe92b5e338eeb7086527b9f468e1a05e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#abe92b5e338eeb7086527b9f468e1a05e">sendPacket</a> (const uint8_t *packetData, int packetDataLength)</td></tr>
@@ -293,8 +293,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a45e51de995525ddc5f1bfd8dd20fd3bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45e51de995525ddc5f1bfd8dd20fd3bf">&#9670;&nbsp;</a></span>getCurrentCoreId()</h2>
+<a id="aa7a1e30e857daf58422bbf82b57c68d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7a1e30e857daf58422bbf82b57c68d5">&#9670;&nbsp;</a></span>getCurrentCoreId()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -303,7 +303,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname"><a class="el" href="structpcpp_1_1_system_core.html">SystemCore</a> pcpp::PfRingDevice::getCurrentCoreId </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -311,8 +311,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af94071b23b5dedf7801c7534cbccc22c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af94071b23b5dedf7801c7534cbccc22c">&#9670;&nbsp;</a></span>getCurrentThreadStatistics()</h2>
+<a id="ab087acddadc1c3f65058f4cf54b09c78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab087acddadc1c3f65058f4cf54b09c78">&#9670;&nbsp;</a></span>getCurrentThreadStatistics()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -322,7 +322,7 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structpcpp_1_1_pf_ring_device_1_1_pf_ring_stats.html">PfRingStats</a> &amp;&#160;</td>
           <td class="paramname"><em>stats</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -335,8 +335,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a83f9514b06cef4dd7abed9a76ffd5344"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83f9514b06cef4dd7abed9a76ffd5344">&#9670;&nbsp;</a></span>getDeviceName()</h2>
+<a id="a9ac18b4561b579975dfd6c89722eab9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ac18b4561b579975dfd6c89722eab9e">&#9670;&nbsp;</a></span>getDeviceName()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -348,7 +348,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">std::string pcpp::PfRingDevice::getDeviceName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -439,8 +439,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a984de29bb1e6f42231c1b650c92f0969"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a984de29bb1e6f42231c1b650c92f0969">&#9670;&nbsp;</a></span>getNumOfOpenedRxChannels()</h2>
+<a id="a9954fb008030336858d57be7f3ccbc78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9954fb008030336858d57be7f3ccbc78">&#9670;&nbsp;</a></span>getNumOfOpenedRxChannels()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -452,7 +452,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">uint8_t pcpp::PfRingDevice::getNumOfOpenedRxChannels </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -465,8 +465,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1d8a5430150a05fd10af98b13afa7e48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d8a5430150a05fd10af98b13afa7e48">&#9670;&nbsp;</a></span>getStatistics()</h2>
+<a id="aeade33242ac31b8e7ddff4888853cc19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeade33242ac31b8e7ddff4888853cc19">&#9670;&nbsp;</a></span>getStatistics()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -476,7 +476,7 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structpcpp_1_1_pf_ring_device_1_1_pf_ring_stats.html">PfRingStats</a> &amp;&#160;</td>
           <td class="paramname"><em>stats</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -489,8 +489,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="affdeb66520ebab51ef6f55abb5bd6d9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affdeb66520ebab51ef6f55abb5bd6d9e">&#9670;&nbsp;</a></span>getThreadStatistics()</h2>
+<a id="a6953e3efa57b5a8698586db135d87569"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6953e3efa57b5a8698586db135d87569">&#9670;&nbsp;</a></span>getThreadStatistics()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -510,7 +510,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -524,8 +524,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0454ec800c301f67d9679b8159e91c14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0454ec800c301f67d9679b8159e91c14">&#9670;&nbsp;</a></span>getTotalNumOfRxChannels()</h2>
+<a id="a540956cbcbac10ca854a76e15227aec1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a540956cbcbac10ca854a76e15227aec1">&#9670;&nbsp;</a></span>getTotalNumOfRxChannels()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -534,7 +534,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">uint8_t pcpp::PfRingDevice::getTotalNumOfRxChannels </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -542,8 +542,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad955fa2fcd4634a27196118782040fca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad955fa2fcd4634a27196118782040fca">&#9670;&nbsp;</a></span>isFilterCurrentlySet()</h2>
+<a id="aa4088e46b8bd058c6b0832731586dc51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4088e46b8bd058c6b0832731586dc51">&#9670;&nbsp;</a></span>isFilterCurrentlySet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -552,7 +552,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">bool pcpp::PfRingDevice::isFilterCurrentlySet </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1081,7 +1081,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_pf_ring_device.html">PfRingDevice</a></li>
-    <li class="footer">Generated on Wed Oct 30 2019 23:13:07 for PcapPlusPlus by
+    <li class="footer">Generated on Thu Nov 7 2019 22:30:10 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

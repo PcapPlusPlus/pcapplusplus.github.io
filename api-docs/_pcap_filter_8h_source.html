@@ -142,9 +142,9 @@ $(document).ready(function(){initNavTree('_pcap_filter_8h_source.html','');});
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_general_filter.html#a343f17fd42d63a17505f7c2d689a3e00">matchPacketWithFilter</a>(<a class="code" href="classpcpp_1_1_raw_packet.html">RawPacket</a>* rawPacket);</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="classpcpp_1_1_general_filter.html">GeneralFilter</a>();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="classpcpp_1_1_general_filter.html">GeneralFilter</a>() : m_program(NULL) {}</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classpcpp_1_1_general_filter.html#aba731757009c1ce8db973aa334634765">~GeneralFilter</a>();</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classpcpp_1_1_general_filter.html#aba731757009c1ce8db973aa334634765">  108</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classpcpp_1_1_general_filter.html#aba731757009c1ce8db973aa334634765">~GeneralFilter</a>() { <a class="code" href="classpcpp_1_1_general_filter.html#a782da999c65ba2f5e9c4823f59fc6849">freeProgram</a>(); }</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    };</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classpcpp_1_1_b_p_f_string_filter.html">  115</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_b_p_f_string_filter.html">BPFStringFilter</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_general_filter.html">GeneralFilter</a></div>
@@ -153,9 +153,9 @@ $(document).ready(function(){initNavTree('_pcap_filter_8h_source.html','');});
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keyword">const</span> std::string m_filterStr;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="classpcpp_1_1_b_p_f_string_filter.html">BPFStringFilter</a>(<span class="keyword">const</span> std::string&amp; filterStr);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="classpcpp_1_1_b_p_f_string_filter.html">BPFStringFilter</a>(<span class="keyword">const</span> std::string&amp; filterStr) : m_filterStr(filterStr) {}</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classpcpp_1_1_b_p_f_string_filter.html">BPFStringFilter</a>();</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classpcpp_1_1_b_p_f_string_filter.html">BPFStringFilter</a>() {}</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_b_p_f_string_filter.html#a2e153e14abe6537a1a52884386420d61">parseToString</a>(std::string&amp; result);</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
@@ -169,7 +169,7 @@ $(document).ready(function(){initNavTree('_pcap_filter_8h_source.html','');});
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <a class="code" href="namespacepcpp.html#a966edb536b73cf93cbc9b83f9c64930a">Direction</a> m_Dir;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordtype">void</span> parseDirection(std::string&amp; directionAsString);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keyword">inline</span> <a class="code" href="namespacepcpp.html#a966edb536b73cf93cbc9b83f9c64930a">Direction</a> getDir() { <span class="keywordflow">return</span> m_Dir; }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <a class="code" href="namespacepcpp.html#a966edb536b73cf93cbc9b83f9c64930a">Direction</a> getDir()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Dir; }</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <a class="code" href="classpcpp_1_1_i_filter_with_direction.html">IFilterWithDirection</a>(<a class="code" href="namespacepcpp.html#a966edb536b73cf93cbc9b83f9c64930a">Direction</a> dir) { m_Dir = dir; }</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_filter_with_direction.html#ace8adbbf3d89a745c02b353ac6f2122a">  158</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_i_filter_with_direction.html#ace8adbbf3d89a745c02b353ac6f2122a">setDirection</a>(<a class="code" href="namespacepcpp.html#a966edb536b73cf93cbc9b83f9c64930a">Direction</a> dir) { m_Dir = dir; }</div>
@@ -182,7 +182,7 @@ $(document).ready(function(){initNavTree('_pcap_filter_8h_source.html','');});
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <a class="code" href="namespacepcpp.html#a236073670782cc577b097b2fef4c7d62">FilterOperator</a> m_Operator;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        std::string parseOperator();</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keyword">inline</span> <a class="code" href="namespacepcpp.html#a236073670782cc577b097b2fef4c7d62">FilterOperator</a> getOperator() { <span class="keywordflow">return</span> m_Operator; }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <a class="code" href="namespacepcpp.html#a236073670782cc577b097b2fef4c7d62">FilterOperator</a> getOperator()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Operator; }</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <a class="code" href="classpcpp_1_1_i_filter_with_operator.html">IFilterWithOperator</a>(<a class="code" href="namespacepcpp.html#a236073670782cc577b097b2fef4c7d62">FilterOperator</a> op) { m_Operator = op; }</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_filter_with_operator.html#ae6bd275b11802dec7f9bc1a7baaf6d19">  181</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_i_filter_with_operator.html#ae6bd275b11802dec7f9bc1a7baaf6d19">setOperator</a>(<a class="code" href="namespacepcpp.html#a236073670782cc577b097b2fef4c7d62">FilterOperator</a> op) { m_Operator = op; }</div>
@@ -196,8 +196,8 @@ $(document).ready(function(){initNavTree('_pcap_filter_8h_source.html','');});
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        std::string m_Address;</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        std::string m_IPv4Mask;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordtype">int</span> m_Len;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordtype">void</span> convertToIPAddressWithMask(std::string&amp; ipAddrmodified, std::string&amp; mask);</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordtype">void</span> convertToIPAddressWithLen(std::string&amp; ipAddrmodified, <span class="keywordtype">int</span>&amp; len);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordtype">void</span> convertToIPAddressWithMask(std::string&amp; ipAddrmodified, std::string&amp; mask) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordtype">void</span> convertToIPAddressWithLen(std::string&amp; ipAddrmodified, <span class="keywordtype">int</span>&amp; len) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00207"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_p_filter.html#a953d29c9f7d99369acea260016ab6825">  207</a></span>&#160;        <a class="code" href="classpcpp_1_1_i_p_filter.html#a953d29c9f7d99369acea260016ab6825">IPFilter</a>(<span class="keyword">const</span> std::string&amp; ipAddress, <a class="code" href="namespacepcpp.html#a966edb536b73cf93cbc9b83f9c64930a">Direction</a> dir) : <a class="code" href="classpcpp_1_1_i_filter_with_direction.html">IFilterWithDirection</a>(dir), m_Address(ipAddress), m_IPv4Mask(<span class="stringliteral">&quot;&quot;</span>), m_Len(0) {}</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
@@ -504,7 +504,7 @@ $(document).ready(function(){initNavTree('_pcap_filter_8h_source.html','');});
 <div class="ttc" id="aclasspcpp_1_1_mac_address_filter_html"><div class="ttname"><a href="classpcpp_1_1_mac_address_filter.html">pcpp::MacAddressFilter</a></div><div class="ttdef"><b>Definition:</b> PcapFilter.h:384</div></div>
 <div class="ttc" id="aclasspcpp_1_1_tcp_flags_filter_html_a1ac0469b57beda847374c1d39f9b1ee8ab5839fbc7807f3ac3a1a2ae8a53e35b4"><div class="ttname"><a href="classpcpp_1_1_tcp_flags_filter.html#a1ac0469b57beda847374c1d39f9b1ee8ab5839fbc7807f3ac3a1a2ae8a53e35b4">pcpp::TcpFlagsFilter::tcpPush</a></div><div class="ttdef"><b>Definition:</b> PcapFilter.h:647</div></div>
 <div class="ttc" id="aclasspcpp_1_1_b_p_f_string_filter_html"><div class="ttname"><a href="classpcpp_1_1_b_p_f_string_filter.html">pcpp::BPFStringFilter</a></div><div class="ttdef"><b>Definition:</b> PcapFilter.h:115</div></div>
-<div class="ttc" id="aclasspcpp_1_1_general_filter_html_aba731757009c1ce8db973aa334634765"><div class="ttname"><a href="classpcpp_1_1_general_filter.html#aba731757009c1ce8db973aa334634765">pcpp::GeneralFilter::~GeneralFilter</a></div><div class="ttdeci">virtual ~GeneralFilter()</div></div>
+<div class="ttc" id="aclasspcpp_1_1_general_filter_html_aba731757009c1ce8db973aa334634765"><div class="ttname"><a href="classpcpp_1_1_general_filter.html#aba731757009c1ce8db973aa334634765">pcpp::GeneralFilter::~GeneralFilter</a></div><div class="ttdeci">virtual ~GeneralFilter()</div><div class="ttdef"><b>Definition:</b> PcapFilter.h:108</div></div>
 <div class="ttc" id="aclasspcpp_1_1_mac_address_html"><div class="ttname"><a href="classpcpp_1_1_mac_address.html">pcpp::MacAddress</a></div><div class="ttdef"><b>Definition:</b> MacAddress.h:27</div></div>
 <div class="ttc" id="anamespacepcpp_html_a236073670782cc577b097b2fef4c7d62a30bbe6ce1abd380c5ae67861d079a805"><div class="ttname"><a href="namespacepcpp.html#a236073670782cc577b097b2fef4c7d62a30bbe6ce1abd380c5ae67861d079a805">pcpp::GREATER_THAN</a></div><div class="ttdef"><b>Definition:</b> PcapFilter.h:63</div></div>
 <div class="ttc" id="aclasspcpp_1_1_b_p_f_string_filter_html_ab3f553e5c65b83a4a83496d99c89fab7"><div class="ttname"><a href="classpcpp_1_1_b_p_f_string_filter.html#ab3f553e5c65b83a4a83496d99c89fab7">pcpp::BPFStringFilter::verifyFilter</a></div><div class="ttdeci">bool verifyFilter()</div></div>
@@ -572,7 +572,7 @@ $(document).ready(function(){initNavTree('_pcap_filter_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="_pcap_filter_8h.html">PcapFilter.h</a></li>
-    <li class="footer">Generated on Wed Oct 30 2019 23:13:04 for PcapPlusPlus by
+    <li class="footer">Generated on Thu Nov 7 2019 22:30:08 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>
