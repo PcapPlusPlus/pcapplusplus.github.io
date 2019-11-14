@@ -69,7 +69,7 @@ In order to compile PcapPlusPlus on Windows using MinGW-w64 you need the followi
 4. Follow the instruction in the installation wizard
 5. Install `MSYS2`from here: <https://www.msys2.org/>
 6. Add the following folders to your `PATH` environment variable:
-   1. The MinGW-w64 folder that contains `g++.exe`, `mingw32-make`, etc. It should be under `[MinGW-w64_install_folder]\mingw32\bin`, for example: `C:\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin`
+   1. The MinGW-w64 folder that contains `g++.exe`, `mingw32-make`, etc. It should be under `[MinGW-w64_install_folder]\mingw32\bin`, for example: `C:\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin`
    2. The MSYS2 `usr\bin` folder, for example: `C:\msys32\usr\bin`
 
 ## Additional prerequisites
