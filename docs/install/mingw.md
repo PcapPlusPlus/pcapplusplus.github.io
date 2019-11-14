@@ -65,12 +65,10 @@ In order to compile PcapPlusPlus on Windows using MinGW-w64 you need the followi
 
 1. Download and run mingw-w64 installer from here: <https://sourceforge.net/projects/mingw-w64/>
 2. Make sure the installation path doesn't contain spaces (otherwise PcapPlusPlus compilation may fail)
-3. Make sure to choose the i686 option (which is 32-bit). PcapPlusPlus doesn't support MinGW-w64 64-bit (x86_64)
-4. Make sure to choose POSIX threads and not win32 threads
-5. Follow the instruction in the installation wizard
-6. Install `MSYS` or `MSYS2`. `MSYS2` installer can be downloaded from here: <http://msys2.github.io/>
-7. Make sure to download and install the `msys2-i686` installer and not the `msys2-x86_64` installer
-8. Add the following folders to your `PATH` environment variable:
+3. Make sure to choose the i686 (32-bit) and POSIX threads (and not win32 threads) options. for example: `i686-8.1.0-posix-dwarf-rt_v6-rev0`. PcapPlusPlus doesn't support MinGW-w64 64-bit (x86_64)
+4. Follow the instruction in the installation wizard
+5. Install `MSYS2`from here: <https://www.msys2.org/>
+6. Add the following folders to your `PATH` environment variable:
    1. The MinGW-w64 folder that contains `g++.exe`, `mingw32-make`, etc. It should be under `[MinGW-w64_install_folder]\mingw32\bin`, for example: `C:\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin`
    2. The MSYS2 `usr\bin` folder, for example: `C:\msys32\usr\bin`
 
@@ -89,9 +87,9 @@ Ths script has two modes of operation:
 * Wizard mode - the script will walk you through the paths and parameters you need to provide
 * Params mode - all parameters are provided in the script command line
 
-In wizard mode the script will ask you for WinPcap developer's pack location and MinGW location. For MinGW-w64 please make sure to set the `mingw32\i686-w64-mingw32` folder, for example: `C:\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\i686-w64-mingw32`.
+In wizard mode the script will ask you for MinGW location (for example: `C:\MinGW` for MinGW or `C:\i686-8.1.0-posix-dwarf-rt_v6-rev0` for MinGW-w64) and also for WinPcap developer's pack location (for example: `C:\WpdPack`).
 
-Here is examples of running the script for MinGW32:
+Here is an example of running the script for MinGW32:
 
 ```shell
 C:\PcapPlusPlus>configure-windows-mingw.bat
@@ -138,13 +136,13 @@ Please specify mingw32 or mingw-w64: mingw-w64
 If mingw-w64 is not installed, please download and install it
 mingw-w64 can be downloaded from: sourceforge.net/projects/mingw-w64/
 
-Please specify mingw-w64 installed path (the folder that includes "bin", "lib" and "include" directories): C:\mingw-w64\i686-6.3.0-posix-dwarf-rt_v5-rev1\mingw32
+Please specify mingw-w64 installed path (the folder that includes "bin", "lib" and "include" directories): C:\i686-8.1.0-posix-dwarf-rt_v6-rev0  
 
 
 MSYS or MSYS2 are required for compiling PcapPlusPlus.
 If MSYS/MSYS2 are not installed, please download and install it
 
-Please specify MSYS/MSYS2 installed path: C:\mingw-w64\msys
+Please specify MSYS/MSYS2 installed path: C:\msys64
 
 
 WinPcap developer's pack is required for compiling PcapPlusPlus.
@@ -191,14 +189,14 @@ PcapPlusPlus Windows configuration script
 ******************************************
 
 
-PcapPlusPlus configuration is complete. Files created (or modified): mk\platform.mk, mk\PcapPlusPlus.mk
+PcapPlusPlus configuration is complete. Files created (or modified): mk\platform.mk, mk\PcapPlusPlus.mk  
 
 ```
 
 Or (MinGW-w64):
 
 ```shell
-C:\PcapPlusPlus>configure-windows-mingw.bat mingw-w64 --mingw-home C:\mingw-w64\i686-6.3.0-posix-dwarf-rt_v5-rev1\mingw32 --msys-home C:\mingw-w64\msys --winpcap-home C:\WpdPack
+C:\PcapPlusPlus>configure-windows-mingw.bat mingw-w64 --mingw-home C:\i686-8.1.0-posix-dwarf-rt_v6-rev0 --msys-home C:\msys64 --winpcap-home C:\WpdPack  
 
 ******************************************
 PcapPlusPlus Windows configuration script
