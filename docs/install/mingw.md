@@ -223,3 +223,7 @@ After running the config script, you're can safely build the code:
 2. This should compile all libraries, unit-tests and examples
 3. To build the libraries only (without the unit-tests and examples) run `mingw32-make.exe libs` instead of `mingw32-make.exe all`
 4. After compilation you can find the libraries, examples, header files and helpful makefiles under the `Dist\` directory
+
+## Running tests
+
+PcapPlusPlus contains a set of test-cases you can run to make sure that everything works correctly on your system. [This guide](/docs/install/build-source/tests) contains detailed instructions on how to run them.

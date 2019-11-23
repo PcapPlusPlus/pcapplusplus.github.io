@@ -96,3 +96,7 @@ $
 The default installation directory is `/usr/local` which means the header files will be copied to `/usr/local/include/pcapplusplus` and the library files will be copied to `/usr/local/lib`.
 
 You can change the installation directory by using the __`--install-dir`__ switch in the configuration script.
+
+## Running tests
+
+PcapPlusPlus contains a set of test-cases you can run to make sure that everything works correctly on your system. [This guide](/docs/install/build-source/tests) contains detailed instructions on how to run them.
