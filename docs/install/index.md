@@ -11,6 +11,8 @@ nav_order: 2
 
 PcapPlusPlus is available on <img src="/resources/logo-windows.png" alt="drawing" width="24" title="Windows"/> Windows, <img src="/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> Linux, <img src="/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/> MacOS and <img src="/resources/logo-freebsd.png" alt="drawing" width="24" title="FreeBSD"/> FreeBSD (see more details [here](/docs/install/platforms)).
 
+[Latest Release: {{ site.pcapplusplus_ver }}](https://github.com/seladb/PcapPlusPlus/releases/latest){: .btn .btn-purple } {% include new-release.html %}
+
 You can choose between downloading pre-built binaries or build it from source. The different options are described below:
 
 1. TOC
@@ -38,7 +40,7 @@ To install the package run the following commands from the command-line:
 
 ```bash
 conan remote add public-conan https://api.bintray.com/conan/bincrafters/public-conan
-conan install pcapplusplus/{{ site.pcapplusplus-ver-num }}@bincrafters/stable -r public-conan
+conan install pcapplusplus/{{ site.pcapplusplus_ver_num }}@bincrafters/stable -r public-conan
 ```
 
 ## Latest Release From GitHub
@@ -47,7 +49,7 @@ Available for: <img src="/resources/logo-windows.png" alt="drawing" width="24" t
 
 {% include alert.html alert-type="notice" content="FreeBSD is not yet supported in an official release. It's only available in master branch" %}
 
-[Download {{ site.pcapplusplus-ver }} pre compiled binaries](https://github.com/seladb/PcapPlusPlus/releases/latest){: .btn .btn-blue }
+[Download Latest Release: {{ site.pcapplusplus_ver }}](https://github.com/seladb/PcapPlusPlus/releases/latest){: .btn .btn-purple } {% include new-release.html %}
 
 Each release of PcapPlusPlus ships with pre-compiled libraries for a variety of operating systems and GCC versions including:
 
@@ -67,15 +69,15 @@ There is an additional Linux package shipped with every release that contains th
 
 ## Build From Source
 
-Download the source code for the latest version (__{{ site.pcapplusplus-ver }}__) from GitHub which includes:
+Download the source code for the latest version (__{{ site.pcapplusplus_ver }}__) from GitHub which includes:
 
 - Source code for __Common++__, __Packet++__, __Pcap++__
 - Examples
 - Unit tests
 - Configuration scripts for all platforms
 
-[Download {{ site.pcapplusplus-ver }} zip format](https://github.com/seladb/PcapPlusPlus/archive/{{ site.pcapplusplus-ver }}.zip){: .btn .btn-blue }
-[Download {{ site.pcapplusplus-ver }} tar.gz format](https://github.com/seladb/PcapPlusPlus/archive/{{ site.pcapplusplus-ver }}.tar.gz){: .btn .btn-blue }
+[Download {{ site.pcapplusplus_ver }} zip format](https://github.com/seladb/PcapPlusPlus/archive/{{ site.pcapplusplus_ver }}.zip){: .btn .btn-blue }
+[Download {{ site.pcapplusplus_ver }} tar.gz format](https://github.com/seladb/PcapPlusPlus/archive/{{ site.pcapplusplus_ver }}.tar.gz){: .btn .btn-blue }
 
 You can also download the latest source code from `master`:
 

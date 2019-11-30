@@ -18,7 +18,7 @@ This guide will help you install and build your first PcapPlusPlus application o
 
 ## Step 1 - install PcapPlusPlus
 
-As of now FreeBSD is only supported in `master` branch of PcapPlusPlus. It is not supported in the latest release (__{{ site.pcapplusplus-ver }}__).
+As of now FreeBSD is only supported in `master` branch of PcapPlusPlus. It is not supported in the latest release (__{{ site.pcapplusplus_ver }}__).
 
 In order to use PcapPlusPlus in FreeBSD you need to clone the latest version from `master` and follow the [installation guide](/docs/install/build-source/freebsd).
 
