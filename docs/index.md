@@ -22,12 +22,12 @@ This guide will help you install and build your first PcapPlusPlus application. 
 
 Please choose your platform:
 
-[<img src="/resources/logo-windows.png" alt="drawing" width="16" title="Windows"/> Windows - MinGW]({{ site.baseurl }}/docs/quickstart/mingw){: .btn .btn-blue }
+[<img src="{{ site.baseurl }}/resources/logo-windows.png" alt="drawing" width="16" title="Windows"/> Windows - MinGW]({{ site.baseurl }}/docs/quickstart/mingw){: .btn .btn-blue }
 
-[<img src="/resources/logo-windows.png" alt="drawing" width="16" title="Windows"/> Windows - Visual Studio]({{ site.baseurl }}/docs/quickstart/vs){: .btn .btn-blue }
+[<img src="{{ site.baseurl }}/resources/logo-windows.png" alt="drawing" width="16" title="Windows"/> Windows - Visual Studio]({{ site.baseurl }}/docs/quickstart/vs){: .btn .btn-blue }
 
-[<img src="/resources/logo-linux.png" alt="drawing" width="16" title="Linux"/> Linux]({{ site.baseurl }}/docs/quickstart/linux){: .btn .btn-blue }
+[<img src="{{ site.baseurl }}/resources/logo-linux.png" alt="drawing" width="16" title="Linux"/> Linux]({{ site.baseurl }}/docs/quickstart/linux){: .btn .btn-blue }
 
-[<img src="/resources/logo-apple.png" alt="drawing" width="16" title="MacOS"/> MacOS]({{ site.baseurl }}/docs/quickstart/macos){: .btn .btn-blue }
+[<img src="{{ site.baseurl }}/resources/logo-apple.png" alt="drawing" width="16" title="MacOS"/> MacOS]({{ site.baseurl }}/docs/quickstart/macos){: .btn .btn-blue }
 
-[<img src="/resources/logo-freebsd.png" alt="drawing" width="16" title="FreeBSD"/> FreeBSD]({{ site.baseurl }}/docs/quickstart/freebsd){: .btn .btn-blue }
+[<img src="{{ site.baseurl }}/resources/logo-freebsd.png" alt="drawing" width="16" title="FreeBSD"/> FreeBSD]({{ site.baseurl }}/docs/quickstart/freebsd){: .btn .btn-blue }

@@ -8,7 +8,7 @@ nav_order: 4
 # DPDK Support
 {: .no_toc }
 
-[<img src="/resources/logo-dpdk.png" alt="drawing" width="400"/>](https://www.dpdk.org/)
+[<img src="{{ site.baseurl }}/resources/logo-dpdk.png" alt="drawing" width="400"/>](https://www.dpdk.org/)
 
 The Data Plane Development Kit (DPDK) is a set of data plane libraries and network interface controller drivers for fast packet processing, currently managed as an open-source project under the Linux Foundation. The DPDK provides a programming framework for x86, ARM, and PowerPC processors and enables faster development of high speed data packet networking applications (taken from [Wikipedia](https://en.wikipedia.org/wiki/Data_Plane_Development_Kit)).
 

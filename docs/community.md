@@ -20,10 +20,10 @@ PcapPlusPlus is open source and we would love to hear from you! Below you'll fin
 
 There are multiple ways to contact us. Please feel free to reach out for any issue, question, suggestion or feedback you might have.
 
-| [<img src="/resources/logo-github.png" alt="drawing" width="40"/>](https://github.com/seladb/PcapPlusPlus/issues) | Open an issue on GitHub: <https://github.com/seladb/PcapPlusPlus/issues> |
-| [<img src="/resources/logo-google.png" alt="drawing" width="40"/>](https://groups.google.com/d/forum/pcapplusplus-support) | PcapPlusPlus Google Group: <https://groups.google.com/d/forum/pcapplusplus-support> |
-| [<img src="/resources/logo-email.png" alt="drawing" width="40"/>](mailto:pcapplusplus@gmail.com) | Send an email to <pcapplusplus@gmail.com> |
-| [<img src="/resources/logo-twitter.png" alt="drawing" width="40"/>](https://twitter.com/seladb) | Follow us on Twitter: <https://twitter.com/seladb> |
+| [<img src="{{ site.baseurl }}/resources/logo-github.png" alt="drawing" width="40"/>](https://github.com/seladb/PcapPlusPlus/issues) | Open an issue on GitHub: <https://github.com/seladb/PcapPlusPlus/issues> |
+| [<img src="{{ site.baseurl }}/resources/logo-google.png" alt="drawing" width="40"/>](https://groups.google.com/d/forum/pcapplusplus-support) | PcapPlusPlus Google Group: <https://groups.google.com/d/forum/pcapplusplus-support> |
+| [<img src="{{ site.baseurl }}/resources/logo-email.png" alt="drawing" width="40"/>](mailto:pcapplusplus@gmail.com) | Send an email to <pcapplusplus@gmail.com> |
+| [<img src="{{ site.baseurl }}/resources/logo-twitter.png" alt="drawing" width="40"/>](https://twitter.com/seladb) | Follow us on Twitter: <https://twitter.com/seladb> |
 
 ## Support Us
 

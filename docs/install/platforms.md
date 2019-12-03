@@ -14,7 +14,7 @@ The platforms and toolchains described below are supported and being continuousl
 1. TOC
 {:toc}
 
-## <img src="/resources/logo-windows.png" alt="drawing" width="24" title="Windows"/> Windows
+## <img src="{{ site.baseurl }}/resources/logo-windows.png" alt="drawing" width="24" title="Windows"/> Windows
 
 - [Microsoft Visual Studio](https://visualstudio.microsoft.com/) (32-bit + 64-bit compilation):
   - Visual Studio 2015
@@ -23,7 +23,7 @@ The platforms and toolchains described below are supported and being continuousl
 - [MinGW32](http://www.mingw.org/) (32-bit compilation only)
 - [MinGW-w64](https://mingw-w64.org) (32-bit compilation only)
 
-## <img src="/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> Linux
+## <img src="{{ site.baseurl }}/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> Linux
 
 Basically every x86 GCC toolchain should work, but PcapPlusPlus is being continuously tested on the following platforms:
 
@@ -31,14 +31,14 @@ Basically every x86 GCC toolchain should work, but PcapPlusPlus is being continu
 - [Fedora](https://getfedora.org/) 26 & 29
 - [CentOS](https://www.centos.org/) 7
 
-## <img src="/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/> MacOS
+## <img src="{{ site.baseurl }}/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/> MacOS
 
 - Mojave (10.14)
 - High Sierra (10.13)
 - Sierra (10.12)
 - El Capitan (10.11)
 
-## <img src="/resources/logo-freebsd.png" alt="drawing" width="24" title="FreeBSD"/> FreeBSD
+## <img src="{{ site.baseurl }}/resources/logo-freebsd.png" alt="drawing" width="24" title="FreeBSD"/> FreeBSD
 
 Versions 11.1 and above are supported
 
