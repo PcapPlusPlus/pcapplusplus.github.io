@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.04+</span>
+   &#160;<span id="projectnumber">19.12</span>
    </div>
   </td>
  </tr>
@@ -140,11 +140,11 @@ $(document).ready(function(){initNavTree('_vlan_layer_8h_source.html','');});
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_vlan_layer.html#a083d3c9058269a46b6874adda2930e69">parseNextLayer</a>();</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classpcpp_1_1_vlan_layer.html#a9f89975517e388390c7b97d84f1bca50">  125</a></span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="classpcpp_1_1_vlan_layer.html#a9f89975517e388390c7b97d84f1bca50">getHeaderLen</a>() { <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code" href="structpcpp_1_1vlan__header.html">vlan_header</a>); }</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classpcpp_1_1_vlan_layer.html#a2ba1600443500cf73b97ea11de0a7999">  125</a></span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="classpcpp_1_1_vlan_layer.html#a2ba1600443500cf73b97ea11de0a7999">getHeaderLen</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code" href="structpcpp_1_1vlan__header.html">vlan_header</a>); }</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
 <div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="classpcpp_1_1_vlan_layer.html#a931be22ad37fcedab548a9752d7c834a">  130</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_vlan_layer.html#a931be22ad37fcedab548a9752d7c834a">computeCalculateFields</a>() {}</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        std::string <a class="code" href="classpcpp_1_1_vlan_layer.html#af9b69bf34d39563db7f140665ed322bd">toString</a>();</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        std::string <a class="code" href="classpcpp_1_1_vlan_layer.html#a597016f84e8941d5647e4aea893a6ca5">toString</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
 <div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="classpcpp_1_1_vlan_layer.html#a1bfb0949dbf60bfdbbfbd51f5a2d36fd">  134</a></span>&#160;        <a class="code" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> <a class="code" href="classpcpp_1_1_vlan_layer.html#a1bfb0949dbf60bfdbbfbd51f5a2d36fd">getOsiModelLayer</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2">OsiModelDataLinkLayer</a>; }</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    };</div>
@@ -166,24 +166,24 @@ $(document).ready(function(){initNavTree('_vlan_layer_8h_source.html','');});
 <div class="ttc" id="aclasspcpp_1_1_vlan_layer_html_a931be22ad37fcedab548a9752d7c834a"><div class="ttname"><a href="classpcpp_1_1_vlan_layer.html#a931be22ad37fcedab548a9752d7c834a">pcpp::VlanLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:130</div></div>
 <div class="ttc" id="aclasspcpp_1_1_vlan_layer_html_a92084616cf00c45903ecaaeed0c20cd5"><div class="ttname"><a href="classpcpp_1_1_vlan_layer.html#a92084616cf00c45903ecaaeed0c20cd5">pcpp::VlanLayer::setPriority</a></div><div class="ttdeci">void setPriority(uint8_t priority)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_vlan_layer_html_a5e2229a489ef1a9a250269f255a11922"><div class="ttname"><a href="classpcpp_1_1_vlan_layer.html#a5e2229a489ef1a9a250269f255a11922">pcpp::VlanLayer::getPriority</a></div><div class="ttdeci">uint8_t getPriority() const</div></div>
+<div class="ttc" id="aclasspcpp_1_1_vlan_layer_html_a2ba1600443500cf73b97ea11de0a7999"><div class="ttname"><a href="classpcpp_1_1_vlan_layer.html#a2ba1600443500cf73b97ea11de0a7999">pcpp::VlanLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen() const</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:125</div></div>
 <div class="ttc" id="astructpcpp_1_1vlan__header_html_a97b02b09b19f6ee7395865617afab10e"><div class="ttname"><a href="structpcpp_1_1vlan__header.html#a97b02b09b19f6ee7395865617afab10e">pcpp::vlan_header::vlan</a></div><div class="ttdeci">uint16_t vlan</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:34</div></div>
 <div class="ttc" id="astructpcpp_1_1vlan__header_html_a790a917cc070fb1ace8c77a7a12d0870"><div class="ttname"><a href="structpcpp_1_1vlan__header.html#a790a917cc070fb1ace8c77a7a12d0870">pcpp::vlan_header::etherType</a></div><div class="ttdeci">uint16_t etherType</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:36</div></div>
 <div class="ttc" id="aclasspcpp_1_1_vlan_layer_html_aeb6dcaefa11775c2b64e0be74094116d"><div class="ttname"><a href="classpcpp_1_1_vlan_layer.html#aeb6dcaefa11775c2b64e0be74094116d">pcpp::VlanLayer::setVlanID</a></div><div class="ttdeci">void setVlanID(uint16_t id)</div></div>
 <div class="ttc" id="astructpcpp_1_1vlan__header_html"><div class="ttname"><a href="structpcpp_1_1vlan__header.html">pcpp::vlan_header</a></div><div class="ttdef"><b>Definition:</b> VlanLayer.h:24</div></div>
 <div class="ttc" id="aclasspcpp_1_1_vlan_layer_html_a2a0c09dcb6672f4ac371df94502bea16"><div class="ttname"><a href="classpcpp_1_1_vlan_layer.html#a2a0c09dcb6672f4ac371df94502bea16">pcpp::VlanLayer::getVlanID</a></div><div class="ttdeci">uint16_t getVlanID() const</div></div>
+<div class="ttc" id="aclasspcpp_1_1_vlan_layer_html_a597016f84e8941d5647e4aea893a6ca5"><div class="ttname"><a href="classpcpp_1_1_vlan_layer.html#a597016f84e8941d5647e4aea893a6ca5">pcpp::VlanLayer::toString</a></div><div class="ttdeci">std::string toString() const</div></div>
 <div class="ttc" id="anamespacepcpp_html"><div class="ttname"><a href="namespacepcpp.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib.</div></div>
 <div class="ttc" id="aclasspcpp_1_1_layer_html"><div class="ttname"><a href="classpcpp_1_1_layer.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:70</div></div>
 <div class="ttc" id="aclasspcpp_1_1_vlan_layer_html_a1bfb0949dbf60bfdbbfbd51f5a2d36fd"><div class="ttname"><a href="classpcpp_1_1_vlan_layer.html#a1bfb0949dbf60bfdbbfbd51f5a2d36fd">pcpp::VlanLayer::getOsiModelLayer</a></div><div class="ttdeci">OsiModelLayer getOsiModelLayer() const</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:134</div></div>
 <div class="ttc" id="a_eth_layer_8h_html"><div class="ttname"><a href="_eth_layer_8h.html">EthLayer.h</a></div></div>
 <div class="ttc" id="aclasspcpp_1_1_vlan_layer_html_a16ed17dab42d1c6b6b6cce813b39178a"><div class="ttname"><a href="classpcpp_1_1_vlan_layer.html#a16ed17dab42d1c6b6b6cce813b39178a">pcpp::VlanLayer::getCFI</a></div><div class="ttdeci">uint8_t getCFI() const</div></div>
 <div class="ttc" id="aclasspcpp_1_1_vlan_layer_html_a5f6f8f15642dd1f0a88550bde0fb51b0"><div class="ttname"><a href="classpcpp_1_1_vlan_layer.html#a5f6f8f15642dd1f0a88550bde0fb51b0">pcpp::VlanLayer::VlanLayer</a></div><div class="ttdeci">VlanLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:54</div></div>
-<div class="ttc" id="aclasspcpp_1_1_vlan_layer_html_af9b69bf34d39563db7f140665ed322bd"><div class="ttname"><a href="classpcpp_1_1_vlan_layer.html#af9b69bf34d39563db7f140665ed322bd">pcpp::VlanLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
-<div class="ttc" id="aclasspcpp_1_1_vlan_layer_html_a9f89975517e388390c7b97d84f1bca50"><div class="ttname"><a href="classpcpp_1_1_vlan_layer.html#a9f89975517e388390c7b97d84f1bca50">pcpp::VlanLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:125</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="_vlan_layer_8h.html">VlanLayer.h</a></li>
-    <li class="footer">Generated on Thu Nov 7 2019 22:30:08 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Dec 2 2019 23:53:21 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

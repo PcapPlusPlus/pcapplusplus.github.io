@@ -24,13 +24,13 @@ var classpcpp_1_1_dns_layer =
     [ "getFirstAnswer", "classpcpp_1_1_dns_layer.html#a03dd71c23b128df508102f22f37c3e4b", null ],
     [ "getFirstAuthority", "classpcpp_1_1_dns_layer.html#a9d3eb712860aa5858952e34fd97a6267", null ],
     [ "getFirstQuery", "classpcpp_1_1_dns_layer.html#ace109477462370e2142dc1ca519154ee", null ],
-    [ "getHeaderLen", "classpcpp_1_1_dns_layer.html#a6756ac1812e21996e8d673f77a72df89", null ],
+    [ "getHeaderLen", "classpcpp_1_1_dns_layer.html#a9b6c55c413b6dabf912a8f3a407b0be1", null ],
     [ "getNextAdditionalRecord", "classpcpp_1_1_dns_layer.html#ac9f8e189bbce677dfbf0508c45bb3310", null ],
     [ "getNextAnswer", "classpcpp_1_1_dns_layer.html#a7102c8ac9508e1f6117424ba88c33c3b", null ],
     [ "getNextAuthority", "classpcpp_1_1_dns_layer.html#a687ae5806f248d36ce3ca9b7e7191ef4", null ],
     [ "getNextQuery", "classpcpp_1_1_dns_layer.html#a8919c2d63dca7d0653e18d0cd1081dd1", null ],
     [ "getOsiModelLayer", "classpcpp_1_1_dns_layer.html#a92f2ac17c667c223d4eee7d24d898d7f", null ],
-    [ "getQuery", "classpcpp_1_1_dns_layer.html#a94fae8d66aca1e4ef28d64871dc4db01", null ],
+    [ "getQuery", "classpcpp_1_1_dns_layer.html#a1e350c5f5c2686900c91a8753f70745b", null ],
     [ "getQueryCount", "classpcpp_1_1_dns_layer.html#a647e6683f885b3b75aaacb2665af741d", null ],
     [ "operator=", "classpcpp_1_1_dns_layer.html#ae265ed7f1e5ce8b8480db3c9b0ca6c34", null ],
     [ "parseNextLayer", "classpcpp_1_1_dns_layer.html#a6bb48ab08675a1ffdfd75061426a6e3a", null ],
@@ -42,5 +42,5 @@ var classpcpp_1_1_dns_layer =
     [ "removeAuthority", "classpcpp_1_1_dns_layer.html#ae957f7b50adade0c014ab8007f4009bd", null ],
     [ "removeQuery", "classpcpp_1_1_dns_layer.html#a5952988d68c6a82e38347a403f43f389", null ],
     [ "removeQuery", "classpcpp_1_1_dns_layer.html#aa62ae344b6dd0ff36ac17242ba7971e2", null ],
-    [ "toString", "classpcpp_1_1_dns_layer.html#a196be28c29a4a166ec75aa04391e3dd6", null ]
+    [ "toString", "classpcpp_1_1_dns_layer.html#ae4f2ef22e52ddd1458073f1838879fe5", null ]
 ];

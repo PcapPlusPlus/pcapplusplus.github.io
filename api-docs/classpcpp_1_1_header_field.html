@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.04+</span>
+   &#160;<span id="projectnumber">19.12</span>
    </div>
   </td>
  </tr>
@@ -102,16 +102,16 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_header_field.html','');}
 Public Member Functions</h2></td></tr>
 <tr class="memitem:adfc033ec04c1a31156bedf7273791ed0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_header_field.html#adfc033ec04c1a31156bedf7273791ed0">HeaderField</a> (const <a class="el" href="classpcpp_1_1_header_field.html">HeaderField</a> &amp;other)</td></tr>
 <tr class="separator:adfc033ec04c1a31156bedf7273791ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8ff08cb95afb62d01caccf7edb5fd54"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_header_field.html#ad8ff08cb95afb62d01caccf7edb5fd54">getFieldSize</a> ()</td></tr>
-<tr class="separator:ad8ff08cb95afb62d01caccf7edb5fd54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cf6794cc8e08accb69e486493396d18"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_header_field.html#a5cf6794cc8e08accb69e486493396d18">getFieldSize</a> () const</td></tr>
+<tr class="separator:a5cf6794cc8e08accb69e486493396d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae628e19ba7dc0eb8eb031c779b336b61"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_header_field.html#ae628e19ba7dc0eb8eb031c779b336b61">getFieldName</a> () const</td></tr>
 <tr class="separator:ae628e19ba7dc0eb8eb031c779b336b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a987671480ebed7284d00b7e21af759a3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_header_field.html#a987671480ebed7284d00b7e21af759a3">getFieldValue</a> () const</td></tr>
 <tr class="separator:a987671480ebed7284d00b7e21af759a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c89f09744ba1ade7e75adf8fddbecbb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_header_field.html#a6c89f09744ba1ade7e75adf8fddbecbb">setFieldValue</a> (std::string newValue)</td></tr>
 <tr class="separator:a6c89f09744ba1ade7e75adf8fddbecbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80a8b96e3e6cb6589799e6440ab1cf75"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_header_field.html#a80a8b96e3e6cb6589799e6440ab1cf75">isEndOfHeader</a> ()</td></tr>
-<tr class="separator:a80a8b96e3e6cb6589799e6440ab1cf75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af55e9e518f8d877de04aa201e22d492a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_header_field.html#af55e9e518f8d877de04aa201e22d492a">isEndOfHeader</a> () const</td></tr>
+<tr class="separator:af55e9e518f8d877de04aa201e22d492a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A wrapper class for each text-based-protocol header field, e.g "Host", "Cookie", "Content-Length", "Via", "Call-ID", etc. Each field contains a name (e.g "Host") and a value (e.g "www.wikipedia.org"). The user can get and set both of them through dedicated methods. The separator between header fields is either CRLF ("\r\n\") or LF ("\n") in more rare cases, which means every <a class="el" href="classpcpp_1_1_header_field.html">HeaderField</a> instance is responsible for wrapping and parsing a header field from the previous CRLF (not inclusive) until the next CRLF/LF (inclusive) A special case is with the end of a header, meaning 2 consecutive CRLFs ("\r\n\r\n") or consecutive LFs ("\n\n"). PcapPlusPlus treats the first CRLF/LF as part of the last field in the header, and the second CRLF is an <a class="el" href="classpcpp_1_1_header_field.html">HeaderField</a> instance of its own which name and values are an empty string ("") or pcpp::PCPP_END_OF_TEXT_BASED_PROTOCOL_HEADER </p>
@@ -159,8 +159,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad8ff08cb95afb62d01caccf7edb5fd54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8ff08cb95afb62d01caccf7edb5fd54">&#9670;&nbsp;</a></span>getFieldSize()</h2>
+<a id="a5cf6794cc8e08accb69e486493396d18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cf6794cc8e08accb69e486493396d18">&#9670;&nbsp;</a></span>getFieldSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -172,7 +172,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">size_t pcpp::HeaderField::getFieldSize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -203,8 +203,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a80a8b96e3e6cb6589799e6440ab1cf75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80a8b96e3e6cb6589799e6440ab1cf75">&#9670;&nbsp;</a></span>isEndOfHeader()</h2>
+<a id="af55e9e518f8d877de04aa201e22d492a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af55e9e518f8d877de04aa201e22d492a">&#9670;&nbsp;</a></span>isEndOfHeader()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -216,7 +216,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">bool pcpp::HeaderField::isEndOfHeader </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -259,7 +259,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_header_field.html">HeaderField</a></li>
-    <li class="footer">Generated on Thu Nov 7 2019 22:30:09 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Dec 2 2019 23:53:21 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

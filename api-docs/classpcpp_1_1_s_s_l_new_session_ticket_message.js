@@ -1,7 +1,7 @@
 var classpcpp_1_1_s_s_l_new_session_ticket_message =
 [
     [ "SSLNewSessionTicketMessage", "classpcpp_1_1_s_s_l_new_session_ticket_message.html#a55d2fff5ceb20ca419344ced210606a4", null ],
-    [ "getSessionTicketData", "classpcpp_1_1_s_s_l_new_session_ticket_message.html#a1d30391db4fdab5edae186d9355ad95d", null ],
-    [ "getSessionTicketDataLength", "classpcpp_1_1_s_s_l_new_session_ticket_message.html#a52a6142dd3673d7b385d2219ca345ef6", null ],
-    [ "toString", "classpcpp_1_1_s_s_l_new_session_ticket_message.html#a2c49f187e4aac5f99e3c97178108cefc", null ]
+    [ "getSessionTicketData", "classpcpp_1_1_s_s_l_new_session_ticket_message.html#ac2d009e0327fd31799392f42ade51b29", null ],
+    [ "getSessionTicketDataLength", "classpcpp_1_1_s_s_l_new_session_ticket_message.html#a1c10ddc07a6890a5c046e50e37341dd4", null ],
+    [ "toString", "classpcpp_1_1_s_s_l_new_session_ticket_message.html#a4fab267a6c9ea3c2f6b563082360d70d", null ]
 ];

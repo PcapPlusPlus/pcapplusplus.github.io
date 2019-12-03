@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.04+</span>
+   &#160;<span id="projectnumber">19.12</span>
    </div>
   </td>
  </tr>
@@ -177,13 +177,18 @@ $(document).ready(function(){initNavTree('_pointer_vector_8h_source.html','');})
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keywordflow">return</span> m_Vector.at(index);</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        }</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        std::vector&lt;T*&gt; m_Vector;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    };</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;} <span class="comment">// namespace pcpp</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_POINTER_VECTOR */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="classpcpp_1_1_pointer_vector.html#aa3609cc0782248fbdafa90b91066b4a9">  163</a></span>&#160;        <span class="keyword">const</span> T* <a class="code" href="classpcpp_1_1_pointer_vector.html#aa3609cc0782248fbdafa90b91066b4a9">at</a>(<span class="keywordtype">int</span> index)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <span class="keywordflow">return</span> m_Vector.at(index);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        }</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        std::vector&lt;T*&gt; m_Vector;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    };</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PCAPPP_POINTER_VECTOR */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclasspcpp_1_1_pointer_vector_html_a15e41c4b220465138e47b5083098e30e"><div class="ttname"><a href="classpcpp_1_1_pointer_vector.html#a15e41c4b220465138e47b5083098e30e">pcpp::PointerVector::begin</a></div><div class="ttdeci">VectorIterator begin()</div><div class="ttdef"><b>Definition:</b> PointerVector.h:88</div></div>
@@ -192,6 +197,7 @@ $(document).ready(function(){initNavTree('_pointer_vector_8h_source.html','');})
 <div class="ttc" id="aclasspcpp_1_1_pointer_vector_html_aa3a724c88f399524a10853bfa5c28dd3"><div class="ttname"><a href="classpcpp_1_1_pointer_vector.html#aa3a724c88f399524a10853bfa5c28dd3">pcpp::PointerVector::front</a></div><div class="ttdeci">T * front()</div><div class="ttdef"><b>Definition:</b> PointerVector.h:121</div></div>
 <div class="ttc" id="aclasspcpp_1_1_pointer_vector_html_ae21ecab0276bc0be1ab9a86df6622386"><div class="ttname"><a href="classpcpp_1_1_pointer_vector.html#ae21ecab0276bc0be1ab9a86df6622386">pcpp::PointerVector::ConstVectorIterator</a></div><div class="ttdeci">std::vector&lt; T * &gt;::const_iterator ConstVectorIterator</div><div class="ttdef"><b>Definition:</b> PointerVector.h:35</div></div>
 <div class="ttc" id="aclasspcpp_1_1_pointer_vector_html_ac5dc7892ac45d111f4bf8be1843f35b4"><div class="ttname"><a href="classpcpp_1_1_pointer_vector.html#ac5dc7892ac45d111f4bf8be1843f35b4">pcpp::PointerVector::begin</a></div><div class="ttdeci">ConstVectorIterator begin() const</div><div class="ttdef"><b>Definition:</b> PointerVector.h:94</div></div>
+<div class="ttc" id="aclasspcpp_1_1_pointer_vector_html_aa3609cc0782248fbdafa90b91066b4a9"><div class="ttname"><a href="classpcpp_1_1_pointer_vector.html#aa3609cc0782248fbdafa90b91066b4a9">pcpp::PointerVector::at</a></div><div class="ttdeci">const T * at(int index) const</div><div class="ttdef"><b>Definition:</b> PointerVector.h:163</div></div>
 <div class="ttc" id="aclasspcpp_1_1_pointer_vector_html_a6528e240e35f7ee2407d22f24c3dd644"><div class="ttname"><a href="classpcpp_1_1_pointer_vector.html#a6528e240e35f7ee2407d22f24c3dd644">pcpp::PointerVector::PointerVector</a></div><div class="ttdeci">PointerVector(const PointerVector &amp;other)</div><div class="ttdef"><b>Definition:</b> PointerVector.h:57</div></div>
 <div class="ttc" id="anamespacepcpp_html"><div class="ttname"><a href="namespacepcpp.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib.</div></div>
 <div class="ttc" id="aclasspcpp_1_1_pointer_vector_html_a9baaf544074aaa6a842e8136bea5b112"><div class="ttname"><a href="classpcpp_1_1_pointer_vector.html#a9baaf544074aaa6a842e8136bea5b112">pcpp::PointerVector::size</a></div><div class="ttdeci">size_t size() const</div><div class="ttdef"><b>Definition:</b> PointerVector.h:115</div></div>
@@ -208,7 +214,7 @@ $(document).ready(function(){initNavTree('_pointer_vector_8h_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="_pointer_vector_8h.html">PointerVector.h</a></li>
-    <li class="footer">Generated on Thu Nov 7 2019 22:30:08 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Dec 2 2019 23:53:20 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

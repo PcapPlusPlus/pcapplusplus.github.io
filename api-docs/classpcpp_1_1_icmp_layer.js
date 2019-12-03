@@ -8,7 +8,7 @@ var classpcpp_1_1_icmp_layer =
     [ "getDestUnreachableData", "classpcpp_1_1_icmp_layer.html#ac0767cfb81c4da94e26c06299fefd835", null ],
     [ "getEchoReplyData", "classpcpp_1_1_icmp_layer.html#a3af6f1f669657ffc5f57b5d19e754cae", null ],
     [ "getEchoRequestData", "classpcpp_1_1_icmp_layer.html#a276c2f11d582ed32e4f451ea265a452d", null ],
-    [ "getHeaderLen", "classpcpp_1_1_icmp_layer.html#a88e0d520938516cd29ac07fc1a1113de", null ],
+    [ "getHeaderLen", "classpcpp_1_1_icmp_layer.html#a422fd5bda2c130b82add5b3622ed2760", null ],
     [ "getIcmpHeader", "classpcpp_1_1_icmp_layer.html#ab070cb83fbe8a84a60ed6e0d616068b4", null ],
     [ "getInfoReplyData", "classpcpp_1_1_icmp_layer.html#a33a39382e3122b4babbc27251d6290a8", null ],
     [ "getInfoRequestData", "classpcpp_1_1_icmp_layer.html#abefe7e37b10bea2fdc45f2f32d9f9260", null ],
@@ -16,7 +16,7 @@ var classpcpp_1_1_icmp_layer =
     [ "getOsiModelLayer", "classpcpp_1_1_icmp_layer.html#af8df20c1fac43a9818f4f4762c5b01ee", null ],
     [ "getParamProblemData", "classpcpp_1_1_icmp_layer.html#ad854fa2f6bfb1f33f97ec334965811e4", null ],
     [ "getRedirectData", "classpcpp_1_1_icmp_layer.html#a8ed0adf59a73890c1812614f2697335f", null ],
-    [ "getRouterAdvertisementData", "classpcpp_1_1_icmp_layer.html#a77e4bc6d79c8b13360913eed0547c03b", null ],
+    [ "getRouterAdvertisementData", "classpcpp_1_1_icmp_layer.html#ab60d85d72fa49158ef37f0334db4cb65", null ],
     [ "getRouterSolicitationData", "classpcpp_1_1_icmp_layer.html#a0ca046fef95759ed7980cd7f141f4961", null ],
     [ "getSourceQuenchdata", "classpcpp_1_1_icmp_layer.html#a5ddc475448950b549023fe40a97936f2", null ],
     [ "getTimeExceededData", "classpcpp_1_1_icmp_layer.html#acc9c37a0f1a77417b21eb8e97ec79088", null ],
@@ -39,5 +39,5 @@ var classpcpp_1_1_icmp_layer =
     [ "setTimeExceededData", "classpcpp_1_1_icmp_layer.html#ac202dd83f1fd0e869c3e3b3c1ba135e5", null ],
     [ "setTimestampReplyData", "classpcpp_1_1_icmp_layer.html#aed95fbe23a429c7ff918bf506eae987c", null ],
     [ "setTimestampRequestData", "classpcpp_1_1_icmp_layer.html#ab2ff5f7719d986ccb2aa949fc1ed5476", null ],
-    [ "toString", "classpcpp_1_1_icmp_layer.html#a868db49726faecbbd9a56293c109e660", null ]
+    [ "toString", "classpcpp_1_1_icmp_layer.html#a2b81f98f2e9ecf93db1347305405db8e", null ]
 ];

@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.04+</span>
+   &#160;<span id="projectnumber">19.12</span>
    </div>
   </td>
  </tr>
@@ -168,11 +168,11 @@ $(document).ready(function(){initNavTree('_eth_layer_8h_source.html','');});
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_eth_layer.html#a1cf68349e014756d8f7f6fa0181d4129">parseNextLayer</a>();</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
-<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="classpcpp_1_1_eth_layer.html#a7b49445f344b1f5aafc662ce222450d6">  141</a></span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="classpcpp_1_1_eth_layer.html#a7b49445f344b1f5aafc662ce222450d6">getHeaderLen</a>() { <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code" href="structpcpp_1_1ether__header.html">ether_header</a>); }</div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="classpcpp_1_1_eth_layer.html#a2e7bdcabc020901f6275a2758208c49c">  141</a></span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="classpcpp_1_1_eth_layer.html#a2e7bdcabc020901f6275a2758208c49c">getHeaderLen</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code" href="structpcpp_1_1ether__header.html">ether_header</a>); }</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_eth_layer.html#a23c0729d47399ea7bcf89098334f7fe0">computeCalculateFields</a>();</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        std::string <a class="code" href="classpcpp_1_1_eth_layer.html#acd79c662d372e1ea4ea1a679305ab810">toString</a>();</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        std::string <a class="code" href="classpcpp_1_1_eth_layer.html#a20db64d97d2ab419420b51af31c5a283">toString</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
 <div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="classpcpp_1_1_eth_layer.html#a309b677ac26da896a1cfeada3880220e">  150</a></span>&#160;        <a class="code" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> <a class="code" href="classpcpp_1_1_eth_layer.html#a309b677ac26da896a1cfeada3880220e">getOsiModelLayer</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2">OsiModelDataLinkLayer</a>; }</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    };</div>
@@ -193,19 +193,19 @@ $(document).ready(function(){initNavTree('_eth_layer_8h_source.html','');});
 <div class="ttc" id="a_layer_8h_html"><div class="ttname"><a href="_layer_8h.html">Layer.h</a></div></div>
 <div class="ttc" id="a_mac_address_8h_html"><div class="ttname"><a href="_mac_address_8h.html">MacAddress.h</a></div></div>
 <div class="ttc" id="astructpcpp_1_1ether__header_html_a466d328a654e445f4d9cb594ff1486ff"><div class="ttname"><a href="structpcpp_1_1ether__header.html#a466d328a654e445f4d9cb594ff1486ff">pcpp::ether_header::srcMac</a></div><div class="ttdeci">uint8_t srcMac[6]</div><div class="ttdef"><b>Definition:</b> EthLayer.h:25</div></div>
-<div class="ttc" id="aclasspcpp_1_1_mac_address_html_aee73706ca1f0e403adbf4c2f691e7da1"><div class="ttname"><a href="classpcpp_1_1_mac_address.html#aee73706ca1f0e403adbf4c2f691e7da1">pcpp::MacAddress::copyTo</a></div><div class="ttdeci">void copyTo(uint8_t **arr) const</div><div class="ttdef"><b>Definition:</b> MacAddress.h:141</div></div>
+<div class="ttc" id="aclasspcpp_1_1_mac_address_html_aee73706ca1f0e403adbf4c2f691e7da1"><div class="ttname"><a href="classpcpp_1_1_mac_address.html#aee73706ca1f0e403adbf4c2f691e7da1">pcpp::MacAddress::copyTo</a></div><div class="ttdeci">void copyTo(uint8_t **arr) const</div><div class="ttdef"><b>Definition:</b> MacAddress.h:143</div></div>
 <div class="ttc" id="aclasspcpp_1_1_mac_address_html"><div class="ttname"><a href="classpcpp_1_1_mac_address.html">pcpp::MacAddress</a></div><div class="ttdef"><b>Definition:</b> MacAddress.h:27</div></div>
+<div class="ttc" id="aclasspcpp_1_1_eth_layer_html_a2e7bdcabc020901f6275a2758208c49c"><div class="ttname"><a href="classpcpp_1_1_eth_layer.html#a2e7bdcabc020901f6275a2758208c49c">pcpp::EthLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen() const</div><div class="ttdef"><b>Definition:</b> EthLayer.h:141</div></div>
 <div class="ttc" id="aclasspcpp_1_1_eth_layer_html_ac9b2011c1421ed40ab327e5a26872733"><div class="ttname"><a href="classpcpp_1_1_eth_layer.html#ac9b2011c1421ed40ab327e5a26872733">pcpp::EthLayer::setDestMac</a></div><div class="ttdeci">void setDestMac(const MacAddress &amp;destMac)</div><div class="ttdef"><b>Definition:</b> EthLayer.h:127</div></div>
 <div class="ttc" id="astructpcpp_1_1ether__header_html_a3200f5fc394812077b6c96d2b15f7658"><div class="ttname"><a href="structpcpp_1_1ether__header.html#a3200f5fc394812077b6c96d2b15f7658">pcpp::ether_header::etherType</a></div><div class="ttdeci">uint16_t etherType</div><div class="ttdef"><b>Definition:</b> EthLayer.h:27</div></div>
 <div class="ttc" id="astructpcpp_1_1ether__header_html"><div class="ttname"><a href="structpcpp_1_1ether__header.html">pcpp::ether_header</a></div><div class="ttdef"><b>Definition:</b> EthLayer.h:21</div></div>
 <div class="ttc" id="aclasspcpp_1_1_eth_layer_html_ae509330de4c0b0c2c52bc0ba4f1276d4"><div class="ttname"><a href="classpcpp_1_1_eth_layer.html#ae509330de4c0b0c2c52bc0ba4f1276d4">pcpp::EthLayer::EthLayer</a></div><div class="ttdeci">EthLayer(uint8_t *data, size_t dataLen, Packet *packet)</div><div class="ttdef"><b>Definition:</b> EthLayer.h:78</div></div>
-<div class="ttc" id="aclasspcpp_1_1_eth_layer_html_acd79c662d372e1ea4ea1a679305ab810"><div class="ttname"><a href="classpcpp_1_1_eth_layer.html#acd79c662d372e1ea4ea1a679305ab810">pcpp::EthLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
 <div class="ttc" id="anamespacepcpp_html"><div class="ttname"><a href="namespacepcpp.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib.</div></div>
 <div class="ttc" id="aclasspcpp_1_1_eth_layer_html_abbc76dfc9f91231fc3df118a96bec22c"><div class="ttname"><a href="classpcpp_1_1_eth_layer.html#abbc76dfc9f91231fc3df118a96bec22c">pcpp::EthLayer::getSourceMac</a></div><div class="ttdeci">MacAddress getSourceMac() const</div><div class="ttdef"><b>Definition:</b> EthLayer.h:109</div></div>
 <div class="ttc" id="aclasspcpp_1_1_layer_html"><div class="ttname"><a href="classpcpp_1_1_layer.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:70</div></div>
 <div class="ttc" id="aclasspcpp_1_1_eth_layer_html"><div class="ttname"><a href="classpcpp_1_1_eth_layer.html">pcpp::EthLayer</a></div><div class="ttdef"><b>Definition:</b> EthLayer.h:69</div></div>
 <div class="ttc" id="astructpcpp_1_1ether__header_html_a6fbac47e840aa3f6055d0b97c684bd45"><div class="ttname"><a href="structpcpp_1_1ether__header.html#a6fbac47e840aa3f6055d0b97c684bd45">pcpp::ether_header::dstMac</a></div><div class="ttdeci">uint8_t dstMac[6]</div><div class="ttdef"><b>Definition:</b> EthLayer.h:23</div></div>
-<div class="ttc" id="aclasspcpp_1_1_eth_layer_html_a7b49445f344b1f5aafc662ce222450d6"><div class="ttname"><a href="classpcpp_1_1_eth_layer.html#a7b49445f344b1f5aafc662ce222450d6">pcpp::EthLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> EthLayer.h:141</div></div>
+<div class="ttc" id="aclasspcpp_1_1_eth_layer_html_a20db64d97d2ab419420b51af31c5a283"><div class="ttname"><a href="classpcpp_1_1_eth_layer.html#a20db64d97d2ab419420b51af31c5a283">pcpp::EthLayer::toString</a></div><div class="ttdeci">std::string toString() const</div></div>
 <div class="ttc" id="aclasspcpp_1_1_eth_layer_html_ab3a46b8944f2914b8c6ebfec6fd8f6cc"><div class="ttname"><a href="classpcpp_1_1_eth_layer.html#ab3a46b8944f2914b8c6ebfec6fd8f6cc">pcpp::EthLayer::setSourceMac</a></div><div class="ttdeci">void setSourceMac(const MacAddress &amp;sourceMac)</div><div class="ttdef"><b>Definition:</b> EthLayer.h:115</div></div>
 <div class="ttc" id="anamespacepcpp_html_a1d761f7cf37d3b1efb1574fb1177e6ebacf03a7d40d04067626bc05cc753b6225"><div class="ttname"><a href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebacf03a7d40d04067626bc05cc753b6225">pcpp::Ethernet</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:26</div></div>
 <div class="ttc" id="aclasspcpp_1_1_eth_layer_html_aa4815d8f84f9d1bab46a40e17dc15be3"><div class="ttname"><a href="classpcpp_1_1_eth_layer.html#aa4815d8f84f9d1bab46a40e17dc15be3">pcpp::EthLayer::getEthHeader</a></div><div class="ttdeci">ether_header * getEthHeader() const</div><div class="ttdef"><b>Definition:</b> EthLayer.h:103</div></div>
@@ -213,7 +213,7 @@ $(document).ready(function(){initNavTree('_eth_layer_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="_eth_layer_8h.html">EthLayer.h</a></li>
-    <li class="footer">Generated on Thu Nov 7 2019 22:30:07 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Dec 2 2019 23:53:20 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

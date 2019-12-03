@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.04+</span>
+   &#160;<span id="projectnumber">19.12</span>
    </div>
   </td>
  </tr>
@@ -112,6 +112,8 @@ Inheritance diagram for pcpp::WinPcapLiveDevice:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a86b56db9d815fc8c6017c9a1232554ed"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classpcpp_1_1_pcap_live_device.html#a0e343585711ee4e02d4b9507467135ab">LiveDeviceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_win_pcap_live_device.html#a86b56db9d815fc8c6017c9a1232554ed">getDeviceType</a> () const</td></tr>
+<tr class="separator:a86b56db9d815fc8c6017c9a1232554ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af22e2966176d4127e69300cd4b208758"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_win_pcap_live_device.html#af22e2966176d4127e69300cd4b208758">startCapture</a> (<a class="el" href="namespacepcpp.html#aa07524ba3fd4932968d2c302a936ae10">OnPacketArrivesCallback</a> onPacketArrives, void *onPacketArrivesUserCookie, int intervalInSecondsToUpdateStats, <a class="el" href="namespacepcpp.html#af797dbce1a97d45a6b86cdedb6d627da">OnStatsUpdateCallback</a> onStatsUpdate, void *onStatsUpdateUsrrCookie)</td></tr>
 <tr class="separator:af22e2966176d4127e69300cd4b208758"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70126c098779937e5ce88360966c7aa1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_win_pcap_live_device.html#a70126c098779937e5ce88360966c7aa1">startCapture</a> (int intervalInSecondsToUpdateStats, <a class="el" href="namespacepcpp.html#af797dbce1a97d45a6b86cdedb6d627da">OnStatsUpdateCallback</a> onStatsUpdate, void *onStatsUpdateUserCookie)</td></tr>
@@ -127,8 +129,6 @@ Public Member Functions</h2></td></tr>
 <tr class="inherit_header pub_methods_classpcpp_1_1_pcap_live_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_pcap_live_device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_pcap_live_device.html">pcpp::PcapLiveDevice</a></td></tr>
 <tr class="memitem:a0172bbe45fb66f4722bf2bd4847c91fe inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a0172bbe45fb66f4722bf2bd4847c91fe">~PcapLiveDevice</a> ()</td></tr>
 <tr class="separator:a0172bbe45fb66f4722bf2bd4847c91fe inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76bd1af9e2079c71a790834e2f14baa7 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classpcpp_1_1_pcap_live_device.html#a0e343585711ee4e02d4b9507467135ab">LiveDeviceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a76bd1af9e2079c71a790834e2f14baa7">getDeviceType</a> () const</td></tr>
-<tr class="separator:a76bd1af9e2079c71a790834e2f14baa7 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a296c42499d3f6c606e2cdf7e25a61c04 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a296c42499d3f6c606e2cdf7e25a61c04">getName</a> () const</td></tr>
 <tr class="separator:a296c42499d3f6c606e2cdf7e25a61c04 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7f9930c31be70eab5a345c353734ecd inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#ae7f9930c31be70eab5a345c353734ecd">getDesc</a> () const</td></tr>
@@ -221,6 +221,34 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class that wraps a Windows network interface (each of the interfaces listed in ipconfig). This class is almost similar in its capabilities to <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> (its parent class) with some small changes that mainly result from differences between libpcap and WinPcap. Please see the reference for <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> for more details </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a86b56db9d815fc8c6017c9a1232554ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86b56db9d815fc8c6017c9a1232554ed">&#9670;&nbsp;</a></span>getDeviceType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classpcpp_1_1_pcap_live_device.html#a0e343585711ee4e02d4b9507467135ab">LiveDeviceType</a> pcpp::WinPcapLiveDevice::getDeviceType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The type of the device (libPcap, WinPcap or a remote device) </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classpcpp_1_1_pcap_live_device.html#a76bd1af9e2079c71a790834e2f14baa7">pcpp::PcapLiveDevice</a>.</p>
+
+</div>
+</div>
 <a id="a8e2487bad421ea945119a872c346c595"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8e2487bad421ea945119a872c346c595">&#9670;&nbsp;</a></span>getMinAmountOfDataToCopyFromKernelToApplication()</h2>
 
@@ -501,7 +529,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_win_pcap_live_device.html">WinPcapLiveDevice</a></li>
-    <li class="footer">Generated on Thu Nov 7 2019 22:30:11 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Dec 2 2019 23:53:24 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

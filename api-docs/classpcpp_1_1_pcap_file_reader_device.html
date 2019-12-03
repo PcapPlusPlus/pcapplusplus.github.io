@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.04+</span>
+   &#160;<span id="projectnumber">19.12</span>
    </div>
   </td>
  </tr>
@@ -117,8 +117,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7c578fa0c04a93de4a6dc54b845fae34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6c4637873a1a830372449a81f048ab2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_file_reader_device.html#aa6c4637873a1a830372449a81f048ab2">~PcapFileReaderDevice</a> ()</td></tr>
 <tr class="separator:aa6c4637873a1a830372449a81f048ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68ed8a4e9fb754054c32682ac2c6411f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_file_reader_device.html#a68ed8a4e9fb754054c32682ac2c6411f">getLinkLayerType</a> ()</td></tr>
-<tr class="separator:a68ed8a4e9fb754054c32682ac2c6411f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af37f3fb4fc7e57b56657435615c0cb27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_file_reader_device.html#af37f3fb4fc7e57b56657435615c0cb27">getLinkLayerType</a> () const</td></tr>
+<tr class="separator:af37f3fb4fc7e57b56657435615c0cb27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc4c2142b7787e6c191b0d2ab6822c07"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_file_reader_device.html#afc4c2142b7787e6c191b0d2ab6822c07">getNextPacket</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> &amp;rawPacket)</td></tr>
 <tr class="separator:afc4c2142b7787e6c191b0d2ab6822c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9e798abe511b1ba8bd14360535753a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_file_reader_device.html#af9e798abe511b1ba8bd14360535753a1">open</a> ()</td></tr>
@@ -179,6 +179,9 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">pcpp::PcapFileReaderDevice::PcapFileReaderDevice </td>
@@ -188,6 +191,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>A constructor for this class that gets the pcap full path file name to open. Notice that after calling this constructor the file isn't opened yet, so reading packets will fail. For opening the file call <a class="el" href="classpcpp_1_1_pcap_file_reader_device.html#af9e798abe511b1ba8bd14360535753a1">open()</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -225,19 +233,27 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a68ed8a4e9fb754054c32682ac2c6411f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68ed8a4e9fb754054c32682ac2c6411f">&#9670;&nbsp;</a></span>getLinkLayerType()</h2>
+<a id="af37f3fb4fc7e57b56657435615c0cb27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af37f3fb4fc7e57b56657435615c0cb27">&#9670;&nbsp;</a></span>getLinkLayerType()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> pcpp::PcapFileReaderDevice::getLinkLayerType </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The link layer type of this file </dd></dl>
 
@@ -346,7 +362,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_pcap_file_reader_device.html">PcapFileReaderDevice</a></li>
-    <li class="footer">Generated on Thu Nov 7 2019 22:30:10 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Dec 2 2019 23:53:23 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

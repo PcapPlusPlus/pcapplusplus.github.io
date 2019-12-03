@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.04+</span>
+   &#160;<span id="projectnumber">19.12</span>
    </div>
   </td>
  </tr>
@@ -124,10 +124,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac2dc6e9007932e38c1deed4826a50776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af08da68e8e0133db0723fd117be4217e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_dns_resource.html#af08da68e8e0133db0723fd117be4217e">setName</a> (const std::string &amp;newName)</td></tr>
 <tr class="separator:af08da68e8e0133db0723fd117be4217e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0581453e507b721f27eb2e148bc45ef9"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_dns_resource.html#a0581453e507b721f27eb2e148bc45ef9">getSize</a> ()=0</td></tr>
-<tr class="separator:a0581453e507b721f27eb2e148bc45ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2e2f7d23c9de91cbd38bc43d8863867"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacepcpp.html#ad4821eedb6d14ec6be18b2d80eb9ee3d">DnsResourceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_dns_resource.html#ae2e2f7d23c9de91cbd38bc43d8863867">getType</a> ()=0</td></tr>
-<tr class="separator:ae2e2f7d23c9de91cbd38bc43d8863867"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86a84d37bd2a0b4f7e4eb3591064146f"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_dns_resource.html#a86a84d37bd2a0b4f7e4eb3591064146f">getSize</a> () const =0</td></tr>
+<tr class="separator:a86a84d37bd2a0b4f7e4eb3591064146f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20a4ef2ee128484638f1c3fcce0d5237"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacepcpp.html#ad4821eedb6d14ec6be18b2d80eb9ee3d">DnsResourceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_dns_resource.html#a20a4ef2ee128484638f1c3fcce0d5237">getType</a> () const =0</td></tr>
+<tr class="separator:a20a4ef2ee128484638f1c3fcce0d5237"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An abstract class for representing all types of DNS records. This class gives access to all available record data such as DNS type, class, name, type of record, etc. The <a class="el" href="classpcpp_1_1_dns_layer.html">DnsLayer</a> holds an instance of (inherited type of) this class for each DNS record in the DNS packet </p>
@@ -220,8 +220,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0581453e507b721f27eb2e148bc45ef9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0581453e507b721f27eb2e148bc45ef9">&#9670;&nbsp;</a></span>getSize()</h2>
+<a id="a86a84d37bd2a0b4f7e4eb3591064146f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86a84d37bd2a0b4f7e4eb3591064146f">&#9670;&nbsp;</a></span>getSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -233,7 +233,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual size_t pcpp::IDnsResource::getSize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -244,12 +244,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The total size in bytes of this record </dd></dl>
 
-<p>Implemented in <a class="el" href="classpcpp_1_1_dns_resource.html#a9e624aed896eeea88916ba4b3c2f23cd">pcpp::DnsResource</a>, and <a class="el" href="classpcpp_1_1_dns_query.html#aa58a85121063a1df0d91e04df7f2ff0d">pcpp::DnsQuery</a>.</p>
+<p>Implemented in <a class="el" href="classpcpp_1_1_dns_resource.html#a33ba4a2a280fdafa8e7c9e7601d317fc">pcpp::DnsResource</a>, and <a class="el" href="classpcpp_1_1_dns_query.html#aedb5e2fe3c9491d23c7e4b9267102b4d">pcpp::DnsQuery</a>.</p>
 
 </div>
 </div>
-<a id="ae2e2f7d23c9de91cbd38bc43d8863867"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2e2f7d23c9de91cbd38bc43d8863867">&#9670;&nbsp;</a></span>getType()</h2>
+<a id="a20a4ef2ee128484638f1c3fcce0d5237"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20a4ef2ee128484638f1c3fcce0d5237">&#9670;&nbsp;</a></span>getType()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -261,7 +261,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual <a class="el" href="namespacepcpp.html#ad4821eedb6d14ec6be18b2d80eb9ee3d">DnsResourceType</a> pcpp::IDnsResource::getType </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -272,7 +272,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The type of this record (query, answer, authority, additional) </dd></dl>
 
-<p>Implemented in <a class="el" href="classpcpp_1_1_dns_resource.html#ab1766f4b584d30e789df1fcf2e9a9abd">pcpp::DnsResource</a>, and <a class="el" href="classpcpp_1_1_dns_query.html#a2b3e3e8fe4ff938cd7d41352eb004736">pcpp::DnsQuery</a>.</p>
+<p>Implemented in <a class="el" href="classpcpp_1_1_dns_resource.html#afb6ad97c0c04ac19acbdcf17249e6518">pcpp::DnsResource</a>, and <a class="el" href="classpcpp_1_1_dns_query.html#a4976bfd3988803bba32e199330e99854">pcpp::DnsQuery</a>.</p>
 
 </div>
 </div>
@@ -356,7 +356,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_dns_resource.html">IDnsResource</a></li>
-    <li class="footer">Generated on Thu Nov 7 2019 22:30:09 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Dec 2 2019 23:53:22 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

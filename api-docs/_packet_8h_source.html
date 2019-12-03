@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.04+</span>
+   &#160;<span id="projectnumber">19.12</span>
    </div>
   </td>
  </tr>
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('_packet_8h_source.html','');});
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        std::string <a class="code" href="classpcpp_1_1_packet.html#a8c3a62bbd020dc2e88147be71876a758">toString</a>(<span class="keywordtype">bool</span> timeAsLocalTime = <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_packet.html#a14e568de8d974fc34d7a7ced0c40e030">toStringList</a>(std::vector&lt;std::string&gt;&amp; result, <span class="keywordtype">bool</span> timeAsLocalTime = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_packet.html#ab565f9f2bb5099c83ccf25e917e6257c">toStringList</a>(std::vector&lt;std::string&gt;&amp; result, <span class="keywordtype">bool</span> timeAsLocalTime = <span class="keyword">true</span>) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <span class="keywordtype">void</span> copyDataFrom(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_packet.html">Packet</a>&amp; other);</div>
@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('_packet_8h_source.html','');});
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_packet.html#a28fbabf49349df90548ac7c085b1cff3">removeLayer</a>(<a class="code" href="classpcpp_1_1_layer.html">Layer</a>* layer, <span class="keywordtype">bool</span> tryToDelete);</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160; </div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        std::string printPacketInfo(<span class="keywordtype">bool</span> timeAsLocalTime);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        std::string printPacketInfo(<span class="keywordtype">bool</span> timeAsLocalTime) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <a class="code" href="classpcpp_1_1_layer.html">Layer</a>* createFirstLayer(<a class="code" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> linkType);</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    };</div>
@@ -225,6 +225,7 @@ $(document).ready(function(){initNavTree('_packet_8h_source.html','');});
 <div class="ttc" id="aclasspcpp_1_1_packet_html_aa207dcf476921fbd53959e7da47ad1ac"><div class="ttname"><a href="classpcpp_1_1_packet.html#aa207dcf476921fbd53959e7da47ad1ac">pcpp::Packet::getLastLayer</a></div><div class="ttdeci">Layer * getLastLayer() const</div><div class="ttdef"><b>Definition:</b> Packet.h:140</div></div>
 <div class="ttc" id="a_layer_8h_html"><div class="ttname"><a href="_layer_8h.html">Layer.h</a></div></div>
 <div class="ttc" id="aclasspcpp_1_1_packet_html_a0b84fbbd9a0e0074445b95d89103fa3e"><div class="ttname"><a href="classpcpp_1_1_packet.html#a0b84fbbd9a0e0074445b95d89103fa3e">pcpp::Packet::insertLayer</a></div><div class="ttdeci">bool insertLayer(Layer *prevLayer, Layer *newLayer, bool ownInPacket=false)</div></div>
+<div class="ttc" id="aclasspcpp_1_1_packet_html_ab565f9f2bb5099c83ccf25e917e6257c"><div class="ttname"><a href="classpcpp_1_1_packet.html#ab565f9f2bb5099c83ccf25e917e6257c">pcpp::Packet::toStringList</a></div><div class="ttdeci">void toStringList(std::vector&lt; std::string &gt; &amp;result, bool timeAsLocalTime=true) const</div></div>
 <div class="ttc" id="aclasspcpp_1_1_packet_html_a864c0024b5bc88a4ba7c55373ff2ee01"><div class="ttname"><a href="classpcpp_1_1_packet.html#a864c0024b5bc88a4ba7c55373ff2ee01">pcpp::Packet::removeAllLayersAfter</a></div><div class="ttdeci">bool removeAllLayersAfter(Layer *layer)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_packet_html_a54ccf8336cf3c3f6a5ad58ad12f06656"><div class="ttname"><a href="classpcpp_1_1_packet.html#a54ccf8336cf3c3f6a5ad58ad12f06656">pcpp::Packet::~Packet</a></div><div class="ttdeci">virtual ~Packet()</div></div>
 <div class="ttc" id="aclasspcpp_1_1_packet_html_a1dee26fe9bb8c7ae6cd90f45e67446ef"><div class="ttname"><a href="classpcpp_1_1_packet.html#a1dee26fe9bb8c7ae6cd90f45e67446ef">pcpp::Packet::setRawPacket</a></div><div class="ttdeci">void setRawPacket(RawPacket *rawPacket, bool freeRawPacket, ProtocolType parseUntil=UnknownProtocol, OsiModelLayer parseUntilLayer=OsiModelLayerUnknown)</div></div>
@@ -247,7 +248,6 @@ $(document).ready(function(){initNavTree('_packet_8h_source.html','');});
 <div class="ttc" id="anamespacepcpp_html_ab3f43dd3ccd8c93acac8b67909be02be"><div class="ttname"><a href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">pcpp::LinkLayerType</a></div><div class="ttdeci">LinkLayerType</div><div class="ttdef"><b>Definition:</b> RawPacket.h:24</div></div>
 <div class="ttc" id="aclasspcpp_1_1_packet_html_a26af180628893e454e9d6e0f2f1ebb98"><div class="ttname"><a href="classpcpp_1_1_packet.html#a26af180628893e454e9d6e0f2f1ebb98">pcpp::Packet::operator=</a></div><div class="ttdeci">Packet &amp; operator=(const Packet &amp;other)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_packet_html_a56ef03e8516ee79b8ac397db0f052e89"><div class="ttname"><a href="classpcpp_1_1_packet.html#a56ef03e8516ee79b8ac397db0f052e89">pcpp::Packet::getRawPacket</a></div><div class="ttdeci">RawPacket * getRawPacket() const</div><div class="ttdef"><b>Definition:</b> Packet.h:111</div></div>
-<div class="ttc" id="aclasspcpp_1_1_packet_html_a14e568de8d974fc34d7a7ced0c40e030"><div class="ttname"><a href="classpcpp_1_1_packet.html#a14e568de8d974fc34d7a7ced0c40e030">pcpp::Packet::toStringList</a></div><div class="ttdeci">void toStringList(std::vector&lt; std::string &gt; &amp;result, bool timeAsLocalTime=true)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_packet_html_a54d83577cda897699f28595477f2d92d"><div class="ttname"><a href="classpcpp_1_1_packet.html#a54d83577cda897699f28595477f2d92d">pcpp::Packet::detachLayer</a></div><div class="ttdeci">Layer * detachLayer(ProtocolType layerType, int index=0)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_packet_html_a28fbabf49349df90548ac7c085b1cff3"><div class="ttname"><a href="classpcpp_1_1_packet.html#a28fbabf49349df90548ac7c085b1cff3">pcpp::Packet::removeLayer</a></div><div class="ttdeci">bool removeLayer(ProtocolType layerType, int index=0)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_raw_packet_html"><div class="ttname"><a href="classpcpp_1_1_raw_packet.html">pcpp::RawPacket</a></div><div class="ttdef"><b>Definition:</b> RawPacket.h:219</div></div>
@@ -256,7 +256,7 @@ $(document).ready(function(){initNavTree('_packet_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="_packet_8h.html">Packet.h</a></li>
-    <li class="footer">Generated on Thu Nov 7 2019 22:30:07 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Dec 2 2019 23:53:20 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

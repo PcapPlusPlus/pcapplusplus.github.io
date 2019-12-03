@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.04+</span>
+   &#160;<span id="projectnumber">19.12</span>
    </div>
   </td>
  </tr>
@@ -130,11 +130,11 @@ $(document).ready(function(){initNavTree('_sll_layer_8h_source.html','');});
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_sll_layer.html#a77739a7d98720c05eab96a09ce54f12d">parseNextLayer</a>();</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classpcpp_1_1_sll_layer.html#ac71b262a4181ef0cc659c902251e6790">   96</a></span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="classpcpp_1_1_sll_layer.html#ac71b262a4181ef0cc659c902251e6790">getHeaderLen</a>() { <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code" href="structpcpp_1_1sll__header.html">sll_header</a>); }</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classpcpp_1_1_sll_layer.html#a29241783ec9dfd7fba06eb3c8837d0d1">   96</a></span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="classpcpp_1_1_sll_layer.html#a29241783ec9dfd7fba06eb3c8837d0d1">getHeaderLen</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code" href="structpcpp_1_1sll__header.html">sll_header</a>); }</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_sll_layer.html#a2964574f2bc958b94d7474778f691e62">computeCalculateFields</a>();</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        std::string <a class="code" href="classpcpp_1_1_sll_layer.html#a7cfa1a15bfd60e2b88ad86123d818a5c">toString</a>();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        std::string <a class="code" href="classpcpp_1_1_sll_layer.html#abca09b7c2b25ab257276b9d038cd8695">toString</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
 <div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classpcpp_1_1_sll_layer.html#ad9d6afb35c37187ef04aebca4d7965ac">  105</a></span>&#160;        <a class="code" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> <a class="code" href="classpcpp_1_1_sll_layer.html#ad9d6afb35c37187ef04aebca4d7965ac">getOsiModelLayer</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2">OsiModelDataLinkLayer</a>; }</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    };</div>
@@ -148,10 +148,8 @@ $(document).ready(function(){initNavTree('_sll_layer_8h_source.html','');});
 <div class="ttc" id="anamespacepcpp_html_a69e2ee6a9dc68797612cf8dc38461025"><div class="ttname"><a href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a></div><div class="ttdeci">OsiModelLayer</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:224</div></div>
 <div class="ttc" id="aclasspcpp_1_1_packet_html"><div class="ttname"><a href="classpcpp_1_1_packet.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:26</div></div>
 <div class="ttc" id="aclasspcpp_1_1_sll_layer_html_a78053b4433c4378a004eda79cbb29d46"><div class="ttname"><a href="classpcpp_1_1_sll_layer.html#a78053b4433c4378a004eda79cbb29d46">pcpp::SllLayer::setLinkLayerAddr</a></div><div class="ttdeci">bool setLinkLayerAddr(uint8_t *addr, size_t addrLength)</div></div>
-<div class="ttc" id="aclasspcpp_1_1_sll_layer_html_a7cfa1a15bfd60e2b88ad86123d818a5c"><div class="ttname"><a href="classpcpp_1_1_sll_layer.html#a7cfa1a15bfd60e2b88ad86123d818a5c">pcpp::SllLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
 <div class="ttc" id="anamespacepcpp_html_a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2"><div class="ttname"><a href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2">pcpp::OsiModelDataLinkLayer</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:229</div></div>
 <div class="ttc" id="a_layer_8h_html"><div class="ttname"><a href="_layer_8h.html">Layer.h</a></div></div>
-<div class="ttc" id="aclasspcpp_1_1_sll_layer_html_ac71b262a4181ef0cc659c902251e6790"><div class="ttname"><a href="classpcpp_1_1_sll_layer.html#ac71b262a4181ef0cc659c902251e6790">pcpp::SllLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen()</div><div class="ttdef"><b>Definition:</b> SllLayer.h:96</div></div>
 <div class="ttc" id="astructpcpp_1_1sll__header_html_a915dd77d81fbf0e815fc8e7e268582b8"><div class="ttname"><a href="structpcpp_1_1sll__header.html#a915dd77d81fbf0e815fc8e7e268582b8">pcpp::sll_header::packet_type</a></div><div class="ttdeci">uint16_t packet_type</div><div class="ttdef"><b>Definition:</b> SllLayer.h:27</div></div>
 <div class="ttc" id="aclasspcpp_1_1_sll_layer_html_a2964574f2bc958b94d7474778f691e62"><div class="ttname"><a href="classpcpp_1_1_sll_layer.html#a2964574f2bc958b94d7474778f691e62">pcpp::SllLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div></div>
 <div class="ttc" id="a_mac_address_8h_html"><div class="ttname"><a href="_mac_address_8h.html">MacAddress.h</a></div></div>
@@ -165,16 +163,18 @@ $(document).ready(function(){initNavTree('_sll_layer_8h_source.html','');});
 <div class="ttc" id="astructpcpp_1_1sll__header_html_afbec8e24ed690d8765fdd5ebeff649cd"><div class="ttname"><a href="structpcpp_1_1sll__header.html#afbec8e24ed690d8765fdd5ebeff649cd">pcpp::sll_header::link_layer_addr</a></div><div class="ttdeci">uint8_t link_layer_addr[8]</div><div class="ttdef"><b>Definition:</b> SllLayer.h:35</div></div>
 <div class="ttc" id="astructpcpp_1_1sll__header_html"><div class="ttname"><a href="structpcpp_1_1sll__header.html">pcpp::sll_header</a></div><div class="ttdef"><b>Definition:</b> SllLayer.h:21</div></div>
 <div class="ttc" id="anamespacepcpp_html"><div class="ttname"><a href="namespacepcpp.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib.</div></div>
+<div class="ttc" id="aclasspcpp_1_1_sll_layer_html_a29241783ec9dfd7fba06eb3c8837d0d1"><div class="ttname"><a href="classpcpp_1_1_sll_layer.html#a29241783ec9dfd7fba06eb3c8837d0d1">pcpp::SllLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen() const</div><div class="ttdef"><b>Definition:</b> SllLayer.h:96</div></div>
 <div class="ttc" id="aclasspcpp_1_1_sll_layer_html_a77739a7d98720c05eab96a09ce54f12d"><div class="ttname"><a href="classpcpp_1_1_sll_layer.html#a77739a7d98720c05eab96a09ce54f12d">pcpp::SllLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div></div>
 <div class="ttc" id="aclasspcpp_1_1_layer_html"><div class="ttname"><a href="classpcpp_1_1_layer.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:70</div></div>
 <div class="ttc" id="astructpcpp_1_1sll__header_html_a8f8dbb002e720ec7700bc617d2429ab2"><div class="ttname"><a href="structpcpp_1_1sll__header.html#a8f8dbb002e720ec7700bc617d2429ab2">pcpp::sll_header::ARPHRD_type</a></div><div class="ttdeci">uint16_t ARPHRD_type</div><div class="ttdef"><b>Definition:</b> SllLayer.h:29</div></div>
+<div class="ttc" id="aclasspcpp_1_1_sll_layer_html_abca09b7c2b25ab257276b9d038cd8695"><div class="ttname"><a href="classpcpp_1_1_sll_layer.html#abca09b7c2b25ab257276b9d038cd8695">pcpp::SllLayer::toString</a></div><div class="ttdeci">std::string toString() const</div></div>
 <div class="ttc" id="astructpcpp_1_1sll__header_html_a133d6e18091bafa51d1a4558a9f6bda9"><div class="ttname"><a href="structpcpp_1_1sll__header.html#a133d6e18091bafa51d1a4558a9f6bda9">pcpp::sll_header::protocol_type</a></div><div class="ttdeci">uint16_t protocol_type</div><div class="ttdef"><b>Definition:</b> SllLayer.h:37</div></div>
 <div class="ttc" id="astructpcpp_1_1sll__header_html_ac253e0a098c39f46d192619ed5d229bf"><div class="ttname"><a href="structpcpp_1_1sll__header.html#ac253e0a098c39f46d192619ed5d229bf">pcpp::sll_header::link_layer_addr_len</a></div><div class="ttdeci">uint16_t link_layer_addr_len</div><div class="ttdef"><b>Definition:</b> SllLayer.h:31</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="_sll_layer_8h.html">SllLayer.h</a></li>
-    <li class="footer">Generated on Thu Nov 7 2019 22:30:08 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Dec 2 2019 23:53:20 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

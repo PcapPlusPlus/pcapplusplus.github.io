@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.04+</span>
+   &#160;<span id="projectnumber">19.12</span>
    </div>
   </td>
  </tr>
@@ -115,14 +115,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa2c50aa696e1c511821d3029c2c9f22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addb0a9537ba67e4f1d86e11fcd71d02c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_response_first_line.html#addb0a9537ba67e4f1d86e11fcd71d02c">setStatusCode</a> (<a class="el" href="classpcpp_1_1_http_response_layer.html#ab5bbbd02f36805001550d1168f1412bc">HttpResponseLayer::HttpResponseStatusCode</a> newStatusCode, std::string statusCodeString=&quot;&quot;)</td></tr>
 <tr class="separator:addb0a9537ba67e4f1d86e11fcd71d02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a495bd8dc68098f9362367c872bef0d2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcpp.html#a7680d508534c12b5ab8bcbe4cae06932">HttpVersion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_response_first_line.html#a495bd8dc68098f9362367c872bef0d2e">getVersion</a> ()</td></tr>
-<tr class="separator:a495bd8dc68098f9362367c872bef0d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30a4b085ce065a918ad3373ac544ca7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcpp.html#a7680d508534c12b5ab8bcbe4cae06932">HttpVersion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_response_first_line.html#a30a4b085ce065a918ad3373ac544ca7c">getVersion</a> () const</td></tr>
+<tr class="separator:a30a4b085ce065a918ad3373ac544ca7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad38cc7272f790b1653cc1b7b4c58bec6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_response_first_line.html#ad38cc7272f790b1653cc1b7b4c58bec6">setVersion</a> (<a class="el" href="namespacepcpp.html#a7680d508534c12b5ab8bcbe4cae06932">HttpVersion</a> newVersion)</td></tr>
 <tr class="separator:ad38cc7272f790b1653cc1b7b4c58bec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6a8292b6bf8801787ec007b1c0bc713"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_response_first_line.html#ab6a8292b6bf8801787ec007b1c0bc713">getSize</a> ()</td></tr>
-<tr class="separator:ab6a8292b6bf8801787ec007b1c0bc713"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36102ce77daf724790211cb6d21cf405"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_response_first_line.html#a36102ce77daf724790211cb6d21cf405">isComplete</a> ()</td></tr>
-<tr class="separator:a36102ce77daf724790211cb6d21cf405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adccca9a8ea56546e389e272384717e2c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_response_first_line.html#adccca9a8ea56546e389e272384717e2c">getSize</a> () const</td></tr>
+<tr class="separator:adccca9a8ea56546e389e272384717e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28a94ec1039e977ae8a7f6a710e37b99"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_response_first_line.html#a28a94ec1039e977ae8a7f6a710e37b99">isComplete</a> () const</td></tr>
+<tr class="separator:a28a94ec1039e977ae8a7f6a710e37b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -132,8 +132,8 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents an HTTP response header first line. The first line includes 2 parameters: status code (e.g 200 OK, 404 Not Found, etc.), and HTTP version (e.g HTTP/1.1). These 2 parameters are included in this class, and the user can retrieve or set them. This class cannot be instantiated by users, it's created inside <a class="el" href="classpcpp_1_1_http_response_layer.html">HttpResponseLayer</a> and user can get a pointer to an instance of it. The "get" methods of this class will retrieve the actual data of the HTTP response and the "set" methods will change the packet data. Since HTTP is a textual protocol, most fields aren't of fixed size and this also applies to the first line parameters. So most "set" methods of this class need in most cases to shorten or extend the data in <a class="el" href="classpcpp_1_1_http_response_layer.html">HttpResponseLayer</a>. These methods will return a false value if this action failed </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab6a8292b6bf8801787ec007b1c0bc713"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6a8292b6bf8801787ec007b1c0bc713">&#9670;&nbsp;</a></span>getSize()</h2>
+<a id="adccca9a8ea56546e389e272384717e2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adccca9a8ea56546e389e272384717e2c">&#9670;&nbsp;</a></span>getSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,7 +145,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">int pcpp::HttpResponseFirstLine::getSize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -220,8 +220,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a495bd8dc68098f9362367c872bef0d2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a495bd8dc68098f9362367c872bef0d2e">&#9670;&nbsp;</a></span>getVersion()</h2>
+<a id="a30a4b085ce065a918ad3373ac544ca7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30a4b085ce065a918ad3373ac544ca7c">&#9670;&nbsp;</a></span>getVersion()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -233,7 +233,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname"><a class="el" href="namespacepcpp.html#a7680d508534c12b5ab8bcbe4cae06932">HttpVersion</a> pcpp::HttpResponseFirstLine::getVersion </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -246,8 +246,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a36102ce77daf724790211cb6d21cf405"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36102ce77daf724790211cb6d21cf405">&#9670;&nbsp;</a></span>isComplete()</h2>
+<a id="a28a94ec1039e977ae8a7f6a710e37b99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28a94ec1039e977ae8a7f6a710e37b99">&#9670;&nbsp;</a></span>isComplete()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -259,7 +259,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">bool pcpp::HttpResponseFirstLine::isComplete </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -381,7 +381,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_http_response_first_line.html">HttpResponseFirstLine</a></li>
-    <li class="footer">Generated on Thu Nov 7 2019 22:30:09 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Dec 2 2019 23:53:21 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

@@ -7,7 +7,7 @@ var classpcpp_1_1_text_based_protocol_message =
     [ "getFieldByName", "classpcpp_1_1_text_based_protocol_message.html#a327cec9cf1cde520bad22220b48e766d", null ],
     [ "getFieldCount", "classpcpp_1_1_text_based_protocol_message.html#adb57b0cb63a99dec5d636f2ba8f07b1e", null ],
     [ "getFirstField", "classpcpp_1_1_text_based_protocol_message.html#a61195c4c3b1a2d7221a90a0104e8765b", null ],
-    [ "getHeaderLen", "classpcpp_1_1_text_based_protocol_message.html#abd5dcefff49b14110c9ef322b826f083", null ],
+    [ "getHeaderLen", "classpcpp_1_1_text_based_protocol_message.html#ac0d9eaff7af4bb7c40ddd90b1d5b7c2d", null ],
     [ "getNextField", "classpcpp_1_1_text_based_protocol_message.html#a94b61378d9778bdd3669599ca55e7d86", null ],
     [ "insertField", "classpcpp_1_1_text_based_protocol_message.html#ac0555ddcc81fffa266fbc207bf040314", null ],
     [ "insertField", "classpcpp_1_1_text_based_protocol_message.html#abf28607ed41ed3bfdb1c476bda303ae9", null ],

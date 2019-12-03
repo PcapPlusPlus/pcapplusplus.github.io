@@ -1,8 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"structpcpp_1_1ip6__hdr.html#ae5849394b92e6a7d3cd0b2972e30391e":[2,0,0,71,6],
-"structpcpp_1_1ip6__hdr.html#aee7025c3316d0ecbb3db29bfdecb1e25":[2,0,0,71,4],
-"structpcpp_1_1ip6__hdr.html#aee8e571549e08804cbf245c37eed7cfa":[2,0,0,71,5],
 "structpcpp_1_1ip6__hdr.html#af9eaa28de54512c88c43a95ed6c2a846":[2,0,0,71,2],
 "structpcpp_1_1iphdr.html":[2,0,0,75],
 "structpcpp_1_1iphdr.html#a229d7a9444c63a92532cd17b16e9de70":[2,0,0,75,10],

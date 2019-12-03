@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.04+</span>
+   &#160;<span id="projectnumber">19.12</span>
    </div>
   </td>
  </tr>
@@ -121,10 +121,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a56a9d85bb7e5cbdb9dad80f50f398202"><td class="memTemplParams" colspan="2">template&lt;class IDnsResourceDataType &gt; </td></tr>
 <tr class="memitem:a56a9d85bb7e5cbdb9dad80f50f398202"><td class="memTemplItemLeft" align="right" valign="top">IDnsResourceDataType *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_dns_resource_data.html#a56a9d85bb7e5cbdb9dad80f50f398202">castAs</a> ()</td></tr>
 <tr class="separator:a56a9d85bb7e5cbdb9dad80f50f398202"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb8cde5855201dca1aa38cd67e266c1a"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_dns_resource_data.html#aeb8cde5855201dca1aa38cd67e266c1a">toString</a> ()=0</td></tr>
-<tr class="separator:aeb8cde5855201dca1aa38cd67e266c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a226c543b539fa0e666b4cdc9d71e30ac"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_dns_resource_data.html#a226c543b539fa0e666b4cdc9d71e30ac">toByteArr</a> (uint8_t *arr, size_t &amp;arrLength, <a class="el" href="classpcpp_1_1_i_dns_resource.html">IDnsResource</a> *dnsResource)=0</td></tr>
-<tr class="separator:a226c543b539fa0e666b4cdc9d71e30ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa288ea1d592f1003b75fb0a63a0e5eca"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_dns_resource_data.html#aa288ea1d592f1003b75fb0a63a0e5eca">toString</a> () const =0</td></tr>
+<tr class="separator:aa288ea1d592f1003b75fb0a63a0e5eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f101c592a4e955fa9abe09fc80989b3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_dns_resource_data.html#a2f101c592a4e955fa9abe09fc80989b3">toByteArr</a> (uint8_t *arr, size_t &amp;arrLength, <a class="el" href="classpcpp_1_1_i_dns_resource.html">IDnsResource</a> *dnsResource) const =0</td></tr>
+<tr class="separator:a2f101c592a4e955fa9abe09fc80989b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A wrapper class for storing DNS RR (resource record) data. This is the base class which introduces several abstract methods for derived classes to implement for setting and retrieving the stored data. Each derived class will store different type of DNS RR data and implement these methods accordingly (for example: IPv4/IPv6 addresses, MX data, hostnames, raw byte data etc.) </p>
@@ -212,8 +212,8 @@ template&lt;class IDnsResourceDataType &gt; </div>
 
 </div>
 </div>
-<a id="a226c543b539fa0e666b4cdc9d71e30ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a226c543b539fa0e666b4cdc9d71e30ac">&#9670;&nbsp;</a></span>toByteArr()</h2>
+<a id="a2f101c592a4e955fa9abe09fc80989b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f101c592a4e955fa9abe09fc80989b3">&#9670;&nbsp;</a></span>toByteArr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,7 +242,7 @@ template&lt;class IDnsResourceDataType &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -261,12 +261,12 @@ template&lt;class IDnsResourceDataType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the DNS RR data was successfully converted into a byte array and written to the given array or false if stored DNS RR data is invalid or if it could not be written to the given array </dd></dl>
 
-<p>Implemented in <a class="el" href="classpcpp_1_1_generic_dns_resource_data.html#a087e0f76bd9634fa0a6c6b4b85653de9">pcpp::GenericDnsResourceData</a>, <a class="el" href="classpcpp_1_1_mx_dns_resource_data.html#a0ce0f9b3a1ef3b0c0ddec00000567a84">pcpp::MxDnsResourceData</a>, <a class="el" href="classpcpp_1_1_i_pv6_dns_resource_data.html#af3d097b932b987a68ad6572495be95ab">pcpp::IPv6DnsResourceData</a>, <a class="el" href="classpcpp_1_1_i_pv4_dns_resource_data.html#a473fbbb84a2b68e0ef1364149f5a1e21">pcpp::IPv4DnsResourceData</a>, and <a class="el" href="classpcpp_1_1_string_dns_resource_data.html#ae41fbf9bc041c85b4c2d44b507218500">pcpp::StringDnsResourceData</a>.</p>
+<p>Implemented in <a class="el" href="classpcpp_1_1_generic_dns_resource_data.html#a4cbacedd1189058bd007f7081e58df02">pcpp::GenericDnsResourceData</a>, <a class="el" href="classpcpp_1_1_mx_dns_resource_data.html#a46ab5f2f72051d54a6141313825bcde1">pcpp::MxDnsResourceData</a>, <a class="el" href="classpcpp_1_1_i_pv6_dns_resource_data.html#a72982bed650ae530a9bee1c73193ad4e">pcpp::IPv6DnsResourceData</a>, <a class="el" href="classpcpp_1_1_i_pv4_dns_resource_data.html#a3550d72374bf3dc6df8ac718e37fa1f5">pcpp::IPv4DnsResourceData</a>, and <a class="el" href="classpcpp_1_1_string_dns_resource_data.html#a0d4a353a0b39c3db722bec7c66af07b7">pcpp::StringDnsResourceData</a>.</p>
 
 </div>
 </div>
-<a id="aeb8cde5855201dca1aa38cd67e266c1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb8cde5855201dca1aa38cd67e266c1a">&#9670;&nbsp;</a></span>toString()</h2>
+<a id="aa288ea1d592f1003b75fb0a63a0e5eca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa288ea1d592f1003b75fb0a63a0e5eca">&#9670;&nbsp;</a></span>toString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -278,7 +278,7 @@ template&lt;class IDnsResourceDataType &gt; </div>
           <td class="memname">virtual std::string pcpp::IDnsResourceData::toString </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -289,7 +289,7 @@ template&lt;class IDnsResourceDataType &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>A string that represents the current DNS RR data </dd></dl>
 
-<p>Implemented in <a class="el" href="classpcpp_1_1_generic_dns_resource_data.html#a28ac506f04d535ab0a82c3e95da341a1">pcpp::GenericDnsResourceData</a>, <a class="el" href="classpcpp_1_1_mx_dns_resource_data.html#a26bc9210701bd05a4e93071bc1fa1506">pcpp::MxDnsResourceData</a>, <a class="el" href="classpcpp_1_1_i_pv6_dns_resource_data.html#ae68c5597b6ec3d723fa1d52a9d14cd1c">pcpp::IPv6DnsResourceData</a>, <a class="el" href="classpcpp_1_1_i_pv4_dns_resource_data.html#a5c2a2944c08a82a4368ff73d76b65673">pcpp::IPv4DnsResourceData</a>, and <a class="el" href="classpcpp_1_1_string_dns_resource_data.html#a952f821104af5d2a5bbfc64c99e0c862">pcpp::StringDnsResourceData</a>.</p>
+<p>Implemented in <a class="el" href="classpcpp_1_1_generic_dns_resource_data.html#a30abd7ed0f3978921bf37de923cced04">pcpp::GenericDnsResourceData</a>, <a class="el" href="classpcpp_1_1_mx_dns_resource_data.html#a022de9263dfb87dc8259aa50aa45d492">pcpp::MxDnsResourceData</a>, <a class="el" href="classpcpp_1_1_i_pv6_dns_resource_data.html#a76d2fe83363e69a45bf72bcd0b9540c2">pcpp::IPv6DnsResourceData</a>, <a class="el" href="classpcpp_1_1_i_pv4_dns_resource_data.html#aa877e1931a91ec594de1d4bf1eae5d6e">pcpp::IPv4DnsResourceData</a>, and <a class="el" href="classpcpp_1_1_string_dns_resource_data.html#ae92c586434d1c3247a234fe68756963f">pcpp::StringDnsResourceData</a>.</p>
 
 </div>
 </div>
@@ -299,7 +299,7 @@ template&lt;class IDnsResourceDataType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_dns_resource_data.html">IDnsResourceData</a></li>
-    <li class="footer">Generated on Thu Nov 7 2019 22:30:09 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Dec 2 2019 23:53:22 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.04+</span>
+   &#160;<span id="projectnumber">19.12</span>
    </div>
   </td>
  </tr>
@@ -143,16 +143,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2fb3a4b38aa8f629675a42ebe23515b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e723034e8daff9b577b16718a5c60fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a6e723034e8daff9b577b16718a5c60fe">purgeRecordData</a> ()</td></tr>
 <tr class="separator:a6e723034e8daff9b577b16718a5c60fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accb9660337785bf347933751380cdf57"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:accb9660337785bf347933751380cdf57"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#accb9660337785bf347933751380cdf57">getValueAs</a> (size_t offset=0)</td></tr>
-<tr class="separator:accb9660337785bf347933751380cdf57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a290a67c7fb221f924830dd011367662f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a290a67c7fb221f924830dd011367662f"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a290a67c7fb221f924830dd011367662f">getValueAs</a> (size_t offset=0) const</td></tr>
+<tr class="separator:a290a67c7fb221f924830dd011367662f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa65d6cf9416f13aa6f9e9a4cea786bee"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aa65d6cf9416f13aa6f9e9a4cea786bee"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#aa65d6cf9416f13aa6f9e9a4cea786bee">setValue</a> (T newValue, int valueOffset=0)</td></tr>
 <tr class="separator:aa65d6cf9416f13aa6f9e9a4cea786bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9720120d597258e2465e728551b581a"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#aa9720120d597258e2465e728551b581a">getTotalSize</a> () const =0</td></tr>
 <tr class="separator:aa9720120d597258e2465e728551b581a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fc8e09321d69cdec0b4cb10f3f87a8c"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a8fc8e09321d69cdec0b4cb10f3f87a8c">getDataSize</a> ()=0</td></tr>
-<tr class="separator:a8fc8e09321d69cdec0b4cb10f3f87a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6261b189b9c6edba7e889a3ace2a337c"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a6261b189b9c6edba7e889a3ace2a337c">getDataSize</a> () const =0</td></tr>
+<tr class="separator:a6261b189b9c6edba7e889a3ace2a337c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A wrapper class for a Type-Length-Value (TLV) record. This class does not create or modify TLV records, but rather serves as a wrapper and provides useful methods for retrieving data from them. This class has several abstract methods that should be implemented in derived classes. These methods are for record length value calculation (the 'L' in TLV) which is implemented differently in different protocols </p>
@@ -280,8 +280,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8fc8e09321d69cdec0b4cb10f3f87a8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fc8e09321d69cdec0b4cb10f3f87a8c">&#9670;&nbsp;</a></span>getDataSize()</h2>
+<a id="a6261b189b9c6edba7e889a3ace2a337c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6261b189b9c6edba7e889a3ace2a337c">&#9670;&nbsp;</a></span>getDataSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -293,7 +293,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual size_t pcpp::TLVRecord::getDataSize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -304,7 +304,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The size of the record value (meaning the size of the 'V' part in TLV) </dd></dl>
 
-<p>Implemented in <a class="el" href="classpcpp_1_1_dhcp_option.html#a9dc5a8aa9bf96982b1f24069d3e76c60">pcpp::DhcpOption</a>, <a class="el" href="classpcpp_1_1_i_pv4_option.html#a6633956b0a8e4e17f58b04c4a0e00e9e">pcpp::IPv4Option</a>, <a class="el" href="classpcpp_1_1_tcp_option.html#ad5115c98dee3f0e17107e9f0e2306b15">pcpp::TcpOption</a>, <a class="el" href="classpcpp_1_1_i_pv6_t_l_v_option_header_1_1_i_pv6_option.html#a5f71c3e3cb719d76fca28250562911e9">pcpp::IPv6TLVOptionHeader::IPv6Option</a>, and <a class="el" href="classpcpp_1_1_radius_attribute.html#ab954f0710570d825181cd76be71dce66">pcpp::RadiusAttribute</a>.</p>
+<p>Implemented in <a class="el" href="classpcpp_1_1_dhcp_option.html#ad7c1d4278af10a599276a46ce045e080">pcpp::DhcpOption</a>, <a class="el" href="classpcpp_1_1_i_pv4_option.html#adedfb3d3f3129f31e994b3c07c3c8601">pcpp::IPv4Option</a>, <a class="el" href="classpcpp_1_1_tcp_option.html#a4df8e7002500ea5ab71e87e79031a672">pcpp::TcpOption</a>, <a class="el" href="classpcpp_1_1_i_pv6_t_l_v_option_header_1_1_i_pv6_option.html#a382941c28bc594519a3cb439a1491da4">pcpp::IPv6TLVOptionHeader::IPv6Option</a>, and <a class="el" href="classpcpp_1_1_radius_attribute.html#ac1c391f717a9d814cd215e3cffb92748">pcpp::RadiusAttribute</a>.</p>
 
 </div>
 </div>
@@ -414,8 +414,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="accb9660337785bf347933751380cdf57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accb9660337785bf347933751380cdf57">&#9670;&nbsp;</a></span>getValueAs()</h2>
+<a id="a290a67c7fb221f924830dd011367662f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a290a67c7fb221f924830dd011367662f">&#9670;&nbsp;</a></span>getValueAs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -430,7 +430,7 @@ template&lt;typename T &gt; </div>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>offset</em> = <code>0</code></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -439,7 +439,7 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A templated method to retrieve the record data as a certain type T. For example, if record data is 4B long (integer) then this method should be used as <a class="el" href="classpcpp_1_1_t_l_v_record.html#accb9660337785bf347933751380cdf57">getValueAs&lt;int&gt;()</a> and it will return the record data as an integer.<br  />
+<p>A templated method to retrieve the record data as a certain type T. For example, if record data is 4B long (integer) then this method should be used as <a class="el" href="classpcpp_1_1_t_l_v_record.html#a290a67c7fb221f924830dd011367662f">getValueAs&lt;int&gt;()</a> and it will return the record data as an integer.<br  />
  Notice this return value is a copy of the data, not a pointer to the actual data </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>The offset in the record data to start reading the value from. Useful for cases when you want to read some of the data that doesn't start at offset 0. This is an optional parameter and the default value is 0, meaning start reading the value at the beginning of the record data </td></tr>
@@ -645,7 +645,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a></li>
-    <li class="footer">Generated on Thu Nov 7 2019 22:30:11 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Dec 2 2019 23:53:24 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

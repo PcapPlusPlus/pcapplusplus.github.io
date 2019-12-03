@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.04+</span>
+   &#160;<span id="projectnumber">19.12</span>
    </div>
   </td>
  </tr>
@@ -154,8 +154,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab19addb15ea46927076227436fde753e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c3a62bbd020dc2e88147be71876a758"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#a8c3a62bbd020dc2e88147be71876a758">toString</a> (bool timeAsLocalTime=true)</td></tr>
 <tr class="separator:a8c3a62bbd020dc2e88147be71876a758"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14e568de8d974fc34d7a7ced0c40e030"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#a14e568de8d974fc34d7a7ced0c40e030">toStringList</a> (std::vector&lt; std::string &gt; &amp;result, bool timeAsLocalTime=true)</td></tr>
-<tr class="separator:a14e568de8d974fc34d7a7ced0c40e030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab565f9f2bb5099c83ccf25e917e6257c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#ab565f9f2bb5099c83ccf25e917e6257c">toStringList</a> (std::vector&lt; std::string &gt; &amp;result, bool timeAsLocalTime=true) const</td></tr>
+<tr class="separator:ab565f9f2bb5099c83ccf25e917e6257c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class represents a parsed packet. It contains the raw data (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> instance), and a linked list of layers, each layer is a parsed protocol that this packet contains. The layers linked list is ordered where the first layer is the lowest in the packet (currently it's always Ethernet protocol as PcapPlusPlus supports only Ethernet packets), the next layer will be L2.5 or L3 (e.g VLAN, IPv4, IPv6, etc.), and so on. etc.), etc. The last layer in the linked list will be the highest in the packet. For example: for a standard HTTP request packet the layer will look like this: <a class="el" href="classpcpp_1_1_eth_layer.html">EthLayer</a> -&gt; <a class="el" href="classpcpp_1_1_i_pv4_layer.html">IPv4Layer</a> -&gt; <a class="el" href="classpcpp_1_1_tcp_layer.html">TcpLayer</a> -&gt; <a class="el" href="classpcpp_1_1_http_request_layer.html">HttpRequestLayer</a> <br  />
@@ -918,7 +918,7 @@ template&lt;class TLayer &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Each layer can print a string representation of the layer most important data using <a class="el" href="classpcpp_1_1_layer.html#a3acb12ad2f7e10ed03fc3dd0ae22dbf7">Layer::toString()</a>. This method aggregates this string from all layers and print it to a complete string containing all packet's relevant data </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Each layer can print a string representation of the layer most important data using <a class="el" href="classpcpp_1_1_layer.html#a1d07ea14d02b4a5cb383f89b3f40ed63">Layer::toString()</a>. This method aggregates this string from all layers and print it to a complete string containing all packet's relevant data </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">timeAsLocalTime</td><td>Print time as local time or GMT. Default (true value) is local time, for GMT set to false </td></tr>
   </table>
@@ -928,8 +928,8 @@ template&lt;class TLayer &gt; </div>
 
 </div>
 </div>
-<a id="a14e568de8d974fc34d7a7ced0c40e030"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14e568de8d974fc34d7a7ced0c40e030">&#9670;&nbsp;</a></span>toStringList()</h2>
+<a id="ab565f9f2bb5099c83ccf25e917e6257c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab565f9f2bb5099c83ccf25e917e6257c">&#9670;&nbsp;</a></span>toStringList()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -949,7 +949,7 @@ template&lt;class TLayer &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -969,7 +969,7 @@ template&lt;class TLayer &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_packet.html">Packet</a></li>
-    <li class="footer">Generated on Thu Nov 7 2019 22:30:10 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Dec 2 2019 23:53:23 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

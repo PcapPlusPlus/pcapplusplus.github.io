@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.04+</span>
+   &#160;<span id="projectnumber">19.12</span>
    </div>
   </td>
  </tr>
@@ -159,13 +159,13 @@ $(document).ready(function(){initNavTree('_sdp_layer_8h_source.html','');});
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
 <div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="classpcpp_1_1_sdp_layer.html#aab3f6a256318dbfb96439d6b48807b81">  156</a></span>&#160;        <a class="code" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> <a class="code" href="classpcpp_1_1_sdp_layer.html#aab3f6a256318dbfb96439d6b48807b81">getOsiModelLayer</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a7b97a36ede97b0fba585c8a2ec8476d7">OsiModelSesionLayer</a>; }</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        std::string <a class="code" href="classpcpp_1_1_sdp_layer.html#acdb3cc196fd8bb453d4293f93d5ff514">toString</a>();</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        std::string <a class="code" href="classpcpp_1_1_sdp_layer.html#a6a82c3997c8d0b347f177852d8cb707d">toString</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="comment">// implementation of abstract methods</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordtype">char</span> getHeaderFieldNameValueSeparator() { <span class="keywordflow">return</span> <span class="charliteral">&#39;=&#39;</span>; }</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keywordtype">bool</span> spacesAllowedBetweenHeaderFieldNameAndValue() { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordtype">char</span> getHeaderFieldNameValueSeparator()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="charliteral">&#39;=&#39;</span>; }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keywordtype">bool</span> spacesAllowedBetweenHeaderFieldNameAndValue()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    };</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;}</div>
@@ -177,17 +177,17 @@ $(document).ready(function(){initNavTree('_sdp_layer_8h_source.html','');});
 <div class="ttc" id="anamespacepcpp_html_a69e2ee6a9dc68797612cf8dc38461025"><div class="ttname"><a href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a></div><div class="ttdeci">OsiModelLayer</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:224</div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_pv4_address_html"><div class="ttname"><a href="classpcpp_1_1_i_pv4_address.html">pcpp::IPv4Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:119</div></div>
 <div class="ttc" id="aclasspcpp_1_1_packet_html"><div class="ttname"><a href="classpcpp_1_1_packet.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:26</div></div>
-<div class="ttc" id="aclasspcpp_1_1_sdp_layer_html_acdb3cc196fd8bb453d4293f93d5ff514"><div class="ttname"><a href="classpcpp_1_1_sdp_layer.html#acdb3cc196fd8bb453d4293f93d5ff514">pcpp::SdpLayer::toString</a></div><div class="ttdeci">std::string toString()</div></div>
 <div class="ttc" id="aclasspcpp_1_1_sdp_layer_html_a01322ec2f2a3e441d91ff6c0d2deda68"><div class="ttname"><a href="classpcpp_1_1_sdp_layer.html#a01322ec2f2a3e441d91ff6c0d2deda68">pcpp::SdpLayer::getMediaPort</a></div><div class="ttdeci">uint16_t getMediaPort(std::string mediaType) const</div></div>
 <div class="ttc" id="aclasspcpp_1_1_sdp_layer_html_add15c986ba55f22fe64c9e21b0475949"><div class="ttname"><a href="classpcpp_1_1_sdp_layer.html#add15c986ba55f22fe64c9e21b0475949">pcpp::SdpLayer::SdpLayer</a></div><div class="ttdeci">SdpLayer()</div></div>
 <div class="ttc" id="aclasspcpp_1_1_sdp_layer_html"><div class="ttname"><a href="classpcpp_1_1_sdp_layer.html">pcpp::SdpLayer</a></div><div class="ttdef"><b>Definition:</b> SdpLayer.h:59</div></div>
 <div class="ttc" id="aclasspcpp_1_1_sdp_layer_html_a4711a2970f57ab1661002afd132b3d85"><div class="ttname"><a href="classpcpp_1_1_sdp_layer.html#a4711a2970f57ab1661002afd132b3d85">pcpp::SdpLayer::getOwnerIPv4Address</a></div><div class="ttdeci">IPv4Address getOwnerIPv4Address() const</div></div>
 <div class="ttc" id="aclasspcpp_1_1_sdp_layer_html_a9df93bfb9cd914625bbd8f20895f8b8b"><div class="ttname"><a href="classpcpp_1_1_sdp_layer.html#a9df93bfb9cd914625bbd8f20895f8b8b">pcpp::SdpLayer::addMediaDescription</a></div><div class="ttdeci">bool addMediaDescription(std::string mediaType, uint16_t mediaPort, std::string mediaProtocol, std::string mediaFormat, std::vector&lt; std::string &gt; mediaAttributes)</div></div>
 <div class="ttc" id="a_ip_address_8h_html"><div class="ttname"><a href="_ip_address_8h.html">IpAddress.h</a></div></div>
-<div class="ttc" id="aclasspcpp_1_1_text_based_protocol_message_html"><div class="ttname"><a href="classpcpp_1_1_text_based_protocol_message.html">pcpp::TextBasedProtocolMessage</a></div><div class="ttdef"><b>Definition:</b> TextBasedProtocol.h:104</div></div>
+<div class="ttc" id="aclasspcpp_1_1_text_based_protocol_message_html"><div class="ttname"><a href="classpcpp_1_1_text_based_protocol_message.html">pcpp::TextBasedProtocolMessage</a></div><div class="ttdef"><b>Definition:</b> TextBasedProtocol.h:106</div></div>
 <div class="ttc" id="anamespacepcpp_html"><div class="ttname"><a href="namespacepcpp.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib.</div></div>
 <div class="ttc" id="anamespacepcpp_html_a69e2ee6a9dc68797612cf8dc38461025a7b97a36ede97b0fba585c8a2ec8476d7"><div class="ttname"><a href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a7b97a36ede97b0fba585c8a2ec8476d7">pcpp::OsiModelSesionLayer</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:235</div></div>
 <div class="ttc" id="aclasspcpp_1_1_layer_html"><div class="ttname"><a href="classpcpp_1_1_layer.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:70</div></div>
+<div class="ttc" id="aclasspcpp_1_1_sdp_layer_html_a6a82c3997c8d0b347f177852d8cb707d"><div class="ttname"><a href="classpcpp_1_1_sdp_layer.html#a6a82c3997c8d0b347f177852d8cb707d">pcpp::SdpLayer::toString</a></div><div class="ttdeci">std::string toString() const</div></div>
 <div class="ttc" id="aclasspcpp_1_1_sdp_layer_html_aa6ca3ae82b3e5cbfa0781a68c231e605"><div class="ttname"><a href="classpcpp_1_1_sdp_layer.html#aa6ca3ae82b3e5cbfa0781a68c231e605">pcpp::SdpLayer::operator=</a></div><div class="ttdeci">SdpLayer &amp; operator=(const SdpLayer &amp;other)</div><div class="ttdef"><b>Definition:</b> SdpLayer.h:112</div></div>
 <div class="ttc" id="a_text_based_protocol_8h_html"><div class="ttname"><a href="_text_based_protocol_8h.html">TextBasedProtocol.h</a></div></div>
 <div class="ttc" id="aclasspcpp_1_1_sdp_layer_html_a5e53ceb5fbe79493f5da02d340b8bee2"><div class="ttname"><a href="classpcpp_1_1_sdp_layer.html#a5e53ceb5fbe79493f5da02d340b8bee2">pcpp::SdpLayer::SdpLayer</a></div><div class="ttdeci">SdpLayer(const SdpLayer &amp;other)</div><div class="ttdef"><b>Definition:</b> SdpLayer.h:105</div></div>
@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('_sdp_layer_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="_sdp_layer_8h.html">SdpLayer.h</a></li>
-    <li class="footer">Generated on Thu Nov 7 2019 22:30:08 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Dec 2 2019 23:53:20 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

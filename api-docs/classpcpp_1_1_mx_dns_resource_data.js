@@ -6,6 +6,6 @@ var classpcpp_1_1_mx_dns_resource_data =
     [ "getMxData", "classpcpp_1_1_mx_dns_resource_data.html#add35d7da0d9d9b4655d2b6952e016f6b", null ],
     [ "operator==", "classpcpp_1_1_mx_dns_resource_data.html#aceb3240ff6efac9e816889872339ad08", null ],
     [ "setMxData", "classpcpp_1_1_mx_dns_resource_data.html#af90a70d4de739c23548620feaa818f54", null ],
-    [ "toByteArr", "classpcpp_1_1_mx_dns_resource_data.html#a0ce0f9b3a1ef3b0c0ddec00000567a84", null ],
-    [ "toString", "classpcpp_1_1_mx_dns_resource_data.html#a26bc9210701bd05a4e93071bc1fa1506", null ]
+    [ "toByteArr", "classpcpp_1_1_mx_dns_resource_data.html#a46ab5f2f72051d54a6141313825bcde1", null ],
+    [ "toString", "classpcpp_1_1_mx_dns_resource_data.html#a022de9263dfb87dc8259aa50aa45d492", null ]
 ];
