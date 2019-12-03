@@ -17,7 +17,7 @@ nav_order: 4
 
 ## Introduction
 
-Packet parsing, editing and crafting are a major part of PcapPlusPlus and is the essence of the Packet++ library. There is a long list of [protocols currently supported](/docs/features#supported-network-protocols), each of them is represented by a `Layer` class which (in most cases) supports both parsing of the protocol, editing and creation of new layers from scratch.
+Packet parsing, editing and crafting are a major part of PcapPlusPlus and is the essence of the Packet++ library. There is a long list of [protocols currently supported]({{ site.baseurl }}/docs/features#supported-network-protocols), each of them is represented by a `Layer` class which (in most cases) supports both parsing of the protocol, editing and creation of new layers from scratch.
 
 This tutorial will go through the packet parsing fundamentals and the next tutorial will focus on packet crafting and editing. The tutorial demonstrate parsing on a few popular protocols:
 
@@ -26,7 +26,7 @@ This tutorial will go through the packet parsing fundamentals and the next tutor
 * TCP
 * HTTP
 
-For further information about these protocols and the other protocols supported in PcapPlusPlus please go to the [API documentation](/docs/api)
+For further information about these protocols and the other protocols supported in PcapPlusPlus please go to the [API documentation]({{ site.baseurl }}/docs/api)
 
 ## Packet parsing basics
 
@@ -92,7 +92,7 @@ The next step is to let PcapPlusPlus parse the packet. We do this by creating an
 pcpp::Packet parsedPacket(&rawPacket);
 ```
 
-Before we dive into the protocols, let's remember how the `Packet` class is [built](/docs/tutorials/intro#packets-and-layers): it contains a link list of `Layer` instances, each layer points to the next layer in the packet. In our example: Ethernet layer will be the first one, it will point to IPv4 layer which will point to TCP layer and finally we'll have HTTP request layer. The `Packet` class exposes this link list so we can iterate over the layers and retrieve basic information like the protocols they represent, sizes, etc. Let's see the code:
+Before we dive into the protocols, let's remember how the `Packet` class is [built]({{ site.baseurl }}/docs/tutorials/intro#packets-and-layers): it contains a link list of `Layer` instances, each layer points to the next layer in the packet. In our example: Ethernet layer will be the first one, it will point to IPv4 layer which will point to TCP layer and finally we'll have HTTP request layer. The `Packet` class exposes this link list so we can iterate over the layers and retrieve basic information like the protocols they represent, sizes, etc. Let's see the code:
 
 ```cpp
 // first let's go over the layers one by one and find out its type, its total length, its header length and its payload length

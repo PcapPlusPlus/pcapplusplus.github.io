@@ -18,7 +18,7 @@ This guide will help you install and build your first PcapPlusPlus application o
 
 ## Step 1 - install PcapPlusPlus
 
-Before installing PcapPlusPlus make sure you have the prerequisites installed for [FreeBSD](/docs/install/build-source/freebsd#prerequisites).
+Before installing PcapPlusPlus make sure you have the prerequisites installed for [FreeBSD]({{ site.baseurl }}/docs/install/build-source/freebsd#prerequisites).
 
 Pre-compiled packages are available for recent versions of FreeBSD. You can find them under the [latest release page](https://github.com/seladb/PcapPlusPlus/releases/latest). After downloading and extracting the archive file go to: `/path/to/your/package/` and run the installation script:
 
@@ -26,7 +26,7 @@ Pre-compiled packages are available for recent versions of FreeBSD. You can find
 sudo ./install.sh
 ```
 
-If you have other versions of FreeBSD you'll need to [build PcapPlusPlus from source](/docs/install/build-source/freebsd). Make sure not to skip the [installation](/docs/install/build-source/freebsd#installation) part.
+If you have other versions of FreeBSD you'll need to [build PcapPlusPlus from source]({{ site.baseurl }}/docs/install/build-source/freebsd). Make sure not to skip the [installation]({{ site.baseurl }}/docs/install/build-source/freebsd#installation) part.
 
 ## Step 2 - create your first app
 

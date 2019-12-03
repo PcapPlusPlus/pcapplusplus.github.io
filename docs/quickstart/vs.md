@@ -18,7 +18,7 @@ This guide will help you install and build your first PcapPlusPlus application o
 
 ## Step 1 - install PcapPlusPlus
 
-Before installing PcapPlusPlus make sure you have the prerequisites installed for [Visual Studio](/docs/install/build-source/vs#prerequisites). Please notice that the currently supported versions of Visual Studio are 2015, 2017 and 2019.
+Before installing PcapPlusPlus make sure you have the prerequisites installed for [Visual Studio]({{ site.baseurl }}/docs/install/build-source/vs#prerequisites). Please notice that the currently supported versions of Visual Studio are 2015, 2017 and 2019.
 
 Download the pre-compiled package for the Visual Studio version you have (VS2015, VS2017 or VS2019) from the [latest release page](https://github.com/seladb/PcapPlusPlus/releases/latest).
 

@@ -40,7 +40,7 @@ The main features provided for each one are:
 ### What's next?
 {: .no_toc }
 
-You can find out more information in the [API documentation](/docs/api), [tutorial pages](/docs/tutorials) and browse through the code of the [example apps](/docs/examples).
+You can find out more information in the [API documentation]({{ site.baseurl }}/docs/api), [tutorial pages]({{ site.baseurl }}/docs/tutorials) and browse through the code of the [example apps]{{ site.baseurl }}/docs/examples).
 
 ## Packet parsing and crafting
 
@@ -132,7 +132,7 @@ while (pcapReader->getNextPacket(rawPacket)) {
 }
 ```
 
-For more information please refer to the [Read/Write Pcap Files tutorial](/docs/tutorials/read-write-pcap), look at the [API documentation](/docs/api) or browse through the code of the [example apps](/docs/examples).
+For more information please refer to the [Read/Write Pcap Files tutorial]({{ site.baseurl }}/docs/tutorials/read-write-pcap), look at the [API documentation]({{ site.baseurl }}/docs/api) or browse through the code of the [example apps]({{ site.baseurl }}/docs/examples).
 
 ## DPDK support
 
@@ -142,7 +142,7 @@ DPDK provides packet processing in line rate using kernel bypass for a large ran
 
 As DPDK API is written in C, PcapPlusPlus wraps its main functionality in easy-to-use C++ wrappers which have minimum impact on performance and packet processing rate. In addition it brings DPDK to the PcapPlusPlus framework and APIs so you can use DPDK together with other PcapPlusPlus features such as packet analysis, etc.
 
-You can find more information about setting up DPDK and the API in [DPDK support page](/docs/dpdk) and also in [DPDK tutorial](/docs/tutorials/dpdk).
+You can find more information about setting up DPDK and the API in [DPDK support page]({{ site.baseurl }}/docs/dpdk) and also in [DPDK tutorial]({{ site.baseurl }}/docs/tutorials/dpdk).
 
 ## PF_RING support
 
@@ -174,8 +174,8 @@ This mechanism is called reassembly, although a specific protocol specification 
 
 PcapPlusPlus currently supports two types of packets reassembly:
 
-- IPv4 and IPv6 defragmentation which is a Layer 3 (Network layer) packet reassembly. You can read more about IP fragmentation [here](https://en.wikipedia.org/wiki/IP_fragmentation). To get more information about how it works and the API to use it please refer to the [API documentation](/docs/api) and browse through the code of the [IPDefragUtil](/docs/examples#ipdefragutil) and [IPFragUtil](/docs/examples#ipfragutil) example apps
-- TCP reassembly which is a Layer 4 (Transport layer) packet reassembly. To get more information on how it works and the API to use it please refer to the [API documentation](/docs/api) and browse through the code of the [TcpReassembly](/docs/examples#tcpreassembly) example app
+- IPv4 and IPv6 defragmentation which is a Layer 3 (Network layer) packet reassembly. You can read more about IP fragmentation [here](https://en.wikipedia.org/wiki/IP_fragmentation). To get more information about how it works and the API to use it please refer to the [API documentation]({{ site.baseurl }}/docs/api) and browse through the code of the [IPDefragUtil]({{ site.baseurl }}/docs/examples#ipdefragutil) and [IPFragUtil]({{ site.baseurl }}/docs/examples#ipfragutil) example apps
+- TCP reassembly which is a Layer 4 (Transport layer) packet reassembly. To get more information on how it works and the API to use it please refer to the [API documentation]({{ site.baseurl }}/docs/api) and browse through the code of the [TcpReassembly]({{ site.baseurl }}/docs/examples#tcpreassembly) example app
 
 ## Packet filtering
 
@@ -201,7 +201,7 @@ andFilter.addFilter(&ipFilter);
 dev->setFilter(andFilter);
 ```
 
-You can read more in the [PcapFilter.h API documentation](/api-docs/_pcap_filter_8h.html) and in the [capture packets tutorial](/docs/tutorials/capture-packets#filtering-packets).
+You can read more in the [PcapFilter.h API documentation]({{ site.baseurl }}/api-docs/_pcap_filter_8h.html) and in the [capture packets tutorial]({{ site.baseurl }}/docs/tutorials/capture-packets#filtering-packets).
 
 ## Supported network protocols
 

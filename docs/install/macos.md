@@ -101,4 +101,4 @@ You can change the installation directory by using the __`--install-dir`__ switc
 
 ## Running tests
 
-PcapPlusPlus contains a set of test-cases you can run to make sure that everything works correctly on your system. [This guide](/docs/install/build-source/tests) contains detailed instructions on how to run them.
+PcapPlusPlus contains a set of test-cases you can run to make sure that everything works correctly on your system. [This guide]({{ site.baseurl }}/docs/install/build-source/tests) contains detailed instructions on how to run them.

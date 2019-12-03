@@ -86,4 +86,4 @@ A utility for reassembling IP fragments back to IP packets. It works on pcap and
 
 ## [PcapPlusPlus-benchmark](https://github.com/seladb/PcapPlusPlus/tree/master/Examples/PcapPlusPlus-benchmark)
 
-the benchmark application used for measuring PcapPlusPlus performance. See [benchmark page](/docs/benchmark) for more details. This application currently compiles on Linux only (where benchmark was running on).
+the benchmark application used for measuring PcapPlusPlus performance. See [benchmark page]({{ site.baseurl }}/docs/benchmark) for more details. This application currently compiles on Linux only (where benchmark was running on).

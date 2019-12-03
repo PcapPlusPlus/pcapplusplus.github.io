@@ -9,7 +9,7 @@ nav_order: 2
 # Setting Up PcapPlusPlus
 {: .no_toc }
 
-PcapPlusPlus is available on <img src="/resources/logo-windows.png" alt="drawing" width="24" title="Windows"/> Windows, <img src="/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> Linux, <img src="/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/> MacOS and <img src="/resources/logo-freebsd.png" alt="drawing" width="24" title="FreeBSD"/> FreeBSD (see more details [here](/docs/install/platforms)).
+PcapPlusPlus is available on <img src="/resources/logo-windows.png" alt="drawing" width="24" title="Windows"/> Windows, <img src="/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> Linux, <img src="/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/> MacOS and <img src="/resources/logo-freebsd.png" alt="drawing" width="24" title="FreeBSD"/> FreeBSD (see more details [here]({{ site.baseurl }}/docs/install/platforms)).
 
 [Latest Release: {{ site.pcapplusplus_ver }}](https://github.com/seladb/PcapPlusPlus/releases/latest){: .btn .btn-purple } {% include new-release.html %}
 

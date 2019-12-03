@@ -7,7 +7,7 @@ nav_order: 99
 
 # API Reference
 
-[Go to Doxygen API reference](/api-docs){: .btn .btn-blue }
+[Go to Doxygen API reference]({{ site.baseurl }}/api-docs){: .btn .btn-blue }
 
 PcapPlusPlus consists of 3 libraries:
 

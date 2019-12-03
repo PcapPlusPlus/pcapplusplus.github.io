@@ -18,7 +18,7 @@ This guide will help you install and build your first PcapPlusPlus application o
 
 ## Step 1 - install PcapPlusPlus
 
-Before installing PcapPlusPlus make sure you have the prerequisites installed for [MacOS](/docs/install/build-source/macos#prerequisites).
+Before installing PcapPlusPlus make sure you have the prerequisites installed for [MacOS]({{ site.baseurl }}/docs/install/build-source/macos#prerequisites).
 
 The easiest way to get PcapPlusPlus is from Homebrew:
 
@@ -32,7 +32,7 @@ If you prefer not to use Homebrew you can also found pre-compiled packages for v
 ./install.sh
 ```
 
-Another option is to build PcapPlusPlus [from source](/docs/install/build-source/macos). Make sure not to skip the [installation](/docs/install/build-source/macos#installation) part.
+Another option is to build PcapPlusPlus [from source]({{ site.baseurl }}/docs/install/build-source/macos). Make sure not to skip the [installation]({{ site.baseurl }}/docs/install/build-source/macos#installation) part.
 
 ## Step 2 - create your first app
 

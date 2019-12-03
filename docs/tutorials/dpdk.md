@@ -23,9 +23,9 @@ This tutorial will go through the fundamentals of using PcapPlusPlus with DPDK. 
 
 This specific example was chosen because it corresponds to a similar example in DPDK documentation called [L2 Forwarding](https://doc.dpdk.org/guides-18.08/sample_app_ug/l2_forward_real_virtual.html) which many DPDK users are probably familiar with, and that may help in better understanding the code and the idea behind it.
 
-Before starting this tutorial it is highly recommended to have a basic understanding of what DPDK is (you can find a lot of reading material in [DPDK web-site](http://dpdk.org/)) and also read the page describing [PcapPlusPlus support for DPDK](/docs/dpdk).
+Before starting this tutorial it is highly recommended to have a basic understanding of what DPDK is (you can find a lot of reading material in [DPDK web-site](http://dpdk.org/)) and also read the page describing [PcapPlusPlus support for DPDK]({{ site.baseurl }}/docs/dpdk).
 
-For further information about the APIs and classes please refer to the [API documentation](/docs/api).
+For further information about the APIs and classes please refer to the [API documentation]({{ site.baseurl }}/docs/api).
 
 Before diving into the code, let's see how our L2 forwarding (bridge) application will be built:
 
@@ -37,9 +37,9 @@ As you can see, we will use 2 DPDK-controlled NICs, one from each side of the ne
 
 The first thing any application that uses DPDK should do is initialize DPDK and set up the DPDK interfaces (devices). This initialization involves a couple of steps and we'll go through all of them.
 
-The first step is done before running the application. PcapPlusPlus contains a shell script called `setup-dpdk.sh` which initializes Huge Pages (which are required for DPDK's memory allocation) and DPDK kernel driver which removes kernel control from selected NICs and hand it over to DPDK. You can read more about it in [PcapPlusPlus support for DPDK](/docs/dpdk) page.
+The first step is done before running the application. PcapPlusPlus contains a shell script called `setup-dpdk.sh` which initializes Huge Pages (which are required for DPDK's memory allocation) and DPDK kernel driver which removes kernel control from selected NICs and hand it over to DPDK. You can read more about it in [PcapPlusPlus support for DPDK]({{ site.baseurl }}/docs/dpdk) page.
 
-The second step is done in the application's code and is a general DPDK initialization phase. It is also described in the [PcapPlusPlus support for DPDK](/docs/dpdk) page and contains steps like initialize DPDK internal structures and memory pools, initialize packet memory pool, and more. Lets start by writing a general main method and initialize DPDK:
+The second step is done in the application's code and is a general DPDK initialization phase. It is also described in the [PcapPlusPlus support for DPDK]({{ site.baseurl }}/docs/dpdk) page and contains steps like initialize DPDK internal structures and memory pools, initialize packet memory pool, and more. Lets start by writing a general main method and initialize DPDK:
 
 ```cpp
 #include <vector>
@@ -402,9 +402,9 @@ This output is printed every 2 seconds and shows for each direction: the total n
 
 ## Running the example
 
-All the code that was covered in this tutorial can be found [here](https://github.com/seladb/PcapPlusPlus/tree/master/Examples/Tutorials/Tutorial-DpdkL2Fwd). In order to compile and run the code please first download and compile PcapPlusPlus source code or download a pre-compiled version from [the latest PcapPlusPlus release](https://github.com/seladb/PcapPlusPlus/releases/latest). When building from source please make sure to configure the build for DPDK, as explained [here](/docs/install/build-source/linux#command-line-switches-mode). The only platform relevant for this tutorial is Linux as DPDK is not supported on other platforms.
+All the code that was covered in this tutorial can be found [here](https://github.com/seladb/PcapPlusPlus/tree/master/Examples/Tutorials/Tutorial-DpdkL2Fwd). In order to compile and run the code please first download and compile PcapPlusPlus source code or download a pre-compiled version from [the latest PcapPlusPlus release](https://github.com/seladb/PcapPlusPlus/releases/latest). When building from source please make sure to configure the build for DPDK, as explained [here]({{ site.baseurl }}/docs/install/build-source/linux#command-line-switches-mode). The only platform relevant for this tutorial is Linux as DPDK is not supported on other platforms.
 
-After done building PcapPlusPlus and the tutorial and before running the tutorial please run `setup-dpdk.sh` script to setup the necessary runtime parameters for DPDK. More details on this script can be found [here](/docs/dpdk).
+After done building PcapPlusPlus and the tutorial and before running the tutorial please run `setup-dpdk.sh` script to setup the necessary runtime parameters for DPDK. More details on this script can be found [here]({{ site.baseurl }}/docs/dpdk).
 
 Please note this tutorial needs a special environment to run on, as it needs at least 2 devices connected only through a third device running this application. If you need help setting up this environment and you have VirtualBox you can use [this](https://www.brianlinkletter.com/how-to-use-virtualbox-to-emulate-a-network/) great tutorial which will walk you through it.
 

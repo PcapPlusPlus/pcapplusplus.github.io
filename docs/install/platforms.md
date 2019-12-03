@@ -44,7 +44,7 @@ Versions 11.1 and above are supported
 
 ## Other platforms
 
-Other platforms and toolchains may work as well, but the support is not guaranteed. If you'd like us to add additional platforms please [contact us](/docs/community).
+Other platforms and toolchains may work as well, but the support is not guaranteed. If you'd like us to add additional platforms please [contact us]({{ site.baseurl }}/docs/community).
 
 ## CI reports
 

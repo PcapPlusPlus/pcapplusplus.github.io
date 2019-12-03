@@ -17,7 +17,7 @@ nav_order: 5
 
 ## Introduction
 
-In the previous [Packet parsing](/docs/tutorials/packet-parsing) tutorial we demonstrated how PcapPlusPlus parses packets and how to read data out the various layers. In this tutorial we'll focus on editing packets - meaning change existing protocol data, add more data and add/remove layers, and also how to craft new packets from scratch.
+In the previous [Packet parsing]({{ site.baseurl }}/docs/tutorials/packet-parsing) tutorial we demonstrated how PcapPlusPlus parses packets and how to read data out the various layers. In this tutorial we'll focus on editing packets - meaning change existing protocol data, add more data and add/remove layers, and also how to craft new packets from scratch.
 
 Of course we won't go over all the protocols, we'll focus on a few which are popular:
 
@@ -29,7 +29,7 @@ Of course we won't go over all the protocols, we'll focus on a few which are pop
 * HTTP
 * DNS
 
-For further information about these protocols and the other protocols supported in PcapPlusPlus please go to the [API documentation](/docs/api)
+For further information about these protocols and the other protocols supported in PcapPlusPlus please go to the [API documentation]({{ site.baseurl }}/docs/api)
 
 ## Packet editing
 
@@ -98,7 +98,7 @@ The next step is to let PcapPlusPlus parse the packet by creating an instance of
 pcpp::Packet parsedPacket(&rawPacket);
 ```
 
-You may notice this is exactly the same packet as we used in the [Packet parsing](/docs/tutorials/packet-parsing) tutorial but this time we won't just read data from the various layers but actually change it. First thing we'll do is get the **Ethernet** layer and change it:
+You may notice this is exactly the same packet as we used in the [Packet parsing]({{ site.baseurl }}/docs/tutorials/packet-parsing) tutorial but this time we won't just read data from the various layers but actually change it. First thing we'll do is get the **Ethernet** layer and change it:
 
 ```cpp
 // now let's get the Ethernet layer
@@ -161,7 +161,7 @@ pcpp::HttpField* xForwardedForField = httpRequestLayer->insertField(httpRequestL
 httpRequestLayer->insertField(xForwardedForField, "Cache-Control", "max-age=0");
 ```
 
-We already discussed the highlights of the `HttpLayer` API in the [Packet parsing](/docs/tutorials/packet-parsing) tutorial so we won't repeat all of it again. But as you can see the API provides setters for all of the relevant data:
+We already discussed the highlights of the `HttpLayer` API in the [Packet parsing]({{ site.baseurl }}/docs/tutorials/packet-parsing) tutorial so we won't repeat all of it again. But as you can see the API provides setters for all of the relevant data:
 
 * `HttpRequestFirstLine` exposes is a setter for the HTTP method `setMethod()` where we change it to `TRACE`. Similar methods exist for the URI and version
 * When retrieving HTTP fields, the `HttpField` class exposes a method of `setFieldValue()` for setting the field value (demonstrated above for `"Host"` and `"Referer"` fields)

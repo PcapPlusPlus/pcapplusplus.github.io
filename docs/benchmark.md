@@ -129,7 +129,7 @@ All 3 benchmarks provided in [packet-capture-benchmarks](https://github.com/mfon
 - The host platform is a MacBook Pro model 2017 with Intel Core i7 760 3.1GHz processor and 16GB RAM running MacOS High Sierra 10.13
 
 Benchmark applications:
-- The PcapPlusPlus benchmark application can be found in [PcapPlusPlus examples](/docs/examples#pcapplusplus-benchmark)
+- The PcapPlusPlus benchmark application can be found in [PcapPlusPlus examples]({{ site.baseurl }}/docs/examples#pcapplusplus-benchmark)
 - The other benchmark applications can be found in [Matias Fontanini's packet-capture-benchmarks project](https://github.com/mfontanini/packet-capture-benchmarks)
 
 ## Test results

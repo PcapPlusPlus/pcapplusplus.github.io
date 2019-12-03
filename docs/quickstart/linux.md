@@ -18,7 +18,7 @@ This guide will help you install and build your first PcapPlusPlus application o
 
 ## Step 1 - install PcapPlusPlus
 
-Before installing PcapPlusPlus make sure you have the prerequisites installed for [Linux](/docs/install/build-source/linux#prerequisites).
+Before installing PcapPlusPlus make sure you have the prerequisites installed for [Linux]({{ site.baseurl }}/docs/install/build-source/linux#prerequisites).
 
 Pre-compiled packages are available for recent versions of Ubuntu, Fedora and CentOS. You can find them under the [latest release page](https://github.com/seladb/PcapPlusPlus/releases/latest). After downloading and extracting the archive file go to: `/path/to/your/package/` and run the installation script:
 
@@ -26,7 +26,7 @@ Pre-compiled packages are available for recent versions of Ubuntu, Fedora and Ce
 ./install.sh
 ```
 
-If you have other Linux distribution, another version of the distribution mentioned above or other GCC version you'll need to [build PcapPlusPlus from source](/docs/install/build-source/linux). Make sure not to skip the [installation](/docs/install/build-source/linux#installation) part.
+If you have other Linux distribution, another version of the distribution mentioned above or other GCC version you'll need to [build PcapPlusPlus from source]({{ site.baseurl }}/docs/install/build-source/linux). Make sure not to skip the [installation]({{ site.baseurl }}/docs/install/build-source/linux#installation) part.
 
 ## Step 2 - create your first app
 

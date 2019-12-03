@@ -18,16 +18,16 @@ PcapPlusPlus enables decoding and forging capabilities for a large variety of ne
 
 ## Quick Start
 
-This guide will help you install and build your first PcapPlusPlus application. You can find more information in the [Tutorials](/docs/tutorials) and in the [installation guide](/docs/install).
+This guide will help you install and build your first PcapPlusPlus application. You can find more information in the [Tutorials]({{ site.baseurl }}/docs/tutorials) and in the [installation guide]({{ site.baseurl }}/docs/install).
 
 Please choose your platform:
 
-[<img src="/resources/logo-windows.png" alt="drawing" width="16" title="Windows"/> Windows - MinGW](/docs/quickstart/mingw){: .btn .btn-blue }
+[<img src="/resources/logo-windows.png" alt="drawing" width="16" title="Windows"/> Windows - MinGW]({{ site.baseurl }}/docs/quickstart/mingw){: .btn .btn-blue }
 
-[<img src="/resources/logo-windows.png" alt="drawing" width="16" title="Windows"/> Windows - Visual Studio](/docs/quickstart/vs){: .btn .btn-blue }
+[<img src="/resources/logo-windows.png" alt="drawing" width="16" title="Windows"/> Windows - Visual Studio]({{ site.baseurl }}/docs/quickstart/vs){: .btn .btn-blue }
 
-[<img src="/resources/logo-linux.png" alt="drawing" width="16" title="Linux"/> Linux](/docs/quickstart/linux){: .btn .btn-blue }
+[<img src="/resources/logo-linux.png" alt="drawing" width="16" title="Linux"/> Linux]({{ site.baseurl }}/docs/quickstart/linux){: .btn .btn-blue }
 
-[<img src="/resources/logo-apple.png" alt="drawing" width="16" title="MacOS"/> MacOS](/docs/quickstart/macos){: .btn .btn-blue }
+[<img src="/resources/logo-apple.png" alt="drawing" width="16" title="MacOS"/> MacOS]({{ site.baseurl }}/docs/quickstart/macos){: .btn .btn-blue }
 
-[<img src="/resources/logo-freebsd.png" alt="drawing" width="16" title="FreeBSD"/> FreeBSD](/docs/quickstart/freebsd){: .btn .btn-blue }
+[<img src="/resources/logo-freebsd.png" alt="drawing" width="16" title="FreeBSD"/> FreeBSD]({{ site.baseurl }}/docs/quickstart/freebsd){: .btn .btn-blue }

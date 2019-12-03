@@ -9,7 +9,7 @@ nav_order: 4
 # Build From Source on Windows - Visual Studio
 {: .no_toc }
 
-Please visit the [supported platforms page](/docs/install/platforms) to see the Visual Studio versions currently supported in PcapPlusPlus.
+Please visit the [supported platforms page]({{ site.baseurl }}/docs/install/platforms) to see the Visual Studio versions currently supported in PcapPlusPlus.
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -21,7 +21,7 @@ Please visit the [supported platforms page](/docs/install/platforms) to see the 
 
 In order to build PcapPlusPlus on Windows with Visual Studio you need the following components:
 
-1. A [supported version](/docs/install/platforms) of Microsoft Visual Studio 
+1. A [supported version]({{ site.baseurl }}/docs/install/platforms) of Microsoft Visual Studio 
 2. WinPcap developer's pack - containing the wpcap library PcapPlusPlus is linking with plus relevant h files. You can download it from <https://www.winpcap.org/devel.htm>
 3. pthread-win32 - can be downloaded from here: <ftp://sourceware.org/pub/pthreads-win32/pthreads-w32-2-9-1-release.zip>
 4. In many cases you also need to download and install:
@@ -155,4 +155,4 @@ You can build these 3 solutions using either Visual Studio IDE or `MSBuild`.
 
 ## Running tests
 
-PcapPlusPlus contains a set of test-cases you can run to make sure that everything works correctly on your system. [This guide](/docs/install/build-source/tests) contains detailed instructions on how to run them.
+PcapPlusPlus contains a set of test-cases you can run to make sure that everything works correctly on your system. [This guide]({{ site.baseurl }}/docs/install/build-source/tests) contains detailed instructions on how to run them.
