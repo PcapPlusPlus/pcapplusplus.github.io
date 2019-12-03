@@ -24,6 +24,9 @@ In order to build PcapPlusPlus on Windows with Visual Studio you need the follow
 1. A [supported version](/docs/install/platforms) of Microsoft Visual Studio 
 2. WinPcap developer's pack - containing the wpcap library PcapPlusPlus is linking with plus relevant h files. You can download it from <https://www.winpcap.org/devel.htm>
 3. pthread-win32 - can be downloaded from here: <ftp://sourceware.org/pub/pthreads-win32/pthreads-w32-2-9-1-release.zip>
+4. In many cases you also need to download and install:
+  - [Microsoft Visual C++ Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads) for your version of Visual Studio
+  - [Microsoft Visual C++ 2010 Redistributable](https://www.microsoft.com/en-us/download/confirmation.aspx?id=14632)
 
 ## Visual Studio project structure
 
@@ -50,8 +53,6 @@ All solutions support both 32-bit (x86) and 64-bit (x64) configurations as well 
 ## Configuration
 
 Before opening the solution (`.sln`) files please run the `configure-windows-visual-studio.bat` batch file from PcapPlusPlus main directory. This script configures the solution and project files according to the selected version of Visual Studio. It also creates a Visual Studio properties file called `PcapPlusPlusPropertySheet.props` that contains paths for 3rd-party libraries being used to build PcapPlusPlus.
-
-{% include alert.html alert-type="important" title="Notice" content="Visual Studio 2017 and 2019 are only supported in the latest code in <code>master</code>. The current official release (v19.04) only supports Visual Studio 2015. So if you're building an official release from source you won't see the option to choose a Visual Studio version" %}
 
 Ths script has two modes of operation:
 

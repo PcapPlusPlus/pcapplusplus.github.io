@@ -40,8 +40,8 @@ After a successful build you can run the test-cases following these simple steps
 
   ```shell
   seladb@seladb:~/PcapPlusPlus/Tests/Packet++Test$ Bin/Packet++Test 
-  PcapPlusPlus version: v19.04+ (non-official release)
-  Built: Nov 22 2019 02:36:16
+  PcapPlusPlus version: {{ site.pcapplusplus_ver }} (official release)
+  Built: MMM DD YYYY 02:36:16
   Built from: Git branch 'master', commit '8b2d721fdaaa6af516494d96f032e10264d7bf56'
   Start running tests...
 
@@ -63,8 +63,8 @@ After a successful build you can run the test-cases following these simple steps
 
   ```shell
   seladb@seladb:~/PcapPlusPlus/Tests/Packet++Test$ Bin/Packet++Test 
-  PcapPlusPlus version: v19.04+ (non-official release)
-  Built: Nov 22 2019 02:44:35
+  PcapPlusPlus version: {{ site.pcapplusplus_ver }} (official release)
+  Built: MMM DD YYYY 02:44:35
   Built from: Git branch 'master', commit '8b2d721fdaaa6af516494d96f032e10264d7bf56'
   Start running tests...
 
@@ -103,8 +103,8 @@ After a successful build you can run the test-cases following these simple steps
 
   ```shell
   seladb@seladb:~/PcapPlusPlus/Tests/Packet++Test$ Bin/Packet++Test -t "eth"
-  PcapPlusPlus version: v19.04+ (non-official release)
-  Built: Nov 22 2019 03:19:34
+  PcapPlusPlus version: {{ site.pcapplusplus_ver }} (official release)
+  Built: MMM DD YYYY 03:19:34
   Built from: Git branch 'master', commit '8b2d721fdaaa6af516494d96f032e10264d7bf56'
   Start running tests...
 
@@ -123,8 +123,8 @@ After a successful build you can run the test-cases following these simple steps
 
   ```shell
   seladb@seladb:~/PcapPlusPlus/Tests/Packet++Test$ Bin/Packet++Test -t "eth;ipv6"
-  PcapPlusPlus version: v19.04+ (non-official release)
-  Built: Nov 22 2019 03:19:34
+  PcapPlusPlus version: {{ site.pcapplusplus_ver }} (official release)
+  Built: MMM DD YYYY 03:19:34
   Built from: Git branch 'master', commit '8b2d721fdaaa6af516494d96f032e10264d7bf56'
   Start running tests...
 
@@ -151,8 +151,8 @@ After a successful build you can run the test-cases following these simple steps
 
   ```shell
   seladb@seladb:~/PcapPlusPlus/Tests/Packet++Test$ Bin/Packet++Test -t "ArpPacketCreation"
-  PcapPlusPlus version: v19.04+ (non-official release)
-  Built: Nov 22 2019 03:19:34
+  PcapPlusPlus version: {{ site.pcapplusplus_ver }} (official release)
+  Built: MMM DD YYYY 03:19:34
   Built from: Git branch 'master', commit '8b2d721fdaaa6af516494d96f032e10264d7bf56'
   Start running tests...
 
@@ -194,8 +194,8 @@ After a successful build you can run the test-cases following these simple steps
 
   ```shell
   seladb@seladb:~/PcapPlusPlus/Tests/Pcap++Test$ sudo Bin/Pcap++Test -i 10.0.0.1
-  PcapPlusPlus version: v19.04+ (non-official release)
-  Built: Nov 22 2019 02:36:38
+  PcapPlusPlus version: {{ site.pcapplusplus_ver }} (official release)
+  Built: MMM DD YYYY 02:36:38
   Git info: Git branch 'master', commit '8b2d721fdaaa6af516494d96f032e10264d7bf56'
   Using ip: 10.0.0.1
   Debug mode: off
@@ -220,8 +220,8 @@ After a successful build you can run the test-cases following these simple steps
 
   ```shell
   seladb@seladb:~/PcapPlusPlus/Tests/Pcap++Test$ sudo Bin/Pcap++Test -i 10.1.1.1
-  PcapPlusPlus version: v19.04+ (non-official release)
-  Built: Nov 22 2019 02:36:38
+  PcapPlusPlus version: {{ site.pcapplusplus_ver }} (official release)
+  Built: MMM DD YYYY 02:36:38
   Git info: Git branch 'master', commit '8b2d721fdaaa6af516494d96f032e10264d7bf56'
   Using ip: 10.1.1.1
   Debug mode: off

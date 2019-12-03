@@ -23,9 +23,6 @@ The platforms and toolchains described below are supported and being continuousl
 - [MinGW32](http://www.mingw.org/) (32-bit compilation only)
 - [MinGW-w64](https://mingw-w64.org) (32-bit compilation only)
 
-{% include alert.html alert-type="important" title="Notice" content="Visual Studio 2017 and 2019 are only supported in the latest code in <code>master</code>. The current official release (v19.04) only supports Visual Studio 2015" %}
-
-
 ## <img src="/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> Linux
 
 Basically every x86 GCC toolchain should work, but PcapPlusPlus is being continuously tested on the following platforms:
@@ -44,8 +41,6 @@ Basically every x86 GCC toolchain should work, but PcapPlusPlus is being continu
 ## <img src="/resources/logo-freebsd.png" alt="drawing" width="24" title="FreeBSD"/> FreeBSD
 
 Versions 11.1 and above are supported
-
-{% include alert.html alert-type="important" title="Notice" content="FreeBSD is only supported in the latest code in <code>master</code>. The current official release (v19.04) does not offer FreeBSD support" %}
 
 ## Other platforms
 

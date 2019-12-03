@@ -1,17 +1,14 @@
 ---
 layout: page
-title: Quick Start - Visual Studio 2015
+title: Quick Start - Visual Studio
 nav_exclude: true
 permalink: /docs/quickstart/vs
 ---
 
-# Quick Start - Windows and Visual Studio 2015
+# Quick Start - Windows and Visual Studio
 {: .no_toc }
 
-This guide will help you install and build your first PcapPlusPlus application on Windows using Visual Studio 2015 in a few simple steps.
-
-{% include alert.html alert-type="important" title="Notice" content="If you want to build a PcapPlusPlus application using Visual Studio 2017 or 2019 please build the code from source first using <a href='/docs/install/build-source/vs'>this guide</a>. This quick start guide uses PcapPlusPlus official release which currently supports only Visual Studio 2015" %}
-
+This guide will help you install and build your first PcapPlusPlus application on Windows using Visual Studio in a few simple steps.
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -21,9 +18,9 @@ This guide will help you install and build your first PcapPlusPlus application o
 
 ## Step 1 - install PcapPlusPlus
 
-Before installing PcapPlusPlus make sure you have the prerequisites installed for [Visual Studio](/docs/install/build-source/vs#prerequisites).
+Before installing PcapPlusPlus make sure you have the prerequisites installed for [Visual Studio](/docs/install/build-source/vs#prerequisites). Please notice that the currently supported versions of Visual Studio are 2015, 2017 and 2019.
 
-Download the pre-compiled package for Visual Studio 2015 from the [latest release page](https://github.com/seladb/PcapPlusPlus/releases/latest).
+Download the pre-compiled package for the Visual Studio version you have (VS2015, VS2017 or VS2019) from the [latest release page](https://github.com/seladb/PcapPlusPlus/releases/latest).
 
 ## Step 2 - create your first app
 
@@ -60,7 +57,7 @@ Edit the `PcapPlusPlusPropertySheet.props` file in the following way:
 
 You can now open `ExampleProject.sln` in Visual Studio and build it in the various available configurations (x86/x64 and debug/release).
 
-The `.exe` file will be created under `ExampleProject\Debug` or `ExampleProject\Release` (according to the chosen configuration). You can now run it and should be able to see the following output:
+The `.exe` file will be created under `ExampleProject\Debug\x86` or `ExampleProject\Debug\x64` or `ExampleProject\Release\x86` or `ExampleProject\Release\x64` (according to the chosen configuration). You can now run it and should be able to see the following output:
 
 ```shell
 Source IP is '10.0.0.138'; Dest IP is '10.0.0.1'

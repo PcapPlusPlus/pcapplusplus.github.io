@@ -17,7 +17,16 @@ This page contains a list of all PcapPlusPlus releases, and for recent release i
 - PcapPlusPlus web-site: <https://pcapplusplus.github.io>{:target="_blank"}
 - API reference: <https://pcapplusplus.github.io/api-docs/>{:target="_blank"}
 
-## Latest Official Release - v19.04
+## Latest Official Release - v19.12
+
+Released on December 2019 {% include new-release.html %} 
+
+- GitHub page: <https://github.com/seladb/PcapPlusPlus/releases/tag/v19.12>{:target="_blank"}
+- PcapPlusPlus web-site at the time of the release: <https://pcapplusplus.github.io/>{:target="_blank"}
+- API reference: <https://pcapplusplus.github.io/api-docs/>{:target="_blank"}
+
+
+## v19.04
 
 Released on April 2019
 

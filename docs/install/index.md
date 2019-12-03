@@ -34,7 +34,7 @@ You can also find the PcapPlusPlus formula here: <https://formulae.brew.sh/formu
 
 Available for: <img src="/resources/logo-windows.png" alt="drawing" width="24" title="Windows"/> <img src="/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> <img src="/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/>
 
-PcapPlusPlus pre-built binaries are available in Conan for Windows (Visual Studio 2015), Linux and MacOS. The package is managed by the [Bincrafters](https://bincrafters.github.io/) team and is available in [Bintray](https://bintray.com/bincrafters/public-conan/pcapplusplus%3Abincrafters).
+PcapPlusPlus pre-built binaries are available in Conan for Windows (Visual Studio), Linux and MacOS. The package is managed by the [Bincrafters](https://bincrafters.github.io/) team and is available in [Bintray](https://bintray.com/bincrafters/public-conan/pcapplusplus%3Abincrafters).
 
 To install the package run the following commands from the command-line:
 
@@ -45,9 +45,7 @@ conan install pcapplusplus/{{ site.pcapplusplus_ver_num }}@bincrafters/stable -r
 
 ## Latest Release From GitHub
 
-Available for: <img src="/resources/logo-windows.png" alt="drawing" width="24" title="Windows"/> <img src="/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> <img src="/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/> 
-
-{% include alert.html alert-type="notice" content="FreeBSD is not yet supported in an official release. It's only available in master branch" %}
+Available for: <img src="/resources/logo-windows.png" alt="drawing" width="24" title="Windows"/> <img src="/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> <img src="/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/> <img src="/resources/logo-freebsd.png" alt="drawing" width="24" title="FreeBSD"/> 
 
 [Download Latest Release: {{ site.pcapplusplus_ver }}](https://github.com/seladb/PcapPlusPlus/releases/latest){: .btn .btn-purple } {% include new-release.html %}
 
@@ -56,6 +54,7 @@ Each release of PcapPlusPlus ships with pre-compiled libraries for a variety of 
 - Windows (MinGW, MinGW-w64, Visual Studio)
 - Linux (multiple versions of Ubuntu, Fedora, CentOS)
 - MacOS (multiple versions combined with multiple Xcode versions)
+- FreeBSD (multiple versions)
 
 Each package includes the following content:
 
