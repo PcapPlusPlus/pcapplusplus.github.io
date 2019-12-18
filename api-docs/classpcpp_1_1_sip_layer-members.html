@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.12</span>
+   &#160;<span id="projectnumber">19.12+</span>
    </div>
   </td>
  </tr>
@@ -120,18 +120,19 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_sip_layer.html','');});
   <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_text_based_protocol_message.html#ac0555ddcc81fffa266fbc207bf040314">insertField</a>(HeaderField *prevField, const HeaderField &amp;newField)</td><td class="entry"><a class="el" href="classpcpp_1_1_text_based_protocol_message.html">pcpp::TextBasedProtocolMessage</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classpcpp_1_1_layer.html#a8f9d719253a30852620f9595a99956ed">isAllocatedToPacket</a>() const</td><td class="entry"><a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_text_based_protocol_message.html#a05cf5d4c1c076b719f7b3ad0b11efdfa">isHeaderComplete</a>() const</td><td class="entry"><a class="el" href="classpcpp_1_1_text_based_protocol_message.html">pcpp::TextBasedProtocolMessage</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classpcpp_1_1_sip_layer.html#acf57351932a3230760068c653894a95c">parseNextLayer</a>()</td><td class="entry"><a class="el" href="classpcpp_1_1_sip_layer.html">pcpp::SipLayer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_text_based_protocol_message.html#a3751401eb05f223685abd0c7c6990c66">removeField</a>(HeaderField *fieldToRemove)</td><td class="entry"><a class="el" href="classpcpp_1_1_text_based_protocol_message.html">pcpp::TextBasedProtocolMessage</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classpcpp_1_1_text_based_protocol_message.html#a9712764bb961cc7485335d1d30920232">removeField</a>(std::string fieldName, int index=0)</td><td class="entry"><a class="el" href="classpcpp_1_1_text_based_protocol_message.html">pcpp::TextBasedProtocolMessage</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_sip_layer.html#aad79a20140f65e7cc84954ea0593636f">setContentLength</a>(int contentLength, const std::string prevFieldName=&quot;&quot;)</td><td class="entry"><a class="el" href="classpcpp_1_1_sip_layer.html">pcpp::SipLayer</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classpcpp_1_1_layer.html#a1d07ea14d02b4a5cb383f89b3f40ed63">toString</a>() const =0</td><td class="entry"><a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_layer.html#a9d02400f5421309786e1ea6c031c8d19">~Layer</a>()</td><td class="entry"><a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classpcpp_1_1_sip_layer.html#a7e0685a5759e490aeaf0100552ebb5b6">isSipPort</a>(uint16_t port)</td><td class="entry"><a class="el" href="classpcpp_1_1_sip_layer.html">pcpp::SipLayer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_sip_layer.html#acf57351932a3230760068c653894a95c">parseNextLayer</a>()</td><td class="entry"><a class="el" href="classpcpp_1_1_sip_layer.html">pcpp::SipLayer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classpcpp_1_1_text_based_protocol_message.html#a3751401eb05f223685abd0c7c6990c66">removeField</a>(HeaderField *fieldToRemove)</td><td class="entry"><a class="el" href="classpcpp_1_1_text_based_protocol_message.html">pcpp::TextBasedProtocolMessage</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_text_based_protocol_message.html#a9712764bb961cc7485335d1d30920232">removeField</a>(std::string fieldName, int index=0)</td><td class="entry"><a class="el" href="classpcpp_1_1_text_based_protocol_message.html">pcpp::TextBasedProtocolMessage</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classpcpp_1_1_sip_layer.html#aad79a20140f65e7cc84954ea0593636f">setContentLength</a>(int contentLength, const std::string prevFieldName=&quot;&quot;)</td><td class="entry"><a class="el" href="classpcpp_1_1_sip_layer.html">pcpp::SipLayer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_layer.html#a1d07ea14d02b4a5cb383f89b3f40ed63">toString</a>() const =0</td><td class="entry"><a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classpcpp_1_1_layer.html#a9d02400f5421309786e1ea6c031c8d19">~Layer</a>()</td><td class="entry"><a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Dec 2 2019 23:53:23 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Dec 18 2019 01:26:44 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.12</span>
+   &#160;<span id="projectnumber">19.12+</span>
    </div>
   </td>
  </tr>
@@ -90,6 +90,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_vxlan_layer.html','');})
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classpcpp_1_1_vxlan_layer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::VxlanLayer Class Reference</div>  </div>
@@ -153,6 +154,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a019a07d6f9d8fc7eb233e61826b11964 inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d76629f081c34424c63794f4cf75a5a inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a0d76629f081c34424c63794f4cf75a5a">getDataPtr</a> (size_t offset=0) const</td></tr>
 <tr class="separator:a0d76629f081c34424c63794f4cf75a5a inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a9de6b313716e3a00b7a6283d1f6998c4"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_vxlan_layer.html#a9de6b313716e3a00b7a6283d1f6998c4">isVxlanPort</a> (uint16_t port)</td></tr>
+<tr class="separator:a9de6b313716e3a00b7a6283d1f6998c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a VXLAN (Virtual eXtensible Local Area Network) protocol layer </p>
@@ -399,6 +405,38 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a9de6b313716e3a00b7a6283d1f6998c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9de6b313716e3a00b7a6283d1f6998c4">&#9670;&nbsp;</a></span>isVxlanPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool pcpp::VxlanLayer::isVxlanPort </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A static method that checks whether the port is considered as VxLAN </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The port number to be checked </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a7c7ea9ff536dbc602dac07591de6a202"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7c7ea9ff536dbc602dac07591de6a202">&#9670;&nbsp;</a></span>parseNextLayer()</h2>
 
@@ -485,7 +523,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_vxlan_layer.html">VxlanLayer</a></li>
-    <li class="footer">Generated on Mon Dec 2 2019 23:53:24 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Dec 18 2019 01:26:45 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

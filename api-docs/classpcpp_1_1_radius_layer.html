@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.12</span>
+   &#160;<span id="projectnumber">19.12+</span>
    </div>
   </td>
  </tr>
@@ -181,6 +181,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a996d2c1ac847a287624623149f512d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dc571fce75cf3acccdb3f9de0fa3897"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_radius_layer.html#a3dc571fce75cf3acccdb3f9de0fa3897">isDataValid</a> (const uint8_t *udpData, size_t udpDataLen)</td></tr>
 <tr class="separator:a3dc571fce75cf3acccdb3f9de0fa3897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa6a3b209815677bbe9522395f4d9c8f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_radius_layer.html#afa6a3b209815677bbe9522395f4d9c8f">isRadiusPort</a> (uint16_t port)</td></tr>
+<tr class="separator:afa6a3b209815677bbe9522395f4d9c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a RADIUS (Remote Authentication Dial-In User Service) protocol layer </p>
@@ -712,6 +714,38 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="afa6a3b209815677bbe9522395f4d9c8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa6a3b209815677bbe9522395f4d9c8f">&#9670;&nbsp;</a></span>isRadiusPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::RadiusLayer::isRadiusPort </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A static method that checks whether the port is considered as RADIUS </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The port number to be checked </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a5c0587335360b7a5b50dd1df841c44f3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5c0587335360b7a5b50dd1df841c44f3">&#9670;&nbsp;</a></span>parseNextLayer()</h2>
 
@@ -841,7 +875,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_radius_layer.html">RadiusLayer</a></li>
-    <li class="footer">Generated on Mon Dec 2 2019 23:53:23 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Dec 18 2019 01:26:44 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.12</span>
+   &#160;<span id="projectnumber">19.12+</span>
    </div>
   </td>
  </tr>
@@ -92,7 +92,8 @@ $(document).ready(function(){initNavTree('namespacepcpp.html','');});
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp Namespace Reference</div>  </div>
 </div><!--header-->
@@ -142,6 +143,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device_list.html">DpdkDeviceList</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_worker_thread.html">DpdkWorkerThread</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_eth_dot3_layer.html">EthDot3Layer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1ether__dot3__header.html">ether_dot3_header</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1ether__header.html">ether_header</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -536,6 +541,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:a1fb7ed19d0cb6b09ab2b1d0570b64cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af797dbce1a97d45a6b86cdedb6d627da"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#af797dbce1a97d45a6b86cdedb6d627da">OnStatsUpdateCallback</a>) (pcap_stat &amp;stats, void *userCookie)</td></tr>
 <tr class="separator:af797dbce1a97d45a6b86cdedb6d627da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d761f7cf37d3b1efb1574fb1177e6eb"><td class="memItemLeft" align="right" valign="top">typedef uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a></td></tr>
+<tr class="separator:a1d761f7cf37d3b1efb1574fb1177e6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -1150,59 +1157,6 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a236073670782cc577b097b2fef4c7d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d761f7cf37d3b1efb1574fb1177e6eb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> { <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba8576597b751111eab8ec156233a7fd29">UnknownProtocol</a> = 0x00, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebacf03a7d40d04067626bc05cc753b6225">Ethernet</a> = 0x01, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba93a834d300209f86ec223d42455a20b2">IPv4</a> = 0x02, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba97ce5e3951a877ef70fcfbefbdf10131">IPv6</a> = 0x04, 
-<br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba297a47adbd37fab2eec58190d9663c79">IP</a> = 0x06, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba25715e2c9bf411927b5a897250be1c6b">TCP</a> = 0x08, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebaa63e4ac481ff647f966e75eea2e11754">UDP</a> = 0x10, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebac8ff8bb2771c48baaf899c71eed450bb">HTTPRequest</a> = 0x20, 
-<br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba78d7b06b85e59684c38ecf172d1d2848">HTTPResponse</a> = 0x40, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba3ba6238cc9a1dd597a1a964c05ffe8f2">HTTP</a> = 0x20 | 0x40, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba9faab6973eeda827d934cb1681f2056a">ARP</a> = 0x80, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebaff5f107a86a0b682a29919494d16e3e5">VLAN</a> = 0x100, 
-<br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebac00ee1460d364b9376c8b0409e415bcd">ICMP</a> = 0x200, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba8cf53623652508ad0134785bffe155fa">PPPoESession</a> = 0x400, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebad34b03790782cf01a5fa4893d3d3de4f">PPPoEDiscovery</a> = 0x800, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba3e31c9acfc5d801024b17aecadf8c8c2">PPPoE</a> = 0x400 | 0x800, 
-<br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebac3a7c734abc69fcdddbad93f796b931c">DNS</a> = 0x1000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebaddb099e9042d6d0a6416b77bff11dc34">MPLS</a> = 0x2000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebac31acf3914b14f1e1165ea11de3ac523">GREv0</a> = 0x4000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebaa096c9e284df3856de857f474a3e5d51">GREv1</a> = 0x8000, 
-<br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba0248248ab5e34190bee563e5a7b919ed">GRE</a> = 0x4000 | 0x8000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba296545e46ea0c82d854d66cfe6340fcb">PPP_PPTP</a> = 0x10000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba67249d4e32786ecbeedf393a1269292a">SSL</a> = 0x20000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba44e47e070011625bff22c3000afb9744">SLL</a> = 0x40000, 
-<br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba37d71d611d176cfa75f40acbebfd3f56">DHCP</a> = 0x80000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba92e36e94f86c0b6ff56cef36bfe09353">NULL_LOOPBACK</a> = 0x100000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebae19f0a0ed51fac56ccfda15c7316c4e9">IGMP</a> = 0xE00000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba239a257befc51567359356b91fb475c9">IGMPv1</a> = 0x200000, 
-<br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba515554cd06a1d4a5b7f0f09acf41308b">IGMPv2</a> = 0x400000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba65c0c871998b6c696c249cdd121eb9eb">IGMPv3</a> = 0x800000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba21840d529ffe94d499278552b86c4947">GenericPayload</a> = 0x1000000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebaeb7df416e478f2a713455082cc00b272">VXLAN</a> = 0x2000000, 
-<br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba4d8074af9a6b5fd0257f755cebacac9c">SIPRequest</a> = 0x4000000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba98a84222703ef26141e127d06f3e6ddc">SIPResponse</a> = 0x8000000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba69e4ca4f73af14bbb8aaf9a14fb1ad48">SIP</a> = 0x4000000 | 0x8000000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba013e3d285a5d960ab902775e0cb6b9c7">SDP</a> = 0x10000000, 
-<br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba2a589d1a26901cda9f6a130483121f35">PacketTrailer</a> = 0x20000000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba704d72177da6dfe876629eadf3df2c63">Radius</a> = 0x40000000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba7a1c8f2ba5c4b28c768f34cd27b9b9f2">GTPv1</a> = 0x80000000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba9857e12ea213df930d1b7936cbe0b842">GTP</a> = 0x80000000
-<br />
- }</td></tr>
-<tr class="separator:a1d761f7cf37d3b1efb1574fb1177e6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69e2ee6a9dc68797612cf8dc38461025"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> { <br />
 &#160;&#160;<a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a6424a935c3b8c081456c3aba40cb0e41">OsiModelPhysicalLayer</a> = 1, 
 <a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2">OsiModelDataLinkLayer</a> = 2, 
@@ -1653,6 +1607,91 @@ Functions</h2></td></tr>
 <tr class="separator:a90c94556ad172d6c3ffb766e1ab25edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae517edc41624400eebc521c6c5bc8a82"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ae517edc41624400eebc521c6c5bc8a82">clockGetTime</a> (long &amp;sec, long &amp;nsec)</td></tr>
 <tr class="separator:ae517edc41624400eebc521c6c5bc8a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ad94e3dd833f818889f676d2352eac829"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ad94e3dd833f818889f676d2352eac829">UnknownProtocol</a> = 0x00</td></tr>
+<tr class="separator:ad94e3dd833f818889f676d2352eac829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dc726346808ce2a90d3c8daeb76d09d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a3dc726346808ce2a90d3c8daeb76d09d">Ethernet</a> = 0x01</td></tr>
+<tr class="separator:a3dc726346808ce2a90d3c8daeb76d09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa465f388784082dafaf5dce0b9f67817"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#aa465f388784082dafaf5dce0b9f67817">IPv4</a> = 0x02</td></tr>
+<tr class="separator:aa465f388784082dafaf5dce0b9f67817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab30bccb509b8fcf2fea7d4db3b46046"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#aab30bccb509b8fcf2fea7d4db3b46046">IPv6</a> = 0x04</td></tr>
+<tr class="separator:aab30bccb509b8fcf2fea7d4db3b46046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14f1b6461b56dcbb5a1b5bb3479bdda4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a14f1b6461b56dcbb5a1b5bb3479bdda4">IP</a> = 0x06</td></tr>
+<tr class="separator:a14f1b6461b56dcbb5a1b5bb3479bdda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d36ae24161db9d8f8cf759529ae42d0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a8d36ae24161db9d8f8cf759529ae42d0">TCP</a> = 0x08</td></tr>
+<tr class="separator:a8d36ae24161db9d8f8cf759529ae42d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8bbb736c21e0804bc41c17cd1fc7740"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ae8bbb736c21e0804bc41c17cd1fc7740">UDP</a> = 0x10</td></tr>
+<tr class="separator:ae8bbb736c21e0804bc41c17cd1fc7740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd42edf1ca5da0c50d131e2ba801720d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#acd42edf1ca5da0c50d131e2ba801720d">HTTPRequest</a> = 0x20</td></tr>
+<tr class="separator:acd42edf1ca5da0c50d131e2ba801720d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6b953db5db49c9e04b36112cca3822e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#af6b953db5db49c9e04b36112cca3822e">HTTPResponse</a> = 0x40</td></tr>
+<tr class="separator:af6b953db5db49c9e04b36112cca3822e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a944e1788983dd46df10587eae2cbcf18"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a944e1788983dd46df10587eae2cbcf18">HTTP</a> = 0x60</td></tr>
+<tr class="separator:a944e1788983dd46df10587eae2cbcf18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aead5ebeefddfe9c93b70ede2c99cea9d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#aead5ebeefddfe9c93b70ede2c99cea9d">ARP</a> = 0x80</td></tr>
+<tr class="separator:aead5ebeefddfe9c93b70ede2c99cea9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adddb69c5e9b0df95ed306b2ed0d1c4fc"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#adddb69c5e9b0df95ed306b2ed0d1c4fc">VLAN</a> = 0x100</td></tr>
+<tr class="separator:adddb69c5e9b0df95ed306b2ed0d1c4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7e3b376a0a26e1b7591f4aae3b01b76"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ac7e3b376a0a26e1b7591f4aae3b01b76">ICMP</a> = 0x200</td></tr>
+<tr class="separator:ac7e3b376a0a26e1b7591f4aae3b01b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2300a265174edb1daecfd97697c67d79"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a2300a265174edb1daecfd97697c67d79">PPPoESession</a> = 0x400</td></tr>
+<tr class="separator:a2300a265174edb1daecfd97697c67d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dc88bfe69fb13d599459ca9a7fb05e5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a9dc88bfe69fb13d599459ca9a7fb05e5">PPPoEDiscovery</a> = 0x800</td></tr>
+<tr class="separator:a9dc88bfe69fb13d599459ca9a7fb05e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ffb576d1b5a02c884a57605cf59f18d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a9ffb576d1b5a02c884a57605cf59f18d">PPPoE</a> = 0xc00</td></tr>
+<tr class="separator:a9ffb576d1b5a02c884a57605cf59f18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae432ae466e1de6accc18805e99efd0c7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ae432ae466e1de6accc18805e99efd0c7">DNS</a> = 0x1000</td></tr>
+<tr class="separator:ae432ae466e1de6accc18805e99efd0c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f69fdca66dec264f99da6e3de96345c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a2f69fdca66dec264f99da6e3de96345c">MPLS</a> = 0x2000</td></tr>
+<tr class="separator:a2f69fdca66dec264f99da6e3de96345c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29568c577f00703971ed5b741e4154fb"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a29568c577f00703971ed5b741e4154fb">GREv0</a> = 0x4000</td></tr>
+<tr class="separator:a29568c577f00703971ed5b741e4154fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68f4401792a1994f4b050b614cbf1c44"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a68f4401792a1994f4b050b614cbf1c44">GREv1</a> = 0x8000</td></tr>
+<tr class="separator:a68f4401792a1994f4b050b614cbf1c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a081881295c3e982172b4294facf7c3fd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a081881295c3e982172b4294facf7c3fd">GRE</a> = 0xc000</td></tr>
+<tr class="separator:a081881295c3e982172b4294facf7c3fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c44d3da15807781b9fd46228f09610d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a5c44d3da15807781b9fd46228f09610d">PPP_PPTP</a> = 0x10000</td></tr>
+<tr class="separator:a5c44d3da15807781b9fd46228f09610d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71041ee0360477d36d480d25ea10dbe4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a71041ee0360477d36d480d25ea10dbe4">SSL</a> = 0x20000</td></tr>
+<tr class="separator:a71041ee0360477d36d480d25ea10dbe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7deab0d461579ac6b32b6151c3d6cf3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ab7deab0d461579ac6b32b6151c3d6cf3">SLL</a> = 0x40000</td></tr>
+<tr class="separator:ab7deab0d461579ac6b32b6151c3d6cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f677ab02f328eb59216916238bea6c1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a5f677ab02f328eb59216916238bea6c1">DHCP</a> = 0x80000</td></tr>
+<tr class="separator:a5f677ab02f328eb59216916238bea6c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a795c8790ae95646b61d01d40ac0919c3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a795c8790ae95646b61d01d40ac0919c3">NULL_LOOPBACK</a> = 0x100000</td></tr>
+<tr class="separator:a795c8790ae95646b61d01d40ac0919c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5c8075566d698a54ad804ffae9174a0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ac5c8075566d698a54ad804ffae9174a0">IGMP</a> = 0xE00000</td></tr>
+<tr class="separator:ac5c8075566d698a54ad804ffae9174a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab73aa665e280eb57ccd96422de561c91"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ab73aa665e280eb57ccd96422de561c91">IGMPv1</a> = 0x200000</td></tr>
+<tr class="separator:ab73aa665e280eb57ccd96422de561c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a554228f63e4a107a34cb36c34187a634"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a554228f63e4a107a34cb36c34187a634">IGMPv2</a> = 0x400000</td></tr>
+<tr class="separator:a554228f63e4a107a34cb36c34187a634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58575f3fdb517e7b7e8126f159ff57e3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a58575f3fdb517e7b7e8126f159ff57e3">IGMPv3</a> = 0x800000</td></tr>
+<tr class="separator:a58575f3fdb517e7b7e8126f159ff57e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa80f74a2bb443a10bb62da9224cdd49b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#aa80f74a2bb443a10bb62da9224cdd49b">GenericPayload</a> = 0x1000000</td></tr>
+<tr class="separator:aa80f74a2bb443a10bb62da9224cdd49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8798e89f8c24e040572e6f571ad5c3c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ab8798e89f8c24e040572e6f571ad5c3c">VXLAN</a> = 0x2000000</td></tr>
+<tr class="separator:ab8798e89f8c24e040572e6f571ad5c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adece8af5b11fbea2e56d432983d02a35"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#adece8af5b11fbea2e56d432983d02a35">SIPRequest</a> = 0x4000000</td></tr>
+<tr class="separator:adece8af5b11fbea2e56d432983d02a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff4d6cf6335201f8e9fc80ec7aedb6a7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#aff4d6cf6335201f8e9fc80ec7aedb6a7">SIPResponse</a> = 0x8000000</td></tr>
+<tr class="separator:aff4d6cf6335201f8e9fc80ec7aedb6a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6992dbf7b5105d00e6d4a95649599aba"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a6992dbf7b5105d00e6d4a95649599aba">SIP</a> = 0xc000000</td></tr>
+<tr class="separator:a6992dbf7b5105d00e6d4a95649599aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb798bf954a057003adfa79648befa2a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#aeb798bf954a057003adfa79648befa2a">SDP</a> = 0x10000000</td></tr>
+<tr class="separator:aeb798bf954a057003adfa79648befa2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f7295d39043c96760995e2f08c06389"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a4f7295d39043c96760995e2f08c06389">PacketTrailer</a> = 0x20000000</td></tr>
+<tr class="separator:a4f7295d39043c96760995e2f08c06389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77b7ee03eb7a3de9be466af98b7f1f69"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a77b7ee03eb7a3de9be466af98b7f1f69">Radius</a> = 0x40000000</td></tr>
+<tr class="separator:a77b7ee03eb7a3de9be466af98b7f1f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1a8b83ad72bbbbaebf25a86304ee3d7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ab1a8b83ad72bbbbaebf25a86304ee3d7">GTPv1</a> = 0x80000000</td></tr>
+<tr class="separator:ab1a8b83ad72bbbbaebf25a86304ee3d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d036816ed7196d296e940fbb2b636c1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a9d036816ed7196d296e940fbb2b636c1">GTP</a> = 0x80000000</td></tr>
+<tr class="separator:a9d036816ed7196d296e940fbb2b636c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afce15d7fa5441fd5eeb00ed4f981146c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#afce15d7fa5441fd5eeb00ed4f981146c">EthernetDot3</a> = 0x100000000</td></tr>
+<tr class="separator:afce15d7fa5441fd5eeb00ed4f981146c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The main namespace for the PcapPlusPlus lib. </p>
@@ -1864,6 +1903,21 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a1d761f7cf37d3b1efb1574fb1177e6eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d761f7cf37d3b1efb1574fb1177e6eb">&#9670;&nbsp;</a></span>ProtocolType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">pcpp::ProtocolType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Representing all protocols supported by PcapPlusPlus </p>
 
 </div>
 </div>
@@ -3332,103 +3386,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1d761f7cf37d3b1efb1574fb1177e6eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d761f7cf37d3b1efb1574fb1177e6eb">&#9670;&nbsp;</a></span>ProtocolType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">pcpp::ProtocolType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An enum representing all protocols supported by PcapPlusPlus </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba8576597b751111eab8ec156233a7fd29"></a>UnknownProtocol&#160;</td><td class="fielddoc"><p>Unknown protocol (or unsupported by PcapPlusPlus) </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6ebacf03a7d40d04067626bc05cc753b6225"></a>Ethernet&#160;</td><td class="fielddoc"><p>Ethernet protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba93a834d300209f86ec223d42455a20b2"></a>IPv4&#160;</td><td class="fielddoc"><p>IPv4 protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba97ce5e3951a877ef70fcfbefbdf10131"></a>IPv6&#160;</td><td class="fielddoc"><p>IPv6 protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba297a47adbd37fab2eec58190d9663c79"></a>IP&#160;</td><td class="fielddoc"><p>IP protocol (aggregation bitmask of IPv4 and IPv6 protocols) </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba25715e2c9bf411927b5a897250be1c6b"></a>TCP&#160;</td><td class="fielddoc"><p>TCP protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6ebaa63e4ac481ff647f966e75eea2e11754"></a>UDP&#160;</td><td class="fielddoc"><p>UDP protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6ebac8ff8bb2771c48baaf899c71eed450bb"></a>HTTPRequest&#160;</td><td class="fielddoc"><p>HTTP request protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba78d7b06b85e59684c38ecf172d1d2848"></a>HTTPResponse&#160;</td><td class="fielddoc"><p>HTTP response protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba3ba6238cc9a1dd597a1a964c05ffe8f2"></a>HTTP&#160;</td><td class="fielddoc"><p>HTTP protocol (aggregation bitmask of HTTP request and HTTP response protocols) </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba9faab6973eeda827d934cb1681f2056a"></a>ARP&#160;</td><td class="fielddoc"><p>ARP protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6ebaff5f107a86a0b682a29919494d16e3e5"></a>VLAN&#160;</td><td class="fielddoc"><p>VLAN protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6ebac00ee1460d364b9376c8b0409e415bcd"></a>ICMP&#160;</td><td class="fielddoc"><p>ICMP protocol (currently not supported by PcapPlusPlus) </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba8cf53623652508ad0134785bffe155fa"></a>PPPoESession&#160;</td><td class="fielddoc"><p>PPPoE session protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6ebad34b03790782cf01a5fa4893d3d3de4f"></a>PPPoEDiscovery&#160;</td><td class="fielddoc"><p>PPPoE discovery protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba3e31c9acfc5d801024b17aecadf8c8c2"></a>PPPoE&#160;</td><td class="fielddoc"><p>PPPoE protocol (aggregation bitmask of PPPoESession and PPPoEDiscovery protocols) </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6ebac3a7c734abc69fcdddbad93f796b931c"></a>DNS&#160;</td><td class="fielddoc"><p>DNS protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6ebaddb099e9042d6d0a6416b77bff11dc34"></a>MPLS&#160;</td><td class="fielddoc"><p>MPLS protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6ebac31acf3914b14f1e1165ea11de3ac523"></a>GREv0&#160;</td><td class="fielddoc"><p>GRE version 0 protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6ebaa096c9e284df3856de857f474a3e5d51"></a>GREv1&#160;</td><td class="fielddoc"><p>GRE version 1 protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba0248248ab5e34190bee563e5a7b919ed"></a>GRE&#160;</td><td class="fielddoc"><p>GRE protocol (aggregation bitmask of GREv0 and GREv1 protocols) </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba296545e46ea0c82d854d66cfe6340fcb"></a>PPP_PPTP&#160;</td><td class="fielddoc"><p>PPP for PPTP protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba67249d4e32786ecbeedf393a1269292a"></a>SSL&#160;</td><td class="fielddoc"><p>SSL/TLS protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba44e47e070011625bff22c3000afb9744"></a>SLL&#160;</td><td class="fielddoc"><p>SLL (Linux cooked capture) protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba37d71d611d176cfa75f40acbebfd3f56"></a>DHCP&#160;</td><td class="fielddoc"><p>DHCP/BOOTP protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba92e36e94f86c0b6ff56cef36bfe09353"></a>NULL_LOOPBACK&#160;</td><td class="fielddoc"><p>Null/Loopback protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6ebae19f0a0ed51fac56ccfda15c7316c4e9"></a>IGMP&#160;</td><td class="fielddoc"><p>IGMP protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba239a257befc51567359356b91fb475c9"></a>IGMPv1&#160;</td><td class="fielddoc"><p>IGMPv1 protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba515554cd06a1d4a5b7f0f09acf41308b"></a>IGMPv2&#160;</td><td class="fielddoc"><p>IGMPv2 protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba65c0c871998b6c696c249cdd121eb9eb"></a>IGMPv3&#160;</td><td class="fielddoc"><p>IGMPv3 protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba21840d529ffe94d499278552b86c4947"></a>GenericPayload&#160;</td><td class="fielddoc"><p>Generic payload (no specific protocol) </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6ebaeb7df416e478f2a713455082cc00b272"></a>VXLAN&#160;</td><td class="fielddoc"><p>VXLAN protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba4d8074af9a6b5fd0257f755cebacac9c"></a>SIPRequest&#160;</td><td class="fielddoc"><p>SIP request protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba98a84222703ef26141e127d06f3e6ddc"></a>SIPResponse&#160;</td><td class="fielddoc"><p>SIP response protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba69e4ca4f73af14bbb8aaf9a14fb1ad48"></a>SIP&#160;</td><td class="fielddoc"><p>SIP protocol (aggregation bitmask of SIPRequest and SIPResponse protocols) </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba013e3d285a5d960ab902775e0cb6b9c7"></a>SDP&#160;</td><td class="fielddoc"><p>SDP protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba2a589d1a26901cda9f6a130483121f35"></a>PacketTrailer&#160;</td><td class="fielddoc"><p><a class="el" href="classpcpp_1_1_packet.html">Packet</a> trailer </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba704d72177da6dfe876629eadf3df2c63"></a>Radius&#160;</td><td class="fielddoc"><p>RADIUS protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba7a1c8f2ba5c4b28c768f34cd27b9b9f2"></a>GTPv1&#160;</td><td class="fielddoc"><p>GTPv1 protocol </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a1d761f7cf37d3b1efb1574fb1177e6eba9857e12ea213df930d1b7936cbe0b842"></a>GTP&#160;</td><td class="fielddoc"><p>GTP protocol (currently the same as GTPv1) </p>
-</td></tr>
-</table>
-
-</div>
-</div>
 <a id="a49ab6e738d527b3e3fbbe112eed0fc32"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a49ab6e738d527b3e3fbbe112eed0fc32">&#9670;&nbsp;</a></span>SSLAlertDescription</h2>
 
@@ -4464,7 +4421,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>PcapPlusPlus current version, e.g: 17.02. Notice that for non-official releases (which were pulled from GitHub) the version will end with a '+'. For example: '17.02+' means non-official release but '17.02' means official release </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>PcapPlusPlus current version, e.g: 19.12. Notice that for non-official releases (which were pulled from GitHub) the version will end with a '+'. For example: '19.12+' means non-official release but '19.12' means official release </dd></dl>
 
 </div>
 </div>
@@ -4697,13 +4654,629 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="aead5ebeefddfe9c93b70ede2c99cea9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aead5ebeefddfe9c93b70ede2c99cea9d">&#9670;&nbsp;</a></span>ARP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::ARP = 0x80</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ARP protocol </p>
+
+</div>
+</div>
+<a id="a5f677ab02f328eb59216916238bea6c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f677ab02f328eb59216916238bea6c1">&#9670;&nbsp;</a></span>DHCP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::DHCP = 0x80000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DHCP/BOOTP protocol </p>
+
+</div>
+</div>
+<a id="ae432ae466e1de6accc18805e99efd0c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae432ae466e1de6accc18805e99efd0c7">&#9670;&nbsp;</a></span>DNS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::DNS = 0x1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DNS protocol </p>
+
+</div>
+</div>
+<a id="a3dc726346808ce2a90d3c8daeb76d09d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dc726346808ce2a90d3c8daeb76d09d">&#9670;&nbsp;</a></span>Ethernet</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::Ethernet = 0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ethernet protocol </p>
+
+</div>
+</div>
+<a id="afce15d7fa5441fd5eeb00ed4f981146c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afce15d7fa5441fd5eeb00ed4f981146c">&#9670;&nbsp;</a></span>EthernetDot3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::EthernetDot3 = 0x100000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>IEEE 802.3 Ethernet protocol </p>
+
+</div>
+</div>
+<a id="aa80f74a2bb443a10bb62da9224cdd49b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa80f74a2bb443a10bb62da9224cdd49b">&#9670;&nbsp;</a></span>GenericPayload</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::GenericPayload = 0x1000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Generic payload (no specific protocol) </p>
+
+</div>
+</div>
+<a id="a081881295c3e982172b4294facf7c3fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a081881295c3e982172b4294facf7c3fd">&#9670;&nbsp;</a></span>GRE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::GRE = 0xc000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>GRE protocol (aggregation bitmask of GREv0 and GREv1 protocols) </p>
+
+</div>
+</div>
+<a id="a29568c577f00703971ed5b741e4154fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29568c577f00703971ed5b741e4154fb">&#9670;&nbsp;</a></span>GREv0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::GREv0 = 0x4000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>GRE version 0 protocol </p>
+
+</div>
+</div>
+<a id="a68f4401792a1994f4b050b614cbf1c44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68f4401792a1994f4b050b614cbf1c44">&#9670;&nbsp;</a></span>GREv1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::GREv1 = 0x8000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>GRE version 1 protocol </p>
+
+</div>
+</div>
+<a id="a9d036816ed7196d296e940fbb2b636c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d036816ed7196d296e940fbb2b636c1">&#9670;&nbsp;</a></span>GTP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::GTP = 0x80000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>GTP protocol (currently the same as GTPv1) </p>
+
+</div>
+</div>
+<a id="ab1a8b83ad72bbbbaebf25a86304ee3d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1a8b83ad72bbbbaebf25a86304ee3d7">&#9670;&nbsp;</a></span>GTPv1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::GTPv1 = 0x80000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>GTPv1 protocol </p>
+
+</div>
+</div>
+<a id="a944e1788983dd46df10587eae2cbcf18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a944e1788983dd46df10587eae2cbcf18">&#9670;&nbsp;</a></span>HTTP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::HTTP = 0x60</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>HTTP protocol (aggregation bitmask of HTTP request and HTTP response protocols) </p>
+
+</div>
+</div>
+<a id="acd42edf1ca5da0c50d131e2ba801720d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd42edf1ca5da0c50d131e2ba801720d">&#9670;&nbsp;</a></span>HTTPRequest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::HTTPRequest = 0x20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>HTTP request protocol </p>
+
+</div>
+</div>
+<a id="af6b953db5db49c9e04b36112cca3822e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6b953db5db49c9e04b36112cca3822e">&#9670;&nbsp;</a></span>HTTPResponse</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::HTTPResponse = 0x40</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>HTTP response protocol </p>
+
+</div>
+</div>
+<a id="ac7e3b376a0a26e1b7591f4aae3b01b76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7e3b376a0a26e1b7591f4aae3b01b76">&#9670;&nbsp;</a></span>ICMP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::ICMP = 0x200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ICMP protocol (currently not supported by PcapPlusPlus) </p>
+
+</div>
+</div>
+<a id="ac5c8075566d698a54ad804ffae9174a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5c8075566d698a54ad804ffae9174a0">&#9670;&nbsp;</a></span>IGMP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::IGMP = 0xE00000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>IGMP protocol </p>
+
+</div>
+</div>
+<a id="ab73aa665e280eb57ccd96422de561c91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab73aa665e280eb57ccd96422de561c91">&#9670;&nbsp;</a></span>IGMPv1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::IGMPv1 = 0x200000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>IGMPv1 protocol </p>
+
+</div>
+</div>
+<a id="a554228f63e4a107a34cb36c34187a634"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a554228f63e4a107a34cb36c34187a634">&#9670;&nbsp;</a></span>IGMPv2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::IGMPv2 = 0x400000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>IGMPv2 protocol </p>
+
+</div>
+</div>
+<a id="a58575f3fdb517e7b7e8126f159ff57e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58575f3fdb517e7b7e8126f159ff57e3">&#9670;&nbsp;</a></span>IGMPv3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::IGMPv3 = 0x800000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>IGMPv3 protocol </p>
+
+</div>
+</div>
+<a id="a14f1b6461b56dcbb5a1b5bb3479bdda4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14f1b6461b56dcbb5a1b5bb3479bdda4">&#9670;&nbsp;</a></span>IP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::IP = 0x06</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>IP protocol (aggregation bitmask of IPv4 and IPv6 protocols) </p>
+
+</div>
+</div>
+<a id="aa465f388784082dafaf5dce0b9f67817"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa465f388784082dafaf5dce0b9f67817">&#9670;&nbsp;</a></span>IPv4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::IPv4 = 0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>IPv4 protocol </p>
+
+</div>
+</div>
+<a id="aab30bccb509b8fcf2fea7d4db3b46046"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab30bccb509b8fcf2fea7d4db3b46046">&#9670;&nbsp;</a></span>IPv6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::IPv6 = 0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>IPv6 protocol </p>
+
+</div>
+</div>
+<a id="a2f69fdca66dec264f99da6e3de96345c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f69fdca66dec264f99da6e3de96345c">&#9670;&nbsp;</a></span>MPLS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::MPLS = 0x2000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>MPLS protocol </p>
+
+</div>
+</div>
+<a id="a795c8790ae95646b61d01d40ac0919c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a795c8790ae95646b61d01d40ac0919c3">&#9670;&nbsp;</a></span>NULL_LOOPBACK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::NULL_LOOPBACK = 0x100000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Null/Loopback protocol </p>
+
+</div>
+</div>
+<a id="a4f7295d39043c96760995e2f08c06389"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f7295d39043c96760995e2f08c06389">&#9670;&nbsp;</a></span>PacketTrailer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::PacketTrailer = 0x20000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="classpcpp_1_1_packet.html">Packet</a> trailer </p>
+
+</div>
+</div>
+<a id="a5c44d3da15807781b9fd46228f09610d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c44d3da15807781b9fd46228f09610d">&#9670;&nbsp;</a></span>PPP_PPTP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::PPP_PPTP = 0x10000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>PPP for PPTP protocol </p>
+
+</div>
+</div>
+<a id="a9ffb576d1b5a02c884a57605cf59f18d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ffb576d1b5a02c884a57605cf59f18d">&#9670;&nbsp;</a></span>PPPoE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::PPPoE = 0xc00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>PPPoE protocol (aggregation bitmask of PPPoESession and PPPoEDiscovery protocols) </p>
+
+</div>
+</div>
+<a id="a9dc88bfe69fb13d599459ca9a7fb05e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dc88bfe69fb13d599459ca9a7fb05e5">&#9670;&nbsp;</a></span>PPPoEDiscovery</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::PPPoEDiscovery = 0x800</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>PPPoE discovery protocol </p>
+
+</div>
+</div>
+<a id="a2300a265174edb1daecfd97697c67d79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2300a265174edb1daecfd97697c67d79">&#9670;&nbsp;</a></span>PPPoESession</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::PPPoESession = 0x400</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>PPPoE session protocol </p>
+
+</div>
+</div>
+<a id="a77b7ee03eb7a3de9be466af98b7f1f69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77b7ee03eb7a3de9be466af98b7f1f69">&#9670;&nbsp;</a></span>Radius</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::Radius = 0x40000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>RADIUS protocol </p>
+
+</div>
+</div>
+<a id="aeb798bf954a057003adfa79648befa2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb798bf954a057003adfa79648befa2a">&#9670;&nbsp;</a></span>SDP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::SDP = 0x10000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SDP protocol </p>
+
+</div>
+</div>
+<a id="a6992dbf7b5105d00e6d4a95649599aba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6992dbf7b5105d00e6d4a95649599aba">&#9670;&nbsp;</a></span>SIP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::SIP = 0xc000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SIP protocol (aggregation bitmask of SIPRequest and SIPResponse protocols) </p>
+
+</div>
+</div>
+<a id="adece8af5b11fbea2e56d432983d02a35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adece8af5b11fbea2e56d432983d02a35">&#9670;&nbsp;</a></span>SIPRequest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::SIPRequest = 0x4000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SIP request protocol </p>
+
+</div>
+</div>
+<a id="aff4d6cf6335201f8e9fc80ec7aedb6a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff4d6cf6335201f8e9fc80ec7aedb6a7">&#9670;&nbsp;</a></span>SIPResponse</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::SIPResponse = 0x8000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SIP response protocol </p>
+
+</div>
+</div>
+<a id="ab7deab0d461579ac6b32b6151c3d6cf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7deab0d461579ac6b32b6151c3d6cf3">&#9670;&nbsp;</a></span>SLL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::SLL = 0x40000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SLL (Linux cooked capture) protocol </p>
+
+</div>
+</div>
+<a id="a71041ee0360477d36d480d25ea10dbe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71041ee0360477d36d480d25ea10dbe4">&#9670;&nbsp;</a></span>SSL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::SSL = 0x20000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SSL/TLS protocol </p>
+
+</div>
+</div>
+<a id="a8d36ae24161db9d8f8cf759529ae42d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d36ae24161db9d8f8cf759529ae42d0">&#9670;&nbsp;</a></span>TCP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::TCP = 0x08</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TCP protocol </p>
+
+</div>
+</div>
+<a id="ae8bbb736c21e0804bc41c17cd1fc7740"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8bbb736c21e0804bc41c17cd1fc7740">&#9670;&nbsp;</a></span>UDP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::UDP = 0x10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>UDP protocol </p>
+
+</div>
+</div>
+<a id="ad94e3dd833f818889f676d2352eac829"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad94e3dd833f818889f676d2352eac829">&#9670;&nbsp;</a></span>UnknownProtocol</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::UnknownProtocol = 0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Unknown protocol (or unsupported by PcapPlusPlus) </p>
+
+</div>
+</div>
+<a id="adddb69c5e9b0df95ed306b2ed0d1c4fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adddb69c5e9b0df95ed306b2ed0d1c4fc">&#9670;&nbsp;</a></span>VLAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::VLAN = 0x100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>VLAN protocol </p>
+
+</div>
+</div>
+<a id="ab8798e89f8c24e040572e6f571ad5c3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8798e89f8c24e040572e6f571ad5c3c">&#9670;&nbsp;</a></span>VXLAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::VXLAN = 0x2000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>VXLAN protocol </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li>
-    <li class="footer">Generated on Mon Dec 2 2019 23:53:21 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Dec 18 2019 01:26:42 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

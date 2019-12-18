@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.12</span>
+   &#160;<span id="projectnumber">19.12+</span>
    </div>
   </td>
  </tr>
@@ -301,7 +301,8 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classpcpp_1_1_pcap_live_device.html#ae7f9930c31be70eab5a345c353734ecd">pcpp::PcapLiveDevice</a>
 </li>
 <li>getDestMac()
-: <a class="el" href="classpcpp_1_1_eth_layer.html#ab92521bdffda1431c96917d6e721cfd6">pcpp::EthLayer</a>
+: <a class="el" href="classpcpp_1_1_eth_dot3_layer.html#a4f183ee13e45e71580118a1f81a0604d">pcpp::EthDot3Layer</a>
+, <a class="el" href="classpcpp_1_1_eth_layer.html#ab92521bdffda1431c96917d6e721cfd6">pcpp::EthLayer</a>
 </li>
 <li>getDestUnreachableData()
 : <a class="el" href="classpcpp_1_1_icmp_layer.html#ac0767cfb81c4da94e26c06299fefd835">pcpp::IcmpLayer</a>
@@ -336,9 +337,6 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>getDnsHeader()
 : <a class="el" href="classpcpp_1_1_dns_layer.html#ab41ca313a68af72ebdd234067c035efe">pcpp::DnsLayer</a>
-</li>
-<li>getDNSPortMap()
-: <a class="el" href="classpcpp_1_1_dns_layer.html#ad72c1f31f614575add8b12ebf4828335">pcpp::DnsLayer</a>
 </li>
 <li>getDnsServers()
 : <a class="el" href="classpcpp_1_1_pcap_live_device.html#a6b173d2702c2e33c05eec8f5676affd8">pcpp::PcapLiveDevice</a>
@@ -383,7 +381,8 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classpcpp_1_1_logger_p_p.html#ac38e6c14709aa4522ea1d7024ecb6759">pcpp::LoggerPP</a>
 </li>
 <li>getEthHeader()
-: <a class="el" href="classpcpp_1_1_eth_layer.html#aa4815d8f84f9d1bab46a40e17dc15be3">pcpp::EthLayer</a>
+: <a class="el" href="classpcpp_1_1_eth_dot3_layer.html#ab225d567da5139ace515d1936cb088cf">pcpp::EthDot3Layer</a>
+, <a class="el" href="classpcpp_1_1_eth_layer.html#aa4815d8f84f9d1bab46a40e17dc15be3">pcpp::EthLayer</a>
 </li>
 <li>getExperimentalUseValue()
 : <a class="el" href="classpcpp_1_1_mpls_layer.html#a58a756973de0940367075a2b610b8ca3">pcpp::MplsLayer</a>
@@ -403,7 +402,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>getExtensionOfType()
 : <a class="el" href="classpcpp_1_1_i_pv6_layer.html#a51487f783ccfc1ca855c5dc6228020ba">pcpp::IPv6Layer</a>
-, <a class="el" href="classpcpp_1_1_s_s_l_client_hello_message.html#a177e655f17ab866e9130f40cc695ee40">pcpp::SSLClientHelloMessage</a>
+, <a class="el" href="classpcpp_1_1_s_s_l_client_hello_message.html#a5fe109ce501147304fb704e4d9496012">pcpp::SSLClientHelloMessage</a>
 , <a class="el" href="classpcpp_1_1_s_s_l_server_hello_message.html#a0475132b738578af6d6fd33a26238b93">pcpp::SSLServerHelloMessage</a>
 </li>
 <li>getExtensionsLenth()
@@ -548,6 +547,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classpcpp_1_1_arp_layer.html#a3367f0eafe88ba1c9d7f68504b92d628">pcpp::ArpLayer</a>
 , <a class="el" href="classpcpp_1_1_dhcp_layer.html#a3cb5b5253ee1272d9e7a749554323bb9">pcpp::DhcpLayer</a>
 , <a class="el" href="classpcpp_1_1_dns_layer.html#a9b6c55c413b6dabf912a8f3a407b0be1">pcpp::DnsLayer</a>
+, <a class="el" href="classpcpp_1_1_eth_dot3_layer.html#a175f471997ed236c44c408601f7e4e1d">pcpp::EthDot3Layer</a>
 , <a class="el" href="classpcpp_1_1_eth_layer.html#a2e7bdcabc020901f6275a2758208c49c">pcpp::EthLayer</a>
 , <a class="el" href="classpcpp_1_1_gre_layer.html#aba4a87529e5a0f31b766caa1bfe934d7">pcpp::GreLayer</a>
 , <a class="el" href="classpcpp_1_1_gtp_v1_layer.html#a9edfe57b6e4ab547b9a465fd6b786344">pcpp::GtpV1Layer</a>
@@ -576,9 +576,6 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>getHostName()
 : <a class="el" href="classpcpp_1_1_s_s_l_server_name_indication_extension.html#a00bdbdd6155bbc5fc8640bc34058da48">pcpp::SSLServerNameIndicationExtension</a>
-</li>
-<li>getHTTPPortMap()
-: <a class="el" href="classpcpp_1_1_http_message.html#aca42f6b13b45da870a9f014886cff56b">pcpp::HttpMessage</a>
 </li>
 <li>getIcmpHeader()
 : <a class="el" href="classpcpp_1_1_icmp_layer.html#ab070cb83fbe8a84a60ed6e0d616068b4">pcpp::IcmpLayer</a>
@@ -863,6 +860,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classpcpp_1_1_arp_layer.html#a36526531318e485ead3dbd2c85378337">pcpp::ArpLayer</a>
 , <a class="el" href="classpcpp_1_1_dhcp_layer.html#a7c00e909e76c330a6e9e526e8dc7a0df">pcpp::DhcpLayer</a>
 , <a class="el" href="classpcpp_1_1_dns_layer.html#a92f2ac17c667c223d4eee7d24d898d7f">pcpp::DnsLayer</a>
+, <a class="el" href="classpcpp_1_1_eth_dot3_layer.html#aafb1ad870f67ae7025a1576e240c5979">pcpp::EthDot3Layer</a>
 , <a class="el" href="classpcpp_1_1_eth_layer.html#a309b677ac26da896a1cfeada3880220e">pcpp::EthLayer</a>
 , <a class="el" href="classpcpp_1_1_gre_layer.html#a094d667cdb7dcd03fa7cbe0ec04f7267">pcpp::GreLayer</a>
 , <a class="el" href="classpcpp_1_1_gtp_v1_layer.html#ac7c81e05e601b31b1c47f33286b00c23">pcpp::GtpV1Layer</a>
@@ -907,7 +905,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classpcpp_1_1_i_pcap_device.html#ac9e91fa6b66ced9a92d09068712ccffc">pcpp::IPcapDevice</a>
 </li>
 <li>getPcapLiveDeviceByIp()
-: <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#af57f7dec6fd48a9fd26ad1fbe118c50f">pcpp::PcapLiveDeviceList</a>
+: <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#a005f173b1a931c3000ac7516e3fcc2d6">pcpp::PcapLiveDeviceList</a>
 </li>
 <li>getPcapLiveDeviceByName()
 : <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#a44adbf18b7c2dfc5509540848532aadd">pcpp::PcapLiveDeviceList</a>
@@ -984,9 +982,6 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>getRawDataLen()
 : <a class="el" href="classpcpp_1_1_raw_packet.html#a15e5700fb9d76cdfbcb3c3d505f22904">pcpp::RawPacket</a>
 </li>
-<li>getRawDataReadOnly()
-: <a class="el" href="classpcpp_1_1_raw_packet.html#a25d32fa76d975bcbb6020f63b607e594">pcpp::RawPacket</a>
-</li>
 <li>getRawPacket()
 : <a class="el" href="classpcpp_1_1_packet.html#a56ef03e8516ee79b8ac397db0f052e89">pcpp::Packet</a>
 </li>
@@ -1015,10 +1010,10 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classpcpp_1_1_icmp_layer.html#a8ed0adf59a73890c1812614f2697335f">pcpp::IcmpLayer</a>
 </li>
 <li>getRemoteDeviceByIP()
-: <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a76d4e587a02c95b910af050327075b29">pcpp::PcapRemoteDeviceList</a>
+: <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#abd751782740fcb06f797a7f592a3fa26">pcpp::PcapRemoteDeviceList</a>
 </li>
 <li>getRemoteDeviceList()
-: <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#aa273eab3f181516fa00f3f04de58602a">pcpp::PcapRemoteDeviceList</a>
+: <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a1655fb0326960cceec95db75ddaed0a3">pcpp::PcapRemoteDeviceList</a>
 </li>
 <li>getRemoteMachineIpAddress()
 : <a class="el" href="classpcpp_1_1_pcap_remote_device.html#a66658dc69cb6d6df4015936dc5e6139b">pcpp::PcapRemoteDevice</a>
@@ -1122,7 +1117,8 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="structpcpp_1_1igmpv3__group__record.html#a99cfbe7087582a9b0fcb656056e9cbe5">pcpp::igmpv3_group_record</a>
 </li>
 <li>getSourceMac()
-: <a class="el" href="classpcpp_1_1_eth_layer.html#abbc76dfc9f91231fc3df118a96bec22c">pcpp::EthLayer</a>
+: <a class="el" href="classpcpp_1_1_eth_dot3_layer.html#a2dafa3fd25f54724a9119f8f007151d4">pcpp::EthDot3Layer</a>
+, <a class="el" href="classpcpp_1_1_eth_layer.html#abbc76dfc9f91231fc3df118a96bec22c">pcpp::EthLayer</a>
 </li>
 <li>getSourceQuenchdata()
 : <a class="el" href="classpcpp_1_1_icmp_layer.html#a5ddc475448950b549023fe40a97936f2">pcpp::IcmpLayer</a>
@@ -1335,7 +1331,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Dec 2 2019 23:53:24 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Dec 18 2019 01:26:45 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

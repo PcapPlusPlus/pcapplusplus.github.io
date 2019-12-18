@@ -31,7 +31,8 @@
 *   - pcpp::Layer, Layer.h - protocol base class
 *
 * <b>Supported protocols (Packet++):</b>
-*   - pcpp::EthLayer, EthLayer.h - Ethernet protocol
+*   - pcpp::EthLayer, EthLayer.h - Ethernet II protocol
+*   - pcpp::EthDot3Layer, EthDot3Layer.h - IEEE 802.3 Ethernet protocol
 *   - pcpp::SllLayer, SllLayer.h - SLL protocol (Linux cooked capture)
 *   - pcpp::NullLoopbackLayer, NullLoopbackLayer.h - Null/Loopback
 *   - pcpp::PacketTrailerLayer, PacketTrailerLayer.h - packet trailer (a.k.a footer or padding)

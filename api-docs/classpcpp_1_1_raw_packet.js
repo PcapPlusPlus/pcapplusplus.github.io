@@ -12,7 +12,6 @@ var classpcpp_1_1_raw_packet =
     [ "getPacketTimeStamp", "classpcpp_1_1_raw_packet.html#acf2dfd5fbd30df1b56b4f112543d0c11", null ],
     [ "getRawData", "classpcpp_1_1_raw_packet.html#a095f2d3a3ac095b23c07af2bf095653f", null ],
     [ "getRawDataLen", "classpcpp_1_1_raw_packet.html#a15e5700fb9d76cdfbcb3c3d505f22904", null ],
-    [ "getRawDataReadOnly", "classpcpp_1_1_raw_packet.html#a25d32fa76d975bcbb6020f63b607e594", null ],
     [ "insertData", "classpcpp_1_1_raw_packet.html#a3563f649177826c9e4f649eec7b35887", null ],
     [ "isPacketSet", "classpcpp_1_1_raw_packet.html#ad2de0b9094569c2505cf590d8ab50f45", null ],
     [ "operator=", "classpcpp_1_1_raw_packet.html#afc8278a0208727a579a122f197c4d02e", null ],

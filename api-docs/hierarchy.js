@@ -14,6 +14,7 @@ var hierarchy =
     [ "pcpp::DpdkDeviceList", "classpcpp_1_1_dpdk_device_list.html", null ],
     [ "pcpp::DpdkDevice::DpdkDeviceStats", "structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html", null ],
     [ "pcpp::DpdkWorkerThread", "classpcpp_1_1_dpdk_worker_thread.html", null ],
+    [ "pcpp::ether_dot3_header", "structpcpp_1_1ether__dot3__header.html", null ],
     [ "pcpp::ether_header", "structpcpp_1_1ether__header.html", null ],
     [ "std::exception", null, [
       [ "pcpp::HttpRequestFirstLine::HttpRequestFirstLineException", "classpcpp_1_1_http_request_first_line_1_1_http_request_first_line_exception.html", null ],
@@ -71,6 +72,7 @@ var hierarchy =
         [ "pcpp::ArpLayer", "classpcpp_1_1_arp_layer.html", null ],
         [ "pcpp::DhcpLayer", "classpcpp_1_1_dhcp_layer.html", null ],
         [ "pcpp::DnsLayer", "classpcpp_1_1_dns_layer.html", null ],
+        [ "pcpp::EthDot3Layer", "classpcpp_1_1_eth_dot3_layer.html", null ],
         [ "pcpp::EthLayer", "classpcpp_1_1_eth_layer.html", null ],
         [ "pcpp::GreLayer", "classpcpp_1_1_gre_layer.html", [
           [ "pcpp::GREv0Layer", "classpcpp_1_1_g_r_ev0_layer.html", null ],

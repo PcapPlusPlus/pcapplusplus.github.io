@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.12</span>
+   &#160;<span id="projectnumber">19.12+</span>
    </div>
   </td>
  </tr>
@@ -125,8 +125,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6babfc371bd3b9eac8c741cba5e097f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a095f2d3a3ac095b23c07af2bf095653f"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#a095f2d3a3ac095b23c07af2bf095653f">getRawData</a> () const</td></tr>
 <tr class="separator:a095f2d3a3ac095b23c07af2bf095653f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25d32fa76d975bcbb6020f63b607e594"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#a25d32fa76d975bcbb6020f63b607e594">getRawDataReadOnly</a> () const</td></tr>
-<tr class="separator:a25d32fa76d975bcbb6020f63b607e594"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3cd4246f2c2e6a7d4238a02b28771ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#ad3cd4246f2c2e6a7d4238a02b28771ba">getLinkLayerType</a> () const</td></tr>
 <tr class="separator:ad3cd4246f2c2e6a7d4238a02b28771ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15e5700fb9d76cdfbcb3c3d505f22904"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#a15e5700fb9d76cdfbcb3c3d505f22904">getRawDataLen</a> () const</td></tr>
@@ -358,6 +356,9 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int pcpp::RawPacket::getFrameLength </td>
@@ -366,6 +367,11 @@ Public Member Functions</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Get frame length in bytes </p><dl class="section return"><dt>Returns</dt><dd>frame length in bytes </dd></dl>
 
@@ -376,6 +382,9 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> pcpp::RawPacket::getLinkLayerType </td>
@@ -384,6 +393,11 @@ Public Member Functions</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Get the link layer tpye </p><dl class="section return"><dt>Returns</dt><dd>the type of the link layer </dd></dl>
 
@@ -422,6 +436,9 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">timeval pcpp::RawPacket::getPacketTimeStamp </td>
@@ -430,6 +447,11 @@ Public Member Functions</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Get raw data timestamp </p><dl class="section return"><dt>Returns</dt><dd>Raw data timestamp </dd></dl>
 
@@ -440,6 +462,9 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const uint8_t* pcpp::RawPacket::getRawData </td>
@@ -448,8 +473,13 @@ Public Member Functions</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Get raw data pointer </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the raw data </dd></dl>
+<p>Get raw data pointer </p><dl class="section return"><dt>Returns</dt><dd>A read-only pointer to the raw data </dd></dl>
 
 </div>
 </div>
@@ -458,6 +488,9 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int pcpp::RawPacket::getRawDataLen </td>
@@ -466,26 +499,13 @@ Public Member Functions</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Get raw data length in bytes </p><dl class="section return"><dt>Returns</dt><dd>Raw data length in bytes </dd></dl>
-
-</div>
-</div>
-<a id="a25d32fa76d975bcbb6020f63b607e594"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25d32fa76d975bcbb6020f63b607e594">&#9670;&nbsp;</a></span>getRawDataReadOnly()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const uint8_t* pcpp::RawPacket::getRawDataReadOnly </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Get read only raw data pointer </p><dl class="section return"><dt>Returns</dt><dd>A read-only pointer to the raw data </dd></dl>
 
 </div>
 </div>
@@ -745,7 +765,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a></li>
-    <li class="footer">Generated on Mon Dec 2 2019 23:53:23 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Dec 18 2019 01:26:44 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

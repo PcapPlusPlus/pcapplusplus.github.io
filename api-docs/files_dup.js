@@ -19,6 +19,10 @@ var files_dup =
       [ "DpdkWorkerThread", "classpcpp_1_1_dpdk_worker_thread.html", "classpcpp_1_1_dpdk_worker_thread" ],
       [ "DpdkDeviceList", "classpcpp_1_1_dpdk_device_list.html", "classpcpp_1_1_dpdk_device_list" ]
     ] ],
+    [ "EthDot3Layer.h", "_eth_dot3_layer_8h.html", [
+      [ "ether_dot3_header", "structpcpp_1_1ether__dot3__header.html", "structpcpp_1_1ether__dot3__header" ],
+      [ "EthDot3Layer", "classpcpp_1_1_eth_dot3_layer.html", "classpcpp_1_1_eth_dot3_layer" ]
+    ] ],
     [ "EthLayer.h", "_eth_layer_8h.html", "_eth_layer_8h" ],
     [ "GeneralUtils.h", "_general_utils_8h.html", "_general_utils_8h" ],
     [ "GreLayer.h", "_gre_layer_8h.html", [

@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.12</span>
+   &#160;<span id="projectnumber">19.12+</span>
    </div>
   </td>
  </tr>
@@ -223,8 +223,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad72c1f31f614575add8b12ebf4828335"><td class="memItemLeft" align="right" valign="top">static const std::map&lt; uint16_t, bool &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dns_layer.html#ad72c1f31f614575add8b12ebf4828335">getDNSPortMap</a> ()</td></tr>
-<tr class="separator:ad72c1f31f614575add8b12ebf4828335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc75f267b44dc4b8d42524aecc684fdd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dns_layer.html#adc75f267b44dc4b8d42524aecc684fdd">isDnsPort</a> (uint16_t port)</td></tr>
+<tr class="separator:adc75f267b44dc4b8d42524aecc684fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents the DNS protocol layer.<br  />
@@ -880,32 +880,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad72c1f31f614575add8b12ebf4828335"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad72c1f31f614575add8b12ebf4828335">&#9670;&nbsp;</a></span>getDNSPortMap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const std::map&lt;uint16_t, bool&gt;* pcpp::DnsLayer::getDNSPortMap </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>A pointer to a map containing all UDP ports recognize as DNS </dd></dl>
-
-</div>
-</div>
 <a id="a89344ae5f11f82fd8ec39286c2c6155c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a89344ae5f11f82fd8ec39286c2c6155c">&#9670;&nbsp;</a></span>getFirstAdditionalRecord()</h2>
 
@@ -1185,6 +1159,38 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of DNS queries in the packet </dd></dl>
+
+</div>
+</div>
+<a id="adc75f267b44dc4b8d42524aecc684fdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc75f267b44dc4b8d42524aecc684fdd">&#9670;&nbsp;</a></span>isDnsPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::DnsLayer::isDnsPort </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A static method that checks whether the port is considered as DNS </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The port number to be checked </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1513,7 +1519,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_dns_layer.html">DnsLayer</a></li>
-    <li class="footer">Generated on Mon Dec 2 2019 23:53:21 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Dec 18 2019 01:26:42 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

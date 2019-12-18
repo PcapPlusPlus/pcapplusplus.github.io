@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.12</span>
+   &#160;<span id="projectnumber">19.12+</span>
    </div>
   </td>
  </tr>
@@ -177,8 +177,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aca42f6b13b45da870a9f014886cff56b"><td class="memItemLeft" align="right" valign="top">static const std::map&lt; uint16_t, bool &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_message.html#aca42f6b13b45da870a9f014886cff56b">getHTTPPortMap</a> ()</td></tr>
-<tr class="separator:aca42f6b13b45da870a9f014886cff56b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecfa05232a4e93e05fbe94cdc9d84f24"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_message.html#aecfa05232a4e93e05fbe94cdc9d84f24">isHttpPort</a> (uint16_t port)</td></tr>
+<tr class="separator:aecfa05232a4e93e05fbe94cdc9d84f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a general HTTP message. It's an abstract class and cannot be instantiated. It's inherited by <a class="el" href="classpcpp_1_1_http_request_layer.html">HttpRequestLayer</a> and <a class="el" href="classpcpp_1_1_http_response_layer.html">HttpResponseLayer</a> </p>
@@ -261,32 +261,6 @@ Static Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created header field, or NULL if the field could not be created </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classpcpp_1_1_text_based_protocol_message.html#ac997392fd26a58b63827bf81a380b031">pcpp::TextBasedProtocolMessage</a>.</p>
-
-</div>
-</div>
-<a id="aca42f6b13b45da870a9f014886cff56b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca42f6b13b45da870a9f014886cff56b">&#9670;&nbsp;</a></span>getHTTPPortMap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const std::map&lt;uint16_t, bool&gt;* pcpp::HttpMessage::getHTTPPortMap </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>A pointer to a map containing all TCP ports recognize as HTTP </dd></dl>
 
 </div>
 </div>
@@ -417,13 +391,45 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aecfa05232a4e93e05fbe94cdc9d84f24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecfa05232a4e93e05fbe94cdc9d84f24">&#9670;&nbsp;</a></span>isHttpPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool pcpp::HttpMessage::isHttpPort </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A static method that checks whether the port is considered as HTTP </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The port number to be checked </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_http_message.html">HttpMessage</a></li>
-    <li class="footer">Generated on Mon Dec 2 2019 23:53:21 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Dec 18 2019 01:26:42 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

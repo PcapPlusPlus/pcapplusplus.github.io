@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.12</span>
+   &#160;<span id="projectnumber">19.12+</span>
    </div>
   </td>
  </tr>
@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('_mac_address_8h_source.html','');});
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classpcpp_1_1_mac_address.html#a5a847ed7df1c496557b790a740e4dad9">   34</a></span>&#160;        <a class="code" href="classpcpp_1_1_mac_address.html#a5a847ed7df1c496557b790a740e4dad9">MacAddress</a>() : m_IsValid(true) { memset(m_Address, 0, <span class="keyword">sizeof</span>(m_Address)); }</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classpcpp_1_1_mac_address.html#a9b56a6c1bfa240b58548035db404bcbc">   42</a></span>&#160;        <a class="code" href="classpcpp_1_1_mac_address.html#a9b56a6c1bfa240b58548035db404bcbc">MacAddress</a>(uint8_t* addr) : m_IsValid(true) { memcpy(m_Address, addr, <span class="keyword">sizeof</span>(m_Address)); }</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classpcpp_1_1_mac_address.html#ad526ce2d3a4054fa1684d1122edfc6b7">   42</a></span>&#160;        <a class="code" href="classpcpp_1_1_mac_address.html#ad526ce2d3a4054fa1684d1122edfc6b7">MacAddress</a>(<span class="keyword">const</span> uint8_t* addr) : m_IsValid(true) { memcpy(m_Address, addr, <span class="keyword">sizeof</span>(m_Address)); }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classpcpp_1_1_mac_address.html#a73460f086b972df4e264d267adc2d92d">   49</a></span>&#160;        <a class="code" href="classpcpp_1_1_mac_address.html#a73460f086b972df4e264d267adc2d92d">MacAddress</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* addr) { init(addr); }</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
@@ -203,9 +203,9 @@ $(document).ready(function(){initNavTree('_mac_address_8h_source.html','');});
 <div class="ttc" id="aclasspcpp_1_1_mac_address_html_a16c78d3efcb5a63bc1bb95f98d418ca0"><div class="ttname"><a href="classpcpp_1_1_mac_address.html#a16c78d3efcb5a63bc1bb95f98d418ca0">pcpp::MacAddress::isValid</a></div><div class="ttdeci">bool isValid() const</div><div class="ttdef"><b>Definition:</b> MacAddress.h:131</div></div>
 <div class="ttc" id="aclasspcpp_1_1_mac_address_html_aee73706ca1f0e403adbf4c2f691e7da1"><div class="ttname"><a href="classpcpp_1_1_mac_address.html#aee73706ca1f0e403adbf4c2f691e7da1">pcpp::MacAddress::copyTo</a></div><div class="ttdeci">void copyTo(uint8_t **arr) const</div><div class="ttdef"><b>Definition:</b> MacAddress.h:143</div></div>
 <div class="ttc" id="aclasspcpp_1_1_mac_address_html"><div class="ttname"><a href="classpcpp_1_1_mac_address.html">pcpp::MacAddress</a></div><div class="ttdef"><b>Definition:</b> MacAddress.h:27</div></div>
+<div class="ttc" id="aclasspcpp_1_1_mac_address_html_ad526ce2d3a4054fa1684d1122edfc6b7"><div class="ttname"><a href="classpcpp_1_1_mac_address.html#ad526ce2d3a4054fa1684d1122edfc6b7">pcpp::MacAddress::MacAddress</a></div><div class="ttdeci">MacAddress(const uint8_t *addr)</div><div class="ttdef"><b>Definition:</b> MacAddress.h:42</div></div>
 <div class="ttc" id="anamespacepcpp_html"><div class="ttname"><a href="namespacepcpp.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib.</div></div>
 <div class="ttc" id="aclasspcpp_1_1_mac_address_html_a257d6fd3d08de6766389f15423ca3e22"><div class="ttname"><a href="classpcpp_1_1_mac_address.html#a257d6fd3d08de6766389f15423ca3e22">pcpp::MacAddress::MacAddress</a></div><div class="ttdeci">MacAddress(const std::string &amp;addr)</div><div class="ttdef"><b>Definition:</b> MacAddress.h:56</div></div>
-<div class="ttc" id="aclasspcpp_1_1_mac_address_html_a9b56a6c1bfa240b58548035db404bcbc"><div class="ttname"><a href="classpcpp_1_1_mac_address.html#a9b56a6c1bfa240b58548035db404bcbc">pcpp::MacAddress::MacAddress</a></div><div class="ttdeci">MacAddress(uint8_t *addr)</div><div class="ttdef"><b>Definition:</b> MacAddress.h:42</div></div>
 <div class="ttc" id="aclasspcpp_1_1_mac_address_html_a7b34a561182bcf4626fd60198fc049dd"><div class="ttname"><a href="classpcpp_1_1_mac_address.html#a7b34a561182bcf4626fd60198fc049dd">pcpp::MacAddress::operator==</a></div><div class="ttdeci">bool operator==(const MacAddress &amp;other) const</div><div class="ttdef"><b>Definition:</b> MacAddress.h:93</div></div>
 <div class="ttc" id="aclasspcpp_1_1_mac_address_html_af0a3d86661b9f91cabaa8924b5ef0493"><div class="ttname"><a href="classpcpp_1_1_mac_address.html#af0a3d86661b9f91cabaa8924b5ef0493">pcpp::MacAddress::toString</a></div><div class="ttdeci">std::string toString() const</div></div>
 <div class="ttc" id="aclasspcpp_1_1_mac_address_html_a73460f086b972df4e264d267adc2d92d"><div class="ttname"><a href="classpcpp_1_1_mac_address.html#a73460f086b972df4e264d267adc2d92d">pcpp::MacAddress::MacAddress</a></div><div class="ttdeci">MacAddress(const char *addr)</div><div class="ttdef"><b>Definition:</b> MacAddress.h:49</div></div>
@@ -216,7 +216,7 @@ $(document).ready(function(){initNavTree('_mac_address_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="_mac_address_8h.html">MacAddress.h</a></li>
-    <li class="footer">Generated on Mon Dec 2 2019 23:53:20 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Dec 18 2019 01:26:41 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

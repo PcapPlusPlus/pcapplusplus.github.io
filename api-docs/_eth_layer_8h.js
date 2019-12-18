@@ -13,8 +13,6 @@ var _eth_layer_8h =
     [ "PCPP_ETHERTYPE_PPP", "_eth_layer_8h.html#aaffe96b1f9c0c40e4dff2d83961fe7d1", null ],
     [ "PCPP_ETHERTYPE_PPPOED", "_eth_layer_8h.html#a04b10b583a0648c72a8763fc40e6da91", null ],
     [ "PCPP_ETHERTYPE_PPPOES", "_eth_layer_8h.html#a0cf3e7c4e8751512d74f77d4e23201cf", null ],
-    [ "PCPP_ETHERTYPE_PUP", "_eth_layer_8h.html#a821031eca1080fbf3902fd4bccbaf7df", null ],
     [ "PCPP_ETHERTYPE_REVARP", "_eth_layer_8h.html#a4a4dad83203fe8186858d1b410358f2d", null ],
-    [ "PCPP_ETHERTYPE_SPRITE", "_eth_layer_8h.html#a65d9a2928c78d3240d81571a331e2eca", null ],
     [ "PCPP_ETHERTYPE_VLAN", "_eth_layer_8h.html#a4ae9eed713c168d2986083e7571dfeca", null ]
 ];

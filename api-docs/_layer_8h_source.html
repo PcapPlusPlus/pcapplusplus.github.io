@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.12</span>
+   &#160;<span id="projectnumber">19.12+</span>
    </div>
   </td>
  </tr>
@@ -164,11 +164,11 @@ $(document).ready(function(){initNavTree('_layer_8h_source.html','');});
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <a class="code" href="classpcpp_1_1_layer.html">Layer</a>* m_PrevLayer;</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordtype">bool</span> m_IsAllocatedInPacket;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <a class="code" href="classpcpp_1_1_layer.html">Layer</a>() : m_Data(NULL), m_DataLen(0), m_Packet(NULL), m_Protocol(<a class="code" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba8576597b751111eab8ec156233a7fd29">UnknownProtocol</a>), m_NextLayer(NULL), m_PrevLayer(NULL), m_IsAllocatedInPacket(false) { }</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <a class="code" href="classpcpp_1_1_layer.html">Layer</a>() : m_Data(NULL), m_DataLen(0), m_Packet(NULL), m_Protocol(<a class="code" href="namespacepcpp.html#ad94e3dd833f818889f676d2352eac829">UnknownProtocol</a>), m_NextLayer(NULL), m_PrevLayer(NULL), m_IsAllocatedInPacket(false) { }</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        Layer(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, Layer* prevLayer, Packet* packet) :</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            m_Data(data), m_DataLen(dataLen),</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            m_Packet(packet), m_Protocol(<a class="code" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba8576597b751111eab8ec156233a7fd29">UnknownProtocol</a>),</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            m_Packet(packet), m_Protocol(<a class="code" href="namespacepcpp.html#ad94e3dd833f818889f676d2352eac829">UnknownProtocol</a>),</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            m_NextLayer(NULL), m_PrevLayer(prevLayer), m_IsAllocatedInPacket(false) {}</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="comment">// Copy c&#39;tor</span></div>
@@ -187,7 +187,7 @@ $(document).ready(function(){initNavTree('_layer_8h_source.html','');});
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PACKETPP_LAYER */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespacepcpp_html_a69e2ee6a9dc68797612cf8dc38461025"><div class="ttname"><a href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a></div><div class="ttdeci">OsiModelLayer</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:224</div></div>
+<div class="ttc" id="anamespacepcpp_html_a69e2ee6a9dc68797612cf8dc38461025"><div class="ttname"><a href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a></div><div class="ttdeci">OsiModelLayer</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:229</div></div>
 <div class="ttc" id="aclasspcpp_1_1_packet_html"><div class="ttname"><a href="classpcpp_1_1_packet.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:26</div></div>
 <div class="ttc" id="aclasspcpp_1_1_layer_html_acabe7022caf7cf5fabcad4b5a0eec832"><div class="ttname"><a href="classpcpp_1_1_layer.html#acabe7022caf7cf5fabcad4b5a0eec832">pcpp::Layer::getHeaderLen</a></div><div class="ttdeci">virtual size_t getHeaderLen() const =0</div></div>
 <div class="ttc" id="aclasspcpp_1_1_layer_html_a4e3c72d568a8d43c0fd82d781255e98f"><div class="ttname"><a href="classpcpp_1_1_layer.html#a4e3c72d568a8d43c0fd82d781255e98f">pcpp::Layer::getData</a></div><div class="ttdeci">uint8_t * getData() const</div><div class="ttdef"><b>Definition:</b> Layer.h:96</div></div>
@@ -202,11 +202,11 @@ $(document).ready(function(){initNavTree('_layer_8h_source.html','');});
 <div class="ttc" id="aclasspcpp_1_1_layer_html_a9d02400f5421309786e1ea6c031c8d19"><div class="ttname"><a href="classpcpp_1_1_layer.html#a9d02400f5421309786e1ea6c031c8d19">pcpp::Layer::~Layer</a></div><div class="ttdeci">virtual ~Layer()</div></div>
 <div class="ttc" id="aclasspcpp_1_1_layer_html_a0d76629f081c34424c63794f4cf75a5a"><div class="ttname"><a href="classpcpp_1_1_layer.html#a0d76629f081c34424c63794f4cf75a5a">pcpp::Layer::getDataPtr</a></div><div class="ttdeci">uint8_t * getDataPtr(size_t offset=0) const</div><div class="ttdef"><b>Definition:</b> Layer.h:132</div></div>
 <div class="ttc" id="aclasspcpp_1_1_layer_html_a33e4747c33cba0050ac90beeda45aa7b"><div class="ttname"><a href="classpcpp_1_1_layer.html#a33e4747c33cba0050ac90beeda45aa7b">pcpp::Layer::getDataLen</a></div><div class="ttdeci">size_t getDataLen() const</div><div class="ttdef"><b>Definition:</b> Layer.h:101</div></div>
-<div class="ttc" id="anamespacepcpp_html_a1d761f7cf37d3b1efb1574fb1177e6eb"><div class="ttname"><a href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">pcpp::ProtocolType</a></div><div class="ttdeci">ProtocolType</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:16</div></div>
+<div class="ttc" id="anamespacepcpp_html_a1d761f7cf37d3b1efb1574fb1177e6eb"><div class="ttname"><a href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">pcpp::ProtocolType</a></div><div class="ttdeci">uint64_t ProtocolType</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:18</div></div>
+<div class="ttc" id="anamespacepcpp_html_ad94e3dd833f818889f676d2352eac829"><div class="ttname"><a href="namespacepcpp.html#ad94e3dd833f818889f676d2352eac829">pcpp::UnknownProtocol</a></div><div class="ttdeci">const ProtocolType UnknownProtocol</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:23</div></div>
 <div class="ttc" id="aclasspcpp_1_1_layer_html_a1d07ea14d02b4a5cb383f89b3f40ed63"><div class="ttname"><a href="classpcpp_1_1_layer.html#a1d07ea14d02b4a5cb383f89b3f40ed63">pcpp::Layer::toString</a></div><div class="ttdeci">virtual std::string toString() const =0</div></div>
 <div class="ttc" id="anamespacepcpp_html"><div class="ttname"><a href="namespacepcpp.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib.</div></div>
 <div class="ttc" id="aclasspcpp_1_1_layer_html_abea112176d18e896f48214ca7accac71"><div class="ttname"><a href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">pcpp::Layer::computeCalculateFields</a></div><div class="ttdeci">virtual void computeCalculateFields()=0</div></div>
-<div class="ttc" id="anamespacepcpp_html_a1d761f7cf37d3b1efb1574fb1177e6eba8576597b751111eab8ec156233a7fd29"><div class="ttname"><a href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba8576597b751111eab8ec156233a7fd29">pcpp::UnknownProtocol</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:21</div></div>
 <div class="ttc" id="aclasspcpp_1_1_layer_html"><div class="ttname"><a href="classpcpp_1_1_layer.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:70</div></div>
 <div class="ttc" id="aclasspcpp_1_1_layer_html_af9e51f48a58a3b0dcd1a7341111c66e0"><div class="ttname"><a href="classpcpp_1_1_layer.html#af9e51f48a58a3b0dcd1a7341111c66e0">pcpp::Layer::getOsiModelLayer</a></div><div class="ttdeci">virtual OsiModelLayer getOsiModelLayer() const =0</div></div>
 <div class="ttc" id="aclasspcpp_1_1_layer_html_abd87dfe9272183c2ea1c00752d7144c8"><div class="ttname"><a href="classpcpp_1_1_layer.html#abd87dfe9272183c2ea1c00752d7144c8">pcpp::Layer::getLayerPayloadSize</a></div><div class="ttdeci">size_t getLayerPayloadSize() const</div><div class="ttdef"><b>Definition:</b> Layer.h:111</div></div>
@@ -216,7 +216,7 @@ $(document).ready(function(){initNavTree('_layer_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="_layer_8h.html">Layer.h</a></li>
-    <li class="footer">Generated on Mon Dec 2 2019 23:53:20 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Dec 18 2019 01:26:41 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

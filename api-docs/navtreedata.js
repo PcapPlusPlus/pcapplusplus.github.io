@@ -30,6 +30,7 @@ var NAVTREE =
     [ "Namespace Members", "namespacemembers.html", [
       [ "All", "namespacemembers.html", "namespacemembers_dup" ],
       [ "Functions", "namespacemembers_func.html", null ],
+      [ "Variables", "namespacemembers_vars.html", null ],
       [ "Typedefs", "namespacemembers_type.html", null ],
       [ "Enumerations", "namespacemembers_enum.html", null ],
       [ "Enumerator", "namespacemembers_eval.html", "namespacemembers_eval" ]
@@ -64,17 +65,17 @@ var NAVTREEINDEX =
 "_dpdk_device_8h.html#adb43f1f8284d4e0b74d1c77b70152fa9a72526282b86fa593ae6e558ed0a9da53",
 "_ip_utils_8h.html#accf99d75d7ba993b6146e5915a7fa2db",
 "_pcap_plus_plus_version_8h.html#acae7542122e659b88073dc6b76564e6b",
-"_s_s_l_common_8h.html#a9de558bc6ff79cd1503e919ea6d63c26a7bda4f6e28a67ac3ba71fe963443d686",
-"classpcpp_1_1_dhcp_layer.html#a1e95b430eb8680a236b1cd1606f5c7f5",
-"classpcpp_1_1_gtp_v1_layer.html#a400504112c4045cd6eb09f06734e168a",
-"classpcpp_1_1_i_p_reassembly_1_1_i_pv4_packet_key.html#a6f19f3d1f0e173d7cd36bbebc0c8f455",
-"classpcpp_1_1_igmp_layer.html#af13525b06a365830865b4547407b2ad6",
-"classpcpp_1_1_p_p_po_e_discovery_layer.html#ac761ea9a8298b8ee8614da86de314876a8306ff9b00f06d0b04666a613a893f23",
-"classpcpp_1_1_pointer_vector.html#ad6b5d1fb386f9d3fe9a9916058875433",
-"classpcpp_1_1_sip_request_layer.html#a1c5141318308e0903ac11bd568f3496e",
-"classpcpp_1_1_text_based_protocol_message.html#aab0f4a2beb4bf2a423e8b0b7c18e3645",
-"structpcpp_1_1_dpdk_device_1_1_link_status.html#ac71de439a1f9d3f7c95aadd5b20b0469",
-"structpcpp_1_1ip6__hdr.html#af9eaa28de54512c88c43a95ed6c2a846"
+"_s_s_l_common_8h.html#a9de558bc6ff79cd1503e919ea6d63c26a56a93afdd02b6a29e2a7541be7fc4a0e",
+"classpcpp_1_1_dhcp_layer.html#a186908c746f18d88e7d635705a679795",
+"classpcpp_1_1_generic_dns_resource_data.html#a4cbacedd1189058bd007f7081e58df02",
+"classpcpp_1_1_i_p_reassembly.html#aae7f2e113808978827abf3b7cdbe91afa0314585fac91b7f1260e0c2ac8409425",
+"classpcpp_1_1_icmp_layer.html#aed95fbe23a429c7ff918bf506eae987c",
+"classpcpp_1_1_p_p_po_e_discovery_layer.html#aaa3f807f3db2c33ae7bf157a2ecae951",
+"classpcpp_1_1_pointer_vector.html",
+"classpcpp_1_1_sip_layer.html#aad79a20140f65e7cc84954ea0593636f",
+"classpcpp_1_1_tcp_stream_data.html#ab39688bc764ebc72178a1f067092571b",
+"structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html#a8c8f344207f63fca45d3be9830051e5a",
+"structpcpp_1_1igmpv3__query__header.html#ae1720bbb2665eca8153e26f26175ef55"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

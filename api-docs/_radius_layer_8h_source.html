@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.12</span>
+   &#160;<span id="projectnumber">19.12+</span>
    </div>
   </td>
  </tr>
@@ -178,7 +178,7 @@ $(document).ready(function(){initNavTree('_radius_layer_8h_source.html','');});
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
 <div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="classpcpp_1_1_radius_layer.html#a686bd44354ada532b305ca17996e6304">  171</a></span>&#160;        <a class="code" href="classpcpp_1_1_radius_layer.html#a686bd44354ada532b305ca17996e6304">RadiusLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="classpcpp_1_1_layer.html">Layer</a>* prevLayer, <a class="code" href="classpcpp_1_1_packet.html">Packet</a>* packet) :</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <a class="code" href="classpcpp_1_1_layer.html">Layer</a>(data, dataLen, prevLayer, packet)</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            { m_Protocol = <a class="code" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba704d72177da6dfe876629eadf3df2c63">Radius</a>; }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            { m_Protocol = <a class="code" href="namespacepcpp.html#a77b7ee03eb7a3de9be466af98b7f1f69">Radius</a>; }</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <a class="code" href="classpcpp_1_1_radius_layer.html#a686bd44354ada532b305ca17996e6304">RadiusLayer</a>(uint8_t code, uint8_t <span class="keywordtype">id</span>, <span class="keyword">const</span> uint8_t* authenticator, uint8_t authenticatorArrSize);</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
@@ -210,28 +210,45 @@ $(document).ready(function(){initNavTree('_radius_layer_8h_source.html','');});
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_radius_layer.html#a0f0fe6d64980e46a48f1e14aa0257e3f">removeAllAttributes</a>();</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="comment">// implement abstract methods</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="classpcpp_1_1_radius_layer.html#aea94882354f164fe482111fc6af15c5d">getHeaderLen</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_radius_layer.html#a3dc571fce75cf3acccdb3f9de0fa3897">isDataValid</a>(<span class="keyword">const</span> uint8_t* udpData, <span class="keywordtype">size_t</span> udpDataLen);</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
-<div class="line"><a name="l00296"></a><span class="lineno"><a class="line" href="classpcpp_1_1_radius_layer.html#a5c0587335360b7a5b50dd1df841c44f3">  296</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_radius_layer.html#a5c0587335360b7a5b50dd1df841c44f3">parseNextLayer</a>() {}</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_radius_layer.html#a1742e0575d342cee1cbb8a6d1c9ec12c">computeCalculateFields</a>();</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        std::string <a class="code" href="classpcpp_1_1_radius_layer.html#a20489537d8c53ec87653376cf312e8cf">toString</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
-<div class="line"><a name="l00305"></a><span class="lineno"><a class="line" href="classpcpp_1_1_radius_layer.html#a7b470d5ae75f95489c5d56bdb3b94f8d">  305</a></span>&#160;        <a class="code" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> <a class="code" href="classpcpp_1_1_radius_layer.html#a7b470d5ae75f95489c5d56bdb3b94f8d">getOsiModelLayer</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a7b97a36ede97b0fba585c8a2ec8476d7">OsiModelSesionLayer</a>; }</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_radius_layer.html#a3dc571fce75cf3acccdb3f9de0fa3897">isDataValid</a>(<span class="keyword">const</span> uint8_t* udpData, <span class="keywordtype">size_t</span> udpDataLen);</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    };</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;}</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_radius_layer.html#afa6a3b209815677bbe9522395f4d9c8f">isRadiusPort</a>(uint16_t port);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="comment">// implement abstract methods</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="classpcpp_1_1_radius_layer.html#aea94882354f164fe482111fc6af15c5d">getHeaderLen</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00309"></a><span class="lineno"><a class="line" href="classpcpp_1_1_radius_layer.html#a5c0587335360b7a5b50dd1df841c44f3">  309</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_radius_layer.html#a5c0587335360b7a5b50dd1df841c44f3">parseNextLayer</a>() {}</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_radius_layer.html#a1742e0575d342cee1cbb8a6d1c9ec12c">computeCalculateFields</a>();</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        std::string <a class="code" href="classpcpp_1_1_radius_layer.html#a20489537d8c53ec87653376cf312e8cf">toString</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="preprocessor">#endif // PACKETPP_RADIUS_LAYER</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno"><a class="line" href="classpcpp_1_1_radius_layer.html#a7b470d5ae75f95489c5d56bdb3b94f8d">  318</a></span>&#160;        <a class="code" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> <a class="code" href="classpcpp_1_1_radius_layer.html#a7b470d5ae75f95489c5d56bdb3b94f8d">getOsiModelLayer</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a7b97a36ede97b0fba585c8a2ec8476d7">OsiModelSesionLayer</a>; }</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    };</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="comment">// implementation of inline methods</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
+<div class="line"><a name="l00324"></a><span class="lineno"><a class="line" href="classpcpp_1_1_radius_layer.html#afa6a3b209815677bbe9522395f4d9c8f">  324</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_radius_layer.html#afa6a3b209815677bbe9522395f4d9c8f">RadiusLayer::isRadiusPort</a>(uint16_t port)</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    {</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <span class="keywordflow">switch</span> (port)</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        {</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <span class="keywordflow">case</span> 1812:</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordflow">case</span> 1813:</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <span class="keywordflow">case</span> 3799:</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        }</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    } <span class="comment">// isRadiusPort</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160; </div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;} <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="preprocessor">#endif // PACKETPP_RADIUS_LAYER</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespacepcpp_html_a69e2ee6a9dc68797612cf8dc38461025"><div class="ttname"><a href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a></div><div class="ttdeci">OsiModelLayer</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:224</div></div>
+<div class="ttc" id="anamespacepcpp_html_a69e2ee6a9dc68797612cf8dc38461025"><div class="ttname"><a href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a></div><div class="ttdeci">OsiModelLayer</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:229</div></div>
 <div class="ttc" id="aclasspcpp_1_1_t_l_v_record_html"><div class="ttname"><a href="classpcpp_1_1_t_l_v_record.html">pcpp::TLVRecord</a></div><div class="ttdef"><b>Definition:</b> TLVData.h:23</div></div>
 <div class="ttc" id="aclasspcpp_1_1_radius_layer_html_a30ec5c0916d33196312acb9feb433d61"><div class="ttname"><a href="classpcpp_1_1_radius_layer.html#a30ec5c0916d33196312acb9feb433d61">pcpp::RadiusLayer::getFirstAttribute</a></div><div class="ttdeci">RadiusAttribute getFirstAttribute() const</div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_pv4_address_html"><div class="ttname"><a href="classpcpp_1_1_i_pv4_address.html">pcpp::IPv4Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:119</div></div>
@@ -241,7 +258,6 @@ $(document).ready(function(){initNavTree('_radius_layer_8h_source.html','');});
 <div class="ttc" id="aclasspcpp_1_1_radius_attribute_html_a1486cf38f7347a180b73a07945beeb2c"><div class="ttname"><a href="classpcpp_1_1_radius_attribute.html#a1486cf38f7347a180b73a07945beeb2c">pcpp::RadiusAttribute::getTotalSize</a></div><div class="ttdeci">size_t getTotalSize() const</div><div class="ttdef"><b>Definition:</b> RadiusLayer.h:57</div></div>
 <div class="ttc" id="aclasspcpp_1_1_radius_attribute_builder_html"><div class="ttname"><a href="classpcpp_1_1_radius_attribute_builder.html">pcpp::RadiusAttributeBuilder</a></div><div class="ttdef"><b>Definition:</b> RadiusLayer.h:74</div></div>
 <div class="ttc" id="astructpcpp_1_1radius__header_html_ad7341098e0278fdcac9f7d8da1e55ce0"><div class="ttname"><a href="structpcpp_1_1radius__header.html#ad7341098e0278fdcac9f7d8da1e55ce0">pcpp::radius_header::code</a></div><div class="ttdeci">uint8_t code</div><div class="ttdef"><b>Definition:</b> RadiusLayer.h:24</div></div>
-<div class="ttc" id="anamespacepcpp_html_a1d761f7cf37d3b1efb1574fb1177e6eba704d72177da6dfe876629eadf3df2c63"><div class="ttname"><a href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba704d72177da6dfe876629eadf3df2c63">pcpp::Radius</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:206</div></div>
 <div class="ttc" id="a_layer_8h_html"><div class="ttname"><a href="_layer_8h.html">Layer.h</a></div></div>
 <div class="ttc" id="aclasspcpp_1_1_radius_layer_html_a996d2c1ac847a287624623149f512d19"><div class="ttname"><a href="classpcpp_1_1_radius_layer.html#a996d2c1ac847a287624623149f512d19">pcpp::RadiusLayer::getRadiusMessageString</a></div><div class="ttdeci">static std::string getRadiusMessageString(uint8_t radiusMessageCode)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_radius_attribute_html_ac1c391f717a9d814cd215e3cffb92748"><div class="ttname"><a href="classpcpp_1_1_radius_attribute.html#ac1c391f717a9d814cd215e3cffb92748">pcpp::RadiusAttribute::getDataSize</a></div><div class="ttdeci">size_t getDataSize() const</div><div class="ttdef"><b>Definition:</b> RadiusLayer.h:62</div></div>
@@ -251,6 +267,7 @@ $(document).ready(function(){initNavTree('_radius_layer_8h_source.html','');});
 <div class="ttc" id="aclasspcpp_1_1_radius_attribute_html"><div class="ttname"><a href="classpcpp_1_1_radius_attribute.html">pcpp::RadiusAttribute</a></div><div class="ttdef"><b>Definition:</b> RadiusLayer.h:40</div></div>
 <div class="ttc" id="astructpcpp_1_1radius__header_html_abbe35efe2bd07008905230bf0c068a46"><div class="ttname"><a href="structpcpp_1_1radius__header.html#abbe35efe2bd07008905230bf0c068a46">pcpp::radius_header::id</a></div><div class="ttdeci">uint8_t id</div><div class="ttdef"><b>Definition:</b> RadiusLayer.h:26</div></div>
 <div class="ttc" id="aclasspcpp_1_1_radius_layer_html_a0f0fe6d64980e46a48f1e14aa0257e3f"><div class="ttname"><a href="classpcpp_1_1_radius_layer.html#a0f0fe6d64980e46a48f1e14aa0257e3f">pcpp::RadiusLayer::removeAllAttributes</a></div><div class="ttdeci">bool removeAllAttributes()</div></div>
+<div class="ttc" id="anamespacepcpp_html_a77b7ee03eb7a3de9be466af98b7f1f69"><div class="ttname"><a href="namespacepcpp.html#a77b7ee03eb7a3de9be466af98b7f1f69">pcpp::Radius</a></div><div class="ttdeci">const ProtocolType Radius</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:208</div></div>
 <div class="ttc" id="aclasspcpp_1_1_radius_attribute_html_af50c0eb7d7498e51c21201e8dfd946e8"><div class="ttname"><a href="classpcpp_1_1_radius_attribute.html#af50c0eb7d7498e51c21201e8dfd946e8">pcpp::RadiusAttribute::~RadiusAttribute</a></div><div class="ttdeci">virtual ~RadiusAttribute()</div><div class="ttdef"><b>Definition:</b> RadiusLayer.h:53</div></div>
 <div class="ttc" id="aclasspcpp_1_1_radius_layer_html_a3dc571fce75cf3acccdb3f9de0fa3897"><div class="ttname"><a href="classpcpp_1_1_radius_layer.html#a3dc571fce75cf3acccdb3f9de0fa3897">pcpp::RadiusLayer::isDataValid</a></div><div class="ttdeci">static bool isDataValid(const uint8_t *udpData, size_t udpDataLen)</div></div>
 <div class="ttc" id="a_t_l_v_data_8h_html"><div class="ttname"><a href="_t_l_v_data_8h.html">TLVData.h</a></div></div>
@@ -264,19 +281,20 @@ $(document).ready(function(){initNavTree('_radius_layer_8h_source.html','');});
 <div class="ttc" id="aclasspcpp_1_1_radius_attribute_builder_html_abc074bbecb7823ab1f8e1dc8647e9c62"><div class="ttname"><a href="classpcpp_1_1_radius_attribute_builder.html#abc074bbecb7823ab1f8e1dc8647e9c62">pcpp::RadiusAttributeBuilder::RadiusAttributeBuilder</a></div><div class="ttdeci">RadiusAttributeBuilder(const RadiusAttributeBuilder &amp;other)</div><div class="ttdef"><b>Definition:</b> RadiusLayer.h:137</div></div>
 <div class="ttc" id="aclasspcpp_1_1_radius_attribute_builder_html_a18dae925eac2f705b8fa68eb12507b17"><div class="ttname"><a href="classpcpp_1_1_radius_attribute_builder.html#a18dae925eac2f705b8fa68eb12507b17">pcpp::RadiusAttributeBuilder::build</a></div><div class="ttdeci">RadiusAttribute build() const</div></div>
 <div class="ttc" id="aclasspcpp_1_1_radius_layer_html_a20489537d8c53ec87653376cf312e8cf"><div class="ttname"><a href="classpcpp_1_1_radius_layer.html#a20489537d8c53ec87653376cf312e8cf">pcpp::RadiusLayer::toString</a></div><div class="ttdeci">std::string toString() const</div></div>
+<div class="ttc" id="aclasspcpp_1_1_radius_layer_html_afa6a3b209815677bbe9522395f4d9c8f"><div class="ttname"><a href="classpcpp_1_1_radius_layer.html#afa6a3b209815677bbe9522395f4d9c8f">pcpp::RadiusLayer::isRadiusPort</a></div><div class="ttdeci">static bool isRadiusPort(uint16_t port)</div><div class="ttdef"><b>Definition:</b> RadiusLayer.h:324</div></div>
 <div class="ttc" id="anamespacepcpp_html"><div class="ttname"><a href="namespacepcpp.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib.</div></div>
 <div class="ttc" id="aclasspcpp_1_1_radius_layer_html_a6cc9497abf345423bb8a5e386b426631"><div class="ttname"><a href="classpcpp_1_1_radius_layer.html#a6cc9497abf345423bb8a5e386b426631">pcpp::RadiusLayer::addAttribute</a></div><div class="ttdeci">RadiusAttribute addAttribute(const RadiusAttributeBuilder &amp;attrBuilder)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_t_l_v_record_builder_html"><div class="ttname"><a href="classpcpp_1_1_t_l_v_record_builder.html">pcpp::TLVRecordBuilder</a></div><div class="ttdef"><b>Definition:</b> TLVData.h:351</div></div>
 <div class="ttc" id="aclasspcpp_1_1_radius_layer_html"><div class="ttname"><a href="classpcpp_1_1_radius_layer.html">pcpp::RadiusLayer</a></div><div class="ttdef"><b>Definition:</b> RadiusLayer.h:152</div></div>
-<div class="ttc" id="anamespacepcpp_html_a69e2ee6a9dc68797612cf8dc38461025a7b97a36ede97b0fba585c8a2ec8476d7"><div class="ttname"><a href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a7b97a36ede97b0fba585c8a2ec8476d7">pcpp::OsiModelSesionLayer</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:235</div></div>
+<div class="ttc" id="anamespacepcpp_html_a69e2ee6a9dc68797612cf8dc38461025a7b97a36ede97b0fba585c8a2ec8476d7"><div class="ttname"><a href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a7b97a36ede97b0fba585c8a2ec8476d7">pcpp::OsiModelSesionLayer</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:240</div></div>
 <div class="ttc" id="aclasspcpp_1_1_radius_attribute_builder_html_aad7479c1da08a5e4b74eeff374b2b2f6"><div class="ttname"><a href="classpcpp_1_1_radius_attribute_builder.html#aad7479c1da08a5e4b74eeff374b2b2f6">pcpp::RadiusAttributeBuilder::RadiusAttributeBuilder</a></div><div class="ttdeci">RadiusAttributeBuilder(uint8_t attrType, uint16_t attrValue)</div><div class="ttdef"><b>Definition:</b> RadiusLayer.h:103</div></div>
 <div class="ttc" id="aclasspcpp_1_1_radius_layer_html_a1742e0575d342cee1cbb8a6d1c9ec12c"><div class="ttname"><a href="classpcpp_1_1_radius_layer.html#a1742e0575d342cee1cbb8a6d1c9ec12c">pcpp::RadiusLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div></div>
 <div class="ttc" id="aclasspcpp_1_1_layer_html"><div class="ttname"><a href="classpcpp_1_1_layer.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:70</div></div>
 <div class="ttc" id="aclasspcpp_1_1_radius_layer_html_a7598e300bb478acfa4e5b4c736afdc6f"><div class="ttname"><a href="classpcpp_1_1_radius_layer.html#a7598e300bb478acfa4e5b4c736afdc6f">pcpp::RadiusLayer::getAttributeCount</a></div><div class="ttdeci">size_t getAttributeCount() const</div></div>
 <div class="ttc" id="aclasspcpp_1_1_t_l_v_record_reader_html"><div class="ttname"><a href="classpcpp_1_1_t_l_v_record_reader.html">pcpp::TLVRecordReader</a></div><div class="ttdef"><b>Definition:</b> TLVData.h:197</div></div>
 <div class="ttc" id="astructpcpp_1_1radius__header_html"><div class="ttname"><a href="structpcpp_1_1radius__header.html">pcpp::radius_header</a></div><div class="ttdef"><b>Definition:</b> RadiusLayer.h:21</div></div>
-<div class="ttc" id="aclasspcpp_1_1_radius_layer_html_a5c0587335360b7a5b50dd1df841c44f3"><div class="ttname"><a href="classpcpp_1_1_radius_layer.html#a5c0587335360b7a5b50dd1df841c44f3">pcpp::RadiusLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div><div class="ttdef"><b>Definition:</b> RadiusLayer.h:296</div></div>
-<div class="ttc" id="aclasspcpp_1_1_radius_layer_html_a7b470d5ae75f95489c5d56bdb3b94f8d"><div class="ttname"><a href="classpcpp_1_1_radius_layer.html#a7b470d5ae75f95489c5d56bdb3b94f8d">pcpp::RadiusLayer::getOsiModelLayer</a></div><div class="ttdeci">OsiModelLayer getOsiModelLayer() const</div><div class="ttdef"><b>Definition:</b> RadiusLayer.h:305</div></div>
+<div class="ttc" id="aclasspcpp_1_1_radius_layer_html_a5c0587335360b7a5b50dd1df841c44f3"><div class="ttname"><a href="classpcpp_1_1_radius_layer.html#a5c0587335360b7a5b50dd1df841c44f3">pcpp::RadiusLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div><div class="ttdef"><b>Definition:</b> RadiusLayer.h:309</div></div>
+<div class="ttc" id="aclasspcpp_1_1_radius_layer_html_a7b470d5ae75f95489c5d56bdb3b94f8d"><div class="ttname"><a href="classpcpp_1_1_radius_layer.html#a7b470d5ae75f95489c5d56bdb3b94f8d">pcpp::RadiusLayer::getOsiModelLayer</a></div><div class="ttdeci">OsiModelLayer getOsiModelLayer() const</div><div class="ttdef"><b>Definition:</b> RadiusLayer.h:318</div></div>
 <div class="ttc" id="aclasspcpp_1_1_radius_layer_html_a5d99b3f9230ba2381d1aea160b7c9032"><div class="ttname"><a href="classpcpp_1_1_radius_layer.html#a5d99b3f9230ba2381d1aea160b7c9032">pcpp::RadiusLayer::getAuthenticatorValue</a></div><div class="ttdeci">std::string getAuthenticatorValue() const</div></div>
 <div class="ttc" id="aclasspcpp_1_1_radius_layer_html_a262ced9bfe44889a43874957a06dde61"><div class="ttname"><a href="classpcpp_1_1_radius_layer.html#a262ced9bfe44889a43874957a06dde61">pcpp::RadiusLayer::~RadiusLayer</a></div><div class="ttdeci">~RadiusLayer()</div><div class="ttdef"><b>Definition:</b> RadiusLayer.h:200</div></div>
 <div class="ttc" id="astructpcpp_1_1_t_l_v_record_1_1_t_l_v_raw_data_html_ad4062a2e11c5882fe480b0adc803b3f8"><div class="ttname"><a href="structpcpp_1_1_t_l_v_record_1_1_t_l_v_raw_data.html#ad4062a2e11c5882fe480b0adc803b3f8">pcpp::TLVRecord::TLVRawData::recordLen</a></div><div class="ttdeci">uint8_t recordLen</div><div class="ttdef"><b>Definition:</b> TLVData.h:33</div></div>
@@ -288,7 +306,7 @@ $(document).ready(function(){initNavTree('_radius_layer_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="_radius_layer_8h.html">RadiusLayer.h</a></li>
-    <li class="footer">Generated on Mon Dec 2 2019 23:53:20 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Dec 18 2019 01:26:41 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

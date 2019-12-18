@@ -11,7 +11,7 @@ var searchData=
   ['deviceconfiguration_160',['DeviceConfiguration',['../structpcpp_1_1_pcap_live_device_1_1_device_configuration.html',1,'pcpp::PcapLiveDevice::DeviceConfiguration'],['../structpcpp_1_1_pcap_live_device_1_1_device_configuration.html#ab19593ede934cf73687a271d3de16524',1,'pcpp::PcapLiveDevice::DeviceConfiguration::DeviceConfiguration()']]],
   ['devicemode_161',['DeviceMode',['../classpcpp_1_1_pcap_live_device.html#a2381e7f053285090f0f9620bcbd8f0f3',1,'pcpp::PcapLiveDevice']]],
   ['devid_162',['devId',['../structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html#a49e5bd913fde8b892d1bbe27dbf53065',1,'pcpp::DpdkDevice::DpdkDeviceStats']]],
-  ['dhcp_163',['DHCP',['../namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba37d71d611d176cfa75f40acbebfd3f56',1,'pcpp']]],
+  ['dhcp_163',['DHCP',['../namespacepcpp.html#a5f677ab02f328eb59216916238bea6c1',1,'pcpp']]],
   ['dhcp_5fack_164',['DHCP_ACK',['../namespacepcpp.html#a960a2fb425b0c54c217309ff6215a0deac094d7ad5204b559d5881e7c16e7a17f',1,'pcpp']]],
   ['dhcp_5fbootreply_165',['DHCP_BOOTREPLY',['../namespacepcpp.html#a977d5d1fabe89dba06443bbca6a711bbad6aa627bfd992b58dcb027c7c453483f',1,'pcpp']]],
   ['dhcp_5fbootrequest_166',['DHCP_BOOTREQUEST',['../namespacepcpp.html#a977d5d1fabe89dba06443bbca6a711bbac2dc2a02d77464f2ad09460e52027547',1,'pcpp']]],
@@ -176,7 +176,7 @@ var searchData=
   ['dhcpoptiontypes_325',['DhcpOptionTypes',['../namespacepcpp.html#a211aac29a5c4d0b7844926cfd369c32c',1,'pcpp']]],
   ['direction_326',['direction',['../structpcpp_1_1_pcap_live_device_1_1_device_configuration.html#ab5d5b0ed427abf26af79ed8cc80486a5',1,'pcpp::PcapLiveDevice::DeviceConfiguration::direction()'],['../namespacepcpp.html#a966edb536b73cf93cbc9b83f9c64930a',1,'pcpp::Direction()']]],
   ['directoryexists_327',['directoryExists',['../namespacepcpp.html#a90c94556ad172d6c3ffb766e1ab25edf',1,'pcpp']]],
-  ['dns_328',['DNS',['../namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebac3a7c734abc69fcdddbad93f796b931c',1,'pcpp']]],
+  ['dns_328',['DNS',['../namespacepcpp.html#ae432ae466e1de6accc18805e99efd0c7',1,'pcpp']]],
   ['dns_5fclass_5fany_329',['DNS_CLASS_ANY',['../namespacepcpp.html#a9a53cd13fb37fed91d2acda175bee7b9af6e9ede04f111d84367d18817b360b14',1,'pcpp']]],
   ['dns_5fclass_5fch_330',['DNS_CLASS_CH',['../namespacepcpp.html#a9a53cd13fb37fed91d2acda175bee7b9af712985d323c29760adbfef63c070acc',1,'pcpp']]],
   ['dns_5fclass_5fhs_331',['DNS_CLASS_HS',['../namespacepcpp.html#a9a53cd13fb37fed91d2acda175bee7b9abfb70ef57b237dc68f7a9f5277809040',1,'pcpp']]],
@@ -263,6 +263,6 @@ var searchData=
   ['drop_412',['drop',['../structpcpp_1_1_pf_ring_device_1_1_pf_ring_stats.html#a83db0ccadf101d72b41c3eb2ff6a72c3',1,'pcpp::PfRingDevice::PfRingStats']]],
   ['dst_413',['DST',['../namespacepcpp.html#a966edb536b73cf93cbc9b83f9c64930aa27a323e67a11c7d1fc922949a918fedb',1,'pcpp']]],
   ['dstip_414',['dstIP',['../structpcpp_1_1_connection_data.html#a4e468846d01cc8d1e1721d9c6d727f7e',1,'pcpp::ConnectionData']]],
-  ['dstmac_415',['dstMac',['../structpcpp_1_1ether__header.html#a6fbac47e840aa3f6055d0b97c684bd45',1,'pcpp::ether_header']]],
+  ['dstmac_415',['dstMac',['../structpcpp_1_1ether__dot3__header.html#afb269ef2a0a1e3dd1957eb3976093b9f',1,'pcpp::ether_dot3_header::dstMac()'],['../structpcpp_1_1ether__header.html#a6fbac47e840aa3f6055d0b97c684bd45',1,'pcpp::ether_header::dstMac()']]],
   ['dstport_416',['dstPort',['../structpcpp_1_1_connection_data.html#a93e7eaf0f9955cb083b5884fdbe4c0e5',1,'pcpp::ConnectionData']]]
 ];

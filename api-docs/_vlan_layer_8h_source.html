@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.12</span>
+   &#160;<span id="projectnumber">19.12+</span>
    </div>
   </td>
  </tr>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('_vlan_layer_8h_source.html','');});
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classpcpp_1_1_vlan_layer.html">   45</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_vlan_layer.html">VlanLayer</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_layer.html">Layer</a></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classpcpp_1_1_vlan_layer.html#a5f6f8f15642dd1f0a88550bde0fb51b0">   54</a></span>&#160;        <a class="code" href="classpcpp_1_1_vlan_layer.html#a5f6f8f15642dd1f0a88550bde0fb51b0">VlanLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="classpcpp_1_1_layer.html">Layer</a>* prevLayer, <a class="code" href="classpcpp_1_1_packet.html">Packet</a>* packet) : <a class="code" href="classpcpp_1_1_layer.html">Layer</a>(data, dataLen, prevLayer, packet) { m_Protocol = <a class="code" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebaff5f107a86a0b682a29919494d16e3e5">VLAN</a>; }</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classpcpp_1_1_vlan_layer.html#a5f6f8f15642dd1f0a88550bde0fb51b0">   54</a></span>&#160;        <a class="code" href="classpcpp_1_1_vlan_layer.html#a5f6f8f15642dd1f0a88550bde0fb51b0">VlanLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="classpcpp_1_1_layer.html">Layer</a>* prevLayer, <a class="code" href="classpcpp_1_1_packet.html">Packet</a>* packet) : <a class="code" href="classpcpp_1_1_layer.html">Layer</a>(data, dataLen, prevLayer, packet) { m_Protocol = <a class="code" href="namespacepcpp.html#adddb69c5e9b0df95ed306b2ed0d1c4fc">VLAN</a>; }</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="classpcpp_1_1_vlan_layer.html#a5f6f8f15642dd1f0a88550bde0fb51b0">VlanLayer</a>(<span class="keyword">const</span> uint16_t vlanID, <span class="keywordtype">bool</span> cfi, uint8_t priority, uint16_t etherType);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
@@ -155,14 +155,14 @@ $(document).ready(function(){initNavTree('_vlan_layer_8h_source.html','');});
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclasspcpp_1_1_vlan_layer_html_a67a01cdf9bab94ed23c5182775f4baf5"><div class="ttname"><a href="classpcpp_1_1_vlan_layer.html#a67a01cdf9bab94ed23c5182775f4baf5">pcpp::VlanLayer::getVlanHeader</a></div><div class="ttdeci">vlan_header * getVlanHeader() const</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:71</div></div>
-<div class="ttc" id="anamespacepcpp_html_a69e2ee6a9dc68797612cf8dc38461025"><div class="ttname"><a href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a></div><div class="ttdeci">OsiModelLayer</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:224</div></div>
+<div class="ttc" id="anamespacepcpp_html_a69e2ee6a9dc68797612cf8dc38461025"><div class="ttname"><a href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a></div><div class="ttdeci">OsiModelLayer</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:229</div></div>
 <div class="ttc" id="aclasspcpp_1_1_vlan_layer_html_ac9702d193a250da803639863ecf12373"><div class="ttname"><a href="classpcpp_1_1_vlan_layer.html#ac9702d193a250da803639863ecf12373">pcpp::VlanLayer::setCFI</a></div><div class="ttdeci">void setCFI(bool cfi)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_packet_html"><div class="ttname"><a href="classpcpp_1_1_packet.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:26</div></div>
 <div class="ttc" id="aclasspcpp_1_1_vlan_layer_html_a083d3c9058269a46b6874adda2930e69"><div class="ttname"><a href="classpcpp_1_1_vlan_layer.html#a083d3c9058269a46b6874adda2930e69">pcpp::VlanLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer()</div></div>
-<div class="ttc" id="anamespacepcpp_html_a1d761f7cf37d3b1efb1574fb1177e6ebaff5f107a86a0b682a29919494d16e3e5"><div class="ttname"><a href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebaff5f107a86a0b682a29919494d16e3e5">pcpp::VLAN</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:76</div></div>
-<div class="ttc" id="anamespacepcpp_html_a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2"><div class="ttname"><a href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2">pcpp::OsiModelDataLinkLayer</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:229</div></div>
+<div class="ttc" id="anamespacepcpp_html_a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2"><div class="ttname"><a href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2">pcpp::OsiModelDataLinkLayer</a></div><div class="ttdef"><b>Definition:</b> ProtocolType.h:234</div></div>
 <div class="ttc" id="aclasspcpp_1_1_vlan_layer_html"><div class="ttname"><a href="classpcpp_1_1_vlan_layer.html">pcpp::VlanLayer</a></div><div class="ttdef"><b>Definition:</b> VlanLayer.h:45</div></div>
 <div class="ttc" id="a_layer_8h_html"><div class="ttname"><a href="_layer_8h.html">Layer.h</a></div></div>
+<div class="ttc" id="anamespacepcpp_html_adddb69c5e9b0df95ed306b2ed0d1c4fc"><div class="ttname"><a href="namespacepcpp.html#adddb69c5e9b0df95ed306b2ed0d1c4fc">pcpp::VLAN</a></div><div class="ttdeci">const ProtocolType VLAN</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:78</div></div>
 <div class="ttc" id="aclasspcpp_1_1_vlan_layer_html_a931be22ad37fcedab548a9752d7c834a"><div class="ttname"><a href="classpcpp_1_1_vlan_layer.html#a931be22ad37fcedab548a9752d7c834a">pcpp::VlanLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields()</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:130</div></div>
 <div class="ttc" id="aclasspcpp_1_1_vlan_layer_html_a92084616cf00c45903ecaaeed0c20cd5"><div class="ttname"><a href="classpcpp_1_1_vlan_layer.html#a92084616cf00c45903ecaaeed0c20cd5">pcpp::VlanLayer::setPriority</a></div><div class="ttdeci">void setPriority(uint8_t priority)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_vlan_layer_html_a5e2229a489ef1a9a250269f255a11922"><div class="ttname"><a href="classpcpp_1_1_vlan_layer.html#a5e2229a489ef1a9a250269f255a11922">pcpp::VlanLayer::getPriority</a></div><div class="ttdeci">uint8_t getPriority() const</div></div>
@@ -183,7 +183,7 @@ $(document).ready(function(){initNavTree('_vlan_layer_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="_vlan_layer_8h.html">VlanLayer.h</a></li>
-    <li class="footer">Generated on Mon Dec 2 2019 23:53:21 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Dec 18 2019 01:26:41 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

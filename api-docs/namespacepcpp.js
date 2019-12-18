@@ -20,6 +20,8 @@ var namespacepcpp =
     [ "DpdkDevice", "classpcpp_1_1_dpdk_device.html", "classpcpp_1_1_dpdk_device" ],
     [ "DpdkDeviceList", "classpcpp_1_1_dpdk_device_list.html", "classpcpp_1_1_dpdk_device_list" ],
     [ "DpdkWorkerThread", "classpcpp_1_1_dpdk_worker_thread.html", "classpcpp_1_1_dpdk_worker_thread" ],
+    [ "EthDot3Layer", "classpcpp_1_1_eth_dot3_layer.html", "classpcpp_1_1_eth_dot3_layer" ],
+    [ "ether_dot3_header", "structpcpp_1_1ether__dot3__header.html", "structpcpp_1_1ether__dot3__header" ],
     [ "ether_header", "structpcpp_1_1ether__header.html", "structpcpp_1_1ether__header" ],
     [ "EtherTypeFilter", "classpcpp_1_1_ether_type_filter.html", "classpcpp_1_1_ether_type_filter" ],
     [ "EthLayer", "classpcpp_1_1_eth_layer.html", "classpcpp_1_1_eth_layer" ],

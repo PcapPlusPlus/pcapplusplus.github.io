@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.12</span>
+   &#160;<span id="projectnumber">19.12+</span>
    </div>
   </td>
  </tr>
@@ -114,6 +114,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3c34b57a284fe6e3180eb7cc79da9f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54bd43575f175701675dc0431c699a0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_payload_layer.html#a54bd43575f175701675dc0431c699a0e">PayloadLayer</a> (const uint8_t *data, size_t dataLen, bool dummy)</td></tr>
 <tr class="separator:a54bd43575f175701675dc0431c699a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3df428d65a506e7ffef4d48113bfcd95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_payload_layer.html#a3df428d65a506e7ffef4d48113bfcd95">PayloadLayer</a> (const std::string &amp;payloadAsHexStream)</td></tr>
+<tr class="separator:a3df428d65a506e7ffef4d48113bfcd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0883f46fee516b697d6c44997b6f775a"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_payload_layer.html#a0883f46fee516b697d6c44997b6f775a">getPayload</a> () const</td></tr>
 <tr class="separator:a0883f46fee516b697d6c44997b6f775a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8170561229aec118c826b523bace4565"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_payload_layer.html#a8170561229aec118c826b523bace4565">getPayloadLen</a> () const</td></tr>
@@ -156,7 +158,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Represents a generic or unknown layer or a packet payload </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3c34b57a284fe6e3180eb7cc79da9f24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c34b57a284fe6e3180eb7cc79da9f24">&#9670;&nbsp;</a></span>PayloadLayer() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c34b57a284fe6e3180eb7cc79da9f24">&#9670;&nbsp;</a></span>PayloadLayer() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -213,7 +215,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a54bd43575f175701675dc0431c699a0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54bd43575f175701675dc0431c699a0e">&#9670;&nbsp;</a></span>PayloadLayer() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a54bd43575f175701675dc0431c699a0e">&#9670;&nbsp;</a></span>PayloadLayer() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -248,6 +250,30 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A raw buffer that will be used as a payload. This data will be copied to the layer </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>The raw buffer length </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">dummy</td><td>A dummy parameter to separate the constructor signature from the other constructor. Its value isn't used anywhere </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3df428d65a506e7ffef4d48113bfcd95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3df428d65a506e7ffef4d48113bfcd95">&#9670;&nbsp;</a></span>PayloadLayer() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::PayloadLayer::PayloadLayer </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>payloadAsHexStream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A constructor that allocates a new payload from an hex stream </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">payloadAsHexStream</td><td>A string that represents an hex stream of the payload. For example: 0001080006040002842b2b774c56c0a80078000000000000c0a8. In order for the hex stream to be valid it has to contain valid hex chars only (which means, for example, that it can't begin with "0x") and it also has to have an even number of chars (each char represents one nibble). If the string is not a valid hex stream an error will be printed to log and the payload layer will be empty (no data) </td></tr>
   </table>
   </dd>
 </dl>
@@ -453,7 +479,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_payload_layer.html">PayloadLayer</a></li>
-    <li class="footer">Generated on Mon Dec 2 2019 23:53:23 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Dec 18 2019 01:26:43 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

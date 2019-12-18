@@ -32,7 +32,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">19.12</span>
+   &#160;<span id="projectnumber">19.12+</span>
    </div>
   </td>
  </tr>
@@ -90,12 +90,15 @@ $(document).ready(function(){initNavTree('_protocol_type_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">ProtocolType.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+</div>
 <p><a href="_protocol_type_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -104,61 +107,13 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespacepcpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main namespace for the PcapPlusPlus lib. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a1d761f7cf37d3b1efb1574fb1177e6eb"><td class="memItemLeft" align="right" valign="top">typedef uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">pcpp::ProtocolType</a></td></tr>
+<tr class="separator:a1d761f7cf37d3b1efb1574fb1177e6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a1d761f7cf37d3b1efb1574fb1177e6eb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">pcpp::ProtocolType</a> { <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba8576597b751111eab8ec156233a7fd29">pcpp::UnknownProtocol</a> = 0x00, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebacf03a7d40d04067626bc05cc753b6225">pcpp::Ethernet</a> = 0x01, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba93a834d300209f86ec223d42455a20b2">pcpp::IPv4</a> = 0x02, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba97ce5e3951a877ef70fcfbefbdf10131">pcpp::IPv6</a> = 0x04, 
-<br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba297a47adbd37fab2eec58190d9663c79">pcpp::IP</a> = 0x06, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba25715e2c9bf411927b5a897250be1c6b">pcpp::TCP</a> = 0x08, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebaa63e4ac481ff647f966e75eea2e11754">pcpp::UDP</a> = 0x10, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebac8ff8bb2771c48baaf899c71eed450bb">pcpp::HTTPRequest</a> = 0x20, 
-<br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba78d7b06b85e59684c38ecf172d1d2848">pcpp::HTTPResponse</a> = 0x40, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba3ba6238cc9a1dd597a1a964c05ffe8f2">pcpp::HTTP</a> = 0x20 | 0x40, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba9faab6973eeda827d934cb1681f2056a">pcpp::ARP</a> = 0x80, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebaff5f107a86a0b682a29919494d16e3e5">pcpp::VLAN</a> = 0x100, 
-<br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebac00ee1460d364b9376c8b0409e415bcd">pcpp::ICMP</a> = 0x200, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba8cf53623652508ad0134785bffe155fa">pcpp::PPPoESession</a> = 0x400, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebad34b03790782cf01a5fa4893d3d3de4f">pcpp::PPPoEDiscovery</a> = 0x800, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba3e31c9acfc5d801024b17aecadf8c8c2">pcpp::PPPoE</a> = 0x400 | 0x800, 
-<br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebac3a7c734abc69fcdddbad93f796b931c">pcpp::DNS</a> = 0x1000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebaddb099e9042d6d0a6416b77bff11dc34">pcpp::MPLS</a> = 0x2000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebac31acf3914b14f1e1165ea11de3ac523">pcpp::GREv0</a> = 0x4000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebaa096c9e284df3856de857f474a3e5d51">pcpp::GREv1</a> = 0x8000, 
-<br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba0248248ab5e34190bee563e5a7b919ed">pcpp::GRE</a> = 0x4000 | 0x8000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba296545e46ea0c82d854d66cfe6340fcb">pcpp::PPP_PPTP</a> = 0x10000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba67249d4e32786ecbeedf393a1269292a">pcpp::SSL</a> = 0x20000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba44e47e070011625bff22c3000afb9744">pcpp::SLL</a> = 0x40000, 
-<br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba37d71d611d176cfa75f40acbebfd3f56">pcpp::DHCP</a> = 0x80000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba92e36e94f86c0b6ff56cef36bfe09353">pcpp::NULL_LOOPBACK</a> = 0x100000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebae19f0a0ed51fac56ccfda15c7316c4e9">pcpp::IGMP</a> = 0xE00000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba239a257befc51567359356b91fb475c9">pcpp::IGMPv1</a> = 0x200000, 
-<br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba515554cd06a1d4a5b7f0f09acf41308b">pcpp::IGMPv2</a> = 0x400000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba65c0c871998b6c696c249cdd121eb9eb">pcpp::IGMPv3</a> = 0x800000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba21840d529ffe94d499278552b86c4947">pcpp::GenericPayload</a> = 0x1000000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6ebaeb7df416e478f2a713455082cc00b272">pcpp::VXLAN</a> = 0x2000000, 
-<br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba4d8074af9a6b5fd0257f755cebacac9c">pcpp::SIPRequest</a> = 0x4000000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba98a84222703ef26141e127d06f3e6ddc">pcpp::SIPResponse</a> = 0x8000000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba69e4ca4f73af14bbb8aaf9a14fb1ad48">pcpp::SIP</a> = 0x4000000 | 0x8000000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba013e3d285a5d960ab902775e0cb6b9c7">pcpp::SDP</a> = 0x10000000, 
-<br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba2a589d1a26901cda9f6a130483121f35">pcpp::PacketTrailer</a> = 0x20000000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba704d72177da6dfe876629eadf3df2c63">pcpp::Radius</a> = 0x40000000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba7a1c8f2ba5c4b28c768f34cd27b9b9f2">pcpp::GTPv1</a> = 0x80000000, 
-<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eba9857e12ea213df930d1b7936cbe0b842">pcpp::GTP</a> = 0x80000000
-<br />
- }</td></tr>
-<tr class="separator:a1d761f7cf37d3b1efb1574fb1177e6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69e2ee6a9dc68797612cf8dc38461025"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a> { <br />
 &#160;&#160;<a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a6424a935c3b8c081456c3aba40cb0e41">pcpp::OsiModelPhysicalLayer</a> = 1, 
 <a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2">pcpp::OsiModelDataLinkLayer</a> = 2, 
@@ -172,6 +127,91 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a69e2ee6a9dc68797612cf8dc38461025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ad94e3dd833f818889f676d2352eac829"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ad94e3dd833f818889f676d2352eac829">pcpp::UnknownProtocol</a> = 0x00</td></tr>
+<tr class="separator:ad94e3dd833f818889f676d2352eac829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dc726346808ce2a90d3c8daeb76d09d"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a3dc726346808ce2a90d3c8daeb76d09d">pcpp::Ethernet</a> = 0x01</td></tr>
+<tr class="separator:a3dc726346808ce2a90d3c8daeb76d09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa465f388784082dafaf5dce0b9f67817"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#aa465f388784082dafaf5dce0b9f67817">pcpp::IPv4</a> = 0x02</td></tr>
+<tr class="separator:aa465f388784082dafaf5dce0b9f67817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab30bccb509b8fcf2fea7d4db3b46046"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#aab30bccb509b8fcf2fea7d4db3b46046">pcpp::IPv6</a> = 0x04</td></tr>
+<tr class="separator:aab30bccb509b8fcf2fea7d4db3b46046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14f1b6461b56dcbb5a1b5bb3479bdda4"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a14f1b6461b56dcbb5a1b5bb3479bdda4">pcpp::IP</a> = 0x06</td></tr>
+<tr class="separator:a14f1b6461b56dcbb5a1b5bb3479bdda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d36ae24161db9d8f8cf759529ae42d0"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a8d36ae24161db9d8f8cf759529ae42d0">pcpp::TCP</a> = 0x08</td></tr>
+<tr class="separator:a8d36ae24161db9d8f8cf759529ae42d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8bbb736c21e0804bc41c17cd1fc7740"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ae8bbb736c21e0804bc41c17cd1fc7740">pcpp::UDP</a> = 0x10</td></tr>
+<tr class="separator:ae8bbb736c21e0804bc41c17cd1fc7740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd42edf1ca5da0c50d131e2ba801720d"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#acd42edf1ca5da0c50d131e2ba801720d">pcpp::HTTPRequest</a> = 0x20</td></tr>
+<tr class="separator:acd42edf1ca5da0c50d131e2ba801720d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6b953db5db49c9e04b36112cca3822e"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#af6b953db5db49c9e04b36112cca3822e">pcpp::HTTPResponse</a> = 0x40</td></tr>
+<tr class="separator:af6b953db5db49c9e04b36112cca3822e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a944e1788983dd46df10587eae2cbcf18"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a944e1788983dd46df10587eae2cbcf18">pcpp::HTTP</a> = 0x60</td></tr>
+<tr class="separator:a944e1788983dd46df10587eae2cbcf18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aead5ebeefddfe9c93b70ede2c99cea9d"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#aead5ebeefddfe9c93b70ede2c99cea9d">pcpp::ARP</a> = 0x80</td></tr>
+<tr class="separator:aead5ebeefddfe9c93b70ede2c99cea9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adddb69c5e9b0df95ed306b2ed0d1c4fc"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#adddb69c5e9b0df95ed306b2ed0d1c4fc">pcpp::VLAN</a> = 0x100</td></tr>
+<tr class="separator:adddb69c5e9b0df95ed306b2ed0d1c4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7e3b376a0a26e1b7591f4aae3b01b76"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ac7e3b376a0a26e1b7591f4aae3b01b76">pcpp::ICMP</a> = 0x200</td></tr>
+<tr class="separator:ac7e3b376a0a26e1b7591f4aae3b01b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2300a265174edb1daecfd97697c67d79"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a2300a265174edb1daecfd97697c67d79">pcpp::PPPoESession</a> = 0x400</td></tr>
+<tr class="separator:a2300a265174edb1daecfd97697c67d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dc88bfe69fb13d599459ca9a7fb05e5"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a9dc88bfe69fb13d599459ca9a7fb05e5">pcpp::PPPoEDiscovery</a> = 0x800</td></tr>
+<tr class="separator:a9dc88bfe69fb13d599459ca9a7fb05e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ffb576d1b5a02c884a57605cf59f18d"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a9ffb576d1b5a02c884a57605cf59f18d">pcpp::PPPoE</a> = 0xc00</td></tr>
+<tr class="separator:a9ffb576d1b5a02c884a57605cf59f18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae432ae466e1de6accc18805e99efd0c7"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ae432ae466e1de6accc18805e99efd0c7">pcpp::DNS</a> = 0x1000</td></tr>
+<tr class="separator:ae432ae466e1de6accc18805e99efd0c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f69fdca66dec264f99da6e3de96345c"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a2f69fdca66dec264f99da6e3de96345c">pcpp::MPLS</a> = 0x2000</td></tr>
+<tr class="separator:a2f69fdca66dec264f99da6e3de96345c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29568c577f00703971ed5b741e4154fb"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a29568c577f00703971ed5b741e4154fb">pcpp::GREv0</a> = 0x4000</td></tr>
+<tr class="separator:a29568c577f00703971ed5b741e4154fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68f4401792a1994f4b050b614cbf1c44"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a68f4401792a1994f4b050b614cbf1c44">pcpp::GREv1</a> = 0x8000</td></tr>
+<tr class="separator:a68f4401792a1994f4b050b614cbf1c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a081881295c3e982172b4294facf7c3fd"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a081881295c3e982172b4294facf7c3fd">pcpp::GRE</a> = 0xc000</td></tr>
+<tr class="separator:a081881295c3e982172b4294facf7c3fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c44d3da15807781b9fd46228f09610d"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a5c44d3da15807781b9fd46228f09610d">pcpp::PPP_PPTP</a> = 0x10000</td></tr>
+<tr class="separator:a5c44d3da15807781b9fd46228f09610d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71041ee0360477d36d480d25ea10dbe4"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a71041ee0360477d36d480d25ea10dbe4">pcpp::SSL</a> = 0x20000</td></tr>
+<tr class="separator:a71041ee0360477d36d480d25ea10dbe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7deab0d461579ac6b32b6151c3d6cf3"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ab7deab0d461579ac6b32b6151c3d6cf3">pcpp::SLL</a> = 0x40000</td></tr>
+<tr class="separator:ab7deab0d461579ac6b32b6151c3d6cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f677ab02f328eb59216916238bea6c1"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a5f677ab02f328eb59216916238bea6c1">pcpp::DHCP</a> = 0x80000</td></tr>
+<tr class="separator:a5f677ab02f328eb59216916238bea6c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a795c8790ae95646b61d01d40ac0919c3"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a795c8790ae95646b61d01d40ac0919c3">pcpp::NULL_LOOPBACK</a> = 0x100000</td></tr>
+<tr class="separator:a795c8790ae95646b61d01d40ac0919c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5c8075566d698a54ad804ffae9174a0"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ac5c8075566d698a54ad804ffae9174a0">pcpp::IGMP</a> = 0xE00000</td></tr>
+<tr class="separator:ac5c8075566d698a54ad804ffae9174a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab73aa665e280eb57ccd96422de561c91"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ab73aa665e280eb57ccd96422de561c91">pcpp::IGMPv1</a> = 0x200000</td></tr>
+<tr class="separator:ab73aa665e280eb57ccd96422de561c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a554228f63e4a107a34cb36c34187a634"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a554228f63e4a107a34cb36c34187a634">pcpp::IGMPv2</a> = 0x400000</td></tr>
+<tr class="separator:a554228f63e4a107a34cb36c34187a634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58575f3fdb517e7b7e8126f159ff57e3"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a58575f3fdb517e7b7e8126f159ff57e3">pcpp::IGMPv3</a> = 0x800000</td></tr>
+<tr class="separator:a58575f3fdb517e7b7e8126f159ff57e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa80f74a2bb443a10bb62da9224cdd49b"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#aa80f74a2bb443a10bb62da9224cdd49b">pcpp::GenericPayload</a> = 0x1000000</td></tr>
+<tr class="separator:aa80f74a2bb443a10bb62da9224cdd49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8798e89f8c24e040572e6f571ad5c3c"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ab8798e89f8c24e040572e6f571ad5c3c">pcpp::VXLAN</a> = 0x2000000</td></tr>
+<tr class="separator:ab8798e89f8c24e040572e6f571ad5c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adece8af5b11fbea2e56d432983d02a35"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#adece8af5b11fbea2e56d432983d02a35">pcpp::SIPRequest</a> = 0x4000000</td></tr>
+<tr class="separator:adece8af5b11fbea2e56d432983d02a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff4d6cf6335201f8e9fc80ec7aedb6a7"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#aff4d6cf6335201f8e9fc80ec7aedb6a7">pcpp::SIPResponse</a> = 0x8000000</td></tr>
+<tr class="separator:aff4d6cf6335201f8e9fc80ec7aedb6a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6992dbf7b5105d00e6d4a95649599aba"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a6992dbf7b5105d00e6d4a95649599aba">pcpp::SIP</a> = 0xc000000</td></tr>
+<tr class="separator:a6992dbf7b5105d00e6d4a95649599aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb798bf954a057003adfa79648befa2a"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#aeb798bf954a057003adfa79648befa2a">pcpp::SDP</a> = 0x10000000</td></tr>
+<tr class="separator:aeb798bf954a057003adfa79648befa2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f7295d39043c96760995e2f08c06389"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a4f7295d39043c96760995e2f08c06389">pcpp::PacketTrailer</a> = 0x20000000</td></tr>
+<tr class="separator:a4f7295d39043c96760995e2f08c06389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77b7ee03eb7a3de9be466af98b7f1f69"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a77b7ee03eb7a3de9be466af98b7f1f69">pcpp::Radius</a> = 0x40000000</td></tr>
+<tr class="separator:a77b7ee03eb7a3de9be466af98b7f1f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1a8b83ad72bbbbaebf25a86304ee3d7"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ab1a8b83ad72bbbbaebf25a86304ee3d7">pcpp::GTPv1</a> = 0x80000000</td></tr>
+<tr class="separator:ab1a8b83ad72bbbbaebf25a86304ee3d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d036816ed7196d296e940fbb2b636c1"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a9d036816ed7196d296e940fbb2b636c1">pcpp::GTP</a> = 0x80000000</td></tr>
+<tr class="separator:a9d036816ed7196d296e940fbb2b636c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afce15d7fa5441fd5eeb00ed4f981146c"><td class="memItemLeft" align="right" valign="top">const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#afce15d7fa5441fd5eeb00ed4f981146c">pcpp::EthernetDot3</a> = 0x100000000</td></tr>
+<tr class="separator:afce15d7fa5441fd5eeb00ed4f981146c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -179,7 +219,7 @@ Enumerations</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="_protocol_type_8h.html">ProtocolType.h</a></li>
-    <li class="footer">Generated on Mon Dec 2 2019 23:53:21 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Dec 18 2019 01:26:42 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>
