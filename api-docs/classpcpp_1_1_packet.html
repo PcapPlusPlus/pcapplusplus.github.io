@@ -142,12 +142,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad4dbb6b0bedb3f58f6855aa0329a8908"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a952f7939f5044c45bef2bde38ed22b61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_layer.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#a952f7939f5044c45bef2bde38ed22b61">getLayerOfType</a> (<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> layerType, int index=0) const</td></tr>
 <tr class="separator:a952f7939f5044c45bef2bde38ed22b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb239964f13a6d47b54bfd919f9af25e"><td class="memTemplParams" colspan="2">template&lt;class TLayer &gt; </td></tr>
-<tr class="memitem:aeb239964f13a6d47b54bfd919f9af25e"><td class="memTemplItemLeft" align="right" valign="top">TLayer *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#aeb239964f13a6d47b54bfd919f9af25e">getLayerOfType</a> () const</td></tr>
-<tr class="separator:aeb239964f13a6d47b54bfd919f9af25e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c9c78143afae5d5e91ce89f0b38acb3"><td class="memTemplParams" colspan="2">template&lt;class TLayer &gt; </td></tr>
-<tr class="memitem:a7c9c78143afae5d5e91ce89f0b38acb3"><td class="memTemplItemLeft" align="right" valign="top">TLayer *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#a7c9c78143afae5d5e91ce89f0b38acb3">getNextLayerOfType</a> (<a class="el" href="classpcpp_1_1_layer.html">Layer</a> *after) const</td></tr>
-<tr class="separator:a7c9c78143afae5d5e91ce89f0b38acb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8db6d1f014dc0827c8cef731e8090d5e"><td class="memTemplParams" colspan="2">template&lt;class TLayer &gt; </td></tr>
+<tr class="memitem:a8db6d1f014dc0827c8cef731e8090d5e"><td class="memTemplItemLeft" align="right" valign="top">TLayer *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#a8db6d1f014dc0827c8cef731e8090d5e">getLayerOfType</a> (bool reverseOrder=false) const</td></tr>
+<tr class="separator:a8db6d1f014dc0827c8cef731e8090d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa72a2ce1030ddbc55a8bcee7f130081f"><td class="memTemplParams" colspan="2">template&lt;class TLayer &gt; </td></tr>
+<tr class="memitem:aa72a2ce1030ddbc55a8bcee7f130081f"><td class="memTemplItemLeft" align="right" valign="top">TLayer *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#aa72a2ce1030ddbc55a8bcee7f130081f">getNextLayerOfType</a> (<a class="el" href="classpcpp_1_1_layer.html">Layer</a> *startLayer) const</td></tr>
+<tr class="separator:aa72a2ce1030ddbc55a8bcee7f130081f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99db82a5813c139b538a09ae195f2bf4"><td class="memTemplParams" colspan="2">template&lt;class TLayer &gt; </td></tr>
+<tr class="memitem:a99db82a5813c139b538a09ae195f2bf4"><td class="memTemplItemLeft" align="right" valign="top">TLayer *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#a99db82a5813c139b538a09ae195f2bf4">getPrevLayerOfType</a> (<a class="el" href="classpcpp_1_1_layer.html">Layer</a> *startLayer) const</td></tr>
+<tr class="separator:a99db82a5813c139b538a09ae195f2bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0638363f7edf78cbedd239c92c647c24"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#a0638363f7edf78cbedd239c92c647c24">isPacketOfType</a> (<a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> protocolType) const</td></tr>
 <tr class="separator:a0638363f7edf78cbedd239c92c647c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab19addb15ea46927076227436fde753e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#ab19addb15ea46927076227436fde753e">computeCalculateFields</a> ()</td></tr>
@@ -522,8 +525,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aeb239964f13a6d47b54bfd919f9af25e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb239964f13a6d47b54bfd919f9af25e">&#9670;&nbsp;</a></span>getLayerOfType() <span class="overload">[1/2]</span></h2>
+<a id="a8db6d1f014dc0827c8cef731e8090d5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8db6d1f014dc0827c8cef731e8090d5e">&#9670;&nbsp;</a></span>getLayerOfType() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -533,12 +536,19 @@ template&lt;class TLayer &gt; </div>
         <tr>
           <td class="memname">TLayer * pcpp::Packet::getLayerOfType </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>reverseOrder</em> = <code>false</code></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A templated method to get a layer of a certain type (protocol). If no layer of such type is found, NULL is returned </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the layer of the requested type, NULL if not found </dd></dl>
+<p>A templated method to get a layer of a certain type (protocol). If no layer of such type is found, NULL is returned </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">reverseOrder</td><td>The optional paramter that indicates that the lookup should run in reverse order, the default value is false </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the layer of the requested type, NULL if not found </dd></dl>
 
 </div>
 </div>
@@ -578,8 +588,8 @@ template&lt;class TLayer &gt; </div>
 
 </div>
 </div>
-<a id="a7c9c78143afae5d5e91ce89f0b38acb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c9c78143afae5d5e91ce89f0b38acb3">&#9670;&nbsp;</a></span>getNextLayerOfType()</h2>
+<a id="aa72a2ce1030ddbc55a8bcee7f130081f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa72a2ce1030ddbc55a8bcee7f130081f">&#9670;&nbsp;</a></span>getNextLayerOfType()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -590,14 +600,41 @@ template&lt;class TLayer &gt; </div>
           <td class="memname">TLayer * pcpp::Packet::getNextLayerOfType </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classpcpp_1_1_layer.html">Layer</a> *&#160;</td>
-          <td class="paramname"><em>after</em></td><td>)</td>
+          <td class="paramname"><em>startLayer</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>A templated method to get the first layer of a certain type (protocol), start searching from a certain layer. For example: if a packet looks like: <a class="el" href="classpcpp_1_1_eth_layer.html">EthLayer</a> -&gt; VlanLayer(1) -&gt; VlanLayer(2) -&gt; VlanLayer(3) -&gt; <a class="el" href="classpcpp_1_1_i_pv4_layer.html">IPv4Layer</a> and the user put VlanLayer(2) as a parameter and wishes to search for a <a class="el" href="classpcpp_1_1_vlan_layer.html">VlanLayer</a>, VlanLayer(3) will be returned If no layer of such type is found, NULL is returned </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">after</td><td>A pointer to the layer to start search from </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">startLayer</td><td>A pointer to the layer to start search from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the layer of the requested type, NULL if not found </dd></dl>
+
+</div>
+</div>
+<a id="a99db82a5813c139b538a09ae195f2bf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99db82a5813c139b538a09ae195f2bf4">&#9670;&nbsp;</a></span>getPrevLayerOfType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TLayer &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">TLayer * pcpp::Packet::getPrevLayerOfType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_layer.html">Layer</a> *&#160;</td>
+          <td class="paramname"><em>startLayer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A templated method to get the first layer of a certain type (protocol), start searching from a certain layer. For example: if a packet looks like: <a class="el" href="classpcpp_1_1_eth_layer.html">EthLayer</a> -&gt; VlanLayer(1) -&gt; VlanLayer(2) -&gt; VlanLayer(3) -&gt; <a class="el" href="classpcpp_1_1_i_pv4_layer.html">IPv4Layer</a> and the user put VlanLayer(2) as a parameter and wishes to search for a <a class="el" href="classpcpp_1_1_vlan_layer.html">VlanLayer</a>, VlanLayer(1) will be returned If no layer of such type is found, NULL is returned </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">startLayer</td><td>A pointer to the layer to start search from </td></tr>
   </table>
   </dd>
 </dl>
@@ -969,7 +1006,7 @@ template&lt;class TLayer &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_packet.html">Packet</a></li>
-    <li class="footer">Generated on Wed Dec 18 2019 01:26:43 for PcapPlusPlus by
+    <li class="footer">Generated on Fri Dec 27 2019 01:28:47 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

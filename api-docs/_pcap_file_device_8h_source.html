@@ -266,57 +266,59 @@ $(document).ready(function(){initNavTree('_pcap_file_device_8h_source.html','');
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_pcap_file_writer_device.html#a60b102a04429b8baba0637c3505f6448">close</a>();</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_pcap_file_writer_device.html#a231676775c633bd7564242e9fc62f24e">getStatistics</a>(pcap_stat&amp; stats) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    };</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160; </div>
-<div class="line"><a name="l00386"></a><span class="lineno"><a class="line" href="classpcpp_1_1_pcap_ng_file_writer_device.html">  386</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html">PcapNgFileWriterDevice</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_i_file_writer_device.html">IFileWriterDevice</a></div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    {</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        <span class="keywordtype">void</span>* m_LightPcapNg;</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        <span class="keywordtype">int</span> m_CompressionLevel;</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        <span class="keyword">struct </span>bpf_program m_Bpf;</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        <span class="keywordtype">bool</span> m_BpfInitialized;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        <span class="keywordtype">int</span> m_BpfLinkType;</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        std::string m_CurFilter;</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160; </div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        <span class="comment">// private copy c&#39;tor</span></div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html">PcapNgFileWriterDevice</a>(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_pcap_file_writer_device.html">PcapFileWriterDevice</a>&amp; other);</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html">PcapNgFileWriterDevice</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html">PcapNgFileWriterDevice</a>&amp; other);</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        <span class="keywordtype">bool</span> matchPacketWithFilter(<span class="keyword">const</span> uint8_t* packetData, <span class="keywordtype">size_t</span> packetLen, timeval packetTimestamp, uint16_t linkType);</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160; </div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160; </div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;        <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html">PcapNgFileWriterDevice</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* fileName, <span class="keywordtype">int</span> compressionLevel = 0);</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160; </div>
-<div class="line"><a name="l00415"></a><span class="lineno"><a class="line" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a93312aab61a193df522f8046af6d291e">  415</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a93312aab61a193df522f8046af6d291e">~PcapNgFileWriterDevice</a>() { <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a87cdcca0ace3ba4ccbaad4093def33a8">close</a>(); }</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_pcap_file_writer_device.html#a2a2f2565c9b00766bc579cb732a49b78">flush</a>();</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160; </div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_pcap_file_writer_device.html#a231676775c633bd7564242e9fc62f24e">getStatistics</a>(pcap_stat&amp; stats) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    };</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160; </div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
+<div class="line"><a name="l00391"></a><span class="lineno"><a class="line" href="classpcpp_1_1_pcap_ng_file_writer_device.html">  391</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html">PcapNgFileWriterDevice</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_i_file_writer_device.html">IFileWriterDevice</a></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    {</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        <span class="keywordtype">void</span>* m_LightPcapNg;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        <span class="keywordtype">int</span> m_CompressionLevel;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        <span class="keyword">struct </span>bpf_program m_Bpf;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        <span class="keywordtype">bool</span> m_BpfInitialized;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        <span class="keywordtype">int</span> m_BpfLinkType;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        std::string m_CurFilter;</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160; </div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        <span class="comment">// private copy c&#39;tor</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html">PcapNgFileWriterDevice</a>(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_pcap_file_writer_device.html">PcapFileWriterDevice</a>&amp; other);</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html">PcapNgFileWriterDevice</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html">PcapNgFileWriterDevice</a>&amp; other);</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160; </div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        <span class="keywordtype">bool</span> matchPacketWithFilter(<span class="keyword">const</span> uint8_t* packetData, <span class="keywordtype">size_t</span> packetLen, timeval packetTimestamp, uint16_t linkType);</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160; </div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160; </div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html">PcapNgFileWriterDevice</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* fileName, <span class="keywordtype">int</span> compressionLevel = 0);</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160; </div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a9c709c035f8ba98682693a248d6d1e5d">open</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* os, <span class="keyword">const</span> <span class="keywordtype">char</span>* hardware, <span class="keyword">const</span> <span class="keywordtype">char</span>* captureApp, <span class="keyword">const</span> <span class="keywordtype">char</span>* fileComment);</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160; </div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a81069d1681efd6adf22e6ae80f300993">writePacket</a>(<a class="code" href="classpcpp_1_1_raw_packet.html">RawPacket</a> <span class="keyword">const</span>&amp; packet, <span class="keyword">const</span> <span class="keywordtype">char</span>* comment);</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160; </div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        <span class="comment">//overridden methods</span></div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160; </div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a81069d1681efd6adf22e6ae80f300993">writePacket</a>(<a class="code" href="classpcpp_1_1_raw_packet.html">RawPacket</a> <span class="keyword">const</span>&amp; packet);</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160; </div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a214c363a167e1538d9ea29a58efd9640">writePackets</a>(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_pointer_vector.html">RawPacketVector</a>&amp; packets);</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160; </div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a9c709c035f8ba98682693a248d6d1e5d">open</a>();</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160; </div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a9c709c035f8ba98682693a248d6d1e5d">open</a>(<span class="keywordtype">bool</span> appendMode);</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160; </div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a87cdcca0ace3ba4ccbaad4093def33a8">close</a>();</div>
+<div class="line"><a name="l00420"></a><span class="lineno"><a class="line" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a93312aab61a193df522f8046af6d291e">  420</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a93312aab61a193df522f8046af6d291e">~PcapNgFileWriterDevice</a>() { <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a87cdcca0ace3ba4ccbaad4093def33a8">close</a>(); }</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160; </div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a9c709c035f8ba98682693a248d6d1e5d">open</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* os, <span class="keyword">const</span> <span class="keywordtype">char</span>* hardware, <span class="keyword">const</span> <span class="keywordtype">char</span>* captureApp, <span class="keyword">const</span> <span class="keywordtype">char</span>* fileComment);</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160; </div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a81069d1681efd6adf22e6ae80f300993">writePacket</a>(<a class="code" href="classpcpp_1_1_raw_packet.html">RawPacket</a> <span class="keyword">const</span>&amp; packet, <span class="keyword">const</span> <span class="keywordtype">char</span>* comment);</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160; </div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        <span class="comment">//overridden methods</span></div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160; </div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a81069d1681efd6adf22e6ae80f300993">writePacket</a>(<a class="code" href="classpcpp_1_1_raw_packet.html">RawPacket</a> <span class="keyword">const</span>&amp; packet);</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160; </div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a214c363a167e1538d9ea29a58efd9640">writePackets</a>(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_pointer_vector.html">RawPacketVector</a>&amp; packets);</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160; </div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a9c709c035f8ba98682693a248d6d1e5d">open</a>();</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160; </div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a9c709c035f8ba98682693a248d6d1e5d">open</a>(<span class="keywordtype">bool</span> appendMode);</div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160; </div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a6707801831ede06fd5991123491df542">getStatistics</a>(pcap_stat&amp; stats) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160; </div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a4ad636213ad5ae9af2936c1c4ea29682">setFilter</a>(std::string filterAsString);</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160; </div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    };</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160; </div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;}<span class="comment">// namespace pcpp</span></div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160; </div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a87cdcca0ace3ba4ccbaad4093def33a8">close</a>();</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160; </div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a6707801831ede06fd5991123491df542">getStatistics</a>(pcap_stat&amp; stats) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160; </div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a4ad636213ad5ae9af2936c1c4ea29682">setFilter</a>(std::string filterAsString);</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160; </div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    };</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160; </div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;}<span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160; </div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclasspcpp_1_1_i_file_reader_device_html_a4f18812c646fb59957073bb14980ba72"><div class="ttname"><a href="classpcpp_1_1_i_file_reader_device.html#a4f18812c646fb59957073bb14980ba72">pcpp::IFileReaderDevice::getFileSize</a></div><div class="ttdeci">uint64_t getFileSize() const</div></div>
@@ -334,6 +336,7 @@ $(document).ready(function(){initNavTree('_pcap_file_device_8h_source.html','');
 <div class="ttc" id="aclasspcpp_1_1_pcap_ng_file_reader_device_html_a235769eb90727183eb9fc1b551b3d07b"><div class="ttname"><a href="classpcpp_1_1_pcap_ng_file_reader_device.html#a235769eb90727183eb9fc1b551b3d07b">pcpp::PcapNgFileReaderDevice::getOS</a></div><div class="ttdeci">std::string getOS() const</div></div>
 <div class="ttc" id="aclasspcpp_1_1_pcap_file_reader_device_html_a9432a993ad2a893cfd2e436e500f652a"><div class="ttname"><a href="classpcpp_1_1_pcap_file_reader_device.html#a9432a993ad2a893cfd2e436e500f652a">pcpp::PcapFileReaderDevice::getStatistics</a></div><div class="ttdeci">void getStatistics(pcap_stat &amp;stats) const</div></div>
 <div class="ttc" id="a_pcap_device_8h_html"><div class="ttname"><a href="_pcap_device_8h.html">PcapDevice.h</a></div></div>
+<div class="ttc" id="aclasspcpp_1_1_pcap_file_writer_device_html_a2a2f2565c9b00766bc579cb732a49b78"><div class="ttname"><a href="classpcpp_1_1_pcap_file_writer_device.html#a2a2f2565c9b00766bc579cb732a49b78">pcpp::PcapFileWriterDevice::flush</a></div><div class="ttdeci">void flush()</div></div>
 <div class="ttc" id="aclasspcpp_1_1_pcap_ng_file_writer_device_html_a9c709c035f8ba98682693a248d6d1e5d"><div class="ttname"><a href="classpcpp_1_1_pcap_ng_file_writer_device.html#a9c709c035f8ba98682693a248d6d1e5d">pcpp::PcapNgFileWriterDevice::open</a></div><div class="ttdeci">bool open()</div></div>
 <div class="ttc" id="aclasspcpp_1_1_pcap_file_writer_device_html_a231676775c633bd7564242e9fc62f24e"><div class="ttname"><a href="classpcpp_1_1_pcap_file_writer_device.html#a231676775c633bd7564242e9fc62f24e">pcpp::PcapFileWriterDevice::getStatistics</a></div><div class="ttdeci">virtual void getStatistics(pcap_stat &amp;stats) const</div></div>
 <div class="ttc" id="aclasspcpp_1_1_pcap_ng_file_reader_device_html_a9bf1e61be8334e31a329451ad2397b27"><div class="ttname"><a href="classpcpp_1_1_pcap_ng_file_reader_device.html#a9bf1e61be8334e31a329451ad2397b27">pcpp::PcapNgFileReaderDevice::getNextPacket</a></div><div class="ttdeci">bool getNextPacket(RawPacket &amp;rawPacket, std::string &amp;packetComment)</div></div>
@@ -350,10 +353,10 @@ $(document).ready(function(){initNavTree('_pcap_file_device_8h_source.html','');
 <div class="ttc" id="aclasspcpp_1_1_pcap_ng_file_writer_device_html_a81069d1681efd6adf22e6ae80f300993"><div class="ttname"><a href="classpcpp_1_1_pcap_ng_file_writer_device.html#a81069d1681efd6adf22e6ae80f300993">pcpp::PcapNgFileWriterDevice::writePacket</a></div><div class="ttdeci">bool writePacket(RawPacket const &amp;packet, const char *comment)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_pcap_file_reader_device_html_aa6c4637873a1a830372449a81f048ab2"><div class="ttname"><a href="classpcpp_1_1_pcap_file_reader_device.html#aa6c4637873a1a830372449a81f048ab2">pcpp::PcapFileReaderDevice::~PcapFileReaderDevice</a></div><div class="ttdeci">virtual ~PcapFileReaderDevice()</div><div class="ttdef"><b>Definition:</b> PcapFileDevice.h:119</div></div>
 <div class="ttc" id="aclasspcpp_1_1_pcap_ng_file_reader_device_html_af28e1f52506a83feae30e279adb538a7"><div class="ttname"><a href="classpcpp_1_1_pcap_ng_file_reader_device.html#af28e1f52506a83feae30e279adb538a7">pcpp::PcapNgFileReaderDevice::setFilter</a></div><div class="ttdeci">bool setFilter(std::string filterAsString)</div></div>
-<div class="ttc" id="aclasspcpp_1_1_pcap_ng_file_writer_device_html_a93312aab61a193df522f8046af6d291e"><div class="ttname"><a href="classpcpp_1_1_pcap_ng_file_writer_device.html#a93312aab61a193df522f8046af6d291e">pcpp::PcapNgFileWriterDevice::~PcapNgFileWriterDevice</a></div><div class="ttdeci">virtual ~PcapNgFileWriterDevice()</div><div class="ttdef"><b>Definition:</b> PcapFileDevice.h:415</div></div>
+<div class="ttc" id="aclasspcpp_1_1_pcap_ng_file_writer_device_html_a93312aab61a193df522f8046af6d291e"><div class="ttname"><a href="classpcpp_1_1_pcap_ng_file_writer_device.html#a93312aab61a193df522f8046af6d291e">pcpp::PcapNgFileWriterDevice::~PcapNgFileWriterDevice</a></div><div class="ttdeci">virtual ~PcapNgFileWriterDevice()</div><div class="ttdef"><b>Definition:</b> PcapFileDevice.h:420</div></div>
 <div class="ttc" id="aclasspcpp_1_1_pcap_file_writer_device_html"><div class="ttname"><a href="classpcpp_1_1_pcap_file_writer_device.html">pcpp::PcapFileWriterDevice</a></div><div class="ttdef"><b>Definition:</b> PcapFileDevice.h:297</div></div>
 <div class="ttc" id="aclasspcpp_1_1_pcap_ng_file_writer_device_html_a4ad636213ad5ae9af2936c1c4ea29682"><div class="ttname"><a href="classpcpp_1_1_pcap_ng_file_writer_device.html#a4ad636213ad5ae9af2936c1c4ea29682">pcpp::PcapNgFileWriterDevice::setFilter</a></div><div class="ttdeci">bool setFilter(std::string filterAsString)</div></div>
-<div class="ttc" id="aclasspcpp_1_1_pcap_ng_file_writer_device_html"><div class="ttname"><a href="classpcpp_1_1_pcap_ng_file_writer_device.html">pcpp::PcapNgFileWriterDevice</a></div><div class="ttdef"><b>Definition:</b> PcapFileDevice.h:386</div></div>
+<div class="ttc" id="aclasspcpp_1_1_pcap_ng_file_writer_device_html"><div class="ttname"><a href="classpcpp_1_1_pcap_ng_file_writer_device.html">pcpp::PcapNgFileWriterDevice</a></div><div class="ttdef"><b>Definition:</b> PcapFileDevice.h:391</div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_pcap_device_html"><div class="ttname"><a href="classpcpp_1_1_i_pcap_device.html">pcpp::IPcapDevice</a></div><div class="ttdef"><b>Definition:</b> PcapDevice.h:35</div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_file_reader_device_html"><div class="ttname"><a href="classpcpp_1_1_i_file_reader_device.html">pcpp::IFileReaderDevice</a></div><div class="ttdef"><b>Definition:</b> PcapFileDevice.h:49</div></div>
 <div class="ttc" id="aclasspcpp_1_1_pcap_ng_file_writer_device_html_a6707801831ede06fd5991123491df542"><div class="ttname"><a href="classpcpp_1_1_pcap_ng_file_writer_device.html#a6707801831ede06fd5991123491df542">pcpp::PcapNgFileWriterDevice::getStatistics</a></div><div class="ttdeci">void getStatistics(pcap_stat &amp;stats) const</div></div>
@@ -376,7 +379,7 @@ $(document).ready(function(){initNavTree('_pcap_file_device_8h_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="_pcap_file_device_8h.html">PcapFileDevice.h</a></li>
-    <li class="footer">Generated on Wed Dec 18 2019 01:26:41 for PcapPlusPlus by
+    <li class="footer">Generated on Fri Dec 27 2019 01:28:45 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>
