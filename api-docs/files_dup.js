@@ -183,6 +183,7 @@ var files_dup =
       [ "TcpReassembly", "classpcpp_1_1_tcp_reassembly.html", "classpcpp_1_1_tcp_reassembly" ]
     ] ],
     [ "TextBasedProtocol.h", "_text_based_protocol_8h.html", "_text_based_protocol_8h" ],
+    [ "TimespecTimeval.h", "_timespec_timeval_8h_source.html", null ],
     [ "TLVData.h", "_t_l_v_data_8h.html", [
       [ "TLVRecord", "classpcpp_1_1_t_l_v_record.html", "classpcpp_1_1_t_l_v_record" ],
       [ "TLVRawData", "structpcpp_1_1_t_l_v_record_1_1_t_l_v_raw_data.html", "structpcpp_1_1_t_l_v_record_1_1_t_l_v_raw_data" ],

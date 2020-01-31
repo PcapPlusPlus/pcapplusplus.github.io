@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"classpcpp_1_1_dhcp_layer.html#a01006bfc89d6c5da44ac91e2bdc93f37":[2,0,0,9,6],
 "classpcpp_1_1_dhcp_layer.html#a186908c746f18d88e7d635705a679795":[2,0,0,9,22],
 "classpcpp_1_1_dhcp_layer.html#a1e95b430eb8680a236b1cd1606f5c7f5":[2,0,0,9,1],
 "classpcpp_1_1_dhcp_layer.html#a252452218ffc43dae0de4cb8b9fb0315":[2,0,0,9,21],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "classpcpp_1_1_general_filter.html#ae38fb802a74a1d9b7d7025b1b5cb83e5":[2,0,0,25,3],
 "classpcpp_1_1_generic_dns_resource_data.html":[2,0,0,26],
 "classpcpp_1_1_generic_dns_resource_data.html#a002904e1c014581b87277fcf23b3ae4f":[2,0,0,26,2],
-"classpcpp_1_1_generic_dns_resource_data.html#a30abd7ed0f3978921bf37de923cced04":[2,0,0,26,4],
-"classpcpp_1_1_generic_dns_resource_data.html#a3b4027f8f5860834cb55c9b2477d0b49":[2,0,0,26,1]
+"classpcpp_1_1_generic_dns_resource_data.html#a30abd7ed0f3978921bf37de923cced04":[2,0,0,26,4]
 };

@@ -27,7 +27,7 @@ var classpcpp_1_1_pcap_live_device =
     [ "getLinkType", "classpcpp_1_1_pcap_live_device.html#ab80a7d9e829f0b0a4c7eddeb746a69be", null ],
     [ "getLoopback", "classpcpp_1_1_pcap_live_device.html#acafca8ced5f590d537f1aed6fc94fcfe", null ],
     [ "getMacAddress", "classpcpp_1_1_pcap_live_device.html#a4bc13ec8552ffbf5ae2fe281c4d0905b", null ],
-    [ "getMtu", "classpcpp_1_1_pcap_live_device.html#a711bdcb4ce56009d625137247b11e415", null ],
+    [ "getMtu", "classpcpp_1_1_pcap_live_device.html#a2eeadb33b0e5097213752a76d1e71ba7", null ],
     [ "getName", "classpcpp_1_1_pcap_live_device.html#a296c42499d3f6c606e2cdf7e25a61c04", null ],
     [ "getStatistics", "classpcpp_1_1_pcap_live_device.html#af3f2a7f926d21d1073a8b873b3998bd3", null ],
     [ "open", "classpcpp_1_1_pcap_live_device.html#a281f2cd6062791c68ecdd82384f751f8", null ],

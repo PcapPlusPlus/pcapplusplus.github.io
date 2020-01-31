@@ -9,7 +9,7 @@ var searchData=
   ['http202accepted_4436',['Http202Accepted',['../classpcpp_1_1_http_response_layer.html#ab5bbbd02f36805001550d1168f1412bca53a29c1fa395a6ba1cbbd1fe0e5204fb',1,'pcpp::HttpResponseLayer']]],
   ['http203nonauthoritativeinformation_4437',['Http203NonAuthoritativeInformation',['../classpcpp_1_1_http_response_layer.html#ab5bbbd02f36805001550d1168f1412bca9b0cfa394f1c72d75c0e9b4b35393977',1,'pcpp::HttpResponseLayer']]],
   ['http204nocontent_4438',['Http204NoContent',['../classpcpp_1_1_http_response_layer.html#ab5bbbd02f36805001550d1168f1412bca2a77e02573ad2817a906aa8bf65a6e60',1,'pcpp::HttpResponseLayer']]],
-  ['http205resetcontent_4439',['http205ResetContent',['../classpcpp_1_1_http_response_layer.html#ab5bbbd02f36805001550d1168f1412bcacf81721c9f89d18229af57500e5e3708',1,'pcpp::HttpResponseLayer']]],
+  ['http205resetcontent_4439',['Http205ResetContent',['../classpcpp_1_1_http_response_layer.html#ab5bbbd02f36805001550d1168f1412bca3f4157eee8007435061492dfca0b20af',1,'pcpp::HttpResponseLayer']]],
   ['http206partialcontent_4440',['Http206PartialContent',['../classpcpp_1_1_http_response_layer.html#ab5bbbd02f36805001550d1168f1412bcae0041385af7e078ce829d124bab07607',1,'pcpp::HttpResponseLayer']]],
   ['http207multistatus_4441',['Http207MultiStatus',['../classpcpp_1_1_http_response_layer.html#ab5bbbd02f36805001550d1168f1412bcad12d4bffbc0ba1d18165393c0db48223',1,'pcpp::HttpResponseLayer']]],
   ['http208alreadyreported_4442',['Http208AlreadyReported',['../classpcpp_1_1_http_response_layer.html#ab5bbbd02f36805001550d1168f1412bca55adfc79bd83fb71adf9cb4c98324801',1,'pcpp::HttpResponseLayer']]],

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PcapPlusPlus: Member List</title>
+<title>PcapPlusPlus: TimespecTimeval.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,7 +69,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('classpcpp_1_1_tcp_option_builder.html','');});
+$(document).ready(function(){initNavTree('_timespec_timeval_8h_source.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -89,27 +89,30 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_tcp_option_builder.html'
 
 <div class="header">
   <div class="headertitle">
-<div class="title">pcpp::TcpOptionBuilder Member List</div>  </div>
+<div class="title">TimespecTimeval.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>This is the complete list of members for <a class="el" href="classpcpp_1_1_tcp_option_builder.html">pcpp::TcpOptionBuilder</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_tcp_option_builder.html#a970fb85f72b9bf001863a15e5ae6a26f">build</a>() const</td><td class="entry"><a class="el" href="classpcpp_1_1_tcp_option_builder.html">pcpp::TcpOptionBuilder</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classpcpp_1_1_tcp_option_builder.html#a4661af002e81ef759016b4640d0eb061a332ec08c1a16aa84c23feaf8d29f4810">EOL</a> enum value</td><td class="entry"><a class="el" href="classpcpp_1_1_tcp_option_builder.html">pcpp::TcpOptionBuilder</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_tcp_option_builder.html#a4661af002e81ef759016b4640d0eb061a45f4b19818bd6c642ff853e0ba64eb36">NOP</a> enum value</td><td class="entry"><a class="el" href="classpcpp_1_1_tcp_option_builder.html">pcpp::TcpOptionBuilder</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classpcpp_1_1_tcp_option_builder.html#a4661af002e81ef759016b4640d0eb061">NopEolOptionTypes</a> enum name</td><td class="entry"><a class="el" href="classpcpp_1_1_tcp_option_builder.html">pcpp::TcpOptionBuilder</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_tcp_option_builder.html#a53cfd9ab111c7d9ebf2a9b879abec936">TcpOptionBuilder</a>(TcpOptionType optionType, const uint8_t *optionValue, uint8_t optionValueLen)</td><td class="entry"><a class="el" href="classpcpp_1_1_tcp_option_builder.html">pcpp::TcpOptionBuilder</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classpcpp_1_1_tcp_option_builder.html#af9d33006fbb68dbe38a2ba2bb37d1bdf">TcpOptionBuilder</a>(TcpOptionType optionType, uint8_t optionValue)</td><td class="entry"><a class="el" href="classpcpp_1_1_tcp_option_builder.html">pcpp::TcpOptionBuilder</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_tcp_option_builder.html#aea645fc4e01e9dc023bd25f629c36d55">TcpOptionBuilder</a>(TcpOptionType optionType, uint16_t optionValue)</td><td class="entry"><a class="el" href="classpcpp_1_1_tcp_option_builder.html">pcpp::TcpOptionBuilder</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classpcpp_1_1_tcp_option_builder.html#a838ad04eeb545f3eb2a97fdfbc6d38f9">TcpOptionBuilder</a>(TcpOptionType optionType, uint32_t optionValue)</td><td class="entry"><a class="el" href="classpcpp_1_1_tcp_option_builder.html">pcpp::TcpOptionBuilder</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_tcp_option_builder.html#af9241c4990ee60469eb953550d33eedc">TcpOptionBuilder</a>(NopEolOptionTypes optionType)</td><td class="entry"><a class="el" href="classpcpp_1_1_tcp_option_builder.html">pcpp::TcpOptionBuilder</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifndef TIMEVAL_TO_TIMESPEC</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#define TIMEVAL_TO_TIMESPEC(tv, ts) {                                   \</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">        (ts)-&gt;tv_sec = (tv)-&gt;tv_sec;                                    \</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">        (ts)-&gt;tv_nsec = (tv)-&gt;tv_usec * 1000;                           \</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">}</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef TIMESPEC_TO_TIMEVAL</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define TIMESPEC_TO_TIMEVAL(tv, ts) {                                   \</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">        (tv)-&gt;tv_sec = (ts)-&gt;tv_sec;                                    \</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">        (tv)-&gt;tv_usec = (ts)-&gt;tv_nsec / 1000;                           \</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">}</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jan 31 2020 09:21:37 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><b>TimespecTimeval.h</b></li>
+    <li class="footer">Generated on Fri Jan 31 2020 09:21:34 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

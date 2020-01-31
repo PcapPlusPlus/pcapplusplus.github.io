@@ -111,6 +111,8 @@ Inheritance diagram for pcpp::RawPacket:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8834cea9fc72516c3d22a841479ee684"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#a8834cea9fc72516c3d22a841479ee684">RawPacket</a> (const uint8_t *pRawData, int rawDataLen, timeval timestamp, bool deleteRawDataAtDestructor, <a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> layerType=<a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a>)</td></tr>
 <tr class="separator:a8834cea9fc72516c3d22a841479ee684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76475bd10f2bda34a6fee2686a26c475"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#a76475bd10f2bda34a6fee2686a26c475">RawPacket</a> (const uint8_t *pRawData, int rawDataLen, timespec timestamp, bool deleteRawDataAtDestructor, <a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> layerType=<a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a>)</td></tr>
+<tr class="separator:a76475bd10f2bda34a6fee2686a26c475"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc12f855f36a798ce0e8c7dc8a4618f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#acc12f855f36a798ce0e8c7dc8a4618f9">RawPacket</a> ()</td></tr>
 <tr class="separator:acc12f855f36a798ce0e8c7dc8a4618f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb8b8a3574217ab88b406cba3d2551fb"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#abb8b8a3574217ab88b406cba3d2551fb">~RawPacket</a> ()</td></tr>
@@ -123,6 +125,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a84cca99a63eeaa7653e984462686f2bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6babfc371bd3b9eac8c741cba5e097f6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#a6babfc371bd3b9eac8c741cba5e097f6">setRawData</a> (const uint8_t *pRawData, int rawDataLen, timeval timestamp, <a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> layerType=<a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a>, int frameLength=-1)</td></tr>
 <tr class="separator:a6babfc371bd3b9eac8c741cba5e097f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa11e800ab071df0a3c1c329868aea5a7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#aa11e800ab071df0a3c1c329868aea5a7">setRawData</a> (const uint8_t *pRawData, int rawDataLen, timespec timestamp, <a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> layerType=<a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a>, int frameLength=-1)</td></tr>
+<tr class="separator:aa11e800ab071df0a3c1c329868aea5a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a095f2d3a3ac095b23c07af2bf095653f"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#a095f2d3a3ac095b23c07af2bf095653f">getRawData</a> () const</td></tr>
 <tr class="separator:a095f2d3a3ac095b23c07af2bf095653f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3cd4246f2c2e6a7d4238a02b28771ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#ad3cd4246f2c2e6a7d4238a02b28771ba">getLinkLayerType</a> () const</td></tr>
@@ -131,8 +135,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a15e5700fb9d76cdfbcb3c3d505f22904"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19819af25bdac6217aad301b7b243b15"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#a19819af25bdac6217aad301b7b243b15">getFrameLength</a> () const</td></tr>
 <tr class="separator:a19819af25bdac6217aad301b7b243b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf2dfd5fbd30df1b56b4f112543d0c11"><td class="memItemLeft" align="right" valign="top">timeval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#acf2dfd5fbd30df1b56b4f112543d0c11">getPacketTimeStamp</a> () const</td></tr>
-<tr class="separator:acf2dfd5fbd30df1b56b4f112543d0c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ccee8471600cd6ed14c184b3252b469"><td class="memItemLeft" align="right" valign="top">timespec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#a6ccee8471600cd6ed14c184b3252b469">getPacketTimeStamp</a> () const</td></tr>
+<tr class="separator:a6ccee8471600cd6ed14c184b3252b469"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2de0b9094569c2505cf590d8ab50f45"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#ad2de0b9094569c2505cf590d8ab50f45">isPacketSet</a> () const</td></tr>
 <tr class="separator:ad2de0b9094569c2505cf590d8ab50f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6b169b02bda40e90279e7d8f6816e41"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#ab6b169b02bda40e90279e7d8f6816e41">clear</a> ()</td></tr>
@@ -150,7 +154,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>This class holds the packet as raw (not parsed) data. The data is held as byte array. In addition to the data itself every instance also holds a timestamp representing the time the packet was received by the NIC. <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> instance isn't read only. The user can change the packet data, add or remove data, etc. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8834cea9fc72516c3d22a841479ee684"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8834cea9fc72516c3d22a841479ee684">&#9670;&nbsp;</a></span>RawPacket() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8834cea9fc72516c3d22a841479ee684">&#9670;&nbsp;</a></span>RawPacket() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -196,7 +200,63 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pRawData</td><td>A pointer to the raw data </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">rawDataLen</td><td>The raw data length in bytes </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">timestamp</td><td>The timestamp packet was received by the NIC </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timestamp</td><td>The timestamp packet was received by the NIC (in usec precision) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">deleteRawDataAtDestructor</td><td>An indicator whether raw data pointer should be freed when the instance is freed or not. If set to 'true' than pRawData will be freed when instanced is being freed </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">layerType</td><td>The link layer type of this raw packet. The default is Ethernet </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a76475bd10f2bda34a6fee2686a26c475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76475bd10f2bda34a6fee2686a26c475">&#9670;&nbsp;</a></span>RawPacket() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::RawPacket::RawPacket </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>pRawData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rawDataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">timespec&#160;</td>
+          <td class="paramname"><em>timestamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>deleteRawDataAtDestructor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a>&#160;</td>
+          <td class="paramname"><em>layerType</em> = <code><a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A constructor that receives a pointer to the raw data (allocated elsewhere). This constructor is usually used when packet is captured using a packet capturing engine (like libPcap. WinPcap, PF_RING, etc.). The capturing engine allocates the raw data memory and give the user a pointer to it + a timestamp it has arrived to the device </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pRawData</td><td>A pointer to the raw data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rawDataLen</td><td>The raw data length in bytes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timestamp</td><td>The timestamp packet was received by the NIC (in nsec precision) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">deleteRawDataAtDestructor</td><td>An indicator whether raw data pointer should be freed when the instance is freed or not. If set to 'true' than pRawData will be freed when instanced is being freed </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">layerType</td><td>The link layer type of this raw packet. The default is Ethernet </td></tr>
   </table>
@@ -206,7 +266,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="acc12f855f36a798ce0e8c7dc8a4618f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc12f855f36a798ce0e8c7dc8a4618f9">&#9670;&nbsp;</a></span>RawPacket() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acc12f855f36a798ce0e8c7dc8a4618f9">&#9670;&nbsp;</a></span>RawPacket() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -254,7 +314,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a38d24eda21061c53f0801f3bcbe34193"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38d24eda21061c53f0801f3bcbe34193">&#9670;&nbsp;</a></span>RawPacket() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a38d24eda21061c53f0801f3bcbe34193">&#9670;&nbsp;</a></span>RawPacket() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -431,8 +491,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="acf2dfd5fbd30df1b56b4f112543d0c11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf2dfd5fbd30df1b56b4f112543d0c11">&#9670;&nbsp;</a></span>getPacketTimeStamp()</h2>
+<a id="a6ccee8471600cd6ed14c184b3252b469"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ccee8471600cd6ed14c184b3252b469">&#9670;&nbsp;</a></span>getPacketTimeStamp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -441,7 +501,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">timeval pcpp::RawPacket::getPacketTimeStamp </td>
+          <td class="memname">timespec pcpp::RawPacket::getPacketTimeStamp </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -692,8 +752,75 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa11e800ab071df0a3c1c329868aea5a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa11e800ab071df0a3c1c329868aea5a7">&#9670;&nbsp;</a></span>setRawData() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool pcpp::RawPacket::setRawData </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>pRawData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rawDataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">timespec&#160;</td>
+          <td class="paramname"><em>timestamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a>&#160;</td>
+          <td class="paramname"><em>layerType</em> = <code><a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameLength</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set a raw data. If data was already set and deleteRawDataAtDestructor was set to 'true' the old data will be freed first </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pRawData</td><td>A pointer to the new raw data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rawDataLen</td><td>The new raw data length in bytes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timestamp</td><td>The timestamp packet was received by the NIC (in nsec precision) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">layerType</td><td>The link layer type for this raw data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frameLength</td><td>When reading from pcap files, sometimes the captured length is different from the actual packet length. This parameter represents the packet length. This parameter is optional, if not set or set to -1 it is assumed both lengths are equal </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if raw data was set successfully, false otherwise </dd></dl>
+
+<p>Reimplemented in <a class="el" href="classpcpp_1_1_m_buf_raw_packet.html#ab2a9026bb43a9255fadb43ca5c398dfd">pcpp::MBufRawPacket</a>.</p>
+
+</div>
+</div>
 <a id="a6babfc371bd3b9eac8c741cba5e097f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6babfc371bd3b9eac8c741cba5e097f6">&#9670;&nbsp;</a></span>setRawData()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6babfc371bd3b9eac8c741cba5e097f6">&#9670;&nbsp;</a></span>setRawData() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -747,15 +874,13 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pRawData</td><td>A pointer to the new raw data </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">rawDataLen</td><td>The new raw data length in bytes </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">timestamp</td><td>The timestamp packet was received by the NIC </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timestamp</td><td>The timestamp packet was received by the NIC (in usec precision) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">layerType</td><td>The link layer type for this raw data </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">frameLength</td><td>When reading from pcap files, sometimes the captured length is different from the actual packet length. This parameter represents the packet length. This parameter is optional, if not set or set to -1 it is assumed both lengths are equal </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if raw data was set successfully, false otherwise </dd></dl>
-
-<p>Reimplemented in <a class="el" href="classpcpp_1_1_m_buf_raw_packet.html#a4b49f6bfba58da926405df2e2fef914c">pcpp::MBufRawPacket</a>.</p>
 
 </div>
 </div>
@@ -765,7 +890,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a></li>
-    <li class="footer">Generated on Fri Dec 27 2019 01:28:48 for PcapPlusPlus by
+    <li class="footer">Generated on Fri Jan 31 2020 09:21:36 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>
