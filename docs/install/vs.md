@@ -22,7 +22,9 @@ Please visit the [supported platforms page]({{ site.baseurl }}/docs/install/plat
 In order to build PcapPlusPlus on Windows with Visual Studio you need the following components:
 
 1. A [supported version]({{ site.baseurl }}/docs/install/platforms) of Microsoft Visual Studio 
-2. WinPcap developer's pack - containing the wpcap library PcapPlusPlus is linking with plus relevant h files. You can download it from <https://www.winpcap.org/devel.htm>
+2. [WinPcap developer's pack](https://www.winpcap.org/devel.htm) __OR__ [Npcap SDK](https://nmap.org/npcap/guide/npcap-devguide.html) - containing the wpcap library PcapPlusPlus is linking with plus relevant `h` files. 
+   1. WinPcap developer's pack can be downloaded from here: <https://www.winpcap.org/devel.htm>
+   2. Npcap SDK can be downloaded from here: <https://nmap.org/npcap/#download>
 3. pthread-win32 - can be downloaded from here: <ftp://sourceware.org/pub/pthreads-win32/pthreads-w32-2-9-1-release.zip>
 4. In many cases you also need to download and install:
   - [Microsoft Visual C++ Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads) for your version of Visual Studio
@@ -61,7 +63,7 @@ Ths script has two modes of operation:
 
 ### Wizard mode
 
-In wizard mode the script will ask you for the requested version of Visual Studio and the locations of WinPcap developer's pack and pthreads-win32. Here is an example:
+In wizard mode the script will ask you for the requested version of Visual Studio and the locations of WinPcap developer's pack / Npcap SDK and pthreads-win32. Here is an example:
 
 ```shell
 C:\PcapPlusPlus>configure-windows-visual-studio.bat
@@ -75,10 +77,11 @@ Choose Visual Studio version.
 Currently supported options are: vs2015, vs2017 or vs2019: vs2019
 
 
-WinPcap developer's pack is required for compiling PcapPlusPlus.
-If WinPcap developer's pack is not installed, please download and install it from https://www.winpcap.org/devel.htm
+WinPcap or Npcap SDK is required for compiling PcapPlusPlus.
+For downloading WinPcap SDK (developer's pack) please go to https://www.winpcap.org/devel.htm
+For downloading Npcap SDK please go to https://nmap.org/npcap/#download
 
-Please specify WinPcap developer's pack installed path: C:\WpdPack
+Please specify WinPcap/Npcap SDK path: C:\WpdPack
 
 
 pthreads-win32 is required for compiling PcapPlusPlus.
@@ -111,19 +114,19 @@ This script has 2 modes of operation:
   1) Without any switches. In this case the script will guide you through using wizards
   2) With switches, as described below
 
-Basic usage: configure-windows-visual-studio.bat [-h] -v VS_VERSION -p PTHREADS_WIN32_DIR -w WINPCAP_HOME_DIR
+Basic usage: configure-windows-visual-studio.bat [-h] -v VS_VERSION -p PTHREADS_WIN32_DIR -w PCAP_SDK_DIR
 
 The following switches are recognized:
 -v|--vs-version      --Set Visual Studio version to configure. Must be one of: vs2015, vs2017, vs2019
 -p|--pthreads-home   --Set pthreads-win32 home directory
--w|--winpcap-home    --Set WinPcap home directory
+-w|--pcap-sdk        --Set WinPcap/Npcap SDK directory
 -h|--help            --Display this help message and exits. No further actions are performed
 ```
 
 Here is an example:
 
 ```shell
-C:\PcapPlusPlus>configure-windows-visual-studio.bat --vs-version 2019 --winpcap-home C:\WpdPack --pthreads-home C:\pthread-win32
+C:\PcapPlusPlus>configure-windows-visual-studio.bat --vs-version 2019 --pcap-sdk C:\Npcap-SDK --pthreads-home C:\pthread-win32
 
 ***********************************************
 PcapPlusPlus Visual Studio configuration script
@@ -142,7 +145,7 @@ Here are the available switches:
 
 | __`-v`__ , __`--vs-version`__    | Visual Studio version to configure.<br>Currently supported versions are: `vs2015`, `vs2017`, `vs2019` |
 | __`-p`__ , __`--pthreads-home`__ | pthreads-win32 home directory |
-| __`-w`__ , __`--winpcap-home`__  | WinPcap Developer Pack (WpdPack) directory |
+| __`-w`__ , __`--pcap-sdk`__      | Path to WinPcap Developer Pack (WpdPack) OR Npcap SDK |
 | __`-h`__ , __`--help`__          | Display the help message and exit. No further actions are performed |
 
 ## Build the code

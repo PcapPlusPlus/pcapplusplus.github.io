@@ -74,7 +74,9 @@ In order to compile PcapPlusPlus on Windows using MinGW-w64 you need the followi
 
 ## Additional prerequisites
 
-1. WinPcap developer's pack - containing the `wpcap` library PcapPlusPlus is linking with plus relevant `h` files. You can download it from here: <https://www.winpcap.org/devel.htm>
+1. [WinPcap developer's pack](https://www.winpcap.org/devel.htm) __OR__ [Npcap SDK](https://nmap.org/npcap/guide/npcap-devguide.html) - containing the `wpcap` library PcapPlusPlus is linking with plus relevant `h` files.
+   1. WinPcap developer's pack can be downloaded from here: <https://www.winpcap.org/devel.htm>
+   2. Npcap SDK can be downloaded from here: <https://nmap.org/npcap/#download>
 
 {% include alert.html alert-type="danger" title="x64 is not supported" content="please notice that <b>x64</b> compilation is not supported (and will not work) on either MinGW32 nor MinGW-w64!" %}
 
@@ -87,7 +89,7 @@ Ths script has two modes of operation:
 * Wizard mode - the script will walk you through the paths and parameters you need to provide
 * Params mode - all parameters are provided in the script command line
 
-In wizard mode the script will ask you for MinGW location (for example: `C:\MinGW` for MinGW or `C:\i686-8.1.0-posix-dwarf-rt_v6-rev0` for MinGW-w64) and also for WinPcap developer's pack location (for example: `C:\WpdPack`).
+In wizard mode the script will ask you for MinGW location (for example: `C:\MinGW` for MinGW or `C:\i686-8.1.0-posix-dwarf-rt_v6-rev0` for MinGW-w64) and also for WinPcap developer's pack / Npcap SDK location (for example: `C:\WpdPack` or `C:\Npcap-SDK`).
 
 Here is an example of running the script for MinGW32:
 
@@ -107,13 +109,14 @@ Please specify mingw32 or mingw-w64: mingw32
 If mingw32 is not installed, please download and install it
 mingw32 can be downloaded from: www.mingw.org/
 
-Please specify mingw32 installed path (the folder that includes "bin", "lib" and "include" directories): C:\MinGW
+Please specify mingw32 installed path (for example: C:\MinGW or C:\i686-8.1.0-posix-dwarf-rt_v6-rev0): C:\MinGW
 
 
-WinPcap developer's pack is required for compiling PcapPlusPlus.
-If WinPcap developer's pack is not installed, please download and install it from https://www.winpcap.org/devel.htm
+WinPcap or Npcap SDK is required for compiling PcapPlusPlus.
+For downloading WinPcap SDK (developer's pack) please go to https://www.winpcap.org/devel.htm
+For downloading Npcap SDK please go to https://nmap.org/npcap/#download
 
-Please specify WinPcap developer's pack installed path: C:\WpdPack
+Please specify WinPcap/Npcap SDK path: C:\WpdPack
 
 PcapPlusPlus configuration is complete. Files created (or modified): mk\platform.mk, mk\PcapPlusPlus.mk
 ```
@@ -136,19 +139,20 @@ Please specify mingw32 or mingw-w64: mingw-w64
 If mingw-w64 is not installed, please download and install it
 mingw-w64 can be downloaded from: sourceforge.net/projects/mingw-w64/
 
-Please specify mingw-w64 installed path (the folder that includes "bin", "lib" and "include" directories): C:\i686-8.1.0-posix-dwarf-rt_v6-rev0  
+Please specify mingw-w64 installed path (for example: C:\MinGW or C:\i686-8.1.0-posix-dwarf-rt_v6-rev0): C:\i686-8.1.0-posix-dwarf-rt_v6-rev0  
 
 
-MSYS or MSYS2 are required for compiling PcapPlusPlus.
-If MSYS/MSYS2 are not installed, please download and install it
+MSYS2 is required for compiling PcapPlusPlus.
+If MSYS2 are not installed, please download and install it from: https://www.msys2.org/
 
-Please specify MSYS/MSYS2 installed path: C:\msys64
+Please specify MSYS2 installed path: C:\msys64
 
 
-WinPcap developer's pack is required for compiling PcapPlusPlus.
-If WinPcap developer's pack is not installed, please download and install it from https://www.winpcap.org/devel.htm
+WinPcap or Npcap SDK is required for compiling PcapPlusPlus.
+For downloading WinPcap SDK (developer's pack) please go to https://www.winpcap.org/devel.htm
+For downloading Npcap SDK please go to https://nmap.org/npcap/#download
 
-Please specify WinPcap developer's pack installed path: C:\WpdPack
+Please specify WinPcap/Npcap SDK path: C:\Npcap-SDK
 
 PcapPlusPlus configuration is complete. Files created (or modified): mk\platform.mk, mk\PcapPlusPlus.mk
 
@@ -169,20 +173,20 @@ This script has 2 modes of operation:
   1) Without any switches. In this case the script will guide you through using wizards
   2) With switches, as described below
 
-Basic usage: configure-windows-mingw.bat [-h] MINGW_COMPILER -m MINGW_HOME_DIR -w WINPCAP_HOME_DIR [-s MSYS_HOME_DIR]
+Basic usage: configure-windows-mingw.bat [-h] MINGW_COMPILER -m MINGW_HOME_DIR -w PCAP_SDK_DIR [-s MSYS_HOME_DIR]
 
 The following switches are recognized:
 MINGW_COMPILER       --The MinGW compiler to use. Can be either "mingw32" or "mingw-w64"
--m|--mingw-home      --Sets MinGW home directory (the folder that includes "bin", "lib" and "include" directories)
--s|--msys-home       --Sets MSYS or MSYS2 home directory (must for mingw-w64, not must for mingw32)
--w|--winpcap-home    --Sets WinPcap home directory
--h|--help            --Displays this help message and exits. No further actions are performed
+-m|--mingw-home      --Set MinGW home directory (the folder that includes "bin", "lib" and "include" directories)
+-s|--msys-home       --Set MSYS2 home directory (must for mingw-w64, not must for mingw32)
+-w|--pcap-sdk        --Set WinPcap/Npcap SDK directory
+-h|--help            --Display this help message and exits. No further actions are performed
 ```
 
 For example (MinGW32):
 
 ```shell
-C:\PcapPlusPlus>configure-windows-mingw.bat mingw32 --mingw-home C:\MinGW --winpcap-home C:\WpdPack
+C:\PcapPlusPlus>configure-windows-mingw.bat mingw32 --mingw-home C:\MinGW --pcap-sdk C:\Npcap-SDK
 
 ******************************************
 PcapPlusPlus Windows configuration script
@@ -196,7 +200,7 @@ PcapPlusPlus configuration is complete. Files created (or modified): mk\platform
 Or (MinGW-w64):
 
 ```shell
-C:\PcapPlusPlus>configure-windows-mingw.bat mingw-w64 --mingw-home C:\i686-8.1.0-posix-dwarf-rt_v6-rev0 --msys-home C:\msys64 --winpcap-home C:\WpdPack  
+C:\PcapPlusPlus>configure-windows-mingw.bat mingw-w64 --mingw-home C:\i686-8.1.0-posix-dwarf-rt_v6-rev0 --msys-home C:\msys64 --pcap-sdk C:\WpdPack  
 
 ******************************************
 PcapPlusPlus Windows configuration script
@@ -211,7 +215,7 @@ Here are the available switches:
 | __`MINGW_COMPILER`__             | MinGW compiler to use. Options are `mingw32` or `mingw-w64` |
 | __`-m`__ , __`--mingw-home`__    | MinGW home directory (the folder that includes `bin`, `lib` and `include` directories) |
 | __`-s`__ , __`--msys-home`__     | MSYS or MSYS2 home directory. Required only for MinGW-w64 |
-| __`-w`__ , __`--winpcap-home`__  | WinPcap Developer Pack (WpdPack) directory |
+| __`-w`__ , __`--pcap-sdk`__      | Path to WinPcap Developer Pack (WpdPack) OR Npcap SDK |
 | __`-h`__ , __`--help`__          | Display the help message and exit. No further actions are performed |
 
 

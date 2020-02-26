@@ -12,8 +12,8 @@
 *
 * <b>%Packet capturing engines (Pcap++):</b>
 *   - pcpp::PcapLiveDevice, PcapLiveDevice.h - wrapper for libPacp engine (Linux)
-*   - pcpp::WinPcapLiveDevice, WinPcapLiveDevice.h - wrapper for WinPcap engine (Windows)
-*   - pcpp::PcapRemoteDevice, PcapRemoteDevice.h - remote live device, supported by WinPcap(Windows)
+*   - pcpp::WinPcapLiveDevice, WinPcapLiveDevice.h - wrapper for WinPcap/Npcap engine (Windows)
+*   - pcpp::PcapRemoteDevice, PcapRemoteDevice.h - remote live device, supported by WinPcap (Windows)
 *   - pcpp::PfRingDevice, PfRingDevice.h - Vanilla PF_RING device (Linux)
 *   - pcpp::DpdkDevice, DpdkDevice.h - DPDK device (Linux)
 *   - pcpp::RawSocketDevice, RawSocketDevice.h - raw socket wrapper (Windows and Linux)

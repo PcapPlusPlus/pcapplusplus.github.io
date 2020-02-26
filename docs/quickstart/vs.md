@@ -50,7 +50,7 @@ You can find the following files there:
 Edit the `PcapPlusPlusPropertySheet.props` file in the following way:
 
 - Set the value of the `PcapPlusPlusHome` XML node to the folder where PcapPlusPlus binaries package is located (the one you downloaded)
-- Set the value of the `WinPcapHome` XML node to the folder where WinPcap Developer's Pack is located
+- Set the value of the `WinPcapHome` XML node to the folder where WinPcap Developer's Pack / Npcap SDK is located
 - Set the value of the `PThreadWin32Home` node to the folder where pthread-win32 is located
 
 ## Step 4 - build and run your app

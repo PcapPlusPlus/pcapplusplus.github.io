@@ -22,7 +22,7 @@ As you could probably already notice, PcapPlusPlus is built of 3 libraries: Comm
 ### Packet++
 {: .no_toc }
 
-A library for parsing, creating and editing packets of various [supported protocols]({{ site.baseurl }}/docs/features#supported-network-protocols). This library can be used stand-alone and doesn't depend on Pcap++, libpcap/WinPcap, etc. Main classes and utilities:
+A library for parsing, creating and editing packets of various [supported protocols]({{ site.baseurl }}/docs/features#supported-network-protocols). This library can be used stand-alone and doesn't depend on Pcap++, libpcap/WinPcap/Npcap, etc. Main classes and utilities:
 
 1. `RawPacket` - representing the raw data captured from the network
 2. `Layer` - the base class for all protocol layers. Each protocol layer is in-charge of parsing the specific bytes in the packet that belong to this protocol
@@ -35,10 +35,10 @@ A library for parsing, creating and editing packets of various [supported protoc
 ### Pcap++
 {: .no_toc }
 
-A library for intercepting and sending packets, providing network and NIC info, stats, etc. This library is mostly a C++ wrapper for packet capturing engines such as libpcap, WinPcap, DPDK and PF_RING, but also provide some unique features and capabilities that doesn't exist in any of these engines. Main classes and utilities:
+A library for intercepting and sending packets, providing network and NIC info, stats, etc. This library is mostly a C++ wrapper for packet capturing engines such as libpcap, WinPcap, Npcap, DPDK and PF_RING, but also provide some unique features and capabilities that doesn't exist in any of these engines. Main classes and utilities:
 
 1. `PcapLiveDevice` - representing a Linux/MacOS/FreeBSD network interface and enables capturing and sending packets as well as retrieving interface information
-2. `WinPcapLiveDevice` - representing a Windows network interface and contains all functionality exposed in `PcapLiveDevice`. This class actually inherits `PcapLiveDevice` and does the relevant adjustments for WinPcap and Windows OS
+2. `WinPcapLiveDevice` - representing a Windows network interface and contains all functionality exposed in `PcapLiveDevice`. This class actually inherits `PcapLiveDevice` and does the relevant adjustments for WinPcap/Npcap and Windows OS
 3. `DpdkDevice` - representing a DPDK-enabled network interface and wraps DPDK basic functionality for capturing and sending packets as well as retrieving interface information
 4. `PfRingDevice` - representing PF_RING-enabled network interface and wraps PF_RING functionality for capturing and sending packets as well as retrieving interface information
 5. `PcapRemoteDevice` - representing a network interface on a remote machine and enables to capture and send packets on this interface using the rpcap protocol. This class actually wraps [WinPcap's Remote Capture](https://www.winpcap.org/docs/docs_412/html/group__remote.html) capabilities and so available only on Windows
@@ -96,10 +96,10 @@ All of these structures and pointers are built by PcapPlusPlus packet parsing en
 
 ## Packet capture engines
 
-Capturing and sending packets is another fundamental principal in PcapPlusPlus and is the heart of the Pcap++ library. The idea is to provide a simple, easy-to-use and as similar as possible interface to capture and send packets from different types of packet capture engines. Different types can be files (pcap/pcap-ng), network interfaces via libpcap/WinPcap, DPDK-enabled interfaces, PF_RING-enabled interfaces, etc. This is not always easy because the APIs and work-flows of the different engines is sometimes very different from one another and it's difficult to keep one flow who suits them all. Also, many of the engine have specific OS and platform requirements, and this is also a challenge. The engine families currently supported are:
+Capturing and sending packets is another fundamental principal in PcapPlusPlus and is the heart of the Pcap++ library. The idea is to provide a simple, easy-to-use and as similar as possible interface to capture and send packets from different types of packet capture engines. Different types can be files (pcap/pcap-ng), network interfaces via libpcap/WinPcap/Npcap, DPDK-enabled interfaces, PF_RING-enabled interfaces, etc. This is not always easy because the APIs and work-flows of the different engines is sometimes very different from one another and it's difficult to keep one flow who suits them all. Also, many of the engine have specific OS and platform requirements, and this is also a challenge. The engine families currently supported are:
 
 - Files (pcap and pcap-ng)
-- Network interfaces using libpcap or WinPcap
+- Network interfaces using libpcap or WinPcap/Npcap
 - DPDK-enabled interfaces
 - PF_RING-enabled interfaces
 - [Remote packet capture](https://www.winpcap.org/docs/docs_412/html/group__remote.html)

@@ -52,7 +52,7 @@ PcapPlusPlus provides advanced capabilities for packet analysis which include:
 A large variety of network protocols are supported, see the full list [here](#supported-network-protocols).
 
 Packets can be analyzed from any source including those captured from the network, packets stored in PCAP/PCAPNG files, and more.
-The design of PcapPlusPlus allows similar analysis capabilities for each packet, regardless of where it came from. For example, you can write the same code for parsing packets that are captured using DPDK, libpcap, WinPcap, raw sockets or read from a PCAP/PCAPNG file. Same goes for packet crafting.
+The design of PcapPlusPlus allows similar analysis capabilities for each packet, regardless of where it came from. For example, you can write the same code for parsing packets that are captured using DPDK, libpcap, WinPcap/Npcap, raw sockets or read from a PCAP/PCAPNG file. Same goes for packet crafting.
 
 Consider this simple code snippet that shows how to read a packet from a PCAP file, parse it, identify if it's an IPv4 packet and print the source and dest IP addresses:
 

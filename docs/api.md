@@ -12,7 +12,7 @@ nav_order: 99
 PcapPlusPlus consists of 3 libraries:
 
 - __Packet++__ - a library for parsing, creating and editing network packets
-- __Pcap++__ - a library for intercepting and sending packets, providing network and NIC info, stats, etc. It is actually a C++ wrapper for packet capturing engines such as libpcap, WinPcap, DPDK and PF_RING
+- __Pcap++__ - a library for intercepting and sending packets, providing network and NIC info, stats, etc. It is actually a C++ wrapper for packet capturing engines such as libpcap, WinPcap, Npcap, DPDK and PF_RING
 - __Common++__ - a library with some common code utilities used by both Packet++ and Pcap++
 
 The dependency model between the libraries is as follows:
