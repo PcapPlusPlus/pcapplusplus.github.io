@@ -267,9 +267,9 @@ Additional Inherited Members</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0e343585711ee4e02d4b9507467135aba975b2663c8a8bcc495a71af5e80f8652"></a>LibPcapDevice&#160;</td><td class="fielddoc"><p>libPcap live device </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0e343585711ee4e02d4b9507467135aba0c8c0011ab41d3aeee8e8f1c29fd07b6"></a>WinPcapDevice&#160;</td><td class="fielddoc"><p>WinPcap live device </p>
+<tr><td class="fieldname"><a id="a0e343585711ee4e02d4b9507467135aba0c8c0011ab41d3aeee8e8f1c29fd07b6"></a>WinPcapDevice&#160;</td><td class="fielddoc"><p>WinPcap/Npcap live device </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0e343585711ee4e02d4b9507467135aba47692cc2f098676c70ad0505059f581c"></a>RemoteDevice&#160;</td><td class="fielddoc"><p>WinPcap Remote Capture device </p>
+<tr><td class="fieldname"><a id="a0e343585711ee4e02d4b9507467135aba47692cc2f098676c70ad0505059f581c"></a>RemoteDevice&#160;</td><td class="fielddoc"><p>WinPcap/Npcap Remote Capture device </p>
 </td></tr>
 </table>
 
@@ -464,7 +464,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The type of the device (libPcap, WinPcap or a remote device) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The type of the device (libPcap, WinPcap/Npcap or a remote device) </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classpcpp_1_1_pcap_remote_device.html#ac9fbb47073b9d1bf8b50aa2dd0a68a87">pcpp::PcapRemoteDevice</a>, and <a class="el" href="classpcpp_1_1_win_pcap_live_device.html#a86b56db9d815fc8c6017c9a1232554ed">pcpp::WinPcapLiveDevice</a>.</p>
 
@@ -772,7 +772,7 @@ Additional Inherited Members</h2></td></tr>
 <li>Device is not opened</li>
 <li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is 0</li>
 <li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is larger than device MTU</li>
-<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> could not be sent due to some error in libpcap/WinPcap </li>
+<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> could not be sent due to some error in libpcap/WinPcap/Npcap </li>
 </ul>
 </dd></dl>
 
@@ -803,7 +803,7 @@ Additional Inherited Members</h2></td></tr>
 <li>Device is not opened</li>
 <li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is 0</li>
 <li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is larger than device MTU</li>
-<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> could not be sent due to some error in libpcap/WinPcap </li>
+<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> could not be sent due to some error in libpcap/WinPcap/Npcap </li>
 </ul>
 </dd></dl>
 
@@ -834,7 +834,7 @@ Additional Inherited Members</h2></td></tr>
 <li>Device is not opened</li>
 <li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is 0</li>
 <li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is larger than device MTU</li>
-<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> could not be sent due to some error in libpcap/WinPcap </li>
+<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> could not be sent due to some error in libpcap/WinPcap/Npcap </li>
 </ul>
 </dd></dl>
 
@@ -873,7 +873,7 @@ Additional Inherited Members</h2></td></tr>
 <li>Device is not opened. In this case no packets will be sent, return value will be 0</li>
 <li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is 0</li>
 <li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is larger than device MTU</li>
-<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> could not be sent due to some error in libpcap/WinPcap </li>
+<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> could not be sent due to some error in libpcap/WinPcap/Npcap </li>
 </ul>
 </dd></dl>
 
@@ -923,7 +923,7 @@ Additional Inherited Members</h2></td></tr>
 <li>Device is not opened. In this case no packets will be sent, return value will be 0</li>
 <li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is 0</li>
 <li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is larger than device MTU</li>
-<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> could not be sent due to some error in libpcap/WinPcap </li>
+<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> could not be sent due to some error in libpcap/WinPcap/Npcap </li>
 </ul>
 </dd></dl>
 
@@ -973,7 +973,7 @@ Additional Inherited Members</h2></td></tr>
 <li>Device is not opened. In this case no packets will be sent, return value will be 0</li>
 <li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is 0</li>
 <li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is larger than device MTU</li>
-<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> could not be sent due to some error in libpcap/WinPcap </li>
+<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> could not be sent due to some error in libpcap/WinPcap/Npcap </li>
 </ul>
 </dd></dl>
 
@@ -1277,7 +1277,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a></li>
-    <li class="footer">Generated on Wed Feb 19 2020 01:34:11 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Feb 25 2020 23:34:07 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

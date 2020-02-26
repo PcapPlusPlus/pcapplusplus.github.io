@@ -139,7 +139,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class that creates, stores and provides access to all instances of <a class="el" href="classpcpp_1_1_pcap_remote_device.html">PcapRemoteDevice</a> for a certain remote machine. To get an instance of this class use one of the static methods of <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a1655fb0326960cceec95db75ddaed0a3">getRemoteDeviceList()</a>. These methods creates a <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html">PcapRemoteDeviceList</a> instance for the certain remote machine which holds a list of <a class="el" href="classpcpp_1_1_pcap_remote_device.html">PcapRemoteDevice</a> instances, one for each remote network interface. Note there is not a public constructor for this class, so the only way to get an instance of it is through <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a1655fb0326960cceec95db75ddaed0a3">getRemoteDeviceList()</a>. After getting this object, this class provides ways to access the <a class="el" href="classpcpp_1_1_pcap_remote_device.html">PcapRemoteDevice</a> instances: either through IP address of the remote network interface or by iterating the <a class="el" href="classpcpp_1_1_pcap_remote_device.html">PcapRemoteDevice</a> instances (through the <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a17e3146371657cb2bf427c345ef8701a">PcapRemoteDeviceList::RemoteDeviceListIterator</a> iterator)<br  />
- Since Remote Capture is supported in WinPcap only, this class is available in Windows only </p>
+ Since Remote Capture is supported in WinPcap and Npcap only, this class is available in Windows only </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a9cfb21ecc08849c812b6ab6115071969"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9cfb21ecc08849c812b6ab6115071969">&#9670;&nbsp;</a></span>ConstRemoteDeviceListIterator</h2>
@@ -419,8 +419,8 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html">PcapRemoteDeviceList</a>, or NULL if (an appropriate error will be printed to log in each case):<ul>
 <li>IP address provided is NULL or not valid</li>
-<li>WinPcap encountered an error in creating the remote connection string</li>
-<li>WinPcap encountered an error connecting to the rpcapd daemon on the remote machine or retrieving devices on the remote machine </li>
+<li>WinPcap/Npcap encountered an error in creating the remote connection string</li>
+<li>WinPcap/Npcap encountered an error connecting to the rpcapd daemon on the remote machine or retrieving devices on the remote machine </li>
 </ul>
 </dd></dl>
 
@@ -475,8 +475,8 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html">PcapRemoteDeviceList</a>, or NULL if (an appropriate error will be printed to log in each case):<ul>
 <li>IP address provided is NULL or not valid</li>
-<li>WinPcap encountered an error in creating the remote connection string</li>
-<li>WinPcap encountered an error connecting to the rpcapd daemon on the remote machine or retrieving devices on the remote machine </li>
+<li>WinPcap/Npcap encountered an error in creating the remote connection string</li>
+<li>WinPcap/Npcap encountered an error connecting to the rpcapd daemon on the remote machine or retrieving devices on the remote machine </li>
 </ul>
 </dd></dl>
 
@@ -540,7 +540,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html">PcapRemoteDeviceList</a></li>
-    <li class="footer">Generated on Wed Feb 19 2020 01:34:12 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Feb 25 2020 23:34:07 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>
