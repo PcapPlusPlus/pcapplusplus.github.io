@@ -18,6 +18,6 @@ var classpcpp_1_1_raw_packet =
     [ "operator=", "classpcpp_1_1_raw_packet.html#afc8278a0208727a579a122f197c4d02e", null ],
     [ "reallocateData", "classpcpp_1_1_raw_packet.html#acd9248a47bd60427e2a3ef34b379a28e", null ],
     [ "removeData", "classpcpp_1_1_raw_packet.html#a9cf289e6bbf461f55c20784615c899ce", null ],
-    [ "setRawData", "classpcpp_1_1_raw_packet.html#aa11e800ab071df0a3c1c329868aea5a7", null ],
-    [ "setRawData", "classpcpp_1_1_raw_packet.html#a6babfc371bd3b9eac8c741cba5e097f6", null ]
+    [ "setRawData", "classpcpp_1_1_raw_packet.html#a6babfc371bd3b9eac8c741cba5e097f6", null ],
+    [ "setRawData", "classpcpp_1_1_raw_packet.html#aa11e800ab071df0a3c1c329868aea5a7", null ]
 ];

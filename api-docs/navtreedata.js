@@ -1,25 +1,3 @@
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this file.
-
-Copyright (C) 1997-2019 by Dimitri van Heesch
-
-This program is free software; you can redistribute it and/or modify
-it under the terms of version 2 of the GNU General Public License as published by
-the Free Software Foundation
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along
-with this program; if not, write to the Free Software Foundation, Inc.,
-51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-
-@licend  The above is the entire license notice
-for the JavaScript code in this file
-*/
 var NAVTREE =
 [
   [ "PcapPlusPlus", "index.html", [
@@ -48,8 +26,8 @@ var NAVTREE =
         [ "Enumerator", "functions_eval.html", "functions_eval" ]
       ] ]
     ] ],
-    [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ],
+    [ "Files", null, [
+      [ "File List", "files.html", "files" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", null ],
@@ -69,13 +47,13 @@ var NAVTREEINDEX =
 "classpcpp_1_1_dhcp_layer.html#a01006bfc89d6c5da44ac91e2bdc93f37",
 "classpcpp_1_1_generic_dns_resource_data.html#a3b4027f8f5860834cb55c9b2477d0b49",
 "classpcpp_1_1_i_p_reassembly.html#aae7f2e113808978827abf3b7cdbe91af",
-"classpcpp_1_1_icmp_layer.html#ad854fa2f6bfb1f33f97ec334965811e4",
-"classpcpp_1_1_p_p_po_e_discovery_layer.html#a8d139ed7175ce23efc4d2882fc008950",
-"classpcpp_1_1_pf_ring_device_list.html#a528af6c800a69fc2ff486c98ac546052",
-"classpcpp_1_1_sdp_layer.html#aab3f6a256318dbfb96439d6b48807b81",
-"classpcpp_1_1_tcp_reassembly.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9",
-"structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html",
-"structpcpp_1_1igmpv3__query__header.html#a8dc4203d2ced448835c4adeb44185ba6"
+"classpcpp_1_1_icmp_layer.html#aee8658b95eb0dbad0855e6f4493fd6c3",
+"classpcpp_1_1_p_p_po_e_discovery_layer.html#ab98cc2796e3d415851e9a2edfa4530b1",
+"classpcpp_1_1_pointer_vector.html#a15e41c4b220465138e47b5083098e30e",
+"classpcpp_1_1_sip_layer.html#a90175ec72bb951b9d3f1f43fc74820f3",
+"classpcpp_1_1_tcp_stream_data.html#a9127da60ec1389a40f517e23b2566528",
+"structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html#a7be0c63ba880f0b603cad0355e8f9a04",
+"structpcpp_1_1igmpv3__query__header.html#adb78f71a90f2ecd2276d28258a2ce1d0"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

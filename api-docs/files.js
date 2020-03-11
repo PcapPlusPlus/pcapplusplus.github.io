@@ -1,4 +1,4 @@
-var files_dup =
+var files =
 [
     [ "ArpLayer.h", "_arp_layer_8h.html", "_arp_layer_8h" ],
     [ "Device.h", "_device_8h.html", "_device_8h" ],
