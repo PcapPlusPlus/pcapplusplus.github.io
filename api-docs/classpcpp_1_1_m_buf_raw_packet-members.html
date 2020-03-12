@@ -115,6 +115,8 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_m_buf_raw_packet.html','
   <tr><td class="entry"><a class="el" href="classpcpp_1_1_m_buf_raw_packet.html#ac8984ba4413680165a38d13bdd853987">reallocateData</a>(size_t newBufferLength)</td><td class="entry"><a class="el" href="classpcpp_1_1_m_buf_raw_packet.html">pcpp::MBufRawPacket</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_m_buf_raw_packet.html#a3895fef553d8345e18b7f97e52f1a10d">removeData</a>(int atIndex, size_t numOfBytesToRemove)</td><td class="entry"><a class="el" href="classpcpp_1_1_m_buf_raw_packet.html">pcpp::MBufRawPacket</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classpcpp_1_1_m_buf_raw_packet.html#a6d4727b09d81aed644524a190c4a39db">setFreeMbuf</a>(bool val=true)</td><td class="entry"><a class="el" href="classpcpp_1_1_m_buf_raw_packet.html">pcpp::MBufRawPacket</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_raw_packet.html#af487937f955cf1597772228e9ae99729">setPacketTimeStamp</a>(timeval timestamp)</td><td class="entry"><a class="el" href="classpcpp_1_1_raw_packet.html">pcpp::RawPacket</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classpcpp_1_1_raw_packet.html#ade226b4fed36009d01190439430e48a2">setPacketTimeStamp</a>(timespec timestamp)</td><td class="entry"><a class="el" href="classpcpp_1_1_raw_packet.html">pcpp::RawPacket</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_m_buf_raw_packet.html#ab2a9026bb43a9255fadb43ca5c398dfd">setRawData</a>(const uint8_t *pRawData, int rawDataLen, timespec timestamp, LinkLayerType layerType=LINKTYPE_ETHERNET, int frameLength=-1)</td><td class="entry"><a class="el" href="classpcpp_1_1_m_buf_raw_packet.html">pcpp::MBufRawPacket</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classpcpp_1_1_raw_packet.html#a6babfc371bd3b9eac8c741cba5e097f6">pcpp::RawPacket::setRawData</a>(const uint8_t *pRawData, int rawDataLen, timeval timestamp, LinkLayerType layerType=LINKTYPE_ETHERNET, int frameLength=-1)</td><td class="entry"><a class="el" href="classpcpp_1_1_raw_packet.html">pcpp::RawPacket</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_m_buf_raw_packet.html#a696d9e42af3f7b8ea296e4137a019a13">~MBufRawPacket</a>()</td><td class="entry"><a class="el" href="classpcpp_1_1_m_buf_raw_packet.html">pcpp::MBufRawPacket</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
@@ -124,7 +126,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_m_buf_raw_packet.html','
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Mar 11 2020 09:15:04 for PcapPlusPlus by
+    <li class="footer">Generated on Thu Mar 12 2020 09:41:49 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

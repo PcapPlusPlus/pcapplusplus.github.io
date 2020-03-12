@@ -131,6 +131,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a19819af25bdac6217aad301b7b243b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ccee8471600cd6ed14c184b3252b469"><td class="memItemLeft" align="right" valign="top">timespec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#a6ccee8471600cd6ed14c184b3252b469">getPacketTimeStamp</a> () const</td></tr>
 <tr class="separator:a6ccee8471600cd6ed14c184b3252b469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af487937f955cf1597772228e9ae99729"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#af487937f955cf1597772228e9ae99729">setPacketTimeStamp</a> (timeval timestamp)</td></tr>
+<tr class="separator:af487937f955cf1597772228e9ae99729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade226b4fed36009d01190439430e48a2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#ade226b4fed36009d01190439430e48a2">setPacketTimeStamp</a> (timespec timestamp)</td></tr>
+<tr class="separator:ade226b4fed36009d01190439430e48a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2de0b9094569c2505cf590d8ab50f45"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#ad2de0b9094569c2505cf590d8ab50f45">isPacketSet</a> () const</td></tr>
 <tr class="separator:ad2de0b9094569c2505cf590d8ab50f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6b169b02bda40e90279e7d8f6816e41"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#ab6b169b02bda40e90279e7d8f6816e41">clear</a> ()</td></tr>
@@ -746,6 +750,72 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="af487937f955cf1597772228e9ae99729"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af487937f955cf1597772228e9ae99729">&#9670;&nbsp;</a></span>setPacketTimeStamp() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool pcpp::RawPacket::setPacketTimeStamp </td>
+          <td>(</td>
+          <td class="paramtype">timeval&#160;</td>
+          <td class="paramname"><em>timestamp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set raw packet timestamp with usec precision </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timestamp</td><td>The timestamp to set (with usec precision) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if timestamp was set successfully, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="ade226b4fed36009d01190439430e48a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade226b4fed36009d01190439430e48a2">&#9670;&nbsp;</a></span>setPacketTimeStamp() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool pcpp::RawPacket::setPacketTimeStamp </td>
+          <td>(</td>
+          <td class="paramtype">timespec&#160;</td>
+          <td class="paramname"><em>timestamp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set raw packet timestamp with nsec precision </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timestamp</td><td>The timestamp to set (with nsec precision) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if timestamp was set successfully, false otherwise </dd></dl>
+
+</div>
+</div>
 <a id="a6babfc371bd3b9eac8c741cba5e097f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6babfc371bd3b9eac8c741cba5e097f6">&#9670;&nbsp;</a></span>setRawData() <span class="overload">[1/2]</span></h2>
 
@@ -884,7 +954,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a></li>
-    <li class="footer">Generated on Wed Mar 11 2020 09:15:04 for PcapPlusPlus by
+    <li class="footer">Generated on Thu Mar 12 2020 09:41:50 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
