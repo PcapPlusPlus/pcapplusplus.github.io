@@ -29,6 +29,7 @@ In order to build PcapPlusPlus on Windows with Visual Studio you need the follow
 4. In many cases you also need to download and install:
   - [Microsoft Visual C++ Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads) for your version of Visual Studio
   - [Microsoft Visual C++ 2010 Redistributable](https://www.microsoft.com/en-us/download/confirmation.aspx?id=14632)
+5. OPTIONAL - download [zstd](https://github.com/facebook/zstd) libraries if you wish to enable PCAPNG streaming compression support
 
 ## Visual Studio project structure
 
@@ -89,6 +90,10 @@ If you didn't download it already, please download it from here: ftp://sourcewar
 
 Please specify pthreads-win32 path: C:\pthread-win32
 
+ZStd compression support may be added when compiling PcapPlusPlus.
+For downloading ZStd SDK (developer's pack) please go to https://github.com/facebook/zstd/releases
+Please specify ZStd SDK path or type "no" to build without ZStd: C:\Zstd
+
 PcapPlusPlus Visual Studio configuration is complete. Files created (or modified): PcapPlusPlusPropertySheet.props, Arping.vcxproj,
 ArpSpoofing.vcxproj, Common++.vcxproj, DNSResolver.vcxproj, DnsSpoofing.vcxproj, HttpAnalyzer.vcxproj, IcmpFileTransfer-catcher.vcxproj,
 IcmpFileTransfer-pitcher.vcxproj, IPDefragUtil.vcxproj, IPFragUtil.vcxproj, LightPcapNg.vcxproj, Packet++.vcxproj, Packet++Test.vcxproj,
@@ -120,6 +125,7 @@ The following switches are recognized:
 -v|--vs-version      --Set Visual Studio version to configure. Must be one of: vs2015, vs2017, vs2019
 -p|--pthreads-home   --Set pthreads-win32 home directory
 -w|--pcap-sdk        --Set WinPcap/Npcap SDK directory
+-z|--zstd-sdk        --Set ZStd SDK directory
 -h|--help            --Display this help message and exits. No further actions are performed
 ```
 
@@ -146,6 +152,7 @@ Here are the available switches:
 | __`-v`__ , __`--vs-version`__    | Visual Studio version to configure.<br>Currently supported versions are: `vs2015`, `vs2017`, `vs2019` |
 | __`-p`__ , __`--pthreads-home`__ | pthreads-win32 home directory |
 | __`-w`__ , __`--pcap-sdk`__      | Path to WinPcap Developer Pack (WpdPack) OR Npcap SDK |
+| __`-z`__ , __`--zstd-sdk`__      | Path to ZStd SDK directory |
 | __`-h`__ , __`--help`__          | Display the help message and exit. No further actions are performed |
 
 ## Build the code
