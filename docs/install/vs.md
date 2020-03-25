@@ -29,6 +29,7 @@ In order to build PcapPlusPlus on Windows with Visual Studio you need the follow
 4. In many cases you also need to download and install:
   - [Microsoft Visual C++ Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads) for your version of Visual Studio
   - [Microsoft Visual C++ 2010 Redistributable](https://www.microsoft.com/en-us/download/confirmation.aspx?id=14632)
+5. OPTIONAL - download [Zstd](https://github.com/facebook/zstd/releases/latest) libraries if you wish to enable [PCAPNG streaming compression support]({{ site.baseurl }}/docs/features#readingwriting-pcapng-files-with-compression)
 
 ## Visual Studio project structure
 
@@ -120,6 +121,7 @@ The following switches are recognized:
 -v|--vs-version      --Set Visual Studio version to configure. Must be one of: vs2015, vs2017, vs2019
 -p|--pthreads-home   --Set pthreads-win32 home directory
 -w|--pcap-sdk        --Set WinPcap/Npcap SDK directory
+-z|--zstd-sdk        --Set ZStd SDK directory
 -h|--help            --Display this help message and exits. No further actions are performed
 ```
 
@@ -146,6 +148,7 @@ Here are the available switches:
 | __`-v`__ , __`--vs-version`__    | Visual Studio version to configure.<br>Currently supported versions are: `vs2015`, `vs2017`, `vs2019` |
 | __`-p`__ , __`--pthreads-home`__ | pthreads-win32 home directory |
 | __`-w`__ , __`--pcap-sdk`__      | Path to WinPcap Developer Pack (WpdPack) OR Npcap SDK |
+| __`-z`__ , __`--zstd-sdk`__      | Path to Zstd SDK directory. This is an optional parameter that is required only if using [Zstd for PCAPNG streaming compression]({{ site.baseurl }}/docs/features#readingwriting-pcapng-files-with-compression) |
 | __`-h`__ , __`--help`__          | Display the help message and exit. No further actions are performed |
 
 ## Build the code

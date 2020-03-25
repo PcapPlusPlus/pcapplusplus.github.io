@@ -105,12 +105,13 @@ int main(int argc, char* argv[])
 
 Network packets can be stored in files, usually for offline analysis. [PCAP](https://wiki.wireshark.org/Development/LibpcapFileFormat) and [PCAPNG](https://github.com/pcapng/pcapng) are the two most popular file formats and both are supported in PcapPlusPlus.
 
-The main feature include:
+The main features include:
 
 - Read packets from PCAP/PCAPNG files
-- Use the [packet filtering mechanism](#packet-filtering) to read only packets that match the filter
 - Create new PCAP/PCAPNG files and write packets to them
+- Use the [packet filtering mechanism](#packet-filtering) to read or write only packets that match the filter
 - Append packets to existing PCAP/PCAPNG files
+- Write compressed PCAPNG files using [Zstd](https://facebook.github.io/zstd/) compression in real time (OPTIONAL and requires building with Zstd)
 
 Consider this simple code snippet that shows how to open a PCAP file for reading and another PCAPNG file for writing, and then read all packets from the PCAP file and write them to the PCAPNG file:
 
@@ -130,9 +131,46 @@ pcpp::RawPacket rawPacket;
 while (pcapReader->getNextPacket(rawPacket)) {
   pcapNgWriter.writePacket(rawPacket);
 }
+
+pcapNgReader.close(); //These will close when going out of scope
+pcapNgWriter.close(); //or you may close them manually
 ```
 
 For more information please refer to the [Read/Write Pcap Files tutorial]({{ site.baseurl }}/docs/tutorials/read-write-pcap), look at the [API documentation]({{ site.baseurl }}/docs/api) or browse through the code of the [example apps]({{ site.baseurl }}/docs/examples).
+
+### Reading/Writing PCAPNG files with compression
+{: .no_toc }
+
+Zstd streaming compression is only supported when working with pcapng files. To enable this feature you must build PcapPlusPlus with Zstd support. For more guidance on building PcapPlusPlus see the [build instructions per platform]({{ site.baseurl }}/docs/install).
+
+Once you have a working build modifying your code to start enabling compression is fast and easy!
+
+When writing PCAPNG files, to enable streaming compression all you need to do is add a second integer argument when constructing your writer. The integer should be between 0-10 and it specifies the compression level. Values outside this range will be clamped. A value of zero, which is also the default, indicates to skip compression. A value of 10 would indicate use maximum compression. For most scenarios a value of 5 or less should be adequate. 
+
+For reading compressed PCAPNG files the only requirement is that the file name extension must terminate in `.zstd`. If a compressed file is supplied to the reader without the `.zstd` extension the file will fail to load. Currently, APPENDING to a compressed file is NOT supported!
+
+If you write code enabling compression, by adding a compression level to your writer constructor, but use a build of PcapPlusPlus without compression support, everything will work just fine and the compression will be skipped/ignored and normal PCAPNG files will be generated/read.
+
+There is a tradeoff between compression speed and compression efficiency. A compression value of 10 will yield the most compression but be slower, while a value of 1 will yield the least compression but be fastest. Depending upon your capture rates and data size you can tune this number to fit your needs. 
+
+Since Zstd is designed to support fast and efficient streaming compression most users should not see any noticeable performance impact when enabling compression. Exact savings from compression will always vary based upon the input data, however; in one test case an uncompressed PCAPNG file of 140MB was duplicated with a compression level of 5 to yield a compressed PCAPNG file of only 40MB giving about 4x space savings! Note that the compression is performed while the file is written so you will not notice any delay when closing the file or a long processing time like you work normally experience when compressing an existing file.
+
+Some example compression code:
+
+```cpp
+// create a pcapng file reader
+pcpp::PcapNgFileReaderDevice reader("input.pcap.zstd");  //Notice the Zstd extension
+reader.open();                                           //This is required for proper loading
+
+// create a pcapng file writer
+pcpp::PcapNgFileWriterDevice writer("output.pcapng.zstd", 5);  //The second integer argument 5
+pcapNgWriter.open();                                           //is the compression level to use
+
+// read packets from pcapng reader and write pcapng writer
+while (reader->getNextPacket(rawPacket)) {
+  writer.writePacket(rawPacket);
+}
+```
 
 ## DPDK support
 
