@@ -33,6 +33,8 @@ In order to compile PcapPlusPlus on Linux please make sure you have the followin
 
 2. `libstdc++-static` package. If it's not already installed you can install it using `apt-get` or `yum`
 
+3. __OPTIONAL__ - download and install [Zstd](https://github.com/facebook/zstd/releases/latest) if you wish to enable [PCAPNG streaming compression support]({{ site.baseurl }}/docs/features#readingwriting-pcapng-files-with-compression)
+
 ## Configuration
 
 Run the configuration script from PcapPlusPlus main directory:
@@ -89,6 +91,7 @@ You an view all available switches by running `./configure-linux.sh --help` or `
 | __`--set-direction-enabled`__ | set direction for capturing incoming or outgoing packets (supported on libpcap>=0.9.1) |
 | __`--install-dir`__           | set a custom installation directory. Default is `/usr/local` |
 | __`--libpcap-include-dir`__   | libpcap header files directory. This parameter is optional and if omitted PcapPlusPlus will look for the header files in the default include paths |
+| __`--use-zstd`__              | use [Zstd for PCAPNG streaming compression]({{ site.baseurl }}/docs/features#readingwriting-pcapng-files-with-compression). This parameter is optional |
 | __`--libpcap-lib-dir`__       | libpcap pre compiled lib directory. This parameter is optional and if omitted PcapPlusPlus will look for the lib file in the default lib paths |
 | __`-h`__, __`--help`__        | displays a help message and exits. No further actions are performed |
 
@@ -134,6 +137,12 @@ Provide a custom installation directory:
 
 ```shell
 ./configure-linux.sh --install-dir /home/myuser/my-install-dir
+```
+
+Use Zstd for pcapng compression:
+
+```shell
+./configure-linux.sh --use-zstd
 ```
 
 ## Build the code
