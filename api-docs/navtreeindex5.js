@@ -45,6 +45,7 @@ var NAVTREEINDEX5 =
 "classpcpp_1_1_dhcp_option_builder.html#a2ac0ea2086b71e28c4d920bea97248bf":[2,0,0,11,7],
 "classpcpp_1_1_dhcp_option_builder.html#a3b35901811e8f40c468714ca63c0d788":[2,0,0,11,0],
 "classpcpp_1_1_dhcp_option_builder.html#a6900bf2202939f4079adb606c94074a3":[2,0,0,11,4],
+"classpcpp_1_1_dhcp_option_builder.html#a93cf71a6823d506c7603e65445f9b6c7":[2,0,0,11,8],
 "classpcpp_1_1_dhcp_option_builder.html#aab1c66aab7c9755f25983a96c13d2090":[2,0,0,11,1],
 "classpcpp_1_1_dhcp_option_builder.html#ac933fad864e8c5862e9def4849b2a529":[2,0,0,11,5],
 "classpcpp_1_1_dhcp_option_builder.html#ad30f05144cb3a55b0bd81a23387a49ec":[2,0,0,11,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "classpcpp_1_1_general_filter.html#aba731757009c1ce8db973aa334634765":[2,0,0,25,0],
 "classpcpp_1_1_general_filter.html#ae38fb802a74a1d9b7d7025b1b5cb83e5":[2,0,0,25,3],
 "classpcpp_1_1_generic_dns_resource_data.html":[2,0,0,26],
-"classpcpp_1_1_generic_dns_resource_data.html#a002904e1c014581b87277fcf23b3ae4f":[2,0,0,26,2],
-"classpcpp_1_1_generic_dns_resource_data.html#a30abd7ed0f3978921bf37de923cced04":[2,0,0,26,4]
+"classpcpp_1_1_generic_dns_resource_data.html#a002904e1c014581b87277fcf23b3ae4f":[2,0,0,26,2]
 };

@@ -9,6 +9,7 @@ var classpcpp_1_1_i_p_reassembly_1_1_i_pv6_packet_key =
     [ "getHashValue", "classpcpp_1_1_i_p_reassembly_1_1_i_pv6_packet_key.html#a52b084bd8614b144dd6db64e422d030b", null ],
     [ "getProtocolType", "classpcpp_1_1_i_p_reassembly_1_1_i_pv6_packet_key.html#a8bd1215cb8650f04f6c7f413560fe721", null ],
     [ "getSrcIP", "classpcpp_1_1_i_p_reassembly_1_1_i_pv6_packet_key.html#abcda018257f8963ed2da6784dc90fc94", null ],
+    [ "operator=", "classpcpp_1_1_i_p_reassembly_1_1_i_pv6_packet_key.html#a55b49a2b8072bf2ad13a0fa7dbb08b85", null ],
     [ "setDstIP", "classpcpp_1_1_i_p_reassembly_1_1_i_pv6_packet_key.html#a6c8a2dce07c7400b8f3c65690a91bc31", null ],
     [ "setFragmentID", "classpcpp_1_1_i_p_reassembly_1_1_i_pv6_packet_key.html#a119538594a7d628188a4c1d15a559f52", null ],
     [ "setSrcIP", "classpcpp_1_1_i_p_reassembly_1_1_i_pv6_packet_key.html#a202e018f03c490126cabe6a5ceb07f2a", null ]

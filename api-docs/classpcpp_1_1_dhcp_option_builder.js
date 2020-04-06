@@ -7,5 +7,6 @@ var classpcpp_1_1_dhcp_option_builder =
     [ "DhcpOptionBuilder", "classpcpp_1_1_dhcp_option_builder.html#a6900bf2202939f4079adb606c94074a3", null ],
     [ "DhcpOptionBuilder", "classpcpp_1_1_dhcp_option_builder.html#ac933fad864e8c5862e9def4849b2a529", null ],
     [ "DhcpOptionBuilder", "classpcpp_1_1_dhcp_option_builder.html#ad796afde8b590479f6e33e6d0cae2f52", null ],
-    [ "build", "classpcpp_1_1_dhcp_option_builder.html#a2ac0ea2086b71e28c4d920bea97248bf", null ]
+    [ "build", "classpcpp_1_1_dhcp_option_builder.html#a2ac0ea2086b71e28c4d920bea97248bf", null ],
+    [ "operator=", "classpcpp_1_1_dhcp_option_builder.html#a93cf71a6823d506c7603e65445f9b6c7", null ]
 ];

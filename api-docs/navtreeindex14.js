@@ -1,5 +1,10 @@
 var NAVTREEINDEX14 =
 {
+"structpcpp_1_1igmpv3__group__record.html#ac0a94620acece7ad93e2fe363d2f2115":[2,0,0,68,6],
+"structpcpp_1_1igmpv3__query__header.html":[2,0,0,69],
+"structpcpp_1_1igmpv3__query__header.html#a4fe7696bd29ced6d22ebf989e39ca985":[2,0,0,69,6],
+"structpcpp_1_1igmpv3__query__header.html#a8dc4203d2ced448835c4adeb44185ba6":[2,0,0,69,1],
+"structpcpp_1_1igmpv3__query__header.html#a909159a3c05865d63fc33c3e67e2bdca":[2,0,0,69,4],
 "structpcpp_1_1igmpv3__query__header.html#ab81028868f6fe62669597446edbcf116":[2,0,0,69,3],
 "structpcpp_1_1igmpv3__query__header.html#ac039bf95f65102c14937f2e41839d3f4":[2,0,0,69,5],
 "structpcpp_1_1igmpv3__query__header.html#adb78f71a90f2ecd2276d28258a2ce1d0":[2,0,0,69,0],

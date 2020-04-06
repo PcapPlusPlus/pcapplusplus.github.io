@@ -7,5 +7,6 @@ var classpcpp_1_1_radius_attribute_builder =
     [ "RadiusAttributeBuilder", "classpcpp_1_1_radius_attribute_builder.html#ab89689baf3708d7d174bcfb0eb972865", null ],
     [ "RadiusAttributeBuilder", "classpcpp_1_1_radius_attribute_builder.html#a68d5fa00501aa516a851c9b5b0de8998", null ],
     [ "RadiusAttributeBuilder", "classpcpp_1_1_radius_attribute_builder.html#abc074bbecb7823ab1f8e1dc8647e9c62", null ],
-    [ "build", "classpcpp_1_1_radius_attribute_builder.html#a18dae925eac2f705b8fa68eb12507b17", null ]
+    [ "build", "classpcpp_1_1_radius_attribute_builder.html#a18dae925eac2f705b8fa68eb12507b17", null ],
+    [ "operator=", "classpcpp_1_1_radius_attribute_builder.html#a0a531fb82da4c38e27347027e41d002b", null ]
 ];

@@ -9,6 +9,7 @@ var classpcpp_1_1_i_p_reassembly_1_1_i_pv4_packet_key =
     [ "getIpID", "classpcpp_1_1_i_p_reassembly_1_1_i_pv4_packet_key.html#a44c217b52b1da7e56ca08075290de21d", null ],
     [ "getProtocolType", "classpcpp_1_1_i_p_reassembly_1_1_i_pv4_packet_key.html#a48cfba0896917ecb38c57ec8cf6bdba9", null ],
     [ "getSrcIP", "classpcpp_1_1_i_p_reassembly_1_1_i_pv4_packet_key.html#a8d904da586815e00a13b233b4e253e7a", null ],
+    [ "operator=", "classpcpp_1_1_i_p_reassembly_1_1_i_pv4_packet_key.html#a1b5a8446a2f7772e8f233658c891a8de", null ],
     [ "setDstIP", "classpcpp_1_1_i_p_reassembly_1_1_i_pv4_packet_key.html#a3f08e39cd7a151f1006521e8b29dfd8a", null ],
     [ "setIpID", "classpcpp_1_1_i_p_reassembly_1_1_i_pv4_packet_key.html#ab1b8c2f9bd9e928290667b576ed0be81", null ],
     [ "setSrcIP", "classpcpp_1_1_i_p_reassembly_1_1_i_pv4_packet_key.html#a6f19f3d1f0e173d7cd36bbebc0c8f455", null ]
