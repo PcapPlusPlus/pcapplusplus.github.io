@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['genericdnsresourcedata',['GenericDnsResourceData',['../classpcpp_1_1_generic_dns_resource_data.html#a98b9ed21ecd5e1a1fd503a91ec3df502',1,'pcpp::GenericDnsResourceData::GenericDnsResourceData(uint8_t *dataPtr, size_t dataLen)'],['../classpcpp_1_1_generic_dns_resource_data.html#a3b4027f8f5860834cb55c9b2477d0b49',1,'pcpp::GenericDnsResourceData::GenericDnsResourceData(const std::string &amp;dataAsHexString)']]],
+  ['genericdnsresourcedata',['GenericDnsResourceData',['../classpcpp_1_1_generic_dns_resource_data.html#a98b9ed21ecd5e1a1fd503a91ec3df502',1,'pcpp::GenericDnsResourceData::GenericDnsResourceData(uint8_t *dataPtr, size_t dataLen)'],['../classpcpp_1_1_generic_dns_resource_data.html#a3b4027f8f5860834cb55c9b2477d0b49',1,'pcpp::GenericDnsResourceData::GenericDnsResourceData(const std::string &amp;dataAsHexString)'],['../classpcpp_1_1_generic_dns_resource_data.html#af5e9af4b57f24bf19f0ff12ae1c76458',1,'pcpp::GenericDnsResourceData::GenericDnsResourceData(const GenericDnsResourceData &amp;other)']]],
   ['get',['get',['../classpcpp_1_1_app_name.html#a30f6c2d310a92ef8c44b3867cdb66afd',1,'pcpp::AppName']]],
   ['getacknowledgmentnum',['getAcknowledgmentNum',['../classpcpp_1_1_g_r_ev1_layer.html#a7f1a5c683711e5847fa04d2916bed59e',1,'pcpp::GREv1Layer']]],
   ['getadditionalrecord',['getAdditionalRecord',['../classpcpp_1_1_dns_layer.html#a5f5c565893d83e77bfd9c8d1bdbc6138',1,'pcpp::DnsLayer']]],

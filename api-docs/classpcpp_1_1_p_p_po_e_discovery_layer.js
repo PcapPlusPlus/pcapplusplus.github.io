@@ -23,7 +23,6 @@ var classpcpp_1_1_p_p_po_e_discovery_layer =
     ] ],
     [ "PPPoEDiscoveryLayer", "classpcpp_1_1_p_p_po_e_discovery_layer.html#a30967ebf61dace6cfb3a0f812fbc19c8", null ],
     [ "PPPoEDiscoveryLayer", "classpcpp_1_1_p_p_po_e_discovery_layer.html#ab98cc2796e3d415851e9a2edfa4530b1", null ],
-    [ "PPPoEDiscoveryLayer", "classpcpp_1_1_p_p_po_e_discovery_layer.html#a598680e07a14986aa2440c2d2c16b73a", null ],
     [ "addTag", "classpcpp_1_1_p_p_po_e_discovery_layer.html#a090600ca117327539dc8ac9f678bb0e1", null ],
     [ "addTagAfter", "classpcpp_1_1_p_p_po_e_discovery_layer.html#af7312700ff11218fa02a81d33608730a", null ],
     [ "getFirstTag", "classpcpp_1_1_p_p_po_e_discovery_layer.html#ae1c5c991e669ce6b05f8c14450468ae0", null ],
