@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['vectoriterator',['VectorIterator',['../classpcpp_1_1_pointer_vector.html#acf7704583e3f0dd0bce8adbe4d78c5b0',1,'pcpp::PointerVector']]]
+  ['rawpacketvector',['RawPacketVector',['../namespacepcpp.html#a4c0775fb93a0867d2afa7992d55957f0',1,'pcpp']]],
+  ['remotedevicelistiterator',['RemoteDeviceListIterator',['../classpcpp_1_1_pcap_remote_device_list.html#a17e3146371657cb2bf427c345ef8701a',1,'pcpp::PcapRemoteDeviceList']]]
 ];

@@ -1,6 +1,8 @@
 var classpcpp_1_1_i_pv4_address =
 [
+    [ "ipv4_octets", "structpcpp_1_1_i_pv4_address_1_1ipv4__octets.html", "structpcpp_1_1_i_pv4_address_1_1ipv4__octets" ],
     [ "IPv4Address", "classpcpp_1_1_i_pv4_address.html#a7eef864e1a372d665a27de6189901e1e", null ],
+    [ "IPv4Address", "classpcpp_1_1_i_pv4_address.html#ac1ba63d12b5726ef2f042cb4f0b6dd97", null ],
     [ "IPv4Address", "classpcpp_1_1_i_pv4_address.html#a5a95be5b6cc51daa47a2064ae11dcef2", null ],
     [ "IPv4Address", "classpcpp_1_1_i_pv4_address.html#a1dddbd492f427fc06b2c8b0de8237c09", null ],
     [ "IPv4Address", "classpcpp_1_1_i_pv4_address.html#a75cbcf6dc68064e9a5c3b2dfcd8cc805", null ],
@@ -13,5 +15,6 @@ var classpcpp_1_1_i_pv4_address =
     [ "operator=", "classpcpp_1_1_i_pv4_address.html#a086c40b049355635699e3b3c18678fb6", null ],
     [ "operator==", "classpcpp_1_1_i_pv4_address.html#aa8a201db40014bd54910598935ae2eaa", null ],
     [ "toInAddr", "classpcpp_1_1_i_pv4_address.html#a69fb83e8fafd0f09823b5c0e22d6b93c", null ],
-    [ "toInt", "classpcpp_1_1_i_pv4_address.html#abccc9bbc341ea0e3d58387c24bd74a3c", null ]
+    [ "toInt", "classpcpp_1_1_i_pv4_address.html#abccc9bbc341ea0e3d58387c24bd74a3c", null ],
+    [ "toOctets", "classpcpp_1_1_i_pv4_address.html#a0ff2f7b37e1de82baf8e841dcbb0da7e", null ]
 ];

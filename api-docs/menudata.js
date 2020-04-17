@@ -87,6 +87,7 @@ var menudata={children:[
 {text:"f",url:"functions_eval_f.html#index_f"},
 {text:"h",url:"functions_eval_h.html#index_h"},
 {text:"i",url:"functions_eval_i.html#index_i"},
+{text:"k",url:"functions_eval_k.html#index_k"},
 {text:"l",url:"functions_eval_l.html#index_l"},
 {text:"m",url:"functions_eval_m.html#index_m"},
 {text:"n",url:"functions_eval_n.html#index_n"},

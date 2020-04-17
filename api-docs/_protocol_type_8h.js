@@ -12,6 +12,7 @@ var _protocol_type_8h =
       [ "OsiModelLayerUnknown", "_protocol_type_8h.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f", null ]
     ] ],
     [ "ARP", "_protocol_type_8h.html#aead5ebeefddfe9c93b70ede2c99cea9d", null ],
+    [ "BGP", "_protocol_type_8h.html#a55e4061b1046f18acbdeb81960d2ae81", null ],
     [ "DHCP", "_protocol_type_8h.html#a5f677ab02f328eb59216916238bea6c1", null ],
     [ "DNS", "_protocol_type_8h.html#ae432ae466e1de6accc18805e99efd0c7", null ],
     [ "Ethernet", "_protocol_type_8h.html#a3dc726346808ce2a90d3c8daeb76d09d", null ],

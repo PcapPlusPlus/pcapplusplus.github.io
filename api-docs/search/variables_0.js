@@ -7,6 +7,7 @@ var searchData=
   ['addressentrysize',['addressEntrySize',['../structpcpp_1_1icmp__router__advertisement__hdr.html#a7ae4d3591f09904126f1a19f3dc799a6',1,'pcpp::icmp_router_advertisement_hdr']]],
   ['addressmask',['addressMask',['../structpcpp_1_1icmp__address__mask__request.html#ac510d5502a105ee92b9a5718089a4aa4',1,'pcpp::icmp_address_mask_request']]],
   ['advertisementcount',['advertisementCount',['../structpcpp_1_1icmp__router__advertisement__hdr.html#aadfebe1e44b051e3a22dedfa32bec6c5',1,'pcpp::icmp_router_advertisement_hdr']]],
+  ['afi',['afi',['../structpcpp_1_1_bgp_route_refresh_message_layer_1_1bgp__route__refresh__message.html#ab7fe8c1daeb21a5fd5ccdbdc02085618',1,'pcpp::BgpRouteRefreshMessageLayer::bgp_route_refresh_message']]],
   ['aggregatedrxstats',['aggregatedRxStats',['../structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html#a77fd3f759f0a227da48089029d1547b8',1,'pcpp::DpdkDevice::DpdkDeviceStats']]],
   ['aggregatedtxstats',['aggregatedTxStats',['../structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html#aa5ea1d3127ed22b2d1b8b886b6851f3d',1,'pcpp::DpdkDevice::DpdkDeviceStats']]],
   ['alertdescription',['alertDescription',['../structpcpp_1_1ssl__tls__alert.html#ac4c45f54bcc165e118945b4abd60c453',1,'pcpp::ssl_tls_alert']]],

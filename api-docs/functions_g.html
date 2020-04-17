@@ -166,6 +166,20 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>getAuthorityCount()
 : <a class="el" href="classpcpp_1_1_dns_layer.html#aa67e72b9b1a28340b2c0f3fc7216524a">pcpp::DnsLayer</a>
 </li>
+<li>getBasicMsgHeader()
+: <a class="el" href="classpcpp_1_1_bgp_update_message_layer.html#adf542bc113e35e66262650144edfa1f1">pcpp::BgpUpdateMessageLayer</a>
+</li>
+<li>getBgpId()
+: <a class="el" href="classpcpp_1_1_bgp_open_message_layer.html#aca9cbdb448a43703d6ded6e0c14400f8">pcpp::BgpOpenMessageLayer</a>
+</li>
+<li>getBgpMessageType()
+: <a class="el" href="classpcpp_1_1_bgp_keepalive_message_layer.html#a639e1b96d107b5004faa3d1eeac79cb1">pcpp::BgpKeepaliveMessageLayer</a>
+, <a class="el" href="classpcpp_1_1_bgp_layer.html#aebdf49b682786e08c016ac1e62128c9b">pcpp::BgpLayer</a>
+, <a class="el" href="classpcpp_1_1_bgp_notification_message_layer.html#aba37eb6eaca03f5539ed5c46e5f5104f">pcpp::BgpNotificationMessageLayer</a>
+, <a class="el" href="classpcpp_1_1_bgp_open_message_layer.html#a26d1e5feb821d3eaa1cb314cb002acc6">pcpp::BgpOpenMessageLayer</a>
+, <a class="el" href="classpcpp_1_1_bgp_route_refresh_message_layer.html#a110d41c345b6951b3f9c9ccf1ec3f408">pcpp::BgpRouteRefreshMessageLayer</a>
+, <a class="el" href="classpcpp_1_1_bgp_update_message_layer.html#a648323779cf7d65a25ba16579cb81a9c">pcpp::BgpUpdateMessageLayer</a>
+</li>
 <li>getCaptureApplication()
 : <a class="el" href="classpcpp_1_1_pcap_ng_file_reader_device.html#a48e11a99b48b449a71ea22f6151ca577">pcpp::PcapNgFileReaderDevice</a>
 </li>
@@ -396,7 +410,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>getExtensionOfType()
 : <a class="el" href="classpcpp_1_1_i_pv6_layer.html#a51487f783ccfc1ca855c5dc6228020ba">pcpp::IPv6Layer</a>
-, <a class="el" href="classpcpp_1_1_s_s_l_client_hello_message.html#a2d7b47cab71369351252b633a134a7d6">pcpp::SSLClientHelloMessage</a>
+, <a class="el" href="classpcpp_1_1_s_s_l_client_hello_message.html#a177e655f17ab866e9130f40cc695ee40">pcpp::SSLClientHelloMessage</a>
 , <a class="el" href="classpcpp_1_1_s_s_l_server_hello_message.html#a0475132b738578af6d6fd33a26238b93">pcpp::SSLServerHelloMessage</a>
 </li>
 <li>getExtensionsLenth()
@@ -539,6 +553,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>getHeaderLen()
 : <a class="el" href="classpcpp_1_1_arp_layer.html#a3367f0eafe88ba1c9d7f68504b92d628">pcpp::ArpLayer</a>
+, <a class="el" href="classpcpp_1_1_bgp_layer.html#aa4947cb45b510c650c5cb3f77bf7260d">pcpp::BgpLayer</a>
 , <a class="el" href="classpcpp_1_1_dhcp_layer.html#a3cb5b5253ee1272d9e7a749554323bb9">pcpp::DhcpLayer</a>
 , <a class="el" href="classpcpp_1_1_dns_layer.html#a9b6c55c413b6dabf912a8f3a407b0be1">pcpp::DnsLayer</a>
 , <a class="el" href="classpcpp_1_1_eth_dot3_layer.html#a175f471997ed236c44c408601f7e4e1d">pcpp::EthDot3Layer</a>
@@ -630,6 +645,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>getIPv6Header()
 : <a class="el" href="classpcpp_1_1_i_pv6_layer.html#a73e1f7ba82431306bce9c47644be39d1">pcpp::IPv6Layer</a>
 </li>
+<li>getKeepaliveHeader()
+: <a class="el" href="classpcpp_1_1_bgp_keepalive_message_layer.html#a74bc59ad1f39390dae8c222b347e9be4">pcpp::BgpKeepaliveMessageLayer</a>
+</li>
 <li>getKey()
 : <a class="el" href="classpcpp_1_1_g_r_ev0_layer.html#a8ee814a5469ff981c6a2677d46ec1d89">pcpp::GREv0Layer</a>
 </li>
@@ -640,7 +658,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classpcpp_1_1_packet.html#aa207dcf476921fbd53959e7da47ad1ac">pcpp::Packet</a>
 </li>
 <li>getLayerOfType()
-: <a class="el" href="classpcpp_1_1_packet.html#a952f7939f5044c45bef2bde38ed22b61">pcpp::Packet</a>
+: <a class="el" href="classpcpp_1_1_packet.html#a8db6d1f014dc0827c8cef731e8090d5e">pcpp::Packet</a>
 </li>
 <li>getLayerPayload()
 : <a class="el" href="classpcpp_1_1_layer.html#a0bd73bce6a07ea942d3d88bd472944ec">pcpp::Layer</a>
@@ -708,7 +726,8 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 , <a class="el" href="classpcpp_1_1_icmp_layer.html#af7eb3ceb4ebf11eaae955ffab5e26d08">pcpp::IcmpLayer</a>
 </li>
 <li>getMessageTypeAsString()
-: <a class="el" href="classpcpp_1_1_gtp_v1_layer.html#ae3daf373e6ceff4614cf5e3f6de187ff">pcpp::GtpV1Layer</a>
+: <a class="el" href="classpcpp_1_1_bgp_layer.html#a5594eb5a1adbaeab0323cdfc76a7d7a4">pcpp::BgpLayer</a>
+, <a class="el" href="classpcpp_1_1_gtp_v1_layer.html#ae3daf373e6ceff4614cf5e3f6de187ff">pcpp::GtpV1Layer</a>
 </li>
 <li>getMethod()
 : <a class="el" href="classpcpp_1_1_http_request_first_line.html#a68c3669046181695ba8a63d6f7a23357">pcpp::HttpRequestFirstLine</a>
@@ -743,6 +762,12 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>getNameOffset()
 : <a class="el" href="classpcpp_1_1_i_dns_resource.html#ac2dc6e9007932e38c1deed4826a50776">pcpp::IDnsResource</a>
+</li>
+<li>getNetworkLayerReachabilityInfo()
+: <a class="el" href="classpcpp_1_1_bgp_update_message_layer.html#ae92fce124d2926c54edd3ce00a3d95cb">pcpp::BgpUpdateMessageLayer</a>
+</li>
+<li>getNetworkLayerReachabilityInfoLength()
+: <a class="el" href="classpcpp_1_1_bgp_update_message_layer.html#aa7589d1816f421ce549a9c7b8929bc84">pcpp::BgpUpdateMessageLayer</a>
 </li>
 <li>getNextAdditionalRecord()
 : <a class="el" href="classpcpp_1_1_dns_layer.html#ac9f8e189bbce677dfbf0508c45bb3310">pcpp::DnsLayer</a>
@@ -808,6 +833,18 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>getNextTLVRecord()
 : <a class="el" href="classpcpp_1_1_t_l_v_record_reader.html#adcbd197bbce59ae97ebbe9afb5efebae">pcpp::TLVRecordReader&lt; TLVRecordType &gt;</a>
 </li>
+<li>getNotificationData()
+: <a class="el" href="classpcpp_1_1_bgp_notification_message_layer.html#ac54a5a52b9d5dff4b8d8f1edb59b7f1c">pcpp::BgpNotificationMessageLayer</a>
+</li>
+<li>getNotificationDataAsHexString()
+: <a class="el" href="classpcpp_1_1_bgp_notification_message_layer.html#a440adf5d7b2ea8be2ca0c52c9924a432">pcpp::BgpNotificationMessageLayer</a>
+</li>
+<li>getNotificationDataLen()
+: <a class="el" href="classpcpp_1_1_bgp_notification_message_layer.html#aa5522a27a80eb0b4bba45582f9d350b1">pcpp::BgpNotificationMessageLayer</a>
+</li>
+<li>getNotificationMsgHeader()
+: <a class="el" href="classpcpp_1_1_bgp_notification_message_layer.html#a381de1d2aa381e80f0c68a24f5c131b7">pcpp::BgpNotificationMessageLayer</a>
+</li>
 <li>getNpduNumber()
 : <a class="el" href="classpcpp_1_1_gtp_v1_layer.html#af7b8bceb52535496fe3d5bf3c0baebb9">pcpp::GtpV1Layer</a>
 </li>
@@ -833,9 +870,18 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>getOpCode()
 : <a class="el" href="classpcpp_1_1_dhcp_layer.html#a38e4b6eb2f05e4c52fc98e564d22dd75">pcpp::DhcpLayer</a>
 </li>
+<li>getOpenMsgHeader()
+: <a class="el" href="classpcpp_1_1_bgp_open_message_layer.html#abae0c2ca989b218a6302021e45a6c40a">pcpp::BgpOpenMessageLayer</a>
+</li>
 <li>getOption()
 : <a class="el" href="classpcpp_1_1_i_pv4_layer.html#a4fe5a0b8e3de349a6a9bbc941f0d9dd1">pcpp::IPv4Layer</a>
 , <a class="el" href="classpcpp_1_1_i_pv6_t_l_v_option_header.html#a68a90ddf590ed6b0a3c7761fbe3b074c">pcpp::IPv6TLVOptionHeader</a>
+</li>
+<li>getOptionalParameters()
+: <a class="el" href="classpcpp_1_1_bgp_open_message_layer.html#a127586f49bc0041230683ca129aeb9e5">pcpp::BgpOpenMessageLayer</a>
+</li>
+<li>getOptionalParametersLength()
+: <a class="el" href="classpcpp_1_1_bgp_open_message_layer.html#adfb80aedf3d2cbd47c87f2d31e064177">pcpp::BgpOpenMessageLayer</a>
 </li>
 <li>getOptionCount()
 : <a class="el" href="classpcpp_1_1_i_pv4_layer.html#ab7f15e771c6eba1b28432b9d4d97b642">pcpp::IPv4Layer</a>
@@ -852,6 +898,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>getOsiModelLayer()
 : <a class="el" href="classpcpp_1_1_arp_layer.html#a36526531318e485ead3dbd2c85378337">pcpp::ArpLayer</a>
+, <a class="el" href="classpcpp_1_1_bgp_layer.html#ab6994d8037f351f1a9d46f33a9864707">pcpp::BgpLayer</a>
 , <a class="el" href="classpcpp_1_1_dhcp_layer.html#a7c00e909e76c330a6e9e526e8dc7a0df">pcpp::DhcpLayer</a>
 , <a class="el" href="classpcpp_1_1_dns_layer.html#a92f2ac17c667c223d4eee7d24d898d7f">pcpp::DnsLayer</a>
 , <a class="el" href="classpcpp_1_1_eth_dot3_layer.html#aafb1ad870f67ae7025a1576e240c5979">pcpp::EthDot3Layer</a>
@@ -889,6 +936,12 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>getParamProblemData()
 : <a class="el" href="classpcpp_1_1_icmp_layer.html#ad854fa2f6bfb1f33f97ec334965811e4">pcpp::IcmpLayer</a>
 </li>
+<li>getPathAttributes()
+: <a class="el" href="classpcpp_1_1_bgp_update_message_layer.html#a6264e30596da7029874d908208b77485">pcpp::BgpUpdateMessageLayer</a>
+</li>
+<li>getPathAttributesLength()
+: <a class="el" href="classpcpp_1_1_bgp_update_message_layer.html#ac279f477a4f0c5a3223ec64903bb66dd">pcpp::BgpUpdateMessageLayer</a>
+</li>
 <li>getPayload()
 : <a class="el" href="classpcpp_1_1_payload_layer.html#a0883f46fee516b697d6c44997b6f775a">pcpp::PayloadLayer</a>
 </li>
@@ -899,7 +952,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classpcpp_1_1_i_pcap_device.html#ac9e91fa6b66ced9a92d09068712ccffc">pcpp::IPcapDevice</a>
 </li>
 <li>getPcapLiveDeviceByIp()
-: <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#a005f173b1a931c3000ac7516e3fcc2d6">pcpp::PcapLiveDeviceList</a>
+: <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#aca31addf2b8cc2b44cdf903da1075930">pcpp::PcapLiveDeviceList</a>
 </li>
 <li>getPcapLiveDeviceByName()
 : <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#a44adbf18b7c2dfc5509540848532aadd">pcpp::PcapLiveDeviceList</a>
@@ -1007,10 +1060,10 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classpcpp_1_1_icmp_layer.html#a8ed0adf59a73890c1812614f2697335f">pcpp::IcmpLayer</a>
 </li>
 <li>getRemoteDeviceByIP()
-: <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#abd751782740fcb06f797a7f592a3fa26">pcpp::PcapRemoteDeviceList</a>
+: <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a63f58434ddb8681e3d3cd04a917c7ac9">pcpp::PcapRemoteDeviceList</a>
 </li>
 <li>getRemoteDeviceList()
-: <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a1655fb0326960cceec95db75ddaed0a3">pcpp::PcapRemoteDeviceList</a>
+: <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#aa273eab3f181516fa00f3f04de58602a">pcpp::PcapRemoteDeviceList</a>
 </li>
 <li>getRemoteMachineIpAddress()
 : <a class="el" href="classpcpp_1_1_pcap_remote_device.html#a66658dc69cb6d6df4015936dc5e6139b">pcpp::PcapRemoteDevice</a>
@@ -1028,6 +1081,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>getRouterAdvertisementData()
 : <a class="el" href="classpcpp_1_1_icmp_layer.html#ab60d85d72fa49158ef37f0334db4cb65">pcpp::IcmpLayer</a>
+</li>
+<li>getRouteRefreshHeader()
+: <a class="el" href="classpcpp_1_1_bgp_route_refresh_message_layer.html#abee3ac1378a0b3c277a38c2e53d1c53f">pcpp::BgpRouteRefreshMessageLayer</a>
 </li>
 <li>getRouterSolicitationData()
 : <a class="el" href="classpcpp_1_1_icmp_layer.html#a0ca046fef95759ed7980cd7f141f4961">pcpp::IcmpLayer</a>
@@ -1300,6 +1356,12 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>getVxlanHeader()
 : <a class="el" href="classpcpp_1_1_vxlan_layer.html#a5ba29d6d64acb3eb1f63b1d5bf5698d9">pcpp::VxlanLayer</a>
 </li>
+<li>getWithdrawnRoutes()
+: <a class="el" href="classpcpp_1_1_bgp_update_message_layer.html#a84e3f52027d455ba1d8fe5a7906f4e3d">pcpp::BgpUpdateMessageLayer</a>
+</li>
+<li>getWithdrawnRoutesLength()
+: <a class="el" href="classpcpp_1_1_bgp_update_message_layer.html#ad3f5b678fbb7bfefaa84cfed1ee862e7">pcpp::BgpUpdateMessageLayer</a>
+</li>
 <li>getYourIpAddress()
 : <a class="el" href="classpcpp_1_1_dhcp_layer.html#a5de02c2c14beed2458d3940da7f5677b">pcpp::DhcpLayer</a>
 </li>
@@ -1307,7 +1369,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classpcpp_1_1_g_r_ev0_layer.html#a8cab834d500d69bd53ea9f980080aa66">pcpp::GREv0Layer</a>
 </li>
 <li>GREv1Layer()
-: <a class="el" href="classpcpp_1_1_g_r_ev1_layer.html#affdd47adeca80911b621a14421853e8e">pcpp::GREv1Layer</a>
+: <a class="el" href="classpcpp_1_1_g_r_ev1_layer.html#a9c118e97790a83bf6d22592191d2f453">pcpp::GREv1Layer</a>
 </li>
 <li>groupAddress
 : <a class="el" href="structpcpp_1_1igmp__header.html#a7cb1aa348a4ce129e4c34f05afd9bf95">pcpp::igmp_header</a>
@@ -1317,7 +1379,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="structpcpp_1_1vxlan__header.html#aa4598ca59f075a7464cef0db92df6f8d">pcpp::vxlan_header</a>
 </li>
 <li>GtpExtension()
-: <a class="el" href="classpcpp_1_1_gtp_v1_layer_1_1_gtp_extension.html#a71069bba8bf86b2c8bb30a1a944f76a7">pcpp::GtpV1Layer::GtpExtension</a>
+: <a class="el" href="classpcpp_1_1_gtp_v1_layer_1_1_gtp_extension.html#a5e8d570c6114869281a4e375f6efc1c4">pcpp::GtpV1Layer::GtpExtension</a>
 </li>
 <li>GtpV1Layer()
 : <a class="el" href="classpcpp_1_1_gtp_v1_layer.html#adeb4912ab05772b47ecd3cd64e1a8549">pcpp::GtpV1Layer</a>
@@ -1328,7 +1390,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Apr 10 2020 05:39:58 for PcapPlusPlus by
+    <li class="footer">Generated on Fri Apr 17 2020 07:18:00 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

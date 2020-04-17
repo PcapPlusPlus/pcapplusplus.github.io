@@ -9,6 +9,7 @@ var searchData=
   ['igmpv3',['IGMPv3',['../namespacepcpp.html#a58575f3fdb517e7b7e8126f159ff57e3',1,'pcpp']]],
   ['internetheaderlength',['internetHeaderLength',['../structpcpp_1_1iphdr.html#aafb906cd9dd7be5a3443f5fe6c7dad09',1,'pcpp::iphdr']]],
   ['ip',['IP',['../namespacepcpp.html#a14f1b6461b56dcbb5a1b5bb3479bdda4',1,'pcpp']]],
+  ['ipaddr',['ipAddr',['../structpcpp_1_1_bgp_update_message_layer_1_1prefix__and__ip.html#ad5548e39e980a3b15d05cef6b8af8cb1',1,'pcpp::BgpUpdateMessageLayer::prefix_and_ip']]],
   ['ipaddresses',['ipAddresses',['../structpcpp_1_1_i_pv4_timestamp_option_value.html#a38f920da501372e5fdcc68200e63f316',1,'pcpp::IPv4TimestampOptionValue']]],
   ['ipdst',['ipDst',['../structpcpp_1_1iphdr.html#a2722895dc1ed669dd9b241fc472a284f',1,'pcpp::iphdr::ipDst()'],['../structpcpp_1_1ip6__hdr.html#af9eaa28de54512c88c43a95ed6c2a846',1,'pcpp::ip6_hdr::ipDst()']]],
   ['ipid',['ipId',['../structpcpp_1_1iphdr.html#a9d50037f1b02307d20dc8a113207dbce',1,'pcpp::iphdr']]],

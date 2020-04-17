@@ -8,6 +8,8 @@ var searchData=
   ['equals',['equals',['../classpcpp_1_1_i_p_address.html#a7c6595d02efc05f3bbc59ecf9879172e',1,'pcpp::IPAddress::equals()'],['../namespacepcpp.html#a236073670782cc577b097b2fef4c7d62a53506f1c14ae7561fd4a38510273b4ab',1,'pcpp::EQUALS()']]],
   ['erase',['erase',['../classpcpp_1_1_pointer_vector.html#a548970610623b300fd3f65ff65f325e3',1,'pcpp::PointerVector']]],
   ['eraseelement',['eraseElement',['../classpcpp_1_1_l_r_u_list.html#a5682e992a5b22c9ed24242a38265ce73',1,'pcpp::LRUList']]],
+  ['errorcode',['errorCode',['../structpcpp_1_1_bgp_notification_message_layer_1_1bgp__notification__message.html#a6718b2c32f3aeec3c56bb5d8ddd206d2',1,'pcpp::BgpNotificationMessageLayer::bgp_notification_message']]],
+  ['errorsubcode',['errorSubCode',['../structpcpp_1_1_bgp_notification_message_layer_1_1bgp__notification__message.html#a0f8b49bd5387fe1122805f97b752382a',1,'pcpp::BgpNotificationMessageLayer::bgp_notification_message']]],
   ['ethdot3layer',['EthDot3Layer',['../classpcpp_1_1_eth_dot3_layer.html',1,'pcpp::EthDot3Layer'],['../classpcpp_1_1_eth_dot3_layer.html#a308cb49ddcc503a32f52d93ee199db53',1,'pcpp::EthDot3Layer::EthDot3Layer(uint8_t *data, size_t dataLen, Packet *packet)'],['../classpcpp_1_1_eth_dot3_layer.html#a9795656a94ab00fa7054f355a8c42b19',1,'pcpp::EthDot3Layer::EthDot3Layer(const MacAddress &amp;sourceMac, const MacAddress &amp;destMac, uint16_t length)']]],
   ['ethdot3layer_2eh',['EthDot3Layer.h',['../_eth_dot3_layer_8h.html',1,'']]],
   ['ether_5fdot3_5fheader',['ether_dot3_header',['../structpcpp_1_1ether__dot3__header.html',1,'pcpp']]],

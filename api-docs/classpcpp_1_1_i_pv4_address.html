@@ -83,6 +83,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_i_pv4_address.html','');
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classpcpp_1_1_i_pv4_address-members.html">List of all members</a>  </div>
@@ -102,10 +103,17 @@ Inheritance diagram for pcpp::IPv4Address:</div>
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_i_pv4_address_1_1ipv4__octets.html">ipv4_octets</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7eef864e1a372d665a27de6189901e1e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv4_address.html#a7eef864e1a372d665a27de6189901e1e">IPv4Address</a> (uint32_t addressAsInt)</td></tr>
 <tr class="separator:a7eef864e1a372d665a27de6189901e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1ba63d12b5726ef2f042cb4f0b6dd97"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv4_address.html#ac1ba63d12b5726ef2f042cb4f0b6dd97">IPv4Address</a> (uint8_t oct1, uint8_t oct2, uint8_t oct3, uint8_t oct4)</td></tr>
+<tr class="separator:ac1ba63d12b5726ef2f042cb4f0b6dd97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a95be5b6cc51daa47a2064ae11dcef2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv4_address.html#a5a95be5b6cc51daa47a2064ae11dcef2">IPv4Address</a> (const char *addressAsString)</td></tr>
 <tr class="separator:a5a95be5b6cc51daa47a2064ae11dcef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dddbd492f427fc06b2c8b0de8237c09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv4_address.html#a1dddbd492f427fc06b2c8b0de8237c09">IPv4Address</a> (std::string addressAsString)</td></tr>
@@ -122,6 +130,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abccc9bbc341ea0e3d58387c24bd74a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69fb83e8fafd0f09823b5c0e22d6b93c"><td class="memItemLeft" align="right" valign="top">in_addr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv4_address.html#a69fb83e8fafd0f09823b5c0e22d6b93c">toInAddr</a> () const</td></tr>
 <tr class="separator:a69fb83e8fafd0f09823b5c0e22d6b93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ff2f7b37e1de82baf8e841dcbb0da7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpcpp_1_1_i_pv4_address_1_1ipv4__octets.html">IPv4Address::ipv4_octets</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv4_address.html#a0ff2f7b37e1de82baf8e841dcbb0da7e">toOctets</a> () const</td></tr>
+<tr class="separator:a0ff2f7b37e1de82baf8e841dcbb0da7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8a201db40014bd54910598935ae2eaa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv4_address.html#aa8a201db40014bd54910598935ae2eaa">operator==</a> (const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;other) const</td></tr>
 <tr class="separator:aa8a201db40014bd54910598935ae2eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae40e1dfbb7b1c78e825af482fcc302ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv4_address.html#ae40e1dfbb7b1c78e825af482fcc302ff">operator!=</a> (const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;other) const</td></tr>
@@ -162,7 +172,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>Represents an IPv4 address (of type XXX.XXX.XXX.XXX). An instance of this class can be constructed from string, 4-byte integer or from the in_addr struct. It can be converted to each of these types </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7eef864e1a372d665a27de6189901e1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7eef864e1a372d665a27de6189901e1e">&#9670;&nbsp;</a></span>IPv4Address() <span class="overload">[1/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eef864e1a372d665a27de6189901e1e">&#9670;&nbsp;</a></span>IPv4Address() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -185,8 +195,57 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ac1ba63d12b5726ef2f042cb4f0b6dd97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1ba63d12b5726ef2f042cb4f0b6dd97">&#9670;&nbsp;</a></span>IPv4Address() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::IPv4Address::IPv4Address </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>oct1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>oct2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>oct3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>oct4</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A constructor that creates an instance of the class out of four 1-byte octets </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct1</td><td>First octet </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct2</td><td>Second octet </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct3</td><td>Third octet </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">oct4</td><td>Fourth octet </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a5a95be5b6cc51daa47a2064ae11dcef2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a95be5b6cc51daa47a2064ae11dcef2">&#9670;&nbsp;</a></span>IPv4Address() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a95be5b6cc51daa47a2064ae11dcef2">&#9670;&nbsp;</a></span>IPv4Address() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -210,7 +269,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a1dddbd492f427fc06b2c8b0de8237c09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1dddbd492f427fc06b2c8b0de8237c09">&#9670;&nbsp;</a></span>IPv4Address() <span class="overload">[3/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dddbd492f427fc06b2c8b0de8237c09">&#9670;&nbsp;</a></span>IPv4Address() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -234,7 +293,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a75cbcf6dc68064e9a5c3b2dfcd8cc805"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75cbcf6dc68064e9a5c3b2dfcd8cc805">&#9670;&nbsp;</a></span>IPv4Address() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a75cbcf6dc68064e9a5c3b2dfcd8cc805">&#9670;&nbsp;</a></span>IPv4Address() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,7 +317,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a133598783690be861bd41452680b2290"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a133598783690be861bd41452680b2290">&#9670;&nbsp;</a></span>IPv4Address() <span class="overload">[5/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a133598783690be861bd41452680b2290">&#9670;&nbsp;</a></span>IPv4Address() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -498,7 +557,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns a in_addr struct pointer representing the IPv4 address </p><dl class="section return"><dt>Returns</dt><dd>a in_addr struct pointer representing the IPv4 address </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a in_addr struct pointer representing the IPv4 address </dd></dl>
 
 </div>
 </div>
@@ -517,6 +576,24 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Converts the IPv4 address into a 4B integer </p><dl class="section return"><dt>Returns</dt><dd>a 4B integer representing the IPv4 address </dd></dl>
+
+</div>
+</div>
+<a id="a0ff2f7b37e1de82baf8e841dcbb0da7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ff2f7b37e1de82baf8e841dcbb0da7e">&#9670;&nbsp;</a></span>toOctets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structpcpp_1_1_i_pv4_address_1_1ipv4__octets.html">IPv4Address::ipv4_octets</a> pcpp::IPv4Address::toOctets </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The 4 octets of the IPv4 address, e.g: "10.11.12.13" =&gt; [10], [11], [12], [13] </dd></dl>
 
 </div>
 </div>
@@ -550,7 +627,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a></li>
-    <li class="footer">Generated on Fri Apr 10 2020 05:39:54 for PcapPlusPlus by
+    <li class="footer">Generated on Fri Apr 17 2020 07:18:00 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -1,6 +1,7 @@
 var searchData=
 [
   ['s_5fqrv',['s_qrv',['../structpcpp_1_1igmpv3__query__header.html#ac039bf95f65102c14937f2e41839d3f4',1,'pcpp::igmpv3_query_header']]],
+  ['safi',['safi',['../structpcpp_1_1_bgp_route_refresh_message_layer_1_1bgp__route__refresh__message.html#a3f63976e33ea0efdd246bc8c3329fff8',1,'pcpp::BgpRouteRefreshMessageLayer::bgp_route_refresh_message']]],
   ['sdp',['SDP',['../namespacepcpp.html#aeb798bf954a057003adfa79648befa2a',1,'pcpp']]],
   ['secondselapsed',['secondsElapsed',['../structpcpp_1_1dhcp__header.html#a00543e44a7bbc904944ef84592f7ab5a',1,'pcpp::dhcp_header']]],
   ['securityparametersindex',['securityParametersIndex',['../structpcpp_1_1_i_pv6_authentication_header_1_1ipv6__authentication__header.html#af02819e49931d5f4b30da30eb76795e0',1,'pcpp::IPv6AuthenticationHeader::ipv6_authentication_header']]],

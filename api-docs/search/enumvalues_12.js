@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zerodotnine',['ZeroDotNine',['../namespacepcpp.html#a7680d508534c12b5ab8bcbe4cae06932a9e548b54e33e8673bfd2c3e5bdef3fe3',1,'pcpp']]]
+  ['winpcapdevice',['WinPcapDevice',['../classpcpp_1_1_pcap_live_device.html#a0e343585711ee4e02d4b9507467135aba0c8c0011ab41d3aeee8e8f1c29fd07b6',1,'pcpp::PcapLiveDevice']]]
 ];

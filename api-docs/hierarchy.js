@@ -6,6 +6,13 @@ var hierarchy =
     [ "std::auto_ptr< T >", null, [
       [ "pcpp::DnsResourceDataPtr", "classpcpp_1_1_dns_resource_data_ptr.html", null ]
     ] ],
+    [ "pcpp::BgpLayer::bgp_common_header", "structpcpp_1_1_bgp_layer_1_1bgp__common__header.html", [
+      [ "pcpp::BgpNotificationMessageLayer::bgp_notification_message", "structpcpp_1_1_bgp_notification_message_layer_1_1bgp__notification__message.html", null ],
+      [ "pcpp::BgpRouteRefreshMessageLayer::bgp_route_refresh_message", "structpcpp_1_1_bgp_route_refresh_message_layer_1_1bgp__route__refresh__message.html", null ]
+    ] ],
+    [ "bgp_common_header", null, [
+      [ "pcpp::BgpOpenMessageLayer::bgp_open_message", "structpcpp_1_1_bgp_open_message_layer_1_1bgp__open__message.html", null ]
+    ] ],
     [ "pcpp::ConnectionData", "structpcpp_1_1_connection_data.html", null ],
     [ "pcpp::PcapLiveDevice::DeviceConfiguration", "structpcpp_1_1_pcap_live_device_1_1_device_configuration.html", null ],
     [ "pcpp::dhcp_header", "structpcpp_1_1dhcp__header.html", null ],
@@ -70,6 +77,13 @@ var hierarchy =
     [ "pcpp::IDataContainer", "classpcpp_1_1_i_data_container.html", [
       [ "pcpp::Layer", "classpcpp_1_1_layer.html", [
         [ "pcpp::ArpLayer", "classpcpp_1_1_arp_layer.html", null ],
+        [ "pcpp::BgpLayer", "classpcpp_1_1_bgp_layer.html", [
+          [ "pcpp::BgpKeepaliveMessageLayer", "classpcpp_1_1_bgp_keepalive_message_layer.html", null ],
+          [ "pcpp::BgpNotificationMessageLayer", "classpcpp_1_1_bgp_notification_message_layer.html", null ],
+          [ "pcpp::BgpOpenMessageLayer", "classpcpp_1_1_bgp_open_message_layer.html", null ],
+          [ "pcpp::BgpRouteRefreshMessageLayer", "classpcpp_1_1_bgp_route_refresh_message_layer.html", null ],
+          [ "pcpp::BgpUpdateMessageLayer", "classpcpp_1_1_bgp_update_message_layer.html", null ]
+        ] ],
         [ "pcpp::DhcpLayer", "classpcpp_1_1_dhcp_layer.html", null ],
         [ "pcpp::DnsLayer", "classpcpp_1_1_dns_layer.html", null ],
         [ "pcpp::EthDot3Layer", "classpcpp_1_1_eth_dot3_layer.html", null ],
@@ -170,6 +184,7 @@ var hierarchy =
     ] ],
     [ "pcpp::iphdr", "structpcpp_1_1iphdr.html", null ],
     [ "pcpp::IPReassembly", "classpcpp_1_1_i_p_reassembly.html", null ],
+    [ "pcpp::IPv4Address::ipv4_octets", "structpcpp_1_1_i_pv4_address_1_1ipv4__octets.html", null ],
     [ "pcpp::IPv4TimestampOptionValue", "structpcpp_1_1_i_pv4_timestamp_option_value.html", null ],
     [ "pcpp::IPv6AuthenticationHeader::ipv6_authentication_header", "structpcpp_1_1_i_pv6_authentication_header_1_1ipv6__authentication__header.html", null ],
     [ "pcpp::IPv6FragmentationHeader::ipv6_frag_header", "structpcpp_1_1_i_pv6_fragmentation_header_1_1ipv6__frag__header.html", null ],
@@ -195,11 +210,13 @@ var hierarchy =
     [ "pcpp::MacAddress", "classpcpp_1_1_mac_address.html", null ],
     [ "pcpp::MxDnsResourceData::MxData", "structpcpp_1_1_mx_dns_resource_data_1_1_mx_data.html", null ],
     [ "pcpp::NetworkUtils", "classpcpp_1_1_network_utils.html", null ],
+    [ "pcpp::BgpOpenMessageLayer::optional_parameter", "structpcpp_1_1_bgp_open_message_layer_1_1optional__parameter.html", null ],
     [ "pcpp::Packet", "classpcpp_1_1_packet.html", null ],
     [ "pcpp::IPReassembly::PacketKey", "classpcpp_1_1_i_p_reassembly_1_1_packet_key.html", [
       [ "pcpp::IPReassembly::IPv4PacketKey", "classpcpp_1_1_i_p_reassembly_1_1_i_pv4_packet_key.html", null ],
       [ "pcpp::IPReassembly::IPv6PacketKey", "classpcpp_1_1_i_p_reassembly_1_1_i_pv6_packet_key.html", null ]
     ] ],
+    [ "pcpp::BgpUpdateMessageLayer::path_attribute", "structpcpp_1_1_bgp_update_message_layer_1_1path__attribute.html", null ],
     [ "pcpp::PcapLiveDeviceList", "classpcpp_1_1_pcap_live_device_list.html", null ],
     [ "pcpp::PcapRemoteAuthentication", "structpcpp_1_1_pcap_remote_authentication.html", null ],
     [ "pcpp::PcapRemoteDeviceList", "classpcpp_1_1_pcap_remote_device_list.html", null ],
@@ -214,6 +231,7 @@ var hierarchy =
     [ "pcpp::ppp_pptp_header", "structpcpp_1_1ppp__pptp__header.html", null ],
     [ "pcpp::pppoe_header", "structpcpp_1_1pppoe__header.html", null ],
     [ "pcpp::PPPoEDiscoveryLayer::PPPoETag", "structpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag.html", null ],
+    [ "pcpp::BgpUpdateMessageLayer::prefix_and_ip", "structpcpp_1_1_bgp_update_message_layer_1_1prefix__and__ip.html", null ],
     [ "pcpp::radius_header", "structpcpp_1_1radius__header.html", null ],
     [ "pcpp::RawPacket", "classpcpp_1_1_raw_packet.html", [
       [ "pcpp::MBufRawPacket", "classpcpp_1_1_m_buf_raw_packet.html", null ]

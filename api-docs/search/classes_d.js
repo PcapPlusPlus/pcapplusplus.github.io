@@ -3,6 +3,7 @@ var searchData=
   ['packet',['Packet',['../classpcpp_1_1_packet.html',1,'pcpp']]],
   ['packetkey',['PacketKey',['../classpcpp_1_1_i_p_reassembly_1_1_packet_key.html',1,'pcpp::IPReassembly']]],
   ['packettrailerlayer',['PacketTrailerLayer',['../classpcpp_1_1_packet_trailer_layer.html',1,'pcpp']]],
+  ['path_5fattribute',['path_attribute',['../structpcpp_1_1_bgp_update_message_layer_1_1path__attribute.html',1,'pcpp::BgpUpdateMessageLayer']]],
   ['payloadlayer',['PayloadLayer',['../classpcpp_1_1_payload_layer.html',1,'pcpp']]],
   ['pcapfilereaderdevice',['PcapFileReaderDevice',['../classpcpp_1_1_pcap_file_reader_device.html',1,'pcpp']]],
   ['pcapfilewriterdevice',['PcapFileWriterDevice',['../classpcpp_1_1_pcap_file_writer_device.html',1,'pcpp']]],
@@ -31,5 +32,6 @@ var searchData=
   ['pppoelayer',['PPPoELayer',['../classpcpp_1_1_p_p_po_e_layer.html',1,'pcpp']]],
   ['pppoesessionlayer',['PPPoESessionLayer',['../classpcpp_1_1_p_p_po_e_session_layer.html',1,'pcpp']]],
   ['pppoetag',['PPPoETag',['../structpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag.html',1,'pcpp::PPPoEDiscoveryLayer']]],
+  ['prefix_5fand_5fip',['prefix_and_ip',['../structpcpp_1_1_bgp_update_message_layer_1_1prefix__and__ip.html',1,'pcpp::BgpUpdateMessageLayer']]],
   ['protofilter',['ProtoFilter',['../classpcpp_1_1_proto_filter.html',1,'pcpp']]]
 ];

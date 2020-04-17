@@ -6,6 +6,7 @@ var functions_eval =
     [ "f", "functions_eval_f.html", null ],
     [ "h", "functions_eval_h.html", null ],
     [ "i", "functions_eval_i.html", null ],
+    [ "k", "functions_eval_k.html", null ],
     [ "l", "functions_eval_l.html", null ],
     [ "m", "functions_eval_m.html", null ],
     [ "n", "functions_eval_n.html", null ],
