@@ -55,6 +55,7 @@
 *   - pcpp::RadiusLayer, RadiusLayer.h - RADIUS protocol
 *   - pcpp::DnsLayer, DnsLayer.h - DNS protocol
 *   - pcpp::DhcpLayer, DhcpLayer.h - DHCP protocol
+*   - pcpp::BgpLayer, BgpLayer.h - BGP protocol
 *   - pcpp::HttpRequestLayer, HttpLayer.h - HTTP request protocol
 *   - pcpp::HttpResponseLayer, HttpLayer.h - HTTP response protocol
 *   - pcpp::SSLLayer, SSLLayer.h - SSL/TLS protocol - parsing only (no editing capabilities)
