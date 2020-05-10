@@ -120,6 +120,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a486798a1bd493b7127f1b3fc0281bc6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06b137b6b0f0a81cfd6fda7f2e44640f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_payload_layer.html#a06b137b6b0f0a81cfd6fda7f2e44640f">computeCalculateFields</a> ()</td></tr>
 <tr class="separator:a06b137b6b0f0a81cfd6fda7f2e44640f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e82ba8fe163cf9655178031d6e1cbf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_payload_layer.html#a7e82ba8fe163cf9655178031d6e1cbf2">setPayload</a> (const uint8_t *newPayload, size_t newPayloadLength)</td></tr>
+<tr class="separator:a7e82ba8fe163cf9655178031d6e1cbf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaf2c9928dea68b837f475ac37750d91"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_payload_layer.html#adaf2c9928dea68b837f475ac37750d91">toString</a> () const</td></tr>
 <tr class="separator:adaf2c9928dea68b837f475ac37750d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9198d157ca3e550933096eb4b89ce35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_payload_layer.html#ad9198d157ca3e550933096eb4b89ce35">getOsiModelLayer</a> () const</td></tr>
@@ -439,6 +441,41 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a7e82ba8fe163cf9655178031d6e1cbf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e82ba8fe163cf9655178031d6e1cbf2">&#9670;&nbsp;</a></span>setPayload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::PayloadLayer::setPayload </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>newPayload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>newPayloadLength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the payload of the <a class="el" href="classpcpp_1_1_payload_layer.html">PayloadLayer</a> to the given pointer. This will resize (extend/shorten) the underlying packet respectively if there is one. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">newPayload</td><td>New payload that shall be set </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newPayloadLength</td><td>New length of payload </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="adaf2c9928dea68b837f475ac37750d91"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adaf2c9928dea68b837f475ac37750d91">&#9670;&nbsp;</a></span>toString()</h2>
 
@@ -473,7 +510,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_payload_layer.html">PayloadLayer</a></li>
-    <li class="footer">Generated on Wed May 6 2020 05:38:33 for PcapPlusPlus by
+    <li class="footer">Generated on Sun May 10 2020 07:17:14 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

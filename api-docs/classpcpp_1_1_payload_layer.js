@@ -9,5 +9,6 @@ var classpcpp_1_1_payload_layer =
     [ "getPayload", "classpcpp_1_1_payload_layer.html#a0883f46fee516b697d6c44997b6f775a", null ],
     [ "getPayloadLen", "classpcpp_1_1_payload_layer.html#a8170561229aec118c826b523bace4565", null ],
     [ "parseNextLayer", "classpcpp_1_1_payload_layer.html#a462003b0863dd9891d989f847608c1fb", null ],
+    [ "setPayload", "classpcpp_1_1_payload_layer.html#a7e82ba8fe163cf9655178031d6e1cbf2", null ],
     [ "toString", "classpcpp_1_1_payload_layer.html#adaf2c9928dea68b837f475ac37750d91", null ]
 ];
