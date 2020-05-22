@@ -11,5 +11,6 @@ var searchData=
   ['osimodelpresentationlayer',['OsiModelPresentationLayer',['../namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025aa5b41414b37b1c9f2796138fc73076af',1,'pcpp']]],
   ['osimodelsesionlayer',['OsiModelSesionLayer',['../namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a7b97a36ede97b0fba585c8a2ec8476d7',1,'pcpp']]],
   ['osimodeltransportlayer',['OsiModelTransportLayer',['../namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a4677ae253cb3e93cbf8b6d0edaecf5fc',1,'pcpp']]],
-  ['out_5fof_5forder_5ffragment',['OUT_OF_ORDER_FRAGMENT',['../classpcpp_1_1_i_p_reassembly.html#aae7f2e113808978827abf3b7cdbe91afa720ffdf993a5a1f3e344be2cfda6cb1c',1,'pcpp::IPReassembly']]]
+  ['out_5fof_5forder_5ffragment',['OUT_OF_ORDER_FRAGMENT',['../classpcpp_1_1_i_p_reassembly.html#aae7f2e113808978827abf3b7cdbe91afa720ffdf993a5a1f3e344be2cfda6cb1c',1,'pcpp::IPReassembly']]],
+  ['outofordertcpmessagebuffered',['OutOfOrderTcpMessageBuffered',['../classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177ae91e5196d30fb956c2b7514da4593ef9',1,'pcpp::TcpReassembly']]]
 ];

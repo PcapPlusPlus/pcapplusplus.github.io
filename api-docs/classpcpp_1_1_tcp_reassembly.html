@@ -100,6 +100,21 @@ Public Types</h2></td></tr>
 <a class="el" href="classpcpp_1_1_tcp_reassembly.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9">TcpReassemblyConnectionClosedManually</a>
  }</td></tr>
 <tr class="separator:aea5fdf7b5322d1bb8f6fe43b59a9edc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9604d95c87c7023962d2250cd28d5177"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177">ReassemblyStatus</a> { <br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177a9f25906863b5f67225ae77f81347fd62">TcpMessageHandled</a>, 
+<a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177ae91e5196d30fb956c2b7514da4593ef9">OutOfOrderTcpMessageBuffered</a>, 
+<a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177a323a52372e72a63a347da656d0b5cdda">FIN_RSTWithNoData</a>, 
+<a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177af2e14abee4ff5e5dbf57c3f3ae7ddb34">Ignore_PacketWithNoData</a>, 
+<br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177a48fe637b23950961733dca730d02107b">Ignore_PacketOfClosedFlow</a>, 
+<a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177a72b70b319166c4691ba4a052d5b59366">Ignore_Retransimission</a>, 
+<a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177a08445f1595412406ca139f294be48566">NonIpPacket</a>, 
+<a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177a6f9f634c9a8f9a3a5dbf81de12862317">NonTcpPacket</a>, 
+<br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177a3380cc0fe3cc4979fa2c5c4a9a658921">Error_PacketDoesNotMatchFlow</a>
+<br />
+ }</td></tr>
+<tr class="separator:a9604d95c87c7023962d2250cd28d5177"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d3377f5af316ec54bb70595c2d5418e"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; uint32_t, <a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a3d3377f5af316ec54bb70595c2d5418e">ConnectionInfoList</a></td></tr>
 <tr class="separator:a3d3377f5af316ec54bb70595c2d5418e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a211aff7a58a72c1365eb61bff5ba0c06"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a211aff7a58a72c1365eb61bff5ba0c06">OnTcpMessageReady</a>) (int side, const <a class="el" href="classpcpp_1_1_tcp_stream_data.html">TcpStreamData</a> &amp;tcpData, void *userCookie)</td></tr>
@@ -115,10 +130,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a66205ac4b99b320454c875d0348c10b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1797ebded60f0637ae95223653b9f78"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#aa1797ebded60f0637ae95223653b9f78">~TcpReassembly</a> ()</td></tr>
 <tr class="separator:aa1797ebded60f0637ae95223653b9f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbe7a908f4367cc9234096998dc6d56e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#acbe7a908f4367cc9234096998dc6d56e">reassemblePacket</a> (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> &amp;tcpData)</td></tr>
-<tr class="separator:acbe7a908f4367cc9234096998dc6d56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f56a069fdd66f154990c35c9d462d7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a5f56a069fdd66f154990c35c9d462d7b">reassemblePacket</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *tcpRawData)</td></tr>
-<tr class="separator:a5f56a069fdd66f154990c35c9d462d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0ecd6c2e334c55f4d6393e23a205e04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177">ReassemblyStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#ad0ecd6c2e334c55f4d6393e23a205e04">reassemblePacket</a> (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> &amp;tcpData)</td></tr>
+<tr class="separator:ad0ecd6c2e334c55f4d6393e23a205e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3259ca75ab6594a335b6404b55c0f0e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177">ReassemblyStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a3259ca75ab6594a335b6404b55c0f0e0">reassemblePacket</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *tcpRawData)</td></tr>
+<tr class="separator:a3259ca75ab6594a335b6404b55c0f0e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae173fc16a427b5e46b1a5417de19d735"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#ae173fc16a427b5e46b1a5417de19d735">closeConnection</a> (uint32_t flowKey)</td></tr>
 <tr class="separator:ae173fc16a427b5e46b1a5417de19d735"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf940b05f75a129f595301012be46005"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#acf940b05f75a129f595301012be46005">closeAllConnections</a> ()</td></tr>
@@ -230,6 +245,47 @@ Public Member Functions</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aea5fdf7b5322d1bb8f6fe43b59a9edc0a68df28b933182962d50800572b013133"></a>TcpReassemblyConnectionClosedByFIN_RST&#160;</td><td class="fielddoc"><p>Connection ended because of FIN or RST packet </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9"></a>TcpReassemblyConnectionClosedManually&#160;</td><td class="fielddoc"><p>Connection ended manually by the user </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a9604d95c87c7023962d2250cd28d5177"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9604d95c87c7023962d2250cd28d5177">&#9670;&nbsp;</a></span>ReassemblyStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177">pcpp::TcpReassembly::ReassemblyStatus</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An enum for providing reassembly status for each processed packet </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9604d95c87c7023962d2250cd28d5177a9f25906863b5f67225ae77f81347fd62"></a>TcpMessageHandled&#160;</td><td class="fielddoc"><p>The processed packet contains valid TCP payload, and its payload is processed by <code>OnMessageReadyCallback</code> callback function. The packet may be:</p><ol type="1">
+<li>An in-order TCP packet, meaning <code>packet_sequence == sequence_expected</code>. Note if there's any buffered out-of-order packet waiting for this packet, their associated callbacks are called in this <code>reassemblePacket</code> call.</li>
+<li>An out-of-order TCP packet which satisfy <code>packet_sequence &lt; sequence_expected &amp;&amp; packet_sequence + packet_payload_length &gt; sequence_expected</code>. Note only the new data (the <code>[sequence_expected, packet_sequence + packet_payload_length]</code> part ) is processed by <code>OnMessageReadyCallback</code> callback funtion. </li>
+</ol>
+</td></tr>
+<tr><td class="fieldname"><a id="a9604d95c87c7023962d2250cd28d5177ae91e5196d30fb956c2b7514da4593ef9"></a>OutOfOrderTcpMessageBuffered&#160;</td><td class="fielddoc"><p>The processed packet is an out-of-order TCP packet, meaning <code>packet_sequence &gt; sequence_expected</code>. It's buffered so no <code>OnMessageReadyCallback</code> callback function is called. The callback function for this packet maybe called LATER, under different circumstances:</p><ol type="1">
+<li>When an in-order packet which is right before this packet arrives(case 1 and case 2 described in <code>TcpMessageHandled</code> section above).</li>
+<li>When a FIN or RST packet arrives, which will clear the buffered out-of-order packets of this side. If this packet contains "new data", meaning <code>(packet_sequence &lt;= sequence_expected) &amp;&amp; (packet_sequence + packet_payload_length &gt; sequence_expected)</code>, the new data is processed by <code>OnMessageReadyCallback</code> callback. </li>
+</ol>
+</td></tr>
+<tr><td class="fieldname"><a id="a9604d95c87c7023962d2250cd28d5177a323a52372e72a63a347da656d0b5cdda"></a>FIN_RSTWithNoData&#160;</td><td class="fielddoc"><p>The processed packet is a FIN or RST packet with no payload. Buffered out-of-order packets will be cleared. If they contain "new data", the new data is processed by <code>OnMessageReadyCallback</code> callback. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9604d95c87c7023962d2250cd28d5177af2e14abee4ff5e5dbf57c3f3ae7ddb34"></a>Ignore_PacketWithNoData&#160;</td><td class="fielddoc"><p>The processed packet is not a SYN/SYNACK/FIN/RST packet and has no payload. Normally it's just a bare ACK packet. It's ignored and no callback function is called. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9604d95c87c7023962d2250cd28d5177a48fe637b23950961733dca730d02107b"></a>Ignore_PacketOfClosedFlow&#160;</td><td class="fielddoc"><p>The processed packet comes from a closed flow(an in-order FIN or RST is seen). It's ignored and no callback function is called. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9604d95c87c7023962d2250cd28d5177a72b70b319166c4691ba4a052d5b59366"></a>Ignore_Retransimission&#160;</td><td class="fielddoc"><p>The processed packet is a restransmission packet with no new data, meaning the <code>packet_sequence + packet_payload_length &lt; sequence_expected</code>. It's ignored and no callback function is called. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9604d95c87c7023962d2250cd28d5177a08445f1595412406ca139f294be48566"></a>NonIpPacket&#160;</td><td class="fielddoc"><p>The processed packet is not an IP packet. It's ignored and no callback function is called. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9604d95c87c7023962d2250cd28d5177a6f9f634c9a8f9a3a5dbf81de12862317"></a>NonTcpPacket&#160;</td><td class="fielddoc"><p>The processed packet is not a TCP packet. It's ignored and no callback function is called. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9604d95c87c7023962d2250cd28d5177a3380cc0fe3cc4979fa2c5c4a9a658921"></a>Error_PacketDoesNotMatchFlow&#160;</td><td class="fielddoc"><p>The processed packet does not belong to any known TCP connection. It's ignored and no callback function is called. Normally this will be happen. </p>
 </td></tr>
 </table>
 
@@ -429,14 +485,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="acbe7a908f4367cc9234096998dc6d56e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbe7a908f4367cc9234096998dc6d56e">&#9670;&nbsp;</a></span>reassemblePacket() <span class="overload">[1/2]</span></h2>
+<a id="ad0ecd6c2e334c55f4d6393e23a205e04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0ecd6c2e334c55f4d6393e23a205e04">&#9670;&nbsp;</a></span>reassemblePacket() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void pcpp::TcpReassembly::reassemblePacket </td>
+          <td class="memname"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177">ReassemblyStatus</a> pcpp::TcpReassembly::reassemblePacket </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classpcpp_1_1_packet.html">Packet</a> &amp;&#160;</td>
           <td class="paramname"><em>tcpData</em></td><td>)</td>
@@ -450,17 +506,18 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>A enum of <code><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177">TcpReassembly::ReassemblyStatus</a></code>, indicating status of TCP reassembly </dd></dl>
 
 </div>
 </div>
-<a id="a5f56a069fdd66f154990c35c9d462d7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f56a069fdd66f154990c35c9d462d7b">&#9670;&nbsp;</a></span>reassemblePacket() <span class="overload">[2/2]</span></h2>
+<a id="a3259ca75ab6594a335b6404b55c0f0e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3259ca75ab6594a335b6404b55c0f0e0">&#9670;&nbsp;</a></span>reassemblePacket() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void pcpp::TcpReassembly::reassemblePacket </td>
+          <td class="memname"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177">ReassemblyStatus</a> pcpp::TcpReassembly::reassemblePacket </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *&#160;</td>
           <td class="paramname"><em>tcpRawData</em></td><td>)</td>
@@ -474,6 +531,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>A enum of <code><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177">TcpReassembly::ReassemblyStatus</a></code>, indicating status of TCP reassembly </dd></dl>
 
 </div>
 </div>
@@ -483,7 +541,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_tcp_reassembly.html">TcpReassembly</a></li>
-    <li class="footer">Generated on Thu May 14 2020 05:50:02 for PcapPlusPlus by
+    <li class="footer">Generated on Fri May 22 2020 09:34:40 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

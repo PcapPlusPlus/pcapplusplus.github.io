@@ -106,7 +106,7 @@ var searchData=
   ['ssl_5falert_5fdecompression_5ffailure',['SSL_ALERT_DECOMPRESSION_FAILURE',['../namespacepcpp.html#a49ab6e738d527b3e3fbbe112eed0fc32a1a9218f00851f1f10d3ddd91db5424a7',1,'pcpp']]],
   ['ssl_5falert_5fdecrypt_5ferror',['SSL_ALERT_DECRYPT_ERROR',['../namespacepcpp.html#a49ab6e738d527b3e3fbbe112eed0fc32af79a3a2eb86cc6fd6909cc5ad85f70cf',1,'pcpp']]],
   ['ssl_5falert_5fdecryption_5ffailed',['SSL_ALERT_DECRYPTION_FAILED',['../namespacepcpp.html#a49ab6e738d527b3e3fbbe112eed0fc32a0b8759a3806ce4ad2ceea771d5bbc7a8',1,'pcpp']]],
-  ['ssl_5falert_5fencrypred',['SSL_ALERT_ENCRYPRED',['../namespacepcpp.html#a49ab6e738d527b3e3fbbe112eed0fc32a72d0b1c3c8db0a9987befcdfef98d472',1,'pcpp']]],
+  ['ssl_5falert_5fencrypted',['SSL_ALERT_ENCRYPTED',['../namespacepcpp.html#a49ab6e738d527b3e3fbbe112eed0fc32aa490048a983efef63c575ff1c2d89124',1,'pcpp']]],
   ['ssl_5falert_5fexport_5frestriction',['SSL_ALERT_EXPORT_RESTRICTION',['../namespacepcpp.html#a49ab6e738d527b3e3fbbe112eed0fc32af441e772c9729621851e607ea17eebfe',1,'pcpp']]],
   ['ssl_5falert_5fhandshake_5ffailure',['SSL_ALERT_HANDSHAKE_FAILURE',['../namespacepcpp.html#a49ab6e738d527b3e3fbbe112eed0fc32a97fce394b85fadcbac9bc5e6d87e970d',1,'pcpp']]],
   ['ssl_5falert_5fillegal_5fparameter',['SSL_ALERT_ILLEGAL_PARAMETER',['../namespacepcpp.html#a49ab6e738d527b3e3fbbe112eed0fc32a403e917deb7545c86d05728cfb311935',1,'pcpp']]],

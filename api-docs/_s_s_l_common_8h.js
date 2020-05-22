@@ -30,7 +30,7 @@ var _s_s_l_common_8h =
       [ "SSL_ALERT_USER_CANCELLED", "_s_s_l_common_8h.html#a49ab6e738d527b3e3fbbe112eed0fc32a60bb635fc9579ff5ed79956ebc5225c6", null ],
       [ "SSL_ALERT_NO_RENEGOTIATION", "_s_s_l_common_8h.html#a49ab6e738d527b3e3fbbe112eed0fc32ac68ce68bb3205b056332d91119f84d1c", null ],
       [ "SSL_ALERT_UNSUPPORTED_EXTENSION", "_s_s_l_common_8h.html#a49ab6e738d527b3e3fbbe112eed0fc32a3eb72d02a539df5fd30a94281dd9d0cb", null ],
-      [ "SSL_ALERT_ENCRYPRED", "_s_s_l_common_8h.html#a49ab6e738d527b3e3fbbe112eed0fc32a72d0b1c3c8db0a9987befcdfef98d472", null ]
+      [ "SSL_ALERT_ENCRYPTED", "_s_s_l_common_8h.html#a49ab6e738d527b3e3fbbe112eed0fc32aa490048a983efef63c575ff1c2d89124", null ]
     ] ],
     [ "SSLAlertLevel", "_s_s_l_common_8h.html#ab3ca83a56e04fa5115ce2f2084a24b3c", [
       [ "SSL_ALERT_LEVEL_WARNING", "_s_s_l_common_8h.html#ab3ca83a56e04fa5115ce2f2084a24b3cac2c742c7966ff9bb51eedd9487b1183d", null ],
