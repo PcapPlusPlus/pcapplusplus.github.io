@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_raw_packet.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classpcpp_1_1_raw_packet-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::RawPacket Class Reference</div>  </div>
@@ -147,6 +148,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9cf289e6bbf461f55c20784615c899ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd9248a47bd60427e2a3ef34b379a28e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#acd9248a47bd60427e2a3ef34b379a28e">reallocateData</a> (size_t newBufferLength)</td></tr>
 <tr class="separator:acd9248a47bd60427e2a3ef34b379a28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a23e6987060255d210f0fac7db63b07a6"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#a23e6987060255d210f0fac7db63b07a6">isLinkTypeValid</a> (int linkTypeValue)</td></tr>
+<tr class="separator:a23e6987060255d210f0fac7db63b07a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class holds the packet as raw (not parsed) data. The data is held as byte array. In addition to the data itself every instance also holds a timestamp representing the time the packet was received by the NIC. <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> instance isn't read only. The user can change the packet data, add or remove data, etc. </p>
@@ -619,6 +625,39 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a23e6987060255d210f0fac7db63b07a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23e6987060255d210f0fac7db63b07a6">&#9670;&nbsp;</a></span>isLinkTypeValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool pcpp::RawPacket::isLinkTypeValid </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>linkTypeValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This static method validates whether a link type integer value is valid </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">linkTypeValue</td><td>Link type integer value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the link type value is valid and can be casted into LinkLayerType enum, false otherwise </dd></dl>
+
+</div>
+</div>
 <a id="ad2de0b9094569c2505cf590d8ab50f45"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad2de0b9094569c2505cf590d8ab50f45">&#9670;&nbsp;</a></span>isPacketSet()</h2>
 
@@ -954,7 +993,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a></li>
-    <li class="footer">Generated on Fri May 22 2020 09:34:40 for PcapPlusPlus by
+    <li class="footer">Generated on Sun May 24 2020 10:34:20 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

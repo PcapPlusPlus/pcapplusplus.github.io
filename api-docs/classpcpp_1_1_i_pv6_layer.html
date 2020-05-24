@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_i_pv6_layer.html','');})
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classpcpp_1_1_i_pv6_layer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::IPv6Layer Class Reference</div>  </div>
@@ -167,6 +168,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a019a07d6f9d8fc7eb233e61826b11964 inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d76629f081c34424c63794f4cf75a5a inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a0d76629f081c34424c63794f4cf75a5a">getDataPtr</a> (size_t offset=0) const</td></tr>
 <tr class="separator:a0d76629f081c34424c63794f4cf75a5a inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a901348cc5bf8635cede637cb17bc2285"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_layer.html#a901348cc5bf8635cede637cb17bc2285">isDataValid</a> (const uint8_t *data, size_t dataLen)</td></tr>
+<tr class="separator:a901348cc5bf8635cede637cb17bc2285"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents an IPv6 protocol layer </p>
@@ -542,6 +548,50 @@ template&lt;class TIPv6Extension &gt; </div>
 
 </div>
 </div>
+<a id="a901348cc5bf8635cede637cb17bc2285"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a901348cc5bf8635cede637cb17bc2285">&#9670;&nbsp;</a></span>isDataValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::IPv6Layer::isDataValid </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The static method makes validation of input data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The pointer to the beginning of byte stream of IP packet </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>The length of byte stream </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the data is valid and can represent the IPv6 packet </dd></dl>
+
+</div>
+</div>
 <a id="a6b40f69698814ff81c06e940507aa963"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6b40f69698814ff81c06e940507aa963">&#9670;&nbsp;</a></span>isFragment()</h2>
 
@@ -659,7 +709,7 @@ template&lt;class TIPv6Extension &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_pv6_layer.html">IPv6Layer</a></li>
-    <li class="footer">Generated on Fri May 22 2020 09:34:40 for PcapPlusPlus by
+    <li class="footer">Generated on Sun May 24 2020 10:34:20 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
