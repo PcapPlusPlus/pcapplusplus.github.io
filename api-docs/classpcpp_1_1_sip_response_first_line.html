@@ -122,6 +122,8 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a760b1eb3fba5445e8df0743ab0ca008d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classpcpp_1_1_sip_response_layer.html#a05536b7d8719b76e84ea4c539cb9e5b6">SipResponseLayer::SipResponseStatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_sip_response_first_line.html#a760b1eb3fba5445e8df0743ab0ca008d">parseStatusCode</a> (char *data, size_t dataLen)</td></tr>
 <tr class="separator:a760b1eb3fba5445e8df0743ab0ca008d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61fc52aea1be974b3f9be99171e42b6c"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_sip_response_first_line.html#a61fc52aea1be974b3f9be99171e42b6c">parseVersion</a> (char *data, size_t dataLen)</td></tr>
+<tr class="separator:a61fc52aea1be974b3f9be99171e42b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents an SIP response message first line. The first line includes 2 parameters: status code (e.g 100 Trying ,200 OK, etc.), and SIP version (usually SIP/2.0). These 2 parameters are included in this class, and the user can retrieve or set them. This class cannot be instantiated by users, it's created inside <a class="el" href="classpcpp_1_1_sip_response_layer.html">SipResponseLayer</a> and user can get a pointer to an instance of it. The "getter" methods of this class will retrieve the actual data of the SIP response and the "setter" methods will change the packet data. Since SIP is a textual protocol, most fields aren't of fixed size and this also applies to the first line parameters. So most "setter" methods of this class may need to shorten or extend the data in <a class="el" href="classpcpp_1_1_sip_response_layer.html">SipResponseLayer</a>. These methods will return a false value if this action failed </p>
@@ -310,6 +312,50 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a61fc52aea1be974b3f9be99171e42b6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61fc52aea1be974b3f9be99171e42b6c">&#9670;&nbsp;</a></span>parseVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::string pcpp::SipResponseFirstLine::parseVersion </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A static method for parsing the SIP version out of raw data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The raw data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>The raw data length </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The parsed SIP version string or an empty string if version cannot be extracted </dd></dl>
+
+</div>
+</div>
 <a id="a2ddb5a023bc342946fbbd691ec51c2ed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2ddb5a023bc342946fbbd691ec51c2ed">&#9670;&nbsp;</a></span>setStatusCode()</h2>
 
@@ -375,7 +421,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_sip_response_first_line.html">SipResponseFirstLine</a></li>
-    <li class="footer">Generated on Sun May 24 2020 10:34:20 for PcapPlusPlus by
+    <li class="footer">Generated on Wed May 27 2020 20:30:21 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
