@@ -153,8 +153,8 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a9994f37d42b9b1f72c4bf567fa9d2c53"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_layer.html#a9994f37d42b9b1f72c4bf567fa9d2c53">isSSLPort</a> (uint16_t port)</td></tr>
 <tr class="separator:a9994f37d42b9b1f72c4bf567fa9d2c53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15327f1acf51062ba2852678211f8264"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_layer.html#a15327f1acf51062ba2852678211f8264">IsSSLMessage</a> (uint16_t srcPort, uint16_t dstPort, uint8_t *data, size_t dataLen)</td></tr>
-<tr class="separator:a15327f1acf51062ba2852678211f8264"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3f1a267349da3994833e26dfdb5526d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_layer.html#aa3f1a267349da3994833e26dfdb5526d">IsSSLMessage</a> (uint16_t srcPort, uint16_t dstPort, uint8_t *data, size_t dataLen, bool ignorePorts=false)</td></tr>
+<tr class="separator:aa3f1a267349da3994833e26dfdb5526d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab475769b89eb8db08be50f96afe26450"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classpcpp_1_1_s_s_l_layer.html">SSLLayer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_layer.html#ab475769b89eb8db08be50f96afe26450">createSSLMessage</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_layer.html">Layer</a> *prevLayer, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet)</td></tr>
 <tr class="separator:ab475769b89eb8db08be50f96afe26450"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af38f557785a417888c5a1096d8c5c52f"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_layer.html#af38f557785a417888c5a1096d8c5c52f">sslVersionToString</a> (<a class="el" href="namespacepcpp.html#a57308ea55d838a37e7f2951ab950b6b0">SSLVersion</a> ver)</td></tr>
@@ -339,8 +339,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a15327f1acf51062ba2852678211f8264"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15327f1acf51062ba2852678211f8264">&#9670;&nbsp;</a></span>IsSSLMessage()</h2>
+<a id="aa3f1a267349da3994833e26dfdb5526d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3f1a267349da3994833e26dfdb5526d">&#9670;&nbsp;</a></span>IsSSLMessage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -370,7 +370,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>dataLen</em>&#160;</td>
+          <td class="paramname"><em>dataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ignorePorts</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -398,6 +404,7 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">dstPort</td><td>The dest port of the packet that contains the raw data. Dest port (or source port) are a criteria to identify SSL/TLS packets </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The data to check </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Length (in bytes) of the data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ignorePorts</td><td>SSL/TLS ports are only relevant for parsing the first SSL/TLS message, but are not relevant for parsing subsequent messages. This parameter can be set to "true" to skip SSL/TLS ports check. This is an optional paramter and its default is "false" </td></tr>
   </table>
   </dd>
 </dl>
@@ -505,7 +512,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_s_s_l_layer.html">SSLLayer</a></li>
-    <li class="footer">Generated on Sat May 30 2020 10:23:35 for PcapPlusPlus by
+    <li class="footer">Generated on Sun May 31 2020 10:46:53 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
