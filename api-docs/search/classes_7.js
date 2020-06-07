@@ -39,7 +39,6 @@ var searchData=
   ['ipfilter',['IPFilter',['../classpcpp_1_1_i_p_filter.html',1,'pcpp']]],
   ['iphdr',['iphdr',['../structpcpp_1_1iphdr.html',1,'pcpp']]],
   ['ipreassembly',['IPReassembly',['../classpcpp_1_1_i_p_reassembly.html',1,'pcpp']]],
-  ['ipv4_5foctets',['ipv4_octets',['../structpcpp_1_1_i_pv4_address_1_1ipv4__octets.html',1,'pcpp::IPv4Address']]],
   ['ipv4address',['IPv4Address',['../classpcpp_1_1_i_pv4_address.html',1,'pcpp']]],
   ['ipv4dnsresourcedata',['IPv4DnsResourceData',['../classpcpp_1_1_i_pv4_dns_resource_data.html',1,'pcpp']]],
   ['ipv4idfilter',['IPv4IDFilter',['../classpcpp_1_1_i_pv4_i_d_filter.html',1,'pcpp']]],

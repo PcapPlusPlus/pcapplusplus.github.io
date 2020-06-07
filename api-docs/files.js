@@ -53,7 +53,11 @@ var files =
     [ "HttpLayer.h", "_http_layer_8h.html", "_http_layer_8h" ],
     [ "IcmpLayer.h", "_icmp_layer_8h.html", "_icmp_layer_8h" ],
     [ "IgmpLayer.h", "_igmp_layer_8h.html", "_igmp_layer_8h" ],
-    [ "IpAddress.h", "_ip_address_8h.html", "_ip_address_8h" ],
+    [ "IpAddress.h", "_ip_address_8h.html", [
+      [ "IPv4Address", "classpcpp_1_1_i_pv4_address.html", "classpcpp_1_1_i_pv4_address" ],
+      [ "IPv6Address", "classpcpp_1_1_i_pv6_address.html", "classpcpp_1_1_i_pv6_address" ],
+      [ "IPAddress", "classpcpp_1_1_i_p_address.html", "classpcpp_1_1_i_p_address" ]
+    ] ],
     [ "IPReassembly.h", "_i_p_reassembly_8h.html", "_i_p_reassembly_8h" ],
     [ "IpUtils.h", "_ip_utils_8h.html", "_ip_utils_8h" ],
     [ "IPv4Layer.h", "_i_pv4_layer_8h.html", "_i_pv4_layer_8h" ],

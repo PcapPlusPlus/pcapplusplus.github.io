@@ -85,24 +85,13 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_i_p_address.html','');})
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classpcpp_1_1_i_p_address-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::IPAddress Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">pcpp::IPAddress Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_ip_address_8h_source.html">IpAddress.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for pcpp::IPAddress:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="classpcpp_1_1_i_p_address.png" usemap="#pcpp::IPAddress_map" alt=""/>
-  <map id="pcpp::IPAddress_map" name="pcpp::IPAddress_map">
-<area href="classpcpp_1_1_i_pv4_address.html" alt="pcpp::IPv4Address" shape="rect" coords="0,56,118,80"/>
-<area href="classpcpp_1_1_i_pv6_address.html" alt="pcpp::IPv6Address" shape="rect" coords="128,56,246,80"/>
-</map>
- </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -113,26 +102,39 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a85a3e43774848c93585f97bdef6ec73d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classpcpp_1_1_i_p_address.html#ac389e5507d75b60d2b0ca939db195231">AddressType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#a85a3e43774848c93585f97bdef6ec73d">getType</a> () const =0</td></tr>
-<tr class="separator:a85a3e43774848c93585f97bdef6ec73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f66006f76b2edbf56adea2499be4d19"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#a0f66006f76b2edbf56adea2499be4d19">IPAddress</a> ()</td></tr>
+<tr class="separator:a0f66006f76b2edbf56adea2499be4d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f7c0805f46aface885aab6adaafac00"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#a9f7c0805f46aface885aab6adaafac00">IPAddress</a> (const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;addr)</td></tr>
+<tr class="separator:a9f7c0805f46aface885aab6adaafac00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa2611d7eb51e09867f57aec18e1ca45"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#afa2611d7eb51e09867f57aec18e1ca45">IPAddress</a> (const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> &amp;addr)</td></tr>
+<tr class="separator:afa2611d7eb51e09867f57aec18e1ca45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a944ae61c0bb297bb9af0679bd4da3953"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#a944ae61c0bb297bb9af0679bd4da3953">IPAddress</a> (const std::string &amp;addrAsString)</td></tr>
+<tr class="separator:a944ae61c0bb297bb9af0679bd4da3953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5e81a386d9fcd33352de132903f9133"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#ac5e81a386d9fcd33352de132903f9133">operator=</a> (const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;addr)</td></tr>
+<tr class="separator:ac5e81a386d9fcd33352de132903f9133"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82335ccaf680a3bd82730b94392c25dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#a82335ccaf680a3bd82730b94392c25dd">operator=</a> (const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> &amp;addr)</td></tr>
+<tr class="separator:a82335ccaf680a3bd82730b94392c25dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3d65be369c49372d2747b5f096fc7d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_i_p_address.html#ac389e5507d75b60d2b0ca939db195231">AddressType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#aa3d65be369c49372d2747b5f096fc7d9">getType</a> () const</td></tr>
+<tr class="separator:aa3d65be369c49372d2747b5f096fc7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16d19ff8459edd846ee7b6b3f121769c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#a16d19ff8459edd846ee7b6b3f121769c">toString</a> () const</td></tr>
 <tr class="separator:a16d19ff8459edd846ee7b6b3f121769c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87c99d4671e64cc23ce3824c35290abf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#a87c99d4671e64cc23ce3824c35290abf">isValid</a> () const</td></tr>
 <tr class="separator:a87c99d4671e64cc23ce3824c35290abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92d35f8f8e9965d0e4c38e183fba7d1e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#a92d35f8f8e9965d0e4c38e183fba7d1e">clone</a> () const =0</td></tr>
-<tr class="separator:a92d35f8f8e9965d0e4c38e183fba7d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c6595d02efc05f3bbc59ecf9879172e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#a7c6595d02efc05f3bbc59ecf9879172e">equals</a> (const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> *other) const</td></tr>
-<tr class="separator:a7c6595d02efc05f3bbc59ecf9879172e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a381e5006e8ac432c8756a86db7e9f9fc"><td class="memItemLeft" align="right" valign="top">static Ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#a381e5006e8ac432c8756a86db7e9f9fc">fromString</a> (char *addressAsString)</td></tr>
-<tr class="separator:a381e5006e8ac432c8756a86db7e9f9fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab172b2f55f772fccdec86d7eb4c1c16a"><td class="memItemLeft" align="right" valign="top">static Ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#ab172b2f55f772fccdec86d7eb4c1c16a">fromString</a> (std::string addressAsString)</td></tr>
-<tr class="separator:ab172b2f55f772fccdec86d7eb4c1c16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab79cac12a5fe8253c7d981b7d47b0354"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#ab79cac12a5fe8253c7d981b7d47b0354">isIPv4</a> () const</td></tr>
+<tr class="separator:ab79cac12a5fe8253c7d981b7d47b0354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf60f8b4543e7fccc7123e85f65e2e34"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#acf60f8b4543e7fccc7123e85f65e2e34">isIPv6</a> () const</td></tr>
+<tr class="separator:acf60f8b4543e7fccc7123e85f65e2e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a584a911f130cea976cc73b46ab1672d2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#a584a911f130cea976cc73b46ab1672d2">getIPv4</a> () const</td></tr>
+<tr class="separator:a584a911f130cea976cc73b46ab1672d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d61f3719cb001136a622d4622c003a8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#a6d61f3719cb001136a622d4622c003a8">getIPv6</a> () const</td></tr>
+<tr class="separator:a6d61f3719cb001136a622d4622c003a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae40ad58764b28485323c729a8a72a575"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#ae40ad58764b28485323c729a8a72a575">operator==</a> (const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;rhs) const</td></tr>
+<tr class="separator:ae40ad58764b28485323c729a8a72a575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a694f021bb98f29127cde0e2a19f40dfc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#a694f021bb98f29127cde0e2a19f40dfc">operator!=</a> (const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;rhs) const</td></tr>
+<tr class="separator:a694f021bb98f29127cde0e2a19f40dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Base class for <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> and <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a>. It's an abstract class and cannot be used as is. The only useful method in this class are the 2 static methods that constructs an IP address class from string </p>
+<div class="textblock"><p>The class is a version-independent representation for an IP address </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="ac389e5507d75b60d2b0ca939db195231"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac389e5507d75b60d2b0ca939db195231">&#9670;&nbsp;</a></span>AddressType</h2>
@@ -155,9 +157,124 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a0f66006f76b2edbf56adea2499be4d19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f66006f76b2edbf56adea2499be4d19">&#9670;&nbsp;</a></span>IPAddress() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::IPAddress::IPAddress </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A default constructor that creates an instance of the class with unspecified IPv4 address </p>
+
+</div>
+</div>
+<a id="a9f7c0805f46aface885aab6adaafac00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f7c0805f46aface885aab6adaafac00">&#9670;&nbsp;</a></span>IPAddress() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::IPAddress::IPAddress </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A constructor that creates an instance of the class out of <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>A const reference to instance of <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afa2611d7eb51e09867f57aec18e1ca45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa2611d7eb51e09867f57aec18e1ca45">&#9670;&nbsp;</a></span>IPAddress() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::IPAddress::IPAddress </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> &amp;&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A constructor that creates an instance of the class out of <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>A const reference to instance of <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a944ae61c0bb297bb9af0679bd4da3953"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a944ae61c0bb297bb9af0679bd4da3953">&#9670;&nbsp;</a></span>IPAddress() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::IPAddress::IPAddress </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>addrAsString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A constructor that creates an instance of the class out of std::string value If the string doesn't represent a valid IPv4 or IPv6 address, an instance will store an unspecified address </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addrAsString</td><td>The std::string representation of the address </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a92d35f8f8e9965d0e4c38e183fba7d1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92d35f8f8e9965d0e4c38e183fba7d1e">&#9670;&nbsp;</a></span>clone()</h2>
+<a id="a584a911f130cea976cc73b46ab1672d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a584a911f130cea976cc73b46ab1672d2">&#9670;&nbsp;</a></span>getIPv4()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,7 +283,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a>* pcpp::IPAddress::clone </td>
+          <td class="memname">const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a>&amp; pcpp::IPAddress::getIPv4 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -174,37 +291,16 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Clone the object </p><dl class="section return"><dt>Returns</dt><dd>A newly allocated instance which is a clone of the current instance </dd></dl>
-
-<p>Implemented in <a class="el" href="classpcpp_1_1_i_pv6_address.html#a477cf27dfaf91d782f4f1305c66d4202">pcpp::IPv6Address</a>, and <a class="el" href="classpcpp_1_1_i_pv4_address.html#a1fffaebfa683074cd987de6b6207fda8">pcpp::IPv4Address</a>.</p>
+<p>Get a reference to IPv4 address instance </p><dl class="section return"><dt>Returns</dt><dd>The const reference to <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> instance </dd></dl>
 
 </div>
 </div>
-<a id="a7c6595d02efc05f3bbc59ecf9879172e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c6595d02efc05f3bbc59ecf9879172e">&#9670;&nbsp;</a></span>equals()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::IPAddress::equals </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> *&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Compare between this IP address and another IP address. This method is different than operator==() implemented in <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> and <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> in the sense that you can compare any IP type: IPv6 to IPv6, IPv4 to IPv4 or IPv4 to IPv6. It fits cases when you're not sure which type you currently have </p><dl class="section return"><dt>Returns</dt><dd>True if addresses match or false otherwise </dd></dl>
-
-</div>
-</div>
-<a id="a381e5006e8ac432c8756a86db7e9f9fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a381e5006e8ac432c8756a86db7e9f9fc">&#9670;&nbsp;</a></span>fromString() <span class="overload">[1/2]</span></h2>
+<a id="a6d61f3719cb001136a622d4622c003a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d61f3719cb001136a622d4622c003a8">&#9670;&nbsp;</a></span>getIPv6()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -213,73 +309,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static Ptr_t pcpp::IPAddress::fromString </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>addressAsString</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Constructs an IP address of type IPv4 or IPv6 from a string (char*) representation </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addressAsString</td><td>The address in string (char*) representation </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>an auto-pointer to <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> or <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> instance that the string address represents, or an auto-pointer to NULL if the string doesn't represent either of types </dd></dl>
-
-</div>
-</div>
-<a id="ab172b2f55f772fccdec86d7eb4c1c16a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab172b2f55f772fccdec86d7eb4c1c16a">&#9670;&nbsp;</a></span>fromString() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Ptr_t pcpp::IPAddress::fromString </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>addressAsString</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Constructs an IP address of type IPv4 or IPv6 from a std::string representation </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addressAsString</td><td>The address in std::string representation </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>an auto-pointer to <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> or <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> instance that the string address represents, or an auto-pointer to NULL if the string doesn't represent either of types </dd></dl>
-
-</div>
-</div>
-<a id="a85a3e43774848c93585f97bdef6ec73d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85a3e43774848c93585f97bdef6ec73d">&#9670;&nbsp;</a></span>getType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classpcpp_1_1_i_p_address.html#ac389e5507d75b60d2b0ca939db195231">AddressType</a> pcpp::IPAddress::getType </td>
+          <td class="memname">const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a>&amp; pcpp::IPAddress::getIPv6 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -287,13 +317,89 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get a reference to IPv6 address instance </p><dl class="section return"><dt>Returns</dt><dd>The const reference to <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> instance </dd></dl>
+
+</div>
+</div>
+<a id="aa3d65be369c49372d2747b5f096fc7d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3d65be369c49372d2747b5f096fc7d9">&#9670;&nbsp;</a></span>getType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classpcpp_1_1_i_p_address.html#ac389e5507d75b60d2b0ca939db195231">AddressType</a> pcpp::IPAddress::getType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <p>Gets the address type: IPv4 or IPv6 </p><dl class="section return"><dt>Returns</dt><dd>The address type </dd></dl>
 
-<p>Implemented in <a class="el" href="classpcpp_1_1_i_pv6_address.html#a8a95c46b4a4d4569b18182a1f17f40d1">pcpp::IPv6Address</a>, and <a class="el" href="classpcpp_1_1_i_pv4_address.html#a7b49b92e0182d39422c334efc49cc87c">pcpp::IPv4Address</a>.</p>
+</div>
+</div>
+<a id="ab79cac12a5fe8253c7d981b7d47b0354"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab79cac12a5fe8253c7d981b7d47b0354">&#9670;&nbsp;</a></span>isIPv4()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::IPAddress::isIPv4 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Determine whether the object contains an IP version 4 address </p>
+
+</div>
+</div>
+<a id="acf60f8b4543e7fccc7123e85f65e2e34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf60f8b4543e7fccc7123e85f65e2e34">&#9670;&nbsp;</a></span>isIPv6()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::IPAddress::isIPv6 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Determine whether the object contains an IP version 6 address </p>
 
 </div>
 </div>
@@ -319,7 +425,125 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get an indication if the address is valid. An address can be invalid if it was constructed from illegal input, for example: An IPv4 address that was constructed form the string "999.999.999.999" </p><dl class="section return"><dt>Returns</dt><dd>True if the address is valid, false otherwise </dd></dl>
+<p>Determine whether the address is unspecified </p>
+
+</div>
+</div>
+<a id="a694f021bb98f29127cde0e2a19f40dfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a694f021bb98f29127cde0e2a19f40dfc">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::IPAddress::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Overload of the not-equal-to operator </p>
+
+</div>
+</div>
+<a id="ac5e81a386d9fcd33352de132903f9133"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5e81a386d9fcd33352de132903f9133">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp; pcpp::IPAddress::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Overload of an assignment operator. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>A const reference to instance of <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a82335ccaf680a3bd82730b94392c25dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82335ccaf680a3bd82730b94392c25dd">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp; pcpp::IPAddress::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> &amp;&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Overload of an assignment operator. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>A const reference to instance of <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae40ad58764b28485323c729a8a72a575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae40ad58764b28485323c729a8a72a575">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::IPAddress::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Overload of the equal-to operator </p>
 
 </div>
 </div>
@@ -355,7 +579,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a></li>
-    <li class="footer">Generated on Thu Jun 4 2020 08:40:18 for PcapPlusPlus by
+    <li class="footer">Generated on Sun Jun 7 2020 09:43:02 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

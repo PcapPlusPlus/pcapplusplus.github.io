@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['_7econnectiondata',['~ConnectionData',['../structpcpp_1_1_connection_data.html#af5cf5f30d9d42b8d7f877d167fa8e8e3',1,'pcpp::ConnectionData']]],
   ['_7edhcplayer',['~DhcpLayer',['../classpcpp_1_1_dhcp_layer.html#a41eaefdbfb7e73dcaf863c7639bd5db4',1,'pcpp::DhcpLayer']]],
   ['_7edhcpoption',['~DhcpOption',['../classpcpp_1_1_dhcp_option.html#a280836170d092e111cbad745e46b5e5c',1,'pcpp::DhcpOption']]],
   ['_7edpdkworkerthread',['~DpdkWorkerThread',['../classpcpp_1_1_dpdk_worker_thread.html#afee1cd32d8aa6bbb639f7e45ca85e68d',1,'pcpp::DpdkWorkerThread']]],

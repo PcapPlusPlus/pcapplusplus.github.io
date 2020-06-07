@@ -214,7 +214,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a9095bdfe0c8e79b656b2651a721a2ea2 inherit pub_static_methods_classpcpp_1_1_i_pcap_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class that wraps a network interface (each of the interfaces listed in ifconfig/ipconfig). This class wraps the libpcap capabilities of capturing packets from the network, filtering packets and sending packets back to the network. This class is relevant for Linux applications only. On Windows the <a class="el" href="classpcpp_1_1_win_pcap_live_device.html">WinPcapLiveDevice</a> (which inherits this class) is used. Both classes are almost similar in capabilities, the main difference between them is adapting some capabilities to the specific OS. This class cannot be instantiated by the user (it has a private constructor), as network interfaces aren't dynamic. Instances of this class (one instance per network interface) are created by <a class="el" href="classpcpp_1_1_pcap_live_device_list.html">PcapLiveDeviceList</a> singleton on application startup and the user can get access to them by using <a class="el" href="classpcpp_1_1_pcap_live_device_list.html">PcapLiveDeviceList</a> public methods such as <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#a005f173b1a931c3000ac7516e3fcc2d6">PcapLiveDeviceList::getPcapLiveDeviceByIp()</a><br />
+<div class="textblock"><p>A class that wraps a network interface (each of the interfaces listed in ifconfig/ipconfig). This class wraps the libpcap capabilities of capturing packets from the network, filtering packets and sending packets back to the network. This class is relevant for Linux applications only. On Windows the <a class="el" href="classpcpp_1_1_win_pcap_live_device.html">WinPcapLiveDevice</a> (which inherits this class) is used. Both classes are almost similar in capabilities, the main difference between them is adapting some capabilities to the specific OS. This class cannot be instantiated by the user (it has a private constructor), as network interfaces aren't dynamic. Instances of this class (one instance per network interface) are created by <a class="el" href="classpcpp_1_1_pcap_live_device_list.html">PcapLiveDeviceList</a> singleton on application startup and the user can get access to them by using <a class="el" href="classpcpp_1_1_pcap_live_device_list.html">PcapLiveDeviceList</a> public methods such as <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#a1921e94307197c9b8f613bb35fc1a0c5">PcapLiveDeviceList::getPcapLiveDeviceByIp()</a><br />
  Main capabilities of this class:</p><ul>
 <li>Get all available information for this network interfaces such as name, IP addresses, MAC address, MTU, etc. This information is taken from both libpcap and the OS</li>
 <li>Capture packets from the network. Capturing is always conducted on a different thread. PcapPlusPlus creates this thread when capturing starts and kills it when capturing ends. This prevents the application from being stuck while waiting for packets or processing them. Currently only one capturing thread is allowed, so when the interface is in capture mode, no further capturing is allowed. In addition to capturing the user can get stats on packets that were received by the application, dropped by the NIC (due to full NIC buffers), etc. Stats collection can be initiated by the user by calling <a class="el" href="classpcpp_1_1_pcap_live_device.html#af3f2a7f926d21d1073a8b873b3998bd3">getStatistics()</a> or be pushed to the user periodically by supplying a callback and a timeout to <a class="el" href="classpcpp_1_1_pcap_live_device.html#a349b001c38b0f1e43a1691fedbd1b0cc">startCapture()</a></li>
@@ -402,7 +402,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The default gateway defined for this interface. If no default gateway is defined, if it's not IPv4 or if couldn't extract default gateway <a class="el" href="classpcpp_1_1_i_pv4_address.html#ab1fdcb75a0d28033e51770605ec978cb">IPv4Address::Zero</a> will be returned. If multiple gateways were defined the first one will be returned </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The default gateway defined for this interface. If no default gateway is defined, if it's not IPv4 or if couldn't extract default gateway <a class="el" href="classpcpp_1_1_i_pv4_address.html#abd6badbf09d36b21ce83d54fd06bd17b">IPv4Address::Zero</a> will be returned. If multiple gateways were defined the first one will be returned </dd></dl>
 
 </div>
 </div>
@@ -492,7 +492,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The IPv4 address for this interface. If multiple IPv4 addresses are defined for this interface, the first will be picked. If no IPv4 addresses are defined, a zeroed IPv4 address (<a class="el" href="classpcpp_1_1_i_pv4_address.html#ab1fdcb75a0d28033e51770605ec978cb">IPv4Address::Zero</a>) will be returned </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The IPv4 address for this interface. If multiple IPv4 addresses are defined for this interface, the first will be picked. If no IPv4 addresses are defined, a zeroed IPv4 address (<a class="el" href="classpcpp_1_1_i_pv4_address.html#abd6badbf09d36b21ce83d54fd06bd17b">IPv4Address::Zero</a>) will be returned </dd></dl>
 
 </div>
 </div>
@@ -1267,7 +1267,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a></li>
-    <li class="footer">Generated on Thu Jun 4 2020 08:40:18 for PcapPlusPlus by
+    <li class="footer">Generated on Sun Jun 7 2020 09:43:02 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
