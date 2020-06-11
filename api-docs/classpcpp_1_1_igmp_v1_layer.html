@@ -107,8 +107,8 @@ Inheritance diagram for pcpp::IgmpV1Layer:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a412f4eb25d3bf40d8ca795b7b42d01f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_igmp_v1_layer.html#a412f4eb25d3bf40d8ca795b7b42d01f1">IgmpV1Layer</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_layer.html">Layer</a> *prevLayer, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet)</td></tr>
 <tr class="separator:a412f4eb25d3bf40d8ca795b7b42d01f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69a0f0ea4eab6a05a5478a973a41cb6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_igmp_v1_layer.html#a69a0f0ea4eab6a05a5478a973a41cb6f">IgmpV1Layer</a> (<a class="el" href="namespacepcpp.html#ad59f90b2f755654b75205c3e06fb2bd8">IgmpType</a> type, const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;groupAddr=<a class="el" href="classpcpp_1_1_i_pv4_address.html#abd6badbf09d36b21ce83d54fd06bd17b">IPv4Address::Zero</a>)</td></tr>
-<tr class="separator:a69a0f0ea4eab6a05a5478a973a41cb6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeee38b13bae517fe536289cbc548079c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_igmp_v1_layer.html#aeee38b13bae517fe536289cbc548079c">IgmpV1Layer</a> (<a class="el" href="namespacepcpp.html#ad59f90b2f755654b75205c3e06fb2bd8">IgmpType</a> type, const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;groupAddr=<a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a>())</td></tr>
+<tr class="separator:aeee38b13bae517fe536289cbc548079c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0011823f9a5245485285aae0e499210b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_igmp_v1_layer.html#a0011823f9a5245485285aae0e499210b">~IgmpV1Layer</a> ()</td></tr>
 <tr class="separator:a0011823f9a5245485285aae0e499210b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade278260d97710cfcbb779cc29d4028c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_igmp_v1_layer.html#ade278260d97710cfcbb779cc29d4028c">computeCalculateFields</a> ()</td></tr>
@@ -170,6 +170,9 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">pcpp::IgmpV1Layer::IgmpV1Layer </td>
@@ -201,6 +204,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>A constructor that creates the layer from an existing packet raw data </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -214,11 +222,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a69a0f0ea4eab6a05a5478a973a41cb6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69a0f0ea4eab6a05a5478a973a41cb6f">&#9670;&nbsp;</a></span>IgmpV1Layer() <span class="overload">[2/2]</span></h2>
+<a id="aeee38b13bae517fe536289cbc548079c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeee38b13bae517fe536289cbc548079c">&#9670;&nbsp;</a></span>IgmpV1Layer() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">pcpp::IgmpV1Layer::IgmpV1Layer </td>
@@ -230,7 +241,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;&#160;</td>
-          <td class="paramname"><em>groupAddr</em> = <code><a class="el" href="classpcpp_1_1_i_pv4_address.html#abd6badbf09d36b21ce83d54fd06bd17b">IPv4Address::Zero</a></code>&#160;</td>
+          <td class="paramname"><em>groupAddr</em> = <code><a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -238,6 +249,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>A constructor that allocates a new IGMPv1 header </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -310,7 +326,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_igmp_v1_layer.html">IgmpV1Layer</a></li>
-    <li class="footer">Generated on Sun Jun 7 2020 09:43:02 for PcapPlusPlus by
+    <li class="footer">Generated on Thu Jun 11 2020 04:47:45 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
