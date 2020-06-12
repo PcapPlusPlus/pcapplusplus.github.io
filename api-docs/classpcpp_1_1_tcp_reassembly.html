@@ -117,8 +117,8 @@ Public Types</h2></td></tr>
 <tr class="separator:a9604d95c87c7023962d2250cd28d5177"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d3377f5af316ec54bb70595c2d5418e"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; uint32_t, <a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a3d3377f5af316ec54bb70595c2d5418e">ConnectionInfoList</a></td></tr>
 <tr class="separator:a3d3377f5af316ec54bb70595c2d5418e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a211aff7a58a72c1365eb61bff5ba0c06"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a211aff7a58a72c1365eb61bff5ba0c06">OnTcpMessageReady</a>) (int side, const <a class="el" href="classpcpp_1_1_tcp_stream_data.html">TcpStreamData</a> &amp;tcpData, void *userCookie)</td></tr>
-<tr class="separator:a211aff7a58a72c1365eb61bff5ba0c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9c41ac805585a4e3cd826c8aec371ca"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#ad9c41ac805585a4e3cd826c8aec371ca">OnTcpMessageReady</a>) (int8_t side, const <a class="el" href="classpcpp_1_1_tcp_stream_data.html">TcpStreamData</a> &amp;tcpData, void *userCookie)</td></tr>
+<tr class="separator:ad9c41ac805585a4e3cd826c8aec371ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3a1cfc6fe6b8616da6e307f03e5fa40"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#ac3a1cfc6fe6b8616da6e307f03e5fa40">OnTcpConnectionStart</a>) (const <a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a> &amp;connectionData, void *userCookie)</td></tr>
 <tr class="separator:ac3a1cfc6fe6b8616da6e307f03e5fa40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa7c398942772e262aee596d0b63a52d"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#afa7c398942772e262aee596d0b63a52d">OnTcpConnectionEnd</a>) (const <a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a> &amp;connectionData, <a class="el" href="classpcpp_1_1_tcp_reassembly.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0">ConnectionEndReason</a> reason, void *userCookie)</td></tr>
@@ -126,7 +126,7 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a66205ac4b99b320454c875d0348c10b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a66205ac4b99b320454c875d0348c10b1">TcpReassembly</a> (<a class="el" href="classpcpp_1_1_tcp_reassembly.html#a211aff7a58a72c1365eb61bff5ba0c06">OnTcpMessageReady</a> onMessageReadyCallback, void *userCookie=NULL, <a class="el" href="classpcpp_1_1_tcp_reassembly.html#ac3a1cfc6fe6b8616da6e307f03e5fa40">OnTcpConnectionStart</a> onConnectionStartCallback=NULL, <a class="el" href="classpcpp_1_1_tcp_reassembly.html#afa7c398942772e262aee596d0b63a52d">OnTcpConnectionEnd</a> onConnectionEndCallback=NULL, const <a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html">TcpReassemblyConfiguration</a> &amp;config=<a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html">TcpReassemblyConfiguration</a>())</td></tr>
+<tr class="memitem:a66205ac4b99b320454c875d0348c10b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a66205ac4b99b320454c875d0348c10b1">TcpReassembly</a> (<a class="el" href="classpcpp_1_1_tcp_reassembly.html#ad9c41ac805585a4e3cd826c8aec371ca">OnTcpMessageReady</a> onMessageReadyCallback, void *userCookie=NULL, <a class="el" href="classpcpp_1_1_tcp_reassembly.html#ac3a1cfc6fe6b8616da6e307f03e5fa40">OnTcpConnectionStart</a> onConnectionStartCallback=NULL, <a class="el" href="classpcpp_1_1_tcp_reassembly.html#afa7c398942772e262aee596d0b63a52d">OnTcpConnectionEnd</a> onConnectionEndCallback=NULL, const <a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html">TcpReassemblyConfiguration</a> &amp;config=<a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html">TcpReassemblyConfiguration</a>())</td></tr>
 <tr class="separator:a66205ac4b99b320454c875d0348c10b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1797ebded60f0637ae95223653b9f78"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#aa1797ebded60f0637ae95223653b9f78">~TcpReassembly</a> ()</td></tr>
 <tr class="separator:aa1797ebded60f0637ae95223653b9f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,8 +206,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a211aff7a58a72c1365eb61bff5ba0c06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a211aff7a58a72c1365eb61bff5ba0c06">&#9670;&nbsp;</a></span>OnTcpMessageReady</h2>
+<a id="ad9c41ac805585a4e3cd826c8aec371ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9c41ac805585a4e3cd826c8aec371ca">&#9670;&nbsp;</a></span>OnTcpMessageReady</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -301,7 +301,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">pcpp::TcpReassembly::TcpReassembly </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a211aff7a58a72c1365eb61bff5ba0c06">OnTcpMessageReady</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#ad9c41ac805585a4e3cd826c8aec371ca">OnTcpMessageReady</a>&#160;</td>
           <td class="paramname"><em>onMessageReadyCallback</em>, </td>
         </tr>
         <tr>
@@ -500,7 +500,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The most important method of this class which gets a packet from the user and processes it. If this packet opens a new connection, ends a connection or contains new data on an existing connection, the relevant callback will be called (<a class="el" href="classpcpp_1_1_tcp_reassembly.html#a211aff7a58a72c1365eb61bff5ba0c06">TcpReassembly::OnTcpMessageReady</a>, <a class="el" href="classpcpp_1_1_tcp_reassembly.html#ac3a1cfc6fe6b8616da6e307f03e5fa40">TcpReassembly::OnTcpConnectionStart</a>, <a class="el" href="classpcpp_1_1_tcp_reassembly.html#afa7c398942772e262aee596d0b63a52d">TcpReassembly::OnTcpConnectionEnd</a>) </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The most important method of this class which gets a packet from the user and processes it. If this packet opens a new connection, ends a connection or contains new data on an existing connection, the relevant callback will be called (<a class="el" href="classpcpp_1_1_tcp_reassembly.html#ad9c41ac805585a4e3cd826c8aec371ca">TcpReassembly::OnTcpMessageReady</a>, <a class="el" href="classpcpp_1_1_tcp_reassembly.html#ac3a1cfc6fe6b8616da6e307f03e5fa40">TcpReassembly::OnTcpConnectionStart</a>, <a class="el" href="classpcpp_1_1_tcp_reassembly.html#afa7c398942772e262aee596d0b63a52d">TcpReassembly::OnTcpConnectionEnd</a>) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">tcpData</td><td>A reference to the packet to process </td></tr>
   </table>
@@ -525,7 +525,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The most important method of this class which gets a raw packet from the user and processes it. If this packet opens a new connection, ends a connection or contains new data on an existing connection, the relevant callback will be invoked (<a class="el" href="classpcpp_1_1_tcp_reassembly.html#a211aff7a58a72c1365eb61bff5ba0c06">TcpReassembly::OnTcpMessageReady</a>, <a class="el" href="classpcpp_1_1_tcp_reassembly.html#ac3a1cfc6fe6b8616da6e307f03e5fa40">TcpReassembly::OnTcpConnectionStart</a>, <a class="el" href="classpcpp_1_1_tcp_reassembly.html#afa7c398942772e262aee596d0b63a52d">TcpReassembly::OnTcpConnectionEnd</a>) </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The most important method of this class which gets a raw packet from the user and processes it. If this packet opens a new connection, ends a connection or contains new data on an existing connection, the relevant callback will be invoked (<a class="el" href="classpcpp_1_1_tcp_reassembly.html#ad9c41ac805585a4e3cd826c8aec371ca">TcpReassembly::OnTcpMessageReady</a>, <a class="el" href="classpcpp_1_1_tcp_reassembly.html#ac3a1cfc6fe6b8616da6e307f03e5fa40">TcpReassembly::OnTcpConnectionStart</a>, <a class="el" href="classpcpp_1_1_tcp_reassembly.html#afa7c398942772e262aee596d0b63a52d">TcpReassembly::OnTcpConnectionEnd</a>) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">tcpRawData</td><td>A reference to the raw packet to process </td></tr>
   </table>
@@ -541,7 +541,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_tcp_reassembly.html">TcpReassembly</a></li>
-    <li class="footer">Generated on Thu Jun 11 2020 04:47:46 for PcapPlusPlus by
+    <li class="footer">Generated on Fri Jun 12 2020 00:17:52 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
