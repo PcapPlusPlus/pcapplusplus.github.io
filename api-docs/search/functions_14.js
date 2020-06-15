@@ -33,7 +33,6 @@ var searchData=
   ['_7erawsocketdevice',['~RawSocketDevice',['../classpcpp_1_1_raw_socket_device.html#a16669eaf3e120d99ff07a07223aca9b6',1,'pcpp::RawSocketDevice']]],
   ['_7etableprinter',['~TablePrinter',['../classpcpp_1_1_table_printer.html#a5005ab3050d077f8cd2496ce47a263d2',1,'pcpp::TablePrinter']]],
   ['_7etcpoption',['~TcpOption',['../classpcpp_1_1_tcp_option.html#a96cb9a2d3cdf31e208ff180981686ab3',1,'pcpp::TcpOption']]],
-  ['_7etcpreassembly',['~TcpReassembly',['../classpcpp_1_1_tcp_reassembly.html#aa1797ebded60f0637ae95223653b9f78',1,'pcpp::TcpReassembly']]],
   ['_7etlvrecord',['~TLVRecord',['../classpcpp_1_1_t_l_v_record.html#aceee59b58ee528adcc4fa4f4902d35ec',1,'pcpp::TLVRecord']]],
   ['_7etlvrecordreader',['~TLVRecordReader',['../classpcpp_1_1_t_l_v_record_reader.html#ae9e5156649400b8043ee0a1fa2e4bd0a',1,'pcpp::TLVRecordReader']]]
 ];

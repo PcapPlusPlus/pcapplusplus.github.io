@@ -128,8 +128,6 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a66205ac4b99b320454c875d0348c10b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a66205ac4b99b320454c875d0348c10b1">TcpReassembly</a> (<a class="el" href="classpcpp_1_1_tcp_reassembly.html#ad9c41ac805585a4e3cd826c8aec371ca">OnTcpMessageReady</a> onMessageReadyCallback, void *userCookie=NULL, <a class="el" href="classpcpp_1_1_tcp_reassembly.html#ac3a1cfc6fe6b8616da6e307f03e5fa40">OnTcpConnectionStart</a> onConnectionStartCallback=NULL, <a class="el" href="classpcpp_1_1_tcp_reassembly.html#afa7c398942772e262aee596d0b63a52d">OnTcpConnectionEnd</a> onConnectionEndCallback=NULL, const <a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html">TcpReassemblyConfiguration</a> &amp;config=<a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html">TcpReassemblyConfiguration</a>())</td></tr>
 <tr class="separator:a66205ac4b99b320454c875d0348c10b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1797ebded60f0637ae95223653b9f78"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#aa1797ebded60f0637ae95223653b9f78">~TcpReassembly</a> ()</td></tr>
-<tr class="separator:aa1797ebded60f0637ae95223653b9f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0ecd6c2e334c55f4d6393e23a205e04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177">ReassemblyStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#ad0ecd6c2e334c55f4d6393e23a205e04">reassemblePacket</a> (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> &amp;tcpData)</td></tr>
 <tr class="separator:ad0ecd6c2e334c55f4d6393e23a205e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3259ca75ab6594a335b6404b55c0f0e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177">ReassemblyStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a3259ca75ab6594a335b6404b55c0f0e0">reassemblePacket</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *tcpRawData)</td></tr>
@@ -348,24 +346,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa1797ebded60f0637ae95223653b9f78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1797ebded60f0637ae95223653b9f78">&#9670;&nbsp;</a></span>~TcpReassembly()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::TcpReassembly::~TcpReassembly </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A d'tor for this class. Frees all internal structures. Notice that if the d'tor is called while connections are still open, all data is lost and <a class="el" href="classpcpp_1_1_tcp_reassembly.html#afa7c398942772e262aee596d0b63a52d">TcpReassembly::OnTcpConnectionEnd</a> won't be called for those connections </p>
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="acf940b05f75a129f595301012be46005"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acf940b05f75a129f595301012be46005">&#9670;&nbsp;</a></span>closeAllConnections()</h2>
@@ -541,7 +521,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_tcp_reassembly.html">TcpReassembly</a></li>
-    <li class="footer">Generated on Sat Jun 13 2020 09:52:10 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Jun 15 2020 09:52:27 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

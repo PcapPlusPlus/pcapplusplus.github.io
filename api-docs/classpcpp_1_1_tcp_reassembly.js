@@ -20,7 +20,6 @@ var classpcpp_1_1_tcp_reassembly =
       [ "Error_PacketDoesNotMatchFlow", "classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177a3380cc0fe3cc4979fa2c5c4a9a658921", null ]
     ] ],
     [ "TcpReassembly", "classpcpp_1_1_tcp_reassembly.html#a66205ac4b99b320454c875d0348c10b1", null ],
-    [ "~TcpReassembly", "classpcpp_1_1_tcp_reassembly.html#aa1797ebded60f0637ae95223653b9f78", null ],
     [ "closeAllConnections", "classpcpp_1_1_tcp_reassembly.html#acf940b05f75a129f595301012be46005", null ],
     [ "closeConnection", "classpcpp_1_1_tcp_reassembly.html#ae173fc16a427b5e46b1a5417de19d735", null ],
     [ "getConnectionInformation", "classpcpp_1_1_tcp_reassembly.html#ac34344adb7d2289814841096ce971e4d", null ],
