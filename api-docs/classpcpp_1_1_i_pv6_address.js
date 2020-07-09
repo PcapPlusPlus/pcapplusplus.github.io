@@ -8,6 +8,7 @@ var classpcpp_1_1_i_pv6_address =
     [ "isValid", "classpcpp_1_1_i_pv6_address.html#a7f2135107f3212d69f436c1edc367c0a", null ],
     [ "matchSubnet", "classpcpp_1_1_i_pv6_address.html#ae9015eccc285e177ed21b1099eda1648", null ],
     [ "operator!=", "classpcpp_1_1_i_pv6_address.html#a66e7fbf148e8730df77d2aa9f4051b67", null ],
+    [ "operator<", "classpcpp_1_1_i_pv6_address.html#a51ee994a215fc59678d42b615b0d9bb2", null ],
     [ "operator==", "classpcpp_1_1_i_pv6_address.html#af8994593833bb1cd96c9c8d534adb1e6", null ],
     [ "toBytes", "classpcpp_1_1_i_pv6_address.html#a071111967b79ee8df07cc54d3b294233", null ],
     [ "toString", "classpcpp_1_1_i_pv6_address.html#af643ac254cde788ff54574f838197bd3", null ]
