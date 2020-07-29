@@ -20,7 +20,7 @@ The platforms and toolchains described below are supported and being continuousl
   - Visual Studio 2019
   - Visual Studio 2017
   - Visual Studio 2015 
-  - [MinGW32](http://www.mingw.org/) (32-bit compilation only)
+- [MinGW32](http://www.mingw.org/) (32-bit compilation only)
 - [MinGW-w64](https://mingw-w64.org) (32-bit compilation only)
 
 ## <img src="{{ site.baseurl }}/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> Linux
