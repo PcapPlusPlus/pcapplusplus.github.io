@@ -357,4 +357,106 @@ After a successful build you can run these test-cases by following these simple 
 
 ## ExamplesTest
 
-TBD
+This project is quite different and unique from the other two in various ways:
+- It doesn't test any parts of the PcapPlusPlus library but rather the [example apps]({{ site.baseurl }}/docs/examples) that are provided with the library
+- It doesn't test the apps code but rather runs them as executables and inspects their output (stdout, generated files, etc.)
+- This project isn't written in C++ but rather in Python. The reason is that Python is much more "user-friendly" when it comes to running executables and inspect their output; its file and string manipulation options are much more comprehensive and advanced. You can write very little code and achieve a lot. Python also has great testing frameworks that come out-of-the-box. It is the obvious choice for these kind of tasks
+
+Because this project is written in Python it has different requirements and setup/run procedures. First we'll go over the requirements, then we'll dive into the setup and finally we'll show how to run the tests and explore the command-line options available.
+
+### Requirements
+
+- This project requires [Python 3.7](https://www.python.org/downloads/) or newer. It won't run on Python 2.7.x
+- It has dependencies on other Python libraries described in [`requirements.txt`](https://github.com/seladb/PcapPlusPlus/blob/master/Tests/ExamplesTest/requirements.txt). In the next section we'll go into the details of how to install them
+
+### Setup
+
+This section describes the steps to get to a working setup:
+
+{% include alert.html alert-type="notice" content="The steps below are shown on Linux but apply in the same way to all supported platforms" %}
+
+- Make sure you have Python 3.7 or newer. You can check the version using the `-V` command line option:
+
+  ```shell
+  seladb@seladb:~$ python3 -V
+  Python 3.8.2
+  ```
+
+- Go into the `ExamplesTest` directory:
+
+  ```shell
+  seladb@seladb:~$ cd PcapPlusPlus/Tests/ExamplesTest
+  seladb@seladb:~/PcapPlusPlus/Tests/ExamplesTest$
+  ```
+
+- If you'd like to use [venv/virtualenv](https://docs.python.org/3/library/venv.html) (which is usually recommended in Python) create the virtual environment and activate it:
+
+  ```shell
+  seladb@seladb:~/PcapPlusPlus/Tests/ExamplesTest$ python3 -m venv venv
+  seladb@seladb:~/PcapPlusPlus/Tests/ExamplesTest$ source venv/bin/activate
+  (venv) seladbseladb:~/PcapPlusPlus/Tests/ExamplesTest$ 
+  ```
+- Install the dependencies described in [`requirements.txt`](https://github.com/seladb/PcapPlusPlus/blob/master/Tests/ExamplesTest/requirements.txt):
+
+  ```shell
+  (venv) seladb@seladb:~/PcapPlusPlus/Tests/ExamplesTest$ python3 -m pip install -r requirements.txt
+  ```
+
+- Since this test suite simply runs the app executables make sure you have a [working build of PcapPlusPlus]({{ site.baseurl }}/docs/install#build-from-source) and that the executables are under `[PcapPlusPlus-Home]/Dist/examples`
+
+### Running the tests
+
+Once you have a working setup running the tests is pretty easy:
+
+```
+(venv) seladbseladb:~/PcapPlusPlus/Tests/ExamplesTest$ python3 -m pytest
+```
+
+Here is the output you might see:
+
+```shell
+============== test session starts ===============
+platform linux -- Python 3.8.2, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/seladb/PcapPlusPlus/Tests/ExamplesTest, inifile: pytest.ini
+collected 57 items                               
+
+tests/test_arping.py ss.s                  [  7%]
+tests/test_dnsresolver.py x..s             [ 14%]
+tests/test_httpanalyzer.py ...             [ 19%]
+tests/test_ipdefragutil.py ......          [ 29%]
+tests/test_ipfragutil.py .......           [ 42%]
+tests/test_pcapprinter.py ....             [ 49%]
+tests/test_pcapsearch.py ........          [ 63%]
+tests/test_pcapsplitter.py ............... [ 89%]
+tests/test_sslanalyzer.py ..               [ 92%]
+tests/test_tcpreassembly.py ....           [100%]
+
+=== 52 passed, 4 skipped, 1 xfailed in 16.06s ====
+```
+
+This output shows how many test-cases passed, how many failed and how many were skipped or [xfailed](https://docs.pytest.org/en/latest/skipping.html).
+
+{% include alert.html alert-type="notice" content="As you can see currently not all of the example apps are covered. This is because some of them are difficult to test by just running the executable and need a more complex setup. In the future we'll consider increasing the coverage" %}
+
+This project uses [pytest](https://docs.pytest.org/) which is one of the most popular test frameworks for Python. It has many features and options that will not be covered in this guide, but here are the options that are most relevant for this project:
+
+| __`--use-sudo`__  | Some of the tests rely on live network traffic and need access to a network interface. On Linux and MacOS this may require `sudo` privileges. If this flag is set the test-cases will use `sudo` to run the relevant executables. If `sudo` is required and this flag is not set these tests may fail |
+| __`--interface [interface-ip]`__ | Required only for tests who rely on live network traffic and need the network interface IP address to use. If this parameter is not provided these tests will be skipped |
+| __`--gateway [gateway_ip]`__     | A small set of tests need the default gateway IP address. If this parameter is not provided these tests will be skipped |
+| __`-m [marker]`__                | pytest has this concept of [markers](https://docs.pytest.org/en/stable/mark.html) which is like tagging tests with metadata. This project uses it to tag test-cases by app or those who need/don't need network traffic. The markers relevant to this project are described in the next table |
+| __`--markers`__                  | Show a list of all the markers available (not all of them are specific to this project) |
+| __`--help`__                     | Show all of `pytest` command-line options |
+
+Here are the markers that are relevant to this project:
+
+| __`-m no_network`__     | Run only test-cases that don't require live network traffic. This is very useful for environments where live traffic is not available or if you prefer to run tests that don't interact with the network. The test-cases which require network traffic will be skipped |
+| __`-m pcapprinter`__    | Run only test-cases for [PcapPrinter]({{ site.baseurl }}/docs/examples#pcapprinter)     |
+| __`-m ipdefragutil`__   | Run only test-cases for [IPDefragUtil]({{ site.baseurl }}/docs/examples#ipdefragutil)   |
+| __`-m ipfragutil`__     | Run only test-cases for [IPFragUtil]({{ site.baseurl }}/docs/examples#ipfragutil)       |
+| __`-m dnsresolver`__    | Run only test-cases for [DNSResolver]({{ site.baseurl }}/docs/examples#dnsresolver)     |
+| __`-m tcpreassembly`__  | Run only test-cases for [TcpReassembly]({{ site.baseurl }}/docs/examples#tcpreassembly) |
+| __`-m httpanalyzer`__   | Run only test-cases for [HttpAnalyzer]({{ site.baseurl }}/docs/examples#httpanalyzer)   |
+| __`-m sslanalyzer`__    | Run only test-cases for [SSLAnalyzer]({{ site.baseurl }}/docs/examples#sslanalyzer)     |
+| __`-m pcapsearch`__     | Run only test-cases for [PcapSearch]({{ site.baseurl }}/docs/examples#pcapsearch)       |
+| __`-m arping`__         | Run only test-cases for [Arping]({{ site.baseurl }}/docs/examples#arping)               |
+| __`-m pcapsplitter`__   | Run only test-cases for [PcapSplitter]({{ site.baseurl }}/docs/examples#pcapsplitter)   |
