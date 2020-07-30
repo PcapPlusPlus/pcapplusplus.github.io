@@ -1,9 +1,8 @@
 ---
 layout: page
 title: Running tests
-parent: Installation
-permalink: /docs/install/build-source/tests
-nav_order: 7
+permalink: /docs/tests
+nav_order: 10
 ---
 
 # Running PcapPlusPlus Tests

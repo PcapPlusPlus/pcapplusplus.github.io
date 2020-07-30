@@ -2,7 +2,7 @@
 layout: page
 title: Releases
 permalink: /docs/releases
-nav_order: 9
+nav_order: 11
 ---
 
 # Releases
