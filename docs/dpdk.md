@@ -41,6 +41,7 @@ PcapPlusPlus tries to cover the main functionality of DPDK and its most importan
 
 The following DPDK versions are currently supported:
 
+- DPDK 19.11 (LTS)
 - DPDK 19.08
 - DPDK 19.02
 - DPDK 18.11 (LTS)
@@ -59,7 +60,7 @@ In addition, not all poll-mode drivers (PMDs) were tested, but the majority of t
 
 The following operating systems and configurations were tested:
 
-- Ubuntu 18.04, 16.04, 14.04 LTS 64bit with kernel version > 3 and gcc version >= 4.8
+- Ubuntu 20.04, 18.04, 16.04 LTS 64bit with kernel version > 3 and gcc version >= 4.8
 - CentOS 7.1 64bit with kernel 3.x and gcc 4.8.x
 
 ### Download and install DPDK
