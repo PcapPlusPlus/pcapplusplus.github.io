@@ -241,7 +241,7 @@ You can see that we added a PcapPlusPlus property sheet file: **PcapPlusPlusProp
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
     <PcapPlusPlusHome>D:\PcapPlusPlus</PcapPlusPlusHome>
-    <WinPcapHome>D:\WpdPack</WinPcapHome>
+    <PcapSdkHome>D:\WpdPack</PcapSdkHome>
     <PThreadWin32Home>D:\pthread-win32</PThreadWin32Home>
   </PropertyGroup>
   <PropertyGroup />
