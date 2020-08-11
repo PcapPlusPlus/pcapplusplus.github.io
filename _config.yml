@@ -24,8 +24,8 @@ search_enabled: true
 top_navigation_enabled: true
 
 # PcapPlusPlus specific variables
-pcapplusplus_ver_num: 19.12
-pcapplusplus_ver: v19.12
+pcapplusplus_ver_num: 20.08
+pcapplusplus_ver: v20.08
 is_new_release: false
 
 # Google Analytics Tracking Id
