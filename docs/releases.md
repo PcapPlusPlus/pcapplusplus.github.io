@@ -28,7 +28,7 @@ Released on August 2020 {% include new-release.html %}
 
 ## v19.12
 
-Released on December 2019 {% include new-release.html %} 
+Released on December 2019
 
 - GitHub page: <https://github.com/seladb/PcapPlusPlus/releases/tag/v19.12>{:target="_blank"}
 - PcapPlusPlus web-site at the time of the release: <https://pcapplusplus.github.io/v1912/>{:target="_blank"}
