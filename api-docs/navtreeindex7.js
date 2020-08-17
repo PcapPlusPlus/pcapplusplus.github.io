@@ -144,13 +144,15 @@ var NAVTREEINDEX7 =
 "classpcpp_1_1_i_p_reassembly_1_1_packet_key.html#aa67476ed9ca9d6bf21821446d6f9af33":[3,0,0,84,2,0],
 "classpcpp_1_1_i_p_reassembly_1_1_packet_key.html#abd42f4375f021a1bf7d89a151b231911":[3,0,0,84,2,2],
 "classpcpp_1_1_i_pcap_device.html":[3,0,0,81],
-"classpcpp_1_1_i_pcap_device.html#a134f061d7883abbdb256abd48d53e66c":[3,0,0,81,2],
+"classpcpp_1_1_i_pcap_device.html#a134f061d7883abbdb256abd48d53e66c":[3,0,0,81,3],
 "classpcpp_1_1_i_pcap_device.html#a8ca7eb3d99231a8cfd9d68cde0b5067c":[3,0,0,81,0],
 "classpcpp_1_1_i_pcap_device.html#adbcda9c7a5b530fa071e76d60c2eff2d":[3,0,0,81,1],
+"classpcpp_1_1_i_pcap_device.html#adf01bb590d975d28fc38053820a69130":[3,0,0,81,4],
+"classpcpp_1_1_i_pcap_device.html#af334503822ac7076373c64109f3e6d64":[3,0,0,81,2],
 "classpcpp_1_1_i_pv4_address.html":[3,0,0,85],
-"classpcpp_1_1_i_pv4_address.html#a01d6c0c03879b02699aa7801d080287e":[3,0,0,85,5],
+"classpcpp_1_1_i_pv4_address.html#a01d6c0c03879b02699aa7801d080287e":[3,0,0,85,6],
 "classpcpp_1_1_i_pv4_address.html#a1cb5f933aa63c49a7de0ede7fa220ee8":[3,0,0,85,12],
-"classpcpp_1_1_i_pv4_address.html#a2334fc86178ecdd35531b784e880e514":[3,0,0,85,6],
+"classpcpp_1_1_i_pv4_address.html#a2334fc86178ecdd35531b784e880e514":[3,0,0,85,5],
 "classpcpp_1_1_i_pv4_address.html#a329a4f44a6a4139850351188bb1a139c":[3,0,0,85,1],
 "classpcpp_1_1_i_pv4_address.html#a4a032fc43f898fb59556eb80a8ba715e":[3,0,0,85,0],
 "classpcpp_1_1_i_pv4_address.html#a5881f8a346543fa171c32474e1ae130f":[3,0,0,85,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX7 =
 "classpcpp_1_1_i_pv6_dns_resource_data.html#a72982bed650ae530a9bee1c73193ad4e":[3,0,0,96,5],
 "classpcpp_1_1_i_pv6_dns_resource_data.html#a76d2fe83363e69a45bf72bcd0b9540c2":[3,0,0,96,6],
 "classpcpp_1_1_i_pv6_dns_resource_data.html#ab2068d3f1bb497b5c07a3b61e5534932":[3,0,0,96,4],
-"classpcpp_1_1_i_pv6_dns_resource_data.html#ac5334e7916689da1cfbc1162343bbae6":[3,0,0,96,0],
-"classpcpp_1_1_i_pv6_dns_resource_data.html#aee72a1e8bc5d3956dc41cb168429dd7b":[3,0,0,96,3],
-"classpcpp_1_1_i_pv6_dns_resource_data.html#af01d532810e2623f8d13236c329202a9":[3,0,0,96,2]
+"classpcpp_1_1_i_pv6_dns_resource_data.html#ac5334e7916689da1cfbc1162343bbae6":[3,0,0,96,0]
 };
