@@ -9,7 +9,7 @@ nav_order: 4
 # Build From Source on Windows - Visual Studio
 {: .no_toc }
 
-Please visit the [supported platforms page]({{ site.baseurl }}/docs/install/platforms) to see the Visual Studio versions currently supported in PcapPlusPlus.
+Please visit the [supported platforms page]({{ site.baseurl }}/docs/platforms) to see the Visual Studio versions currently supported in PcapPlusPlus.
 
 ## Table of contents
 {: .no_toc .text-delta }
