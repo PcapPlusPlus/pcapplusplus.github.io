@@ -6,12 +6,12 @@ var hierarchy =
     [ "std::auto_ptr< T >", null, [
       [ "pcpp::DnsResourceDataPtr", "classpcpp_1_1_dns_resource_data_ptr.html", null ]
     ] ],
-    [ "bgp_common_header", null, [
-      [ "pcpp::BgpOpenMessageLayer::bgp_open_message", "structpcpp_1_1_bgp_open_message_layer_1_1bgp__open__message.html", null ],
+    [ "pcpp::BgpLayer::bgp_common_header", "structpcpp_1_1_bgp_layer_1_1bgp__common__header.html", [
+      [ "pcpp::BgpNotificationMessageLayer::bgp_notification_message", "structpcpp_1_1_bgp_notification_message_layer_1_1bgp__notification__message.html", null ],
       [ "pcpp::BgpRouteRefreshMessageLayer::bgp_route_refresh_message", "structpcpp_1_1_bgp_route_refresh_message_layer_1_1bgp__route__refresh__message.html", null ]
     ] ],
-    [ "pcpp::BgpLayer::bgp_common_header", "structpcpp_1_1_bgp_layer_1_1bgp__common__header.html", [
-      [ "pcpp::BgpNotificationMessageLayer::bgp_notification_message", "structpcpp_1_1_bgp_notification_message_layer_1_1bgp__notification__message.html", null ]
+    [ "bgp_common_header", null, [
+      [ "pcpp::BgpOpenMessageLayer::bgp_open_message", "structpcpp_1_1_bgp_open_message_layer_1_1bgp__open__message.html", null ]
     ] ],
     [ "pcpp::ConnectionData", "structpcpp_1_1_connection_data.html", null ],
     [ "pcpp::PcapLiveDevice::DeviceConfiguration", "structpcpp_1_1_pcap_live_device_1_1_device_configuration.html", null ],

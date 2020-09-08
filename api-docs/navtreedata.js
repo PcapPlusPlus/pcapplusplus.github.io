@@ -1,25 +1,3 @@
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this file.
-
-Copyright (C) 1997-2019 by Dimitri van Heesch
-
-This program is free software; you can redistribute it and/or modify
-it under the terms of version 2 of the GNU General Public License as published by
-the Free Software Foundation
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along
-with this program; if not, write to the Free Software Foundation, Inc.,
-51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-
-@licend  The above is the entire license notice
-for the JavaScript code in this file
-*/
 var NAVTREE =
 [
   [ "PcapPlusPlus", "index.html", [
@@ -49,8 +27,8 @@ var NAVTREE =
         [ "Enumerator", "functions_eval.html", "functions_eval" ]
       ] ]
     ] ],
-    [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ],
+    [ "Files", null, [
+      [ "File List", "files.html", "files" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", null ],
@@ -71,14 +49,14 @@ var NAVTREEINDEX =
 "classpcpp_1_1_arp_filter.html",
 "classpcpp_1_1_dpdk_device.html#ac58e4e1039dff5eebd8ad7ac0c19704a",
 "classpcpp_1_1_http_response_layer.html#ab5bbbd02f36805001550d1168f1412bcab676ead16cec05c3d9a2faebb13c4874",
-"classpcpp_1_1_i_pv6_dns_resource_data.html#aee72a1e8bc5d3956dc41cb168429dd7b",
-"classpcpp_1_1_logger_p_p.html#ab6490ebdc1cf6b2b6f09d82cc98d0e91",
-"classpcpp_1_1_pcap_live_device.html#a9a3915b20de33f61dd40e434688fa63c",
-"classpcpp_1_1_s_s_l_client_hello_message.html#a177e655f17ab866e9130f40cc695ee40",
-"classpcpp_1_1_string_dns_resource_data.html",
-"functions_n.html",
-"structpcpp_1_1_t_l_v_record_1_1_t_l_v_raw_data.html#a0d596e5016d0595feea7413ea3dfb9eb",
-"structpcpp_1_1vxlan__header.html#a8bf01681565ea80e389e36c7911c9c37"
+"classpcpp_1_1_i_pv6_extension.html",
+"classpcpp_1_1_logger_p_p.html#ad8832df9d20bd9cf9edc1a93c5aad2a8",
+"classpcpp_1_1_pcap_live_device.html#ab80a7d9e829f0b0a4c7eddeb746a69be",
+"classpcpp_1_1_s_s_l_client_hello_message.html#a638b31b947ab4d2a565c978f1fa66d69",
+"classpcpp_1_1_string_dns_resource_data.html#af9a7b3ffa8574d129c4ff80d05fb3161",
+"functions_q.html",
+"structpcpp_1_1_tcp_reassembly_configuration.html#a291ecac743fe0e44af8998bb9e48479a",
+"structpcpp_1_1vxlan__header.html#aeaec3eb74ec694974471243a35a76313"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
