@@ -94,20 +94,24 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_tcp_stream_data.html',''
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9127da60ec1389a40f517e23b2566528"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_stream_data.html#a9127da60ec1389a40f517e23b2566528">TcpStreamData</a> (const uint8_t *tcpData, size_t tcpDataLength, const <a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a> &amp;connData)</td></tr>
-<tr class="separator:a9127da60ec1389a40f517e23b2566528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41cf75a9f7b8d58b247d440b5d1fecbd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_stream_data.html#a41cf75a9f7b8d58b247d440b5d1fecbd">TcpStreamData</a> (const uint8_t *tcpData, size_t tcpDataLength, size_t missingBytes, const <a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a> &amp;connData)</td></tr>
+<tr class="separator:a41cf75a9f7b8d58b247d440b5d1fecbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab39688bc764ebc72178a1f067092571b"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_stream_data.html#ab39688bc764ebc72178a1f067092571b">getData</a> () const</td></tr>
 <tr class="separator:ab39688bc764ebc72178a1f067092571b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62c25f857008495fda229c527c166088"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_stream_data.html#a62c25f857008495fda229c527c166088">getDataLength</a> () const</td></tr>
 <tr class="separator:a62c25f857008495fda229c527c166088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70154b0b23e140842f860b1055ca1e8a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_stream_data.html#a70154b0b23e140842f860b1055ca1e8a">getMissingByteCount</a> () const</td></tr>
+<tr class="separator:a70154b0b23e140842f860b1055ca1e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a567ca976c823ede7df4726ce13159b96"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_stream_data.html#a567ca976c823ede7df4726ce13159b96">isBytesMissing</a> () const</td></tr>
+<tr class="separator:a567ca976c823ede7df4726ce13159b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9cdd59044104a51a11271a9225cb88c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_stream_data.html#ab9cdd59044104a51a11271a9225cb88c">getConnectionData</a> () const</td></tr>
 <tr class="separator:ab9cdd59044104a51a11271a9225cb88c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>When following a TCP connection each packet may contain a piece of the data transferred between the client and the server. This class represents these pieces: each instance of it contains a piece of data, usually extracted from a single packet, as well as information about the connection </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a9127da60ec1389a40f517e23b2566528"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9127da60ec1389a40f517e23b2566528">&#9670;&nbsp;</a></span>TcpStreamData()</h2>
+<a id="a41cf75a9f7b8d58b247d440b5d1fecbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41cf75a9f7b8d58b247d440b5d1fecbd">&#9670;&nbsp;</a></span>TcpStreamData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -126,6 +130,12 @@ Public Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>tcpDataLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>missingBytes</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -149,6 +159,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">tcpData</td><td>A pointer to buffer containing the TCP data piece </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">tcpDataLength</td><td>The length of the buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">missingBytes</td><td>The number of missing bytes due to packet loss. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">connData</td><td>TCP connection information for this TCP data </td></tr>
   </table>
   </dd>
@@ -235,13 +246,65 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a70154b0b23e140842f860b1055ca1e8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70154b0b23e140842f860b1055ca1e8a">&#9670;&nbsp;</a></span>getMissingByteCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t pcpp::TcpStreamData::getMissingByteCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A getter for missing byte count due to packet loss. </p><dl class="section return"><dt>Returns</dt><dd>Missing byte count </dd></dl>
+
+</div>
+</div>
+<a id="a567ca976c823ede7df4726ce13159b96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a567ca976c823ede7df4726ce13159b96">&#9670;&nbsp;</a></span>isBytesMissing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::TcpStreamData::isBytesMissing </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Determine if bytes are missing. getMissingByteCount can be called to determine the number of missing bytes. </p><dl class="section return"><dt>Returns</dt><dd>true if bytes are missing. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_tcp_stream_data.html">TcpStreamData</a></li>
-    <li class="footer">Generated on Wed Sep 9 2020 07:43:33 for PcapPlusPlus by
+    <li class="footer">Generated on Thu Sep 10 2020 06:33:35 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

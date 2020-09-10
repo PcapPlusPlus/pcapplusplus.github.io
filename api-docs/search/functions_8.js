@@ -42,6 +42,7 @@ var searchData=
   ['isallocatedtopacket',['isAllocatedToPacket',['../classpcpp_1_1_layer.html#a8f9d719253a30852620f9595a99956ed',1,'pcpp::Layer']]],
   ['isbgpport',['isBgpPort',['../classpcpp_1_1_bgp_layer.html#a1e6e41a8cc678be1df72ab644d50a1de',1,'pcpp::BgpLayer']]],
   ['isbottomofstack',['isBottomOfStack',['../classpcpp_1_1_mpls_layer.html#ac328b74e4960b4e96456e9c63015a695',1,'pcpp::MplsLayer']]],
+  ['isbytesmissing',['isBytesMissing',['../classpcpp_1_1_tcp_stream_data.html#a567ca976c823ede7df4726ce13159b96',1,'pcpp::TcpStreamData']]],
   ['iscallbacksupported',['isCallbackSupported',['../classpcpp_1_1_kni_device_list.html#a73e8d8259bfa8345755361bc804256cc',1,'pcpp::KniDeviceList']]],
   ['iscomplete',['isComplete',['../classpcpp_1_1_http_request_first_line.html#a6d26b55d710a558bc148f3e81ca3705a',1,'pcpp::HttpRequestFirstLine::isComplete()'],['../classpcpp_1_1_http_response_first_line.html#a28a94ec1039e977ae8a7f6a710e37b99',1,'pcpp::HttpResponseFirstLine::isComplete()'],['../classpcpp_1_1_sip_request_first_line.html#a50195d892fdde4174c06eeb8a2987d2f',1,'pcpp::SipRequestFirstLine::isComplete()'],['../classpcpp_1_1_sip_response_first_line.html#ab00a133a97ea92b3fb8f78a4110f7249',1,'pcpp::SipResponseFirstLine::isComplete()']]],
   ['isconnectionopen',['isConnectionOpen',['../classpcpp_1_1_tcp_reassembly.html#a4ef6d80966ab0b0547665b68fde86fbc',1,'pcpp::TcpReassembly']]],
