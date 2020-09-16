@@ -89,5 +89,6 @@ var searchData=
   ['createdevice',['createDevice',['../classpcpp_1_1_kni_device_list.html#a20344920bac3647235f624c33f50f6c8',1,'pcpp::KniDeviceList']]],
   ['createhandhakemessage',['createHandhakeMessage',['../classpcpp_1_1_s_s_l_handshake_message.html#af306660713051f8884713621bbb5bb18',1,'pcpp::SSLHandshakeMessage']]],
   ['createsslmessage',['createSSLMessage',['../classpcpp_1_1_s_s_l_layer.html#ab475769b89eb8db08be50f96afe26450',1,'pcpp::SSLLayer']]],
+  ['cross_5fplatform_5fmemmem',['cross_platform_memmem',['../namespacepcpp.html#a117af2ac2f57cf90b06a2557c1c06825',1,'pcpp']]],
   ['cwrflag',['cwrFlag',['../structpcpp_1_1tcphdr.html#a26d5425128be717916096e577f2561fe',1,'pcpp::tcphdr']]]
 ];

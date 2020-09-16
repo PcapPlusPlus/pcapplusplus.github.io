@@ -1588,6 +1588,8 @@ Functions</h2></td></tr>
 <tr class="separator:a13d338c123afbd98ee99a9b2ac78f59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6213cd87b4851342b47ee3b769e9299d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a6213cd87b4851342b47ee3b769e9299d">hexStringToByteArray</a> (const std::string &amp;hexString, uint8_t *resultByteArr, size_t resultByteArrSize)</td></tr>
 <tr class="separator:a6213cd87b4851342b47ee3b769e9299d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a117af2ac2f57cf90b06a2557c1c06825"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a117af2ac2f57cf90b06a2557c1c06825">cross_platform_memmem</a> (const char *haystack, size_t haystackLen, const char *needle, size_t needleLen)</td></tr>
+<tr class="separator:a117af2ac2f57cf90b06a2557c1c06825"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accf99d75d7ba993b6146e5915a7fa2db"><td class="memItemLeft" align="right" valign="top">in_addr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#accf99d75d7ba993b6146e5915a7fa2db">sockaddr2in_addr</a> (struct sockaddr *sa)</td></tr>
 <tr class="separator:accf99d75d7ba993b6146e5915a7fa2db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf8855571df4a1ba17129f946383f3be"><td class="memItemLeft" align="right" valign="top">in6_addr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#acf8855571df4a1ba17129f946383f3be">sockaddr2in6_addr</a> (struct sockaddr *sa)</td></tr>
@@ -1602,8 +1604,8 @@ Functions</h2></td></tr>
 <tr class="separator:af5ed4e611bb0af5bade4697ff2308b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af66abbe5d82d79edd056eb54e70774f2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#af66abbe5d82d79edd056eb54e70774f2">fnv_hash</a> (uint8_t *buffer, size_t bufSize)</td></tr>
 <tr class="separator:af66abbe5d82d79edd056eb54e70774f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfdd9e106e5346beb012d0ae5d127f73"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#abfdd9e106e5346beb012d0ae5d127f73">hash5Tuple</a> (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet)</td></tr>
-<tr class="separator:abfdd9e106e5346beb012d0ae5d127f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1acb237e79d34017d41599b32b9fd78a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a1acb237e79d34017d41599b32b9fd78a">hash5Tuple</a> (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet, bool const &amp;directionUnique=false)</td></tr>
+<tr class="separator:a1acb237e79d34017d41599b32b9fd78a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e3e701e5f325548e218664e3cdfceda"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a0e3e701e5f325548e218664e3cdfceda">hash2Tuple</a> (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet)</td></tr>
 <tr class="separator:a0e3e701e5f325548e218664e3cdfceda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa818bc85ee8391b470263dc3aefa945b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#aa818bc85ee8391b470263dc3aefa945b">getPcapPlusPlusVersion</a> ()</td></tr>
@@ -4207,6 +4209,55 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a117af2ac2f57cf90b06a2557c1c06825"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a117af2ac2f57cf90b06a2557c1c06825">&#9670;&nbsp;</a></span>cross_platform_memmem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* pcpp::cross_platform_memmem </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>haystack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>haystackLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>needle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>needleLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is a cross platform version of memmem (<a href="https://man7.org/linux/man-pages/man3/memmem.3.html">https://man7.org/linux/man-pages/man3/memmem.3.html</a>) which is not supported on all platforms. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">haystack</td><td>A pointer to the buffer to be searched </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">haystackLen</td><td>Length of the haystack buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">needle</td><td>A pointer to a buffer that will be searched for </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">needleLen</td><td>Length of the needle buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a90c94556ad172d6c3ffb766e1ab25edf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a90c94556ad172d6c3ffb766e1ab25edf">&#9670;&nbsp;</a></span>directoryExists()</h2>
 
@@ -4522,8 +4573,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="abfdd9e106e5346beb012d0ae5d127f73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abfdd9e106e5346beb012d0ae5d127f73">&#9670;&nbsp;</a></span>hash5Tuple()</h2>
+<a id="a1acb237e79d34017d41599b32b9fd78a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1acb237e79d34017d41599b32b9fd78a">&#9670;&nbsp;</a></span>hash5Tuple()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4532,14 +4583,25 @@ Variables</h2></td></tr>
           <td class="memname">uint32_t pcpp::hash5Tuple </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classpcpp_1_1_packet.html">Packet</a> *&#160;</td>
-          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool const &amp;&#160;</td>
+          <td class="paramname"><em>directionUnique</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>A method that is given a packet and calculates a hash value by the packet's 5-tuple. Supports IPv4, IPv6, TCP and UDP. For packets which doesn't have 5-tuple (for example: packets which aren't IPv4/6 or aren't TCP/UDP) the value of 0 will be returned </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>The packet to calculate hash for </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">directionUnique</td><td>Make hash value unique for each direction </td></tr>
   </table>
   </dd>
 </dl>
@@ -5337,7 +5399,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li>
-    <li class="footer">Generated on Sun Sep 13 2020 09:46:40 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Sep 16 2020 08:04:10 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
