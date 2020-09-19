@@ -29,7 +29,7 @@ var classpcpp_1_1_pcap_live_device =
     [ "getMacAddress", "classpcpp_1_1_pcap_live_device.html#a4bc13ec8552ffbf5ae2fe281c4d0905b", null ],
     [ "getMtu", "classpcpp_1_1_pcap_live_device.html#a2eeadb33b0e5097213752a76d1e71ba7", null ],
     [ "getName", "classpcpp_1_1_pcap_live_device.html#a296c42499d3f6c606e2cdf7e25a61c04", null ],
-    [ "getStatistics", "classpcpp_1_1_pcap_live_device.html#af3f2a7f926d21d1073a8b873b3998bd3", null ],
+    [ "getStatistics", "classpcpp_1_1_pcap_live_device.html#a63c26fadf6e36c99608f500f67d60f29", null ],
     [ "open", "classpcpp_1_1_pcap_live_device.html#a281f2cd6062791c68ecdd82384f751f8", null ],
     [ "open", "classpcpp_1_1_pcap_live_device.html#a3f58e22a71cbed9109ae75bd1759e8ed", null ],
     [ "sendPacket", "classpcpp_1_1_pcap_live_device.html#a2e7b9be7551ad7759c32e9d5fbabd5c8", null ],

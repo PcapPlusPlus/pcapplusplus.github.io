@@ -14,6 +14,7 @@ var searchData=
   ['pcapremoteauthentication',['PcapRemoteAuthentication',['../structpcpp_1_1_pcap_remote_authentication.html',1,'pcpp']]],
   ['pcapremotedevice',['PcapRemoteDevice',['../classpcpp_1_1_pcap_remote_device.html',1,'pcpp']]],
   ['pcapremotedevicelist',['PcapRemoteDeviceList',['../classpcpp_1_1_pcap_remote_device_list.html',1,'pcpp']]],
+  ['pcapstats',['PcapStats',['../structpcpp_1_1_i_pcap_device_1_1_pcap_stats.html',1,'pcpp::IPcapDevice']]],
   ['pfringdevice',['PfRingDevice',['../classpcpp_1_1_pf_ring_device.html',1,'pcpp']]],
   ['pfringdevicelist',['PfRingDeviceList',['../classpcpp_1_1_pf_ring_device_list.html',1,'pcpp']]],
   ['pfringstats',['PfRingStats',['../structpcpp_1_1_pf_ring_device_1_1_pf_ring_stats.html',1,'pcpp::PfRingDevice']]],

@@ -123,8 +123,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a60b102a04429b8baba0637c3505f6448"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a2f2565c9b00766bc579cb732a49b78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_file_writer_device.html#a2a2f2565c9b00766bc579cb732a49b78">flush</a> ()</td></tr>
 <tr class="separator:a2a2f2565c9b00766bc579cb732a49b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a231676775c633bd7564242e9fc62f24e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_file_writer_device.html#a231676775c633bd7564242e9fc62f24e">getStatistics</a> (pcap_stat &amp;stats) const</td></tr>
-<tr class="separator:a231676775c633bd7564242e9fc62f24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab31c6c1612f37269f51144d5142a0947"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_file_writer_device.html#ab31c6c1612f37269f51144d5142a0947">getStatistics</a> (<a class="el" href="structpcpp_1_1_i_pcap_device_1_1_pcap_stats.html">PcapStats</a> &amp;stats) const</td></tr>
+<tr class="separator:ab31c6c1612f37269f51144d5142a0947"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classpcpp_1_1_i_file_writer_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_i_file_writer_device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_file_writer_device.html">pcpp::IFileWriterDevice</a></td></tr>
 <tr class="memitem:ad1efdc8f258b6981d0429c61992f2e13 inherit pub_methods_classpcpp_1_1_i_file_writer_device"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_file_writer_device.html#ad1efdc8f258b6981d0429c61992f2e13">~IFileWriterDevice</a> ()</td></tr>
 <tr class="separator:ad1efdc8f258b6981d0429c61992f2e13 inherit pub_methods_classpcpp_1_1_i_file_writer_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -266,8 +266,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a231676775c633bd7564242e9fc62f24e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a231676775c633bd7564242e9fc62f24e">&#9670;&nbsp;</a></span>getStatistics()</h2>
+<a id="ab31c6c1612f37269f51144d5142a0947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab31c6c1612f37269f51144d5142a0947">&#9670;&nbsp;</a></span>getStatistics()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -278,7 +278,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void pcpp::PcapFileWriterDevice::getStatistics </td>
           <td>(</td>
-          <td class="paramtype">pcap_stat &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structpcpp_1_1_i_pcap_device_1_1_pcap_stats.html">PcapStats</a> &amp;&#160;</td>
           <td class="paramname"><em>stats</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -289,14 +289,14 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get statistics of packets written so far. In the pcap_stat struct, only ps_recv member is relevant. The rest of the members will contain 0 </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get statistics of packets written so far. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">stats</td><td>The stats struct where stats are returned </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classpcpp_1_1_i_pcap_device.html#adbcda9c7a5b530fa071e76d60c2eff2d">pcpp::IPcapDevice</a>.</p>
+<p>Implements <a class="el" href="classpcpp_1_1_i_pcap_device.html#a785987975c2e9eb09e5d86305180e2c7">pcpp::IPcapDevice</a>.</p>
 
 </div>
 </div>
@@ -439,7 +439,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_pcap_file_writer_device.html">PcapFileWriterDevice</a></li>
-    <li class="footer">Generated on Wed Sep 16 2020 08:04:11 for PcapPlusPlus by
+    <li class="footer">Generated on Sat Sep 19 2020 18:32:23 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

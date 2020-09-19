@@ -83,6 +83,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_i_pcap_device.html','');
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classpcpp_1_1_i_pcap_device-members.html">List of all members</a>  </div>
@@ -113,10 +114,15 @@ Inheritance diagram for pcpp::IPcapDevice:</div>
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_i_pcap_device_1_1_pcap_stats.html">PcapStats</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adbcda9c7a5b530fa071e76d60c2eff2d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#adbcda9c7a5b530fa071e76d60c2eff2d">getStatistics</a> (pcap_stat &amp;stats) const =0</td></tr>
-<tr class="separator:adbcda9c7a5b530fa071e76d60c2eff2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a785987975c2e9eb09e5d86305180e2c7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#a785987975c2e9eb09e5d86305180e2c7">getStatistics</a> (<a class="el" href="structpcpp_1_1_i_pcap_device_1_1_pcap_stats.html">PcapStats</a> &amp;stats) const =0</td></tr>
+<tr class="separator:a785987975c2e9eb09e5d86305180e2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a134f061d7883abbdb256abd48d53e66c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#a134f061d7883abbdb256abd48d53e66c">setFilter</a> (std::string filterAsString)</td></tr>
 <tr class="separator:a134f061d7883abbdb256abd48d53e66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ca7eb3d99231a8cfd9d68cde0b5067c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#a8ca7eb3d99231a8cfd9d68cde0b5067c">clearFilter</a> ()</td></tr>
@@ -200,8 +206,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adbcda9c7a5b530fa071e76d60c2eff2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbcda9c7a5b530fa071e76d60c2eff2d">&#9670;&nbsp;</a></span>getStatistics()</h2>
+<a id="a785987975c2e9eb09e5d86305180e2c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a785987975c2e9eb09e5d86305180e2c7">&#9670;&nbsp;</a></span>getStatistics()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,7 +218,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void pcpp::IPcapDevice::getStatistics </td>
           <td>(</td>
-          <td class="paramtype">pcap_stat &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structpcpp_1_1_i_pcap_device_1_1_pcap_stats.html">PcapStats</a> &amp;&#160;</td>
           <td class="paramname"><em>stats</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -223,19 +229,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get statistics from device:</p><ul>
-<li>pcap_stat::ps_recv: number of packets received</li>
-<li>pcap_stat::ps_drop: number of packets dropped</li>
-<li>pcap_stat::ps_ifdrop: number of packets dropped by interface <dl class="params"><dt>Parameters</dt><dd>
+<p>Get statistics from the device </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">stats</td><td>The stats struct where stats are returned </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">stats</td><td>An object containing the stats </td></tr>
   </table>
   </dd>
 </dl>
-</li>
-</ul>
 
-<p>Implemented in <a class="el" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a6707801831ede06fd5991123491df542">pcpp::PcapNgFileWriterDevice</a>, <a class="el" href="classpcpp_1_1_pcap_live_device.html#af3f2a7f926d21d1073a8b873b3998bd3">pcpp::PcapLiveDevice</a>, <a class="el" href="classpcpp_1_1_pcap_file_writer_device.html#a231676775c633bd7564242e9fc62f24e">pcpp::PcapFileWriterDevice</a>, <a class="el" href="classpcpp_1_1_pcap_ng_file_reader_device.html#a00c9833914549282c13336f04cd6782a">pcpp::PcapNgFileReaderDevice</a>, <a class="el" href="classpcpp_1_1_pcap_file_reader_device.html#a9432a993ad2a893cfd2e436e500f652a">pcpp::PcapFileReaderDevice</a>, and <a class="el" href="classpcpp_1_1_pcap_remote_device.html#ad94ccf7e25215b50d350ae27c8a8870e">pcpp::PcapRemoteDevice</a>.</p>
+<p>Implemented in <a class="el" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a51ac0b014137c0366fcb26c0d2904af6">pcpp::PcapNgFileWriterDevice</a>, <a class="el" href="classpcpp_1_1_pcap_live_device.html#a63c26fadf6e36c99608f500f67d60f29">pcpp::PcapLiveDevice</a>, <a class="el" href="classpcpp_1_1_pcap_file_writer_device.html#ab31c6c1612f37269f51144d5142a0947">pcpp::PcapFileWriterDevice</a>, <a class="el" href="classpcpp_1_1_pcap_ng_file_reader_device.html#a43f8288abc37b84900516613a1ff6fd9">pcpp::PcapNgFileReaderDevice</a>, <a class="el" href="classpcpp_1_1_pcap_file_reader_device.html#ab8a21c496fb4dfc97f9638fd8b56dffb">pcpp::PcapFileReaderDevice</a>, and <a class="el" href="classpcpp_1_1_pcap_remote_device.html#a02deee778a8e236f9167fec4d9e23c21">pcpp::PcapRemoteDevice</a>.</p>
 
 </div>
 </div>
@@ -403,7 +404,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_pcap_device.html">IPcapDevice</a></li>
-    <li class="footer">Generated on Wed Sep 16 2020 08:04:11 for PcapPlusPlus by
+    <li class="footer">Generated on Sat Sep 19 2020 18:32:22 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
