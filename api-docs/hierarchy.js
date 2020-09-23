@@ -13,6 +13,7 @@ var hierarchy =
     [ "bgp_common_header", null, [
       [ "pcpp::BgpOpenMessageLayer::bgp_open_message", "structpcpp_1_1_bgp_open_message_layer_1_1bgp__open__message.html", null ]
     ] ],
+    [ "pcpp::BpfFilterWrapper", "classpcpp_1_1_bpf_filter_wrapper.html", null ],
     [ "pcpp::ConnectionData", "structpcpp_1_1_connection_data.html", null ],
     [ "pcpp::PcapLiveDevice::DeviceConfiguration", "structpcpp_1_1_pcap_live_device_1_1_device_configuration.html", null ],
     [ "pcpp::dhcp_header", "structpcpp_1_1dhcp__header.html", null ],

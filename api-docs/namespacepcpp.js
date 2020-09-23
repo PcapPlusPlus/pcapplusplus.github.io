@@ -12,6 +12,7 @@ var namespacepcpp =
     [ "BgpOpenMessageLayer", "classpcpp_1_1_bgp_open_message_layer.html", "classpcpp_1_1_bgp_open_message_layer" ],
     [ "BgpRouteRefreshMessageLayer", "classpcpp_1_1_bgp_route_refresh_message_layer.html", "classpcpp_1_1_bgp_route_refresh_message_layer" ],
     [ "BgpUpdateMessageLayer", "classpcpp_1_1_bgp_update_message_layer.html", "classpcpp_1_1_bgp_update_message_layer" ],
+    [ "BpfFilterWrapper", "classpcpp_1_1_bpf_filter_wrapper.html", "classpcpp_1_1_bpf_filter_wrapper" ],
     [ "BPFStringFilter", "classpcpp_1_1_b_p_f_string_filter.html", "classpcpp_1_1_b_p_f_string_filter" ],
     [ "ConnectionData", "structpcpp_1_1_connection_data.html", "structpcpp_1_1_connection_data" ],
     [ "dhcp_header", "structpcpp_1_1dhcp__header.html", "structpcpp_1_1dhcp__header" ],

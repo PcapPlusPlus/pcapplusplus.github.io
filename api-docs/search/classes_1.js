@@ -10,5 +10,6 @@ var searchData=
   ['bgpopenmessagelayer',['BgpOpenMessageLayer',['../classpcpp_1_1_bgp_open_message_layer.html',1,'pcpp']]],
   ['bgprouterefreshmessagelayer',['BgpRouteRefreshMessageLayer',['../classpcpp_1_1_bgp_route_refresh_message_layer.html',1,'pcpp']]],
   ['bgpupdatemessagelayer',['BgpUpdateMessageLayer',['../classpcpp_1_1_bgp_update_message_layer.html',1,'pcpp']]],
+  ['bpffilterwrapper',['BpfFilterWrapper',['../classpcpp_1_1_bpf_filter_wrapper.html',1,'pcpp']]],
   ['bpfstringfilter',['BPFStringFilter',['../classpcpp_1_1_b_p_f_string_filter.html',1,'pcpp']]]
 ];
