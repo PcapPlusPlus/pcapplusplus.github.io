@@ -12,5 +12,5 @@ var searchData=
   ['sslkeyexchangealgorithm',['SSLKeyExchangeAlgorithm',['../namespacepcpp.html#a772441779227e48ac030428c10455d9c',1,'pcpp']]],
   ['sslrecordtype',['SSLRecordType',['../namespacepcpp.html#a8009288902cf5a1c0be461f28e82ab3b',1,'pcpp']]],
   ['sslsymetricencryptionalgorithm',['SSLSymetricEncryptionAlgorithm',['../namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7',1,'pcpp']]],
-  ['sslversion',['SSLVersion',['../namespacepcpp.html#a57308ea55d838a37e7f2951ab950b6b0',1,'pcpp']]]
+  ['sslversionenum',['SSLVersionEnum',['../classpcpp_1_1_s_s_l_version.html#ab5a4809df84ce2449243739977554cc5',1,'pcpp::SSLVersion']]]
 ];

@@ -5,7 +5,7 @@ var searchData=
   ['udplayer',['UdpLayer',['../classpcpp_1_1_udp_layer.html',1,'pcpp::UdpLayer'],['../classpcpp_1_1_udp_layer.html#add55cec282d7f33152b83424ceb2710b',1,'pcpp::UdpLayer::UdpLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)'],['../classpcpp_1_1_udp_layer.html#ab14e8e5fc416560f055bae317aa3ebed',1,'pcpp::UdpLayer::UdpLayer(uint16_t portSrc, uint16_t portDst)']]],
   ['udplayer_2eh',['UdpLayer.h',['../_udp_layer_8h.html',1,'']]],
   ['udplengthfilter',['UdpLengthFilter',['../classpcpp_1_1_udp_length_filter.html',1,'pcpp::UdpLengthFilter'],['../classpcpp_1_1_udp_length_filter.html#a88d3430d89616c9229ac814c2f5eedf5',1,'pcpp::UdpLengthFilter::UdpLengthFilter()']]],
-  ['unknown',['Unknown',['../structpcpp_1_1_i_pv4_timestamp_option_value.html#a7e40161cb0427081efb75885ae38d2fba548cf8d7cf3cdb7445e3fae53a20aa30',1,'pcpp::IPv4TimestampOptionValue']]],
+  ['unknown',['Unknown',['../structpcpp_1_1_i_pv4_timestamp_option_value.html#a7e40161cb0427081efb75885ae38d2fba548cf8d7cf3cdb7445e3fae53a20aa30',1,'pcpp::IPv4TimestampOptionValue::Unknown()'],['../classpcpp_1_1_s_s_l_version.html#ab5a4809df84ce2449243739977554cc5a8f38b6c121e80f8a9ab42053fcd1a185',1,'pcpp::SSLVersion::Unknown()']]],
   ['unknownprotocol',['UnknownProtocol',['../namespacepcpp.html#ad94e3dd833f818889f676d2352eac829',1,'pcpp']]],
   ['unsetacknowledgmentnum',['unsetAcknowledgmentNum',['../classpcpp_1_1_g_r_ev1_layer.html#ab5c8246ba3b77d8ac14644801dd8ebda',1,'pcpp::GREv1Layer']]],
   ['unsetchecksum',['unsetChecksum',['../classpcpp_1_1_g_r_ev0_layer.html#a165866e7549b82b339eb4cd26bd27ee9',1,'pcpp::GREv0Layer']]],

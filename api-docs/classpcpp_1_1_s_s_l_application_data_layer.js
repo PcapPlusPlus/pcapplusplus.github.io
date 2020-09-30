@@ -2,7 +2,7 @@ var classpcpp_1_1_s_s_l_application_data_layer =
 [
     [ "SSLApplicationDataLayer", "classpcpp_1_1_s_s_l_application_data_layer.html#ad2d812ae6c47cb20693c81f7d0f0b76d", null ],
     [ "computeCalculateFields", "classpcpp_1_1_s_s_l_application_data_layer.html#a26b335b7dff7b46724894cad71ee56eb", null ],
-    [ "getEncrpytedData", "classpcpp_1_1_s_s_l_application_data_layer.html#a03c96a40f2fcf777a33c398da0aed867", null ],
-    [ "getEncrpytedDataLen", "classpcpp_1_1_s_s_l_application_data_layer.html#a576c0d66741f0ce0ea2b2d05de4a20c0", null ],
+    [ "getEncryptedData", "classpcpp_1_1_s_s_l_application_data_layer.html#a3a0cffdc40cf2c94c1fb76153334a5b7", null ],
+    [ "getEncryptedDataLen", "classpcpp_1_1_s_s_l_application_data_layer.html#abdcd96f0882b90a1a2257c5401a65599", null ],
     [ "toString", "classpcpp_1_1_s_s_l_application_data_layer.html#a55d73097bdbfb80f381630edf5e32fd7", null ]
 ];

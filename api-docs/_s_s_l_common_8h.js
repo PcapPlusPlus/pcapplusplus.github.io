@@ -5,6 +5,7 @@ var _s_s_l_common_8h =
     [ "ssl_tls_client_server_hello", "structpcpp_1_1ssl__tls__client__server__hello.html", "structpcpp_1_1ssl__tls__client__server__hello" ],
     [ "ssl_tls_change_cipher_spec", "structpcpp_1_1ssl__tls__change__cipher__spec.html", "structpcpp_1_1ssl__tls__change__cipher__spec" ],
     [ "ssl_tls_alert", "structpcpp_1_1ssl__tls__alert.html", "structpcpp_1_1ssl__tls__alert" ],
+    [ "SSLVersion", "classpcpp_1_1_s_s_l_version.html", "classpcpp_1_1_s_s_l_version" ],
     [ "SSLAlertDescription", "_s_s_l_common_8h.html#a49ab6e738d527b3e3fbbe112eed0fc32", [
       [ "SSL_ALERT_CLOSE_NOTIFY", "_s_s_l_common_8h.html#a49ab6e738d527b3e3fbbe112eed0fc32a91c58774f1fa9808a75bf3b0818f5568", null ],
       [ "SSL_ALERT_UNEXPECTED_MESSAGE", "_s_s_l_common_8h.html#a49ab6e738d527b3e3fbbe112eed0fc32a381781b9cfc968ebb6b9d7b9dc6affdb", null ],
@@ -92,6 +93,16 @@ var _s_s_l_common_8h =
       [ "SSL_EXT_EXTENDED_MASTER_SECRET", "_s_s_l_common_8h.html#a8d875ad42e200ba191c7cf29c7f469d9a1e99c247005d7b547782299552126223", null ],
       [ "SSL_EXT_TOKEN_BINDING", "_s_s_l_common_8h.html#a8d875ad42e200ba191c7cf29c7f469d9ae027545d04e071996a387241a8a74644", null ],
       [ "SSL_EXT_SESSIONTICKET_TLS", "_s_s_l_common_8h.html#a8d875ad42e200ba191c7cf29c7f469d9ab62b8cb5f2970e6ad049dd16266060b6", null ],
+      [ "SSL_EXT_PRE_SHARED_KEY", "_s_s_l_common_8h.html#a8d875ad42e200ba191c7cf29c7f469d9a4e6f2f75f08582cbed3388d0151c0537", null ],
+      [ "SSL_EXT_EARLY_DATA", "_s_s_l_common_8h.html#a8d875ad42e200ba191c7cf29c7f469d9a721b9c1a4c47284df2e7acc4d1b8d9e6", null ],
+      [ "SSL_EXT_SUPPORTED_VERSIONS", "_s_s_l_common_8h.html#a8d875ad42e200ba191c7cf29c7f469d9a35e71241f6a11c98f5659d1205167bb9", null ],
+      [ "SSL_EXT_COOKIE", "_s_s_l_common_8h.html#a8d875ad42e200ba191c7cf29c7f469d9ab43b3c3fcf86bea38e467b2a563c24b7", null ],
+      [ "SSL_EXT_PSK_KEY_EXCHANGE_MODES", "_s_s_l_common_8h.html#a8d875ad42e200ba191c7cf29c7f469d9a5709413ccc130751d17a8c64e0ec05a7", null ],
+      [ "SSL_EXT_CERTIFICATE_AUTHORITIES", "_s_s_l_common_8h.html#a8d875ad42e200ba191c7cf29c7f469d9ab9d5d28a64c3f479c182d7f831f85c5c", null ],
+      [ "SSL_EXT_OLD_FILTERS", "_s_s_l_common_8h.html#a8d875ad42e200ba191c7cf29c7f469d9ae3e37b74fc08133239695340c578b864", null ],
+      [ "SSL_EXT_POST_HANDSHAKE_AUTH", "_s_s_l_common_8h.html#a8d875ad42e200ba191c7cf29c7f469d9ac77f184ccc0cbd529330228c26593e72", null ],
+      [ "SSL_EXT_SIGNATURE_ALGORITHM_CERT", "_s_s_l_common_8h.html#a8d875ad42e200ba191c7cf29c7f469d9a9c28b9cfcaddac5b3fb056dfb589bd24", null ],
+      [ "SSL_EXT_KEY_SHARE", "_s_s_l_common_8h.html#a8d875ad42e200ba191c7cf29c7f469d9a1976127369c9226faf3d086dd5066a3d", null ],
       [ "SSL_EXT_RENEGOTIATION_INFO", "_s_s_l_common_8h.html#a8d875ad42e200ba191c7cf29c7f469d9adfbdc0f1032393786554eb4a80188436", null ],
       [ "SSL_EXT_Unknown", "_s_s_l_common_8h.html#a8d875ad42e200ba191c7cf29c7f469d9ac0a4355d57d0406918d4ac96440d442a", null ]
     ] ],
@@ -100,6 +111,8 @@ var _s_s_l_common_8h =
       [ "SSL_CLIENT_HELLO", "_s_s_l_common_8h.html#ae0fad0f4f978c2fec3de006703aac92ca938b7b9acdd80099be909ab23da599e1", null ],
       [ "SSL_SERVER_HELLO", "_s_s_l_common_8h.html#ae0fad0f4f978c2fec3de006703aac92cad2e85752954240d228d263a483fe18ae", null ],
       [ "SSL_NEW_SESSION_TICKET", "_s_s_l_common_8h.html#ae0fad0f4f978c2fec3de006703aac92caff7d1c067ae193c91f7dd54ea867bc2a", null ],
+      [ "SSL_END_OF_EARLY_DATE", "_s_s_l_common_8h.html#ae0fad0f4f978c2fec3de006703aac92caebae568b49a364ea9f6893fb4811176a", null ],
+      [ "SSL_ENCRYPTED_EXTENSIONS", "_s_s_l_common_8h.html#ae0fad0f4f978c2fec3de006703aac92cafb978964f608091b866f419cbb407e1b", null ],
       [ "SSL_CERTIFICATE", "_s_s_l_common_8h.html#ae0fad0f4f978c2fec3de006703aac92ca0ef7574c60118baccacf760f852bf628", null ],
       [ "SSL_SERVER_KEY_EXCHANGE", "_s_s_l_common_8h.html#ae0fad0f4f978c2fec3de006703aac92caa7b4ce8f0e8d63492df1c278e537368e", null ],
       [ "SSL_CERTIFICATE_REQUEST", "_s_s_l_common_8h.html#ae0fad0f4f978c2fec3de006703aac92ca5ee4d111269380104bfddb9416cf51ef", null ],
@@ -107,6 +120,7 @@ var _s_s_l_common_8h =
       [ "SSL_CERTIFICATE_VERIFY", "_s_s_l_common_8h.html#ae0fad0f4f978c2fec3de006703aac92ca3938618fc2cc2161fd2bb42cde20d55e", null ],
       [ "SSL_CLIENT_KEY_EXCHANGE", "_s_s_l_common_8h.html#ae0fad0f4f978c2fec3de006703aac92ca6208a80225f8656ad668748e7fa11d5d", null ],
       [ "SSL_FINISHED", "_s_s_l_common_8h.html#ae0fad0f4f978c2fec3de006703aac92cab714fed7bd7746d132f41758791adaa5", null ],
+      [ "SSL_KEY_UPDATE", "_s_s_l_common_8h.html#ae0fad0f4f978c2fec3de006703aac92ca7c497b09961fad3b44bdf487f0b8fd1f", null ],
       [ "SSL_HANDSHAKE_UNKNOWN", "_s_s_l_common_8h.html#ae0fad0f4f978c2fec3de006703aac92cae086a1e23820326257451942eb63e9ef", null ]
     ] ],
     [ "SSLHashingAlgorithm", "_s_s_l_common_8h.html#ae983b30bc6e1c3461d5f81eb50a56afa", [
@@ -178,13 +192,8 @@ var _s_s_l_common_8h =
       [ "SSL_SYM_ARIA_128_GCM", "_s_s_l_common_8h.html#ac4f9e906dad88c5eb6a34390e5ea54b7ab63644aadcb749e34d2649ee3e266889", null ],
       [ "SSL_SYM_ARIA_256_GCM", "_s_s_l_common_8h.html#ac4f9e906dad88c5eb6a34390e5ea54b7a21c4070230ec1524cc14155aa0c2e351", null ],
       [ "SSL_SYM_CHACHA20_POLY1305", "_s_s_l_common_8h.html#ac4f9e906dad88c5eb6a34390e5ea54b7aad408ebc9eac82d3d70db4e75d054bb3", null ],
+      [ "SSL_SYM_AES_128_CCM", "_s_s_l_common_8h.html#ac4f9e906dad88c5eb6a34390e5ea54b7a1ac4744eed7a873433eaeb203cd30981", null ],
+      [ "SSL_SYM_AES_128_CCM_8", "_s_s_l_common_8h.html#ac4f9e906dad88c5eb6a34390e5ea54b7af8828777b92f49e1cfdc9cfd2f54e9e7", null ],
       [ "SSL_SYM_Unknown", "_s_s_l_common_8h.html#ac4f9e906dad88c5eb6a34390e5ea54b7adeb4feda65f41612cd9d614bc1115790", null ]
-    ] ],
-    [ "SSLVersion", "_s_s_l_common_8h.html#a57308ea55d838a37e7f2951ab950b6b0", [
-      [ "SSL2", "_s_s_l_common_8h.html#a57308ea55d838a37e7f2951ab950b6b0a49c5cd3ae218b40aba1faa56929644f5", null ],
-      [ "SSL3", "_s_s_l_common_8h.html#a57308ea55d838a37e7f2951ab950b6b0abf5b63391ea66fedfda51ca741ac0ada", null ],
-      [ "TLS1_0", "_s_s_l_common_8h.html#a57308ea55d838a37e7f2951ab950b6b0adf11d6dcccd5d4ea83785777de7283af", null ],
-      [ "TLS1_1", "_s_s_l_common_8h.html#a57308ea55d838a37e7f2951ab950b6b0a3e325fbf6fe79db7fe3a6408ef52a58a", null ],
-      [ "TLS1_2", "_s_s_l_common_8h.html#a57308ea55d838a37e7f2951ab950b6b0af155751e58775241d60ecd1c43d75dac", null ]
     ] ]
 ];

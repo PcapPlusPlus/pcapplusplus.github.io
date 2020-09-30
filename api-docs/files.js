@@ -158,6 +158,7 @@ var files =
       [ "SSLExtension", "classpcpp_1_1_s_s_l_extension.html", "classpcpp_1_1_s_s_l_extension" ],
       [ "SSLExtensionStruct", "structpcpp_1_1_s_s_l_extension_1_1_s_s_l_extension_struct.html", "structpcpp_1_1_s_s_l_extension_1_1_s_s_l_extension_struct" ],
       [ "SSLServerNameIndicationExtension", "classpcpp_1_1_s_s_l_server_name_indication_extension.html", "classpcpp_1_1_s_s_l_server_name_indication_extension" ],
+      [ "SSLSupportedVersionsExtension", "classpcpp_1_1_s_s_l_supported_versions_extension.html", "classpcpp_1_1_s_s_l_supported_versions_extension" ],
       [ "SSLx509Certificate", "classpcpp_1_1_s_s_lx509_certificate.html", "classpcpp_1_1_s_s_lx509_certificate" ],
       [ "SSLHandshakeMessage", "classpcpp_1_1_s_s_l_handshake_message.html", "classpcpp_1_1_s_s_l_handshake_message" ],
       [ "SSLClientHelloMessage", "classpcpp_1_1_s_s_l_client_hello_message.html", "classpcpp_1_1_s_s_l_client_hello_message" ],

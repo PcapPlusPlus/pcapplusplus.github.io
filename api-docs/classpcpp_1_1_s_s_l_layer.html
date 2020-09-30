@@ -111,7 +111,7 @@ Inheritance diagram for pcpp::SSLLayer:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aca27a007b9bc9e0907d90357018c6772"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpcpp_1_1ssl__tls__record__layer.html">ssl_tls_record_layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_layer.html#aca27a007b9bc9e0907d90357018c6772">getRecordLayer</a> () const</td></tr>
 <tr class="separator:aca27a007b9bc9e0907d90357018c6772"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09e0da49925459ddcb6b4912e85838de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcpp.html#a57308ea55d838a37e7f2951ab950b6b0">SSLVersion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_layer.html#a09e0da49925459ddcb6b4912e85838de">getRecordVersion</a> () const</td></tr>
+<tr class="memitem:a09e0da49925459ddcb6b4912e85838de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_s_s_l_version.html">SSLVersion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_layer.html#a09e0da49925459ddcb6b4912e85838de">getRecordVersion</a> () const</td></tr>
 <tr class="separator:a09e0da49925459ddcb6b4912e85838de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad653c57a2e587e3920ab3087fe45bd5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcpp.html#a8009288902cf5a1c0be461f28e82ab3b">SSLRecordType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_layer.html#ad653c57a2e587e3920ab3087fe45bd5d">getRecordType</a> () const</td></tr>
 <tr class="separator:ad653c57a2e587e3920ab3087fe45bd5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,8 +157,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:aa3f1a267349da3994833e26dfdb5526d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab475769b89eb8db08be50f96afe26450"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classpcpp_1_1_s_s_l_layer.html">SSLLayer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_layer.html#ab475769b89eb8db08be50f96afe26450">createSSLMessage</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_layer.html">Layer</a> *prevLayer, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet)</td></tr>
 <tr class="separator:ab475769b89eb8db08be50f96afe26450"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af38f557785a417888c5a1096d8c5c52f"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_layer.html#af38f557785a417888c5a1096d8c5c52f">sslVersionToString</a> (<a class="el" href="namespacepcpp.html#a57308ea55d838a37e7f2951ab950b6b0">SSLVersion</a> ver)</td></tr>
-<tr class="separator:af38f557785a417888c5a1096d8c5c52f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The base class for the 4 record type classes. Each record type is represented as a layer. See <a class="el" href="_s_s_l_layer_8h.html">SSLLayer.h</a> for detailed explanation of the TLS/SSL protocol support in PcapPlusPlus. This class provides the common functionality used by all record types and also contains static methods for identifying an creating SSL/TLS record type layers </p>
@@ -328,7 +326,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacepcpp.html#a57308ea55d838a37e7f2951ab950b6b0">SSLVersion</a> pcpp::SSLLayer::getRecordVersion </td>
+          <td class="memname"><a class="el" href="classpcpp_1_1_s_s_l_version.html">SSLVersion</a> pcpp::SSLLayer::getRecordVersion </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -392,12 +390,17 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>A static methods that gets raw data of a layer and checks whether this data is a SSL/TLS record or not. This check is done using the source/dest port and matching of a legal record type in the raw data. The list of ports identified as SSL/TLS is hard-coded and includes the following ports:</p><ul>
 <li>Port 443 [HTTPS]</li>
-<li>Port 465 [LDAPS]</li>
-<li>Port 636 [FTPS]</li>
+<li>Port 261 [NSIIOPS]</li>
+<li>Port 448 [DDM-SSL]</li>
+<li>Port 563 [NNTPS]</li>
+<li>Port 614 [SSHELL]</li>
+<li>Port 465 [SMTPS]</li>
+<li>Port 636 [LDAPS]</li>
 <li>Port 989 [FTPS - data]</li>
 <li>Port 990 [FTPS - control]</li>
 <li>Port 992 [Telnet over TLS/SSL[</li>
 <li>Port 993 [IMAPS]</li>
+<li>Port 994 [IRCS]</li>
 <li>Port 995 [POP3S] <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">srcPort</td><td>The source port of the packet that contains the raw data. Source port (or dest port) are a criteria to identify SSL/TLS packets </td></tr>
@@ -473,46 +476,13 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af38f557785a417888c5a1096d8c5c52f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af38f557785a417888c5a1096d8c5c52f">&#9670;&nbsp;</a></span>sslVersionToString()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static std::string pcpp::SSLLayer::sslVersionToString </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacepcpp.html#a57308ea55d838a37e7f2951ab950b6b0">SSLVersion</a>&#160;</td>
-          <td class="paramname"><em>ver</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>A static method that converts SSLVersion enum value to string </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ver</td><td>The enum value </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The string representation of the enum value </dd></dl>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_s_s_l_layer.html">SSLLayer</a></li>
-    <li class="footer">Generated on Wed Sep 23 2020 07:34:03 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Sep 30 2020 10:15:40 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

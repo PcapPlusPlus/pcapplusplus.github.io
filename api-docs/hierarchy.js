@@ -249,7 +249,8 @@ var hierarchy =
     [ "pcpp::ssl_tls_record_layer", "structpcpp_1_1ssl__tls__record__layer.html", null ],
     [ "pcpp::SSLCipherSuite", "classpcpp_1_1_s_s_l_cipher_suite.html", null ],
     [ "pcpp::SSLExtension", "classpcpp_1_1_s_s_l_extension.html", [
-      [ "pcpp::SSLServerNameIndicationExtension", "classpcpp_1_1_s_s_l_server_name_indication_extension.html", null ]
+      [ "pcpp::SSLServerNameIndicationExtension", "classpcpp_1_1_s_s_l_server_name_indication_extension.html", null ],
+      [ "pcpp::SSLSupportedVersionsExtension", "classpcpp_1_1_s_s_l_supported_versions_extension.html", null ]
     ] ],
     [ "pcpp::SSLExtension::SSLExtensionStruct", "structpcpp_1_1_s_s_l_extension_1_1_s_s_l_extension_struct.html", null ],
     [ "pcpp::SSLHandshakeMessage", "classpcpp_1_1_s_s_l_handshake_message.html", [
@@ -266,6 +267,7 @@ var hierarchy =
       [ "pcpp::SSLServerKeyExchangeMessage", "classpcpp_1_1_s_s_l_server_key_exchange_message.html", null ],
       [ "pcpp::SSLUnknownMessage", "classpcpp_1_1_s_s_l_unknown_message.html", null ]
     ] ],
+    [ "pcpp::SSLVersion", "classpcpp_1_1_s_s_l_version.html", null ],
     [ "pcpp::SSLx509Certificate", "classpcpp_1_1_s_s_lx509_certificate.html", null ],
     [ "pcpp::SystemCore", "structpcpp_1_1_system_core.html", null ],
     [ "pcpp::SystemCores", "structpcpp_1_1_system_cores.html", null ],
