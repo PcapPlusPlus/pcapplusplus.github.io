@@ -161,4 +161,4 @@ You can build these 3 solutions using either Visual Studio IDE or `MSBuild`.
 
 ## Running tests
 
-PcapPlusPlus contains a set of test-cases you can run to make sure that everything works correctly on your system. [This guide]({{ site.baseurl }}/docs/install/build-source/tests) contains detailed instructions on how to run them.
+PcapPlusPlus contains a set of test-cases you can run to make sure that everything works correctly on your system. [This guide]({{ site.baseurl }}/docs/tests) contains detailed instructions on how to run them.
