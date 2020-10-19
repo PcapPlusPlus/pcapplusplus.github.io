@@ -76,72 +76,119 @@ $ make config T=[platform_type_string] && make
 
 ### PcapPlusPlus configuration for DPDK
 
-Once DPDK builds successfully run PcapPlusPlus configuration script (`configure-linux.sh`) and configure PcapPlusPlus to link with DPDK, please refer to the [configuration instructions]({{ site.baseurl }}/docs/install/build-source/linux#configuration) to understand how.
+toolOnce the DPDK build is completed successfully, run PcapPlusPlus configuration script (`configure-linux.sh`) to build PcapPlusPlus with DPDK. Please refer to the [configuration instructions]({{ site.baseurl }}/docs/install/build-source/linux#configuration) to get more details.
 
 ### DPDK initialization with PcapPlusPlus
 
-DPDK has two steps of initialization: one that configures Linux to support DPDK applications and the other at the application startup which initializes DPDK structures and memory. PcapPlusPlus wraps both of them with easy-to-use interfaces. Please see the following two sections to understand more.
+DPDK has two steps of initialization: one that sets up Linux to run DPDK applications and the other at the application level which initializes DPDK data and memory structures. PcapPlusPlus wraps both of them with easy-to-use interfaces. Please see the following two sections to get more information.
 
 ### Initialization before application is run
 
-DPDK requires several Linux configurations to run:
+Several Linux configuration steps are needed to run DPDK applications:
 
-- DPDK uses the Linux huge-pages mechanism for faster virtual to physical page conversion resulting in better performance. So huge-pages must be set before a DPDK application is run
-- DPDK uses a designated kernel module for the kernel-bypass mechanism (igb_uio.ko). This module should be loaded into the kernel
-- The user needs to state which NICs will move to DPDK control and which will stay under Linux control
-- For using DPDK KNI there is another kernel module to load (rte_kni.ko)
+- DPDK uses Linux huge-pages for faster virtual to physical page conversion resulting in better performance. Huge-pages must be set before a DPDK application is run
+- DPDK uses a designated kernel module for kernel bypass (`igb_uio.ko`). This module needs to be loaded into the kernel
+- One or more NICs should move from Linux control to DPDK control
+- For DPDK KNI there is one more kernel to be loaded into the kernel (`rte_kni.ko`)
 
-PcapPlusPlus offers a simple script that automatically configures all of these. The script is under PcapPlusPlus root directory and is called `setup-dpdk.sh`. The script takes the following parameters as input:
+PcapPlusPlus offers a python script that automatically configures all of the above. The script is located in PcapPlusPlus root directory and is named `setup_dpdk.py`. It is based on the [`dpdk-devbind` tool that ships with DPDK](https://doc.dpdk.org/guides/tools/devbind.html) and extends it with more functionality. The script supports both Python 2.7 and 3+.
 
-| `-p` | the amount of huge pages to allocate. By default each huge-page size is 2048KB |
-| `-n` | a comma-separated list of all NICs that will be unbinded from Linux and move to DPDK control. Only these NICs will be used by DPDK, the others will stay under Linux control. For example: `eth0,eth1` will move these 2 interfaces under DPDK control - assuming this NIC is supported by DPDK |
-| `-k` | when this flag is specified the KNI kernel module is loaded |
-| `-h` | show a help message and exit |
+This script has 3 modes of operation: `setup` to configure the steps mentioned above, `status` to view the status of all known network interfaces, and `restore` to go back to the original Linux configuration.
 
-If everything went well the system is ready to run a DPDK application and the script output should look like this:
+{% include alert.html alert-type="tip" content="Note: this script uses another file named `setup_dpdk_settings.dat` to keep information needed for restoring the Linux configuration. This files is also located in PcapPlusPlus root directory. Please do not remove this file" %}
+
+__Setup__ - takes the following parameters:
+
+| `-g`, `--huge-pages` `AMOUNT` | The amount of huge pages to allocate. By default each huge-page size is 2048KB |
+| `-i`, `--interface` `NIC_NAME [NIC_NAME ...]` | A space-separated list of all NICs that should move from Linux to DPDK control. Only these NICs can be used by DPDK, the others will stay under Linux control |
+| `-m`, `--dpdk-module` `{igb_uio,uio_pci_generic}` | The DPDK module to install. If not specified the default is `igb_uio` |
+| `-k`, `--load-kni` | Install the KNI kernel module (not loaded by default) |
+| `-p`, `--kni-params` `KNI_PARAMS` | Optional parameters for installing the KNI kernel module |
+| `-v`, `--verbose` | Print more verbose output |
+
+If everything goes well the system should be ready to run a DPDK applications and the output should look something like this:
 
 ```shell
-*******************************
-PcapPlusPlus setup DPDK script
-*******************************
+pcapplusplus@ubunu:~/PcapPlusPlus$ sudo python setup_dpdk.py setup -g 512 -i enp0s3
+[INFO] set up hugepages to 512
+[INFO] loaded kernel module 'uio'
+[INFO] loaded DPDK kernel module 'igb_uio'
+[INFO] set interface 'enp0s3' down
+[INFO] bound interface 'enp0s3' ['0000:00:03.0'] to 'igb_uio'
+[INFO] SETUP COMPLETE
+```
 
-1. Reserve huge-pages - DONE!
-2. Install kernel module - DONE!
-3. Bind network adapters - DONE!
+__Status__ - shows the interfaces under DPDK and Linux control. In the example below one interface is under DPDK control and the other (`enp0s8`) is under Linux control:
+
+```shell
+pcapplusplus@ubunu:~/PcapPlusPlus$ sudo python setup_dpdk.py status
 
 Network devices using DPDK-compatible driver
 ============================================
-0000:00:03.0 '82540EM Gigabit Ethernet Controller' drv=igb_uio unused=e1000
-0000:00:08.0 '82545EM Gigabit Ethernet Controller (Copper)' drv=igb_uio unused=e1000
+0000:00:03.0 '82540EM Gigabit Ethernet Controller 100e' drv=igb_uio unused=e1000,vfio-pci,uio_pci_generic
 
 Network devices using kernel driver
 ===================================
-0000:00:09.0 '82545EM Gigabit Ethernet Controller (Copper)' if=eth2 drv=e1000 unused=igb_uio *Active*
-0000:00:0a.0 '82545EM Gigabit Ethernet Controller (Copper)' if=eth3 drv=e1000 unused=igb_uio 
+0000:00:08.0 '82540EM Gigabit Ethernet Controller 100e' if=enp0s8 drv=e1000 unused=igb_uio,vfio-pci,uio_pci_generic *Active*
 
-Other network devices
-=====================
+No 'Baseband' devices detected
+==============================
 
-Setup DPDK completed
+No 'Crypto' devices detected
+============================
+
+No 'Eventdev' devices detected
+==============================
+
+No 'Mempool' devices detected
+=============================
+
+No 'Compress' devices detected
+==============================
+
+No 'Misc (rawdev)' devices detected
+===================================
 ```
+
+This command take the following parameters:
+
+| `-v`, `--verbose` | Print more verbose output |
+
+__Restore__ - restores the Linux configuration to its previous state before `setup_dpdk.py setup` was run. Please note that this command uses the `setup_dpdk_settings.dat` file to identify the previous state. If this file was deleted or moved the restore process will most likely fail. Please also note that a machine restart will probably restore most of this configuration, but this command enables restore without a machine restart.
+
+If everything goes well the output should look something like this:
+
+```shell
+pcapplusplus@ubunu:~/PcapPlusPlus$ sudo python setup_dpdk.py restore
+[INFO] removed hugepages
+[INFO] bound device '0000:00:03.0' back to 'e1000'
+[INFO] restored interface 'enp0s3'
+[INFO] removed 'igb_uio' kernel module
+[INFO] RESTORE COMPLETE
+```
+
+This command take the following parameters:
+
+| `-v`, `--verbose` | Print more verbose output |
+
 
 ### Initialization at application startup
 
 When using DPDK in your application it should be initialized on application startup. This configuration includes:
 
-- Verify that huge-pages, kernel module(s) and NICs are set
+- Verify that huge-pages, kernel module(s) and NICs are all set
 - Initialize DPDK internal structures and memory, poll-mode drivers etc.
 - Prepare CPU cores that will be used by the application
 - Initialize packet memory pool
 - Configure each NIC controlled by DPDK
 
-These steps are wrapped in one static method that should be called once in application startup:
+These steps are wrapped in one static method that should be called once in the application startup:
 
 ```cpp
 DpdkDeviceList::initDpdk();
 ```
 
-If this methods succeeds DPDK is ready to use in your application.
+If this methods succeeds DPDK is ready to be used in your application.
 
 ## Next steps
 
