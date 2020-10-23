@@ -130,7 +130,6 @@ var files =
     [ "PfRingDeviceList.h", "_pf_ring_device_list_8h.html", [
       [ "PfRingDeviceList", "classpcpp_1_1_pf_ring_device_list.html", "classpcpp_1_1_pf_ring_device_list" ]
     ] ],
-    [ "PlatformSpecificUtils.h", "_platform_specific_utils_8h_source.html", null ],
     [ "PointerVector.h", "_pointer_vector_8h.html", [
       [ "PointerVector", "classpcpp_1_1_pointer_vector.html", "classpcpp_1_1_pointer_vector" ]
     ] ],

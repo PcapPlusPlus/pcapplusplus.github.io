@@ -88,7 +88,7 @@ var searchData=
   ['ignore_5fpacketofclosedflow',['Ignore_PacketOfClosedFlow',['../classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177a48fe637b23950961733dca730d02107b',1,'pcpp::TcpReassembly']]],
   ['ignore_5fpacketwithnodata',['Ignore_PacketWithNoData',['../classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177af2e14abee4ff5e5dbf57c3f3ae7ddb34',1,'pcpp::TcpReassembly']]],
   ['ignore_5fretransimission',['Ignore_Retransimission',['../classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177a72b70b319166c4691ba4a052d5b59366',1,'pcpp::TcpReassembly']]],
-  ['in_5faddr2int',['in_addr2int',['../namespacepcpp.html#a0e2a6ea816a6f32ed721b4db05911b8f',1,'pcpp']]],
+  ['in_5faddr2int',['in_addr2int',['../_ip_utils_8h.html#af93e0c8b044823c2dc011a26c26cca44',1,'pcpp::internal']]],
   ['inet_5fntop',['inet_ntop',['../_ip_utils_8h.html#a2a4b830a00870799ee852d4c6a72a1eb',1,'IpUtils.h']]],
   ['inet_5fpton',['inet_pton',['../_ip_utils_8h.html#acdce1d46efd09e8485a2f682b388ebc0',1,'IpUtils.h']]],
   ['info_5fcached',['INFO_CACHED',['../classpcpp_1_1_kni_device.html#a3fd22d62a55612b03481d65bc49fa0cca4950a91c9a09ef0cced588928b501945',1,'pcpp::KniDevice']]],

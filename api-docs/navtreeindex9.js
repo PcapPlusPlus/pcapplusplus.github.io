@@ -1,5 +1,9 @@
 var NAVTREEINDEX9 =
 {
+"classpcpp_1_1_linux_nic_information_socket.html":[3,0,0,107],
+"classpcpp_1_1_linux_nic_information_socket.html#a01722c01a7fb72295efbfc5e8aa27723":[3,0,0,107,1],
+"classpcpp_1_1_linux_nic_information_socket.html#a810ea2386d18ef11adb6429cbafe6be4":[3,0,0,107,3],
+"classpcpp_1_1_linux_nic_information_socket.html#a86176bab7ca80b09d271d1335ad987aa":[3,0,0,107,4],
 "classpcpp_1_1_linux_nic_information_socket.html#aaa9b5d6420de52d330e43a65663c523d":[3,0,0,107,0],
 "classpcpp_1_1_linux_nic_information_socket.html#ab61d863ff5a60c25059d9627ee214c16":[3,0,0,107,2],
 "classpcpp_1_1_logger_p_p.html":[3,0,0,108],
@@ -245,9 +249,5 @@ var NAVTREEINDEX9 =
 "classpcpp_1_1_pcap_live_device.html#a0e343585711ee4e02d4b9507467135aba47692cc2f098676c70ad0505059f581c":[3,0,0,124,2,2],
 "classpcpp_1_1_pcap_live_device.html#a0e343585711ee4e02d4b9507467135aba975b2663c8a8bcc495a71af5e80f8652":[3,0,0,124,2,0],
 "classpcpp_1_1_pcap_live_device.html#a2381e7f053285090f0f9620bcbd8f0f3":[3,0,0,124,1],
-"classpcpp_1_1_pcap_live_device.html#a2381e7f053285090f0f9620bcbd8f0f3ad57df3ce2415ba6f804539bb268aecdf":[3,0,0,124,1,0],
-"classpcpp_1_1_pcap_live_device.html#a2381e7f053285090f0f9620bcbd8f0f3af1c5bb543295a735a99cc9f88ac67bca":[3,0,0,124,1,1],
-"classpcpp_1_1_pcap_live_device.html#a281f2cd6062791c68ecdd82384f751f8":[3,0,0,124,19],
-"classpcpp_1_1_pcap_live_device.html#a2933139d284d7c167283982ec8b56559":[3,0,0,124,29],
-"classpcpp_1_1_pcap_live_device.html#a296c42499d3f6c606e2cdf7e25a61c04":[3,0,0,124,17]
+"classpcpp_1_1_pcap_live_device.html#a2381e7f053285090f0f9620bcbd8f0f3ad57df3ce2415ba6f804539bb268aecdf":[3,0,0,124,1,0]
 };

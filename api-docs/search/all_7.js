@@ -17,6 +17,8 @@ var searchData=
   ['holdtime',['holdTime',['../structpcpp_1_1_bgp_open_message_layer_1_1bgp__open__message.html#a21f5d2a212b2cb6db91703ed9e15a3fc',1,'pcpp::BgpOpenMessageLayer::bgp_open_message']]],
   ['hoplimit',['hopLimit',['../structpcpp_1_1ip6__hdr.html#a9734da4d88f3f3938f12e2c71b4ac855',1,'pcpp::ip6_hdr']]],
   ['hops',['hops',['../structpcpp_1_1dhcp__header.html#a05c26611075d3f99ba396fab90e8bb31',1,'pcpp::dhcp_header']]],
+  ['hosttonet16',['hostToNet16',['../namespacepcpp.html#aafb06a06afd919ad4d81a7cc209b6416',1,'pcpp']]],
+  ['hosttonet32',['hostToNet32',['../namespacepcpp.html#abf3bfbe836ec11af9350526ef8023380',1,'pcpp']]],
   ['http',['HTTP',['../namespacepcpp.html#a944e1788983dd46df10587eae2cbcf18',1,'pcpp']]],
   ['http100continue',['Http100Continue',['../classpcpp_1_1_http_response_layer.html#ab5bbbd02f36805001550d1168f1412bcac780d9eb0df47dee3cf5f88d8fba899a',1,'pcpp::HttpResponseLayer']]],
   ['http101switchingprotocols',['Http101SwitchingProtocols',['../classpcpp_1_1_http_response_layer.html#ab5bbbd02f36805001550d1168f1412bca0cd5f516d92105dce9e82815b7840264',1,'pcpp::HttpResponseLayer']]],

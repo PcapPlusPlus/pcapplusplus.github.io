@@ -83,7 +83,6 @@ $(document).ready(function(){initNavTree('_ip_utils_8h.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -93,16 +92,10 @@ $(document).ready(function(){initNavTree('_ip_utils_8h.html','');});
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;in.h&gt;</code><br />
 <code>#include &lt;arpa/inet.h&gt;</code><br />
-<code>#include &lt;winsock2.h&gt;</code><br />
 <code>#include &lt;ws2tcpip.h&gt;</code><br />
 </div>
 <p><a href="_ip_utils_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_scalar_buffer.html">pcpp::ScalarBuffer&lt; T &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacepcpp"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html">pcpp</a></td></tr>
@@ -115,22 +108,41 @@ Functions</h2></td></tr>
 <tr class="separator:a2a4b830a00870799ee852d4c6a72a1eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdce1d46efd09e8485a2f682b388ebc0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ip_utils_8h.html#acdce1d46efd09e8485a2f682b388ebc0">inet_pton</a> (int af, const char *src, void *dst)</td></tr>
 <tr class="separator:acdce1d46efd09e8485a2f682b388ebc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accf99d75d7ba993b6146e5915a7fa2db"><td class="memItemLeft" align="right" valign="top">in_addr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#accf99d75d7ba993b6146e5915a7fa2db">pcpp::sockaddr2in_addr</a> (struct sockaddr *sa)</td></tr>
-<tr class="separator:accf99d75d7ba993b6146e5915a7fa2db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf8855571df4a1ba17129f946383f3be"><td class="memItemLeft" align="right" valign="top">in6_addr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#acf8855571df4a1ba17129f946383f3be">pcpp::sockaddr2in6_addr</a> (struct sockaddr *sa)</td></tr>
-<tr class="separator:acf8855571df4a1ba17129f946383f3be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adca8f8917951fbfa34b0a24fab6c9152"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#adca8f8917951fbfa34b0a24fab6c9152">pcpp::sockaddr2string</a> (struct sockaddr *sa, char *resultString)</td></tr>
-<tr class="separator:adca8f8917951fbfa34b0a24fab6c9152"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e2a6ea816a6f32ed721b4db05911b8f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a0e2a6ea816a6f32ed721b4db05911b8f">pcpp::in_addr2int</a> (in_addr inAddr)</td></tr>
-<tr class="separator:a0e2a6ea816a6f32ed721b4db05911b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27f80839f1794fa67f59d5f4046466d7"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a27f80839f1794fa67f59d5f4046466d7">pcpp::compute_checksum</a> (ScalarBuffer&lt; uint16_t &gt; vec[], size_t vecSize)</td></tr>
-<tr class="separator:a27f80839f1794fa67f59d5f4046466d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5ed4e611bb0af5bade4697ff2308b18"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#af5ed4e611bb0af5bade4697ff2308b18">pcpp::fnv_hash</a> (ScalarBuffer&lt; uint8_t &gt; vec[], size_t vecSize)</td></tr>
-<tr class="separator:af5ed4e611bb0af5bade4697ff2308b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af66abbe5d82d79edd056eb54e70774f2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#af66abbe5d82d79edd056eb54e70774f2">pcpp::fnv_hash</a> (uint8_t *buffer, size_t bufSize)</td></tr>
-<tr class="separator:af66abbe5d82d79edd056eb54e70774f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f53de9ad280a337d0e6e10285ca44e"><td class="memItemLeft" align="right" valign="top">in_addr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ip_utils_8h.html#a72f53de9ad280a337d0e6e10285ca44e">pcpp::internal::sockaddr2in_addr</a> (struct sockaddr *sa)</td></tr>
+<tr class="separator:a72f53de9ad280a337d0e6e10285ca44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb11c752781ef27046c71dfc566e9cd6"><td class="memItemLeft" align="right" valign="top">in6_addr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ip_utils_8h.html#adb11c752781ef27046c71dfc566e9cd6">pcpp::internal::sockaddr2in6_addr</a> (struct sockaddr *sa)</td></tr>
+<tr class="separator:adb11c752781ef27046c71dfc566e9cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac04374477bd21735d8bbc2b25de4bb59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ip_utils_8h.html#ac04374477bd21735d8bbc2b25de4bb59">pcpp::internal::sockaddr2string</a> (struct sockaddr *sa, char *resultString)</td></tr>
+<tr class="separator:ac04374477bd21735d8bbc2b25de4bb59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af93e0c8b044823c2dc011a26c26cca44"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ip_utils_8h.html#af93e0c8b044823c2dc011a26c26cca44">pcpp::internal::in_addr2int</a> (in_addr inAddr)</td></tr>
+<tr class="separator:af93e0c8b044823c2dc011a26c26cca44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="file_af93e0c8b044823c2dc011a26c26cca44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#file_af93e0c8b044823c2dc011a26c26cca44">&#9670;&nbsp;</a></span>in_addr2int()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t pcpp::internal::in_addr2int </td>
+          <td>(</td>
+          <td class="paramtype">in_addr&#160;</td>
+          <td class="paramname"><em>inAddr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Convert a in_addr format address to 32bit representation </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inAddr</td><td>Address in in_addr format </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Address in 32bit format </dd></dl>
+
+</div>
+</div>
 <a id="a2a4b830a00870799ee852d4c6a72a1eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2a4b830a00870799ee852d4c6a72a1eb">&#9670;&nbsp;</a></span>inet_ntop()</h2>
 
@@ -224,13 +236,98 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="file_adb11c752781ef27046c71dfc566e9cd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#file_adb11c752781ef27046c71dfc566e9cd6">&#9670;&nbsp;</a></span>sockaddr2in6_addr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in6_addr* pcpp::internal::sockaddr2in6_addr </td>
+          <td>(</td>
+          <td class="paramtype">struct sockaddr *&#160;</td>
+          <td class="paramname"><em>sa</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Extract IPv6 address from sockaddr </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sa</td><td>- input sockaddr </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Address in in6_addr format </dd></dl>
+
+</div>
+</div>
+<a id="file_a72f53de9ad280a337d0e6e10285ca44e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#file_a72f53de9ad280a337d0e6e10285ca44e">&#9670;&nbsp;</a></span>sockaddr2in_addr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in_addr* pcpp::internal::sockaddr2in_addr </td>
+          <td>(</td>
+          <td class="paramtype">struct sockaddr *&#160;</td>
+          <td class="paramname"><em>sa</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Extract IPv4 address from sockaddr </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sa</td><td>- input sockaddr </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Address in in_addr format </dd></dl>
+
+</div>
+</div>
+<a id="file_ac04374477bd21735d8bbc2b25de4bb59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#file_ac04374477bd21735d8bbc2b25de4bb59">&#9670;&nbsp;</a></span>sockaddr2string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::internal::sockaddr2string </td>
+          <td>(</td>
+          <td class="paramtype">struct sockaddr *&#160;</td>
+          <td class="paramname"><em>sa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>resultString</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Converts a sockaddr format address to its string representation </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sa</td><td>Address in sockaddr format </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">resultString</td><td>String representation of the address </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="_ip_utils_8h.html">IpUtils.h</a></li>
-    <li class="footer">Generated on Sat Oct 17 2020 08:38:25 for PcapPlusPlus by
+    <li class="footer">Generated on Fri Oct 23 2020 08:55:46 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
