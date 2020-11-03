@@ -155,7 +155,8 @@ Namespaces</h2></td></tr>
 <p>The struct <a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html">pcpp::TcpReassemblyConfiguration</a> allows to setup the parameters of cleanup. Following parameters are supported:</p><ul>
 <li>pcpp::TcpReassemblyConfiguration::doNotRemoveConnInfo - if this member is set to false the automatic cleanup mode is applied</li>
 <li><a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html#a291ecac743fe0e44af8998bb9e48479a">pcpp::TcpReassemblyConfiguration::closedConnectionDelay</a> - the value of delay expressed in seconds. The minimum value is 1</li>
-<li><a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html#a5391d9cd04aa14a608fdfab7ca249e31">pcpp::TcpReassemblyConfiguration::maxNumToClean</a> - to avoid performance overhead when the cleanup is being performed, this parameter is used. It defines the maximum number of items to be removed per one call of <a class="el" href="classpcpp_1_1_tcp_reassembly.html#acdad37632836cd8f9d92f6a40ab53b74">pcpp::TcpReassembly::purgeClosedConnections</a> </li>
+<li><a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html#a5391d9cd04aa14a608fdfab7ca249e31">pcpp::TcpReassemblyConfiguration::maxNumToClean</a> - to avoid performance overhead when the cleanup is being performed, this parameter is used. It defines the maximum number of items to be removed per one call of <a class="el" href="classpcpp_1_1_tcp_reassembly.html#acdad37632836cd8f9d92f6a40ab53b74">pcpp::TcpReassembly::purgeClosedConnections</a></li>
+<li><a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html#a760cfdaff04fc2c37da820a7a092c989">pcpp::TcpReassemblyConfiguration::maxOutOfOrderFragments</a> - the maximum number of unmatched fragments to keep per flow before missed fragments are considered lost. A value of 0 means unlimited </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
@@ -163,7 +164,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="_tcp_reassembly_8h.html">TcpReassembly.h</a></li>
-    <li class="footer">Generated on Fri Oct 23 2020 08:55:46 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Nov 3 2020 10:20:39 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

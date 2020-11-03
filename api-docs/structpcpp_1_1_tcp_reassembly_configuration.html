@@ -95,8 +95,8 @@ $(document).ready(function(){initNavTree('structpcpp_1_1_tcp_reassembly_configur
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad1e4d9373e464d91d135000ca2b9e59c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html#ad1e4d9373e464d91d135000ca2b9e59c">TcpReassemblyConfiguration</a> (bool <a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html#ade3576882946634b10b51172bcbe2285">removeConnInfo</a>=true, uint32_t <a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html#a291ecac743fe0e44af8998bb9e48479a">closedConnectionDelay</a>=5, uint32_t <a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html#a5391d9cd04aa14a608fdfab7ca249e31">maxNumToClean</a>=30)</td></tr>
-<tr class="separator:ad1e4d9373e464d91d135000ca2b9e59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2ce3dc88bf9eafe6048db3a34d8ff7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html#ae2ce3dc88bf9eafe6048db3a34d8ff7a">TcpReassemblyConfiguration</a> (bool <a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html#ade3576882946634b10b51172bcbe2285">removeConnInfo</a>=true, uint32_t <a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html#a291ecac743fe0e44af8998bb9e48479a">closedConnectionDelay</a>=5, uint32_t <a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html#a5391d9cd04aa14a608fdfab7ca249e31">maxNumToClean</a>=30, uint32_t <a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html#a760cfdaff04fc2c37da820a7a092c989">maxOutOfOrderFragments</a>=0)</td></tr>
+<tr class="separator:ae2ce3dc88bf9eafe6048db3a34d8ff7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -106,12 +106,14 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a291ecac743fe0e44af8998bb9e48479a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5391d9cd04aa14a608fdfab7ca249e31"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html#a5391d9cd04aa14a608fdfab7ca249e31">maxNumToClean</a></td></tr>
 <tr class="separator:a5391d9cd04aa14a608fdfab7ca249e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a760cfdaff04fc2c37da820a7a092c989"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html#a760cfdaff04fc2c37da820a7a092c989">maxOutOfOrderFragments</a></td></tr>
+<tr class="separator:a760cfdaff04fc2c37da820a7a092c989"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A structure for configuring the <a class="el" href="classpcpp_1_1_tcp_reassembly.html">TcpReassembly</a> class </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad1e4d9373e464d91d135000ca2b9e59c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1e4d9373e464d91d135000ca2b9e59c">&#9670;&nbsp;</a></span>TcpReassemblyConfiguration()</h2>
+<a id="ae2ce3dc88bf9eafe6048db3a34d8ff7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2ce3dc88bf9eafe6048db3a34d8ff7a">&#9670;&nbsp;</a></span>TcpReassemblyConfiguration()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -135,7 +137,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>maxNumToClean</em> = <code>30</code>&#160;</td>
+          <td class="paramname"><em>maxNumToClean</em> = <code>30</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>maxOutOfOrderFragments</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -154,6 +162,7 @@ Public Attributes</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">removeConnInfo</td><td>The flag indicating whether to remove the connection data after a connection is closed. The default is true </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">closedConnectionDelay</td><td>How long the closed connections will not be cleaned up. The value is expressed in seconds. If it's set to 0 the default value will be used. The default is 5. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">maxNumToClean</td><td>The maximum number of items to be cleaned up per one call of purgeClosedConnections. If it's set to 0 the default value will be used. The default is 30. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxOutOfOrderFragments</td><td>The maximum number of unmatched fragments to keep per flow before missed fragments are considered lost. The default is unlimited. </td></tr>
   </table>
   </dd>
 </dl>
@@ -191,6 +200,21 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a760cfdaff04fc2c37da820a7a092c989"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a760cfdaff04fc2c37da820a7a092c989">&#9670;&nbsp;</a></span>maxOutOfOrderFragments</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t pcpp::TcpReassemblyConfiguration::maxOutOfOrderFragments</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The maximum number of fragments with a non-matching sequence-number to store per connection flow before packets are assumed permanently missed. If the value is 0, <a class="el" href="classpcpp_1_1_tcp_reassembly.html">TcpReassembly</a> should keep out of order fragments indefinitely, or until a message from the paired side is seen. </p>
+
+</div>
+</div>
 <a id="ade3576882946634b10b51172bcbe2285"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ade3576882946634b10b51172bcbe2285">&#9670;&nbsp;</a></span>removeConnInfo</h2>
 
@@ -212,7 +236,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html">TcpReassemblyConfiguration</a></li>
-    <li class="footer">Generated on Fri Oct 23 2020 08:55:47 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Nov 3 2020 10:20:40 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
