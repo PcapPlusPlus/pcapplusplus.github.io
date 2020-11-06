@@ -1,7 +1,11 @@
 var NAVTREEINDEX5 =
 {
-"_win_pcap_live_device_8h.html":[4,0,71],
-"_win_pcap_live_device_8h_source.html":[4,0,71],
+"_vlan_layer_8h.html":[4,0,70],
+"_vlan_layer_8h_source.html":[4,0,70],
+"_vxlan_layer_8h.html":[4,0,71],
+"_vxlan_layer_8h_source.html":[4,0,71],
+"_win_pcap_live_device_8h.html":[4,0,72],
+"_win_pcap_live_device_8h_source.html":[4,0,72],
 "annotated.html":[3,0],
 "classes.html":[3,1],
 "classpcpp_1_1_and_filter.html":[3,0,0,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX5 =
 "classpcpp_1_1_dpdk_device.html#a9b3ab407d91e32668c844ed36b64fea2":[3,0,0,24,42],
 "classpcpp_1_1_dpdk_device.html#a9fa507a96741290b47888c0a084f38f9":[3,0,0,24,16],
 "classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4":[3,0,0,24,4],
-"classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4a0fceb079a83cc9676e7c63bf42c97fbf":[3,0,0,24,4,19],
-"classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4a19f70ffdb5724a1491089fbfc3bea86a":[3,0,0,24,4,0],
-"classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4a38b2263ccfa9418ddf1aaddd0184a100":[3,0,0,24,4,16],
-"classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4a44e7775330a92edf617db85d8822dd91":[3,0,0,24,4,14],
-"classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4a51f61ea0b54c244e2289a065ecc0182c":[3,0,0,24,4,18]
+"classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4a0fceb079a83cc9676e7c63bf42c97fbf":[3,0,0,24,4,19]
 };

@@ -115,6 +115,8 @@ var searchData=
   ['sockaddr2in6_5faddr',['sockaddr2in6_addr',['../_ip_utils_8h.html#adb11c752781ef27046c71dfc566e9cd6',1,'pcpp::internal']]],
   ['sockaddr2in_5faddr',['sockaddr2in_addr',['../_ip_utils_8h.html#a72f53de9ad280a337d0e6e10285ca44e',1,'pcpp::internal']]],
   ['sockaddr2string',['sockaddr2string',['../_ip_utils_8h.html#ac04374477bd21735d8bbc2b25de4bb59',1,'pcpp::internal']]],
+  ['sshencryptedmessage',['SSHEncryptedMessage',['../classpcpp_1_1_s_s_h_encrypted_message.html#a8bf26905f88417f54aa64ba6d4b115ce',1,'pcpp::SSHEncryptedMessage']]],
+  ['sshkeyexchangeinitmessage',['SSHKeyExchangeInitMessage',['../classpcpp_1_1_s_s_h_key_exchange_init_message.html#aff9fdebccb1a80f135e74671b15e2993',1,'pcpp::SSHKeyExchangeInitMessage']]],
   ['sslalertlayer',['SSLAlertLayer',['../classpcpp_1_1_s_s_l_alert_layer.html#aecf449f0c8f821ede816f33d6012b622',1,'pcpp::SSLAlertLayer']]],
   ['sslapplicationdatalayer',['SSLApplicationDataLayer',['../classpcpp_1_1_s_s_l_application_data_layer.html#ad2d812ae6c47cb20693c81f7d0f0b76d',1,'pcpp::SSLApplicationDataLayer']]],
   ['sslcertificatemessage',['SSLCertificateMessage',['../classpcpp_1_1_s_s_l_certificate_message.html#a92debae3c5af150d7e09fb0f74eaa6f1',1,'pcpp::SSLCertificateMessage']]],
