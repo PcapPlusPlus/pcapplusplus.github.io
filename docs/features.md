@@ -269,10 +269,11 @@ PcapPlusPlus currently supports parsing, editing and generation of packets of th
 22. DNS
 23. DHCP
 24. BGP (v4)
-25. HTTP headers (request & response)
-26. SSL/TLS - parsing only (no editing capabilities)
-27. Packet trailer (a.k.a footer or padding)
-28. Generic payload
+25. SSH - parsing only (no editing capabilities)
+26. HTTP headers (request & response)
+27. SSL/TLS - parsing only (no editing capabilities)
+28. Packet trailer (a.k.a footer or padding)
+29. Generic payload
 
 ## License
 
