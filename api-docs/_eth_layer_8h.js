@@ -5,6 +5,7 @@ var _eth_layer_8h =
     [ "PCPP_ETHERTYPE_AARP", "_eth_layer_8h.html#ab8cff68aa7d47eeb5e608246c8727615", null ],
     [ "PCPP_ETHERTYPE_ARP", "_eth_layer_8h.html#aa2d96bc006e5d45a033943b55c498903", null ],
     [ "PCPP_ETHERTYPE_AT", "_eth_layer_8h.html#a16ad61f226417b0ec229061052e02ff5", null ],
+    [ "PCPP_ETHERTYPE_ETHBRIDGE", "_eth_layer_8h.html#a70f99e7e5edee71dc05b1c4a23a3f4ac", null ],
     [ "PCPP_ETHERTYPE_IP", "_eth_layer_8h.html#a31bc2379effaf5e47beb4175f5629271", null ],
     [ "PCPP_ETHERTYPE_IPV6", "_eth_layer_8h.html#a97013a466ba6fe4025baaa6e52b6a83a", null ],
     [ "PCPP_ETHERTYPE_IPX", "_eth_layer_8h.html#affcff8d6ce6ee0047f0ec6f44441f871", null ],

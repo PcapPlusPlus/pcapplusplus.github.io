@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_eth_layer.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classpcpp_1_1_eth_layer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::EthLayer Class Reference</div>  </div>
@@ -153,6 +154,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a019a07d6f9d8fc7eb233e61826b11964 inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d76629f081c34424c63794f4cf75a5a inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a0d76629f081c34424c63794f4cf75a5a">getDataPtr</a> (size_t offset=0) const</td></tr>
 <tr class="separator:a0d76629f081c34424c63794f4cf75a5a inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a310e69f7f00b9b871cea38a5949efcd1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_eth_layer.html#a310e69f7f00b9b871cea38a5949efcd1">isDataValid</a> (const uint8_t *data, size_t dataLen)</td></tr>
+<tr class="separator:a310e69f7f00b9b871cea38a5949efcd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents an Ethernet II protocol layer </p>
@@ -469,6 +475,50 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a310e69f7f00b9b871cea38a5949efcd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a310e69f7f00b9b871cea38a5949efcd1">&#9670;&nbsp;</a></span>isDataValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool pcpp::EthLayer::isDataValid </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A static method that validates the input data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The pointer to the beginning of a byte stream of an Ethernet II packet </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>The length of the byte stream </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the data is valid and can represent an Ethernet II packet </dd></dl>
+
+</div>
+</div>
 <a id="a1cf68349e014756d8f7f6fa0181d4129"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1cf68349e014756d8f7f6fa0181d4129">&#9670;&nbsp;</a></span>parseNextLayer()</h2>
 
@@ -595,7 +645,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_eth_layer.html">EthLayer</a></li>
-    <li class="footer">Generated on Tue Nov 10 2020 06:21:23 for PcapPlusPlus by
+    <li class="footer">Generated on Fri Nov 13 2020 08:53:40 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

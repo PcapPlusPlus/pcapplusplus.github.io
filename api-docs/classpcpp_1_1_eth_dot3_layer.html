@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_eth_dot3_layer.html','')
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classpcpp_1_1_eth_dot3_layer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::EthDot3Layer Class Reference</div>  </div>
@@ -106,6 +107,8 @@ Inheritance diagram for pcpp::EthDot3Layer:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a308cb49ddcc503a32f52d93ee199db53"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_eth_dot3_layer.html#a308cb49ddcc503a32f52d93ee199db53">EthDot3Layer</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet)</td></tr>
 <tr class="separator:a308cb49ddcc503a32f52d93ee199db53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a07cfac377be2388282bde5ecaafdaa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_eth_dot3_layer.html#a0a07cfac377be2388282bde5ecaafdaa">EthDot3Layer</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_layer.html">Layer</a> *prevLayer, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet)</td></tr>
+<tr class="separator:a0a07cfac377be2388282bde5ecaafdaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9795656a94ab00fa7054f355a8c42b19"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_eth_dot3_layer.html#a9795656a94ab00fa7054f355a8c42b19">EthDot3Layer</a> (const <a class="el" href="classpcpp_1_1_mac_address.html">MacAddress</a> &amp;sourceMac, const <a class="el" href="classpcpp_1_1_mac_address.html">MacAddress</a> &amp;destMac, uint16_t length)</td></tr>
 <tr class="separator:a9795656a94ab00fa7054f355a8c42b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab225d567da5139ace515d1936cb088cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpcpp_1_1ether__dot3__header.html">ether_dot3_header</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_eth_dot3_layer.html#ab225d567da5139ace515d1936cb088cf">getEthHeader</a> () const</td></tr>
@@ -151,12 +154,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a019a07d6f9d8fc7eb233e61826b11964 inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d76629f081c34424c63794f4cf75a5a inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a0d76629f081c34424c63794f4cf75a5a">getDataPtr</a> (size_t offset=0) const</td></tr>
 <tr class="separator:a0d76629f081c34424c63794f4cf75a5a inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a8ccb6f3f15e779401a7c1db72fd1a7ad"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_eth_dot3_layer.html#a8ccb6f3f15e779401a7c1db72fd1a7ad">isDataValid</a> (const uint8_t *data, size_t dataLen)</td></tr>
+<tr class="separator:a8ccb6f3f15e779401a7c1db72fd1a7ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents an IEEE 802.3 Ethernet protocol layer </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a308cb49ddcc503a32f52d93ee199db53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a308cb49ddcc503a32f52d93ee199db53">&#9670;&nbsp;</a></span>EthDot3Layer() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a308cb49ddcc503a32f52d93ee199db53">&#9670;&nbsp;</a></span>EthDot3Layer() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -205,8 +213,65 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a0a07cfac377be2388282bde5ecaafdaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a07cfac377be2388282bde5ecaafdaa">&#9670;&nbsp;</a></span>EthDot3Layer() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::EthDot3Layer::EthDot3Layer </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_layer.html">Layer</a> *&#160;</td>
+          <td class="paramname"><em>prevLayer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_packet.html">Packet</a> *&#160;</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A constructor that creates the layer from an existing packet raw data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the raw data (will be casted to <a class="el" href="structpcpp_1_1ether__header.html">ether_header</a>) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Size of the data in bytes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prevLayer</td><td>A pointer to the previous layer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A pointer to the <a class="el" href="classpcpp_1_1_packet.html">Packet</a> instance where layer will be stored in </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a9795656a94ab00fa7054f355a8c42b19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9795656a94ab00fa7054f355a8c42b19">&#9670;&nbsp;</a></span>EthDot3Layer() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9795656a94ab00fa7054f355a8c42b19">&#9670;&nbsp;</a></span>EthDot3Layer() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -410,6 +475,50 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a8ccb6f3f15e779401a7c1db72fd1a7ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ccb6f3f15e779401a7c1db72fd1a7ad">&#9670;&nbsp;</a></span>isDataValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool pcpp::EthDot3Layer::isDataValid </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A static method that validates the input data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The pointer to the beginning of a byte stream of an IEEE 802.3 Eth packet </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>The length of the byte stream </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the data is valid and can represent an IEEE 802.3 Eth packet </dd></dl>
+
+</div>
+</div>
 <a id="a16b9b77d74e278dc3b080f288b19e55a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a16b9b77d74e278dc3b080f288b19e55a">&#9670;&nbsp;</a></span>parseNextLayer()</h2>
 
@@ -536,7 +645,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_eth_dot3_layer.html">EthDot3Layer</a></li>
-    <li class="footer">Generated on Tue Nov 10 2020 06:21:23 for PcapPlusPlus by
+    <li class="footer">Generated on Fri Nov 13 2020 08:53:39 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
