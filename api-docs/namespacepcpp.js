@@ -206,6 +206,8 @@ var namespacepcpp =
     [ "TcpStreamData", "classpcpp_1_1_tcp_stream_data.html", "classpcpp_1_1_tcp_stream_data" ],
     [ "TcpWindowSizeFilter", "classpcpp_1_1_tcp_window_size_filter.html", "classpcpp_1_1_tcp_window_size_filter" ],
     [ "TextBasedProtocolMessage", "classpcpp_1_1_text_based_protocol_message.html", "classpcpp_1_1_text_based_protocol_message" ],
+    [ "TLSECPointFormatExtension", "classpcpp_1_1_t_l_s_e_c_point_format_extension.html", "classpcpp_1_1_t_l_s_e_c_point_format_extension" ],
+    [ "TLSSupportedGroupsExtension", "classpcpp_1_1_t_l_s_supported_groups_extension.html", "classpcpp_1_1_t_l_s_supported_groups_extension" ],
     [ "TLVRecord", "classpcpp_1_1_t_l_v_record.html", "classpcpp_1_1_t_l_v_record" ],
     [ "TLVRecordBuilder", "classpcpp_1_1_t_l_v_record_builder.html", null ],
     [ "TLVRecordReader", "classpcpp_1_1_t_l_v_record_reader.html", "classpcpp_1_1_t_l_v_record_reader" ],

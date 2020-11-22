@@ -77,7 +77,7 @@ var _s_s_l_common_8h =
       [ "SSL_EXT_CLIENT_AUTHZ", "_s_s_l_common_8h.html#a8d875ad42e200ba191c7cf29c7f469d9aa613fa73541bcffa9260b3cb4ee933aa", null ],
       [ "SSL_EXT_SERVER_AUTHZ", "_s_s_l_common_8h.html#a8d875ad42e200ba191c7cf29c7f469d9a1872aaf9f6f70944fd8810b9a3e69c9e", null ],
       [ "SSL_EXT_CERT_TYPE", "_s_s_l_common_8h.html#a8d875ad42e200ba191c7cf29c7f469d9a7b082001fd82dc484a8d5eee5be0f276", null ],
-      [ "SSL_EXT_ELLIPTIC_CURVES", "_s_s_l_common_8h.html#a8d875ad42e200ba191c7cf29c7f469d9a5e90a2594500e1e428b162240e41253c", null ],
+      [ "SSL_EXT_SUPPORTED_GROUPS", "_s_s_l_common_8h.html#a8d875ad42e200ba191c7cf29c7f469d9a1513c710f146b896ea13a6fbb2c5fb5c", null ],
       [ "SSL_EXT_EC_POINT_FORMATS", "_s_s_l_common_8h.html#a8d875ad42e200ba191c7cf29c7f469d9a0b616507d4f8bf5f208aebcc33ace826", null ],
       [ "SSL_EXT_SRP", "_s_s_l_common_8h.html#a8d875ad42e200ba191c7cf29c7f469d9af0b15bfcd88c85eccaa106d832a3250d", null ],
       [ "SSL_EXT_SIGNATURE_ALGORITHMS", "_s_s_l_common_8h.html#a8d875ad42e200ba191c7cf29c7f469d9a8aae971284f54c0a57d3b5dc53e77207", null ],

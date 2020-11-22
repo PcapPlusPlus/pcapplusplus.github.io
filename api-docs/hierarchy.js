@@ -258,7 +258,9 @@ var hierarchy =
     [ "pcpp::SSLCipherSuite", "classpcpp_1_1_s_s_l_cipher_suite.html", null ],
     [ "pcpp::SSLExtension", "classpcpp_1_1_s_s_l_extension.html", [
       [ "pcpp::SSLServerNameIndicationExtension", "classpcpp_1_1_s_s_l_server_name_indication_extension.html", null ],
-      [ "pcpp::SSLSupportedVersionsExtension", "classpcpp_1_1_s_s_l_supported_versions_extension.html", null ]
+      [ "pcpp::SSLSupportedVersionsExtension", "classpcpp_1_1_s_s_l_supported_versions_extension.html", null ],
+      [ "pcpp::TLSECPointFormatExtension", "classpcpp_1_1_t_l_s_e_c_point_format_extension.html", null ],
+      [ "pcpp::TLSSupportedGroupsExtension", "classpcpp_1_1_t_l_s_supported_groups_extension.html", null ]
     ] ],
     [ "pcpp::SSLExtension::SSLExtensionStruct", "structpcpp_1_1_s_s_l_extension_1_1_s_s_l_extension_struct.html", null ],
     [ "pcpp::SSLHandshakeMessage", "classpcpp_1_1_s_s_l_handshake_message.html", [

@@ -45,7 +45,7 @@ var NAVTREEINDEX =
 "_dpdk_device_8h.html#adb43f1f8284d4e0b74d1c77b70152fa9a5a0f116ac9d5559dbb4639e246441682",
 "_ip_address_8h_source.html",
 "_pcap_live_device_list_8h_source.html",
-"_s_s_l_common_8h.html#a8d875ad42e200ba191c7cf29c7f469d9a5e90a2594500e1e428b162240e41253c",
+"_s_s_l_common_8h.html#a8d875ad42e200ba191c7cf29c7f469d9a5bb9f5c02342f4333d011f05713a5262",
 "_udp_layer_8h_source.html",
 "classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4a0fceb079a83cc9676e7c63bf42c97fbf",
 "classpcpp_1_1_http_response_layer.html#ab5bbbd02f36805001550d1168f1412bca56b661139b3181bc3fce6e22d0873985",
@@ -54,9 +54,9 @@ var NAVTREEINDEX =
 "classpcpp_1_1_pcap_live_device.html#a0e343585711ee4e02d4b9507467135ab",
 "classpcpp_1_1_s_s_h_handshake_message.html#afdbba9a2e5fc00efb28cf9d17981a743",
 "classpcpp_1_1_sip_response_first_line.html#ab00a133a97ea92b3fb8f78a4110f7249",
-"classpcpp_1_1_udp_layer.html#ac0e7ba19ff47c38eb879105ca44b3188",
-"structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html#a7be0c63ba880f0b603cad0355e8f9a04",
-"structpcpp_1_1igmpv3__group__record.html#ad92e2db0f20e6891e04bf155ed16d4fa"
+"classpcpp_1_1_udp_layer.html#a03737760761dcfd0d88a3d60945c0fb7",
+"structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration.html#adebf03bb242d47ddc1340e7ecae555f6",
+"structpcpp_1_1igmpv3__group__record.html#a7ccef33a9eb41a061d180b96b8b8c41f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
