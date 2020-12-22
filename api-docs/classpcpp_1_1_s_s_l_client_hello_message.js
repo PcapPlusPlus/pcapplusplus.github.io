@@ -1,8 +1,11 @@
 var classpcpp_1_1_s_s_l_client_hello_message =
 [
+    [ "ClientHelloTLSFingerprint", "structpcpp_1_1_s_s_l_client_hello_message_1_1_client_hello_t_l_s_fingerprint.html", "structpcpp_1_1_s_s_l_client_hello_message_1_1_client_hello_t_l_s_fingerprint" ],
     [ "SSLClientHelloMessage", "classpcpp_1_1_s_s_l_client_hello_message.html#a3924029c72b57cee6f2dd62b4f64f2dc", null ],
+    [ "generateTLSFingerprint", "classpcpp_1_1_s_s_l_client_hello_message.html#af5394af7e0780e5e42b0fc8c0621702a", null ],
     [ "getCipherSuite", "classpcpp_1_1_s_s_l_client_hello_message.html#a8f5ea5b8c643f3deaf8150f772a14e9b", null ],
     [ "getCipherSuiteCount", "classpcpp_1_1_s_s_l_client_hello_message.html#a8f7bf0cbc3e0705ce8b9f10d0243767b", null ],
+    [ "getCipherSuiteID", "classpcpp_1_1_s_s_l_client_hello_message.html#a04342c962cb6652254d71238b281beb9", null ],
     [ "getClientHelloHeader", "classpcpp_1_1_s_s_l_client_hello_message.html#a9349b197bb2d3554c5e14d8b15bbe4f2", null ],
     [ "getCompressionMethodsValue", "classpcpp_1_1_s_s_l_client_hello_message.html#abd6a00520f932b229ecd1dee30ec097d", null ],
     [ "getExtension", "classpcpp_1_1_s_s_l_client_hello_message.html#add21f3f197fa7aac1fab20bca7d209fd", null ],

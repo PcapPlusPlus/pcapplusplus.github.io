@@ -14,6 +14,7 @@ var hierarchy =
       [ "pcpp::BgpOpenMessageLayer::bgp_open_message", "structpcpp_1_1_bgp_open_message_layer_1_1bgp__open__message.html", null ]
     ] ],
     [ "pcpp::BpfFilterWrapper", "classpcpp_1_1_bpf_filter_wrapper.html", null ],
+    [ "pcpp::SSLClientHelloMessage::ClientHelloTLSFingerprint", "structpcpp_1_1_s_s_l_client_hello_message_1_1_client_hello_t_l_s_fingerprint.html", null ],
     [ "pcpp::ConnectionData", "structpcpp_1_1_connection_data.html", null ],
     [ "pcpp::PcapLiveDevice::DeviceConfiguration", "structpcpp_1_1_pcap_live_device_1_1_device_configuration.html", null ],
     [ "pcpp::dhcp_header", "structpcpp_1_1dhcp__header.html", null ],
@@ -245,6 +246,7 @@ var hierarchy =
     ] ],
     [ "pcpp::DpdkDevice::RxTxStats", "structpcpp_1_1_dpdk_device_1_1_rx_tx_stats.html", null ],
     [ "pcpp::ScalarBuffer< T >", "structpcpp_1_1_scalar_buffer.html", null ],
+    [ "pcpp::SSLServerHelloMessage::ServerHelloTLSFingerprint", "structpcpp_1_1_s_s_l_server_hello_message_1_1_server_hello_t_l_s_fingerprint.html", null ],
     [ "pcpp::SipRequestFirstLine", "classpcpp_1_1_sip_request_first_line.html", null ],
     [ "pcpp::SipResponseFirstLine", "classpcpp_1_1_sip_response_first_line.html", null ],
     [ "pcpp::sll_header", "structpcpp_1_1sll__header.html", null ],

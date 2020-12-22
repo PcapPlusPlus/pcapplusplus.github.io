@@ -83,6 +83,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_s_s_l_client_hello_messa
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classpcpp_1_1_s_s_l_client_hello_message-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -101,6 +102,11 @@ Inheritance diagram for pcpp::SSLClientHelloMessage:</div>
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_s_s_l_client_hello_message_1_1_client_hello_t_l_s_fingerprint.html">ClientHelloTLSFingerprint</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3924029c72b57cee6f2dd62b4f64f2dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_client_hello_message.html#a3924029c72b57cee6f2dd62b4f64f2dc">SSLClientHelloMessage</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_s_s_l_handshake_layer.html">SSLHandshakeLayer</a> *container)</td></tr>
@@ -117,6 +123,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8f7bf0cbc3e0705ce8b9f10d0243767b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f5ea5b8c643f3deaf8150f772a14e9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_s_s_l_cipher_suite.html">SSLCipherSuite</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_client_hello_message.html#a8f5ea5b8c643f3deaf8150f772a14e9b">getCipherSuite</a> (int index) const</td></tr>
 <tr class="separator:a8f5ea5b8c643f3deaf8150f772a14e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04342c962cb6652254d71238b281beb9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_client_hello_message.html#a04342c962cb6652254d71238b281beb9">getCipherSuiteID</a> (int index, bool &amp;isValid) const</td></tr>
+<tr class="separator:a04342c962cb6652254d71238b281beb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd6a00520f932b229ecd1dee30ec097d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_client_hello_message.html#abd6a00520f932b229ecd1dee30ec097d">getCompressionMethodsValue</a> () const</td></tr>
 <tr class="separator:abd6a00520f932b229ecd1dee30ec097d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeadd0d297b58f2c799cd33ba4fc952e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_client_hello_message.html#aeadd0d297b58f2c799cd33ba4fc952e7">getExtensionCount</a> () const</td></tr>
@@ -132,6 +140,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5fe109ce501147304fb704e4d9496012"><td class="memTemplParams" colspan="2">template&lt;class TExtension &gt; </td></tr>
 <tr class="memitem:a5fe109ce501147304fb704e4d9496012"><td class="memTemplItemLeft" align="right" valign="top">TExtension *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_client_hello_message.html#a5fe109ce501147304fb704e4d9496012">getExtensionOfType</a> () const</td></tr>
 <tr class="separator:a5fe109ce501147304fb704e4d9496012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5394af7e0780e5e42b0fc8c0621702a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpcpp_1_1_s_s_l_client_hello_message_1_1_client_hello_t_l_s_fingerprint.html">ClientHelloTLSFingerprint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_client_hello_message.html#af5394af7e0780e5e42b0fc8c0621702a">generateTLSFingerprint</a> () const</td></tr>
+<tr class="separator:af5394af7e0780e5e42b0fc8c0621702a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af89bd550d93c8f26c7d4f3d1289ac91d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_client_hello_message.html#af89bd550d93c8f26c7d4f3d1289ac91d">toString</a> () const</td></tr>
 <tr class="separator:af89bd550d93c8f26c7d4f3d1289ac91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classpcpp_1_1_s_s_l_handshake_message"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_s_s_l_handshake_message')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_s_s_l_handshake_message.html">pcpp::SSLHandshakeMessage</a></td></tr>
@@ -196,6 +206,24 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="af5394af7e0780e5e42b0fc8c0621702a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5394af7e0780e5e42b0fc8c0621702a">&#9670;&nbsp;</a></span>generateTLSFingerprint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structpcpp_1_1_s_s_l_client_hello_message_1_1_client_hello_t_l_s_fingerprint.html">ClientHelloTLSFingerprint</a> pcpp::SSLClientHelloMessage::generateTLSFingerprint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TLS fingerprinting is a way to identify client applications using the details in the TLS Client Hello packet. It was initially introduced by Lee Brotherston in his 2015 research: <a href="https://blog.squarelemon.com/tls-fingerprinting/">https://blog.squarelemon.com/tls-fingerprinting/</a> This implementation of TLS fingerprint is a C++ version of Salesforce's JA3 open source project (originally written in Python and Zeek): <a href="https://engineering.salesforce.com/tls-fingerprinting-with-ja3-and-ja3s-247362855967">https://engineering.salesforce.com/tls-fingerprinting-with-ja3-and-ja3s-247362855967</a> </p><dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="structpcpp_1_1_s_s_l_client_hello_message_1_1_client_hello_t_l_s_fingerprint.html">SSLClientHelloMessage::ClientHelloTLSFingerprint</a> struct that contains all the elements needed for creating a TLS fingerprint out of this Client Hello message. This struct has also methods to extract the TLS fingerprint itself in a string or MD5 formats </dd></dl>
+
+</div>
+</div>
 <a id="a8f5ea5b8c643f3deaf8150f772a14e9b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8f5ea5b8c643f3deaf8150f772a14e9b">&#9670;&nbsp;</a></span>getCipherSuite()</h2>
 
@@ -211,7 +239,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get a pointer to a cipher-suite by index. The cipher-suites are numbered according to their order of appearance in the message. If index is out of bounds (less than 0 or larger than total amount of cipher suites) NULL will be returned </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get a pointer to a cipher-suite by index. The cipher-suites are numbered according to their order of appearance in the message. If index is out of bounds (less than 0 or larger than total amount of cipher suites) NULL will be returned. NULL will also be returned if the cipher-suite ID is unknown. If you still want to get the cipher-suite ID you can use <a class="el" href="classpcpp_1_1_s_s_l_client_hello_message.html#a04342c962cb6652254d71238b281beb9">getCipherSuiteID()</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The index of the cipher-suite to return </td></tr>
   </table>
@@ -236,6 +264,42 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of cipher-suites included in this message </dd></dl>
+
+</div>
+</div>
+<a id="a04342c962cb6652254d71238b281beb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04342c962cb6652254d71238b281beb9">&#9670;&nbsp;</a></span>getCipherSuiteID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::SSLClientHelloMessage::getCipherSuiteID </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>isValid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the cipher-suite ID by index. This method just parses the ID from the clinet-hello message and returns it. To get more information on the cipher-suite you can use the <a class="el" href="classpcpp_1_1_s_s_l_client_hello_message.html#a8f5ea5b8c643f3deaf8150f772a14e9b">getCipherSuite()</a> method </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The index of the cipher-suite to return </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">isValid</td><td>Set to "true" if parsing succeeded and the return value is valid or "false" if: (1) the index is out-of-bounds (less than 0 or larger than total amount of cipher suites) or (2) the parsing failed. If the value is "false" the return value can be ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The cipher-suite ID if "isValid" is set to "true". If "isValid" is set to "false" the return value can be ignored </dd></dl>
 
 </div>
 </div>
@@ -502,7 +566,7 @@ template&lt;class TExtension &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_s_s_l_client_hello_message.html">SSLClientHelloMessage</a></li>
-    <li class="footer">Generated on Mon Dec 14 2020 07:01:13 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Dec 22 2020 06:46:39 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

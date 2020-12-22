@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['generatetlsfingerprint',['generateTLSFingerprint',['../classpcpp_1_1_s_s_l_client_hello_message.html#af5394af7e0780e5e42b0fc8c0621702a',1,'pcpp::SSLClientHelloMessage::generateTLSFingerprint()'],['../classpcpp_1_1_s_s_l_server_hello_message.html#ad3133be4d602fabf9ccc26f4c3f363f2',1,'pcpp::SSLServerHelloMessage::generateTLSFingerprint()']]],
   ['genericdnsresourcedata',['GenericDnsResourceData',['../classpcpp_1_1_generic_dns_resource_data.html#a98b9ed21ecd5e1a1fd503a91ec3df502',1,'pcpp::GenericDnsResourceData::GenericDnsResourceData(uint8_t *dataPtr, size_t dataLen)'],['../classpcpp_1_1_generic_dns_resource_data.html#a3b4027f8f5860834cb55c9b2477d0b49',1,'pcpp::GenericDnsResourceData::GenericDnsResourceData(const std::string &amp;dataAsHexString)'],['../classpcpp_1_1_generic_dns_resource_data.html#af5e9af4b57f24bf19f0ff12ae1c76458',1,'pcpp::GenericDnsResourceData::GenericDnsResourceData(const GenericDnsResourceData &amp;other)']]],
   ['get',['get',['../classpcpp_1_1_app_name.html#a30f6c2d310a92ef8c44b3867cdb66afd',1,'pcpp::AppName']]],
   ['getacknowledgmentnum',['getAcknowledgmentNum',['../classpcpp_1_1_g_r_ev1_layer.html#a7f1a5c683711e5847fa04d2916bed59e',1,'pcpp::GREv1Layer']]],
@@ -40,6 +41,7 @@ var searchData=
   ['getciphersuitebyid',['getCipherSuiteByID',['../classpcpp_1_1_s_s_l_cipher_suite.html#acca352789e2b4cf2e36f55fb6f478dc3',1,'pcpp::SSLCipherSuite']]],
   ['getciphersuitebyname',['getCipherSuiteByName',['../classpcpp_1_1_s_s_l_cipher_suite.html#abf719d779ffdaf62afa45475f2c76597',1,'pcpp::SSLCipherSuite']]],
   ['getciphersuitecount',['getCipherSuiteCount',['../classpcpp_1_1_s_s_l_client_hello_message.html#a8f7bf0cbc3e0705ce8b9f10d0243767b',1,'pcpp::SSLClientHelloMessage']]],
+  ['getciphersuiteid',['getCipherSuiteID',['../classpcpp_1_1_s_s_l_client_hello_message.html#a04342c962cb6652254d71238b281beb9',1,'pcpp::SSLClientHelloMessage::getCipherSuiteID()'],['../classpcpp_1_1_s_s_l_server_hello_message.html#a530c9fb56f68073b9371f9e5cd4d40cb',1,'pcpp::SSLServerHelloMessage::getCipherSuiteID()']]],
   ['getclienthardwareaddress',['getClientHardwareAddress',['../classpcpp_1_1_dhcp_layer.html#aa2a8cd45e67f6b3d9b799163d302fa5c',1,'pcpp::DhcpLayer']]],
   ['getclienthelloheader',['getClientHelloHeader',['../classpcpp_1_1_s_s_l_client_hello_message.html#a9349b197bb2d3554c5e14d8b15bbe4f2',1,'pcpp::SSLClientHelloMessage']]],
   ['getclientipaddress',['getClientIpAddress',['../classpcpp_1_1_dhcp_layer.html#a5e02feceaaadc7d682857875ead0a716',1,'pcpp::DhcpLayer']]],
