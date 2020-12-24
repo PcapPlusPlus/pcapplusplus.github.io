@@ -5,6 +5,7 @@ var classpcpp_1_1_pcap_live_device_list =
     [ "getPcapLiveDeviceByIp", "classpcpp_1_1_pcap_live_device_list.html#a1f1d12c48709db005f267a0add6e1989", null ],
     [ "getPcapLiveDeviceByIp", "classpcpp_1_1_pcap_live_device_list.html#a50b86ac3afa835152e98d19734365572", null ],
     [ "getPcapLiveDeviceByIp", "classpcpp_1_1_pcap_live_device_list.html#a3581be31dbd64ae71232260a3ba55509", null ],
+    [ "getPcapLiveDeviceByIpOrName", "classpcpp_1_1_pcap_live_device_list.html#aadf609084e161df94c14109d42b94544", null ],
     [ "getPcapLiveDeviceByName", "classpcpp_1_1_pcap_live_device_list.html#a44adbf18b7c2dfc5509540848532aadd", null ],
     [ "getPcapLiveDevicesList", "classpcpp_1_1_pcap_live_device_list.html#ad29c2ac0b8fdaf1a399fa46edacb3a04", null ],
     [ "reset", "classpcpp_1_1_pcap_live_device_list.html#af4e002ab316a892b4ea46f5294447830", null ]

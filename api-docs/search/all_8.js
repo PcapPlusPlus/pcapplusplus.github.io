@@ -221,7 +221,7 @@ var searchData=
   ['issshport',['isSSHPort',['../classpcpp_1_1_s_s_h_layer.html#af5a745f0bb0abf0f442461639abf9866',1,'pcpp::SSHLayer']]],
   ['issslmessage',['IsSSLMessage',['../classpcpp_1_1_s_s_l_layer.html#aa3f1a267349da3994833e26dfdb5526d',1,'pcpp::SSLLayer']]],
   ['issslport',['isSSLPort',['../classpcpp_1_1_s_s_l_layer.html#a9994f37d42b9b1f72c4bf567fa9d2c53',1,'pcpp::SSLLayer']]],
-  ['issupresserrors',['isSupressErrors',['../classpcpp_1_1_logger_p_p.html#a31aef40298b4be7361e9f6b9e48d6bd7',1,'pcpp::LoggerPP']]],
+  ['issuppresserrors',['isSuppressErrors',['../classpcpp_1_1_logger_p_p.html#a59a1c0953e5eca47ba15d881918af318',1,'pcpp::LoggerPP']]],
   ['istypeof',['isTypeOf',['../classpcpp_1_1_i_dns_resource_data.html#a8a0aba99fc544c523a10ed41b3fc80a4',1,'pcpp::IDnsResourceData::isTypeOf()'],['../classpcpp_1_1_dns_resource_data_ptr.html#ad8a149d31dc9e4081cd1db433ee06052',1,'pcpp::DnsResourceDataPtr::isTypeOf()']]],
   ['isvalid',['isValid',['../classpcpp_1_1_i_pv4_address.html#aa8132c15a9e74f3407d4dcd510f35cd6',1,'pcpp::IPv4Address::isValid()'],['../classpcpp_1_1_i_pv6_address.html#a7f2135107f3212d69f436c1edc367c0a',1,'pcpp::IPv6Address::isValid()'],['../classpcpp_1_1_i_p_address.html#a87c99d4671e64cc23ce3824c35290abf',1,'pcpp::IPAddress::isValid()'],['../classpcpp_1_1_mac_address.html#a16c78d3efcb5a63bc1bb95f98d418ca0',1,'pcpp::MacAddress::isValid()']]],
   ['isvirtual',['isVirtual',['../classpcpp_1_1_dpdk_device.html#ae45341ad236f07e92be61b33325aa3c1',1,'pcpp::DpdkDevice']]],

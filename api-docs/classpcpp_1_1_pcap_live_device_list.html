@@ -107,6 +107,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3581be31dbd64ae71232260a3ba55509"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44adbf18b7c2dfc5509540848532aadd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device_list.html#a44adbf18b7c2dfc5509540848532aadd">getPcapLiveDeviceByName</a> (const std::string &amp;name) const</td></tr>
 <tr class="separator:a44adbf18b7c2dfc5509540848532aadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadf609084e161df94c14109d42b94544"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device_list.html#aadf609084e161df94c14109d42b94544">getPcapLiveDeviceByIpOrName</a> (const std::string &amp;ipOrName) const</td></tr>
+<tr class="separator:aadf609084e161df94c14109d42b94544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0835ef236e881460e7d4d5a439e12241"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device_list.html#a0835ef236e881460e7d4d5a439e12241">getDnsServers</a> () const</td></tr>
 <tr class="separator:a0835ef236e881460e7d4d5a439e12241"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4e002ab316a892b4ea46f5294447830"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device_list.html#af4e002ab316a892b4ea46f5294447830">reset</a> ()</td></tr>
@@ -272,6 +274,31 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aadf609084e161df94c14109d42b94544"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadf609084e161df94c14109d42b94544">&#9670;&nbsp;</a></span>getPcapLiveDeviceByIpOrName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a>* pcpp::PcapLiveDeviceList::getPcapLiveDeviceByIpOrName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>ipOrName</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get a pointer to the live device by its IP address or name </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ipOrName</td><td>An IP address or name of the interface </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the live device if exists, NULL otherwise </dd></dl>
+
+</div>
+</div>
 <a id="a44adbf18b7c2dfc5509540848532aadd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44adbf18b7c2dfc5509540848532aadd">&#9670;&nbsp;</a></span>getPcapLiveDeviceByName()</h2>
 
@@ -347,7 +374,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_pcap_live_device_list.html">PcapLiveDeviceList</a></li>
-    <li class="footer">Generated on Tue Dec 22 2020 06:46:38 for PcapPlusPlus by
+    <li class="footer">Generated on Thu Dec 24 2020 05:48:04 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

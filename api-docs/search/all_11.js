@@ -493,7 +493,7 @@ var searchData=
   ['strictsourceroutebit',['strictSourceRouteBit',['../structpcpp_1_1gre__basic__header.html#a3fbc55bc0bdf9653f08939fe8a6c8312',1,'pcpp::gre_basic_header']]],
   ['stringdnsresourcedata',['StringDnsResourceData',['../classpcpp_1_1_string_dns_resource_data.html',1,'pcpp::StringDnsResourceData'],['../classpcpp_1_1_string_dns_resource_data.html#af47b8943630f686bffd2e340f97e1c6c',1,'pcpp::StringDnsResourceData::StringDnsResourceData()']]],
   ['supportedgroups',['supportedGroups',['../structpcpp_1_1_s_s_l_client_hello_message_1_1_client_hello_t_l_s_fingerprint.html#ae22d847417248d53511bc45c3c195cb7',1,'pcpp::SSLClientHelloMessage::ClientHelloTLSFingerprint']]],
-  ['supresserrors',['supressErrors',['../classpcpp_1_1_logger_p_p.html#a84be0ff3175c243ca493975222aa199b',1,'pcpp::LoggerPP']]],
+  ['suppresserrors',['suppressErrors',['../classpcpp_1_1_logger_p_p.html#aab2f6fe53cd9887b1cee0cfe792d2b90',1,'pcpp::LoggerPP']]],
   ['synflag',['synFlag',['../structpcpp_1_1tcphdr.html#a469f06456ae6eaf39e764d7f30c06dc3',1,'pcpp::tcphdr']]],
   ['systemcore',['SystemCore',['../structpcpp_1_1_system_core.html',1,'pcpp']]],
   ['systemcores',['SystemCores',['../structpcpp_1_1_system_cores.html',1,'pcpp']]],

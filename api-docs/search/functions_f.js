@@ -151,5 +151,5 @@ var searchData=
   ['stopdpdkworkerthreads',['stopDpdkWorkerThreads',['../classpcpp_1_1_dpdk_device_list.html#a231f0417a70c8b014e68dea5454b00d9',1,'pcpp::DpdkDeviceList']]],
   ['stoprequesthandlerthread',['stopRequestHandlerThread',['../classpcpp_1_1_kni_device.html#a9ea262da8ecc907b834fe7892241578e',1,'pcpp::KniDevice']]],
   ['stringdnsresourcedata',['StringDnsResourceData',['../classpcpp_1_1_string_dns_resource_data.html#af47b8943630f686bffd2e340f97e1c6c',1,'pcpp::StringDnsResourceData']]],
-  ['supresserrors',['supressErrors',['../classpcpp_1_1_logger_p_p.html#a84be0ff3175c243ca493975222aa199b',1,'pcpp::LoggerPP']]]
+  ['suppresserrors',['suppressErrors',['../classpcpp_1_1_logger_p_p.html#aab2f6fe53cd9887b1cee0cfe792d2b90',1,'pcpp::LoggerPP']]]
 ];
