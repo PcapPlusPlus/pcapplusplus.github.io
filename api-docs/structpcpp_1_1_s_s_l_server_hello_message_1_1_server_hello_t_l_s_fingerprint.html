@@ -99,6 +99,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a044a5bfdefc67385d7c9f6b3ee030fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc4dc2256229861be88602ecd94afb8b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_s_s_l_server_hello_message_1_1_server_hello_t_l_s_fingerprint.html#adc4dc2256229861be88602ecd94afb8b">toMD5</a> ()</td></tr>
 <tr class="separator:adc4dc2256229861be88602ecd94afb8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7391c67e7126dcab7f5e52a0d0e6318b"><td class="memItemLeft" align="right" valign="top">std::pair&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_s_s_l_server_hello_message_1_1_server_hello_t_l_s_fingerprint.html#a7391c67e7126dcab7f5e52a0d0e6318b">toStringAndMD5</a> ()</td></tr>
+<tr class="separator:a7391c67e7126dcab7f5e52a0d0e6318b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -147,6 +149,24 @@ Public Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A string representing the TLS fingerprint, for example: <b>771,49195,65281-16-11</b></dd></dl>
 <p>This string has the following format: <b>TLSVersion,Cipher,Extensions</b></p>
 <p>The extension ID are separated with a "-" </p>
+
+</div>
+</div>
+<a id="a7391c67e7126dcab7f5e52a0d0e6318b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7391c67e7126dcab7f5e52a0d0e6318b">&#9670;&nbsp;</a></span>toStringAndMD5()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt;std::string, std::string&gt; pcpp::SSLServerHelloMessage::ServerHelloTLSFingerprint::toStringAndMD5 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A pair of the string and MD5 hash (string is first, MD5 is second). If you want both this method is more efficient than calling <a class="el" href="structpcpp_1_1_s_s_l_server_hello_message_1_1_server_hello_t_l_s_fingerprint.html#a044a5bfdefc67385d7c9f6b3ee030fb0">toString()</a> and <a class="el" href="structpcpp_1_1_s_s_l_server_hello_message_1_1_server_hello_t_l_s_fingerprint.html#adc4dc2256229861be88602ecd94afb8b">toMD5()</a> separately </dd></dl>
 
 </div>
 </div>
@@ -202,7 +222,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_s_s_l_server_hello_message.html">SSLServerHelloMessage</a></li><li class="navelem"><a class="el" href="structpcpp_1_1_s_s_l_server_hello_message_1_1_server_hello_t_l_s_fingerprint.html">ServerHelloTLSFingerprint</a></li>
-    <li class="footer">Generated on Sat Jan 9 2021 08:18:28 for PcapPlusPlus by
+    <li class="footer">Generated on Sun Jan 10 2021 03:04:14 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
