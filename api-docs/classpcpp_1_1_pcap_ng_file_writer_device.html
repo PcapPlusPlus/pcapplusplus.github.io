@@ -107,14 +107,14 @@ Inheritance diagram for pcpp::PcapNgFileWriterDevice:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3b447ad38162827458aba589431ee65e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a3b447ad38162827458aba589431ee65e">PcapNgFileWriterDevice</a> (const char *fileName, int compressionLevel=0)</td></tr>
-<tr class="separator:a3b447ad38162827458aba589431ee65e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b6c41a1a4590ea5da6404ae9090138f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a7b6c41a1a4590ea5da6404ae9090138f">PcapNgFileWriterDevice</a> (const std::string &amp;fileName, int compressionLevel=0)</td></tr>
+<tr class="separator:a7b6c41a1a4590ea5da6404ae9090138f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93312aab61a193df522f8046af6d291e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a93312aab61a193df522f8046af6d291e">~PcapNgFileWriterDevice</a> ()</td></tr>
 <tr class="separator:a93312aab61a193df522f8046af6d291e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adca940885348d13ae58865ff5011e6fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_ng_file_writer_device.html#adca940885348d13ae58865ff5011e6fd">open</a> (const char *os, const char *hardware, const char *captureApp, const char *fileComment)</td></tr>
-<tr class="separator:adca940885348d13ae58865ff5011e6fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81069d1681efd6adf22e6ae80f300993"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a81069d1681efd6adf22e6ae80f300993">writePacket</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> const &amp;packet, const char *comment)</td></tr>
-<tr class="separator:a81069d1681efd6adf22e6ae80f300993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61c831f871c33514b934a749f3e4d2b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a61c831f871c33514b934a749f3e4d2b5">open</a> (const std::string &amp;os, const std::string &amp;hardware, const std::string &amp;captureApp, const std::string &amp;fileComment)</td></tr>
+<tr class="separator:a61c831f871c33514b934a749f3e4d2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb4aff7706bb5e6d06d39e8ae4355eff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_ng_file_writer_device.html#adb4aff7706bb5e6d06d39e8ae4355eff">writePacket</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> const &amp;packet, const std::string &amp;comment)</td></tr>
+<tr class="separator:adb4aff7706bb5e6d06d39e8ae4355eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25c7f060803d907e7e7f3c00d3c2891b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a25c7f060803d907e7e7f3c00d3c2891b">writePacket</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> const &amp;packet)</td></tr>
 <tr class="separator:a25c7f060803d907e7e7f3c00d3c2891b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a214c363a167e1538d9ea29a58efd9640"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a214c363a167e1538d9ea29a58efd9640">writePackets</a> (const <a class="el" href="namespacepcpp.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;packets)</td></tr>
@@ -162,8 +162,8 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for opening a pcap-ng file for writing or creating a new pcap-ng file and write packets to it. This class adds unique capabilities such as writing metadata attributes into the file header, adding comments per packet and opening the file in append mode where packets are added to a file instead of overriding it. This capabilities are part of the pcap-ng standard but aren't supported in most tools and libraries </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a3b447ad38162827458aba589431ee65e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b447ad38162827458aba589431ee65e">&#9670;&nbsp;</a></span>PcapNgFileWriterDevice()</h2>
+<a id="a7b6c41a1a4590ea5da6404ae9090138f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b6c41a1a4590ea5da6404ae9090138f">&#9670;&nbsp;</a></span>PcapNgFileWriterDevice()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -171,7 +171,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">pcpp::PcapNgFileWriterDevice::PcapNgFileWriterDevice </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>fileName</em>, </td>
         </tr>
         <tr>
@@ -304,8 +304,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="adca940885348d13ae58865ff5011e6fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adca940885348d13ae58865ff5011e6fd">&#9670;&nbsp;</a></span>open() <span class="overload">[1/3]</span></h2>
+<a id="a61c831f871c33514b934a749f3e4d2b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61c831f871c33514b934a749f3e4d2b5">&#9670;&nbsp;</a></span>open() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -313,25 +313,25 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">bool pcpp::PcapNgFileWriterDevice::open </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>os</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>hardware</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>captureApp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>fileComment</em>&#160;</td>
         </tr>
         <tr>
@@ -452,8 +452,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a81069d1681efd6adf22e6ae80f300993"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81069d1681efd6adf22e6ae80f300993">&#9670;&nbsp;</a></span>writePacket() <span class="overload">[1/2]</span></h2>
+<a id="adb4aff7706bb5e6d06d39e8ae4355eff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb4aff7706bb5e6d06d39e8ae4355eff">&#9670;&nbsp;</a></span>writePacket() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -467,7 +467,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>comment</em>&#160;</td>
         </tr>
         <tr>
@@ -564,7 +564,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_pcap_ng_file_writer_device.html">PcapNgFileWriterDevice</a></li>
-    <li class="footer">Generated on Mon Jan 18 2021 07:39:10 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Jan 19 2021 02:16:29 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

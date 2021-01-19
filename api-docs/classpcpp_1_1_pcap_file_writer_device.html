@@ -107,8 +107,8 @@ Inheritance diagram for pcpp::PcapFileWriterDevice:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a46b3b5c1ffed33d3540fa40db94010e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_file_writer_device.html#a46b3b5c1ffed33d3540fa40db94010e2">PcapFileWriterDevice</a> (const char *fileName, <a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> linkLayerType=<a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a>)</td></tr>
-<tr class="separator:a46b3b5c1ffed33d3540fa40db94010e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ca330ee1dbc31a1256a0fd5dfb7e86b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_file_writer_device.html#a0ca330ee1dbc31a1256a0fd5dfb7e86b">PcapFileWriterDevice</a> (const std::string &amp;fileName, <a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> linkLayerType=<a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a>)</td></tr>
+<tr class="separator:a0ca330ee1dbc31a1256a0fd5dfb7e86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3aa347668d24475e9f750fcb5959d93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_file_writer_device.html#ac3aa347668d24475e9f750fcb5959d93">~PcapFileWriterDevice</a> ()</td></tr>
 <tr class="separator:ac3aa347668d24475e9f750fcb5959d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add964c71699315d457a33b22998501fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_file_writer_device.html#add964c71699315d457a33b22998501fd">writePacket</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> const &amp;packet)</td></tr>
@@ -158,8 +158,8 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for opening a pcap file for writing or create a new pcap file and write packets to it. This class adds a unique capability that isn't supported in WinPcap and in older libpcap versions which is to open a pcap file in append mode where packets are written at the end of the pcap file instead of running it over </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a46b3b5c1ffed33d3540fa40db94010e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46b3b5c1ffed33d3540fa40db94010e2">&#9670;&nbsp;</a></span>PcapFileWriterDevice()</h2>
+<a id="a0ca330ee1dbc31a1256a0fd5dfb7e86b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ca330ee1dbc31a1256a0fd5dfb7e86b">&#9670;&nbsp;</a></span>PcapFileWriterDevice()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -167,7 +167,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">pcpp::PcapFileWriterDevice::PcapFileWriterDevice </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>fileName</em>, </td>
         </tr>
         <tr>
@@ -439,7 +439,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_pcap_file_writer_device.html">PcapFileWriterDevice</a></li>
-    <li class="footer">Generated on Mon Jan 18 2021 07:39:10 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Jan 19 2021 02:16:29 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
