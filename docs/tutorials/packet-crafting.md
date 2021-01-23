@@ -36,10 +36,8 @@ For further information about these protocols and the other protocols supported 
 In this part of the tutorial we'll read a packet from a pcap file, let PcapPlusPlus parse it, and then see how we can edit and change the data in each layer. Let's start by writing a `main()` method and add the includes that we need:
 
 ```cpp
-#if !defined(WIN32) && !defined(WINx64)
-#include <in.h> // this is for using ntohs() and htons() on non-Windows OS's
-#endif
 #include "stdlib.h"
+#include "SystemUtils.h"
 #include "Packet.h"
 #include "EthLayer.h"
 #include "VlanLayer.h"
@@ -56,7 +54,7 @@ int main(int argc, char* argv[])
 }
 ```
 
-As you can see we added an include to `Packet.h` which contains the basic parsed packet structures, to `PcapFileDevice.h` which contains the API for reading/writing from/to pcap files and to all of the layers which we will edit and add data from. In addition we included `in.h` for using `htons()` and `ntohs()` which we'll use later. This include is relevant for non-Windows operating systems only.
+As you can see we added an include to `Packet.h` which contains the basic parsed packet structures, to `PcapFileDevice.h` which contains the API for reading/writing from/to pcap files and to all of the layers which we will edit and add data from. In addition we included `SystemUtils.h` for using `hostToNet16()` which we'll use later.
 
 Now let's read the packet from the pcap file. This pcap file contains only 1 packet, so we'll open the reader, read the packet and close the reader:
 
@@ -116,14 +114,14 @@ Ethernet layer is quite simple, let's move to a more complex layer - **IPv4**, a
 // let's get the IPv4 layer
 pcpp::IPv4Layer* ipLayer = parsedPacket.getLayerOfType<pcpp::IPv4Layer>();
 // change source IP address
-ipLayer->setSrcIpAddress(pcpp::IPv4Address(std::string("1.1.1.1")));
+ipLayer->setSrcIPv4Address(pcpp::IPv4Address(std::string("1.1.1.1")));
 // change IP ID
-ipLayer->getIPv4Header()->ipId = htons(4000);
+ipLayer->getIPv4Header()->ipId = pcpp::hostToNet16(4000);
 // change TTL value
 ipLayer->getIPv4Header()->timeToLive = 12;
 ```
 
-First we changed the source IPv4 address to `"1.1.1.1"` using the method `setSrcIpAddress()` and provided it an instance of the class `IPv4Address` with the value of `"1.1.1.1"`. Then, we used the `getIPv4Header()` method which casts the raw packet bytes to a struct called `iphdr*` in the same way we did in the packet parsing tutorial, but this time instead of reading values we're changing them. It is very important to understand that the `iphdr*` object gives access to the actual packet bytes so it can be both read and manipulated, and each change affects the actual packet data. When setting fields which are wider than 1 byte it's important to write in network order and that's why we're using `htons()` to set the IP ID to 4000.
+First we changed the source IPv4 address to `"1.1.1.1"` using the method `setSrcIPv4Address()` and provided it an instance of the class `IPv4Address` with the value of `"1.1.1.1"`. Then, we used the `getIPv4Header()` method which casts the raw packet bytes to a struct called `iphdr*` in the same way we did in the packet parsing tutorial, but this time instead of reading values we're changing them. It is very important to understand that the `iphdr*` object gives access to the actual packet bytes so it can be both read and manipulated, and each change affects the actual packet data. When setting fields which are wider than 1 byte it's important to write in network order and that's why we're using `hostToNet16()` to set the IP ID to 4000.
 
 Let's move on to the next layer - **TCP**:
 
@@ -131,7 +129,7 @@ Let's move on to the next layer - **TCP**:
 // let's get the TCP layer
 pcpp::TcpLayer* tcpLayer = parsedPacket.getLayerOfType<pcpp::TcpLayer>();
 // change source port
-tcpLayer->getTcpHeader()->portSrc = htons(12345);
+tcpLayer->getTcpHeader()->portSrc = pcpp::hostToNet16(12345);
 // add URG flag
 tcpLayer->getTcpHeader()->urgFlag = 1;
 // add MSS TCP option
@@ -222,11 +220,11 @@ Now let's move on to the second layer - **IPv4**:
 ```cpp
 // create a new IPv4 layer
 pcpp::IPv4Layer newIPLayer(pcpp::IPv4Address(std::string("192.168.1.1")), pcpp::IPv4Address(std::string("10.0.0.1")));
-newIPLayer.getIPv4Header()->ipId = htons(2000);
+newIPLayer.getIPv4Header()->ipId = pcpp::hostToNet16(2000);
 newIPLayer.getIPv4Header()->timeToLive = 64;
 ```
 
-Here we created a new instance of the `IPv4Layer` and gave it the necessary parameters which are source and dest IP addresses (both are instances of the `IPv4Address` class instantiated with the IP address string). Next, we wanted to set the IP ID and TTL values of this layer. As you can see we do that using the same API we used in the [Packet editing](#packet_editing) part: call the `getIPv4Header()` method to get an instance of the `iphdr*` struct (which is actually a pointer to the packet raw data cast to `iphdr*`) and set the IP ID and TTL values. Since IP ID is 2-bytes long we use `htons()` to convert from host to network order.
+Here we created a new instance of the `IPv4Layer` and gave it the necessary parameters which are source and dest IP addresses (both are instances of the `IPv4Address` class instantiated with the IP address string). Next, we wanted to set the IP ID and TTL values of this layer. As you can see we do that using the same API we used in the [Packet editing](#packet_editing) part: call the `getIPv4Header()` method to get an instance of the `iphdr*` struct (which is actually a pointer to the packet raw data cast to `iphdr*`) and set the IP ID and TTL values. Since IP ID is 2-bytes long we use `hostToNet16()` to convert from host to network order.
 
 Now let's move on to the third layer - **UDP**:
 

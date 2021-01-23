@@ -87,8 +87,8 @@ int main(int argc, char* argv[])
     if (parsedPacket.isPacketOfType(pcpp::IPv4))
     {
         // extract source and dest IPs
-        pcpp::IPv4Address srcIP = parsedPacket.getLayerOfType()->getSrcIpAddress();
-        pcpp::IPv4Address destIP = parsedPacket.getLayerOfType()->getDstIpAddress();
+        pcpp::IPv4Address srcIP = parsedPacket.getLayerOfType()->getSrcIPv4Address();
+        pcpp::IPv4Address destIP = parsedPacket.getLayerOfType()->getDstIPv4Address();
 
         // print source and dest IPs
         printf("Source IP is '%s'; Dest IP is '%s'\n", srcIP.toString().c_str(), destIP.toString().c_str());

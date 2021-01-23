@@ -33,10 +33,8 @@ For further information about these protocols and the other protocols supported 
 In this tutorial we'll read a packet from a pcap file, let PcapPlusPlus parse it, and see how we can retrieve data from each layer. Let's start by writing a `main()` method and add the includes that we need:
 
 ```cpp
-#if !defined(WIN32) && !defined(WINx64)
-#include  // this is for using ntohs() and htons() on non-Windows OS's
-#endif
 #include "stdlib.h"
+#include "SystemUtils.h"
 #include "Packet.h"
 #include "EthLayer.h"
 #include "IPv4Layer.h"
@@ -50,7 +48,7 @@ int main(int argc, char* argv[])
 }
 ```
 
-As you can see we added an include to `Packet.h` which contains the basic parsed packet structures, to `PcapFileDevice.h` which contains the API for reading from pcap files and to all of the layers which we want to retrieve information from. In addition we included `in.h` for using `htons()` and `ntohs()` which we'll use later. This include is relevant for non-Windows operating systems only.
+As you can see we added an include to `Packet.h` which contains the basic parsed packet structures, to `PcapFileDevice.h` which contains the API for reading from pcap files and to all of the layers which we want to retrieve information from. In addition we included `SystemUtils.h` for using `netToHost16()` which we'll use later.
 
 Now let's read the packet from the pcap file. This pcap file contains only 1 packet, so we'll open the reader, read the packet and close the reader:
 
@@ -164,10 +162,10 @@ As you can see we used the templated method `getLayerOfType<pcpp::EthLayer>()` w
 // print the source and dest MAC addresses and the Ether type
 printf("\nSource MAC address: %s\n", ethernetLayer->getSourceMac().toString().c_str());
 printf("Destination MAC address: %s\n", ethernetLayer->getDestMac().toString().c_str());
-printf("Ether type = 0x%X\n", ntohs(ethernetLayer->getEthHeader()->etherType));
+printf("Ether type = 0x%X\n", pcpp::netToHost16(ethernetLayer->getEthHeader()->etherType));
 ```
 
-For getting the source and destination MAC addresses `EthLayer` exposes methods which return an instance of type `MacAddress` which encapsulates MAC addresses and provides helper function such as print the MAC address as a nice string (like we have in our code example). For getting the Ether Type we call `getEthHeader()` which casts the raw packet bytes into a struct: `ether_header*` and we can read the Ether Type from this struct. Since packet raw data is stored in network order, we need to convert the Ether Type value from network to host order using `ntohs()`
+For getting the source and destination MAC addresses `EthLayer` exposes methods which return an instance of type `MacAddress` which encapsulates MAC addresses and provides helper function such as print the MAC address as a nice string (like we have in our code example). For getting the Ether Type we call `getEthHeader()` which casts the raw packet bytes into a struct: `ether_header*` and we can read the Ether Type from this struct. Since packet raw data is stored in network order, we need to convert the Ether Type value from network to host order using `netToHost16()`
 
 The output is the following:
 
@@ -195,13 +193,13 @@ Let's get some information from the `IPv4Layer`:
 
 ```cpp
 // print source and dest IP addresses, IP ID and TTL
-printf("\nSource IP address: %s\n", ipLayer->getSrcIpAddress().toString().c_str());
-printf("Destination IP address: %s\n", ipLayer->getDstIpAddress().toString().c_str());
-printf("IP ID: 0x%X\n", ntohs(ipLayer->getIPv4Header()->ipId));
+printf("\nSource IP address: %s\n", ipLayer->getSrcIPAddress().toString().c_str());
+printf("Destination IP address: %s\n", ipLayer->getDstIPAddress().toString().c_str());
+printf("IP ID: 0x%X\n", pcpp::netToHost16(ipLayer->getIPv4Header()->ipId));
 printf("TTL: %d\n", ipLayer->getIPv4Header()->timeToLive);
 ```
 
-As you can see this layer exposes 2 methods for reading the source and destination IP addresses in an easy-to-use wrapper class called `IPv4Address`. This class provides various capabilities, one of them is printing the IP address as a string. Next, we use the `getIPv4Header()` method which casts the raw packet bytes to a struct called `iphdr*` and we can retrieve the rest of the data from there. Since the packet data is in network order, we need to use `ntohs()` when getting data larger than 1 byte (like when reading the IP ID).
+As you can see this layer exposes 2 methods for reading the source and destination IP addresses in an easy-to-use wrapper class called `IPv4Address`. This class provides various capabilities, one of them is printing the IP address as a string. Next, we use the `getIPv4Header()` method which casts the raw packet bytes to a struct called `iphdr*` and we can retrieve the rest of the data from there. Since the packet data is in network order, we need to use `netToHost16()` when getting data larger than 1 byte (like when reading the IP ID).
 
 Here is the output:
 
@@ -230,13 +228,13 @@ Now let's get the TCP data:
 
 ```cpp
 // printf TCP source and dest ports, window size, and the TCP flags that are set in this layer
-printf("\nSource TCP port: %d\n", (int)ntohs(tcpLayer->getTcpHeader()->portSrc));
-printf("Destination TCP port: %d\n", (int)ntohs(tcpLayer->getTcpHeader()->portDst));
-printf("Window size: %d\n", (int)ntohs(tcpLayer->getTcpHeader()->windowSize));
+printf("\nSource TCP port: %d\n", (int)tcpLayer->getPortSrc());
+printf("Destination TCP port: %d\n", (int)tcpLayer->getPortDst());
+printf("Window size: %d\n", (int)pcpp::netToHost16(tcpLayer->getTcpHeader()->windowSize));
 printf("TCP flags: %s\n", printTcpFlags(tcpLayer).c_str());
 ```
 
-Here also, like the layers we saw before, TCP layer exposes a method `getTcpHeader()` which casts the raw packet bytes to a struct `tpchdr*` which contains all of the TCP fields. That way we can get the source and destination ports, the windows size and any other TCP field. Notice the need of using `ntohs()` to convert the data from network to host byte order because the raw packet arrives in network order. I also wrote a small function that gathers all of the TCP flags on the packet and prints them nicely:
+The TCP layer exposes two methods: `getPortSrc()` and `getPortDst()` to fetch the source and destination ports. It also exposes the method `getTcpHeader()` to cast the raw packet data into a struct `tpchdr*` which contains all of the TCP fields. That way we can fetch additional fields such as windows size etc. Notice the use of `netToHost16()` to convert the data from network to host byte order as the raw packet arrives in network order. I also wrote a small function that gathers all of the TCP flags on the packet and prints them nicely:
 
 ```cpp
 std::string printTcpFlags(pcpp::TcpLayer* tcpLayer)
