@@ -117,6 +117,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7dea7265510eda5cd67b984c2634ef19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a007f04ef5e9b3828d02de504766c6e40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpcpp_1_1tcphdr.html">tcphdr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#a007f04ef5e9b3828d02de504766c6e40">getTcpHeader</a> () const</td></tr>
 <tr class="separator:a007f04ef5e9b3828d02de504766c6e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b1cd0c337cd0317ea60f472a5be8e1f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#a1b1cd0c337cd0317ea60f472a5be8e1f">getSrcPort</a> () const</td></tr>
+<tr class="separator:a1b1cd0c337cd0317ea60f472a5be8e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76aaa7957418d48fd444b993ff62bc48"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#a76aaa7957418d48fd444b993ff62bc48">getDstPort</a> () const</td></tr>
+<tr class="separator:a76aaa7957418d48fd444b993ff62bc48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9502c7f75395c19a44df4457ebafa537"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_tcp_option.html">TcpOption</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#a9502c7f75395c19a44df4457ebafa537">getTcpOption</a> (<a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301b">TcpOptionType</a> option) const</td></tr>
 <tr class="separator:a9502c7f75395c19a44df4457ebafa537"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49daa29b59fa5c7c5166a28b581bcabe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_tcp_option.html">TcpOption</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#a49daa29b59fa5c7c5166a28b581bcabe">getFirstTcpOption</a> () const</td></tr>
@@ -413,6 +417,24 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a76aaa7957418d48fd444b993ff62bc48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76aaa7957418d48fd444b993ff62bc48">&#9670;&nbsp;</a></span>getDstPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::TcpLayer::getDstPort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>TCP destination port </dd></dl>
+
+</div>
+</div>
 <a id="a49daa29b59fa5c7c5166a28b581bcabe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a49daa29b59fa5c7c5166a28b581bcabe">&#9670;&nbsp;</a></span>getFirstTcpOption()</h2>
 
@@ -509,6 +531,24 @@ Static Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The OSI Model layer this protocol belongs to </dd></dl>
 
 <p>Implements <a class="el" href="classpcpp_1_1_layer.html#af9e51f48a58a3b0dcd1a7341111c66e0">pcpp::Layer</a>.</p>
+
+</div>
+</div>
+<a id="a1b1cd0c337cd0317ea60f472a5be8e1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b1cd0c337cd0317ea60f472a5be8e1f">&#9670;&nbsp;</a></span>getSrcPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::TcpLayer::getSrcPort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>TCP source port </dd></dl>
 
 </div>
 </div>
@@ -749,7 +789,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_tcp_layer.html">TcpLayer</a></li>
-    <li class="footer">Generated on Tue Jan 19 2021 02:16:30 for PcapPlusPlus by
+    <li class="footer">Generated on Sat Jan 23 2021 08:26:17 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -110,6 +110,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab14e8e5fc416560f055bae317aa3ebed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03737760761dcfd0d88a3d60945c0fb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpcpp_1_1udphdr.html">udphdr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_udp_layer.html#a03737760761dcfd0d88a3d60945c0fb7">getUdpHeader</a> () const</td></tr>
 <tr class="separator:a03737760761dcfd0d88a3d60945c0fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64ed4aa70ff472d0e5cdfd7f608712c5"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_udp_layer.html#a64ed4aa70ff472d0e5cdfd7f608712c5">getSrcPort</a> () const</td></tr>
+<tr class="separator:a64ed4aa70ff472d0e5cdfd7f608712c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a386d552dded02b7551beb7ef4f8f9e83"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_udp_layer.html#a386d552dded02b7551beb7ef4f8f9e83">getDstPort</a> () const</td></tr>
+<tr class="separator:a386d552dded02b7551beb7ef4f8f9e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98ae7478c27ae01ae6be6c887506e8f4"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_udp_layer.html#a98ae7478c27ae01ae6be6c887506e8f4">calculateChecksum</a> (bool writeResultToPacket)</td></tr>
 <tr class="separator:a98ae7478c27ae01ae6be6c887506e8f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35d4be6b1c091dfc743113c85ca8d596"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_udp_layer.html#a35d4be6b1c091dfc743113c85ca8d596">parseNextLayer</a> ()</td></tr>
@@ -295,6 +299,24 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a386d552dded02b7551beb7ef4f8f9e83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a386d552dded02b7551beb7ef4f8f9e83">&#9670;&nbsp;</a></span>getDstPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::UdpLayer::getDstPort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>UDP destination port </dd></dl>
+
+</div>
+</div>
 <a id="add738e0639ce98b1fc577341a6ac7be9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#add738e0639ce98b1fc577341a6ac7be9">&#9670;&nbsp;</a></span>getHeaderLen()</h2>
 
@@ -348,6 +370,24 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The OSI Model layer this protocol belongs to </dd></dl>
 
 <p>Implements <a class="el" href="classpcpp_1_1_layer.html#af9e51f48a58a3b0dcd1a7341111c66e0">pcpp::Layer</a>.</p>
+
+</div>
+</div>
+<a id="a64ed4aa70ff472d0e5cdfd7f608712c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64ed4aa70ff472d0e5cdfd7f608712c5">&#9670;&nbsp;</a></span>getSrcPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::UdpLayer::getSrcPort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>UDP source port </dd></dl>
 
 </div>
 </div>
@@ -439,7 +479,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_udp_layer.html">UdpLayer</a></li>
-    <li class="footer">Generated on Tue Jan 19 2021 02:16:30 for PcapPlusPlus by
+    <li class="footer">Generated on Sat Jan 23 2021 08:26:17 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

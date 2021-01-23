@@ -85,6 +85,7 @@ var namespacepcpp =
     [ "IPcapDevice", "classpcpp_1_1_i_pcap_device.html", "classpcpp_1_1_i_pcap_device" ],
     [ "IPFilter", "classpcpp_1_1_i_p_filter.html", "classpcpp_1_1_i_p_filter" ],
     [ "iphdr", "structpcpp_1_1iphdr.html", "structpcpp_1_1iphdr" ],
+    [ "IPLayer", "classpcpp_1_1_i_p_layer.html", "classpcpp_1_1_i_p_layer" ],
     [ "IPReassembly", "classpcpp_1_1_i_p_reassembly.html", "classpcpp_1_1_i_p_reassembly" ],
     [ "IPv4Address", "classpcpp_1_1_i_pv4_address.html", "classpcpp_1_1_i_pv4_address" ],
     [ "IPv4DnsResourceData", "classpcpp_1_1_i_pv4_dns_resource_data.html", "classpcpp_1_1_i_pv4_dns_resource_data" ],

@@ -189,6 +189,10 @@ var hierarchy =
     [ "pcpp::ip6_hdr", "structpcpp_1_1ip6__hdr.html", null ],
     [ "pcpp::IPAddress", "classpcpp_1_1_i_p_address.html", null ],
     [ "pcpp::iphdr", "structpcpp_1_1iphdr.html", null ],
+    [ "pcpp::IPLayer", "classpcpp_1_1_i_p_layer.html", [
+      [ "pcpp::IPv4Layer", "classpcpp_1_1_i_pv4_layer.html", null ],
+      [ "pcpp::IPv6Layer", "classpcpp_1_1_i_pv6_layer.html", null ]
+    ] ],
     [ "pcpp::IPReassembly", "classpcpp_1_1_i_p_reassembly.html", null ],
     [ "pcpp::IPv4Address", "classpcpp_1_1_i_pv4_address.html", null ],
     [ "pcpp::IPv4TimestampOptionValue", "structpcpp_1_1_i_pv4_timestamp_option_value.html", null ],
