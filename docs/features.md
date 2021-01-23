@@ -241,6 +241,28 @@ dev->setFilter(andFilter);
 
 You can read more in the [PcapFilter.h API documentation]({{ site.baseurl }}/api-docs/_pcap_filter_8h.html) and in the [capture packets tutorial]({{ site.baseurl }}/docs/tutorials/capture-packets#filtering-packets).
 
+## TLS Fingerprinting
+
+TLS Fingerprinting is a technique that extracts specific parameters from TLS handshake messages such as ClientHello and ServerHello. Most applications that need network access (such as browsers, apps, etc.) have a unique combination(s) of these parameters while making network connections, so this technique can be used to fingerprint those applications. By using a database of curated fingerprints it's possible to detect network traffic anomalies which can point to malware, security vulnerabilities or other undesired behavior. It can also be used for network visibility, for example identify popular applications, detect applications that use weak encryption, etc. This method of fingerprinting is very effective because TLS handshake is often done in lower levels of the application hence it's difficult to forge or tamper with it.
+
+The primary concept for TLS fingerprinting came from [Lee Brotherston’s 2015 research](https://blog.squarelemon.com/tls-fingerprinting/) ([GitHub repo](https://github.com/LeeBrotherston/tls-fingerprinting)). Following his work more articles and implementations came out, one of them was [Salesforce JA3](https://engineering.salesforce.com/tls-fingerprinting-with-ja3-and-ja3s-247362855967) ([GitHub repo](https://github.com/salesforce/ja3)) which implements TLS fingerprinting in Python and [Zeek](https://www.zeekurity.org/). This project introduced two types of TLS fingerprinting: JA3 which is the "traditional" ClientHello fingerprinting (which is the more common and well-known method), and JA3S which is ServerHello fingerprinting.
+
+PcapPlusPlus contains an implementation of JA3 and JA3S in C++. There are not a lot of C++ implementations for TLS fingerprinting and we thought this can be a good feature for PcapPlusPlus as it already analyzes TLS network traffic.
+
+Using TLS fingerprinting in PcapPlusPlus is very easy, here is a quick example:
+
+```cpp
+pcpp::SSLHandshakeLayer* sslHandshakeLayer = parsedPacket.getLayerOfType<pcpp::SSLHandshakeLayer>();
+pcpp::SSLClientHelloMessage* clientHelloMessage = sslHandshakeLayer->getHandshakeMessageOfType<pcpp::SSLClientHelloMessage>();
+pcpp::SSLClientHelloMessage::ClientHelloTLSFingerprint tlsFingerprint = clientHelloMessage->generateTLSFingerprint();
+std::pair<std::string, std::string> tlsFingerprintStringAndMD5 = tlsFingerprint.toStringAndMD5();
+printf("ClientHello (JA3) TLS fingerprint: '%s'; MD5: '%s'\n", tlsFingerprintStringAndMD5.first.c_str(), tlsFingerprintStringAndMD5.second.c_str());
+```
+
+ServerHello TLS fingerprinting (JA3S) is almost similar but for `pcpp::SSLServerHelloMessage` messages.
+
+To learn more please take a look at the [TLS fingerprinting example](https://github.com/seladb/PcapPlusPlus/tree/master/Examples/TLSFingerprinting) in PcapPlusPlus GitHub repo which demonstrates how to collect ClientHello and ServerHello fingerprints from live traffic or pcap files, write them to an output file and display various statistics.
+
 ## Supported network protocols
 
 PcapPlusPlus currently supports parsing, editing and generation of packets of the following protocols:

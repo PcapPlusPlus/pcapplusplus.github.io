@@ -84,6 +84,10 @@ A utility for splitting IP packets into fragments. It works on pcap and pcapng f
 
 A utility for reassembling IP fragments back to IP packets. It works on pcap and pcapng files and allows the user to choose which fragments to reassemble. Works on IPv4 and IPv6 packets.
 
+## [TLSFingerprinting](https://github.com/seladb/PcapPlusPlus/tree/master/Examples/TLSFingerprinting)
+
+An application the demonstrates how to collect ClientHello (JA3) and ServerHello (JA3S) TLS fingerprints from live traffic or pcap files, write them to an output file and display various statistics.
+
 ## [PcapPlusPlus-benchmark](https://github.com/seladb/PcapPlusPlus/tree/master/Examples/PcapPlusPlus-benchmark)
 
 the benchmark application used for measuring PcapPlusPlus performance. See [benchmark page]({{ site.baseurl }}/docs/benchmark) for more details. This application currently compiles on Linux only (where benchmark was running on).
