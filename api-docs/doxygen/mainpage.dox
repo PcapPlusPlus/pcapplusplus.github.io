@@ -49,6 +49,7 @@
 *   - pcpp::GtpV1Layer, GtpLayer.h - GTP (v1) protocol
 *   - pcpp::IcmpLayer, IcmpLayer.h - ICMP protocol
 *   - pcpp::IgmpLayer, IgmpLayer.h - IGMP protocol
+*   - pcpp::AuthenticationHeaderLayer, pcpp::ESPLayer - IPSec AH & ESP - parsing only (no editing capabilities)
 *   - pcpp::SipRequestLayer, SipLayer.h - SIP request protocol
 *   - pcpp::SipResponseLayer, SipLayer.h - SIP response protocol
 *   - pcpp::SdpLayer, SdpLayer.h - SDP protocol
