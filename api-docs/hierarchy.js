@@ -79,6 +79,7 @@ var hierarchy =
     [ "pcpp::IDataContainer", "classpcpp_1_1_i_data_container.html", [
       [ "pcpp::Layer", "classpcpp_1_1_layer.html", [
         [ "pcpp::ArpLayer", "classpcpp_1_1_arp_layer.html", null ],
+        [ "pcpp::AuthenticationHeaderLayer", "classpcpp_1_1_authentication_header_layer.html", null ],
         [ "pcpp::BgpLayer", "classpcpp_1_1_bgp_layer.html", [
           [ "pcpp::BgpKeepaliveMessageLayer", "classpcpp_1_1_bgp_keepalive_message_layer.html", null ],
           [ "pcpp::BgpNotificationMessageLayer", "classpcpp_1_1_bgp_notification_message_layer.html", null ],
@@ -88,6 +89,7 @@ var hierarchy =
         ] ],
         [ "pcpp::DhcpLayer", "classpcpp_1_1_dhcp_layer.html", null ],
         [ "pcpp::DnsLayer", "classpcpp_1_1_dns_layer.html", null ],
+        [ "pcpp::ESPLayer", "classpcpp_1_1_e_s_p_layer.html", null ],
         [ "pcpp::EthDot3Layer", "classpcpp_1_1_eth_dot3_layer.html", null ],
         [ "pcpp::EthLayer", "classpcpp_1_1_eth_layer.html", null ],
         [ "pcpp::GreLayer", "classpcpp_1_1_gre_layer.html", [
@@ -194,6 +196,8 @@ var hierarchy =
       [ "pcpp::IPv6Layer", "classpcpp_1_1_i_pv6_layer.html", null ]
     ] ],
     [ "pcpp::IPReassembly", "classpcpp_1_1_i_p_reassembly.html", null ],
+    [ "pcpp::ipsec_authentication_header", "structpcpp_1_1ipsec__authentication__header.html", null ],
+    [ "pcpp::ipsec_esp", "structpcpp_1_1ipsec__esp.html", null ],
     [ "pcpp::IPv4Address", "classpcpp_1_1_i_pv4_address.html", null ],
     [ "pcpp::IPv4TimestampOptionValue", "structpcpp_1_1_i_pv4_timestamp_option_value.html", null ],
     [ "pcpp::IPv6AuthenticationHeader::ipv6_authentication_header", "structpcpp_1_1_i_pv6_authentication_header_1_1ipv6__authentication__header.html", null ],
