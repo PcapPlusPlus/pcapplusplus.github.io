@@ -84,10 +84,7 @@ var files =
       [ "IPv6AuthenticationHeader", "classpcpp_1_1_i_pv6_authentication_header.html", "classpcpp_1_1_i_pv6_authentication_header" ],
       [ "ipv6_authentication_header", "structpcpp_1_1_i_pv6_authentication_header_1_1ipv6__authentication__header.html", "structpcpp_1_1_i_pv6_authentication_header_1_1ipv6__authentication__header" ]
     ] ],
-    [ "IPv6Layer.h", "_i_pv6_layer_8h.html", [
-      [ "ip6_hdr", "structpcpp_1_1ip6__hdr.html", "structpcpp_1_1ip6__hdr" ],
-      [ "IPv6Layer", "classpcpp_1_1_i_pv6_layer.html", "classpcpp_1_1_i_pv6_layer" ]
-    ] ],
+    [ "IPv6Layer.h", "_i_pv6_layer_8h.html", "_i_pv6_layer_8h" ],
     [ "KniDevice.h", "_kni_device_8h.html", "_kni_device_8h" ],
     [ "KniDeviceList.h", "_kni_device_list_8h_source.html", null ],
     [ "Layer.h", "_layer_8h.html", [
