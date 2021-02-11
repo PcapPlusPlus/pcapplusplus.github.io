@@ -6,6 +6,7 @@ var NAVTREE =
       [ "Introduction", "index.html#intro_sec", null ],
       [ "API Reference", "index.html#api_reference_sec", null ]
     ] ],
+    [ "Deprecated List", "deprecated.html", null ],
     [ "Namespace Members", "namespacemembers.html", [
       [ "All", "namespacemembers.html", "namespacemembers_dup" ],
       [ "Functions", "namespacemembers_func.html", null ],
@@ -55,8 +56,8 @@ var NAVTREEINDEX =
 "classpcpp_1_1_raw_packet.html#ab6b169b02bda40e90279e7d8f6816e41",
 "classpcpp_1_1_sdp_layer.html#aab3f6a256318dbfb96439d6b48807b81",
 "classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177a323a52372e72a63a347da656d0b5cdda",
-"structpcpp_1_1_bgp_layer_1_1bgp__common__header.html#a8711a66edadafc0377351705bf632416",
-"structpcpp_1_1gtpv1__header.html"
+"structpcpp_1_1_bgp_layer_1_1bgp__common__header.html#a498670976c145733e0ce2236ec470f61",
+"structpcpp_1_1gre__basic__header.html#af58a09ec8526b9576275214accbb05d7"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
