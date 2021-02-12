@@ -150,7 +150,7 @@ class L2FwdWorkerThread : public pcpp::DpdkWorkerThread
     void stop();
 
     // get worker thread core ID
-    uint32_t getCoreId();
+    uint32_t getCoreId() const;
 };
 ```
 
@@ -200,7 +200,7 @@ void L2FwdWorkerThread::stop()
     m_Stop = true;
 }
 
-uint32_t L2FwdWorkerThread::getCoreId()
+uint32_t L2FwdWorkerThread::getCoreId() const
 {
     return m_CoreId;
 }
