@@ -20,7 +20,8 @@ var files =
     [ "DhcpLayer.h", "_dhcp_layer_8h.html", "_dhcp_layer_8h" ],
     [ "DnsLayer.h", "_dns_layer_8h.html", [
       [ "dnshdr", "structpcpp_1_1dnshdr.html", "structpcpp_1_1dnshdr" ],
-      [ "DnsLayer", "classpcpp_1_1_dns_layer.html", "classpcpp_1_1_dns_layer" ]
+      [ "DnsLayer", "classpcpp_1_1_dns_layer.html", "classpcpp_1_1_dns_layer" ],
+      [ "DnsOverTcpLayer", "classpcpp_1_1_dns_over_tcp_layer.html", "classpcpp_1_1_dns_over_tcp_layer" ]
     ] ],
     [ "DnsLayerEnums.h", "_dns_layer_enums_8h.html", "_dns_layer_enums_8h" ],
     [ "DnsResource.h", "_dns_resource_8h.html", [

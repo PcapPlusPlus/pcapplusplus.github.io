@@ -243,6 +243,7 @@ var searchData=
   ['dnslayer',['DnsLayer',['../classpcpp_1_1_dns_layer.html',1,'pcpp::DnsLayer'],['../classpcpp_1_1_dns_layer.html#a0436e0ee0837c38dea261bba282186f5',1,'pcpp::DnsLayer::DnsLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)'],['../classpcpp_1_1_dns_layer.html#a265b0721e4d566fc58a5407dd343fa14',1,'pcpp::DnsLayer::DnsLayer()'],['../classpcpp_1_1_dns_layer.html#a86121249746b9e95024788b6ef398a72',1,'pcpp::DnsLayer::DnsLayer(const DnsLayer &amp;other)']]],
   ['dnslayer_2eh',['DnsLayer.h',['../_dns_layer_8h.html',1,'']]],
   ['dnslayerenums_2eh',['DnsLayerEnums.h',['../_dns_layer_enums_8h.html',1,'']]],
+  ['dnsovertcplayer',['DnsOverTcpLayer',['../classpcpp_1_1_dns_over_tcp_layer.html',1,'pcpp::DnsOverTcpLayer'],['../classpcpp_1_1_dns_over_tcp_layer.html#a10f45e14251ba5efa56a929bca254bd8',1,'pcpp::DnsOverTcpLayer::DnsOverTcpLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)'],['../classpcpp_1_1_dns_over_tcp_layer.html#acbc97488c68319cfccb4433ba67bb70f',1,'pcpp::DnsOverTcpLayer::DnsOverTcpLayer()'],['../classpcpp_1_1_dns_over_tcp_layer.html#aeb225f3b2d4305207457fb119e2c64e3',1,'pcpp::DnsOverTcpLayer::DnsOverTcpLayer(const DnsOverTcpLayer &amp;other)']]],
   ['dnsquery',['DnsQuery',['../classpcpp_1_1_dns_query.html',1,'pcpp']]],
   ['dnsquerytype',['DnsQueryType',['../namespacepcpp.html#ad4821eedb6d14ec6be18b2d80eb9ee3da60ca7a1b4462bcd2d7e10724417f5916',1,'pcpp']]],
   ['dnsresource',['DnsResource',['../classpcpp_1_1_dns_resource.html',1,'pcpp']]],

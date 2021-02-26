@@ -12,7 +12,7 @@ var classpcpp_1_1_dns_layer =
     [ "addAuthority", "classpcpp_1_1_dns_layer.html#a368f61a098f65ee8f07f9e6dd6de08b4", null ],
     [ "addQuery", "classpcpp_1_1_dns_layer.html#a80db9f0dfb1b6c4641a0357b54e47138", null ],
     [ "addQuery", "classpcpp_1_1_dns_layer.html#a3d36a88b61c4cf83ef5b20748d589ab8", null ],
-    [ "computeCalculateFields", "classpcpp_1_1_dns_layer.html#a95ce99b7768fcc687e552c5c1736f9c9", null ],
+    [ "computeCalculateFields", "classpcpp_1_1_dns_layer.html#afad3556c423f5cb2b95199abbc496380", null ],
     [ "getAdditionalRecord", "classpcpp_1_1_dns_layer.html#a5f5c565893d83e77bfd9c8d1bdbc6138", null ],
     [ "getAdditionalRecordCount", "classpcpp_1_1_dns_layer.html#af097c5a204e4f1c5d44615ac55e220b3", null ],
     [ "getAnswer", "classpcpp_1_1_dns_layer.html#afaef9bb50d5fc4c2118f2b8f4b9f0ea1", null ],

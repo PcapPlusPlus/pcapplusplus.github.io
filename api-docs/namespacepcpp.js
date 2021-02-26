@@ -22,6 +22,7 @@ var namespacepcpp =
     [ "DhcpOptionBuilder", "classpcpp_1_1_dhcp_option_builder.html", "classpcpp_1_1_dhcp_option_builder" ],
     [ "dnshdr", "structpcpp_1_1dnshdr.html", "structpcpp_1_1dnshdr" ],
     [ "DnsLayer", "classpcpp_1_1_dns_layer.html", "classpcpp_1_1_dns_layer" ],
+    [ "DnsOverTcpLayer", "classpcpp_1_1_dns_over_tcp_layer.html", "classpcpp_1_1_dns_over_tcp_layer" ],
     [ "DnsQuery", "classpcpp_1_1_dns_query.html", "classpcpp_1_1_dns_query" ],
     [ "DnsResource", "classpcpp_1_1_dns_resource.html", "classpcpp_1_1_dns_resource" ],
     [ "DnsResourceDataPtr", "classpcpp_1_1_dns_resource_data_ptr.html", "classpcpp_1_1_dns_resource_data_ptr" ],

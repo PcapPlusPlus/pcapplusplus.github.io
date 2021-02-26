@@ -88,7 +88,9 @@ var hierarchy =
           [ "pcpp::BgpUpdateMessageLayer", "classpcpp_1_1_bgp_update_message_layer.html", null ]
         ] ],
         [ "pcpp::DhcpLayer", "classpcpp_1_1_dhcp_layer.html", null ],
-        [ "pcpp::DnsLayer", "classpcpp_1_1_dns_layer.html", null ],
+        [ "pcpp::DnsLayer", "classpcpp_1_1_dns_layer.html", [
+          [ "pcpp::DnsOverTcpLayer", "classpcpp_1_1_dns_over_tcp_layer.html", null ]
+        ] ],
         [ "pcpp::ESPLayer", "classpcpp_1_1_e_s_p_layer.html", null ],
         [ "pcpp::EthDot3Layer", "classpcpp_1_1_eth_dot3_layer.html", null ],
         [ "pcpp::EthLayer", "classpcpp_1_1_eth_layer.html", null ],

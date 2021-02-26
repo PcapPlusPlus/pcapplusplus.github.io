@@ -7,6 +7,7 @@ var searchData=
   ['dhcpoptionbuilder',['DhcpOptionBuilder',['../classpcpp_1_1_dhcp_option_builder.html',1,'pcpp']]],
   ['dnshdr',['dnshdr',['../structpcpp_1_1dnshdr.html',1,'pcpp']]],
   ['dnslayer',['DnsLayer',['../classpcpp_1_1_dns_layer.html',1,'pcpp']]],
+  ['dnsovertcplayer',['DnsOverTcpLayer',['../classpcpp_1_1_dns_over_tcp_layer.html',1,'pcpp']]],
   ['dnsquery',['DnsQuery',['../classpcpp_1_1_dns_query.html',1,'pcpp']]],
   ['dnsresource',['DnsResource',['../classpcpp_1_1_dns_resource.html',1,'pcpp']]],
   ['dnsresourcedataptr',['DnsResourceDataPtr',['../classpcpp_1_1_dns_resource_data_ptr.html',1,'pcpp']]],
