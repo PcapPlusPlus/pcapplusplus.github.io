@@ -38,6 +38,11 @@ Basically every x86 GCC toolchain should work, but PcapPlusPlus is being continu
 - Sierra (10.12)
 - El Capitan (10.11)
 
+## <img src="{{ site.baseurl }}/resources/logo-android.png" alt="drawing" width="24" title="Android"/> Android
+
+- The 4 major [Android ABIs](https://developer.android.com/ndk/guides/abis) are supported: `armeabi-v7a`, `arm64-v8a`, `x86`, `x86_64`
+- API versions 21-30
+
 ## <img src="{{ site.baseurl }}/resources/logo-freebsd.png" alt="drawing" width="24" title="FreeBSD"/> FreeBSD
 
 Versions 11.3 and above are supported
@@ -50,6 +55,7 @@ Other platforms and toolchains may work as well, but the support is not guarante
 
 You can view the status of each supported platform in our CI reports:
 
-| __Travis CI__ (Linux and MacOS): | [![Build Status](https://travis-ci.org/seladb/PcapPlusPlus.svg?branch=master)](https://travis-ci.org/seladb/PcapPlusPlus) |
-|__AppVeyor__ (Windows): | [![Build status](https://ci.appveyor.com/api/projects/status/4u5ui21ibbevkstc/branch/master?svg=true)](https://ci.appveyor.com/project/seladb/pcapplusplus/branch/master) |
+| __GitHub Actions__ (Linux, MacOS, Windows): | [![GitHub Actions](https://github.com/seladb/PcapPlusPlus/workflows/Build%20and%20test/badge.svg)](https://github.com/seladb/PcapPlusPlus/actions?query=workflow%3A%22Build+and+test%22) |
 | __Cirrus CI__ (FreeBSD): | [![Build Status](https://api.cirrus-ci.com/github/seladb/PcapPlusPlus.svg)](https://cirrus-ci.com/github/seladb/PcapPlusPlus) |
+| __Travis CI__ (MacOS): | [![Build Status](https://travis-ci.org/seladb/PcapPlusPlus.svg?branch=master)](https://travis-ci.org/seladb/PcapPlusPlus) |
+|__AppVeyor__ (Windows MinGW and VS 2015): | [![Build status](https://ci.appveyor.com/api/projects/status/4u5ui21ibbevkstc/branch/master?svg=true)](https://ci.appveyor.com/project/seladb/pcapplusplus/branch/master) |
