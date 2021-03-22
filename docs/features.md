@@ -24,7 +24,7 @@ PcapPlusPlus aims to create a consolidated and easy-to-use C++ API for all of th
 
 Here is a list of of the packet capture engines currently supported:
 
-- [libpcap](https://www.tcpdump.org/) live capture (on Linux, MacOS, FreeBSD)
+- [libpcap](https://www.tcpdump.org/) live capture (on Linux, MacOS, Android, FreeBSD)
 - [WinPcap](https://www.winpcap.org/)/[Npcap](https://nmap.org/npcap/) live capture (on Windows)
 - [Intel DPDK](https://www.dpdk.org/) (on Linux)
 - [ntop's Vanilla PF_RING](https://www.ntop.org/products/packet-capture/pf_ring/) (on Linux)

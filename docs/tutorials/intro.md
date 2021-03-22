@@ -37,7 +37,7 @@ A library for parsing, creating and editing packets of various [supported protoc
 
 A library for intercepting and sending packets, providing network and NIC info, stats, etc. This library is mostly a C++ wrapper for packet capturing engines such as libpcap, WinPcap, Npcap, DPDK and PF_RING, but also provide some unique features and capabilities that doesn't exist in any of these engines. Main classes and utilities:
 
-1. `PcapLiveDevice` - representing a Linux/MacOS/FreeBSD network interface and enables capturing and sending packets as well as retrieving interface information
+1. `PcapLiveDevice` - representing a Linux/MacOS/FreeBSD network interface and enables capturing and sending packets as well as retrieving interface information. Also available for rooted Android devices
 2. `WinPcapLiveDevice` - representing a Windows network interface and contains all functionality exposed in `PcapLiveDevice`. This class actually inherits `PcapLiveDevice` and does the relevant adjustments for WinPcap/Npcap and Windows OS
 3. `DpdkDevice` - representing a DPDK-enabled network interface and wraps DPDK basic functionality for capturing and sending packets as well as retrieving interface information
 4. `PfRingDevice` - representing PF_RING-enabled network interface and wraps PF_RING functionality for capturing and sending packets as well as retrieving interface information

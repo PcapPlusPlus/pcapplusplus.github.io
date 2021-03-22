@@ -17,10 +17,10 @@ nav_order: 6
 
 ## Prerequisites
 
-In order to compile PcapPlusPlus for Android please make sure you have the following prerequisites:
+In order to build PcapPlusPlus for Android please make sure you have the following prerequisites:
 
-1. A Linux machine - building on other platforms is not currently supported
-2. [Android NDK](https://developer.android.com/ndk) needs to be installed
+1. A Linux machine - building on other platforms is currently not supported
+2. Make sure you have [Android NDK](https://developer.android.com/ndk) installed
 3. Pre-compiled `libpcap` for Android which can be downloaded from [this GitHub repo](https://github.com/seladb/libpcap-android) (for Android API versions 21-30)
 
 ## Configuration
@@ -58,12 +58,12 @@ PcapPlusPlus configuration is complete. Files created (or modified): mk/platform
 After running the config script, you're can safely build the code:
 
 1. Run `make libs` to build PcapPlusPlus libraries only (which is the common use-case for Android) or `make all` to build everything including the unit-tests and examples
-2. After compilation you can find the libraries, header files, example executables (if built) and helpful makefiles under the `Dist` directory
-3. Please notice that in order to run [PcapPlusPlus examples]({{ site.baseurl }}/docs/examples) on an Android device you need shell access and a for some of them you also need a rooted device
+2. After a successful build you can find the libraries, header files, example executables (if built) and helpful makefiles under the `Dist` directory
+3. Please notice that in order to run [PcapPlusPlus examples]({{ site.baseurl }}/docs/examples) on an Android device you need shell access, and for some of them you also need a rooted device
 
 ## Do I need a rooted device in order to use PcapPlusPlus in my Android app?
 
-Please see [here]({{ site.baseurl }}/docs/quickstart/android#do-i-need-a-rooted-device-in-order-to-use-pcapplusplus-in-my-android-app)
+Not at all! Please see [here]({{ site.baseurl }}/docs/quickstart/android#do-i-need-a-rooted-device-in-order-to-use-pcapplusplus-in-my-android-app)
 
 ## Using PcapPlusPlus in my app
 
