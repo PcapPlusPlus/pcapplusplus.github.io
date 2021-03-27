@@ -40,7 +40,7 @@ Basically every x86 GCC toolchain should work, but PcapPlusPlus is being continu
 
 ## <img src="{{ site.baseurl }}/resources/logo-android.png" alt="drawing" width="24" title="Android"/> Android
 
-- The 4 major [Android ABIs](https://developer.android.com/ndk/guides/abis) are supported: `armeabi-v7a`, `arm64-v8a`, `x86`, `x86_64`
+- All 4 major [Android ABIs](https://developer.android.com/ndk/guides/abis) are supported: `armeabi-v7a`, `arm64-v8a`, `x86`, `x86_64`
 - API versions 21-30
 
 ## <img src="{{ site.baseurl }}/resources/logo-freebsd.png" alt="drawing" width="24" title="FreeBSD"/> FreeBSD
