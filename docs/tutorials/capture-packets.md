@@ -20,7 +20,7 @@ nav_order: 3
 PcapPlusPlus provides simple and easy-to-use wrappers for libpcap/WinPcap APIs for capturing and sending packets over network interfaces. These wrappers pretty much sum up in the following classes:
 
 * `PcapLiveDevice` - wraps libpcap functionality of capturing and sending packets and also provide information and statistics on the network interface
-* `WinPcapLiveDevice` - wraps WinPcap/Npcap functionality which is basically similar to libpcap but provides adjustments for Windows OS. This class inherits PcapLiveDevice and provides the necessary changes for Windows vs. Linux/MacOS/FreeBSD
+* `WinPcapLiveDevice` - wraps WinPcap/Npcap functionality which is basically similar to libpcap but provides adjustments for Windows OS. This class inherits PcapLiveDevice and provides the necessary changes for Windows vs. Linux/MacOS/FreeBSD/Android
 * `PcapLiveDeviceList` - A singleton class that creates, stores and provides access to all PcapLiveDevice or WinPcapLiveDevice instances. These instances are initialized on startup and wrap all the network interfaces installed on the machine
 * `PcapRemoteDevice` - wraps WinPcap functionality for [remote packet capture](https://www.winpcap.org/docs/docs_412/html/group__remote.html). As this functionality is less common and less used, it won't be covered in this tutorial. You can take a look at PcapPlusPlus documentation for a comprehensive overview and API description
 

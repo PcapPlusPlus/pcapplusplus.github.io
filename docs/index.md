@@ -30,4 +30,6 @@ Please choose your platform:
 
 [<img src="{{ site.baseurl }}/resources/logo-apple.png" alt="drawing" width="16" title="MacOS"/> MacOS]({{ site.baseurl }}/docs/quickstart/macos){: .btn .btn-blue }
 
+[<img src="{{ site.baseurl }}/resources/logo-android.png" alt="drawing" width="16" title="Android"/> Android]({{ site.baseurl }}/docs/quickstart/android){: .btn .btn-blue }
+
 [<img src="{{ site.baseurl }}/resources/logo-freebsd.png" alt="drawing" width="16" title="FreeBSD"/> FreeBSD]({{ site.baseurl }}/docs/quickstart/freebsd){: .btn .btn-blue }

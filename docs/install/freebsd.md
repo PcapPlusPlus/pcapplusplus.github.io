@@ -3,7 +3,7 @@ layout: page
 title: Build on FreeBSD
 parent: Installation
 permalink: /docs/install/build-source/freebsd
-nav_order: 6
+nav_order: 7
 ---
 
 # Build From Source on FreeBSD
