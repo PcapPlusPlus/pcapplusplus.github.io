@@ -21,6 +21,10 @@ right_items:
     tooltip: PcapPlusPlus on Twitter
     image: /resources/logo-twitter.png
     link: https://twitter.com/seladb
+  - name: StackOverflow
+    tooltip: PcapPlusPlus tag on Stack Overflow
+    image: /resources/Stack_Overflow_icon.png
+    link: https://stackoverflow.com/questions/tagged/pcapplusplus
   - name: Email
     tooltip: Send us an Email
     image: /resources/logo-email.png
