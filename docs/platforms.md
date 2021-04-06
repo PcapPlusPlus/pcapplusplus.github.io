@@ -32,6 +32,9 @@ Basically every x86 GCC toolchain should work, but PcapPlusPlus is being continu
 
 ## <img src="{{ site.baseurl }}/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/> MacOS
 
+Both **Intel** and **Apple silicon (M1)** processors are supported.
+
+- Big Sur (11.0)
 - Catalina (10.15)
 - Mojave (10.14)
 - High Sierra (10.13)
