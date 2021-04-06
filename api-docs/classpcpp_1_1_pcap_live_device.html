@@ -169,18 +169,22 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a818da3e11e0c953385badf6233ee0f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a058f8bc527935d97bbd044614ab93473"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a058f8bc527935d97bbd044614ab93473">captureActive</a> ()</td></tr>
 <tr class="separator:a058f8bc527935d97bbd044614ab93473"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e7b9be7551ad7759c32e9d5fbabd5c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a2e7b9be7551ad7759c32e9d5fbabd5c8">sendPacket</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> const &amp;rawPacket)</td></tr>
-<tr class="separator:a2e7b9be7551ad7759c32e9d5fbabd5c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f45c8bc2c370f3f2120909f36b22802"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a2f45c8bc2c370f3f2120909f36b22802">sendPacket</a> (const uint8_t *packetData, int packetDataLength)</td></tr>
-<tr class="separator:a2f45c8bc2c370f3f2120909f36b22802"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa547d006ea10328c631eb5379798dede"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#aa547d006ea10328c631eb5379798dede">sendPacket</a> (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet)</td></tr>
-<tr class="separator:aa547d006ea10328c631eb5379798dede"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf8df597d7d931fce5d006f20c9fbce3"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#acf8df597d7d931fce5d006f20c9fbce3">sendPackets</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *rawPacketsArr, int arrLength)</td></tr>
-<tr class="separator:acf8df597d7d931fce5d006f20c9fbce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9efc27c7c0778d47c94dac02defa22b"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#af9efc27c7c0778d47c94dac02defa22b">sendPackets</a> (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> **packetsArr, int arrLength)</td></tr>
-<tr class="separator:af9efc27c7c0778d47c94dac02defa22b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb039496514f3c53bc7eca2235653c70"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#adb039496514f3c53bc7eca2235653c70">sendPackets</a> (const <a class="el" href="namespacepcpp.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;rawPackets)</td></tr>
-<tr class="separator:adb039496514f3c53bc7eca2235653c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a4073105d21336a4f9539a8302d47cb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a6a4073105d21336a4f9539a8302d47cb">doMtuCheck</a> (int packetPayloadLength)</td></tr>
+<tr class="separator:a6a4073105d21336a4f9539a8302d47cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ec557886562d8af27bb7bce07016544"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a2ec557886562d8af27bb7bce07016544">sendPacket</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> const &amp;rawPacket, bool checkMtu=false)</td></tr>
+<tr class="separator:a2ec557886562d8af27bb7bce07016544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e5b87c1864ee727e12bb246b071c964"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a4e5b87c1864ee727e12bb246b071c964">sendPacket</a> (const uint8_t *packetData, int packetDataLength, int packetPayloadLength)</td></tr>
+<tr class="separator:a4e5b87c1864ee727e12bb246b071c964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62c57a5a0fd0427188e4c89ac87f12d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a62c57a5a0fd0427188e4c89ac87f12d8">sendPacket</a> (const uint8_t *packetData, int packetDataLength, bool checkMtu=false, <a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">pcpp::LinkLayerType</a> linkType=<a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">pcpp::LINKTYPE_ETHERNET</a>)</td></tr>
+<tr class="separator:a62c57a5a0fd0427188e4c89ac87f12d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d8a41394806dd5e5245046908f60f16"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a9d8a41394806dd5e5245046908f60f16">sendPacket</a> (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet, bool checkMtu=true)</td></tr>
+<tr class="separator:a9d8a41394806dd5e5245046908f60f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa11efe575402d9e06624376d87caf4fb"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#aa11efe575402d9e06624376d87caf4fb">sendPackets</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *rawPacketsArr, int arrLength, bool checkMtu=false)</td></tr>
+<tr class="separator:aa11efe575402d9e06624376d87caf4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71eb799bb039b9b4b182958bf5fdf563"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a71eb799bb039b9b4b182958bf5fdf563">sendPackets</a> (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> **packetsArr, int arrLength, bool checkMtu=true)</td></tr>
+<tr class="separator:a71eb799bb039b9b4b182958bf5fdf563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fb54c1f769a409743c6710f02b4de56"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a9fb54c1f769a409743c6710f02b4de56">sendPackets</a> (const <a class="el" href="namespacepcpp.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;rawPackets, bool checkMtu=false)</td></tr>
+<tr class="separator:a9fb54c1f769a409743c6710f02b4de56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a281f2cd6062791c68ecdd82384f751f8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a281f2cd6062791c68ecdd82384f751f8">open</a> ()</td></tr>
 <tr class="separator:a281f2cd6062791c68ecdd82384f751f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f58e22a71cbed9109ae75bd1759e8ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a3f58e22a71cbed9109ae75bd1759e8ed">open</a> (const <a class="el" href="structpcpp_1_1_pcap_live_device_1_1_device_configuration.html">DeviceConfiguration</a> &amp;config)</td></tr>
@@ -359,6 +363,31 @@ Additional Inherited Members</h2></td></tr>
 <p>Close the device </p>
 
 <p>Implements <a class="el" href="classpcpp_1_1_i_device.html#acebd2ae24e39e620ed66f65e6623089b">pcpp::IDevice</a>.</p>
+
+</div>
+</div>
+<a id="a6a4073105d21336a4f9539a8302d47cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a4073105d21336a4f9539a8302d47cb">&#9670;&nbsp;</a></span>doMtuCheck()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::PcapLiveDevice::doMtuCheck </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>packetPayloadLength</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Checks whether the packetPayloadLength is larger than the device MTU. Logs an error if check fails </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">packetPayloadLength</td><td>The length of the IP layer of the packet </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the packetPayloadLength is less than or equal to the device MTU </dd></dl>
 
 </div>
 </div>
@@ -721,8 +750,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a2e7b9be7551ad7759c32e9d5fbabd5c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e7b9be7551ad7759c32e9d5fbabd5c8">&#9670;&nbsp;</a></span>sendPacket() <span class="overload">[1/3]</span></h2>
+<a id="a2ec557886562d8af27bb7bce07016544"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ec557886562d8af27bb7bce07016544">&#9670;&nbsp;</a></span>sendPacket() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -731,14 +760,25 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">bool pcpp::PcapLiveDevice::sendPacket </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> const &amp;&#160;</td>
-          <td class="paramname"><em>rawPacket</em></td><td>)</td>
+          <td class="paramname"><em>rawPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>checkMtu</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Send a <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> to the network </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">rawPacket</td><td>A reference to the raw packet to send. This method treats the raw packet as read-only, it doesn't change anything in it </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">checkMtu</td><td>Whether the length of the packet's payload should be checked against the MTU. If enabled this comes with a small performance penalty. Default value is false to avoid performance overhead. Set to true if you don't know whether packets fit the live device's MTU and you can afford the overhead. </td></tr>
   </table>
   </dd>
 </dl>
@@ -752,8 +792,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a2f45c8bc2c370f3f2120909f36b22802"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f45c8bc2c370f3f2120909f36b22802">&#9670;&nbsp;</a></span>sendPacket() <span class="overload">[2/3]</span></h2>
+<a id="a4e5b87c1864ee727e12bb246b071c964"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e5b87c1864ee727e12bb246b071c964">&#9670;&nbsp;</a></span>sendPacket() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -768,7 +808,68 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>packetDataLength</em>&#160;</td>
+          <td class="paramname"><em>packetDataLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>packetPayloadLength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Send a buffer containing packet raw data (including all layers) to the network. This particular version of the sendPacket method should only be used if you already have access to the size of the network layer of the packet, since it allows you to check the payload size (see packetPayloadLength parameter) MTU of the live device without incurring a parsing overhead. If the packetPayloadLength is unknown, please use a different implementation of the sendPacket method. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">packetData</td><td>The buffer containing the packet raw data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packetDataLength</td><td>The length of the buffer (this is the entire packet, including link layer) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packetPayloadLength</td><td>The length of the payload for the data link layer. This includes all data apart from the header for the data link layer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the packet was sent successfully. False will be returned in the following cases (relevant log error is printed in any case):<ul>
+<li>Device is not opened</li>
+<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> data length is 0</li>
+<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> payload length is larger than device MTU</li>
+<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> could not be sent due to some error in libpcap/WinPcap/Npcap </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a62c57a5a0fd0427188e4c89ac87f12d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62c57a5a0fd0427188e4c89ac87f12d8">&#9670;&nbsp;</a></span>sendPacket() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::PcapLiveDevice::sendPacket </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>packetData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>packetDataLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>checkMtu</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">pcpp::LinkLayerType</a>&#160;</td>
+          <td class="paramname"><em>linkType</em> = <code><a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">pcpp::LINKTYPE_ETHERNET</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -781,21 +882,23 @@ Additional Inherited Members</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">packetData</td><td>The buffer containing the packet raw data </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">packetDataLength</td><td>The length of the buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">checkMtu</td><td>Whether the length of the packet's payload should be checked against the MTU. If enabled this comes with a small performance penalty. Default value is false to avoid performance overhead. Set to true if you don't know whether packets fit the live device's MTU and you can afford the overhead. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">linkType</td><td>Only used if checkMtu is true. Defines the layer type for parsing the first layer of the packet. Used for parsing the packet to perform the MTU check. Default value is <a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">pcpp::LINKTYPE_ETHERNET</a>. Ensure this parameter matches the linktype of the packet if checkMtu is true. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if packet was sent successfully. False will be returned in the following cases (relevant log error is printed in any case):<ul>
 <li>Device is not opened</li>
 <li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is 0</li>
-<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is larger than device MTU</li>
+<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is larger than device MTU and checkMtu is true</li>
 <li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> could not be sent due to some error in libpcap/WinPcap/Npcap </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="aa547d006ea10328c631eb5379798dede"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa547d006ea10328c631eb5379798dede">&#9670;&nbsp;</a></span>sendPacket() <span class="overload">[3/3]</span></h2>
+<a id="a9d8a41394806dd5e5245046908f60f16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d8a41394806dd5e5245046908f60f16">&#9670;&nbsp;</a></span>sendPacket() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -804,29 +907,40 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">bool pcpp::PcapLiveDevice::sendPacket </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classpcpp_1_1_packet.html">Packet</a> *&#160;</td>
-          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>checkMtu</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Send a parsed <a class="el" href="classpcpp_1_1_packet.html">Packet</a> to the network </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A pointer to the packet to send. This method treats the packet as read-only, it doesn't change anything in it </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">checkMtu</td><td>Whether the length of the packet's payload should be checked against the MTU. Default value is true, since the packet being passed in has already been parsed, so checking the MTU does not incur significant processing overhead. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if packet was sent successfully. False will be returned in the following cases (relevant log error is printed in any case):<ul>
 <li>Device is not opened</li>
 <li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is 0</li>
-<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is larger than device MTU</li>
+<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is larger than device MTU and checkMtu is true</li>
 <li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> could not be sent due to some error in libpcap/WinPcap/Npcap </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="acf8df597d7d931fce5d006f20c9fbce3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf8df597d7d931fce5d006f20c9fbce3">&#9670;&nbsp;</a></span>sendPackets() <span class="overload">[1/3]</span></h2>
+<a id="aa11efe575402d9e06624376d87caf4fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa11efe575402d9e06624376d87caf4fb">&#9670;&nbsp;</a></span>sendPackets() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -844,7 +958,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>arrLength</em>&#160;</td>
+          <td class="paramname"><em>arrLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>checkMtu</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -862,23 +982,22 @@ Additional Inherited Members</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">rawPacketsArr</td><td>The array of <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> objects to send. This method treats all packets as read-only, it doesn't change anything in them </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">arrLength</td><td>The length of the array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">checkMtu</td><td>Whether to check the size of the packet payload against MTU size. Incurs a parsing overhead. Default value is false to avoid performance overhead. Set to true if you don't know whether packets fit the live device's MTU and you can afford the overhead. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The number of packets sent successfully. Sending a packet can fail if:<ul>
 <li>Device is not opened. In this case no packets will be sent, return value will be 0</li>
 <li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is 0</li>
-<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is larger than device MTU</li>
+<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is larger than device MTU and checkMtu is true</li>
 <li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> could not be sent due to some error in libpcap/WinPcap/Npcap </li>
 </ul>
 </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classpcpp_1_1_win_pcap_live_device.html#a8f0f1d43beaf1e839959ec51838a246f">pcpp::WinPcapLiveDevice</a>.</p>
-
 </div>
 </div>
-<a id="af9efc27c7c0778d47c94dac02defa22b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9efc27c7c0778d47c94dac02defa22b">&#9670;&nbsp;</a></span>sendPackets() <span class="overload">[2/3]</span></h2>
+<a id="a71eb799bb039b9b4b182958bf5fdf563"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71eb799bb039b9b4b182958bf5fdf563">&#9670;&nbsp;</a></span>sendPackets() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -896,7 +1015,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>arrLength</em>&#160;</td>
+          <td class="paramname"><em>arrLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>checkMtu</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -914,21 +1039,22 @@ Additional Inherited Members</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">packetsArr</td><td>The array of pointers to <a class="el" href="classpcpp_1_1_packet.html">Packet</a> objects to send. This method treats all packets as read-only, it doesn't change anything in them </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">arrLength</td><td>The length of the array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">checkMtu</td><td>Whether to check the size of the packet payload against MTU size. Default value is true, since the packets being passed in has already been parsed, so checking the MTU does not incur significant processing overhead. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The number of packets sent successfully. Sending a packet can fail if:<ul>
 <li>Device is not opened. In this case no packets will be sent, return value will be 0</li>
 <li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is 0</li>
-<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is larger than device MTU</li>
+<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is larger than device MTU and checkMtu is true</li>
 <li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> could not be sent due to some error in libpcap/WinPcap/Npcap </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="adb039496514f3c53bc7eca2235653c70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb039496514f3c53bc7eca2235653c70">&#9670;&nbsp;</a></span>sendPackets() <span class="overload">[3/3]</span></h2>
+<a id="a9fb54c1f769a409743c6710f02b4de56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fb54c1f769a409743c6710f02b4de56">&#9670;&nbsp;</a></span>sendPackets() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -940,8 +1066,18 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">virtual int pcpp::PcapLiveDevice::sendPackets </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespacepcpp.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;&#160;</td>
-          <td class="paramname"><em>rawPackets</em></td><td>)</td>
+          <td class="paramname"><em>rawPackets</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>checkMtu</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -953,13 +1089,14 @@ Additional Inherited Members</h2></td></tr>
 <p>Send a vector of pointers to <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> objects to the network </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">rawPackets</td><td>The array of pointers to <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> objects to send. This method treats all packets as read-only, it doesn't change anything in them </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">checkMtu</td><td>Whether to check the size of the packet payload against MTU size. Incurs a parsing overhead. Default value is false to avoid performance overhead. Set to true if you don't know whether packets fit the live device's MTU and you can afford the overhead. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The number of packets sent successfully. Sending a packet can fail if:<ul>
 <li>Device is not opened. In this case no packets will be sent, return value will be 0</li>
 <li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is 0</li>
-<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is larger than device MTU</li>
+<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is larger than device MTU and checkMtu is true</li>
 <li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> could not be sent due to some error in libpcap/WinPcap/Npcap </li>
 </ul>
 </dd></dl>
@@ -1262,7 +1399,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a></li>
-    <li class="footer">Generated on Sat Apr 3 2021 06:28:52 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Apr 6 2021 09:46:43 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
