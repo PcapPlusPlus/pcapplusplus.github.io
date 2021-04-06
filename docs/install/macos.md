@@ -25,7 +25,8 @@ In order to compile PcapPlusPlus on Linux please make sure you have the followin
     ```shell
     xcode-select --install
     ```
-3. __OPTIONAL__ - install [Zstd](https://facebook.github.io/zstd/) if you wish to enable [PCAPNG streaming compression support]({{ site.baseurl }}/docs/features#readingwriting-pcapng-files-with-compression):
+3. PcapPlusPlus is available for both **Intel** and **Apple silicon (M1)** processors. To build for Apple silicon please use the `--arm64` flag (please see below)
+4. __OPTIONAL__ - install [Zstd](https://facebook.github.io/zstd/) if you wish to enable [PCAPNG streaming compression support]({{ site.baseurl }}/docs/features#readingwriting-pcapng-files-with-compression):
     ```shell
     brew install zstd
     ```
@@ -47,6 +48,7 @@ This script has the following command-line switches (you can also view then by r
 | __`--libpcap-include-dir`__   | libpcap header files directory. This parameter is optional and if omitted PcapPlusPlus will look for the header files in the default include paths |
 | __`--libpcap-lib-dir`__       | libpcap pre compiled lib directory. This parameter is optional and if omitted PcapPlusPlus will look for the lib file in the default lib paths |
 | __`--use-zstd`__              | use [Zstd for PCAPNG streaming compression]({{ site.baseurl }}/docs/features#readingwriting-pcapng-files-with-compression). This parameter is optional |
+| __`--arm64`__                 | build for Apple Silicon M1 (arm64 architecture). This flag can be used for cross-compilation which means you can don't have to run the build on an Apple silicon M1 machine |
 | __`-h`__, __`--help`__        | displays a help message and exits. No further actions are performed |
 
 Here are a few examples:
