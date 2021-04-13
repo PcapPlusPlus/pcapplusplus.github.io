@@ -5,6 +5,7 @@ var classpcpp_1_1_i_pv6_address =
     [ "IPv6Address", "classpcpp_1_1_i_pv6_address.html#aa7a7bf99b8b750091094c89ba446545b", null ],
     [ "copyTo", "classpcpp_1_1_i_pv6_address.html#a0552d9f226b1aa7dd168deb3436a4f41", null ],
     [ "copyTo", "classpcpp_1_1_i_pv6_address.html#a039182943235feb705b2ebd08052d075", null ],
+    [ "isMulticast", "classpcpp_1_1_i_pv6_address.html#ab84e4b17cc8a81b72d06be8387b1c98c", null ],
     [ "isValid", "classpcpp_1_1_i_pv6_address.html#a7f2135107f3212d69f436c1edc367c0a", null ],
     [ "matchSubnet", "classpcpp_1_1_i_pv6_address.html#ae9015eccc285e177ed21b1099eda1648", null ],
     [ "operator!=", "classpcpp_1_1_i_pv6_address.html#a66e7fbf148e8730df77d2aa9f4051b67", null ],

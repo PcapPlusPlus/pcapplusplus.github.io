@@ -105,6 +105,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a071111967b79ee8df07cc54d3b294233"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af643ac254cde788ff54574f838197bd3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_address.html#af643ac254cde788ff54574f838197bd3">toString</a> () const</td></tr>
 <tr class="separator:af643ac254cde788ff54574f838197bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab84e4b17cc8a81b72d06be8387b1c98c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_address.html#ab84e4b17cc8a81b72d06be8387b1c98c">isMulticast</a> () const</td></tr>
+<tr class="separator:ab84e4b17cc8a81b72d06be8387b1c98c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f2135107f3212d69f436c1edc367c0a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_address.html#a7f2135107f3212d69f436c1edc367c0a">isValid</a> () const</td></tr>
 <tr class="separator:a7f2135107f3212d69f436c1edc367c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8994593833bb1cd96c9c8d534adb1e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_address.html#af8994593833bb1cd96c9c8d534adb1e6">operator==</a> (const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> &amp;rhs) const</td></tr>
@@ -124,6 +126,8 @@ Public Member Functions</h2></td></tr>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a4a55ced93d845d18f36b01805811c93d"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_address.html#a4a55ced93d845d18f36b01805811c93d">Zero</a></td></tr>
 <tr class="separator:a4a55ced93d845d18f36b01805811c93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0123d8ca888a624fb835e2fbf113d2cf"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_address.html#a0123d8ca888a624fb835e2fbf113d2cf">MulticastRangeLowerBound</a></td></tr>
+<tr class="separator:a0123d8ca888a624fb835e2fbf113d2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents an IPv6 address (of type xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx). </p>
@@ -275,6 +279,24 @@ Static Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ab84e4b17cc8a81b72d06be8387b1c98c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab84e4b17cc8a81b72d06be8387b1c98c">&#9670;&nbsp;</a></span>isMulticast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::IPv6Address::isMulticast </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Determine whether the address is a multicast address </p><dl class="section return"><dt>Returns</dt><dd>True if an address is multicast </dd></dl>
 
 </div>
 </div>
@@ -465,6 +487,29 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a0123d8ca888a624fb835e2fbf113d2cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0123d8ca888a624fb835e2fbf113d2cf">&#9670;&nbsp;</a></span>MulticastRangeLowerBound</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> pcpp::IPv6Address::MulticastRangeLowerBound</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A static value representing the lower bound of IPv6 multicast ranges. The bound is inclusive. MulticastRangeLowerBound is initialized to "ff00:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0". In order to check whether the address is a multicast address the isMulticast method can be used. </p>
+
+</div>
+</div>
 <a id="a4a55ced93d845d18f36b01805811c93d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4a55ced93d845d18f36b01805811c93d">&#9670;&nbsp;</a></span>Zero</h2>
 
@@ -494,7 +539,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a></li>
-    <li class="footer">Generated on Thu Apr 8 2021 08:34:05 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Apr 13 2021 06:42:49 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

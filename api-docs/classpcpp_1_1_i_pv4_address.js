@@ -4,6 +4,7 @@ var classpcpp_1_1_i_pv4_address =
     [ "IPv4Address", "classpcpp_1_1_i_pv4_address.html#a329a4f44a6a4139850351188bb1a139c", null ],
     [ "IPv4Address", "classpcpp_1_1_i_pv4_address.html#aa25dc03222399468a0f23afcb5325935", null ],
     [ "IPv4Address", "classpcpp_1_1_i_pv4_address.html#a5881f8a346543fa171c32474e1ae130f", null ],
+    [ "isMulticast", "classpcpp_1_1_i_pv4_address.html#ad51ed35f792f82bdbfb34d58607a04fc", null ],
     [ "isValid", "classpcpp_1_1_i_pv4_address.html#aa8132c15a9e74f3407d4dcd510f35cd6", null ],
     [ "matchSubnet", "classpcpp_1_1_i_pv4_address.html#a01d6c0c03879b02699aa7801d080287e", null ],
     [ "matchSubnet", "classpcpp_1_1_i_pv4_address.html#a2334fc86178ecdd35531b784e880e514", null ],

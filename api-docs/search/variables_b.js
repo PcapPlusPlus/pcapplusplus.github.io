@@ -14,5 +14,6 @@ var searchData=
   ['mpls',['MPLS',['../namespacepcpp.html#a2f69fdca66dec264f99da6e3de96345c',1,'pcpp']]],
   ['mtu',['mtu',['../structpcpp_1_1_kni_device_1_1_kni_device_configuration.html#a367e9fa4227ef174aff1f4c9a0f85ab6',1,'pcpp::KniDevice::KniDeviceConfiguration']]],
   ['multicastaddress',['multicastAddress',['../structpcpp_1_1igmpv3__group__record.html#a7ccef33a9eb41a061d180b96b8b8c41f',1,'pcpp::igmpv3_group_record']]],
+  ['multicastrangelowerbound',['MulticastRangeLowerBound',['../classpcpp_1_1_i_pv4_address.html#a0b0cb3d61241bf631cb1b5e31a08759b',1,'pcpp::IPv4Address::MulticastRangeLowerBound()'],['../classpcpp_1_1_i_pv6_address.html#a0123d8ca888a624fb835e2fbf113d2cf',1,'pcpp::IPv6Address::MulticastRangeLowerBound()']]],
   ['myautonomoussystem',['myAutonomousSystem',['../structpcpp_1_1_bgp_open_message_layer_1_1bgp__open__message.html#a9973998b4cc7b7d86bf4e7a23856bc14',1,'pcpp::BgpOpenMessageLayer::bgp_open_message']]]
 ];

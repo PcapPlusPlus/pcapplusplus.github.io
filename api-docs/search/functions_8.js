@@ -71,6 +71,7 @@ var searchData=
   ['ismessagecomplete',['isMessageComplete',['../classpcpp_1_1_s_s_l_handshake_message.html#aaa26b1077f88aa38a539ee803ac8360c',1,'pcpp::SSLHandshakeMessage']]],
   ['ismessageoftype',['isMessageOfType',['../classpcpp_1_1_icmp_layer.html#a95140b023993113ca90f22ac0d4e2e66',1,'pcpp::IcmpLayer']]],
   ['ismorefragments',['isMoreFragments',['../classpcpp_1_1_i_pv6_fragmentation_header.html#a7d881f04c7ded1cb9359a2c85e470d69',1,'pcpp::IPv6FragmentationHeader']]],
+  ['ismulticast',['isMulticast',['../classpcpp_1_1_i_pv4_address.html#ad51ed35f792f82bdbfb34d58607a04fc',1,'pcpp::IPv4Address::isMulticast()'],['../classpcpp_1_1_i_pv6_address.html#ab84e4b17cc8a81b72d06be8387b1c98c',1,'pcpp::IPv6Address::isMulticast()'],['../classpcpp_1_1_i_p_address.html#ad71cfa17f6142f3a64fa2e5d523f3d6a',1,'pcpp::IPAddress::isMulticast()']]],
   ['isnotnull',['isNotNull',['../classpcpp_1_1_t_l_v_record.html#af9f8f16e981234de966fe4fa720e2fdf',1,'pcpp::TLVRecord']]],
   ['isnull',['isNull',['../classpcpp_1_1_gtp_v1_layer_1_1_gtp_extension.html#ac38160d78935609690860b9050b3da65',1,'pcpp::GtpV1Layer::GtpExtension::isNull()'],['../classpcpp_1_1_t_l_v_record.html#ac1cd877753e605b2fb671510d21597b3',1,'pcpp::TLVRecord::isNull()']]],
   ['isopened',['isOpened',['../classpcpp_1_1_i_device.html#a5b75e7491597f271b8f29847bec2ee99',1,'pcpp::IDevice']]],
