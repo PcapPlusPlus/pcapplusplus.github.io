@@ -234,7 +234,7 @@ Next step is to assign cores for these two worker threads to run on. DPDK enforc
 int workersCoreMask = 0;
 for (int i = 1; i <= 2; i++)
 {
-    workersCoreMask = workersCoreMask | (1 << (i+1));
+    workersCoreMask = workersCoreMask | (1 << i);
 }
 ```
 
