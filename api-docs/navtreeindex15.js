@@ -1,5 +1,8 @@
 var NAVTREEINDEX15 =
 {
+"structpcpp_1_1ether__header.html#a466d328a654e445f4d9cb594ff1486ff":[4,0,0,32,2],
+"structpcpp_1_1ether__header.html#a6fbac47e840aa3f6055d0b97c684bd45":[4,0,0,32,0],
+"structpcpp_1_1gre1__header.html":[4,0,0,37],
 "structpcpp_1_1gre1__header.html#a727e2a2affa2696a0177475af78a196b":[4,0,0,37,1],
 "structpcpp_1_1gre1__header.html#a8b495794c197d8cb79aff47177784f9b":[4,0,0,37,0],
 "structpcpp_1_1gre__basic__header.html":[4,0,0,38],

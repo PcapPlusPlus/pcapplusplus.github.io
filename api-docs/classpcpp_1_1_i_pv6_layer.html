@@ -126,6 +126,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afb6afe8df6a87ceb26ac8e27f5de17b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01dfc89d0b79444a7a5328ef9ef4e32a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_layer.html#a01dfc89d0b79444a7a5328ef9ef4e32a">getSrcIPv6Address</a> () const</td></tr>
 <tr class="separator:a01dfc89d0b79444a7a5328ef9ef4e32a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbebada9aa964bccf877ab3f0b7472a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_layer.html#abbebada9aa964bccf877ab3f0b7472a5">setSrcIPv6Address</a> (const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> &amp;ipAddr)</td></tr>
+<tr class="separator:abbebada9aa964bccf877ab3f0b7472a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a808290d89efd528608a536b58fc5aea9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_layer.html#a808290d89efd528608a536b58fc5aea9">setDstIPv6Address</a> (const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> &amp;ipAddr)</td></tr>
+<tr class="separator:a808290d89efd528608a536b58fc5aea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08367d5d88a039be73b0915d7a635889"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_layer.html#a08367d5d88a039be73b0915d7a635889">getDstIPAddress</a> () const</td></tr>
 <tr class="separator:a08367d5d88a039be73b0915d7a635889"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc2fbb545944fa6fe37fbb6479a7ccfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_layer.html#adc2fbb545944fa6fe37fbb6479a7ccfa">getDstIpAddress</a> () const</td></tr>
@@ -177,6 +181,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a019a07d6f9d8fc7eb233e61826b11964 inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d76629f081c34424c63794f4cf75a5a inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a0d76629f081c34424c63794f4cf75a5a">getDataPtr</a> (size_t offset=0) const</td></tr>
 <tr class="separator:a0d76629f081c34424c63794f4cf75a5a inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classpcpp_1_1_i_p_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_i_p_layer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_p_layer.html">pcpp::IPLayer</a></td></tr>
+<tr class="memitem:a1f4340c851a49c6a33170c9825db3c83 inherit pub_methods_classpcpp_1_1_i_p_layer"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_layer.html#a1f4340c851a49c6a33170c9825db3c83">~IPLayer</a> ()</td></tr>
+<tr class="separator:a1f4340c851a49c6a33170c9825db3c83 inherit pub_methods_classpcpp_1_1_i_p_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -801,6 +808,70 @@ template&lt;class TIPv6Extension &gt; </div>
 
 </div>
 </div>
+<a id="a808290d89efd528608a536b58fc5aea9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a808290d89efd528608a536b58fc5aea9">&#9670;&nbsp;</a></span>setDstIPv6Address()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::IPv6Layer::setDstIPv6Address </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> &amp;&#160;</td>
+          <td class="paramname"><em>ipAddr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the dest IP address </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ipAddr</td><td>The IP address to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abbebada9aa964bccf877ab3f0b7472a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbebada9aa964bccf877ab3f0b7472a5">&#9670;&nbsp;</a></span>setSrcIPv6Address()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::IPv6Layer::setSrcIPv6Address </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> &amp;&#160;</td>
+          <td class="paramname"><em>ipAddr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the source IP address </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ipAddr</td><td>The IP address to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a1361b70fd135057ec66249a328641257"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1361b70fd135057ec66249a328641257">&#9670;&nbsp;</a></span>toString()</h2>
 
@@ -835,7 +906,7 @@ template&lt;class TIPv6Extension &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_pv6_layer.html">IPv6Layer</a></li>
-    <li class="footer">Generated on Fri May 28 2021 06:51:36 for PcapPlusPlus by
+    <li class="footer">Generated on Sat May 29 2021 07:51:41 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

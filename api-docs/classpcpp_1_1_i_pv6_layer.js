@@ -22,5 +22,7 @@ var classpcpp_1_1_i_pv6_layer =
     [ "operator=", "classpcpp_1_1_i_pv6_layer.html#a8677acd397608ff8535b88cf66e656c7", null ],
     [ "parseNextLayer", "classpcpp_1_1_i_pv6_layer.html#a494abc8a7bfc1a520c86e61fee3a2f46", null ],
     [ "removeAllExtensions", "classpcpp_1_1_i_pv6_layer.html#a3201693539a2f88cc5a4710384e0b03d", null ],
+    [ "setDstIPv6Address", "classpcpp_1_1_i_pv6_layer.html#a808290d89efd528608a536b58fc5aea9", null ],
+    [ "setSrcIPv6Address", "classpcpp_1_1_i_pv6_layer.html#abbebada9aa964bccf877ab3f0b7472a5", null ],
     [ "toString", "classpcpp_1_1_i_pv6_layer.html#a1361b70fd135057ec66249a328641257", null ]
 ];
