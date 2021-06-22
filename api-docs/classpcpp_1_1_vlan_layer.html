@@ -106,8 +106,8 @@ Inheritance diagram for pcpp::VlanLayer:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5f6f8f15642dd1f0a88550bde0fb51b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_vlan_layer.html#a5f6f8f15642dd1f0a88550bde0fb51b0">VlanLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_layer.html">Layer</a> *prevLayer, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet)</td></tr>
 <tr class="separator:a5f6f8f15642dd1f0a88550bde0fb51b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35cf7eaece6f8eec9d722dfbc24cf8f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_vlan_layer.html#a35cf7eaece6f8eec9d722dfbc24cf8f0">VlanLayer</a> (const uint16_t vlanID, bool cfi, uint8_t priority, uint16_t etherType)</td></tr>
-<tr class="separator:a35cf7eaece6f8eec9d722dfbc24cf8f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f0f8a200a5956b6e1bd52c6c1311b5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_vlan_layer.html#a3f0f8a200a5956b6e1bd52c6c1311b5b">VlanLayer</a> (const uint16_t vlanID, bool cfi, uint8_t priority, uint16_t etherType=0)</td></tr>
+<tr class="separator:a3f0f8a200a5956b6e1bd52c6c1311b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67a01cdf9bab94ed23c5182775f4baf5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpcpp_1_1vlan__header.html">vlan_header</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_vlan_layer.html#a67a01cdf9bab94ed23c5182775f4baf5">getVlanHeader</a> () const</td></tr>
 <tr class="separator:a67a01cdf9bab94ed23c5182775f4baf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a0c09dcb6672f4ac371df94502bea16"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_vlan_layer.html#a2a0c09dcb6672f4ac371df94502bea16">getVlanID</a> () const</td></tr>
@@ -216,8 +216,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a35cf7eaece6f8eec9d722dfbc24cf8f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35cf7eaece6f8eec9d722dfbc24cf8f0">&#9670;&nbsp;</a></span>VlanLayer() <span class="overload">[2/2]</span></h2>
+<a id="a3f0f8a200a5956b6e1bd52c6c1311b5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f0f8a200a5956b6e1bd52c6c1311b5b">&#9670;&nbsp;</a></span>VlanLayer() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,7 +244,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>etherType</em>&#160;</td>
+          <td class="paramname"><em>etherType</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -258,7 +258,7 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">vlanID</td><td>VLAN ID </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">cfi</td><td>CFI value </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">priority</td><td>Priority value </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">etherType</td><td>Protocol EtherType of the next layer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">etherType</td><td>Protocol EtherType of the next layer. It's an optional parameter, a value of 0 will be set if not provided </td></tr>
   </table>
   </dd>
 </dl>
@@ -284,11 +284,11 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Does nothing for this layer </p>
+<p>Calculate the EtherType for known protocols: IPv4, IPv6, ARP, VLAN </p>
 
 <p>Implements <a class="el" href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">pcpp::Layer</a>.</p>
 
@@ -564,7 +564,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_vlan_layer.html">VlanLayer</a></li>
-    <li class="footer">Generated on Tue Jun 22 2021 05:17:27 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Jun 22 2021 19:19:08 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
