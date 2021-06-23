@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"classpcpp_1_1_kni_device.html#a6baf3b2af2d5edd81e85d57a7a7a5ae3":[4,0,0,110,27],
 "classpcpp_1_1_kni_device.html#a7039519dc1d34590bb4a8b31ebc3ffe2":[4,0,0,110,31],
 "classpcpp_1_1_kni_device.html#a84eb855f4a1ca4df14d23374b752edd6":[4,0,0,110,28],
 "classpcpp_1_1_kni_device.html#a85fadba90e945dcbb8915684f862e483":[4,0,0,110,16],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "classpcpp_1_1_packet.html#a8db6d1f014dc0827c8cef731e8090d5e":[4,0,0,125,13],
 "classpcpp_1_1_packet.html#a952f7939f5044c45bef2bde38ed22b61":[4,0,0,125,12],
 "classpcpp_1_1_packet.html#a99db82a5813c139b538a09ae195f2bf4":[4,0,0,125,15],
-"classpcpp_1_1_packet.html#a9af7caebc8d97ac92910d8a91186b461":[4,0,0,125,3],
-"classpcpp_1_1_packet.html#aa207dcf476921fbd53959e7da47ad1ac":[4,0,0,125,11]
+"classpcpp_1_1_packet.html#a9af7caebc8d97ac92910d8a91186b461":[4,0,0,125,3]
 };

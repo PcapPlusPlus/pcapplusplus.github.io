@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"classpcpp_1_1_dns_resource_data_ptr.html#aa1da14c94bfb858d89d6a5434d203f58":[4,0,0,25,1],
 "classpcpp_1_1_dns_resource_data_ptr.html#ac370de94daaf77d21e39f5648e149c09":[4,0,0,25,0],
 "classpcpp_1_1_dns_resource_data_ptr.html#ad8a149d31dc9e4081cd1db433ee06052":[4,0,0,25,2],
 "classpcpp_1_1_dpdk_device.html":[4,0,0,26],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "classpcpp_1_1_http_response_first_line_1_1_http_response_first_line_exception.html":[4,0,0,48,0],
 "classpcpp_1_1_http_response_layer.html":[4,0,0,49],
 "classpcpp_1_1_http_response_layer.html#a47e92e0f0065f5601b7e895b2321469b":[4,0,0,49,1],
-"classpcpp_1_1_http_response_layer.html#a8b517c19b23d18c18e410a8c041e6ea2":[4,0,0,49,2],
-"classpcpp_1_1_http_response_layer.html#a99b9bc0ece59bce01b7023b302472d91":[4,0,0,49,7]
+"classpcpp_1_1_http_response_layer.html#a8b517c19b23d18c18e410a8c041e6ea2":[4,0,0,49,2]
 };
