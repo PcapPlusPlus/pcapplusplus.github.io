@@ -26,6 +26,12 @@ Pre-compiled packages are available for recent versions of Ubuntu, Fedora and Ce
 ./install.sh
 ```
 
+Another option is using [Homebrew on Linux](https://docs.brew.sh/Homebrew-on-Linux) if you have it installed on your system:
+
+```shell
+brew install pcapplusplus
+```
+
 If you have other Linux distribution, another version of the distribution mentioned above or other GCC version you'll need to [build PcapPlusPlus from source]({{ site.baseurl }}/docs/install/build-source/linux). Make sure not to skip the [installation]({{ site.baseurl }}/docs/install/build-source/linux#installation) part.
 
 ## Step 2 - create your first app

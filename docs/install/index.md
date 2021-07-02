@@ -20,9 +20,9 @@ You can choose between downloading pre-built binaries or build it from source. T
 
 ## Homebrew
 
-Available for: <img src="{{ site.baseurl }}/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/> 
+Available for: <img src="{{ site.baseurl }}/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/> <img src="{{ site.baseurl }}/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/>
 
-PcapPlusPlus pre-built binaries are available in Homebrew on MacOS. You can install it by running the following command from the command-line:
+PcapPlusPlus pre-built binaries are available in Homebrew on MacOS and Linux. You can install it by running the following command from the command-line:
 
 ```bash
 brew install pcapplusplus
@@ -45,7 +45,7 @@ conan install pcapplusplus/{{ site.pcapplusplus_ver_num }}@bincrafters/stable -r
 
 ## Latest Release From GitHub
 
-Available for: <img src="{{ site.baseurl }}/resources/logo-windows.png" alt="drawing" width="24" title="Windows"/> <img src="{{ site.baseurl }}/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> <img src="{{ site.baseurl }}/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/> <img src="{{ site.baseurl }}/resources/logo-freebsd.png" alt="drawing" width="24" title="FreeBSD"/> 
+Available for: <img src="{{ site.baseurl }}/resources/logo-windows.png" alt="drawing" width="24" title="Windows"/> <img src="{{ site.baseurl }}/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> <img src="{{ site.baseurl }}/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/> <img src="{{ site.baseurl }}/resources/logo-freebsd.png" alt="drawing" width="24" title="FreeBSD"/> <img src="{{ site.baseurl }}/resources/logo-android.png" alt="drawing" width="24" title="Android"/>
 
 [Download Latest Release: {{ site.pcapplusplus_ver }}](https://github.com/seladb/PcapPlusPlus/releases/latest){: .btn .btn-purple } {% include new-release.html %}
 
