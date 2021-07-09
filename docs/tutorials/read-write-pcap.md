@@ -146,19 +146,19 @@ Another feature I'd like to demonstrate is getting reader/writer statistics. The
 
 ```cpp
 // create the stats object
-pcap_stat stats;
+pcpp::IPcapDevice::PcapStats stats;
 
 // read stats from reader and print them
 reader->getStatistics(stats);
-printf("Read %d packets successfully and %d packets could not be read\n", stats.ps_recv, stats.ps_drop);
+printf("Read %d packets successfully and %d packets could not be read\n", stats.packetsRecv, stats.packetsDrop);
 
 // read stats from pcap writer and print them
 pcapWriter.getStatistics(stats);
-printf("Written %d packets successfully to pcap writer and %d packets could not be written\n", stats.ps_recv, stats.ps_drop);
+printf("Written %d packets successfully to pcap writer and %d packets could not be written\n", stats.packetsRecv, stats.packetsDrop);
 
 // read stats from pcap-ng writer and print them
 pcapNgWriter.getStatistics(stats);
-printf("Written %d packets successfully to pcap-ng writer and %d packets could not be written\n", stats.ps_recv, stats.ps_drop);
+printf("Written %d packets successfully to pcap-ng writer and %d packets could not be written\n", stats.packetsRecv, stats.packetsDrop);
 ```
 
 We're done reading and writing packets. The only thing left is closing the reader and writers. We also need to free the reader because it was created by the `pcpp::IFileReaderDevice::getReader()` static method.
