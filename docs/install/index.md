@@ -30,18 +30,31 @@ brew install pcapplusplus
 
 You can also find the PcapPlusPlus formula here: <https://formulae.brew.sh/formula/pcapplusplus>
 
-## Conan
+## Vcpkg
 
 Available for: <img src="{{ site.baseurl }}/resources/logo-windows.png" alt="drawing" width="24" title="Windows"/> <img src="{{ site.baseurl }}/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> <img src="{{ site.baseurl }}/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/>
 
-PcapPlusPlus pre-built binaries are available in Conan for Windows (Visual Studio), Linux and MacOS. The package is managed by the [Bincrafters](https://bincrafters.github.io/) team and is available in [Bintray](https://bintray.com/bincrafters/public-conan/pcapplusplus%3Abincrafters).
+PcapPlusPlus port is available in Vcpkg on Windows, MacOS and Linux. You can install it by running the following command from the command-line:
 
-To install the package run the following commands from the command-line:
+Windows:
 
-```bash
-conan remote add public-conan https://api.bintray.com/conan/bincrafters/public-conan
-conan install pcapplusplus/{{ site.pcapplusplus_ver_num }}@bincrafters/stable -r public-conan
+```text
+.\vcpkg install pcapplusplus
 ```
+
+MacOS/Linux:
+
+```text
+vcpkg install pcapplusplus
+```
+
+You can also find the PcapPlusPlus port details here: <https://github.com/microsoft/vcpkg/tree/master/ports/pcapplusplus>
+
+## Conan - coming soon!
+
+<img src="{{ site.baseurl }}/resources/coming-soon.png" alt="drawing" width="100" title="Coming soon..."/>
+
+Conan support is still work-in-progress...
 
 ## Latest Release From GitHub
 
