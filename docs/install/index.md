@@ -34,7 +34,7 @@ You can also find the PcapPlusPlus formula here: <https://formulae.brew.sh/formu
 
 Available for: <img src="{{ site.baseurl }}/resources/logo-windows.png" alt="drawing" width="24" title="Windows"/> <img src="{{ site.baseurl }}/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> <img src="{{ site.baseurl }}/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/>
 
-PcapPlusPlus port is available in Vcpkg on Windows, MacOS and Linux. You can install it by running the following command from the command-line:
+PcapPlusPlus Vcpkg port is available on Windows, MacOS and Linux. You can install it by running the following command from the command-line:
 
 Windows:
 
@@ -50,11 +50,17 @@ vcpkg install pcapplusplus
 
 You can also find the PcapPlusPlus port details here: <https://github.com/microsoft/vcpkg/tree/master/ports/pcapplusplus>
 
-## Conan - coming soon!
+## Conan
 
-<img src="{{ site.baseurl }}/resources/coming-soon.png" alt="drawing" width="100" title="Coming soon..."/>
+Available for: <img src="{{ site.baseurl }}/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> <img src="{{ site.baseurl }}/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/>
 
-Conan support is still work-in-progress...
+PcapPlusPlus Conan package is available on Linux and MacOS. You can install it by running the following command from the command-line:
+
+```text
+conan install pcapplusplus/21.05@
+```
+
+This command will fetch PcapPlusPlus directly from ConanCenter: <https://conan.io/center/pcapplusplus>
 
 ## Latest Release From GitHub
 
