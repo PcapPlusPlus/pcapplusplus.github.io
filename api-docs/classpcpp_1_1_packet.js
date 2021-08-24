@@ -1,6 +1,7 @@
 var classpcpp_1_1_packet =
 [
     [ "Packet", "classpcpp_1_1_packet.html#a1a6d4e157661ba7ec6f552c78c82d7fa", null ],
+    [ "Packet", "classpcpp_1_1_packet.html#a55c68b56daa9ac792c1f9741221c21ed", null ],
     [ "Packet", "classpcpp_1_1_packet.html#aaf61c3f9a5c12a7047774b42f31ee2ec", null ],
     [ "Packet", "classpcpp_1_1_packet.html#aa9b12034dca53509c273e4ef954b8099", null ],
     [ "Packet", "classpcpp_1_1_packet.html#a9af7caebc8d97ac92910d8a91186b461", null ],

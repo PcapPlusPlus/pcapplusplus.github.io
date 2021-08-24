@@ -96,6 +96,8 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_packet.html','');});
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1a6d4e157661ba7ec6f552c78c82d7fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#a1a6d4e157661ba7ec6f552c78c82d7fa">Packet</a> (size_t maxPacketLen=1)</td></tr>
 <tr class="separator:a1a6d4e157661ba7ec6f552c78c82d7fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55c68b56daa9ac792c1f9741221c21ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#a55c68b56daa9ac792c1f9741221c21ed">Packet</a> (uint8_t *buffer, size_t bufferSize)</td></tr>
+<tr class="separator:a55c68b56daa9ac792c1f9741221c21ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf61c3f9a5c12a7047774b42f31ee2ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#aaf61c3f9a5c12a7047774b42f31ee2ec">Packet</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *rawPacket, bool freeRawPacket=false, <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> parseUntil=<a class="el" href="namespacepcpp.html#ad94e3dd833f818889f676d2352eac829">UnknownProtocol</a>, <a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> parseUntilLayer=<a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">OsiModelLayerUnknown</a>)</td></tr>
 <tr class="separator:aaf61c3f9a5c12a7047774b42f31ee2ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9b12034dca53509c273e4ef954b8099"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#aa9b12034dca53509c273e4ef954b8099">Packet</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *rawPacket, <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> parseUntil)</td></tr>
@@ -159,7 +161,7 @@ Public Member Functions</h2></td></tr>
  <a class="el" href="classpcpp_1_1_packet.html">Packet</a> instance isn't read only. The user can add or remove layers, update current layer, etc. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1a6d4e157661ba7ec6f552c78c82d7fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a6d4e157661ba7ec6f552c78c82d7fa">&#9670;&nbsp;</a></span>Packet() <span class="overload">[1/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a6d4e157661ba7ec6f552c78c82d7fa">&#9670;&nbsp;</a></span>Packet() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -173,7 +175,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A constructor for creating a new packet. Very useful when creating packets. When using this constructor an empty raw buffer is allocated (with the size of maxPacketLen) and a new <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> is created </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A constructor for creating a new packet (with no layers). When using this constructor an empty raw buffer is allocated (with the size of maxPacketLen) and a new <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> is created </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">maxPacketLen</td><td>The expected packet length in bytes </td></tr>
   </table>
@@ -182,8 +184,43 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a55c68b56daa9ac792c1f9741221c21ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55c68b56daa9ac792c1f9741221c21ed">&#9670;&nbsp;</a></span>Packet() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::Packet::Packet </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>bufferSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A constructor for creating a new packet with a buffer that is pre-allocated by the user. The packet is created empty (with no layers), which means the constructor doesn't parse the data in the buffer. Instead, all of the raw data of this packet it written to this buffer: whenever a layer is added, it's data is written to this buffer. The buffer isn't freed and it's content isn't erased when the packet object is deleted. This constructor is useful when you already have a memory buffer and you want to create packet data in it. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer</td><td>A pointer to a pre-allocated memory buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bufferSize</td><td>The size of the buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aaf61c3f9a5c12a7047774b42f31ee2ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf61c3f9a5c12a7047774b42f31ee2ec">&#9670;&nbsp;</a></span>Packet() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf61c3f9a5c12a7047774b42f31ee2ec">&#9670;&nbsp;</a></span>Packet() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -232,7 +269,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa9b12034dca53509c273e4ef954b8099"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9b12034dca53509c273e4ef954b8099">&#9670;&nbsp;</a></span>Packet() <span class="overload">[3/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9b12034dca53509c273e4ef954b8099">&#9670;&nbsp;</a></span>Packet() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -267,7 +304,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a9af7caebc8d97ac92910d8a91186b461"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9af7caebc8d97ac92910d8a91186b461">&#9670;&nbsp;</a></span>Packet() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9af7caebc8d97ac92910d8a91186b461">&#9670;&nbsp;</a></span>Packet() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -328,7 +365,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a11d603615d2f100eec547d51b4a6282e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11d603615d2f100eec547d51b4a6282e">&#9670;&nbsp;</a></span>Packet() <span class="overload">[5/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a11d603615d2f100eec547d51b4a6282e">&#9670;&nbsp;</a></span>Packet() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1024,7 +1061,7 @@ template&lt;class TLayer &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_packet.html">Packet</a></li>
-    <li class="footer">Generated on Fri Aug 20 2021 09:09:37 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Aug 24 2021 08:49:41 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
