@@ -54,11 +54,7 @@ var files =
     [ "HttpLayer.h", "_http_layer_8h.html", "_http_layer_8h" ],
     [ "IcmpLayer.h", "_icmp_layer_8h.html", "_icmp_layer_8h" ],
     [ "IgmpLayer.h", "_igmp_layer_8h.html", "_igmp_layer_8h" ],
-    [ "IpAddress.h", "_ip_address_8h.html", [
-      [ "IPv4Address", "classpcpp_1_1_i_pv4_address.html", "classpcpp_1_1_i_pv4_address" ],
-      [ "IPv6Address", "classpcpp_1_1_i_pv6_address.html", "classpcpp_1_1_i_pv6_address" ],
-      [ "IPAddress", "classpcpp_1_1_i_p_address.html", "classpcpp_1_1_i_p_address" ]
-    ] ],
+    [ "IpAddress.h", "_ip_address_8h.html", "_ip_address_8h" ],
     [ "IPLayer.h", "_i_p_layer_8h.html", [
       [ "IPLayer", "classpcpp_1_1_i_p_layer.html", "classpcpp_1_1_i_p_layer" ]
     ] ],
@@ -97,9 +93,7 @@ var files =
     [ "LRUList.h", "_l_r_u_list_8h.html", [
       [ "LRUList", "classpcpp_1_1_l_r_u_list.html", "classpcpp_1_1_l_r_u_list" ]
     ] ],
-    [ "MacAddress.h", "_mac_address_8h.html", [
-      [ "MacAddress", "classpcpp_1_1_mac_address.html", "classpcpp_1_1_mac_address" ]
-    ] ],
+    [ "MacAddress.h", "_mac_address_8h.html", "_mac_address_8h" ],
     [ "MBufRawPacket.h", "_m_buf_raw_packet_8h_source.html", null ],
     [ "MplsLayer.h", "_mpls_layer_8h.html", [
       [ "MplsLayer", "classpcpp_1_1_mpls_layer.html", "classpcpp_1_1_mpls_layer" ]
