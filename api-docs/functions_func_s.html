@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 : <a class="el" href="classpcpp_1_1_icmp_layer.html#a156d4f76ec75ace8b6fff64219fcc140">pcpp::IcmpLayer</a>
 </li>
 <li>setAllModlesToLogLevel()
-: <a class="el" href="classpcpp_1_1_logger_p_p.html#a031c0e504a537e5921687ab2450bbc04">pcpp::LoggerPP</a>
+: <a class="el" href="classpcpp_1_1_logger.html#a8b20c3d798d80a3f66c4132fd833f37e">pcpp::Logger</a>
 </li>
 <li>setAuthenticatorValue()
 : <a class="el" href="classpcpp_1_1_radius_layer.html#a67b8bba9bdbd7c114e61bfa30c11bc8e">pcpp::RadiusLayer</a>
@@ -165,7 +165,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 : <a class="el" href="classpcpp_1_1_i_dns_resource.html#a15c4d0513904997e4b77cc11526d204e">pcpp::IDnsResource</a>
 </li>
 <li>setDpdkLogLevel()
-: <a class="el" href="classpcpp_1_1_dpdk_device_list.html#a550bddaf268440874c84c56a0b68672f">pcpp::DpdkDeviceList</a>
+: <a class="el" href="classpcpp_1_1_dpdk_device_list.html#ab25d65e776a3fe8b132114adba185b42">pcpp::DpdkDeviceList</a>
 </li>
 <li>setDstIP()
 : <a class="el" href="classpcpp_1_1_i_p_reassembly_1_1_i_pv4_packet_key.html#a3f08e39cd7a151f1006521e8b29dfd8a">pcpp::IPReassembly::IPv4PacketKey</a>
@@ -185,9 +185,6 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 </li>
 <li>setEndTime()
 : <a class="el" href="structpcpp_1_1_connection_data.html#ae4b2d922bf240422c8550ced90e1300e">pcpp::ConnectionData</a>
-</li>
-<li>setErrorString()
-: <a class="el" href="classpcpp_1_1_logger_p_p.html#a99c1db3a69ae2f55b08df135ee706080">pcpp::LoggerPP</a>
 </li>
 <li>setEtherType()
 : <a class="el" href="classpcpp_1_1_ether_type_filter.html#a65af479a0460c96693a720e4f41fe0ca">pcpp::EtherTypeFilter</a>
@@ -255,7 +252,10 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 : <a class="el" href="classpcpp_1_1_kni_device.html#aa16790972282b1abaf1116dc6cd32355">pcpp::KniDevice</a>
 </li>
 <li>setLogLevel()
-: <a class="el" href="classpcpp_1_1_logger_p_p.html#a8869da5bc6e76719c57942b12f8f36f6">pcpp::LoggerPP</a>
+: <a class="el" href="classpcpp_1_1_logger.html#a36bf4e1ed39f9f4cb1d19fd97cb994b6">pcpp::Logger</a>
+</li>
+<li>setLogPrinter()
+: <a class="el" href="classpcpp_1_1_logger.html#a05aa16e3582946c75318abd582ea500a">pcpp::Logger</a>
 </li>
 <li>setMacAddress()
 : <a class="el" href="classpcpp_1_1_kni_device.html#a6baf3b2af2d5edd81e85d57a7a7a5ae3">pcpp::KniDevice</a>
@@ -537,7 +537,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 <li>startCapture()
 : <a class="el" href="classpcpp_1_1_kni_device.html#a3f5f48e1e2950cb3f2385d1bdda5a25e">pcpp::KniDevice</a>
 , <a class="el" href="classpcpp_1_1_pcap_live_device.html#a2933139d284d7c167283982ec8b56559">pcpp::PcapLiveDevice</a>
-, <a class="el" href="classpcpp_1_1_win_pcap_live_device.html#a70126c098779937e5ce88360966c7aa1">pcpp::WinPcapLiveDevice</a>
+, <a class="el" href="classpcpp_1_1_win_pcap_live_device.html#adc89b5d18a2a00f078d339189d2f7c62">pcpp::WinPcapLiveDevice</a>
 </li>
 <li>startCaptureBlockingMode()
 : <a class="el" href="classpcpp_1_1_kni_device.html#a7039519dc1d34590bb4a8b31ebc3ffe2">pcpp::KniDevice</a>
@@ -577,8 +577,8 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 <li>StringDnsResourceData()
 : <a class="el" href="classpcpp_1_1_string_dns_resource_data.html#af47b8943630f686bffd2e340f97e1c6c">pcpp::StringDnsResourceData</a>
 </li>
-<li>suppressErrors()
-: <a class="el" href="classpcpp_1_1_logger_p_p.html#aab2f6fe53cd9887b1cee0cfe792d2b90">pcpp::LoggerPP</a>
+<li>suppressLogs()
+: <a class="el" href="classpcpp_1_1_logger.html#acfffd12a85299929559ca494154be3d7">pcpp::Logger</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -586,7 +586,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Sep 8 2021 07:11:16 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Sep 14 2021 02:31:12 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

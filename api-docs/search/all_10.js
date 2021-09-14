@@ -69,6 +69,7 @@ var searchData=
   ['reserved6_5f8',['reserved6_8',['../structpcpp_1_1vxlan__header.html#ada8c68230dd90d8400398c333216a9f3',1,'pcpp::vxlan_header']]],
   ['reserved9',['reserved9',['../structpcpp_1_1vxlan__header.html#a738ed06e14b53ae9938503ecdd218bb8',1,'pcpp::vxlan_header']]],
   ['reset',['reset',['../classpcpp_1_1_pcap_live_device_list.html#af4e002ab316a892b4ea46f5294447830',1,'pcpp::PcapLiveDeviceList']]],
+  ['resetlogprinter',['resetLogPrinter',['../classpcpp_1_1_logger.html#a90be870adb5dad753552392ffe2c89dd',1,'pcpp::Logger']]],
   ['responsecode',['responseCode',['../structpcpp_1_1dnshdr.html#a13e46f496586640b3f2810601f4200c4',1,'pcpp::dnshdr']]],
   ['roundrobin',['RoundRobin',['../classpcpp_1_1_pf_ring_device.html#a2a7113725490fea52c9702998e6a8f78a707c1b0c55e37f2cb7d4978370332712',1,'pcpp::PfRingDevice']]],
   ['routeraddress',['routerAddress',['../structpcpp_1_1icmp__router__address__structure.html#a5d698807f7397470f2c04a54fe862e37',1,'pcpp::icmp_router_address_structure']]],

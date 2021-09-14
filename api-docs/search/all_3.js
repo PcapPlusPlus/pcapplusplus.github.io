@@ -3,7 +3,7 @@ var searchData=
   ['data',['data',['../structpcpp_1_1_bgp_update_message_layer_1_1path__attribute.html#a4da2f449d4915aa75e5f8d5b755fe16a',1,'pcpp::BgpUpdateMessageLayer::path_attribute::data()'],['../structpcpp_1_1icmp__echo__request.html#ae817d79a4d209c620bdf074ddc2c5a52',1,'pcpp::icmp_echo_request::data()']]],
   ['datalength',['dataLength',['../structpcpp_1_1icmp__echo__request.html#a4ed0221d15cb8465ae37cb8cc4311386',1,'pcpp::icmp_echo_request']]],
   ['dataoffset',['dataOffset',['../structpcpp_1_1tcphdr.html#a593a30084c297a99ea01b76fce5c5b11',1,'pcpp::tcphdr']]],
-  ['debug',['Debug',['../classpcpp_1_1_logger_p_p.html#a522254c250da7b12b5b4817b84c208b6a9aac958741048520b21a0e150d30b397',1,'pcpp::LoggerPP']]],
+  ['debug',['Debug',['../classpcpp_1_1_logger.html#a28f78fb4d16392bc4ce6ec4c2b2dd651a050ee28dcbc0ef93265747f180df168d',1,'pcpp::Logger']]],
   ['default_5fip_5fttl',['DEFAULT_IP_TTL',['../namespacepcpp.html#a211aac29a5c4d0b7844926cfd369c32ca52613a0f6470ba606c5b755e5c32d59c',1,'pcpp']]],
   ['defaulttimeout',['DefaultTimeout',['../classpcpp_1_1_network_utils.html#a6c8310c11abf274e400a9b2be59ab873',1,'pcpp::NetworkUtils']]],
   ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]],

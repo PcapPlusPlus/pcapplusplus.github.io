@@ -221,7 +221,7 @@ var hierarchy =
     [ "pcpp::KniDevice::KniOldIoctlCallbacks", "structpcpp_1_1_kni_device_1_1_kni_old_ioctl_callbacks.html", null ],
     [ "pcpp::DpdkDevice::LinkStatus", "structpcpp_1_1_dpdk_device_1_1_link_status.html", null ],
     [ "pcpp::LinuxNicInformationSocket", "classpcpp_1_1_linux_nic_information_socket.html", null ],
-    [ "pcpp::LoggerPP", "classpcpp_1_1_logger_p_p.html", null ],
+    [ "pcpp::Logger", "classpcpp_1_1_logger.html", null ],
     [ "pcpp::LRUList< T >", "classpcpp_1_1_l_r_u_list.html", null ],
     [ "pcpp::LRUList< uint32_t >", "classpcpp_1_1_l_r_u_list.html", null ],
     [ "pcpp::MacAddress", "classpcpp_1_1_mac_address.html", null ],

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['debug',['Debug',['../classpcpp_1_1_logger_p_p.html#a522254c250da7b12b5b4817b84c208b6a9aac958741048520b21a0e150d30b397',1,'pcpp::LoggerPP']]],
+  ['debug',['Debug',['../classpcpp_1_1_logger.html#a28f78fb4d16392bc4ce6ec4c2b2dd651a050ee28dcbc0ef93265747f180df168d',1,'pcpp::Logger']]],
   ['default_5fip_5fttl',['DEFAULT_IP_TTL',['../namespacepcpp.html#a211aac29a5c4d0b7844926cfd369c32ca52613a0f6470ba606c5b755e5c32d59c',1,'pcpp']]],
   ['dhcp_5fack',['DHCP_ACK',['../namespacepcpp.html#a960a2fb425b0c54c217309ff6215a0deac094d7ad5204b559d5881e7c16e7a17f',1,'pcpp']]],
   ['dhcp_5fbootreply',['DHCP_BOOTREPLY',['../namespacepcpp.html#a977d5d1fabe89dba06443bbca6a711bbad6aa627bfd992b58dcb027c7c453483f',1,'pcpp']]],

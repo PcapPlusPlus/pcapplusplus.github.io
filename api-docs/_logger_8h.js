@@ -1,6 +1,6 @@
 var _logger_8h =
 [
-    [ "LoggerPP", "classpcpp_1_1_logger_p_p.html", "classpcpp_1_1_logger_p_p" ],
+    [ "Logger", "classpcpp_1_1_logger.html", "classpcpp_1_1_logger" ],
     [ "LogModule", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1a", [
       [ "CommonLogModuleIpUtils", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa488fbdb95747a99c14eed410adaedeba", null ],
       [ "CommonLogModuleTablePrinter", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa19e1e3077dd9686b33d231086d30fab0", null ],

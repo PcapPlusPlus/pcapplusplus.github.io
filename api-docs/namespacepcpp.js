@@ -114,7 +114,7 @@ var namespacepcpp =
     [ "KniDeviceList", "classpcpp_1_1_kni_device_list.html", "classpcpp_1_1_kni_device_list" ],
     [ "Layer", "classpcpp_1_1_layer.html", "classpcpp_1_1_layer" ],
     [ "LinuxNicInformationSocket", "classpcpp_1_1_linux_nic_information_socket.html", "classpcpp_1_1_linux_nic_information_socket" ],
-    [ "LoggerPP", "classpcpp_1_1_logger_p_p.html", "classpcpp_1_1_logger_p_p" ],
+    [ "Logger", "classpcpp_1_1_logger.html", "classpcpp_1_1_logger" ],
     [ "LRUList", "classpcpp_1_1_l_r_u_list.html", "classpcpp_1_1_l_r_u_list" ],
     [ "MacAddress", "classpcpp_1_1_mac_address.html", "classpcpp_1_1_mac_address" ],
     [ "MacAddressFilter", "classpcpp_1_1_mac_address_filter.html", "classpcpp_1_1_mac_address_filter" ],

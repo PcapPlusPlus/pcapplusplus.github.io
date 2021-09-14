@@ -33,5 +33,6 @@ var searchData=
   ['removetag',['removeTag',['../classpcpp_1_1_p_p_po_e_discovery_layer.html#aaa3f807f3db2c33ae7bf157a2ecae951',1,'pcpp::PPPoEDiscoveryLayer']]],
   ['removetcpoption',['removeTcpOption',['../classpcpp_1_1_tcp_layer.html#ac24e0b402da8a1489379e80876eb8dcf',1,'pcpp::TcpLayer']]],
   ['reset',['reset',['../classpcpp_1_1_pcap_live_device_list.html#af4e002ab316a892b4ea46f5294447830',1,'pcpp::PcapLiveDeviceList']]],
+  ['resetlogprinter',['resetLogPrinter',['../classpcpp_1_1_logger.html#a90be870adb5dad753552392ffe2c89dd',1,'pcpp::Logger']]],
   ['run',['run',['../classpcpp_1_1_dpdk_worker_thread.html#adf8c2b08e51679b20e9f56e166483492',1,'pcpp::DpdkWorkerThread']]]
 ];
