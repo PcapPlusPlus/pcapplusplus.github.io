@@ -31,8 +31,10 @@ In this tutorial we'll write a simple application that demonstrates how to captu
 Let's start out application with a "main" method and a single include to "PcapLiveDeviceList.h". This header file contains another include to "PcapLiveDevice.h" and those 2 files contain all the APIs for capturing and sending packets:
 
 ```cpp
+#include <iostream>
 #include "stdlib.h"
 #include "PcapLiveDeviceList.h"
+#include "SystemUtils.h"
 
 /**
 * main method of the application
@@ -50,11 +52,11 @@ The next step would be to find the `PcapLiveDevice` or `WinPcapLiveDevice` insta
 std::string interfaceIPAddr = "10.0.0.1";
 
 // find the interface by IP address
-pcpp::PcapLiveDevice* dev = pcpp::PcapLiveDeviceList::getInstance().getPcapLiveDeviceByIp(interfaceIPAddr.c_str());
+pcpp::PcapLiveDevice* dev = pcpp::PcapLiveDeviceList::getInstance().getPcapLiveDeviceByIp(interfaceIPAddr);
 if (dev == NULL)
 {
-    printf("Cannot find interface with IPv4 address of '%s'\n", interfaceIPAddr.c_str());
-    exit(1);
+    std::cerr << "Cannot find interface with IPv4 address of '" << interfaceIPAddr << "'" << std::endl;
+    return 1;
 }
 ```
 
@@ -73,20 +75,16 @@ The next lines of code demonstrate how to get the following information:
 
 ```cpp
 // before capturing packets let's print some info about this interface
-printf("Interface info:\n");
-// get interface name
-printf("   Interface name:        %s\n", dev->getName().c_str());
-// get interface description
-printf("   Interface description: %s\n", dev->getDesc().c_str());
-// get interface MAC address
-printf("   MAC address:           %s\n", dev->getMacAddress().toString().c_str());
-// get default gateway for interface
-printf("   Default gateway:       %s\n", dev->getDefaultGateway().toString().c_str());
-// get interface MTU
-printf("   Interface MTU:         %d\n", dev->getMtu());
-// get DNS server if defined for this interface
+std::cout
+    << "Interface info:" << std::endl
+    << "   Interface name:        " << dev->getName() << std::endl // get interface name
+    << "   Interface description: " << dev->getDesc() << std::endl // get interface description
+    << "   MAC address:           " << dev->getMacAddress() << std::endl // get interface MAC address
+    << "   Default gateway:       " << dev->getDefaultGateway() << std::endl // get default gateway
+    << "   Interface MTU:         " << dev->getMtu() << std::endl; // get interface MTU
+
 if (dev->getDnsServers().size() > 0)
-    printf("   DNS server:            %s\n", dev->getDnsServers().at(0).toString().c_str());
+    std::cout << "   DNS server:            " << dev->getDnsServers().at(0) << std::endl;
 ```
 
 ## Capturing packets
@@ -97,8 +95,8 @@ Now let's move on to capturing packets. Before start capturing we must first ope
 // open the device before start capturing/sending packets
 if (!dev->open())
 {
-    printf("Cannot open device\n");
-    exit(1);
+    std::cerr << "Cannot open device" << std::endl;
+    return 1;
 }
 ```
 
@@ -157,14 +155,15 @@ struct PacketStats
     */
     void printToConsole()
     {
-        printf("Ethernet packet count: %d\n", ethPacketCount);
-        printf("IPv4 packet count:     %d\n", ipv4PacketCount);
-        printf("IPv6 packet count:     %d\n", ipv6PacketCount);
-        printf("TCP packet count:      %d\n", tcpPacketCount);
-        printf("UDP packet count:      %d\n", udpPacketCount);
-        printf("DNS packet count:      %d\n", dnsPacketCount);
-        printf("HTTP packet count:     %d\n", httpPacketCount);
-        printf("SSL packet count:      %d\n", sslPacketCount);
+        std::cout
+            << "Ethernet packet count: " << ethPacketCount << std::endl
+            << "IPv4 packet count:     " << ipv4PacketCount << std::endl
+            << "IPv6 packet count:     " << ipv6PacketCount << std::endl
+            << "TCP packet count:      " << tcpPacketCount << std::endl
+            << "UDP packet count:      " << udpPacketCount << std::endl
+            << "DNS packet count:      " << dnsPacketCount << std::endl
+            << "HTTP packet count:     " << httpPacketCount << std::endl
+            << "SSL packet count:      " << sslPacketCount << std::endl;
     }
 };
 ```
@@ -208,7 +207,7 @@ As you can see this callback is doing something pretty simple: cast the cookie a
 Now let's activate the packet capture and pass it a pointer to the callback and a pointer to the `PacketStats` instance we created:
 
 ```cpp
-printf("\nStarting async capture...\n");
+std::cout << std::endl << "Starting async capture..." << std::endl;
 
 // start capture in async mode. Give a callback function to call to whenever a packet is captured and the stats object as the cookie
 dev->startCapture(onPacketArrives, &stats);
@@ -228,11 +227,13 @@ PCAP_SLEEP(10);
 
 // stop capturing packets
 dev->stopCapture();
+```
 
 In the meantime, while the main thread was sleeping, packets were (hopefully) captured by the packet capture thread and information was collected in the `PacketStats` instance. So let's print the results:
 
+```cpp
 // print results
-printf("Results:\n");
+std::cout << "Results:" << std::endl;
 stats.printToConsole();
 ```
 
@@ -260,7 +261,7 @@ PcapPlusPlus provides a class for representing a list of raw packet pointers. It
 So let's create an instance of `RawPacketVector` and start the packet capture:
 
 ```cpp
-printf("\nStarting capture with packet vector...\n");
+std::cout << std::endl << "Starting capture with packet vector..." << std::endl;
 
 // create an empty packet vector object
 pcpp::RawPacketVector packetVec;
@@ -297,7 +298,7 @@ Now let's print the results:
 
 ```cpp
 // print results
-printf("Results:\n");
+std::cout << "Results:" << std::endl;
 stats.printToConsole();
 ```
 
@@ -345,7 +346,7 @@ As you can see the callback accepts several parameters: a pointer to the packet 
 Now let's start the packet capture. Here, of course, we don't need to sleep as everything is happening on the main thread. But we do want to stop the capture at some point (please remember we always return "false" in the callback so that won't stop the capturing). Here is where the timeout feature comes in hand: when starting the packet capture you can provide a timeout of when to stop the packet capture (if not previously stopped by returning "true" from the callback function). If you provide a timeout of 0 or less it's like saying there is no timeout and the capture will continue until a "true" value is returned from the callback. The timeout unit is in seconds
 
 ```cpp
-printf("\nStarting capture in blocking mode...\n");
+std::cout << std::endl << "Starting capture in blocking mode..." << std::endl;
 
 // clear stats
 stats.clear();
@@ -356,7 +357,7 @@ dev->startCaptureBlockingMode(onPacketArrivesBlockingMode, &stats, 10);
 // thread is blocked until capture is finished
 
 // capture is finished, print results
-printf("Results:\n");
+std::cout << "Results:" << std::endl;
 stats.printToConsole();
 ```
 
@@ -384,7 +385,7 @@ Until now we saw the different methods of capturing packets. But `PcapLiveDevice
 Let's start with sending one raw packet. In this example we'll use the raw packet vector we collected from the packet capture in the previous section, iterate on it and send each packet to the network one by one. Let's look at the code first:
 
 ```cpp
-printf("\nSending %d packets one by one...\n", (int)packetVec.size());
+std::cout << std::endl << "Sending " << packetVec.size() << " packets one by one..." << std::endl;
 
 // go over the vector of packets and send them one by one
 for (pcpp::RawPacketVector::ConstVectorIterator iter = packetVec.begin(); iter != packetVec.end(); iter++)
@@ -392,11 +393,11 @@ for (pcpp::RawPacketVector::ConstVectorIterator iter = packetVec.begin(); iter !
     // send the packet. If fails exit the application
     if (!dev->sendPacket(**iter))
     {
-        printf("Couldn't send packet\n");
-        exit(1);
+        std::cerr << "Couldn't send packet" << std::endl;
+        return 1;
     }
 }
-printf("%d packets sent\n", (int)packetVec.size());
+std::cout << packetVec.size() << " packets sent" << std::endl;
 ```
 
 As you can see we send each packet using the `dev->sendPacket()` method. Notice the return value is a boolean saying whether the packet was sent successfully or not.
@@ -404,12 +405,12 @@ As you can see we send each packet using the `dev->sendPacket()` method. Notice 
 Now let's demonstrate sending a bunch of packets. Here we'll only demonstrate sending a raw packet list (`RawPacketVector`). Let's see the code:
 
 ```cpp
-printf("\nSending %d packets...\n", (int)packetVec.size());
+std::cout << std::endl << "Sending " << packetVec.size() << " packets..." << std::endl;
 
 // send all packets in the vector. The returned number shows how many packets were actually sent (expected to be equal to vector size)
 int packetsSent = dev->sendPackets(packetVec);
 
-printf("%d packets sent\n", packetsSent);
+std::cout << packetsSent << " packets sent" << std::endl;
 ```
 
 As you can see we're using the same raw packet list from the previous section. The return value is how many packets were sent successfully.
@@ -457,7 +458,7 @@ dev->setFilter(andFilter);
 Now let's write some code to capture packets from the network and print the results (we use the same asynchronous capturing using a callback function method learnt in the previous sections):
 
 ```cpp
-printf("\nStarting packet capture with a filter in place...\n");
+std::cout << std::endl << "Starting packet capture with a filter in place..." << std::endl;
 
 // start capture in async mode. Give a callback function to call to whenever a packet is captured and the stats object as the cookie
 dev->startCapture(onPacketArrives, &stats);
@@ -469,7 +470,7 @@ PCAP_SLEEP(10);
 dev->stopCapture();
 
 // print results - should capture only packets which match the filter (which is TCP port 80)
-printf("Results:\n");
+std::cout << "Results:" << std::endl;
 stats.printToConsole();
 ```
 
