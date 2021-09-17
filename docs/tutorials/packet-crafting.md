@@ -36,6 +36,7 @@ For further information about these protocols and the other protocols supported 
 In this part of the tutorial we'll read a packet from a pcap file, let PcapPlusPlus parse it, and then see how we can edit and change the data in each layer. Let's start by writing a `main()` method and add the includes that we need:
 
 ```cpp
+#include <iostream>
 #include "stdlib.h"
 #include "SystemUtils.h"
 #include "Packet.h"
@@ -66,22 +67,22 @@ pcpp::IFileReaderDevice* reader = pcpp::IFileReaderDevice::getReader("1_http_pac
 // verify that a reader interface was indeed created
 if (reader == NULL)
 {
-    printf("Cannot determine reader for file type\n");
-    exit(1);
+    std::cerr << "Cannot determine reader for file type" << std::endl;
+    return 1;
 }
 
 // open the reader for reading
 if (!reader->open())
 {
-    printf("Cannot open input.pcap for reading\n");
-    exit(1);
+    std::cerr << "Cannot open input.pcap for reading" << std::endl;
+    return 1;
 }
 
 // read the first (and only) packet from the file
 pcpp::RawPacket rawPacket;
 if (!reader->getNextPacket(rawPacket))
 {
-    printf("Couldn't read the first packet in the file\n");
+    std::cerr << "Couldn't read the first packet in the file" << std::endl;
     return 1;
 }
 
@@ -114,7 +115,7 @@ Ethernet layer is quite simple, let's move to a more complex layer - **IPv4**, a
 // let's get the IPv4 layer
 pcpp::IPv4Layer* ipLayer = parsedPacket.getLayerOfType<pcpp::IPv4Layer>();
 // change source IP address
-ipLayer->setSrcIPv4Address(pcpp::IPv4Address(std::string("1.1.1.1")));
+ipLayer->setSrcIPv4Address(pcpp::IPv4Address("1.1.1.1"));
 // change IP ID
 ipLayer->getIPv4Header()->ipId = pcpp::hostToNet16(4000);
 // change TTL value
@@ -219,7 +220,7 @@ Now let's move on to the second layer - **IPv4**:
 
 ```cpp
 // create a new IPv4 layer
-pcpp::IPv4Layer newIPLayer(pcpp::IPv4Address(std::string("192.168.1.1")), pcpp::IPv4Address(std::string("10.0.0.1")));
+pcpp::IPv4Layer newIPLayer(pcpp::IPv4Address("192.168.1.1"), pcpp::IPv4Address("10.0.0.1"));
 newIPLayer.getIPv4Header()->ipId = pcpp::hostToNet16(2000);
 newIPLayer.getIPv4Header()->timeToLive = 64;
 ```
