@@ -35,6 +35,7 @@ In this tutorial we'll write a simple application that reads and writes packets 
 So let's start our application with a "main" method and a single include to "PcapFileDevice.h" which contains all the API for reading and writing packets from/to files
 
 ```cpp
+#include <iostream>
 #include "stdlib.h"
 #include "PcapFileDevice.h"
 
@@ -59,8 +60,8 @@ pcpp::IFileReaderDevice* reader = pcpp::IFileReaderDevice::getReader("input.pcap
 // verify that a reader interface was indeed created
 if (reader == NULL)
 {
-    printf("Cannot determine reader for file type\n");
-    exit(1);
+    std::cerr << "Cannot determine reader for file type" << std::endl;
+    return 1;
 }
 ```
 
@@ -72,8 +73,8 @@ Now let's open the reader for reading:
 // open the reader for reading
 if (!reader->open())
 {
-    printf("Cannot open input.pcap for reading\n");
-    exit(1);
+    std::cerr << "Cannot open input.pcap for reading" << std::endl;
+    return 1;
 }
 ```
 
@@ -89,8 +90,8 @@ pcpp::PcapFileWriterDevice pcapWriter("output.pcap", pcpp::LINKTYPE_ETHERNET);
 // try to open the file for writing
 if (!pcapWriter.open())
 {
-    printf("Cannot open output.pcap for writing\n");
-    exit(1);
+    std::cerr << "Cannot open output.pcap for writing" << std::endl;
+    return 1;
 }
 ```
 
@@ -106,8 +107,8 @@ pcpp::PcapNgFileWriterDevice pcapNgWriter("output.pcapng");
 // try to open the file for writing
 if (!pcapNgWriter.open())
 {
-    printf("Cannot open output.pcapng for writing\n");
-    exit(1);
+    std::cerr << "Cannot open output.pcapng for writing" << std::endl;
+    return 1;
 }
 ```
 
@@ -119,8 +120,8 @@ Another cool feature in file readers is setting a BPF filter so only packets tha
 // set a BPF filter for the reader - only packets that match the filter will be read
 if (!reader->setFilter("net 98.138.19.88"))
 {
-    printf("Cannot set filter for file reader\n");
-    exit(1);
+    std::cerr << "Cannot set filter for file reader" << std::endl;
+    return 1;
 }
 ```
 
@@ -150,15 +151,15 @@ pcpp::IPcapDevice::PcapStats stats;
 
 // read stats from reader and print them
 reader->getStatistics(stats);
-printf("Read %d packets successfully and %d packets could not be read\n", stats.packetsRecv, stats.packetsDrop);
+std::cout << "Read " << stats.packetsRecv << " packets successfully and " << stats.packetsDrop << " packets could not be read" << std::endl;
 
 // read stats from pcap writer and print them
 pcapWriter.getStatistics(stats);
-printf("Written %d packets successfully to pcap writer and %d packets could not be written\n", stats.packetsRecv, stats.packetsDrop);
+std::cout << "Written " << stats.packetsRecv << " packets successfully to pcap writer and " << stats.packetsDrop << " packets could not be written" << std::endl;
 
 // read stats from pcap-ng writer and print them
 pcapNgWriter.getStatistics(stats);
-printf("Written %d packets successfully to pcap-ng writer and %d packets could not be written\n", stats.packetsRecv, stats.packetsDrop);
+std::cout << "Written " << stats.packetsRecv << " packets successfully to pcap-ng writer and " << stats.packetsDrop << " packets could not be written" << std::endl;
 ```
 
 We're done reading and writing packets. The only thing left is closing the reader and writers. We also need to free the reader because it was created by the `pcpp::IFileReaderDevice::getReader()` static method.
@@ -194,8 +195,8 @@ PcapPlusPlus enables appending packets to existing pcap/pcap-ng files. This mean
 // try to open the file for writing in append mode
 if (!pcapWriter.open(true))
 {
-    printf("Cannot open output.pcap for writing in append mode\n");
-    exit(1);
+    std::cerr << "Cannot open output.pcap for writing in append mode" << std::endl;
+    return 1;
 }
 ```
 
