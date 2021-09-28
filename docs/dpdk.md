@@ -41,31 +41,22 @@ PcapPlusPlus tries to cover the main functionality of DPDK and its most importan
 
 The following DPDK versions are currently supported:
 
+- DPDK 20.11 (LTS)
 - DPDK 19.11 (LTS)
-- DPDK 19.08
-- DPDK 19.02
 - DPDK 18.11 (LTS)
-- DPDK 18.08
-- DPDK 18.05
-- DPDK 18.02
-- DPDK 17.11 (LTS)
-- DPDK 17.08
-- DPDK 17.05
-- DPDK 17.02
-- DPDK 16.11 (LTS)
+- DPDK 17.11 (LTS) (not regularly tested)
 
 Older and newer versions may not work.
+The non-LTS versions may also work, but are not regularly tested.
 
 In addition, not all poll-mode drivers (PMDs) were tested, but the majority of them should work. Please report an issue if the PMD you're using isn't working.
 
 The following operating systems and configurations were tested:
 
-- Ubuntu 20.04, 18.04, 16.04 LTS 64bit with kernel version > 3 and gcc version >= 4.8
-- CentOS 7.1 64bit with kernel 3.x and gcc 4.8.x
+- Ubuntu 20.04, 18.04 LTS 64bit with kernel version > 3 and gcc version >= 4.8
+- CentOS 7.1 64bit with kernel 3.x and gcc 4.8.x (not regularly tested)
 
-### Download and install DPDK
-
-You can find DPDK installation instructions in [DPDK web-site](http://dpdk.org/download).
+### Download and install DPDK - prior to DPDK 20.11
 
 Building and installing DPDK is pretty straight-forward and in a nutshell goes like this:
 
@@ -74,9 +65,23 @@ $ cd /dpdk/source/location
 $ make config T=[platform_type_string] && make
 ```
 
+### Download and install DPDK - DPDK 20.11 forward
+
+DPDK changed their whole build system in version 20.11 and is now using `meson` and `ninja`. The full build instructions can be found [here](https://doc.dpdk.org/guides-20.11/linux_gsg/build_dpdk.html), but here are the important steps in short:
+
+```shell
+$ meson build
+$ cd build
+$ ninja
+$ ninja install
+$ ldconfig
+```
+
+It is important to build and install DPDK and also run `ldconfig` as mentioned in the documentation, otherwise PcapPlusPlus won't be able to find the DPDK binaries during the link process.
+
 ### PcapPlusPlus configuration for DPDK
 
-toolOnce the DPDK build is completed successfully, run PcapPlusPlus configuration script (`configure-linux.sh`) to build PcapPlusPlus with DPDK. Please refer to the [configuration instructions]({{ site.baseurl }}/docs/install/build-source/linux#configuration) to get more details.
+Once the DPDK build is completed successfully, run PcapPlusPlus configuration script (`configure-linux.sh`) to build PcapPlusPlus with DPDK. Please refer to the [configuration instructions]({{ site.baseurl }}/docs/install/build-source/linux#configuration) to get more details.
 
 ### DPDK initialization with PcapPlusPlus
 
@@ -87,21 +92,21 @@ DPDK has two steps of initialization: one that sets up Linux to run DPDK applica
 Several Linux configuration steps are needed to run DPDK applications:
 
 - DPDK uses Linux huge-pages for faster virtual to physical page conversion resulting in better performance. Huge-pages must be set before a DPDK application is run
-- DPDK uses a designated kernel module for kernel bypass (`igb_uio.ko`). This module needs to be loaded into the kernel
+- DPDK uses a designated kernel module for kernel bypass (there are 3 supported options: `igb_uio`, `uio_pci_generic`, `vfio-pci`). This module needs to be loaded into the kernel if not already loaded
 - One or more NICs should move from Linux control to DPDK control
 - For DPDK KNI there is one more kernel to be loaded into the kernel (`rte_kni.ko`)
 
-PcapPlusPlus offers a python script that automatically configures all of the above. The script is located in PcapPlusPlus root directory and is named `setup_dpdk.py`. It is based on the [`dpdk-devbind` tool that ships with DPDK](https://doc.dpdk.org/guides/tools/devbind.html) and extends it with more functionality. The script supports both Python 2.7 and 3+.
+PcapPlusPlus offers a python script that automatically configures all of the above. The script is located in PcapPlusPlus root directory and is named `setup_dpdk.py`. It is based on the [`dpdk-devbind` tool that ships with DPDK](https://doc.dpdk.org/guides/tools/devbind.html) and extends it with more functionality. The script supports Python 3+.
 
 This script has 3 modes of operation: `setup` to configure the steps mentioned above, `status` to view the status of all known network interfaces, and `restore` to go back to the original Linux configuration.
 
-{% include alert.html alert-type="tip" content="Note: this script uses another file named `setup_dpdk_settings.dat` to keep information needed for restoring the Linux configuration. This files is also located in PcapPlusPlus root directory. Please do not remove this file" %}
+{% include alert.html alert-type="tip" content="Note: this script uses another file named `setup_dpdk_settings.dat` to keep information needed for restoring the Linux configuration. This file is also located in PcapPlusPlus root directory. Please do not remove this file" %}
 
 __Setup__ - takes the following parameters:
 
 | `-g`, `--huge-pages` `AMOUNT` | The amount of huge pages to allocate. By default each huge-page size is 2048KB |
 | `-i`, `--interface` `NIC_NAME [NIC_NAME ...]` | A space-separated list of all NICs that should move from Linux to DPDK control. Only these NICs can be used by DPDK, the others will stay under Linux control |
-| `-m`, `--dpdk-module` `{igb_uio,uio_pci_generic}` | The DPDK module to install. If not specified the default is `igb_uio` |
+| `-m`, `--dpdk-module` `{igb_uio,uio_pci_generic,vfio-pci}` | The DPDK module to load. If not specified the default is `igb_uio`. __NOTE:__ in DPDK 20.11 `igb_uio` was moved outside of the DPDK repo into a [separate repo](https://git.dpdk.org/dpdk-kmods) which means it doesn't come out of the box and needs to be built separately. However the recommendation is to use either `vfio-pci` or `uio_pci_generic` which come as part of most Linux distros. You can read more about it [here](https://doc.dpdk.org/guides/linux_gsg/linux_drivers.html) |
 | `-k`, `--load-kni` | Install the KNI kernel module (not loaded by default) |
 | `-p`, `--kni-params` `KNI_PARAMS` | Optional parameters for installing the KNI kernel module |
 | `-v`, `--verbose` | Print more verbose output |
