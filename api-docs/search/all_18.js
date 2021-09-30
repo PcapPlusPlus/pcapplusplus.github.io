@@ -29,12 +29,13 @@ var searchData=
   ['_7epcapngfilewriterdevice',['~PcapNgFileWriterDevice',['../classpcpp_1_1_pcap_ng_file_writer_device.html#a93312aab61a193df522f8046af6d291e',1,'pcpp::PcapNgFileWriterDevice']]],
   ['_7epfringdevice',['~PfRingDevice',['../classpcpp_1_1_pf_ring_device.html#a72463fcbd7eae62523c58fec6ecd2385',1,'pcpp::PfRingDevice']]],
   ['_7epointervector',['~PointerVector',['../classpcpp_1_1_pointer_vector.html#a848d21f6b51f10f8207197ea2609a85d',1,'pcpp::PointerVector']]],
+  ['_7epppoetag',['~PPPoETag',['../classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag.html#aa68e9339caf0990bf93120e9eb06ce74',1,'pcpp::PPPoEDiscoveryLayer::PPPoETag']]],
   ['_7eradiusattribute',['~RadiusAttribute',['../classpcpp_1_1_radius_attribute.html#af50c0eb7d7498e51c21201e8dfd946e8',1,'pcpp::RadiusAttribute']]],
   ['_7eradiuslayer',['~RadiusLayer',['../classpcpp_1_1_radius_layer.html#a262ced9bfe44889a43874957a06dde61',1,'pcpp::RadiusLayer']]],
   ['_7erawpacket',['~RawPacket',['../classpcpp_1_1_raw_packet.html#abb8b8a3574217ab88b406cba3d2551fb',1,'pcpp::RawPacket']]],
   ['_7erawsocketdevice',['~RawSocketDevice',['../classpcpp_1_1_raw_socket_device.html#a16669eaf3e120d99ff07a07223aca9b6',1,'pcpp::RawSocketDevice']]],
   ['_7etableprinter',['~TablePrinter',['../classpcpp_1_1_table_printer.html#a5005ab3050d077f8cd2496ce47a263d2',1,'pcpp::TablePrinter']]],
   ['_7etcpoption',['~TcpOption',['../classpcpp_1_1_tcp_option.html#a96cb9a2d3cdf31e208ff180981686ab3',1,'pcpp::TcpOption']]],
-  ['_7etlvrecord',['~TLVRecord',['../classpcpp_1_1_t_l_v_record.html#aceee59b58ee528adcc4fa4f4902d35ec',1,'pcpp::TLVRecord']]],
+  ['_7etlvrecord',['~TLVRecord',['../classpcpp_1_1_t_l_v_record.html#af13172efa5e96f1bcad08b53819307a3',1,'pcpp::TLVRecord']]],
   ['_7etlvrecordreader',['~TLVRecordReader',['../classpcpp_1_1_t_l_v_record_reader.html#ae9e5156649400b8043ee0a1fa2e4bd0a',1,'pcpp::TLVRecordReader']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PcapPlusPlus: pcpp::TLVRecord::TLVRawData Struct Reference</title>
+<title>PcapPlusPlus: pcpp::TLVRecord&lt; TRecType, TRecLen &gt;::TLVRawData Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,7 +86,7 @@ $(document).ready(function(){initNavTree('structpcpp_1_1_t_l_v_record_1_1_t_l_v_
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structpcpp_1_1_t_l_v_record_1_1_t_l_v_raw_data-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::TLVRecord::TLVRawData Struct Reference</div>  </div>
+<div class="title">pcpp::TLVRecord&lt; TRecType, TRecLen &gt;::TLVRawData Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -94,24 +94,29 @@ $(document).ready(function(){initNavTree('structpcpp_1_1_t_l_v_record_1_1_t_l_v_
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a127038b9ab8ee1cb3475e7064ac0299d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_t_l_v_record_1_1_t_l_v_raw_data.html#a127038b9ab8ee1cb3475e7064ac0299d">recordType</a></td></tr>
-<tr class="separator:a127038b9ab8ee1cb3475e7064ac0299d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4062a2e11c5882fe480b0adc803b3f8"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_t_l_v_record_1_1_t_l_v_raw_data.html#ad4062a2e11c5882fe480b0adc803b3f8">recordLen</a></td></tr>
-<tr class="separator:ad4062a2e11c5882fe480b0adc803b3f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d596e5016d0595feea7413ea3dfb9eb"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_t_l_v_record_1_1_t_l_v_raw_data.html#a0d596e5016d0595feea7413ea3dfb9eb">recordValue</a> []</td></tr>
-<tr class="separator:a0d596e5016d0595feea7413ea3dfb9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b2ee279b34e5ed5c1ae4bf941d6f77e"><td class="memItemLeft" align="right" valign="top">TRecType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_t_l_v_record_1_1_t_l_v_raw_data.html#a4b2ee279b34e5ed5c1ae4bf941d6f77e">recordType</a></td></tr>
+<tr class="separator:a4b2ee279b34e5ed5c1ae4bf941d6f77e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d4ad68c1622140b8e3c01fa873db8d"><td class="memItemLeft" align="right" valign="top">TRecLen&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_t_l_v_record_1_1_t_l_v_raw_data.html#a64d4ad68c1622140b8e3c01fa873db8d">recordLen</a></td></tr>
+<tr class="separator:a64d4ad68c1622140b8e3c01fa873db8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3535899bfd262b5fd109b7c22833125b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_t_l_v_record_1_1_t_l_v_raw_data.html#a3535899bfd262b5fd109b7c22833125b">recordValue</a> []</td></tr>
+<tr class="separator:a3535899bfd262b5fd109b7c22833125b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A struct representing the TLV construct </p>
+<div class="textblock"><h3>template&lt;typename TRecType, typename TRecLen&gt;<br />
+struct pcpp::TLVRecord&lt; TRecType, TRecLen &gt;::TLVRawData</h3>
+
+<p>A struct representing the TLV construct </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="ad4062a2e11c5882fe480b0adc803b3f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4062a2e11c5882fe480b0adc803b3f8">&#9670;&nbsp;</a></span>recordLen</h2>
+<a id="a64d4ad68c1622140b8e3c01fa873db8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64d4ad68c1622140b8e3c01fa873db8d">&#9670;&nbsp;</a></span>recordLen</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename TRecType, typename TRecLen&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t pcpp::TLVRecord::TLVRawData::recordLen</td>
+          <td class="memname">TRecLen <a class="el" href="classpcpp_1_1_t_l_v_record.html">pcpp::TLVRecord</a>&lt; TRecType, TRecLen &gt;::TLVRawData::recordLen</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -119,14 +124,16 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a127038b9ab8ee1cb3475e7064ac0299d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a127038b9ab8ee1cb3475e7064ac0299d">&#9670;&nbsp;</a></span>recordType</h2>
+<a id="a4b2ee279b34e5ed5c1ae4bf941d6f77e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b2ee279b34e5ed5c1ae4bf941d6f77e">&#9670;&nbsp;</a></span>recordType</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename TRecType, typename TRecLen&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t pcpp::TLVRecord::TLVRawData::recordType</td>
+          <td class="memname">TRecType <a class="el" href="classpcpp_1_1_t_l_v_record.html">pcpp::TLVRecord</a>&lt; TRecType, TRecLen &gt;::TLVRawData::recordType</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -134,14 +141,16 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a0d596e5016d0595feea7413ea3dfb9eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d596e5016d0595feea7413ea3dfb9eb">&#9670;&nbsp;</a></span>recordValue</h2>
+<a id="a3535899bfd262b5fd109b7c22833125b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3535899bfd262b5fd109b7c22833125b">&#9670;&nbsp;</a></span>recordValue</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename TRecType, typename TRecLen&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t pcpp::TLVRecord::TLVRawData::recordValue[]</td>
+          <td class="memname">uint8_t <a class="el" href="classpcpp_1_1_t_l_v_record.html">pcpp::TLVRecord</a>&lt; TRecType, TRecLen &gt;::TLVRawData::recordValue[]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -155,7 +164,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a></li><li class="navelem"><a class="el" href="structpcpp_1_1_t_l_v_record_1_1_t_l_v_raw_data.html">TLVRawData</a></li>
-    <li class="footer">Generated on Tue Sep 28 2021 08:10:27 for PcapPlusPlus by
+    <li class="footer">Generated on Thu Sep 30 2021 09:29:11 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

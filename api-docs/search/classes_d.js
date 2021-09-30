@@ -32,7 +32,8 @@ var searchData=
   ['pppoediscoverylayer',['PPPoEDiscoveryLayer',['../classpcpp_1_1_p_p_po_e_discovery_layer.html',1,'pcpp']]],
   ['pppoelayer',['PPPoELayer',['../classpcpp_1_1_p_p_po_e_layer.html',1,'pcpp']]],
   ['pppoesessionlayer',['PPPoESessionLayer',['../classpcpp_1_1_p_p_po_e_session_layer.html',1,'pcpp']]],
-  ['pppoetag',['PPPoETag',['../structpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag.html',1,'pcpp::PPPoEDiscoveryLayer']]],
+  ['pppoetag',['PPPoETag',['../classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag.html',1,'pcpp::PPPoEDiscoveryLayer']]],
+  ['pppoetagbuilder',['PPPoETagBuilder',['../classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag_builder.html',1,'pcpp::PPPoEDiscoveryLayer']]],
   ['prefix_5fand_5fip',['prefix_and_ip',['../structpcpp_1_1_bgp_update_message_layer_1_1prefix__and__ip.html',1,'pcpp::BgpUpdateMessageLayer']]],
   ['protofilter',['ProtoFilter',['../classpcpp_1_1_proto_filter.html',1,'pcpp']]]
 ];

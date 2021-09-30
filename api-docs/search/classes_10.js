@@ -15,11 +15,14 @@ var searchData=
   ['tlssupportedgroupsextension',['TLSSupportedGroupsExtension',['../classpcpp_1_1_t_l_s_supported_groups_extension.html',1,'pcpp']]],
   ['tlvrawdata',['TLVRawData',['../structpcpp_1_1_t_l_v_record_1_1_t_l_v_raw_data.html',1,'pcpp::TLVRecord']]],
   ['tlvrecord',['TLVRecord',['../classpcpp_1_1_t_l_v_record.html',1,'pcpp']]],
+  ['tlvrecord_3c_20uint16_5ft_2c_20uint16_5ft_20_3e',['TLVRecord&lt; uint16_t, uint16_t &gt;',['../classpcpp_1_1_t_l_v_record.html',1,'pcpp']]],
+  ['tlvrecord_3c_20uint8_5ft_2c_20uint8_5ft_20_3e',['TLVRecord&lt; uint8_t, uint8_t &gt;',['../classpcpp_1_1_t_l_v_record.html',1,'pcpp']]],
   ['tlvrecordbuilder',['TLVRecordBuilder',['../classpcpp_1_1_t_l_v_record_builder.html',1,'pcpp']]],
   ['tlvrecordreader',['TLVRecordReader',['../classpcpp_1_1_t_l_v_record_reader.html',1,'pcpp']]],
   ['tlvrecordreader_3c_20pcpp_3a_3adhcpoption_20_3e',['TLVRecordReader&lt; pcpp::DhcpOption &gt;',['../classpcpp_1_1_t_l_v_record_reader.html',1,'pcpp']]],
   ['tlvrecordreader_3c_20pcpp_3a_3aipv4option_20_3e',['TLVRecordReader&lt; pcpp::IPv4Option &gt;',['../classpcpp_1_1_t_l_v_record_reader.html',1,'pcpp']]],
   ['tlvrecordreader_3c_20pcpp_3a_3aipv6tlvoptionheader_3a_3aipv6option_20_3e',['TLVRecordReader&lt; pcpp::IPv6TLVOptionHeader::IPv6Option &gt;',['../classpcpp_1_1_t_l_v_record_reader.html',1,'pcpp']]],
+  ['tlvrecordreader_3c_20pcpp_3a_3apppoediscoverylayer_3a_3apppoetag_20_3e',['TLVRecordReader&lt; pcpp::PPPoEDiscoveryLayer::PPPoETag &gt;',['../classpcpp_1_1_t_l_v_record_reader.html',1,'pcpp']]],
   ['tlvrecordreader_3c_20pcpp_3a_3aradiusattribute_20_3e',['TLVRecordReader&lt; pcpp::RadiusAttribute &gt;',['../classpcpp_1_1_t_l_v_record_reader.html',1,'pcpp']]],
   ['tlvrecordreader_3c_20pcpp_3a_3atcpoption_20_3e',['TLVRecordReader&lt; pcpp::TcpOption &gt;',['../classpcpp_1_1_t_l_v_record_reader.html',1,'pcpp']]]
 ];

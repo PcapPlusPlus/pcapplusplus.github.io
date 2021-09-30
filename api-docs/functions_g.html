@@ -321,9 +321,10 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classpcpp_1_1_dhcp_option.html#ad7c1d4278af10a599276a46ce045e080">pcpp::DhcpOption</a>
 , <a class="el" href="classpcpp_1_1_i_pv4_option.html#adedfb3d3f3129f31e994b3c07c3c8601">pcpp::IPv4Option</a>
 , <a class="el" href="classpcpp_1_1_i_pv6_t_l_v_option_header_1_1_i_pv6_option.html#a382941c28bc594519a3cb439a1491da4">pcpp::IPv6TLVOptionHeader::IPv6Option</a>
+, <a class="el" href="classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag.html#ad5537e4279aafac9e3bb4b56d56f0951">pcpp::PPPoEDiscoveryLayer::PPPoETag</a>
 , <a class="el" href="classpcpp_1_1_radius_attribute.html#ac1c391f717a9d814cd215e3cffb92748">pcpp::RadiusAttribute</a>
 , <a class="el" href="classpcpp_1_1_tcp_option.html#a4df8e7002500ea5ab71e87e79031a672">pcpp::TcpOption</a>
-, <a class="el" href="classpcpp_1_1_t_l_v_record.html#a6261b189b9c6edba7e889a3ace2a337c">pcpp::TLVRecord</a>
+, <a class="el" href="classpcpp_1_1_t_l_v_record.html#ab756e2100b55a66339c102908164c788">pcpp::TLVRecord&lt; TRecType, TRecLen &gt;</a>
 </li>
 <li>getDefaultGateway()
 : <a class="el" href="classpcpp_1_1_pcap_live_device.html#a53a12fdc4a19fb23acea4c0ed11c4cfd">pcpp::PcapLiveDevice</a>
@@ -397,12 +398,10 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>getDstIPAddress()
 : <a class="el" href="classpcpp_1_1_i_pv4_layer.html#a4446cd92f698e71072af9cb81c345492">pcpp::IPv4Layer</a>
+, <a class="el" href="classpcpp_1_1_i_pv6_layer.html#a08367d5d88a039be73b0915d7a635889">pcpp::IPv6Layer</a>
 </li>
 <li>getDstIpAddress()
 : <a class="el" href="classpcpp_1_1_i_pv6_layer.html#adc2fbb545944fa6fe37fbb6479a7ccfa">pcpp::IPv6Layer</a>
-</li>
-<li>getDstIPAddress()
-: <a class="el" href="classpcpp_1_1_i_pv6_layer.html#a08367d5d88a039be73b0915d7a635889">pcpp::IPv6Layer</a>
 </li>
 <li>getDstIPv4Address()
 : <a class="el" href="classpcpp_1_1_i_pv4_layer.html#a9a132f5bd5b57037429322a44208f2fd">pcpp::IPv4Layer</a>
@@ -530,7 +529,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classpcpp_1_1_dns_layer.html#ace109477462370e2142dc1ca519154ee">pcpp::DnsLayer</a>
 </li>
 <li>getFirstTag()
-: <a class="el" href="classpcpp_1_1_p_p_po_e_discovery_layer.html#ae1c5c991e669ce6b05f8c14450468ae0">pcpp::PPPoEDiscoveryLayer</a>
+: <a class="el" href="classpcpp_1_1_p_p_po_e_discovery_layer.html#a85bfe408b67e189ec1ab2676b5dc2cf7">pcpp::PPPoEDiscoveryLayer</a>
 </li>
 <li>getFirstTcpOption()
 : <a class="el" href="classpcpp_1_1_tcp_layer.html#a49daa29b59fa5c7c5166a28b581bcabe">pcpp::TcpLayer</a>
@@ -920,7 +919,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classpcpp_1_1_dns_layer.html#a8919c2d63dca7d0653e18d0cd1081dd1">pcpp::DnsLayer</a>
 </li>
 <li>getNextTag()
-: <a class="el" href="classpcpp_1_1_p_p_po_e_discovery_layer.html#a8c06a8dd21882e402b5a9f4eed75c8bc">pcpp::PPPoEDiscoveryLayer</a>
+: <a class="el" href="classpcpp_1_1_p_p_po_e_discovery_layer.html#ad943ac23db39bb720b719e2bb712a7e4">pcpp::PPPoEDiscoveryLayer</a>
 </li>
 <li>getNextTcpOption()
 : <a class="el" href="classpcpp_1_1_tcp_layer.html#af8e7e06a93aad7a2fa95d8ce3e52609b">pcpp::TcpLayer</a>
@@ -1053,7 +1052,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classpcpp_1_1_i_pcap_device.html#ac9e91fa6b66ced9a92d09068712ccffc">pcpp::IPcapDevice</a>
 </li>
 <li>getPcapLiveDeviceByIp()
-: <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#a1f1d12c48709db005f267a0add6e1989">pcpp::PcapLiveDeviceList</a>
+: <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#a1921e94307197c9b8f613bb35fc1a0c5">pcpp::PcapLiveDeviceList</a>
 </li>
 <li>getPcapLiveDeviceByIpOrName()
 : <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#aadf609084e161df94c14109d42b94544">pcpp::PcapLiveDeviceList</a>
@@ -1146,7 +1145,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classpcpp_1_1_i_file_reader_device.html#a86c1f85162fa5f7dea66e96ba8f4c317">pcpp::IFileReaderDevice</a>
 </li>
 <li>getRecordBasePtr()
-: <a class="el" href="classpcpp_1_1_t_l_v_record.html#a2fb3a4b38aa8f629675a42ebe23515b1">pcpp::TLVRecord</a>
+: <a class="el" href="classpcpp_1_1_t_l_v_record.html#a3cef912b3e79835e782e64e7947e4aa2">pcpp::TLVRecord&lt; TRecType, TRecLen &gt;</a>
 </li>
 <li>getRecordLayer()
 : <a class="el" href="classpcpp_1_1_s_s_l_layer.html#aca27a007b9bc9e0907d90357018c6772">pcpp::SSLLayer</a>
@@ -1164,7 +1163,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classpcpp_1_1_icmp_layer.html#a8ed0adf59a73890c1812614f2697335f">pcpp::IcmpLayer</a>
 </li>
 <li>getRemoteDeviceByIP()
-: <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#afcf906d4e0ce47f1a8c2d7a542972f6a">pcpp::PcapRemoteDeviceList</a>
+: <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#ad6b9e1731e22c6ebb36dae19b3a63acf">pcpp::PcapRemoteDeviceList</a>
 </li>
 <li>getRemoteDeviceList()
 : <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a9ad4f27a5e10b9b599b7a2a6412a398e">pcpp::PcapRemoteDeviceList</a>
@@ -1291,14 +1290,16 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>getSrcIPAddress()
 : <a class="el" href="classpcpp_1_1_i_p_layer.html#a7afd6c9806facdb60435968120925e7d">pcpp::IPLayer</a>
-, <a class="el" href="classpcpp_1_1_i_pv4_layer.html#a7033f37011447d0b5267449b94485632">pcpp::IPv4Layer</a>
 </li>
 <li>getSrcIpAddress()
 : <a class="el" href="classpcpp_1_1_i_pv4_layer.html#a62fa4e7b0498657852951376c1a4ad5c">pcpp::IPv4Layer</a>
-, <a class="el" href="classpcpp_1_1_i_pv6_layer.html#afb6afe8df6a87ceb26ac8e27f5de17b9">pcpp::IPv6Layer</a>
 </li>
 <li>getSrcIPAddress()
-: <a class="el" href="classpcpp_1_1_i_pv6_layer.html#aaeb21fcd5e317d3901323aaed49345f0">pcpp::IPv6Layer</a>
+: <a class="el" href="classpcpp_1_1_i_pv4_layer.html#a7033f37011447d0b5267449b94485632">pcpp::IPv4Layer</a>
+, <a class="el" href="classpcpp_1_1_i_pv6_layer.html#aaeb21fcd5e317d3901323aaed49345f0">pcpp::IPv6Layer</a>
+</li>
+<li>getSrcIpAddress()
+: <a class="el" href="classpcpp_1_1_i_pv6_layer.html#afb6afe8df6a87ceb26ac8e27f5de17b9">pcpp::IPv6Layer</a>
 </li>
 <li>getSrcIPv4Address()
 : <a class="el" href="classpcpp_1_1_i_pv4_layer.html#a1726f094f39326d963d7343022764937">pcpp::IPv4Layer</a>
@@ -1352,16 +1353,10 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classpcpp_1_1_s_s_l_cipher_suite.html#a98805d288822ae67d621ecb2efdd4eaa">pcpp::SSLCipherSuite</a>
 </li>
 <li>getTag()
-: <a class="el" href="classpcpp_1_1_p_p_po_e_discovery_layer.html#a54a6824097be2e3e27b88c24b1942af5">pcpp::PPPoEDiscoveryLayer</a>
+: <a class="el" href="classpcpp_1_1_p_p_po_e_discovery_layer.html#af7c86e9802b97d80b1bd3b50df0c2c8a">pcpp::PPPoEDiscoveryLayer</a>
 </li>
 <li>getTagCount()
 : <a class="el" href="classpcpp_1_1_p_p_po_e_discovery_layer.html#aeb04816655e95a2c982a85d42b79b00d">pcpp::PPPoEDiscoveryLayer</a>
-</li>
-<li>getTagDataAs()
-: <a class="el" href="structpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag.html#a7a23412d09c7f8033a7a61651e29393f">pcpp::PPPoEDiscoveryLayer::PPPoETag</a>
-</li>
-<li>getTagTotalSize()
-: <a class="el" href="structpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag.html#afc3e8e3510d857cbb1c5fce78b1c69ff">pcpp::PPPoEDiscoveryLayer::PPPoETag</a>
 </li>
 <li>getTargetIpAddr()
 : <a class="el" href="classpcpp_1_1_arp_layer.html#a468a4fd5c27276f92a44a06133a53374">pcpp::ArpLayer</a>
@@ -1400,7 +1395,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classpcpp_1_1_icmp_layer.html#a94788972d9bac20bfa921a79b3cd8baa">pcpp::IcmpLayer</a>
 </li>
 <li>getTLVRecord()
-: <a class="el" href="classpcpp_1_1_t_l_v_record_reader.html#add4ecc19df79bcf918e346de876d968c">pcpp::TLVRecordReader&lt; TLVRecordType &gt;</a>
+: <a class="el" href="classpcpp_1_1_t_l_v_record_reader.html#a3c9f5348e84ebf14034bc47fa5063829">pcpp::TLVRecordReader&lt; TLVRecordType &gt;</a>
 </li>
 <li>getTLVRecordCount()
 : <a class="el" href="classpcpp_1_1_t_l_v_record_reader.html#ae5e7a221fbc407af3cb3245ecb74826a">pcpp::TLVRecordReader&lt; TLVRecordType &gt;</a>
@@ -1422,9 +1417,10 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classpcpp_1_1_dhcp_option.html#adcc1721eddb9010f8ba9d57d822ec921">pcpp::DhcpOption</a>
 , <a class="el" href="classpcpp_1_1_i_pv4_option.html#ad1dbdc08ff76ffb47248d32805084ad9">pcpp::IPv4Option</a>
 , <a class="el" href="classpcpp_1_1_i_pv6_t_l_v_option_header_1_1_i_pv6_option.html#a2145e93d58855c929496a2a315a57e5a">pcpp::IPv6TLVOptionHeader::IPv6Option</a>
+, <a class="el" href="classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag.html#a32dfe60f1b3c32c4470b146e95d21da8">pcpp::PPPoEDiscoveryLayer::PPPoETag</a>
 , <a class="el" href="classpcpp_1_1_radius_attribute.html#a1486cf38f7347a180b73a07945beeb2c">pcpp::RadiusAttribute</a>
 , <a class="el" href="classpcpp_1_1_tcp_option.html#a482848b0f49f9bd5cc844fe33cf55122">pcpp::TcpOption</a>
-, <a class="el" href="classpcpp_1_1_t_l_v_record.html#aa9720120d597258e2465e728551b581a">pcpp::TLVRecord</a>
+, <a class="el" href="classpcpp_1_1_t_l_v_record.html#a0df698c8dc4fd0bfe2daa39062edaa54">pcpp::TLVRecord&lt; TRecType, TRecLen &gt;</a>
 </li>
 <li>getTrailerData()
 : <a class="el" href="classpcpp_1_1_packet_trailer_layer.html#ab9652d940b00793a16ae3af47ebc9e3a">pcpp::PacketTrailerLayer</a>
@@ -1445,9 +1441,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 , <a class="el" href="classpcpp_1_1_i_dns_resource.html#a20a4ef2ee128484638f1c3fcce0d5237">pcpp::IDnsResource</a>
 , <a class="el" href="classpcpp_1_1_igmp_layer.html#a7667561a5380f9ed3698a90b36c358a1">pcpp::IgmpLayer</a>
 , <a class="el" href="classpcpp_1_1_i_p_address.html#aa3d65be369c49372d2747b5f096fc7d9">pcpp::IPAddress</a>
-, <a class="el" href="structpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag.html#a1e25d20626a279c8325f191bc6a5455a">pcpp::PPPoEDiscoveryLayer::PPPoETag</a>
+, <a class="el" href="classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag.html#a1e25d20626a279c8325f191bc6a5455a">pcpp::PPPoEDiscoveryLayer::PPPoETag</a>
 , <a class="el" href="classpcpp_1_1_s_s_l_extension.html#abc5e76ced824d76e761294d821c4048e">pcpp::SSLExtension</a>
-, <a class="el" href="classpcpp_1_1_t_l_v_record.html#ab2dfabca28dbc1f950d88d562111569f">pcpp::TLVRecord</a>
+, <a class="el" href="classpcpp_1_1_t_l_v_record.html#a2c03958af00bae5ff4cb953e206becf0">pcpp::TLVRecord&lt; TRecType, TRecLen &gt;</a>
 </li>
 <li>getTypeAsInt()
 : <a class="el" href="classpcpp_1_1_s_s_l_extension.html#aa46efd1397084433f572d8dc2934c7c5">pcpp::SSLExtension</a>
@@ -1463,10 +1459,10 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classpcpp_1_1_http_request_layer.html#ad0a049a2a862a8dcaaa45aaacd695f17">pcpp::HttpRequestLayer</a>
 </li>
 <li>getValue()
-: <a class="el" href="classpcpp_1_1_t_l_v_record.html#a5d704a0d2288bd4b5da784cf6081e8db">pcpp::TLVRecord</a>
+: <a class="el" href="classpcpp_1_1_t_l_v_record.html#a7e0a6f19fbc18d4f23263e5179d7d38e">pcpp::TLVRecord&lt; TRecType, TRecLen &gt;</a>
 </li>
 <li>getValueAs()
-: <a class="el" href="classpcpp_1_1_t_l_v_record.html#a290a67c7fb221f924830dd011367662f">pcpp::TLVRecord</a>
+: <a class="el" href="classpcpp_1_1_t_l_v_record.html#ac69de0f3ed861718067b2ab81629c1d5">pcpp::TLVRecord&lt; TRecType, TRecLen &gt;</a>
 </li>
 <li>getValueAsIpAddr()
 : <a class="el" href="classpcpp_1_1_dhcp_option.html#ad6e0bc9451e502e7f798a99e76e2be5f">pcpp::DhcpOption</a>
@@ -1476,6 +1472,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>getValueAsString()
 : <a class="el" href="classpcpp_1_1_dhcp_option.html#a336013dd5cab77544833d77fbb0e4417">pcpp::DhcpOption</a>
+, <a class="el" href="classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag.html#a1cd2e5fde43bf3fba8875538bb1db9ed">pcpp::PPPoEDiscoveryLayer::PPPoETag</a>
 </li>
 <li>getVersion()
 : <a class="el" href="classpcpp_1_1_http_request_first_line.html#afc6bd690661cc0132a0f5385e4f3ce44">pcpp::HttpRequestFirstLine</a>
@@ -1521,7 +1518,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classpcpp_1_1_gtp_v1_layer_1_1_gtp_extension.html#a5e8d570c6114869281a4e375f6efc1c4">pcpp::GtpV1Layer::GtpExtension</a>
 </li>
 <li>GtpV1Layer()
-: <a class="el" href="classpcpp_1_1_gtp_v1_layer.html#adeb4912ab05772b47ecd3cd64e1a8549">pcpp::GtpV1Layer</a>
+: <a class="el" href="classpcpp_1_1_gtp_v1_layer.html#a7f6fb8b6b02cc960b7e162c898f2c3c4">pcpp::GtpV1Layer</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -1529,7 +1526,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 28 2021 08:10:28 for PcapPlusPlus by
+    <li class="footer">Generated on Thu Sep 30 2021 09:29:11 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

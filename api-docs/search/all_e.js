@@ -433,7 +433,8 @@ var searchData=
   ['pppoelayer_2eh',['PPPoELayer.h',['../_p_p_po_e_layer_8h.html',1,'']]],
   ['pppoesession',['PPPoESession',['../namespacepcpp.html#a2300a265174edb1daecfd97697c67d79',1,'pcpp']]],
   ['pppoesessionlayer',['PPPoESessionLayer',['../classpcpp_1_1_p_p_po_e_session_layer.html',1,'pcpp::PPPoESessionLayer'],['../classpcpp_1_1_p_p_po_e_session_layer.html#a433678572ac1217a16a38e6aa8ade4f2',1,'pcpp::PPPoESessionLayer::PPPoESessionLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)'],['../classpcpp_1_1_p_p_po_e_session_layer.html#ac9e2dcfee946bc38c1deefe557606188',1,'pcpp::PPPoESessionLayer::PPPoESessionLayer(uint8_t version, uint8_t type, uint16_t sessionId, uint16_t pppNextProtocol)']]],
-  ['pppoetag',['PPPoETag',['../structpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag.html',1,'pcpp::PPPoEDiscoveryLayer']]],
+  ['pppoetag',['PPPoETag',['../classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag.html',1,'pcpp::PPPoEDiscoveryLayer::PPPoETag'],['../classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag.html#a8677b3565c91918c64fc3038155afe2b',1,'pcpp::PPPoEDiscoveryLayer::PPPoETag::PPPoETag()']]],
+  ['pppoetagbuilder',['PPPoETagBuilder',['../classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag_builder.html',1,'pcpp::PPPoEDiscoveryLayer::PPPoETagBuilder'],['../classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag_builder.html#ab13a37844401347073797f411c239995',1,'pcpp::PPPoEDiscoveryLayer::PPPoETagBuilder::PPPoETagBuilder(PPPoETagTypes tagType)'],['../classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag_builder.html#aedaf6bf38e18afbc03ef7a4b41e7b2bc',1,'pcpp::PPPoEDiscoveryLayer::PPPoETagBuilder::PPPoETagBuilder(PPPoETagTypes tagType, uint32_t tagValue)'],['../classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag_builder.html#add4b16b3099fee8c1256ad93194915eb',1,'pcpp::PPPoEDiscoveryLayer::PPPoETagBuilder::PPPoETagBuilder(PPPoETagTypes tagType, uint8_t *tagValue, uint8_t tagValueLen)']]],
   ['pppoetagtypes',['PPPoETagTypes',['../classpcpp_1_1_p_p_po_e_discovery_layer.html#ac761ea9a8298b8ee8614da86de314876',1,'pcpp::PPPoEDiscoveryLayer']]],
   ['preference',['preference',['../structpcpp_1_1_mx_dns_resource_data_1_1_mx_data.html#aab435ee2e8b433677dfb84b495272f5b',1,'pcpp::MxDnsResourceData::MxData']]],
   ['preferencelevel',['preferenceLevel',['../structpcpp_1_1icmp__router__address__structure.html#ad9c6d64fbf2388f90eacfc4d0e3269ca',1,'pcpp::icmp_router_address_structure']]],
@@ -453,7 +454,7 @@ var searchData=
   ['protofilter',['ProtoFilter',['../classpcpp_1_1_proto_filter.html',1,'pcpp::ProtoFilter'],['../classpcpp_1_1_proto_filter.html#a7da0456df8d7486bfe18d31b7929baae',1,'pcpp::ProtoFilter::ProtoFilter()']]],
   ['pshflag',['pshFlag',['../structpcpp_1_1tcphdr.html#a1561eb6d029e00fe449bbaac3be8d705',1,'pcpp::tcphdr']]],
   ['purgeclosedconnections',['purgeClosedConnections',['../classpcpp_1_1_tcp_reassembly.html#acdad37632836cd8f9d92f6a40ab53b74',1,'pcpp::TcpReassembly']]],
-  ['purgerecorddata',['purgeRecordData',['../classpcpp_1_1_t_l_v_record.html#a6e723034e8daff9b577b16718a5c60fe',1,'pcpp::TLVRecord']]],
+  ['purgerecorddata',['purgeRecordData',['../classpcpp_1_1_t_l_v_record.html#ae083ae0b87a8a0f4fd097a52b7dd41fa',1,'pcpp::TLVRecord']]],
   ['pushback',['pushBack',['../classpcpp_1_1_pointer_vector.html#ad5f6f474c257f00373c049f32fe9c653',1,'pcpp::PointerVector']]],
   ['put',['put',['../classpcpp_1_1_l_r_u_list.html#ac2350bfb578b4c652158029e5fe8688b',1,'pcpp::LRUList']]]
 ];

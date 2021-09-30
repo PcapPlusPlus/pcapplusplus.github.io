@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['tagdata',['tagData',['../structpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag.html#a859b9c75b9f17f734c42b9bdc7ac1ad3',1,'pcpp::PPPoEDiscoveryLayer::PPPoETag']]],
-  ['tagdatalength',['tagDataLength',['../structpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag.html#ae4e187f3ca9a2b81adaa193823bf2a2a',1,'pcpp::PPPoEDiscoveryLayer::PPPoETag']]],
-  ['tagtype',['tagType',['../structpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag.html#a53236fe2fd4cf146334cdc19ffc01192',1,'pcpp::PPPoEDiscoveryLayer::PPPoETag']]],
   ['targetipaddr',['targetIpAddr',['../structpcpp_1_1arphdr.html#a318c9f31a0d60e5e5b65ebe400be1540',1,'pcpp::arphdr']]],
   ['targetmacaddr',['targetMacAddr',['../structpcpp_1_1arphdr.html#a9f8954a5001ddafb365b165f30b06a12',1,'pcpp::arphdr']]],
   ['tcp',['TCP',['../namespacepcpp.html#a8d36ae24161db9d8f8cf759529ae42d0',1,'pcpp']]],

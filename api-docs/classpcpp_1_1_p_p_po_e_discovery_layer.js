@@ -1,6 +1,7 @@
 var classpcpp_1_1_p_p_po_e_discovery_layer =
 [
-    [ "PPPoETag", "structpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag.html", "structpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag" ],
+    [ "PPPoETag", "classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag.html", "classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag" ],
+    [ "PPPoETagBuilder", "classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag_builder.html", "classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag_builder" ],
     [ "PPPoETagTypes", "classpcpp_1_1_p_p_po_e_discovery_layer.html#ac761ea9a8298b8ee8614da86de314876", [
       [ "PPPOE_TAG_EOL", "classpcpp_1_1_p_p_po_e_discovery_layer.html#ac761ea9a8298b8ee8614da86de314876a283732c58c448bf6b8b03a62898f75c5", null ],
       [ "PPPOE_TAG_SVC_NAME", "classpcpp_1_1_p_p_po_e_discovery_layer.html#ac761ea9a8298b8ee8614da86de314876a70bbfa6ec879a750a22e8e0a2a0762fb", null ],
@@ -23,12 +24,12 @@ var classpcpp_1_1_p_p_po_e_discovery_layer =
     ] ],
     [ "PPPoEDiscoveryLayer", "classpcpp_1_1_p_p_po_e_discovery_layer.html#a30967ebf61dace6cfb3a0f812fbc19c8", null ],
     [ "PPPoEDiscoveryLayer", "classpcpp_1_1_p_p_po_e_discovery_layer.html#ab98cc2796e3d415851e9a2edfa4530b1", null ],
-    [ "addTag", "classpcpp_1_1_p_p_po_e_discovery_layer.html#a090600ca117327539dc8ac9f678bb0e1", null ],
-    [ "addTagAfter", "classpcpp_1_1_p_p_po_e_discovery_layer.html#af7312700ff11218fa02a81d33608730a", null ],
-    [ "getFirstTag", "classpcpp_1_1_p_p_po_e_discovery_layer.html#ae1c5c991e669ce6b05f8c14450468ae0", null ],
+    [ "addTag", "classpcpp_1_1_p_p_po_e_discovery_layer.html#a1a81969b91a1d47de762267fd74ead55", null ],
+    [ "addTagAfter", "classpcpp_1_1_p_p_po_e_discovery_layer.html#a8e5be503e9bf4333c4d124661607f096", null ],
+    [ "getFirstTag", "classpcpp_1_1_p_p_po_e_discovery_layer.html#a85bfe408b67e189ec1ab2676b5dc2cf7", null ],
     [ "getHeaderLen", "classpcpp_1_1_p_p_po_e_discovery_layer.html#a247eefe88202994694b21859fd3ce17f", null ],
-    [ "getNextTag", "classpcpp_1_1_p_p_po_e_discovery_layer.html#a8c06a8dd21882e402b5a9f4eed75c8bc", null ],
-    [ "getTag", "classpcpp_1_1_p_p_po_e_discovery_layer.html#a54a6824097be2e3e27b88c24b1942af5", null ],
+    [ "getNextTag", "classpcpp_1_1_p_p_po_e_discovery_layer.html#ad943ac23db39bb720b719e2bb712a7e4", null ],
+    [ "getTag", "classpcpp_1_1_p_p_po_e_discovery_layer.html#af7c86e9802b97d80b1bd3b50df0c2c8a", null ],
     [ "getTagCount", "classpcpp_1_1_p_p_po_e_discovery_layer.html#aeb04816655e95a2c982a85d42b79b00d", null ],
     [ "parseNextLayer", "classpcpp_1_1_p_p_po_e_discovery_layer.html#ad4df30dc6d84128cc6bd83241f96b212", null ],
     [ "removeAllTags", "classpcpp_1_1_p_p_po_e_discovery_layer.html#a8d139ed7175ce23efc4d2882fc008950", null ],

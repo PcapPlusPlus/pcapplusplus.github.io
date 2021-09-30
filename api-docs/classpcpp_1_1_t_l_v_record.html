@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PcapPlusPlus: pcpp::TLVRecord Class Reference</title>
+<title>PcapPlusPlus: pcpp::TLVRecord&lt; TRecType, TRecLen &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -87,24 +87,11 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_t_l_v_record.html','');}
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classpcpp_1_1_t_l_v_record-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::TLVRecord Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">pcpp::TLVRecord&lt; TRecType, TRecLen &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_t_l_v_data_8h_source.html">TLVData.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for pcpp::TLVRecord:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="classpcpp_1_1_t_l_v_record.png" usemap="#pcpp::TLVRecord_map" alt=""/>
-  <map id="pcpp::TLVRecord_map" name="pcpp::TLVRecord_map">
-<area href="classpcpp_1_1_dhcp_option.html" alt="pcpp::DhcpOption" shape="rect" coords="0,56,241,80"/>
-<area href="classpcpp_1_1_i_pv4_option.html" alt="pcpp::IPv4Option" shape="rect" coords="251,56,492,80"/>
-<area href="classpcpp_1_1_i_pv6_t_l_v_option_header_1_1_i_pv6_option.html" alt="pcpp::IPv6TLVOptionHeader::IPv6Option" shape="rect" coords="502,56,743,80"/>
-<area href="classpcpp_1_1_radius_attribute.html" alt="pcpp::RadiusAttribute" shape="rect" coords="753,56,994,80"/>
-<area href="classpcpp_1_1_tcp_option.html" alt="pcpp::TcpOption" shape="rect" coords="1004,56,1245,80"/>
-</map>
- </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -113,55 +100,62 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af558b23a2c8e99f574c867d518f1b71e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#af558b23a2c8e99f574c867d518f1b71e">TLVRecord</a> (uint8_t *recordRawData)</td></tr>
-<tr class="separator:af558b23a2c8e99f574c867d518f1b71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a807e4d02649af082d1e0c568aade122a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a807e4d02649af082d1e0c568aade122a">TLVRecord</a> (const <a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a> &amp;other)</td></tr>
-<tr class="separator:a807e4d02649af082d1e0c568aade122a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aceee59b58ee528adcc4fa4f4902d35ec"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#aceee59b58ee528adcc4fa4f4902d35ec">~TLVRecord</a> ()</td></tr>
-<tr class="separator:aceee59b58ee528adcc4fa4f4902d35ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf2b175896031d4d6cd2c65f6f674de4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#abf2b175896031d4d6cd2c65f6f674de4">assign</a> (uint8_t *recordRawData)</td></tr>
-<tr class="separator:abf2b175896031d4d6cd2c65f6f674de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab207979132727f91150f6a54197153e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#ab207979132727f91150f6a54197153e3">operator=</a> (const <a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a> &amp;other)</td></tr>
-<tr class="separator:ab207979132727f91150f6a54197153e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23b45870cbc2650b13f06e0e8001b718"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a23b45870cbc2650b13f06e0e8001b718">operator==</a> (const <a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a> &amp;rhs) const</td></tr>
-<tr class="separator:a23b45870cbc2650b13f06e0e8001b718"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2dfabca28dbc1f950d88d562111569f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#ab2dfabca28dbc1f950d88d562111569f">getType</a> () const</td></tr>
-<tr class="separator:ab2dfabca28dbc1f950d88d562111569f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d704a0d2288bd4b5da784cf6081e8db"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a5d704a0d2288bd4b5da784cf6081e8db">getValue</a> () const</td></tr>
-<tr class="separator:a5d704a0d2288bd4b5da784cf6081e8db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1cd877753e605b2fb671510d21597b3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#ac1cd877753e605b2fb671510d21597b3">isNull</a> () const</td></tr>
-<tr class="separator:ac1cd877753e605b2fb671510d21597b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9f8f16e981234de966fe4fa720e2fdf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#af9f8f16e981234de966fe4fa720e2fdf">isNotNull</a> () const</td></tr>
-<tr class="separator:af9f8f16e981234de966fe4fa720e2fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fb3a4b38aa8f629675a42ebe23515b1"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a2fb3a4b38aa8f629675a42ebe23515b1">getRecordBasePtr</a> () const</td></tr>
-<tr class="separator:a2fb3a4b38aa8f629675a42ebe23515b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e723034e8daff9b577b16718a5c60fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a6e723034e8daff9b577b16718a5c60fe">purgeRecordData</a> ()</td></tr>
-<tr class="separator:a6e723034e8daff9b577b16718a5c60fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a290a67c7fb221f924830dd011367662f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a290a67c7fb221f924830dd011367662f"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a290a67c7fb221f924830dd011367662f">getValueAs</a> (size_t offset=0) const</td></tr>
-<tr class="separator:a290a67c7fb221f924830dd011367662f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa65d6cf9416f13aa6f9e9a4cea786bee"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aa65d6cf9416f13aa6f9e9a4cea786bee"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#aa65d6cf9416f13aa6f9e9a4cea786bee">setValue</a> (T newValue, int valueOffset=0)</td></tr>
-<tr class="separator:aa65d6cf9416f13aa6f9e9a4cea786bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9720120d597258e2465e728551b581a"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#aa9720120d597258e2465e728551b581a">getTotalSize</a> () const =0</td></tr>
-<tr class="separator:aa9720120d597258e2465e728551b581a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6261b189b9c6edba7e889a3ace2a337c"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a6261b189b9c6edba7e889a3ace2a337c">getDataSize</a> () const =0</td></tr>
-<tr class="separator:a6261b189b9c6edba7e889a3ace2a337c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a026522df3430ba5cc60f03c1a41aceb6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a026522df3430ba5cc60f03c1a41aceb6">TLVRecord</a> (uint8_t *recordRawData)</td></tr>
+<tr class="separator:a026522df3430ba5cc60f03c1a41aceb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c65d738332174555360bf0fcf79752"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a06c65d738332174555360bf0fcf79752">TLVRecord</a> (const <a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a> &amp;other)</td></tr>
+<tr class="separator:a06c65d738332174555360bf0fcf79752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af13172efa5e96f1bcad08b53819307a3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#af13172efa5e96f1bcad08b53819307a3">~TLVRecord</a> ()</td></tr>
+<tr class="separator:af13172efa5e96f1bcad08b53819307a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc60806af9572d14483ed3b961579a60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#afc60806af9572d14483ed3b961579a60">assign</a> (uint8_t *recordRawData)</td></tr>
+<tr class="separator:afc60806af9572d14483ed3b961579a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad742ccc40d30398c30d194e7f97bbc07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#ad742ccc40d30398c30d194e7f97bbc07">operator=</a> (const <a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a> &amp;other)</td></tr>
+<tr class="separator:ad742ccc40d30398c30d194e7f97bbc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b94bd90891b47c0617fabf18459c212"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a8b94bd90891b47c0617fabf18459c212">operator==</a> (const <a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a> &amp;rhs) const</td></tr>
+<tr class="separator:a8b94bd90891b47c0617fabf18459c212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f02894d4417e42cd64b67a4673c9866"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a2f02894d4417e42cd64b67a4673c9866">operator!=</a> (const <a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a> &amp;rhs) const</td></tr>
+<tr class="separator:a2f02894d4417e42cd64b67a4673c9866"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c03958af00bae5ff4cb953e206becf0"><td class="memItemLeft" align="right" valign="top">TRecType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a2c03958af00bae5ff4cb953e206becf0">getType</a> () const</td></tr>
+<tr class="separator:a2c03958af00bae5ff4cb953e206becf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e0a6f19fbc18d4f23263e5179d7d38e"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a7e0a6f19fbc18d4f23263e5179d7d38e">getValue</a> () const</td></tr>
+<tr class="separator:a7e0a6f19fbc18d4f23263e5179d7d38e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac645af1daf82e0062d3c15fe92418801"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#ac645af1daf82e0062d3c15fe92418801">isNull</a> () const</td></tr>
+<tr class="separator:ac645af1daf82e0062d3c15fe92418801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac19ebe875b28350a38b555f2fe12d865"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#ac19ebe875b28350a38b555f2fe12d865">isNotNull</a> () const</td></tr>
+<tr class="separator:ac19ebe875b28350a38b555f2fe12d865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cef912b3e79835e782e64e7947e4aa2"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a3cef912b3e79835e782e64e7947e4aa2">getRecordBasePtr</a> () const</td></tr>
+<tr class="separator:a3cef912b3e79835e782e64e7947e4aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae083ae0b87a8a0f4fd097a52b7dd41fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#ae083ae0b87a8a0f4fd097a52b7dd41fa">purgeRecordData</a> ()</td></tr>
+<tr class="separator:ae083ae0b87a8a0f4fd097a52b7dd41fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac69de0f3ed861718067b2ab81629c1d5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac69de0f3ed861718067b2ab81629c1d5"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#ac69de0f3ed861718067b2ab81629c1d5">getValueAs</a> (size_t offset=0) const</td></tr>
+<tr class="separator:ac69de0f3ed861718067b2ab81629c1d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d7906d1980f8101d5312966193bf9bd"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a2d7906d1980f8101d5312966193bf9bd"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a2d7906d1980f8101d5312966193bf9bd">setValue</a> (T newValue, int valueOffset=0)</td></tr>
+<tr class="separator:a2d7906d1980f8101d5312966193bf9bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0df698c8dc4fd0bfe2daa39062edaa54"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a0df698c8dc4fd0bfe2daa39062edaa54">getTotalSize</a> () const =0</td></tr>
+<tr class="separator:a0df698c8dc4fd0bfe2daa39062edaa54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab756e2100b55a66339c102908164c788"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#ab756e2100b55a66339c102908164c788">getDataSize</a> () const =0</td></tr>
+<tr class="separator:ab756e2100b55a66339c102908164c788"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A wrapper class for a Type-Length-Value (TLV) record. This class does not create or modify TLV records, but rather serves as a wrapper and provides useful methods for retrieving data from them. This class has several abstract methods that should be implemented in derived classes. These methods are for record length value calculation (the 'L' in TLV) which is implemented differently in different protocols </p>
+<div class="textblock"><h3>template&lt;typename TRecType, typename TRecLen&gt;<br />
+class pcpp::TLVRecord&lt; TRecType, TRecLen &gt;</h3>
+
+<p>A wrapper class for a Type-Length-Value (TLV) record. This class does not create or modify TLV records, but rather serves as a wrapper and provides useful methods for retrieving data from them. This class has several abstract methods that should be implemented in derived classes. These methods are for record length value calculation (the 'L' in TLV) which is implemented differently in different protocols </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af558b23a2c8e99f574c867d518f1b71e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af558b23a2c8e99f574c867d518f1b71e">&#9670;&nbsp;</a></span>TLVRecord() <span class="overload">[1/2]</span></h2>
+<a id="a026522df3430ba5cc60f03c1a41aceb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a026522df3430ba5cc60f03c1a41aceb6">&#9670;&nbsp;</a></span>TLVRecord() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename TRecType, typename TRecLen&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">pcpp::TLVRecord::TLVRecord </td>
+          <td class="memname"><a class="el" href="classpcpp_1_1_t_l_v_record.html">pcpp::TLVRecord</a>&lt; TRecType, TRecLen &gt;::<a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a> </td>
           <td>(</td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>recordRawData</em></td><td>)</td>
@@ -183,19 +177,21 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a807e4d02649af082d1e0c568aade122a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a807e4d02649af082d1e0c568aade122a">&#9670;&nbsp;</a></span>TLVRecord() <span class="overload">[2/2]</span></h2>
+<a id="a06c65d738332174555360bf0fcf79752"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06c65d738332174555360bf0fcf79752">&#9670;&nbsp;</a></span>TLVRecord() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename TRecType, typename TRecLen&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">pcpp::TLVRecord::TLVRecord </td>
+          <td class="memname"><a class="el" href="classpcpp_1_1_t_l_v_record.html">pcpp::TLVRecord</a>&lt; TRecType, TRecLen &gt;::<a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a>&lt; TRecType, TRecLen &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
@@ -215,17 +211,19 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aceee59b58ee528adcc4fa4f4902d35ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aceee59b58ee528adcc4fa4f4902d35ec">&#9670;&nbsp;</a></span>~TLVRecord()</h2>
+<a id="af13172efa5e96f1bcad08b53819307a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af13172efa5e96f1bcad08b53819307a3">&#9670;&nbsp;</a></span>~TLVRecord()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename TRecType, typename TRecLen&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual pcpp::TLVRecord::~TLVRecord </td>
+          <td class="memname">virtual <a class="el" href="classpcpp_1_1_t_l_v_record.html">pcpp::TLVRecord</a>&lt; TRecType, TRecLen &gt;::~<a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -242,17 +240,19 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="abf2b175896031d4d6cd2c65f6f674de4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf2b175896031d4d6cd2c65f6f674de4">&#9670;&nbsp;</a></span>assign()</h2>
+<a id="afc60806af9572d14483ed3b961579a60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc60806af9572d14483ed3b961579a60">&#9670;&nbsp;</a></span>assign()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename TRecType, typename TRecLen&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void pcpp::TLVRecord::assign </td>
+          <td class="memname">void <a class="el" href="classpcpp_1_1_t_l_v_record.html">pcpp::TLVRecord</a>&lt; TRecType, TRecLen &gt;::assign </td>
           <td>(</td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>recordRawData</em></td><td>)</td>
@@ -274,17 +274,19 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6261b189b9c6edba7e889a3ace2a337c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6261b189b9c6edba7e889a3ace2a337c">&#9670;&nbsp;</a></span>getDataSize()</h2>
+<a id="ab756e2100b55a66339c102908164c788"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab756e2100b55a66339c102908164c788">&#9670;&nbsp;</a></span>getDataSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename TRecType, typename TRecLen&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual size_t pcpp::TLVRecord::getDataSize </td>
+          <td class="memname">virtual size_t <a class="el" href="classpcpp_1_1_t_l_v_record.html">pcpp::TLVRecord</a>&lt; TRecType, TRecLen &gt;::getDataSize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -298,21 +300,23 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The size of the record value (meaning the size of the 'V' part in TLV) </dd></dl>
 
-<p>Implemented in <a class="el" href="classpcpp_1_1_dhcp_option.html#ad7c1d4278af10a599276a46ce045e080">pcpp::DhcpOption</a>, <a class="el" href="classpcpp_1_1_i_pv4_option.html#adedfb3d3f3129f31e994b3c07c3c8601">pcpp::IPv4Option</a>, <a class="el" href="classpcpp_1_1_tcp_option.html#a4df8e7002500ea5ab71e87e79031a672">pcpp::TcpOption</a>, <a class="el" href="classpcpp_1_1_i_pv6_t_l_v_option_header_1_1_i_pv6_option.html#a382941c28bc594519a3cb439a1491da4">pcpp::IPv6TLVOptionHeader::IPv6Option</a>, and <a class="el" href="classpcpp_1_1_radius_attribute.html#ac1c391f717a9d814cd215e3cffb92748">pcpp::RadiusAttribute</a>.</p>
+<p>Implemented in <a class="el" href="classpcpp_1_1_dhcp_option.html#ad7c1d4278af10a599276a46ce045e080">pcpp::DhcpOption</a>, <a class="el" href="classpcpp_1_1_i_pv4_option.html#adedfb3d3f3129f31e994b3c07c3c8601">pcpp::IPv4Option</a>, <a class="el" href="classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag.html#ad5537e4279aafac9e3bb4b56d56f0951">pcpp::PPPoEDiscoveryLayer::PPPoETag</a>, <a class="el" href="classpcpp_1_1_tcp_option.html#a4df8e7002500ea5ab71e87e79031a672">pcpp::TcpOption</a>, <a class="el" href="classpcpp_1_1_i_pv6_t_l_v_option_header_1_1_i_pv6_option.html#a382941c28bc594519a3cb439a1491da4">pcpp::IPv6TLVOptionHeader::IPv6Option</a>, and <a class="el" href="classpcpp_1_1_radius_attribute.html#ac1c391f717a9d814cd215e3cffb92748">pcpp::RadiusAttribute</a>.</p>
 
 </div>
 </div>
-<a id="a2fb3a4b38aa8f629675a42ebe23515b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fb3a4b38aa8f629675a42ebe23515b1">&#9670;&nbsp;</a></span>getRecordBasePtr()</h2>
+<a id="a3cef912b3e79835e782e64e7947e4aa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cef912b3e79835e782e64e7947e4aa2">&#9670;&nbsp;</a></span>getRecordBasePtr()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename TRecType, typename TRecLen&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t* pcpp::TLVRecord::getRecordBasePtr </td>
+          <td class="memname">uint8_t* <a class="el" href="classpcpp_1_1_t_l_v_record.html">pcpp::TLVRecord</a>&lt; TRecType, TRecLen &gt;::getRecordBasePtr </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -328,17 +332,19 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa9720120d597258e2465e728551b581a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9720120d597258e2465e728551b581a">&#9670;&nbsp;</a></span>getTotalSize()</h2>
+<a id="a0df698c8dc4fd0bfe2daa39062edaa54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0df698c8dc4fd0bfe2daa39062edaa54">&#9670;&nbsp;</a></span>getTotalSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename TRecType, typename TRecLen&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual size_t pcpp::TLVRecord::getTotalSize </td>
+          <td class="memname">virtual size_t <a class="el" href="classpcpp_1_1_t_l_v_record.html">pcpp::TLVRecord</a>&lt; TRecType, TRecLen &gt;::getTotalSize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -352,21 +358,23 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The total size of the TLV record (in bytes) </dd></dl>
 
-<p>Implemented in <a class="el" href="classpcpp_1_1_dhcp_option.html#adcc1721eddb9010f8ba9d57d822ec921">pcpp::DhcpOption</a>, <a class="el" href="classpcpp_1_1_i_pv4_option.html#ad1dbdc08ff76ffb47248d32805084ad9">pcpp::IPv4Option</a>, <a class="el" href="classpcpp_1_1_tcp_option.html#a482848b0f49f9bd5cc844fe33cf55122">pcpp::TcpOption</a>, <a class="el" href="classpcpp_1_1_i_pv6_t_l_v_option_header_1_1_i_pv6_option.html#a2145e93d58855c929496a2a315a57e5a">pcpp::IPv6TLVOptionHeader::IPv6Option</a>, and <a class="el" href="classpcpp_1_1_radius_attribute.html#a1486cf38f7347a180b73a07945beeb2c">pcpp::RadiusAttribute</a>.</p>
+<p>Implemented in <a class="el" href="classpcpp_1_1_dhcp_option.html#adcc1721eddb9010f8ba9d57d822ec921">pcpp::DhcpOption</a>, <a class="el" href="classpcpp_1_1_i_pv4_option.html#ad1dbdc08ff76ffb47248d32805084ad9">pcpp::IPv4Option</a>, <a class="el" href="classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag.html#a32dfe60f1b3c32c4470b146e95d21da8">pcpp::PPPoEDiscoveryLayer::PPPoETag</a>, <a class="el" href="classpcpp_1_1_tcp_option.html#a482848b0f49f9bd5cc844fe33cf55122">pcpp::TcpOption</a>, <a class="el" href="classpcpp_1_1_i_pv6_t_l_v_option_header_1_1_i_pv6_option.html#a2145e93d58855c929496a2a315a57e5a">pcpp::IPv6TLVOptionHeader::IPv6Option</a>, and <a class="el" href="classpcpp_1_1_radius_attribute.html#a1486cf38f7347a180b73a07945beeb2c">pcpp::RadiusAttribute</a>.</p>
 
 </div>
 </div>
-<a id="ab2dfabca28dbc1f950d88d562111569f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2dfabca28dbc1f950d88d562111569f">&#9670;&nbsp;</a></span>getType()</h2>
+<a id="a2c03958af00bae5ff4cb953e206becf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c03958af00bae5ff4cb953e206becf0">&#9670;&nbsp;</a></span>getType()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename TRecType, typename TRecLen&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t pcpp::TLVRecord::getType </td>
+          <td class="memname">TRecType <a class="el" href="classpcpp_1_1_t_l_v_record.html">pcpp::TLVRecord</a>&lt; TRecType, TRecLen &gt;::getType </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -382,17 +390,19 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5d704a0d2288bd4b5da784cf6081e8db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d704a0d2288bd4b5da784cf6081e8db">&#9670;&nbsp;</a></span>getValue()</h2>
+<a id="a7e0a6f19fbc18d4f23263e5179d7d38e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e0a6f19fbc18d4f23263e5179d7d38e">&#9670;&nbsp;</a></span>getValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename TRecType, typename TRecLen&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t* pcpp::TLVRecord::getValue </td>
+          <td class="memname">uint8_t* <a class="el" href="classpcpp_1_1_t_l_v_record.html">pcpp::TLVRecord</a>&lt; TRecType, TRecLen &gt;::getValue </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -408,11 +418,13 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a290a67c7fb221f924830dd011367662f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a290a67c7fb221f924830dd011367662f">&#9670;&nbsp;</a></span>getValueAs()</h2>
+<a id="ac69de0f3ed861718067b2ab81629c1d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac69de0f3ed861718067b2ab81629c1d5">&#9670;&nbsp;</a></span>getValueAs()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename TRecType, typename TRecLen&gt; </div>
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
 <table class="mlabels">
@@ -420,7 +432,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T pcpp::TLVRecord::getValueAs </td>
+          <td class="memname">T <a class="el" href="classpcpp_1_1_t_l_v_record.html">pcpp::TLVRecord</a>&lt; TRecType, TRecLen &gt;::getValueAs </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>offset</em> = <code>0</code></td><td>)</td>
@@ -433,7 +445,7 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A templated method to retrieve the record data as a certain type T. For example, if record data is 4B long (integer) then this method should be used as <a class="el" href="classpcpp_1_1_t_l_v_record.html#a290a67c7fb221f924830dd011367662f">getValueAs&lt;int&gt;()</a> and it will return the record data as an integer.<br />
+<p>A templated method to retrieve the record data as a certain type T. For example, if record data is 4B long (integer) then this method should be used as <a class="el" href="classpcpp_1_1_t_l_v_record.html#ac69de0f3ed861718067b2ab81629c1d5">getValueAs&lt;int&gt;()</a> and it will return the record data as an integer.<br />
  Notice this return value is a copy of the data, not a pointer to the actual data </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>The offset in the record data to start reading the value from. Useful for cases when you want to read some of the data that doesn't start at offset 0. This is an optional parameter and the default value is 0, meaning start reading the value at the beginning of the record data </td></tr>
@@ -444,17 +456,19 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="af9f8f16e981234de966fe4fa720e2fdf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9f8f16e981234de966fe4fa720e2fdf">&#9670;&nbsp;</a></span>isNotNull()</h2>
+<a id="ac19ebe875b28350a38b555f2fe12d865"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac19ebe875b28350a38b555f2fe12d865">&#9670;&nbsp;</a></span>isNotNull()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename TRecType, typename TRecLen&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool pcpp::TLVRecord::isNotNull </td>
+          <td class="memname">bool <a class="el" href="classpcpp_1_1_t_l_v_record.html">pcpp::TLVRecord</a>&lt; TRecType, TRecLen &gt;::isNotNull </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -470,17 +484,19 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ac1cd877753e605b2fb671510d21597b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1cd877753e605b2fb671510d21597b3">&#9670;&nbsp;</a></span>isNull()</h2>
+<a id="ac645af1daf82e0062d3c15fe92418801"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac645af1daf82e0062d3c15fe92418801">&#9670;&nbsp;</a></span>isNull()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename TRecType, typename TRecLen&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool pcpp::TLVRecord::isNull </td>
+          <td class="memname">bool <a class="el" href="classpcpp_1_1_t_l_v_record.html">pcpp::TLVRecord</a>&lt; TRecType, TRecLen &gt;::isNull </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -496,19 +512,56 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ab207979132727f91150f6a54197153e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab207979132727f91150f6a54197153e3">&#9670;&nbsp;</a></span>operator=()</h2>
+<a id="a2f02894d4417e42cd64b67a4673c9866"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f02894d4417e42cd64b67a4673c9866">&#9670;&nbsp;</a></span>operator!=()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename TRecType, typename TRecLen&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a>&amp; pcpp::TLVRecord::operator= </td>
+          <td class="memname">bool <a class="el" href="classpcpp_1_1_t_l_v_record.html">pcpp::TLVRecord</a>&lt; TRecType, TRecLen &gt;::operator!= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a>&lt; TRecType, TRecLen &gt; &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Overload of the not equal operator. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>The object to compare to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if objects are not equal, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="ad742ccc40d30398c30d194e7f97bbc07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad742ccc40d30398c30d194e7f97bbc07">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TRecType, typename TRecLen&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a>&amp; <a class="el" href="classpcpp_1_1_t_l_v_record.html">pcpp::TLVRecord</a>&lt; TRecType, TRecLen &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a>&lt; TRecType, TRecLen &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
@@ -528,19 +581,21 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a23b45870cbc2650b13f06e0e8001b718"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23b45870cbc2650b13f06e0e8001b718">&#9670;&nbsp;</a></span>operator==()</h2>
+<a id="a8b94bd90891b47c0617fabf18459c212"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b94bd90891b47c0617fabf18459c212">&#9670;&nbsp;</a></span>operator==()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename TRecType, typename TRecLen&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool pcpp::TLVRecord::operator== </td>
+          <td class="memname">bool <a class="el" href="classpcpp_1_1_t_l_v_record.html">pcpp::TLVRecord</a>&lt; TRecType, TRecLen &gt;::operator== </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a>&lt; TRecType, TRecLen &gt; &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -561,17 +616,19 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a6e723034e8daff9b577b16718a5c60fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e723034e8daff9b577b16718a5c60fe">&#9670;&nbsp;</a></span>purgeRecordData()</h2>
+<a id="ae083ae0b87a8a0f4fd097a52b7dd41fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae083ae0b87a8a0f4fd097a52b7dd41fa">&#9670;&nbsp;</a></span>purgeRecordData()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename TRecType, typename TRecLen&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void pcpp::TLVRecord::purgeRecordData </td>
+          <td class="memname">void <a class="el" href="classpcpp_1_1_t_l_v_record.html">pcpp::TLVRecord</a>&lt; TRecType, TRecLen &gt;::purgeRecordData </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -587,11 +644,13 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="aa65d6cf9416f13aa6f9e9a4cea786bee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa65d6cf9416f13aa6f9e9a4cea786bee">&#9670;&nbsp;</a></span>setValue()</h2>
+<a id="a2d7906d1980f8101d5312966193bf9bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d7906d1980f8101d5312966193bf9bd">&#9670;&nbsp;</a></span>setValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename TRecType, typename TRecLen&gt; </div>
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
 <table class="mlabels">
@@ -599,7 +658,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool pcpp::TLVRecord::setValue </td>
+          <td class="memname">bool <a class="el" href="classpcpp_1_1_t_l_v_record.html">pcpp::TLVRecord</a>&lt; TRecType, TRecLen &gt;::setValue </td>
           <td>(</td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>newValue</em>, </td>
@@ -639,7 +698,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a></li>
-    <li class="footer">Generated on Tue Sep 28 2021 08:10:27 for PcapPlusPlus by
+    <li class="footer">Generated on Thu Sep 30 2021 09:29:11 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
