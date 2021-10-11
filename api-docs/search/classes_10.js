@@ -20,6 +20,7 @@ var searchData=
   ['tlvrecordbuilder',['TLVRecordBuilder',['../classpcpp_1_1_t_l_v_record_builder.html',1,'pcpp']]],
   ['tlvrecordreader',['TLVRecordReader',['../classpcpp_1_1_t_l_v_record_reader.html',1,'pcpp']]],
   ['tlvrecordreader_3c_20pcpp_3a_3adhcpoption_20_3e',['TLVRecordReader&lt; pcpp::DhcpOption &gt;',['../classpcpp_1_1_t_l_v_record_reader.html',1,'pcpp']]],
+  ['tlvrecordreader_3c_20pcpp_3a_3adhcpv6option_20_3e',['TLVRecordReader&lt; pcpp::DhcpV6Option &gt;',['../classpcpp_1_1_t_l_v_record_reader.html',1,'pcpp']]],
   ['tlvrecordreader_3c_20pcpp_3a_3aipv4option_20_3e',['TLVRecordReader&lt; pcpp::IPv4Option &gt;',['../classpcpp_1_1_t_l_v_record_reader.html',1,'pcpp']]],
   ['tlvrecordreader_3c_20pcpp_3a_3aipv6tlvoptionheader_3a_3aipv6option_20_3e',['TLVRecordReader&lt; pcpp::IPv6TLVOptionHeader::IPv6Option &gt;',['../classpcpp_1_1_t_l_v_record_reader.html',1,'pcpp']]],
   ['tlvrecordreader_3c_20pcpp_3a_3apppoediscoverylayer_3a_3apppoetag_20_3e',['TLVRecordReader&lt; pcpp::PPPoEDiscoveryLayer::PPPoETag &gt;',['../classpcpp_1_1_t_l_v_record_reader.html',1,'pcpp']]],

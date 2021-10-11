@@ -138,6 +138,14 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dhcp_option_builder.html">DhcpOptionBuilder</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1dhcpv6__header.html">dhcpv6_header</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dhcp_v6_layer.html">DhcpV6Layer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dhcp_v6_option.html">DhcpV6Option</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dhcp_v6_option_builder.html">DhcpV6OptionBuilder</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1dnshdr.html">dnshdr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dns_layer.html">DnsLayer</a></td></tr>
@@ -793,6 +801,110 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a211aac29a5c4d0b7844926cfd369c32c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a966385d715f881fce403e1fb820b1b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a7a966385d715f881fce403e1fb820b1b">DhcpV6MessageType</a> { <br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a7a966385d715f881fce403e1fb820b1ba8b2a003f64def2e5e3338a6318733b5a">DHCPV6_UNKNOWN_MSG_TYPE</a> = 0, 
+<a class="el" href="namespacepcpp.html#a7a966385d715f881fce403e1fb820b1ba1727b3893e71a590b90322b21a6c7bac">DHCPV6_SOLICIT</a> = 1, 
+<a class="el" href="namespacepcpp.html#a7a966385d715f881fce403e1fb820b1ba51b7f6bb87da8af3239cd8aa8eecc1ed">DHCPV6_ADVERTISE</a> = 2, 
+<a class="el" href="namespacepcpp.html#a7a966385d715f881fce403e1fb820b1ba1208a8040cfa129bd9fe58081a5cccb6">DHCPV6_REQUEST</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a7a966385d715f881fce403e1fb820b1badcf17ff4aac9f9cba3407dfb9e76010b">DHCPV6_CONFIRM</a> = 4, 
+<a class="el" href="namespacepcpp.html#a7a966385d715f881fce403e1fb820b1badf8d6817a68d88f05c9999c134761d9c">DHCPV6_RENEW</a> = 5, 
+<a class="el" href="namespacepcpp.html#a7a966385d715f881fce403e1fb820b1ba60bc0cab84fbaefaf80b05cf67a7fc54">DHCPV6_REBIND</a> = 6, 
+<a class="el" href="namespacepcpp.html#a7a966385d715f881fce403e1fb820b1bae6214f7d2402c50be47b8bd91112eed0">DHCPV6_REPLY</a> = 7, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a7a966385d715f881fce403e1fb820b1baf65d57eefbb2f16cee7d78e291df533a">DHCPV6_RELEASE</a> = 8, 
+<a class="el" href="namespacepcpp.html#a7a966385d715f881fce403e1fb820b1baea9495500ee56cd1a7c985e4e6aa3e54">DHCPV6_DECLINE</a> = 9, 
+<a class="el" href="namespacepcpp.html#a7a966385d715f881fce403e1fb820b1bae76ec599b061fb81dd2de01296316826">DHCPV6_RECONFIGURE</a> = 10, 
+<a class="el" href="namespacepcpp.html#a7a966385d715f881fce403e1fb820b1ba2b41be2c3d8fab044b702a958d2c5d64">DHCPV6_INFORMATION_REQUEST</a> = 11, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a7a966385d715f881fce403e1fb820b1bafeb24bed7d1ec7b7cf4e490646722725">DHCPV6_RELAY_FORWARD</a> = 12, 
+<a class="el" href="namespacepcpp.html#a7a966385d715f881fce403e1fb820b1ba20cc25583a5f3d43ddd7f070b11c502c">DHCPV6_RELAY_REPLY</a> = 13
+<br />
+ }</td></tr>
+<tr class="separator:a7a966385d715f881fce403e1fb820b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ac6ea66237371473bd095e2b1465735"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735">DhcpV6OptionType</a> { <br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a8859a26a2beda77d5d1c49b550831790">DHCPV6_OPT_UNKNOWN</a> = 0, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735adf15f8822b9f1838f2e3967a3dac5c11">DHCPV6_OPT_CLIENTID</a> = 1, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735adcdbd0b7e589505786e9420456c2e11e">DHCPV6_OPT_SERVERID</a> = 2, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a32f309959220ea7d570e7460567e16fd">DHCPV6_OPT_IA_NA</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a52bc3b6a81d58ba8a0a351f8761091f6">DHCPV6_OPT_IA_TA</a> = 4, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a8a6a4b2f6dfa018f59e50acf8fa7d563">DHCPV6_OPT_IAADDR</a> = 5, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735ac7f6e09d98db33013ed585a4110458cb">DHCPV6_OPT_ORO</a> = 6, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735ae80540d8fd489da888e8616977b259b0">DHCPV6_OPT_PREFERENCE</a> = 7, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735ac3214405ab59259c916b7027608c4293">DHCPV6_OPT_ELAPSED_TIME</a> = 8, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a4bd590991d9907a6e1a4df9469c238c2">DHCPV6_OPT_RELAY_MSG</a> = 9, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a7c3468cd8845fff62cd841a17590ee4e">DHCPV6_OPT_AUTH</a> = 11, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735ac761d537a7feceb4cda9aad34aa8a9c7">DHCPV6_OPT_UNICAST</a> = 12, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a7c7c72affc919921edc38951156e7c3b">DHCPV6_OPT_STATUS_CODE</a> = 13, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a9dbd832bf27ae9aab469ab246aeb76f8">DHCPV6_OPT_RAPID_COMMIT</a> = 14, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a3339d76efbc75a7408f4f607fd322932">DHCPV6_OPT_USER_CLASS</a> = 15, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735aa7052e2628b41e08e03b887e80726dc4">DHCPV6_OPT_VENDOR_CLASS</a> = 16, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735ac92d4234c2e6e88f6da476b1fb2aa4e7">DHCPV6_OPT_VENDOR_OPTS</a> = 17, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a6d9f1073e15199b189926236825147cc">DHCPV6_OPT_INTERFACE_ID</a> = 18, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735ac37be77f623e4716bc0696ab9a4fc267">DHCPV6_OPT_RECONF_MSG</a> = 19, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a962bc754eac11567640f76e94aee2531">DHCPV6_OPT_RECONF_ACCEPT</a> = 20, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a8578e5fc64d4fb9376abe01d4d2788ce">DHCPV6_OPT_SIP_SERVERS_D</a> = 21, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a1647e1250d55e7a2d737e394cbd62b76">DHCPV6_OPT_SIP_SERVERS_A</a> = 22, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a77ba1f16c2b0dcb5c1201070f6267b00">DHCPV6_OPT_DNS_SERVERS</a> = 23, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a10d1669b5504600bd1eb9a49c8107b44">DHCPV6_OPT_DOMAIN_LIST</a> = 24, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735ac2bb1378e69cf4d6c1b035413239001a">DHCPV6_OPT_IA_PD</a> = 25, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735ad8c6c409813ddf8fbc6884c6303eed39">DHCPV6_OPT_IAPREFIX</a> = 26, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a46114a2b6309bf5c6dc9eb82110c0354">DHCPV6_OPT_NIS_SERVERS</a> = 27, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735af4e0dc376f939fbf94e458ce61e904ec">DHCPV6_OPT_NISP_SERVERS</a> = 28, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a8d86e811047ef2923cca79bcc59e8ee9">DHCPV6_OPT_NIS_DOMAIN_NAME</a> = 29, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a08fa59a204bd01fe87ba842b21101a66">DHCPV6_OPT_NISP_DOMAIN_NAME</a> = 30, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735aed5a6a620b3f83d7eaf92b7137b7d925">DHCPV6_OPT_SNTP_SERVERS</a> = 31, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735abea492d3e86b0f2138665c23795daf2e">DHCPV6_OPT_INFORMATION_REFRESH_TIME</a> = 32, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735ac66ead88dc4d475d363130a0bdb51608">DHCPV6_OPT_BCMCS_SERVER_D</a> = 33, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735ab9bf870e7a9f44fd008826267b5b9ff2">DHCPV6_OPT_BCMCS_SERVER_A</a> = 34, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735ae3b1a85aab1f3ca5a65fc88034be6809">DHCPV6_OPT_GEOCONF_CIVIC</a> = 36, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a95baf81c635f9e47935ba475b633ce14">DHCPV6_OPT_REMOTE_ID</a> = 37, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a4f05c191aefc02429db9f889968700eb">DHCPV6_OPT_SUBSCRIBER_ID</a> = 38, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a6d16d7e7f2d752cd932f915c4a1562b6">DHCPV6_OPT_CLIENT_FQDN</a> = 39, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a19faa2e41eb8eb1d2fb0a06172efd081">DHCPV6_OPT_PANA_AGENT</a> = 40, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a6b50f3fb9a50a9307084ae3b4cd6e746">DHCPV6_OPT_NEW_POSIX_TIMEZONE</a> = 41, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a73f51eff469f3b422d52866b29c70512">DHCPV6_OPT_NEW_TZDB_TIMEZONE</a> = 42, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735adfaf628f9bbf638680d60c32833bbc7b">DHCPV6_OPT_ERO</a> = 43, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a48072886948def1c9194729c5d929b2c">DHCPV6_OPT_LQ_QUERY</a> = 44, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a0f13c8b837f76965ec69777ffea52fc2">DHCPV6_OPT_CLIENT_DATA</a> = 45, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a0daec0e773301ae10be5e9e3c3ae703d">DHCPV6_OPT_CLT_TIME</a> = 46, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a567f81ed099a75e9c782c8db3a4be005">DHCPV6_OPT_LQ_RELAY_DATA</a> = 47, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735ab45e06dd3e565e8ab927fc2b8ee0e8b6">DHCPV6_OPT_LQ_CLIENT_LINK</a> = 48, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a1f2603dc32826a314f935f5c86c96b01">DHCPV6_OPT_MIP6_HNINF</a> = 49, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a268ccf8a005ab5672c1c4096a262a2cf">DHCPV6_OPT_MIP6_RELAY</a> = 50, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735aa21f3294087faf15181468d32dd0226c">DHCPV6_OPT_V6_LOST</a> = 51, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735aa549ef9e24c62cddf2d77b54d568a6ec">DHCPV6_OPT_CAPWAP_AC_V6</a> = 52, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735af17c7a3913daca1b0a4b3251de489bdd">DHCPV6_OPT_RELAY_ID</a> = 53, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a6cfdd8aed501836b471af014d84ad566">DHCPV6_OPT_IPH6_ADDRESS_MOS</a> = 54, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a3004a1cc9a24dd7301c531899fb08970">DHCPV6_OPT_IPV6_FQDN_MOS</a> = 55, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a60d058c203b00fdf434add3cd6edbf2a">DHCPV6_OPT_NTP_SERVER</a> = 56, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a73c5ebd460c6d7ba001e3aee7fe3ed6c">DHCPV6_OPT_BOOTFILE_URL</a> = 59, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a7515eb4cf8ecbdf537fbdb8c9e3f4983">DHCPV6_OPT_BOOTFILE_PARAM</a> = 60, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a795c1ceb3937c5251cc7251e2d27137f">DHCPV6_OPT_CLIENT_ARCH_TYPE</a> = 61, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735ab9cfe54facab8933df6372b17e651c32">DHCPV6_OPT_NII</a> = 62, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a0599a8b6da6a9c017fc33673222b37fe">DHCPV6_OPT_ERP_LOCAL_DOMAIN_NAME</a> = 65, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735ad5d4fe4b4cca348cdab6dc1c15d92e96">DHCPV6_OPT_RELAY_SUPPLIED_OPTIONS</a> = 66, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735acad9d0c084463acee336736476da62ca">DHCPV6_OPT_VSS</a> = 68, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735ae1328978b860308403aa683be19b4439">DHCPV6_OPT_CLIENT_LINKLAYER_ADDR</a> = 79, 
+<a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735a0fe5b808929ac22d96c68ad48c573cb6">DHCPV6_OPT_MUD_URL</a> = 112
+<br />
+ }</td></tr>
+<tr class="separator:a7ac6ea66237371473bd095e2b1465735"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad888578fe7df9849bbfbb10cdf245886"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ad888578fe7df9849bbfbb10cdf245886">DnsType</a> { <br />
 &#160;&#160;<a class="el" href="namespacepcpp.html#ad888578fe7df9849bbfbb10cdf245886a8af3fbea825d5a40151a13443328ac96">DNS_TYPE_A</a> = 1, 
 <a class="el" href="namespacepcpp.html#ad888578fe7df9849bbfbb10cdf245886a94c2039e05ca68ef79c96623541f7a23">DNS_TYPE_NS</a>, 
@@ -1156,29 +1268,30 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aad3a71d664ea3bf5a006b6d2656a8351b">PacketLogModuleSSLLayer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa9feefbfe6ef87bc4451c49648b8f8eed">PacketLogModuleSllLayer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa6ab0732cb96ebc3eb92ce6533781feb2">PacketLogModuleDhcpLayer</a>, 
-<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aaa48184fdd24ac075d4ad4253db635088">PacketLogModuleIgmpLayer</a>, 
+<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa3d2a1dcbfbae2615c1c54564a83669c9">PacketLogModuleDhcpV6Layer</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa3f1c25db7bec90b531e8dd7340885261">PacketLogModuleSipLayer</a>, 
+&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aaa48184fdd24ac075d4ad4253db635088">PacketLogModuleIgmpLayer</a>, 
+<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa3f1c25db7bec90b531e8dd7340885261">PacketLogModuleSipLayer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa2dc43feb7bbb1f5e9dc487037cfeb772">PacketLogModuleSdpLayer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa3b51d867276e79c7dc4c1455b515fa71">PacketLogModuleRadiusLayer</a>, 
-<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa655a345b75ea3bd7a799123a07d6ac96">PacketLogModuleGtpLayer</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa9b03451940ee50ca696f380571fe242b">PacketLogModuleBgpLayer</a>, 
+&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa655a345b75ea3bd7a799123a07d6ac96">PacketLogModuleGtpLayer</a>, 
+<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa9b03451940ee50ca696f380571fe242b">PacketLogModuleBgpLayer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa692bc057f570935a02054f4ced27e5c8">PacketLogModuleSSHLayer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa8d7198b0bc6ff1a750eaeabaeef8a40e">PacketLogModuleTcpReassembly</a>, 
-<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa799e041f932b72c4d16f2535227be9d4">PacketLogModuleIPReassembly</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aafef719fe8a4eebc6d02f972f3a87e9a3">PacketLogModuleIPSecLayer</a>, 
+&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa799e041f932b72c4d16f2535227be9d4">PacketLogModuleIPReassembly</a>, 
+<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aafef719fe8a4eebc6d02f972f3a87e9a3">PacketLogModuleIPSecLayer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aaac5bb0af4a05ddc08ac0d60e40f4af0b">PcapLogModuleWinPcapLiveDevice</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa41327c44f9fd3ea426f5040dd9d0752c">PcapLogModuleRemoteDevice</a>, 
-<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aae794add926803bcab76bc2fbe66230b7">PcapLogModuleLiveDevice</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa63698c9f484eb9f44bec3f1eaed5df0e">PcapLogModuleFileDevice</a>, 
+&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aae794add926803bcab76bc2fbe66230b7">PcapLogModuleLiveDevice</a>, 
+<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa63698c9f484eb9f44bec3f1eaed5df0e">PcapLogModuleFileDevice</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aac8c88c94f4233b2b343c29d2b02cfd9b">PcapLogModulePfRingDevice</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aadfdb8aa4e0ae1db8892cac047dd68879">PcapLogModuleMBufRawPacket</a>, 
-<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa6b600aa8ac5b85687c8b390130d073af">PcapLogModuleDpdkDevice</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa215a3cc0bca9f02941f47cd013cdff3e">PcapLogModuleKniDevice</a>, 
+&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa6b600aa8ac5b85687c8b390130d073af">PcapLogModuleDpdkDevice</a>, 
+<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa215a3cc0bca9f02941f47cd013cdff3e">PcapLogModuleKniDevice</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa7c7b04d450484507109458e2ef341a68">NetworkUtils</a>
 <br />
  }</td></tr>
@@ -1778,6 +1891,8 @@ Variables</h2></td></tr>
 <tr class="separator:a24767a0234b927837786cc51a00c110e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a936c64dc92cbd04c042b730d93c393c8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a936c64dc92cbd04c042b730d93c393c8">IPSec</a> = 0x1800000000</td></tr>
 <tr class="separator:a936c64dc92cbd04c042b730d93c393c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fde402917d83d7a139ba19209fc78cc"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a1fde402917d83d7a139ba19209fc78cc">DHCPv6</a> = 0x2000000000</td></tr>
+<tr class="separator:a1fde402917d83d7a139ba19209fc78cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The main namespace for the PcapPlusPlus lib. </p>
@@ -2404,6 +2519,201 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a211aac29a5c4d0b7844926cfd369c32caf2bad0ca10f55f6bc36b0578a571e58d"></a>DHCPOPT_VIRTUAL_SUBNET_SELECTION&#160;</td><td class="fielddoc"><p>Virtual Subnet Selection (VSS) Option </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a211aac29a5c4d0b7844926cfd369c32cacec5c1d65e140fe71d282cab8d1c7bf3"></a>DHCPOPT_END&#160;</td><td class="fielddoc"><p>End (last option) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a7a966385d715f881fce403e1fb820b1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a966385d715f881fce403e1fb820b1b">&#9670;&nbsp;</a></span>DhcpV6MessageType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacepcpp.html#a7a966385d715f881fce403e1fb820b1b">pcpp::DhcpV6MessageType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DHCPv6 message types </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7a966385d715f881fce403e1fb820b1ba8b2a003f64def2e5e3338a6318733b5a"></a>DHCPV6_UNKNOWN_MSG_TYPE&#160;</td><td class="fielddoc"><p>Unknown message type </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7a966385d715f881fce403e1fb820b1ba1727b3893e71a590b90322b21a6c7bac"></a>DHCPV6_SOLICIT&#160;</td><td class="fielddoc"><p>Solicit message type (Client to Server) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7a966385d715f881fce403e1fb820b1ba51b7f6bb87da8af3239cd8aa8eecc1ed"></a>DHCPV6_ADVERTISE&#160;</td><td class="fielddoc"><p>Advertise message type (Server to Client) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7a966385d715f881fce403e1fb820b1ba1208a8040cfa129bd9fe58081a5cccb6"></a>DHCPV6_REQUEST&#160;</td><td class="fielddoc"><p>Request message type (Client to Server) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7a966385d715f881fce403e1fb820b1badcf17ff4aac9f9cba3407dfb9e76010b"></a>DHCPV6_CONFIRM&#160;</td><td class="fielddoc"><p>Confirm message type (Client to Server) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7a966385d715f881fce403e1fb820b1badf8d6817a68d88f05c9999c134761d9c"></a>DHCPV6_RENEW&#160;</td><td class="fielddoc"><p>Renew message type (Client to Server) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7a966385d715f881fce403e1fb820b1ba60bc0cab84fbaefaf80b05cf67a7fc54"></a>DHCPV6_REBIND&#160;</td><td class="fielddoc"><p>Rebind message type (Client to Server) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7a966385d715f881fce403e1fb820b1bae6214f7d2402c50be47b8bd91112eed0"></a>DHCPV6_REPLY&#160;</td><td class="fielddoc"><p>Reply message type (Server to Client) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7a966385d715f881fce403e1fb820b1baf65d57eefbb2f16cee7d78e291df533a"></a>DHCPV6_RELEASE&#160;</td><td class="fielddoc"><p>Release message type (Client to Server) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7a966385d715f881fce403e1fb820b1baea9495500ee56cd1a7c985e4e6aa3e54"></a>DHCPV6_DECLINE&#160;</td><td class="fielddoc"><p>Decline message type (Client to Server) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7a966385d715f881fce403e1fb820b1bae76ec599b061fb81dd2de01296316826"></a>DHCPV6_RECONFIGURE&#160;</td><td class="fielddoc"><p>Reconfigure message type (Server to Client) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7a966385d715f881fce403e1fb820b1ba2b41be2c3d8fab044b702a958d2c5d64"></a>DHCPV6_INFORMATION_REQUEST&#160;</td><td class="fielddoc"><p>Information-Request message type (Client to Server) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7a966385d715f881fce403e1fb820b1bafeb24bed7d1ec7b7cf4e490646722725"></a>DHCPV6_RELAY_FORWARD&#160;</td><td class="fielddoc"><p>Relay-Forward message type (Relay agent to Server) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7a966385d715f881fce403e1fb820b1ba20cc25583a5f3d43ddd7f070b11c502c"></a>DHCPV6_RELAY_REPLY&#160;</td><td class="fielddoc"><p>Relay-Reply message type (Server to Relay agent) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a7ac6ea66237371473bd095e2b1465735"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ac6ea66237371473bd095e2b1465735">&#9670;&nbsp;</a></span>DhcpV6OptionType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacepcpp.html#a7ac6ea66237371473bd095e2b1465735">pcpp::DhcpV6OptionType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DHCPv6 option types. Resources for more information:</p><ul>
+<li><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/9781118073810.app2">https://onlinelibrary.wiley.com/doi/pdf/10.1002/9781118073810.app2</a></li>
+<li><a href="https://datatracker.ietf.org/doc/html/rfc5970">https://datatracker.ietf.org/doc/html/rfc5970</a></li>
+<li><a href="https://datatracker.ietf.org/doc/html/rfc6607">https://datatracker.ietf.org/doc/html/rfc6607</a></li>
+<li><a href="https://datatracker.ietf.org/doc/html/rfc8520">https://datatracker.ietf.org/doc/html/rfc8520</a> </li>
+</ul>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a8859a26a2beda77d5d1c49b550831790"></a>DHCPV6_OPT_UNKNOWN&#160;</td><td class="fielddoc"><p>Unknown option type </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735adf15f8822b9f1838f2e3967a3dac5c11"></a>DHCPV6_OPT_CLIENTID&#160;</td><td class="fielddoc"><p>Client Identifier (DUID of client) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735adcdbd0b7e589505786e9420456c2e11e"></a>DHCPV6_OPT_SERVERID&#160;</td><td class="fielddoc"><p>Server Identifier (DUID of server) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a32f309959220ea7d570e7460567e16fd"></a>DHCPV6_OPT_IA_NA&#160;</td><td class="fielddoc"><p>Identity Association for Non-temporary addresses </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a52bc3b6a81d58ba8a0a351f8761091f6"></a>DHCPV6_OPT_IA_TA&#160;</td><td class="fielddoc"><p>Identity Association for Temporary addresses </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a8a6a4b2f6dfa018f59e50acf8fa7d563"></a>DHCPV6_OPT_IAADDR&#160;</td><td class="fielddoc"><p>IA Address option </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735ac7f6e09d98db33013ed585a4110458cb"></a>DHCPV6_OPT_ORO&#160;</td><td class="fielddoc"><p>Option Request Option </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735ae80540d8fd489da888e8616977b259b0"></a>DHCPV6_OPT_PREFERENCE&#160;</td><td class="fielddoc"><p>Preference setting </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735ac3214405ab59259c916b7027608c4293"></a>DHCPV6_OPT_ELAPSED_TIME&#160;</td><td class="fielddoc"><p>The amount of time since the client began the current DHCP transaction </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a4bd590991d9907a6e1a4df9469c238c2"></a>DHCPV6_OPT_RELAY_MSG&#160;</td><td class="fielddoc"><p>The DHCP message being relayed by a relay agent </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a7c3468cd8845fff62cd841a17590ee4e"></a>DHCPV6_OPT_AUTH&#160;</td><td class="fielddoc"><p>Authentication information </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735ac761d537a7feceb4cda9aad34aa8a9c7"></a>DHCPV6_OPT_UNICAST&#160;</td><td class="fielddoc"><p>Server unicast </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a7c7c72affc919921edc38951156e7c3b"></a>DHCPV6_OPT_STATUS_CODE&#160;</td><td class="fielddoc"><p>Status code </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a9dbd832bf27ae9aab469ab246aeb76f8"></a>DHCPV6_OPT_RAPID_COMMIT&#160;</td><td class="fielddoc"><p>Rapid commit </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a3339d76efbc75a7408f4f607fd322932"></a>DHCPV6_OPT_USER_CLASS&#160;</td><td class="fielddoc"><p>User class </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735aa7052e2628b41e08e03b887e80726dc4"></a>DHCPV6_OPT_VENDOR_CLASS&#160;</td><td class="fielddoc"><p>Vendor class </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735ac92d4234c2e6e88f6da476b1fb2aa4e7"></a>DHCPV6_OPT_VENDOR_OPTS&#160;</td><td class="fielddoc"><p>Vendor specific information </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a6d9f1073e15199b189926236825147cc"></a>DHCPV6_OPT_INTERFACE_ID&#160;</td><td class="fielddoc"><p>Interface ID </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735ac37be77f623e4716bc0696ab9a4fc267"></a>DHCPV6_OPT_RECONF_MSG&#160;</td><td class="fielddoc"><p>Reconfigure Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a962bc754eac11567640f76e94aee2531"></a>DHCPV6_OPT_RECONF_ACCEPT&#160;</td><td class="fielddoc"><p>Reconfigure Accept </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a8578e5fc64d4fb9376abe01d4d2788ce"></a>DHCPV6_OPT_SIP_SERVERS_D&#160;</td><td class="fielddoc"><p>SIP Servers Domain Name </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a1647e1250d55e7a2d737e394cbd62b76"></a>DHCPV6_OPT_SIP_SERVERS_A&#160;</td><td class="fielddoc"><p>SIP Servers IPv6 Address List </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a77ba1f16c2b0dcb5c1201070f6267b00"></a>DHCPV6_OPT_DNS_SERVERS&#160;</td><td class="fielddoc"><p>DNS Recursive Name Server </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a10d1669b5504600bd1eb9a49c8107b44"></a>DHCPV6_OPT_DOMAIN_LIST&#160;</td><td class="fielddoc"><p>Domain Search List </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735ac2bb1378e69cf4d6c1b035413239001a"></a>DHCPV6_OPT_IA_PD&#160;</td><td class="fielddoc"><p>Identity Association for Prefix Delegation </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735ad8c6c409813ddf8fbc6884c6303eed39"></a>DHCPV6_OPT_IAPREFIX&#160;</td><td class="fielddoc"><p>IA_PD Prefix </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a46114a2b6309bf5c6dc9eb82110c0354"></a>DHCPV6_OPT_NIS_SERVERS&#160;</td><td class="fielddoc"><p>Network Information Service (NIS) Servers </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735af4e0dc376f939fbf94e458ce61e904ec"></a>DHCPV6_OPT_NISP_SERVERS&#160;</td><td class="fielddoc"><p>Network Information Service v2 (NIS+) Servers </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a8d86e811047ef2923cca79bcc59e8ee9"></a>DHCPV6_OPT_NIS_DOMAIN_NAME&#160;</td><td class="fielddoc"><p>Network Information Service (NIS) domain name </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a08fa59a204bd01fe87ba842b21101a66"></a>DHCPV6_OPT_NISP_DOMAIN_NAME&#160;</td><td class="fielddoc"><p>Network Information Service v2 (NIS+) domain name </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735aed5a6a620b3f83d7eaf92b7137b7d925"></a>DHCPV6_OPT_SNTP_SERVERS&#160;</td><td class="fielddoc"><p>Simple Network Time Protocol (SNTP) servers </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735abea492d3e86b0f2138665c23795daf2e"></a>DHCPV6_OPT_INFORMATION_REFRESH_TIME&#160;</td><td class="fielddoc"><p>Information Refresh </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735ac66ead88dc4d475d363130a0bdb51608"></a>DHCPV6_OPT_BCMCS_SERVER_D&#160;</td><td class="fielddoc"><p>Broadcast and Multicast Service (BCMCS) Domain Name List </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735ab9bf870e7a9f44fd008826267b5b9ff2"></a>DHCPV6_OPT_BCMCS_SERVER_A&#160;</td><td class="fielddoc"><p>Broadcast and Multicast Service (BCMCS) IPv6 Address List </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735ae3b1a85aab1f3ca5a65fc88034be6809"></a>DHCPV6_OPT_GEOCONF_CIVIC&#160;</td><td class="fielddoc"><p>Geographical location in civic (e.g., postal) format </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a95baf81c635f9e47935ba475b633ce14"></a>DHCPV6_OPT_REMOTE_ID&#160;</td><td class="fielddoc"><p>Relay Agent Remote ID </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a4f05c191aefc02429db9f889968700eb"></a>DHCPV6_OPT_SUBSCRIBER_ID&#160;</td><td class="fielddoc"><p>Relay Agent Subscriber ID </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a6d16d7e7f2d752cd932f915c4a1562b6"></a>DHCPV6_OPT_CLIENT_FQDN&#160;</td><td class="fielddoc"><p>FQDN </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a19faa2e41eb8eb1d2fb0a06172efd081"></a>DHCPV6_OPT_PANA_AGENT&#160;</td><td class="fielddoc"><p>One or more IPv6 addresses associated with PANA (Protocol for carrying Authentication for Network Access) Authentication Agents </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a6b50f3fb9a50a9307084ae3b4cd6e746"></a>DHCPV6_OPT_NEW_POSIX_TIMEZONE&#160;</td><td class="fielddoc"><p>Time zone to be used by the client in IEEE 1003.1 format </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a73f51eff469f3b422d52866b29c70512"></a>DHCPV6_OPT_NEW_TZDB_TIMEZONE&#160;</td><td class="fielddoc"><p>Time zone (TZ) database entry referred to by entry name </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735adfaf628f9bbf638680d60c32833bbc7b"></a>DHCPV6_OPT_ERO&#160;</td><td class="fielddoc"><p>Relay Agent Echo Request </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a48072886948def1c9194729c5d929b2c"></a>DHCPV6_OPT_LQ_QUERY&#160;</td><td class="fielddoc"><p>Query option </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a0f13c8b837f76965ec69777ffea52fc2"></a>DHCPV6_OPT_CLIENT_DATA&#160;</td><td class="fielddoc"><p>Client Data </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a0daec0e773301ae10be5e9e3c3ae703d"></a>DHCPV6_OPT_CLT_TIME&#160;</td><td class="fielddoc"><p>Client Last Transaction Time </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a567f81ed099a75e9c782c8db3a4be005"></a>DHCPV6_OPT_LQ_RELAY_DATA&#160;</td><td class="fielddoc"><p>Relay data </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735ab45e06dd3e565e8ab927fc2b8ee0e8b6"></a>DHCPV6_OPT_LQ_CLIENT_LINK&#160;</td><td class="fielddoc"><p>Client link </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a1f2603dc32826a314f935f5c86c96b01"></a>DHCPV6_OPT_MIP6_HNINF&#160;</td><td class="fielddoc"><p>Mobile IPv6 Home Network Information </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a268ccf8a005ab5672c1c4096a262a2cf"></a>DHCPV6_OPT_MIP6_RELAY&#160;</td><td class="fielddoc"><p>Mobile IPv6 Relay Agent </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735aa21f3294087faf15181468d32dd0226c"></a>DHCPV6_OPT_V6_LOST&#160;</td><td class="fielddoc"><p>Location to Service Translation (LoST) server domain name </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735aa549ef9e24c62cddf2d77b54d568a6ec"></a>DHCPV6_OPT_CAPWAP_AC_V6&#160;</td><td class="fielddoc"><p>Access Points (CAPWAP) Access Controller IPv6 addresses </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735af17c7a3913daca1b0a4b3251de489bdd"></a>DHCPV6_OPT_RELAY_ID&#160;</td><td class="fielddoc"><p>DHCPv6 Bulk LeaseQuery </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a6cfdd8aed501836b471af014d84ad566"></a>DHCPV6_OPT_IPH6_ADDRESS_MOS&#160;</td><td class="fielddoc"><p>List of IPv6 addresses for servers providing particular types of IEEE 802.21 Mobility Service (MoS) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a3004a1cc9a24dd7301c531899fb08970"></a>DHCPV6_OPT_IPV6_FQDN_MOS&#160;</td><td class="fielddoc"><p>List of FQDNs for servers providing particular types of IEEE 802.21 Mobility Service (MoS) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a60d058c203b00fdf434add3cd6edbf2a"></a>DHCPV6_OPT_NTP_SERVER&#160;</td><td class="fielddoc"><p>Network Time Protocol (NTP) or Simple NTP (SNTP) Server Location </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a73c5ebd460c6d7ba001e3aee7fe3ed6c"></a>DHCPV6_OPT_BOOTFILE_URL&#160;</td><td class="fielddoc"><p>Boot File Uniform Resource Locator (URL) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a7515eb4cf8ecbdf537fbdb8c9e3f4983"></a>DHCPV6_OPT_BOOTFILE_PARAM&#160;</td><td class="fielddoc"><p>Boot File Parameters </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a795c1ceb3937c5251cc7251e2d27137f"></a>DHCPV6_OPT_CLIENT_ARCH_TYPE&#160;</td><td class="fielddoc"><p>Client System Architecture Type </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735ab9cfe54facab8933df6372b17e651c32"></a>DHCPV6_OPT_NII&#160;</td><td class="fielddoc"><p>Client Network Interface Identifier </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a0599a8b6da6a9c017fc33673222b37fe"></a>DHCPV6_OPT_ERP_LOCAL_DOMAIN_NAME&#160;</td><td class="fielddoc"><p>ERP Local Domain Name </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735ad5d4fe4b4cca348cdab6dc1c15d92e96"></a>DHCPV6_OPT_RELAY_SUPPLIED_OPTIONS&#160;</td><td class="fielddoc"><p>Relay supplied options </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735acad9d0c084463acee336736476da62ca"></a>DHCPV6_OPT_VSS&#160;</td><td class="fielddoc"><p>Virtual Subnet Selection </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735ae1328978b860308403aa683be19b4439"></a>DHCPV6_OPT_CLIENT_LINKLAYER_ADDR&#160;</td><td class="fielddoc"><p>Client link layer </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7ac6ea66237371473bd095e2b1465735a0fe5b808929ac22d96c68ad48c573cb6"></a>DHCPV6_OPT_MUD_URL&#160;</td><td class="fielddoc"><p>Manufacturer Usage Description </p>
 </td></tr>
 </table>
 
@@ -3417,6 +3727,8 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="ac6557f5dc8fcb14858f231b12bdc1c1aa9feefbfe6ef87bc4451c49648b8f8eed"></a>PacketLogModuleSllLayer&#160;</td><td class="fielddoc"><p><a class="el" href="classpcpp_1_1_sll_layer.html">SllLayer</a> module (Packet++) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ac6557f5dc8fcb14858f231b12bdc1c1aa6ab0732cb96ebc3eb92ce6533781feb2"></a>PacketLogModuleDhcpLayer&#160;</td><td class="fielddoc"><p><a class="el" href="classpcpp_1_1_dhcp_layer.html">DhcpLayer</a> module (Packet++) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac6557f5dc8fcb14858f231b12bdc1c1aa3d2a1dcbfbae2615c1c54564a83669c9"></a>PacketLogModuleDhcpV6Layer&#160;</td><td class="fielddoc"><p><a class="el" href="classpcpp_1_1_dhcp_v6_layer.html">DhcpV6Layer</a> module (Packet++) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ac6557f5dc8fcb14858f231b12bdc1c1aaa48184fdd24ac075d4ad4253db635088"></a>PacketLogModuleIgmpLayer&#160;</td><td class="fielddoc"><p><a class="el" href="classpcpp_1_1_igmp_layer.html">IgmpLayer</a> module (Packet++) </p>
 </td></tr>
@@ -4899,6 +5211,21 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a1fde402917d83d7a139ba19209fc78cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fde402917d83d7a139ba19209fc78cc">&#9670;&nbsp;</a></span>DHCPv6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::DHCPv6 = 0x2000000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Dynamic Host Configuration Protocol version 6 (DHCPv6) protocol </p>
+
+</div>
+</div>
 <a id="ae432ae466e1de6accc18805e99efd0c7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae432ae466e1de6accc18805e99efd0c7">&#9670;&nbsp;</a></span>DNS</h2>
 
@@ -5535,7 +5862,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li>
-    <li class="footer">Generated on Thu Sep 30 2021 09:29:10 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Oct 11 2021 20:07:21 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

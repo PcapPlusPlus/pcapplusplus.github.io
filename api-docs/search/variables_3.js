@@ -6,6 +6,7 @@ var searchData=
   ['defaulttimeout',['DefaultTimeout',['../classpcpp_1_1_network_utils.html#a6c8310c11abf274e400a9b2be59ab873',1,'pcpp::NetworkUtils']]],
   ['devid',['devId',['../structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html#a49e5bd913fde8b892d1bbe27dbf53065',1,'pcpp::DpdkDevice::DpdkDeviceStats']]],
   ['dhcp',['DHCP',['../namespacepcpp.html#a5f677ab02f328eb59216916238bea6c1',1,'pcpp']]],
+  ['dhcpv6',['DHCPv6',['../namespacepcpp.html#a1fde402917d83d7a139ba19209fc78cc',1,'pcpp']]],
   ['direction',['direction',['../structpcpp_1_1_pcap_live_device_1_1_device_configuration.html#ab5d5b0ed427abf26af79ed8cc80486a5',1,'pcpp::PcapLiveDevice::DeviceConfiguration']]],
   ['dns',['DNS',['../namespacepcpp.html#ae432ae466e1de6accc18805e99efd0c7',1,'pcpp']]],
   ['dontlearnflag',['dontLearnFlag',['../structpcpp_1_1vxlan__header.html#a8bf01681565ea80e389e36c7911c9c37',1,'pcpp::vxlan_header']]],

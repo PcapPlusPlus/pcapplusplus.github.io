@@ -3,6 +3,7 @@ var searchData=
   ['packetlogmodulearplayer',['PacketLogModuleArpLayer',['../namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa35b4bee6678121de9ced26986def4552',1,'pcpp']]],
   ['packetlogmodulebgplayer',['PacketLogModuleBgpLayer',['../namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa9b03451940ee50ca696f380571fe242b',1,'pcpp']]],
   ['packetlogmoduledhcplayer',['PacketLogModuleDhcpLayer',['../namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa6ab0732cb96ebc3eb92ce6533781feb2',1,'pcpp']]],
+  ['packetlogmoduledhcpv6layer',['PacketLogModuleDhcpV6Layer',['../namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa3d2a1dcbfbae2615c1c54564a83669c9',1,'pcpp']]],
   ['packetlogmodulednslayer',['PacketLogModuleDnsLayer',['../namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aab73a06a22add3f775fe2d9816e7eb557',1,'pcpp']]],
   ['packetlogmoduleethlayer',['PacketLogModuleEthLayer',['../namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa2a8edf00f8e0414805f5227a84f3a233',1,'pcpp']]],
   ['packetlogmodulegrelayer',['PacketLogModuleGreLayer',['../namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa1b471ed9b860901662d96ade7712e9da',1,'pcpp']]],

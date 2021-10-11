@@ -9,7 +9,7 @@ var searchData=
   ['maxoutoforderfragments',['maxOutOfOrderFragments',['../structpcpp_1_1_tcp_reassembly_configuration.html#a760cfdaff04fc2c37da820a7a092c989',1,'pcpp::TcpReassemblyConfiguration']]],
   ['maxresponsetime',['maxResponseTime',['../structpcpp_1_1igmp__header.html#a7f27621294fb1d9a9e0016150c6c4133',1,'pcpp::igmp_header::maxResponseTime()'],['../structpcpp_1_1igmpv3__query__header.html#ae1720bbb2665eca8153e26f26175ef55',1,'pcpp::igmpv3_query_header::maxResponseTime()']]],
   ['messagelength',['messageLength',['../structpcpp_1_1gtpv1__header.html#a38db0c49f1348a361be215d9d218ab87',1,'pcpp::gtpv1_header']]],
-  ['messagetype',['messageType',['../structpcpp_1_1_bgp_layer_1_1bgp__common__header.html#a498670976c145733e0ce2236ec470f61',1,'pcpp::BgpLayer::bgp_common_header::messageType()'],['../structpcpp_1_1gtpv1__header.html#a2c6e763fdb7b8b84c9be495be60ac32e',1,'pcpp::gtpv1_header::messageType()']]],
+  ['messagetype',['messageType',['../structpcpp_1_1_bgp_layer_1_1bgp__common__header.html#a498670976c145733e0ce2236ec470f61',1,'pcpp::BgpLayer::bgp_common_header::messageType()'],['../structpcpp_1_1dhcpv6__header.html#a09e1505b8ff248ffb51dc6e13eba676c',1,'pcpp::dhcpv6_header::messageType()'],['../structpcpp_1_1gtpv1__header.html#a2c6e763fdb7b8b84c9be495be60ac32e',1,'pcpp::gtpv1_header::messageType()']]],
   ['mode',['mode',['../structpcpp_1_1_pcap_live_device_1_1_device_configuration.html#af44933f7a8a561384201368ef54b2d01',1,'pcpp::PcapLiveDevice::DeviceConfiguration']]],
   ['mpls',['MPLS',['../namespacepcpp.html#a2f69fdca66dec264f99da6e3de96345c',1,'pcpp']]],
   ['mtu',['mtu',['../structpcpp_1_1_kni_device_1_1_kni_device_configuration.html#a367e9fa4227ef174aff1f4c9a0f85ab6',1,'pcpp::KniDevice::KniDeviceConfiguration']]],

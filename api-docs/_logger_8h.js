@@ -25,6 +25,7 @@ var _logger_8h =
       [ "PacketLogModuleSSLLayer", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aad3a71d664ea3bf5a006b6d2656a8351b", null ],
       [ "PacketLogModuleSllLayer", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa9feefbfe6ef87bc4451c49648b8f8eed", null ],
       [ "PacketLogModuleDhcpLayer", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa6ab0732cb96ebc3eb92ce6533781feb2", null ],
+      [ "PacketLogModuleDhcpV6Layer", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa3d2a1dcbfbae2615c1c54564a83669c9", null ],
       [ "PacketLogModuleIgmpLayer", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aaa48184fdd24ac075d4ad4253db635088", null ],
       [ "PacketLogModuleSipLayer", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa3f1c25db7bec90b531e8dd7340885261", null ],
       [ "PacketLogModuleSdpLayer", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa2dc43feb7bbb1f5e9dc487037cfeb772", null ],

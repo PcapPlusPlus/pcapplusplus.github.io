@@ -18,6 +18,7 @@ var files =
     ] ],
     [ "Device.h", "_device_8h.html", "_device_8h" ],
     [ "DhcpLayer.h", "_dhcp_layer_8h.html", "_dhcp_layer_8h" ],
+    [ "DhcpV6Layer.h", "_dhcp_v6_layer_8h.html", "_dhcp_v6_layer_8h" ],
     [ "DnsLayer.h", "_dns_layer_8h.html", [
       [ "dnshdr", "structpcpp_1_1dnshdr.html", "structpcpp_1_1dnshdr" ],
       [ "DnsLayer", "classpcpp_1_1_dns_layer.html", "classpcpp_1_1_dns_layer" ],
