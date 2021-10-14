@@ -9,12 +9,12 @@ var classpcpp_1_1_packet =
     [ "Packet", "classpcpp_1_1_packet.html#a11d603615d2f100eec547d51b4a6282e", null ],
     [ "addLayer", "classpcpp_1_1_packet.html#ad43e09f561e9b8bfe32bc498c2fa3ec1", null ],
     [ "computeCalculateFields", "classpcpp_1_1_packet.html#ab19addb15ea46927076227436fde753e", null ],
-    [ "detachLayer", "classpcpp_1_1_packet.html#ad4dbb6b0bedb3f58f6855aa0329a8908", null ],
     [ "detachLayer", "classpcpp_1_1_packet.html#a54d83577cda897699f28595477f2d92d", null ],
+    [ "detachLayer", "classpcpp_1_1_packet.html#ad4dbb6b0bedb3f58f6855aa0329a8908", null ],
     [ "getFirstLayer", "classpcpp_1_1_packet.html#afbe8bb3d1c8ef829120fa1bc9bac5677", null ],
     [ "getLastLayer", "classpcpp_1_1_packet.html#aa207dcf476921fbd53959e7da47ad1ac", null ],
-    [ "getLayerOfType", "classpcpp_1_1_packet.html#a8db6d1f014dc0827c8cef731e8090d5e", null ],
     [ "getLayerOfType", "classpcpp_1_1_packet.html#a952f7939f5044c45bef2bde38ed22b61", null ],
+    [ "getLayerOfType", "classpcpp_1_1_packet.html#a8db6d1f014dc0827c8cef731e8090d5e", null ],
     [ "getNextLayerOfType", "classpcpp_1_1_packet.html#aa72a2ce1030ddbc55a8bcee7f130081f", null ],
     [ "getPrevLayerOfType", "classpcpp_1_1_packet.html#a99db82a5813c139b538a09ae195f2bf4", null ],
     [ "getRawPacket", "classpcpp_1_1_packet.html#a56ef03e8516ee79b8ac397db0f052e89", null ],
@@ -27,6 +27,6 @@ var classpcpp_1_1_packet =
     [ "removeLastLayer", "classpcpp_1_1_packet.html#abda544ac8ac70142f086f63b25ff200c", null ],
     [ "removeLayer", "classpcpp_1_1_packet.html#a28fbabf49349df90548ac7c085b1cff3", null ],
     [ "setRawPacket", "classpcpp_1_1_packet.html#a1dee26fe9bb8c7ae6cd90f45e67446ef", null ],
-    [ "toString", "classpcpp_1_1_packet.html#a8c3a62bbd020dc2e88147be71876a758", null ],
+    [ "toString", "classpcpp_1_1_packet.html#aa4ffed34a919a61fd1f8e4fef7a0de7c", null ],
     [ "toStringList", "classpcpp_1_1_packet.html#ab565f9f2bb5099c83ccf25e917e6257c", null ]
 ];

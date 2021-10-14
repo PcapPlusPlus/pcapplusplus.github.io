@@ -1,4 +1,4 @@
-var files_dup =
+var files =
 [
     [ "ArpLayer.h", "_arp_layer_8h.html", "_arp_layer_8h" ],
     [ "BgpLayer.h", "_bgp_layer_8h.html", [
@@ -85,10 +85,7 @@ var files_dup =
     [ "IPv6Layer.h", "_i_pv6_layer_8h.html", "_i_pv6_layer_8h" ],
     [ "KniDevice.h", "_kni_device_8h.html", "_kni_device_8h" ],
     [ "KniDeviceList.h", "_kni_device_list_8h_source.html", null ],
-    [ "Layer.h", "_layer_8h.html", [
-      [ "IDataContainer", "classpcpp_1_1_i_data_container.html", "classpcpp_1_1_i_data_container" ],
-      [ "Layer", "classpcpp_1_1_layer.html", "classpcpp_1_1_layer" ]
-    ] ],
+    [ "Layer.h", "_layer_8h.html", "_layer_8h" ],
     [ "LinuxNicInformationSocket.h", "_linux_nic_information_socket_8h_source.html", null ],
     [ "Logger.h", "_logger_8h.html", "_logger_8h" ],
     [ "LRUList.h", "_l_r_u_list_8h.html", [
@@ -103,9 +100,7 @@ var files_dup =
       [ "NetworkUtils", "classpcpp_1_1_network_utils.html", "classpcpp_1_1_network_utils" ]
     ] ],
     [ "NullLoopbackLayer.h", "_null_loopback_layer_8h.html", "_null_loopback_layer_8h" ],
-    [ "Packet.h", "_packet_8h.html", [
-      [ "Packet", "classpcpp_1_1_packet.html", "classpcpp_1_1_packet" ]
-    ] ],
+    [ "Packet.h", "_packet_8h.html", "_packet_8h" ],
     [ "PacketTrailerLayer.h", "_packet_trailer_layer_8h.html", [
       [ "PacketTrailerLayer", "classpcpp_1_1_packet_trailer_layer.html", "classpcpp_1_1_packet_trailer_layer" ]
     ] ],

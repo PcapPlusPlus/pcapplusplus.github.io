@@ -1,27 +1,3 @@
-/*
- @licstart  The following is the entire license notice for the JavaScript code in this file.
-
- The MIT License (MIT)
-
- Copyright (C) 1997-2020 by Dimitri van Heesch
-
- Permission is hereby granted, free of charge, to any person obtaining a copy of this software
- and associated documentation files (the "Software"), to deal in the Software without restriction,
- including without limitation the rights to use, copy, modify, merge, publish, distribute,
- sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
- furnished to do so, subject to the following conditions:
-
- The above copyright notice and this permission notice shall be included in all copies or
- substantial portions of the Software.
-
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
- BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
- NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
- DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
- @licend  The above is the entire license notice for the JavaScript code in this file
-*/
 var NAVTREE =
 [
   [ "PcapPlusPlus", "index.html", [
@@ -52,8 +28,8 @@ var NAVTREE =
         [ "Enumerator", "functions_eval.html", "functions_eval" ]
       ] ]
     ] ],
-    [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ],
+    [ "Files", null, [
+      [ "File List", "files.html", "files" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", null ],
@@ -73,16 +49,16 @@ var NAVTREEINDEX =
 "_raw_packet_8h.html#ab3f43dd3ccd8c93acac8b67909be02beabd4be54c5a3249f89039a7aee5826ae2",
 "_sip_layer_8h.html#a4c403a32f2ff4c5947c113771a336f2b",
 "classpcpp_1_1_dhcp_option.html#a1d8b72aeaa4425947c0ef9bcc5229631",
-"classpcpp_1_1_g_r_ev1_layer.html#a7f1a5c683711e5847fa04d2916bed59e",
-"classpcpp_1_1_i_p_address.html#a9f7c0805f46aface885aab6adaafac00",
-"classpcpp_1_1_i_pv6_t_l_v_option_header_1_1_i_pv6_t_l_v_option_builder.html",
-"classpcpp_1_1_mx_dns_resource_data.html#aba8f26beaedf8657c8b98aed15ea539c",
-"classpcpp_1_1_pcap_ng_file_writer_device.html#adb4aff7706bb5e6d06d39e8ae4355eff",
-"classpcpp_1_1_s_s_l_client_hello_message.html#a2d7b47cab71369351252b633a134a7d6",
-"classpcpp_1_1_sip_response_layer.html#a05536b7d8719b76e84ea4c539cb9e5b6ac5e586a331323861622d8d1012d3a70d",
-"functions_eval.html",
-"structpcpp_1_1_kni_device_1_1_kni_device_configuration.html#a75e4fec9e87b52e390e1d79e3d8e6dd6",
-"structpcpp_1_1ipsec__authentication__header.html#acf9a0665fd5f50f67b426bee5ae5cdc6"
+"classpcpp_1_1_g_r_ev0_layer.html#aa9eec34dc2e939e8b599504e9e2552a6",
+"classpcpp_1_1_i_p_address.html#a6d61f3719cb001136a622d4622c003a8",
+"classpcpp_1_1_i_pv6_t_l_v_option_header.html#a82eff0e86e6ae6ae14e13888b434be3d",
+"classpcpp_1_1_mpls_layer.html#ad36043d44c2a5c3dbb0a9809756ccbc6",
+"classpcpp_1_1_pcap_ng_file_writer_device.html#a4ad636213ad5ae9af2936c1c4ea29682",
+"classpcpp_1_1_s_s_l_cipher_suite.html#a77ec0aae4f7bfcb117b15f68b2f16b28",
+"classpcpp_1_1_sip_response_layer.html#a05536b7d8719b76e84ea4c539cb9e5b6aa1dda59992f185c1bd7ba2422abd6ec1",
+"deprecated.html",
+"structpcpp_1_1_i_pv6_routing_header_1_1ipv6__routing__header.html",
+"structpcpp_1_1iphdr.html#a9b98fc149f9d262fbdfe2e4f92595c24"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
