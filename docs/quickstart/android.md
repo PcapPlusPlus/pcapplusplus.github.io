@@ -28,7 +28,7 @@ ToyVpn uses [`VpnService`](https://developer.android.com/reference/android/net/V
 
 [ToyVpn-PcapPlusPlus's `README.md`](https://github.com/seladb/ToyVpn-PcapPlusPlus/blob/master/README.md) file contains detailed information on how to [build and install the app](https://github.com/seladb/ToyVpn-PcapPlusPlus#build-and-run-instructions).
 
-PcapPlusPlus pre-compiled libraries are available in the release page: [pcapplusplus-21.05-android.tar.gz](https://github.com/seladb/PcapPlusPlus/releases/download/v21.05/pcapplusplus-21.05-android.tar.gz)
+PcapPlusPlus pre-compiled libraries are available in the release page: [pcapplusplus-21.11-android.tar.gz](https://github.com/seladb/PcapPlusPlus/releases/download/v21.11/pcapplusplus-21.11-android.tar.gz)
 
 Here is a screenshot of the app:
 
