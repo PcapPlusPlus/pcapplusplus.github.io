@@ -9,7 +9,7 @@ var classpcpp_1_1_logger =
     [ "enableLogs", "classpcpp_1_1_logger.html#a17c9f277314397a21d5d37e844ad29aa", null ],
     [ "getLastError", "classpcpp_1_1_logger.html#af34b1a2074473b84b62f54edf520bb90", null ],
     [ "getLogLevel", "classpcpp_1_1_logger.html#a4d5efab1e243845931d56d13cc3f45cf", null ],
-    [ "internalPrintLogMessage", "classpcpp_1_1_logger.html#aaf53f9ecf8871b33c30e72a50b0cc7e5", null ],
+    [ "internalPrintLogMessage", "classpcpp_1_1_logger.html#a5cb665bc4dd60eea6e3043abaf2fa8ef", null ],
     [ "isDebugEnabled", "classpcpp_1_1_logger.html#af674b8a34a5da2df2d73f3e882934604", null ],
     [ "logsEnabled", "classpcpp_1_1_logger.html#a8463ca581c9fc026c0932ba60d78862c", null ],
     [ "resetLogPrinter", "classpcpp_1_1_logger.html#a90be870adb5dad753552392ffe2c89dd", null ],
