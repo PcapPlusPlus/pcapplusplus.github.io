@@ -28,6 +28,7 @@ pcapplusplus_ver_num: 21.05
 pcapplusplus_ver: v21.05
 is_new_release: false
 github_label: master
+latest: true
 
 # Google Analytics Tracking Id
 ga_tracking: UA-74037205-2
