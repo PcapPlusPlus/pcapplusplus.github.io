@@ -18,7 +18,7 @@ This page contains a list of all PcapPlusPlus releases, and for recent release i
 - API reference: <https://pcapplusplus.github.io/api-docs/>{:target="_blank"}
 
 
-## Latest Official Release - v21.11
+## Current Release - v21.11
 
 Released on November 2021 {% include new-release.html %} 
 

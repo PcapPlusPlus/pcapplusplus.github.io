@@ -114,7 +114,7 @@ Creating applications using PcapPlusPlus is rather easy. Let's have a guided tou
 
 First let's make sure PcapPlusPlus is configured and built successfully. Please follow [the download page]({{ site.baseurl }}/docs/install) for building instructions.
 
-Another option is to download a pre-compiled version of PcapPlusPlus, please download the [latest release](https://github.com/seladb/PcapPlusPlus/releases/latest) for your platform and follow the instructions on how to configure it.
+Another option is to download a pre-compiled version of PcapPlusPlus, please download the [latest release](https://github.com/seladb/PcapPlusPlus/releases/tag/{{site.pcapplusplus_ver}}) for your platform and follow the instructions on how to configure it.
 
 Now all we need is under the `Dist/` directory. We can find the PcapPlusPlus libraries, header files under `Dist/header`, compiled examples under `Dist/examples` and helpful makefiles we'll going to use under `Dist/mk`
 
@@ -280,7 +280,7 @@ That's it! The project will now build successfully! Again, I strongly advise to 
 
 ## Running the example
 
-All code that was covered in this tutorial can be found [here](https://github.com/seladb/PcapPlusPlus/tree/{{site.github_label}}/Examples/Tutorials/Tutorial-HelloWorld). In order to compile and run the code please first download and compile PcapPlusPlus code or downloaded a pre-compiled version from [the latest PcapPlusPlus release](https://github.com/seladb/PcapPlusPlus/releases/latest). Then follow these instruction, according to your platform:
+All code that was covered in this tutorial can be found [here](https://github.com/seladb/PcapPlusPlus/tree/{{site.github_label}}/Examples/Tutorials/Tutorial-HelloWorld). In order to compile and run the code please first download and compile PcapPlusPlus code or downloaded a pre-compiled version from the [{{ site.pcapplusplus_ver }} release](https://github.com/seladb/PcapPlusPlus/releases/tag/{{site.pcapplusplus_ver}}). Then follow these instruction, according to your platform:
 
 * Linux, MacOS, FreeBSD - make sure PcapPlusPlus is installed (by running **sudo make install** in PcapPlusPlus main directory). Then either change the `Makefile.non_windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.non_windows all`
 * Windows using MinGW or MinGW-w64 - either change the `Makefile.windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.windows all`

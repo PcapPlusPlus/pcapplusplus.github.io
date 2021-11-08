@@ -11,7 +11,7 @@ nav_order: 2
 
 PcapPlusPlus is available on <img src="{{ site.baseurl }}/resources/logo-windows.png" alt="drawing" width="24" title="Windows"/> Windows, <img src="{{ site.baseurl }}/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> Linux, <img src="{{ site.baseurl }}/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/> MacOS, <img src="{{ site.baseurl }}/resources/logo-android.png" alt="drawing" width="24" title="Android"/> Android and <img src="{{ site.baseurl }}/resources/logo-freebsd.png" alt="drawing" width="24" title="FreeBSD"/> FreeBSD (see more details [here]({{ site.baseurl }}/docs/platforms)).
 
-[Latest Release: {{ site.pcapplusplus_ver }}](https://github.com/seladb/PcapPlusPlus/releases/latest){: .btn .btn-purple } {% include new-release.html %}
+[{% if site.latest == true %}Latest Release: {{ site.pcapplusplus_ver }}{% else %}{{ site.pcapplusplus_ver }} Release{% endif %}](https://github.com/seladb/PcapPlusPlus/releases/tag/{{site.pcapplusplus_ver}}){: .btn .btn-purple } {% include new-release.html %}
 
 You can choose between downloading pre-built binaries or build it from source. The different options are described below:
 
@@ -62,11 +62,11 @@ conan install pcapplusplus/21.05@
 
 This command will fetch PcapPlusPlus directly from ConanCenter: <https://conan.io/center/pcapplusplus>
 
-## Latest Release From GitHub
+## {% if site.latest == true %}Latest{% else %}{{ site.pcapplusplus_ver }}{% endif %} Release From GitHub
 
 Available for: <img src="{{ site.baseurl }}/resources/logo-windows.png" alt="drawing" width="24" title="Windows"/> <img src="{{ site.baseurl }}/resources/logo-linux.png" alt="drawing" width="24" title="Linux"/> <img src="{{ site.baseurl }}/resources/logo-apple.png" alt="drawing" width="24" title="MacOS"/> <img src="{{ site.baseurl }}/resources/logo-freebsd.png" alt="drawing" width="24" title="FreeBSD"/> <img src="{{ site.baseurl }}/resources/logo-android.png" alt="drawing" width="24" title="Android"/>
 
-[Download Latest Release: {{ site.pcapplusplus_ver }}](https://github.com/seladb/PcapPlusPlus/releases/latest){: .btn .btn-purple } {% include new-release.html %}
+[{% if site.latest == true %}Download Latest Release: {{ site.pcapplusplus_ver }}{% else %}Download {{ site.pcapplusplus_ver }} Release{% endif %}](https://github.com/seladb/PcapPlusPlus/releases/tag/{{site.pcapplusplus_ver}}){: .btn .btn-purple } {% include new-release.html %}
 
 Each release of PcapPlusPlus ships with pre-compiled libraries for a variety of operating systems and GCC versions including:
 
