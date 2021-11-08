@@ -82,7 +82,7 @@ After a successful build you can run these test-cases by following these simple 
   Test cases: 92, Passed: 91, Failed: 1, Skipped: 0
   ```
 
-- Please note that it's very important to run the tests from the `Tests/Packet++Test` directory (using `Bin/Packet++Test`) because the test-cases are using packet examples that reside in [Tests/Packet++Test/PacketExamples](https://github.com/seladb/PcapPlusPlus/tree/master/Tests/Packet%2B%2BTest/PacketExamples) and are assuming the running directory is `Tests/Packet++Test`
+- Please note that it's very important to run the tests from the `Tests/Packet++Test` directory (using `Bin/Packet++Test`) because the test-cases are using packet examples that reside in [Tests/Packet++Test/PacketExamples](https://github.com/seladb/PcapPlusPlus/tree/{{site.github_label}}/Tests/Packet%2B%2BTest/PacketExamples) and are assuming the running directory is `Tests/Packet++Test`
 
 
 ### Some more technical details
@@ -275,7 +275,7 @@ After a successful build you can run these test-cases by following these simple 
   ..
   ```
 
-- Please note that it's very important to run the tests from the `Tests/Pcap++Test` directory (using `Bin/Pcap++Test`) because the test-cases are using packet examples that reside in [Tests/Pcap++Test/PcapExamples](https://github.com/seladb/PcapPlusPlus/tree/master/Tests/Pcap%2B%2BTest/PcapExamples) and are assuming the running directory is `Tests/Pcap++Test`
+- Please note that it's very important to run the tests from the `Tests/Pcap++Test` directory (using `Bin/Pcap++Test`) because the test-cases are using packet examples that reside in [Tests/Pcap++Test/PcapExamples](https://github.com/seladb/PcapPlusPlus/tree/{{site.github_label}}/Tests/Pcap%2B%2BTest/PcapExamples) and are assuming the running directory is `Tests/Pcap++Test`
 
 - If you're building PcapPlusPlus with DPDK there is an additional mandatory command-line parameter which is "`-k`" or "`--dpdk-port`" where you need to provide the DPDK port to use for the tests. This port is simply a number starting from 0, so if you have only one interface assigned to DPDK the port number will be 0. If you have two interfaces assigned to DPDK then you can choose either 0 or 1, and so on. Please make sure there is network traffic flowing to this interface
 
@@ -366,7 +366,7 @@ Because this project is written in Python it has different requirements and setu
 ### Requirements
 
 - This project requires [Python 3.7](https://www.python.org/downloads/) or newer. It won't run on Python 2.7.x
-- It has dependencies on other Python libraries described in [`requirements.txt`](https://github.com/seladb/PcapPlusPlus/blob/master/Tests/ExamplesTest/requirements.txt). In the next section we'll go into the details of how to install them
+- It has dependencies on other Python libraries described in [`requirements.txt`](https://github.com/seladb/PcapPlusPlus/blob/{{site.github_label}}/Tests/ExamplesTest/requirements.txt). In the next section we'll go into the details of how to install them
 
 ### Setup
 
@@ -395,7 +395,7 @@ This section describes the steps to get to a working setup:
   seladb@seladb:~/PcapPlusPlus/Tests/ExamplesTest$ source venv/bin/activate
   (venv) seladbseladb:~/PcapPlusPlus/Tests/ExamplesTest$ 
   ```
-- Install the dependencies described in [`requirements.txt`](https://github.com/seladb/PcapPlusPlus/blob/master/Tests/ExamplesTest/requirements.txt):
+- Install the dependencies described in [`requirements.txt`](https://github.com/seladb/PcapPlusPlus/blob/{{site.github_label}}/Tests/ExamplesTest/requirements.txt):
 
   ```shell
   (venv) seladb@seladb:~/PcapPlusPlus/Tests/ExamplesTest$ python3 -m pip install -r requirements.txt

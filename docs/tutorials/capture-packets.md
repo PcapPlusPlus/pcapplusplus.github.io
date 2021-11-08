@@ -213,17 +213,17 @@ std::cout << std::endl << "Starting async capture..." << std::endl;
 dev->startCapture(onPacketArrives, &stats);
 ```
 
-Please remember the packet capture is happening in a different thread so code written from now on in our main thread will work in parallel. For the sake of this demo let's choose not to do anything and wait (sleep) for 10 seconds and then stop the capture. Since there is no one "sleep" method compatible for all operating systems PcapPlusPlus provides a macro called `PCAP_SLEEP` which runs the right "sleep" method according to the operating system the application is currently running on. For using this macro we need to add an include phrase to "PlatformSpecificUtils.h" in Common++:
+Please remember the packet capture is happening in a different thread so code written from now on in our main thread will work in parallel. For the sake of this demo let's choose not to do anything and wait (sleep) for 10 seconds and then stop the capture. Since there is no one "sleep" method compatible for all operating systems PcapPlusPlus provides a method called `pcpp::multiPlatformSleep()` which runs the right "sleep" method according to the operating system the application is currently running on. For using this macro we need to add an include phrase to `SystemUtils.h` in Common++:
 
 ```cpp
-#include "PlatformSpecificUtils.h"
+#include "SystemUtils.h"
 ```
 
 Now let's write the code that sleeps for 10 seconds and then stops the packet capture:
 
 ```cpp
 // sleep for 10 seconds in main thread, in the meantime packets are captured in the async thread
-PCAP_SLEEP(10);
+pcpp::multiPlatformSleep(10);
 
 // stop capturing packets
 dev->stopCapture();
@@ -274,7 +274,7 @@ As we said the packet capture happens in another thread so like in the previous 
 
 ```cpp
 // sleep for 10 seconds in main thread, in the meantime packets are captured in the async thread
-PCAP_SLEEP(10);
+pcpp::multiPlatformSleep(10);
 
 // stop capturing packets
 dev->stopCapture();
@@ -464,7 +464,7 @@ std::cout << std::endl << "Starting packet capture with a filter in place..." <<
 dev->startCapture(onPacketArrives, &stats);
 
 // sleep for 10 seconds in main thread, in the meantime packets are captured in the async thread
-PCAP_SLEEP(10);
+pcpp::multiPlatformSleep(10);
 
 // stop capturing packets
 dev->stopCapture();
@@ -493,7 +493,7 @@ As you can see the filter worked as there are no UDP, SSL or DNS packets, althou
 
 ## Running the example
 
-All code that was covered in this tutorial can be found [here](https://github.com/seladb/PcapPlusPlus/tree/master/Examples/Tutorials/Tutorial-LiveTraffic). In order to compile and run the code please first download and compile PcapPlusPlus code or downloaded a pre-compiled version from [the latest PcapPlusPlus release](https://github.com/seladb/PcapPlusPlus/releases/latest). Then follow these instruction, according to your platform:
+All code that was covered in this tutorial can be found [here](https://github.com/seladb/PcapPlusPlus/tree/{{site.github_label}}/Examples/Tutorials/Tutorial-LiveTraffic). In order to compile and run the code please first download and compile PcapPlusPlus code or downloaded a pre-compiled version from [the latest PcapPlusPlus release](https://github.com/seladb/PcapPlusPlus/releases/latest). Then follow these instruction, according to your platform:
 
 * Linux, MacOS, FreeBSD - make sure PcapPlusPlus is installed (by running **sudo make install** in PcapPlusPlus main directory). Then either change the `Makefile.non_windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.non_windows all`
 * Windows using MinGW or MinGW-w64 - either change the `Makefile.windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.windows all`

@@ -261,7 +261,7 @@ printf("ClientHello (JA3) TLS fingerprint: '%s'; MD5: '%s'\n", tlsFingerprintStr
 
 ServerHello TLS fingerprinting (JA3S) is almost similar but for `pcpp::SSLServerHelloMessage` messages.
 
-To learn more please take a look at the [TLS fingerprinting example](https://github.com/seladb/PcapPlusPlus/tree/master/Examples/TLSFingerprinting) in PcapPlusPlus GitHub repo which demonstrates how to collect ClientHello and ServerHello fingerprints from live traffic or pcap files, write them to an output file and display various statistics.
+To learn more please take a look at the [TLS fingerprinting example](https://github.com/seladb/PcapPlusPlus/tree/{{site.github_label}}/Examples/TLSFingerprinting) in PcapPlusPlus GitHub repo which demonstrates how to collect ClientHello and ServerHello fingerprints from live traffic or pcap files, write them to an output file and display various statistics.
 
 ## Supported network protocols
 

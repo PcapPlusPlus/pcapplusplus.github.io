@@ -55,4 +55,4 @@ If you already looked at the code and found the root cause - that's great! You c
 
 ### Code contributions
 
-If you'd like to fix bugs or add a new feature to PcapPlusPlus, please make sure to read the [CONTRIBUTING](https://github.com/seladb/PcapPlusPlus/blob/master/CONTRIBUTING.md) document. This document should provide you with all the necessary information on how to create the pull request, what it should include and how the review process works.
+If you'd like to fix bugs or add a new feature to PcapPlusPlus, please make sure to read the [CONTRIBUTING](https://github.com/seladb/PcapPlusPlus/blob/{{site.github_label}}/CONTRIBUTING.md) document. This document should provide you with all the necessary information on how to create the pull request, what it should include and how the review process works.

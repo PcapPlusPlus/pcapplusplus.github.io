@@ -126,8 +126,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a17c9f277314397a21d5d37e844ad29aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8463ca581c9fc026c0932ba60d78862c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_logger.html#a8463ca581c9fc026c0932ba60d78862c">logsEnabled</a> () const</td></tr>
 <tr class="separator:a8463ca581c9fc026c0932ba60d78862c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf53f9ecf8871b33c30e72a50b0cc7e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_logger.html#aaf53f9ecf8871b33c30e72a50b0cc7e5">internalPrintLogMessage</a> (<a class="el" href="classpcpp_1_1_logger.html#a28f78fb4d16392bc4ce6ec4c2b2dd651">LogLevel</a> logLevel, const std::string &amp;logMessage, const std::string &amp;file, const std::string &amp;method, const int line)</td></tr>
-<tr class="separator:aaf53f9ecf8871b33c30e72a50b0cc7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cb665bc4dd60eea6e3043abaf2fa8ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_logger.html#a5cb665bc4dd60eea6e3043abaf2fa8ef">internalPrintLogMessage</a> (<a class="el" href="classpcpp_1_1_logger.html#a28f78fb4d16392bc4ce6ec4c2b2dd651">Logger::LogLevel</a> logLevel, const char *file, const char *method, int line)</td></tr>
+<tr class="separator:a5cb665bc4dd60eea6e3043abaf2fa8ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -304,43 +304,34 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aaf53f9ecf8871b33c30e72a50b0cc7e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf53f9ecf8871b33c30e72a50b0cc7e5">&#9670;&nbsp;</a></span>internalPrintLogMessage()</h2>
+<a id="a5cb665bc4dd60eea6e3043abaf2fa8ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cb665bc4dd60eea6e3043abaf2fa8ef">&#9670;&nbsp;</a></span>internalPrintLogMessage()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void pcpp::Logger::internalPrintLogMessage </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classpcpp_1_1_logger.html#a28f78fb4d16392bc4ce6ec4c2b2dd651">LogLevel</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_logger.html#a28f78fb4d16392bc4ce6ec4c2b2dd651">Logger::LogLevel</a>&#160;</td>
           <td class="paramname"><em>logLevel</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>logMessage</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>file</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>method</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>line</em>&#160;</td>
         </tr>
         <tr>
@@ -349,11 +340,6 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>An internal method to print log messages. Shouldn't be used externally. </p>
 
@@ -616,7 +602,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_logger.html">Logger</a></li>
-    <li class="footer">Generated on Thu Oct 14 2021 08:04:53 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Nov 1 2021 09:08:30 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

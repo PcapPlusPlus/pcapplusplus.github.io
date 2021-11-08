@@ -36,7 +36,7 @@ Another option is to build PcapPlusPlus [from source]({{ site.baseurl }}/docs/in
 
 ## Step 2 - create your first app
 
-If you installed PcapPlusPlus using Homebrew go to the [Hello World tutorial on GitHub](https://github.com/seladb/PcapPlusPlus/tree/master/Examples/Tutorials/Tutorial-HelloWorld) and get the files in that directory.
+If you installed PcapPlusPlus using Homebrew go to the [Hello World tutorial on GitHub](https://github.com/seladb/PcapPlusPlus/tree/{{site.github_label}}/Examples/Tutorials/Tutorial-HelloWorld) and get the files in that directory.
 
 If you downloaded a pre-compiled package go to: `/path/to/your/package/example-app`.
 

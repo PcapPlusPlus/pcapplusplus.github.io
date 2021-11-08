@@ -202,4 +202,4 @@ If you're curious to learn more, please refer to the following resources:
 - [DPDK tutorial]({{ site.baseurl }}/docs/tutorials/dpdk)
 - DPDK example applications: [DpdkExample-FilterTraffic]({{ site.baseurl }}/docs/examples#dpdkexample-filtertraffic), [DpdkBridge]({{ site.baseurl }}/docs/examples#dpdkbridge), [KniPong]({{ site.baseurl }}/docs/examples#knipong)
 - DPDK API reference. A good starting points would be [`DpdkDevice.h` file description]({{ site.baseurl }}/api-docs/_dpdk_device_8h.html#details) and [`DpdkDevice` class description]({{ site.baseurl }}/api-docs/classpcpp_1_1_dpdk_device.html#details)
-- You can also find all the unit-tests in the [`Pcap++Test`](https://github.com/seladb/PcapPlusPlus/blob/master/Tests/Pcap%2B%2BTest/main.cpp) project (search for tests that contain "dpdk" or "kni")
+- You can also find all the unit-tests in the [`Pcap++Test`](https://github.com/seladb/PcapPlusPlus/blob/{{site.github_label}}/Tests/Pcap%2B%2BTest/main.cpp) project (search for tests that contain "dpdk" or "kni")
