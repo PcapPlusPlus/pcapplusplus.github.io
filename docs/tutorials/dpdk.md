@@ -406,7 +406,7 @@ This output is printed every 2 seconds and shows for each direction: the total n
 
 ## Running the example
 
-All the code that was covered in this tutorial can be found [here](https://github.com/seladb/PcapPlusPlus/tree/master/Examples/Tutorials/Tutorial-DpdkL2Fwd). In order to compile and run the code please first download and compile PcapPlusPlus source code or download a pre-compiled version from [the latest PcapPlusPlus release](https://github.com/seladb/PcapPlusPlus/releases/latest). When building from source please make sure to configure the build for DPDK, as explained [here]({{ site.baseurl }}/docs/install/build-source/linux#command-line-switches-mode). The only platform relevant for this tutorial is Linux as DPDK is not supported on other platforms.
+All the code that was covered in this tutorial can be found [here](https://github.com/seladb/PcapPlusPlus/tree/{{site.github_label}}/Examples/Tutorials/Tutorial-DpdkL2Fwd). In order to compile and run the code please first download and compile PcapPlusPlus source code or download a pre-compiled version from [the latest PcapPlusPlus release](https://github.com/seladb/PcapPlusPlus/releases/latest). When building from source please make sure to configure the build for DPDK, as explained [here]({{ site.baseurl }}/docs/install/build-source/linux#command-line-switches-mode). The only platform relevant for this tutorial is Linux as DPDK is not supported on other platforms.
 
 After done building PcapPlusPlus and the tutorial and before running the tutorial please run `setup-dpdk.sh` script to setup the necessary runtime parameters for DPDK. More details on this script can be found [here]({{ site.baseurl }}/docs/dpdk).
 
