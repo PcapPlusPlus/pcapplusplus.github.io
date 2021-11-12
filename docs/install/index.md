@@ -57,7 +57,7 @@ Available for: <img src="{{ site.baseurl }}/resources/logo-linux.png" alt="drawi
 PcapPlusPlus Conan package is available on Linux and MacOS. You can install it by running the following command from the command-line:
 
 ```text
-conan install pcapplusplus/21.05@
+conan install pcapplusplus/21.11@
 ```
 
 This command will fetch PcapPlusPlus directly from ConanCenter: <https://conan.io/center/pcapplusplus>
