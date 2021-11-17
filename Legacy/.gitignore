@@ -1,0 +1,16 @@
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
+jekyll.bat
+jekyll.sh
+
+# Visual studio code
+.cproject
+.project
+.vscode
+
+# doxygen
+api-docs/html
