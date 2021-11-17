@@ -1,16 +1,20 @@
-# Jekyll
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-Gemfile.lock
-jekyll.bat
-jekyll.sh
+# Dependencies
+/node_modules
 
-# Visual studio code
-.cproject
-.project
-.vscode
+# Production
+/build
 
-# doxygen
-api-docs/html
+# Generated files
+.docusaurus
+.cache-loader
+
+# Misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
