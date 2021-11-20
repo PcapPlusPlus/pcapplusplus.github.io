@@ -278,10 +278,10 @@ As you can see, the packet looks exactly as expected.
 
 ## Running the example
 
-import {gitHubTree} from '../VersionInfo';
-import ReleaseLink from '../ReleaseLink';
+import ReleaseLink from '../components/ReleaseLink';
+import CodeLink from '../components/CodeLink';
 
-All code that was covered in this tutorial can be found <a href={gitHubTree + "/Examples/Tutorials/Tutorial-PacketCraftAndEdit"}>here</a>. In order to compile and run the code please first download and compile PcapPlusPlus code or downloaded a pre-compiled version from the <ReleaseLink></ReleaseLink>. Then follow these instruction, according to your platform:
+All code that was covered in this tutorial can be found <CodeLink relativePath="/Examples/Tutorials/Tutorial-PacketCraftAndEdit" text="here"></CodeLink>. In order to compile and run the code please first download and compile PcapPlusPlus code or downloaded a pre-compiled version from the <ReleaseLink></ReleaseLink>. Then follow these instruction, according to your platform:
 
 * Linux, MacOS, FreeBSD - make sure PcapPlusPlus is installed (by running **sudo make install** in PcapPlusPlus main directory). Then either change the `Makefile.non_windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.non_windows all`
 * Windows using MinGW or MinGW-w64 - either change the `Makefile.windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.windows all`
