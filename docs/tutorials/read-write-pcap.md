@@ -194,8 +194,8 @@ That's it! file is now opened in append mode and will not be overridden.
 
 ## Running the example
 
-import {gitHubTree} from '/docs/VersionInfo';
-import ReleaseLink from '@site/src/components/ReleaseLink';
+import {gitHubTree} from '../VersionInfo';
+import ReleaseLink from '../ReleaseLink';
 
 All code that was covered in this tutorial can be found <a href={gitHubTree + "/Examples/Tutorials/Tutorial-PcapFiles"}>here</a>. In order to compile and run the code please first download and compile PcapPlusPlus code or downloaded a pre-compiled version from the <ReleaseLink></ReleaseLink>. Then follow these instruction, according to your platform:
 

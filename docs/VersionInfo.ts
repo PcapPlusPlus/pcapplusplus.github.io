@@ -4,6 +4,6 @@ export const repo = "https://github.com/seladb/PcapPlusPlus"
 
 export const releaseTag = repo + "/releases/tag/" + latestVersion
 
-export const gitHubTag = latestVersion
+export const gitHubTag = "master"
 
 export const gitHubTree = repo + "/tree/" + gitHubTag

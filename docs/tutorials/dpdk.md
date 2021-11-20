@@ -395,8 +395,8 @@ This output is printed every 2 seconds and shows for each direction: the total n
 
 ## Running the example
 
-import {gitHubTree} from '/docs/VersionInfo';
-import ReleaseLink from '@site/src/components/ReleaseLink';
+import {gitHubTree} from '../VersionInfo';
+import ReleaseLink from '../ReleaseLink';
 
 All the code that was covered in this tutorial can be found <a href={gitHubTree + "/Examples/Tutorials/Tutorial-DpdkL2Fwd"}>here</a>. In order to compile and run the code please first download and compile PcapPlusPlus source code or download a pre-compiled version from the <ReleaseLink></ReleaseLink>. When building from source please make sure to configure the build for DPDK, as explained [here *LINK*](/docs/install/build-source/linux#command-line-switches-mode). The only platform relevant for this tutorial is Linux as DPDK is not supported on other platforms.
 

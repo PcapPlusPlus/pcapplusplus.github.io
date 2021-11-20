@@ -93,7 +93,7 @@ The next parts of the tutorial will dive deep into the various device types and 
 
 ## Writing a simple app including a makefile
 
-import ReleaseLink from '@site/src/components/ReleaseLink';
+import ReleaseLink from '../ReleaseLink';
 
 Creating applications using PcapPlusPlus is rather easy. Let's have a guided tour demonstrating how to create a simple application and its Makefile or Visual Studio project.
 
@@ -263,7 +263,7 @@ That's it! The project will now build successfully! Again, I strongly advise to 
 
 ## Running the example
 
-import {gitHubTree} from '/docs/VersionInfo';
+import {gitHubTree} from '../VersionInfo';
 
 All code that was covered in this tutorial can be found <a href={gitHubTree + "/Examples/Tutorials/Tutorial-HelloWorld"}>here</a>. In order to compile and run the code please first download and compile PcapPlusPlus code or downloaded a pre-compiled version from the <ReleaseLink></ReleaseLink>. Then follow these instruction, according to your platform:
 

@@ -483,8 +483,8 @@ As you can see the filter worked as there are no UDP, SSL or DNS packets, althou
 
 ## Running the example
 
-import {gitHubTree} from '/docs/VersionInfo';
-import ReleaseLink from '@site/src/components/ReleaseLink';
+import {gitHubTree} from '../VersionInfo';
+import ReleaseLink from '../ReleaseLink';
 
 All code that was covered in this tutorial can be found <a href={gitHubTree + "/Examples/Tutorials/Tutorial-LiveTraffic"}>here</a>. In order to compile and run the code please first download and compile PcapPlusPlus code or downloaded a pre-compiled version from the <ReleaseLink></ReleaseLink>. Then follow these instruction, according to your platform:
 
