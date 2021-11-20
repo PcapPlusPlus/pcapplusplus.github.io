@@ -1,0 +1,15 @@
+.btn {
+  font-weight: 400;
+  line-height: 2;
+  border-radius: 4px;
+  width: 240px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  border: none;
+  cursor: pointer;
+  outline: 0;
+  text-decoration: none !important;
+}
