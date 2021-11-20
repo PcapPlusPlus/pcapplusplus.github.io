@@ -1,0 +1,86 @@
+---
+title: Example Apps
+sidebar_position: 7
+---
+
+# Example Applications
+
+import CodeLink from './components/CodeLink';
+
+PcapPlusPlus contains various example applications that make use of most PcapPlusPlus APIs and features. Although some of them may be useful on their own (like arping or arp-spoofing), their main objective is to show how to use PcapPlusPlus. All examples are well documented and contain code which is easy to understand. After compiling PcapPlusPlus all compiled applications are under Dist/examples. Here is the list of example applications:
+
+## <CodeLink relativePath="/Examples/ArpSpoofing" text="ArpSpoofing"></CodeLink>
+
+An application that does ARP spoofing using Packet++ and Pcap++. You can read more about ARP spoofing [here](https://en.wikipedia.org/wiki/ARP_spoofing).
+
+## <CodeLink relativePath="/Examples/Arping" text="Arping"></CodeLink>
+
+An implementation of the [arping](https://en.wikipedia.org/wiki/Arping) utility using PcapPlusPlus.
+
+## <CodeLink relativePath="/Examples/DnsSpoofing" text="DnsSpoofing"></CodeLink>
+
+A command-line utility that does [DNS spoofing](https://en.wikipedia.org/wiki/DNS_spoofing) using Packet++ and Pcap++.
+
+## <CodeLink relativePath="/Examples/DNSResolver" text="DNSResolver"></CodeLink>
+
+A command-line utility that resolves IPv4 address for an hostname using ARP and DNS protocols.
+
+## <CodeLink relativePath="/Examples/IcmpFileTransfer" text="IcmpFileTransfer"></CodeLink>
+
+An application that demonstrates how to transfer files between two machines using only ICMP messages. The basic idea is to use the data part of ICMP messages to transfer chunks of the file between the machines. You can read more about it [here](http://www.unixist.com/security/data-transfer-over-icmp/index.html).
+
+## <CodeLink relativePath="/Examples/HttpAnalyzer" text="HttpAnalyzer"></CodeLink>
+
+An application that analyzes HTTP traffic and presents detailed and diverse information about it such as packet count and rate, bandwidth, flow count and rate, HTTP requests and responses count and rate, hostname histogram, content-type histogram, status code histogram and much more. Can operate on live traffic or read packets from a pcap file.
+
+## <CodeLink relativePath="/Examples/SSLAnalyzer" text="SSLAnalyzer"></CodeLink>
+
+An application that analyzes SSL/TLS traffic and presents detailed and diverse information about it such as packet count and rate, bandwidth, flow count and rate, SSL/TLS messages count, hostname histogram, SSL/TLS version count, cipher-suite count and much more. Can operate on live traffic or read packets from a pcap file.
+
+## <CodeLink relativePath="/Examples/DpdkExample-FilterTraffic" text="DpdkExample-FilterTraffic"></CodeLink>
+
+An application that demonstrates PcapPlusPlus DPDK APIs. This application listens to one or more DPDK ports (a.k.a DPDK devices), captures all traffic and matches packets by user-defined matching criteria such as source/dest IP, source/dest TCP/UDP port and more. Matched packets can be send to another DPDK port and/or be save to a pcap file. In addition the application collects statistics on received and matched packets.
+
+## <CodeLink relativePath="/Examples/DpdkBridge" text="DpdkBridge"></CodeLink>
+
+An application that demonstrates how to create a bridge between two network devices (similar to DPDK's L2 forwarding example) using PcapPlusPlus DPDK APIs.
+
+## <CodeLink relativePath="/Examples/KniPong" text="KniPong"></CodeLink>
+
+An application that demonstrates PcapPlusPlus wrapper for DPDK KNI. It emulates the Unix NETCAT utility run with -u key. It is basically a ping/pong client/server channel using user provided input from stdin.
+
+## <CodeLink relativePath="/Examples/PfRingExample-FilterTraffic" text="PfRingExample-FilterTraffic"></CodeLink>
+
+An application that demonstrates PcapPlusPlus PF_RING APIs. This application listens to a PF_RING interface, captures all traffic and matches packets by user-defined matching criteria such as source/dest IP, source/dest TCP/UDP port and more. Matched packets can be send to another PF_RING interface and/or be save to a pcap file. In addition the application collects statistics on received and matched packets.
+
+## <CodeLink relativePath="/Examples/PcapPrinter" text="PcapPrinter"></CodeLink>
+
+A simple application that outputs packets from a pcap file as a readable string.
+
+## <CodeLink relativePath="/Examples/PcapSplitter" text="PcapSplitter"></CodeLink>
+
+An application that splits pcap files into smaller pcap files by various criteria defined by the user like file size, packet count, split per connection, per client-ip, per server-ip, per server-port (protocol) or per IP src + IP dst (2-tuple). This application is very advanced compared to similar tools, for example: there is no limit on input file size or packet count, no technical limit on number of output files (unless the user sets a limit), support for both IPv4 and IPv6, and a lot more.
+
+## <CodeLink relativePath="/Examples/PcapSearch" text="PcapSearch"></CodeLink>
+
+An application that search inside pcap files in a directory/ies given by the user and counts how many packet match a user-defined pattern given in a BPF format.
+
+## <CodeLink relativePath="/Examples/TcpReassembly" text="TcpReassembly"></CodeLink>
+
+An application that captures data transmitted as part of TCP connections, organizes the data and stores it in a way that is convenient for protocol analysis and debugging. This application reconstructs the TCP data streams and stores each connection in a separate file(s). TcpReassembly understands TCP sequence numbers and will correctly reconstruct data streams regardless of retransmissions, out-of-order delivery or data loss.
+
+## <CodeLink relativePath="/Examples/IPFragUtil" text="IPFragUtil"></CodeLink>
+
+A utility for splitting IP packets into fragments. It works on pcap and pcapng files and allows the user to choose which packets to fragment and to which size. Works on IPv4 and IPv6 packets.
+
+## <CodeLink relativePath="/Examples/IPDefragUtil" text="IPDefragUtil"></CodeLink>
+
+A utility for reassembling IP fragments back to IP packets. It works on pcap and pcapng files and allows the user to choose which fragments to reassemble. Works on IPv4 and IPv6 packets.
+
+## <CodeLink relativePath="/Examples/TLSFingerprinting" text="TLSFingerprinting"></CodeLink>
+
+An application the demonstrates how to collect ClientHello (JA3) and ServerHello (JA3S) TLS fingerprints from live traffic or pcap files, write them to an output file and display various statistics.
+
+## <CodeLink relativePath="/Examples/PcapPlusPlus-benchmark" text="PcapPlusPlus-benchmark"></CodeLink>
+
+The benchmark application used for measuring PcapPlusPlus performance. See [benchmark page *LINK*](/docs/benchmark) for more details. This application currently compiles on Linux only (where benchmark was running on).
