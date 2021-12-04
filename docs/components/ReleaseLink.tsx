@@ -1,8 +1,14 @@
 import React from 'react';
-import {releaseTag, latestVersion} from '../VersionInfo';
+import {useLatestVersion, useActiveVersion} from '@theme/hooks/useDocs';
+import {getReleaseURL} from './GitHubURLs';
 
-const ReleaseLink = ({versionString}) => (
-  <a href={releaseTag}>{versionString || (latestVersion + " release")}</a>
-);
+const ReleaseLink = ({versionString}) => {
+  const latestVersion = useLatestVersion();
+  const activeVersion = useActiveVersion();
+  const release = (activeVersion.label === "Next" ? latestVersion.label : activeVersion.label)
+  return (
+    <a href={getReleaseURL(release)}>{versionString || (release + " release")}</a>
+  );
+}
 
 export default ReleaseLink

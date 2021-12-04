@@ -1,8 +1,10 @@
 import React from 'react';
-import {gitHubTree} from '../VersionInfo';
+import {getGitHubTreeURL} from './GitHubURLs';
 
-const CodeLink = ({relativePath, text}) => (
-  <a href={gitHubTree + relativePath}>{text}</a>
-);
+const CodeLink = ({relativePath, text}) => {
+  return (
+    <a href={getGitHubTreeURL() + relativePath}>{text}</a>
+  );
+} 
 
 export default CodeLink
