@@ -1,9 +1,9 @@
 import React from 'react';
 import {getGitHubTreeURL} from './GitHubURLs';
 
-const CodeLink = ({relativePath, text}) => {
+const CodeLink = ({relativePath, children}) => {
   return (
-    <a href={getGitHubTreeURL() + relativePath}>{text}</a>
+    <a href={getGitHubTreeURL() + relativePath}>{children}</a>
   );
 } 
 

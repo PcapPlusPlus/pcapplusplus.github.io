@@ -205,4 +205,4 @@ import CodeLink from './components/CodeLink';
 - [DPDK tutorial](/docs/tutorials/dpdk)
 - DPDK example applications: [DpdkExample-FilterTraffic *LINK*](/docs/examples#dpdkexample-filtertraffic), [DpdkBridge *LINK*](/docs/examples#dpdkbridge), [KniPong *LINK*](/docs/examples#knipong)
 - DPDK API reference. A good starting points would be [`DpdkDevice.h` file description *LINK*](/api-docs/_dpdk_device_8h.html#details) and [`DpdkDevice` class description *LINK*](/api-docs/classpcpp_1_1_dpdk_device.html#details)
-- You can also find all the unit-tests in the <CodeLink relativePath="/Tests/Pcap%2B%2BTest/main.cpp" text="Pcap++Test"></CodeLink> project (search for tests that contain "dpdk" or "kni")
+- You can also find all the unit-tests in the <CodeLink relativePath="/Tests/Pcap%2B%2BTest/main.cpp">Pcap++Test</CodeLink> project (search for tests that contain "dpdk" or "kni")

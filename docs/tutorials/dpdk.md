@@ -398,7 +398,7 @@ This output is printed every 2 seconds and shows for each direction: the total n
 import ReleaseLink from '../components/ReleaseLink';
 import CodeLink from '../components/CodeLink';
 
-All the code that was covered in this tutorial can be found <CodeLink relativePath="/Examples/Tutorials/Tutorial-DpdkL2Fwd" text="here"></CodeLink>. In order to compile and run the code please first download and compile PcapPlusPlus source code or download a pre-compiled version from the <ReleaseLink></ReleaseLink>. When building from source please make sure to configure the build for DPDK, as explained [here *LINK*](/docs/install/build-source/linux#command-line-switches-mode). The only platform relevant for this tutorial is Linux as DPDK is not supported on other platforms.
+All the code that was covered in this tutorial can be found <CodeLink relativePath="/Examples/Tutorials/Tutorial-DpdkL2Fwd">here</CodeLink>. In order to compile and run the code please first download and compile PcapPlusPlus source code or download a pre-compiled version from the <ReleaseLink></ReleaseLink>. When building from source please make sure to configure the build for DPDK, as explained [here *LINK*](/docs/install/build-source/linux#command-line-switches-mode). The only platform relevant for this tutorial is Linux as DPDK is not supported on other platforms.
 
 After done building PcapPlusPlus and the tutorial and before running the tutorial please run `setup-dpdk.sh` script to setup the necessary runtime parameters for DPDK. More details on this script can be found [here *LINK*](/docs/dpdk).
 
