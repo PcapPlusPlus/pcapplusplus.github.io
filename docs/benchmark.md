@@ -1,0 +1,161 @@
+---
+title: Benchmarks
+sidebar_position: 8
+---
+
+export const TCP_NO_OPTIONS_PCAPPLUSPLUS_SEC = 0.219;
+export const TCP_NO_OPTIONS_LIBTINS_SEC = 0.241;
+export const TCP_NO_OPTIONS_LIBCRAFTER_SEC = 6.26;
+export const TCP_NO_OPTIONS_LIBPCAP_SEC = 0.12;
+
+export const TCP_NO_OPTIONS_PCAPPLUSPLUS_PPS = 2283105;
+export const TCP_NO_OPTIONS_LIBTINS_PPS = 2074688;
+export const TCP_NO_OPTIONS_LIBCRAFTER_PPS = 79872;
+export const TCP_NO_OPTIONS_LIBPCAP_PPS = 4166666;
+
+export const TCP_WITH_OPTIONS_PCAPPLUSPLUS_SEC = 0.218;
+export const TCP_WITH_OPTIONS_LIBTINS_SEC = 0.288;
+export const TCP_WITH_OPTIONS_LIBCRAFTER_SEC = 10.569;
+export const TCP_WITH_OPTIONS_LIBPCAP_SEC = 0.12;
+
+export const TCP_WITH_OPTIONS_PCAPPLUSPLUS_PPS = 2293577;
+export const TCP_WITH_OPTIONS_LIBTINS_PPS = 1736111;
+export const TCP_WITH_OPTIONS_LIBCRAFTER_PPS = 47308;
+export const TCP_WITH_OPTIONS_LIBPCAP_PPS = 4166666;
+
+export const DNS_PCAPPLUSPLUS_SEC = 0.234;
+export const DNS_LIBTINS_SEC = 0.245;
+export const DNS_LIBCRAFTER_SEC = 6.791;
+export const DNS_LIBPCAP_SEC = 0.028;
+
+export const DNS_PCAPPLUSPLUS_PPS = 2136752;
+export const DNS_LIBTINS_PPS = 2040816;
+export const DNS_LIBCRAFTER_PPS = 73626;
+export const DNS_LIBPCAP_PPS = 17857142;
+
+import Chart from "react-google-charts";
+import ConstVal from "/src/components/ConstVal";
+
+In order to benchmark the performance of PcapPlusPlus and compare it with similar C++ libraries we used [Matias Fontanini's packet-capture-benchmarks project](https://github.com/mfontanini/packet-capture-benchmarks). The benchmark compared PcapPlusPlus, [libtins](http://libtins.github.io/), [libcrafter](https://github.com/pellegre/libcrafter) and libpcap.
+
+## Tested projects
+
+PcapPlusPlus was only compared to similar C/C++ projects such as [libtins](http://libtins.github.io/) and [libcrafter](https://github.com/pellegre/libcrafter) because projects written higher level languages (such as Python or Java) cannot compete with the performance of native libraries. The following versions were used for the benchmarks:
+
+- libpcap-dev [v0.8.1](https://www.tcpdump.org/#old-releases)
+- PcapPlusPlus [v19.04](https://github.com/seladb/PcapPlusPlus/releases/tag/v19.04)
+- libtins [v4.2](https://github.com/mfontanini/libtins/releases/tag/v4.2)
+- libcrafter - commit [#3db70ab](https://github.com/pellegre/libcrafter/tree/3db70ab6fd62ade25de7328aaf8e9ba92696c92e)
+
+## Testing environment
+
+All 3 benchmarks provided in [packet-capture-benchmarks](https://github.com/mfontanini/packet-capture-benchmarks) were run on the following environment:
+
+- Linux Ubuntu 16.04 64-bit running as a VirtualBox VM with 4 virtual cores and 8GB RAM
+- GCC 5.4.0 compiler
+- The host platform is a MacBook Pro model 2017 with Intel Core i7 760 3.1GHz processor and 16GB RAM running MacOS High Sierra 10.13
+
+Benchmark applications:
+- The PcapPlusPlus benchmark application can be found in [PcapPlusPlus examples](/docs/examples#pcapplusplus-benchmark)
+- The other benchmark applications can be found in [Matias Fontanini's packet-capture-benchmarks project](https://github.com/mfontanini/packet-capture-benchmarks)
+
+## Test results
+
+### Benchmark #1 - TCP parsing
+
+:::tip Results
+PcapPlusPlus is ~10% faster than libtins and ~x28 faster than libcrafter
+:::
+
+| Library      | Time taken (seconds) | Packets per second |
+|:-------------|:---------------------|:-------------------|
+| libpcap      | <ConstVal value={TCP_NO_OPTIONS_LIBPCAP_SEC}></ConstVal> | <ConstVal value={TCP_NO_OPTIONS_LIBPCAP_PPS}></ConstVal> |
+| __PcapPlusPlus__ | __<ConstVal value={TCP_NO_OPTIONS_PCAPPLUSPLUS_SEC}></ConstVal>__ | __<ConstVal value={TCP_NO_OPTIONS_PCAPPLUSPLUS_PPS}></ConstVal>__ |
+| libtins      | <ConstVal value={TCP_NO_OPTIONS_LIBTINS_SEC}></ConstVal> | <ConstVal value={TCP_NO_OPTIONS_LIBTINS_PPS}></ConstVal> |
+| libcrafter   | <ConstVal value={TCP_NO_OPTIONS_LIBCRAFTER_SEC}></ConstVal> | <ConstVal value={TCP_NO_OPTIONS_LIBCRAFTER_PPS}></ConstVal> |
+
+<Chart
+    width={650}
+    height={450}
+    left={0}
+    chartType="ColumnChart"
+    loader={<div>Loading Chart</div>}
+    data={[
+        ['Library', 'Seconds'],
+        ['libpcap', TCP_NO_OPTIONS_LIBPCAP_SEC],
+        ['PcapPlusPlus', TCP_NO_OPTIONS_PCAPPLUSPLUS_SEC],
+        ['libtins', TCP_NO_OPTIONS_LIBTINS_SEC],
+        ['libcrafter', TCP_NO_OPTIONS_LIBCRAFTER_SEC],
+    ]}
+    options={{
+        title: 'Graphic view',
+        chartArea: { left: 0 },
+    }}
+    legendToggle
+/>
+
+### Benchmark #2 - TCP + TCP Options parsing
+
+:::tip Results
+PcapPlusPlus is ~32% faster than libtins and ~x48 faster than libcrafter
+:::
+
+| Library      | Time taken (seconds) | Packets per second |
+|:-------------|:---------------------|:-------------------|
+| libpcap      | <ConstVal value={TCP_WITH_OPTIONS_LIBPCAP_SEC}></ConstVal> | <ConstVal value={TCP_WITH_OPTIONS_LIBPCAP_PPS}></ConstVal> |
+| __PcapPlusPlus__ | __<ConstVal value={TCP_WITH_OPTIONS_PCAPPLUSPLUS_SEC}></ConstVal>__ | __<ConstVal value={TCP_WITH_OPTIONS_PCAPPLUSPLUS_PPS}></ConstVal>__ |
+| libtins      | <ConstVal value={TCP_WITH_OPTIONS_LIBTINS_SEC}></ConstVal> | <ConstVal value={TCP_WITH_OPTIONS_LIBTINS_PPS}></ConstVal> |
+| libcrafter   | <ConstVal value={TCP_WITH_OPTIONS_LIBCRAFTER_SEC}></ConstVal> | <ConstVal value={TCP_WITH_OPTIONS_LIBCRAFTER_PPS}></ConstVal> |
+
+<Chart
+    width={650}
+    height={450}
+    left={0}
+    chartType="ColumnChart"
+    loader={<div>Loading Chart</div>}
+    data={[
+        ['Library', 'Seconds'],
+        ['libpcap', TCP_WITH_OPTIONS_LIBPCAP_SEC],
+        ['PcapPlusPlus', TCP_WITH_OPTIONS_PCAPPLUSPLUS_SEC],
+        ['libtins', TCP_WITH_OPTIONS_LIBTINS_SEC],
+        ['libcrafter', TCP_WITH_OPTIONS_LIBCRAFTER_SEC],
+    ]}
+    options={{
+        title: 'Graphic view',
+        chartArea: { left: 0 },
+    }}
+    legendToggle
+/>
+
+### Benchmark #3 - DNS parsing
+
+:::tip Results
+PcapPlusPlus is ~5% faster than libtins and ~x29 faster than libcrafter
+:::
+
+| Library      | Time taken (seconds) | Packets per second |
+|:-------------|:---------------------|:-------------------|
+| libpcap      | <ConstVal value={DNS_LIBPCAP_SEC}></ConstVal> | <ConstVal value={DNS_LIBPCAP_PPS}></ConstVal> |
+| __PcapPlusPlus__ | __<ConstVal value={DNS_PCAPPLUSPLUS_SEC}></ConstVal>__ | __<ConstVal value={DNS_PCAPPLUSPLUS_PPS}></ConstVal>__ |
+| libtins      | <ConstVal value={DNS_LIBTINS_SEC}></ConstVal> | <ConstVal value={DNS_LIBTINS_PPS}></ConstVal> |
+| libcrafter   | <ConstVal value={DNS_LIBCRAFTER_SEC}></ConstVal> | <ConstVal value={DNS_LIBCRAFTER_PPS}></ConstVal> |
+
+<Chart
+    width={650}
+    height={450}
+    left={0}
+    chartType="ColumnChart"
+    loader={<div>Loading Chart</div>}
+    data={[
+        ['Library', 'Seconds'],
+        ['libpcap', DNS_LIBPCAP_SEC],
+        ['PcapPlusPlus', DNS_PCAPPLUSPLUS_SEC],
+        ['libtins', DNS_LIBTINS_SEC],
+        ['libcrafter', DNS_LIBCRAFTER_SEC],
+    ]}
+    options={{
+        title: 'Graphic view',
+        chartArea: { left: 0 },
+    }}
+    legendToggle
+/>
