@@ -12,4 +12,6 @@
   cursor: pointer;
   outline: 0;
   text-decoration: none !important;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
 }
