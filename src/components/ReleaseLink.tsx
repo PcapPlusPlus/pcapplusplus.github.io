@@ -1,6 +1,6 @@
 import React from 'react';
 import {useLatestVersion, useActiveVersion} from '@theme/hooks/useDocs';
-import {getReleaseURL} from './GitHubURLs';
+import {getReleaseURL} from '../../src/components/GitHubURLs';
 
 const ReleaseLink = ({versionString}) => {
   const latestVersion = useLatestVersion();
