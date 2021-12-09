@@ -365,7 +365,7 @@ The steps below are shown on Linux but apply in the same way to all supported pl
 ## ExamplesTest
 
 This project is quite different and unique from the other two in various ways:
-- It doesn't test any parts of the PcapPlusPlus library but rather the [example apps](/docs/examples) that are provided with the library
+- It doesn't test any parts of the PcapPlusPlus library but rather the [example apps](./examples) that are provided with the library
 - It doesn't test the apps code but rather runs them as executables and inspects their output (stdout, generated files, etc.)
 - This project isn't written in C++ but rather in Python. The reason is that Python is much more "user-friendly" when it comes to running executables and inspect their output; its file and string manipulation options are much more comprehensive and advanced. You can write very little code and achieve a lot. Python also has great testing frameworks that come out-of-the-box. It is the obvious choice for these kind of tasks
 
@@ -413,7 +413,7 @@ The steps below are shown on Linux but apply in the same way to all supported pl
   (venv) seladb@seladb:~/PcapPlusPlus/Tests/ExamplesTest$ python3 -m pip install -r requirements.txt
   ```
 
-- Since this test suite simply runs the app executables make sure you have a [working build of PcapPlusPlus *LINK*](/docs/install#build-from-source) and that the executables are under `[PcapPlusPlus-Home]/Dist/examples`
+- Since this test suite simply runs the app executables make sure you have a [working build of PcapPlusPlus *LINK*](./install#build-from-source) and that the executables are under `[PcapPlusPlus-Home]/Dist/examples`
 
 ### Running the tests
 
@@ -469,13 +469,13 @@ Here are the markers that are relevant to this project:
 | Marker | Description |
 |:---|:---|
 | __`-m no_network`__     | Run only test-cases that don't require live network traffic. This is very useful for environments where live traffic is not available or if you prefer to run tests that don't interact with the network. The test-cases which require network traffic will be skipped |
-| __`-m pcapprinter`__    | Run only test-cases for [PcapPrinter](/docs/examples#pcapprinter)     |
-| __`-m ipdefragutil`__   | Run only test-cases for [IPDefragUtil](/docs/examples#ipdefragutil)   |
-| __`-m ipfragutil`__     | Run only test-cases for [IPFragUtil](/docs/examples#ipfragutil)       |
-| __`-m dnsresolver`__    | Run only test-cases for [DNSResolver](/docs/examples#dnsresolver)     |
-| __`-m tcpreassembly`__  | Run only test-cases for [TcpReassembly](/docs/examples#tcpreassembly) |
-| __`-m httpanalyzer`__   | Run only test-cases for [HttpAnalyzer](/docs/examples#httpanalyzer)   |
-| __`-m sslanalyzer`__    | Run only test-cases for [SSLAnalyzer](/docs/examples#sslanalyzer)     |
-| __`-m pcapsearch`__     | Run only test-cases for [PcapSearch](/docs/examples#pcapsearch)       |
-| __`-m arping`__         | Run only test-cases for [Arping](/docs/examples#arping)               |
-| __`-m pcapsplitter`__   | Run only test-cases for [PcapSplitter](/docs/examples#pcapsplitter)   |
+| __`-m pcapprinter`__    | Run only test-cases for [PcapPrinter](./examples#pcapprinter)     |
+| __`-m ipdefragutil`__   | Run only test-cases for [IPDefragUtil](./examples#ipdefragutil)   |
+| __`-m ipfragutil`__     | Run only test-cases for [IPFragUtil](./examples#ipfragutil)       |
+| __`-m dnsresolver`__    | Run only test-cases for [DNSResolver](./examples#dnsresolver)     |
+| __`-m tcpreassembly`__  | Run only test-cases for [TcpReassembly](./examples#tcpreassembly) |
+| __`-m httpanalyzer`__   | Run only test-cases for [HttpAnalyzer](./examples#httpanalyzer)   |
+| __`-m sslanalyzer`__    | Run only test-cases for [SSLAnalyzer](./examples#sslanalyzer)     |
+| __`-m pcapsearch`__     | Run only test-cases for [PcapSearch](./examples#pcapsearch)       |
+| __`-m arping`__         | Run only test-cases for [Arping](./examples#arping)               |
+| __`-m pcapsplitter`__   | Run only test-cases for [PcapSplitter](./examples#pcapsplitter)   |

@@ -38,7 +38,7 @@ And here is an example of the metrics collected by the app (as written to the ap
 
 The quick answer is no. A lot of PcapPlusPlus functionality will work on any device and any app. However, on non-rooted devices some of the features may not work. The main reason is that non-rooted devices do not allow access to the device's network interfaces and configuration. That means that capturing live network traffic using [`PcapLiveDevice` *LINK*](/api-docs/classpcpp_1_1_pcap_live_device.html) may not work, as well as opening raw sockets with [`RawSocketDevice` *LINK*](/api-docs/classpcpp_1_1_raw_socket_device.html). You may also need your app to request [additional permissions to read and write files](https://developer.android.com/training/data-storage) in order to read and write pcap/pcapng files.
 
-But other than that, most of the features should work including parsing and analyzing of network packets and the [various protocols](/docs/features#supported-network-protocols) supported by PcapPlusPlus, which is what [ToyVpn-PcapPlusPlus](https://github.com/seladb/ToyVpn-PcapPlusPlus) demonstrates.
+But other than that, most of the features should work including parsing and analyzing of network packets and the [various protocols](./features#supported-network-protocols) supported by PcapPlusPlus, which is what [ToyVpn-PcapPlusPlus](https://github.com/seladb/ToyVpn-PcapPlusPlus) demonstrates.
 
 If you do have a rooted device most of PcapPlusPlus features should work. Please feel free to [open an issue](https://github.com/seladb/PcapPlusPlus/issues) if something is not working as expected.
 
