@@ -5,9 +5,10 @@ sidebar_position: 99
 
 # API Reference
 
-import ButtonLink from '/src/components/ButtonLink'
+import ButtonLink from '/src/components/ButtonLink';
+import {useActiveVersion} from '@theme/hooks/useDocs';
 
-<ButtonLink text="Go to Doxygen API reference" link="/docs/api-docs"></ButtonLink>
+<ButtonLink text="Go to Doxygen API reference" link={"/api-docs/" + useActiveVersion().label}></ButtonLink>
 <br/><br/>
 PcapPlusPlus consists of 3 libraries:
 
