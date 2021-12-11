@@ -4,6 +4,22 @@
 const sidebars = {
   docs: [
     "quickstart",
+    {
+      type: "category",
+      label: "Installation",
+      link: {
+        type: "doc",
+        id: "install/index",
+      },
+      items: [
+        "install/linux",
+        "install/macos",
+        "install/vs",
+        "install/mingw",
+        "install/android",
+        "install/freebsd"
+      ],
+    },
     "features",
     "dpdk",
     {

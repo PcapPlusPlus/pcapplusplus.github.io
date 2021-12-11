@@ -1,0 +1,73 @@
+---
+title: Build for Android
+---
+
+# Build From Source for Android
+
+## Prerequisites
+
+In order to build PcapPlusPlus for Android please make sure you have the following prerequisites:
+
+1. A Linux machine - building on other platforms is currently not supported
+2. You should have [Android NDK](https://developer.android.com/ndk) installed
+3. Pre-compiled `libpcap` library for Android + header files which can be downloaded from [the `libpcap-android` GitHub repo](https://github.com/seladb/libpcap-android) (for Android API versions 21-30)
+
+## Configuration
+
+Run the configuration script from PcapPlusPlus main directory:
+
+```bash
+./configure-android.sh
+```
+
+This script accepts the following arguments:
+
+| Argument                | Is mandatory / default value    | Description                                                               |
+| :---------------------- | :------------------------------ | :------------------------------------------------------------------------ |
+| `--ndk-path`            | Mandatory                       | The path of Android NDK, for example: `/opt/Android/Sdk/ndk/22.0.7026061` |
+| `--target`              | Mandatory                       | Target architecture which accepts the following values: `arm64-v8a`, `armeabi-v7a`, `x86`, `x86_64` |
+| `--api`                 | Optional. Default value is `29` | Android API level. Must be between 21 and 30                              |
+| `--libpcap-include-dir` | Mandatory                       | `libpcap` header files directory. Can be downloaded from [the `libpcap-android` GitHub repo](https://github.com/seladb/libpcap-android) |
+| `--libpcap-lib-dir`     | Mandatory                       | `libpcap` pre-compiled libs directory. Can be downloaded from [the `libpcap-android` GitHub repo](https://github.com/seladb/libpcap-android) for all 4 targets and API versions 21-30 |
+
+Here is an example output:
+
+```shell
+seladb@ubunu2004:~/PcapPlusPlus$ ./configure-android.sh --ndk-path /opt/Android/Sdk/ndk/22.0.7026061 --target arm64-v8a --api 29 --libpcap-include-dir ~/libpcap-android/include --libpcap-lib-dir ~/libpcap-android/arm64-v8a/29
+
+******************************************
+PcapPlusPlus Android configuration script 
+******************************************
+
+PcapPlusPlus configuration is complete. Files created (or modified): mk/platform.mk, mk/PcapPlusPlus.mk
+```
+
+## Build the code
+
+After running the config script, you're can safely build the code:
+
+1. Run `make libs` to build PcapPlusPlus libraries only (which is the common use-case for Android) or `make all` to build everything including the unit-tests and examples
+2. After a successful build you can find the libraries, header files, example executables (if built) and helpful makefiles under the `Dist` directory
+3. Please notice that in order to run [PcapPlusPlus examples](../examples) on an Android device you need shell access, and for some of them you also need a rooted device
+
+## Do I need a rooted device in order to use PcapPlusPlus in my Android app?
+
+import APIDocsLink from '@site/src/components/APIDocsLink';
+
+The quick answer is no. A lot of PcapPlusPlus functionality will work on any device and any app. However, on non-rooted devices some of the features may not work. The main reason is that non-rooted devices do not allow access to the device's network interfaces and configuration. That means that capturing live network traffic using <APIDocsLink relativePath="/classpcpp_1_1_pcap_live_device.html">`PcapLiveDevice`</APIDocsLink> may not work, as well as opening raw sockets with <APIDocsLink relativePath="/classpcpp_1_1_raw_socket_device.html">`RawSocketDevice`</APIDocsLink>. You may also need your app to request [additional permissions to read and write files](https://developer.android.com/training/data-storage) in order to read and write pcap/pcapng files.
+
+But other than that, most of the features should work including parsing and analyzing of network packets and the [various protocols](../features#supported-network-protocols) supported by PcapPlusPlus, which is what [ToyVpn-PcapPlusPlus](https://github.com/seladb/ToyVpn-PcapPlusPlus) demonstrates.
+
+If you do have a rooted device most of PcapPlusPlus features should work. Please feel free to [open an issue](https://github.com/seladb/PcapPlusPlus/issues) if something is not working as expected.
+
+
+## Using PcapPlusPlus in my app
+
+PcapPlusPlus is a native C++ library so in order to use it in an Android app you need to get familiar with [Android NDK](https://developer.android.com/ndk) which is the toolset for using native code in Android apps.
+
+[ToyVpn-PcapPlusPlus](https://github.com/seladb/ToyVpn-PcapPlusPlus) is a good way to get started because it provides a very simple yet end-to-end example of writing PcapPlusPlus code and integrating it with the app. Here are a few links to parts in the code you might find interesting:
+- [`pcapplusplus_interface.cpp`](https://github.com/seladb/ToyVpn-PcapPlusPlus/blob/master/app/src/main/cpp/pcapplusplus_interface.cpp) - the C++ code that uses PcapPlusPlus. It exposes 2 [JNI](https://developer.android.com/training/articles/perf-jni) methods that are used within the app
+- [`CMakeLists.txt`](https://github.com/seladb/ToyVpn-PcapPlusPlus/blob/master/app/src/main/cpp/CMakeLists.txt) - a CMake file to build the native code
+- [`PcapPlusPlusInterface.kt`](https://github.com/seladb/ToyVpn-PcapPlusPlus/blob/master/app/src/main/java/com/example/android/pcapplusplus/PcapPlusPlusInterface.kt) - a Kotlin file that uses the native JNI methods
+
+If you want to learn more we strongly recommend going over [ToyVpn-PcapPlusPlus's `README.md`](https://github.com/seladb/ToyVpn-PcapPlusPlus/blob/master/README.md) file as it contains very detail information of how PcapPlusPlus can be used in a real Android app.
