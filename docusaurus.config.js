@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo/logo_icon_large.ico',
   organizationName: 'seladb',
   projectName: 'PcapPlusPlus',
 
@@ -37,10 +37,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'PcapPlusPlus',
+          src: 'img/logo/logo_color.png',
         },
         items: [
           {
@@ -48,11 +47,6 @@ const config = {
             docId: 'quickstart',
             position: 'left',
             label: 'Docs',
-          },
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
           },
           {
             to: '/community',
@@ -70,6 +64,11 @@ const config = {
               },
             ],
           },
+          {
+            href: 'https://github.com/seladb/PcapPlusPlus',
+            label: 'GitHub',
+            position: 'right',
+          },
         ],
       },
       footer: {
@@ -79,8 +78,28 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs',
+                label: 'Installation',
+                to: '/docs/install',
+              },
+              {
+                label: 'Features',
+                to: '/docs/features',
+              },
+              {
+                label: 'Tutorials',
+                to: '/docs/tutorials',
+              },
+              {
+                label: 'DPDK',
+                to: '/docs/dpdk',
+              },
+              {
+                label: 'Example Apps',
+                to: '/docs/examples',
+              },
+              {
+                label: 'API Documentation',
+                to: '/docs/api',
               },
             ],
           },
@@ -88,30 +107,54 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'GitHub',
+                href: 'https://github.com/seladb/PcapPlusPlus',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/seladb',
               },
+              {
+                label: 'Stack Overflow',
+                href: 'https://stackoverflow.com/questions/tagged/pcapplusplus',
+              },
+              {
+                label: 'Google Group',
+                href: 'https://groups.google.com/d/forum/pcapplusplus-support',
+              },
+              {
+                label: 'Email',
+                href: 'mailto:pcapplusplus@gmail.com',
+              },
+              {
+                label: 'Contribute',
+                to: '/community#contribute',
+              }
             ],
           },
           {
             title: 'More',
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Releases',
+                to: '/versions',
               },
+              {
+                label: 'Benchmarks',
+                to: '/docs/benchmark',
+              },
+              {
+                label: 'License',
+                to: '/docs/features/#license',
+              },
+              {
+                label: 'Web-site GitHub Repo',
+                href: 'https://github.com/PcapPlusPlus/pcapplusplus.github.io',
+              }
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} seladb. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
