@@ -62,6 +62,11 @@ const config = {
             position: 'right',
           },
           {
+            to: '/community',
+            label: 'Community',
+            position: 'left',
+          },
+          {
             type: 'docsVersionDropdown',
             position: 'left',
             dropdownActiveClassDisabled: true,
