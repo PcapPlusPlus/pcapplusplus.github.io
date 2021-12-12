@@ -13,8 +13,8 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'seladb',
+  projectName: 'PcapPlusPlus',
 
   presets: [
     [
@@ -64,6 +64,13 @@ const config = {
           {
             type: 'docsVersionDropdown',
             position: 'left',
+            dropdownActiveClassDisabled: true,
+            dropdownItemsAfter: [
+              {
+                to: '/versions',
+                label: 'All versions',
+              },
+            ],
           },
         ],
       },

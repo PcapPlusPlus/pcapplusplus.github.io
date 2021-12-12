@@ -3,14 +3,22 @@ import {useActiveVersion, useLatestVersion} from '@theme/hooks/useDocs';
 
 const repo = "https://github.com/seladb/PcapPlusPlus"
 
+export function getRepoURL(): string {
+  return repo
+}
+
 export function getRelease(): string {
   const latestVersion = useLatestVersion();
   const activeVersion = useActiveVersion();
   return (activeVersion.label === "Next" ? latestVersion.label : activeVersion.label)
 }
 
+export function getSpecificReleaseURL(release: string): string {
+  return repo + "/releases/tag/" + release
+}
+
 export function getReleaseURL(): string {
-  return repo + "/releases/tag/" + getRelease()
+  return getSpecificReleaseURL(getRelease())
 }
 
 export function getReleaseZipURL(): string {
