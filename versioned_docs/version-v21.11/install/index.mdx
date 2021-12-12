@@ -1,0 +1,110 @@
+---
+slug: /install
+title: "Setting Up PcapPlusPlus"
+---
+
+import {getRelease, getReleaseZipURL, getReleaseTarURL, getSourceCodeZipURL, getSourceCodeTarURL} from '@site/src/components/GitHubURLs';
+import ReleaseButtonLink from '@site/src/components/ReleaseButtonLink';
+import ButtonLink from '@site/src/components/ButtonLink';
+import ConstVal from '@site/src/components/ConstVal';
+import TOCInline from '@theme/TOCInline';
+
+PcapPlusPlus is available on <img src="/img/os-logos/logo-windows.png" width="24" title="Windows"/> Windows, <img src="/img/os-logos/logo-linux.png" width="24" title="Linux"/> Linux, <img src="/img/os-logos/logo-apple.png" width="24" title="MacOS"/> MacOS, <img src="/img/os-logos/logo-android.png" width="24" title="Android"/> Android and <img src="/img/os-logos/logo-freebsd.png" width="24" title="FreeBSD"/> FreeBSD (see more details [here](./platforms)).
+
+<p><ReleaseButtonLink/></p>
+
+You can choose between downloading pre-built binaries or build it from source. The different options are described below:
+
+<TOCInline toc={toc} maxHeadingLevel={2} />
+
+## Homebrew
+
+Available for: <img src="/img/os-logos/logo-apple.png" alt="drawing" width="24" title="MacOS"/> <img src="/img/os-logos/logo-linux.png" alt="drawing" width="24" title="Linux"/>
+
+PcapPlusPlus pre-built binaries are available in Homebrew on MacOS and Linux. You can install it by running the following command from the command-line:
+
+```bash
+brew install pcapplusplus
+```
+
+You can also find the PcapPlusPlus formula here: <https://formulae.brew.sh/formula/pcapplusplus>
+
+## Vcpkg
+
+Available for: <img src="/img/os-logos/logo-windows.png" alt="drawing" width="24" title="Windows"/> <img src="/img/os-logos/logo-linux.png" alt="drawing" width="24" title="Linux"/> <img src="/img/os-logos/logo-apple.png" alt="drawing" width="24" title="MacOS"/>
+
+PcapPlusPlus Vcpkg port is available on Windows, MacOS and Linux. You can install it by running the following command from the command-line:
+
+Windows:
+
+```text
+.\vcpkg install pcapplusplus
+```
+
+MacOS/Linux:
+
+```text
+vcpkg install pcapplusplus
+```
+
+You can also find the PcapPlusPlus port details here: <https://github.com/microsoft/vcpkg/tree/master/ports/pcapplusplus>
+
+## Conan
+
+Available for: <img src="/img/os-logos/logo-linux.png" alt="drawing" width="24" title="Linux"/> <img src="/img/os-logos/logo-apple.png" alt="drawing" width="24" title="MacOS"/>
+
+PcapPlusPlus Conan package is available on Linux and MacOS. You can install it by running the following command from the command-line:
+
+```text
+conan install pcapplusplus/21.11@
+```
+
+This command will fetch PcapPlusPlus directly from ConanCenter: <https://conan.io/center/pcapplusplus>
+
+## GitHub Release
+
+Available for: <img src="/img/os-logos/logo-windows.png" alt="drawing" width="24" title="Windows"/> <img src="/img/os-logos/logo-linux.png" alt="drawing" width="24" title="Linux"/> <img src="/img/os-logos/logo-apple.png" alt="drawing" width="24" title="MacOS"/> <img src="/img/os-logos/logo-freebsd.png" alt="drawing" width="24" title="FreeBSD"/> <img src="/img/os-logos/logo-android.png" alt="drawing" width="24" title="Android"/>
+
+<p><ReleaseButtonLink/></p>
+
+Each release of PcapPlusPlus ships with pre-compiled libraries for a variety of operating systems and GCC versions including:
+
+- Windows (MinGW, MinGW-w64, Visual Studio)
+- Linux (multiple versions of Ubuntu, Fedora, CentOS)
+- MacOS (multiple versions combined with multiple Xcode versions)
+- FreeBSD (multiple versions)
+
+Each package includes the following content:
+
+- Compiled __Common++__, __Packet++__, __Pcap++__ libraries
+- PcapPlusPlus header files
+- Examples binaries
+- A makefile to include when building your app with PcapPlusPlus
+- A simple code example showing how to build applications using PcapPlusPlus compiled binaries
+
+There is an additional Linux package shipped with every release that contains the source code and installation scripts to automatically build and install PcapPlusPlus. Those scripts can be used on any Linux platform and include options to build PcapPlusPlus with DPDK or PF_RING.
+
+## Build From Source
+
+Download the source code for the latest version (__<ConstVal value={getRelease()}/>__) from GitHub which includes:
+
+- Source code for __Common++__, __Packet++__, __Pcap++__
+- Examples
+- Unit tests
+- Configuration scripts for all platforms
+
+<p>
+  <ButtonLink text={"Download " + getRelease() + " zip format"} link={getReleaseZipURL()} />
+  &nbsp;
+  <ButtonLink text={"Download " + getRelease() + " tar.gz format"} link={getReleaseTarURL()} />
+</p>
+
+You can also download the latest source code from `master`:
+
+<p>
+  <ButtonLink text={"Download master zip format"} link={getSourceCodeZipURL()} btnColor="#11b584"/>
+  &nbsp;
+  <ButtonLink text={"Download master tar.gz format"} link={getSourceCodeTarURL()} btnColor="#11b584"/>
+</p>
+
+Please find detailed instructions on how to build PcapPlusPlus on the various supported platforms in the following pages.
