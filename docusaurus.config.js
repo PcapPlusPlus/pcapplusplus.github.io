@@ -49,6 +49,16 @@ const config = {
             label: 'Docs',
           },
           {
+            to: '/docs/features',
+            label: 'Features',
+            position: 'left',
+          },
+          {
+            to: '/docs/api',
+            label: 'API',
+            position: 'left',
+          },
+          {
             to: '/community',
             label: 'Community',
             position: 'left',
