@@ -26,3 +26,53 @@
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+.navbar .navbar__link[href*=github],
+.navbar .navbar__link[href*=groups],
+.navbar .navbar__link[href*=mailto],
+.navbar .navbar__link[href*=stackoverflow],
+.navbar .navbar__link[href*=twitter] {
+  font-size: 0;
+  padding: 4px;
+  margin: 0 4px;
+}
+
+.navbar .navbar__link[href*=github]:before,
+.navbar .navbar__link[href*=groups]:before,
+.navbar .navbar__link[href*=mailto]:before,
+.navbar .navbar__link[href*=stackoverflow]:before,
+.navbar .navbar__link[href*=twitter]:before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+}
+
+.navbar .navbar__link[href*=github]:before {
+  background-image: url('/static/img/icons/logo-github.svg');
+}
+
+html[data-theme="dark"] .navbar .navbar__link[href*=github]:before {
+  background-image: url('/static/img/icons/logo-github-dark.svg');
+}
+
+.navbar .navbar__link[href*=groups]:before {
+  background-image: url('/static/img/icons/logo-google.png');
+}
+
+.navbar .navbar__link[href*=mailto]:before {
+  background-image: url('/static/img/icons/logo-email.png');
+}
+
+.navbar .navbar__link[href*=stackoverflow]:before {
+  background-image: url('/static/img/icons/logo-stackoverflow.png');
+}
+
+.navbar .navbar__link[href*=twitter]:before {
+  background-image: url('/static/img/icons/logo-twitter.png');
+}
+
+.navbar svg[class*=iconExternalLink] {
+  display: none;
+}
