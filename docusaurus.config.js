@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Welcome To PcapPlusPlus!',
+  tagline: 'A multi-platform C++ library for capturing, parsing and crafting of network packets. It is designed to be efficient, powerful and easy to use.',
+  url: 'https://pcapplusplus.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -23,8 +23,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
+          editUrl: 'https://github.com/PcapPlusPlus/pcapplusplus.github.io/edit/docusaurus/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
