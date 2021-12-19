@@ -5,9 +5,11 @@
 
 .heroBanner {
   padding: 4rem 0;
-  text-align: center;
+  text-align: left;
   position: relative;
   overflow: hidden;
+  background-color: #2b3137;
+  color: var(--ifm-color-white);
 }
 
 @media screen and (max-width: 966px) {
@@ -18,6 +20,138 @@
 
 .buttons {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+}
+
+.landingBtn {
+  background-color: var(--ifm-color-primary);
+  color: var(--ifm-color-white);
+  border-style: none;
+}
+
+.landingBtnHeader {
+  margin-right: 20px;
+}
+
+/* Section */
+
+.Section {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow-x: hidden;
+}
+
+.Section + .Section {
+  border-top: 1px solid var(--ifm-table-border-color);
+}
+
+.Section.tint {
+  background-color: var(--ifm-menu-color-background-active);
+}
+
+.Section.dark {
+  background-color: var(--dark);
+}
+
+.Section p a {
+  @extend %link-style;
+}
+
+html[data-theme="dark"] .Section p a {
+  @extend %link-style-dark;
+}
+
+
+
+/* Two columns */
+
+.TwoColumns {
+  display: grid;
+}
+
+.TwoColumns .column {
+  width: 100%;
+}
+
+.TwoColumns .column.first {
+  grid-area: first;
+}
+
+.TwoColumns .column.last {
+  grid-area: last;
+}
+
+@media only screen and (min-width: 961px) {
+  .TwoColumns {
+    max-width: 900px;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "first last";
+  }
+
+  .TwoColumns.reverse {
+    grid-template-areas: "last first";
+  }
+
+  .TwoColumns .column {
+    max-width: 450px;
+  }
+
+  .TwoColumns .column.left {
+    padding-right: 50px;
+  }
+
+  .TwoColumns .column.right {
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .TwoColumns,
+  .TwoColumns.reverse {
+    grid-template-columns: 1fr;
+    grid-template-areas: "first" "last";
+  }
+
+  .TwoColumns .column {
+    padding: 0 4rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .TwoColumns .column {
+    padding: 0 1.25rem;
+  }
+}
+
+
+/* Native Apps */
+
+.NativeApps {
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 960px) {
+  .NativeApps .column.last {
+    max-height: 300px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  .NativeApps .column.last {
+    width: 66.7%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  .NativeApps {
+    max-height: 450px;
+  }
+
+  /* Correct for whitespace in the image of phones */
+  .NativeApps .column.left {
+    margin-top: -25px;
+  }
 }
