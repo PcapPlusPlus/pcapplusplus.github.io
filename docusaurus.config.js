@@ -14,7 +14,8 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo/logo_icon_large.ico',
   organizationName: 'seladb',
-  projectName: 'PcapPlusPlus',
+  projectName: 'pcapplusplus.github.io',
+  trailingSlash: false,
 
   presets: [
     [
