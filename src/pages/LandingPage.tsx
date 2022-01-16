@@ -9,9 +9,7 @@ import PacketReassembly from '../components/LandingPage/sections/PacketReassembl
 import Header from '../components/LandingPage/components/Header';
 
 
-
 const LandingPage = (): JSX.Element => {
-
     return (        
         <Layout
             title="A multi-platform C++ library for capturing, parsing and crafting of network packets"
@@ -26,7 +24,6 @@ const LandingPage = (): JSX.Element => {
                 <PacketReassembly />
             </main>
         </Layout>
-    
     );
 };
 

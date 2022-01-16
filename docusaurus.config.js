@@ -14,7 +14,8 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo/logo_icon_large.ico',
   organizationName: 'seladb',
-  projectName: 'PcapPlusPlus',
+  projectName: 'pcapplusplus.github.io',
+  trailingSlash: false,
 
   presets: [
     [
@@ -28,6 +29,10 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        googleAnalytics: {
+          trackingID: 'UA-74037205-2',
+          anonymizeIP: true,
+        }
       }),
     ],
   ],
