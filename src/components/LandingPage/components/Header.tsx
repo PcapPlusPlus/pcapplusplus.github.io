@@ -7,7 +7,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import Button from './Button';
 
   
-const HomepageHeader = (): JSX.Element => {
+const Header = (): JSX.Element => {
 
     const {siteConfig} = useDocusaurusContext();
     return (
@@ -30,7 +30,7 @@ const HomepageHeader = (): JSX.Element => {
   };
 
 
-export default HomepageHeader;
+export default Header;
 
 
 
