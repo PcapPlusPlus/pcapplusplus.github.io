@@ -6,9 +6,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Button from './Button';
 
-  
-const HomepageHeader = (): JSX.Element => {
-
+const Header = (): JSX.Element => {
     const {siteConfig} = useDocusaurusContext();
     return (
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
@@ -29,9 +27,7 @@ const HomepageHeader = (): JSX.Element => {
     );
   };
 
-
-export default HomepageHeader;
-
+export default Header;
 
 
 
