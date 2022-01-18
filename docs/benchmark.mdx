@@ -34,6 +34,7 @@ export const DNS_LIBCRAFTER_PPS = 73626;
 export const DNS_LIBPCAP_PPS = 17857142;
 
 import Chart from "react-google-charts";
+import ThemedChart from "/src/components/ThemedChart";
 import ConstVal from "/src/components/ConstVal";
 
 In order to benchmark the performance of PcapPlusPlus and compare it with similar C++ libraries we used [Matias Fontanini's packet-capture-benchmarks project](https://github.com/mfontanini/packet-capture-benchmarks). The benchmark compared PcapPlusPlus, [libtins](http://libtins.github.io/), [libcrafter](https://github.com/pellegre/libcrafter) and libpcap.
@@ -74,12 +75,7 @@ PcapPlusPlus is ~10% faster than libtins and ~x28 faster than libcrafter
 | libtins      | <ConstVal value={TCP_NO_OPTIONS_LIBTINS_SEC}></ConstVal> | <ConstVal value={TCP_NO_OPTIONS_LIBTINS_PPS}></ConstVal> |
 | libcrafter   | <ConstVal value={TCP_NO_OPTIONS_LIBCRAFTER_SEC}></ConstVal> | <ConstVal value={TCP_NO_OPTIONS_LIBCRAFTER_PPS}></ConstVal> |
 
-<Chart
-    width={650}
-    height={450}
-    left={0}
-    chartType="ColumnChart"
-    loader={<div>Loading Chart</div>}
+<ThemedChart
     data={[
         ['Library', 'Seconds'],
         ['libpcap', TCP_NO_OPTIONS_LIBPCAP_SEC],
@@ -87,11 +83,6 @@ PcapPlusPlus is ~10% faster than libtins and ~x28 faster than libcrafter
         ['libtins', TCP_NO_OPTIONS_LIBTINS_SEC],
         ['libcrafter', TCP_NO_OPTIONS_LIBCRAFTER_SEC],
     ]}
-    options={{
-        title: 'Graphic view',
-        chartArea: { left: 0 },
-    }}
-    legendToggle
 />
 
 ### Benchmark #2 - TCP + TCP Options parsing
@@ -107,12 +98,7 @@ PcapPlusPlus is ~32% faster than libtins and ~x48 faster than libcrafter
 | libtins      | <ConstVal value={TCP_WITH_OPTIONS_LIBTINS_SEC}></ConstVal> | <ConstVal value={TCP_WITH_OPTIONS_LIBTINS_PPS}></ConstVal> |
 | libcrafter   | <ConstVal value={TCP_WITH_OPTIONS_LIBCRAFTER_SEC}></ConstVal> | <ConstVal value={TCP_WITH_OPTIONS_LIBCRAFTER_PPS}></ConstVal> |
 
-<Chart
-    width={650}
-    height={450}
-    left={0}
-    chartType="ColumnChart"
-    loader={<div>Loading Chart</div>}
+<ThemedChart
     data={[
         ['Library', 'Seconds'],
         ['libpcap', TCP_WITH_OPTIONS_LIBPCAP_SEC],
@@ -120,11 +106,6 @@ PcapPlusPlus is ~32% faster than libtins and ~x48 faster than libcrafter
         ['libtins', TCP_WITH_OPTIONS_LIBTINS_SEC],
         ['libcrafter', TCP_WITH_OPTIONS_LIBCRAFTER_SEC],
     ]}
-    options={{
-        title: 'Graphic view',
-        chartArea: { left: 0 },
-    }}
-    legendToggle
 />
 
 ### Benchmark #3 - DNS parsing
@@ -140,12 +121,7 @@ PcapPlusPlus is ~5% faster than libtins and ~x29 faster than libcrafter
 | libtins      | <ConstVal value={DNS_LIBTINS_SEC}></ConstVal> | <ConstVal value={DNS_LIBTINS_PPS}></ConstVal> |
 | libcrafter   | <ConstVal value={DNS_LIBCRAFTER_SEC}></ConstVal> | <ConstVal value={DNS_LIBCRAFTER_PPS}></ConstVal> |
 
-<Chart
-    width={650}
-    height={450}
-    left={0}
-    chartType="ColumnChart"
-    loader={<div>Loading Chart</div>}
+<ThemedChart
     data={[
         ['Library', 'Seconds'],
         ['libpcap', DNS_LIBPCAP_SEC],
@@ -153,9 +129,4 @@ PcapPlusPlus is ~5% faster than libtins and ~x29 faster than libcrafter
         ['libtins', DNS_LIBTINS_SEC],
         ['libcrafter', DNS_LIBCRAFTER_SEC],
     ]}
-    options={{
-        title: 'Graphic view',
-        chartArea: { left: 0 },
-    }}
-    legendToggle
 />
