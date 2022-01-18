@@ -1,7 +1,19 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 
-const ButtonLink = ({ text, link, btnColor = "#2c84fa"}) => {
+export enum Color {
+  purple = "#5e41d0",
+  blue = "#2c84fa",
+  green = "#11b584",
+}
+
+interface ButtonLinkProps {
+  text: string;
+  link: string;
+  btnColor: Color;
+}
+
+export const ButtonLink = ({ text, link, btnColor = Color.blue}: ButtonLinkProps) => {
   const commonStyles = {
     backgroundColor: btnColor,
     color          : "white"
@@ -16,5 +28,3 @@ const ButtonLink = ({ text, link, btnColor = "#2c84fa"}) => {
     </Link>
   );
 };
-
-export default ButtonLink;

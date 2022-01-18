@@ -5,7 +5,7 @@ title: "Setting Up PcapPlusPlus"
 
 import {getRelease, getReleaseZipURL, getReleaseTarURL, getSourceCodeZipURL, getSourceCodeTarURL} from '@site/src/components/GitHubURLs';
 import ReleaseButtonLink from '@site/src/components/ReleaseButtonLink';
-import ButtonLink from '@site/src/components/ButtonLink';
+import {ButtonLink, Color} from '@site/src/components/ButtonLink';
 import ConstVal from '@site/src/components/ConstVal';
 import TOCInline from '@theme/TOCInline';
 
@@ -102,9 +102,9 @@ Download the source code for the latest version (__<ConstVal value={getRelease()
 You can also download the latest source code from `master`:
 
 <p>
-  <ButtonLink text={"Download master zip format"} link={getSourceCodeZipURL()} btnColor="#11b584"/>
+  <ButtonLink text={"Download master zip format"} link={getSourceCodeZipURL()} btnColor={Color.green}/>
   &nbsp;
-  <ButtonLink text={"Download master tar.gz format"} link={getSourceCodeTarURL()} btnColor="#11b584"/>
+  <ButtonLink text={"Download master tar.gz format"} link={getSourceCodeTarURL()} btnColor={Color.green}/>
 </p>
 
 Please find detailed instructions on how to build PcapPlusPlus on the various supported platforms in the following pages.
