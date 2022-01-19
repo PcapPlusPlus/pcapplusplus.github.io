@@ -8,8 +8,10 @@ import ReleaseButtonLink from '@site/src/components/ReleaseButtonLink';
 import {ButtonLink, Color} from '@site/src/components/ButtonLink';
 import ConstVal from '@site/src/components/ConstVal';
 import TOCInline from '@theme/TOCInline';
+import ThemedImage from '@theme/ThemedImage';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
-PcapPlusPlus is available on <img src="/img/os-logos/logo-windows.png" width="24" title="Windows"/> Windows, <img src="/img/os-logos/logo-linux.png" width="24" title="Linux"/> Linux, <img src="/img/os-logos/logo-apple.png" width="24" title="MacOS"/> MacOS, <img src="/img/os-logos/logo-android.png" width="24" title="Android"/> Android and <img src="/img/os-logos/logo-freebsd.png" width="24" title="FreeBSD"/> FreeBSD (see more details [here](./platforms)).
+PcapPlusPlus is available on <img src="/img/os-logos/logo-windows.png" width="24" title="Windows"/> Windows, <img src="/img/os-logos/logo-linux.png" width="24" title="Linux"/> Linux, <ThemedImage sources={{light: useBaseUrl("/img/os-logos/logo-apple.png"), dark: useBaseUrl("/img/os-logos/logo-apple-dark.png")}} width="24" title="MacOS"/> MacOS, <img src="/img/os-logos/logo-android.png" width="24" title="Android"/> Android and <img src="/img/os-logos/logo-freebsd.png" width="24" title="FreeBSD"/> FreeBSD (see more details [here](./platforms)).
 
 <p><ReleaseButtonLink/></p>
 
@@ -19,7 +21,7 @@ You can choose between downloading pre-built binaries or build it from source. T
 
 ## Homebrew
 
-Available for: <img src="/img/os-logos/logo-apple.png" alt="drawing" width="24" title="MacOS"/> <img src="/img/os-logos/logo-linux.png" alt="drawing" width="24" title="Linux"/>
+Available for: <ThemedImage sources={{light: useBaseUrl("/img/os-logos/logo-apple.png"), dark: useBaseUrl("/img/os-logos/logo-apple-dark.png")}} width="24" title="MacOS"/> <img src="/img/os-logos/logo-linux.png" alt="drawing" width="24" title="Linux"/>
 
 PcapPlusPlus pre-built binaries are available in Homebrew on MacOS and Linux. You can install it by running the following command from the command-line:
 
@@ -31,7 +33,7 @@ You can also find the PcapPlusPlus formula here: <https://formulae.brew.sh/formu
 
 ## Vcpkg
 
-Available for: <img src="/img/os-logos/logo-windows.png" alt="drawing" width="24" title="Windows"/> <img src="/img/os-logos/logo-linux.png" alt="drawing" width="24" title="Linux"/> <img src="/img/os-logos/logo-apple.png" alt="drawing" width="24" title="MacOS"/>
+Available for: <img src="/img/os-logos/logo-windows.png" alt="drawing" width="24" title="Windows"/> <img src="/img/os-logos/logo-linux.png" alt="drawing" width="24" title="Linux"/> <ThemedImage sources={{light: useBaseUrl("/img/os-logos/logo-apple.png"), dark: useBaseUrl("/img/os-logos/logo-apple-dark.png")}} width="24" title="MacOS"/>
 
 PcapPlusPlus Vcpkg port is available on Windows, MacOS and Linux. You can install it by running the following command from the command-line:
 
@@ -51,7 +53,7 @@ You can also find the PcapPlusPlus port details here: <https://github.com/micros
 
 ## Conan
 
-Available for: <img src="/img/os-logos/logo-linux.png" alt="drawing" width="24" title="Linux"/> <img src="/img/os-logos/logo-apple.png" alt="drawing" width="24" title="MacOS"/>
+Available for: <img src="/img/os-logos/logo-linux.png" alt="drawing" width="24" title="Linux"/> <ThemedImage sources={{light: useBaseUrl("/img/os-logos/logo-apple.png"), dark: useBaseUrl("/img/os-logos/logo-apple-dark.png")}} width="24" title="MacOS"/>
 
 PcapPlusPlus Conan package is available on Linux and MacOS. You can install it by running the following command from the command-line:
 
@@ -63,7 +65,7 @@ This command will fetch PcapPlusPlus directly from ConanCenter: <https://conan.i
 
 ## GitHub Release
 
-Available for: <img src="/img/os-logos/logo-windows.png" alt="drawing" width="24" title="Windows"/> <img src="/img/os-logos/logo-linux.png" alt="drawing" width="24" title="Linux"/> <img src="/img/os-logos/logo-apple.png" alt="drawing" width="24" title="MacOS"/> <img src="/img/os-logos/logo-freebsd.png" alt="drawing" width="24" title="FreeBSD"/> <img src="/img/os-logos/logo-android.png" alt="drawing" width="24" title="Android"/>
+Available for: <img src="/img/os-logos/logo-windows.png" alt="drawing" width="24" title="Windows"/> <img src="/img/os-logos/logo-linux.png" alt="drawing" width="24" title="Linux"/> <ThemedImage sources={{light: useBaseUrl("/img/os-logos/logo-apple.png"), dark: useBaseUrl("/img/os-logos/logo-apple-dark.png")}} width="24" title="MacOS"/> <img src="/img/os-logos/logo-freebsd.png" alt="drawing" width="24" title="FreeBSD"/> <img src="/img/os-logos/logo-android.png" alt="drawing" width="24" title="Android"/>
 
 <p><ReleaseButtonLink/></p>
 
