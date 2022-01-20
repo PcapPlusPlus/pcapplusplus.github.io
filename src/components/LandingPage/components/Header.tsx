@@ -14,7 +14,7 @@ const Header = (): JSX.Element => {
           columnOne={<img alt="" src={useBaseUrl('img/landing-page/logo.svg')} />}
           columnTwo={
             <div className="container">
-              <h1 className="hero__title">{siteConfig.title}</h1>
+              <h1 className="hero__title">Welcome to PcapPlusPlus!</h1>
               <p className="hero__subtitle">{siteConfig.tagline}</p>
               <div className={styles.buttons}>
                 <Button text="Get Started" to="/docs/quickstart"/>

@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Welcome To PcapPlusPlus!',
+  title: 'PcapPlusPlus',
   tagline: 'A multi-platform C++ library for capturing, parsing and crafting of network packets. It is designed to be efficient, powerful and easy to use.',
   url: 'https://pcapplusplus.github.io',
   baseUrl: '/',
