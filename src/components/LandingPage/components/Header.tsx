@@ -17,7 +17,7 @@ const Header = (): JSX.Element => {
               <h1 className="hero__title">{siteConfig.title}</h1>
               <p className="hero__subtitle">{siteConfig.tagline}</p>
               <div className={styles.buttons}>
-                <Button text="Get Started" to="/docs"/>
+                <Button text="Get Started" to="/docs/quickstart"/>
                 <Button text="Download" to="/docs/install"/>
               </div>
             </div>
