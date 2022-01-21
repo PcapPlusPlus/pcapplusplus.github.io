@@ -53,14 +53,16 @@ const config = {
             label: 'Docs',
           },
           {
-            to: '/docs/features',
-            label: 'Features',
+            type: 'doc',
+            docId: 'features',
             position: 'left',
+            label: 'Features',
           },
           {
-            to: '/docs/api',
-            label: 'API',
+            type: 'doc',
+            docId: 'api',
             position: 'left',
+            label: 'API',
           },
           {
             to: '/community',
