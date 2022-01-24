@@ -7,6 +7,7 @@ sidebar_position: 99
 
 import {ButtonLink} from '/src/components/ButtonLink';
 import {useActiveVersion} from '@theme/hooks/useDocs';
+import {ThemedImageWithBaseUrl} from '@site/src/components/ImageWithBaseUrl';
 
 <ButtonLink text="Go to Doxygen API reference" link={"pathname:///api-docs/" + useActiveVersion().label.toLowerCase()}></ButtonLink>
 <br/><br/>
@@ -18,7 +19,7 @@ PcapPlusPlus consists of 3 libraries:
 
 The dependency model between the libraries is as follows:
 
-![Libraries](/img/libraries.png)
+<ThemedImageWithBaseUrl srcLight="/api-docs/libraries-light.svg" srcDark="/api-docs/libraries-dark.svg"/>
 
 That means, you can use __Common++__ separately from the other libraries, and you can also use __Packet++__ without __Pcap++__.
 
