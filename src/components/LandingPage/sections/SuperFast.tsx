@@ -9,7 +9,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const SuperFast = (): JSX.Element  => {
     return (
-      <Body className={styles.NativeApps} background="light">
+      <Body className={styles.Section} background="light">
         <TwoColumns
           columnOne={
             <TextColumn

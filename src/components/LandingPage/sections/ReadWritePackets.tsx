@@ -1,4 +1,5 @@
 import React from 'react';
+import clsx from 'clsx';
 import Body from '../components/Body';
 import TwoColumns from '../components/TwoColumns';
 import TextColumn from '../components/TextColumn';
@@ -9,7 +10,7 @@ import CodeBlock from '@theme/CodeBlock';
 
 const ReadWritePackets = (): JSX.Element  => {
     return (
-      <Body className={styles.NativeApps} background="light">
+      <Body className={styles.Section} background="light">
         <TwoColumns
           columnOne={
             <TextColumn
@@ -25,23 +26,23 @@ const ReadWritePackets = (): JSX.Element  => {
             />
           }
           columnTwo={
-            <CodeBlock className="language-cpp">
+            <CodeBlock className={clsx("language-cpp", styles.codeBlock)}>
             {
-  `// create a pcap file reader
-  pcpp::PcapFileReaderDevice pcapReader("input.pcap");
-  pcapReader.open();
-  
-  // create a pcapng file writer
-  pcpp::PcapNgFileWriterDevice pcapNgWriter("output.pcapng");
-  pcapNgWriter.open();
-  
-  // raw packet object
-  pcpp::RawPacket rawPacket;
-  
-  // read packets from pcap reader and write pcapng writer
-  while (pcapReader->getNextPacket(rawPacket)) {
-    pcapNgWriter.writePacket(rawPacket);
-  }`
+`// create a pcap file reader
+pcpp::PcapFileReaderDevice pcapReader("input.pcap");
+pcapReader.open();
+
+// create a pcapng file writer
+pcpp::PcapNgFileWriterDevice pcapNgWriter("output.pcapng");
+pcapNgWriter.open();
+
+// raw packet object
+pcpp::RawPacket rawPacket;
+
+// read packets from pcap reader and write pcapng writer
+while (pcapReader->getNextPacket(rawPacket)) {
+  pcapNgWriter.writePacket(rawPacket);
+}`
             }
           </CodeBlock>
         }

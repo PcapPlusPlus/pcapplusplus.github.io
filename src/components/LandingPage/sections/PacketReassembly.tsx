@@ -10,7 +10,7 @@ import styles from '../components/Styles';
 const PacketReassembly = (): JSX.Element  => {
     
     return (
-      <Body className={styles.NativeApps} background="light">
+      <Body className={styles.Section} background="light">
         <TwoColumns
           reverse={true}
           columnOne={

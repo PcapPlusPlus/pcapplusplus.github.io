@@ -42,6 +42,15 @@
   margin-right: 20px;
 }
 
+.codeBlock {
+  text-align: left;
+}
+
+img {
+  max-width: 350px;
+}
+
+
 /* Section */
 
 .Section {
@@ -83,14 +92,6 @@ html[data-theme="dark"] .Section p a {
   width: 100%;
 }
 
-.TwoColumns .column.first {
-  grid-area: first;
-}
-
-.TwoColumns .column.last {
-  grid-area: last;
-}
-
 @media only screen and (min-width: 961px) {
   .TwoColumns {
     max-width: 900px;
@@ -114,6 +115,14 @@ html[data-theme="dark"] .Section p a {
   .TwoColumns .column.right {
     padding-left: 50px;
   }
+
+  .TwoColumns .column.first {
+    grid-area: first;
+  }
+  
+  .TwoColumns .column.last {
+    grid-area: last;
+  }
 }
 
 @media only screen and (max-width: 960px) {
@@ -125,42 +134,39 @@ html[data-theme="dark"] .Section p a {
 
   .TwoColumns .column {
     padding: 0 4rem;
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+    text-align: center;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .TwoColumns .column {
     padding: 0 1.25rem;
+    overflow-x: scroll;
   }
 }
 
 
-/* Native Apps */
+/* Sections */
 
-.NativeApps {
+.Section {
   overflow: hidden;
 }
 
 @media only screen and (max-width: 960px) {
-  .NativeApps .column.last {
-    max-height: 300px;
-  }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 960px) {
-  .NativeApps .column.last {
-    width: 66.7%;
-    margin: 0 auto;
+  .Section .column.last {
+    max-height: 450px;
   }
 }
 
 @media only screen and (min-width: 961px) {
-  .NativeApps {
+  .Section {
     max-height: 450px;
   }
 
   /* Correct for whitespace in the image of phones */
-  .NativeApps .column.left {
+  .Section .column.left {
     margin-top: -25px;
   }
 }

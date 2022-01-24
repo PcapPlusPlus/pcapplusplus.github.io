@@ -1,4 +1,5 @@
 import React from 'react';
+import clsx from 'clsx';
 import Body from '../components/Body';
 import styles from '../components/Styles';
 import TwoColumns from '../components/TwoColumns';
@@ -10,7 +11,7 @@ import CodeBlock from '@theme/CodeBlock';
 const DecodeAndForgePackets = (): JSX.Element  => {
 
     return (
-        <Body className={styles.NativeApps} background="light">
+        <Body className={styles.Section} background="light">
         <TwoColumns
             reverse={true}
             columnOne={
@@ -27,23 +28,23 @@ const DecodeAndForgePackets = (): JSX.Element  => {
             />
             }
             columnTwo={
-            <CodeBlock className="language-cpp">
+            <CodeBlock className={clsx("language-cpp", styles.codeBlock)}>
                 {
-    `// parse the raw packet into a parsed packet
-    pcpp::Packet parsedPacket(&rawPacket);
+`// parse the raw packet into a parsed packet
+pcpp::Packet parsedPacket(&rawPacket);
 
-    // check if it's an IPv4 packet
-    if (parsedPacket.isPacketOfType(pcpp::IPv4)) {
-    // extract source and dest IPs
-    pcpp::IPv4Address srcIP = 
-        parsedPacket.getLayerOfType()->getSrcIPv4Address();
-    pcpp::IPv4Address destIP = 
-        parsedPacket.getLayerOfType()->getDstIPv4Address();
+// check if it's an IPv4 packet
+if (parsedPacket.isPacketOfType(pcpp::IPv4)) {
+// extract source and dest IPs
+pcpp::IPv4Address srcIP = 
+    parsedPacket.getLayerOfType()->getSrcIPv4Address();
+pcpp::IPv4Address destIP = 
+    parsedPacket.getLayerOfType()->getDstIPv4Address();
 
-    // print source and dest IPs
-    std::cout << 
-        "Source IP is: " << srcIP << std::endl <<
-        "Dest IP is: " << destIP << std::endl;`
+// print source and dest IPs
+std::cout << 
+    "Source IP is: " << srcIP << std::endl <<
+    "Dest IP is: " << destIP << std::endl;`
                 }
             </CodeBlock>
             }
