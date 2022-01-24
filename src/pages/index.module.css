@@ -53,6 +53,10 @@
 
 .landingBtn:hover {
   color: var(--ifm-color-white);
+  background-color: var(--ifm-color-primary-darkest);
+}
+
+html[data-theme="dark"] .landingBtn:hover {
   background-color: var(--ifm-color-primary-lightest);
 }
 
@@ -62,6 +66,18 @@
 
 .codeBlock {
   text-align: left;
+}
+
+@media only screen and (min-width: 961px) {
+  .codeBlock {
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .codeBlock {
+    font-size: small;
+  }
 }
 
 img {
@@ -112,7 +128,7 @@ html[data-theme="dark"] .Section p a {
 
 @media only screen and (min-width: 961px) {
   .TwoColumns {
-    max-width: 900px;
+    max-width: 940px;
     margin: 0 auto;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "first last";
@@ -123,15 +139,15 @@ html[data-theme="dark"] .Section p a {
   }
 
   .TwoColumns .column {
-    max-width: 450px;
+    max-width: 470px;
   }
 
   .TwoColumns .column.left {
-    padding-right: 50px;
+    padding-right: 20px;
   }
 
   .TwoColumns .column.right {
-    padding-left: 50px;
+    padding-left: 20px;
   }
 
   .TwoColumns .column.first {
