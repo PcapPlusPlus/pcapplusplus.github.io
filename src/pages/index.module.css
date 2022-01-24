@@ -33,6 +33,11 @@
   border-style: none;
 }
 
+.landingBtn:hover {
+  color: var(--ifm-color-white);
+  background-color: var(--ifm-color-primary-lightest);
+}
+
 .landingBtnHeader {
   margin-right: 20px;
 }
