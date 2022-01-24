@@ -12,16 +12,21 @@ const Header = (): JSX.Element => {
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <TwoColumns
           columnOne={
-            <div className="container">
+            <div>
               <h1 className="hero__title">Welcome to PcapPlusPlus!</h1>
               <p className="hero__subtitle">{siteConfig.tagline}</p>
               <div className={styles.buttons}>
                 <Button text="Get Started" to="/docs/quickstart"/>
+                &nbsp;&nbsp;
                 <Button text="Download" to="/docs/install"/>
               </div>
             </div>
           }
-          columnTwo={<img alt="" src={useBaseUrl('img/landing-page/logo.svg')} />}
+          columnTwo={
+            <div className={styles.logoContainer}>
+              <img alt="" src={useBaseUrl('img/landing-page/logo.svg')} />
+            </div>
+          }
       />
       </header>
     );

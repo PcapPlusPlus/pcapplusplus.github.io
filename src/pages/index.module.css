@@ -18,6 +18,10 @@
   }
 }
 
+.logoContainer {
+  text-align: center;
+}
+
 .buttons {
   display: flex;
   align-items: left;
