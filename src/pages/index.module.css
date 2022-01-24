@@ -18,6 +18,12 @@
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .heroBanner {
+    padding: 0.5rem;
+  }
+}
+
 .logoContainer {
   text-align: center;
 }
@@ -25,6 +31,18 @@
 .buttons {
   display: flex;
   align-items: left;
+}
+
+@media only screen and (max-width: 960px) {
+  .buttons {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .buttons {
+    display: grid;
+  }
 }
 
 .landingBtn {
