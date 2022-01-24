@@ -11,8 +11,7 @@ const Header = (): JSX.Element => {
     return (
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <TwoColumns
-          columnOne={<img alt="" src={useBaseUrl('img/landing-page/logo.svg')} />}
-          columnTwo={
+          columnOne={
             <div className="container">
               <h1 className="hero__title">Welcome to PcapPlusPlus!</h1>
               <p className="hero__subtitle">{siteConfig.tagline}</p>
@@ -22,7 +21,8 @@ const Header = (): JSX.Element => {
               </div>
             </div>
           }
-        />
+          columnTwo={<img alt="" src={useBaseUrl('img/landing-page/logo.svg')} />}
+      />
       </header>
     );
   };

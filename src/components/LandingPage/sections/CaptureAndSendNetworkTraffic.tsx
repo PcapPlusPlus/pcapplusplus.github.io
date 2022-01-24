@@ -11,8 +11,7 @@ const CaptureAndSendNetworkTraffic = (): JSX.Element  => {
     return (
       <Body className={styles.NativeApps} background="light">
         <TwoColumns
-          columnOne={<img alt="" src={useBaseUrl('img/landing-page/capture-engines.png')} />}
-          columnTwo={
+          columnOne={
             <TextColumn
               title="Capture and send network traffic"
               content={
@@ -26,6 +25,7 @@ const CaptureAndSendNetworkTraffic = (): JSX.Element  => {
               }
             />
           }
+          columnTwo={<img alt="" src={useBaseUrl('img/landing-page/capture-engines.png')} />}
         />
       </Body>
     );

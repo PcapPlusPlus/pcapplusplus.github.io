@@ -12,6 +12,7 @@ const DecodeAndForgePackets = (): JSX.Element  => {
     return (
         <Body className={styles.NativeApps} background="light">
         <TwoColumns
+            reverse={true}
             columnOne={
             <TextColumn
                 title="Decode and forge packets"

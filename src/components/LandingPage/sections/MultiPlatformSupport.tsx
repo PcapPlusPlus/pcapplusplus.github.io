@@ -11,8 +11,8 @@ const MultiPlatformSupport = (): JSX.Element  => {
     return (
       <Body className={styles.NativeApps} background="light">
         <TwoColumns
-          columnOne={<img alt="" src={useBaseUrl('img/landing-page/supported-os.png')} />}
-          columnTwo={
+          reverse={true}
+          columnOne={
             <TextColumn
               title="Multi platform support"
               content={
@@ -25,6 +25,7 @@ const MultiPlatformSupport = (): JSX.Element  => {
               }
             />
           }
+          columnTwo={<img alt="" src={useBaseUrl('img/landing-page/supported-os.png')} />}
         />
       </Body>
     );

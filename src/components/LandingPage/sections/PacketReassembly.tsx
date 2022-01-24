@@ -12,8 +12,8 @@ const PacketReassembly = (): JSX.Element  => {
     return (
       <Body className={styles.NativeApps} background="light">
         <TwoColumns
-          columnOne={<img alt="" src={useBaseUrl('img/landing-page/stream.png')} />}
-          columnTwo={
+          reverse={true}
+          columnOne={
             <TextColumn
               title="Packet reassembly"
               content={
@@ -32,6 +32,7 @@ const PacketReassembly = (): JSX.Element  => {
               }
             />
           }
+          columnTwo={<img alt="" src={useBaseUrl('img/landing-page/stream.png')} />}
         />
       </Body>
     );
