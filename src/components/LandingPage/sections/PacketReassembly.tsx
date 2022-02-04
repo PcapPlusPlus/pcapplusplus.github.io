@@ -5,6 +5,7 @@ import TextColumn from '../components/TextColumn';
 import Button from '../components/Button';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from '../components/Styles';
+import { FiChevronRight } from "react-icons/fi";
 
 
 const PacketReassembly = (): JSX.Element  => {
@@ -27,7 +28,7 @@ const PacketReassembly = (): JSX.Element  => {
                   <p>
                     <strong>IP Fragmentation and Defragmentation</strong> to create and reassemble IPv4 and IPv6 fragments
                   </p>
-                  <Button text="Learn More" to="/docs/features#packet-reassembly"/>
+                  <a className="learn-more-link" href="/docs/features#packet-reassembly">Learn More <FiChevronRight /></a>
                 </>
               }
             />

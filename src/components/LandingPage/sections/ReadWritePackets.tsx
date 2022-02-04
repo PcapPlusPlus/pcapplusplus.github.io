@@ -6,6 +6,7 @@ import TextColumn from '../components/TextColumn';
 import Button from '../components/Button';
 import styles from '../components/Styles';
 import CodeBlock from '@theme/CodeBlock';
+import { FiChevronRight } from "react-icons/fi";
 
 
 const ReadWritePackets = (): JSX.Element  => {
@@ -20,7 +21,7 @@ const ReadWritePackets = (): JSX.Element  => {
                   <p>
                     PcapPlusPlus provides an easy-to-use interface for reading and writing network packets into files. It supports the most popular file formats which are <a href="https://wiki.wireshark.org/Development/LibpcapFileFormat">PCAP</a> and <a href="https://github.com/pcapng/pcapng">PCAPNG</a>
                   </p>
-                  <Button text="Learn More" to="/docs/features#read-and-write-packets-fromto-files"/>
+                  <a className="learn-more-link" href="/docs/features#read-and-write-packets-fromto-files">Learn More <FiChevronRight /></a>
                 </>
               }
             />

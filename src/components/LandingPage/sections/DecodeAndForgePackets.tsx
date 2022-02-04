@@ -6,6 +6,7 @@ import TwoColumns from '../components/TwoColumns';
 import TextColumn from '../components/TextColumn';
 import Button from '../components/Button';
 import CodeBlock from '@theme/CodeBlock';
+import { FiChevronRight } from "react-icons/fi";
 
 
 const DecodeAndForgePackets = (): JSX.Element  => {
@@ -22,7 +23,7 @@ const DecodeAndForgePackets = (): JSX.Element  => {
                     <p>
                     PcapPlusPlus enables decoding and forging capabilities for a large variety of <a href="/docs/features#supported-network-protocols">network protocols</a>
                     </p>
-                    <Button text="Learn More" to="/docs/features#packet-parsing-and-crafting"/>
+                    <a className="learn-more-link" href="/docs/features#packet-parsing-and-crafting">Learn More <FiChevronRight /></a>
                 </>
                 }
             />

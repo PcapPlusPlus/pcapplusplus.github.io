@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -75,4 +76,159 @@ html[data-theme="dark"] .navbar .navbar__link[href*=github]:before {
 
 .navbar svg[class*=iconExternalLink] {
   display: none;
+}
+
+.button { 
+  letter-spacing: -1px;;
+  text-transform: uppercase;
+  border-radius: 4px;
+  height: 55px;
+  
+}
+
+.button--lg {
+  padding: 12px;
+  padding-right: 25px;
+  padding-left: 25px;
+  font-family: 'Roboto', sans-serif;  
+  color: #ccc;
+  transition: .2s linear;
+} 
+
+.button--lg:hover {
+  background-color: var(--ifm-color-primary-dark) !important;
+}
+
+.learn-more-link {
+  font-size: 1.2rem;
+  font-weight: 600;
+  top: 10px;
+}
+
+.learn-more-link svg {
+  transition: .2s linear;
+  margin-bottom: -3.5px;
+}
+
+.learn-more-link:hover {
+  text-decoration: none;
+  color: #531c2d;
+}
+
+html[data-theme='light'] .learn-more-link:hover {
+  color: var(--ifm-color-primary-light);
+}
+
+.learn-more-link:hover > svg {
+  margin-left: -4px;
+}
+
+section:nth-child(even) {
+  height: 40%;
+  background-color: #2b3137;
+  border-bottom: none !important;
+  border-top: none !important;
+}
+
+section:nth-child(odd){
+  background-color: #21222c;
+  border-bottom: none !important;
+  border-top: none !important;
+}
+
+html[data-theme='light'] section {
+  background-color: #fff;
+} 
+
+
+section p a {
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #834054;
+}
+
+section p a:hover {
+  transition: .2s linear;
+  color: #531c2d; 
+  text-decoration: none;
+}
+
+html[data-theme='light'] section p a {
+  color: #834054;  
+}
+
+html[data-theme='light'] section p a:hover {
+  transition: .2s linear;
+  color: var(--ifm-color-primary-light);  
+}
+
+.theme-code-block .cpp pre {
+  overflow: hidden;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+html[data-theme='light'] .theme-code-block .cpp pre {
+  background-color: #d9d9d9 !important;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.navbar__link:nth-child(1):before {
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: 50%;
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzdkMmE0MyI+PHBhdGggZD0iTTg2LjAyMjM5LDE3LjJjLTM4LjAwNjI3LDAgLTY4LjgyMjM5LDMwLjgwNTIgLTY4LjgyMjM5LDY4LjhjMCwzNy45OTQ4IDMwLjgxNjEzLDY4LjggNjguODIyMzksNjguOGM1Ny4zOTA2NywwIDcwLjMyMDMyLC01My4yNzk4NyA2NC45MzY3MiwtODAuMjY2NjdoLTcuNjI1NzhoLTEzLjAwMDc4aC00NC4zMzI1NXYyMi45MzMzM2g0NC4zNjYxNGMtNS4xMDAyNSwxOS43Njk5NyAtMjMuMDA0LDM0LjQgLTQ0LjM2NjE0LDM0LjRjLTI1LjMyOTg3LDAgLTQ1Ljg2NjY3LC0yMC41MzY4IC00NS44NjY2NywtNDUuODY2NjdjMCwtMjUuMzI5ODcgMjAuNTM2OCwtNDUuODY2NjcgNDUuODY2NjcsLTQ1Ljg2NjY3YzExLjUxODI3LDAgMjIuMDExMDgsNC4yNzU2MyAzMC4wNjY0MSwxMS4yODc1bDE2LjI5Mjk3LC0xNi4yODE3N2MtMTIuMjM0OTQsLTExLjE0NTYgLTI4LjQ4OTEyLC0xNy45MzkwNiAtNDYuMzM2OTgsLTE3LjkzOTA2eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+') 50% 50% no-repeat var(--ifm-background-surface-color) !important;
+}
+
+.navbar__link:nth-child(1):hover:before {
+  transition: .2s linear;
+  border: 1px solid #531c2d;
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzUzMWMyZCI+PHBhdGggZD0iTTg2LjAyMjM5LDE3LjJjLTM4LjAwNjI3LDAgLTY4LjgyMjM5LDMwLjgwNTIgLTY4LjgyMjM5LDY4LjhjMCwzNy45OTQ4IDMwLjgxNjEzLDY4LjggNjguODIyMzksNjguOGM1Ny4zOTA2NywwIDcwLjMyMDMyLC01My4yNzk4NyA2NC45MzY3MiwtODAuMjY2NjdoLTcuNjI1NzhoLTEzLjAwMDc4aC00NC4zMzI1NXYyMi45MzMzM2g0NC4zNjYxNGMtNS4xMDAyNSwxOS43Njk5NyAtMjMuMDA0LDM0LjQgLTQ0LjM2NjE0LDM0LjRjLTI1LjMyOTg3LDAgLTQ1Ljg2NjY3LC0yMC41MzY4IC00NS44NjY2NywtNDUuODY2NjdjMCwtMjUuMzI5ODcgMjAuNTM2OCwtNDUuODY2NjcgNDUuODY2NjcsLTQ1Ljg2NjY3YzExLjUxODI3LDAgMjIuMDExMDgsNC4yNzU2MyAzMC4wNjY0MSwxMS4yODc1bDE2LjI5Mjk3LC0xNi4yODE3N2MtMTIuMjM0OTQsLTExLjE0NTYgLTI4LjQ4OTEyLC0xNy45MzkwNiAtNDYuMzM2OTgsLTE3LjkzOTA2eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+') 50% 50% no-repeat var(--ifm-background-surface-color) !important;
+}
+
+.navbar__link:nth-child(2):before {
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: 50%;
+  background: url('/static/img/icons/logo-email-red.png') 50% 50% no-repeat var(--ifm-background-surface-color) !important;
+}
+
+.navbar__link:nth-child(2):hover:before {
+  transition: .2s linear;
+  border: 1px solid #531c2d;
+  background: url('/static/img/icons/logo-email-red-dark.png') 50% 50% no-repeat var(--ifm-background-surface-color) !important;
+}
+
+.navbar__link:nth-child(3):before {
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: 50%;
+  background: url('/static/img/icons/logo-stackoverflow-red.png') 50% 50% no-repeat var(--ifm-background-surface-color) !important;
+}
+
+.navbar__link:nth-child(3):hover:before {
+  transition: .2s linear;
+  border: 1px solid #531c2d;
+  background: url('/static/img/icons/logo-stackoverflow-red-dark.png') 50% 50% no-repeat var(--ifm-background-surface-color) !important;
+}
+
+.navbar__link:nth-child(4):before {
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: 50%;
+  background: url('/static/img/icons/logo-twitter-red.png') 50% 50% no-repeat var(--ifm-background-surface-color) !important;
+}
+
+.navbar__link:nth-child(4):hover:before {
+  transition: .2s linear;
+  border: 1px solid #531c2d;
+  background: url('/static/img/icons/logo-twitter-red-dark.png') 50% 50% no-repeat var(--ifm-background-surface-color) !important;
+}
+
+.navbar__link:nth-child(5):before {
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: 50%;
+  background: url('/static/img/icons/logo-github-red.png') 50% 50% no-repeat var(--ifm-background-surface-color) !important;
+}
+
+.navbar__link:nth-child(5):hover:before {
+  transition: .2s linear;
+  border: 1px solid #531c2d;
+  background: url('/static/img/icons/logo-github-red-dark.png') 50% 50% no-repeat var(--ifm-background-surface-color) !important;
 }
