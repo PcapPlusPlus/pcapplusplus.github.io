@@ -5,6 +5,7 @@ import TwoColumns from '../components/TwoColumns';
 import TextColumn from '../components/TextColumn';
 import Button from '../components/Button';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import NetworkIcons from '../components/NetworkIcons';
 import { FiChevronRight } from "react-icons/fi";
 
 
@@ -26,7 +27,7 @@ const CaptureAndSendNetworkTraffic = (): JSX.Element  => {
               }
             />
           }
-          columnTwo={<img alt="" src={useBaseUrl('img/landing-page/capture-engines.png')} />}
+          columnTwo={NetworkIcons()}
         />
       </Body>
     );

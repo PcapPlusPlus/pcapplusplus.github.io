@@ -232,3 +232,76 @@ html[data-theme='light'] .theme-code-block .cpp pre {
   border: 1px solid #531c2d;
   background: url('/static/img/icons/logo-github-red-dark.png') 50% 50% no-repeat var(--ifm-background-surface-color) !important;
 }
+
+.displayNetwork-ul {
+  display: flex;
+  flex-wrap: wrap; 
+  list-style: none;
+}
+
+.displayNetwork-ul li {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2) !important;
+  margin-top: 0.84rem;
+  margin-right: 0.74rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.displayNetwork-ul li:nth-child(1) {
+  padding-left: 6.25rem; 
+  padding-right: 1.25rem;
+  background: url("/static/img/packet-engines/DPDK_logo_horizontal_mono_grey.png") 0px -16px no-repeat #531c2d !important;
+  background-size: 6rem !important;
+}
+
+html[data-theme='light'] .displayNetwork-ul li:nth-child(1) {
+  background: url("/static/img/packet-engines/DPDK_logo_horizontal_mono_grey.png") 0px -16px no-repeat #ddd !important;
+  background-size: 6rem !important;
+}
+
+.displayNetwork-ul li:nth-child(2) {
+  padding-left: 3.3rem; 
+  padding-right: 1.25rem;
+  background: url("/static/img/packet-engines/pfring_mono_grey.png") 3px 0px no-repeat #531c2d !important;
+  background-size: 2.5rem !important;
+}
+
+html[data-theme='light'] .displayNetwork-ul li:nth-child(2) {
+  background: url("/static/img/packet-engines/pfring_mono_grey.png") 3px 0px no-repeat #ddd !important;
+  background-size: 2.5rem !important;
+}
+
+.displayNetwork-ul li:nth-child(3) {
+  padding-left: 8.5rem; 
+  padding-right: 1.25rem;
+  background: url("/static/img/packet-engines/libpcap_mono_grey.png") 10px  5px no-repeat #531c2d !important;
+  background-size: 7rem !important;
+}
+
+html[data-theme='light'] .displayNetwork-ul li:nth-child(3) {
+  background: url("/static/img/packet-engines/libpcap_mono_grey.png") 10px  5px no-repeat #ddd !important;
+  background-size: 7rem !important;
+}
+
+.displayNetwork-ul li:nth-child(4) {
+  padding-left: 6rem; 
+  padding-right: 1.25rem;
+  background: url("/static/img/packet-engines/winpcap_mono_grey.png") 5px 12px no-repeat #531c2d !important;
+  background-size: 5rem !important;
+}
+
+html[data-theme='light'] .displayNetwork-ul li:nth-child(4) {
+  background: url("/static/img/packet-engines/winpcap_mono_grey.png") 5px 12px no-repeat #ddd !important;
+  background-size: 5rem !important;
+}
+
+.displayNetwork-ul li:hover {
+  transition: .2s linear;
+  background-color: #4d192a !important;
+}
+
+html[data-theme='light'] .displayNetwork-ul li:hover {
+  transition: .5s linear;
+  background-color: #ccc !important;
+}
