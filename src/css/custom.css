@@ -120,7 +120,7 @@ html[data-theme='light'] .learn-more-link:hover {
 }
 
 .learn-more-link:hover > svg {
-  margin-left: -4px;
+  margin-left: 4px;
 }
 
 section:nth-child(even) {
