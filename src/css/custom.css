@@ -296,6 +296,18 @@ html[data-theme='light'] .displayNetwork-ul li:nth-child(4) {
   background-size: 5rem !important;
 }
 
+.displayNetwork-ul li:nth-child(5) {
+  padding-left: 6rem; 
+  padding-right: 1.25rem;
+  background: url("/static/img/packet-engines/npcap_mono_grey.png") 5px 12px no-repeat #531c2d !important;
+  background-size: 5rem !important;
+}
+
+html[data-theme='light'] .displayNetwork-ul li:nth-child(5) {
+  background: url("/static/img/packet-engines/npcap_mono_grey.png") 5px 12px no-repeat #ddd !important;
+  background-size: 5rem !important;
+}
+
 .displayNetwork-ul li:hover {
   transition: .2s linear;
   background-color: #4d192a !important;

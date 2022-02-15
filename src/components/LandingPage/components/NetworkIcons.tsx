@@ -7,8 +7,9 @@ const NetworkIcons = () => {
         <ul className="displayNetwork-ul">
           <li><span>DPDK</span></li>
           <li><span>PF_RING</span></li>
-          <li><span>TCPDUMP</span></li>        
-          <li><span>WIN_PCAP</span></li>
+          <li><span>LIBPCAP</span></li>
+          <li><span>WINPCAP</span></li>
+          <li><span>NPCAP</span></li>
         </ul>
       </>
     )
