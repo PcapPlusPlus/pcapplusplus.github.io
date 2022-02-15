@@ -58,6 +58,7 @@
 *   - pcpp::DhcpLayer, DhcpLayer.h - DHCP protocol
 *   - pcpp::DhcpV6Layer, DhcpV6Layer.h - DHCPv6 protocol
 *   - pcpp::BgpLayer, BgpLayer.h - BGP protocol
+*   - pcpp::NtpLayer, NtpLayer.h - NTP (v3, v4) protocol
 *   - pcpp::SSHLayer, SSHLayer.h - SSH protocol - parsing only (no editing capabilities)
 *   - pcpp::HttpRequestLayer, HttpLayer.h - HTTP request protocol
 *   - pcpp::HttpResponseLayer, HttpLayer.h - HTTP response protocol
