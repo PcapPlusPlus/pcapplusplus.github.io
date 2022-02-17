@@ -23,7 +23,7 @@ const DecodeAndForgePackets = (): JSX.Element  => {
                     <p>
                     PcapPlusPlus enables decoding and forging capabilities for a large variety of <a href="/docs/features#supported-network-protocols">network protocols</a>
                     </p>
-                    <a className="learn-more-link" href="/docs/features#packet-parsing-and-crafting">Learn More <FiChevronRight /></a>
+                    <a className={styles.LearnMoreLink} href="/docs/features#packet-parsing-and-crafting">Learn More <FiChevronRight /></a>
                 </>
                 }
             />

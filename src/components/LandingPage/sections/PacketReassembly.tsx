@@ -28,7 +28,7 @@ const PacketReassembly = (): JSX.Element  => {
                   <p>
                     <strong>IP Fragmentation and Defragmentation</strong> to create and reassemble IPv4 and IPv6 fragments
                   </p>
-                  <a className="learn-more-link" href="/docs/features#packet-reassembly">Learn More <FiChevronRight /></a>
+                  <a className={styles.LearnMoreLink} href="/docs/features#packet-reassembly">Learn More <FiChevronRight /></a>
                 </>
               }
             />

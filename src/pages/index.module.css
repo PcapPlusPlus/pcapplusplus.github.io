@@ -114,6 +114,70 @@ html[data-theme="dark"] .Section p a {
   @extend %link-style-dark;
 }
 
+.Section:nth-child(even) {
+  height: 40%;
+  background-color: #2b3137;
+  border-bottom: none !important;
+  border-top: none !important;
+}
+
+.Section:nth-child(odd){
+  background-color: #21222c;
+  border-bottom: none !important;
+  border-top: none !important;
+}
+
+html[data-theme='light'] .Section {
+  background-color: #fff;
+} 
+
+.Section p a {
+  font-weight: bold;
+}
+
+.Section p a:hover {
+  transition: .2s linear;
+  text-decoration: none;
+}
+
+html[data-theme='light'] .Section p a:hover {
+  color: var(--ifm-color-primary-darkest);
+}
+
+html[data-theme='dark'] .Section p a:hover {
+  color: var(--ifm-color-primary-lightest);
+}
+
+
+/* Learn more link */
+
+.LearnMoreLink {
+  font-size: 1.2rem;
+  font-weight: 600;
+  top: 10px;
+}
+
+.LearnMoreLink svg {
+  transition: .2s linear;
+  margin-bottom: -3.5px;
+}
+
+.LearnMoreLink:hover {
+  text-decoration: none;
+  /* color: #531c2d; */
+}
+
+html[data-theme='light'] .LearnMoreLink:hover {
+  color: var(--ifm-color-primary-darkest);
+}
+
+html[data-theme='dark'] .LearnMoreLink:hover {
+  color: var(--ifm-color-primary-lightest);
+}
+
+.LearnMoreLink:hover > svg {
+  margin-left: 4px;
+}
 
 
 /* Two columns */
