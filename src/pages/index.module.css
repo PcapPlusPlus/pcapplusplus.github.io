@@ -91,7 +91,25 @@ img {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
+  overflow: hidden;
   overflow-x: hidden;
+}
+
+@media only screen and (max-width: 960px) {
+  .Section .column.last {
+    max-height: 450px;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  .Section {
+    max-height: 450px;
+  }
+
+  /* Correct for whitespace in the image of phones */
+  .Section .column.left {
+    margin-top: -25px;
+  }
 }
 
 .Section + .Section {
@@ -242,29 +260,5 @@ html[data-theme='dark'] .LearnMoreLink:hover {
   .TwoColumns .column {
     padding: 0 1.25rem;
     overflow-x: scroll;
-  }
-}
-
-
-/* Sections */
-
-.Section {
-  overflow: hidden;
-}
-
-@media only screen and (max-width: 960px) {
-  .Section .column.last {
-    max-height: 450px;
-  }
-}
-
-@media only screen and (min-width: 961px) {
-  .Section {
-    max-height: 450px;
-  }
-
-  /* Correct for whitespace in the image of phones */
-  .Section .column.left {
-    margin-top: -25px;
   }
 }
