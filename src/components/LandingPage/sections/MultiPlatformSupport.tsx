@@ -4,6 +4,7 @@ import styles from '../components/Styles';
 import TwoColumns from '../components/TwoColumns';
 import TextColumn from '../components/TextColumn';
 import Button from '../components/Button';
+import OperatingSystems from '../components/OperatingSystems';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { FiChevronRight } from "react-icons/fi";
 
@@ -26,7 +27,7 @@ const MultiPlatformSupport = (): JSX.Element  => {
               }
             />
           }
-          columnTwo={<img alt="" src={useBaseUrl('img/landing-page/supported-os.png')} />}
+          columnTwo={OperatingSystems()}
         />
       </Body>
     );

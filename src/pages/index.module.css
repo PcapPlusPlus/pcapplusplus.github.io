@@ -3,12 +3,21 @@
  * and scoped locally.
  */
 
+ :root {
+  --lp-bg-color-dark1: #2b3137;
+  --lp-bg-color-dark2: #21222c;
+  --lp-hover-dark: #222;
+  --lp-bg-color-light: #ddd;
+  --lp-hover-light: #eee;
+}
+
+
 .heroBanner {
   padding: 4rem 0;
   text-align: left;
   position: relative;
   overflow: hidden;
-  background-color: #2b3137;
+  background-color: var(--lp-bg-color-dark1);
   color: var(--ifm-color-white);
 }
 
@@ -134,13 +143,13 @@ html[data-theme="dark"] .Section p a {
 
 .Section:nth-child(even) {
   height: 40%;
-  background-color: #2b3137;
+  background-color: var(--lp-bg-color-dark1);
   border-bottom: none !important;
   border-top: none !important;
 }
 
 .Section:nth-child(odd){
-  background-color: #21222c;
+  background-color: var(--lp-bg-color-dark2);
   border-bottom: none !important;
   border-top: none !important;
 }
@@ -284,69 +293,112 @@ html[data-theme='dark'] .LearnMoreLink:hover {
 .DisplayNetwork li:nth-child(1) {
   padding-left: 6.25rem; 
   padding-right: 1.25rem;
-  background: url("/static/img/packet-engines/DPDK_logo_horizontal_mono_white.png") 0px -16px no-repeat #333 !important;
+  background: url("/static/img/packet-engines/DPDK_logo_horizontal_mono_white.png") 0px -16px no-repeat var(--lp-bg-color-dark1) !important;
   background-size: 6rem !important;
 }
 
 html[data-theme='light'] .DisplayNetwork li:nth-child(1) {
-  background: url("/static/img/packet-engines/DPDK_logo_horizontal_mono_grey.png") 0px -16px no-repeat #ddd !important;
+  background: url("/static/img/packet-engines/DPDK_logo_horizontal_mono_grey.png") 0px -16px no-repeat var(--lp-bg-color-light) !important;
   background-size: 6rem !important;
 }
 
 .DisplayNetwork li:nth-child(2) {
   padding-left: 3.3rem; 
   padding-right: 1.25rem;
-  background: url("/static/img/packet-engines/pfring_mono_white.png") 3px 0px no-repeat #333 !important;
+  background: url("/static/img/packet-engines/pfring_mono_white.png") 3px 0px no-repeat var(--lp-bg-color-dark1) !important;
   background-size: 2.5rem !important;
 }
 
 html[data-theme='light'] .DisplayNetwork li:nth-child(2) {
-  background: url("/static/img/packet-engines/pfring_mono_grey.png") 3px 0px no-repeat #ddd !important;
+  background: url("/static/img/packet-engines/pfring_mono_grey.png") 3px 0px no-repeat var(--lp-bg-color-light) !important;
   background-size: 2.5rem !important;
 }
 
 .DisplayNetwork li:nth-child(3) {
   padding-left: 8.5rem; 
   padding-right: 1.25rem;
-  background: url("/static/img/packet-engines/libpcap_mono_white.png") 10px  5px no-repeat #333 !important;
+  background: url("/static/img/packet-engines/libpcap_mono_white.png") 10px  5px no-repeat var(--lp-bg-color-dark1) !important;
   background-size: 7rem !important;
 }
 
 html[data-theme='light'] .DisplayNetwork li:nth-child(3) {
-  background: url("/static/img/packet-engines/libpcap_mono_grey.png") 10px  5px no-repeat #ddd !important;
+  background: url("/static/img/packet-engines/libpcap_mono_grey.png") 10px  5px no-repeat var(--lp-bg-color-light) !important;
   background-size: 7rem !important;
 }
 
 .DisplayNetwork li:nth-child(4) {
   padding-left: 6rem; 
   padding-right: 1.25rem;
-  background: url("/static/img/packet-engines/winpcap_mono_white.png") 5px 12px no-repeat #333 !important;
+  background: url("/static/img/packet-engines/winpcap_mono_white.png") 5px 12px no-repeat var(--lp-bg-color-dark1) !important;
   background-size: 5rem !important;
 }
 
 html[data-theme='light'] .DisplayNetwork li:nth-child(4) {
-  background: url("/static/img/packet-engines/winpcap_mono_grey.png") 5px 12px no-repeat #ddd !important;
+  background: url("/static/img/packet-engines/winpcap_mono_grey.png") 5px 12px no-repeat var(--lp-bg-color-light) !important;
   background-size: 5rem !important;
 }
 
 .DisplayNetwork li:nth-child(5) {
   padding-left: 6rem; 
   padding-right: 1.25rem;
-  background: url("/static/img/packet-engines/npcap_mono_white.png") 5px 12px no-repeat #333 !important;
+  background: url("/static/img/packet-engines/npcap_mono_white.png") 5px 12px no-repeat var(--lp-bg-color-dark1) !important;
   background-size: 5rem !important;
 }
 
 html[data-theme='light'] .DisplayNetwork li:nth-child(5) {
-  background: url("/static/img/packet-engines/npcap_mono_grey.png") 5px 12px no-repeat #ddd !important;
+  background: url("/static/img/packet-engines/npcap_mono_grey.png") 5px 12px no-repeat var(--lp-bg-color-light) !important;
   background-size: 5rem !important;
 }
 
 .DisplayNetwork li:hover {
   transition: .2s linear;
-  background-color: #222 !important;
+  background-color: var(--lp-hover-dark) !important;
 }
 
 html[data-theme='light'] .DisplayNetwork li:hover {
   transition: .5s linear;
-  background-color: #eee !important;
+  background-color: var(--lp-hover-light) !important;
+}
+
+
+/* Operating System */
+
+.OperatingSystemContainer {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.OperatingSystem {
+  display: flex;
+  flex-wrap: wrap; 
+  list-style: none;
+}
+
+.OperatingSystem li {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2) !important;
+  padding-left: 1.5rem; 
+  padding-right: 1.5rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.5rem;
+  margin-top: 0.84rem;
+  margin-right: 0.74rem;
+  font-weight: bold;
+  background-color: var(--lp-bg-color-dark2);
+}
+
+html[data-theme='light'] .OperatingSystem li {
+  background-color: var(--lp-bg-color-light) !important;
+}
+
+.OperatingSystem li:hover {
+  transition: .2s linear;
+  background-color: var(--lp-hover-dark) !important;
+}
+
+html[data-theme='light'] .OperatingSystem li:hover {
+  transition: .5s linear;
+  background-color: var(--lp-hover-light) !important;
 }
