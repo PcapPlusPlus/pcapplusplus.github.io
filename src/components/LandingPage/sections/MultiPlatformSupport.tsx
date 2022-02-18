@@ -22,7 +22,7 @@ const MultiPlatformSupport = (): JSX.Element  => {
                   <p>
                     PcapPlusPlus is fully supported on Windows, MacOS, Linux, Android and FreeBSD. You can download pre-built binaries for each platform or build it from source. PcapPlusPlus is available in popular package managers such as Homebrew and Conan 
                   </p>
-                  <a className={styles.LearnMoreLink} href="/docs/install">Learn More <FiChevronRight /></a>
+                  <a className={styles.LearnMoreLink} href="/docs/install">View Installation Guide<FiChevronRight /></a>
                 </>
               }
             />
