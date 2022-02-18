@@ -54,12 +54,12 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: var(--ifm-color-primary-dark) !important;
 }
 
-.theme-code-block .cpp pre {
+.theme-code-block pre {
   overflow: hidden;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
-html[data-theme='light'] .theme-code-block .cpp pre {
+html[data-theme='light'] .theme-code-block pre {
   background-color: #d9d9d9 !important;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2); 
 }
