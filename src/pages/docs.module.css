@@ -1,6 +1,7 @@
 .DocsButton {
   color: var(--ifm-color-white);
   background-color: var(--ifm-color-primary);
+  border-style: none;
 }
 
 .DocsButton:hover { 
