@@ -5,6 +5,7 @@ import TextColumn from '../components/TextColumn';
 import Button from '../components/Button';
 import styles from '../components/Styles';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import { FiChevronRight } from "react-icons/fi";
 
 
 const SuperFast = (): JSX.Element  => {
@@ -19,7 +20,7 @@ const SuperFast = (): JSX.Element  => {
                   <p>
                     PcapPlusPlus is designed to be efficient and lightweight. It enables amazingly fast packet processing with minimum overhead 
                   </p>
-                  <Button text="View Benchmarks" to="/docs/benchmark"/>
+                  <a className={styles.LearnMoreLink} href="/docs/benchmark">View Benchmarks<FiChevronRight /></a>
                 </>
               }
             />

@@ -3,12 +3,21 @@
  * and scoped locally.
  */
 
+ :root {
+  --lp-bg-color-dark1: #2b3137;
+  --lp-bg-color-dark2: #21222c;
+  --lp-hover-dark: #222;
+  --lp-bg-color-light: #ddd;
+  --lp-hover-light: #eee;
+}
+
+
 .heroBanner {
   padding: 4rem 0;
   text-align: left;
   position: relative;
   overflow: hidden;
-  background-color: #2b3137;
+  background-color: var(--lp-bg-color-dark1);
   color: var(--ifm-color-white);
 }
 
@@ -91,7 +100,25 @@ img {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
+  overflow: hidden;
   overflow-x: hidden;
+}
+
+@media only screen and (max-width: 960px) {
+  .Section .column.last {
+    max-height: 450px;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  .Section {
+    max-height: 450px;
+  }
+
+  /* Correct for whitespace in the image of phones */
+  .Section .column.left {
+    margin-top: -25px;
+  }
 }
 
 .Section + .Section {
@@ -114,6 +141,70 @@ html[data-theme="dark"] .Section p a {
   @extend %link-style-dark;
 }
 
+.Section:nth-child(even) {
+  height: 40%;
+  background-color: var(--lp-bg-color-dark1);
+  border-bottom: none !important;
+  border-top: none !important;
+}
+
+.Section:nth-child(odd){
+  background-color: var(--lp-bg-color-dark2);
+  border-bottom: none !important;
+  border-top: none !important;
+}
+
+html[data-theme='light'] .Section {
+  background-color: #fff;
+} 
+
+.Section p a {
+  font-weight: bold;
+}
+
+.Section p a:hover {
+  transition: .2s linear;
+  text-decoration: none;
+}
+
+html[data-theme='light'] .Section p a:hover {
+  color: var(--ifm-color-primary-darkest);
+}
+
+html[data-theme='dark'] .Section p a:hover {
+  color: var(--ifm-color-primary-lightest);
+}
+
+
+/* Learn more link */
+
+.LearnMoreLink {
+  font-size: 1.2rem;
+  font-weight: 600;
+  top: 10px;
+}
+
+.LearnMoreLink svg {
+  transition: .2s linear;
+  margin-bottom: -3.5px;
+}
+
+.LearnMoreLink:hover {
+  text-decoration: none;
+  /* color: #531c2d; */
+}
+
+html[data-theme='light'] .LearnMoreLink:hover {
+  color: var(--ifm-color-primary-darkest);
+}
+
+html[data-theme='dark'] .LearnMoreLink:hover {
+  color: var(--ifm-color-primary-lightest);
+}
+
+.LearnMoreLink:hover > svg {
+  margin-left: 4px;
+}
 
 
 /* Two columns */
@@ -182,25 +273,132 @@ html[data-theme="dark"] .Section p a {
 }
 
 
-/* Sections */
+/* Display Network */
 
-.Section {
-  overflow: hidden;
+.DisplayNetwork {
+  display: flex;
+  flex-wrap: wrap; 
+  list-style: none;
 }
 
-@media only screen and (max-width: 960px) {
-  .Section .column.last {
-    max-height: 450px;
-  }
+.DisplayNetwork li {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2) !important;
+  margin-top: 0.84rem;
+  margin-right: 0.74rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
 }
 
-@media only screen and (min-width: 961px) {
-  .Section {
-    max-height: 450px;
-  }
+.DisplayNetwork li:nth-child(1) {
+  padding-left: 6.25rem; 
+  padding-right: 1.25rem;
+  background: url("/static/img/packet-engines/DPDK_logo_horizontal_mono_white.png") 0px -16px no-repeat var(--lp-bg-color-dark1) !important;
+  background-size: 6rem !important;
+}
 
-  /* Correct for whitespace in the image of phones */
-  .Section .column.left {
-    margin-top: -25px;
-  }
+html[data-theme='light'] .DisplayNetwork li:nth-child(1) {
+  background: url("/static/img/packet-engines/DPDK_logo_horizontal_mono_grey.png") 0px -16px no-repeat var(--lp-bg-color-light) !important;
+  background-size: 6rem !important;
+}
+
+.DisplayNetwork li:nth-child(2) {
+  padding-left: 3.3rem; 
+  padding-right: 1.25rem;
+  background: url("/static/img/packet-engines/pfring_mono_white.png") 3px 0px no-repeat var(--lp-bg-color-dark1) !important;
+  background-size: 2.5rem !important;
+}
+
+html[data-theme='light'] .DisplayNetwork li:nth-child(2) {
+  background: url("/static/img/packet-engines/pfring_mono_grey.png") 3px 0px no-repeat var(--lp-bg-color-light) !important;
+  background-size: 2.5rem !important;
+}
+
+.DisplayNetwork li:nth-child(3) {
+  padding-left: 8.5rem; 
+  padding-right: 1.25rem;
+  background: url("/static/img/packet-engines/libpcap_mono_white.png") 10px  5px no-repeat var(--lp-bg-color-dark1) !important;
+  background-size: 7rem !important;
+}
+
+html[data-theme='light'] .DisplayNetwork li:nth-child(3) {
+  background: url("/static/img/packet-engines/libpcap_mono_grey.png") 10px  5px no-repeat var(--lp-bg-color-light) !important;
+  background-size: 7rem !important;
+}
+
+.DisplayNetwork li:nth-child(4) {
+  padding-left: 6rem; 
+  padding-right: 1.25rem;
+  background: url("/static/img/packet-engines/winpcap_mono_white.png") 5px 12px no-repeat var(--lp-bg-color-dark1) !important;
+  background-size: 5rem !important;
+}
+
+html[data-theme='light'] .DisplayNetwork li:nth-child(4) {
+  background: url("/static/img/packet-engines/winpcap_mono_grey.png") 5px 12px no-repeat var(--lp-bg-color-light) !important;
+  background-size: 5rem !important;
+}
+
+.DisplayNetwork li:nth-child(5) {
+  padding-left: 6rem; 
+  padding-right: 1.25rem;
+  background: url("/static/img/packet-engines/npcap_mono_white.png") 5px 12px no-repeat var(--lp-bg-color-dark1) !important;
+  background-size: 5rem !important;
+}
+
+html[data-theme='light'] .DisplayNetwork li:nth-child(5) {
+  background: url("/static/img/packet-engines/npcap_mono_grey.png") 5px 12px no-repeat var(--lp-bg-color-light) !important;
+  background-size: 5rem !important;
+}
+
+.DisplayNetwork li:hover {
+  transition: .2s linear;
+  background-color: var(--lp-hover-dark) !important;
+}
+
+html[data-theme='light'] .DisplayNetwork li:hover {
+  transition: .5s linear;
+  background-color: var(--lp-hover-light) !important;
+}
+
+
+/* Operating System */
+
+.OperatingSystemContainer {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.OperatingSystem {
+  display: flex;
+  flex-wrap: wrap; 
+  list-style: none;
+}
+
+.OperatingSystem li {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2) !important;
+  padding-left: 1.5rem; 
+  padding-right: 1.5rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.5rem;
+  margin-top: 0.84rem;
+  margin-right: 0.74rem;
+  font-weight: bold;
+  background-color: var(--lp-bg-color-dark2);
+}
+
+html[data-theme='light'] .OperatingSystem li {
+  background-color: var(--lp-bg-color-light) !important;
+}
+
+.OperatingSystem li:hover {
+  transition: .2s linear;
+  background-color: var(--lp-hover-dark) !important;
+}
+
+html[data-theme='light'] .OperatingSystem li:hover {
+  transition: .5s linear;
+  background-color: var(--lp-hover-light) !important;
 }
