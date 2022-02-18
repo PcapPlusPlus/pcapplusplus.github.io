@@ -1,27 +1,17 @@
 import React from 'react';
+import clsx from 'clsx';
 import Link from '@docusaurus/Link';
-
-export enum Color {
-  purple = "#5e41d0",
-  blue = "#2c84fa",
-  green = "#11b584",
-}
+import styles from '../pages/docs.module.css';
 
 interface ButtonLinkProps {
   text: string;
   link: string;
-  btnColor: Color;
 }
 
-export const ButtonLink = ({ text, link, btnColor = Color.blue}: ButtonLinkProps) => {
-  const commonStyles = {
-    backgroundColor: btnColor,
-    color          : "white"
-  };
+export const ButtonLink = ({ text, link}: ButtonLinkProps) => {
   return (
     <Link 
-      style={{...commonStyles }}
-      className="button button--secondary button--lg"
+      className={clsx("button button--lg", styles.DocsButton)}
       to={link}
     >
         {text}

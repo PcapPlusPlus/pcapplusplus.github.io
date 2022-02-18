@@ -1,0 +1,8 @@
+.DocsButton {
+  color: var(--ifm-color-white);
+  background-color: var(--ifm-color-primary);
+}
+
+.DocsButton:hover { 
+  color: var(--ifm-color-white);
+}
