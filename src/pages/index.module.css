@@ -6,8 +6,10 @@
  :root {
   --lp-bg-color-dark1: #2b3137;
   --lp-bg-color-dark2: #21222c;
+  --lp-bg-color-light1: #f5f6f7;
+  --lp-bg-color-light2: #ffffff;
   --lp-hover-dark: #222;
-  --lp-bg-color-light: #ddd;
+  --lp-box-color-light: #ddd;
   --lp-hover-light: #eee;
 }
 
@@ -141,22 +143,26 @@ html[data-theme="dark"] .Section p a {
   @extend %link-style-dark;
 }
 
-.Section:nth-child(even) {
-  height: 40%;
+.Section {
+  border-bottom: none !important;
+  border-top: none !important;
+}
+
+html[data-theme="dark"] .Section:nth-child(even) {
   background-color: var(--lp-bg-color-dark1);
-  border-bottom: none !important;
-  border-top: none !important;
 }
 
-.Section:nth-child(odd){
+html[data-theme="dark"] .Section:nth-child(odd){
   background-color: var(--lp-bg-color-dark2);
-  border-bottom: none !important;
-  border-top: none !important;
 }
 
-html[data-theme='light'] .Section {
-  background-color: #fff;
-} 
+html[data-theme="light"] .Section:nth-child(even) {
+  background-color: var(--lp-bg-color-light1);
+}
+
+html[data-theme="light"] .Section:nth-child(odd){
+  background-color: var(--lp-bg-color-light2);
+}
 
 .Section p a {
   font-weight: bold;
@@ -298,7 +304,7 @@ html[data-theme='dark'] .LearnMoreLink:hover {
 }
 
 html[data-theme='light'] .DisplayNetwork li:nth-child(1) {
-  background: url("/static/img/packet-engines/DPDK_logo_horizontal_mono_grey.png") 0px -16px no-repeat var(--lp-bg-color-light) !important;
+  background: url("/static/img/packet-engines/DPDK_logo_horizontal_mono_grey.png") 0px -16px no-repeat var(--lp-box-color-light) !important;
   background-size: 6rem !important;
 }
 
@@ -310,7 +316,7 @@ html[data-theme='light'] .DisplayNetwork li:nth-child(1) {
 }
 
 html[data-theme='light'] .DisplayNetwork li:nth-child(2) {
-  background: url("/static/img/packet-engines/pfring_mono_grey.png") 3px 0px no-repeat var(--lp-bg-color-light) !important;
+  background: url("/static/img/packet-engines/pfring_mono_grey.png") 3px 0px no-repeat var(--lp-box-color-light) !important;
   background-size: 2.5rem !important;
 }
 
@@ -322,7 +328,7 @@ html[data-theme='light'] .DisplayNetwork li:nth-child(2) {
 }
 
 html[data-theme='light'] .DisplayNetwork li:nth-child(3) {
-  background: url("/static/img/packet-engines/libpcap_mono_grey.png") 10px  5px no-repeat var(--lp-bg-color-light) !important;
+  background: url("/static/img/packet-engines/libpcap_mono_grey.png") 10px  5px no-repeat var(--lp-box-color-light) !important;
   background-size: 7rem !important;
 }
 
@@ -334,7 +340,7 @@ html[data-theme='light'] .DisplayNetwork li:nth-child(3) {
 }
 
 html[data-theme='light'] .DisplayNetwork li:nth-child(4) {
-  background: url("/static/img/packet-engines/winpcap_mono_grey.png") 5px 12px no-repeat var(--lp-bg-color-light) !important;
+  background: url("/static/img/packet-engines/winpcap_mono_grey.png") 5px 12px no-repeat var(--lp-box-color-light) !important;
   background-size: 5rem !important;
 }
 
@@ -346,7 +352,7 @@ html[data-theme='light'] .DisplayNetwork li:nth-child(4) {
 }
 
 html[data-theme='light'] .DisplayNetwork li:nth-child(5) {
-  background: url("/static/img/packet-engines/npcap_mono_grey.png") 5px 12px no-repeat var(--lp-bg-color-light) !important;
+  background: url("/static/img/packet-engines/npcap_mono_grey.png") 5px 12px no-repeat var(--lp-box-color-light) !important;
   background-size: 5rem !important;
 }
 
@@ -390,7 +396,7 @@ html[data-theme='light'] .DisplayNetwork li:hover {
 }
 
 html[data-theme='light'] .OperatingSystem li {
-  background-color: var(--lp-bg-color-light) !important;
+  background-color: var(--lp-box-color-light) !important;
 }
 
 .OperatingSystem li:hover {
