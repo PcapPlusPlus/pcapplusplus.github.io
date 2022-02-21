@@ -1,10 +1,14 @@
 import React from 'react';
-import {getReleaseURL, getRelease} from '../../src/components/GitHubURLs';
+import { getReleaseURL, getRelease } from './GitHubURLs';
 
-const ReleaseLink = ({versionString}) => {
+interface ReleaseLinkProps {
+  versionString: string;
+}
+
+function ReleaseLink({ versionString }: ReleaseLinkProps) {
   return (
-    <a href={getReleaseURL()}>{versionString || (getRelease() + " release")}</a>
+    <a href={getReleaseURL()}>{versionString || (`${getRelease()} release`)}</a>
   );
 }
 
-export default ReleaseLink
+export default ReleaseLink;

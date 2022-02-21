@@ -8,9 +8,9 @@ interface ImageWithBaseUrlProps {
   title: string;
 }
 
-export const ImageWithBaseUrl = ({src, width, title}: ImageWithBaseUrlProps) => {
+export function ImageWithBaseUrl({ src, width, title }: ImageWithBaseUrlProps) {
   return (
-    <img src={useBaseUrl(src)} width={width} title={title}/>
+    <img src={useBaseUrl(src)} width={width} title={title} alt={title} />
   );
 }
 
@@ -21,10 +21,16 @@ interface ThemedImageWithBaseUrlProps {
   title: string;
 }
 
-export const ThemedImageWithBaseUrl = ({srcLight, srcDark, width, title}: ThemedImageWithBaseUrlProps) => {
+export function ThemedImageWithBaseUrl({
+  srcLight, srcDark, width, title,
+}: ThemedImageWithBaseUrlProps) {
   return (
-    <ThemedImage sources={{light: useBaseUrl(srcLight), dark: useBaseUrl(srcDark)}} width={width} title={title} />
-  )
+    <ThemedImage
+      sources={{ light: useBaseUrl(srcLight), dark: useBaseUrl(srcDark) }}
+      width={width}
+      title={title}
+    />
+  );
 }
 
-export default ImageWithBaseUrl
+export default ImageWithBaseUrl;

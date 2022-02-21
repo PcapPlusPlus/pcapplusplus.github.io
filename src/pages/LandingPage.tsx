@@ -8,24 +8,23 @@ import ReadWritePackets from '../components/LandingPage/sections/ReadWritePacket
 import PacketReassembly from '../components/LandingPage/sections/PacketReassembly';
 import Header from '../components/LandingPage/components/Header';
 
-
-const LandingPage = (): JSX.Element => {
-    return (        
-        <Layout
-            title="A multi-platform C++ library for capturing, parsing and crafting of network packets"
-            description="A multi-platform C++ library for capturing, parsing and crafting of network packets">   
-            <Header />                             
-            <main>
-                <CaptureAndSendNetworkTraffic />
-                <DecodeAndForgePackets />
-                <SuperFast />
-                <MultiPlatformSupport />
-                <ReadWritePackets />
-                <PacketReassembly />
-            </main>
-        </Layout>
-    );
-};
-
+function LandingPage(): JSX.Element {
+  return (
+    <Layout
+      title="A multi-platform C++ library for capturing, parsing and crafting of network packets"
+      description="A multi-platform C++ library for capturing, parsing and crafting of network packets"
+    >
+      <Header />
+      <main>
+        <CaptureAndSendNetworkTraffic />
+        <DecodeAndForgePackets />
+        <SuperFast />
+        <MultiPlatformSupport />
+        <ReadWritePackets />
+        <PacketReassembly />
+      </main>
+    </Layout>
+  );
+}
 
 export default LandingPage;

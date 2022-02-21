@@ -5,20 +5,20 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+import { getRepoURL, getSpecificReleaseURL } from '@site/src/components/GitHubURLs';
 import versions from '../../versions.json';
-
-import {getRepoURL, getSpecificReleaseURL} from '@site/src/components/GitHubURLs'
 
 function Version() {
   const latestVersion = versions[0];
-  const pastDocusaurusVersions = versions.filter(version => version !== latestVersion);
-  const pastJekyllVersions = ["v21.05", "v20.08", "v19.12"];
-  const pastHtmlVersions = ["v19.04", "v18.08"];
-  const oldVersions = ["v17.11", "v17.02", "v16.09", "v16.02"];
+  const pastDocusaurusVersions = versions.filter((version) => version !== latestVersion);
+  const pastJekyllVersions = ['v21.05', 'v20.08', 'v19.12'];
+  const pastHtmlVersions = ['v19.04', 'v18.08'];
+  const oldVersions = ['v17.11', 'v17.02', 'v16.09', 'v16.02'];
   return (
     <Layout
       permalink="/versions"
-      description="PcapPlusPlus documentation page listing all documented site versions">
+      description="PcapPlusPlus documentation page listing all documented site versions"
+    >
       <div className="container margin-vert--xl">
         <h1>PcapPlusPlus Versions</h1>
         <div className="margin-bottom--lg">
@@ -63,7 +63,7 @@ function Version() {
                   <a href={getRepoURL()}>Source Code</a>
                 </td>
                 <td>
-                  <Link to={useBaseUrl(`/api-docs/next/`)}>
+                  <Link to={useBaseUrl('/api-docs/next/')}>
                     API Documentation
                   </Link>
                 </td>
@@ -71,7 +71,9 @@ function Version() {
             </tbody>
           </table>
         </div>
-        {[...pastDocusaurusVersions, ...pastJekyllVersions, ...pastHtmlVersions, ...oldVersions].length > 0 && (
+        {[
+          // eslint-disable-next-line max-len
+          ...pastDocusaurusVersions, ...pastJekyllVersions, ...pastHtmlVersions, ...oldVersions].length > 0 && (
           <div className="margin-bottom--lg">
             <h3 id="archive">Past Versions</h3>
             <p>
@@ -80,7 +82,7 @@ function Version() {
             </p>
             <table>
               <tbody>
-                {pastDocusaurusVersions.map(version => (
+                {pastDocusaurusVersions.map((version) => (
                   <tr key={version}>
                     <th>{version}</th>
                     <td>
@@ -100,7 +102,7 @@ function Version() {
                     </td>
                   </tr>
                 ))}
-                {pastJekyllVersions.map(version => (
+                {pastJekyllVersions.map((version) => (
                   <tr key={version}>
                     <th>{version}</th>
                     <td>
@@ -120,7 +122,7 @@ function Version() {
                     </td>
                   </tr>
                 ))}
-                {pastHtmlVersions.map(version => (
+                {pastHtmlVersions.map((version) => (
                   <tr key={version}>
                     <th>{version}</th>
                     <td>
@@ -140,7 +142,7 @@ function Version() {
                     </td>
                   </tr>
                 ))}
-                {oldVersions.map(version => (
+                {oldVersions.map((version) => (
                   <tr key={version}>
                     <th>{version}</th>
                     <td>
@@ -166,4 +168,3 @@ function Version() {
 }
 
 export default Version;
- 

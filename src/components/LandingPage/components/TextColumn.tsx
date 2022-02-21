@@ -1,14 +1,18 @@
 import React from 'react';
 import Heading from './Heading';
 
+interface TextColumnProps {
+  title: string;
+  content: React.ReactNode;
+}
 
-const TextColumn = ({title, content}): JSX.Element => {
-    return (
-      <>
-        <Heading text={title} />
-        {content}
-      </>
-    );
-  }
+function TextColumn({ title, content }: TextColumnProps): JSX.Element {
+  return (
+    <>
+      <Heading text={title} />
+      {content}
+    </>
+  );
+}
 
 export default TextColumn;

@@ -8,13 +8,15 @@ interface ButtonLinkProps {
   link: string;
 }
 
-export const ButtonLink = ({ text, link}: ButtonLinkProps) => {
+function ButtonLink({ text, link }: ButtonLinkProps) {
   return (
-    <Link 
-      className={clsx("button button--lg", styles.DocsButton)}
+    <Link
+      className={clsx('button button--lg', styles.DocsButton)}
       to={link}
     >
-        {text}
+      {text}
     </Link>
   );
-};
+}
+
+export default ButtonLink;
