@@ -11,33 +11,37 @@ function PacketReassembly(): JSX.Element {
     <Body className={styles.Section} background="light">
       <TwoColumns
         reverse
-        columnOne={(
+        columnOne={
           <TextColumn
             title="Packet reassembly"
-            content={(
+            content={
               <>
                 <p>
-                  PcapPlusPlus contains unique implementation of packet reassembly techniques.
+                  PcapPlusPlus contains unique implementation of packet
+                  reassembly techniques.
                 </p>
                 <p>
-                  <strong>TCP Reassembly</strong>
-                  {' '}
-                  which supports TCP retransmission, out-of-order TCP packets and missing TCP data.
+                  <strong>TCP Reassembly</strong> which supports TCP
+                  retransmission, out-of-order TCP packets and missing TCP data.
                 </p>
                 <p>
-                  <strong>IP Fragmentation and Defragmentation</strong>
-                  {' '}
-                  to create and reassemble IPv4 and IPv6 fragments
+                  <strong>IP Fragmentation and Defragmentation</strong> to
+                  create and reassemble IPv4 and IPv6 fragments
                 </p>
-                <a className={styles.LearnMoreLink} href="/docs/features#packet-reassembly">
+                <a
+                  className={styles.LearnMoreLink}
+                  href="/docs/features#packet-reassembly"
+                >
                   Learn More
                   <FiChevronRight />
                 </a>
               </>
-              )}
+            }
           />
-          )}
-        columnTwo={<img alt="" src={useBaseUrl('img/landing-page/stream.png')} />}
+        }
+        columnTwo={
+          <img alt="" src={useBaseUrl('img/landing-page/stream.png')} />
+        }
       />
     </Body>
   );

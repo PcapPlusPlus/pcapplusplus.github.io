@@ -7,7 +7,7 @@ interface ReleaseLinkProps {
 
 function ReleaseLink({ versionString }: ReleaseLinkProps) {
   return (
-    <a href={getReleaseURL()}>{versionString || (`${getRelease()} release`)}</a>
+    <a href={getReleaseURL()}>{versionString || `${getRelease()} release`}</a>
   );
 }
 

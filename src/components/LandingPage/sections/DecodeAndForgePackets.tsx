@@ -12,28 +12,32 @@ function DecodeAndForgePackets(): JSX.Element {
     <Body className={styles.Section} background="light">
       <TwoColumns
         reverse
-        columnOne={(
+        columnOne={
           <TextColumn
             title="Decode and forge packets"
-            content={(
+            content={
               <>
                 <p>
-                  PcapPlusPlus enables decoding and forging capabilities for a large variety of
-                  {' '}
-                  <a href="/docs/features#supported-network-protocols">network protocols</a>
+                  PcapPlusPlus enables decoding and forging capabilities for a
+                  large variety of{' '}
+                  <a href="/docs/features#supported-network-protocols">
+                    network protocols
+                  </a>
                 </p>
-                <a className={styles.LearnMoreLink} href="/docs/features#packet-parsing-and-crafting">
+                <a
+                  className={styles.LearnMoreLink}
+                  href="/docs/features#packet-parsing-and-crafting"
+                >
                   Learn More
                   <FiChevronRight />
                 </a>
               </>
-              )}
+            }
           />
-          )}
-        columnTwo={(
+        }
+        columnTwo={
           <CodeBlock className={clsx('language-cpp', styles.codeBlock)}>
-            {
-`// parse the raw packet into a parsed packet
+            {`// parse the raw packet into a parsed packet
 pcpp::Packet parsedPacket(&rawPacket);
 
 // check if it's an IPv4 packet
@@ -47,10 +51,9 @@ pcpp::IPv4Address destIP =
 // print source and dest IPs
 std::cout << 
     "Source IP is: " << srcIP << std::endl <<
-    "Dest IP is: " << destIP << std::endl;`
-                }
+    "Dest IP is: " << destIP << std::endl;`}
           </CodeBlock>
-          )}
+        }
       />
     </Body>
   );

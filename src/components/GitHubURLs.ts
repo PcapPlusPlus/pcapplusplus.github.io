@@ -9,7 +9,9 @@ export function getRepoURL(): string {
 export function getRelease(): string {
   const latestVersion = useLatestVersion();
   const activeVersion = useActiveVersion();
-  return (activeVersion.label === 'Next' ? latestVersion.label : activeVersion.label);
+  return activeVersion.label === 'Next'
+    ? latestVersion.label
+    : activeVersion.label;
 }
 
 export function getSpecificReleaseURL(release: string): string {
@@ -30,7 +32,8 @@ export function getReleaseTarURL(): string {
 
 export function getGitHubTreeURL(): string {
   const activeVersion = useActiveVersion();
-  const gitHubTag = (activeVersion.label === 'Next' ? 'master' : activeVersion.label);
+  const gitHubTag =
+    activeVersion.label === 'Next' ? 'master' : activeVersion.label;
   return `${repo}/tree/${gitHubTag}`;
 }
 

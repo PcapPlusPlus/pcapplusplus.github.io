@@ -10,10 +10,7 @@ interface ButtonLinkProps {
 
 function ButtonLink({ text, link }: ButtonLinkProps) {
   return (
-    <Link
-      className={clsx('button button--lg', styles.DocsButton)}
-      to={link}
-    >
+    <Link className={clsx('button button--lg', styles.DocsButton)} to={link}>
       {text}
     </Link>
   );

@@ -11,24 +11,26 @@ function MultiPlatformSupport(): JSX.Element {
     <Body className={styles.Section} background="light">
       <TwoColumns
         reverse
-        columnOne={(
+        columnOne={
           <TextColumn
             title="Multi platform support"
-            content={(
+            content={
               <>
                 <p>
-                  PcapPlusPlus is fully supported on Windows, MacOS, Linux, Android and FreeBSD.
-                  You can download pre-built binaries for each platform or build it from source.
-                  PcapPlusPlus is available in popular package managers such as Homebrew and Conan
+                  PcapPlusPlus is fully supported on Windows, MacOS, Linux,
+                  Android and FreeBSD. You can download pre-built binaries for
+                  each platform or build it from source. PcapPlusPlus is
+                  available in popular package managers such as Homebrew and
+                  Conan
                 </p>
                 <a className={styles.LearnMoreLink} href="/docs/install">
                   View Installation Guide
                   <FiChevronRight />
                 </a>
               </>
-              )}
+            }
           />
-          )}
+        }
         columnTwo={OperatingSystems()}
       />
     </Body>

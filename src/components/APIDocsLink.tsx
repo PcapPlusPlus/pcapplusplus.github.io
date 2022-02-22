@@ -9,7 +9,13 @@ interface APIDocsLinkProps {
 
 function APIDocsLink({ relativePath, children }: APIDocsLinkProps) {
   return (
-    <a href={useBaseUrl(`/api-docs/${useActiveVersion().label.toLowerCase()}${relativePath}`)}>{children}</a>
+    <a
+      href={useBaseUrl(
+        `/api-docs/${useActiveVersion().label.toLowerCase()}${relativePath}`
+      )}
+    >
+      {children}
+    </a>
   );
 }
 

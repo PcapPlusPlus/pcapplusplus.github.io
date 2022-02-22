@@ -4,6 +4,6 @@
   border-style: none;
 }
 
-.DocsButton:hover { 
+.DocsButton:hover {
   color: var(--ifm-color-white);
 }

@@ -12,31 +12,28 @@ interface TwoColumnsOptionalProps {
 }
 
 interface TwoColumnsProps
-  extends TwoColumnsRequiredProps, TwoColumnsOptionalProps {}
+  extends TwoColumnsRequiredProps,
+    TwoColumnsOptionalProps {}
 
 const defaultProps: TwoColumnsOptionalProps = {
-  reverse: false,
+  reverse: false
 };
 
-function TwoColumns({ columnOne, columnTwo, reverse = false }: TwoColumnsProps): JSX.Element {
-  const classNameColumnOne = (
-    reverse
-      ? clsx(styles.column, styles.last, styles.right)
-      : clsx(styles.column, styles.first, styles.left)
-  );
-  const classNameColumnTwo = (
-    reverse
-      ? clsx(styles.column, styles.first, styles.left)
-      : clsx(styles.column, styles.last, styles.right)
-  );
+function TwoColumns({
+  columnOne,
+  columnTwo,
+  reverse = false
+}: TwoColumnsProps): JSX.Element {
+  const classNameColumnOne = reverse
+    ? clsx(styles.column, styles.last, styles.right)
+    : clsx(styles.column, styles.first, styles.left);
+  const classNameColumnTwo = reverse
+    ? clsx(styles.column, styles.first, styles.left)
+    : clsx(styles.column, styles.last, styles.right);
   return (
     <div className={styles.TwoColumns}>
-      <div className={classNameColumnOne}>
-        {columnOne}
-      </div>
-      <div className={classNameColumnTwo}>
-        {columnTwo}
-      </div>
+      <div className={classNameColumnOne}>{columnOne}</div>
+      <div className={classNameColumnTwo}>{columnTwo}</div>
     </div>
   );
 }

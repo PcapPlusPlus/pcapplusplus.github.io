@@ -7,7 +7,8 @@
         "plugin:react/recommended",
         "airbnb",
         "plugin:import/recommended",
-        "plugin:import/typescript"
+        "plugin:import/typescript",
+        "prettier"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -19,7 +20,8 @@
     },
     "plugins": [
         "react",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "prettier"
     ],
     "globals": {
         "JSX": true
@@ -36,6 +38,7 @@
               "ts": "never",
               "tsx": "never"
             }
-         ]
+        ],
+        "prettier/prettier": ["error"]
     }
 }

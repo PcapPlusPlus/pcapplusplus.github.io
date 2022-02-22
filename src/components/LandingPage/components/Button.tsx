@@ -12,18 +12,13 @@ interface ButtonOptionalProps {
   className?: string;
 }
 
-interface ButtonProps
-  extends ButtonRequiredProps, ButtonOptionalProps {}
+interface ButtonProps extends ButtonRequiredProps, ButtonOptionalProps {}
 
 const defaultProps: ButtonOptionalProps = {
-  className: undefined,
+  className: undefined
 };
 
-function Button({
-  text,
-  to,
-  className = undefined,
-}: ButtonProps): JSX.Element {
+function Button({ text, to, className = undefined }: ButtonProps): JSX.Element {
   return (
     <Link
       className={clsx('button button--lg', styles.landingBtn, className)}

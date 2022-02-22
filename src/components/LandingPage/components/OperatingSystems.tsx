@@ -1,6 +1,10 @@
 import React from 'react';
 import {
-  FaFreebsd, FaWindows, FaLinux, FaApple, FaAndroid,
+  FaFreebsd,
+  FaWindows,
+  FaLinux,
+  FaApple,
+  FaAndroid
 } from 'react-icons/fa';
 import styles from './Styles';
 
@@ -11,31 +15,31 @@ function OperatingSystems() {
         <li>
           <span>
             <FaWindows />
-&nbsp;&nbsp;Windows
+            &nbsp;&nbsp;Windows
           </span>
         </li>
         <li>
           <span>
             <FaLinux />
-&nbsp;&nbsp;Linux
+            &nbsp;&nbsp;Linux
           </span>
         </li>
         <li>
           <span>
             <FaApple />
-&nbsp;&nbsp;Apple
+            &nbsp;&nbsp;Apple
           </span>
         </li>
         <li>
           <span>
             <FaFreebsd />
-&nbsp;&nbsp;FreeBSD
+            &nbsp;&nbsp;FreeBSD
           </span>
         </li>
         <li>
           <span>
             <FaAndroid />
-&nbsp;&nbsp;Android
+            &nbsp;&nbsp;Android
           </span>
         </li>
       </ul>

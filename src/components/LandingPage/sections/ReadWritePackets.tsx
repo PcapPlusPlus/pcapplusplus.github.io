@@ -11,33 +11,34 @@ function ReadWritePackets(): JSX.Element {
   return (
     <Body className={styles.Section} background="light">
       <TwoColumns
-        columnOne={(
+        columnOne={
           <TextColumn
             title="Read and write packets to files"
-            content={(
+            content={
               <>
                 <p>
-                  PcapPlusPlus provides an easy-to-use interface for reading and writing
-                  network packets into files.It supports the most popular file formats which are
-                  {' '}
-                  <a href="https://wiki.wireshark.org/Development/LibpcapFileFormat">PCAP</a>
-                  {' '}
-                  and
-                  {' '}
-                  <a href="https://github.com/pcapng/pcapng">PCAPNG</a>
+                  PcapPlusPlus provides an easy-to-use interface for reading and
+                  writing network packets into files.It supports the most
+                  popular file formats which are{' '}
+                  <a href="https://wiki.wireshark.org/Development/LibpcapFileFormat">
+                    PCAP
+                  </a>{' '}
+                  and <a href="https://github.com/pcapng/pcapng">PCAPNG</a>
                 </p>
-                <a className={styles.LearnMoreLink} href="/docs/features#read-and-write-packets-fromto-files">
+                <a
+                  className={styles.LearnMoreLink}
+                  href="/docs/features#read-and-write-packets-fromto-files"
+                >
                   Learn More
                   <FiChevronRight />
                 </a>
               </>
-              )}
+            }
           />
-          )}
-        columnTwo={(
+        }
+        columnTwo={
           <CodeBlock className={clsx('language-cpp', styles.codeBlock)}>
-            {
-`// create a pcap file reader
+            {`// create a pcap file reader
 pcpp::PcapFileReaderDevice pcapReader("input.pcap");
 pcapReader.open();
 
@@ -51,10 +52,9 @@ pcpp::RawPacket rawPacket;
 // read packets from pcap reader and write pcapng writer
 while (pcapReader->getNextPacket(rawPacket)) {
   pcapNgWriter.writePacket(rawPacket);
-}`
-            }
+}`}
           </CodeBlock>
-          )}
+        }
       />
     </Body>
   );

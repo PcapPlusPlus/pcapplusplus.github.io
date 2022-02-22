@@ -10,38 +10,34 @@ function CaptureAndSendNetworkTraffic(): JSX.Element {
   return (
     <Body className={styles.Section} background="light">
       <TwoColumns
-        columnOne={(
+        columnOne={
           <TextColumn
             title="Capture and send network traffic"
-            content={(
+            content={
               <>
                 <p>
-                  PcapPlusPlus enables capturing and sending network packets through easy-to-use C++
-                  wrappers for the most popular packet processing engines such as
-                  {' '}
-                  <a href="https://www.tcpdump.org/">libpcap</a>
-                  ,
-                  {' '}
-                  <a href="https://www.winpcap.org/">WinPcap</a>
-                  ,
-                  {' '}
-                  <a href="https://nmap.org/npcap/">NPcap</a>
-                  ,
-                  {' '}
-                  <a href="https://www.dpdk.org/">DPDK</a>
-                  {' '}
-                  and
-                  {' '}
-                  <a href="https://www.ntop.org/products/packet-capture/pf_ring/">PF_RING</a>
+                  PcapPlusPlus enables capturing and sending network packets
+                  through easy-to-use C++ wrappers for the most popular packet
+                  processing engines such as{' '}
+                  <a href="https://www.tcpdump.org/">libpcap</a>,{' '}
+                  <a href="https://www.winpcap.org/">WinPcap</a>,{' '}
+                  <a href="https://nmap.org/npcap/">NPcap</a>,{' '}
+                  <a href="https://www.dpdk.org/">DPDK</a> and{' '}
+                  <a href="https://www.ntop.org/products/packet-capture/pf_ring/">
+                    PF_RING
+                  </a>
                 </p>
-                <a className={styles.LearnMoreLink} href="/docs/features#packet-capture">
+                <a
+                  className={styles.LearnMoreLink}
+                  href="/docs/features#packet-capture"
+                >
                   Learn More
                   <FiChevronRight />
                 </a>
               </>
-              )}
+            }
           />
-          )}
+        }
         columnTwo={NetworkIcons()}
       />
     </Body>

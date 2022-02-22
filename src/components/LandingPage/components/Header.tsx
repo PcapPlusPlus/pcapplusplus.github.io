@@ -12,22 +12,22 @@ function Header(): JSX.Element {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <TwoColumns
         reverse
-        columnOne={(
+        columnOne={
           <div className={styles.logoContainer}>
             <img alt="" src={useBaseUrl('img/landing-page/logo.svg')} />
           </div>
-          )}
-        columnTwo={(
+        }
+        columnTwo={
           <div>
             <h1 className="hero__title">Welcome to PcapPlusPlus!</h1>
             <p className="hero__subtitle">{siteConfig.tagline}</p>
             <div className={styles.buttons}>
               <Button text="Get Started" to="/docs/quickstart" />
-                &nbsp;&nbsp;
+              &nbsp;&nbsp;
               <Button text="Download" to="/docs/install" />
             </div>
           </div>
-          )}
+        }
       />
     </header>
   );

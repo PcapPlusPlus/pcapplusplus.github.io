@@ -8,13 +8,7 @@ interface HeaderButtonProps {
 }
 
 function HeaderButton({ text, to }: HeaderButtonProps): JSX.Element {
-  return (
-    <Button
-      className={styles.landingBtnHeader}
-      text={text}
-      to={to}
-    />
-  );
+  return <Button className={styles.landingBtnHeader} text={text} to={to} />;
 }
 
 export default HeaderButton;

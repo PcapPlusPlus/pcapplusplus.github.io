@@ -11,19 +11,18 @@ interface BodyOptionalProps {
   background?: string;
 }
 
-interface BodyProps
-  extends BodyRequiredProps, BodyOptionalProps {}
+interface BodyProps extends BodyRequiredProps, BodyOptionalProps {}
 
 const defaultProps: BodyOptionalProps = {
-  background: 'light',
+  background: 'light'
 };
 
-function Body({
-  children,
-  className,
-  background,
-}: BodyProps): JSX.Element {
-  return <section className={clsx(styles.Section, className, background)}>{children}</section>;
+function Body({ children, className, background }: BodyProps): JSX.Element {
+  return (
+    <section className={clsx(styles.Section, className, background)}>
+      {children}
+    </section>
+  );
 }
 
 Body.defaultProps = defaultProps;

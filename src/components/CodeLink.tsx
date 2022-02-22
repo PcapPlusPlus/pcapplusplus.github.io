@@ -7,9 +7,7 @@ interface CodeLinkProps {
 }
 
 function CodeLink({ relativePath, children }: CodeLinkProps) {
-  return (
-    <a href={getGitHubTreeURL() + relativePath}>{children}</a>
-  );
+  return <a href={getGitHubTreeURL() + relativePath}>{children}</a>;
 }
 
 export default CodeLink;

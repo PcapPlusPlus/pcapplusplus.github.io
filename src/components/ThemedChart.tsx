@@ -16,7 +16,7 @@ function ThemedChart({ data }: ThemedChartProps) {
       options={{
         title: 'Graphic view',
         chartArea: { left: 0 },
-        backgroundColor: 'transparent',
+        backgroundColor: 'transparent'
         // colors: [primaryColor],
       }}
       legendToggle

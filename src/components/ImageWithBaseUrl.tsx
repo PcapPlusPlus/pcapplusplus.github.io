@@ -9,9 +9,7 @@ interface ImageWithBaseUrlProps {
 }
 
 export function ImageWithBaseUrl({ src, width, title }: ImageWithBaseUrlProps) {
-  return (
-    <img src={useBaseUrl(src)} width={width} title={title} alt={title} />
-  );
+  return <img src={useBaseUrl(src)} width={width} title={title} alt={title} />;
 }
 
 interface ThemedImageWithBaseUrlProps {
@@ -22,7 +20,10 @@ interface ThemedImageWithBaseUrlProps {
 }
 
 export function ThemedImageWithBaseUrl({
-  srcLight, srcDark, width, title,
+  srcLight,
+  srcDark,
+  width,
+  title
 }: ThemedImageWithBaseUrlProps) {
   return (
     <ThemedImage

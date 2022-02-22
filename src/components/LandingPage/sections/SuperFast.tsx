@@ -10,24 +10,26 @@ function SuperFast(): JSX.Element {
   return (
     <Body className={styles.Section} background="light">
       <TwoColumns
-        columnOne={(
+        columnOne={
           <TextColumn
             title="Super Fast!"
-            content={(
+            content={
               <>
                 <p>
-                  PcapPlusPlus is designed to be efficient and lightweight.
-                  It enables amazingly fast packet processing with minimum overhead
+                  PcapPlusPlus is designed to be efficient and lightweight. It
+                  enables amazingly fast packet processing with minimum overhead
                 </p>
                 <a className={styles.LearnMoreLink} href="/docs/benchmark">
                   View Benchmarks
                   <FiChevronRight />
                 </a>
               </>
-              )}
+            }
           />
-          )}
-        columnTwo={<img alt="" src={useBaseUrl('img/landing-page/rocket.png')} />}
+        }
+        columnTwo={
+          <img alt="" src={useBaseUrl('img/landing-page/rocket.png')} />
+        }
       />
     </Body>
   );
