@@ -3,6 +3,9 @@ name: Test deployment
 on:
   pull_request:
     branches: [master]
+  push:
+    branches-ignore:
+      - master
 
 jobs:
   test-deploy:
