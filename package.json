@@ -15,8 +15,8 @@
     "typecheck": "tsc",
     "format": "prettier --config .prettierrc . --check .",
     "format:fix": "prettier --config .prettierrc . --write",
-    "lint": "eslint ./src/**",
-    "lint:fix": "eslint --fix ./src/**"
+    "lint": "eslint --ext js,jsx,ts,tsx src/",
+    "lint:fix": "eslint --ext js,jsx,ts,tsx --fix src/"
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-beta.14",
