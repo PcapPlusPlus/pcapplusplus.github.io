@@ -57,9 +57,9 @@ int main(int argc, char* argv[])
 
 There are couple of steps here:
 
-* Decide of the mbuf pool size. mbufs are DPDK structures for holding packet data. Each mbuf holds one packet data or a portion (segment) of it. On application start-up DPDK allocates memory for creating a pool of mbufs that will be used by the application throughout its runtime. That way DPDK avoids the overhead of creating mbufs and allocating memory during application run. Let's decide that the size of this mbuf pool is 16383 mbufs. It is recommended to set a size that is a power of 2 minus 1 (in our case: 16383 = 2^14 - 1)
-* Decide which CPU cores will take part in running the application. DPDK leverages multi-core architecture to parallelize packet processing. In our case we initialize DPDK with all cores available on the machine
-* Invoke `pcpp::DpdkDeviceList::initDpdk()` which runs the initialization
+- Decide of the mbuf pool size. mbufs are DPDK structures for holding packet data. Each mbuf holds one packet data or a portion (segment) of it. On application start-up DPDK allocates memory for creating a pool of mbufs that will be used by the application throughout its runtime. That way DPDK avoids the overhead of creating mbufs and allocating memory during application run. Let's decide that the size of this mbuf pool is 16383 mbufs. It is recommended to set a size that is a power of 2 minus 1 (in our case: 16383 = 2^14 - 1)
+- Decide which CPU cores will take part in running the application. DPDK leverages multi-core architecture to parallelize packet processing. In our case we initialize DPDK with all cores available on the machine
+- Invoke `pcpp::DpdkDeviceList::initDpdk()` which runs the initialization
 
 Now let's find the DPDK interfaces (devices) we'll use to send and receive packets. The class `DpdkDevice` encapsulates a DPDK interface. The singleton `DpdkDeviceList` contains all DPDK devices that are available for us to use:
 
@@ -145,9 +145,9 @@ class L2FwdWorkerThread : public pcpp::DpdkWorkerThread
 
 `DpdkWorkerThread` is an abstract class that requires inherited classes to implement 3 methods:
 
-* `run()` - start the worker. This method is called when the thread gets invoked and is expected to run throughout the life of the thread. Typically this method will contain an endless loop that runs the logic of the application
-* `stop()` - stop the execution of the worker
-* `getCoreId()` - return the core ID the worker is running on
+- `run()` - start the worker. This method is called when the thread gets invoked and is expected to run throughout the life of the thread. Typically this method will contain an endless loop that runs the logic of the application
+- `stop()` - stop the execution of the worker
+- `getCoreId()` - return the core ID the worker is running on
 
 In addition to implementing these method we also have a constructor and an empty destructor. We also save pointers to the RX and TX devices of where the worker will read packets from and send packets to. Now let's see the implementation of this class's methods:
 
@@ -292,7 +292,7 @@ while (keepRunning)
     // Clear screen and move to top left
     std::cout << "\033[2J\033[1;1H";
 
-    std::cout 
+    std::cout
         << "Stats #" << statsCounter++ << std::endl
         << "==========" << std::endl
         << std::endl;

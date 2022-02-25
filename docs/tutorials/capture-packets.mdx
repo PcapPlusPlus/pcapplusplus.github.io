@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-title: "Part 3: Capture/Send Packets"
+title: 'Part 3: Capture/Send Packets'
 ---
 
 # Part 3: Capturing And Sending Packets
@@ -9,10 +9,10 @@ title: "Part 3: Capture/Send Packets"
 
 PcapPlusPlus provides simple and easy-to-use wrappers for libpcap/WinPcap APIs for capturing and sending packets over network interfaces. These wrappers pretty much sum up in the following classes:
 
-* `PcapLiveDevice` - wraps libpcap functionality of capturing and sending packets and also provide information and statistics on the network interface
-* `WinPcapLiveDevice` - wraps WinPcap/Npcap functionality which is basically similar to libpcap but provides adjustments for Windows OS. This class inherits PcapLiveDevice and provides the necessary changes for Windows vs. Linux/MacOS/FreeBSD/Android
-* `PcapLiveDeviceList` - A singleton class that creates, stores and provides access to all PcapLiveDevice or WinPcapLiveDevice instances. These instances are initialized on startup and wrap all the network interfaces installed on the machine
-* `PcapRemoteDevice` - wraps WinPcap functionality for [remote packet capture](https://www.winpcap.org/docs/docs_412/html/group__remote.html). As this functionality is less common and less used, it won't be covered in this tutorial. You can take a look at PcapPlusPlus documentation for a comprehensive overview and API description
+- `PcapLiveDevice` - wraps libpcap functionality of capturing and sending packets and also provide information and statistics on the network interface
+- `WinPcapLiveDevice` - wraps WinPcap/Npcap functionality which is basically similar to libpcap but provides adjustments for Windows OS. This class inherits PcapLiveDevice and provides the necessary changes for Windows vs. Linux/MacOS/FreeBSD/Android
+- `PcapLiveDeviceList` - A singleton class that creates, stores and provides access to all PcapLiveDevice or WinPcapLiveDevice instances. These instances are initialized on startup and wrap all the network interfaces installed on the machine
+- `PcapRemoteDevice` - wraps WinPcap functionality for [remote packet capture](https://www.winpcap.org/docs/docs_412/html/group__remote.html). As this functionality is less common and less used, it won't be covered in this tutorial. You can take a look at PcapPlusPlus documentation for a comprehensive overview and API description
 
 In this tutorial we'll write a simple application that demonstrates how to capture and send packet over the network.
 
@@ -56,12 +56,12 @@ Before actually capturing packets let's demonstrate some more cool features this
 
 The next lines of code demonstrate how to get the following information:
 
-* Interface name (e.g "eth0" in Linux)
-* Interface description (where exposed by the OS)
-* Interface MAC address
-* Interface default gateway
-* Interface maximum transmission unit (MTU)
-* The DNS server associated with this interface
+- Interface name (e.g "eth0" in Linux)
+- Interface description (where exposed by the OS)
+- Interface MAC address
+- Interface default gateway
+- Interface maximum transmission unit (MTU)
+- The DNS server associated with this interface
 
 ```cpp
 // before capturing packets let's print some info about this interface
@@ -167,9 +167,9 @@ PacketStats stats;
 
 We'll demonstrate the 3 types of packet capturing options currently available in PcapPlusPlus:
 
-* Asynchronous packet capture using a callback function
-* Asynchronous packet capture using a packet list (vector)
-* Synchronous (blocking) packet capture using a callback function
+- Asynchronous packet capture using a callback function
+- Asynchronous packet capture using a packet list (vector)
+- Synchronous (blocking) packet capture using a callback function
 
 ### Asynchronous packet capture using a callback function
 
@@ -434,9 +434,9 @@ andFilter.addFilter(&protocolFilter);
 
 As you can see we created 3 filter instances:
 
-* `PortFilter` - in the constructor we gave it the port we'd like to filter on (80) and instructed it to search on both source and destnation port of each packet
-* `ProtoFilter` - in the constructor we told it to filter only TCP packets
-* `AndFilter` - this filter is to combine the port and protocol filters. So we created it and provided it pointers to the port and protocol filters we previously created
+- `PortFilter` - in the constructor we gave it the port we'd like to filter on (80) and instructed it to search on both source and destnation port of each packet
+- `ProtoFilter` - in the constructor we told it to filter only TCP packets
+- `AndFilter` - this filter is to combine the port and protocol filters. So we created it and provided it pointers to the port and protocol filters we previously created
 
 That's it, our filter is ready. Now let's set this filter in the `PcapLiveDevice` we have from the previous sections:
 
@@ -488,8 +488,8 @@ import CodeLink from '@site/src/components/CodeLink';
 
 All code that was covered in this tutorial can be found <CodeLink relativePath="/Examples/Tutorials/Tutorial-LiveTraffic">here</CodeLink>. In order to compile and run the code please first download and compile PcapPlusPlus code or downloaded a pre-compiled version from the <ReleaseLink></ReleaseLink>. Then follow these instruction, according to your platform:
 
-* Linux, MacOS, FreeBSD - make sure PcapPlusPlus is installed (by running **sudo make install** in PcapPlusPlus main directory). Then either change the `Makefile.non_windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.non_windows all`
-* Windows using MinGW or MinGW-w64 - either change the `Makefile.windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.windows all`
-* Windows using Visual Studio - there is a Visual Studio solution containing all tutorials: `mk\[vs_version]\Tutorials.sln`. Just open it and compile all tutorials
+- Linux, MacOS, FreeBSD - make sure PcapPlusPlus is installed (by running **sudo make install** in PcapPlusPlus main directory). Then either change the `Makefile.non_windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.non_windows all`
+- Windows using MinGW or MinGW-w64 - either change the `Makefile.windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.windows all`
+- Windows using Visual Studio - there is a Visual Studio solution containing all tutorials: `mk\[vs_version]\Tutorials.sln`. Just open it and compile all tutorials
 
 In all options the compiled executable will be inside the tutorial directory (`[PcapPlusPlus Folder]/Examples/Tutorials/Tutorial-LiveTraffic`)

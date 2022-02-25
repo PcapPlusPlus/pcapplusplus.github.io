@@ -1,18 +1,29 @@
 ---
 slug: /install
-title: "Setting Up PcapPlusPlus"
+title: 'Setting Up PcapPlusPlus'
 ---
 
-import {getRelease, getReleaseZipURL, getReleaseTarURL, getSourceCodeZipURL, getSourceCodeTarURL} from '@site/src/components/GitHubURLs';
+import {
+  getRelease,
+  getReleaseZipURL,
+  getReleaseTarURL,
+  getSourceCodeZipURL,
+  getSourceCodeTarURL
+} from '@site/src/components/GitHubURLs';
 import ReleaseButtonLink from '@site/src/components/ReleaseButtonLink';
 import ButtonLink from '@site/src/components/ButtonLink';
 import ConstVal from '@site/src/components/ConstVal';
 import TOCInline from '@theme/TOCInline';
-import {ImageWithBaseUrl, ThemedImageWithBaseUrl} from '@site/src/components/ImageWithBaseUrl';
+import {
+  ImageWithBaseUrl,
+  ThemedImageWithBaseUrl
+} from '@site/src/components/ImageWithBaseUrl';
 
 PcapPlusPlus is available on <ImageWithBaseUrl src="/img/os-logos/logo-windows.png" width="24" title="Windows"/> Windows, <ImageWithBaseUrl src="/img/os-logos/logo-linux.png" width="24" title="Linux"/> Linux, <ThemedImageWithBaseUrl srcLight="/img/os-logos/logo-apple.png" srcDark="/img/os-logos/logo-apple-dark.png" width="24" title="MacOS"/> MacOS, <ImageWithBaseUrl src="/img/os-logos/logo-android.png" width="24" title="Android"/> Android and <ImageWithBaseUrl src="/img/os-logos/logo-freebsd.png" width="24" title="FreeBSD"/> FreeBSD (see more details [here](./platforms)).
 
-<p><ReleaseButtonLink/></p>
+<p>
+  <ReleaseButtonLink />
+</p>
 
 You can choose between downloading pre-built binaries or build it from source. The different options are described below:
 
@@ -66,7 +77,9 @@ This command will fetch PcapPlusPlus directly from ConanCenter: <https://conan.i
 
 Available for: <ImageWithBaseUrl src="/img/os-logos/logo-windows.png" alt="drawing" width="24" title="Windows"/> <ImageWithBaseUrl src="/img/os-logos/logo-linux.png" alt="drawing" width="24" title="Linux"/> <ThemedImageWithBaseUrl srcLight="/img/os-logos/logo-apple.png" srcDark="/img/os-logos/logo-apple-dark.png" width="24" title="MacOS"/> <ImageWithBaseUrl src="/img/os-logos/logo-freebsd.png" alt="drawing" width="24" title="FreeBSD"/> <ImageWithBaseUrl src="/img/os-logos/logo-android.png" alt="drawing" width="24" title="Android"/>
 
-<p><ReleaseButtonLink/></p>
+<p>
+  <ReleaseButtonLink />
+</p>
 
 Each release of PcapPlusPlus ships with pre-compiled libraries for a variety of operating systems and GCC versions including:
 
@@ -77,7 +90,7 @@ Each release of PcapPlusPlus ships with pre-compiled libraries for a variety of 
 
 Each package includes the following content:
 
-- Compiled __Common++__, __Packet++__, __Pcap++__ libraries
+- Compiled **Common++**, **Packet++**, **Pcap++** libraries
 - PcapPlusPlus header files
 - Examples binaries
 - A makefile to include when building your app with PcapPlusPlus
@@ -87,25 +100,37 @@ There is an additional Linux package shipped with every release that contains th
 
 ## Build From Source
 
-Download the source code for the latest version (__<ConstVal value={getRelease()}/>__) from GitHub which includes:
+Download the source code for the latest version (**<ConstVal value={getRelease()}/>**) from GitHub which includes:
 
-- Source code for __Common++__, __Packet++__, __Pcap++__
+- Source code for **Common++**, **Packet++**, **Pcap++**
 - Examples
 - Unit tests
 - Configuration scripts for all platforms
 
 <p>
-  <ButtonLink text={"Download " + getRelease() + " zip format"} link={getReleaseZipURL()} />
+  <ButtonLink
+    text={'Download ' + getRelease() + ' zip format'}
+    link={getReleaseZipURL()}
+  />
   &nbsp;
-  <ButtonLink text={"Download " + getRelease() + " tar.gz format"} link={getReleaseTarURL()} />
+  <ButtonLink
+    text={'Download ' + getRelease() + ' tar.gz format'}
+    link={getReleaseTarURL()}
+  />
 </p>
 
 You can also download the latest source code from `master`:
 
 <p>
-  <ButtonLink text={"Download master zip format"} link={getSourceCodeZipURL()}/>
+  <ButtonLink
+    text={'Download master zip format'}
+    link={getSourceCodeZipURL()}
+  />
   &nbsp;
-  <ButtonLink text={"Download master tar.gz format"} link={getSourceCodeTarURL()}/>
+  <ButtonLink
+    text={'Download master tar.gz format'}
+    link={getSourceCodeTarURL()}
+  />
 </p>
 
 Please find detailed instructions on how to build PcapPlusPlus on the various supported platforms in the following pages.

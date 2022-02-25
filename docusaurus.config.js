@@ -7,7 +7,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'PcapPlusPlus',
-  tagline: 'A multi-platform C++ library for capturing, parsing and crafting of network packets. It is designed to be efficient, powerful and easy to use.',
+  tagline:
+    'A multi-platform C++ library for capturing, parsing and crafting of network packets. It is designed to be efficient, powerful and easy to use.',
   url: 'https://pcapplusplus.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -24,17 +25,18 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/PcapPlusPlus/pcapplusplus.github.io/edit/docusaurus/',
+          editUrl:
+            'https://github.com/PcapPlusPlus/pcapplusplus.github.io/edit/docusaurus/'
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.css')
         },
         googleAnalytics: {
           trackingID: 'UA-74037205-2',
-          anonymizeIP: true,
+          anonymizeIP: true
         }
-      }),
-    ],
+      })
+    ]
   ],
 
   themeConfig:
@@ -43,31 +45,31 @@ const config = {
       navbar: {
         logo: {
           alt: 'PcapPlusPlus',
-          src: 'img/logo/logo_color.png',
+          src: 'img/logo/logo_color.png'
         },
         items: [
           {
             type: 'doc',
             docId: 'quickstart',
             position: 'left',
-            label: 'Docs',
+            label: 'Docs'
           },
           {
             type: 'doc',
             docId: 'features',
             position: 'left',
-            label: 'Features',
+            label: 'Features'
           },
           {
             type: 'doc',
             docId: 'api',
             position: 'left',
-            label: 'API',
+            label: 'API'
           },
           {
             to: '/community',
             label: 'Community',
-            position: 'left',
+            position: 'left'
           },
           {
             type: 'docsVersionDropdown',
@@ -76,9 +78,9 @@ const config = {
             dropdownItemsAfter: [
               {
                 to: '/versions',
-                label: 'All versions',
-              },
-            ],
+                label: 'All versions'
+              }
+            ]
           },
           {
             href: 'https://groups.google.com/d/forum/pcapplusplus-support',
@@ -109,8 +111,8 @@ const config = {
             position: 'right',
             label: 'GitHub',
             title: 'PcapPlusPlus on GitHub'
-          },
-        ],
+          }
+        ]
       },
       footer: {
         style: 'dark',
@@ -120,88 +122,88 @@ const config = {
             items: [
               {
                 label: 'Installation',
-                to: '/docs/install',
+                to: '/docs/install'
               },
               {
                 label: 'Features',
-                to: '/docs/features',
+                to: '/docs/features'
               },
               {
                 label: 'Tutorials',
-                to: '/docs/tutorials',
+                to: '/docs/tutorials'
               },
               {
                 label: 'DPDK',
-                to: '/docs/dpdk',
+                to: '/docs/dpdk'
               },
               {
                 label: 'Example Apps',
-                to: '/docs/examples',
+                to: '/docs/examples'
               },
               {
                 label: 'API Documentation',
-                to: '/docs/api',
-              },
-            ],
+                to: '/docs/api'
+              }
+            ]
           },
           {
             title: 'Community',
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/seladb/PcapPlusPlus',
+                href: 'https://github.com/seladb/PcapPlusPlus'
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/seladb',
+                href: 'https://twitter.com/seladb'
               },
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/pcapplusplus',
+                href: 'https://stackoverflow.com/questions/tagged/pcapplusplus'
               },
               {
                 label: 'Google Group',
-                href: 'https://groups.google.com/d/forum/pcapplusplus-support',
+                href: 'https://groups.google.com/d/forum/pcapplusplus-support'
               },
               {
                 label: 'Email',
-                href: 'mailto:pcapplusplus@gmail.com',
+                href: 'mailto:pcapplusplus@gmail.com'
               },
               {
                 label: 'Contribute',
-                to: '/community#contribute',
+                to: '/community#contribute'
               }
-            ],
+            ]
           },
           {
             title: 'More',
             items: [
               {
                 label: 'Releases',
-                to: '/versions',
+                to: '/versions'
               },
               {
                 label: 'Benchmarks',
-                to: '/docs/benchmark',
+                to: '/docs/benchmark'
               },
               {
                 label: 'License',
-                to: '/docs/features/#license',
+                to: '/docs/features/#license'
               },
               {
                 label: 'Web-site GitHub Repo',
-                href: 'https://github.com/PcapPlusPlus/pcapplusplus.github.io',
+                href: 'https://github.com/PcapPlusPlus/pcapplusplus.github.io'
               }
-            ],
-          },
+            ]
+          }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} seladb. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} seladb. Built with Docusaurus.`
       },
       prism: {
         theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
-    }),
+        darkTheme: darkCodeTheme
+      }
+    })
 };
 
 module.exports = config;

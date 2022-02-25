@@ -8,21 +8,21 @@ title: Build on Linux
 
 In order to compile PcapPlusPlus on Linux please make sure you have the following components installed:
 
-1. __libpcap developers pack__ - contains the libpcap library PcapPlusPlus is linking with and relevant the header files. You can download it from <http://www.tcpdump.org/#latest-release> or through the standard Linux package managers such as `apt-get` or `yum`:
+1. **libpcap developers pack** - contains the libpcap library PcapPlusPlus is linking with and relevant the header files. You can download it from <http://www.tcpdump.org/#latest-release> or through the standard Linux package managers such as `apt-get` or `yum`:
 
-    ```bash
-    sudo apt-get install libpcap-dev
-    ```
+   ```bash
+   sudo apt-get install libpcap-dev
+   ```
 
-    or:
+   or:
 
-    ```bash
-    sudo yum install libpcap-devel
-    ```
+   ```bash
+   sudo yum install libpcap-devel
+   ```
 
 2. `libstdc++-static` package. If it's not already installed you can install it using `apt-get` or `yum`
 
-3. __OPTIONAL__ - download and install [Zstd](https://github.com/facebook/zstd/releases/latest) if you wish to enable [PCAPNG streaming compression support](../features#readingwriting-pcapng-files-with-compression)
+3. **OPTIONAL** - download and install [Zstd](https://github.com/facebook/zstd/releases/latest) if you wish to enable [PCAPNG streaming compression support](../features#readingwriting-pcapng-files-with-compression)
 
 ## Configuration
 
@@ -50,10 +50,10 @@ Let's cover the different options. We'll begin with the wizard mode and later co
 This mode is pretty much self explanatory and the wizard will guide you through the parameters you need to provide:
 
 ```shell
-seladb@seladb:~/PcapPlusPlus$ ./configure-linux.sh 
+seladb@seladb:~/PcapPlusPlus$ ./configure-linux.sh
 
 ****************************************
-PcapPlusPlus Linux configuration script 
+PcapPlusPlus Linux configuration script
 ****************************************
 
 Number of arguments: 0
@@ -71,20 +71,20 @@ seladb@seladb:~/PcapPlusPlus$
 
 You an view all available switches by running `./configure-linux.sh --help` or `./configure-linux.sh -h`:
 
-| Option | Description |
-|:---|:---|
-| __`--default`__               | use the default configuration. This assumes `libpcap-dev` is installed |
-| __`--dpdk`__                  | setup PcapPlusPlus with DPDK. When using this switch you must also set __`--dpdk-home`__ |
-| __`--dpdk-home`__             | set DPDK home directory. Use only when __`--dpdk`__ is set |
-| __`--pf-ring`__               | setup PcapPlusPlus with PF_RING. When using this switch you must also set __`--pf-ring-home`__ |
-| __`--pf-ring-home`__          | sets PF_RING home directory. Use only when __`--pf-ring`__ is set  |
-| __`--use-immediate-mode`__    | use libpcap immediate mode which enables getting packets as fast as possible (supported on libpcap>=1.5) |
-| __`--set-direction-enabled`__ | set direction for capturing incoming or outgoing packets (supported on libpcap>=0.9.1) |
-| __`--install-dir`__           | set a custom installation directory. Default is `/usr/local` |
-| __`--libpcap-include-dir`__   | libpcap header files directory. This parameter is optional and if omitted PcapPlusPlus will look for the header files in the default include paths |
-| __`--use-zstd`__              | use [Zstd for PCAPNG streaming compression](../features#readingwriting-pcapng-files-with-compression). This parameter is optional |
-| __`--libpcap-lib-dir`__       | libpcap pre compiled lib directory. This parameter is optional and if omitted PcapPlusPlus will look for the lib file in the default lib paths |
-| __`-h`__, __`--help`__        | displays a help message and exits. No further actions are performed |
+| Option                        | Description                                                                                                                                        |
+| :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`--default`**               | use the default configuration. This assumes `libpcap-dev` is installed                                                                             |
+| **`--dpdk`**                  | setup PcapPlusPlus with DPDK. When using this switch you must also set **`--dpdk-home`**                                                           |
+| **`--dpdk-home`**             | set DPDK home directory. Use only when **`--dpdk`** is set                                                                                         |
+| **`--pf-ring`**               | setup PcapPlusPlus with PF_RING. When using this switch you must also set **`--pf-ring-home`**                                                     |
+| **`--pf-ring-home`**          | sets PF_RING home directory. Use only when **`--pf-ring`** is set                                                                                  |
+| **`--use-immediate-mode`**    | use libpcap immediate mode which enables getting packets as fast as possible (supported on libpcap>=1.5)                                           |
+| **`--set-direction-enabled`** | set direction for capturing incoming or outgoing packets (supported on libpcap>=0.9.1)                                                             |
+| **`--install-dir`**           | set a custom installation directory. Default is `/usr/local`                                                                                       |
+| **`--libpcap-include-dir`**   | libpcap header files directory. This parameter is optional and if omitted PcapPlusPlus will look for the header files in the default include paths |
+| **`--use-zstd`**              | use [Zstd for PCAPNG streaming compression](../features#readingwriting-pcapng-files-with-compression). This parameter is optional                  |
+| **`--libpcap-lib-dir`**       | libpcap pre compiled lib directory. This parameter is optional and if omitted PcapPlusPlus will look for the lib file in the default lib paths     |
+| **`-h`**, **`--help`**        | displays a help message and exits. No further actions are performed                                                                                |
 
 Here are a few examples:
 
@@ -157,7 +157,7 @@ seladb@seladb:~/PcapPlusPlus$
 
 The default installation directory is `/usr/local` which means the header files will be copied to `/usr/local/include/pcapplusplus` and the library files will be copied to `/usr/local/lib`.
 
-You can change the installation directory by using the __`--install-dir`__ switch in the configuration script.
+You can change the installation directory by using the **`--install-dir`** switch in the configuration script.
 
 ## Running tests
 

@@ -10,8 +10,8 @@ Please visit the [supported platforms page](../platforms) to see the Visual Stud
 
 In order to build PcapPlusPlus on Windows with Visual Studio you need the following components:
 
-1. A [supported version](../platforms) of Microsoft Visual Studio 
-2. [WinPcap developer's pack](https://www.winpcap.org/devel.htm) __OR__ [Npcap SDK](https://nmap.org/npcap/guide/npcap-devguide.html) - containing the wpcap library PcapPlusPlus is linking with plus relevant `h` files. 
+1. A [supported version](../platforms) of Microsoft Visual Studio
+2. [WinPcap developer's pack](https://www.winpcap.org/devel.htm) **OR** [Npcap SDK](https://nmap.org/npcap/guide/npcap-devguide.html) - containing the wpcap library PcapPlusPlus is linking with plus relevant `h` files.
    1. WinPcap developer's pack can be downloaded from here: <https://www.winpcap.org/devel.htm>
    2. Npcap SDK can be downloaded from here: <https://nmap.org/npcap/#download>
 3. pthread-win32 - can be downloaded from here: <ftp://sourceware.org/pub/pthreads-win32/pthreads-w32-2-9-1-release.zip>
@@ -24,12 +24,15 @@ In order to build PcapPlusPlus on Windows with Visual Studio you need the follow
 
 After configuration is complete there are 3 Visual Studio solutions:
 
-* `mk\[vs_version]\PcapPlusPlus.sln` - contains PcapPlusPlus libraries (__Common++__, __Packet++__ and __Pcap++__) and unit-tests projects
-* `mk\[vs_version]\PcapPlusPlus-Examples.sln` - contains all PcapPlusPlus examples. Requires `PcapPlusPlus.sln` to be built first
-* `mk\[vs_version]\Tutorials.sln` - contains all PcapPlusPlus tutorial examples. Requires `PcapPlusPlus.sln` to be built first
+- `mk\[vs_version]\PcapPlusPlus.sln` - contains PcapPlusPlus libraries (**Common++**, **Packet++** and **Pcap++**) and unit-tests projects
+- `mk\[vs_version]\PcapPlusPlus-Examples.sln` - contains all PcapPlusPlus examples. Requires `PcapPlusPlus.sln` to be built first
+- `mk\[vs_version]\Tutorials.sln` - contains all PcapPlusPlus tutorial examples. Requires `PcapPlusPlus.sln` to be built first
 
+:::tip What is `[vs_version]`?
 
-*** `[vs_version]` can be either `vs2015`, `vs2017` or `vs2019` and is determined during the configuration process.
+`[vs_version]` can be either `vs2015`, `vs2017` or `vs2019` and is determined during the configuration process.
+
+:::
 
 ![PcapPlusPlus Visual Studio solution](/img/install/vs2015pcpp.png)
 
@@ -37,10 +40,10 @@ After configuration is complete there are 3 Visual Studio solutions:
 
 All solutions support both 32-bit (x86) and 64-bit (x64) configurations as well as Debug and Release modes. So there are 4 supported modes:
 
-* `x86|Debug`
-* `x86|Release`
-* `x64|Debug`
-* `x64|Release`
+- `x86|Debug`
+- `x86|Release`
+- `x64|Debug`
+- `x64|Release`
 
 ## Configuration
 
@@ -48,8 +51,8 @@ Before opening the solution (`.sln`) files please run the `configure-windows-vis
 
 Ths script has two modes of operation:
 
-* Wizard mode - the script will walk you through the paths and parameters you need to provide
-* Command line switches mode - all parameters are provided in the script command line
+- Wizard mode - the script will walk you through the paths and parameters you need to provide
+- Command line switches mode - all parameters are provided in the script command line
 
 ### Wizard mode
 
@@ -134,19 +137,19 @@ Tutorial-PcapFiles.vcxproj
 
 Here are the available switches:
 
-| Option | Description |
-|:---|:---|
-| __`-v`__ , __`--vs-version`__    | Visual Studio version to configure.<br/>Currently supported versions are: `vs2015`, `vs2017`, `vs2019` |
-| __`-p`__ , __`--pthreads-home`__ | pthreads-win32 home directory |
-| __`-w`__ , __`--pcap-sdk`__      | Path to WinPcap Developer Pack (WpdPack) OR Npcap SDK |
-| __`-z`__ , __`--zstd-sdk`__      | Path to Zstd SDK directory. This is an optional parameter that is required only if using [Zstd for PCAPNG streaming compression](../features#readingwriting-pcapng-files-with-compression) |
-| __`-h`__ , __`--help`__          | Display the help message and exit. No further actions are performed |
+| Option                           | Description                                                                                                                                                                                |
+| :------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`-v`** , **`--vs-version`**    | Visual Studio version to configure.<br/>Currently supported versions are: `vs2015`, `vs2017`, `vs2019`                                                                                     |
+| **`-p`** , **`--pthreads-home`** | pthreads-win32 home directory                                                                                                                                                              |
+| **`-w`** , **`--pcap-sdk`**      | Path to WinPcap Developer Pack (WpdPack) OR Npcap SDK                                                                                                                                      |
+| **`-z`** , **`--zstd-sdk`**      | Path to Zstd SDK directory. This is an optional parameter that is required only if using [Zstd for PCAPNG streaming compression](../features#readingwriting-pcapng-files-with-compression) |
+| **`-h`** , **`--help`**          | Display the help message and exit. No further actions are performed                                                                                                                        |
 
 ## Build the code
 
-* Build `mk\[vs_version]\PcapPlusPlus.sln` first to get PcapPlusPlus libraries and unit-tests
-* Then you can choose to build `mk\[vs_version]\PcapPlusPlus-Examples.sln` to get PcapPlusPlus examples
-* You can also choose to build `mk\[vs_version]\Tutorials.sln` to see the tutorial examples
+- Build `mk\[vs_version]\PcapPlusPlus.sln` first to get PcapPlusPlus libraries and unit-tests
+- Then you can choose to build `mk\[vs_version]\PcapPlusPlus-Examples.sln` to get PcapPlusPlus examples
+- You can also choose to build `mk\[vs_version]\Tutorials.sln` to see the tutorial examples
 
 You can build these 3 solutions using either Visual Studio IDE or `MSBuild`.
 

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-title: "Part 5: Packet Crafting"
+title: 'Part 5: Packet Crafting'
 ---
 
 # Part 5: Packet Crafting And Editing
@@ -11,13 +11,13 @@ In the previous [Packet parsing](./packet-parsing) tutorial we demonstrated how 
 
 Of course we won't go over all the protocols, we'll focus on a few which are popular:
 
-* Ethernet
-* VLAN
-* IPv4
-* TCP
-* UDP
-* HTTP
-* DNS
+- Ethernet
+- VLAN
+- IPv4
+- TCP
+- UDP
+- HTTP
+- DNS
 
 For further information about these protocols and the other protocols supported in PcapPlusPlus please go to the [API documentation](../api)
 
@@ -129,7 +129,7 @@ tcpLayer->addTcpOptionAfter(pcpp::TcpOptionBuilder(pcpp::TCPOPT_MSS, (uint16_t)1
 
 We start by using the method `getTcpHeader()` which casts the raw packet bytes to a struct `tpchdr*` which contains all of the TCP fields. Again, like we saw in `IPv4Layer`, this method gives access to the actual packet bytes so every change we do changes the packet. So we changed the source port to 12345 and set the URG flag.
 
-Now let's take a look at the 2 bottom lines in the code snippet above.  `TcpLayer` exposes an API to read, add and remove TCP options. The packet we're editing already has 3 TCP options: NOP, NOP and Timestamp. We'd like to add a fourth one of type MSS with MSS value of 1460 and we want it to appear first (before the existing TCP options). So we use the `addTcpOptionAfter()` method and give it a `TcpOptionBuilder` object. This builder object gets in its constructor the TCP option type (which is `PCPP_TCPOLEN_MSS`), and the option value (1460) and `addTcpOptionAfter()` uses it to create the TCP option object and add it to the existing list of TCP options. That's it! with 1 line of code we managed to add a new TCP option!
+Now let's take a look at the 2 bottom lines in the code snippet above. `TcpLayer` exposes an API to read, add and remove TCP options. The packet we're editing already has 3 TCP options: NOP, NOP and Timestamp. We'd like to add a fourth one of type MSS with MSS value of 1460 and we want it to appear first (before the existing TCP options). So we use the `addTcpOptionAfter()` method and give it a `TcpOptionBuilder` object. This builder object gets in its constructor the TCP option type (which is `PCPP_TCPOLEN_MSS`), and the option value (1460) and `addTcpOptionAfter()` uses it to create the TCP option object and add it to the existing list of TCP options. That's it! with 1 line of code we managed to add a new TCP option!
 
 Now let move on to the last layer in this packet: **HTTP**. Let's see the code:
 
@@ -152,9 +152,9 @@ httpRequestLayer->insertField(xForwardedForField, "Cache-Control", "max-age=0");
 
 We already discussed the highlights of the `HttpLayer` API in the [Packet parsing](./packet-parsing) tutorial so we won't repeat all of it again. But as you can see the API provides setters for all of the relevant data:
 
-* `HttpRequestFirstLine` exposes is a setter for the HTTP method `setMethod()` where we change it to `TRACE`. Similar methods exist for the URI and version
-* When retrieving HTTP fields, the `HttpField` class exposes a method of `setFieldValue()` for setting the field value (demonstrated above for `"Host"` and `"Referer"` fields)
-* `HttpLayer` exposes methods for adding new fields: `insertField()` and `addField()`, and methods for removing existing fields: `removeField()`. Here we demonstrated how to add `"X-Forwarded-For"` and `"Cache-Control"` header fields (and set their values) and how to remove the `"Cookie"` header field
+- `HttpRequestFirstLine` exposes is a setter for the HTTP method `setMethod()` where we change it to `TRACE`. Similar methods exist for the URI and version
+- When retrieving HTTP fields, the `HttpField` class exposes a method of `setFieldValue()` for setting the field value (demonstrated above for `"Host"` and `"Referer"` fields)
+- `HttpLayer` exposes methods for adding new fields: `insertField()` and `addField()`, and methods for removing existing fields: `removeField()`. Here we demonstrated how to add `"X-Forwarded-For"` and `"Cache-Control"` header fields (and set their values) and how to remove the `"Cookie"` header field
 
 So far we've seen editing of existing layers. But what about adding new layers or removing existing ones?
 
@@ -224,7 +224,7 @@ Now let's move on to the third layer - **UDP**:
 pcpp::UdpLayer newUdpLayer(12345, 53);
 ```
 
-As you can see, this is quite straight forward: we created a new instance of  `UdpLayer` and gave it in the constructor the source and dest UDP ports.
+As you can see, this is quite straight forward: we created a new instance of `UdpLayer` and gave it in the constructor the source and dest UDP ports.
 
 Let's move on to the fourth and last layer - **DNS**:
 
@@ -283,8 +283,8 @@ import CodeLink from '@site/src/components/CodeLink';
 
 All code that was covered in this tutorial can be found <CodeLink relativePath="/Examples/Tutorials/Tutorial-PacketCraftAndEdit">here</CodeLink>. In order to compile and run the code please first download and compile PcapPlusPlus code or downloaded a pre-compiled version from the <ReleaseLink></ReleaseLink>. Then follow these instruction, according to your platform:
 
-* Linux, MacOS, FreeBSD - make sure PcapPlusPlus is installed (by running **sudo make install** in PcapPlusPlus main directory). Then either change the `Makefile.non_windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.non_windows all`
-* Windows using MinGW or MinGW-w64 - either change the `Makefile.windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.windows all`
-* Windows using Visual Studio - there is a Visual Studio solution containing all tutorials: `mk\[vs_version]\Tutorials.sln`. Just open it and compile all tutorials
+- Linux, MacOS, FreeBSD - make sure PcapPlusPlus is installed (by running **sudo make install** in PcapPlusPlus main directory). Then either change the `Makefile.non_windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.non_windows all`
+- Windows using MinGW or MinGW-w64 - either change the `Makefile.windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.windows all`
+- Windows using Visual Studio - there is a Visual Studio solution containing all tutorials: `mk\[vs_version]\Tutorials.sln`. Just open it and compile all tutorials
 
 In all options the compiled executable will be inside the tutorial directory (`[PcapPlusPlus Folder]/Examples/Tutorials/Tutorial-PacketCraftAndEdit`)

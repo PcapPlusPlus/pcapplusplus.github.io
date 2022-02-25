@@ -139,13 +139,13 @@ Zstd streaming compression is only supported when working with pcapng files. To 
 
 Once you have a working build modifying your code to start enabling compression is fast and easy!
 
-When writing PCAPNG files, to enable streaming compression all you need to do is add a second integer argument when constructing your writer. The integer should be between 0-10 and it specifies the compression level. Values outside this range will be clamped. A value of zero, which is also the default, indicates to skip compression. A value of 10 would indicate use maximum compression. For most scenarios a value of 5 or less should be adequate. 
+When writing PCAPNG files, to enable streaming compression all you need to do is add a second integer argument when constructing your writer. The integer should be between 0-10 and it specifies the compression level. Values outside this range will be clamped. A value of zero, which is also the default, indicates to skip compression. A value of 10 would indicate use maximum compression. For most scenarios a value of 5 or less should be adequate.
 
 For reading compressed PCAPNG files the only requirement is that the file name extension must terminate in `.zstd`. If a compressed file is supplied to the reader without the `.zstd` extension the file will fail to load. Currently, APPENDING to a compressed file is NOT supported!
 
 If you write code enabling compression, by adding a compression level to your writer constructor, but use a build of PcapPlusPlus without compression support, everything will work just fine and the compression will be skipped/ignored and normal PCAPNG files will be generated/read.
 
-There is a tradeoff between compression speed and compression efficiency. A compression value of 10 will yield the most compression but be slower, while a value of 1 will yield the least compression but be fastest. Depending upon your capture rates and data size you can tune this number to fit your needs. 
+There is a tradeoff between compression speed and compression efficiency. A compression value of 10 will yield the most compression but be slower, while a value of 1 will yield the least compression but be fastest. Depending upon your capture rates and data size you can tune this number to fit your needs.
 
 Since Zstd is designed to support fast and efficient streaming compression most users should not see any noticeable performance impact when enabling compression. Exact savings from compression will always vary based upon the input data, however; in one test case an uncompressed PCAPNG file of 140MB was duplicated with a compression level of 5 to yield a compressed PCAPNG file of only 40MB giving about 4x space savings! Note that the compression is performed while the file is written so you will not notice any delay when closing the file or a long processing time like you work normally experience when compressing an existing file.
 
@@ -199,7 +199,7 @@ Network protocols often need to transport large chunks of data which are complet
 
 In that case the network protocol has to handle the chunk boundaries itself and (if required) spread the data over multiple packets. It obviously also needs a mechanism to determine the chunk boundaries on the receiving side.
 
-This mechanism is called reassembly, although a specific protocol specification might use a different term for this (e.g. desegmentation, defragmentation, etc). 
+This mechanism is called reassembly, although a specific protocol specification might use a different term for this (e.g. desegmentation, defragmentation, etc).
 
 (this description is taken from [Wireshark documentation](https://www.wireshark.org/docs/wsug_html_chunked/ChAdvReassemblySection.html)).
 
@@ -267,7 +267,7 @@ PcapPlusPlus currently supports parsing, editing and generation of packets of th
 5. Raw IP (IPv4 & IPv6)
 6. IPv4
 7. IPv6
-9. ARP
+8. ARP
 9. VLAN
 10. VXLAN
 11. MPLS

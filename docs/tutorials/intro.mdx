@@ -65,9 +65,9 @@ As can be seen in this diagram, a Packet (= parsed packet) holds a pointer to th
 
 It may be implied from this structure that the actual packet data (the raw byte stream) is duplicated between the raw packet and the various layers. This is not the case. We don't want to duplicate the data from various reasons:
 
-* We don't want the packet object to take up too much memory
-* We would like the avoid unnecessary data coping because it's expensive
-* Since each layer can be edited, we would like the edited data to be written directly to the byte stream and not copied from one place to another
+- We don't want the packet object to take up too much memory
+- We would like the avoid unnecessary data coping because it's expensive
+- Since each layer can be edited, we would like the edited data to be written directly to the byte stream and not copied from one place to another
 
 So the raw byte stream is actually stored once, in the RawPacket object. The various layers only point to the relevant place where their data begins. Here is a diagram to visualize it:
 
@@ -267,8 +267,8 @@ import CodeLink from '@site/src/components/CodeLink';
 
 All code that was covered in this tutorial can be found <CodeLink relativePath="/Examples/Tutorials/Tutorial-HelloWorld">here</CodeLink>. In order to compile and run the code please first download and compile PcapPlusPlus code or downloaded a pre-compiled version from the <ReleaseLink></ReleaseLink>. Then follow these instruction, according to your platform:
 
-* Linux, MacOS, FreeBSD - make sure PcapPlusPlus is installed (by running **sudo make install** in PcapPlusPlus main directory). Then either change the `Makefile.non_windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.non_windows all`
-* Windows using MinGW or MinGW-w64 - either change the `Makefile.windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.windows all`
-* Windows using Visual Studio - there is a Visual Studio solution containing all tutorials: `mk\[vs_version]\Tutorials.sln`. Just open it and compile all tutorials
+- Linux, MacOS, FreeBSD - make sure PcapPlusPlus is installed (by running **sudo make install** in PcapPlusPlus main directory). Then either change the `Makefile.non_windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.non_windows all`
+- Windows using MinGW or MinGW-w64 - either change the `Makefile.windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.windows all`
+- Windows using Visual Studio - there is a Visual Studio solution containing all tutorials: `mk\[vs_version]\Tutorials.sln`. Just open it and compile all tutorials
 
 In all options the compiled executable will be inside the tutorial directory (`[PcapPlusPlus Folder]/Examples/Tutorials/Tutorial-HelloWorld`)

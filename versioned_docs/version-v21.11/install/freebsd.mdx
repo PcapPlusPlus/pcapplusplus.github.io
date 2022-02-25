@@ -23,15 +23,15 @@ Run the configuration script from PcapPlusPlus main directory:
 
 This script has the following command-line switches (you can also view then by running `./configure-freebsd.sh --help` or `./configure-freebsd.sh -h`):
 
-| Option | Description |
-|:---|:---|
-| __no switches__               | use the default configuration |
-| __`--use-immediate-mode`__    | use libpcap immediate mode which enables getting packets as fast as possible (supported on libpcap>=1.5) |
-| __`--set-direction-enabled`__ | set direction for capturing incoming or outgoing packets (supported on libpcap>=0.9.1) |
-| __`--install-dir`__           | set a custom installation directory. Default is `/usr/local` |
-| __`--libpcap-include-dir`__   | libpcap header files directory. This parameter is optional and if omitted PcapPlusPlus will look for the header files in the default include paths |
-| __`--libpcap-lib-dir`__       | libpcap pre compiled lib directory. This parameter is optional and if omitted PcapPlusPlus will look for the lib file in the default lib paths |
-| __`-h`__, __`--help`__        | displays a help message and exits. No further actions are performed |
+| Option                        | Description                                                                                                                                        |
+| :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **no switches**               | use the default configuration                                                                                                                      |
+| **`--use-immediate-mode`**    | use libpcap immediate mode which enables getting packets as fast as possible (supported on libpcap>=1.5)                                           |
+| **`--set-direction-enabled`** | set direction for capturing incoming or outgoing packets (supported on libpcap>=0.9.1)                                                             |
+| **`--install-dir`**           | set a custom installation directory. Default is `/usr/local`                                                                                       |
+| **`--libpcap-include-dir`**   | libpcap header files directory. This parameter is optional and if omitted PcapPlusPlus will look for the header files in the default include paths |
+| **`--libpcap-lib-dir`**       | libpcap pre compiled lib directory. This parameter is optional and if omitted PcapPlusPlus will look for the lib file in the default lib paths     |
+| **`-h`**, **`--help`**        | displays a help message and exits. No further actions are performed                                                                                |
 
 Here are a few examples:
 
@@ -86,7 +86,7 @@ $
 
 The default installation directory is `/usr/local` which means the header files will be copied to `/usr/local/include/pcapplusplus` and the library files will be copied to `/usr/local/lib`.
 
-You can change the installation directory by using the __`--install-dir`__ switch in the configuration script.
+You can change the installation directory by using the **`--install-dir`** switch in the configuration script.
 
 ## Running tests
 

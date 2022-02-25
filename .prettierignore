@@ -1,0 +1,5 @@
+build
+static
+.docusaurus
+package.json
+package-lock.json

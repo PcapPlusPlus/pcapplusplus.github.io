@@ -25,22 +25,28 @@ The project itself can be found here: <https://github.com/seladb/PcapPlusPlus>
    ```shell
    npm ci
    ```
+
    Or using yarn:
+
    ```shell
    yarn install --frozen-lockfile
    ```
-2. Start the web-site: 
+
+3. Start the web-site:
 
    Using npm:
+
    ```shell
    npm start
    ```
 
    Or using yarn:
+
    ```shell
    yarn run start
    ```
-3. If the browser doesn't open automatically browse to `http://localhost:3000`
+
+4. If the browser doesn't open automatically browse to `http://localhost:3000`
 
 ## Overview
 

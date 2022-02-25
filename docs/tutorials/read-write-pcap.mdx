@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: "Part 2: Read/Write Pcap Files"
+title: 'Part 2: Read/Write Pcap Files'
 ---
 
 # Part 2: Reading And Writing Pcap Files
@@ -11,12 +11,12 @@ PcapPlusPlus supports 2 packet capture file formats: pcap and pcap-ng. Using an 
 
 Essentially there are 4 classes and 2 interfaces for that:
 
-* `PcapFileReaderDevice` - read packets from pcap files
-* `PcapNgFileReaderDevice` - read packets from pcap-ng files
-* `PcapFileWriterDevice` - write packets to a pcap file
-* `PcapNgFileWriterDevice` - write packets to a pcap-ng file
-* `IFileReaderDevice` - a reader interface, implemented by both PcapFileReaderDevice and PcapNgFileReaderDevice
-* `IFileWriterDevice` - a writer interface, implemented by both PcapFileWriterDevice and PcapNgFileWriterDevice
+- `PcapFileReaderDevice` - read packets from pcap files
+- `PcapNgFileReaderDevice` - read packets from pcap-ng files
+- `PcapFileWriterDevice` - write packets to a pcap file
+- `PcapNgFileWriterDevice` - write packets to a pcap-ng file
+- `IFileReaderDevice` - a reader interface, implemented by both PcapFileReaderDevice and PcapNgFileReaderDevice
+- `IFileWriterDevice` - a writer interface, implemented by both PcapFileWriterDevice and PcapNgFileWriterDevice
 
 In this tutorial we'll write a simple application that reads and writes packets from/to pcap and pcap-ng file.
 
@@ -199,8 +199,8 @@ import CodeLink from '@site/src/components/CodeLink';
 
 All code that was covered in this tutorial can be found <CodeLink relativePath="/Examples/Tutorials/Tutorial-PcapFiles">here</CodeLink>. In order to compile and run the code please first download and compile PcapPlusPlus code or downloaded a pre-compiled version from the <ReleaseLink></ReleaseLink>. Then follow these instruction, according to your platform:
 
-* Linux, MacOS, FreeBSD - make sure PcapPlusPlus is installed (by running **sudo make install** in PcapPlusPlus main directory). Then either change the `Makefile.non_windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.non_windows all`
-* Windows using MinGW or MinGW-w64 - either change the `Makefile.windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.windows all`
-* Windows using Visual Studio - there is a Visual Studio solution containing all tutorials: `mk\[vs_version]\Tutorials.sln`. Just open it and compile all tutorials
+- Linux, MacOS, FreeBSD - make sure PcapPlusPlus is installed (by running **sudo make install** in PcapPlusPlus main directory). Then either change the `Makefile.non_windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.non_windows all`
+- Windows using MinGW or MinGW-w64 - either change the `Makefile.windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.windows all`
+- Windows using Visual Studio - there is a Visual Studio solution containing all tutorials: `mk\[vs_version]\Tutorials.sln`. Just open it and compile all tutorials
 
 In all options the compiled executable will be inside the tutorial directory (`[PcapPlusPlus Folder]/Examples/Tutorials/Tutorial-PcapFiles`)
