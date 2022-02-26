@@ -1,5 +1,6 @@
 import React from 'react';
 import { FiChevronRight } from 'react-icons/fi';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import Body from '../components/Body';
 import styles from '../components/Styles';
 import TwoColumns from '../components/TwoColumns';
@@ -23,7 +24,10 @@ function MultiPlatformSupport(): JSX.Element {
                   available in popular package managers such as Homebrew and
                   Conan
                 </p>
-                <a className={styles.LearnMoreLink} href="/docs/install">
+                <a
+                  className={styles.LearnMoreLink}
+                  href={useBaseUrl('/docs/install')}
+                >
                   View Installation Guide
                   <FiChevronRight />
                 </a>

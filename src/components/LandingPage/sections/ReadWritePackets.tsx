@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import CodeBlock from '@theme/CodeBlock';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import { FiChevronRight } from 'react-icons/fi';
 import Body from '../components/Body';
 import TwoColumns from '../components/TwoColumns';
@@ -27,7 +28,9 @@ function ReadWritePackets(): JSX.Element {
                 </p>
                 <a
                   className={styles.LearnMoreLink}
-                  href="/docs/features#read-and-write-packets-fromto-files"
+                  href={useBaseUrl(
+                    '/docs/features#read-and-write-packets-fromto-files'
+                  )}
                 >
                   Learn More
                   <FiChevronRight />

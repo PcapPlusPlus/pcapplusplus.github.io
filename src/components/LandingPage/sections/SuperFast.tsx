@@ -19,7 +19,10 @@ function SuperFast(): JSX.Element {
                   PcapPlusPlus is designed to be efficient and lightweight. It
                   enables amazingly fast packet processing with minimum overhead
                 </p>
-                <a className={styles.LearnMoreLink} href="/docs/benchmark">
+                <a
+                  className={styles.LearnMoreLink}
+                  href={useBaseUrl('/docs/benchmark')}
+                >
                   View Benchmarks
                   <FiChevronRight />
                 </a>

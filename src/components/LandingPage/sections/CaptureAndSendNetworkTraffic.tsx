@@ -1,5 +1,6 @@
 import React from 'react';
 import { FiChevronRight } from 'react-icons/fi';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import Body from '../components/Body';
 import styles from '../components/Styles';
 import TwoColumns from '../components/TwoColumns';
@@ -29,7 +30,7 @@ function CaptureAndSendNetworkTraffic(): JSX.Element {
                 </p>
                 <a
                   className={styles.LearnMoreLink}
-                  href="/docs/features#packet-capture"
+                  href={useBaseUrl('/docs/features#packet-capture')}
                 >
                   Learn More
                   <FiChevronRight />

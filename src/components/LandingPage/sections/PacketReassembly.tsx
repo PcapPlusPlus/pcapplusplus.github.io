@@ -30,7 +30,7 @@ function PacketReassembly(): JSX.Element {
                 </p>
                 <a
                   className={styles.LearnMoreLink}
-                  href="/docs/features#packet-reassembly"
+                  href={useBaseUrl('/docs/features#packet-reassembly')}
                 >
                   Learn More
                   <FiChevronRight />
