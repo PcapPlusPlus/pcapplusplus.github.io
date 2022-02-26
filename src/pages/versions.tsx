@@ -21,6 +21,7 @@ function Version() {
   const oldVersions = ['v17.11', 'v17.02', 'v16.09', 'v16.02'];
   return (
     <Layout
+      title="Versions"
       permalink="/versions"
       description="PcapPlusPlus documentation page listing all documented site versions"
     >

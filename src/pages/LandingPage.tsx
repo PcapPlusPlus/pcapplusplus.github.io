@@ -10,10 +10,7 @@ import Header from '../components/LandingPage/components/Header';
 
 function LandingPage(): JSX.Element {
   return (
-    <Layout
-      title="A multi-platform C++ library for capturing, parsing and crafting of network packets"
-      description="A multi-platform C++ library for capturing, parsing and crafting of network packets"
-    >
+    <Layout description="A multi-platform C++ library for capturing, parsing and crafting of network packets">
       <Header />
       <main>
         <CaptureAndSendNetworkTraffic />
