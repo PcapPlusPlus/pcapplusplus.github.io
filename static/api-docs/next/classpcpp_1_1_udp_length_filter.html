@@ -104,12 +104,12 @@ Inheritance diagram for pcpp::UdpLengthFilter:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a88d3430d89616c9229ac814c2f5eedf5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_udp_length_filter.html#a88d3430d89616c9229ac814c2f5eedf5">UdpLengthFilter</a> (uint16_t legnth, <a class="el" href="namespacepcpp.html#a236073670782cc577b097b2fef4c7d62">FilterOperator</a> op)</td></tr>
-<tr class="separator:a88d3430d89616c9229ac814c2f5eedf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4ea67a51f3a9dd297c8bb7be09b55b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_udp_length_filter.html#ad4ea67a51f3a9dd297c8bb7be09b55b9">UdpLengthFilter</a> (uint16_t length, <a class="el" href="namespacepcpp.html#a236073670782cc577b097b2fef4c7d62">FilterOperator</a> op)</td></tr>
+<tr class="separator:ad4ea67a51f3a9dd297c8bb7be09b55b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a438eb7a89725685d7f98f069ce76b966"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_udp_length_filter.html#a438eb7a89725685d7f98f069ce76b966">parseToString</a> (std::string &amp;result)</td></tr>
 <tr class="separator:a438eb7a89725685d7f98f069ce76b966"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4094e3387c71ba0c72086c34cf9d4665"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_udp_length_filter.html#a4094e3387c71ba0c72086c34cf9d4665">setLength</a> (uint16_t legnth)</td></tr>
-<tr class="separator:a4094e3387c71ba0c72086c34cf9d4665"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dc0181c274d9ac7fb8afd4db2836e1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_udp_length_filter.html#a5dc0181c274d9ac7fb8afd4db2836e1e">setLength</a> (uint16_t length)</td></tr>
+<tr class="separator:a5dc0181c274d9ac7fb8afd4db2836e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classpcpp_1_1_i_filter_with_operator"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_i_filter_with_operator')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_filter_with_operator.html">pcpp::IFilterWithOperator</a></td></tr>
 <tr class="memitem:ae6bd275b11802dec7f9bc1a7baaf6d19 inherit pub_methods_classpcpp_1_1_i_filter_with_operator"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_filter_with_operator.html#ae6bd275b11802dec7f9bc1a7baaf6d19">setOperator</a> (<a class="el" href="namespacepcpp.html#a236073670782cc577b097b2fef4c7d62">FilterOperator</a> op)</td></tr>
 <tr class="separator:ae6bd275b11802dec7f9bc1a7baaf6d19 inherit pub_methods_classpcpp_1_1_i_filter_with_operator"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,8 +123,8 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>A class for filtering UDP packets that matches UDP length criteria <br />
  For deeper understanding of the filter concept please refer to <a class="el" href="_pcap_filter_8h.html">PcapFilter.h</a> </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a88d3430d89616c9229ac814c2f5eedf5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88d3430d89616c9229ac814c2f5eedf5">&#9670;&nbsp;</a></span>UdpLengthFilter()</h2>
+<a id="ad4ea67a51f3a9dd297c8bb7be09b55b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4ea67a51f3a9dd297c8bb7be09b55b9">&#9670;&nbsp;</a></span>UdpLengthFilter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -136,7 +136,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">pcpp::UdpLengthFilter::UdpLengthFilter </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>legnth</em>, </td>
+          <td class="paramname"><em>length</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -159,7 +159,7 @@ Public Member Functions</h2></td></tr>
 <p>A constructor that get the UDP length and operator and creates the filter. For example: "filter all UDP packets with length
 greater or equal to 500" </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">legnth</td><td>The length value that will be used in the filter </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>The length value that will be used in the filter </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">op</td><td>The operator to use (e.g "equal", "greater than", etc.) </td></tr>
   </table>
   </dd>
@@ -203,8 +203,8 @@ greater or equal to 500" </p><dl class="params"><dt>Parameters</dt><dd>
 
 </div>
 </div>
-<a id="a4094e3387c71ba0c72086c34cf9d4665"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4094e3387c71ba0c72086c34cf9d4665">&#9670;&nbsp;</a></span>setLength()</h2>
+<a id="a5dc0181c274d9ac7fb8afd4db2836e1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dc0181c274d9ac7fb8afd4db2836e1e">&#9670;&nbsp;</a></span>setLength()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -216,7 +216,7 @@ greater or equal to 500" </p><dl class="params"><dt>Parameters</dt><dd>
           <td class="memname">void pcpp::UdpLengthFilter::setLength </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>legnth</em></td><td>)</td>
+          <td class="paramname"><em>length</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -226,9 +226,9 @@ greater or equal to 500" </p><dl class="params"><dt>Parameters</dt><dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set legnth value </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Set length value </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">legnth</td><td>The legnth value that will be used in the filter </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>The length value that will be used in the filter </td></tr>
   </table>
   </dd>
 </dl>
@@ -241,7 +241,7 @@ greater or equal to 500" </p><dl class="params"><dt>Parameters</dt><dd>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_udp_length_filter.html">UdpLengthFilter</a></li>
-    <li class="footer">Generated on Sun Jan 23 2022 09:37:00 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Mar 1 2022 08:02:26 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

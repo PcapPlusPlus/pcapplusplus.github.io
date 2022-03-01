@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('_kni_device_8h.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>This file and <a class="el" href="_kni_device_list_8h_source.html">KniDeviceList.h</a> provide PcapPlusPlus C++ wrapper for DPDK KNI (Kernel Network Interace) library (librte_kni). The main propose of the rte_kni library is to provide a way to forward packets received by DPDK application to Linux kernel (a.e. to processes that have opened some kind of a net socket) for further processing and to obtain packets from Linux kernel. The KNI device is the bridge that accomplish the translation between DPDK packets (mbuf) and Linux kernel/socket packets (skbuf). Currently KNI devices report speeds upto 10 GBit/s.<br />
+<p>This file and <a class="el" href="_kni_device_list_8h_source.html">KniDeviceList.h</a> provide PcapPlusPlus C++ wrapper for DPDK KNI (Kernel Network Interface) library (librte_kni). The main propose of the rte_kni library is to provide a way to forward packets received by DPDK application to Linux kernel (a.e. to processes that have opened some kind of a net socket) for further processing and to obtain packets from Linux kernel. The KNI device is the bridge that accomplish the translation between DPDK packets (mbuf) and Linux kernel/socket packets (skbuf). Currently KNI devices report speeds up to 10 GBit/s.<br />
  KNI device is a virtual network interface so it can be created and destroyed programmatically at will. As a real network interface KNI deivice must be managed appropriately like other interfaces. To start operate it MUST be given an IP address for example by the means of <b>ip a</b> command and MUST be put up for example by <b>ip l set [interface] up</b>.<br />
  Additionally KNI interfaces support 4 other settings (depends on DPDK version used):  
 <a href="#details">More...</a></p>
@@ -129,7 +129,7 @@ Typedefs</h2></td></tr>
 <tr class="separator:a5d5c27837ffd86e49a6b4ce2cc1ed57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file and <a class="el" href="_kni_device_list_8h_source.html">KniDeviceList.h</a> provide PcapPlusPlus C++ wrapper for DPDK KNI (Kernel Network Interace) library (librte_kni). The main propose of the rte_kni library is to provide a way to forward packets received by DPDK application to Linux kernel (a.e. to processes that have opened some kind of a net socket) for further processing and to obtain packets from Linux kernel. The KNI device is the bridge that accomplish the translation between DPDK packets (mbuf) and Linux kernel/socket packets (skbuf). Currently KNI devices report speeds upto 10 GBit/s.<br />
+<div class="textblock"><p>This file and <a class="el" href="_kni_device_list_8h_source.html">KniDeviceList.h</a> provide PcapPlusPlus C++ wrapper for DPDK KNI (Kernel Network Interface) library (librte_kni). The main propose of the rte_kni library is to provide a way to forward packets received by DPDK application to Linux kernel (a.e. to processes that have opened some kind of a net socket) for further processing and to obtain packets from Linux kernel. The KNI device is the bridge that accomplish the translation between DPDK packets (mbuf) and Linux kernel/socket packets (skbuf). Currently KNI devices report speeds up to 10 GBit/s.<br />
  KNI device is a virtual network interface so it can be created and destroyed programmatically at will. As a real network interface KNI deivice must be managed appropriately like other interfaces. To start operate it MUST be given an IP address for example by the means of <b>ip a</b> command and MUST be put up for example by <b>ip l set [interface] up</b>.<br />
  Additionally KNI interfaces support 4 other settings (depends on DPDK version used): </p>
 <ul>
@@ -138,7 +138,7 @@ Typedefs</h2></td></tr>
 <li>change MAC address: <b>ip l set [interface] address [new_mac]</b></li>
 <li>change promiscuous mode: <b>ip l set [interface] promisc on/off</b></li>
 </ul>
-<p>Changes of each of this settings generates an event/request that must be handled by an application that have created the KNI device in 3 second period or it will be rejected and Linux kernel will not apply the change. The way that this requests MUST be handeled is defined by DPDK and so for each type of request the application tht creates the KNI device must provide the callback function to call. This callbacks are set in time of KNI device creation via KniIoctlCallbacks or KniOldIoctlCallbacks structures (the structure used is dependent on DPDK version).<br />
+<p>Changes of each of this settings generates an event/request that must be handled by an application that have created the KNI device in 3 second period or it will be rejected and Linux kernel will not apply the change. The way that this requests MUST be handled is defined by DPDK and so for each type of request the application that creates the KNI device must provide the callback function to call. This callbacks are set in time of KNI device creation via KniIoctlCallbacks or KniOldIoctlCallbacks structures (the structure used is dependent on DPDK version).<br />
  There is a way to enable <b>ethtool</b> on KNI devices that include recompilation of DPDK and strict correspondence between KNI port id and DPDK port id, but it is not currently supported by PcapPlusPlus.<br />
 </p>
 <p>Known issues:</p><ul>
@@ -148,7 +148,7 @@ Typedefs</h2></td></tr>
 <li>On old versions of DPDK only 4 KNI devices may be created: Yep this is a limitation. You can change MAX_KNI_DEVICES constant in KniDeviceList.cpp to unlock this limit;</li>
 <li>Any set* method never succeeds: You may forgot that they generate KNI requests that Your application MUST handle. Just use KniDevice::startRequestHandlerThread to handle all requests automatically. Or user running the application don't have suitable access rights (must have CAP_NET_ADMIN).</li>
 </ul>
-<p>Usefull links:</p><ul>
+<p>Useful links:</p><ul>
 <li><a href="https://doc.dpdk.org/guides/prog_guide/kernel_nic_interface.html">KNI interface concept DPDK documentation</a></li>
 <li><a href="https://doc.dpdk.org/guides/nics/kni.html">KNI PMD</a></li>
 <li><a href="https://doc.dpdk.org/guides/sample_app_ug/kernel_nic_interface.html">KNI DPDK sample application</a></li>
@@ -160,7 +160,7 @@ Typedefs</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="_kni_device_8h.html">KniDevice.h</a></li>
-    <li class="footer">Generated on Sun Jan 23 2022 09:36:59 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Mar 1 2022 08:02:25 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

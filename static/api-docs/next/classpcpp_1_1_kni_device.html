@@ -168,10 +168,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4d0c0eb6a3dee13f287d0d72e2aa8b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates link state of KNI device. Unconditionally updates link state of KNI device via call to DPDK librte_kni API. FASTER THAN setLinkState(state) but may not be supported or may fail. If link state is updated successfully then it is cached.  <a href="#a4d0c0eb6a3dee13f287d0d72e2aa8b9c">More...</a><br /></td></tr>
 <tr class="separator:a4d0c0eb6a3dee13f287d0d72e2aa8b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1c0ad9cc41211075af60930dc591d8e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_kni_device.html#ab1c0ad9cc41211075af60930dc591d8e">handleRequests</a> ()</td></tr>
-<tr class="memdesc:ab1c0ad9cc41211075af60930dc591d8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle requests from Linux kernel synchronously in calling thread. When one of events which is needed application attention occurres it must be handled by calling this function (or by running RequestHandlerThread for this device). Until the request is handled the Linux kernel thread that manages this KNI is blocked. If it is not hanled by application in 3 seconds the request is reported to kernel as failed one. Current known requests are:  <a href="#ab1c0ad9cc41211075af60930dc591d8e">More...</a><br /></td></tr>
+<tr class="memdesc:ab1c0ad9cc41211075af60930dc591d8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle requests from Linux kernel synchronously in calling thread. When one of events which is needed application attention occurres it must be handled by calling this function (or by running RequestHandlerThread for this device). Until the request is handled the Linux kernel thread that manages this KNI is blocked. If it is not handled by application in 3 seconds the request is reported to kernel as failed one. Current known requests are:  <a href="#ab1c0ad9cc41211075af60930dc591d8e">More...</a><br /></td></tr>
 <tr class="separator:ab1c0ad9cc41211075af60930dc591d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea9f67921e83cd832cbfc4eadb96855b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_kni_device.html#aea9f67921e83cd832cbfc4eadb96855b">startRequestHandlerThread</a> (long sleepSeconds, long sleepNanoSeconds=0)</td></tr>
-<tr class="memdesc:aea9f67921e83cd832cbfc4eadb96855b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts new thread (using pthread) to asynchronously handle KNI device requests. See description of <a class="el" href="classpcpp_1_1_kni_device.html#ab1c0ad9cc41211075af60930dc591d8e" title="Handle requests from Linux kernel synchronously in calling thread. When one of events which is needed...">handleRequests()</a> about requests. New thread is detached using pthread_detach. This thread can be stoped explicitly by calling <a class="el" href="classpcpp_1_1_kni_device.html#a9ea262da8ecc907b834fe7892241578e" title="Explicitly stops request thread for this device if it was running. See description of handleRequests(...">stopRequestHandlerThread()</a> or implicitly on KNI device destruction. Linux <a href="http://man7.org/linux/man-pages/man2/nanosleep.2.html">nanosleep()</a> function is used for sleeping.  <a href="#aea9f67921e83cd832cbfc4eadb96855b">More...</a><br /></td></tr>
+<tr class="memdesc:aea9f67921e83cd832cbfc4eadb96855b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts new thread (using pthread) to asynchronously handle KNI device requests. See description of <a class="el" href="classpcpp_1_1_kni_device.html#ab1c0ad9cc41211075af60930dc591d8e" title="Handle requests from Linux kernel synchronously in calling thread. When one of events which is needed...">handleRequests()</a> about requests. New thread is detached using pthread_detach. This thread can be stopped explicitly by calling <a class="el" href="classpcpp_1_1_kni_device.html#a9ea262da8ecc907b834fe7892241578e" title="Explicitly stops request thread for this device if it was running. See description of handleRequests(...">stopRequestHandlerThread()</a> or implicitly on KNI device destruction. Linux <a href="http://man7.org/linux/man-pages/man2/nanosleep.2.html">nanosleep()</a> function is used for sleeping.  <a href="#aea9f67921e83cd832cbfc4eadb96855b">More...</a><br /></td></tr>
 <tr class="separator:aea9f67921e83cd832cbfc4eadb96855b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ea262da8ecc907b834fe7892241578e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_kni_device.html#a9ea262da8ecc907b834fe7892241578e">stopRequestHandlerThread</a> ()</td></tr>
 <tr class="memdesc:a9ea262da8ecc907b834fe7892241578e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly stops request thread for this device if it was running. See description of <a class="el" href="classpcpp_1_1_kni_device.html#ab1c0ad9cc41211075af60930dc591d8e" title="Handle requests from Linux kernel synchronously in calling thread. When one of events which is needed...">handleRequests()</a> about requests.  <a href="#a9ea262da8ecc907b834fe7892241578e">More...</a><br /></td></tr>
@@ -238,7 +238,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <li>Device then must be opened by calling <a class="el" href="classpcpp_1_1_kni_device.html#a2f66da689a3403a98d3d4f735b79cc50">KniDevice::open</a>;</li>
 <li>During lifetime the application must handle the requests from kernel either by calling <a class="el" href="classpcpp_1_1_kni_device.html#ab1c0ad9cc41211075af60930dc591d8e" title="Handle requests from Linux kernel synchronously in calling thread. When one of events which is needed...">KniDevice::handleRequests</a> to handle them synchronously or by starting separate thread to do this by calling <a class="el" href="classpcpp_1_1_kni_device.html#aea9f67921e83cd832cbfc4eadb96855b" title="Starts new thread (using pthread) to asynchronously handle KNI device requests. See description of ha...">KniDevice::startRequestHandlerThread</a>;</li>
 <li>During lifetime the packets may be send to/received from KNI device via calls to synchronous API (send/receive methods) or asynchronously by running capturing thread using <a class="el" href="classpcpp_1_1_kni_device.html#a3f5f48e1e2950cb3f2385d1bdda5a25e" title="Start capturing packets asynchronously on this KNI interface. Each time a burst of packets is capture...">KniDevice::startCapture</a>;</li>
-<li>KNI device will be destroyed or implicitly on application exit. User must assure that NO OTHER linux application is using KNI device when and after it is beeing destroyed otherwise Linux kernel may crush dramatically. </li>
+<li>KNI device will be destroyed or implicitly on application exit. User must assure that NO OTHER linux application is using KNI device when and after it is being destroyed otherwise Linux kernel may crush dramatically. </li>
 </ul>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a3fd22d62a55612b03481d65bc49fa0cc"></a>
@@ -484,14 +484,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
       </table>
 </div><div class="memdoc">
 
-<p>Handle requests from Linux kernel synchronously in calling thread. When one of events which is needed application attention occurres it must be handled by calling this function (or by running RequestHandlerThread for this device). Until the request is handled the Linux kernel thread that manages this KNI is blocked. If it is not hanled by application in 3 seconds the request is reported to kernel as failed one. Current known requests are: </p>
+<p>Handle requests from Linux kernel synchronously in calling thread. When one of events which is needed application attention occurres it must be handled by calling this function (or by running RequestHandlerThread for this device). Until the request is handled the Linux kernel thread that manages this KNI is blocked. If it is not handled by application in 3 seconds the request is reported to kernel as failed one. Current known requests are: </p>
 <ul>
 <li>change link state: ip l set [interface] up/down</li>
 <li>change mtu: ip l set dev [interface] mtu [mtu_count]</li>
 <li>change mac: ip l set [interface] address [new_mac]</li>
 <li>change promiscuous mode: ip l set [interface] promisc on/off <dl class="section warning"><dt>Warning</dt><dd>Functions setLinkState, setMacAddress, setMtu and setPromiscuous will generate this requests. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Callbacks provided for this KNI device will be called synchronously in calling thread during execution of this function </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>true if no error happend during request handling false otherwise </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if no error happened during request handling false otherwise </dd></dl>
 </li>
 </ul>
 
@@ -1132,7 +1132,7 @@ Generates promiscuous mode request </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Starts new thread (using pthread) to asynchronously handle KNI device requests. See description of <a class="el" href="classpcpp_1_1_kni_device.html#ab1c0ad9cc41211075af60930dc591d8e" title="Handle requests from Linux kernel synchronously in calling thread. When one of events which is needed...">handleRequests()</a> about requests. New thread is detached using pthread_detach. This thread can be stoped explicitly by calling <a class="el" href="classpcpp_1_1_kni_device.html#a9ea262da8ecc907b834fe7892241578e" title="Explicitly stops request thread for this device if it was running. See description of handleRequests(...">stopRequestHandlerThread()</a> or implicitly on KNI device destruction. Linux <a href="http://man7.org/linux/man-pages/man2/nanosleep.2.html">nanosleep()</a> function is used for sleeping. </p>
+<p>Starts new thread (using pthread) to asynchronously handle KNI device requests. See description of <a class="el" href="classpcpp_1_1_kni_device.html#ab1c0ad9cc41211075af60930dc591d8e" title="Handle requests from Linux kernel synchronously in calling thread. When one of events which is needed...">handleRequests()</a> about requests. New thread is detached using pthread_detach. This thread can be stopped explicitly by calling <a class="el" href="classpcpp_1_1_kni_device.html#a9ea262da8ecc907b834fe7892241578e" title="Explicitly stops request thread for this device if it was running. See description of handleRequests(...">stopRequestHandlerThread()</a> or implicitly on KNI device destruction. Linux <a href="http://man7.org/linux/man-pages/man2/nanosleep.2.html">nanosleep()</a> function is used for sleeping. </p>
 <dl class="section note"><dt>Note</dt><dd>Callbacks provided for this KNI device will be called asynchronously in new thread </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1179,7 +1179,7 @@ Generates promiscuous mode request </dd></dl>
 </div><div class="memdoc">
 
 <p>Explicitly stops request thread for this device if it was running. See description of <a class="el" href="classpcpp_1_1_kni_device.html#ab1c0ad9cc41211075af60930dc591d8e" title="Handle requests from Linux kernel synchronously in calling thread. When one of events which is needed...">handleRequests()</a> about requests. </p>
-<dl class="section warning"><dt>Warning</dt><dd>There may be a rare error when request thread handles requests on already destroyed device. It occurres only because request thread is detached one but it is really really rare. In case of this error occuring (must be SIGSEGV) change type of created thread in startRequestHandlerThread function from DETACHED to JOINABLE. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>There may be a rare error when request thread handles requests on already destroyed device. It occurres only because request thread is detached one but it is really really rare. In case of this error occurring (must be SIGSEGV) change type of created thread in startRequestHandlerThread function from DETACHED to JOINABLE. </dd></dl>
 
 </div>
 </div>
@@ -1216,7 +1216,7 @@ Generates promiscuous mode request </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_kni_device.html">KniDevice</a></li>
-    <li class="footer">Generated on Sun Jan 23 2022 09:37:00 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Mar 1 2022 08:02:26 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
