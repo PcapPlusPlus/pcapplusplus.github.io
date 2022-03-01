@@ -82,8 +82,9 @@ You an view all available switches by running `./configure-linux.sh --help` or `
 | **`--set-direction-enabled`** | set direction for capturing incoming or outgoing packets (supported on libpcap>=0.9.1)                                                             |
 | **`--install-dir`**           | set a custom installation directory. Default is `/usr/local`                                                                                       |
 | **`--libpcap-include-dir`**   | libpcap header files directory. This parameter is optional and if omitted PcapPlusPlus will look for the header files in the default include paths |
-| **`--use-zstd`**              | use [Zstd for PCAPNG streaming compression](../features#readingwriting-pcapng-files-with-compression). This parameter is optional                  |
 | **`--libpcap-lib-dir`**       | libpcap pre compiled lib directory. This parameter is optional and if omitted PcapPlusPlus will look for the lib file in the default lib paths     |
+| **`--use-zstd`**              | use [Zstd for PCAPNG streaming compression](../features#readingwriting-pcapng-files-with-compression). This parameter is optional                  |
+| **`--musl`**                  | Musl base destination platform: i.e. Alpine. This parameter is optional                                                                            |
 | **`-h`**, **`--help`**        | displays a help message and exits. No further actions are performed                                                                                |
 
 Here are a few examples:
