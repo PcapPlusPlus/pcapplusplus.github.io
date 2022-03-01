@@ -90,10 +90,6 @@ html[data-theme='dark'] .landingBtn:hover {
   }
 }
 
-img {
-  max-width: 350px;
-}
-
 /* Section */
 
 .Section {
@@ -102,6 +98,10 @@ img {
   padding-bottom: 50px;
   overflow: hidden;
   overflow-x: hidden;
+}
+
+.Section img {
+  max-width: 350px;
 }
 
 @media only screen and (max-width: 960px) {
