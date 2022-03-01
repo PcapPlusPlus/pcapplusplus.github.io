@@ -1,4 +1,7 @@
-import { useActiveVersion, useLatestVersion } from '@theme/hooks/useDocs';
+import {
+  useActiveVersion,
+  useLatestVersion
+} from '@docusaurus/plugin-content-docs/client';
 
 const repo = 'https://github.com/seladb/PcapPlusPlus';
 

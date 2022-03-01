@@ -1,5 +1,8 @@
 import React from 'react';
-import { useLatestVersion, useActiveVersion } from '@theme/hooks/useDocs';
+import {
+  useLatestVersion,
+  useActiveVersion
+} from '@docusaurus/plugin-content-docs/client';
 import ButtonLink from './ButtonLink';
 import { getReleaseURL } from './GitHubURLs';
 

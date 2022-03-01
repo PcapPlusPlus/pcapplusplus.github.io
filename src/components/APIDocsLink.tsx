@@ -1,5 +1,5 @@
 import React from 'react';
-import { useActiveVersion } from '@theme/hooks/useDocs';
+import { useActiveVersion } from '@docusaurus/plugin-content-docs/client';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 interface APIDocsLinkProps {
