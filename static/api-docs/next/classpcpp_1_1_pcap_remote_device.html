@@ -412,7 +412,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Open the device using pcap_open. Opening the device makes the connection to the remote daemon (including authentication if needed and provided). If this methods succeeds it means the connection to the remote daemon succeeded and the device is ready for use. As in <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a>, packet capturing won't start yet. For packet capturing the user should call <a class="el" href="classpcpp_1_1_pcap_live_device.html#a349b001c38b0f1e43a1691fedbd1b0cc">startCapture()</a>. This implies that calling this method is a must before calling <a class="el" href="classpcpp_1_1_pcap_live_device.html#a349b001c38b0f1e43a1691fedbd1b0cc">startCapture()</a> (otherwise <a class="el" href="classpcpp_1_1_pcap_live_device.html#a349b001c38b0f1e43a1691fedbd1b0cc">startCapture()</a> will fail with a "device not open" error). The remote deamon is asked to capture packets in promiscuous mode </p><dl class="section return"><dt>Returns</dt><dd>True if the device was opened successfully, false otherwise. When opening the device fails an error will be printed to log as well, including the WinPcap/Npcap error if exists </dd></dl>
+<p>Open the device using pcap_open. Opening the device makes the connection to the remote daemon (including authentication if needed and provided). If this methods succeeds it means the connection to the remote daemon succeeded and the device is ready for use. As in <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a>, packet capturing won't start yet. For packet capturing the user should call <a class="el" href="classpcpp_1_1_pcap_live_device.html#a349b001c38b0f1e43a1691fedbd1b0cc">startCapture()</a>. This implies that calling this method is a must before calling <a class="el" href="classpcpp_1_1_pcap_live_device.html#a349b001c38b0f1e43a1691fedbd1b0cc">startCapture()</a> (otherwise <a class="el" href="classpcpp_1_1_pcap_live_device.html#a349b001c38b0f1e43a1691fedbd1b0cc">startCapture()</a> will fail with a "device not open" error). The remote daemon is asked to capture packets in promiscuous mode </p><dl class="section return"><dt>Returns</dt><dd>True if the device was opened successfully, false otherwise. When opening the device fails an error will be printed to log as well, including the WinPcap/Npcap error if exists </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classpcpp_1_1_pcap_live_device.html#a281f2cd6062791c68ecdd82384f751f8">pcpp::PcapLiveDevice</a>.</p>
 
@@ -424,7 +424,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_pcap_remote_device.html">PcapRemoteDevice</a></li>
-    <li class="footer">Generated on Sun Jan 23 2022 09:37:00 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Mar 1 2022 08:02:26 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

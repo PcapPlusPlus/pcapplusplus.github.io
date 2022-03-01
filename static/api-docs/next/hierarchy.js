@@ -111,6 +111,7 @@ var hierarchy =
         [ "pcpp::IPv4Layer", "classpcpp_1_1_i_pv4_layer.html", null ],
         [ "pcpp::IPv6Layer", "classpcpp_1_1_i_pv6_layer.html", null ],
         [ "pcpp::MplsLayer", "classpcpp_1_1_mpls_layer.html", null ],
+        [ "pcpp::NtpLayer", "classpcpp_1_1_ntp_layer.html", null ],
         [ "pcpp::NullLoopbackLayer", "classpcpp_1_1_null_loopback_layer.html", null ],
         [ "pcpp::PacketTrailerLayer", "classpcpp_1_1_packet_trailer_layer.html", null ],
         [ "pcpp::PayloadLayer", "classpcpp_1_1_payload_layer.html", null ],

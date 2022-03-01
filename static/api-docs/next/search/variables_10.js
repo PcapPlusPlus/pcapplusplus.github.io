@@ -31,6 +31,6 @@ var searchData=
   ['rstflag',['rstFlag',['../structpcpp_1_1tcphdr.html#a36a5abf30794062f32de013b6ddf39c9',1,'pcpp::tcphdr']]],
   ['rxerroneouspackets',['rxErroneousPackets',['../structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html#aea2ad4acf3b506d68fdf608c8666942e',1,'pcpp::DpdkDevice::DpdkDeviceStats']]],
   ['rxmbufalocfailed',['rxMbufAlocFailed',['../structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html#a213f66e013a40f84cbfadae0f1232722',1,'pcpp::DpdkDevice::DpdkDeviceStats']]],
-  ['rxpacketsdropeedbyhw',['rxPacketsDropeedByHW',['../structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html#ac8aa478b40945e79f41f8186a888c17b',1,'pcpp::DpdkDevice::DpdkDeviceStats']]],
+  ['rxpacketsdroppedbyhw',['rxPacketsDroppedByHW',['../structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html#a7ddc688963120b6389b45d36924377d1',1,'pcpp::DpdkDevice::DpdkDeviceStats']]],
   ['rxstats',['rxStats',['../structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html#abfb9e3e7e4370993c9a28a67402e70a8',1,'pcpp::DpdkDevice::DpdkDeviceStats']]]
 ];
