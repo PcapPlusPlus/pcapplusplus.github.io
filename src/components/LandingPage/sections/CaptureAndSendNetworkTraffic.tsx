@@ -13,7 +13,7 @@ function CaptureAndSendNetworkTraffic(): JSX.Element {
       <TwoColumns
         columnOne={
           <TextColumn
-            title="Capture and send network traffic"
+            title="Capture and Send Network Traffic"
             content={
               <>
                 <p>

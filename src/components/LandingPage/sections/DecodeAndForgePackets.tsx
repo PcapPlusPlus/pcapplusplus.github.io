@@ -15,13 +15,17 @@ function DecodeAndForgePackets(): JSX.Element {
         reverse
         columnOne={
           <TextColumn
-            title="Decode and forge packets"
+            title="Decode and Forge Packets"
             content={
               <>
                 <p>
                   PcapPlusPlus enables decoding and forging capabilities for a
                   large variety of{' '}
-                  <a href="/docs/features#supported-network-protocols">
+                  <a
+                    href={useBaseUrl(
+                      '/docs/features#supported-network-protocols'
+                    )}
+                  >
                     network protocols
                   </a>
                 </p>

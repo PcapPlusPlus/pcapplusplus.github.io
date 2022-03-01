@@ -13,7 +13,7 @@ function PacketReassembly(): JSX.Element {
         reverse
         columnOne={
           <TextColumn
-            title="Packet reassembly"
+            title="Packet Reassembly"
             content={
               <>
                 <p>

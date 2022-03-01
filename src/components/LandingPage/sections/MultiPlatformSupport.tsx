@@ -14,7 +14,7 @@ function MultiPlatformSupport(): JSX.Element {
         reverse
         columnOne={
           <TextColumn
-            title="Multi platform support"
+            title="Multi Platform Support"
             content={
               <>
                 <p>

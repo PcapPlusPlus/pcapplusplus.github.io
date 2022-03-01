@@ -14,7 +14,7 @@ function ReadWritePackets(): JSX.Element {
       <TwoColumns
         columnOne={
           <TextColumn
-            title="Read and write packets to files"
+            title="Read and Write Packets to Files"
             content={
               <>
                 <p>
