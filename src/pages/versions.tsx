@@ -43,9 +43,7 @@ function Version() {
                   </a>
                 </td>
                 <td>
-                  <Link
-                    to={useBaseUrl(`/api-docs/${latestVersion}/index.html`)}
-                  >
+                  <Link to={useBaseUrl(`/api-docs/${latestVersion}/`)}>
                     API Documentation
                   </Link>
                 </td>
