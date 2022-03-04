@@ -42,6 +42,13 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      algolia: {
+        appId: '31QB400Q4J',
+        apiKey: 'bbfc76b67598a3116274ce4a735c143b',
+        indexName: 'pcapplusplus',
+        contextualSearch: true,
+        searchPagePath: 'search'
+      },
       navbar: {
         logo: {
           alt: 'PcapPlusPlus',
