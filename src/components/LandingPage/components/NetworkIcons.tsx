@@ -1,16 +1,16 @@
 import React from 'react';
 import styles from './Styles';
+import landingPageData from '../data/landingPageData';
 
 const NetworkIcons = () => {
 
+    const networkIconsData = landingPageData.components.networkIcons;
     return (
       <>
         <ul className={styles.DisplayNetwork}>
-          <li><span>DPDK</span></li>
-          <li><span>PF_RING</span></li>
-          <li><span>LIBPCAP</span></li>
-          <li><span>WINPCAP</span></li>
-          <li><span>NPCAP</span></li>
+          {networkIconsData.items.map(item => (
+            <li key={item}><span>{item}</span></li>
+          ))}  
         </ul>
       </>
     )

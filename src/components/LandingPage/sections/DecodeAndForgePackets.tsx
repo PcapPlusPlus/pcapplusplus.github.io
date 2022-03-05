@@ -7,9 +7,10 @@ import TextColumn from '../components/TextColumn';
 import Button from '../components/Button';
 import CodeBlock from '@theme/CodeBlock';
 import { FiChevronRight } from "react-icons/fi";
+import SimpleLink from '../components/SimpleLink';
 
 
-const DecodeAndForgePackets = (): JSX.Element  => {
+const DecodeAndForgePackets = ({title, text, link, learnMore, code}): JSX.Element  => {    
 
     return (
         <Body className={styles.Section} background="light">
@@ -17,36 +18,27 @@ const DecodeAndForgePackets = (): JSX.Element  => {
             reverse={true}
             columnOne={
             <TextColumn
-                title="Decode and forge packets"
+                title={title}
                 content={
                 <>
                     <p>
-                    PcapPlusPlus enables decoding and forging capabilities for a large variety of <a href="/docs/features#supported-network-protocols">network protocols</a>
+                        {text} 
+                        <SimpleLink 
+                            linkTo={link.linkTo} 
+                            text={link.text} 
+                        />
                     </p>
-                    <a className={styles.LearnMoreLink} href="/docs/features#packet-parsing-and-crafting">Learn More<FiChevronRight /></a>
+                    <a className={styles.LearnMoreLink} href={learnMore.linkTo}>
+                        {learnMore.text}
+                        <FiChevronRight />
+                    </a>
                 </>
                 }
             />
             }
             columnTwo={
             <CodeBlock className={clsx("language-cpp", styles.codeBlock)}>
-                {
-`// parse the raw packet into a parsed packet
-pcpp::Packet parsedPacket(&rawPacket);
-
-// check if it's an IPv4 packet
-if (parsedPacket.isPacketOfType(pcpp::IPv4)) {
-// extract source and dest IPs
-pcpp::IPv4Address srcIP = 
-    parsedPacket.getLayerOfType()->getSrcIPv4Address();
-pcpp::IPv4Address destIP = 
-    parsedPacket.getLayerOfType()->getDstIPv4Address();
-
-// print source and dest IPs
-std::cout << 
-    "Source IP is: " << srcIP << std::endl <<
-    "Dest IP is: " << destIP << std::endl;`
-                }
+                {code.text}
             </CodeBlock>
             }
         />
