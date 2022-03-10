@@ -56,7 +56,7 @@ var searchData=
   ['setmacaddressaslinklayer',['setMacAddressAsLinkLayer',['../classpcpp_1_1_sll_layer.html#aae8f13d547c763ec186679f72e597766',1,'pcpp::SllLayer']]],
   ['setmask',['setMask',['../classpcpp_1_1_i_p_filter.html#a7e47d6b236db754fe0463e8f011edd79',1,'pcpp::IPFilter']]],
   ['setmesagetype',['setMesageType',['../classpcpp_1_1_dhcp_layer.html#a573415774454bd926e3ad2b4794c251c',1,'pcpp::DhcpLayer']]],
-  ['setmessagetype',['setMessageType',['../classpcpp_1_1_dhcp_v6_layer.html#a2f530fc4fe9da7431a14217df4d6a67c',1,'pcpp::DhcpV6Layer']]],
+  ['setmessagetype',['setMessageType',['../classpcpp_1_1_dhcp_layer.html#aafd7349118c0315cf8c3752988cbbab6',1,'pcpp::DhcpLayer::setMessageType()'],['../classpcpp_1_1_dhcp_v6_layer.html#a2f530fc4fe9da7431a14217df4d6a67c',1,'pcpp::DhcpV6Layer::setMessageType()']]],
   ['setmethod',['setMethod',['../classpcpp_1_1_http_request_first_line.html#a056c5df1c6732b666b28852f68836e6e',1,'pcpp::HttpRequestFirstLine::setMethod()'],['../classpcpp_1_1_sip_request_first_line.html#a778f3461351cb87706186869f8bf19e0',1,'pcpp::SipRequestFirstLine::setMethod()']]],
   ['setminamountofdatatocopyfromkerneltoapplication',['setMinAmountOfDataToCopyFromKernelToApplication',['../classpcpp_1_1_win_pcap_live_device.html#aebff78da9d57c6ec9046de32746943bd',1,'pcpp::WinPcapLiveDevice']]],
   ['setmode',['setMode',['../classpcpp_1_1_ntp_layer.html#ac0ca1ee3bb4a91202d680e4c0e818e00',1,'pcpp::NtpLayer']]],
