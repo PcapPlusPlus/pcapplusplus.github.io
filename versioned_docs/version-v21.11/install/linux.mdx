@@ -163,3 +163,19 @@ You can change the installation directory by using the **`--install-dir`** switc
 ## Running tests
 
 PcapPlusPlus contains a set of test-cases you can run to make sure that everything works correctly on your system. [This guide](../tests) contains detailed instructions on how to run them.
+
+## Cross-compilation or build for different architectures
+
+The default architecture that is tested in the CI is `x86-64`. However it's possible to build PcapPlusPlus for other architectures such as `ARM`, `AArch64` (Arm64) or others.
+In most cases the only difference is the gcc/g++ compiler used in the build process.
+In cross-compilation the compiler may reside in a different folder and may not be the default gcc/g++ compiler installed on the machine.
+
+There is an easy way to use a different gcc/g++ compiler. Let's take an example of cross-compilation to `AArch64` where gcc/g++ resides in
+`/usr/bin/`:
+
+```shell
+seladb@seladb:/PcapPlusPlus# export CXX=/usr/bin/aarch64-linux-gnu-g++
+seladb@seladb:/PcapPlusPlus# export CC=/usr/bin/aarch64-linux-gnu-gcc
+seladb@seladb:/PcapPlusPlus# ./configure-linux.sh --default
+seladb@seladb:/PcapPlusPlus# make
+```
