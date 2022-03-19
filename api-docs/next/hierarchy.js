@@ -158,7 +158,8 @@ var hierarchy =
         [ "pcpp::IFileDevice", "classpcpp_1_1_i_file_device.html", [
           [ "pcpp::IFileReaderDevice", "classpcpp_1_1_i_file_reader_device.html", [
             [ "pcpp::PcapFileReaderDevice", "classpcpp_1_1_pcap_file_reader_device.html", null ],
-            [ "pcpp::PcapNgFileReaderDevice", "classpcpp_1_1_pcap_ng_file_reader_device.html", null ]
+            [ "pcpp::PcapNgFileReaderDevice", "classpcpp_1_1_pcap_ng_file_reader_device.html", null ],
+            [ "pcpp::SnoopFileReaderDevice", "classpcpp_1_1_snoop_file_reader_device.html", null ]
           ] ],
           [ "pcpp::IFileWriterDevice", "classpcpp_1_1_i_file_writer_device.html", [
             [ "pcpp::PcapFileWriterDevice", "classpcpp_1_1_pcap_file_writer_device.html", null ],

@@ -258,6 +258,7 @@ var searchData=
   ['slllayer',['SllLayer',['../classpcpp_1_1_sll_layer.html',1,'pcpp::SllLayer'],['../classpcpp_1_1_sll_layer.html#af684b2025e641ddebc35fb62055a5cb8',1,'pcpp::SllLayer::SllLayer(uint8_t *data, size_t dataLen, Packet *packet)'],['../classpcpp_1_1_sll_layer.html#a2841d88aee1ce41ffdb1d36ec60db7f5',1,'pcpp::SllLayer::SllLayer(uint16_t packetType, uint16_t ARPHRDType)']]],
   ['slllayer_2eh',['SllLayer.h',['../_sll_layer_8h.html',1,'']]],
   ['snapshotlength',['snapshotLength',['../structpcpp_1_1_pcap_live_device_1_1_device_configuration.html#a23b128bad65791377a5cc3ecce64805d',1,'pcpp::PcapLiveDevice::DeviceConfiguration']]],
+  ['snoopfilereaderdevice',['SnoopFileReaderDevice',['../classpcpp_1_1_snoop_file_reader_device.html',1,'pcpp::SnoopFileReaderDevice'],['../classpcpp_1_1_snoop_file_reader_device.html#ab0f91943113031c77eb76ef137c33919',1,'pcpp::SnoopFileReaderDevice::SnoopFileReaderDevice()']]],
   ['sockaddr2in6_5faddr',['sockaddr2in6_addr',['../_ip_utils_8h.html#adb11c752781ef27046c71dfc566e9cd6',1,'pcpp::internal']]],
   ['sockaddr2in_5faddr',['sockaddr2in_addr',['../_ip_utils_8h.html#a72f53de9ad280a337d0e6e10285ca44e',1,'pcpp::internal']]],
   ['sockaddr2string',['sockaddr2string',['../_ip_utils_8h.html#ac04374477bd21735d8bbc2b25de4bb59',1,'pcpp::internal']]],
