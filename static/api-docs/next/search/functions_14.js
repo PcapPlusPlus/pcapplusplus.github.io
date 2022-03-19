@@ -35,6 +35,7 @@ var searchData=
   ['_7eradiuslayer',['~RadiusLayer',['../classpcpp_1_1_radius_layer.html#a262ced9bfe44889a43874957a06dde61',1,'pcpp::RadiusLayer']]],
   ['_7erawpacket',['~RawPacket',['../classpcpp_1_1_raw_packet.html#abb8b8a3574217ab88b406cba3d2551fb',1,'pcpp::RawPacket']]],
   ['_7erawsocketdevice',['~RawSocketDevice',['../classpcpp_1_1_raw_socket_device.html#a16669eaf3e120d99ff07a07223aca9b6',1,'pcpp::RawSocketDevice']]],
+  ['_7esnoopfilereaderdevice',['~SnoopFileReaderDevice',['../classpcpp_1_1_snoop_file_reader_device.html#abf31788b68f199b337c1e923c26d7904',1,'pcpp::SnoopFileReaderDevice']]],
   ['_7etableprinter',['~TablePrinter',['../classpcpp_1_1_table_printer.html#a5005ab3050d077f8cd2496ce47a263d2',1,'pcpp::TablePrinter']]],
   ['_7etcpoption',['~TcpOption',['../classpcpp_1_1_tcp_option.html#a96cb9a2d3cdf31e208ff180981686ab3',1,'pcpp::TcpOption']]],
   ['_7etlvrecord',['~TLVRecord',['../classpcpp_1_1_t_l_v_record.html#af13172efa5e96f1bcad08b53819307a3',1,'pcpp::TLVRecord']]],
