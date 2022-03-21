@@ -33,13 +33,29 @@ This script accepts the following arguments:
 Here is an example output:
 
 ```shell
-seladb@ubunu2004:~/PcapPlusPlus$ ./configure-android.sh --ndk-path /opt/Android/Sdk/ndk/22.0.7026061 --target arm64-v8a --api 29 --libpcap-include-dir ~/libpcap-android/include --libpcap-lib-dir ~/libpcap-android/arm64-v8a/29
+seladb@ubunu2004:~/PcapPlusPlus$ ./configure-android.sh --ndk-path /opt/Android/Sdk/ndk/22.0.7026061 --target arm64-v8a --api 29 --libpcap-include-dir ~/libpcap-android/include --libpcap-lib-dir ~/libpcap-android/arm64-v8a/30
 
 ******************************************
 PcapPlusPlus Android configuration script
 ******************************************
 
-PcapPlusPlus configuration is complete. Files created (or modified): mk/platform.mk, mk/PcapPlusPlus.mk
+Build machine OS type: linux
+Build machine OS arch: x86_64
+
+Android NDK root: /opt/Android/Sdk/ndk/22.0.7026061
+Anrdoid API level: 30
+Android toolchain path: /opt/Android/Sdk/ndk/22.0.7026061/toolchains/llvm/prebuilt/linux-x86_64
+
+Target triple: aarch64-linux-android
+
+libpcap include dir: /home/seladb/libpcap-android/include
+libpcap library dir: /home/seladb/libpcap-android/arm64-v8a/30
+
+PcapPlusPlus Android configuration is complete.
+
+configurations is written to :
+    - /home/seladb/PcapPlusPlus/PcapPlusPlus/mk/platform.mk
+    - /home/seladb/PcapPlusPlus/PcapPlusPlus/mk/PcapPlusPlus.mk
 ```
 
 ## Build the code
