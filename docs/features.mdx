@@ -98,11 +98,11 @@ int main(int argc, char* argv[])
 
 ## Read and write packets from/to files
 
-Network packets can be stored in files, usually for offline analysis. [PCAP](https://wiki.wireshark.org/Development/LibpcapFileFormat) and [PCAPNG](https://github.com/pcapng/pcapng) are the two most popular file formats and both are supported in PcapPlusPlus.
+Network packets can be stored in files, usually for offline analysis. [PCAP](https://wiki.wireshark.org/Development/LibpcapFileFormat) and [PCAPNG](https://github.com/pcapng/pcapng) are the two most popular file formats and both are supported in PcapPlusPlus. In addition the [SNOOP](https://datatracker.ietf.org/doc/html/rfc1761) file format is supported for read-only.
 
 The main features include:
 
-- Read packets from PCAP/PCAPNG files
+- Read packets from PCAP/PCAPNG/SNOOP files
 - Create new PCAP/PCAPNG files and write packets to them
 - Use the [packet filtering mechanism](#packet-filtering) to read or write only packets that match the filter
 - Append packets to existing PCAP/PCAPNG files
