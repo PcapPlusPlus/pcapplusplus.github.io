@@ -143,10 +143,6 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac9e91fa6b66ced9a92d09068712ccffc"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#ac9e91fa6b66ced9a92d09068712ccffc">getPcapLibVersionInfo</a> ()</td></tr>
 <tr class="separator:ac9e91fa6b66ced9a92d09068712ccffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cc546829570cd981bfa762acd9759c8"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#a5cc546829570cd981bfa762acd9759c8">verifyFilter</a> (std::string filterAsString)</td></tr>
-<tr class="separator:a5cc546829570cd981bfa762acd9759c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae51f3909886e5fa8a35b1c6067b3c561"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#ae51f3909886e5fa8a35b1c6067b3c561">matchPacketWithFilter</a> (std::string filterAsString, <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *rawPacket)</td></tr>
-<tr class="separator:ae51f3909886e5fa8a35b1c6067b3c561"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9095bdfe0c8e79b656b2651a721a2ea2"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#a9095bdfe0c8e79b656b2651a721a2ea2">matchPacketWithFilter</a> (<a class="el" href="classpcpp_1_1_general_filter.html">GeneralFilter</a> &amp;filter, <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *rawPacket)</td></tr>
 <tr class="separator:a9095bdfe0c8e79b656b2651a721a2ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -242,52 +238,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae51f3909886e5fa8a35b1c6067b3c561"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae51f3909886e5fa8a35b1c6067b3c561">&#9670;&nbsp;</a></span>matchPacketWithFilter() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool pcpp::IPcapDevice::matchPacketWithFilter </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>filterAsString</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *&#160;</td>
-          <td class="paramname"><em>rawPacket</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Match a raw packet with a given BPF filter. Notice this method is static which means you don't need any device instance in order to perform this match </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filterAsString</td><td>The BPF filter </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rawPacket</td><td>A pointer to the raw packet to match the BPF filter with </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if raw packet matches the BPF filter or false otherwise </dd></dl>
-
-</div>
-</div>
 <a id="a9095bdfe0c8e79b656b2651a721a2ea2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9095bdfe0c8e79b656b2651a721a2ea2">&#9670;&nbsp;</a></span>matchPacketWithFilter() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9095bdfe0c8e79b656b2651a721a2ea2">&#9670;&nbsp;</a></span>matchPacketWithFilter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -367,46 +319,13 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5cc546829570cd981bfa762acd9759c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5cc546829570cd981bfa762acd9759c8">&#9670;&nbsp;</a></span>verifyFilter()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool pcpp::IPcapDevice::verifyFilter </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>filterAsString</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Verify a filter is valid </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filterAsString</td><td>The filter in Berkeley <a class="el" href="classpcpp_1_1_packet.html">Packet</a> Filter (BPF) syntax (<a href="http://biot.com/capstats/bpf.html">http://biot.com/capstats/bpf.html</a>) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the filter is valid or false otherwise </dd></dl>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_pcap_device.html">IPcapDevice</a></li>
-    <li class="footer">Generated on Tue Mar 29 2022 09:11:10 for PcapPlusPlus by
+    <li class="footer">Generated on Fri Apr 8 2022 08:22:51 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
