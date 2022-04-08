@@ -1,9 +1,5 @@
 var NAVTREEINDEX16 =
 {
-"structpcpp_1_1dnshdr.html#ac9995bbebc0af173ef829ad425e385f4":[3,0,0,24,7],
-"structpcpp_1_1dnshdr.html#accb70bf9b2e440c94820dd8e22651326":[3,0,0,24,9],
-"structpcpp_1_1dnshdr.html#adfb415bb642ceba8a9d8e826bd95830a":[3,0,0,24,10],
-"structpcpp_1_1dnshdr.html#af22351368a518e3597634f9ad6338952":[3,0,0,24,6],
 "structpcpp_1_1ether__dot3__header.html":[3,0,0,35],
 "structpcpp_1_1ether__dot3__header.html#a00ac5f8f4c15e39eb8d13b106e19c539":[3,0,0,35,1],
 "structpcpp_1_1ether__dot3__header.html#a3309dc6eaed7c3b7b6797e4615989016":[3,0,0,35,2],
