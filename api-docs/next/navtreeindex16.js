@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"structpcpp_1_1dnshdr.html#af22351368a518e3597634f9ad6338952":[3,0,0,24,6],
 "structpcpp_1_1ether__dot3__header.html":[3,0,0,35],
 "structpcpp_1_1ether__dot3__header.html#a00ac5f8f4c15e39eb8d13b106e19c539":[3,0,0,35,1],
 "structpcpp_1_1ether__dot3__header.html#a3309dc6eaed7c3b7b6797e4615989016":[3,0,0,35,2],

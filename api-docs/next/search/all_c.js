@@ -30,6 +30,7 @@ var searchData=
   ['mtu',['mtu',['../structpcpp_1_1_kni_device_1_1_kni_device_configuration.html#a367e9fa4227ef174aff1f4c9a0f85ab6',1,'pcpp::KniDevice::KniDeviceConfiguration']]],
   ['multicastaddress',['multicastAddress',['../structpcpp_1_1igmpv3__group__record.html#a7ccef33a9eb41a061d180b96b8b8c41f',1,'pcpp::igmpv3_group_record']]],
   ['multicastrangelowerbound',['MulticastRangeLowerBound',['../classpcpp_1_1_i_pv4_address.html#a0b0cb3d61241bf631cb1b5e31a08759b',1,'pcpp::IPv4Address::MulticastRangeLowerBound()'],['../classpcpp_1_1_i_pv6_address.html#a0123d8ca888a624fb835e2fbf113d2cf',1,'pcpp::IPv6Address::MulticastRangeLowerBound()']]],
+  ['multiplatformmsleep',['multiPlatformMSleep',['../namespacepcpp.html#a0ddf7aceda5ec39d4b4c01a8d98b578c',1,'pcpp']]],
   ['multiplatformsleep',['multiPlatformSleep',['../namespacepcpp.html#aeea6070ccbb359bc4f819a4fbd40130d',1,'pcpp']]],
   ['mxdata',['MxData',['../structpcpp_1_1_mx_dns_resource_data_1_1_mx_data.html',1,'pcpp::MxDnsResourceData']]],
   ['mxdnsresourcedata',['MxDnsResourceData',['../classpcpp_1_1_mx_dns_resource_data.html',1,'pcpp::MxDnsResourceData'],['../classpcpp_1_1_mx_dns_resource_data.html#aba8f26beaedf8657c8b98aed15ea539c',1,'pcpp::MxDnsResourceData::MxDnsResourceData(uint8_t *dataPtr, size_t dataLen, IDnsResource *dnsResource)'],['../classpcpp_1_1_mx_dns_resource_data.html#af6fcc472a46b26b64b89b29ede671dba',1,'pcpp::MxDnsResourceData::MxDnsResourceData(const uint16_t &amp;preference, const std::string &amp;mailExchange)']]],
