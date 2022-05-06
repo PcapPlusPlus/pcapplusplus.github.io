@@ -1,5 +1,6 @@
 var classpcpp_1_1_pcap_live_device_list =
 [
+    [ "clone", "classpcpp_1_1_pcap_live_device_list.html#a267bf60e58c2128c54802795ff69f308", null ],
     [ "getDnsServers", "classpcpp_1_1_pcap_live_device_list.html#a0835ef236e881460e7d4d5a439e12241", null ],
     [ "getPcapLiveDeviceByIp", "classpcpp_1_1_pcap_live_device_list.html#a1921e94307197c9b8f613bb35fc1a0c5", null ],
     [ "getPcapLiveDeviceByIp", "classpcpp_1_1_pcap_live_device_list.html#a1f1d12c48709db005f267a0add6e1989", null ],

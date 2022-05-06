@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">21.11</span>
+   &#160;<span id="projectnumber">22.05</span>
    </div>
   </td>
  </tr>
@@ -111,6 +111,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aadf609084e161df94c14109d42b94544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0835ef236e881460e7d4d5a439e12241"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device_list.html#a0835ef236e881460e7d4d5a439e12241">getDnsServers</a> () const</td></tr>
 <tr class="separator:a0835ef236e881460e7d4d5a439e12241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a267bf60e58c2128c54802795ff69f308"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_pcap_live_device_list.html">PcapLiveDeviceList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device_list.html#a267bf60e58c2128c54802795ff69f308">clone</a> ()</td></tr>
+<tr class="separator:a267bf60e58c2128c54802795ff69f308"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4e002ab316a892b4ea46f5294447830"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device_list.html#af4e002ab316a892b4ea46f5294447830">reset</a> ()</td></tr>
 <tr class="separator:af4e002ab316a892b4ea46f5294447830"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -120,8 +122,26 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a4db03635ca46c83d8edc9852bff07bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A singleton class that creates, stores and provides access to all <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> (on Linux) or <a class="el" href="classpcpp_1_1_win_pcap_live_device.html">WinPcapLiveDevice</a> (on Windows) instances. All live devices are initialized on startup and wrap the network interfaces installed on the machine. This class enables access to them through their IP addresses or get a vector of all of them so the user can search them in some other way </p>
+<div class="textblock"><p>A singleton class that creates, stores and provides access to all <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> (on Linux) or WinPcapLiveDevice (on Windows) instances. All live devices are initialized on startup and wrap the network interfaces installed on the machine. This class enables access to them through their IP addresses or get a vector of all of them so the user can search them in some other way </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a267bf60e58c2128c54802795ff69f308"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a267bf60e58c2128c54802795ff69f308">&#9670;&nbsp;</a></span>clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classpcpp_1_1_pcap_live_device_list.html">PcapLiveDeviceList</a>* pcpp::PcapLiveDeviceList::clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Copies the current live device list </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the cloned device list </dd></dl>
+
+</div>
+</div>
 <a id="a0835ef236e881460e7d4d5a439e12241"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0835ef236e881460e7d4d5a439e12241">&#9670;&nbsp;</a></span>getDnsServers()</h2>
 
@@ -374,7 +394,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_pcap_live_device_list.html">PcapLiveDeviceList</a></li>
-    <li class="footer">Generated on Fri Nov 12 2021 07:25:26 for PcapPlusPlus by
+    <li class="footer">Generated on Fri May 6 2022 07:19:24 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

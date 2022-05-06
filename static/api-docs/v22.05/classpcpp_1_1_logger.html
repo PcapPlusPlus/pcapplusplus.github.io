@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">21.11</span>
+   &#160;<span id="projectnumber">22.05</span>
    </div>
   </td>
  </tr>
@@ -126,8 +126,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a17c9f277314397a21d5d37e844ad29aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8463ca581c9fc026c0932ba60d78862c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_logger.html#a8463ca581c9fc026c0932ba60d78862c">logsEnabled</a> () const</td></tr>
 <tr class="separator:a8463ca581c9fc026c0932ba60d78862c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cb665bc4dd60eea6e3043abaf2fa8ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_logger.html#a5cb665bc4dd60eea6e3043abaf2fa8ef">internalPrintLogMessage</a> (<a class="el" href="classpcpp_1_1_logger.html#a28f78fb4d16392bc4ce6ec4c2b2dd651">Logger::LogLevel</a> logLevel, const char *file, const char *method, int line)</td></tr>
-<tr class="separator:a5cb665bc4dd60eea6e3043abaf2fa8ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdb4b01e91b6b550d8cce0426c0de53c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_logger.html#acdb4b01e91b6b550d8cce0426c0de53c">internalPrintLogMessage</a> (std::ostringstream *logStream, <a class="el" href="classpcpp_1_1_logger.html#a28f78fb4d16392bc4ce6ec4c2b2dd651">Logger::LogLevel</a> logLevel, const char *file, const char *method, int line)</td></tr>
+<tr class="separator:acdb4b01e91b6b550d8cce0426c0de53c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -304,8 +304,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5cb665bc4dd60eea6e3043abaf2fa8ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5cb665bc4dd60eea6e3043abaf2fa8ef">&#9670;&nbsp;</a></span>internalPrintLogMessage()</h2>
+<a id="acdb4b01e91b6b550d8cce0426c0de53c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdb4b01e91b6b550d8cce0426c0de53c">&#9670;&nbsp;</a></span>internalPrintLogMessage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -313,6 +313,12 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void pcpp::Logger::internalPrintLogMessage </td>
           <td>(</td>
+          <td class="paramtype">std::ostringstream *&#160;</td>
+          <td class="paramname"><em>logStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="classpcpp_1_1_logger.html#a28f78fb4d16392bc4ce6ec4c2b2dd651">Logger::LogLevel</a>&#160;</td>
           <td class="paramname"><em>logLevel</em>, </td>
         </tr>
@@ -602,7 +608,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_logger.html">Logger</a></li>
-    <li class="footer">Generated on Fri Nov 12 2021 07:25:26 for PcapPlusPlus by
+    <li class="footer">Generated on Fri May 6 2022 07:19:24 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

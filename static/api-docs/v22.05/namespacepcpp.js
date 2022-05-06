@@ -127,6 +127,7 @@ var namespacepcpp =
     [ "MxDnsResourceData", "classpcpp_1_1_mx_dns_resource_data.html", "classpcpp_1_1_mx_dns_resource_data" ],
     [ "NetworkUtils", "classpcpp_1_1_network_utils.html", "classpcpp_1_1_network_utils" ],
     [ "NotFilter", "classpcpp_1_1_not_filter.html", "classpcpp_1_1_not_filter" ],
+    [ "NtpLayer", "classpcpp_1_1_ntp_layer.html", "classpcpp_1_1_ntp_layer" ],
     [ "NullLoopbackLayer", "classpcpp_1_1_null_loopback_layer.html", "classpcpp_1_1_null_loopback_layer" ],
     [ "OrFilter", "classpcpp_1_1_or_filter.html", "classpcpp_1_1_or_filter" ],
     [ "Packet", "classpcpp_1_1_packet.html", "classpcpp_1_1_packet" ],
@@ -138,9 +139,6 @@ var namespacepcpp =
     [ "PcapLiveDeviceList", "classpcpp_1_1_pcap_live_device_list.html", "classpcpp_1_1_pcap_live_device_list" ],
     [ "PcapNgFileReaderDevice", "classpcpp_1_1_pcap_ng_file_reader_device.html", "classpcpp_1_1_pcap_ng_file_reader_device" ],
     [ "PcapNgFileWriterDevice", "classpcpp_1_1_pcap_ng_file_writer_device.html", "classpcpp_1_1_pcap_ng_file_writer_device" ],
-    [ "PcapRemoteAuthentication", "structpcpp_1_1_pcap_remote_authentication.html", "structpcpp_1_1_pcap_remote_authentication" ],
-    [ "PcapRemoteDevice", "classpcpp_1_1_pcap_remote_device.html", "classpcpp_1_1_pcap_remote_device" ],
-    [ "PcapRemoteDeviceList", "classpcpp_1_1_pcap_remote_device_list.html", "classpcpp_1_1_pcap_remote_device_list" ],
     [ "PfRingDevice", "classpcpp_1_1_pf_ring_device.html", "classpcpp_1_1_pf_ring_device" ],
     [ "PfRingDeviceList", "classpcpp_1_1_pf_ring_device_list.html", "classpcpp_1_1_pf_ring_device_list" ],
     [ "PointerVector", "classpcpp_1_1_pointer_vector.html", "classpcpp_1_1_pointer_vector" ],
@@ -168,6 +166,7 @@ var namespacepcpp =
     [ "SipResponseLayer", "classpcpp_1_1_sip_response_layer.html", "classpcpp_1_1_sip_response_layer" ],
     [ "sll_header", "structpcpp_1_1sll__header.html", "structpcpp_1_1sll__header" ],
     [ "SllLayer", "classpcpp_1_1_sll_layer.html", "classpcpp_1_1_sll_layer" ],
+    [ "SnoopFileReaderDevice", "classpcpp_1_1_snoop_file_reader_device.html", "classpcpp_1_1_snoop_file_reader_device" ],
     [ "SSHEncryptedMessage", "classpcpp_1_1_s_s_h_encrypted_message.html", "classpcpp_1_1_s_s_h_encrypted_message" ],
     [ "SSHHandshakeMessage", "classpcpp_1_1_s_s_h_handshake_message.html", "classpcpp_1_1_s_s_h_handshake_message" ],
     [ "SSHIdentificationMessage", "classpcpp_1_1_s_s_h_identification_message.html", "classpcpp_1_1_s_s_h_identification_message" ],
@@ -228,6 +227,5 @@ var namespacepcpp =
     [ "VlanFilter", "classpcpp_1_1_vlan_filter.html", "classpcpp_1_1_vlan_filter" ],
     [ "VlanLayer", "classpcpp_1_1_vlan_layer.html", "classpcpp_1_1_vlan_layer" ],
     [ "vxlan_header", "structpcpp_1_1vxlan__header.html", "structpcpp_1_1vxlan__header" ],
-    [ "VxlanLayer", "classpcpp_1_1_vxlan_layer.html", "classpcpp_1_1_vxlan_layer" ],
-    [ "WinPcapLiveDevice", "classpcpp_1_1_win_pcap_live_device.html", "classpcpp_1_1_win_pcap_live_device" ]
+    [ "VxlanLayer", "classpcpp_1_1_vxlan_layer.html", "classpcpp_1_1_vxlan_layer" ]
 ];

@@ -1,7 +1,6 @@
 var NAVTREE =
 [
   [ "PcapPlusPlus", "index.html", [
-    [ "<= Back to web-site", "../docs/api", null ],
     [ "API Documentation", "index.html", [
       [ "Introduction", "index.html#intro_sec", null ],
       [ "API Reference", "index.html#api_reference_sec", null ]
@@ -32,7 +31,6 @@ var NAVTREE =
       [ "File List", "files.html", "files" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
-        [ "Functions", "globals_func.html", null ],
         [ "Macros", "globals_defs.html", "globals_defs" ]
       ] ]
     ] ],
@@ -42,23 +40,23 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"../docs/api",
-"_dhcp_v6_layer_8h.html#a7ac6ea66237371473bd095e2b1465735ae80540d8fd489da888e8616977b259b0",
-"_i_pv4_layer_8h.html#a4ac8e7540b72db061b0078f1e2ca2b68afe07927ed68f096b794425d396d3cc50",
+"_arp_layer_8h.html",
+"_dhcp_v6_layer_8h.html#a7ac6ea66237371473bd095e2b1465735aed5a6a620b3f83d7eaf92b7137b7d925",
+"_i_pv4_layer_8h.html#ace8e2e21b82a8adc602f561e1e612fb0",
 "_p_p_po_e_layer_8h.html#a98fb9a511a43a52e2f8ff305cf74b61b",
-"_raw_packet_8h.html#ab3f43dd3ccd8c93acac8b67909be02beabd4be54c5a3249f89039a7aee5826ae2",
-"_sip_layer_8h.html#a4c403a32f2ff4c5947c113771a336f2b",
-"classpcpp_1_1_dhcp_option.html#a1d8b72aeaa4425947c0ef9bcc5229631",
-"classpcpp_1_1_g_r_ev0_layer.html#aa9eec34dc2e939e8b599504e9e2552a6",
-"classpcpp_1_1_i_p_address.html#a6d61f3719cb001136a622d4622c003a8",
-"classpcpp_1_1_i_pv6_t_l_v_option_header.html#a82eff0e86e6ae6ae14e13888b434be3d",
-"classpcpp_1_1_mpls_layer.html#ad36043d44c2a5c3dbb0a9809756ccbc6",
-"classpcpp_1_1_pcap_ng_file_writer_device.html#a4ad636213ad5ae9af2936c1c4ea29682",
-"classpcpp_1_1_s_s_l_cipher_suite.html#a77ec0aae4f7bfcb117b15f68b2f16b28",
-"classpcpp_1_1_sip_response_layer.html#a05536b7d8719b76e84ea4c539cb9e5b6aa1dda59992f185c1bd7ba2422abd6ec1",
-"deprecated.html",
-"structpcpp_1_1_i_pv6_routing_header_1_1ipv6__routing__header.html",
-"structpcpp_1_1iphdr.html#a9b98fc149f9d262fbdfe2e4f92595c24"
+"_raw_packet_8h.html#ab3f43dd3ccd8c93acac8b67909be02beabdf30149cb7198975339df91299d0ea5",
+"_sip_layer_8h.html#a648ca314610c0e0fb7f546302bb89978",
+"classpcpp_1_1_dhcp_option.html",
+"classpcpp_1_1_g_r_ev0_layer.html#a8ee814a5469ff981c6a2677d46ec1d89",
+"classpcpp_1_1_i_p_address.html#a694f021bb98f29127cde0e2a19f40dfc",
+"classpcpp_1_1_i_pv6_t_l_v_option_header_1_1_i_pv6_option.html#a2145e93d58855c929496a2a315a57e5a",
+"classpcpp_1_1_mx_dns_resource_data.html",
+"classpcpp_1_1_packet_trailer_layer.html#ad36eaab8c18ebb0269217d246eadd1a1",
+"classpcpp_1_1_raw_socket_device.html#a3a7822e719e2f5895b3bee1523327e08",
+"classpcpp_1_1_sip_request_layer.html",
+"classpcpp_1_1_tcp_reassembly.html#ac34344adb7d2289814841096ce971e4d",
+"structpcpp_1_1_bgp_open_message_layer_1_1bgp__open__message.html#afa2938318ec6e946765be93f19e9a15f",
+"structpcpp_1_1icmp__echo__hdr.html#aaa7c797c73f222014bcdecaca7175236"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

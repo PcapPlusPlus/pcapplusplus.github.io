@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">21.11</span>
+   &#160;<span id="projectnumber">22.05</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a86176bab7ca80b09d271d1335ad987aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Simple wrapper over Linux socket for making the information requests about NICs or making some changes in NICs setup. All possible requests are described in <a href="http://man7.org/linux/man-pages/man7/netdevice.7.html">netdevice(7)</a>. The instance of this class handels underlying socket during its lifetime and takes an appropriate actions to close socket on destruction. The user must call <a class="el" href="classpcpp_1_1_linux_nic_information_socket.html#a86176bab7ca80b09d271d1335ad987aa" title="Makes request to socket. Firstly tries to open socket if it is not opened. Then makes an ioctl(2) req...">LinuxNicInformationSocket::makeRequest</a> method with known ioctl type and properly filled ifreq structure for this ioctl type. Filling of ifr_name may be omitted as it will be done automatically from provided NIC name. </p><dl class="section note"><dt>Note</dt><dd>Usage of this class requires the inclusion of &lt;sys/ioctl.h&gt; and &lt;net/if.h&gt; Linux headers </dd></dl>
+<div class="textblock"><p>Simple wrapper over Linux socket for making the information requests about NICs or making some changes in NICs setup. All possible requests are described in <a href="http://man7.org/linux/man-pages/man7/netdevice.7.html">netdevice(7)</a>. The instance of this class handles underlying socket during its lifetime and takes an appropriate actions to close socket on destruction. The user must call <a class="el" href="classpcpp_1_1_linux_nic_information_socket.html#a86176bab7ca80b09d271d1335ad987aa" title="Makes request to socket. Firstly tries to open socket if it is not opened. Then makes an ioctl(2) req...">LinuxNicInformationSocket::makeRequest</a> method with known ioctl type and properly filled ifreq structure for this ioctl type. Filling of ifr_name may be omitted as it will be done automatically from provided NIC name. </p><dl class="section note"><dt>Note</dt><dd>Usage of this class requires the inclusion of &lt;sys/ioctl.h&gt; and &lt;net/if.h&gt; Linux headers </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aaa9b5d6420de52d330e43a65663c523d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaa9b5d6420de52d330e43a65663c523d">&#9670;&nbsp;</a></span>IoctlType</h2>
@@ -234,7 +234,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_linux_nic_information_socket.html">LinuxNicInformationSocket</a></li>
-    <li class="footer">Generated on Fri Nov 12 2021 07:25:26 for PcapPlusPlus by
+    <li class="footer">Generated on Fri May 6 2022 07:19:24 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

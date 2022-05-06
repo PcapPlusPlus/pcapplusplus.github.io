@@ -13,6 +13,7 @@ var classpcpp_1_1_s_s_l_client_hello_message =
     [ "getExtensionOfType", "classpcpp_1_1_s_s_l_client_hello_message.html#a177e655f17ab866e9130f40cc695ee40", null ],
     [ "getExtensionOfType", "classpcpp_1_1_s_s_l_client_hello_message.html#a2d7b47cab71369351252b633a134a7d6", null ],
     [ "getExtensionOfType", "classpcpp_1_1_s_s_l_client_hello_message.html#a5fe109ce501147304fb704e4d9496012", null ],
+    [ "getExtensionsLength", "classpcpp_1_1_s_s_l_client_hello_message.html#a1306ce8fb9d5e7009c1a5a8ab91cc63e", null ],
     [ "getExtensionsLenth", "classpcpp_1_1_s_s_l_client_hello_message.html#a638b31b947ab4d2a565c978f1fa66d69", null ],
     [ "getHandshakeVersion", "classpcpp_1_1_s_s_l_client_hello_message.html#af5f4d9f80f81d819a4f0e41d80598cf3", null ],
     [ "getSessionID", "classpcpp_1_1_s_s_l_client_hello_message.html#a9aac61a2ed89ec4b40d84bbd3e06e3f5", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">21.11</span>
+   &#160;<span id="projectnumber">22.05</span>
    </div>
   </td>
  </tr>
@@ -484,7 +484,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Detach a layer from the packet. Detaching means the layer instance will not be deleted, but rather seperated from the packet - e.g it will be removed from the layer chain of the packet and its data will be copied from the packet buffer into an internal layer buffer. After a layer is detached, it can be added into another packet (but it's impossible to attach a layer to multiple packets in the same time). After layer is detached, it's the user's responsibility to delete it when it's not needed anymore </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Detach a layer from the packet. Detaching means the layer instance will not be deleted, but rather separated from the packet - e.g it will be removed from the layer chain of the packet and its data will be copied from the packet buffer into an internal layer buffer. After a layer is detached, it can be added into another packet (but it's impossible to attach a layer to multiple packets in the same time). After layer is detached, it's the user's responsibility to delete it when it's not needed anymore </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">layerType</td><td>The layer type (protocol) to detach from the packet </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>If there are multiple layers of the same type, indicate which instance to detach. The default value is 0, meaning detach the first layer of this type </td></tr>
@@ -518,7 +518,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Detach a layer from the packet. Detaching means the layer instance will not be deleted, but rather seperated from the packet - e.g it will be removed from the layer chain of the packet and its data will be copied from the packet buffer into an internal layer buffer. After a layer is detached, it can be added into another packet (but it's impossible to attach a layer to multiple packets at the same time). After layer is detached, it's the user's responsibility to delete it when it's not needed anymore </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Detach a layer from the packet. Detaching means the layer instance will not be deleted, but rather separated from the packet - e.g it will be removed from the layer chain of the packet and its data will be copied from the packet buffer into an internal layer buffer. After a layer is detached, it can be added into another packet (but it's impossible to attach a layer to multiple packets at the same time). After layer is detached, it's the user's responsibility to delete it when it's not needed anymore </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">layer</td><td>A pointer to the layer to detach </td></tr>
   </table>
@@ -635,7 +635,7 @@ template&lt;class TLayer &gt; </div>
 </div><div class="memdoc">
 <p>A templated method to get a layer of a certain type (protocol). If no layer of such type is found, NULL is returned </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">reverseOrder</td><td>The optional paramter that indicates that the lookup should run in reverse order, the default value is false </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reverseOrder</td><td>The optional parameter that indicates that the lookup should run in reverse order, the default value is false </td></tr>
   </table>
   </dd>
 </dl>
@@ -1061,7 +1061,7 @@ template&lt;class TLayer &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_packet.html">Packet</a></li>
-    <li class="footer">Generated on Fri Nov 12 2021 07:25:26 for PcapPlusPlus by
+    <li class="footer">Generated on Fri May 6 2022 07:19:24 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

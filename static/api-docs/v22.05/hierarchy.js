@@ -111,6 +111,7 @@ var hierarchy =
         [ "pcpp::IPv4Layer", "classpcpp_1_1_i_pv4_layer.html", null ],
         [ "pcpp::IPv6Layer", "classpcpp_1_1_i_pv6_layer.html", null ],
         [ "pcpp::MplsLayer", "classpcpp_1_1_mpls_layer.html", null ],
+        [ "pcpp::NtpLayer", "classpcpp_1_1_ntp_layer.html", null ],
         [ "pcpp::NullLoopbackLayer", "classpcpp_1_1_null_loopback_layer.html", null ],
         [ "pcpp::PacketTrailerLayer", "classpcpp_1_1_packet_trailer_layer.html", null ],
         [ "pcpp::PayloadLayer", "classpcpp_1_1_payload_layer.html", null ],
@@ -157,17 +158,15 @@ var hierarchy =
         [ "pcpp::IFileDevice", "classpcpp_1_1_i_file_device.html", [
           [ "pcpp::IFileReaderDevice", "classpcpp_1_1_i_file_reader_device.html", [
             [ "pcpp::PcapFileReaderDevice", "classpcpp_1_1_pcap_file_reader_device.html", null ],
-            [ "pcpp::PcapNgFileReaderDevice", "classpcpp_1_1_pcap_ng_file_reader_device.html", null ]
+            [ "pcpp::PcapNgFileReaderDevice", "classpcpp_1_1_pcap_ng_file_reader_device.html", null ],
+            [ "pcpp::SnoopFileReaderDevice", "classpcpp_1_1_snoop_file_reader_device.html", null ]
           ] ],
           [ "pcpp::IFileWriterDevice", "classpcpp_1_1_i_file_writer_device.html", [
             [ "pcpp::PcapFileWriterDevice", "classpcpp_1_1_pcap_file_writer_device.html", null ],
             [ "pcpp::PcapNgFileWriterDevice", "classpcpp_1_1_pcap_ng_file_writer_device.html", null ]
           ] ]
         ] ],
-        [ "pcpp::PcapLiveDevice", "classpcpp_1_1_pcap_live_device.html", [
-          [ "pcpp::PcapRemoteDevice", "classpcpp_1_1_pcap_remote_device.html", null ],
-          [ "pcpp::WinPcapLiveDevice", "classpcpp_1_1_win_pcap_live_device.html", null ]
-        ] ]
+        [ "pcpp::PcapLiveDevice", "classpcpp_1_1_pcap_live_device.html", null ]
       ] ],
       [ "pcpp::KniDevice", "classpcpp_1_1_kni_device.html", null ],
       [ "pcpp::PfRingDevice", "classpcpp_1_1_pf_ring_device.html", null ],
@@ -237,8 +236,6 @@ var hierarchy =
     ] ],
     [ "pcpp::BgpUpdateMessageLayer::path_attribute", "structpcpp_1_1_bgp_update_message_layer_1_1path__attribute.html", null ],
     [ "pcpp::PcapLiveDeviceList", "classpcpp_1_1_pcap_live_device_list.html", null ],
-    [ "pcpp::PcapRemoteAuthentication", "structpcpp_1_1_pcap_remote_authentication.html", null ],
-    [ "pcpp::PcapRemoteDeviceList", "classpcpp_1_1_pcap_remote_device_list.html", null ],
     [ "pcpp::IPcapDevice::PcapStats", "structpcpp_1_1_i_pcap_device_1_1_pcap_stats.html", null ],
     [ "pcpp::PfRingDeviceList", "classpcpp_1_1_pf_ring_device_list.html", null ],
     [ "pcpp::PfRingDevice::PfRingStats", "structpcpp_1_1_pf_ring_device_1_1_pf_ring_stats.html", null ],

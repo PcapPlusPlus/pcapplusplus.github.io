@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">21.11</span>
+   &#160;<span id="projectnumber">22.05</span>
    </div>
   </td>
  </tr>
@@ -90,9 +90,6 @@ $(document).ready(function(){initNavTree('_ip_utils_8h.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &lt;netinet/in.h&gt;</code><br />
-<code>#include &lt;arpa/inet.h&gt;</code><br />
-<code>#include &lt;ws2tcpip.h&gt;</code><br />
 </div>
 <p><a href="_ip_utils_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -104,10 +101,6 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2a4b830a00870799ee852d4c6a72a1eb"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ip_utils_8h.html#a2a4b830a00870799ee852d4c6a72a1eb">inet_ntop</a> (int af, const void *src, char *dst, size_t size)</td></tr>
-<tr class="separator:a2a4b830a00870799ee852d4c6a72a1eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdce1d46efd09e8485a2f682b388ebc0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ip_utils_8h.html#acdce1d46efd09e8485a2f682b388ebc0">inet_pton</a> (int af, const char *src, void *dst)</td></tr>
-<tr class="separator:acdce1d46efd09e8485a2f682b388ebc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72f53de9ad280a337d0e6e10285ca44e"><td class="memItemLeft" align="right" valign="top">in_addr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ip_utils_8h.html#a72f53de9ad280a337d0e6e10285ca44e">pcpp::internal::sockaddr2in_addr</a> (struct sockaddr *sa)</td></tr>
 <tr class="separator:a72f53de9ad280a337d0e6e10285ca44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb11c752781ef27046c71dfc566e9cd6"><td class="memItemLeft" align="right" valign="top">in6_addr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ip_utils_8h.html#adb11c752781ef27046c71dfc566e9cd6">pcpp::internal::sockaddr2in6_addr</a> (struct sockaddr *sa)</td></tr>
@@ -140,99 +133,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Address in 32bit format </dd></dl>
-
-</div>
-</div>
-<a id="a2a4b830a00870799ee852d4c6a72a1eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a4b830a00870799ee852d4c6a72a1eb">&#9670;&nbsp;</a></span>inet_ntop()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* inet_ntop </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>af</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>dst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Convert a network format address to presentation format. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">af</td><td>Address family, can be either AF_INET (IPv4) or AF_INET6 (IPv6) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>Network address structure, can be either in_addr (IPv4) or in6_addr (IPv6) </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">dst</td><td>Network address string representation </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>'dst' Maximum size </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>pointer to presentation format address ('dst'), or NULL (see errno). </dd></dl>
-
-</div>
-</div>
-<a id="acdce1d46efd09e8485a2f682b388ebc0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdce1d46efd09e8485a2f682b388ebc0">&#9670;&nbsp;</a></span>inet_pton()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int inet_pton </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>af</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>dst</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Convert from presentation format (which usually means ASCII printable) to network format (which is usually some kind of binary format). </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">af</td><td>Address family, can be either AF_INET (IPv4) or AF_INET6 (IPv6) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>Network address string representation </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">dst</td><td>Network address structure result, can be either in_addr (IPv4) or in6_addr (IPv6) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>1 if the address was valid for the specified address family; 0 if the address wasn't valid ('dst' is untouched in this case); -1 if some other error occurred ('dst' is untouched in this case, too) </dd></dl>
 
 </div>
 </div>
@@ -326,8 +226,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="_ip_utils_8h.html">IpUtils.h</a></li>
-    <li class="footer">Generated on Fri Nov 12 2021 07:25:25 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_248dc7cedc1ea0c288f821d4f2f68d94.html">Dist</a></li><li class="navelem"><a class="el" href="dir_cd3f7d828bf98b23ca573d19c6139c8f.html">header</a></li><li class="navelem"><a class="el" href="_ip_utils_8h.html">IpUtils.h</a></li>
+    <li class="footer">Generated on Fri May 6 2022 07:19:23 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

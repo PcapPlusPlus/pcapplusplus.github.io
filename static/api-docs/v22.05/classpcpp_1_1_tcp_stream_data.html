@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">21.11</span>
+   &#160;<span id="projectnumber">22.05</span>
    </div>
   </td>
  </tr>
@@ -94,8 +94,8 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_tcp_stream_data.html',''
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a41cf75a9f7b8d58b247d440b5d1fecbd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_stream_data.html#a41cf75a9f7b8d58b247d440b5d1fecbd">TcpStreamData</a> (const uint8_t *tcpData, size_t tcpDataLength, size_t missingBytes, const <a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a> &amp;connData)</td></tr>
-<tr class="separator:a41cf75a9f7b8d58b247d440b5d1fecbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a750615a1baec3dad2b98d3b42b683a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_stream_data.html#a0a750615a1baec3dad2b98d3b42b683a">TcpStreamData</a> (const uint8_t *tcpData, size_t tcpDataLength, size_t missingBytes, const <a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a> &amp;connData, timeval timestamp)</td></tr>
+<tr class="separator:a0a750615a1baec3dad2b98d3b42b683a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab39688bc764ebc72178a1f067092571b"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_stream_data.html#ab39688bc764ebc72178a1f067092571b">getData</a> () const</td></tr>
 <tr class="separator:ab39688bc764ebc72178a1f067092571b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62c25f857008495fda229c527c166088"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_stream_data.html#a62c25f857008495fda229c527c166088">getDataLength</a> () const</td></tr>
@@ -106,12 +106,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a567ca976c823ede7df4726ce13159b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9cdd59044104a51a11271a9225cb88c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_stream_data.html#ab9cdd59044104a51a11271a9225cb88c">getConnectionData</a> () const</td></tr>
 <tr class="separator:ab9cdd59044104a51a11271a9225cb88c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b05910d96860d0b4f6a29223d576e89"><td class="memItemLeft" align="right" valign="top">timeval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_stream_data.html#a6b05910d96860d0b4f6a29223d576e89">getTimeStamp</a> () const</td></tr>
+<tr class="separator:a6b05910d96860d0b4f6a29223d576e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>When following a TCP connection each packet may contain a piece of the data transferred between the client and the server. This class represents these pieces: each instance of it contains a piece of data, usually extracted from a single packet, as well as information about the connection </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a41cf75a9f7b8d58b247d440b5d1fecbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41cf75a9f7b8d58b247d440b5d1fecbd">&#9670;&nbsp;</a></span>TcpStreamData()</h2>
+<a id="a0a750615a1baec3dad2b98d3b42b683a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a750615a1baec3dad2b98d3b42b683a">&#9670;&nbsp;</a></span>TcpStreamData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,7 +143,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a> &amp;&#160;</td>
-          <td class="paramname"><em>connData</em>&#160;</td>
+          <td class="paramname"><em>connData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">timeval&#160;</td>
+          <td class="paramname"><em>timestamp</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -161,6 +169,7 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">tcpDataLength</td><td>The length of the buffer </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">missingBytes</td><td>The number of missing bytes due to packet loss. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">connData</td><td>TCP connection information for this TCP data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timestamp</td><td>when this packet was received </td></tr>
   </table>
   </dd>
 </dl>
@@ -272,6 +281,32 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a6b05910d96860d0b4f6a29223d576e89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b05910d96860d0b4f6a29223d576e89">&#9670;&nbsp;</a></span>getTimeStamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">timeval pcpp::TcpStreamData::getTimeStamp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A getter for the timestamp of this packet </p><dl class="section return"><dt>Returns</dt><dd>The const timeval object with timestamp of this packet </dd></dl>
+
+</div>
+</div>
 <a id="a567ca976c823ede7df4726ce13159b96"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a567ca976c823ede7df4726ce13159b96">&#9670;&nbsp;</a></span>isBytesMissing()</h2>
 
@@ -304,7 +339,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_tcp_stream_data.html">TcpStreamData</a></li>
-    <li class="footer">Generated on Fri Nov 12 2021 07:25:26 for PcapPlusPlus by
+    <li class="footer">Generated on Fri May 6 2022 07:19:24 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

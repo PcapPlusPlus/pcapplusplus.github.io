@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">21.11</span>
+   &#160;<span id="projectnumber">22.05</span>
    </div>
   </td>
  </tr>
@@ -129,6 +129,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a380e5f7292ffbc80d04cac858e112bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40c37d0af369c0aada084ab7dbe3c612"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_server_hello_message.html#a40c37d0af369c0aada084ab7dbe3c612">getExtensionsLenth</a> () const</td></tr>
 <tr class="separator:a40c37d0af369c0aada084ab7dbe3c612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04b4f5fd32b71b23999bff9dd60369d9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_server_hello_message.html#a04b4f5fd32b71b23999bff9dd60369d9">getExtensionsLength</a> () const</td></tr>
+<tr class="separator:a04b4f5fd32b71b23999bff9dd60369d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a882d79b1d28ec952287fae873cb3d2bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_s_s_l_extension.html">SSLExtension</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_server_hello_message.html#a882d79b1d28ec952287fae873cb3d2bc">getExtension</a> (int index) const</td></tr>
 <tr class="separator:a882d79b1d28ec952287fae873cb3d2bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0475132b738578af6d6fd33a26238b93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_s_s_l_extension.html">SSLExtension</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_server_hello_message.html#a0475132b738578af6d6fd33a26238b93">getExtensionOfType</a> (uint16_t type) const</td></tr>
@@ -157,6 +159,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_classpcpp_1_1_s_s_l_handshake_message"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classpcpp_1_1_s_s_l_handshake_message')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classpcpp_1_1_s_s_l_handshake_message.html">pcpp::SSLHandshakeMessage</a></td></tr>
 <tr class="memitem:af306660713051f8884713621bbb5bb18 inherit pub_static_methods_classpcpp_1_1_s_s_l_handshake_message"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classpcpp_1_1_s_s_l_handshake_message.html">SSLHandshakeMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_handshake_message.html#af306660713051f8884713621bbb5bb18">createHandhakeMessage</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_s_s_l_handshake_layer.html">SSLHandshakeLayer</a> *container)</td></tr>
 <tr class="separator:af306660713051f8884713621bbb5bb18 inherit pub_static_methods_classpcpp_1_1_s_s_l_handshake_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a022d9e50d583cd620bc5756174122174 inherit pub_static_methods_classpcpp_1_1_s_s_l_handshake_message"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classpcpp_1_1_s_s_l_handshake_message.html">SSLHandshakeMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_handshake_message.html#a022d9e50d583cd620bc5756174122174">createHandshakeMessage</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_s_s_l_handshake_layer.html">SSLHandshakeLayer</a> *container)</td></tr>
+<tr class="separator:a022d9e50d583cd620bc5756174122174 inherit pub_static_methods_classpcpp_1_1_s_s_l_handshake_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents SSL/TLS server-hello message (type 2). Inherits from <a class="el" href="classpcpp_1_1_s_s_l_handshake_message.html">SSLHandshakeMessage</a> and adds parsing of all fields of this message including the message extensions, cipher-suite, etc. </p>
@@ -192,7 +196,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>C'tor for this class. Currently only in use in <a class="el" href="classpcpp_1_1_s_s_l_handshake_message.html#af306660713051f8884713621bbb5bb18">SSLHandshakeMessage::createHandhakeMessage()</a> and shouldn't be used by a user </p><dl class="params"><dt>Parameters</dt><dd>
+<p>C'tor for this class. Currently only in use in <a class="el" href="classpcpp_1_1_s_s_l_handshake_message.html#a022d9e50d583cd620bc5756174122174">SSLHandshakeMessage::createHandshakeMessage()</a> and shouldn't be used by a user </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The message as raw data </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Message raw data length in bytes </td></tr>
@@ -218,7 +222,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>ServerHello TLS fingerprinting is a way to fingerprint TLS Server Hello messages. In conjuction with ClientHello TLS fingerprinting it can assist in identifying specific client-server communication (for example: a malware connecting to its backend server). ServerHello TLS fingerprinting was introduced in Salesforce's JA3S open source project: <a href="https://engineering.salesforce.com/tls-fingerprinting-with-ja3-and-ja3s-247362855967">https://engineering.salesforce.com/tls-fingerprinting-with-ja3-and-ja3s-247362855967</a> This implementation is a C++ version of Salesforce's JAS3 (originally written in Python and Zeek) </p><dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="structpcpp_1_1_s_s_l_server_hello_message_1_1_server_hello_t_l_s_fingerprint.html">SSLServerHelloMessage::ServerHelloTLSFingerprint</a> struct that contains all the elements needed for creating a TLS fingerprint out of this Server Hello message. This struct has also methods to extract the TLS fingerprint itself in a string or MD5 formats </dd></dl>
+<p>ServerHello TLS fingerprinting is a way to fingerprint TLS Server Hello messages. In conjunction with ClientHello TLS fingerprinting it can assist in identifying specific client-server communication (for example: a malware connecting to its backend server). ServerHello TLS fingerprinting was introduced in Salesforce's JA3S open source project: <a href="https://engineering.salesforce.com/tls-fingerprinting-with-ja3-and-ja3s-247362855967">https://engineering.salesforce.com/tls-fingerprinting-with-ja3-and-ja3s-247362855967</a> This implementation is a C++ version of Salesforce's JAS3 (originally written in Python and Zeek) </p><dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="structpcpp_1_1_s_s_l_server_hello_message_1_1_server_hello_t_l_s_fingerprint.html">SSLServerHelloMessage::ServerHelloTLSFingerprint</a> struct that contains all the elements needed for creating a TLS fingerprint out of this Server Hello message. This struct has also methods to extract the TLS fingerprint itself in a string or MD5 formats </dd></dl>
 
 </div>
 </div>
@@ -396,11 +400,32 @@ template&lt;class TExtension &gt; </div>
 
 </div>
 </div>
+<a id="a04b4f5fd32b71b23999bff9dd60369d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04b4f5fd32b71b23999bff9dd60369d9">&#9670;&nbsp;</a></span>getExtensionsLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::SSLServerHelloMessage::getExtensionsLength </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The size (in bytes) of all extensions data in this message. Extracted from the "extensions length" field </dd></dl>
+
+</div>
+</div>
 <a id="a40c37d0af369c0aada084ab7dbe3c612"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a40c37d0af369c0aada084ab7dbe3c612">&#9670;&nbsp;</a></span>getExtensionsLenth()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">uint16_t pcpp::SSLServerHelloMessage::getExtensionsLenth </td>
@@ -409,8 +434,13 @@ template&lt;class TExtension &gt; </div>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The size (in bytes) of all extensions data in this message. Extracted from the "extensions length" field </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>Deprecated due to typo. Please use getExtensionLength() </dd></dl>
 
 </div>
 </div>
@@ -429,7 +459,7 @@ template&lt;class TExtension &gt; </div>
       </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Handshake SSL/TLS version (notice it may be different than <a class="el" href="classpcpp_1_1_s_s_l_layer.html#a09e0da49925459ddcb6b4912e85838de">SSLLayer::getRecordVersion()</a>. Each client-hello or server-hello message has both record version and handshake version and they may differ from one another).</dd></dl>
-<p><b>NOTE:</b> for TLS 1.3 the hanshake version written in <a class="el" href="structpcpp_1_1ssl__tls__client__server__hello.html#aa7f3e7a1886a78bf528650958c167d72">ssl_tls_client_server_hello::handshakeVersion</a> is still TLS 1.2, so a special check is made here see if a SupportedVersions extension exists and if so extract the version from it. This is the most straight-forward way to detect TLS 1.3. </p>
+<p><b>NOTE:</b> for TLS 1.3 the handshake version written in <a class="el" href="structpcpp_1_1ssl__tls__client__server__hello.html#aa7f3e7a1886a78bf528650958c167d72">ssl_tls_client_server_hello::handshakeVersion</a> is still TLS 1.2, so a special check is made here see if a SupportedVersions extension exists and if so extract the version from it. This is the most straight-forward way to detect TLS 1.3. </p>
 
 </div>
 </div>
@@ -529,7 +559,7 @@ template&lt;class TExtension &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_s_s_l_server_hello_message.html">SSLServerHelloMessage</a></li>
-    <li class="footer">Generated on Fri Nov 12 2021 07:25:26 for PcapPlusPlus by
+    <li class="footer">Generated on Fri May 6 2022 07:19:24 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

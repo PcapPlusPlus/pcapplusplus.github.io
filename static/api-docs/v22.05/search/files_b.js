@@ -10,8 +10,6 @@ var searchData=
   ['pcaplivedevice_2eh',['PcapLiveDevice.h',['../_pcap_live_device_8h.html',1,'']]],
   ['pcaplivedevicelist_2eh',['PcapLiveDeviceList.h',['../_pcap_live_device_list_8h.html',1,'']]],
   ['pcapplusplusversion_2eh',['PcapPlusPlusVersion.h',['../_pcap_plus_plus_version_8h.html',1,'']]],
-  ['pcapremotedevice_2eh',['PcapRemoteDevice.h',['../_pcap_remote_device_8h.html',1,'']]],
-  ['pcapremotedevicelist_2eh',['PcapRemoteDeviceList.h',['../_pcap_remote_device_list_8h.html',1,'']]],
   ['pfringdevice_2eh',['PfRingDevice.h',['../_pf_ring_device_8h.html',1,'']]],
   ['pfringdevicelist_2eh',['PfRingDeviceList.h',['../_pf_ring_device_list_8h.html',1,'']]],
   ['pointervector_2eh',['PointerVector.h',['../_pointer_vector_8h.html',1,'']]],

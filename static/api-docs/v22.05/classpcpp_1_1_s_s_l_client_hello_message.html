@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">21.11</span>
+   &#160;<span id="projectnumber">22.05</span>
    </div>
   </td>
  </tr>
@@ -131,6 +131,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aeadd0d297b58f2c799cd33ba4fc952e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a638b31b947ab4d2a565c978f1fa66d69"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_client_hello_message.html#a638b31b947ab4d2a565c978f1fa66d69">getExtensionsLenth</a> () const</td></tr>
 <tr class="separator:a638b31b947ab4d2a565c978f1fa66d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1306ce8fb9d5e7009c1a5a8ab91cc63e"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_client_hello_message.html#a1306ce8fb9d5e7009c1a5a8ab91cc63e">getExtensionsLength</a> () const</td></tr>
+<tr class="separator:a1306ce8fb9d5e7009c1a5a8ab91cc63e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add21f3f197fa7aac1fab20bca7d209fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_s_s_l_extension.html">SSLExtension</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_client_hello_message.html#add21f3f197fa7aac1fab20bca7d209fd">getExtension</a> (int index) const</td></tr>
 <tr class="separator:add21f3f197fa7aac1fab20bca7d209fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a177e655f17ab866e9130f40cc695ee40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_s_s_l_extension.html">SSLExtension</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_client_hello_message.html#a177e655f17ab866e9130f40cc695ee40">getExtensionOfType</a> (uint16_t type) const</td></tr>
@@ -159,6 +161,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_classpcpp_1_1_s_s_l_handshake_message"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classpcpp_1_1_s_s_l_handshake_message')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classpcpp_1_1_s_s_l_handshake_message.html">pcpp::SSLHandshakeMessage</a></td></tr>
 <tr class="memitem:af306660713051f8884713621bbb5bb18 inherit pub_static_methods_classpcpp_1_1_s_s_l_handshake_message"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classpcpp_1_1_s_s_l_handshake_message.html">SSLHandshakeMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_handshake_message.html#af306660713051f8884713621bbb5bb18">createHandhakeMessage</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_s_s_l_handshake_layer.html">SSLHandshakeLayer</a> *container)</td></tr>
 <tr class="separator:af306660713051f8884713621bbb5bb18 inherit pub_static_methods_classpcpp_1_1_s_s_l_handshake_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a022d9e50d583cd620bc5756174122174 inherit pub_static_methods_classpcpp_1_1_s_s_l_handshake_message"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classpcpp_1_1_s_s_l_handshake_message.html">SSLHandshakeMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_handshake_message.html#a022d9e50d583cd620bc5756174122174">createHandshakeMessage</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_s_s_l_handshake_layer.html">SSLHandshakeLayer</a> *container)</td></tr>
+<tr class="separator:a022d9e50d583cd620bc5756174122174 inherit pub_static_methods_classpcpp_1_1_s_s_l_handshake_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a client-hello message (type 1). Inherits from <a class="el" href="classpcpp_1_1_s_s_l_handshake_message.html">SSLHandshakeMessage</a> and adds parsing of all fields of this message including the message extensions, cipher-suite list, etc. </p>
@@ -194,7 +198,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>C'tor for this class. Currently only in use in <a class="el" href="classpcpp_1_1_s_s_l_handshake_message.html#af306660713051f8884713621bbb5bb18">SSLHandshakeMessage::createHandhakeMessage()</a> and shouldn't be used by a user </p><dl class="params"><dt>Parameters</dt><dd>
+<p>C'tor for this class. Currently only in use in <a class="el" href="classpcpp_1_1_s_s_l_handshake_message.html#a022d9e50d583cd620bc5756174122174">SSLHandshakeMessage::createHandshakeMessage()</a> and shouldn't be used by a user </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The message as raw data </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Message raw data length in bytes </td></tr>
@@ -460,11 +464,32 @@ template&lt;class TExtension &gt; </div>
 
 </div>
 </div>
+<a id="a1306ce8fb9d5e7009c1a5a8ab91cc63e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1306ce8fb9d5e7009c1a5a8ab91cc63e">&#9670;&nbsp;</a></span>getExtensionsLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t pcpp::SSLClientHelloMessage::getExtensionsLength </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The size (in bytes) of all extensions data in this message. Extracted from the "extensions length" field </dd></dl>
+
+</div>
+</div>
 <a id="a638b31b947ab4d2a565c978f1fa66d69"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a638b31b947ab4d2a565c978f1fa66d69">&#9670;&nbsp;</a></span>getExtensionsLenth()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">uint16_t pcpp::SSLClientHelloMessage::getExtensionsLenth </td>
@@ -473,8 +498,13 @@ template&lt;class TExtension &gt; </div>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The size (in bytes) of all extensions data in this message. Extracted from the "extensions length" field </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>Deprecated due to typo. Please use <a class="el" href="classpcpp_1_1_s_s_l_client_hello_message.html#a1306ce8fb9d5e7009c1a5a8ab91cc63e">getExtensionsLength()</a> </dd></dl>
 
 </div>
 </div>
@@ -566,7 +596,7 @@ template&lt;class TExtension &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_s_s_l_client_hello_message.html">SSLClientHelloMessage</a></li>
-    <li class="footer">Generated on Fri Nov 12 2021 07:25:26 for PcapPlusPlus by
+    <li class="footer">Generated on Fri May 6 2022 07:19:24 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

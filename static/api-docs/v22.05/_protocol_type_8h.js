@@ -39,6 +39,7 @@ var _protocol_type_8h =
     [ "IPv4", "_protocol_type_8h.html#aa465f388784082dafaf5dce0b9f67817", null ],
     [ "IPv6", "_protocol_type_8h.html#aab30bccb509b8fcf2fea7d4db3b46046", null ],
     [ "MPLS", "_protocol_type_8h.html#a2f69fdca66dec264f99da6e3de96345c", null ],
+    [ "NTP", "_protocol_type_8h.html#a42aeacd48824aad0f3c672df53b4f3dd", null ],
     [ "NULL_LOOPBACK", "_protocol_type_8h.html#a795c8790ae95646b61d01d40ac0919c3", null ],
     [ "PacketTrailer", "_protocol_type_8h.html#a4f7295d39043c96760995e2f08c06389", null ],
     [ "PPP_PPTP", "_protocol_type_8h.html#a5c44d3da15807781b9fd46228f09610d", null ],

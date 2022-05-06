@@ -14,6 +14,7 @@ var classpcpp_1_1_dhcp_layer =
     [ "getGatewayIpAddress", "classpcpp_1_1_dhcp_layer.html#aaaf8c69df5bcf0c4464040a9d6d95207", null ],
     [ "getHeaderLen", "classpcpp_1_1_dhcp_layer.html#a3cb5b5253ee1272d9e7a749554323bb9", null ],
     [ "getMesageType", "classpcpp_1_1_dhcp_layer.html#a534b9267a978f64f7543f5f535370499", null ],
+    [ "getMessageType", "classpcpp_1_1_dhcp_layer.html#afac10c7aab61178a7af30e4e6331fbea", null ],
     [ "getNextOptionData", "classpcpp_1_1_dhcp_layer.html#a98999e0c9fd8599f66cc0a8f07fdaf50", null ],
     [ "getOpCode", "classpcpp_1_1_dhcp_layer.html#a38e4b6eb2f05e4c52fc98e564d22dd75", null ],
     [ "getOptionData", "classpcpp_1_1_dhcp_layer.html#acd658b6d22bb6687e2722ae7bd543ca9", null ],
@@ -28,6 +29,7 @@ var classpcpp_1_1_dhcp_layer =
     [ "setClientIpAddress", "classpcpp_1_1_dhcp_layer.html#a81ecf66e70f4f10426e2b813a5aef39d", null ],
     [ "setGatewayIpAddress", "classpcpp_1_1_dhcp_layer.html#a9686ef6b404394964049c13f565d68cc", null ],
     [ "setMesageType", "classpcpp_1_1_dhcp_layer.html#a573415774454bd926e3ad2b4794c251c", null ],
+    [ "setMessageType", "classpcpp_1_1_dhcp_layer.html#aafd7349118c0315cf8c3752988cbbab6", null ],
     [ "setServerIpAddress", "classpcpp_1_1_dhcp_layer.html#a33631b988f7e2bc3f301b7ebb9adff2a", null ],
     [ "setYourIpAddress", "classpcpp_1_1_dhcp_layer.html#abf7e6465635573a57e97265e94aaf51e", null ],
     [ "toString", "classpcpp_1_1_dhcp_layer.html#a8b74d805649f3f6faaa09cea3c224b11", null ]

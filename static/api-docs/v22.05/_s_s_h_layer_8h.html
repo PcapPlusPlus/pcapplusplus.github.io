@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo_icon_large.ico"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">PcapPlusPlus
-   &#160;<span id="projectnumber">21.11</span>
+   &#160;<span id="projectnumber">22.05</span>
    </div>
   </td>
  </tr>
@@ -120,13 +120,13 @@ Namespaces</h2></td></tr>
 <p>For more details please refer to RFC 4253: <a href="https://tools.ietf.org/html/rfc4253">https://tools.ietf.org/html/rfc4253</a></p>
 <p>These current implementation supports parsing of SSH packets when possible (meaning when they are not encrypted). Creation and editing of SSH packets is currently <b>not supported</b>.</p>
 <p>SSH typically uses TCP port 22 so PcapPlusPlus assumes all traffic on this port is SSH traffic. PcapPlusPlus uses some heuristics to determine the type of the SSH message (which will be covered later). If it doesn't find a match to one of the other SSH messages, it assumes it is an encrypted SSH message.</p>
-<p>Following is an overview of the SSH protocol classes currently supported in PcapPlusPlus. They cover the differnet messages of the SSH protocol:</p>
+<p>Following is an overview of the SSH protocol classes currently supported in PcapPlusPlus. They cover the different messages of the SSH protocol:</p>
 <pre class="fragment">                               +----------------------------+      SSH version identification
-                           +---|  SSHIdentificationMessage  | ===&gt; as described here: 
+                           +---|  SSHIdentificationMessage  | ===&gt; as described here:
                            |   +----------------------------+      https://tools.ietf.org/html/rfc4253#section-4.2
                            |
 +------------+             |   +----------------------------+      SSH handshake message
-|  SSHLayer  |-------------+---|  SSHHandshakeMessage       | ===&gt; which is typically one of the messages described here: 
+|  SSHLayer  |-------------+---|  SSHHandshakeMessage       | ===&gt; which is typically one of the messages described here:
 | (abstract) |             |   +----------------------------+      https://tools.ietf.org/html/rfc4253#section-12
 +------------+             |                 |
                            |                 |     +----------------------------+      SSH Key Exchange message
@@ -142,7 +142,7 @@ Namespaces</h2></td></tr>
 <li>The next byte contains the padding length, check if it's smaller or equal than the packet length</li>
 <li>The next byte contains the message type, check if the value is a valid message type as described in: <a href="https://tools.ietf.org/html/rfc4253#section-12">https://tools.ietf.org/html/rfc4253#section-12</a></li>
 </ul>
-<p class="startli">If all of these condition are met, this message is either <a class="el" href="classpcpp_1_1_s_s_h_key_exchange_init_message.html">pcpp::SSHKeyExchangeInitMessage</a> (if messsage type is <a class="el" href="classpcpp_1_1_s_s_h_handshake_message.html#a4dbb7d358bef567cfe920c90f0f72508ab6d105ca6f529a61846e4263ee25b64d">pcpp::SSHHandshakeMessage::SSH_MSG_KEX_INIT</a>) or <a class="el" href="classpcpp_1_1_s_s_h_handshake_message.html">pcpp::SSHHandshakeMessage</a> (for all other message types)</p>
+<p class="startli">If all of these condition are met, this message is either <a class="el" href="classpcpp_1_1_s_s_h_key_exchange_init_message.html">pcpp::SSHKeyExchangeInitMessage</a> (if message type is <a class="el" href="classpcpp_1_1_s_s_h_handshake_message.html#a4dbb7d358bef567cfe920c90f0f72508ab6d105ca6f529a61846e4263ee25b64d">pcpp::SSHHandshakeMessage::SSH_MSG_KEX_INIT</a>) or <a class="el" href="classpcpp_1_1_s_s_h_handshake_message.html">pcpp::SSHHandshakeMessage</a> (for all other message types)</p>
 </li>
 <li>If non of these conditions are met, it is assumed this is an encrypted message (<a class="el" href="classpcpp_1_1_s_s_h_encrypted_message.html">pcpp::SSHEncryptedMessage</a>) </li>
 </ol>
@@ -151,8 +151,8 @@ Namespaces</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_de86beb0baec615108c189a95e2985e8.html">PcapPlusPlus</a></li><li class="navelem"><a class="el" href="dir_5651890ad0082dbf4dbb18c410c015c9.html">Dist</a></li><li class="navelem"><a class="el" href="dir_00034babc01e96e2748c521d6645ae1d.html">header</a></li><li class="navelem"><a class="el" href="_s_s_h_layer_8h.html">SSHLayer.h</a></li>
-    <li class="footer">Generated on Fri Nov 12 2021 07:25:25 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_248dc7cedc1ea0c288f821d4f2f68d94.html">Dist</a></li><li class="navelem"><a class="el" href="dir_cd3f7d828bf98b23ca573d19c6139c8f.html">header</a></li><li class="navelem"><a class="el" href="_s_s_h_layer_8h.html">SSHLayer.h</a></li>
+    <li class="footer">Generated on Fri May 6 2022 07:19:23 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
