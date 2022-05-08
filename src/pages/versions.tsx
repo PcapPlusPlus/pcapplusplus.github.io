@@ -99,7 +99,7 @@ function Version() {
                   <tr key={version}>
                     <th>{version}</th>
                     <td>
-                      <Link to={useBaseUrl(`/docs/${version}`)}>
+                      <Link to={useBaseUrl(`/docs/${version}/quickstart`)}>
                         Documentation
                       </Link>
                     </td>
@@ -109,7 +109,7 @@ function Version() {
                       </a>
                     </td>
                     <td>
-                      <Link to={useBaseUrl(`/api-docs/${version}`)}>
+                      <Link to={useBaseUrl(`/api-docs/${version}/index.html`)}>
                         API Documentation
                       </Link>
                     </td>
