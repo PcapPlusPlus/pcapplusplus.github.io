@@ -13,5 +13,5 @@ var searchData=
   ['dnsovertcplayer',['DnsOverTcpLayer',['../classpcpp_1_1_dns_over_tcp_layer.html#a10f45e14251ba5efa56a929bca254bd8',1,'pcpp::DnsOverTcpLayer::DnsOverTcpLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)'],['../classpcpp_1_1_dns_over_tcp_layer.html#acbc97488c68319cfccb4433ba67bb70f',1,'pcpp::DnsOverTcpLayer::DnsOverTcpLayer()'],['../classpcpp_1_1_dns_over_tcp_layer.html#aeb225f3b2d4305207457fb119e2c64e3',1,'pcpp::DnsOverTcpLayer::DnsOverTcpLayer(const DnsOverTcpLayer &amp;other)']]],
   ['dnsresourcedataptr',['DnsResourceDataPtr',['../classpcpp_1_1_dns_resource_data_ptr.html#ac370de94daaf77d21e39f5648e149c09',1,'pcpp::DnsResourceDataPtr']]],
   ['domtucheck',['doMtuCheck',['../classpcpp_1_1_pcap_live_device.html#a6a4073105d21336a4f9539a8302d47cb',1,'pcpp::PcapLiveDevice']]],
-  ['dpdkdeviceconfiguration',['DpdkDeviceConfiguration',['../structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration.html#a02b5e780f69972a7295beea8acd9299e',1,'pcpp::DpdkDevice::DpdkDeviceConfiguration']]]
+  ['dpdkdeviceconfiguration',['DpdkDeviceConfiguration',['../structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration.html#a2a4ea6838f06b12a2bd539fb7fd7c362',1,'pcpp::DpdkDevice::DpdkDeviceConfiguration']]]
 ];
