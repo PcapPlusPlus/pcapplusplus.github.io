@@ -1,6 +1,6 @@
 var structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration =
 [
-    [ "DpdkDeviceConfiguration", "structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration.html#a02b5e780f69972a7295beea8acd9299e", null ],
+    [ "DpdkDeviceConfiguration", "structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration.html#a2a4ea6838f06b12a2bd539fb7fd7c362", null ],
     [ "flushTxBufferTimeout", "structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration.html#a225b415490ad496be6e0a93cf0b829ba", null ],
     [ "receiveDescriptorsNumber", "structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration.html#af0f377c2974af2766ffcb3bd54ed7e2d", null ],
     [ "rssHashFunction", "structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration.html#adebf03bb242d47ddc1340e7ecae555f6", null ],

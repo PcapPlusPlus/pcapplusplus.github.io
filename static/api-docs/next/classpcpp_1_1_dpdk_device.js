@@ -5,6 +5,7 @@ var classpcpp_1_1_dpdk_device =
     [ "LinkStatus", "structpcpp_1_1_dpdk_device_1_1_link_status.html", "structpcpp_1_1_dpdk_device_1_1_link_status" ],
     [ "RxTxStats", "structpcpp_1_1_dpdk_device_1_1_rx_tx_stats.html", "structpcpp_1_1_dpdk_device_1_1_rx_tx_stats" ],
     [ "DpdkRssHashFunction", "classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4", [
+      [ "RSS_NONE", "classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4a378fcc61cc54a53c8c781ff0d6de73cb", null ],
       [ "RSS_IPV4", "classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4a19f70ffdb5724a1491089fbfc3bea86a", null ],
       [ "RSS_FRAG_IPV4", "classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4ad35e8d99ee794f88c1584c047c817589", null ],
       [ "RSS_NONFRAG_IPV4_TCP", "classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4ae07d8e4b16a46a338e0672ad497d23bf", null ],
@@ -24,13 +25,16 @@ var classpcpp_1_1_dpdk_device =
       [ "RSS_PORT", "classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4a38b2263ccfa9418ddf1aaddd0184a100", null ],
       [ "RSS_VXLAN", "classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4af9370abcf15bdf7a514e9d5c2fcb689d", null ],
       [ "RSS_GENEVE", "classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4a51f61ea0b54c244e2289a065ecc0182c", null ],
-      [ "RSS_NVGRE", "classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4a0fceb079a83cc9676e7c63bf42c97fbf", null ]
+      [ "RSS_NVGRE", "classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4a0fceb079a83cc9676e7c63bf42c97fbf", null ],
+      [ "RSS_ALL_SUPPORTED", "classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4a1ca130ff097dc9af5c0d45e6a0d6bf04", null ],
+      [ "RSS_DEFAULT", "classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4ad57a4e8327ac5d4121a0c5e89eceaf71", null ]
     ] ],
     [ "clearStatistics", "classpcpp_1_1_dpdk_device.html#a6d7a2351db1dc534a7cc8605af1046a1", null ],
     [ "close", "classpcpp_1_1_dpdk_device.html#ab772ecb6a13f970a1671a143dfcf8edc", null ],
     [ "flushTxBuffer", "classpcpp_1_1_dpdk_device.html#aaf80ebaaddb249744c657bd710193021", null ],
     [ "getAmountOfFreeMbufs", "classpcpp_1_1_dpdk_device.html#a66bdc2fc0e6d68767f87fccc49410011", null ],
     [ "getAmountOfMbufsInUse", "classpcpp_1_1_dpdk_device.html#a0f0ad97f7380da23a153a004b251daf1", null ],
+    [ "getConfiguredRssHashFunction", "classpcpp_1_1_dpdk_device.html#a56fae02490d62b97e0fdddb94787a2f6", null ],
     [ "getCurrentCoreId", "classpcpp_1_1_dpdk_device.html#adaf620a31d39cd95e4be75f1fa0bfb60", null ],
     [ "getDeviceId", "classpcpp_1_1_dpdk_device.html#a264df71d9bb3a600a8cd80c27f61a876", null ],
     [ "getDeviceName", "classpcpp_1_1_dpdk_device.html#af4f7eca0cb3362b3934f29c6777241c6", null ],
@@ -54,6 +58,7 @@ var classpcpp_1_1_dpdk_device =
     [ "receivePackets", "classpcpp_1_1_dpdk_device.html#ad619e3e2eb39f461b776ee52e8e7625e", null ],
     [ "receivePackets", "classpcpp_1_1_dpdk_device.html#a692893a06ba97899321434830b93112e", null ],
     [ "receivePackets", "classpcpp_1_1_dpdk_device.html#a27b4ab2734343876cbec8dbe655c8926", null ],
+    [ "rssHashFunctionMaskToString", "classpcpp_1_1_dpdk_device.html#aea5269c79bf49fcdaee09061a3d86123", null ],
     [ "sendPacket", "classpcpp_1_1_dpdk_device.html#a1d69ce6eec56281db512a80fb1909078", null ],
     [ "sendPacket", "classpcpp_1_1_dpdk_device.html#a3e3ec4284c41402b040efae54cc31f60", null ],
     [ "sendPacket", "classpcpp_1_1_dpdk_device.html#a419b2a336132a9c64649a9588b58613d", null ],
