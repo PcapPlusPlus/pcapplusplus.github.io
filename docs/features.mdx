@@ -52,6 +52,7 @@ The design of PcapPlusPlus allows similar analysis capabilities for each packet,
 Consider this simple code snippet that shows how to read a packet from a PCAP file, parse it, identify if it's an IPv4 packet and print the source and dest IP addresses:
 
 ```cpp
+#include <iostream>
 #include "IPv4Layer.h"
 #include "Packet.h"
 #include "PcapFileDevice.h"
@@ -62,7 +63,7 @@ int main(int argc, char* argv[])
     pcpp::PcapFileReaderDevice reader("1_packet.pcap");
     if (!reader.open())
     {
-        printf("Error opening the pcap file\n");
+        std::cerr << "Error opening the pcap file" << std::endl;
         return 1;
     }
 
@@ -71,7 +72,7 @@ int main(int argc, char* argv[])
     pcpp::RawPacket rawPacket;
     if (!reader.getNextPacket(rawPacket))
     {
-        printf("Couldn't read the first packet in the file\n");
+        std::cerr << "Couldn't read the first packet in the file" << std::endl;
         return 1;
     }
 
@@ -85,8 +86,12 @@ int main(int argc, char* argv[])
         pcpp::IPv4Address srcIP = parsedPacket.getLayerOfType()->getSrcIPv4Address();
         pcpp::IPv4Address destIP = parsedPacket.getLayerOfType()->getDstIPv4Address();
 
+
         // print source and dest IPs
-        printf("Source IP is '%s'; Dest IP is '%s'\n", srcIP.toString().c_str(), destIP.toString().c_str());
+        std::cout
+            << "Source IP is '" << srcIP << "'; "
+            << "Dest IP is '" << destIP << "'"
+            << std::endl;
     }
 
     // close the file
@@ -245,11 +250,23 @@ PcapPlusPlus contains an implementation of JA3 and JA3S in C++. There are not a 
 Using TLS fingerprinting in PcapPlusPlus is very easy, here is a quick example:
 
 ```cpp
+// Get the handshake layer and extract the ClientHello message
 pcpp::SSLHandshakeLayer* sslHandshakeLayer = parsedPacket.getLayerOfType<pcpp::SSLHandshakeLayer>();
-pcpp::SSLClientHelloMessage* clientHelloMessage = sslHandshakeLayer->getHandshakeMessageOfType<pcpp::SSLClientHelloMessage>();
-pcpp::SSLClientHelloMessage::ClientHelloTLSFingerprint tlsFingerprint = clientHelloMessage->generateTLSFingerprint();
+pcpp::SSLClientHelloMessage* clientHelloMessage =
+    sslHandshakeLayer->getHandshakeMessageOfType<pcpp::SSLClientHelloMessage>();
+
+// Extract the TLS fingerprint from the ClientHello message
+pcpp::SSLClientHelloMessage::ClientHelloTLSFingerprint tlsFingerprint =
+    clientHelloMessage->generateTLSFingerprint();
 std::pair<std::string, std::string> tlsFingerprintStringAndMD5 = tlsFingerprint.toStringAndMD5();
-printf("ClientHello (JA3) TLS fingerprint: '%s'; MD5: '%s'\n", tlsFingerprintStringAndMD5.first.c_str(), tlsFingerprintStringAndMD5.second.c_str());
+
+// Print the full fingerprint and an MD5 version of it
+std::cout
+    << "ClientHello (JA3) TLS fingerprint: "
+    << tlsFingerprintStringAndMD5.first
+    << "; MD5: "
+    << tlsFingerprintStringAndMD5.second
+    << std::endl;
 ```
 
 ServerHello TLS fingerprinting (JA3S) is almost similar but for `pcpp::SSLServerHelloMessage` messages.
