@@ -1,11 +1,14 @@
 var searchData=
 [
   ['reassembled',['REASSEMBLED',['../classpcpp_1_1_i_p_reassembly.html#aae7f2e113808978827abf3b7cdbe91afa91beabc1fd8775d590a7d6415aeb6a31',1,'pcpp::IPReassembly']]],
+  ['reconnection',['Reconnection',['../classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a93bcad770e310d22629b465be2abfad5',1,'pcpp::TelnetLayer']]],
   ['recverror',['RecvError',['../classpcpp_1_1_raw_socket_device.html#a06ec60dc8d38dfab0333fb793ad0da76adce5f5b2a3d83a5816da7520ee4228ea',1,'pcpp::RawSocketDevice']]],
   ['recvsuccess',['RecvSuccess',['../classpcpp_1_1_raw_socket_device.html#a06ec60dc8d38dfab0333fb793ad0da76ad36c34a2ebc972da8d8ad02b1e1d8c70',1,'pcpp::RawSocketDevice']]],
   ['recvtimeout',['RecvTimeout',['../classpcpp_1_1_raw_socket_device.html#a06ec60dc8d38dfab0333fb793ad0da76a0ad5957368155861234acd2c5251b95c',1,'pcpp::RawSocketDevice']]],
   ['recvwouldblock',['RecvWouldBlock',['../classpcpp_1_1_raw_socket_device.html#a06ec60dc8d38dfab0333fb793ad0da76abaedaa450ddecac58433cf954fdfd8b8',1,'pcpp::RawSocketDevice']]],
+  ['remotecontrolledtransandecho',['RemoteControlledTransAndEcho',['../classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a7e2fcadad15549c664df9b4cd0c43d4e',1,'pcpp::TelnetLayer']]],
   ['remotedevice',['RemoteDevice',['../classpcpp_1_1_pcap_live_device.html#a0e343585711ee4e02d4b9507467135aba47692cc2f098676c70ad0505059f581c',1,'pcpp::PcapLiveDevice']]],
+  ['remoteflowcontrol',['RemoteFlowControl',['../classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a0c3c5a8eb8889c2ce0622047cddcf623',1,'pcpp::TelnetLayer']]],
   ['reserved',['Reserved',['../classpcpp_1_1_ntp_layer.html#ac2f7eecaf3da9628fad8d2d2cf785666affc08c5f9f98f37b2df542c487c6be26',1,'pcpp::NtpLayer']]],
   ['roundrobin',['RoundRobin',['../classpcpp_1_1_pf_ring_device.html#a2a7113725490fea52c9702998e6a8f78a707c1b0c55e37f2cb7d4978370332712',1,'pcpp::PfRingDevice']]],
   ['routerefresh',['RouteRefresh',['../classpcpp_1_1_bgp_layer.html#a2490690b9c7e6b33c1e5133ebd64ebe8a0626ed28d1286e794b2cd9e9c989ceed',1,'pcpp::BgpLayer']]],

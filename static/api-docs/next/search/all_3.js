@@ -1,7 +1,9 @@
 var searchData=
 [
   ['data',['data',['../structpcpp_1_1_bgp_update_message_layer_1_1path__attribute.html#a4da2f449d4915aa75e5f8d5b755fe16a',1,'pcpp::BgpUpdateMessageLayer::path_attribute::data()'],['../structpcpp_1_1icmp__echo__request.html#ae817d79a4d209c620bdf074ddc2c5a52',1,'pcpp::icmp_echo_request::data()']]],
+  ['dataentryterminal',['DataEntryTerminal',['../classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a058d19bd31239baacb653ab3d2e31302',1,'pcpp::TelnetLayer']]],
   ['datalength',['dataLength',['../structpcpp_1_1icmp__echo__request.html#a4ed0221d15cb8465ae37cb8cc4311386',1,'pcpp::icmp_echo_request']]],
+  ['datamark',['DataMark',['../classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8a99b0b0d558f061fa18e8004968de4ac5',1,'pcpp::TelnetLayer']]],
   ['dataoffset',['dataOffset',['../structpcpp_1_1tcphdr.html#a593a30084c297a99ea01b76fce5c5b11',1,'pcpp::tcphdr']]],
   ['dcf',['DCF',['../classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656abb905aaf749a0531d0598d1ae4d17026',1,'pcpp::NtpLayer']]],
   ['dcfa',['DCFa',['../classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656a54a40ad47dadce9267aaa0e448e005af',1,'pcpp::NtpLayer']]],
@@ -344,6 +346,8 @@ var searchData=
   ['dnstype',['DnsType',['../namespacepcpp.html#ad888578fe7df9849bbfbb10cdf245886',1,'pcpp']]],
   ['domtucheck',['doMtuCheck',['../classpcpp_1_1_pcap_live_device.html#a6a4073105d21336a4f9539a8302d47cb',1,'pcpp::PcapLiveDevice']]],
   ['dontlearnflag',['dontLearnFlag',['../structpcpp_1_1vxlan__header.html#a8bf01681565ea80e389e36c7911c9c37',1,'pcpp::vxlan_header']]],
+  ['dontperform',['DontPerform',['../classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8a6e8a584703f4682e6af5582a3fd1818e',1,'pcpp::TelnetLayer']]],
+  ['doperform',['DoPerform',['../classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8a5bdd7c905175e26b6d44aa4268706060',1,'pcpp::TelnetLayer']]],
   ['dpdkdevice',['DpdkDevice',['../classpcpp_1_1_dpdk_device.html',1,'pcpp']]],
   ['dpdkdevice_2eh',['DpdkDevice.h',['../_dpdk_device_8h.html',1,'']]],
   ['dpdkdeviceconfiguration',['DpdkDeviceConfiguration',['../structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration.html',1,'pcpp::DpdkDevice::DpdkDeviceConfiguration'],['../structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration.html#a2a4ea6838f06b12a2bd539fb7fd7c362',1,'pcpp::DpdkDevice::DpdkDeviceConfiguration::DpdkDeviceConfiguration()']]],

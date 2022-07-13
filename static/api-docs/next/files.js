@@ -182,6 +182,9 @@ var files =
       [ "TcpReassemblyConfiguration", "structpcpp_1_1_tcp_reassembly_configuration.html", "structpcpp_1_1_tcp_reassembly_configuration" ],
       [ "TcpReassembly", "classpcpp_1_1_tcp_reassembly.html", "classpcpp_1_1_tcp_reassembly" ]
     ] ],
+    [ "TelnetLayer.h", "_telnet_layer_8h.html", [
+      [ "TelnetLayer", "classpcpp_1_1_telnet_layer.html", "classpcpp_1_1_telnet_layer" ]
+    ] ],
     [ "TextBasedProtocol.h", "_text_based_protocol_8h.html", "_text_based_protocol_8h" ],
     [ "TimespecTimeval.h", "_timespec_timeval_8h_source.html", null ],
     [ "TLVData.h", "_t_l_v_data_8h.html", [

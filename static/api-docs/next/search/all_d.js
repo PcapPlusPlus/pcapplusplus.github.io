@@ -1,10 +1,12 @@
 var searchData=
 [
   ['name',['name',['../structpcpp_1_1_kni_device_1_1_kni_device_configuration.html#a2df48dfa7610b8e97f48a46403feb4c4',1,'pcpp::KniDevice::KniDeviceConfiguration']]],
+  ['negotiateaboutwindowsize',['NegotiateAboutWindowSize',['../classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a87f4473618ed1a9fbbc1585bad2efdcf',1,'pcpp::TelnetLayer']]],
   ['nettohost16',['netToHost16',['../namespacepcpp.html#ae131f1b0ed7a00808f93086b67a668e2',1,'pcpp']]],
   ['nettohost32',['netToHost32',['../namespacepcpp.html#a7a59a2b4aeef3b2efca9a56bd1525d2e',1,'pcpp']]],
   ['networkutils',['NetworkUtils',['../classpcpp_1_1_network_utils.html',1,'pcpp::NetworkUtils'],['../namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa7c7b04d450484507109458e2ef341a68',1,'pcpp::NetworkUtils()']]],
   ['networkutils_2eh',['NetworkUtils.h',['../_network_utils_8h.html',1,'']]],
+  ['newenvironmentoption',['NewEnvironmentOption',['../classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a4f26bc8cecaa4baaaad338ec15698e91',1,'pcpp::TelnetLayer']]],
   ['nextheader',['nextHeader',['../structpcpp_1_1ipsec__authentication__header.html#a6f6ab4a128c04795a713a582702c4b70',1,'pcpp::ipsec_authentication_header::nextHeader()'],['../structpcpp_1_1_i_pv6_fragmentation_header_1_1ipv6__frag__header.html#ad8163575c2faa31dc56ef5e004168f77',1,'pcpp::IPv6FragmentationHeader::ipv6_frag_header::nextHeader()'],['../structpcpp_1_1_i_pv6_routing_header_1_1ipv6__routing__header.html#a4d9369b6437e7665bd8fc54a23232ef4',1,'pcpp::IPv6RoutingHeader::ipv6_routing_header::nextHeader()'],['../structpcpp_1_1_i_pv6_authentication_header_1_1ipv6__authentication__header.html#a88815614e37fce3f5e036fd937be3da8',1,'pcpp::IPv6AuthenticationHeader::ipv6_authentication_header::nextHeader()'],['../structpcpp_1_1ip6__hdr.html#aee8e571549e08804cbf245c37eed7cfa',1,'pcpp::ip6_hdr::nextHeader()']]],
   ['nexthopmtu',['nextHopMTU',['../structpcpp_1_1icmp__destination__unreachable.html#a55e8c3c3cffaff9d7207b3902ec9634a',1,'pcpp::icmp_destination_unreachable']]],
   ['nist',['NIST',['../classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656a95f7de343e252f083c6407a62636d162',1,'pcpp::NtpLayer']]],
@@ -12,6 +14,7 @@ var searchData=
   ['non_5fip_5fpacket',['NON_IP_PACKET',['../classpcpp_1_1_i_p_reassembly.html#aae7f2e113808978827abf3b7cdbe91afae35ca23b99eef8c92cb89994c1ee5e04',1,'pcpp::IPReassembly']]],
   ['nonippacket',['NonIpPacket',['../classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177a08445f1595412406ca139f294be48566',1,'pcpp::TcpReassembly']]],
   ['nontcppacket',['NonTcpPacket',['../classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177a6f9f634c9a8f9a3a5dbf81de12862317',1,'pcpp::TcpReassembly']]],
+  ['nooperation',['NoOperation',['../classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8af1597b6eb1b8cf777ae878c8eca8426c',1,'pcpp::TelnetLayer']]],
   ['nop',['NOP',['../classpcpp_1_1_tcp_option_builder.html#a4661af002e81ef759016b4640d0eb061a45f4b19818bd6c642ff853e0ba64eb36',1,'pcpp::TcpOptionBuilder']]],
   ['nopeoloptiontypes',['NopEolOptionTypes',['../classpcpp_1_1_tcp_option_builder.html#a4661af002e81ef759016b4640d0eb061',1,'pcpp::TcpOptionBuilder']]],
   ['normal',['Normal',['../classpcpp_1_1_pcap_live_device.html#a2381e7f053285090f0f9620bcbd8f0f3ad57df3ce2415ba6f804539bb268aecdf',1,'pcpp::PcapLiveDevice']]],
