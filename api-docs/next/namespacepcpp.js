@@ -217,6 +217,7 @@ var namespacepcpp =
     [ "TcpReassemblyConfiguration", "structpcpp_1_1_tcp_reassembly_configuration.html", "structpcpp_1_1_tcp_reassembly_configuration" ],
     [ "TcpStreamData", "classpcpp_1_1_tcp_stream_data.html", "classpcpp_1_1_tcp_stream_data" ],
     [ "TcpWindowSizeFilter", "classpcpp_1_1_tcp_window_size_filter.html", "classpcpp_1_1_tcp_window_size_filter" ],
+    [ "TelnetLayer", "classpcpp_1_1_telnet_layer.html", "classpcpp_1_1_telnet_layer" ],
     [ "TextBasedProtocolMessage", "classpcpp_1_1_text_based_protocol_message.html", "classpcpp_1_1_text_based_protocol_message" ],
     [ "TLSECPointFormatExtension", "classpcpp_1_1_t_l_s_e_c_point_format_extension.html", "classpcpp_1_1_t_l_s_e_c_point_format_extension" ],
     [ "TLSSupportedGroupsExtension", "classpcpp_1_1_t_l_s_supported_groups_extension.html", "classpcpp_1_1_t_l_s_supported_groups_extension" ],

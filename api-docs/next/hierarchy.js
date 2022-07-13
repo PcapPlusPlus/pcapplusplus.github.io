@@ -136,6 +136,7 @@ var hierarchy =
           [ "pcpp::SSLHandshakeLayer", "classpcpp_1_1_s_s_l_handshake_layer.html", null ]
         ] ],
         [ "pcpp::TcpLayer", "classpcpp_1_1_tcp_layer.html", null ],
+        [ "pcpp::TelnetLayer", "classpcpp_1_1_telnet_layer.html", null ],
         [ "pcpp::TextBasedProtocolMessage", "classpcpp_1_1_text_based_protocol_message.html", [
           [ "pcpp::HttpMessage", "classpcpp_1_1_http_message.html", [
             [ "pcpp::HttpRequestLayer", "classpcpp_1_1_http_request_layer.html", null ],

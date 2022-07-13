@@ -55,6 +55,7 @@ var _protocol_type_8h =
     [ "SSH", "_protocol_type_8h.html#a8dc28246e6a15709973f07452cbb403b", null ],
     [ "SSL", "_protocol_type_8h.html#a71041ee0360477d36d480d25ea10dbe4", null ],
     [ "TCP", "_protocol_type_8h.html#a8d36ae24161db9d8f8cf759529ae42d0", null ],
+    [ "Telnet", "_protocol_type_8h.html#af27a025c71e9f27fd298c4c9b027310c", null ],
     [ "UDP", "_protocol_type_8h.html#ae8bbb736c21e0804bc41c17cd1fc7740", null ],
     [ "UnknownProtocol", "_protocol_type_8h.html#ad94e3dd833f818889f676d2352eac829", null ],
     [ "VLAN", "_protocol_type_8h.html#adddb69c5e9b0df95ed306b2ed0d1c4fc", null ],

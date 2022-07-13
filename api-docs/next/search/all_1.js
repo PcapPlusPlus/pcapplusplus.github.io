@@ -21,10 +21,12 @@ var searchData=
   ['bootpopcodes',['BootpOpCodes',['../namespacepcpp.html#a977d5d1fabe89dba06443bbca6a711bb',1,'pcpp']]],
   ['bpffilterwrapper',['BpfFilterWrapper',['../classpcpp_1_1_bpf_filter_wrapper.html',1,'pcpp::BpfFilterWrapper'],['../classpcpp_1_1_bpf_filter_wrapper.html#ad16670c3937b6cae90ceb323a3678a57',1,'pcpp::BpfFilterWrapper::BpfFilterWrapper()']]],
   ['bpfstringfilter',['BPFStringFilter',['../classpcpp_1_1_b_p_f_string_filter.html',1,'pcpp']]],
+  ['break',['Break',['../classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8a1a4e784f3df55f7c93d73e3191808e95',1,'pcpp::TelnetLayer']]],
   ['broadcast',['Broadcast',['../classpcpp_1_1_ntp_layer.html#ac2f7eecaf3da9628fad8d2d2cf785666a6180ee941a4c9bb5f3707d385e148b05',1,'pcpp::NtpLayer']]],
   ['buffer',['buffer',['../structpcpp_1_1_scalar_buffer.html#a43b9b1dd5d0156c85e01157a681d7150',1,'pcpp::ScalarBuffer']]],
   ['build',['build',['../classpcpp_1_1_dhcp_option_builder.html#a2ac0ea2086b71e28c4d920bea97248bf',1,'pcpp::DhcpOptionBuilder::build()'],['../classpcpp_1_1_dhcp_v6_option_builder.html#a852863d4ac291d2a40b6c3fb00dca3d7',1,'pcpp::DhcpV6OptionBuilder::build()'],['../classpcpp_1_1_i_pv4_option_builder.html#ac5f9fee29c811dd951f65e717bd18b31',1,'pcpp::IPv4OptionBuilder::build()'],['../classpcpp_1_1_i_pv6_t_l_v_option_header_1_1_i_pv6_t_l_v_option_builder.html#ae95e07714190f34a8063a17bc7477a82',1,'pcpp::IPv6TLVOptionHeader::IPv6TLVOptionBuilder::build()'],['../classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag_builder.html#a425754f0ffa6269fdf0aef863932d491',1,'pcpp::PPPoEDiscoveryLayer::PPPoETagBuilder::build()'],['../classpcpp_1_1_radius_attribute_builder.html#a18dae925eac2f705b8fa68eb12507b17',1,'pcpp::RadiusAttributeBuilder::build()'],['../classpcpp_1_1_tcp_option_builder.html#a970fb85f72b9bf001863a15e5ae6a26f',1,'pcpp::TcpOptionBuilder::build()']]],
   ['bytearraytohexstring',['byteArrayToHexString',['../namespacepcpp.html#a13d338c123afbd98ee99a9b2ac78f59a',1,'pcpp']]],
+  ['bytemacro',['ByteMacro',['../classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a357bf74bf9502ef88c7c1a4a7a50e3bc',1,'pcpp::TelnetLayer']]],
   ['bytes',['bytes',['../structpcpp_1_1_dpdk_device_1_1_rx_tx_stats.html#aeeb02f0b115b0d7a81cd1076535c8ac2',1,'pcpp::DpdkDevice::RxTxStats']]],
   ['bytespersec',['bytesPerSec',['../structpcpp_1_1_dpdk_device_1_1_rx_tx_stats.html#a31fa4203a8bf1ed1c39d8b8d6aa7fa0f',1,'pcpp::DpdkDevice::RxTxStats']]]
 ];
