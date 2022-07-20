@@ -20,6 +20,7 @@ var _protocol_type_8h =
     [ "ESP", "_protocol_type_8h.html#a24767a0234b927837786cc51a00c110e", null ],
     [ "Ethernet", "_protocol_type_8h.html#a3dc726346808ce2a90d3c8daeb76d09d", null ],
     [ "EthernetDot3", "_protocol_type_8h.html#afce15d7fa5441fd5eeb00ed4f981146c", null ],
+    [ "FTP", "_protocol_type_8h.html#a75ff617ee21ee891dd48316b7b99ece4", null ],
     [ "GenericPayload", "_protocol_type_8h.html#aa80f74a2bb443a10bb62da9224cdd49b", null ],
     [ "GRE", "_protocol_type_8h.html#a081881295c3e982172b4294facf7c3fd", null ],
     [ "GREv0", "_protocol_type_8h.html#a29568c577f00703971ed5b741e4154fb", null ],
