@@ -240,6 +240,14 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_icmp_layer.html">IcmpLayer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1icmpv6__echo__hdr.html">icmpv6_echo_hdr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_c_m_pv6_echo_layer.html">ICMPv6EchoLayer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1icmpv6hdr.html">icmpv6hdr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_icmp_v6_layer.html">IcmpV6Layer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_data_container.html">IDataContainer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_device.html">IDevice</a></td></tr>
@@ -353,6 +361,16 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_mpls_layer.html">MplsLayer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_mx_dns_resource_data.html">MxDnsResourceData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_n_d_p_layer_base.html">NDPLayerBase</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_n_d_p_neighbor_advertisement_layer.html">NDPNeighborAdvertisementLayer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_n_d_p_neighbor_solicitation_layer.html">NDPNeighborSolicitationLayer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ndp_option.html">NdpOption</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ndp_option_builder.html">NdpOptionBuilder</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_network_utils.html">NetworkUtils</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1173,6 +1191,57 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a8495fd519ac2e6c6eeb85307e8aa2c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69f4e4ed66464f2f5b6ddee70b9274f4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4">ICMPv6MessageType</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4abc7b5d16664bd28781b6fedcd6154341">ICMPv6MessageType::ICMPv6_UNKNOWN_MESSAGE</a> = 0, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4a9b2377b4fcf62a5ab8b75bc1d6d028c2">ICMPv6MessageType::ICMPv6_DESTINATION_UNREACHABLE</a> = 1, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4a527e39cbb423ce8ec16507edb2bf73a0">ICMPv6MessageType::ICMPv6_PACKET_TOO_BIG</a> = 2, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4a500845f54cb1c25c4b5fc1dbc9564121">ICMPv6MessageType::ICMPv6_TIME_EXCEEDED</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4acd5a2deed60b14e8c43e7ad4ed498857">ICMPv6MessageType::ICMPv6_PARAMETER_PROBLEM</a> = 4, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4ae0b516a14c5da7366e2ce6fda5ec2ab2">ICMPv6MessageType::ICMPv6_PRIVATE_EXPERIMENTATION1</a> = 100, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4a604635cd082aedb286e0743e0d613155">ICMPv6MessageType::ICMPv6_PRIVATE_EXPERIMENTATION2</a> = 101, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4afb4c5e661ac32368b5c49426637bc1b0">ICMPv6MessageType::ICMPv6_RESERVED_EXPANSION_ERROR</a> = 127, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4a626837e8142a37e1ae1e6f6844c7fca6">ICMPv6MessageType::ICMPv6_ECHO_REQUEST</a> = 128, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4ae9aa0ac2ff27e6175be254e4f72d340f">ICMPv6MessageType::ICMPv6_ECHO_REPLY</a> = 129, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4a6b76347a73ed066f37f67fa12f7f50b0">ICMPv6MessageType::ICMPv6_MULTICAST_LISTENER_QUERY</a> = 130, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4a8980b8a96d8cc1e43c52ec2d80122dae">ICMPv6MessageType::ICMPv6_MULTICAST_LISTENER_REPORT</a> = 131, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4abc52c1ef1e7a3f43722b77ef35cb21a5">ICMPv6MessageType::ICMPv6_MULTICAST_LISTENER_DONE</a> = 132, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4a526287c0266054b062bed9b291c3d54f">ICMPv6MessageType::ICMPv6_ROUTER_SOLICITATION</a> = 133, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4a744ff8c512b3ab74f1ec37aaeae5fa35">ICMPv6MessageType::ICMPv6_ROUTER_ADVERTISEMENT</a> = 134, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4ab48eb3879a510fa889327921067d2f0b">ICMPv6MessageType::ICMPv6_NEIGHBOR_SOLICITATION</a> = 135, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4a4d84790e1237fd8714396b9ea8528e2a">ICMPv6MessageType::ICMPv6_NEIGHBOR_ADVERTISEMENT</a> = 136, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4a3ef30005662f07f9423b152b06e5605a">ICMPv6MessageType::ICMPv6_REDIRECT_MESSAGE</a> = 137, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4a579e598ce3d7c768b9d094990d154c97">ICMPv6MessageType::ICMPv6_ROUTER_RENUMBERING</a> = 138, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4a301b0ade0b63b3bb24da803946a66f3b">ICMPv6MessageType::ICMPv6_ICMP_NODE_INFORMATION_QUERY</a> = 139, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4afd3debc69e3d74d89d3304867a60df47">ICMPv6MessageType::ICMPv6_ICMP_NODE_INFORMATION_RESPONSE</a> = 140, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4a7047a5a63d8efbdc9fa5923615cac895">ICMPv6MessageType::ICMPv6_INVERSE_NEIGHBOR_DISCOVERY_SOLICITATION_MESSAGE</a> = 141, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4ae25bb50e4d1cc8abfca07ffed8709804">ICMPv6MessageType::ICMPv6_INVERSE_NEIGHBOR_DISCOVERY_ADVERTISEMENT_MESSAGE</a> = 142, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4a868aebbdb21e1c34d83d0c868017a419">ICMPv6MessageType::ICMPv6_MULTICAST_LISTENER_DISCOVERY_REPORTS</a> = 143, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4a084ce7b77cd673e6a50de6240c19ea9a">ICMPv6MessageType::ICMPv6_HOME_AGENT_ADDRESS_DISCOVERY_REQUEST_MESSAGE</a> = 144, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4a2fb4a3133fece3ae04479c5a4a34e281">ICMPv6MessageType::ICMPv6_HOME_AGENT_ADDRESS_DISCOVERY_REPLY_MESSAGE</a> = 145, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4a0f92d6c5c35a261547ee369839cbb68f">ICMPv6MessageType::ICMPv6_MOBILE_PREFIX_SOLICITATION</a> = 146, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4aa4218070987c3edca584dc8e677b3200">ICMPv6MessageType::ICMPv6_MOBILE_PREFIX_ADVERTISEMENT</a> = 147, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4ab6e7154c0052a751c7a841f1dbb2d91b">ICMPv6MessageType::ICMPv6_CERTIFICATION_PATH_SOLICITATION</a> = 148, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4a3b7c47f5808a7c5c08531644e454032b">ICMPv6MessageType::ICMPv6_CERTIFICATION_PATH_ADVERTISEMENT</a> = 149, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4a4dea72e249fac98d4bf4b627f3f9a59b">ICMPv6MessageType::ICMPv6_EXPERIMENTAL_MOBILITY</a> = 150, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4a39d4a48eb60808a2cf3eafb6cf2b259f">ICMPv6MessageType::ICMPv6_MULTICAST_ROUTER_ADVERTISEMENT</a> = 151, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4ae018643c969d35a8560da8d7f951afa3">ICMPv6MessageType::ICMPv6_MULTICAST_ROUTER_SOLICITATION</a> = 152, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4aed1376eb49c5cbc6d3c571133aa34fb5">ICMPv6MessageType::ICMPv6_MULTICAST_ROUTER_TERMINATION</a> = 153, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4acf1c465cd2d9a3fd0a1225c8f46e9a3b">ICMPv6MessageType::ICMPv6_RPL_CONTROL_MESSAGE</a> = 155, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4a0ac8f77fab00dd7d1d9acb8cbbe87116">ICMPv6MessageType::ICMPv6_PRIVATE_EXPERIMENTATION3</a> = 200, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4a42f724324a5a254132cc058de532594a">ICMPv6MessageType::ICMPv6_PRIVATE_EXPERIMENTATION4</a> = 201, 
+<a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4aaca9037bb171f23d37d29f438da2e74c">ICMPv6MessageType::ICMPv6_RESERVED_EXPANSION_INFORMATIONAL</a> = 255
+<br />
+ }</td></tr>
+<tr class="separator:a69f4e4ed66464f2f5b6ddee70b9274f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad59f90b2f755654b75205c3e06fb2bd8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ad59f90b2f755654b75205c3e06fb2bd8">IgmpType</a> { <br />
 &#160;&#160;<a class="el" href="namespacepcpp.html#ad59f90b2f755654b75205c3e06fb2bd8a521b2cf2cf22d4f523c9aa8e0003d58d">IgmpType_Unknown</a> = 0, 
 <a class="el" href="namespacepcpp.html#ad59f90b2f755654b75205c3e06fb2bd8af7e7ff46f1373500c65709de204764ab">IgmpType_MembershipQuery</a> = 0x11, 
@@ -1278,44 +1347,49 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aab73a06a22add3f775fe2d9816e7eb557">PacketLogModuleDnsLayer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aab1be2060cbc0ac2d9b11a26d1d95c000">PacketLogModuleMplsLayer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa4aa1defc906956e729e862544306661d">PacketLogModuleIcmpLayer</a>, 
-<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa1b471ed9b860901662d96ade7712e9da">PacketLogModuleGreLayer</a>, 
+<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aae64e4f201a7d21d8d3186d94908be927">PacketLogModuleIcmpV6Layer</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aad3a71d664ea3bf5a006b6d2656a8351b">PacketLogModuleSSLLayer</a>, 
+&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa1b471ed9b860901662d96ade7712e9da">PacketLogModuleGreLayer</a>, 
+<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aad3a71d664ea3bf5a006b6d2656a8351b">PacketLogModuleSSLLayer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa9feefbfe6ef87bc4451c49648b8f8eed">PacketLogModuleSllLayer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa6ab0732cb96ebc3eb92ce6533781feb2">PacketLogModuleDhcpLayer</a>, 
-<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa3d2a1dcbfbae2615c1c54564a83669c9">PacketLogModuleDhcpV6Layer</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aaa48184fdd24ac075d4ad4253db635088">PacketLogModuleIgmpLayer</a>, 
+&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa3d2a1dcbfbae2615c1c54564a83669c9">PacketLogModuleDhcpV6Layer</a>, 
+<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aaa48184fdd24ac075d4ad4253db635088">PacketLogModuleIgmpLayer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa3f1c25db7bec90b531e8dd7340885261">PacketLogModuleSipLayer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa2dc43feb7bbb1f5e9dc487037cfeb772">PacketLogModuleSdpLayer</a>, 
-<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa3b51d867276e79c7dc4c1455b515fa71">PacketLogModuleRadiusLayer</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa655a345b75ea3bd7a799123a07d6ac96">PacketLogModuleGtpLayer</a>, 
+&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa3b51d867276e79c7dc4c1455b515fa71">PacketLogModuleRadiusLayer</a>, 
+<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa655a345b75ea3bd7a799123a07d6ac96">PacketLogModuleGtpLayer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa9b03451940ee50ca696f380571fe242b">PacketLogModuleBgpLayer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa692bc057f570935a02054f4ced27e5c8">PacketLogModuleSSHLayer</a>, 
-<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa8d7198b0bc6ff1a750eaeabaeef8a40e">PacketLogModuleTcpReassembly</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa799e041f932b72c4d16f2535227be9d4">PacketLogModuleIPReassembly</a>, 
+&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa8d7198b0bc6ff1a750eaeabaeef8a40e">PacketLogModuleTcpReassembly</a>, 
+<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa799e041f932b72c4d16f2535227be9d4">PacketLogModuleIPReassembly</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aafef719fe8a4eebc6d02f972f3a87e9a3">PacketLogModuleIPSecLayer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa608f58dc0786dbbecd2aede90233bd56">PacketLogModuleNtpLayer</a>, 
-<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa1014ab8a1636c1c7b45ffe2768e81add">PacketLogModuleTelnetLayer</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aaa16e6914428d514a04d981c5261d6730">PacketLogModuleSingleCommandTextProtocolLayer</a>, 
+&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa1014ab8a1636c1c7b45ffe2768e81add">PacketLogModuleTelnetLayer</a>, 
+<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aaa16e6914428d514a04d981c5261d6730">PacketLogModuleSingleCommandTextProtocolLayer</a>, 
+<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa475a0b85e7f832fc54a964c4e6dae04a">PacketLogModuleNdpLayer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa1a88df0e55376aa7cc145c022cb655a2">PacketLogModuleFtpLayer</a>, 
-<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aaac5bb0af4a05ddc08ac0d60e40f4af0b">PcapLogModuleWinPcapLiveDevice</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aaac5bb0af4a05ddc08ac0d60e40f4af0b">PcapLogModuleWinPcapLiveDevice</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa41327c44f9fd3ea426f5040dd9d0752c">PcapLogModuleRemoteDevice</a>, 
-<br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aae794add926803bcab76bc2fbe66230b7">PcapLogModuleLiveDevice</a>, 
+<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aae794add926803bcab76bc2fbe66230b7">PcapLogModuleLiveDevice</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa63698c9f484eb9f44bec3f1eaed5df0e">PcapLogModuleFileDevice</a>, 
-<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aac8c88c94f4233b2b343c29d2b02cfd9b">PcapLogModulePfRingDevice</a>, 
-<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aadfdb8aa4e0ae1db8892cac047dd68879">PcapLogModuleMBufRawPacket</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa6b600aa8ac5b85687c8b390130d073af">PcapLogModuleDpdkDevice</a>, 
+&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aac8c88c94f4233b2b343c29d2b02cfd9b">PcapLogModulePfRingDevice</a>, 
+<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aadfdb8aa4e0ae1db8892cac047dd68879">PcapLogModuleMBufRawPacket</a>, 
+<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa6b600aa8ac5b85687c8b390130d073af">PcapLogModuleDpdkDevice</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa215a3cc0bca9f02941f47cd013cdff3e">PcapLogModuleKniDevice</a>, 
-<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa7c7b04d450484507109458e2ef341a68">NetworkUtils</a>
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa7c7b04d450484507109458e2ef341a68">NetworkUtils</a>
 <br />
  }</td></tr>
 <tr class="separator:ac6557f5dc8fcb14858f231b12bdc1c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05de8c5825b009c706ab2693fc9587e5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a05de8c5825b009c706ab2693fc9587e5">NDPNeighborOptionTypes</a> : int </td></tr>
+<tr class="separator:a05de8c5825b009c706ab2693fc9587e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a966edb536b73cf93cbc9b83f9c64930a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a966edb536b73cf93cbc9b83f9c64930a">Direction</a> { <a class="el" href="namespacepcpp.html#a966edb536b73cf93cbc9b83f9c64930aacbfd6ae8daea0ea78970fd2ca4521925">SRC</a>, 
 <a class="el" href="namespacepcpp.html#a966edb536b73cf93cbc9b83f9c64930aa27a323e67a11c7d1fc922949a918fedb">DST</a>, 
 <a class="el" href="namespacepcpp.html#a966edb536b73cf93cbc9b83f9c64930aa0cf92996690ad72c66a8d00661b471a2">SRC_OR_DST</a>
@@ -1921,6 +1995,8 @@ Variables</h2></td></tr>
 <tr class="separator:af27a025c71e9f27fd298c4c9b027310c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75ff617ee21ee891dd48316b7b99ece4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a75ff617ee21ee891dd48316b7b99ece4">FTP</a> = 0x10000000000</td></tr>
 <tr class="separator:a75ff617ee21ee891dd48316b7b99ece4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd82e78f26ca6b8ddcf301777d6728c3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#afd82e78f26ca6b8ddcf301777d6728c3">ICMPv6</a> = 0x20000000000</td></tr>
+<tr class="separator:afd82e78f26ca6b8ddcf301777d6728c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The main namespace for the PcapPlusPlus lib. </p>
@@ -3305,6 +3381,107 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a69f4e4ed66464f2f5b6ddee70b9274f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69f4e4ed66464f2f5b6ddee70b9274f4">&#9670;&nbsp;</a></span>ICMPv6MessageType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacepcpp.html#a69f4e4ed66464f2f5b6ddee70b9274f4">pcpp::ICMPv6MessageType</a> : int</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>An enum representing the available ICMPv6 message types </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4abc7b5d16664bd28781b6fedcd6154341"></a>ICMPv6_UNKNOWN_MESSAGE&#160;</td><td class="fielddoc"><p>Unknown ICMPv6 message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4a9b2377b4fcf62a5ab8b75bc1d6d028c2"></a>ICMPv6_DESTINATION_UNREACHABLE&#160;</td><td class="fielddoc"><p>Destination Unreachable Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4a527e39cbb423ce8ec16507edb2bf73a0"></a>ICMPv6_PACKET_TOO_BIG&#160;</td><td class="fielddoc"><p><a class="el" href="classpcpp_1_1_packet.html">Packet</a> Too Big Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4a500845f54cb1c25c4b5fc1dbc9564121"></a>ICMPv6_TIME_EXCEEDED&#160;</td><td class="fielddoc"><p>Time Exceeded Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4acd5a2deed60b14e8c43e7ad4ed498857"></a>ICMPv6_PARAMETER_PROBLEM&#160;</td><td class="fielddoc"><p>Parameter Problem Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4ae0b516a14c5da7366e2ce6fda5ec2ab2"></a>ICMPv6_PRIVATE_EXPERIMENTATION1&#160;</td><td class="fielddoc"><p>Private Experimentation Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4a604635cd082aedb286e0743e0d613155"></a>ICMPv6_PRIVATE_EXPERIMENTATION2&#160;</td><td class="fielddoc"><p>Private Experimentation Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4afb4c5e661ac32368b5c49426637bc1b0"></a>ICMPv6_RESERVED_EXPANSION_ERROR&#160;</td><td class="fielddoc"><p>Reserved for expansion of ICMPv6 error messages </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4a626837e8142a37e1ae1e6f6844c7fca6"></a>ICMPv6_ECHO_REQUEST&#160;</td><td class="fielddoc"><p>Echo Request Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4ae9aa0ac2ff27e6175be254e4f72d340f"></a>ICMPv6_ECHO_REPLY&#160;</td><td class="fielddoc"><p>Echo Reply Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4a6b76347a73ed066f37f67fa12f7f50b0"></a>ICMPv6_MULTICAST_LISTENER_QUERY&#160;</td><td class="fielddoc"><p>Multicast Listener Query Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4a8980b8a96d8cc1e43c52ec2d80122dae"></a>ICMPv6_MULTICAST_LISTENER_REPORT&#160;</td><td class="fielddoc"><p>Multicast Listener Report Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4abc52c1ef1e7a3f43722b77ef35cb21a5"></a>ICMPv6_MULTICAST_LISTENER_DONE&#160;</td><td class="fielddoc"><p>Multicast Listener Done Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4a526287c0266054b062bed9b291c3d54f"></a>ICMPv6_ROUTER_SOLICITATION&#160;</td><td class="fielddoc"><p>Router Solicitation Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4a744ff8c512b3ab74f1ec37aaeae5fa35"></a>ICMPv6_ROUTER_ADVERTISEMENT&#160;</td><td class="fielddoc"><p>Router Advertisement Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4ab48eb3879a510fa889327921067d2f0b"></a>ICMPv6_NEIGHBOR_SOLICITATION&#160;</td><td class="fielddoc"><p>Neighbor Solicitation Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4a4d84790e1237fd8714396b9ea8528e2a"></a>ICMPv6_NEIGHBOR_ADVERTISEMENT&#160;</td><td class="fielddoc"><p>Neighbor Advertisement Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4a3ef30005662f07f9423b152b06e5605a"></a>ICMPv6_REDIRECT_MESSAGE&#160;</td><td class="fielddoc"><p>Redirect Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4a579e598ce3d7c768b9d094990d154c97"></a>ICMPv6_ROUTER_RENUMBERING&#160;</td><td class="fielddoc"><p>Router Renumbering Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4a301b0ade0b63b3bb24da803946a66f3b"></a>ICMPv6_ICMP_NODE_INFORMATION_QUERY&#160;</td><td class="fielddoc"><p>Node Information Query Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4afd3debc69e3d74d89d3304867a60df47"></a>ICMPv6_ICMP_NODE_INFORMATION_RESPONSE&#160;</td><td class="fielddoc"><p>Node Information Reply Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4a7047a5a63d8efbdc9fa5923615cac895"></a>ICMPv6_INVERSE_NEIGHBOR_DISCOVERY_SOLICITATION_MESSAGE&#160;</td><td class="fielddoc"><p>Inverse Neighbor Discovery Solicitation Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4ae25bb50e4d1cc8abfca07ffed8709804"></a>ICMPv6_INVERSE_NEIGHBOR_DISCOVERY_ADVERTISEMENT_MESSAGE&#160;</td><td class="fielddoc"><p>Inverse Neighbor Discovery Advertisement Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4a868aebbdb21e1c34d83d0c868017a419"></a>ICMPv6_MULTICAST_LISTENER_DISCOVERY_REPORTS&#160;</td><td class="fielddoc"><p>Multicast Listener Report Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4a084ce7b77cd673e6a50de6240c19ea9a"></a>ICMPv6_HOME_AGENT_ADDRESS_DISCOVERY_REQUEST_MESSAGE&#160;</td><td class="fielddoc"><p>Home Agent Address Discovery Request Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4a2fb4a3133fece3ae04479c5a4a34e281"></a>ICMPv6_HOME_AGENT_ADDRESS_DISCOVERY_REPLY_MESSAGE&#160;</td><td class="fielddoc"><p>Home Agent Address Discovery Reply Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4a0f92d6c5c35a261547ee369839cbb68f"></a>ICMPv6_MOBILE_PREFIX_SOLICITATION&#160;</td><td class="fielddoc"><p>Mobile Prefix Solicitation Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4aa4218070987c3edca584dc8e677b3200"></a>ICMPv6_MOBILE_PREFIX_ADVERTISEMENT&#160;</td><td class="fielddoc"><p>Mobile Prefix Advertisement Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4ab6e7154c0052a751c7a841f1dbb2d91b"></a>ICMPv6_CERTIFICATION_PATH_SOLICITATION&#160;</td><td class="fielddoc"><p>Certification Path Solicitation Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4a3b7c47f5808a7c5c08531644e454032b"></a>ICMPv6_CERTIFICATION_PATH_ADVERTISEMENT&#160;</td><td class="fielddoc"><p>Certification Path Advertisement Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4a4dea72e249fac98d4bf4b627f3f9a59b"></a>ICMPv6_EXPERIMENTAL_MOBILITY&#160;</td><td class="fielddoc"><p>ICMP Experimental Mobility Subtype Format and Registry Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4a39d4a48eb60808a2cf3eafb6cf2b259f"></a>ICMPv6_MULTICAST_ROUTER_ADVERTISEMENT&#160;</td><td class="fielddoc"><p>Multicast Router Advertisement Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4ae018643c969d35a8560da8d7f951afa3"></a>ICMPv6_MULTICAST_ROUTER_SOLICITATION&#160;</td><td class="fielddoc"><p>Multicast Router Solicitation Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4aed1376eb49c5cbc6d3c571133aa34fb5"></a>ICMPv6_MULTICAST_ROUTER_TERMINATION&#160;</td><td class="fielddoc"><p>Multicast Router Termination Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4acf1c465cd2d9a3fd0a1225c8f46e9a3b"></a>ICMPv6_RPL_CONTROL_MESSAGE&#160;</td><td class="fielddoc"><p>RPL Control Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4a0ac8f77fab00dd7d1d9acb8cbbe87116"></a>ICMPv6_PRIVATE_EXPERIMENTATION3&#160;</td><td class="fielddoc"><p>Private Experimentation Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4a42f724324a5a254132cc058de532594a"></a>ICMPv6_PRIVATE_EXPERIMENTATION4&#160;</td><td class="fielddoc"><p>Private Experimentation Message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69f4e4ed66464f2f5b6ddee70b9274f4aaca9037bb171f23d37d29f438da2e74c"></a>ICMPv6_RESERVED_EXPANSION_INFORMATIONAL&#160;</td><td class="fielddoc"><p>Reserved for expansion of ICMPv6 informational messages </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="ad59f90b2f755654b75205c3e06fb2bd8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad59f90b2f755654b75205c3e06fb2bd8">&#9670;&nbsp;</a></span>IgmpType</h2>
 
@@ -3748,6 +3925,8 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ac6557f5dc8fcb14858f231b12bdc1c1aa4aa1defc906956e729e862544306661d"></a>PacketLogModuleIcmpLayer&#160;</td><td class="fielddoc"><p><a class="el" href="classpcpp_1_1_icmp_layer.html">IcmpLayer</a> module (Packet++) </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ac6557f5dc8fcb14858f231b12bdc1c1aae64e4f201a7d21d8d3186d94908be927"></a>PacketLogModuleIcmpV6Layer&#160;</td><td class="fielddoc"><p><a class="el" href="classpcpp_1_1_icmp_v6_layer.html">IcmpV6Layer</a> module (Packet++) </p>
+</td></tr>
 <tr><td class="fieldname"><a id="ac6557f5dc8fcb14858f231b12bdc1c1aa1b471ed9b860901662d96ade7712e9da"></a>PacketLogModuleGreLayer&#160;</td><td class="fielddoc"><p><a class="el" href="classpcpp_1_1_gre_layer.html">GreLayer</a> module (Packet++) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ac6557f5dc8fcb14858f231b12bdc1c1aad3a71d664ea3bf5a006b6d2656a8351b"></a>PacketLogModuleSSLLayer&#160;</td><td class="fielddoc"><p><a class="el" href="classpcpp_1_1_s_s_l_layer.html">SSLLayer</a> module (Packet++) </p>
@@ -3784,6 +3963,8 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ac6557f5dc8fcb14858f231b12bdc1c1aaa16e6914428d514a04d981c5261d6730"></a>PacketLogModuleSingleCommandTextProtocolLayer&#160;</td><td class="fielddoc"><p><a class="el" href="classpcpp_1_1_single_command_text_protocol.html">SingleCommandTextProtocol</a> module (Packet++) </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ac6557f5dc8fcb14858f231b12bdc1c1aa475a0b85e7f832fc54a964c4e6dae04a"></a>PacketLogModuleNdpLayer&#160;</td><td class="fielddoc"><p>NdpLayer module (Packet++) </p>
+</td></tr>
 <tr><td class="fieldname"><a id="ac6557f5dc8fcb14858f231b12bdc1c1aa1a88df0e55376aa7cc145c022cb655a2"></a>PacketLogModuleFtpLayer&#160;</td><td class="fielddoc"><p><a class="el" href="classpcpp_1_1_ftp_layer.html">FtpLayer</a> module (Packet++) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ac6557f5dc8fcb14858f231b12bdc1c1aaac5bb0af4a05ddc08ac0d60e40f4af0b"></a>PcapLogModuleWinPcapLiveDevice&#160;</td><td class="fielddoc"><p><a class="el" href="classpcpp_1_1_win_pcap_live_device.html">WinPcapLiveDevice</a> module (Pcap++) </p>
@@ -3805,6 +3986,29 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="ac6557f5dc8fcb14858f231b12bdc1c1aa7c7b04d450484507109458e2ef341a68"></a>NetworkUtils&#160;</td><td class="fielddoc"><p><a class="el" href="classpcpp_1_1_network_utils.html">NetworkUtils</a> module (Pcap++) </p>
 </td></tr>
 </table>
+
+</div>
+</div>
+<a id="a05de8c5825b009c706ab2693fc9587e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05de8c5825b009c706ab2693fc9587e5">&#9670;&nbsp;</a></span>NDPNeighborOptionTypes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacepcpp.html#a05de8c5825b009c706ab2693fc9587e5">pcpp::NDPNeighborOptionTypes</a> : int</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>An enum representing the available option types for Neighbor Discovery in IPv6 (see RFC 4861) </p>
 
 </div>
 </div>
@@ -5512,6 +5716,21 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="afd82e78f26ca6b8ddcf301777d6728c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd82e78f26ca6b8ddcf301777d6728c3">&#9670;&nbsp;</a></span>ICMPv6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::ICMPv6 = 0x20000000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ICMPv6 protocol </p>
+
+</div>
+</div>
 <a id="ac5c8075566d698a54ad804ffae9174a0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac5c8075566d698a54ad804ffae9174a0">&#9670;&nbsp;</a></span>IGMP</h2>
 
@@ -5968,7 +6187,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li>
-    <li class="footer">Generated on Fri Aug 12 2022 06:55:42 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Aug 17 2022 08:06:19 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

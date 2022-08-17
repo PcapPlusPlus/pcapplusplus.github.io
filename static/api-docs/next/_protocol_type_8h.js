@@ -31,6 +31,7 @@ var _protocol_type_8h =
     [ "HTTPRequest", "_protocol_type_8h.html#acd42edf1ca5da0c50d131e2ba801720d", null ],
     [ "HTTPResponse", "_protocol_type_8h.html#af6b953db5db49c9e04b36112cca3822e", null ],
     [ "ICMP", "_protocol_type_8h.html#ac7e3b376a0a26e1b7591f4aae3b01b76", null ],
+    [ "ICMPv6", "_protocol_type_8h.html#afd82e78f26ca6b8ddcf301777d6728c3", null ],
     [ "IGMP", "_protocol_type_8h.html#ac5c8075566d698a54ad804ffae9174a0", null ],
     [ "IGMPv1", "_protocol_type_8h.html#ab73aa665e280eb57ccd96422de561c91", null ],
     [ "IGMPv2", "_protocol_type_8h.html#a554228f63e4a107a34cb36c34187a634", null ],

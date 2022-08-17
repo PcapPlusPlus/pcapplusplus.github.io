@@ -59,6 +59,7 @@ var files =
     [ "GtpLayer.h", "_gtp_layer_8h.html", "_gtp_layer_8h" ],
     [ "HttpLayer.h", "_http_layer_8h.html", "_http_layer_8h" ],
     [ "IcmpLayer.h", "_icmp_layer_8h.html", "_icmp_layer_8h" ],
+    [ "IcmpV6Layer.h", "_icmp_v6_layer_8h.html", "_icmp_v6_layer_8h" ],
     [ "IgmpLayer.h", "_igmp_layer_8h.html", "_igmp_layer_8h" ],
     [ "IpAddress.h", "_ip_address_8h.html", "_ip_address_8h" ],
     [ "IPLayer.h", "_i_p_layer_8h.html", [
@@ -104,6 +105,7 @@ var files =
     [ "MplsLayer.h", "_mpls_layer_8h.html", [
       [ "MplsLayer", "classpcpp_1_1_mpls_layer.html", "classpcpp_1_1_mpls_layer" ]
     ] ],
+    [ "NdpLayer.h", "_ndp_layer_8h.html", "_ndp_layer_8h" ],
     [ "NetworkUtils.h", "_network_utils_8h.html", [
       [ "NetworkUtils", "classpcpp_1_1_network_utils.html", "classpcpp_1_1_network_utils" ]
     ] ],
