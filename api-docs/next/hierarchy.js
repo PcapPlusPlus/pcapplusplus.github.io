@@ -77,6 +77,11 @@ var hierarchy =
       [ "pcpp::icmp_time_exceeded", "structpcpp_1_1icmp__time__exceeded.html", null ],
       [ "pcpp::icmp_timestamp_request", "structpcpp_1_1icmp__timestamp__request.html", null ]
     ] ],
+    [ "pcpp::icmpv6hdr", "structpcpp_1_1icmpv6hdr.html", [
+      [ "pcpp::icmpv6_echo_hdr", "structpcpp_1_1icmpv6__echo__hdr.html", null ],
+      [ "pcpp::NDPNeighborAdvertisementLayer::ndpneighboradvertisementhdr", "structpcpp_1_1_n_d_p_neighbor_advertisement_layer_1_1ndpneighboradvertisementhdr.html", null ],
+      [ "pcpp::NDPNeighborSolicitationLayer::ndpneighborsolicitationhdr", "structpcpp_1_1_n_d_p_neighbor_solicitation_layer_1_1ndpneighborsolicitationhdr.html", null ]
+    ] ],
     [ "pcpp::IDataContainer", "classpcpp_1_1_i_data_container.html", [
       [ "pcpp::Layer", "classpcpp_1_1_layer.html", [
         [ "pcpp::ArpLayer", "classpcpp_1_1_arp_layer.html", null ],
@@ -102,6 +107,13 @@ var hierarchy =
         ] ],
         [ "pcpp::GtpV1Layer", "classpcpp_1_1_gtp_v1_layer.html", null ],
         [ "pcpp::IcmpLayer", "classpcpp_1_1_icmp_layer.html", null ],
+        [ "pcpp::IcmpV6Layer", "classpcpp_1_1_icmp_v6_layer.html", [
+          [ "pcpp::ICMPv6EchoLayer", "classpcpp_1_1_i_c_m_pv6_echo_layer.html", null ],
+          [ "pcpp::NDPLayerBase", "classpcpp_1_1_n_d_p_layer_base.html", [
+            [ "pcpp::NDPNeighborAdvertisementLayer", "classpcpp_1_1_n_d_p_neighbor_advertisement_layer.html", null ],
+            [ "pcpp::NDPNeighborSolicitationLayer", "classpcpp_1_1_n_d_p_neighbor_solicitation_layer.html", null ]
+          ] ]
+        ] ],
         [ "pcpp::IgmpLayer", "classpcpp_1_1_igmp_layer.html", [
           [ "pcpp::IgmpV1Layer", "classpcpp_1_1_igmp_v1_layer.html", null ],
           [ "pcpp::IgmpV2Layer", "classpcpp_1_1_igmp_v2_layer.html", null ],
@@ -318,6 +330,7 @@ var hierarchy =
       [ "pcpp::DhcpOption", "classpcpp_1_1_dhcp_option.html", null ],
       [ "pcpp::IPv4Option", "classpcpp_1_1_i_pv4_option.html", null ],
       [ "pcpp::IPv6TLVOptionHeader::IPv6Option", "classpcpp_1_1_i_pv6_t_l_v_option_header_1_1_i_pv6_option.html", null ],
+      [ "pcpp::NdpOption", "classpcpp_1_1_ndp_option.html", null ],
       [ "pcpp::RadiusAttribute", "classpcpp_1_1_radius_attribute.html", null ],
       [ "pcpp::TcpOption", "classpcpp_1_1_tcp_option.html", null ]
     ] ],
@@ -326,6 +339,7 @@ var hierarchy =
       [ "pcpp::DhcpV6OptionBuilder", "classpcpp_1_1_dhcp_v6_option_builder.html", null ],
       [ "pcpp::IPv4OptionBuilder", "classpcpp_1_1_i_pv4_option_builder.html", null ],
       [ "pcpp::IPv6TLVOptionHeader::IPv6TLVOptionBuilder", "classpcpp_1_1_i_pv6_t_l_v_option_header_1_1_i_pv6_t_l_v_option_builder.html", null ],
+      [ "pcpp::NdpOptionBuilder", "classpcpp_1_1_ndp_option_builder.html", null ],
       [ "pcpp::PPPoEDiscoveryLayer::PPPoETagBuilder", "classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag_builder.html", null ],
       [ "pcpp::RadiusAttributeBuilder", "classpcpp_1_1_radius_attribute_builder.html", null ],
       [ "pcpp::TcpOptionBuilder", "classpcpp_1_1_tcp_option_builder.html", null ]
@@ -335,6 +349,7 @@ var hierarchy =
     [ "pcpp::TLVRecordReader< pcpp::DhcpV6Option >", "classpcpp_1_1_t_l_v_record_reader.html", null ],
     [ "pcpp::TLVRecordReader< pcpp::IPv4Option >", "classpcpp_1_1_t_l_v_record_reader.html", null ],
     [ "pcpp::TLVRecordReader< pcpp::IPv6TLVOptionHeader::IPv6Option >", "classpcpp_1_1_t_l_v_record_reader.html", null ],
+    [ "pcpp::TLVRecordReader< pcpp::NdpOption >", "classpcpp_1_1_t_l_v_record_reader.html", null ],
     [ "pcpp::TLVRecordReader< pcpp::PPPoEDiscoveryLayer::PPPoETag >", "classpcpp_1_1_t_l_v_record_reader.html", null ],
     [ "pcpp::TLVRecordReader< pcpp::RadiusAttribute >", "classpcpp_1_1_t_l_v_record_reader.html", null ],
     [ "pcpp::TLVRecordReader< pcpp::TcpOption >", "classpcpp_1_1_t_l_v_record_reader.html", null ],
