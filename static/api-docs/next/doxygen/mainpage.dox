@@ -33,36 +33,38 @@
 * <b>Supported protocols (Packet++):</b>
 *   - pcpp::EthLayer, EthLayer.h - Ethernet II protocol
 *   - pcpp::EthDot3Layer, EthDot3Layer.h - IEEE 802.3 Ethernet protocol
-*   - pcpp::SllLayer, SllLayer.h - SLL protocol (Linux cooked capture)
 *   - pcpp::NullLoopbackLayer, NullLoopbackLayer.h - Null/Loopback
 *   - pcpp::PacketTrailerLayer, PacketTrailerLayer.h - packet trailer (a.k.a footer or padding)
-*   - pcpp::ArpLayer, ArpLayer.h - ARP protocol
+*   - pcpp::PPPoESessionLayer, pcpp::PPPoEDiscoveryLayer, PPPoELayer.h - PPPoE protocol
+*   - pcpp::SllLayer, SllLayer.h - SLL protocol (Linux cooked capture)
 *   - pcpp::VlanLayer, VlanLayer.h - VLAN protocol
 *   - pcpp::VxlanLayer, VxlanLayer.h - VXLAN protocol
-*   - pcpp::MplsLayer, MplsLayer.h - MPLS protocol
-*   - pcpp::PPPoESessionLayer, pcpp::PPPoEDiscoveryLayer, PPPoELayer.h - PPPoE protocol
+*   - pcpp::ArpLayer, ArpLayer.h - ARP protocol
 *   - pcpp::GREv0Layer, pcpp::GREv1Layer, pcpp::PPP_PPTPLayer, GreLayer.h - GRE and PPTP protocol
+*   - pcpp::IcmpLayer, IcmpLayer.h - ICMP protocol
+*   - pcpp::IcmpV6Layer, pcpp::ICMPv6EchoLayer, IcmpV6Layer.h - ICMPv6 protocol
+*   - pcpp::IgmpLayer, IgmpLayer.h - IGMP protocol
 *   - pcpp::IPv4Layer, IPv4Layer.h - IPv4 protocol
 *   - pcpp::IPv6Layer, IPv6Layer.h - IPv6 protocol
+*   - pcpp::MplsLayer, MplsLayer.h - MPLS protocol
+*   - pcpp::NDPNeighborSolicitationLayer, pcpp::NDPNeighborAdvertisementLayer, NdpLayer.h - NDP protocol
+*   - pcpp::GtpV1Layer, GtpLayer.h - GTP (v1) protocol
+*   - pcpp::AuthenticationHeaderLayer, pcpp::ESPLayer - IPSec AH & ESP - parsing only (no editing capabilities)
 *   - pcpp::TcpLayer, TcpLayer.h - TCP protocol
 *   - pcpp::UdpLayer, UdpLayer.h - UDP protocol
-*   - pcpp::GtpV1Layer, GtpLayer.h - GTP (v1) protocol
-*   - pcpp::IcmpLayer, IcmpLayer.h - ICMP protocol
-*   - pcpp::IgmpLayer, IgmpLayer.h - IGMP protocol
-*   - pcpp::AuthenticationHeaderLayer, pcpp::ESPLayer - IPSec AH & ESP - parsing only (no editing capabilities)
-*   - pcpp::SipRequestLayer, SipLayer.h - SIP request protocol
-*   - pcpp::SipResponseLayer, SipLayer.h - SIP response protocol
 *   - pcpp::SdpLayer, SdpLayer.h - SDP protocol
-*   - pcpp::RadiusLayer, RadiusLayer.h - RADIUS protocol
-*   - pcpp::DnsLayer, DnsLayer.h - DNS protocol
+*   - pcpp::SipRequestLayer, pcpp::SipResponseLayer, SipLayer.h - SIP request protocol
+*   - pcpp::SSLLayer, SSLLayer.h - SSL/TLS protocol - parsing only (no editing capabilities)
+*   - pcpp::BgpLayer, BgpLayer.h - BGP protocol
 *   - pcpp::DhcpLayer, DhcpLayer.h - DHCP protocol
 *   - pcpp::DhcpV6Layer, DhcpV6Layer.h - DHCPv6 protocol
-*   - pcpp::BgpLayer, BgpLayer.h - BGP protocol
+*   - pcpp::DnsLayer, DnsLayer.h - DNS protocol
+*   - pcpp::FtpRequestLayer, pcpp::FtpResponseLayer, FtpLayer.h - FTP protocol
+*   - pcpp::HttpRequestLayer, pcpp::HttpResponseLayer, HttpLayer.h - HTTP protocol
 *   - pcpp::NtpLayer, NtpLayer.h - NTP (v3, v4) protocol
+*   - pcpp::RadiusLayer, RadiusLayer.h - RADIUS protocol
 *   - pcpp::SSHLayer, SSHLayer.h - SSH protocol - parsing only (no editing capabilities)
-*   - pcpp::HttpRequestLayer, HttpLayer.h - HTTP request protocol
-*   - pcpp::HttpResponseLayer, HttpLayer.h - HTTP response protocol
-*   - pcpp::SSLLayer, SSLLayer.h - SSL/TLS protocol - parsing only (no editing capabilities)
+*   - pcpp::TelnetLayer, TelnetLayer.h - Telnet protocol
 *   - pcpp::PayloadLayer, PayloadLayer.h - unknown layer or payload
 *
 * <b>Common utilities and infrastructure (Common++, Packet++, Pcap++):</b>
