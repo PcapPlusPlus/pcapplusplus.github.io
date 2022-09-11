@@ -176,6 +176,8 @@ var searchData=
   ['stopcapture',['stopCapture',['../classpcpp_1_1_dpdk_device.html#ae3238998a22eb354c388d68d92285de7',1,'pcpp::DpdkDevice::stopCapture()'],['../classpcpp_1_1_kni_device.html#aacdb5298cdb0fa1cc8a3563ef91e2546',1,'pcpp::KniDevice::stopCapture()'],['../classpcpp_1_1_pcap_live_device.html#a818da3e11e0c953385badf6233ee0f43',1,'pcpp::PcapLiveDevice::stopCapture()'],['../classpcpp_1_1_pf_ring_device.html#a31d086cb96e4e8de1e1d5ee640812575',1,'pcpp::PfRingDevice::stopCapture()']]],
   ['stopdpdkworkerthreads',['stopDpdkWorkerThreads',['../classpcpp_1_1_dpdk_device_list.html#a231f0417a70c8b014e68dea5454b00d9',1,'pcpp::DpdkDeviceList']]],
   ['stoprequesthandlerthread',['stopRequestHandlerThread',['../classpcpp_1_1_kni_device.html#a9ea262da8ecc907b834fe7892241578e',1,'pcpp::KniDevice']]],
+  ['stpconfigurationbpdulayer',['StpConfigurationBPDULayer',['../classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#a047e3d9f6de577bc01ca4adc771c4092',1,'pcpp::StpConfigurationBPDULayer']]],
+  ['stptopologychangebpdulayer',['StpTopologyChangeBPDULayer',['../classpcpp_1_1_stp_topology_change_b_p_d_u_layer.html#a1d8e1e115ecfa536db8e6e77dd187d94',1,'pcpp::StpTopologyChangeBPDULayer']]],
   ['stringdnsresourcedata',['StringDnsResourceData',['../classpcpp_1_1_string_dns_resource_data.html#af47b8943630f686bffd2e340f97e1c6c',1,'pcpp::StringDnsResourceData']]],
   ['suppresslogs',['suppressLogs',['../classpcpp_1_1_logger.html#acfffd12a85299929559ca494154be3d7',1,'pcpp::Logger']]]
 ];

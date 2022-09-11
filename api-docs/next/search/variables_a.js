@@ -9,5 +9,6 @@ var searchData=
   ['link_5flayer_5faddr_5flen',['link_layer_addr_len',['../structpcpp_1_1sll__header.html#ac253e0a098c39f46d192619ed5d229bf',1,'pcpp::sll_header']]],
   ['linkduplex',['linkDuplex',['../structpcpp_1_1_dpdk_device_1_1_link_status.html#a64cfc43e13a80ba49369288ad220bd1b',1,'pcpp::DpdkDevice::LinkStatus']]],
   ['linkspeedmbps',['linkSpeedMbps',['../structpcpp_1_1_dpdk_device_1_1_link_status.html#a6177ed98446f18d57be88d8c2411a473',1,'pcpp::DpdkDevice::LinkStatus']]],
-  ['linkup',['linkUp',['../structpcpp_1_1_dpdk_device_1_1_link_status.html#ac71de439a1f9d3f7c95aadd5b20b0469',1,'pcpp::DpdkDevice::LinkStatus']]]
+  ['linkup',['linkUp',['../structpcpp_1_1_dpdk_device_1_1_link_status.html#ac71de439a1f9d3f7c95aadd5b20b0469',1,'pcpp::DpdkDevice::LinkStatus']]],
+  ['llc',['LLC',['../namespacepcpp.html#a7b2855f37ecc5f6c1d4971b6cee809d2',1,'pcpp']]]
 ];
