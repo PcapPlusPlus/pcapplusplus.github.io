@@ -39,6 +39,8 @@ var _logger_8h =
       [ "PacketLogModuleIPSecLayer", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aafef719fe8a4eebc6d02f972f3a87e9a3", null ],
       [ "PacketLogModuleNtpLayer", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa608f58dc0786dbbecd2aede90233bd56", null ],
       [ "PacketLogModuleTelnetLayer", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa1014ab8a1636c1c7b45ffe2768e81add", null ],
+      [ "PacketLogModuleStpLayer", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aaa6be3b90b68ae9b4b5fac328130f0047", null ],
+      [ "PacketLogModuleLLCLayer", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa1c20fe8215d4844681b6462d87e49a7e", null ],
       [ "PacketLogModuleSingleCommandTextProtocolLayer", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aaa16e6914428d514a04d981c5261d6730", null ],
       [ "PacketLogModuleNdpLayer", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa475a0b85e7f832fc54a964c4e6dae04a", null ],
       [ "PacketLogModuleFtpLayer", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa1a88df0e55376aa7cc145c022cb655a2", null ],

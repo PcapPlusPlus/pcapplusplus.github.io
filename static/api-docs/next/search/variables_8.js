@@ -18,5 +18,6 @@ var searchData=
   ['ipsrc',['ipSrc',['../structpcpp_1_1iphdr.html#a7da8d9dc60a51c873500c175f6c65c52',1,'pcpp::iphdr::ipSrc()'],['../structpcpp_1_1ip6__hdr.html#ad49c20046e6d9a6c3526f353352f91a3',1,'pcpp::ip6_hdr::ipSrc()']]],
   ['ipv4',['IPv4',['../namespacepcpp.html#aa465f388784082dafaf5dce0b9f67817',1,'pcpp']]],
   ['ipv6',['IPv6',['../namespacepcpp.html#aab30bccb509b8fcf2fea7d4db3b46046',1,'pcpp']]],
-  ['ipversion',['ipVersion',['../structpcpp_1_1iphdr.html#a74b5c1fbf03d4ebbd3d6ea2d263237b7',1,'pcpp::iphdr::ipVersion()'],['../structpcpp_1_1ip6__hdr.html#aee7025c3316d0ecbb3db29bfdecb1e25',1,'pcpp::ip6_hdr::ipVersion()']]]
+  ['ipversion',['ipVersion',['../structpcpp_1_1iphdr.html#a74b5c1fbf03d4ebbd3d6ea2d263237b7',1,'pcpp::iphdr::ipVersion()'],['../structpcpp_1_1ip6__hdr.html#aee7025c3316d0ecbb3db29bfdecb1e25',1,'pcpp::ip6_hdr::ipVersion()']]],
+  ['irpc',['irpc',['../structpcpp_1_1mstp__conf__bpdu.html#a1f6e352c351fad6fdd86f8da9c7279a6',1,'pcpp::mstp_conf_bpdu']]]
 ];

@@ -11,12 +11,14 @@ var searchData=
   ['packettrailer',['PacketTrailer',['../namespacepcpp.html#a4f7295d39043c96760995e2f08c06389',1,'pcpp']]],
   ['pad',['pad',['../structpcpp_1_1vxlan__header.html#ab0625babfb4261f6a2cb6c44f7160325',1,'pcpp::vxlan_header']]],
   ['password',['password',['../structpcpp_1_1_pcap_remote_authentication.html#a2f464437d3df5c609c4f91675ea73a63',1,'pcpp::PcapRemoteAuthentication']]],
+  ['pathcost',['pathCost',['../structpcpp_1_1stp__conf__bpdu.html#af325de263f5c47e2d5662d7d8c6bd2f4',1,'pcpp::stp_conf_bpdu::pathCost()'],['../structpcpp_1_1msti__conf__msg.html#ae20c0c53ab0fb1901d4eb1375f68a953',1,'pcpp::msti_conf_msg::pathCost()']]],
   ['payloadlen',['payloadLen',['../structpcpp_1_1ipsec__authentication__header.html#ab02b43bf72a758ac0f623c99aeb59a62',1,'pcpp::ipsec_authentication_header']]],
   ['payloadlength',['payloadLength',['../structpcpp_1_1gre1__header.html#a727e2a2affa2696a0177475af78a196b',1,'pcpp::gre1_header::payloadLength()'],['../structpcpp_1_1ip6__hdr.html#ae5849394b92e6a7d3cd0b2972e30391e',1,'pcpp::ip6_hdr::payloadLength()'],['../structpcpp_1_1pppoe__header.html#a08e5841209e619cc327971361264f02e',1,'pcpp::pppoe_header::payloadLength()']]],
   ['pointer',['pointer',['../structpcpp_1_1icmp__param__problem.html#acab38aee38b723add6dce88b3ff9166b',1,'pcpp::icmp_param_problem']]],
   ['policyappliedflag',['policyAppliedFlag',['../structpcpp_1_1vxlan__header.html#a11efc5349d82e0342a51d0ceaa9d7c5a',1,'pcpp::vxlan_header']]],
   ['portdst',['portDst',['../structpcpp_1_1tcphdr.html#a4ae26537b0e824c5b0fc1bcf9adf2fdc',1,'pcpp::tcphdr::portDst()'],['../structpcpp_1_1udphdr.html#ab2760968de55386f04539019f5a677e5',1,'pcpp::udphdr::portDst()']]],
-  ['portid',['portId',['../structpcpp_1_1_kni_device_1_1_kni_device_configuration.html#a22df3fac00ba8927f0554bf970e389ac',1,'pcpp::KniDevice::KniDeviceConfiguration']]],
+  ['portid',['portId',['../structpcpp_1_1_kni_device_1_1_kni_device_configuration.html#a22df3fac00ba8927f0554bf970e389ac',1,'pcpp::KniDevice::KniDeviceConfiguration::portId()'],['../structpcpp_1_1stp__conf__bpdu.html#abb14d20c02e5acd31013b84c2146a925',1,'pcpp::stp_conf_bpdu::portId()']]],
+  ['portpriority',['portPriority',['../structpcpp_1_1msti__conf__msg.html#a06b865a38e6cc0f4e7d4ec2dedadcad6',1,'pcpp::msti_conf_msg']]],
   ['portsrc',['portSrc',['../structpcpp_1_1tcphdr.html#a4ba66caaf79a20c53a8e92f7537d50a6',1,'pcpp::tcphdr::portSrc()'],['../structpcpp_1_1udphdr.html#a72a8d8ad99698271461762079d3758a9',1,'pcpp::udphdr::portSrc()']]],
   ['ppp_5fpptp',['PPP_PPTP',['../namespacepcpp.html#a5c44d3da15807781b9fd46228f09610d',1,'pcpp']]],
   ['pppoe',['PPPoE',['../namespacepcpp.html#a9ffb576d1b5a02c884a57605cf59f18d',1,'pcpp']]],
@@ -29,5 +31,6 @@ var searchData=
   ['protocol_5ftype',['protocol_type',['../structpcpp_1_1sll__header.html#a133d6e18091bafa51d1a4558a9f6bda9',1,'pcpp::sll_header']]],
   ['protocolsize',['protocolSize',['../structpcpp_1_1arphdr.html#a36e89262f76da9f28beb86cdec632c8c',1,'pcpp::arphdr']]],
   ['protocoltype',['protocolType',['../structpcpp_1_1arphdr.html#ae729b0afe661b105ceb7e5996f37a662',1,'pcpp::arphdr::protocolType()'],['../structpcpp_1_1gtpv1__header.html#add48e4b8c81c5971ac4048b75c44e009',1,'pcpp::gtpv1_header::protocolType()']]],
+  ['protoid',['protoId',['../structpcpp_1_1stp__tcn__bpdu.html#ac2a2bb62505e8d316dbd5170b0c4a012',1,'pcpp::stp_tcn_bpdu']]],
   ['pshflag',['pshFlag',['../structpcpp_1_1tcphdr.html#a1561eb6d029e00fe449bbaac3be8d705',1,'pcpp::tcphdr']]]
 ];
