@@ -50,7 +50,7 @@ Let's cover the different options. We'll begin with the wizard mode and later co
 This mode is pretty much self explanatory and the wizard will guide you through the parameters you need to provide:
 
 ```shell
-seladb@seladb:~/PcapPlusPlus$ ./configure-linux.sh
+./configure-linux.sh
 
 ****************************************
 PcapPlusPlus Linux configuration script
@@ -63,8 +63,6 @@ Enter PF_RING source path: /home/seladb/PF_RING
 Compile PcapPlusPlus with DPDK? y
 Enter DPDK source path: /home/seladb/dpdk-18.11
 PcapPlusPlus configuration is complete. Files created (or modified): mk/platform.mk, mk/PcapPlusPlus.mk, mk/install.sh, mk/uninstall.sh
-
-seladb@seladb:~/PcapPlusPlus$
 ```
 
 ### Command-line switches mode
@@ -151,9 +149,7 @@ After running the config script, you're can safely build the code:
 After build is complete you can run the installation script which will copy the library and header files to the installation directory:
 
 ```shell
-seladb@seladb:~/PcapPlusPlus$ sudo make install
-Installation complete!
-seladb@seladb:~/PcapPlusPlus$
+sudo make install
 ```
 
 The default installation directory is `/usr/local` which means the header files will be copied to `/usr/local/include/pcapplusplus` and the library files will be copied to `/usr/local/lib`.
@@ -174,8 +170,8 @@ There is an easy way to use a different gcc/g++ compiler. Let's take an example 
 `/usr/bin/`:
 
 ```shell
-seladb@seladb:/PcapPlusPlus# export CXX=/usr/bin/aarch64-linux-gnu-g++
-seladb@seladb:/PcapPlusPlus# export CC=/usr/bin/aarch64-linux-gnu-gcc
-seladb@seladb:/PcapPlusPlus# ./configure-linux.sh --default
-seladb@seladb:/PcapPlusPlus# make
+export CXX=/usr/bin/aarch64-linux-gnu-g++
+export CC=/usr/bin/aarch64-linux-gnu-gcc
+./configure-linux.sh --default
+make
 ```
