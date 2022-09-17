@@ -16,7 +16,9 @@ var searchData=
   ['erasecharacter',['EraseCharacter',['../classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8a86bc10ef60cb75252696a675cfda44d8',1,'pcpp::TelnetLayer']]],
   ['eraseline',['EraseLine',['../classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8a2a2fedc48d11ecf8a36e65d9546c2bb2',1,'pcpp::TelnetLayer']]],
   ['error',['Error',['../classpcpp_1_1_logger.html#a28f78fb4d16392bc4ce6ec4c2b2dd651a87cde2fb671d21e83ceacba6c3d64b08',1,'pcpp::Logger']]],
+  ['error_5fack',['ERROR_ACK',['../classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1aace06615e719801d944ce1192c7a93c7',1,'pcpp::SomeIpLayer']]],
   ['error_5fpacketdoesnotmatchflow',['Error_PacketDoesNotMatchFlow',['../classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177a3380cc0fe3cc4979fa2c5c4a9a658921',1,'pcpp::TcpReassembly']]],
+  ['errors',['ERRORS',['../classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1a6f3a603fac4d817f1848c3173b243b57',1,'pcpp::SomeIpLayer']]],
   ['exceed_5fstorage_5fallocation',['EXCEED_STORAGE_ALLOCATION',['../classpcpp_1_1_ftp_response_layer.html#aebec062665c1d8c6e4eba941782a59cda03e7ce5f2c3203024e225a09ee39d6de',1,'pcpp::FtpResponseLayer']]],
   ['extendedascii',['ExtendedASCII',['../classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a05a1c6312a16887de354393dcf2dd091',1,'pcpp::TelnetLayer']]],
   ['extendedoptions',['ExtendedOptions',['../classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a19b90292d3383490dcc37a35959612ab',1,'pcpp::TelnetLayer']]]

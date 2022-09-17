@@ -31,6 +31,7 @@ var searchData=
   ['addressentrysize',['addressEntrySize',['../structpcpp_1_1icmp__router__advertisement__hdr.html#a7ae4d3591f09904126f1a19f3dc799a6',1,'pcpp::icmp_router_advertisement_hdr']]],
   ['addressmask',['addressMask',['../structpcpp_1_1icmp__address__mask__request.html#ac510d5502a105ee92b9a5718089a4aa4',1,'pcpp::icmp_address_mask_request']]],
   ['addresstype',['AddressType',['../classpcpp_1_1_i_p_address.html#ac389e5507d75b60d2b0ca939db195231',1,'pcpp::IPAddress']]],
+  ['addsomeipport',['addSomeIpPort',['../classpcpp_1_1_some_ip_layer.html#ae03401daa97ddfda6d214879ec61da24',1,'pcpp::SomeIpLayer']]],
   ['addsourceaddress',['addSourceAddress',['../classpcpp_1_1_igmp_v3_query_layer.html#a5a899abed0005e7be97fcad24dfe50d8',1,'pcpp::IgmpV3QueryLayer']]],
   ['addsourceaddressatindex',['addSourceAddressAtIndex',['../classpcpp_1_1_igmp_v3_query_layer.html#a23bc052794bffdb6bc1f297a9e6c4a78',1,'pcpp::IgmpV3QueryLayer']]],
   ['addtag',['addTag',['../classpcpp_1_1_p_p_po_e_discovery_layer.html#a1a81969b91a1d47de762267fd74ead55',1,'pcpp::PPPoEDiscoveryLayer']]],

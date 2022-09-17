@@ -20,6 +20,7 @@ var searchData=
   ['normal',['Normal',['../classpcpp_1_1_pcap_live_device.html#a2381e7f053285090f0f9620bcbd8f0f3ad57df3ce2415ba6f804539bb268aecdf',1,'pcpp::PcapLiveDevice']]],
   ['not_5fequals',['NOT_EQUALS',['../namespacepcpp.html#a236073670782cc577b097b2fef4c7d62aa5cd5ef2f39bf8efeeca1d5a95c7e37b',1,'pcpp']]],
   ['not_5flogged_5fin',['NOT_LOGGED_IN',['../classpcpp_1_1_ftp_response_layer.html#aebec062665c1d8c6e4eba941782a59cda0b5c454d04697a80927a7ab49a06fd51',1,'pcpp::FtpResponseLayer']]],
-  ['notification',['Notification',['../classpcpp_1_1_bgp_layer.html#a2490690b9c7e6b33c1e5133ebd64ebe8a9154bf2106ec3b887c71d2b16f8165b7',1,'pcpp::BgpLayer']]],
+  ['notification',['NOTIFICATION',['../classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1a9814d942b7e24870084a3dce24867ab3',1,'pcpp::SomeIpLayer::NOTIFICATION()'],['../classpcpp_1_1_bgp_layer.html#a2490690b9c7e6b33c1e5133ebd64ebe8a9154bf2106ec3b887c71d2b16f8165b7',1,'pcpp::BgpLayer::Notification()']]],
+  ['notification_5fack',['NOTIFICATION_ACK',['../classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1abad4bcf3377a81877a9278f439763c94',1,'pcpp::SomeIpLayer']]],
   ['nowarning',['NoWarning',['../classpcpp_1_1_ntp_layer.html#a09e3e98cd55c3e7046a1e6a30677c8d1a5f92ebdd995887c775b3b85bab8c7c9e',1,'pcpp::NtpLayer']]]
 ];

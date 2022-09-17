@@ -18,6 +18,7 @@ var searchData=
   ['addoptionafter',['addOptionAfter',['../classpcpp_1_1_dhcp_layer.html#a4f8ae85e51c60486772b358a240cb749',1,'pcpp::DhcpLayer::addOptionAfter()'],['../classpcpp_1_1_dhcp_v6_layer.html#a295ca834c645bb274bb1d0864bfaedef',1,'pcpp::DhcpV6Layer::addOptionAfter()'],['../classpcpp_1_1_i_pv4_layer.html#ac2c675c0aae851a13565f614b89e412f',1,'pcpp::IPv4Layer::addOptionAfter()']]],
   ['addoptionbefore',['addOptionBefore',['../classpcpp_1_1_dhcp_v6_layer.html#a30c83bf5887f74b3fccd328fc9e40558',1,'pcpp::DhcpV6Layer']]],
   ['addquery',['addQuery',['../classpcpp_1_1_dns_layer.html#a80db9f0dfb1b6c4641a0357b54e47138',1,'pcpp::DnsLayer::addQuery(const std::string &amp;name, DnsType dnsType, DnsClass dnsClass)'],['../classpcpp_1_1_dns_layer.html#a3d36a88b61c4cf83ef5b20748d589ab8',1,'pcpp::DnsLayer::addQuery(DnsQuery *const copyQuery)']]],
+  ['addsomeipport',['addSomeIpPort',['../classpcpp_1_1_some_ip_layer.html#ae03401daa97ddfda6d214879ec61da24',1,'pcpp::SomeIpLayer']]],
   ['addsourceaddress',['addSourceAddress',['../classpcpp_1_1_igmp_v3_query_layer.html#a5a899abed0005e7be97fcad24dfe50d8',1,'pcpp::IgmpV3QueryLayer']]],
   ['addsourceaddressatindex',['addSourceAddressAtIndex',['../classpcpp_1_1_igmp_v3_query_layer.html#a23bc052794bffdb6bc1f297a9e6c4a78',1,'pcpp::IgmpV3QueryLayer']]],
   ['addtag',['addTag',['../classpcpp_1_1_p_p_po_e_discovery_layer.html#a1a81969b91a1d47de762267fd74ead55',1,'pcpp::PPPoEDiscoveryLayer']]],

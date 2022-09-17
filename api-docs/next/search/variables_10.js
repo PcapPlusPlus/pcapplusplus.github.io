@@ -25,6 +25,7 @@ var searchData=
   ['reserved6_5f8',['reserved6_8',['../structpcpp_1_1vxlan__header.html#ada8c68230dd90d8400398c333216a9f3',1,'pcpp::vxlan_header']]],
   ['reserved9',['reserved9',['../structpcpp_1_1vxlan__header.html#a738ed06e14b53ae9938503ecdd218bb8',1,'pcpp::vxlan_header']]],
   ['responsecode',['responseCode',['../structpcpp_1_1dnshdr.html#a13e46f496586640b3f2810601f4200c4',1,'pcpp::dnshdr']]],
+  ['returncode',['returnCode',['../structpcpp_1_1_some_ip_layer_1_1someiphdr.html#a08543acc16cd840ca7f681a42c105ef5',1,'pcpp::SomeIpLayer::someiphdr']]],
   ['rootid',['rootId',['../structpcpp_1_1stp__conf__bpdu.html#a140904d0651ae2c060b25d922cec267d',1,'pcpp::stp_conf_bpdu']]],
   ['router',['router',['../structpcpp_1_1_n_d_p_neighbor_advertisement_layer_1_1ndpneighboradvertisementhdr.html#aa11a93574a98c6601fe8171f12d53581',1,'pcpp::NDPNeighborAdvertisementLayer::ndpneighboradvertisementhdr']]],
   ['routeraddress',['routerAddress',['../structpcpp_1_1icmp__router__address__structure.html#a5d698807f7397470f2c04a54fe862e37',1,'pcpp::icmp_router_address_structure']]],
