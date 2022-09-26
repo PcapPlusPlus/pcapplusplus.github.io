@@ -151,6 +151,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4bc13ec8552ffbf5ae2fe281c4d0905b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a3915b20de33f61dd40e434688fa63c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a9a3915b20de33f61dd40e434688fa63c">getIPv4Address</a> () const</td></tr>
 <tr class="separator:a9a3915b20de33f61dd40e434688fa63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80e77bde8d290d33376ac8825c272534"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a80e77bde8d290d33376ac8825c272534">getIPv6Address</a> () const</td></tr>
+<tr class="separator:a80e77bde8d290d33376ac8825c272534"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53a12fdc4a19fb23acea4c0ed11c4cfd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a53a12fdc4a19fb23acea4c0ed11c4cfd">getDefaultGateway</a> () const</td></tr>
 <tr class="separator:a53a12fdc4a19fb23acea4c0ed11c4cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b173d2702c2e33c05eec8f5676affd8"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a6b173d2702c2e33c05eec8f5676affd8">getDnsServers</a> () const</td></tr>
@@ -538,6 +540,24 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The IPv4 address for this interface. If multiple IPv4 addresses are defined for this interface, the first will be picked. If no IPv4 addresses are defined, a zeroed IPv4 address (<a class="el" href="classpcpp_1_1_i_pv4_address.html#abd6badbf09d36b21ce83d54fd06bd17b">IPv4Address::Zero</a>) will be returned </dd></dl>
+
+</div>
+</div>
+<a id="a80e77bde8d290d33376ac8825c272534"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80e77bde8d290d33376ac8825c272534">&#9670;&nbsp;</a></span>getIPv6Address()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> pcpp::PcapLiveDevice::getIPv6Address </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The IPv6 address for this interface. If multiple IPv6 addresses are defined for this interface, the first will be picked. If no IPv6 addresses are defined, a zeroed IPv6 address (<a class="el" href="classpcpp_1_1_i_pv6_address.html#a4a55ced93d845d18f36b01805811c93d">IPv6Address::Zero</a>) will be returned </dd></dl>
 
 </div>
 </div>
@@ -1416,7 +1436,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a></li>
-    <li class="footer">Generated on Fri Sep 23 2022 07:49:48 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Sep 26 2022 05:04:45 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

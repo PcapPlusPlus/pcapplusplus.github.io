@@ -205,6 +205,7 @@ var searchData=
   ['getipv4header',['getIPv4Header',['../classpcpp_1_1_i_pv4_layer.html#a0586c258ff6ad5b051cdfab23449b9e0',1,'pcpp::IPv4Layer']]],
   ['getipv4optiontype',['getIPv4OptionType',['../classpcpp_1_1_i_pv4_option.html#a876989df38dc93beac81cc70ada78683',1,'pcpp::IPv4Option']]],
   ['getipv6',['getIPv6',['../classpcpp_1_1_i_p_address.html#a6d61f3719cb001136a622d4622c003a8',1,'pcpp::IPAddress']]],
+  ['getipv6address',['getIPv6Address',['../classpcpp_1_1_pcap_live_device.html#a80e77bde8d290d33376ac8825c272534',1,'pcpp::PcapLiveDevice']]],
   ['getipv6header',['getIPv6Header',['../classpcpp_1_1_i_pv6_layer.html#a73e1f7ba82431306bce9c47644be39d1',1,'pcpp::IPv6Layer']]],
   ['getkeepaliveheader',['getKeepaliveHeader',['../classpcpp_1_1_bgp_keepalive_message_layer.html#a74bc59ad1f39390dae8c222b347e9be4',1,'pcpp::BgpKeepaliveMessageLayer']]],
   ['getkey',['getKey',['../classpcpp_1_1_g_r_ev0_layer.html#a8ee814a5469ff981c6a2677d46ec1d89',1,'pcpp::GREv0Layer']]],
