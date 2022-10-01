@@ -100,8 +100,9 @@ Inheritance diagram for pcpp::SomeIpLayer:</div>
  <div class="center">
   <img src="classpcpp_1_1_some_ip_layer.png" usemap="#pcpp::SomeIpLayer_map" alt=""/>
   <map id="pcpp::SomeIpLayer_map" name="pcpp::SomeIpLayer_map">
-<area href="classpcpp_1_1_layer.html" alt="pcpp::Layer" shape="rect" coords="0,56,130,80"/>
-<area href="classpcpp_1_1_i_data_container.html" alt="pcpp::IDataContainer" shape="rect" coords="0,0,130,24"/>
+<area href="classpcpp_1_1_layer.html" alt="pcpp::Layer" shape="rect" coords="0,56,134,80"/>
+<area href="classpcpp_1_1_i_data_container.html" alt="pcpp::IDataContainer" shape="rect" coords="0,0,134,24"/>
+<area href="classpcpp_1_1_some_ip_tp_layer.html" alt="pcpp::SomeIpTpLayer" shape="rect" coords="0,168,134,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -193,20 +194,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9043b48b3f9216022924b12fd5d420a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee846573c684db0a4815ac47ca350f8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#aee846573c684db0a4815ac47ca350f8a">setPayloadLength</a> (uint32_t payloadLength)</td></tr>
 <tr class="separator:aee846573c684db0a4815ac47ca350f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a072b18270d049948267fe76ce497165f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#a072b18270d049948267fe76ce497165f">getHeaderLengthWithPayload</a> () const</td></tr>
-<tr class="separator:a072b18270d049948267fe76ce497165f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfa4f6dc80eddd420737b5df9998e0ff"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#adfa4f6dc80eddd420737b5df9998e0ff">getPduPayload</a> () const</td></tr>
 <tr class="separator:adfa4f6dc80eddd420737b5df9998e0ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cf2e2ac1c23fa8afdde6b3456adec90"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#a1cf2e2ac1c23fa8afdde6b3456adec90">getPduPayloadSize</a> () const</td></tr>
 <tr class="separator:a1cf2e2ac1c23fa8afdde6b3456adec90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcc09ca8735bd1bfbb2204d243471dbb"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#afcc09ca8735bd1bfbb2204d243471dbb">getHeaderLen</a> () const</td></tr>
 <tr class="separator:afcc09ca8735bd1bfbb2204d243471dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f5d9faa8eee0a744d1503ab6100c4a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#a3f5d9faa8eee0a744d1503ab6100c4a0">computeCalculateFields</a> ()</td></tr>
-<tr class="separator:a3f5d9faa8eee0a744d1503ab6100c4a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b509275ed09f28c78bf6060e4a8b46f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#a5b509275ed09f28c78bf6060e4a8b46f">computeCalculateFields</a> ()</td></tr>
+<tr class="separator:a5b509275ed09f28c78bf6060e4a8b46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad050d125749e967ddf43a46f9600b82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#aad050d125749e967ddf43a46f9600b82">parseNextLayer</a> ()</td></tr>
 <tr class="separator:aad050d125749e967ddf43a46f9600b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41fdc34e92ca4da631df87ce89ad1aa7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#a41fdc34e92ca4da631df87ce89ad1aa7">toString</a> () const</td></tr>
-<tr class="separator:a41fdc34e92ca4da631df87ce89ad1aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67b677488a8b17cebe32c593d3580b77"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#a67b677488a8b17cebe32c593d3580b77">toString</a> () const</td></tr>
+<tr class="separator:a67b677488a8b17cebe32c593d3580b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20f16486abe0fa16bfdd0cfd8936dfe5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#a20f16486abe0fa16bfdd0cfd8936dfe5">getOsiModelLayer</a> () const</td></tr>
 <tr class="separator:a20f16486abe0fa16bfdd0cfd8936dfe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classpcpp_1_1_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_layer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td></tr>
@@ -235,6 +234,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:affd724197a8efceb2ed595655658f1d0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classpcpp_1_1_layer.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#affd724197a8efceb2ed595655658f1d0">parseSomeIpLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_layer.html">Layer</a> *prevLayer, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet)</td></tr>
+<tr class="separator:affd724197a8efceb2ed595655658f1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85484b568172f1b36487218fdf216917"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#a85484b568172f1b36487218fdf216917">isSomeIpPort</a> (uint16_t port)</td></tr>
 <tr class="separator:a85484b568172f1b36487218fdf216917"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae03401daa97ddfda6d214879ec61da24"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#ae03401daa97ddfda6d214879ec61da24">addSomeIpPort</a> (uint16_t port)</td></tr>
@@ -243,8 +244,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a57abe2e9d7940cc52b4a245e01481c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afabdf97fa63b0fb24348ff7839f44ce6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#afabdf97fa63b0fb24348ff7839f44ce6">removeAllSomeIpPorts</a> ()</td></tr>
 <tr class="separator:afabdf97fa63b0fb24348ff7839f44ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb7bd9c417fa7a52e5762074d0416e2a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#adb7bd9c417fa7a52e5762074d0416e2a">isDataValid</a> (uint8_t *data, uint32_t dataLen)</td></tr>
-<tr class="separator:adb7bd9c417fa7a52e5762074d0416e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a SOME/IP protocol layer </p>
@@ -505,8 +504,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3f5d9faa8eee0a744d1503ab6100c4a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f5d9faa8eee0a744d1503ab6100c4a0">&#9670;&nbsp;</a></span>computeCalculateFields()</h2>
+<a id="a5b509275ed09f28c78bf6060e4a8b46f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b509275ed09f28c78bf6060e4a8b46f">&#9670;&nbsp;</a></span>computeCalculateFields()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -515,7 +514,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void pcpp::SomeIpLayer::computeCalculateFields </td>
+          <td class="memname">virtual void pcpp::SomeIpLayer::computeCalculateFields </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -530,6 +529,8 @@ Static Public Member Functions</h2></td></tr>
 <p>Does nothing for this layer </p>
 
 <p>Implements <a class="el" href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">pcpp::Layer</a>.</p>
+
+<p>Reimplemented in <a class="el" href="classpcpp_1_1_some_ip_tp_layer.html#a489bbe692a7f67854f797b1995ba0552">pcpp::SomeIpTpLayer</a>.</p>
 
 </div>
 </div>
@@ -569,31 +570,13 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <p>Get the Length of the SOME/IP header inc payload </p><dl class="section return"><dt>Returns</dt><dd>size_t </dd></dl>
 
 <p>Implements <a class="el" href="classpcpp_1_1_layer.html#acabe7022caf7cf5fabcad4b5a0eec832">pcpp::Layer</a>.</p>
-
-</div>
-</div>
-<a id="a072b18270d049948267fe76ce497165f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a072b18270d049948267fe76ce497165f">&#9670;&nbsp;</a></span>getHeaderLengthWithPayload()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t pcpp::SomeIpLayer::getHeaderLengthWithPayload </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Get the Header Length With Payload, as is stated in the length field of the SOME/IP header. </p><dl class="section return"><dt>Returns</dt><dd>uint32_t Length of the complete SOME/IP Pdu, including header and payload </dd></dl>
 
 </div>
 </div>
@@ -901,50 +884,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adb7bd9c417fa7a52e5762074d0416e2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb7bd9c417fa7a52e5762074d0416e2a">&#9670;&nbsp;</a></span>isDataValid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool pcpp::SomeIpLayer::isDataValid </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>dataLen</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>A static method that validates the input data </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The pointer to the beginning of a byte stream of a SOME/IP packet </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>The length of the byte stream </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if SOME/IP protocol, false otherwise </dd></dl>
-
-</div>
-</div>
 <a id="a85484b568172f1b36487218fdf216917"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a85484b568172f1b36487218fdf216917">&#9670;&nbsp;</a></span>isSomeIpPort()</h2>
 
@@ -1000,9 +939,67 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Identifies next layer and tries to create it </p>
+<p>Identifies the following next layers: <a class="el" href="classpcpp_1_1_some_ip_layer.html">SomeIpLayer</a>, <a class="el" href="classpcpp_1_1_some_ip_tp_layer.html">SomeIpTpLayer</a>. Otherwise sets <a class="el" href="classpcpp_1_1_payload_layer.html">PayloadLayer</a> </p>
 
 <p>Implements <a class="el" href="classpcpp_1_1_layer.html#a6a8410015168a7fa42a7d71ac5b86673">pcpp::Layer</a>.</p>
+
+</div>
+</div>
+<a id="affd724197a8efceb2ed595655658f1d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affd724197a8efceb2ed595655658f1d0">&#9670;&nbsp;</a></span>parseSomeIpLayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classpcpp_1_1_layer.html">Layer</a>* pcpp::SomeIpLayer::parseSomeIpLayer </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_layer.html">Layer</a> *&#160;</td>
+          <td class="paramname"><em>prevLayer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_packet.html">Packet</a> *&#160;</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A static method that creates a SOME/IP or SOME/IP-TP layer from packet raw data. Returns <a class="el" href="classpcpp_1_1_payload_layer.html">PayloadLayer</a> if data is not valid. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the raw data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Size of the data in bytes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prevLayer</td><td>A pointer to the previous layer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A pointer to the <a class="el" href="classpcpp_1_1_packet.html">Packet</a> instance where layer will be stored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Layer* A newly allocated layer </dd></dl>
 
 </div>
 </div>
@@ -1352,8 +1349,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a41fdc34e92ca4da631df87ce89ad1aa7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41fdc34e92ca4da631df87ce89ad1aa7">&#9670;&nbsp;</a></span>toString()</h2>
+<a id="a67b677488a8b17cebe32c593d3580b77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67b677488a8b17cebe32c593d3580b77">&#9670;&nbsp;</a></span>toString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1362,7 +1359,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string pcpp::SomeIpLayer::toString </td>
+          <td class="memname">virtual std::string pcpp::SomeIpLayer::toString </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1378,6 +1375,8 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classpcpp_1_1_layer.html#a1d07ea14d02b4a5cb383f89b3f40ed63">pcpp::Layer</a>.</p>
 
+<p>Reimplemented in <a class="el" href="classpcpp_1_1_some_ip_tp_layer.html#a0e656bcbc9a301bf615bb88c10284bc9">pcpp::SomeIpTpLayer</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -1386,7 +1385,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_some_ip_layer.html">SomeIpLayer</a></li>
-    <li class="footer">Generated on Mon Sep 26 2022 07:37:37 for PcapPlusPlus by
+    <li class="footer">Generated on Sat Oct 1 2022 23:20:43 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

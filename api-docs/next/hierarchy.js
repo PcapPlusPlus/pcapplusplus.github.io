@@ -141,7 +141,9 @@ var hierarchy =
           ] ]
         ] ],
         [ "pcpp::SllLayer", "classpcpp_1_1_sll_layer.html", null ],
-        [ "pcpp::SomeIpLayer", "classpcpp_1_1_some_ip_layer.html", null ],
+        [ "pcpp::SomeIpLayer", "classpcpp_1_1_some_ip_layer.html", [
+          [ "pcpp::SomeIpTpLayer", "classpcpp_1_1_some_ip_tp_layer.html", null ]
+        ] ],
         [ "pcpp::SSHLayer", "classpcpp_1_1_s_s_h_layer.html", [
           [ "pcpp::SSHEncryptedMessage", "classpcpp_1_1_s_s_h_encrypted_message.html", null ],
           [ "pcpp::SSHHandshakeMessage", "classpcpp_1_1_s_s_h_handshake_message.html", [
@@ -295,7 +297,9 @@ var hierarchy =
     [ "pcpp::SipRequestFirstLine", "classpcpp_1_1_sip_request_first_line.html", null ],
     [ "pcpp::SipResponseFirstLine", "classpcpp_1_1_sip_response_first_line.html", null ],
     [ "pcpp::sll_header", "structpcpp_1_1sll__header.html", null ],
-    [ "pcpp::SomeIpLayer::someiphdr", "structpcpp_1_1_some_ip_layer_1_1someiphdr.html", null ],
+    [ "pcpp::SomeIpLayer::someiphdr", "structpcpp_1_1_some_ip_layer_1_1someiphdr.html", [
+      [ "pcpp::SomeIpTpLayer::someiptphdr", "structpcpp_1_1_some_ip_tp_layer_1_1someiptphdr.html", null ]
+    ] ],
     [ "pcpp::SSHHandshakeMessage::ssh_message_base", "structpcpp_1_1_s_s_h_handshake_message_1_1ssh__message__base.html", null ],
     [ "pcpp::ssl_tls_alert", "structpcpp_1_1ssl__tls__alert.html", null ],
     [ "pcpp::ssl_tls_change_cipher_spec", "structpcpp_1_1ssl__tls__change__cipher__spec.html", null ],
