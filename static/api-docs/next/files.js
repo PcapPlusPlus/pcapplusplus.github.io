@@ -170,7 +170,9 @@ var files =
     ] ],
     [ "SomeIpLayer.h", "_some_ip_layer_8h.html", [
       [ "SomeIpLayer", "classpcpp_1_1_some_ip_layer.html", "classpcpp_1_1_some_ip_layer" ],
-      [ "someiphdr", "structpcpp_1_1_some_ip_layer_1_1someiphdr.html", "structpcpp_1_1_some_ip_layer_1_1someiphdr" ]
+      [ "someiphdr", "structpcpp_1_1_some_ip_layer_1_1someiphdr.html", "structpcpp_1_1_some_ip_layer_1_1someiphdr" ],
+      [ "SomeIpTpLayer", "classpcpp_1_1_some_ip_tp_layer.html", "classpcpp_1_1_some_ip_tp_layer" ],
+      [ "someiptphdr", "structpcpp_1_1_some_ip_tp_layer_1_1someiptphdr.html", "structpcpp_1_1_some_ip_tp_layer_1_1someiptphdr" ]
     ] ],
     [ "SSHLayer.h", "_s_s_h_layer_8h.html", [
       [ "SSHLayer", "classpcpp_1_1_s_s_h_layer.html", "classpcpp_1_1_s_s_h_layer" ],

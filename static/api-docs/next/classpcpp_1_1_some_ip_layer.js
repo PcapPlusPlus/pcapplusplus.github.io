@@ -21,10 +21,9 @@ var classpcpp_1_1_some_ip_layer =
     [ "SomeIpLayer", "classpcpp_1_1_some_ip_layer.html#a91a010314632035e9edb491a66c8025a", null ],
     [ "SomeIpLayer", "classpcpp_1_1_some_ip_layer.html#a63297b76f2ab0fce65b3d503259a8942", null ],
     [ "~SomeIpLayer", "classpcpp_1_1_some_ip_layer.html#ad4e7d172e967e259b1b20086185a7224", null ],
-    [ "computeCalculateFields", "classpcpp_1_1_some_ip_layer.html#a3f5d9faa8eee0a744d1503ab6100c4a0", null ],
+    [ "computeCalculateFields", "classpcpp_1_1_some_ip_layer.html#a5b509275ed09f28c78bf6060e4a8b46f", null ],
     [ "getClientID", "classpcpp_1_1_some_ip_layer.html#aef0d1c4ca7fdc90f2b147eaf2e3c2491", null ],
     [ "getHeaderLen", "classpcpp_1_1_some_ip_layer.html#afcc09ca8735bd1bfbb2204d243471dbb", null ],
-    [ "getHeaderLengthWithPayload", "classpcpp_1_1_some_ip_layer.html#a072b18270d049948267fe76ce497165f", null ],
     [ "getInterfaceVersion", "classpcpp_1_1_some_ip_layer.html#aaf3636a680a68f38aabff814110f492d", null ],
     [ "getLengthField", "classpcpp_1_1_some_ip_layer.html#a9f574885ac4553befacc84126106a1ab", null ],
     [ "getMessageID", "classpcpp_1_1_some_ip_layer.html#aa9f77a93b72cd6956fb0e5e7e39dd9f6", null ],
@@ -53,5 +52,5 @@ var classpcpp_1_1_some_ip_layer =
     [ "setReturnCode", "classpcpp_1_1_some_ip_layer.html#a9043b48b3f9216022924b12fd5d420a3", null ],
     [ "setServiceID", "classpcpp_1_1_some_ip_layer.html#a7877dcf72ed3363ca97b2290354a79e0", null ],
     [ "setSessionID", "classpcpp_1_1_some_ip_layer.html#ae12bb59904a66a88d7d70c058f24eef1", null ],
-    [ "toString", "classpcpp_1_1_some_ip_layer.html#a41fdc34e92ca4da631df87ce89ad1aa7", null ]
+    [ "toString", "classpcpp_1_1_some_ip_layer.html#a67b677488a8b17cebe32c593d3580b77", null ]
 ];
