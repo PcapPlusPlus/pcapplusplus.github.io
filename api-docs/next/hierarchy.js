@@ -181,7 +181,8 @@ var hierarchy =
         ] ],
         [ "pcpp::UdpLayer", "classpcpp_1_1_udp_layer.html", null ],
         [ "pcpp::VlanLayer", "classpcpp_1_1_vlan_layer.html", null ],
-        [ "pcpp::VxlanLayer", "classpcpp_1_1_vxlan_layer.html", null ]
+        [ "pcpp::VxlanLayer", "classpcpp_1_1_vxlan_layer.html", null ],
+        [ "pcpp::WakeOnLanLayer", "classpcpp_1_1_wake_on_lan_layer.html", null ]
       ] ]
     ] ],
     [ "pcpp::IDevice", "classpcpp_1_1_i_device.html", [
@@ -380,5 +381,6 @@ var hierarchy =
     [ "pcpp::TLVRecordReader< pcpp::TcpOption >", "classpcpp_1_1_t_l_v_record_reader.html", null ],
     [ "pcpp::udphdr", "structpcpp_1_1udphdr.html", null ],
     [ "pcpp::vlan_header", "structpcpp_1_1vlan__header.html", null ],
-    [ "pcpp::vxlan_header", "structpcpp_1_1vxlan__header.html", null ]
+    [ "pcpp::vxlan_header", "structpcpp_1_1vxlan__header.html", null ],
+    [ "pcpp::WakeOnLanLayer::wol_header", "structpcpp_1_1_wake_on_lan_layer_1_1wol__header.html", null ]
 ];

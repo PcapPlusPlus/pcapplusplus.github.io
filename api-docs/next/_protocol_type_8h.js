@@ -64,5 +64,6 @@ var _protocol_type_8h =
     [ "UDP", "_protocol_type_8h.html#ae8bbb736c21e0804bc41c17cd1fc7740", null ],
     [ "UnknownProtocol", "_protocol_type_8h.html#ad94e3dd833f818889f676d2352eac829", null ],
     [ "VLAN", "_protocol_type_8h.html#adddb69c5e9b0df95ed306b2ed0d1c4fc", null ],
-    [ "VXLAN", "_protocol_type_8h.html#ab8798e89f8c24e040572e6f571ad5c3c", null ]
+    [ "VXLAN", "_protocol_type_8h.html#ab8798e89f8c24e040572e6f571ad5c3c", null ],
+    [ "WakeOnLan", "_protocol_type_8h.html#a300fcf81c682b3b401c33df71b114716", null ]
 ];

@@ -226,6 +226,10 @@ var files =
       [ "vxlan_header", "structpcpp_1_1vxlan__header.html", "structpcpp_1_1vxlan__header" ],
       [ "VxlanLayer", "classpcpp_1_1_vxlan_layer.html", "classpcpp_1_1_vxlan_layer" ]
     ] ],
+    [ "WakeOnLanLayer.h", "_wake_on_lan_layer_8h.html", [
+      [ "WakeOnLanLayer", "classpcpp_1_1_wake_on_lan_layer.html", "classpcpp_1_1_wake_on_lan_layer" ],
+      [ "wol_header", "structpcpp_1_1_wake_on_lan_layer_1_1wol__header.html", "structpcpp_1_1_wake_on_lan_layer_1_1wol__header" ]
+    ] ],
     [ "WinPcapLiveDevice.h", "_win_pcap_live_device_8h.html", [
       [ "WinPcapLiveDevice", "classpcpp_1_1_win_pcap_live_device.html", "classpcpp_1_1_win_pcap_live_device" ]
     ] ]
