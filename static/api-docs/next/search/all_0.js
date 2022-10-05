@@ -27,6 +27,7 @@ var searchData=
   ['addoptionafter',['addOptionAfter',['../classpcpp_1_1_dhcp_layer.html#a4f8ae85e51c60486772b358a240cb749',1,'pcpp::DhcpLayer::addOptionAfter()'],['../classpcpp_1_1_dhcp_v6_layer.html#a295ca834c645bb274bb1d0864bfaedef',1,'pcpp::DhcpV6Layer::addOptionAfter()'],['../classpcpp_1_1_i_pv4_layer.html#ac2c675c0aae851a13565f614b89e412f',1,'pcpp::IPv4Layer::addOptionAfter()']]],
   ['addoptionbefore',['addOptionBefore',['../classpcpp_1_1_dhcp_v6_layer.html#a30c83bf5887f74b3fccd328fc9e40558',1,'pcpp::DhcpV6Layer']]],
   ['addquery',['addQuery',['../classpcpp_1_1_dns_layer.html#a80db9f0dfb1b6c4641a0357b54e47138',1,'pcpp::DnsLayer::addQuery(const std::string &amp;name, DnsType dnsType, DnsClass dnsClass)'],['../classpcpp_1_1_dns_layer.html#a3d36a88b61c4cf83ef5b20748d589ab8',1,'pcpp::DnsLayer::addQuery(DnsQuery *const copyQuery)']]],
+  ['addrbody',['addrBody',['../structpcpp_1_1_wake_on_lan_layer_1_1wol__header.html#a5c00b5223bbea95c5e0bb118488bcafd',1,'pcpp::WakeOnLanLayer::wol_header']]],
   ['address',['address',['../structpcpp_1_1ppp__pptp__header.html#ab0d4dbeb685845400c93be1636b9b2fb',1,'pcpp::ppp_pptp_header']]],
   ['addressentrysize',['addressEntrySize',['../structpcpp_1_1icmp__router__advertisement__hdr.html#a7ae4d3591f09904126f1a19f3dc799a6',1,'pcpp::icmp_router_advertisement_hdr']]],
   ['addressmask',['addressMask',['../structpcpp_1_1icmp__address__mask__request.html#ac510d5502a105ee92b9a5718089a4aa4',1,'pcpp::icmp_address_mask_request']]],

@@ -45,6 +45,7 @@ var _logger_8h =
       [ "PacketLogModuleNdpLayer", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa475a0b85e7f832fc54a964c4e6dae04a", null ],
       [ "PacketLogModuleFtpLayer", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa1a88df0e55376aa7cc145c022cb655a2", null ],
       [ "PacketLogModuleSomeIpLayer", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa264bce541709cd9fbb7bc2332f158b61", null ],
+      [ "PacketLogModuleWakeOnLanLayer", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa6f1a5e2936878d6a68b0a504052f60b9", null ],
       [ "PcapLogModuleWinPcapLiveDevice", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aaac5bb0af4a05ddc08ac0d60e40f4af0b", null ],
       [ "PcapLogModuleRemoteDevice", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa41327c44f9fd3ea426f5040dd9d0752c", null ],
       [ "PcapLogModuleLiveDevice", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aae794add926803bcab76bc2fbe66230b7", null ],
