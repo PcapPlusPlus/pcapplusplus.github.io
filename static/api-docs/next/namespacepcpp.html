@@ -1913,10 +1913,10 @@ Functions</h2></td></tr>
 <tr class="separator:a572ce60b003993527593a10e6da9481b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74065e37f1f7390a6ab299ebc7c4c229"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a74065e37f1f7390a6ab299ebc7c4c229">createCoreVectorFromCoreMask</a> (CoreMask coreMask, std::vector&lt; <a class="el" href="structpcpp_1_1_system_core.html">SystemCore</a> &gt; &amp;resultVec)</td></tr>
 <tr class="separator:a74065e37f1f7390a6ab299ebc7c4c229"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac278806cc421fd25eb61aa073fcf5e1b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ac278806cc421fd25eb61aa073fcf5e1b">executeShellCommand</a> (const std::string command)</td></tr>
-<tr class="separator:ac278806cc421fd25eb61aa073fcf5e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90c94556ad172d6c3ffb766e1ab25edf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a90c94556ad172d6c3ffb766e1ab25edf">directoryExists</a> (std::string dirPath)</td></tr>
-<tr class="separator:a90c94556ad172d6c3ffb766e1ab25edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a184531457fe2ad74873e41f2c0aa3b57"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a184531457fe2ad74873e41f2c0aa3b57">executeShellCommand</a> (const std::string &amp;command)</td></tr>
+<tr class="separator:a184531457fe2ad74873e41f2c0aa3b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af748f89cff0a616aacba75ffafc4840a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#af748f89cff0a616aacba75ffafc4840a">directoryExists</a> (const std::string &amp;dirPath)</td></tr>
+<tr class="separator:af748f89cff0a616aacba75ffafc4840a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae517edc41624400eebc521c6c5bc8a82"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ae517edc41624400eebc521c6c5bc8a82">clockGetTime</a> (long &amp;sec, long &amp;nsec)</td></tr>
 <tr class="separator:ae517edc41624400eebc521c6c5bc8a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeea6070ccbb359bc4f819a4fbd40130d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#aeea6070ccbb359bc4f819a4fbd40130d">multiPlatformSleep</a> (uint32_t seconds)</td></tr>
@@ -4928,8 +4928,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a90c94556ad172d6c3ffb766e1ab25edf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90c94556ad172d6c3ffb766e1ab25edf">&#9670;&nbsp;</a></span>directoryExists()</h2>
+<a id="af748f89cff0a616aacba75ffafc4840a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af748f89cff0a616aacba75ffafc4840a">&#9670;&nbsp;</a></span>directoryExists()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4937,7 +4937,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">bool pcpp::directoryExists </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>dirPath</em></td><td>)</td>
           <td></td>
         </tr>
@@ -4953,8 +4953,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac278806cc421fd25eb61aa073fcf5e1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac278806cc421fd25eb61aa073fcf5e1b">&#9670;&nbsp;</a></span>executeShellCommand()</h2>
+<a id="a184531457fe2ad74873e41f2c0aa3b57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a184531457fe2ad74873e41f2c0aa3b57">&#9670;&nbsp;</a></span>executeShellCommand()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4962,7 +4962,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">std::string pcpp::executeShellCommand </td>
           <td>(</td>
-          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>command</em></td><td>)</td>
           <td></td>
         </tr>
@@ -6302,7 +6302,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li>
-    <li class="footer">Generated on Tue Oct 25 2022 05:45:30 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Oct 26 2022 07:51:56 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
