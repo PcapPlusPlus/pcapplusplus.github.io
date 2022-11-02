@@ -1,0 +1,86 @@
+
+/**
+* \mainpage API Documentation
+*
+* \section intro_sec Introduction
+*
+* <i>PcapPlusPlus</i> is a A multiplatform C++ library for capturing, parsing and crafting of network packets. It is designed to be efficient, powerful and easy to use.
+*
+* Please refer to <a style="font-weight: bold;text-decoration: underline;color: #cd2f82;" href="/">PcapPlusPlus web-site</a> for more information.
+*
+* \section api_reference_sec API Reference
+*
+* <b>%Packet capturing engines (Pcap++):</b>
+*   - pcpp::PcapLiveDevice, PcapLiveDevice.h - wrapper for libPacp engine (Linux)
+*   - pcpp::WinPcapLiveDevice, WinPcapLiveDevice.h - wrapper for WinPcap/Npcap engine (Windows)
+*   - pcpp::PcapRemoteDevice, PcapRemoteDevice.h - remote live device, supported by WinPcap (Windows)
+*   - pcpp::PfRingDevice, PfRingDevice.h - Vanilla PF_RING device (Linux)
+*   - pcpp::DpdkDevice, DpdkDevice.h - DPDK device (Linux)
+*   - pcpp::RawSocketDevice, RawSocketDevice.h - raw socket wrapper (Windows and Linux)
+*   - PcapFilter.h - structured filter engine
+*
+* <b>Capture file wrappers (Pcap++):</b>
+*   - pcpp::PcapFileReaderDevice, PcapFileDevice.h - read Pcap files
+*   - pcpp::PcapFileWriterDevice, PcapFileDevice.h - write Pcap files
+*   - pcpp::PcapNgFileReaderDevice, PcapFileDevice.h - read PcapNG files
+*   - pcpp::PcapNgFileWriterDevice, PcapFileDevice.h - write PcapNG files
+*
+* <b>%Packet parsing and manipulation (Packet++):</b>
+*   - pcpp::RawPacket, RawPacket.h - raw data class
+*   - pcpp::Packet, Packet.h - parsed packet class
+*   - pcpp::Layer, Layer.h - protocol base class
+*
+* <b>Supported protocols (Packet++):</b>
+*   - pcpp::EthLayer, EthLayer.h - Ethernet II protocol
+*   - pcpp::EthDot3Layer, EthDot3Layer.h - IEEE 802.3 Ethernet protocol
+*   - pcpp::LLCLayer, LLCLayer.h - LLC protocol
+*   - pcpp::NullLoopbackLayer, NullLoopbackLayer.h - Null/Loopback
+*   - pcpp::PacketTrailerLayer, PacketTrailerLayer.h - packet trailer (a.k.a footer or padding)
+*   - pcpp::PPPoESessionLayer, pcpp::PPPoEDiscoveryLayer, PPPoELayer.h - PPPoE protocol
+*   - pcpp::SllLayer, SllLayer.h - SLL protocol (Linux cooked capture)
+*   - pcpp::StpLayer, StpLayer.h - STP protocol
+*   - pcpp::VlanLayer, VlanLayer.h - VLAN protocol
+*   - pcpp::VxlanLayer, VxlanLayer.h - VXLAN protocol
+*   - pcpp::WakeOnLanLayer, WakeOnLanLayer.h - Wake on LAN (WoL) protocol
+*   - pcpp::ArpLayer, ArpLayer.h - ARP protocol
+*   - pcpp::GREv0Layer, pcpp::GREv1Layer, pcpp::PPP_PPTPLayer, GreLayer.h - GRE and PPTP protocol
+*   - pcpp::IcmpLayer, IcmpLayer.h - ICMP protocol
+*   - pcpp::IcmpV6Layer, pcpp::ICMPv6EchoLayer, IcmpV6Layer.h - ICMPv6 protocol
+*   - pcpp::IgmpLayer, IgmpLayer.h - IGMP protocol
+*   - pcpp::IPv4Layer, IPv4Layer.h - IPv4 protocol
+*   - pcpp::IPv6Layer, IPv6Layer.h - IPv6 protocol
+*   - pcpp::MplsLayer, MplsLayer.h - MPLS protocol
+*   - pcpp::NDPNeighborSolicitationLayer, pcpp::NDPNeighborAdvertisementLayer, NdpLayer.h - NDP protocol
+*   - pcpp::GtpV1Layer, GtpLayer.h - GTP (v1) protocol
+*   - pcpp::AuthenticationHeaderLayer, pcpp::ESPLayer - IPSec AH & ESP - parsing only (no editing capabilities)
+*   - pcpp::TcpLayer, TcpLayer.h - TCP protocol
+*   - pcpp::UdpLayer, UdpLayer.h - UDP protocol
+*   - pcpp::SdpLayer, SdpLayer.h - SDP protocol
+*   - pcpp::SipRequestLayer, pcpp::SipResponseLayer, SipLayer.h - SIP request protocol
+*   - pcpp::SSLLayer, SSLLayer.h - SSL/TLS protocol - parsing only (no editing capabilities)
+*   - pcpp::BgpLayer, BgpLayer.h - BGP protocol
+*   - pcpp::DhcpLayer, DhcpLayer.h - DHCP protocol
+*   - pcpp::DhcpV6Layer, DhcpV6Layer.h - DHCPv6 protocol
+*   - pcpp::DnsLayer, DnsLayer.h - DNS protocol
+*   - pcpp::FtpRequestLayer, pcpp::FtpResponseLayer, FtpLayer.h - FTP protocol
+*   - pcpp::HttpRequestLayer, pcpp::HttpResponseLayer, HttpLayer.h - HTTP protocol
+*   - pcpp::NtpLayer, NtpLayer.h - NTP (v3, v4) protocol
+*   - pcpp::RadiusLayer, RadiusLayer.h - RADIUS protocol
+*   - pcpp::SomeIpLayer, SomeIpLayer.h - SOME/IP protocol
+*   - pcpp::SSHLayer, SSHLayer.h - SSH protocol - parsing only (no editing capabilities)
+*   - pcpp::TelnetLayer, TelnetLayer.h - Telnet protocol
+*   - pcpp::PayloadLayer, PayloadLayer.h - unknown layer or payload
+*
+* <b>Common utilities and infrastructure (Common++, Packet++, Pcap++):</b>
+*   - pcpp::IPAddress, pcpp::IPv4Address, pcpp::IPv6Address, IpAddress.h - IP address wrapper classes
+*   - pcpp::MacAddress, MacAddress.h - MAC address wrapper class
+*   - pcpp::TcpReassembly, TcpReassembly.h - Implementation of TCP reassembly logic
+*   - pcpp::IPReassembly, IPReassembly.h - Implementation of IP reassembly logic (a.k.a IP de-fragmentation). Works for both IPv4 and IPv6
+*   - IpUtils.h - all kinds of helpful network utilities
+*   - PacketUtils.h - useful packet processing utils such as creating a hash value for a packet
+*   - NetworkUtils.h - several useful and common network utilities
+*   - SystemUtils.h - several useful utilities for interactiong with the operating system
+*   - pcpp::LoggerPP, Logger.h - PcapPlusPlus logger
+*   - PcapPlusPlusVersion.h - version and Git info
+*/
+
