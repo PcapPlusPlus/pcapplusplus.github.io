@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['leapindicator',['LeapIndicator',['../classpcpp_1_1_ntp_layer.html#a09e3e98cd55c3e7046a1e6a30677c8d1',1,'pcpp::NtpLayer']]],
-  ['linkduplex',['LinkDuplex',['../structpcpp_1_1_dpdk_device_1_1_link_status.html#a67ef869fa855fbe7c29add4e9d6ac45b',1,'pcpp::DpdkDevice::LinkStatus']]],
-  ['linklayertype',['LinkLayerType',['../namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be',1,'pcpp']]],
-  ['livedevicetype',['LiveDeviceType',['../classpcpp_1_1_pcap_live_device.html#a0e343585711ee4e02d4b9507467135ab',1,'pcpp::PcapLiveDevice']]],
-  ['loglevel',['LogLevel',['../classpcpp_1_1_logger.html#a28f78fb4d16392bc4ce6ec4c2b2dd651',1,'pcpp::Logger']]],
-  ['logmodule',['LogModule',['../namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1a',1,'pcpp']]]
+  ['knicallbacktype',['KniCallbackType',['../classpcpp_1_1_kni_device_list.html#a9fa814b1db6f983d7421f9cd3f25afc7',1,'pcpp::KniDeviceList']]],
+  ['knicallbackversion',['KniCallbackVersion',['../classpcpp_1_1_kni_device_list.html#a003785d82290a553d4c88d653f181118',1,'pcpp::KniDeviceList']]],
+  ['kniinfostate',['KniInfoState',['../classpcpp_1_1_kni_device.html#a3fd22d62a55612b03481d65bc49fa0cc',1,'pcpp::KniDevice']]],
+  ['knilinkstate',['KniLinkState',['../classpcpp_1_1_kni_device.html#a9a016df4487ece71c8dc911961a4f329',1,'pcpp::KniDevice']]],
+  ['knipromiscuousmode',['KniPromiscuousMode',['../classpcpp_1_1_kni_device.html#acfeed0b25fa073d8a74b2d29ca218dc6',1,'pcpp::KniDevice']]]
 ];

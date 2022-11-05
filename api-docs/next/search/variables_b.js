@@ -3,6 +3,7 @@ var searchData=
   ['mac',['mac',['../structpcpp_1_1_kni_device_1_1_kni_device_configuration.html#a971b099355d4da2fc8f85224f50ed42c',1,'pcpp::KniDevice::KniDeviceConfiguration']]],
   ['magicnumber',['magicNumber',['../structpcpp_1_1dhcp__header.html#aa76c834507dac0606f5eac689dfc15b5',1,'pcpp::dhcp_header']]],
   ['mailexchange',['mailExchange',['../structpcpp_1_1_mx_dns_resource_data_1_1_mx_data.html#a82ff6cdc3761990eabcb848dc4660382',1,'pcpp::MxDnsResourceData::MxData']]],
+  ['majorversion_5fttl',['majorVersion_ttl',['../structpcpp_1_1_some_ip_sd_entry_1_1someipsdhdrentry.html#a389ce3dacfc12c3dc5bc47805c7b4b70',1,'pcpp::SomeIpSdEntry::someipsdhdrentry']]],
   ['marker',['marker',['../structpcpp_1_1_bgp_layer_1_1bgp__common__header.html#a8711a66edadafc0377351705bf632416',1,'pcpp::BgpLayer::bgp_common_header']]],
   ['mask',['Mask',['../structpcpp_1_1_system_core.html#aa76587497e2faa7f7354ca8444a9450b',1,'pcpp::SystemCore']]],
   ['maxage',['maxAge',['../structpcpp_1_1stp__conf__bpdu.html#ad8ecfc4f8195a11280c841f399f4be6c',1,'pcpp::stp_conf_bpdu']]],
