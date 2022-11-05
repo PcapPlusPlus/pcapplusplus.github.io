@@ -1,5 +1,11 @@
 var NAVTREEINDEX6 =
 {
+"classpcpp_1_1_bgp_layer.html#ab6994d8037f351f1a9d46f33a9864707":[3,0,0,8,6],
+"classpcpp_1_1_bgp_layer.html#aebdf49b682786e08c016ac1e62128c9b":[3,0,0,8,3],
+"classpcpp_1_1_bgp_notification_message_layer.html":[3,0,0,9],
+"classpcpp_1_1_bgp_notification_message_layer.html#a1b6b986b34e7da5ab309fedf11a18246":[3,0,0,9,2],
+"classpcpp_1_1_bgp_notification_message_layer.html#a28730707012c464f3acc2c75290f28d0":[3,0,0,9,4],
+"classpcpp_1_1_bgp_notification_message_layer.html#a3407c753f6e7a25050f1b2a95220f08f":[3,0,0,9,11],
 "classpcpp_1_1_bgp_notification_message_layer.html#a381de1d2aa381e80f0c68a24f5c131b7":[3,0,0,9,9],
 "classpcpp_1_1_bgp_notification_message_layer.html#a440adf5d7b2ea8be2ca0c52c9924a432":[3,0,0,9,7],
 "classpcpp_1_1_bgp_notification_message_layer.html#a4ce0be1a4863d71215105bad52f3718c":[3,0,0,9,10],
@@ -243,11 +249,5 @@ var NAVTREEINDEX6 =
 "classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4a986e2fd06f8682f80f3a631a23759f09":[3,0,0,30,4,16],
 "classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4a9976020e46b9a778eed6b0cc87b294e2":[3,0,0,30,4,10],
 "classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4aac15cad73402a10cad9ea81211b2816e":[3,0,0,30,4,5],
-"classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4ab23bce2d8946826a963c3d76a406914c":[3,0,0,30,4,4],
-"classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4ac2f4c335c9dcb4d3712b3dd405d43933":[3,0,0,30,4,12],
-"classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4acd0b389965168fbce0b8b8131253c3c1":[3,0,0,30,4,9],
-"classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4ad2ddd2177053992915002cfff68474ca":[3,0,0,30,4,13],
-"classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4ad35e8d99ee794f88c1584c047c817589":[3,0,0,30,4,2],
-"classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4ad57a4e8327ac5d4121a0c5e89eceaf71":[3,0,0,30,4,22],
-"classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4ad643bd6c0561dedcf5c12af8f85ebe80":[3,0,0,30,4,7]
+"classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4ab23bce2d8946826a963c3d76a406914c":[3,0,0,30,4,4]
 };

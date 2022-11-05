@@ -14,6 +14,7 @@ var searchData=
   ['endtime',['endTime',['../structpcpp_1_1_connection_data.html#a443a3fe2d4ed8061e867cc9dadfb522c',1,'pcpp::ConnectionData']]],
   ['entering_5fextended_5fpassive',['ENTERING_EXTENDED_PASSIVE',['../classpcpp_1_1_ftp_response_layer.html#aebec062665c1d8c6e4eba941782a59cda5ebe57a228afd1c1462ebd4d91e0411e',1,'pcpp::FtpResponseLayer']]],
   ['entering_5fpassive',['ENTERING_PASSIVE',['../classpcpp_1_1_ftp_response_layer.html#aebec062665c1d8c6e4eba941782a59cda330540345172bfcfee7f366183568ff9',1,'pcpp::FtpResponseLayer']]],
+  ['entrytype',['EntryType',['../classpcpp_1_1_some_ip_sd_entry.html#a74334e18cd309a1abfcbbae37d1ef2e6',1,'pcpp::SomeIpSdEntry']]],
   ['environmentoption',['EnvironmentOption',['../classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147aab7c677e724ccf6ea20ce1f986fd4658',1,'pcpp::TelnetLayer']]],
   ['eol',['EOL',['../classpcpp_1_1_tcp_option_builder.html#a4661af002e81ef759016b4640d0eb061a332ec08c1a16aa84c23feaf8d29f4810',1,'pcpp::TcpOptionBuilder']]],
   ['eprt',['EPRT',['../classpcpp_1_1_ftp_request_layer.html#ad293dabbe652aed3ac548eb01963e781aa525fa61d720f47de1ddca135dc17c94',1,'pcpp::FtpRequestLayer']]],
