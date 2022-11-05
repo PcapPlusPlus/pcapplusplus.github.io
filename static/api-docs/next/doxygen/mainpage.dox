@@ -66,7 +66,7 @@
 *   - pcpp::HttpRequestLayer, pcpp::HttpResponseLayer, HttpLayer.h - HTTP protocol
 *   - pcpp::NtpLayer, NtpLayer.h - NTP (v3, v4) protocol
 *   - pcpp::RadiusLayer, RadiusLayer.h - RADIUS protocol
-*   - pcpp::SomeIpLayer, pcpp::SomeIpTpLayer, pcpp::SomeIpSdLayer, SomeIpLayer.h - SOME/IP protocol
+*   - pcpp::SomeIpLayer, SomeIpLayer.h - SOME/IP protocol
 *   - pcpp::SSHLayer, SSHLayer.h - SSH protocol - parsing only (no editing capabilities)
 *   - pcpp::TelnetLayer, TelnetLayer.h - Telnet protocol
 *   - pcpp::PayloadLayer, PayloadLayer.h - unknown layer or payload
