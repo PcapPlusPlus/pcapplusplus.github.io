@@ -142,6 +142,7 @@ var hierarchy =
         ] ],
         [ "pcpp::SllLayer", "classpcpp_1_1_sll_layer.html", null ],
         [ "pcpp::SomeIpLayer", "classpcpp_1_1_some_ip_layer.html", [
+          [ "pcpp::SomeIpSdLayer", "classpcpp_1_1_some_ip_sd_layer.html", null ],
           [ "pcpp::SomeIpTpLayer", "classpcpp_1_1_some_ip_tp_layer.html", null ]
         ] ],
         [ "pcpp::SSHLayer", "classpcpp_1_1_s_s_h_layer.html", [
@@ -300,6 +301,15 @@ var hierarchy =
     [ "pcpp::sll_header", "structpcpp_1_1sll__header.html", null ],
     [ "pcpp::SomeIpLayer::someiphdr", "structpcpp_1_1_some_ip_layer_1_1someiphdr.html", [
       [ "pcpp::SomeIpTpLayer::someiptphdr", "structpcpp_1_1_some_ip_tp_layer_1_1someiptphdr.html", null ]
+    ] ],
+    [ "pcpp::SomeIpSdEntry", "classpcpp_1_1_some_ip_sd_entry.html", null ],
+    [ "pcpp::SomeIpSdEntry::someipsdhdrentry", "structpcpp_1_1_some_ip_sd_entry_1_1someipsdhdrentry.html", null ],
+    [ "pcpp::SomeIpSdOption::someipsdhdroptionsbase", "structpcpp_1_1_some_ip_sd_option_1_1someipsdhdroptionsbase.html", null ],
+    [ "pcpp::SomeIpSdOption", "classpcpp_1_1_some_ip_sd_option.html", [
+      [ "pcpp::SomeIpSdConfigurationOption", "classpcpp_1_1_some_ip_sd_configuration_option.html", null ],
+      [ "pcpp::SomeIpSdIPv4Option", "classpcpp_1_1_some_ip_sd_i_pv4_option.html", null ],
+      [ "pcpp::SomeIpSdIPv6Option", "classpcpp_1_1_some_ip_sd_i_pv6_option.html", null ],
+      [ "pcpp::SomeIpSdLoadBalancingOption", "classpcpp_1_1_some_ip_sd_load_balancing_option.html", null ]
     ] ],
     [ "pcpp::SSHHandshakeMessage::ssh_message_base", "structpcpp_1_1_s_s_h_handshake_message_1_1ssh__message__base.html", null ],
     [ "pcpp::ssl_tls_alert", "structpcpp_1_1ssl__tls__alert.html", null ],

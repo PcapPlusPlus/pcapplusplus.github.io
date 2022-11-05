@@ -100,9 +100,10 @@ Inheritance diagram for pcpp::SomeIpLayer:</div>
  <div class="center">
   <img src="classpcpp_1_1_some_ip_layer.png" usemap="#pcpp::SomeIpLayer_map" alt=""/>
   <map id="pcpp::SomeIpLayer_map" name="pcpp::SomeIpLayer_map">
-<area href="classpcpp_1_1_layer.html" alt="pcpp::Layer" shape="rect" coords="0,56,134,80"/>
-<area href="classpcpp_1_1_i_data_container.html" alt="pcpp::IDataContainer" shape="rect" coords="0,0,134,24"/>
-<area href="classpcpp_1_1_some_ip_tp_layer.html" alt="pcpp::SomeIpTpLayer" shape="rect" coords="0,168,134,192"/>
+<area href="classpcpp_1_1_layer.html" alt="pcpp::Layer" shape="rect" coords="72,56,207,80"/>
+<area href="classpcpp_1_1_i_data_container.html" alt="pcpp::IDataContainer" shape="rect" coords="72,0,207,24"/>
+<area href="classpcpp_1_1_some_ip_sd_layer.html" alt="pcpp::SomeIpSdLayer" shape="rect" coords="0,168,135,192"/>
+<area href="classpcpp_1_1_some_ip_tp_layer.html" alt="pcpp::SomeIpTpLayer" shape="rect" coords="145,168,280,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -351,7 +352,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>A constructor that creates the layer from an existing packet raw data </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the raw data (will be casted to <a class="el" href="structpcpp_1_1_some_ip_layer_1_1someiphdr.html">someiphdr</a>) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the raw data (will be casted to someiphdr) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Size of the data in bytes </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">prevLayer</td><td>A pointer to the previous layer </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A pointer to the <a class="el" href="classpcpp_1_1_packet.html">Packet</a> instance where layer will be stored in </td></tr>
@@ -530,7 +531,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">pcpp::Layer</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classpcpp_1_1_some_ip_tp_layer.html#a489bbe692a7f67854f797b1995ba0552">pcpp::SomeIpTpLayer</a>.</p>
+<p>Reimplemented in <a class="el" href="classpcpp_1_1_some_ip_sd_layer.html#a0c6f9dae8dc3e7387f7e231c0ede43f0">pcpp::SomeIpSdLayer</a>, and <a class="el" href="classpcpp_1_1_some_ip_tp_layer.html#a489bbe692a7f67854f797b1995ba0552">pcpp::SomeIpTpLayer</a>.</p>
 
 </div>
 </div>
@@ -880,7 +881,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get a pointer to the basic SOME/IP header. Notice this points directly to the data, so every change will change the actual packet data </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="structpcpp_1_1_some_ip_layer_1_1someiphdr.html">someiphdr</a> </dd></dl>
+<p>Get a pointer to the basic SOME/IP header. Notice this points directly to the data, so every change will change the actual packet data </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the someiphdr </dd></dl>
 
 </div>
 </div>
@@ -939,7 +940,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Identifies the following next layers: <a class="el" href="classpcpp_1_1_some_ip_layer.html">SomeIpLayer</a>, <a class="el" href="classpcpp_1_1_some_ip_tp_layer.html">SomeIpTpLayer</a>. Otherwise sets <a class="el" href="classpcpp_1_1_payload_layer.html">PayloadLayer</a> </p>
+<p>Identifies the following next layers: <a class="el" href="classpcpp_1_1_some_ip_layer.html">SomeIpLayer</a>, <a class="el" href="classpcpp_1_1_some_ip_tp_layer.html">SomeIpTpLayer</a>, <a class="el" href="classpcpp_1_1_some_ip_sd_layer.html">SomeIpSdLayer</a>. Otherwise sets <a class="el" href="classpcpp_1_1_payload_layer.html">PayloadLayer</a> </p>
 
 <p>Implements <a class="el" href="classpcpp_1_1_layer.html#a6a8410015168a7fa42a7d71ac5b86673">pcpp::Layer</a>.</p>
 
@@ -1375,7 +1376,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classpcpp_1_1_layer.html#a1d07ea14d02b4a5cb383f89b3f40ed63">pcpp::Layer</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classpcpp_1_1_some_ip_tp_layer.html#a0e656bcbc9a301bf615bb88c10284bc9">pcpp::SomeIpTpLayer</a>.</p>
+<p>Reimplemented in <a class="el" href="classpcpp_1_1_some_ip_sd_layer.html#adcef86446d2287225bad6a306c865f81">pcpp::SomeIpSdLayer</a>, and <a class="el" href="classpcpp_1_1_some_ip_tp_layer.html#a0e656bcbc9a301bf615bb88c10284bc9">pcpp::SomeIpTpLayer</a>.</p>
 
 </div>
 </div>
@@ -1385,7 +1386,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_some_ip_layer.html">SomeIpLayer</a></li>
-    <li class="footer">Generated on Fri Nov 4 2022 06:58:53 for PcapPlusPlus by
+    <li class="footer">Generated on Sat Nov 5 2022 08:56:38 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
