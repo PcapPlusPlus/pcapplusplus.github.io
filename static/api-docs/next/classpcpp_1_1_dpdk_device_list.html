@@ -118,12 +118,12 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a6aff4e87a01f2025508811feb1f4412a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classpcpp_1_1_dpdk_device_list.html">DpdkDeviceList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device_list.html#a6aff4e87a01f2025508811feb1f4412a">getInstance</a> ()</td></tr>
 <tr class="separator:a6aff4e87a01f2025508811feb1f4412a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a040a35f36c11b3e8805da58ba85cb489"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device_list.html#a040a35f36c11b3e8805da58ba85cb489">initDpdk</a> (CoreMask coreMask, uint32_t mBufPoolSizePerDevice, uint8_t masterCore=0, uint32_t initDpdkArgc=0, char **initDpdkArgv=NULL)</td></tr>
-<tr class="separator:a040a35f36c11b3e8805da58ba85cb489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a527fc77e3345c11b55b724e858e4a3d4"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device_list.html#a527fc77e3345c11b55b724e858e4a3d4">initDpdk</a> (CoreMask coreMask, uint32_t mBufPoolSizePerDevice, uint8_t masterCore=0, uint32_t initDpdkArgc=0, char **initDpdkArgv=NULL, const std::string &amp;appName=&quot;pcapplusplusapp&quot;)</td></tr>
+<tr class="separator:a527fc77e3345c11b55b724e858e4a3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A singleton class that encapsulates DPDK initialization and holds the list of <a class="el" href="classpcpp_1_1_dpdk_device.html">DpdkDevice</a> instances. As it's a singleton, it has only one active instance doesn't have a public c'tor. This class has several main uses:</p><ul>
-<li>it contains the <a class="el" href="classpcpp_1_1_dpdk_device_list.html#a040a35f36c11b3e8805da58ba85cb489">initDpdk()</a> static method which initializes the DPDK infrastructure. It should be called once in every application at its startup process</li>
+<li>it contains the <a class="el" href="classpcpp_1_1_dpdk_device_list.html#a527fc77e3345c11b55b724e858e4a3d4">initDpdk()</a> static method which initializes the DPDK infrastructure. It should be called once in every application at its startup process</li>
 <li>it contains the list of <a class="el" href="classpcpp_1_1_dpdk_device.html">DpdkDevice</a> instances and enables access to them</li>
 <li>it has methods to start and stop worker threads. See more details in <a class="el" href="classpcpp_1_1_dpdk_device_list.html#afc44087f40693687b57c6b9740241dd2">startDpdkWorkerThreads()</a> </li>
 </ul>
@@ -262,12 +262,12 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>As <a class="el" href="classpcpp_1_1_dpdk_device_list.html">DpdkDeviceList</a> is a singleton, this is the static getter to retrieve its instance. Note that if the static method <a class="el" href="classpcpp_1_1_dpdk_device_list.html#a040a35f36c11b3e8805da58ba85cb489">initDpdk()</a> was not called or returned false this instance won't be initialized and DpdkDevices won't be initialized either </p><dl class="section return"><dt>Returns</dt><dd>The singleton instance of <a class="el" href="classpcpp_1_1_dpdk_device_list.html">DpdkDeviceList</a> </dd></dl>
+<p>As <a class="el" href="classpcpp_1_1_dpdk_device_list.html">DpdkDeviceList</a> is a singleton, this is the static getter to retrieve its instance. Note that if the static method <a class="el" href="classpcpp_1_1_dpdk_device_list.html#a527fc77e3345c11b55b724e858e4a3d4">initDpdk()</a> was not called or returned false this instance won't be initialized and DpdkDevices won't be initialized either </p><dl class="section return"><dt>Returns</dt><dd>The singleton instance of <a class="el" href="classpcpp_1_1_dpdk_device_list.html">DpdkDeviceList</a> </dd></dl>
 
 </div>
 </div>
-<a id="a040a35f36c11b3e8805da58ba85cb489"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a040a35f36c11b3e8805da58ba85cb489">&#9670;&nbsp;</a></span>initDpdk()</h2>
+<a id="a527fc77e3345c11b55b724e858e4a3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a527fc77e3345c11b55b724e858e4a3d4">&#9670;&nbsp;</a></span>initDpdk()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -303,7 +303,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char **&#160;</td>
-          <td class="paramname"><em>initDpdkArgv</em> = <code>NULL</code>&#160;</td>
+          <td class="paramname"><em>initDpdkArgv</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>appName</em> = <code>&quot;pcapplusplusapp&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -329,6 +335,7 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">masterCore</td><td>The core DPDK will use as master to control all worker thread. The default, unless set otherwise, is 0 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">initDpdkArgc</td><td>Number of optional arguments </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">initDpdkArgv</td><td>Optional arguments </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">appName</td><td>program name to be provided for the DPDK </td></tr>
   </table>
   </dd>
 </dl>
@@ -393,7 +400,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if all worker threads started successfully or false if: DPDK isn't initialized (<a class="el" href="classpcpp_1_1_dpdk_device_list.html#a040a35f36c11b3e8805da58ba85cb489">initDpdk()</a> wasn't called or returned false), number of cores differs from number of workers, core mask includes DPDK master core or if one of the worker threads couldn't be run </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if all worker threads started successfully or false if: DPDK isn't initialized (<a class="el" href="classpcpp_1_1_dpdk_device_list.html#a527fc77e3345c11b55b724e858e4a3d4">initDpdk()</a> wasn't called or returned false), number of cores differs from number of workers, core mask includes DPDK master core or if one of the worker threads couldn't be run </dd></dl>
 
 </div>
 </div>
@@ -446,7 +453,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_dpdk_device_list.html">DpdkDeviceList</a></li>
-    <li class="footer">Generated on Sun Dec 4 2022 02:52:07 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Dec 6 2022 08:55:12 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
