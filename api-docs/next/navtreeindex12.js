@@ -246,8 +246,8 @@ var NAVTREEINDEX12 =
 "classpcpp_1_1_pf_ring_device.html#aeade33242ac31b8e7ddff4888853cc19":[3,0,0,159,12],
 "classpcpp_1_1_pf_ring_device.html#af825fb6acf7cfbc6da7dd19f854be1ad":[3,0,0,159,24],
 "classpcpp_1_1_pf_ring_device_list.html":[3,0,0,160],
+"classpcpp_1_1_pf_ring_device_list.html#a28072ef36082db19445bb891e58d7318":[3,0,0,160,0],
 "classpcpp_1_1_pf_ring_device_list.html#a528af6c800a69fc2ff486c98ac546052":[3,0,0,160,1],
-"classpcpp_1_1_pf_ring_device_list.html#a83fa84ded4518259ddd9d0fff098a15e":[3,0,0,160,0],
 "classpcpp_1_1_pf_ring_device_list.html#a98ead9cab76648d082b4194b532b9002":[3,0,0,160,2],
 "classpcpp_1_1_pointer_vector.html":[3,0,0,161]
 };
