@@ -119,6 +119,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aadc8fd71dda69c7a0a9a69aa27c2c85f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e7edf6c1606beedb7528d235d9d6906"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv4_address.html#a8e7edf6c1606beedb7528d235d9d6906">operator!=</a> (const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;rhs) const</td></tr>
 <tr class="separator:a8e7edf6c1606beedb7528d235d9d6906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4ada1e06641a14ad64ed850576b2321"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv4_address.html#ac4ada1e06641a14ad64ed850576b2321">matchSubnet</a> (const std::string &amp;subnet) const</td></tr>
+<tr class="separator:ac4ada1e06641a14ad64ed850576b2321"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01d6c0c03879b02699aa7801d080287e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv4_address.html#a01d6c0c03879b02699aa7801d080287e">matchSubnet</a> (const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;subnet, const std::string &amp;subnetMask) const</td></tr>
 <tr class="separator:a01d6c0c03879b02699aa7801d080287e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2334fc86178ecdd35531b784e880e514"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv4_address.html#a2334fc86178ecdd35531b784e880e514">matchSubnet</a> (const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;subnet, const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;subnetMask) const</td></tr>
@@ -293,8 +295,32 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ac4ada1e06641a14ad64ed850576b2321"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4ada1e06641a14ad64ed850576b2321">&#9670;&nbsp;</a></span>matchSubnet() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::IPv4Address::matchSubnet </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>subnet</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Checks whether the address matches a subnet. For example: if subnet is 10.1.1.1/24 and address is 10.1.1.9 then the method will return true Another example: if subnet is 10.1.1.1/16 and address is 11.1.1.9 then the method will return false </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">subnet</td><td>A string in X.X.X.X/Y format representing the masked subnet to compare with the address </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a01d6c0c03879b02699aa7801d080287e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01d6c0c03879b02699aa7801d080287e">&#9670;&nbsp;</a></span>matchSubnet() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a01d6c0c03879b02699aa7801d080287e">&#9670;&nbsp;</a></span>matchSubnet() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -329,7 +355,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a2334fc86178ecdd35531b784e880e514"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2334fc86178ecdd35531b784e880e514">&#9670;&nbsp;</a></span>matchSubnet() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2334fc86178ecdd35531b784e880e514">&#9670;&nbsp;</a></span>matchSubnet() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -585,7 +611,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a></li>
-    <li class="footer">Generated on Mon Dec 12 2022 08:19:28 for PcapPlusPlus by
+    <li class="footer">Generated on Thu Dec 15 2022 09:05:25 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

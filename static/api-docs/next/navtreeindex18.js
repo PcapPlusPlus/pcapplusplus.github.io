@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"structpcpp_1_1_i_pv6_authentication_header_1_1ipv6__authentication__header.html#a1a5a99b636d53665ecddd07811f188a8":[3,0,0,112,0,0],
 "structpcpp_1_1_i_pv6_authentication_header_1_1ipv6__authentication__header.html#a35af84ed644faa6cf1a8ae10876dcb2c":[3,0,0,112,0,4],
 "structpcpp_1_1_i_pv6_authentication_header_1_1ipv6__authentication__header.html#a88815614e37fce3f5e036fd937be3da8":[3,0,0,112,0,1],
 "structpcpp_1_1_i_pv6_authentication_header_1_1ipv6__authentication__header.html#adc7379c6d35f30061fb9db853a69bf63":[3,0,0,112,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "structpcpp_1_1icmp__timestamp__request.html#a26bbc51803f744df65d517483a7bc0ae":[3,0,0,68,0],
 "structpcpp_1_1icmp__timestamp__request.html#a68e8720ae016dc5d2b9c3c0f2f068fea":[3,0,0,68,4],
 "structpcpp_1_1icmp__timestamp__request.html#a717104fa64883aec168e2d99581698d2":[3,0,0,68,3],
-"structpcpp_1_1icmp__timestamp__request.html#ad6c33b9a1da04e9e692b35575828747d":[3,0,0,68,2],
-"structpcpp_1_1icmp__timestamp__request.html#af9ae072cf3636b545d2c2fc1babb3964":[3,0,0,68,1]
+"structpcpp_1_1icmp__timestamp__request.html#ad6c33b9a1da04e9e692b35575828747d":[3,0,0,68,2]
 };
