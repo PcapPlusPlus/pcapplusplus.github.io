@@ -13,7 +13,7 @@ var classpcpp_1_1_logger =
     [ "isDebugEnabled", "classpcpp_1_1_logger.html#af674b8a34a5da2df2d73f3e882934604", null ],
     [ "logsEnabled", "classpcpp_1_1_logger.html#a8463ca581c9fc026c0932ba60d78862c", null ],
     [ "resetLogPrinter", "classpcpp_1_1_logger.html#a90be870adb5dad753552392ffe2c89dd", null ],
-    [ "setAllModlesToLogLevel", "classpcpp_1_1_logger.html#a8b20c3d798d80a3f66c4132fd833f37e", null ],
+    [ "setAllModulesToLogLevel", "classpcpp_1_1_logger.html#afb538b85488f3249b216b653b90b76a1", null ],
     [ "setLogLevel", "classpcpp_1_1_logger.html#a36bf4e1ed39f9f4cb1d19fd97cb994b6", null ],
     [ "setLogPrinter", "classpcpp_1_1_logger.html#a05aa16e3582946c75318abd582ea500a", null ],
     [ "suppressLogs", "classpcpp_1_1_logger.html#acfffd12a85299929559ca494154be3d7", null ]

@@ -7,7 +7,7 @@ var searchData=
   ['setaddr',['setAddr',['../classpcpp_1_1_i_p_filter.html#a41a8a2bdad3732f03639ab5009c8e10c',1,'pcpp::IPFilter']]],
   ['setaddressmaskreplydata',['setAddressMaskReplyData',['../classpcpp_1_1_icmp_layer.html#a7342d244c4176335efc06bb22366897e',1,'pcpp::IcmpLayer']]],
   ['setaddressmaskrequestdata',['setAddressMaskRequestData',['../classpcpp_1_1_icmp_layer.html#a156d4f76ec75ace8b6fff64219fcc140',1,'pcpp::IcmpLayer']]],
-  ['setallmodlestologlevel',['setAllModlesToLogLevel',['../classpcpp_1_1_logger.html#a8b20c3d798d80a3f66c4132fd833f37e',1,'pcpp::Logger']]],
+  ['setallmodulestologlevel',['setAllModulesToLogLevel',['../classpcpp_1_1_logger.html#afb538b85488f3249b216b653b90b76a1',1,'pcpp::Logger']]],
   ['setauthenticatorvalue',['setAuthenticatorValue',['../classpcpp_1_1_radius_layer.html#a67b8bba9bdbd7c114e61bfa30c11bc8e',1,'pcpp::RadiusLayer']]],
   ['setbgpid',['setBgpId',['../classpcpp_1_1_bgp_open_message_layer.html#a33f6ea375b2f34d60056becd652da5aa',1,'pcpp::BgpOpenMessageLayer']]],
   ['setbottomofstack',['setBottomOfStack',['../classpcpp_1_1_mpls_layer.html#ad36043d44c2a5c3dbb0a9809756ccbc6',1,'pcpp::MplsLayer']]],
