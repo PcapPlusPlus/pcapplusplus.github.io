@@ -393,11 +393,11 @@ Public Member Functions</h2></td></tr>
 <li>The input fragment is not the first or last fragment</li>
 <li>The input fragment came out-of-order, meaning that wasn't the fragment that was currently expected (it's data is copied to the out-of-order fragment list)</li>
 <li>The input fragment is malformed and will be ignored</li>
-<li>The input fragment is the last one and the packet is now fully reassembled. In this case the return value will contain a pointer to the reassebmled packet </li>
+<li>The input fragment is the last one and the packet is now fully reassembled. In this case the return value will contain a pointer to the reassembled packet </li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">parseUntil</td><td>Optional parameter. Parse the reassembled packet until you reach a certain protocol (inclusive). Can be useful for cases when you need to parse only up to a certain layer and want to avoid the performance impact and memory consumption of parsing the whole packet. Default value is <a class="el" href="namespacepcpp.html#ad94e3dd833f818889f676d2352eac829">UnknownProtocol</a> which means don't take this parameter into account </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">parseUntilLayer</td><td>Optional parameter. Parse the reassembled packet until you reach a certain layer in the OSI model (inclusive). Can be useful for cases when you need to parse only up to a certain OSI layer (for example transport layer) and want to avoid the performance impact and memory consumption of parsing the whole packet. Default value is <a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">OsiModelLayerUnknown</a> which means don't take this parameter into account </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parseUntil</td><td>Optional parameter. Parse the reassembled packet until you reach a certain protocol (inclusive). Can be useful for cases when you need to parse only up to a certain layer and want to avoid the performance impact and memory consumption of parsing the whole packet. Note that setting this to a protocol which doesn't include the IP-Layer will result in <a class="el" href="classpcpp_1_1_i_p_reassembly.html">IPReassembly</a> not finding the IP-Layer and thus failing to work properly. Default value is <a class="el" href="namespacepcpp.html#ad94e3dd833f818889f676d2352eac829">UnknownProtocol</a> which means don't take this parameter into account </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parseUntilLayer</td><td>Optional parameter. Parse the reassembled packet until you reach a certain layer in the OSI model (inclusive). Can be useful for cases when you need to parse only up to a certain OSI layer (for example transport layer) and want to avoid the performance impact and memory consumption of parsing the whole packet. Note that setting this value to OsiModelPhysicalLayer will result in <a class="el" href="classpcpp_1_1_i_p_reassembly.html">IPReassembly</a> not finding the IP-layer and thus failing to work properly. Default value is <a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">OsiModelLayerUnknown</a> which means don't take this parameter into account </td></tr>
   </table>
   </dd>
 </dl>
@@ -457,11 +457,11 @@ Public Member Functions</h2></td></tr>
 <li>The input fragment is not the first or last fragment</li>
 <li>The input fragment came out-of-order, meaning that wasn't the fragment that was currently expected (it's data is copied to the out-of-order fragment list)</li>
 <li>The input fragment is malformed and will be ignored</li>
-<li>The input fragment is the last one and the packet is now fully reassembled. In this case the return value will contain a pointer to the reassebmled packet </li>
+<li>The input fragment is the last one and the packet is now fully reassembled. In this case the return value will contain a pointer to the reassembled packet </li>
 </ul>
 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">parseUntil</td><td>Optional parameter. Parse the raw and reassembled packets until you reach a certain protocol (inclusive). Can be useful for cases when you need to parse only up to a certain layer and want to avoid the performance impact and memory consumption of parsing the whole packet. Default value is <a class="el" href="namespacepcpp.html#ad94e3dd833f818889f676d2352eac829">UnknownProtocol</a> which means don't take this parameter into account </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">parseUntilLayer</td><td>Optional parameter. Parse the raw and reassembled packets until you reach a certain layer in the OSI model (inclusive). Can be useful for cases when you need to parse only up to a certain OSI layer (for example transport layer) and want to avoid the performance impact and memory consumption of parsing the whole packet. Default value is <a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">OsiModelLayerUnknown</a> which means don't take this parameter into account </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parseUntil</td><td>Optional parameter. Parse the raw and reassembled packets until you reach a certain protocol (inclusive). Can be useful for cases when you need to parse only up to a certain layer and want to avoid the performance impact and memory consumption of parsing the whole packet. Note that setting this to a protocol which doesn't include the IP-Layer will result in <a class="el" href="classpcpp_1_1_i_p_reassembly.html">IPReassembly</a> not finding the IP-Layer and thus failing to work properly. Default value is <a class="el" href="namespacepcpp.html#ad94e3dd833f818889f676d2352eac829">UnknownProtocol</a> which means don't take this parameter into account </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parseUntilLayer</td><td>Optional parameter. Parse the raw and reassembled packets until you reach a certain layer in the OSI model (inclusive). Can be useful for cases when you need to parse only up to a certain OSI layer (for example transport layer) and want to avoid the performance impact and memory consumption of parsing the whole packet. Note that setting this value to OsiModelPhysicalLayer will result in <a class="el" href="classpcpp_1_1_i_p_reassembly.html">IPReassembly</a> not finding the IP-layer and thus failing to work properly. Default value is <a class="el" href="namespacepcpp.html#ad94e3dd833f818889f676d2352eac829">UnknownProtocol</a> which means don't take this parameter into account Default value is <a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">OsiModelLayerUnknown</a> which means don't take this parameter into account </td></tr>
   </table>
   </dd>
 </dl>
@@ -504,7 +504,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_p_reassembly.html">IPReassembly</a></li>
-    <li class="footer">Generated on Sun Dec 18 2022 04:08:44 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Dec 20 2022 09:22:22 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
