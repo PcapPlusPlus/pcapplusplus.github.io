@@ -11,10 +11,10 @@ In order to compile PcapPlusPlus on Windows using MinGW-w64 you need the followi
 1. `CMake` which can be downloaded from: <https://cmake.org/download/>
 2. Download and run MinGW-w64 installer from here: <https://sourceforge.net/projects/mingw-w64/>
 3. Make sure that MinGW-w64 `bin` directory is in your `PATH` environment variable, for example:
-    ```console
-    PATH=%PATH%;C:\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin
-    ```
-3. [WinPcap developer's pack](https://www.winpcap.org/devel.htm) **OR** [Npcap SDK](https://nmap.org/npcap/guide/npcap-devguide.html) - containing the `wpcap` library PcapPlusPlus is linking with plus relevant `.h` files.
+   ```console
+   PATH=%PATH%;C:\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin
+   ```
+4. [WinPcap developer's pack](https://www.winpcap.org/devel.htm) **OR** [Npcap SDK](https://nmap.org/npcap/guide/npcap-devguide.html) - containing the `wpcap` library PcapPlusPlus is linking with plus relevant `.h` files.
    1. WinPcap developer's pack can be downloaded from here: <https://www.winpcap.org/devel.htm>
    2. Npcap SDK can be downloaded from here: <https://nmap.org/npcap/#download>
 
@@ -27,6 +27,7 @@ cmake .. -G "MinGW Makefiles" -DPCAP_ROOT=<NpcapSDK_or_WinPcapDevPack_Directory>
 ```
 
 This process will build the following artifacts:
+
 - PcapPlusPlus libs:
   - `build\Common++\libCommon++.dll`
   - `build\Packet++\libPacket++.dll`
@@ -39,7 +40,7 @@ This process will build the following artifacts:
 The following configuration options are available (on top of CMake's built-in options):
 
 | Option                                             | Description                                                                                                                                                                          |
-| :--------------------------------------------------| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **`-DPCAP_ROOT=<DIR>`**                            | Npcap SDK or WinPcap developer pack directory (mandatory option)                                                                                                                     |
 | **`-DPCAPPP_BUILD_EXAMPLES=<ON/OFF>`**             | Build PcapPlusPlus examples (default value is `ON` if building the project itself, otherwise `OFF`)                                                                                  |
 | **`-DPCAPPP_BUILD_TESTS=<ON/OFF>`**                | Build PcapPlusPlus tests (default value is `ON` if building the project itself, otherwise `OFF`)                                                                                     |
