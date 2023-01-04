@@ -23,7 +23,7 @@ In order to compile PcapPlusPlus on Windows using MinGW-w64 you need the followi
 Assuming you want to build PcapPlusPlus into a `build` directory:
 
 ```console
-cmake .. -G "MinGW Makefiles" -DPCAP_ROOT=<NpcapSDK_or_WinPcapDevPack_Directory> -S . -B build
+cmake -G "MinGW Makefiles" -DPCAP_ROOT=<NpcapSDK_or_WinPcapDevPack_Directory> -S . -B build
 cd build
 make
 ```
