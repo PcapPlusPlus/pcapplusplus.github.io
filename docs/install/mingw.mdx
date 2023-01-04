@@ -8,7 +8,7 @@ title: Build on Windows (MinGW-w64)
 
 In order to compile PcapPlusPlus on Windows using MinGW-w64 you need the following components:
 
-1. `CMake` which can be downloaded from: <https://cmake.org/download/>
+1. `CMake` which can be installed from: <https://cmake.org/install/> or with `pacman` if using MSYS2: `pacman -S mingw-w64-x86_64-cmake`
 2. Download and run MinGW-w64 installer from here: <https://sourceforge.net/projects/mingw-w64/>
 3. Make sure that MinGW-w64 `bin` directory is in your `PATH` environment variable, for example:
    ```console
@@ -20,10 +20,12 @@ In order to compile PcapPlusPlus on Windows using MinGW-w64 you need the followi
 
 ## Build
 
+Assuming you want to build PcapPlusPlus into a `build` directory:
+
 ```console
-mkdir build
+cmake .. -G "MinGW Makefiles" -DPCAP_ROOT=<NpcapSDK_or_WinPcapDevPack_Directory> -S . -B build
 cd build
-cmake .. -G "MinGW Makefiles" -DPCAP_ROOT=<NpcapSDK_or_WinPcapDevPack_Directory>
+make
 ```
 
 This process will build the following artifacts:
