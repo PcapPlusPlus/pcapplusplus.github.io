@@ -24,9 +24,19 @@ Assuming you want to build PcapPlusPlus into a `build` directory:
 
 ```console
 cmake -G "MinGW Makefiles" -DPCAP_ROOT=<NpcapSDK_or_WinPcapDevPack_Directory> -S . -B build
-cd build
-make
 ```
+
+And then initiate the build in one of two ways:
+
+- Using CMake:
+  ```console
+  cmake --build build
+  ```
+- Using `make`:
+  ```console
+  cd build
+  make
+  ```
 
 This process will build the following artifacts:
 
