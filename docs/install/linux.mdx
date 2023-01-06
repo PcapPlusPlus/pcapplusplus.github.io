@@ -20,141 +20,69 @@ In order to compile PcapPlusPlus on Linux please make sure you have the followin
    sudo yum install libpcap-devel
    ```
 
-2. `libstdc++-static` package. If it's not already installed you can install it using `apt-get` or `yum`
+2. **OPTIONAL** - download and install [Zstd](https://github.com/facebook/zstd/releases/latest) if you wish to enable [PCAPNG streaming compression support](../features#readingwriting-pcapng-files-with-compression)
 
-3. **OPTIONAL** - download and install [Zstd](https://github.com/facebook/zstd/releases/latest) if you wish to enable [PCAPNG streaming compression support](../features#readingwriting-pcapng-files-with-compression)
+## Build
 
-## Configuration
-
-Run the configuration script from PcapPlusPlus main directory:
-
-```bash
-./configure-linux.sh
-```
-
-Ths script has two modes of operation:
-
-- Wizard mode - the script will walk you through the configuration parameters to provide
-- Params mode - provide the different parameters using command-line switches
-
-In general there are several types of configuration:
-
-- With libpcap only
-- With DPDK
-- With PF_RING
-
-Let's cover the different options. We'll begin with the wizard mode and later cover the params mode.
-
-### Wizard mode
-
-This mode is pretty much self explanatory and the wizard will guide you through the parameters you need to provide:
+Assuming you want to build PcapPlusPlus into a `build` directory:
 
 ```shell
-./configure-linux.sh
-
-****************************************
-PcapPlusPlus Linux configuration script
-****************************************
-
-Number of arguments: 0
-
-Compile PcapPlusPlus with PF_RING? y
-Enter PF_RING source path: /home/seladb/PF_RING
-Compile PcapPlusPlus with DPDK? y
-Enter DPDK source path: /home/seladb/dpdk-18.11
-PcapPlusPlus configuration is complete. Files created (or modified): mk/platform.mk, mk/PcapPlusPlus.mk, mk/install.sh, mk/uninstall.sh
+cmake -S . -B build
 ```
 
-### Command-line switches mode
+And then initiate the build in one of two ways:
 
-You an view all available switches by running `./configure-linux.sh --help` or `./configure-linux.sh -h`:
+- Using CMake:
+  ```shell
+  cmake --build build
+  ```
+- Using `make`:
+  ```shell
+  cd build
+  make
+  ```
 
-| Option                        | Description                                                                                                                                        |
-| :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`--default`**               | use the default configuration. This assumes `libpcap-dev` is installed                                                                             |
-| **`--dpdk`**                  | setup PcapPlusPlus with DPDK. When using this switch you must also set **`--dpdk-home`**                                                           |
-| **`--dpdk-home`**             | set DPDK home directory. Use only when **`--dpdk`** is set                                                                                         |
-| **`--pf-ring`**               | setup PcapPlusPlus with PF_RING. When using this switch you must also set **`--pf-ring-home`**                                                     |
-| **`--pf-ring-home`**          | sets PF_RING home directory. Use only when **`--pf-ring`** is set                                                                                  |
-| **`--use-immediate-mode`**    | use libpcap immediate mode which enables getting packets as fast as possible (supported on libpcap>=1.5)                                           |
-| **`--set-direction-enabled`** | set direction for capturing incoming or outgoing packets (supported on libpcap>=0.9.1)                                                             |
-| **`--install-dir`**           | set a custom installation directory. Default is `/usr/local`                                                                                       |
-| **`--libpcap-include-dir`**   | libpcap header files directory. This parameter is optional and if omitted PcapPlusPlus will look for the header files in the default include paths |
-| **`--libpcap-lib-dir`**       | libpcap pre compiled lib directory. This parameter is optional and if omitted PcapPlusPlus will look for the lib file in the default lib paths     |
-| **`--use-zstd`**              | use [Zstd for PCAPNG streaming compression](../features#readingwriting-pcapng-files-with-compression). This parameter is optional                  |
-| **`--musl`**                  | Musl base destination platform: i.e. Alpine. This parameter is optional                                                                            |
-| **`-h`**, **`--help`**        | displays a help message and exits. No further actions are performed                                                                                |
+This process will build the following artifacts:
 
-Here are a few examples:
+- PcapPlusPlus libs:
+  - `build/Common++/libCommon++.a`
+  - `build/Packet++/libPacket++.a`
+  - `build/Pcap++/libPcap++.a`
+- PcapPlusPlus examples binaries under `build/examples_bin`
+- PcapPlusPlus tests:
+  - `<PcapPlusPlus_Dir>/Tests/Packet++Test/Bin/Packet++Test`
+  - `<PcapPlusPlus_Dir>/Tests/Pcap++Test/Bin/Pcap++Test`
 
-Default configuration:
+The following configuration options are available (on top of CMake's built-in options):
 
-```shell
-./configure-linux.sh --default
-```
-
-Configure PcapPlusPlus with DPDK:
-
-```shell
-./configure-linux.sh --dpdk --dpdk-home /home/myuser/dpdk-18.11
-```
-
-Configure PcapPlusPlus with PF_RING:
-
-```shell
-./configure-linux.sh --pf-ring --pf-ring-home /home/myuser/PF_RING
-```
-
-Configure PcapPlusPlus with libpcap's immediate mode:
-
-```shell
-./configure-linux.sh --use-immediate-mode
-```
-
-Configure PcapPlusPlus with libpcap's set direction:
-
-```shell
-./configure-linux.sh --set-direction-enabled
-```
-
-Provide non-standard paths for libpcap header and library files:
-
-```shell
-./configure-linux.sh --libpcap-include-dir /home/myuser/my-libpcap/include --libpcap-lib-dir /home/myuser/my-libpcap/lib
-```
-
-Provide a custom installation directory:
-
-```shell
-./configure-linux.sh --install-dir /home/myuser/my-install-dir
-```
-
-Use Zstd for pcapng compression:
-
-```shell
-./configure-linux.sh --use-zstd
-```
-
-## Build the code
-
-After running the config script, you're can safely build the code:
-
-1. Run `make` or `make all` from PcapPlusPlus main directory
-2. This should compile all libraries, unit-tests and examples
-3. To build the libraries only (without the unit-tests and examples) run `make libs` instead of `make all`
-4. After compilation you can find the libraries, examples, header files and helpful makefiles under the `Dist` directory
+| Option                                             | Description                                                                                                                                                                                                                                                |
+| :------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`-DPCAPPP_BUILD_EXAMPLES=<ON/OFF>`**             | Build PcapPlusPlus examples (default value is `ON` if building the project itself, otherwise `OFF`)                                                                                                                                                        |
+| **`-DPCAPPP_BUILD_TESTS=<ON/OFF>`**                | Build PcapPlusPlus tests (default value is `ON` if building the project itself, otherwise `OFF`)                                                                                                                                                           |
+| **`-DPCAPPP_BUILD_TUTORIALS=<ON/OFF>`**            | Build PcapPlusPlus tutorials. This option is only available if `DPCAPPP_BUILD_EXAMPLES=ON`. The tutorials binaries will be under `build/tutorials_bin` (default value is `OFF`)                                                                            |
+| **`-DPCAPPP_INSTALL=<ON/OFF>`**                    | Install PcapPlusPlus (default value is `ON` if building the project itself, otherwise `OFF`)                                                                                                                                                               |
+| **`-DBUILD_SHARED_LIBS=<ON/OFF>`**                 | Build shared libs (default value is `OFF`)                                                                                                                                                                                                                 |
+| **`-DLIGHT_PCAPNG_ZSTD=<ON/OFF>`**                 | Build with Zstd to enable [PCAPNG streaming compression support](../features#readingwriting-pcapng-files-with-compression) (default value is `OFF`)                                                                                                        |
+| **`-DPCAPPP_ENABLE_PCAP_IMMEDIATE_MODE=<ON/OFF>`** | Enable pcap immediate mode (default value is `OFF`)                                                                                                                                                                                                        |
+| **`-DPCAPPP_ENABLE_PCAP_SET_DIRECTION=<ON/OFF>`**  | Enable set direction for capturing incoming or outgoing packets (default value is `OFF`)                                                                                                                                                                   |
+| **`-DPCAPPP_USE_DPDK=<ON/OFF>`**                   | Setup PcapPlusPlus with DPDK (default value is `OFF`). When this option is used CMake will look for an installed version of DPDK on the build machine (usually under `/usr/local`). If DPDK is installed in a different directory please use `-DDPDK_ROOT` |
+| **`-DDPDK_ROOT=<DIR>`**                            | When setting up PcapPlusPlus with DPDK and DPDK is not installed in the defualt directory (usually under `/usr/local`) use this option to indicate DPDK installation directory                                                                             |
+| **`-DPCAPPP_USE_PF_RING=<ON/OFF>`**                | Setup PcapPlusplus with PF_RING (default value is `OFF`). When this option is used CMake will look for an installed version of PF_RING on the build machine (usually under `/usr/local`). If PF_RING is not installed please use `-DPF_RING_ROOT`          |
+| **`-DPF_RING_ROOT=<DIR>`**                         | When setting up PcapPlusPlus with PF_RING and PF_RING is not installed on the machine use this option to indicate the PF_RING directory (for example `/PF_RING`)                                                                                           |
 
 ## Installation
 
-After build is complete you can run the installation script which will copy the library and header files to the installation directory:
+After the build is complete you can run the installation script which will copy the libraries, header files and examples into the installation directories:
 
 ```shell
-sudo make install
+sudo cmake --install .
 ```
 
-The default installation directory is `/usr/local` which means the header files will be copied to `/usr/local/include/pcapplusplus` and the library files will be copied to `/usr/local/lib`.
+If you want to install on a non-default directory you can use this command:
 
-You can change the installation directory by using the **`--install-dir`** switch in the configuration script.
+```shell
+DESTDIR=<DIR> cmake --install build --prefix "/"
+```
 
 ## Running tests
 
@@ -162,16 +90,6 @@ PcapPlusPlus contains a set of test-cases you can run to make sure that everythi
 
 ## Cross-compilation or build for different architectures
 
-The default architecture that is tested in the CI is `x86-64`. However it's possible to build PcapPlusPlus for other architectures such as `ARM`, `AArch64` (Arm64) or others.
-In most cases the only difference is the gcc/g++ compiler used in the build process.
-In cross-compilation the compiler may reside in a different folder and may not be the default gcc/g++ compiler installed on the machine.
+CMake supports cross compilation out-of-the-box so there is no need for any additional support in PcapPlusPlus.
 
-There is an easy way to use a different gcc/g++ compiler. Let's take an example of cross-compilation to `AArch64` where gcc/g++ resides in
-`/usr/bin/`:
-
-```shell
-export CXX=/usr/bin/aarch64-linux-gnu-g++
-export CC=/usr/bin/aarch64-linux-gnu-gcc
-./configure-linux.sh --default
-make
-```
+Please refer to this page that provides information on how to cross compile with CMake: <https://cmake.org/cmake/help/book/mastering-cmake/chapter/Cross%20Compiling%20With%20CMake.html>
