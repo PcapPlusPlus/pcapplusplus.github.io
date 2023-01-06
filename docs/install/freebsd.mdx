@@ -63,7 +63,11 @@ After the build is complete you can run the installation script which will copy 
 sudo cmake --install .
 ```
 
-The installation directories are determined by the CMake variables: `CMAKE_INSTALL_BINDIR`, `CMAKE_INSTALL_LIBDIR`, `CMAKE_INSTALL_INCLUDEDIR`.
+If you want to install on a non-default directory you can use this command:
+
+```shell
+DESTDIR=<DIR> cmake --install build --prefix "/"
+```
 
 ## Running tests
 
