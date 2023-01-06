@@ -11,7 +11,7 @@ In order to compile PcapPlusPlus on Windows using MinGW-w64 you need the followi
 1. `CMake` which can be installed from: <https://cmake.org/install/> or with `pacman` if using MSYS2: `pacman -S mingw-w64-x86_64-cmake`
 2. Download and run MinGW-w64 installer from here: <https://sourceforge.net/projects/mingw-w64/>
 3. Make sure that MinGW-w64 `bin` directory is in your `PATH` environment variable, for example:
-   ```console
+   ```shell
    PATH=%PATH%;C:\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin
    ```
 4. [WinPcap developer's pack](https://www.winpcap.org/devel.htm) **OR** [Npcap SDK](https://nmap.org/npcap/guide/npcap-devguide.html) - containing the `wpcap` library PcapPlusPlus is linking with plus relevant `.h` files.
@@ -22,18 +22,18 @@ In order to compile PcapPlusPlus on Windows using MinGW-w64 you need the followi
 
 Assuming you want to build PcapPlusPlus into a `build` directory:
 
-```console
+```shell
 cmake -G "MinGW Makefiles" -DPCAP_ROOT=<NpcapSDK_or_WinPcapDevPack_Directory> -S . -B build
 ```
 
 And then initiate the build in one of two ways:
 
 - Using CMake:
-  ```console
+  ```shell
   cmake --build build
   ```
 - Using `make`:
-  ```console
+  ```shell
   cd build
   make
   ```
@@ -61,6 +61,16 @@ The following configuration options are available (on top of CMake's built-in op
 | **`-DBUILD_SHARED_LIBS=<ON/OFF>`**                 | Build shared libs (default value is `OFF`)                                                                                                                                           |
 | **`-DPCAPPP_ENABLE_PCAP_IMMEDIATE_MODE=<ON/OFF>`** | Enable pcap immediate mode, available only in Npcap (default value is `OFF`)                                                                                                         |
 | **`-DPCAPPP_ENABLE_PCAP_SET_DIRECTION=<ON/OFF>`**  | Enable set direction for capturing incoming or outgoing packets (default value is `OFF`)                                                                                             |
+
+## Installation
+
+Windows doesn't have a default install directory, but you may want to see all libs, header files and examples under one directory (which is not the `build` directory).
+Here is how to acheive that:
+
+```shell
+set DESTDIR=<DIR>
+cmake --install build --prefix "/"
+```
 
 ## Running tests
 
