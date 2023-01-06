@@ -68,14 +68,12 @@ $ meson build
 $ cd build
 $ ninja
 $ ninja install
-$ ldconfig
 ```
 
-It is important to build and install DPDK and also run `ldconfig` as mentioned in the documentation, otherwise PcapPlusPlus won't be able to find the DPDK binaries during the link process.
+### Build PcapPlusPlus with DPDK
 
-### PcapPlusPlus configuration for DPDK
-
-Once the DPDK build is completed successfully, run PcapPlusPlus configuration script (`configure-linux.sh`) to build PcapPlusPlus with DPDK. Please refer to the [configuration instructions](./install/linux#configuration) to get more details.
+Once the DPDK build is completed successfully, build PcapPlusPlus with DPDK using the `-DPCAPPP_USE_DPDK` option.
+Please refer to the [build instructions](./install/linux#build) for more details.
 
 ### DPDK initialization with PcapPlusPlus
 
