@@ -9,7 +9,7 @@ title: Build on MacOS
 In order to compile PcapPlusPlus on MacOS please make sure you have the following components installed:
 
 1. [Xcode](https://developer.apple.com/xcode/) which contains all prerequisites required for PcapPlusPlus including gcc/g++ compiler and libpcap with all relevant header files
-2. PcapPlusPlus is available for both **Intel** and **Apple Silicon** processors. To build for a specific architecture you can use the `-DCMAKE_OSX_ARCHITECTURES` option, see more details below
+2. PcapPlusPlus is available for both **Intel** and **Apple Silicon** processors. To cross-compile for a different architecture you can use the `-DCMAKE_OSX_ARCHITECTURES` option, see more details below
 3. **OPTIONAL** - install [Zstd](https://facebook.github.io/zstd/) if you wish to enable [PCAPNG streaming compression support](../features#readingwriting-pcapng-files-with-compression):
    ```shell
    brew install zstd

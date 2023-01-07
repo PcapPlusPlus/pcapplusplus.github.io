@@ -15,10 +15,10 @@ In order to build PcapPlusPlus for Android please make sure you have the followi
 
 In order to build for Android a few parameters are needed:
 
-- The path of Android NDK. Let's assume it's stord in `ANDROID_NDK`
-- Android API version - must be between 21 and 30. Let's assume it's stord in `API_VERSIOM`
-- Target architecture which accepts the following values: `arm64-v8a`, `armeabi-v7a`, `x86`, `x86_64`. Let's assume it's stord in `ANDROID_ABI`
-- The path of `libpcap` compiled for Android. Let's assume it's stord in `LIBPCAP_DIR`
+- The path of Android NDK. Let's assume it's stored in `ANDROID_NDK`
+- Android API version - must be between 21 and 30. Let's assume it's stored in `API_VERSIOM`
+- Target architecture which accepts the following values: `arm64-v8a`, `armeabi-v7a`, `x86`, `x86_64`. Let's assume it's stored in `ANDROID_ABI`
+- The path of `libpcap` compiled for Android. Let's assume it's stored in `LIBPCAP_DIR`
 
 Assuming you want to build PcapPlusPlus into a `build` directory:
 
@@ -77,7 +77,7 @@ The following configuration options are available (on top of CMake's built-in op
 
 ## Installation
 
-When building for Android the build machine is usually different from the target device, so you may want to gather the lib and header files in a directory instead of installing it in the build machine.
+When building for Android the build machine (host) is usually different from the target device (target), so you may want to gather the lib and header files in a directory in the host instead of installing it on it.
 You can use the following command in order to achieve this:
 
 ```shell
