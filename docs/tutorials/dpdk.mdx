@@ -393,15 +393,45 @@ Device2->Device1 stats:
 
 This output is printed every 2 seconds and shows for each direction: the total number of packets received and sent so far, the total number of bytes received and sent so far, packets per second and bps (bits per second)
 
-## Running the example
+## Running the code
 
-import ReleaseLink from '@site/src/components/ReleaseLink';
 import CodeLink from '@site/src/components/CodeLink';
 
-All the code that was covered in this tutorial can be found <CodeLink relativePath="/Examples/Tutorials/Tutorial-DpdkL2Fwd">here</CodeLink>. In order to compile and run the code please first download and compile PcapPlusPlus source code or download a pre-compiled version from the <ReleaseLink></ReleaseLink>. When building from source please make sure to configure the build for DPDK, as explained [here](../install/linux#command-line-switches-mode). The only platform relevant for this tutorial is Linux as DPDK is not supported on other platforms.
+All code that was covered in this tutorial can be found <CodeLink relativePath="/Examples/Tutorials/Tutorial-DpdkL2Fwd">here</CodeLink>. In order to compile and run the code please choose one of the options mentioned below,
+and then follow the instructions in the [Post build](#post-build) section.
 
-After done building PcapPlusPlus and the tutorial and before running the tutorial please run `setup-dpdk.sh` script to setup the necessary runtime parameters for DPDK. More details on this script can be found [here](../dpdk).
+### Option 1: Install a pre-compiled version of PcapPlusPlus
+
+You can download and install PcapPlusPlus using one of the options mentioned in the [installation page](../install).
+
+Once installed, download all of the files in the <CodeLink relativePath="/Examples/Tutorials/Tutorial-DpdkL2Fwd">tutorial folder</CodeLink> and run CMake:
+
+```shell
+cmake -S . -B build
+cmake --build build
+```
+
+The executable will be created in the same directory.
+
+:::tip Notes:
+
+1. If PcapPlusPlus is **NOT** installed in the default directory you may need to specify `CMAKE_LIBRARY_PATH`, for example:
+   ```shell
+   CMAKE_LIBRARY_PATH=/my/pcapplusplus/path cmake -S . -B build
+   ```
+2. If DPDK is **NOT** installed in the default directory you may need to add it to `CMAKE_LIBRARY_PATH` as well, for example:
+   ```shell
+   CMAKE_LIBRARY_PATH="/my/pcapplusplus/path;/my/dpdk/path" cmake -S . -B build
+   ```
+   :::
+
+### Option 2: build the tutorials with PcapPlusPlus
+
+If you're building PcapPlusPlus from source and would like to build the tutorials as well you can use the `-DPCAPPP_BUILD_TUTORIALS=ON` option.
+Please refer to the [build from source page](../install#build-from-source) for more details (choose your platform page).
+
+### Post build
+
+After done building the tutorial code and/or PcapPlusPlus and before running the tutorial please run `setup-dpdk.sh` script to setup the necessary runtime parameters for DPDK. More details on this script can be found [here](../dpdk).
 
 Please note this tutorial needs a special environment to run on, as it needs at least 2 devices connected only through a third device running this application. If you need help setting up this environment and you have VirtualBox you can use [this](https://www.brianlinkletter.com/how-to-use-virtualbox-to-emulate-a-network/) great tutorial which will walk you through it.
-
-The compiled executable will be inside the tutorial directory (`[PcapPlusPlus Folder]/Examples/Tutorials/Tutorial-DpdkL2Fwd`).
