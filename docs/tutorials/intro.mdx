@@ -91,19 +91,19 @@ Each packet capture engine is represented in PcapPlusPlus in a class called "Dev
 
 The next parts of the tutorial will dive deep into the various device types and explain how to use them.
 
-## Writing a simple app including a makefile
+## Writing a simple app
 
 import ReleaseLink from '@site/src/components/ReleaseLink';
 
-Creating applications using PcapPlusPlus is rather easy. Let's have a guided tour demonstrating how to create a simple application and its Makefile or Visual Studio project.
+Creating applications using PcapPlusPlus is easy. Let's have a guided tour demonstrating how to create a simple application and its `CMakeLists.txt`.
 
 First let's make sure PcapPlusPlus is configured and built successfully. Please follow [the download page](../install) for building instructions.
 
-Another option is to download a pre-compiled version of PcapPlusPlus, please download the <ReleaseLink versionString="latest release"></ReleaseLink> for your platform and follow the instructions on how to configure it.
+Another option is to download a pre-compiled version of PcapPlusPlus, please download the <ReleaseLink versionString="latest release"></ReleaseLink> for your platform and follow the instructions on how to configure and install it.
 
-Now all we need is under the `Dist/` directory. We can find the PcapPlusPlus libraries, header files under `Dist/header`, compiled examples under `Dist/examples` and helpful makefiles we'll going to use under `Dist/mk`
+Now that PcapPlusPlus is installed on our system we're ready to start writing some code!
 
-So let's write some code and put it in `main.cpp`:
+So let's write this code in `main.cpp`:
 
 ```cpp
 #include <iostream>
@@ -161,7 +161,7 @@ This code does the following:
 4. Extracts the IPv4 layer
 5. Reads the source and destination IPs and prints them to console
 
-This code is rather simple. Now let's see how to write a `CMakeLists.txt` to build this app successfully:
+This code is rather simple. Now let's write a `CMakeLists.txt` file to build this app:
 
 ```cmake
 cmake_minimum_required(VERSION 3.12)
@@ -220,7 +220,8 @@ The executable will be created in the same directory.
    set CMAKE_PREFIX_PATH=C:\my\pcapplusplus\path;C:\my\npcap\path
    cmake -S . -B build
    ```
-   :::
+
+:::
 
 ### Option 2: build the tutorials with PcapPlusPlus
 
