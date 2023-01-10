@@ -206,18 +206,18 @@ The executable will be created in the same directory.
 :::tip Notes:
 
 1. If you're running on Windows with MinGW you need to run cmake with `-G "MinGW Makefiles"`
-2. If PcapPlusPlus is **NOT** installed in the default directory you may need to specify `CMAKE_LIBRARY_PATH`, for example:
+2. If PcapPlusPlus is **NOT** installed in the default directory you may need to specify `CMAKE_PREFIX_PATH`, for example:
    ```shell
-   CMAKE_LIBRARY_PATH=/my/pcapplusplus/path cmake -S . -B build
+   CMAKE_PREFIX_PATH=/my/pcapplusplus/path cmake -S . -B build
    ```
    Or on Windows:
    ```shell
-   set CMAKE_LIBRARY_PATH=C:\my\pcapplusplus\path
+   set CMAKE_PREFIX_PATH=C:\my\pcapplusplus\path
    cmake -S . -B build
    ```
-3. On Windows you may also need to specify Npcap/WinPcap path in `CMAKE_LIBRARY_PATH`, for example:
+3. On Windows you may also need to specify Npcap/WinPcap path in `CMAKE_PREFIX_PATH`, for example:
    ```shell
-   set CMAKE_LIBRARY_PATH=C:\my\pcapplusplus\path;C:\my\npcap\path
+   set CMAKE_PREFIX_PATH=C:\my\pcapplusplus\path;C:\my\npcap\path
    cmake -S . -B build
    ```
    :::

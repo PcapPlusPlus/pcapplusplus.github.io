@@ -415,13 +415,13 @@ The executable will be created in the same directory.
 
 :::tip Notes:
 
-1. If PcapPlusPlus is **NOT** installed in the default directory you may need to specify `CMAKE_LIBRARY_PATH`, for example:
+1. If PcapPlusPlus is **NOT** installed in the default directory you may need to specify `CMAKE_PREFIX_PATH`, for example:
    ```shell
-   CMAKE_LIBRARY_PATH=/my/pcapplusplus/path cmake -S . -B build
+   CMAKE_PREFIX_PATH=/my/pcapplusplus/path cmake -S . -B build
    ```
-2. If DPDK is **NOT** installed in the default directory you may need to add it to `CMAKE_LIBRARY_PATH` as well, for example:
+2. If DPDK is **NOT** installed in the default directory you may need to add it to `CMAKE_PREFIX_PATH` as well, for example:
    ```shell
-   CMAKE_LIBRARY_PATH="/my/pcapplusplus/path;/my/dpdk/path" cmake -S . -B build
+   CMAKE_PREFIX_PATH="/my/pcapplusplus/path;/my/dpdk/path" cmake -S . -B build
    ```
    :::
 
