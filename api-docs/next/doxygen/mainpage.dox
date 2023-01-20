@@ -4,14 +4,14 @@
 *
 * \section intro_sec Introduction
 *
-* <i>PcapPlusPlus</i> is a A multiplatform C++ library for capturing, parsing and crafting of network packets. It is designed to be efficient, powerful and easy to use.
+* <i>PcapPlusPlus</i> is a A multi-platform C++ library for capturing, parsing and crafting of network packets. It is designed to be efficient, powerful and easy to use.
 *
 * Please refer to <a style="font-weight: bold;text-decoration: underline;color: #cd2f82;" href="/">PcapPlusPlus web-site</a> for more information.
 *
 * \section api_reference_sec API Reference
 *
 * <b>%Packet capturing engines (Pcap++):</b>
-*   - pcpp::PcapLiveDevice, PcapLiveDevice.h - wrapper for libPacp engine (Linux)
+*   - pcpp::PcapLiveDevice, PcapLiveDevice.h - wrapper for libpcap engine (Linux)
 *   - pcpp::WinPcapLiveDevice, WinPcapLiveDevice.h - wrapper for WinPcap/Npcap engine (Windows)
 *   - pcpp::PcapRemoteDevice, PcapRemoteDevice.h - remote live device, supported by WinPcap (Windows)
 *   - pcpp::PfRingDevice, PfRingDevice.h - Vanilla PF_RING device (Linux)
@@ -79,8 +79,8 @@
 *   - IpUtils.h - all kinds of helpful network utilities
 *   - PacketUtils.h - useful packet processing utils such as creating a hash value for a packet
 *   - NetworkUtils.h - several useful and common network utilities
-*   - SystemUtils.h - several useful utilities for interactiong with the operating system
-*   - pcpp::LoggerPP, Logger.h - PcapPlusPlus logger
+*   - SystemUtils.h - several useful utilities for interacting with the operating system
+*   - pcpp::Logger, Logger.h - PcapPlusPlus logger
 *   - PcapPlusPlusVersion.h - version and Git info
 */
 
