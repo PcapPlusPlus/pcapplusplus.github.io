@@ -80,7 +80,7 @@
 *   - PacketUtils.h - useful packet processing utils such as creating a hash value for a packet
 *   - NetworkUtils.h - several useful and common network utilities
 *   - SystemUtils.h - several useful utilities for interactiong with the operating system
-*   - pcpp::LoggerPP, Logger.h - PcapPlusPlus logger
+*   - pcpp::Logger, Logger.h - PcapPlusPlus logger
 *   - PcapPlusPlusVersion.h - version and Git info
 */
 
