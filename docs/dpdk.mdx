@@ -88,7 +88,7 @@ Several Linux configuration steps are needed to run DPDK applications:
 - One or more NICs should move from Linux control to DPDK control
 - For DPDK KNI there is one more kernel to be loaded into the kernel (`rte_kni.ko`)
 
-PcapPlusPlus offers a python script that automatically configures all of the above. The script is located in PcapPlusPlus root directory and is named `setup_dpdk.py`. It is based on the [`dpdk-devbind` tool that ships with DPDK](https://doc.dpdk.org/guides/tools/devbind.html) and extends it with more functionality. The script supports Python 3+.
+PcapPlusPlus offers a python script that automatically configures all of the above. The script is located in CMake build directory (e.g `/PcapPlusPlus/build`) and is named `setup_dpdk.py`. It is based on the [`dpdk-devbind` tool that ships with DPDK](https://doc.dpdk.org/guides/tools/devbind.html) and extends it with more functionality. The script supports Python 3+.
 
 This script has 3 modes of operation: `setup` to configure the steps mentioned above, `status` to view the status of all known network interfaces, and `restore` to go back to the original Linux configuration.
 
