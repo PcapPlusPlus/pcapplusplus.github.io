@@ -1,7 +1,7 @@
 var searchData=
 [
   ['half_5fduplex',['HALF_DUPLEX',['../structpcpp_1_1_dpdk_device_1_1_link_status.html#a67ef869fa855fbe7c29add4e9d6ac45babfef29ba9e52e5596eff0235d8e69a14',1,'pcpp::DpdkDevice::LinkStatus']]],
-  ['hbg',['HBG',['../classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656ad51975c40125ffb6285b22163e9fb4c6',1,'pcpp::NtpLayer']]],
+  ['hbg',['HBG',['../classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7a064702bbd2d524891e97d10ee08994b4',1,'pcpp::NtpLayer']]],
   ['help',['HELP',['../classpcpp_1_1_ftp_request_layer.html#ad293dabbe652aed3ac548eb01963e781a4fc963e213bba362778f5c175eb4d5ff',1,'pcpp::FtpRequestLayer']]],
   ['help_5fmessage',['HELP_MESSAGE',['../classpcpp_1_1_ftp_response_layer.html#aebec062665c1d8c6e4eba941782a59cda192fbf5f3f353bc028512bf38108c639',1,'pcpp::FtpResponseLayer']]],
   ['host',['HOST',['../classpcpp_1_1_ftp_request_layer.html#ad293dabbe652aed3ac548eb01963e781ab9361011891280a44d85b967739cc6a5',1,'pcpp::FtpRequestLayer']]],

@@ -143,7 +143,7 @@ Typedefs</h2></td></tr>
  There is a way to enable <b>ethtool</b> on KNI devices that include recompilation of DPDK and strict correspondence between KNI port id and DPDK port id, but it is not currently supported by PcapPlusPlus.<br />
 </p>
 <p>Known issues:</p><ul>
-<li>KNI device may not be able to set/update it's link status up (LINK_ERROR returned): The problem is laying in DPDK in rte_kni_update_link function (it is DPDK BUG if rte_kni_update_link is __rte_experimental). It is recommended to load rte_kni.ko module with "carrier=on" DPDK default is "carrier=off", provided setup-dpdk.sh by default loads with "carrier=on" if Your DPDK version supports it. The good indication of this issue are "DPDK KNI Failed to update links state for device" messages when Pcap++Test application is being run.</li>
+<li>KNI device may not be able to set/update it's link status up (LINK_ERROR returned): The problem is laying in DPDK in rte_kni_update_link function (it is DPDK BUG if rte_kni_update_link is __rte_experimental). It is recommended to load rte_kni.ko module with "carrier=on" DPDK default is "carrier=off", provided setup_dpdk.py by default loads with "carrier=on" if Your DPDK version supports it. The good indication of this issue are "DPDK KNI Failed to update links state for device" messages when Pcap++Test application is being run.</li>
 <li>Packets may not be seen by applications that have open sockets on KNI device: Check your <b>iptables</b> settings and other packet filters - KNI device is traditional network device so all caveats apply;</li>
 <li>I see a lot of unknown traffic - what is it? This must be Linux kernel trying to communicate with other devices from KNI device and it will do so as long as You give the KNI device any IP address via ip command or by record in /etc/networking/interfaces;</li>
 <li>On old versions of DPDK only 4 KNI devices may be created: Yep this is a limitation. You can change MAX_KNI_DEVICES constant in KniDeviceList.cpp to unlock this limit;</li>
@@ -160,8 +160,8 @@ Typedefs</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_248dc7cedc1ea0c288f821d4f2f68d94.html">Dist</a></li><li class="navelem"><a class="el" href="dir_cd3f7d828bf98b23ca573d19c6139c8f.html">header</a></li><li class="navelem"><a class="el" href="_kni_device_8h.html">KniDevice.h</a></li>
-    <li class="footer">Generated on Sun Dec 25 2022 18:31:32 for PcapPlusPlus by
+    <li class="navelem"><a class="el" href="dir_1d5e652a4f74c687a1a254f16a4c3d59.html">Pcap++</a></li><li class="navelem"><a class="el" href="dir_24675e680cc699690f9ab00f0f74b528.html">header</a></li><li class="navelem"><a class="el" href="_kni_device_8h.html">KniDevice.h</a></li>
+    <li class="footer">Generated on Thu Jan 26 2023 09:50:43 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

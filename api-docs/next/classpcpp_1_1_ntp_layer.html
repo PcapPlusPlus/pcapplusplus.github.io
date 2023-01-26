@@ -129,49 +129,75 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:ac2f7eecaf3da9628fad8d2d2cf785666"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe1797b4527bda58a754e30209e90656"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656">ClockSource</a> { <br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656a17ef6e000c3f7327d2bbb3566e64d7a7">GOES</a> = ('G') | ('O' &lt;&lt; 8) | ('E' &lt;&lt; 16) | ('S' &lt;&lt; 24), 
-<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656a8038888b75664c69caae6c64f4439c0c">GPS</a> = ('G') | ('P' &lt;&lt; 8) | ('S' &lt;&lt; 16), 
-<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656a1da0918011c10b1b086610a2428a3735">GAL</a> = ('G') | ('A' &lt;&lt; 8) | ('L' &lt;&lt; 16), 
-<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656afd08a9dd9b274454419aa219b69a98c8">PPS</a> = ('P') | ('P' &lt;&lt; 8) | ('S' &lt;&lt; 16), 
+<tr class="memitem:a6503ccedcd279b455e4deb7a0835c4b7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7">ClockSource</a> : uint32_t { <br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7a1ceb10e4767555f663a1789a5e9be18b">ClockSource::GOES</a> = ('G') | ('O' &lt;&lt; 8) | ('E' &lt;&lt; 16) | ('S' &lt;&lt; 24), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7a8c578de37278ada488d763ea86c5cf20">ClockSource::GPS</a> = ('G') | ('P' &lt;&lt; 8) | ('S' &lt;&lt; 16), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7a9aa84dbd0240dcbd2b183c67e638a295">ClockSource::GAL</a> = ('G') | ('A' &lt;&lt; 8) | ('L' &lt;&lt; 16), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7a1c319b3f8c6d3297eab099e1ee0e930b">ClockSource::PPS</a> = ('P') | ('P' &lt;&lt; 8) | ('S' &lt;&lt; 16), 
 <br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656a39a2b1a374cd61eb8ea1465a03c4c476">IRIG</a> = ('I') | ('R' &lt;&lt; 8) | ('I' &lt;&lt; 16) | ('G' &lt;&lt; 24), 
-<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656aa336cdcc175e7ed07841ceebbce59ffb">WWVB</a> = ('W') | ('W' &lt;&lt; 8) | ('V' &lt;&lt; 16) | ('B' &lt;&lt; 24), 
-<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656abb905aaf749a0531d0598d1ae4d17026">DCF</a> = ('D') | ('C' &lt;&lt; 8) | ('F' &lt;&lt; 16), 
-<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656ad51975c40125ffb6285b22163e9fb4c6">HBG</a> = ('H') | ('B' &lt;&lt; 8) | ('G' &lt;&lt; 16), 
+&#160;&#160;<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7a1bc7066d55ca36efb19cf34a3b4287c9">ClockSource::IRIG</a> = ('I') | ('R' &lt;&lt; 8) | ('I' &lt;&lt; 16) | ('G' &lt;&lt; 24), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7af09c1a06229adf9f53254300fb15fdf6">ClockSource::WWVB</a> = ('W') | ('W' &lt;&lt; 8) | ('V' &lt;&lt; 16) | ('B' &lt;&lt; 24), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7a0cffd3fdeae73b73a43a5db8550c6418">ClockSource::DCF</a> = ('D') | ('C' &lt;&lt; 8) | ('F' &lt;&lt; 16), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7a064702bbd2d524891e97d10ee08994b4">ClockSource::HBG</a> = ('H') | ('B' &lt;&lt; 8) | ('G' &lt;&lt; 16), 
 <br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656ac4b31f30b76c9f2282a07881308dbb34">MSF</a> = ('M') | ('S' &lt;&lt; 8) | ('F' &lt;&lt; 16), 
-<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656a363590c67681d94dd8a7f2691d06f6ab">JJY</a> = ('J') | ('J' &lt;&lt; 8) | ('Y' &lt;&lt; 16), 
-<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656a14e0d828082b8942b5191bc88439b052">LORC</a> = ('L') | ('O' &lt;&lt; 8) | ('R' &lt;&lt; 16) | ('C' &lt;&lt; 24), 
-<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656a5b62281504962efa8f59432c29ef7d27">TDF</a> = ('T') | ('D' &lt;&lt; 8) | ('F' &lt;&lt; 16), 
+&#160;&#160;<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7a4ad5a86f50b778a2050c51335e97d234">ClockSource::MSF</a> = ('M') | ('S' &lt;&lt; 8) | ('F' &lt;&lt; 16), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7a71dd0054d64c93c001c4bb2a33d76f8f">ClockSource::JJY</a> = ('J') | ('J' &lt;&lt; 8) | ('Y' &lt;&lt; 16), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7a97c1b7d00d4f845335bafea790016219">ClockSource::LORC</a> = ('L') | ('O' &lt;&lt; 8) | ('R' &lt;&lt; 16) | ('C' &lt;&lt; 24), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7aebcaf2a5e6384d66a70a3534ed77de2a">ClockSource::TDF</a> = ('T') | ('D' &lt;&lt; 8) | ('F' &lt;&lt; 16), 
 <br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656af3598319ba521a09ed9af383be625485">CHU</a> = ('C') | ('H' &lt;&lt; 8) | ('U' &lt;&lt; 16), 
-<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656aaf1f1bd4921ae2047bea97039112b980">WWV</a> = ('W') | ('W' &lt;&lt; 8) | ('V' &lt;&lt; 16), 
-<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656af7b777bc230166d72c6bf22bb5518382">WWVH</a> = ('W') | ('W' &lt;&lt; 8) | ('V' &lt;&lt; 16) | ('H' &lt;&lt; 24), 
-<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656a95f7de343e252f083c6407a62636d162">NIST</a> = ('N') | ('I' &lt;&lt; 8) | ('S' &lt;&lt; 16) | ('T' &lt;&lt; 24), 
+&#160;&#160;<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7aa4e265fcdf99f65a4f7b50c06ee41946">ClockSource::CHU</a> = ('C') | ('H' &lt;&lt; 8) | ('U' &lt;&lt; 16), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7a3f09fdd3f71c797006a4ac9eeeca55bd">ClockSource::WWV</a> = ('W') | ('W' &lt;&lt; 8) | ('V' &lt;&lt; 16), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7a990d1b64d591fffb0ee65abe172fa7c7">ClockSource::WWVH</a> = ('W') | ('W' &lt;&lt; 8) | ('V' &lt;&lt; 16) | ('H' &lt;&lt; 24), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7aa44b6b00e5eebd7494e1fd00658685e2">ClockSource::NIST</a> = ('N') | ('I' &lt;&lt; 8) | ('S' &lt;&lt; 16) | ('T' &lt;&lt; 24), 
 <br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656ae9655f79961b42a591bf829f0156152a">ACTS</a> = ('A') | ('C' &lt;&lt; 8) | ('T' &lt;&lt; 16) | ('S' &lt;&lt; 24), 
-<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656a4244e6f6fd28b68416d31427384d8389">USNO</a> = ('U') | ('S' &lt;&lt; 8) | ('N' &lt;&lt; 16) | ('O' &lt;&lt; 24), 
-<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656a6e30a5f3fd16b787063c3a2511fd36d1">PTB</a> = ('P') | ('T' &lt;&lt; 8) | ('B' &lt;&lt; 16), 
-<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656a54a40ad47dadce9267aaa0e448e005af">DCFa</a> = ('D') | ('C' &lt;&lt; 8) | ('F' &lt;&lt; 16) | ('a' &lt;&lt; 24), 
+&#160;&#160;<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7a13a703a3a16f7a40cb80030c0f92385c">ClockSource::ACTS</a> = ('A') | ('C' &lt;&lt; 8) | ('T' &lt;&lt; 16) | ('S' &lt;&lt; 24), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7a26d575032d98a3e33c3119488d32524c">ClockSource::USNO</a> = ('U') | ('S' &lt;&lt; 8) | ('N' &lt;&lt; 16) | ('O' &lt;&lt; 24), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7abba612a35251861dc196862e77fa5f1b">ClockSource::PTB</a> = ('P') | ('T' &lt;&lt; 8) | ('B' &lt;&lt; 16), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7a1553efac04c2b29d8bb61a0a4552a34e">ClockSource::MRS</a> = ('M') | ('R' &lt;&lt; 8) | ('S' &lt;&lt; 16), 
 <br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656a3bc286ff36c215c48a49aa22a0b2b71c">DCFp</a> = ('D') | ('C' &lt;&lt; 8) | ('F' &lt;&lt; 16) | ('p' &lt;&lt; 24), 
-<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656a177dee14e04c23d8935a7265d83ffda1">GPSs</a> = ('G') | ('P' &lt;&lt; 8) | ('S' &lt;&lt; 16) | ('s' &lt;&lt; 24), 
-<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656ae4c104a22123a1628a69728781f94720">GPSi</a> = ('G') | ('P' &lt;&lt; 8) | ('S' &lt;&lt; 16) | ('i' &lt;&lt; 24), 
-<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656aa1b91dd03d03361df5de4fed974dfe07">GLNs</a> = ('G') | ('L' &lt;&lt; 8) | ('N' &lt;&lt; 16) | ('s' &lt;&lt; 24), 
+&#160;&#160;<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7a2cc4779dd569dd696f0c4826dda5b6fe">ClockSource::XFAC</a> = ('X') | ('F' &lt;&lt; 8) | ('A' &lt;&lt; 16) | ('C' &lt;&lt; 24), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7a522f694f92e679d874a1cc2b2616c3d7">ClockSource::STEP</a> = ('S') | ('T' &lt;&lt; 8) | ('E' &lt;&lt; 16) | ('P' &lt;&lt; 24), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7aee8cce8c247561c00436ecdf889cbfbd">ClockSource::GOOG</a> = ('G') | ('O' &lt;&lt; 8) | ('O' &lt;&lt; 16) | ('G' &lt;&lt; 24), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7ab251ab408ce07675d77cfc457214566e">ClockSource::DCFa</a> = ('D') | ('C' &lt;&lt; 8) | ('F' &lt;&lt; 16) | ('a' &lt;&lt; 24), 
 <br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656a242dbf6b772fab91029288983a6d89c0">GLNi</a> = ('G') | ('L' &lt;&lt; 8) | ('N' &lt;&lt; 16) | ('i' &lt;&lt; 24), 
-<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656ab14e70ee87c3695b8a019ffaa0de1041">LCL</a> = ('L') | ('C' &lt;&lt; 8) | ('L' &lt;&lt; 16), 
-<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656a18f69164bcc95bc9fcef611aa5b34d83">LOCL</a> = ('L') | ('O' &lt;&lt; 8) | ('C' &lt;&lt; 16) | ('L' &lt;&lt; 24), 
-<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656ab3d0eddceca028a6cdbea3d5b9cbb4a9">DCN</a> = ('D') | ('C' &lt;&lt; 8) | ('N' &lt;&lt; 16), 
+&#160;&#160;<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7a90d664367c73dbb64edd6472a9db5ab8">ClockSource::DCFp</a> = ('D') | ('C' &lt;&lt; 8) | ('F' &lt;&lt; 16) | ('p' &lt;&lt; 24), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7a752980f4cf356a3413274a044a811fb8">ClockSource::GPSs</a> = ('G') | ('P' &lt;&lt; 8) | ('S' &lt;&lt; 16) | ('s' &lt;&lt; 24), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7ae567b64df630c7158679a7b98efbbb07">ClockSource::GPSi</a> = ('G') | ('P' &lt;&lt; 8) | ('S' &lt;&lt; 16) | ('i' &lt;&lt; 24), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7a4a226b489c60a957c8c1611eae3ecc5b">ClockSource::GLNs</a> = ('G') | ('L' &lt;&lt; 8) | ('N' &lt;&lt; 16) | ('s' &lt;&lt; 24), 
 <br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656a16c797b7f2e5093aa9d352e29a4fc2e9">TSP</a> = ('T') | ('S' &lt;&lt; 8) | ('P' &lt;&lt; 16), 
-<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656a4906ed999bbe0ee4db8d9acd3047c34a">DTS</a> = ('D') | ('T' &lt;&lt; 8) | ('S' &lt;&lt; 16), 
-<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656ae2ac275cb8a9765d3402993f55c8d1bf">ATOM</a> = ('A') | ('T' &lt;&lt; 8) | ('O' &lt;&lt; 16) | ('M' &lt;&lt; 24), 
-<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656a361186c25b14a76cff38dca18d495d6a">VLF</a> = ('V') | ('L' &lt;&lt; 8) | ('F' &lt;&lt; 16)
+&#160;&#160;<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7a9c5d6ed9ac6ee885bf05ba1265b405d3">ClockSource::GLNi</a> = ('G') | ('L' &lt;&lt; 8) | ('N' &lt;&lt; 16) | ('i' &lt;&lt; 24), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7aa4df64dc5e32716f6de0ec15b0340950">ClockSource::LCL</a> = ('L') | ('C' &lt;&lt; 8) | ('L' &lt;&lt; 16), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7ab22829a847aa20e329b89a46bc851182">ClockSource::LOCL</a> = ('L') | ('O' &lt;&lt; 8) | ('C' &lt;&lt; 16) | ('L' &lt;&lt; 24), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7ab73320ba43afcfc129223f47e069beea">ClockSource::DCN</a> = ('D') | ('C' &lt;&lt; 8) | ('N' &lt;&lt; 16), 
+<br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7ae902a36ade483cde97d806974068a10f">ClockSource::TSP</a> = ('T') | ('S' &lt;&lt; 8) | ('P' &lt;&lt; 16), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7aa2089e7697bb46b042ba7bd3e2eb50f1">ClockSource::DTS</a> = ('D') | ('T' &lt;&lt; 8) | ('S' &lt;&lt; 16), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7a7baa9395b756b815ce561078935cafeb">ClockSource::ATOM</a> = ('A') | ('T' &lt;&lt; 8) | ('O' &lt;&lt; 16) | ('M' &lt;&lt; 24), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7afe56b59b19e2820444b6276f532dde37">ClockSource::VLF</a> = ('V') | ('L' &lt;&lt; 8) | ('F' &lt;&lt; 16)
 <br />
  }</td></tr>
-<tr class="separator:afe1797b4527bda58a754e30209e90656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a6503ccedcd279b455e4deb7a0835c4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88d989ff0f826adab5e3b14faf11738c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738c">KissODeath</a> : uint32_t { <br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738cab85d19b35615f1190c135a148ac836a8">KissODeath::ACST</a> = ('A') | ('C' &lt;&lt; 8) | ('S' &lt;&lt; 16) | ('T' &lt;&lt; 24), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738caf458afcda462a9ed24f08634cb2ceced">KissODeath::AUTH</a> = ('A') | ('U' &lt;&lt; 8) | ('T' &lt;&lt; 16) | ('H' &lt;&lt; 24), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738cae1f2d5134ed2543d38a0de9751cf75d9">KissODeath::AUTO</a> = ('A') | ('U' &lt;&lt; 8) | ('T' &lt;&lt; 16) | ('O' &lt;&lt; 24), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738ca4769b382e92a20a5bd99e4492d23fb5f">KissODeath::BCST</a> = ('B') | ('C' &lt;&lt; 8) | ('S' &lt;&lt; 16) | ('T' &lt;&lt; 24), 
+<br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738ca2b8a950705e8e179edbd64a797ca4ac2">KissODeath::CRYP</a> = ('C') | ('R' &lt;&lt; 8) | ('Y' &lt;&lt; 16) | ('P' &lt;&lt; 24), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738ca264ecc6e6542b05976cd28ae19093d0a">KissODeath::DENY</a> = ('D') | ('E' &lt;&lt; 8) | ('N' &lt;&lt; 16) | ('Y' &lt;&lt; 24), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738cabf8f3be424eb6a72b21549fbb24ffb57">KissODeath::DROP</a> = ('D') | ('R' &lt;&lt; 8) | ('O' &lt;&lt; 16) | ('P' &lt;&lt; 24), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738ca178172eb2f1d2d755ee32a7aed616d10">KissODeath::RSTR</a> = ('R') | ('S' &lt;&lt; 8) | ('T' &lt;&lt; 16) | ('R' &lt;&lt; 24), 
+<br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738cafaee4ca3c30ee18148ce3ada37466498">KissODeath::INIT</a> = ('I') | ('N' &lt;&lt; 8) | ('I' &lt;&lt; 16) | ('T' &lt;&lt; 24), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738ca82560d6cd312977d6e6bf2ce3f1457d7">KissODeath::MCST</a> = ('M') | ('C' &lt;&lt; 8) | ('S' &lt;&lt; 16) | ('T' &lt;&lt; 24), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738ca1613bd2c9742a62e94d3e40f341bb69c">KissODeath::NKEY</a> = ('N') | ('K' &lt;&lt; 8) | ('E' &lt;&lt; 16) | ('Y' &lt;&lt; 24), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738ca79521cdea3eff83f517d31c49f9082f5">KissODeath::RATE</a> = ('R') | ('A' &lt;&lt; 8) | ('T' &lt;&lt; 16) | ('E' &lt;&lt; 24), 
+<br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738ca65d1d649524765be974e08faff357473">KissODeath::RMOT</a> = ('R') | ('M' &lt;&lt; 8) | ('O' &lt;&lt; 16) | ('T' &lt;&lt; 24), 
+<a class="el" href="classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738ca522f694f92e679d874a1cc2b2616c3d7">KissODeath::STEP</a> = ('S') | ('T' &lt;&lt; 8) | ('E' &lt;&lt; 16) | ('P' &lt;&lt; 24)
+<br />
+ }</td></tr>
+<tr class="separator:a88d989ff0f826adab5e3b14faf11738c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -229,8 +255,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa32438dbfcd3489c8b8e7bd4f6ed94bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fd11f451e77445681199cda134a37b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#a3fd11f451e77445681199cda134a37b1">setReferenceIdentifier</a> (<a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> val)</td></tr>
 <tr class="separator:a3fd11f451e77445681199cda134a37b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8044a19423166013bb4bc19f0bad67b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#ab8044a19423166013bb4bc19f0bad67b">setReferenceIdentifier</a> (<a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656">ClockSource</a> val)</td></tr>
+<tr class="memitem:ab8044a19423166013bb4bc19f0bad67b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#ab8044a19423166013bb4bc19f0bad67b">setReferenceIdentifier</a> (<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7">ClockSource</a> val)</td></tr>
 <tr class="separator:ab8044a19423166013bb4bc19f0bad67b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa688c32d9a0202aadbba51c5b2b60318"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#aa688c32d9a0202aadbba51c5b2b60318">setReferenceIdentifier</a> (<a class="el" href="classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738c">KissODeath</a> val)</td></tr>
+<tr class="separator:aa688c32d9a0202aadbba51c5b2b60318"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e5d82d66b1114d291fd1bb8fee4d25e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#a6e5d82d66b1114d291fd1bb8fee4d25e">getReferenceIdentifierString</a> () const</td></tr>
 <tr class="separator:a6e5d82d66b1114d291fd1bb8fee4d25e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39fa063484f30c994f8b7521e3ee20fe"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#a39fa063484f30c994f8b7521e3ee20fe">getReferenceTimestamp</a> () const</td></tr>
@@ -383,82 +411,151 @@ Static Public Member Functions</h2></td></tr>
  |                                                               |
  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 </pre> </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="afe1797b4527bda58a754e30209e90656"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe1797b4527bda58a754e30209e90656">&#9670;&nbsp;</a></span>ClockSource</h2>
+<a id="a6503ccedcd279b455e4deb7a0835c4b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6503ccedcd279b455e4deb7a0835c4b7">&#9670;&nbsp;</a></span>ClockSource</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656">pcpp::NtpLayer::ClockSource</a></td>
+          <td class="memname">enum <a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7">pcpp::NtpLayer::ClockSource</a> : uint32_t</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>32-bit code identifying the particular server or reference clock. The interpretation depends on the value in the stratum field. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656a17ef6e000c3f7327d2bbb3566e64d7a7"></a>GOES&#160;</td><td class="fielddoc"><p>Geosynchronous Orbit Environment Satellite. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7a1ceb10e4767555f663a1789a5e9be18b"></a>GOES&#160;</td><td class="fielddoc"><p>Geosynchronous Orbit Environment Satellite. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656a8038888b75664c69caae6c64f4439c0c"></a>GPS&#160;</td><td class="fielddoc"><p>Global Position System. </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7a8c578de37278ada488d763ea86c5cf20"></a>GPS&#160;</td><td class="fielddoc"><p>Global Position System. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656a1da0918011c10b1b086610a2428a3735"></a>GAL&#160;</td><td class="fielddoc"><p>Galileo Positioning System. </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7a9aa84dbd0240dcbd2b183c67e638a295"></a>GAL&#160;</td><td class="fielddoc"><p>Galileo Positioning System. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656afd08a9dd9b274454419aa219b69a98c8"></a>PPS&#160;</td><td class="fielddoc"><p>Generic pulse-per-second. </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7a1c319b3f8c6d3297eab099e1ee0e930b"></a>PPS&#160;</td><td class="fielddoc"><p>Generic pulse-per-second. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656a39a2b1a374cd61eb8ea1465a03c4c476"></a>IRIG&#160;</td><td class="fielddoc"><p>Inter-Range Instrumentation Group. </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7a1bc7066d55ca36efb19cf34a3b4287c9"></a>IRIG&#160;</td><td class="fielddoc"><p>Inter-Range Instrumentation Group. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656aa336cdcc175e7ed07841ceebbce59ffb"></a>WWVB&#160;</td><td class="fielddoc"><p>LF Radio WWVB Ft. Collins, CO 60 kHz. </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7af09c1a06229adf9f53254300fb15fdf6"></a>WWVB&#160;</td><td class="fielddoc"><p>LF Radio WWVB Ft. Collins, CO 60 kHz. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656abb905aaf749a0531d0598d1ae4d17026"></a>DCF&#160;</td><td class="fielddoc"><p>LF Radio DCF77 Mainflingen, DE 77.5 kHz. </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7a0cffd3fdeae73b73a43a5db8550c6418"></a>DCF&#160;</td><td class="fielddoc"><p>LF Radio DCF77 Mainflingen, DE 77.5 kHz. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656ad51975c40125ffb6285b22163e9fb4c6"></a>HBG&#160;</td><td class="fielddoc"><p>LF Radio HBG Prangins, HB 75 kHz. </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7a064702bbd2d524891e97d10ee08994b4"></a>HBG&#160;</td><td class="fielddoc"><p>LF Radio HBG Prangins, HB 75 kHz. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656ac4b31f30b76c9f2282a07881308dbb34"></a>MSF&#160;</td><td class="fielddoc"><p>LF Radio MSF Anthorn, UK 60 kHz. </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7a4ad5a86f50b778a2050c51335e97d234"></a>MSF&#160;</td><td class="fielddoc"><p>LF Radio MSF Anthorn, UK 60 kHz. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656a363590c67681d94dd8a7f2691d06f6ab"></a>JJY&#160;</td><td class="fielddoc"><p>LF Radio JJY Fukushima, JP 40 kHz, Saga, JP 60 kHz. </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7a71dd0054d64c93c001c4bb2a33d76f8f"></a>JJY&#160;</td><td class="fielddoc"><p>LF Radio JJY Fukushima, JP 40 kHz, Saga, JP 60 kHz. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656a14e0d828082b8942b5191bc88439b052"></a>LORC&#160;</td><td class="fielddoc"><p>MF Radio LORAN C station, 100 kHz. </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7a97c1b7d00d4f845335bafea790016219"></a>LORC&#160;</td><td class="fielddoc"><p>MF Radio LORAN C station, 100 kHz. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656a5b62281504962efa8f59432c29ef7d27"></a>TDF&#160;</td><td class="fielddoc"><p>MF Radio Allouis, FR 162 kHz. </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7aebcaf2a5e6384d66a70a3534ed77de2a"></a>TDF&#160;</td><td class="fielddoc"><p>MF Radio Allouis, FR 162 kHz. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656af3598319ba521a09ed9af383be625485"></a>CHU&#160;</td><td class="fielddoc"><p>HF Radio CHU Ottawa, Ontario. </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7aa4e265fcdf99f65a4f7b50c06ee41946"></a>CHU&#160;</td><td class="fielddoc"><p>HF Radio CHU Ottawa, Ontario. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656aaf1f1bd4921ae2047bea97039112b980"></a>WWV&#160;</td><td class="fielddoc"><p>HF Radio WWV Ft. Collins, CO. </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7a3f09fdd3f71c797006a4ac9eeeca55bd"></a>WWV&#160;</td><td class="fielddoc"><p>HF Radio WWV Ft. Collins, CO. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656af7b777bc230166d72c6bf22bb5518382"></a>WWVH&#160;</td><td class="fielddoc"><p>HF Radio WWVH Kauai, HI. </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7a990d1b64d591fffb0ee65abe172fa7c7"></a>WWVH&#160;</td><td class="fielddoc"><p>HF Radio WWVH Kauai, HI. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656a95f7de343e252f083c6407a62636d162"></a>NIST&#160;</td><td class="fielddoc"><p>NIST telephone modem. </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7aa44b6b00e5eebd7494e1fd00658685e2"></a>NIST&#160;</td><td class="fielddoc"><p>NIST telephone modem. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656ae9655f79961b42a591bf829f0156152a"></a>ACTS&#160;</td><td class="fielddoc"><p>NIST telephone modem. </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7a13a703a3a16f7a40cb80030c0f92385c"></a>ACTS&#160;</td><td class="fielddoc"><p>NIST telephone modem. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656a4244e6f6fd28b68416d31427384d8389"></a>USNO&#160;</td><td class="fielddoc"><p>USNO telephone modem. </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7a26d575032d98a3e33c3119488d32524c"></a>USNO&#160;</td><td class="fielddoc"><p>USNO telephone modem. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656a6e30a5f3fd16b787063c3a2511fd36d1"></a>PTB&#160;</td><td class="fielddoc"><p>European telephone modem. </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7abba612a35251861dc196862e77fa5f1b"></a>PTB&#160;</td><td class="fielddoc"><p>European telephone modem. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656a54a40ad47dadce9267aaa0e448e005af"></a>DCFa&#160;</td><td class="fielddoc"><p>Meinberg DCF77 with amplitude modulation (Ref: <a href="https://www.meinbergglobal.com/english/info/ntp-refid.htm">https://www.meinbergglobal.com/english/info/ntp-refid.htm</a>) </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7a1553efac04c2b29d8bb61a0a4552a34e"></a>MRS&#160;</td><td class="fielddoc"><p>Multi Reference Sources. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656a3bc286ff36c215c48a49aa22a0b2b71c"></a>DCFp&#160;</td><td class="fielddoc"><p>Meinberg DCF77 with phase modulation)/pseudo random phase modulation (Ref: <a href="https://www.meinbergglobal.com/english/info/ntp-refid.htm">https://www.meinbergglobal.com/english/info/ntp-refid.htm</a>) </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7a2cc4779dd569dd696f0c4826dda5b6fe"></a>XFAC&#160;</td><td class="fielddoc"><p>Inter Face Association Changed. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656a177dee14e04c23d8935a7265d83ffda1"></a>GPSs&#160;</td><td class="fielddoc"><p>Meinberg GPS (with shared memory access) (Ref: <a href="https://www.meinbergglobal.com/english/info/ntp-refid.htm">https://www.meinbergglobal.com/english/info/ntp-refid.htm</a>) </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7a522f694f92e679d874a1cc2b2616c3d7"></a>STEP&#160;</td><td class="fielddoc"><p>Step time change. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656ae4c104a22123a1628a69728781f94720"></a>GPSi&#160;</td><td class="fielddoc"><p>Meinberg GPS (with interrupt based access) (Ref: <a href="https://www.meinbergglobal.com/english/info/ntp-refid.htm">https://www.meinbergglobal.com/english/info/ntp-refid.htm</a>) </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7aee8cce8c247561c00436ecdf889cbfbd"></a>GOOG&#160;</td><td class="fielddoc"><p>Google Refid used by Google NTP servers as time4.google.com. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656aa1b91dd03d03361df5de4fed974dfe07"></a>GLNs&#160;</td><td class="fielddoc"><p>Meinberg GPS/GLONASS (with shared memory access) (Ref: <a href="https://www.meinbergglobal.com/english/info/ntp-refid.htm">https://www.meinbergglobal.com/english/info/ntp-refid.htm</a>) </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7ab251ab408ce07675d77cfc457214566e"></a>DCFa&#160;</td><td class="fielddoc"><p>Meinberg DCF77 with amplitude modulation (Ref: <a href="https://www.meinbergglobal.com/english/info/ntp-refid.htm">https://www.meinbergglobal.com/english/info/ntp-refid.htm</a>) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656a242dbf6b772fab91029288983a6d89c0"></a>GLNi&#160;</td><td class="fielddoc"><p>Meinberg GPS/GLONASS (with interrupt based access) (Ref: <a href="https://www.meinbergglobal.com/english/info/ntp-refid.htm">https://www.meinbergglobal.com/english/info/ntp-refid.htm</a>) </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7a90d664367c73dbb64edd6472a9db5ab8"></a>DCFp&#160;</td><td class="fielddoc"><p>Meinberg DCF77 with phase modulation)/pseudo random phase modulation (Ref: <a href="https://www.meinbergglobal.com/english/info/ntp-refid.htm">https://www.meinbergglobal.com/english/info/ntp-refid.htm</a>) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656ab14e70ee87c3695b8a019ffaa0de1041"></a>LCL&#160;</td><td class="fielddoc"><p>Meinberg Undisciplined local clock (Ref: <a href="https://www.meinbergglobal.com/english/info/ntp-refid.htm">https://www.meinbergglobal.com/english/info/ntp-refid.htm</a>) </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7a752980f4cf356a3413274a044a811fb8"></a>GPSs&#160;</td><td class="fielddoc"><p>Meinberg GPS (with shared memory access) (Ref: <a href="https://www.meinbergglobal.com/english/info/ntp-refid.htm">https://www.meinbergglobal.com/english/info/ntp-refid.htm</a>) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656a18f69164bcc95bc9fcef611aa5b34d83"></a>LOCL&#160;</td><td class="fielddoc"><p>Meinberg Undisciplined local clock (Ref: <a href="https://www.meinbergglobal.com/english/info/ntp-refid.htm">https://www.meinbergglobal.com/english/info/ntp-refid.htm</a>) </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7ae567b64df630c7158679a7b98efbbb07"></a>GPSi&#160;</td><td class="fielddoc"><p>Meinberg GPS (with interrupt based access) (Ref: <a href="https://www.meinbergglobal.com/english/info/ntp-refid.htm">https://www.meinbergglobal.com/english/info/ntp-refid.htm</a>) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656ab3d0eddceca028a6cdbea3d5b9cbb4a9"></a>DCN&#160;</td><td class="fielddoc"><p>DCN routing protocol. </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7a4a226b489c60a957c8c1611eae3ecc5b"></a>GLNs&#160;</td><td class="fielddoc"><p>Meinberg GPS/GLONASS (with shared memory access) (Ref: <a href="https://www.meinbergglobal.com/english/info/ntp-refid.htm">https://www.meinbergglobal.com/english/info/ntp-refid.htm</a>) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656a16c797b7f2e5093aa9d352e29a4fc2e9"></a>TSP&#160;</td><td class="fielddoc"><p>TSP time protocol. </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7a9c5d6ed9ac6ee885bf05ba1265b405d3"></a>GLNi&#160;</td><td class="fielddoc"><p>Meinberg GPS/GLONASS (with interrupt based access) (Ref: <a href="https://www.meinbergglobal.com/english/info/ntp-refid.htm">https://www.meinbergglobal.com/english/info/ntp-refid.htm</a>) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656a4906ed999bbe0ee4db8d9acd3047c34a"></a>DTS&#160;</td><td class="fielddoc"><p>Digital Time Service. </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7aa4df64dc5e32716f6de0ec15b0340950"></a>LCL&#160;</td><td class="fielddoc"><p>Meinberg Undisciplined local clock (Ref: <a href="https://www.meinbergglobal.com/english/info/ntp-refid.htm">https://www.meinbergglobal.com/english/info/ntp-refid.htm</a>) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656ae2ac275cb8a9765d3402993f55c8d1bf"></a>ATOM&#160;</td><td class="fielddoc"><p>Atomic clock (calibrated) </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7ab22829a847aa20e329b89a46bc851182"></a>LOCL&#160;</td><td class="fielddoc"><p>Meinberg Undisciplined local clock (Ref: <a href="https://www.meinbergglobal.com/english/info/ntp-refid.htm">https://www.meinbergglobal.com/english/info/ntp-refid.htm</a>) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="afe1797b4527bda58a754e30209e90656a361186c25b14a76cff38dca18d495d6a"></a>VLF&#160;</td><td class="fielddoc"><p>VLF radio (OMEGA, etc.) </p>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7ab73320ba43afcfc129223f47e069beea"></a>DCN&#160;</td><td class="fielddoc"><p>DCN routing protocol. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7ae902a36ade483cde97d806974068a10f"></a>TSP&#160;</td><td class="fielddoc"><p>TSP time protocol. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7aa2089e7697bb46b042ba7bd3e2eb50f1"></a>DTS&#160;</td><td class="fielddoc"><p>Digital Time Service. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7a7baa9395b756b815ce561078935cafeb"></a>ATOM&#160;</td><td class="fielddoc"><p>Atomic clock (calibrated) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6503ccedcd279b455e4deb7a0835c4b7afe56b59b19e2820444b6276f532dde37"></a>VLF&#160;</td><td class="fielddoc"><p>VLF radio (OMEGA, etc.) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a88d989ff0f826adab5e3b14faf11738c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88d989ff0f826adab5e3b14faf11738c">&#9670;&nbsp;</a></span>KissODeath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738c">pcpp::NtpLayer::KissODeath</a> : uint32_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>32-bit Kiss of Death (KoD) codes </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a88d989ff0f826adab5e3b14faf11738cab85d19b35615f1190c135a148ac836a8"></a>ACST&#160;</td><td class="fielddoc"><p>The association belongs to a anycast server. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a88d989ff0f826adab5e3b14faf11738caf458afcda462a9ed24f08634cb2ceced"></a>AUTH&#160;</td><td class="fielddoc"><p>Server authentication failed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a88d989ff0f826adab5e3b14faf11738cae1f2d5134ed2543d38a0de9751cf75d9"></a>AUTO&#160;</td><td class="fielddoc"><p>Autokey sequence failed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a88d989ff0f826adab5e3b14faf11738ca4769b382e92a20a5bd99e4492d23fb5f"></a>BCST&#160;</td><td class="fielddoc"><p>The association belongs to a broadcast server. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a88d989ff0f826adab5e3b14faf11738ca2b8a950705e8e179edbd64a797ca4ac2"></a>CRYP&#160;</td><td class="fielddoc"><p>Cryptographic authentication or identification failed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a88d989ff0f826adab5e3b14faf11738ca264ecc6e6542b05976cd28ae19093d0a"></a>DENY&#160;</td><td class="fielddoc"><p>Access denied by remote server. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a88d989ff0f826adab5e3b14faf11738cabf8f3be424eb6a72b21549fbb24ffb57"></a>DROP&#160;</td><td class="fielddoc"><p>Lost peer in symmetric mode. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a88d989ff0f826adab5e3b14faf11738ca178172eb2f1d2d755ee32a7aed616d10"></a>RSTR&#160;</td><td class="fielddoc"><p>Access denied due to local policy. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a88d989ff0f826adab5e3b14faf11738cafaee4ca3c30ee18148ce3ada37466498"></a>INIT&#160;</td><td class="fielddoc"><p>The association has not yet synchronized for the first time. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a88d989ff0f826adab5e3b14faf11738ca82560d6cd312977d6e6bf2ce3f1457d7"></a>MCST&#160;</td><td class="fielddoc"><p>The association belongs to a manycast server. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a88d989ff0f826adab5e3b14faf11738ca1613bd2c9742a62e94d3e40f341bb69c"></a>NKEY&#160;</td><td class="fielddoc"><p>No key found. Either the key was never installed or is not trusted. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a88d989ff0f826adab5e3b14faf11738ca79521cdea3eff83f517d31c49f9082f5"></a>RATE&#160;</td><td class="fielddoc"><p>Rate exceeded. The server has temporarily denied access because the client exceeded the rate threshold. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a88d989ff0f826adab5e3b14faf11738ca65d1d649524765be974e08faff357473"></a>RMOT&#160;</td><td class="fielddoc"><p>Somebody is tinkering with the association from a remote host running ntpdc. Not to worry unless some rascal has stolen your keys. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a88d989ff0f826adab5e3b14faf11738ca522f694f92e679d874a1cc2b2616c3d7"></a>STEP&#160;</td><td class="fielddoc"><p>A step change in system time has occurred, but the association has not yet resynchronized. </p>
 </td></tr>
 </table>
 
@@ -1638,7 +1735,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a3fd11f451e77445681199cda134a37b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fd11f451e77445681199cda134a37b1">&#9670;&nbsp;</a></span>setReferenceIdentifier() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fd11f451e77445681199cda134a37b1">&#9670;&nbsp;</a></span>setReferenceIdentifier() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1662,7 +1759,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ab8044a19423166013bb4bc19f0bad67b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8044a19423166013bb4bc19f0bad67b">&#9670;&nbsp;</a></span>setReferenceIdentifier() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8044a19423166013bb4bc19f0bad67b">&#9670;&nbsp;</a></span>setReferenceIdentifier() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1670,7 +1767,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void pcpp::NtpLayer::setReferenceIdentifier </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classpcpp_1_1_ntp_layer.html#afe1797b4527bda58a754e30209e90656">ClockSource</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7">ClockSource</a>&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1679,6 +1776,30 @@ Static Public Member Functions</h2></td></tr>
 <p>Set the value of reference identifier </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td>Value of the reference identifier as ClockSource </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa688c32d9a0202aadbba51c5b2b60318"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa688c32d9a0202aadbba51c5b2b60318">&#9670;&nbsp;</a></span>setReferenceIdentifier() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::NtpLayer::setReferenceIdentifier </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738c">KissODeath</a>&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the value of reference identifier </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td>Value of the reference identifier as Kiss-O-Death code </td></tr>
   </table>
   </dd>
 </dl>
@@ -1949,7 +2070,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_ntp_layer.html">NtpLayer</a></li>
-    <li class="footer">Generated on Sun Dec 25 2022 18:31:33 for PcapPlusPlus by
+    <li class="footer">Generated on Thu Jan 26 2023 09:50:44 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

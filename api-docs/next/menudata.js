@@ -15,7 +15,6 @@ var menudata={children:[
 {text:"g",url:"functions_g.html#index_g"},
 {text:"h",url:"functions_h.html#index_h"},
 {text:"i",url:"functions_i.html#index_i"},
-{text:"j",url:"functions_j.html#index_j"},
 {text:"k",url:"functions_k.html#index_k"},
 {text:"l",url:"functions_l.html#index_l"},
 {text:"m",url:"functions_m.html#index_m"},
@@ -109,7 +108,6 @@ var menudata={children:[
 {text:"g",url:"functions_eval_g.html#index_g"},
 {text:"h",url:"functions_eval_h.html#index_h"},
 {text:"i",url:"functions_eval_i.html#index_i"},
-{text:"j",url:"functions_eval_j.html#index_j"},
 {text:"k",url:"functions_eval_k.html#index_k"},
 {text:"l",url:"functions_eval_l.html#index_l"},
 {text:"m",url:"functions_eval_m.html#index_m"},
@@ -120,7 +118,6 @@ var menudata={children:[
 {text:"s",url:"functions_eval_s.html#index_s"},
 {text:"t",url:"functions_eval_t.html#index_t"},
 {text:"u",url:"functions_eval_u.html#index_u"},
-{text:"v",url:"functions_eval_v.html#index_v"},
 {text:"w",url:"functions_eval_w.html#index_w"},
 {text:"x",url:"functions_eval_x.html#index_x"}]}]}]},
 {text:"Files",url:"files.html",children:[
