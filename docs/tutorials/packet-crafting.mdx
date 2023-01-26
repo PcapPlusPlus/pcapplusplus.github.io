@@ -276,15 +276,45 @@ Now let's compile the code, run it and open the `"1_new_packet.pcap"` file in Wi
 
 As you can see, the packet looks exactly as expected.
 
-## Running the example
+## Running the code
 
-import ReleaseLink from '@site/src/components/ReleaseLink';
 import CodeLink from '@site/src/components/CodeLink';
 
-All code that was covered in this tutorial can be found <CodeLink relativePath="/Examples/Tutorials/Tutorial-PacketCraftAndEdit">here</CodeLink>. In order to compile and run the code please first download and compile PcapPlusPlus code or downloaded a pre-compiled version from the <ReleaseLink></ReleaseLink>. Then follow these instruction, according to your platform:
+All code that was covered in this tutorial can be found <CodeLink relativePath="/Examples/Tutorials/Tutorial-PacketCraftAndEdit">here</CodeLink>. In order to compile and run the code please choose one of these options:
 
-- Linux, MacOS, FreeBSD - make sure PcapPlusPlus is installed (by running **sudo make install** in PcapPlusPlus main directory). Then either change the `Makefile.non_windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.non_windows all`
-- Windows using MinGW-w64 - either change the `Makefile.windows` file name to `Makefile` and run `make all`, or run `make -f Makefile.windows all`
-- Windows using Visual Studio - there is a Visual Studio solution containing all tutorials: `mk\[vs_version]\Tutorials.sln`. Just open it and compile all tutorials
+### Option 1: Install a pre-compiled version of PcapPlusPlus
 
-In all options the compiled executable will be inside the tutorial directory (`[PcapPlusPlus Folder]/Examples/Tutorials/Tutorial-PacketCraftAndEdit`)
+You can download and install PcapPlusPlus using one of the options mentioned in the [installation page](../install).
+
+Once installed, download all of the files in the <CodeLink relativePath="/Examples/Tutorials/Tutorial-PacketCraftAndEdit">tutorial folder</CodeLink> and run CMake:
+
+```shell
+cmake -S . -B build
+cmake --build build
+```
+
+The executable will be created in the same directory.
+
+:::tip Notes:
+
+1. If you're running on Windows with MinGW you need to run cmake with `-G "MinGW Makefiles"`
+2. If PcapPlusPlus is **NOT** installed in the default directory you may need to specify `CMAKE_PREFIX_PATH`, for example:
+   ```shell
+   CMAKE_PREFIX_PATH=/my/pcapplusplus/path cmake -S . -B build
+   ```
+   Or on Windows:
+   ```shell
+   set CMAKE_PREFIX_PATH=C:\my\pcapplusplus\path
+   cmake -S . -B build
+   ```
+3. On Windows you may also need to specify Npcap/WinPcap path in `CMAKE_PREFIX_PATH`, for example:
+   ```shell
+   set CMAKE_PREFIX_PATH=C:\my\pcapplusplus\path;C:\my\npcap\path
+   cmake -S . -B build
+   ```
+   :::
+
+### Option 2: build the tutorials with PcapPlusPlus
+
+If you're building PcapPlusPlus from source and would like to build the tutorials as well you can use the `-DPCAPPP_BUILD_TUTORIALS=ON` option.
+Please refer to the [build from source page](../install#build-from-source) for more details (choose your platform page).

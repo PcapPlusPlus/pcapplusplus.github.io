@@ -8,63 +8,81 @@ title: Build for Android
 
 In order to build PcapPlusPlus for Android please make sure you have the following prerequisites:
 
-1. A Linux machine - building on other platforms is currently not supported
-2. You should have [Android NDK](https://developer.android.com/ndk) installed
-3. Pre-compiled `libpcap` library for Android + header files which can be downloaded from [the `libpcap-android` GitHub repo](https://github.com/seladb/libpcap-android) (for Android API versions 21-30)
+1. [Android NDK](https://developer.android.com/ndk) should be installed
+2. Pre-compiled `libpcap` library for Android + header files which can be downloaded from [the `libpcap-android` GitHub repo](https://github.com/seladb/libpcap-android) (for Android API versions 21-30)
 
-## Configuration
+## Build
 
-Run the configuration script from PcapPlusPlus main directory:
+In order to build for Android a few parameters are needed:
 
-```bash
-./configure-android.sh
-```
+- The path of Android NDK. Let's assume it's stored in `ANDROID_NDK`
+- Android API version - must be between 21 and 30. Let's assume it's stored in `API_VERSIOM`
+- Target architecture which accepts the following values: `arm64-v8a`, `armeabi-v7a`, `x86`, `x86_64`. Let's assume it's stored in `ANDROID_ABI`
+- The path of `libpcap` compiled for Android. Let's assume it's stored in `LIBPCAP_DIR`
 
-This script accepts the following arguments:
-
-| Argument                    | Is mandatory / default value    | Description                                                                                                                                                                           |
-| :-------------------------- | :------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **`--ndk-path`**            | Mandatory                       | The path of Android NDK, for example: `/opt/Android/Sdk/ndk/22.0.7026061`                                                                                                             |
-| **`--target`**              | Mandatory                       | Target architecture which accepts the following values: `arm64-v8a`, `armeabi-v7a`, `x86`, `x86_64`                                                                                   |
-| **`--api`**                 | Optional. Default value is `29` | Android API level. Must be between 21 and 30                                                                                                                                          |
-| **`--libpcap-include-dir`** | Mandatory                       | `libpcap` header files directory. Can be downloaded from [the `libpcap-android` GitHub repo](https://github.com/seladb/libpcap-android)                                               |
-| **`--libpcap-lib-dir`**     | Mandatory                       | `libpcap` pre-compiled libs directory. Can be downloaded from [the `libpcap-android` GitHub repo](https://github.com/seladb/libpcap-android) for all 4 targets and API versions 21-30 |
-
-Here is an example output:
+Assuming you want to build PcapPlusPlus into a `build` directory:
 
 ```shell
-./configure-android.sh --ndk-path /opt/Android/Sdk/ndk/22.0.7026061 --target arm64-v8a --api 29 --libpcap-include-dir ~/libpcap-android/include --libpcap-lib-dir ~/libpcap-android/arm64-v8a/30
-
-******************************************
-PcapPlusPlus Android configuration script
-******************************************
-
-Build machine OS type: linux
-Build machine OS arch: x86_64
-
-Android NDK root: /opt/Android/Sdk/ndk/22.0.7026061
-Anrdoid API level: 30
-Android toolchain path: /opt/Android/Sdk/ndk/22.0.7026061/toolchains/llvm/prebuilt/linux-x86_64
-
-Target triple: aarch64-linux-android
-
-libpcap include dir: /home/seladb/libpcap-android/include
-libpcap library dir: /home/seladb/libpcap-android/arm64-v8a/30
-
-PcapPlusPlus Android configuration is complete.
-
-configurations is written to :
-    - /home/seladb/PcapPlusPlus/PcapPlusPlus/mk/platform.mk
-    - /home/seladb/PcapPlusPlus/PcapPlusPlus/mk/PcapPlusPlus.mk
+cmake \
+-DCMAKE_TOOLCHAIN_FILE="${ANDROID_NDK}/build/cmake/android.toolchain.cmake" \
+-DANDROID_PLATFORM="${API_VERSION}" \
+-DANDROID_ABI="${ABI}" \
+-DPCAP_LIBRARY="${LIBPCAP_DIR}/${ABI}/${API_VERSION}/libpcap.a" \
+-DPCAP_INCLUDE_DIR="${LIBPCAP_DIR}/include/" \
+-DPCAPPP_BUILD_TESTS=OFF \
+-DPCAPPP_BUILD_EXAMPLES=OFF \
+-S . -B build
 ```
 
-## Build the code
+:::tip NOTE
 
-After running the config script, you're can safely build the code:
+`-DPCAPPP_BUILD_TESTS=OFF` and `-DPCAPPP_BUILD_EXAMPLES=OFF` are not mandatory, but building PcapPlusPlus tests and examples for Android usually doesn't make sense.
 
-1. Run `make libs` to build PcapPlusPlus libraries only (which is the common use-case for Android) or `make all` to build everything including the unit-tests and examples
-2. After a successful build you can find the libraries, header files, example executables (if built) and helpful makefiles under the `Dist` directory
-3. Please notice that in order to run [PcapPlusPlus examples](../examples) on an Android device you need shell access, and for some of them you also need a rooted device
+:::
+
+And then initiate the build in one of two ways:
+
+- Using CMake:
+  ```shell
+  cmake --build build
+  ```
+- Using `make`:
+  ```shell
+  cd build
+  make
+  ```
+
+This process will build the PcapPlusPlus libs:
+
+- `build/Common++/libCommon++.a`
+- `build/Packet++/libPacket++.a`
+- `build/Pcap++/libPcap++.a`
+
+The following configuration options are available (on top of CMake's built-in options):
+
+| Option                                             | Description                                                                                                                                                                                                                                                                 |
+| :------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`-DCMAKE_TOOLCHAIN_FILE=<PATH>`**                | Android CMake toolchain file, usuaully resides in: `${ANDROID_NDK}/build/cmake/android.toolchain.cmake`. This is a mandatory option                                                                                                                                         |
+| **`-DANDROID_PLATFORM=<API_VERSION>`**             | Android API version, must be between 21 and. . This is a mandatory option                                                                                                                                                                                                   |
+| **`-DANDROID_ABI=<TARGET_ARCH>`**                  | Android target architecture which accepts one of the following values: `arm64-v8a`, `armeabi-v7a`, `x86`, `x86_64`. This is a mandatory option                                                                                                                              |
+| **`-DPCAP_LIBRARY=<LIBPCAP_DIR>`**                 | The path of `libpcap.a` that is compiled for Android with the target architecture and API version, for example: `${LIBPCAP_DIR}/${ABI}/${API_VERSION}/libpcap.a`. This is a mandatory option                                                                                |
+| **`-DPCAP_INCLUDE_DIR=<LIBPCAP_INCLUDE_DIR>`**     | The path of lipbpcap include files, for example: `${LIBPCAP_DIR}/include/`. This is a mandatory option                                                                                                                                                                      |
+| **`-DPCAPPP_BUILD_EXAMPLES=<ON/OFF>`**             | Build PcapPlusPlus examples, in most cases should be set to `OFF`. If you want to run [PcapPlusPlus examples](../examples) on an Android device you need shell access, and for some of them you also need a rooted device. The examples will reside in `build/examples_bin` |
+| **`-DPCAPPP_BUILD_TESTS=<ON/OFF>`**                | Build PcapPlusPlus tests, in most cases should be set to `OFF`                                                                                                                                                                                                              |
+| **`-DPCAPPP_BUILD_TUTORIALS=<ON/OFF>`**            | Build PcapPlusPlus tutorials. This option is only available if `DPCAPPP_BUILD_EXAMPLES=ON` (default value is `OFF`)                                                                                                                                                         |
+| **`-DPCAPPP_INSTALL=<ON/OFF>`**                    | Install PcapPlusPlus (default value is `ON` if building the project itself, otherwise `OFF`)                                                                                                                                                                                |
+| **`-DBUILD_SHARED_LIBS=<ON/OFF>`**                 | Build shared libs (default value is `OFF`)                                                                                                                                                                                                                                  |
+| **`-DPCAPPP_ENABLE_PCAP_IMMEDIATE_MODE=<ON/OFF>`** | Enable pcap immediate mode (default value is `OFF`)                                                                                                                                                                                                                         |
+| **`-DPCAPPP_ENABLE_PCAP_SET_DIRECTION=<ON/OFF>`**  | Enable set direction for capturing incoming or outgoing packets (default value is `OFF`)                                                                                                                                                                                    |
+
+## Installation
+
+When building for Android the build machine (host) is usually different from the target device (target), so you may want to gather the lib and header files in a directory in the host instead of installing it on it.
+You can use the following command in order to achieve this:
+
+```shell
+DESTDIR=<DIR> cmake --install build --prefix "/"
+```
 
 ## Do I need a rooted device in order to use PcapPlusPlus in my Android app?
 

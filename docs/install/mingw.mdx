@@ -8,115 +8,69 @@ title: Build on Windows (MinGW-w64)
 
 In order to compile PcapPlusPlus on Windows using MinGW-w64 you need the following components:
 
-1. Download and run MinGW-w64 installer from here: <https://sourceforge.net/projects/mingw-w64/>
-2. Make sure the installation path doesn't contain spaces (otherwise PcapPlusPlus compilation may fail)
-3. Make sure to choose the i686 (32-bit) and POSIX threads (and not win32 threads) options. for example: `i686-8.1.0-posix-dwarf-rt_v6-rev0`. PcapPlusPlus doesn't support MinGW-w64 64-bit (x86_64)
-4. Follow the instruction in the installation wizard
-5. Install `MSYS2`from here: <https://www.msys2.org/>
-6. Add the following folders to your `PATH` environment variable:
-   1. The MinGW-w64 folder that contains `g++.exe`, `mingw32-make`, etc. It should be under `[MinGW-w64_install_folder]\mingw32\bin`, for example: `C:\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin`
-   2. The MSYS2 `usr\bin` folder, for example: `C:\msys32\usr\bin`
-7. [WinPcap developer's pack](https://www.winpcap.org/devel.htm) **OR** [Npcap SDK](https://nmap.org/npcap/guide/npcap-devguide.html) - containing the `wpcap` library PcapPlusPlus is linking with plus relevant `h` files.
+1. `CMake` which can be installed from: <https://cmake.org/install/> or with `pacman` if using MSYS2: `pacman -S mingw-w64-x86_64-cmake`
+2. Download and run MinGW-w64 installer from here: <https://sourceforge.net/projects/mingw-w64/>
+3. Make sure that MinGW-w64 `bin` directory is in your `PATH` environment variable, for example:
+   ```shell
+   PATH=%PATH%;C:\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin
+   ```
+4. [WinPcap developer's pack](https://www.winpcap.org/devel.htm) **OR** [Npcap SDK](https://nmap.org/npcap/guide/npcap-devguide.html) - containing the `wpcap` library PcapPlusPlus is linking with plus relevant `.h` files.
    1. WinPcap developer's pack can be downloaded from here: <https://www.winpcap.org/devel.htm>
    2. Npcap SDK can be downloaded from here: <https://nmap.org/npcap/#download>
 
-:::danger x64 is not supported
-Please notice that **x64** compilation is not supported (and will not work) on MinGW-w64!
-:::
+## Build
 
-## Configuration
-
-Run the `configure-windows-mingw.bat` batch file from PcapPlusPlus main directory. The script creates a makefile `mk\PcapPlusPlus.mk` that contains paths for 3rd-party libraries being used to build PcapPlusPlus.
-
-Ths script has two modes of operation:
-
-- Wizard mode - the script will walk you through the paths and parameters you need to provide
-- Params mode - all parameters are provided in the script command line
-
-In wizard mode the script will ask you for MinGW-w64 location (for example: `C:\i686-8.1.0-posix-dwarf-rt_v6-rev0`) and also for WinPcap developer's pack / Npcap SDK location (for example: `C:\WpdPack` or `C:\Npcap-SDK`).
-
-Here is an example of running the script:
-
-```text
-******************************************
-PcapPlusPlus Windows configuration script
-******************************************
-
-If mingw-w64 is not installed, please download and install it from here:
-https://www.mingw-w64.org/downloads/#mingw-builds
-
-Please specify mingw-w64 installed path (for example: C:\i686-8.1.0-posix-dwarf-rt_v6-rev0): C:\i686-8.1.0-posix-dwarf-rt_v6-rev0
-
-
-MSYS2 is required for compiling PcapPlusPlus.
-If MSYS2 are not installed, please download and install it from: https://www.msys2.org/
-
-Please specify MSYS2 installed path: C:\msys64
-
-
-WinPcap or Npcap SDK is required for compiling PcapPlusPlus.
-For downloading WinPcap SDK (developer's pack) please go to https://www.winpcap.org/devel.htm
-For downloading Npcap SDK please go to https://nmap.org/npcap/#download
-
-Please specify WinPcap/Npcap SDK path: C:\Npcap-SDK
-
-PcapPlusPlus configuration is complete. Files created (or modified): mk\platform.mk, mk\PcapPlusPlus.mk
-```
-
-In params mode you need to provide these paths as script params. You can use the `--help` switch to query these params:
-
-```text
-C:\PcapPlusPlus>configure-windows-mingw.bat --help
-
-******************************************
-PcapPlusPlus Windows configuration script
-******************************************
-
-
-Help documentation for configure-windows-mingw.bat
-This script has 2 modes of operation:
-  1) Without any switches. In this case the script will guide you through using wizards
-  2) With switches, as described below
-
-Basic usage: configure-windows-mingw.bat [-h] -m MINGW_HOME_DIR -s MSYS_HOME_DIR -w PCAP_SDK_DIR
-
-The following switches are recognized:
--m|--mingw-home      --Set mingw-w64 home directory (the folder that includes "bin", "lib" and "include" directories)
--s|--msys-home       --Set MSYS2 home directory
--w|--pcap-sdk        --Set WinPcap/Npcap SDK directory
--h|--help            --Display this help message and exits. No further actions are performed
-```
-
-For example:
+Assuming you want to build PcapPlusPlus into a `build` directory:
 
 ```shell
-C:\PcapPlusPlus>configure-windows-mingw.bat --mingw-home C:\i686-8.1.0-posix-dwarf-rt_v6-rev0 --msys-home C:\msys64 --pcap-sdk C:\WpdPack
-
-******************************************
-PcapPlusPlus Windows configuration script
-******************************************
-
-
-PcapPlusPlus configuration is complete. Files created (or modified): mk\platform.mk, mk\PcapPlusPlus.mk
+cmake -G "MinGW Makefiles" -DPCAP_ROOT=<NpcapSDK_or_WinPcapDevPack_Directory> -S . -B build
 ```
 
-Here are the available switches:
+And then initiate the build in one of two ways:
 
-| Option                        | Description                                                                                |
-| :---------------------------- | :----------------------------------------------------------------------------------------- |
-| **`-m`** , **`--mingw-home`** | MinGW-w64 home directory (the folder that includes `bin`, `lib` and `include` directories) |
-| **`-s`** , **`--msys-home`**  | MSYS or MSYS2 home directory                                                               |
-| **`-w`** , **`--pcap-sdk`**   | Path to WinPcap Developer Pack (WpdPack) OR Npcap SDK                                      |
-| **`-h`** , **`--help`**       | Display the help message and exit. No further actions are performed                        |
+- Using CMake:
+  ```shell
+  cmake --build build
+  ```
+- Using `make`:
+  ```shell
+  cd build
+  make
+  ```
 
-## Build the code
+This process will build the following artifacts:
 
-After running the config script, you're can safely build the code:
+- PcapPlusPlus libs:
+  - `build\Common++\libCommon++.a`
+  - `build\Packet++\libPacket++.a`
+  - `build\Pcap++\libPcap++.a`
+- PcapPlusPlus examples binaries under `build\examples_bin`
+- PcapPlusPlus tests:
+  - `<PcapPlusPlus_Dir>\Tests\Packet++Test\Bin\Packet++Test.exe`
+  - `<PcapPlusPlus_Dir>\Tests\Pcap++Test\Bin\Pcap++Test.exe`
 
-1. Run `mingw32-make.exe all` from PcapPlusPlus main directory
-2. This should compile all libraries, unit-tests and examples
-3. To build the libraries only (without the unit-tests and examples) run `mingw32-make.exe libs` instead of `mingw32-make.exe all`
-4. After compilation you can find the libraries, examples, header files and helpful makefiles under the `Dist\` directory
+The following configuration options are available (on top of CMake's built-in options):
+
+| Option                                             | Description                                                                                                                                                                     |
+| :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **`-DPCAP_ROOT=<DIR>`**                            | Npcap SDK or WinPcap developer pack directory (mandatory option)                                                                                                                |
+| **`-DPCAPPP_BUILD_EXAMPLES=<ON/OFF>`**             | Build PcapPlusPlus examples (default value is `ON` if building the project itself, otherwise `OFF`)                                                                             |
+| **`-DPCAPPP_BUILD_TESTS=<ON/OFF>`**                | Build PcapPlusPlus tests (default value is `ON` if building the project itself, otherwise `OFF`)                                                                                |
+| **`-DPCAPPP_BUILD_TUTORIALS=<ON/OFF>`**            | Build PcapPlusPlus tutorials. This option is only available if `DPCAPPP_BUILD_EXAMPLES=ON`. The tutorials binaries will be under `build\tutorials_bin` (default value is `OFF`) |
+| **`-DPCAPPP_INSTALL=<ON/OFF>`**                    | Install PcapPlusPlus (default value is `ON` if building the project itself, otherwise `OFF`)                                                                                    |
+| **`-DBUILD_SHARED_LIBS=<ON/OFF>`**                 | Build shared libs (default value is `OFF`)                                                                                                                                      |
+| **`-DPCAPPP_ENABLE_PCAP_IMMEDIATE_MODE=<ON/OFF>`** | Enable pcap immediate mode, available only in Npcap (default value is `OFF`)                                                                                                    |
+| **`-DPCAPPP_ENABLE_PCAP_SET_DIRECTION=<ON/OFF>`**  | Enable set direction for capturing incoming or outgoing packets (default value is `OFF`)                                                                                        |
+
+## Installation
+
+Windows doesn't have a default install directory, but you may want to see all libs, header files and examples under one directory (which is not the `build` directory).
+Here is how to acheive that:
+
+```shell
+set DESTDIR=<DIR>
+cmake --install build --prefix "/"
+```
 
 ## Running tests
 

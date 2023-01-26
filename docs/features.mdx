@@ -190,8 +190,7 @@ PcapPlusPlus provides a clean and simple C++ wrapper API for [Vanilla PF_RING](h
 In order to compile PcapPlusPlus with PF_RING you need to:
 
 - Download PF_RING from [ntop's web-site](https://www.ntop.org/get-started/download/#PF_RING)
-- Once PF_RING is compiled successfully, you need to run PcapPlusPlus's `configure-linux.sh` script and type "y" in "Compile PcapPlusPlus with PF_RING?"
-- Then you can compile PcapPlusPlus as usual
+- Once PF_RING is compiled successfully, you need to run PcapPlusPlus build using the `-DPCAPPP_USE_PF_RING=ON` option
 - Before you activate any PcapPlusPlus application that uses PF_RING, don't forget to enable PF_RING kernel module. If you forget to do that, PcapPlusPlus will output an - appropriate error on startup which will remind you:
 
 ```shell
