@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['rate',['RATE',['../classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738ca79521cdea3eff83f517d31c49f9082f5',1,'pcpp::NtpLayer']]],
   ['reassembled',['REASSEMBLED',['../classpcpp_1_1_i_p_reassembly.html#aae7f2e113808978827abf3b7cdbe91afa91beabc1fd8775d590a7d6415aeb6a31',1,'pcpp::IPReassembly']]],
   ['reconnection',['Reconnection',['../classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a93bcad770e310d22629b465be2abfad5',1,'pcpp::TelnetLayer']]],
   ['recverror',['RecvError',['../classpcpp_1_1_raw_socket_device.html#a06ec60dc8d38dfab0333fb793ad0da76adce5f5b2a3d83a5816da7520ee4228ea',1,'pcpp::RawSocketDevice']]],
@@ -30,6 +31,7 @@ var searchData=
   ['retr',['RETR',['../classpcpp_1_1_ftp_request_layer.html#ad293dabbe652aed3ac548eb01963e781a66ae7ddeea71f0651607b7f3306eff19',1,'pcpp::FtpRequestLayer']]],
   ['rmd',['RMD',['../classpcpp_1_1_ftp_request_layer.html#ad293dabbe652aed3ac548eb01963e781ad1143bab49a91a718c3a83e43b5a2e4e',1,'pcpp::FtpRequestLayer']]],
   ['rmda',['RMDA',['../classpcpp_1_1_ftp_request_layer.html#ad293dabbe652aed3ac548eb01963e781aacf66e0dd4243284bcfef866495060bb',1,'pcpp::FtpRequestLayer']]],
+  ['rmot',['RMOT',['../classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738ca65d1d649524765be974e08faff357473',1,'pcpp::NtpLayer']]],
   ['rnfr',['RNFR',['../classpcpp_1_1_ftp_request_layer.html#ad293dabbe652aed3ac548eb01963e781a577d241f55bc51b3a83e03c55a2ffbcd',1,'pcpp::FtpRequestLayer']]],
   ['rnto',['RNTO',['../classpcpp_1_1_ftp_request_layer.html#ad293dabbe652aed3ac548eb01963e781a0e42ab101d13a9097cd99cd9c9ef8cef',1,'pcpp::FtpRequestLayer']]],
   ['roundrobin',['RoundRobin',['../classpcpp_1_1_pf_ring_device.html#a2a7113725490fea52c9702998e6a8f78a707c1b0c55e37f2cb7d4978370332712',1,'pcpp::PfRingDevice']]],
@@ -56,5 +58,6 @@ var searchData=
   ['rss_5fnonfrag_5fipv6_5fudp',['RSS_NONFRAG_IPV6_UDP',['../classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4a9976020e46b9a778eed6b0cc87b294e2',1,'pcpp::DpdkDevice']]],
   ['rss_5fnvgre',['RSS_NVGRE',['../classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4a0fceb079a83cc9676e7c63bf42c97fbf',1,'pcpp::DpdkDevice']]],
   ['rss_5fport',['RSS_PORT',['../classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4a38b2263ccfa9418ddf1aaddd0184a100',1,'pcpp::DpdkDevice']]],
-  ['rss_5fvxlan',['RSS_VXLAN',['../classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4af9370abcf15bdf7a514e9d5c2fcb689d',1,'pcpp::DpdkDevice']]]
+  ['rss_5fvxlan',['RSS_VXLAN',['../classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4af9370abcf15bdf7a514e9d5c2fcb689d',1,'pcpp::DpdkDevice']]],
+  ['rstr',['RSTR',['../classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738ca178172eb2f1d2d755ee32a7aed616d10',1,'pcpp::NtpLayer']]]
 ];
