@@ -7,5 +7,5 @@ var classpcpp_1_1_sip_request_first_line =
     [ "getVersion", "classpcpp_1_1_sip_request_first_line.html#a0cdd75a2db95c43bcbbdc6af8fa2c874", null ],
     [ "isComplete", "classpcpp_1_1_sip_request_first_line.html#a50195d892fdde4174c06eeb8a2987d2f", null ],
     [ "setMethod", "classpcpp_1_1_sip_request_first_line.html#a778f3461351cb87706186869f8bf19e0", null ],
-    [ "setUri", "classpcpp_1_1_sip_request_first_line.html#a3eeb1c43e1098aa0ccb461debdffead1", null ]
+    [ "setUri", "classpcpp_1_1_sip_request_first_line.html#a128ada30fa34f52aefed93089dc95463", null ]
 ];
