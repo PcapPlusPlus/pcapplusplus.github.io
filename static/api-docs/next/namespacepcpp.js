@@ -147,6 +147,7 @@ var namespacepcpp =
     [ "NtpLayer", "classpcpp_1_1_ntp_layer.html", "classpcpp_1_1_ntp_layer" ],
     [ "NullLoopbackLayer", "classpcpp_1_1_null_loopback_layer.html", "classpcpp_1_1_null_loopback_layer" ],
     [ "OrFilter", "classpcpp_1_1_or_filter.html", "classpcpp_1_1_or_filter" ],
+    [ "OUILookup", "classpcpp_1_1_o_u_i_lookup.html", "classpcpp_1_1_o_u_i_lookup" ],
     [ "Packet", "classpcpp_1_1_packet.html", "classpcpp_1_1_packet" ],
     [ "PacketTrailerLayer", "classpcpp_1_1_packet_trailer_layer.html", "classpcpp_1_1_packet_trailer_layer" ],
     [ "PayloadLayer", "classpcpp_1_1_payload_layer.html", "classpcpp_1_1_payload_layer" ],
