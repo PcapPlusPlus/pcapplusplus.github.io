@@ -268,6 +268,7 @@ var hierarchy =
     [ "pcpp::MxDnsResourceData::MxData", "structpcpp_1_1_mx_dns_resource_data_1_1_mx_data.html", null ],
     [ "pcpp::NetworkUtils", "classpcpp_1_1_network_utils.html", null ],
     [ "pcpp::BgpOpenMessageLayer::optional_parameter", "structpcpp_1_1_bgp_open_message_layer_1_1optional__parameter.html", null ],
+    [ "pcpp::OUILookup", "classpcpp_1_1_o_u_i_lookup.html", null ],
     [ "pcpp::Packet", "classpcpp_1_1_packet.html", null ],
     [ "pcpp::IPReassembly::PacketKey", "classpcpp_1_1_i_p_reassembly_1_1_packet_key.html", [
       [ "pcpp::IPReassembly::IPv4PacketKey", "classpcpp_1_1_i_p_reassembly_1_1_i_pv4_packet_key.html", null ],
