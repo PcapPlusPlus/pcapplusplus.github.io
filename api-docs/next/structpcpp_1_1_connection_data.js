@@ -1,8 +1,8 @@
 var structpcpp_1_1_connection_data =
 [
     [ "ConnectionData", "structpcpp_1_1_connection_data.html#acff3614b14bd54ac98a996714a8a24b0", null ],
-    [ "setEndTime", "structpcpp_1_1_connection_data.html#ae4b2d922bf240422c8550ced90e1300e", null ],
-    [ "setStartTime", "structpcpp_1_1_connection_data.html#a371aaf3f3ca56578a52e76847eda3f97", null ],
+    [ "setEndTime", "structpcpp_1_1_connection_data.html#a476d7a2dce7809ef3d6015ed59b01b93", null ],
+    [ "setStartTime", "structpcpp_1_1_connection_data.html#aa2cae679edbe342cbc5b4463e774949e", null ],
     [ "dstIP", "structpcpp_1_1_connection_data.html#a0bdead682c81832e8d0a87162d62c1b3", null ],
     [ "dstPort", "structpcpp_1_1_connection_data.html#a93e7eaf0f9955cb083b5884fdbe4c0e5", null ],
     [ "endTime", "structpcpp_1_1_connection_data.html#a443a3fe2d4ed8061e867cc9dadfb522c", null ],

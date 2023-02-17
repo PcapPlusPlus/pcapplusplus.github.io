@@ -97,10 +97,10 @@ $(document).ready(function(){initNavTree('structpcpp_1_1_connection_data.html','
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acff3614b14bd54ac98a996714a8a24b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_connection_data.html#acff3614b14bd54ac98a996714a8a24b0">ConnectionData</a> ()</td></tr>
 <tr class="separator:acff3614b14bd54ac98a996714a8a24b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a371aaf3f3ca56578a52e76847eda3f97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_connection_data.html#a371aaf3f3ca56578a52e76847eda3f97">setStartTime</a> (const timeval &amp;<a class="el" href="structpcpp_1_1_connection_data.html#a5747f1d8a060ec528720d051431a0aa5">startTime</a>)</td></tr>
-<tr class="separator:a371aaf3f3ca56578a52e76847eda3f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4b2d922bf240422c8550ced90e1300e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_connection_data.html#ae4b2d922bf240422c8550ced90e1300e">setEndTime</a> (const timeval &amp;<a class="el" href="structpcpp_1_1_connection_data.html#a443a3fe2d4ed8061e867cc9dadfb522c">endTime</a>)</td></tr>
-<tr class="separator:ae4b2d922bf240422c8550ced90e1300e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2cae679edbe342cbc5b4463e774949e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_connection_data.html#aa2cae679edbe342cbc5b4463e774949e">setStartTime</a> (const timeval &amp;startTimeValue)</td></tr>
+<tr class="separator:aa2cae679edbe342cbc5b4463e774949e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a476d7a2dce7809ef3d6015ed59b01b93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_connection_data.html#a476d7a2dce7809ef3d6015ed59b01b93">setEndTime</a> (const timeval &amp;endTimeValue)</td></tr>
+<tr class="separator:a476d7a2dce7809ef3d6015ed59b01b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -149,8 +149,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae4b2d922bf240422c8550ced90e1300e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4b2d922bf240422c8550ced90e1300e">&#9670;&nbsp;</a></span>setEndTime()</h2>
+<a id="a476d7a2dce7809ef3d6015ed59b01b93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a476d7a2dce7809ef3d6015ed59b01b93">&#9670;&nbsp;</a></span>setEndTime()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,7 +162,7 @@ Public Attributes</h2></td></tr>
           <td class="memname">void pcpp::ConnectionData::setEndTime </td>
           <td>(</td>
           <td class="paramtype">const timeval &amp;&#160;</td>
-          <td class="paramname"><em>endTime</em></td><td>)</td>
+          <td class="paramname"><em>endTimeValue</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -174,15 +174,15 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Set endTime of Connection </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">endTime</td><td>integer value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">endTimeValue</td><td>integer value </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a371aaf3f3ca56578a52e76847eda3f97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a371aaf3f3ca56578a52e76847eda3f97">&#9670;&nbsp;</a></span>setStartTime()</h2>
+<a id="aa2cae679edbe342cbc5b4463e774949e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2cae679edbe342cbc5b4463e774949e">&#9670;&nbsp;</a></span>setStartTime()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,7 +194,7 @@ Public Attributes</h2></td></tr>
           <td class="memname">void pcpp::ConnectionData::setStartTime </td>
           <td>(</td>
           <td class="paramtype">const timeval &amp;&#160;</td>
-          <td class="paramname"><em>startTime</em></td><td>)</td>
+          <td class="paramname"><em>startTimeValue</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -206,7 +206,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Set startTime of Connection </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">startTime</td><td>integer value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">startTimeValue</td><td>integer value </td></tr>
   </table>
   </dd>
 </dl>
@@ -325,7 +325,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a></li>
-    <li class="footer">Generated on Thu Feb 16 2023 08:31:07 for PcapPlusPlus by
+    <li class="footer">Generated on Fri Feb 17 2023 08:21:44 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
