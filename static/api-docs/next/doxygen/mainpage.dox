@@ -42,6 +42,7 @@
 *   - pcpp::VlanLayer, VlanLayer.h - VLAN protocol
 *   - pcpp::VxlanLayer, VxlanLayer.h - VXLAN protocol
 *   - pcpp::WakeOnLanLayer, WakeOnLanLayer.h - Wake on LAN (WoL) protocol
+*   - pcpp::NflogLayer, NflogLayer.h - NFLOG (Linux Netfilter NFLOG) - parsing only (no editing capabilities)
 *   - pcpp::ArpLayer, ArpLayer.h - ARP protocol
 *   - pcpp::GREv0Layer, pcpp::GREv1Layer, pcpp::PPP_PPTPLayer, GreLayer.h - GRE and PPTP protocol
 *   - pcpp::IcmpLayer, IcmpLayer.h - ICMP protocol
