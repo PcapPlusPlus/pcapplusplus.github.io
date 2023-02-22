@@ -113,6 +113,7 @@ var files =
     [ "NetworkUtils.h", "_network_utils_8h.html", [
       [ "NetworkUtils", "classpcpp_1_1_network_utils.html", "classpcpp_1_1_network_utils" ]
     ] ],
+    [ "NflogLayer.h", "_nflog_layer_8h.html", "_nflog_layer_8h" ],
     [ "NtpLayer.h", "_ntp_layer_8h.html", [
       [ "NtpLayer", "classpcpp_1_1_ntp_layer.html", "classpcpp_1_1_ntp_layer" ]
     ] ],

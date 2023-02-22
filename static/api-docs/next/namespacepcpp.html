@@ -384,6 +384,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_network_utils.html">NetworkUtils</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1nflog__header.html">nflog_header</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_nflog_layer.html">NflogLayer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_nflog_tlv.html">NflogTlv</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_not_filter.html">NotFilter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html">NtpLayer</a></td></tr>
@@ -704,44 +710,45 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa1b471ed9b860901662d96ade7712e9da">PacketLogModuleGreLayer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aad3a71d664ea3bf5a006b6d2656a8351b">PacketLogModuleSSLLayer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa9feefbfe6ef87bc4451c49648b8f8eed">PacketLogModuleSllLayer</a>, 
-<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa6ab0732cb96ebc3eb92ce6533781feb2">PacketLogModuleDhcpLayer</a>, 
+<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa4084b08997fad8c0bb4c604f0c06856b">PacketLogModuleNflogLayer</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa3d2a1dcbfbae2615c1c54564a83669c9">PacketLogModuleDhcpV6Layer</a>, 
+&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa6ab0732cb96ebc3eb92ce6533781feb2">PacketLogModuleDhcpLayer</a>, 
+<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa3d2a1dcbfbae2615c1c54564a83669c9">PacketLogModuleDhcpV6Layer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aaa48184fdd24ac075d4ad4253db635088">PacketLogModuleIgmpLayer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa3f1c25db7bec90b531e8dd7340885261">PacketLogModuleSipLayer</a>, 
-<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa2dc43feb7bbb1f5e9dc487037cfeb772">PacketLogModuleSdpLayer</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa3b51d867276e79c7dc4c1455b515fa71">PacketLogModuleRadiusLayer</a>, 
+&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa2dc43feb7bbb1f5e9dc487037cfeb772">PacketLogModuleSdpLayer</a>, 
+<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa3b51d867276e79c7dc4c1455b515fa71">PacketLogModuleRadiusLayer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa655a345b75ea3bd7a799123a07d6ac96">PacketLogModuleGtpLayer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa9b03451940ee50ca696f380571fe242b">PacketLogModuleBgpLayer</a>, 
-<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa692bc057f570935a02054f4ced27e5c8">PacketLogModuleSSHLayer</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa8d7198b0bc6ff1a750eaeabaeef8a40e">PacketLogModuleTcpReassembly</a>, 
+&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa692bc057f570935a02054f4ced27e5c8">PacketLogModuleSSHLayer</a>, 
+<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa8d7198b0bc6ff1a750eaeabaeef8a40e">PacketLogModuleTcpReassembly</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa799e041f932b72c4d16f2535227be9d4">PacketLogModuleIPReassembly</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aafef719fe8a4eebc6d02f972f3a87e9a3">PacketLogModuleIPSecLayer</a>, 
-<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa608f58dc0786dbbecd2aede90233bd56">PacketLogModuleNtpLayer</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa1014ab8a1636c1c7b45ffe2768e81add">PacketLogModuleTelnetLayer</a>, 
+&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa608f58dc0786dbbecd2aede90233bd56">PacketLogModuleNtpLayer</a>, 
+<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa1014ab8a1636c1c7b45ffe2768e81add">PacketLogModuleTelnetLayer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aaa6be3b90b68ae9b4b5fac328130f0047">PacketLogModuleStpLayer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa1c20fe8215d4844681b6462d87e49a7e">PacketLogModuleLLCLayer</a>, 
-<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aaa16e6914428d514a04d981c5261d6730">PacketLogModuleSingleCommandTextProtocolLayer</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa475a0b85e7f832fc54a964c4e6dae04a">PacketLogModuleNdpLayer</a>, 
+&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aaa16e6914428d514a04d981c5261d6730">PacketLogModuleSingleCommandTextProtocolLayer</a>, 
+<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa475a0b85e7f832fc54a964c4e6dae04a">PacketLogModuleNdpLayer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa1a88df0e55376aa7cc145c022cb655a2">PacketLogModuleFtpLayer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa264bce541709cd9fbb7bc2332f158b61">PacketLogModuleSomeIpLayer</a>, 
-<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aad764b6754b35ea81df286a9cb8cd8725">PacketLogModuleSomeIpSdLayer</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa6f1a5e2936878d6a68b0a504052f60b9">PacketLogModuleWakeOnLanLayer</a>, 
+&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aad764b6754b35ea81df286a9cb8cd8725">PacketLogModuleSomeIpSdLayer</a>, 
+<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa6f1a5e2936878d6a68b0a504052f60b9">PacketLogModuleWakeOnLanLayer</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aaac5bb0af4a05ddc08ac0d60e40f4af0b">PcapLogModuleWinPcapLiveDevice</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa41327c44f9fd3ea426f5040dd9d0752c">PcapLogModuleRemoteDevice</a>, 
-<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aae794add926803bcab76bc2fbe66230b7">PcapLogModuleLiveDevice</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa63698c9f484eb9f44bec3f1eaed5df0e">PcapLogModuleFileDevice</a>, 
+&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aae794add926803bcab76bc2fbe66230b7">PcapLogModuleLiveDevice</a>, 
+<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa63698c9f484eb9f44bec3f1eaed5df0e">PcapLogModuleFileDevice</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aac8c88c94f4233b2b343c29d2b02cfd9b">PcapLogModulePfRingDevice</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aadfdb8aa4e0ae1db8892cac047dd68879">PcapLogModuleMBufRawPacket</a>, 
-<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa6b600aa8ac5b85687c8b390130d073af">PcapLogModuleDpdkDevice</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa215a3cc0bca9f02941f47cd013cdff3e">PcapLogModuleKniDevice</a>, 
+&#160;&#160;<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa6b600aa8ac5b85687c8b390130d073af">PcapLogModuleDpdkDevice</a>, 
+<a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa215a3cc0bca9f02941f47cd013cdff3e">PcapLogModuleKniDevice</a>, 
 <a class="el" href="namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa7c7b04d450484507109458e2ef341a68">NetworkUtils</a>
 <br />
  }</td></tr>
@@ -1419,6 +1426,31 @@ Enumerations</h2></td></tr>
 <tr class="separator:a4ac8e7540b72db061b0078f1e2ca2b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05de8c5825b009c706ab2693fc9587e5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a05de8c5825b009c706ab2693fc9587e5">NDPNeighborOptionTypes</a> : int </td></tr>
 <tr class="separator:a05de8c5825b009c706ab2693fc9587e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afead5cd7592a51c16c121ed4a545dfd7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#afead5cd7592a51c16c121ed4a545dfd7">NflogTlvType</a> { <br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#afead5cd7592a51c16c121ed4a545dfd7ad63945c39fd448100ab35a2de69074a7">NflogTlvType::NFULA_PACKET_HDR</a> = 1, 
+<a class="el" href="namespacepcpp.html#afead5cd7592a51c16c121ed4a545dfd7ab1fdbed9becade4e45bddcffef165408">NflogTlvType::NFULA_MARK</a> = 2, 
+<a class="el" href="namespacepcpp.html#afead5cd7592a51c16c121ed4a545dfd7a2b17289845d29430343a8bda77d26958">NflogTlvType::NFULA_TIMESTAMP</a> = 3, 
+<a class="el" href="namespacepcpp.html#afead5cd7592a51c16c121ed4a545dfd7a89943bea83c15c7535b51553c6e2e867">NflogTlvType::NFULA_IFINDEX_INDEV</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#afead5cd7592a51c16c121ed4a545dfd7ab330fd0ada4af01a958f269d8cf2de92">NflogTlvType::NFULA_IFINDEX_OUTDEV</a> = 5, 
+<a class="el" href="namespacepcpp.html#afead5cd7592a51c16c121ed4a545dfd7a887d7f81ace06fb863a69d9e8c6b82b3">NflogTlvType::NFULA_IFINDEX_PHYSINDEV</a> = 6, 
+<a class="el" href="namespacepcpp.html#afead5cd7592a51c16c121ed4a545dfd7ad65353f2f110e163ad37695fa6c44582">NflogTlvType::NFULA_IFINDEX_PHYSOUTDEV</a> = 7, 
+<a class="el" href="namespacepcpp.html#afead5cd7592a51c16c121ed4a545dfd7a14c6fe31bd001c0c9292ff4853fd66bf">NflogTlvType::NFULA_HWADDR</a> = 8, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#afead5cd7592a51c16c121ed4a545dfd7a0a3bf462133928a3c800c2eea3252f30">NflogTlvType::NFULA_PAYLOAD</a> = 9, 
+<a class="el" href="namespacepcpp.html#afead5cd7592a51c16c121ed4a545dfd7a959287bba23c96e04cc08252954c3f7f">NflogTlvType::NFULA_PREFIX</a> = 10, 
+<a class="el" href="namespacepcpp.html#afead5cd7592a51c16c121ed4a545dfd7a810291dd129c9dbda60543a3ab5f5f49">NflogTlvType::NFULA_UID</a> = 11, 
+<a class="el" href="namespacepcpp.html#afead5cd7592a51c16c121ed4a545dfd7a75f86dee1d88b1c336dad792cd4875c7">NflogTlvType::NFULA_SEQ</a> = 12, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#afead5cd7592a51c16c121ed4a545dfd7aa608ced3d57bbc5508f15f7d22d460d9">NflogTlvType::NFULA_SEQ_GLOBAL</a> = 13, 
+<a class="el" href="namespacepcpp.html#afead5cd7592a51c16c121ed4a545dfd7a9b5b51ed5af60a1fb6e70db671a7f0ed">NflogTlvType::NFULA_GID</a> = 14, 
+<a class="el" href="namespacepcpp.html#afead5cd7592a51c16c121ed4a545dfd7add51e10dfd0d0ee98406b359d8254f82">NflogTlvType::NFULA_HWTYPE</a> = 15, 
+<a class="el" href="namespacepcpp.html#afead5cd7592a51c16c121ed4a545dfd7a07d7f51ca2dce7bdb1e0c0e019f40355">NflogTlvType::NFULA_HWHEADER</a> = 16, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#afead5cd7592a51c16c121ed4a545dfd7a9d6f94a871e430ff506479b173a7be24">NflogTlvType::NFULA_HWLEN</a> = 17
+<br />
+ }</td></tr>
+<tr class="separator:afead5cd7592a51c16c121ed4a545dfd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69e2ee6a9dc68797612cf8dc38461025"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> { <br />
 &#160;&#160;<a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a6424a935c3b8c081456c3aba40cb0e41">OsiModelPhysicalLayer</a> = 1, 
 <a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2">OsiModelDataLinkLayer</a> = 2, 
@@ -2065,6 +2097,8 @@ Variables</h2></td></tr>
 <tr class="separator:a6acddf0ad6f4a154aafc0b3094e72185"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a300fcf81c682b3b401c33df71b114716"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a300fcf81c682b3b401c33df71b114716">WakeOnLan</a> = 0x200000000000</td></tr>
 <tr class="separator:a300fcf81c682b3b401c33df71b114716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afac6cd4f566ffec968466a8c056a79d7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#afac6cd4f566ffec968466a8c056a79d7">NFLOG</a> = 0x400000000000</td></tr>
+<tr class="separator:afac6cd4f566ffec968466a8c056a79d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The main namespace for the PcapPlusPlus lib. </p>
@@ -4001,6 +4035,8 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ac6557f5dc8fcb14858f231b12bdc1c1aa9feefbfe6ef87bc4451c49648b8f8eed"></a>PacketLogModuleSllLayer&#160;</td><td class="fielddoc"><p><a class="el" href="classpcpp_1_1_sll_layer.html">SllLayer</a> module (Packet++) </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ac6557f5dc8fcb14858f231b12bdc1c1aa4084b08997fad8c0bb4c604f0c06856b"></a>PacketLogModuleNflogLayer&#160;</td><td class="fielddoc"><p><a class="el" href="classpcpp_1_1_nflog_layer.html">NflogLayer</a> module (Packet++) </p>
+</td></tr>
 <tr><td class="fieldname"><a id="ac6557f5dc8fcb14858f231b12bdc1c1aa6ab0732cb96ebc3eb92ce6533781feb2"></a>PacketLogModuleDhcpLayer&#160;</td><td class="fielddoc"><p><a class="el" href="classpcpp_1_1_dhcp_layer.html">DhcpLayer</a> module (Packet++) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ac6557f5dc8fcb14858f231b12bdc1c1aa3d2a1dcbfbae2615c1c54564a83669c9"></a>PacketLogModuleDhcpV6Layer&#160;</td><td class="fielddoc"><p><a class="el" href="classpcpp_1_1_dhcp_v6_layer.html">DhcpV6Layer</a> module (Packet++) </p>
@@ -4087,6 +4123,65 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>An enum representing the available option types for Neighbor Discovery in IPv6 (see RFC 4861) </p>
+
+</div>
+</div>
+<a id="afead5cd7592a51c16c121ed4a545dfd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afead5cd7592a51c16c121ed4a545dfd7">&#9670;&nbsp;</a></span>NflogTlvType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacepcpp.html#afead5cd7592a51c16c121ed4a545dfd7">pcpp::NflogTlvType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Represents TLV types of NFLOG packets </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="afead5cd7592a51c16c121ed4a545dfd7ad63945c39fd448100ab35a2de69074a7"></a>NFULA_PACKET_HDR&#160;</td><td class="fielddoc"><p>the packet header structure </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afead5cd7592a51c16c121ed4a545dfd7ab1fdbed9becade4e45bddcffef165408"></a>NFULA_MARK&#160;</td><td class="fielddoc"><p>packet mark from skbuff </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afead5cd7592a51c16c121ed4a545dfd7a2b17289845d29430343a8bda77d26958"></a>NFULA_TIMESTAMP&#160;</td><td class="fielddoc"><p>nflog_timestamp_t for skbuff's time stamp </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afead5cd7592a51c16c121ed4a545dfd7a89943bea83c15c7535b51553c6e2e867"></a>NFULA_IFINDEX_INDEV&#160;</td><td class="fielddoc"><p>ifindex of device on which packet received (possibly bridge group) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afead5cd7592a51c16c121ed4a545dfd7ab330fd0ada4af01a958f269d8cf2de92"></a>NFULA_IFINDEX_OUTDEV&#160;</td><td class="fielddoc"><p>ifindex of device on which packet transmitted (possibly bridge group) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afead5cd7592a51c16c121ed4a545dfd7a887d7f81ace06fb863a69d9e8c6b82b3"></a>NFULA_IFINDEX_PHYSINDEV&#160;</td><td class="fielddoc"><p>ifindex of physical device on which packet received (not bridge group) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afead5cd7592a51c16c121ed4a545dfd7ad65353f2f110e163ad37695fa6c44582"></a>NFULA_IFINDEX_PHYSOUTDEV&#160;</td><td class="fielddoc"><p>ifindex of physical device on which packet transmitted (not bridge group) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afead5cd7592a51c16c121ed4a545dfd7a14c6fe31bd001c0c9292ff4853fd66bf"></a>NFULA_HWADDR&#160;</td><td class="fielddoc"><p>nflog_hwaddr_t for hardware address </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afead5cd7592a51c16c121ed4a545dfd7a0a3bf462133928a3c800c2eea3252f30"></a>NFULA_PAYLOAD&#160;</td><td class="fielddoc"><p>packet payload </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afead5cd7592a51c16c121ed4a545dfd7a959287bba23c96e04cc08252954c3f7f"></a>NFULA_PREFIX&#160;</td><td class="fielddoc"><p>text string - null-terminated, count includes NUL </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afead5cd7592a51c16c121ed4a545dfd7a810291dd129c9dbda60543a3ab5f5f49"></a>NFULA_UID&#160;</td><td class="fielddoc"><p>UID owning socket on which packet was sent/received </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afead5cd7592a51c16c121ed4a545dfd7a75f86dee1d88b1c336dad792cd4875c7"></a>NFULA_SEQ&#160;</td><td class="fielddoc"><p>sequence number of packets on this NFLOG socket </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afead5cd7592a51c16c121ed4a545dfd7aa608ced3d57bbc5508f15f7d22d460d9"></a>NFULA_SEQ_GLOBAL&#160;</td><td class="fielddoc"><p>sequence number of pakets on all NFLOG sockets </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afead5cd7592a51c16c121ed4a545dfd7a9b5b51ed5af60a1fb6e70db671a7f0ed"></a>NFULA_GID&#160;</td><td class="fielddoc"><p>GID owning socket on which packet was sent/received </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afead5cd7592a51c16c121ed4a545dfd7add51e10dfd0d0ee98406b359d8254f82"></a>NFULA_HWTYPE&#160;</td><td class="fielddoc"><p>ARPHRD_ type of skbuff's device </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afead5cd7592a51c16c121ed4a545dfd7a07d7f51ca2dce7bdb1e0c0e019f40355"></a>NFULA_HWHEADER&#160;</td><td class="fielddoc"><p>skbuff's MAC-layer header </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afead5cd7592a51c16c121ed4a545dfd7a9d6f94a871e430ff506479b173a7be24"></a>NFULA_HWLEN&#160;</td><td class="fielddoc"><p>length of skbuff's MAC-layer header </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -5980,6 +6075,21 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="afac6cd4f566ffec968466a8c056a79d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afac6cd4f566ffec968466a8c056a79d7">&#9670;&nbsp;</a></span>NFLOG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::NFLOG = 0x400000000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>NFLOG (Linux Netfilter NFLOG) Protocol </p>
+
+</div>
+</div>
 <a id="a42aeacd48824aad0f3c672df53b4f3dd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a42aeacd48824aad0f3c672df53b4f3dd">&#9670;&nbsp;</a></span>NTP</h2>
 
@@ -6346,7 +6456,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li>
-    <li class="footer">Generated on Fri Feb 17 2023 08:21:44 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Feb 22 2023 08:19:20 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
