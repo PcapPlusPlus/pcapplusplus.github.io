@@ -6,6 +6,7 @@ var searchData=
   ['addrbody',['addrBody',['../structpcpp_1_1_wake_on_lan_layer_1_1wol__header.html#a5c00b5223bbea95c5e0bb118488bcafd',1,'pcpp::WakeOnLanLayer::wol_header']]],
   ['address',['address',['../structpcpp_1_1ppp__pptp__header.html#ab0d4dbeb685845400c93be1636b9b2fb',1,'pcpp::ppp_pptp_header']]],
   ['addressentrysize',['addressEntrySize',['../structpcpp_1_1icmp__router__advertisement__hdr.html#a7ae4d3591f09904126f1a19f3dc799a6',1,'pcpp::icmp_router_advertisement_hdr']]],
+  ['addressfamily',['addressFamily',['../structpcpp_1_1nflog__header.html#aaa3ff89281948ca6505efb7f07b1692f',1,'pcpp::nflog_header']]],
   ['addressmask',['addressMask',['../structpcpp_1_1icmp__address__mask__request.html#ac510d5502a105ee92b9a5718089a4aa4',1,'pcpp::icmp_address_mask_request']]],
   ['advertisementcount',['advertisementCount',['../structpcpp_1_1icmp__router__advertisement__hdr.html#aadfebe1e44b051e3a22dedfa32bec6c5',1,'pcpp::icmp_router_advertisement_hdr']]],
   ['afi',['afi',['../structpcpp_1_1_bgp_route_refresh_message_layer_1_1bgp__route__refresh__message.html#ab7fe8c1daeb21a5fd5ccdbdc02085618',1,'pcpp::BgpRouteRefreshMessageLayer::bgp_route_refresh_message']]],

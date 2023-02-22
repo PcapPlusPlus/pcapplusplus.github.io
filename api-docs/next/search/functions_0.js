@@ -33,7 +33,7 @@ var searchData=
   ['arpfilter',['ArpFilter',['../classpcpp_1_1_arp_filter.html#a26aef5e3b1f92d4cd3764d6f8d2660dd',1,'pcpp::ArpFilter']]],
   ['arplayer',['ArpLayer',['../classpcpp_1_1_arp_layer.html#aa067af1ff96f04fa052ce58b48fedf16',1,'pcpp::ArpLayer::ArpLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)'],['../classpcpp_1_1_arp_layer.html#a05f24931a4238bbf1246764b8e6e6b2e',1,'pcpp::ArpLayer::ArpLayer(ArpOpcode opCode, const MacAddress &amp;senderMacAddr, const MacAddress &amp;targetMacAddr, const IPv4Address &amp;senderIpAddr, const IPv4Address &amp;targetIpAddr)']]],
   ['asenum',['asEnum',['../classpcpp_1_1_s_s_l_version.html#a9a6808c49114fd5d49e5971090232f4f',1,'pcpp::SSLVersion']]],
-  ['assign',['assign',['../classpcpp_1_1_t_l_v_record.html#afc60806af9572d14483ed3b961579a60',1,'pcpp::TLVRecord']]],
+  ['assign',['assign',['../classpcpp_1_1_nflog_tlv.html#abd8cf0e7f32b4966517e74e44a0fe239',1,'pcpp::NflogTlv::assign()'],['../classpcpp_1_1_t_l_v_record.html#afc60806af9572d14483ed3b961579a60',1,'pcpp::TLVRecord::assign()']]],
   ['asstring',['asString',['../classpcpp_1_1_s_s_l_cipher_suite.html#ac43d1e142988805a7120bfd712d96e7c',1,'pcpp::SSLCipherSuite']]],
   ['asuint',['asUInt',['../classpcpp_1_1_s_s_l_version.html#a15790c7da7eba9601a4031402309fa1e',1,'pcpp::SSLVersion']]],
   ['at',['at',['../classpcpp_1_1_pointer_vector.html#a992816f6d10f86ccafca4b36991378dc',1,'pcpp::PointerVector::at(int index)'],['../classpcpp_1_1_pointer_vector.html#aa3609cc0782248fbdafa90b91066b4a9',1,'pcpp::PointerVector::at(int index) const']]],
