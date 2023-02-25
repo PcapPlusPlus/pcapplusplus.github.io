@@ -1,5 +1,8 @@
 var NAVTREEINDEX20 =
 {
+"structpcpp_1_1stp__conf__bpdu.html#afd6c43f15b178d611bdd03b942d7c040":[3,0,0,237,2],
+"structpcpp_1_1stp__tcn__bpdu.html":[3,0,0,238],
+"structpcpp_1_1stp__tcn__bpdu.html#ab0762609e9f35f367807dfcbe68d6ff0":[3,0,0,238,2],
 "structpcpp_1_1stp__tcn__bpdu.html#ac2a2bb62505e8d316dbd5170b0c4a012":[3,0,0,238,0],
 "structpcpp_1_1stp__tcn__bpdu.html#acb3ac78b92143eb7f021efc81562dfab":[3,0,0,238,1],
 "structpcpp_1_1tcphdr.html":[3,0,0,247],
