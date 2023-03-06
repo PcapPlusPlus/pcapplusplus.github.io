@@ -120,10 +120,10 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a760b1eb3fba5445e8df0743ab0ca008d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classpcpp_1_1_sip_response_layer.html#a05536b7d8719b76e84ea4c539cb9e5b6">SipResponseLayer::SipResponseStatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_sip_response_first_line.html#a760b1eb3fba5445e8df0743ab0ca008d">parseStatusCode</a> (char *data, size_t dataLen)</td></tr>
-<tr class="separator:a760b1eb3fba5445e8df0743ab0ca008d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61fc52aea1be974b3f9be99171e42b6c"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_sip_response_first_line.html#a61fc52aea1be974b3f9be99171e42b6c">parseVersion</a> (char *data, size_t dataLen)</td></tr>
-<tr class="separator:a61fc52aea1be974b3f9be99171e42b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03cfc2fd29669e25fd0ee5a8f61f93bd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classpcpp_1_1_sip_response_layer.html#a05536b7d8719b76e84ea4c539cb9e5b6">SipResponseLayer::SipResponseStatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_sip_response_first_line.html#a03cfc2fd29669e25fd0ee5a8f61f93bd">parseStatusCode</a> (const char *data, size_t dataLen)</td></tr>
+<tr class="separator:a03cfc2fd29669e25fd0ee5a8f61f93bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2888382cdda7e4851393caf6932bb14a"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_sip_response_first_line.html#a2888382cdda7e4851393caf6932bb14a">parseVersion</a> (const char *data, size_t dataLen)</td></tr>
+<tr class="separator:a2888382cdda7e4851393caf6932bb14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents an SIP response message first line. The first line includes 2 parameters: status code (e.g 100 Trying ,200 OK, etc.), and SIP version (usually SIP/2.0). These 2 parameters are included in this class, and the user can retrieve or set them. This class cannot be instantiated by users, it's created inside <a class="el" href="classpcpp_1_1_sip_response_layer.html">SipResponseLayer</a> and user can get a pointer to an instance of it. The "getter" methods of this class will retrieve the actual data of the SIP response and the "setter" methods will change the packet data. Since SIP is a textual protocol, most fields aren't of fixed size and this also applies to the first line parameters. So most "setter" methods of this class may need to shorten or extend the data in <a class="el" href="classpcpp_1_1_sip_response_layer.html">SipResponseLayer</a>. These methods will return a false value if this action failed </p>
@@ -268,8 +268,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a760b1eb3fba5445e8df0743ab0ca008d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a760b1eb3fba5445e8df0743ab0ca008d">&#9670;&nbsp;</a></span>parseStatusCode()</h2>
+<a id="a03cfc2fd29669e25fd0ee5a8f61f93bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03cfc2fd29669e25fd0ee5a8f61f93bd">&#9670;&nbsp;</a></span>parseStatusCode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -280,7 +280,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static <a class="el" href="classpcpp_1_1_sip_response_layer.html#a05536b7d8719b76e84ea4c539cb9e5b6">SipResponseLayer::SipResponseStatusCode</a> pcpp::SipResponseFirstLine::parseStatusCode </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
@@ -312,8 +312,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a61fc52aea1be974b3f9be99171e42b6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61fc52aea1be974b3f9be99171e42b6c">&#9670;&nbsp;</a></span>parseVersion()</h2>
+<a id="a2888382cdda7e4851393caf6932bb14a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2888382cdda7e4851393caf6932bb14a">&#9670;&nbsp;</a></span>parseVersion()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -324,7 +324,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static std::string pcpp::SipResponseFirstLine::parseVersion </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
@@ -421,7 +421,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_sip_response_first_line.html">SipResponseFirstLine</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 11:39:30 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Mar 6 2023 00:37:26 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
