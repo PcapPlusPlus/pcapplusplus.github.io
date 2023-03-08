@@ -107,7 +107,6 @@ var searchData=
   ['setmajorversion',['setMajorVersion',['../classpcpp_1_1_some_ip_sd_entry.html#a2a7b5627eedd2c59b328adf671d1b0d9',1,'pcpp::SomeIpSdEntry']]],
   ['setmask',['setMask',['../classpcpp_1_1_i_p_filter.html#a7e47d6b236db754fe0463e8f011edd79',1,'pcpp::IPFilter']]],
   ['setmaximumage',['setMaximumAge',['../classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#a49fca6dd403e8dcf98d9f5b2b6e6a9bf',1,'pcpp::StpConfigurationBPDULayer']]],
-  ['setmesagetype',['setMesageType',['../classpcpp_1_1_dhcp_layer.html#a573415774454bd926e3ad2b4794c251c',1,'pcpp::DhcpLayer']]],
   ['setmessageage',['setMessageAge',['../classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#a6c63d73df835fa40e01d71e7728ef96b',1,'pcpp::StpConfigurationBPDULayer']]],
   ['setmessageid',['setMessageID',['../classpcpp_1_1_some_ip_layer.html#a666f0afd47671b1d6909eceb83962e7a',1,'pcpp::SomeIpLayer']]],
   ['setmessagetype',['setMessageType',['../classpcpp_1_1_dhcp_layer.html#aafd7349118c0315cf8c3752988cbbab6',1,'pcpp::DhcpLayer::setMessageType()'],['../classpcpp_1_1_dhcp_v6_layer.html#a2f530fc4fe9da7431a14217df4d6a67c',1,'pcpp::DhcpV6Layer::setMessageType()'],['../classpcpp_1_1_some_ip_layer.html#a4b77c35e5098b365faf68a42668774ca',1,'pcpp::SomeIpLayer::setMessageType(MsgType type)'],['../classpcpp_1_1_some_ip_layer.html#acef348ca1ded670007689c1fa7a72540',1,'pcpp::SomeIpLayer::setMessageType(uint8_t type)']]],
