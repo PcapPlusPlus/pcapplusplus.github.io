@@ -120,8 +120,10 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a0e35e19aa038295b0b97bbf4bf42b1ad"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classpcpp_1_1_http_response_layer.html#ab5bbbd02f36805001550d1168f1412bc">HttpResponseLayer::HttpResponseStatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_response_first_line.html#a0e35e19aa038295b0b97bbf4bf42b1ad">parseStatusCode</a> (char *data, size_t dataLen)</td></tr>
-<tr class="separator:a0e35e19aa038295b0b97bbf4bf42b1ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95762d3d604bbe92faaa623284d982c0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classpcpp_1_1_http_response_layer.html#ab5bbbd02f36805001550d1168f1412bc">HttpResponseLayer::HttpResponseStatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_response_first_line.html#a95762d3d604bbe92faaa623284d982c0">parseStatusCode</a> (const char *data, size_t dataLen)</td></tr>
+<tr class="separator:a95762d3d604bbe92faaa623284d982c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3675681deec09b838d4ec5a9327c6592"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacepcpp.html#a7680d508534c12b5ab8bcbe4cae06932">HttpVersion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_response_first_line.html#a3675681deec09b838d4ec5a9327c6592">parseVersion</a> (const char *data, size_t dataLen)</td></tr>
+<tr class="separator:a3675681deec09b838d4ec5a9327c6592"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents an HTTP response header first line. The first line includes 2 parameters: status code (e.g 200 OK, 404 Not Found, etc.), and HTTP version (e.g HTTP/1.1). These 2 parameters are included in this class, and the user can retrieve or set them. This class cannot be instantiated by users, it's created inside <a class="el" href="classpcpp_1_1_http_response_layer.html">HttpResponseLayer</a> and user can get a pointer to an instance of it. The "get" methods of this class will retrieve the actual data of the HTTP response and the "set" methods will change the packet data. Since HTTP is a textual protocol, most fields aren't of fixed size and this also applies to the first line parameters. So most "set" methods of this class need in most cases to shorten or extend the data in <a class="el" href="classpcpp_1_1_http_response_layer.html">HttpResponseLayer</a>. These methods will return a false value if this action failed </p>
@@ -266,8 +268,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0e35e19aa038295b0b97bbf4bf42b1ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e35e19aa038295b0b97bbf4bf42b1ad">&#9670;&nbsp;</a></span>parseStatusCode()</h2>
+<a id="a95762d3d604bbe92faaa623284d982c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95762d3d604bbe92faaa623284d982c0">&#9670;&nbsp;</a></span>parseStatusCode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -278,7 +280,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static <a class="el" href="classpcpp_1_1_http_response_layer.html#ab5bbbd02f36805001550d1168f1412bc">HttpResponseLayer::HttpResponseStatusCode</a> pcpp::HttpResponseFirstLine::parseStatusCode </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
@@ -300,6 +302,50 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>A static method for parsing the HTTP status code out of raw data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The raw data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>The raw data length </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The parsed HTTP status code as enum </dd></dl>
+
+</div>
+</div>
+<a id="a3675681deec09b838d4ec5a9327c6592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3675681deec09b838d4ec5a9327c6592">&#9670;&nbsp;</a></span>parseVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="namespacepcpp.html#a7680d508534c12b5ab8bcbe4cae06932">HttpVersion</a> pcpp::HttpResponseFirstLine::parseVersion </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A static method for parsing the HTTP version out of raw first line data (e.g "HTTP/x.y") </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The raw data </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>The raw data length </td></tr>
@@ -376,7 +422,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_http_response_first_line.html">HttpResponseFirstLine</a></li>
-    <li class="footer">Generated on Wed Mar 8 2023 06:49:57 for PcapPlusPlus by
+    <li class="footer">Generated on Fri Mar 10 2023 07:17:03 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
