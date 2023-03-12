@@ -12,13 +12,19 @@ In order to build PcapPlusPlus on Windows with Visual Studio you need the follow
 
 1. A [supported version](../platforms) of Microsoft Visual Studio
 2. `CMake` which can be installed from: <https://cmake.org/install/> or with `pacman` if using MSYS2: `pacman -S mingw-w64-x86_64-cmake`
-3. [WinPcap developer's pack](https://www.winpcap.org/devel.htm) **OR** [Npcap SDK](https://nmap.org/npcap/guide/npcap-devguide.html) - containing the wpcap library PcapPlusPlus is linking with plus relevant `h` files.
+3. Download and install [WinPcap](https://www.winpcap.org/install/) **OR** [Npcap](https://npcap.com/#download) on your system
+   :::tip Note for Npcap:
+   If you install **Npcap** please check the `Install Npcap in WinPcap API-compatilbility mode` option during installation:
+
+   ![Npcap-WinPcap compatilibitly](/img/install/Npcap_compatibility_mode.png)
+   :::
+4. [WinPcap developer's pack](https://www.winpcap.org/devel.htm) **OR** [Npcap SDK](https://nmap.org/npcap/guide/npcap-devguide.html) - containing the wpcap library PcapPlusPlus is linking with plus relevant `h` files.
    1. WinPcap developer's pack can be downloaded from here: <https://www.winpcap.org/devel.htm>
    2. Npcap SDK can be downloaded from here: <https://nmap.org/npcap/#download>
-4. In some cases you also need to download and install:
+5. In some cases you also need to download and install:
    1. [Microsoft Visual C++ Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads) for your version of Visual Studio
    2. [Microsoft Visual C++ 2010 Redistributable](https://www.microsoft.com/en-us/download/confirmation.aspx?id=14632)
-5. OPTIONAL - download [Zstd](https://github.com/facebook/zstd/releases/latest) libraries if you wish to enable [PCAPNG streaming compression support](../features#readingwriting-pcapng-files-with-compression)
+6. OPTIONAL - download [Zstd](https://github.com/facebook/zstd/releases/latest) libraries if you wish to enable [PCAPNG streaming compression support](../features#readingwriting-pcapng-files-with-compression)
 
 ## Build
 
