@@ -14,7 +14,14 @@ In order to compile PcapPlusPlus on Windows using MinGW-w64 you need the followi
    ```shell
    PATH=%PATH%;C:\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin
    ```
-4. [WinPcap developer's pack](https://www.winpcap.org/devel.htm) **OR** [Npcap SDK](https://nmap.org/npcap/guide/npcap-devguide.html) - containing the `wpcap` library PcapPlusPlus is linking with plus relevant `.h` files.
+4. Download and install [WinPcap](https://www.winpcap.org/install/) **OR** [Npcap](https://npcap.com/#download) on your system
+   :::tip Note for Npcap:
+   If you install **Npcap** please check the `Install Npcap in WinPcap API-compatilbility mode` option during installation:
+
+   ![Npcap-WinPcap compatilibitly](/img/install/Npcap_compatibility_mode.png)
+   :::
+
+5. [WinPcap developer's pack](https://www.winpcap.org/devel.htm) **OR** [Npcap SDK](https://nmap.org/npcap/guide/npcap-devguide.html) - containing the `wpcap` library PcapPlusPlus is linking with plus relevant `.h` files.
    1. WinPcap developer's pack can be downloaded from here: <https://www.winpcap.org/devel.htm>
    2. Npcap SDK can be downloaded from here: <https://nmap.org/npcap/#download>
 
