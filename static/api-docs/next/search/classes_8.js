@@ -50,6 +50,7 @@ var searchData=
   ['ipv4dnsresourcedata',['IPv4DnsResourceData',['../classpcpp_1_1_i_pv4_dns_resource_data.html',1,'pcpp']]],
   ['ipv4idfilter',['IPv4IDFilter',['../classpcpp_1_1_i_pv4_i_d_filter.html',1,'pcpp']]],
   ['ipv4layer',['IPv4Layer',['../classpcpp_1_1_i_pv4_layer.html',1,'pcpp']]],
+  ['ipv4network',['IPv4Network',['../classpcpp_1_1_i_pv4_network.html',1,'pcpp']]],
   ['ipv4option',['IPv4Option',['../classpcpp_1_1_i_pv4_option.html',1,'pcpp']]],
   ['ipv4optionbuilder',['IPv4OptionBuilder',['../classpcpp_1_1_i_pv4_option_builder.html',1,'pcpp']]],
   ['ipv4packetkey',['IPv4PacketKey',['../classpcpp_1_1_i_p_reassembly_1_1_i_pv4_packet_key.html',1,'pcpp::IPReassembly']]],
