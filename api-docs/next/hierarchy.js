@@ -240,6 +240,7 @@ var hierarchy =
     [ "pcpp::ipsec_authentication_header", "structpcpp_1_1ipsec__authentication__header.html", null ],
     [ "pcpp::ipsec_esp", "structpcpp_1_1ipsec__esp.html", null ],
     [ "pcpp::IPv4Address", "classpcpp_1_1_i_pv4_address.html", null ],
+    [ "pcpp::IPv4Network", "classpcpp_1_1_i_pv4_network.html", null ],
     [ "pcpp::IPv4TimestampOptionValue", "structpcpp_1_1_i_pv4_timestamp_option_value.html", null ],
     [ "pcpp::IPv6AuthenticationHeader::ipv6_authentication_header", "structpcpp_1_1_i_pv6_authentication_header_1_1ipv6__authentication__header.html", null ],
     [ "pcpp::IPv6FragmentationHeader::ipv6_frag_header", "structpcpp_1_1_i_pv6_fragmentation_header_1_1ipv6__frag__header.html", null ],

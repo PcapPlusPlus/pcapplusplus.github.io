@@ -107,6 +107,7 @@ var namespacepcpp =
     [ "IPv4DnsResourceData", "classpcpp_1_1_i_pv4_dns_resource_data.html", "classpcpp_1_1_i_pv4_dns_resource_data" ],
     [ "IPv4IDFilter", "classpcpp_1_1_i_pv4_i_d_filter.html", "classpcpp_1_1_i_pv4_i_d_filter" ],
     [ "IPv4Layer", "classpcpp_1_1_i_pv4_layer.html", "classpcpp_1_1_i_pv4_layer" ],
+    [ "IPv4Network", "classpcpp_1_1_i_pv4_network.html", "classpcpp_1_1_i_pv4_network" ],
     [ "IPv4Option", "classpcpp_1_1_i_pv4_option.html", "classpcpp_1_1_i_pv4_option" ],
     [ "IPv4OptionBuilder", "classpcpp_1_1_i_pv4_option_builder.html", "classpcpp_1_1_i_pv4_option_builder" ],
     [ "IPv4TimestampOptionValue", "structpcpp_1_1_i_pv4_timestamp_option_value.html", "structpcpp_1_1_i_pv4_timestamp_option_value" ],
