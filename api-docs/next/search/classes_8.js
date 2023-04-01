@@ -67,6 +67,7 @@ var searchData=
   ['ipv6fragmentationheader',['IPv6FragmentationHeader',['../classpcpp_1_1_i_pv6_fragmentation_header.html',1,'pcpp']]],
   ['ipv6hopbyhopheader',['IPv6HopByHopHeader',['../classpcpp_1_1_i_pv6_hop_by_hop_header.html',1,'pcpp']]],
   ['ipv6layer',['IPv6Layer',['../classpcpp_1_1_i_pv6_layer.html',1,'pcpp']]],
+  ['ipv6network',['IPv6Network',['../classpcpp_1_1_i_pv6_network.html',1,'pcpp']]],
   ['ipv6option',['IPv6Option',['../classpcpp_1_1_i_pv6_t_l_v_option_header_1_1_i_pv6_option.html',1,'pcpp::IPv6TLVOptionHeader']]],
   ['ipv6packetkey',['IPv6PacketKey',['../classpcpp_1_1_i_p_reassembly_1_1_i_pv6_packet_key.html',1,'pcpp::IPReassembly']]],
   ['ipv6routingheader',['IPv6RoutingHeader',['../classpcpp_1_1_i_pv6_routing_header.html',1,'pcpp']]],
