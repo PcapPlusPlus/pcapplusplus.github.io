@@ -119,6 +119,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0552d9f226b1aa7dd168deb3436a4f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a039182943235feb705b2ebd08052d075"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_address.html#a039182943235feb705b2ebd08052d075">copyTo</a> (uint8_t *arr) const</td></tr>
 <tr class="separator:a039182943235feb705b2ebd08052d075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a112d899626deb2aed6034ba53b00a53d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_address.html#a112d899626deb2aed6034ba53b00a53d">matchNetwork</a> (const <a class="el" href="classpcpp_1_1_i_pv6_network.html">IPv6Network</a> &amp;network) const</td></tr>
+<tr class="separator:a112d899626deb2aed6034ba53b00a53d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bc9dede7b586a0d26632ad9cb100105"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_address.html#a4bc9dede7b586a0d26632ad9cb100105">matchNetwork</a> (const std::string &amp;network) const</td></tr>
+<tr class="separator:a4bc9dede7b586a0d26632ad9cb100105"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9015eccc285e177ed21b1099eda1648"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_address.html#ae9015eccc285e177ed21b1099eda1648">matchSubnet</a> (const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> &amp;subnet, uint8_t prefixLength) const</td></tr>
 <tr class="separator:ae9015eccc285e177ed21b1099eda1648"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -326,6 +330,60 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a112d899626deb2aed6034ba53b00a53d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a112d899626deb2aed6034ba53b00a53d">&#9670;&nbsp;</a></span>matchNetwork() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::IPv6Address::matchNetwork </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_pv6_network.html">IPv6Network</a> &amp;&#160;</td>
+          <td class="paramname"><em>network</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Checks whether the address matches a network. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">network</td><td>An <a class="el" href="classpcpp_1_1_i_pv6_network.html">IPv6Network</a> network </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the address matches the network or false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a4bc9dede7b586a0d26632ad9cb100105"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bc9dede7b586a0d26632ad9cb100105">&#9670;&nbsp;</a></span>matchNetwork() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::IPv6Address::matchNetwork </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>network</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Checks whether the address matches a network. For example: this method will return true for address d6e5:83dc:0c58:bc5d:1449:5898:: and network which is one of: d6e5:83dc:0c58:bc5d::/64, d6e5:83dc:0c58:bc5d::/ffff:ffff:ffff:ffff:: Another example: this method will return false for address d6e5:83dc:: and network which is one of: d6e5:83dc:0c58:bc5d::/64, d6e5:83dc:0c58:bc5d::/ffff:ffff:ffff:ffff:: </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">network</td><td>A string in one of these formats:<ul>
+<li>IPV6_ADDRESS/Y where IPV6_ADDRESS is a valid IPv6 address and Y is a number between 0 and 128</li>
+<li>IPV6_ADDRESS/IPV6_NETMASK where IPV6_ADDRESS is a valid IPv6 address and IPV6_NETMASK is a valid IPv6 netmask </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the address matches the network or false if it doesn't or if the network is invalid </dd></dl>
+
+</div>
+</div>
 <a id="ae9015eccc285e177ed21b1099eda1648"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae9015eccc285e177ed21b1099eda1648">&#9670;&nbsp;</a></span>matchSubnet()</h2>
 
@@ -351,13 +409,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Checks whether the address matches a subnet. For example: if subnet is 2001:3CA1:010F:001A::, prefixLength is 64, and address is 2001:3CA1:010F:001A:121B:0000:0000:0010, then the method will return true Another example: if subnet is 2001:3CA1:010F:001A::, prefixLength is 70 and address is 2001:3CA1:010F:001A:121B:0000:0000:0010 then the method will return false </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">subnet</td><td>The subnet to be verified </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">prefixLength</td><td>How many bits to use in the mask </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>This method is deprecated, please use matchNetwork(const IPv6Network&amp; network) </dd></dl>
 
 </div>
 </div>
@@ -557,7 +609,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a></li>
-    <li class="footer">Generated on Fri Mar 31 2023 06:27:01 for PcapPlusPlus by
+    <li class="footer">Generated on Sat Apr 1 2023 09:46:01 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
