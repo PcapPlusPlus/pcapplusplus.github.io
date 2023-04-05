@@ -43,6 +43,7 @@ var searchData=
   ['ipfilter',['IPFilter',['../classpcpp_1_1_i_p_filter.html',1,'pcpp']]],
   ['iphdr',['iphdr',['../structpcpp_1_1iphdr.html',1,'pcpp']]],
   ['iplayer',['IPLayer',['../classpcpp_1_1_i_p_layer.html',1,'pcpp']]],
+  ['ipnetwork',['IPNetwork',['../classpcpp_1_1_i_p_network.html',1,'pcpp']]],
   ['ipreassembly',['IPReassembly',['../classpcpp_1_1_i_p_reassembly.html',1,'pcpp']]],
   ['ipsec_5fauthentication_5fheader',['ipsec_authentication_header',['../structpcpp_1_1ipsec__authentication__header.html',1,'pcpp']]],
   ['ipsec_5fesp',['ipsec_esp',['../structpcpp_1_1ipsec__esp.html',1,'pcpp']]],
