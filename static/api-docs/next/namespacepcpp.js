@@ -100,6 +100,7 @@ var namespacepcpp =
     [ "IPFilter", "classpcpp_1_1_i_p_filter.html", "classpcpp_1_1_i_p_filter" ],
     [ "iphdr", "structpcpp_1_1iphdr.html", "structpcpp_1_1iphdr" ],
     [ "IPLayer", "classpcpp_1_1_i_p_layer.html", "classpcpp_1_1_i_p_layer" ],
+    [ "IPNetwork", "classpcpp_1_1_i_p_network.html", "classpcpp_1_1_i_p_network" ],
     [ "IPReassembly", "classpcpp_1_1_i_p_reassembly.html", "classpcpp_1_1_i_p_reassembly" ],
     [ "ipsec_authentication_header", "structpcpp_1_1ipsec__authentication__header.html", "structpcpp_1_1ipsec__authentication__header" ],
     [ "ipsec_esp", "structpcpp_1_1ipsec__esp.html", "structpcpp_1_1ipsec__esp" ],

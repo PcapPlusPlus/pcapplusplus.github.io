@@ -110,7 +110,8 @@ $(document).ready(function(){initNavTree('functions_func_i.html','');});
 : <a class="el" href="classpcpp_1_1_igmp_v3_report_layer.html#a4a4471d38de1ca94ed40daa98ba887c8">pcpp::IgmpV3ReportLayer</a>
 </li>
 <li>includes()
-: <a class="el" href="classpcpp_1_1_i_pv4_network.html#a3d7f1406f128c65294be9300f1dd6517">pcpp::IPv4Network</a>
+: <a class="el" href="classpcpp_1_1_i_p_network.html#a5bfe7b849da51e85b5d8c5d73ed76862">pcpp::IPNetwork</a>
+, <a class="el" href="classpcpp_1_1_i_pv4_network.html#a3d7f1406f128c65294be9300f1dd6517">pcpp::IPv4Network</a>
 , <a class="el" href="classpcpp_1_1_i_pv6_network.html#ae551f05ab71b2bd3607c4a4868065092">pcpp::IPv6Network</a>
 </li>
 <li>init()
@@ -131,8 +132,8 @@ $(document).ready(function(){initNavTree('functions_func_i.html','');});
 , <a class="el" href="classpcpp_1_1_raw_packet.html#a3563f649177826c9e4f649eec7b35887">pcpp::RawPacket</a>
 </li>
 <li>insertField()
-: <a class="el" href="classpcpp_1_1_http_message.html#afc89318693401eeeff64f852c8c1c5e6">pcpp::HttpMessage</a>
-, <a class="el" href="classpcpp_1_1_text_based_protocol_message.html#a8917992953e2a38885af837a2c49abd0">pcpp::TextBasedProtocolMessage</a>
+: <a class="el" href="classpcpp_1_1_http_message.html#a6c69d36f3197df9ee3f9fb7e3de186fc">pcpp::HttpMessage</a>
+, <a class="el" href="classpcpp_1_1_text_based_protocol_message.html#abf28607ed41ed3bfdb1c476bda303ae9">pcpp::TextBasedProtocolMessage</a>
 </li>
 <li>insertLayer()
 : <a class="el" href="classpcpp_1_1_packet.html#a0b84fbbd9a0e0074445b95d89103fa3e">pcpp::Packet</a>
@@ -145,6 +146,9 @@ $(document).ready(function(){initNavTree('functions_func_i.html','');});
 </li>
 <li>IPFilter()
 : <a class="el" href="classpcpp_1_1_i_p_filter.html#a953d29c9f7d99369acea260016ab6825">pcpp::IPFilter</a>
+</li>
+<li>IPNetwork()
+: <a class="el" href="classpcpp_1_1_i_p_network.html#af7899796518940cc22ef228504166e5d">pcpp::IPNetwork</a>
 </li>
 <li>IPReassembly()
 : <a class="el" href="classpcpp_1_1_i_p_reassembly.html#a9a55c126f0361bc1a928d0e39924c16d">pcpp::IPReassembly</a>
@@ -162,13 +166,13 @@ $(document).ready(function(){initNavTree('functions_func_i.html','');});
 : <a class="el" href="classpcpp_1_1_i_pv4_layer.html#a4f0053a3866503b87803140b5ea2b8fe">pcpp::IPv4Layer</a>
 </li>
 <li>IPv4Network()
-: <a class="el" href="classpcpp_1_1_i_pv4_network.html#a73c5cdd013b6e38c047c223d474f9c02">pcpp::IPv4Network</a>
+: <a class="el" href="classpcpp_1_1_i_pv4_network.html#a0f11760e3f19c80270e084075d415972">pcpp::IPv4Network</a>
 </li>
 <li>IPv4Option()
 : <a class="el" href="classpcpp_1_1_i_pv4_option.html#a07d5c83e2742d8ae56cbba31c2f17c0f">pcpp::IPv4Option</a>
 </li>
 <li>IPv4OptionBuilder()
-: <a class="el" href="classpcpp_1_1_i_pv4_option_builder.html#aa25fc641f5a1fc0e94b967eb47241979">pcpp::IPv4OptionBuilder</a>
+: <a class="el" href="classpcpp_1_1_i_pv4_option_builder.html#a451ec86afe4ab0825433796d65959500">pcpp::IPv4OptionBuilder</a>
 </li>
 <li>IPv4PacketKey()
 : <a class="el" href="classpcpp_1_1_i_p_reassembly_1_1_i_pv4_packet_key.html#a99e40e4e9a816f2bfd6fac51e1db24f5">pcpp::IPReassembly::IPv4PacketKey</a>
@@ -329,8 +333,14 @@ $(document).ready(function(){initNavTree('functions_func_i.html','');});
 <li>isIPv4()
 : <a class="el" href="classpcpp_1_1_i_p_address.html#ab79cac12a5fe8253c7d981b7d47b0354">pcpp::IPAddress</a>
 </li>
+<li>isIPv4Network()
+: <a class="el" href="classpcpp_1_1_i_p_network.html#a750668114b017abd8e8e3eb399a8b7f0">pcpp::IPNetwork</a>
+</li>
 <li>isIPv6()
 : <a class="el" href="classpcpp_1_1_i_p_address.html#acf60f8b4543e7fccc7123e85f65e2e34">pcpp::IPAddress</a>
+</li>
+<li>isIPv6Network()
+: <a class="el" href="classpcpp_1_1_i_p_network.html#a5c76e38da2dfb37fa3be0a62385c2b95">pcpp::IPNetwork</a>
 </li>
 <li>isLastFragment()
 : <a class="el" href="classpcpp_1_1_i_pv4_layer.html#a8a681d88811ec5256efd270edf2b943d">pcpp::IPv4Layer</a>
@@ -429,7 +439,7 @@ $(document).ready(function(){initNavTree('functions_func_i.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Apr 1 2023 09:46:02 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Apr 5 2023 06:24:11 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

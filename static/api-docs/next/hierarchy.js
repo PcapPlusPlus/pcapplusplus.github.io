@@ -237,6 +237,7 @@ var hierarchy =
       [ "pcpp::IPv4Layer", "classpcpp_1_1_i_pv4_layer.html", null ],
       [ "pcpp::IPv6Layer", "classpcpp_1_1_i_pv6_layer.html", null ]
     ] ],
+    [ "pcpp::IPNetwork", "classpcpp_1_1_i_p_network.html", null ],
     [ "pcpp::IPReassembly", "classpcpp_1_1_i_p_reassembly.html", null ],
     [ "pcpp::ipsec_authentication_header", "structpcpp_1_1ipsec__authentication__header.html", null ],
     [ "pcpp::ipsec_esp", "structpcpp_1_1ipsec__esp.html", null ],
