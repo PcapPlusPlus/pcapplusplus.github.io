@@ -55,6 +55,7 @@
 *   - pcpp::GtpV1Layer, GtpLayer.h - GTP (v1) protocol
 *   - pcpp::AuthenticationHeaderLayer, pcpp::ESPLayer - IPSec AH & ESP - parsing only (no editing capabilities)
 *   - pcpp::TcpLayer, TcpLayer.h - TCP protocol
+*   - pcpp::TpktLayer, TpktLayer.h - TPKT protocol
 *   - pcpp::UdpLayer, UdpLayer.h - UDP protocol
 *   - pcpp::SdpLayer, SdpLayer.h - SDP protocol
 *   - pcpp::SipRequestLayer, pcpp::SipResponseLayer, SipLayer.h - SIP request protocol
@@ -75,6 +76,7 @@
 * <b>Common utilities and infrastructure (Common++, Packet++, Pcap++):</b>
 *   - pcpp::IPAddress, pcpp::IPv4Address, pcpp::IPv6Address, IpAddress.h - IP address wrapper classes
 *   - pcpp::MacAddress, MacAddress.h - MAC address wrapper class
+*   - pcpp::IPNetwork, pcpp::IPv4Network, pcpp::IPv6Network, IpAddress.h - IP Network definitions
 *   - pcpp::TcpReassembly, TcpReassembly.h - Implementation of TCP reassembly logic
 *   - pcpp::IPReassembly, IPReassembly.h - Implementation of IP reassembly logic (a.k.a IP de-fragmentation). Works for both IPv4 and IPv6
 *   - IpUtils.h - all kinds of helpful network utilities
