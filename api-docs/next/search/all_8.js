@@ -272,6 +272,7 @@ var searchData=
   ['isfirstfragment',['isFirstFragment',['../classpcpp_1_1_i_pv4_layer.html#ad225191b00811a73536485846fd9936d',1,'pcpp::IPv4Layer::isFirstFragment()'],['../classpcpp_1_1_i_pv6_fragmentation_header.html#ae6c9efb856f041d12162e1dbc57fac8e',1,'pcpp::IPv6FragmentationHeader::isFirstFragment()']]],
   ['isfirstkexpacketfollows',['isFirstKexPacketFollows',['../classpcpp_1_1_s_s_h_key_exchange_init_message.html#ad725f536301fe13c463b48ebb2cda49f',1,'pcpp::SSHKeyExchangeInitMessage']]],
   ['isfragment',['isFragment',['../classpcpp_1_1_i_pv4_layer.html#a5cf53b28a9dea46455a757c008a16382',1,'pcpp::IPv4Layer::isFragment()'],['../classpcpp_1_1_i_pv6_layer.html#a6b40f69698814ff81c06e940507aa963',1,'pcpp::IPv6Layer::isFragment()']]],
+  ['isftpdataport',['isFtpDataPort',['../classpcpp_1_1_ftp_layer.html#a17db2017b3fdaab60a227009550a7cc6',1,'pcpp::FtpLayer']]],
   ['isftpport',['isFtpPort',['../classpcpp_1_1_ftp_layer.html#aeafc25bbe243fd2115238b409f1ccd77',1,'pcpp::FtpLayer']]],
   ['isgtpcmessage',['isGTPCMessage',['../classpcpp_1_1_gtp_v1_layer.html#a12bbb923dc2fd557b0233d515b203f82',1,'pcpp::GtpV1Layer']]],
   ['isgtpumessage',['isGTPUMessage',['../classpcpp_1_1_gtp_v1_layer.html#a3ec7019f97751549c6c1a8ad850c8cdd',1,'pcpp::GtpV1Layer']]],

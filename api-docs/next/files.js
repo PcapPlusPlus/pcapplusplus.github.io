@@ -44,7 +44,8 @@ var files =
     [ "FtpLayer.h", "_ftp_layer_8h.html", [
       [ "FtpLayer", "classpcpp_1_1_ftp_layer.html", "classpcpp_1_1_ftp_layer" ],
       [ "FtpRequestLayer", "classpcpp_1_1_ftp_request_layer.html", "classpcpp_1_1_ftp_request_layer" ],
-      [ "FtpResponseLayer", "classpcpp_1_1_ftp_response_layer.html", "classpcpp_1_1_ftp_response_layer" ]
+      [ "FtpResponseLayer", "classpcpp_1_1_ftp_response_layer.html", "classpcpp_1_1_ftp_response_layer" ],
+      [ "FtpDataLayer", "classpcpp_1_1_ftp_data_layer.html", "classpcpp_1_1_ftp_data_layer" ]
     ] ],
     [ "GeneralUtils.h", "_general_utils_8h.html", "_general_utils_8h" ],
     [ "GreLayer.h", "_gre_layer_8h.html", [

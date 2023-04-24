@@ -153,6 +153,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aeafc25bbe243fd2115238b409f1ccd77"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ftp_layer.html#aeafc25bbe243fd2115238b409f1ccd77">isFtpPort</a> (uint16_t port)</td></tr>
 <tr class="separator:aeafc25bbe243fd2115238b409f1ccd77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17db2017b3fdaab60a227009550a7cc6"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ftp_layer.html#a17db2017b3fdaab60a227009550a7cc6">isFtpDataPort</a> (uint16_t port)</td></tr>
+<tr class="separator:a17db2017b3fdaab60a227009550a7cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classpcpp_1_1_single_command_text_protocol"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classpcpp_1_1_single_command_text_protocol')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classpcpp_1_1_single_command_text_protocol.html">pcpp::SingleCommandTextProtocol</a></td></tr>
 <tr class="memitem:aabdee2c76e92bf78c3d2f9b704e7cabd inherit pub_static_methods_classpcpp_1_1_single_command_text_protocol"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_single_command_text_protocol.html#aabdee2c76e92bf78c3d2f9b704e7cabd">isDataValid</a> (const uint8_t *data, size_t dataSize)</td></tr>
 <tr class="separator:aabdee2c76e92bf78c3d2f9b704e7cabd inherit pub_static_methods_classpcpp_1_1_single_command_text_protocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,6 +218,38 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a17db2017b3fdaab60a227009550a7cc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17db2017b3fdaab60a227009550a7cc6">&#9670;&nbsp;</a></span>isFtpDataPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool pcpp::FtpLayer::isFtpDataPort </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A static method that checks whether the port is considered as FTP data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The port number to be checked </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aeafc25bbe243fd2115238b409f1ccd77"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeafc25bbe243fd2115238b409f1ccd77">&#9670;&nbsp;</a></span>isFtpPort()</h2>
 
@@ -239,7 +273,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A static method that checks whether the port is considered as FTP </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A static method that checks whether the port is considered as FTP control </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The port number to be checked </td></tr>
   </table>
@@ -254,7 +288,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_ftp_layer.html">FtpLayer</a></li>
-    <li class="footer">Generated on Fri Apr 21 2023 05:13:06 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Apr 24 2023 07:41:25 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

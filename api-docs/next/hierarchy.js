@@ -128,7 +128,9 @@ var hierarchy =
         [ "pcpp::NtpLayer", "classpcpp_1_1_ntp_layer.html", null ],
         [ "pcpp::NullLoopbackLayer", "classpcpp_1_1_null_loopback_layer.html", null ],
         [ "pcpp::PacketTrailerLayer", "classpcpp_1_1_packet_trailer_layer.html", null ],
-        [ "pcpp::PayloadLayer", "classpcpp_1_1_payload_layer.html", null ],
+        [ "pcpp::PayloadLayer", "classpcpp_1_1_payload_layer.html", [
+          [ "pcpp::FtpDataLayer", "classpcpp_1_1_ftp_data_layer.html", null ]
+        ] ],
         [ "pcpp::PPP_PPTPLayer", "classpcpp_1_1_p_p_p___p_p_t_p_layer.html", null ],
         [ "pcpp::PPPoELayer", "classpcpp_1_1_p_p_po_e_layer.html", [
           [ "pcpp::PPPoEDiscoveryLayer", "classpcpp_1_1_p_p_po_e_discovery_layer.html", null ],
