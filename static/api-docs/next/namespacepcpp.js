@@ -39,6 +39,7 @@ var namespacepcpp =
     [ "ether_header", "structpcpp_1_1ether__header.html", "structpcpp_1_1ether__header" ],
     [ "EtherTypeFilter", "classpcpp_1_1_ether_type_filter.html", "classpcpp_1_1_ether_type_filter" ],
     [ "EthLayer", "classpcpp_1_1_eth_layer.html", "classpcpp_1_1_eth_layer" ],
+    [ "FtpDataLayer", "classpcpp_1_1_ftp_data_layer.html", "classpcpp_1_1_ftp_data_layer" ],
     [ "FtpLayer", "classpcpp_1_1_ftp_layer.html", "classpcpp_1_1_ftp_layer" ],
     [ "FtpRequestLayer", "classpcpp_1_1_ftp_request_layer.html", "classpcpp_1_1_ftp_request_layer" ],
     [ "FtpResponseLayer", "classpcpp_1_1_ftp_response_layer.html", "classpcpp_1_1_ftp_response_layer" ],
