@@ -12,6 +12,8 @@ var searchData=
   ['addfilter',['addFilter',['../classpcpp_1_1_and_filter.html#a31a8d91c6139693fa05a06fd6c6ab5fe',1,'pcpp::AndFilter::addFilter()'],['../classpcpp_1_1_or_filter.html#abcd751c0048d632f82d8f3a1464ed257',1,'pcpp::OrFilter::addFilter()']]],
   ['addgrouprecord',['addGroupRecord',['../classpcpp_1_1_igmp_v3_report_layer.html#a16965c0755e315db8c53cd91c38ac8a6',1,'pcpp::IgmpV3ReportLayer']]],
   ['addgrouprecordatindex',['addGroupRecordAtIndex',['../classpcpp_1_1_igmp_v3_report_layer.html#a1794a460a7850f676a2fafa1ff57f70d',1,'pcpp::IgmpV3ReportLayer']]],
+  ['addipaddress',['addIPAddress',['../classpcpp_1_1_vrrp_layer.html#afa8c39ff36593fcf2712365683348ef9',1,'pcpp::VrrpLayer']]],
+  ['addipaddresses',['addIPAddresses',['../classpcpp_1_1_vrrp_layer.html#a379c834b647cbbfb60eed83a27bcd91c',1,'pcpp::VrrpLayer']]],
   ['addlayer',['addLayer',['../classpcpp_1_1_packet.html#ad43e09f561e9b8bfe32bc498c2fa3ec1',1,'pcpp::Packet']]],
   ['addmediadescription',['addMediaDescription',['../classpcpp_1_1_sdp_layer.html#a9e07a511498eca37a5b5542058fc6152',1,'pcpp::SdpLayer']]],
   ['addndpoption',['addNdpOption',['../classpcpp_1_1_n_d_p_layer_base.html#ac28bc65c2601d1c7b0a3afdb19efb472',1,'pcpp::NDPLayerBase']]],

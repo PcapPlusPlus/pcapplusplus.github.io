@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('_packet_utils_8h.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_packet_8h_source.html">Packet.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_ip_address_8h_source.html">IpAddress.h</a>&quot;</code><br />
 </div>
 <p><a href="_packet_utils_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -109,6 +110,8 @@ Namespaces</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a6a311c92be6e4e970aeab4984e87ae1a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a6a311c92be6e4e970aeab4984e87ae1a">pcpp::computeChecksum</a> (ScalarBuffer&lt; uint16_t &gt; vec[], size_t vecSize)</td></tr>
 <tr class="separator:a6a311c92be6e4e970aeab4984e87ae1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a222eeb2e4e394af40795150154dabf8e"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a222eeb2e4e394af40795150154dabf8e">pcpp::computePseudoHdrChecksum</a> (uint8_t *dataPtr, size_t dataLen, IPAddress::AddressType ipAddrType, uint8_t protocolType, IPAddress srcIPAddress, IPAddress dstIPAddress)</td></tr>
+<tr class="separator:a222eeb2e4e394af40795150154dabf8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0368530f5aa515fa7f656dfde7bfddc"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ac0368530f5aa515fa7f656dfde7bfddc">pcpp::fnvHash</a> (ScalarBuffer&lt; uint8_t &gt; vec[], size_t vecSize)</td></tr>
 <tr class="separator:ac0368530f5aa515fa7f656dfde7bfddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affe360d755b20557a3ebde6e5c85c93d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#affe360d755b20557a3ebde6e5c85c93d">pcpp::fnvHash</a> (uint8_t *buffer, size_t bufSize)</td></tr>
@@ -124,7 +127,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_packet_utils_8h.html">PacketUtils.h</a></li>
-    <li class="footer">Generated on Fri Jun 2 2023 00:55:04 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Jun 6 2023 07:25:22 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

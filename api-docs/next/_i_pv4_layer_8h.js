@@ -25,6 +25,7 @@ var _i_pv4_layer_8h =
       [ "PACKETPP_IPPROTO_ICMPV6", "_i_pv4_layer_8h.html#ace8e2e21b82a8adc602f561e1e612fb0a81cfda499cc9e38aeb886f4fdafd9e9d", null ],
       [ "PACKETPP_IPPROTO_NONE", "_i_pv4_layer_8h.html#ace8e2e21b82a8adc602f561e1e612fb0af526200e5e89dfb3596f0b119d4b20bc", null ],
       [ "PACKETPP_IPPROTO_DSTOPTS", "_i_pv4_layer_8h.html#ace8e2e21b82a8adc602f561e1e612fb0ad59abbf5fc384899c3d484987e5becc4", null ],
+      [ "PACKETPP_IPPROTO_VRRP", "_i_pv4_layer_8h.html#ace8e2e21b82a8adc602f561e1e612fb0a93a3e1ea418dea839194fcbda8ce5e58", null ],
       [ "PACKETPP_IPPROTO_RAW", "_i_pv4_layer_8h.html#ace8e2e21b82a8adc602f561e1e612fb0af29fae046d1c041be606aec6b905b5b2", null ],
       [ "PACKETPP_IPPROTO_MAX", "_i_pv4_layer_8h.html#ace8e2e21b82a8adc602f561e1e612fb0af9c6e2fb2f497c363bfb861abd2ca29e", null ]
     ] ],

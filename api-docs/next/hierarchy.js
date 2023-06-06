@@ -186,6 +186,10 @@ var hierarchy =
         [ "pcpp::TpktLayer", "classpcpp_1_1_tpkt_layer.html", null ],
         [ "pcpp::UdpLayer", "classpcpp_1_1_udp_layer.html", null ],
         [ "pcpp::VlanLayer", "classpcpp_1_1_vlan_layer.html", null ],
+        [ "pcpp::VrrpLayer", "classpcpp_1_1_vrrp_layer.html", [
+          [ "pcpp::VrrpV2Layer", "classpcpp_1_1_vrrp_v2_layer.html", null ],
+          [ "pcpp::VrrpV3Layer", "classpcpp_1_1_vrrp_v3_layer.html", null ]
+        ] ],
         [ "pcpp::VxlanLayer", "classpcpp_1_1_vxlan_layer.html", null ],
         [ "pcpp::WakeOnLanLayer", "classpcpp_1_1_wake_on_lan_layer.html", null ]
       ] ]
@@ -403,6 +407,7 @@ var hierarchy =
     [ "pcpp::tpkthdr", "structpcpp_1_1tpkthdr.html", null ],
     [ "pcpp::udphdr", "structpcpp_1_1udphdr.html", null ],
     [ "pcpp::vlan_header", "structpcpp_1_1vlan__header.html", null ],
+    [ "pcpp::vrrp_header", "structpcpp_1_1vrrp__header.html", null ],
     [ "pcpp::vxlan_header", "structpcpp_1_1vxlan__header.html", null ],
     [ "pcpp::WakeOnLanLayer::wol_header", "structpcpp_1_1_wake_on_lan_layer_1_1wol__header.html", null ]
 ];

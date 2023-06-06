@@ -1,5 +1,13 @@
 var NAVTREEINDEX9 =
 {
+"classpcpp_1_1_i_device.html#acebd2ae24e39e620ed66f65e6623089b":[3,0,0,77,0],
+"classpcpp_1_1_i_device.html#ad7bed3f1134e8b4329295b4af6733b9f":[3,0,0,77,2],
+"classpcpp_1_1_i_dns_resource.html":[3,0,0,78],
+"classpcpp_1_1_i_dns_resource.html#a15c4d0513904997e4b77cc11526d204e":[3,0,0,78,7],
+"classpcpp_1_1_i_dns_resource.html#a20a4ef2ee128484638f1c3fcce0d5237":[3,0,0,78,5],
+"classpcpp_1_1_i_dns_resource.html#a58c16769e8879d3ad15a275b618f808d":[3,0,0,78,2],
+"classpcpp_1_1_i_dns_resource.html#a86a84d37bd2a0b4f7e4eb3591064146f":[3,0,0,78,4],
+"classpcpp_1_1_i_dns_resource.html#a87626a0aa08614d98e94fc1fda31fd03":[3,0,0,78,0],
 "classpcpp_1_1_i_dns_resource.html#ac2dc6e9007932e38c1deed4826a50776":[3,0,0,78,3],
 "classpcpp_1_1_i_dns_resource.html#ad9c0a3adac252a14a48502ae8a43afe5":[3,0,0,78,6],
 "classpcpp_1_1_i_dns_resource.html#ade6a140a8bba212a15bf58b0e5e6fe4a":[3,0,0,78,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX9 =
 "classpcpp_1_1_i_pv6_address.html#a7f2135107f3212d69f436c1edc367c0a":[3,0,0,114,6],
 "classpcpp_1_1_i_pv6_address.html#aa7a7bf99b8b750091094c89ba446545b":[3,0,0,114,2],
 "classpcpp_1_1_i_pv6_address.html#ab84e4b17cc8a81b72d06be8387b1c98c":[3,0,0,114,5],
-"classpcpp_1_1_i_pv6_address.html#ae9015eccc285e177ed21b1099eda1648":[3,0,0,114,9],
-"classpcpp_1_1_i_pv6_address.html#af643ac254cde788ff54574f838197bd3":[3,0,0,114,14],
-"classpcpp_1_1_i_pv6_address.html#af8994593833bb1cd96c9c8d534adb1e6":[3,0,0,114,12],
-"classpcpp_1_1_i_pv6_authentication_header.html":[3,0,0,115],
-"classpcpp_1_1_i_pv6_authentication_header.html#a390290e0bbba15ca3e25fab0801b5e21":[3,0,0,115,5],
-"classpcpp_1_1_i_pv6_authentication_header.html#a74e66440e3d0ad0e0ce0b9af4fc76e6e":[3,0,0,115,3],
-"classpcpp_1_1_i_pv6_authentication_header.html#ac21bf69dd0bb462a7a218ec65444c743":[3,0,0,115,4],
-"classpcpp_1_1_i_pv6_authentication_header.html#ac5ff85f22e89275fd1424eb91fca5994":[3,0,0,115,2],
-"classpcpp_1_1_i_pv6_authentication_header.html#ad914800d8707bbbcd5577be7e0b1fccd":[3,0,0,115,1]
+"classpcpp_1_1_i_pv6_address.html#ae9015eccc285e177ed21b1099eda1648":[3,0,0,114,9]
 };
