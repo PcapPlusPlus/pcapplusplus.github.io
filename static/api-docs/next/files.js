@@ -256,6 +256,12 @@ var files =
       [ "vlan_header", "structpcpp_1_1vlan__header.html", "structpcpp_1_1vlan__header" ],
       [ "VlanLayer", "classpcpp_1_1_vlan_layer.html", "classpcpp_1_1_vlan_layer" ]
     ] ],
+    [ "VrrpLayer.h", "_vrrp_layer_8h.html", [
+      [ "vrrp_header", "structpcpp_1_1vrrp__header.html", "structpcpp_1_1vrrp__header" ],
+      [ "VrrpLayer", "classpcpp_1_1_vrrp_layer.html", "classpcpp_1_1_vrrp_layer" ],
+      [ "VrrpV2Layer", "classpcpp_1_1_vrrp_v2_layer.html", "classpcpp_1_1_vrrp_v2_layer" ],
+      [ "VrrpV3Layer", "classpcpp_1_1_vrrp_v3_layer.html", "classpcpp_1_1_vrrp_v3_layer" ]
+    ] ],
     [ "VxlanLayer.h", "_vxlan_layer_8h.html", [
       [ "vxlan_header", "structpcpp_1_1vxlan__header.html", "structpcpp_1_1vxlan__header" ],
       [ "VxlanLayer", "classpcpp_1_1_vxlan_layer.html", "classpcpp_1_1_vxlan_layer" ]

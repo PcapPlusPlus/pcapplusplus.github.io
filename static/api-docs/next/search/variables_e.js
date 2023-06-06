@@ -27,6 +27,7 @@ var searchData=
   ['preference',['preference',['../structpcpp_1_1_mx_dns_resource_data_1_1_mx_data.html#aab435ee2e8b433677dfb84b495272f5b',1,'pcpp::MxDnsResourceData::MxData']]],
   ['preferencelevel',['preferenceLevel',['../structpcpp_1_1icmp__router__address__structure.html#ad9c6d64fbf2388f90eacfc4d0e3269ca',1,'pcpp::icmp_router_address_structure']]],
   ['prefix',['prefix',['../structpcpp_1_1_bgp_update_message_layer_1_1prefix__and__ip.html#a053cb9509acbd3e82eb37de9d34fa87e',1,'pcpp::BgpUpdateMessageLayer::prefix_and_ip']]],
+  ['priority',['priority',['../structpcpp_1_1vrrp__header.html#af015f8b1a6ceaa4607779a98491c8c8b',1,'pcpp::vrrp_header']]],
   ['protocol',['protocol',['../structpcpp_1_1gre__basic__header.html#ad64488dc863563820f7541dfdb4ee910',1,'pcpp::gre_basic_header::protocol()'],['../structpcpp_1_1ppp__pptp__header.html#a9e49420e46bdc801452f9c30ef5b8659',1,'pcpp::ppp_pptp_header::protocol()'],['../structpcpp_1_1iphdr.html#a9600c9b8e380ba5468763cdf648d043c',1,'pcpp::iphdr::protocol()']]],
   ['protocol_5ftype',['protocol_type',['../structpcpp_1_1sll__header.html#a133d6e18091bafa51d1a4558a9f6bda9',1,'pcpp::sll_header']]],
   ['protocolsize',['protocolSize',['../structpcpp_1_1arphdr.html#a36e89262f76da9f28beb86cdec632c8c',1,'pcpp::arphdr']]],

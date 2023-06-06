@@ -20,5 +20,6 @@ var searchData=
   ['authenticator',['authenticator',['../structpcpp_1_1radius__header.html#a12baeb5d7b2bcece1043131e1515663b',1,'pcpp::radius_header']]],
   ['authenticdata',['authenticData',['../structpcpp_1_1dnshdr.html#ac7e51ef9ae04bec1e3ce7530e39d53d8',1,'pcpp::dnshdr']]],
   ['authoritativeanswer',['authoritativeAnswer',['../structpcpp_1_1dnshdr.html#a36e1dea9807654d43ddbc82e60cf557b',1,'pcpp::dnshdr']]],
+  ['authtypeadvint',['authTypeAdvInt',['../structpcpp_1_1vrrp__header.html#acb29b17326ee346a779fee3e50bc60d1',1,'pcpp::vrrp_header']]],
   ['auxdatalen',['auxDataLen',['../structpcpp_1_1igmpv3__group__record.html#a89bbec160141d8e9a6c200fda910ea6f',1,'pcpp::igmpv3_group_record']]]
 ];
