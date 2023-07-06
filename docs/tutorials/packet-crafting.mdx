@@ -97,7 +97,7 @@ pcpp::EthLayer* ethernetLayer = parsedPacket.getLayerOfType<pcpp::EthLayer>();
 ethernetLayer->setDestMac(pcpp::MacAddress("aa:bb:cc:dd:ee:ff"));
 ```
 
-As you can see, we changed the destination MAC address to `"aa:bb:cc:dd:ee"` We used the `setDestMac()` method exposed in `EthLayer` to do that and we gave it a `MacAddress` class instance we created with the new MAC address we want.
+As you can see, we changed the destination MAC address to `"aa:bb:cc:dd:ee:ff"` We used the `setDestMac()` method exposed in `EthLayer` to do that and we gave it a `MacAddress` class instance we created with the new MAC address we want.
 
 Ethernet layer is quite simple, let's move to a more complex layer - **IPv4**, and see what data we can change there:
 
@@ -201,7 +201,7 @@ Let's start by creating the first layer - an **Ethernet** layer:
 
 ```cpp
 // create a new Ethernet layer
-pcpp::EthLayer newEthernetLayer(pcpp::MacAddress("00:50:43:11:22:33"), pcpp::MacAddress("aa:bb:cc:dd:ee"));
+pcpp::EthLayer newEthernetLayer(pcpp::MacAddress("00:50:43:11:22:33"), pcpp::MacAddress("aa:bb:cc:dd:ee:ff"));
 ```
 
 What we did here is create a new instance of the `EthLayer` class and give it the necessary parameters which are source and dest MAC addresses (both are instances of the `MacAddress` class instantiated with the MAC address string). Rather easy right?
