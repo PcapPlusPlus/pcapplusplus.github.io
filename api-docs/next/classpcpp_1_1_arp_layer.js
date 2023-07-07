@@ -10,6 +10,8 @@ var classpcpp_1_1_arp_layer =
     [ "getSenderMacAddress", "classpcpp_1_1_arp_layer.html#afebedcb672bb8ad278f0918d4051a848", null ],
     [ "getTargetIpAddr", "classpcpp_1_1_arp_layer.html#a468a4fd5c27276f92a44a06133a53374", null ],
     [ "getTargetMacAddress", "classpcpp_1_1_arp_layer.html#a87d93b07b01d0bb402ccfd8fd44ca9b3", null ],
+    [ "isReply", "classpcpp_1_1_arp_layer.html#a55487337c4b674b9b507db9382788de3", null ],
+    [ "isRequest", "classpcpp_1_1_arp_layer.html#a9b706b494e8830d241f50a5b5ae205f7", null ],
     [ "parseNextLayer", "classpcpp_1_1_arp_layer.html#a923dcd5cae530350e56f05e77c5d7d2e", null ],
     [ "toString", "classpcpp_1_1_arp_layer.html#a8728896ce9bafbcc908bc6af184935ba", null ]
 ];
