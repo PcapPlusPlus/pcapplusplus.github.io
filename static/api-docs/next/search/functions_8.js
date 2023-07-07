@@ -93,6 +93,8 @@ var searchData=
   ['ispacketoftype',['isPacketOfType',['../classpcpp_1_1_packet.html#a0638363f7edf78cbedd239c92c647c24',1,'pcpp::Packet']]],
   ['ispacketset',['isPacketSet',['../classpcpp_1_1_raw_packet.html#ad2de0b9094569c2505cf590d8ab50f45',1,'pcpp::RawPacket']]],
   ['isradiusport',['isRadiusPort',['../classpcpp_1_1_radius_layer.html#afa6a3b209815677bbe9522395f4d9c8f',1,'pcpp::RadiusLayer']]],
+  ['isreply',['isReply',['../classpcpp_1_1_arp_layer.html#a55487337c4b674b9b507db9382788de3',1,'pcpp::ArpLayer']]],
+  ['isrequest',['isRequest',['../classpcpp_1_1_arp_layer.html#a9b706b494e8830d241f50a5b5ae205f7',1,'pcpp::ArpLayer']]],
   ['issipport',['isSipPort',['../classpcpp_1_1_sip_layer.html#a7e0685a5759e490aeaf0100552ebb5b6',1,'pcpp::SipLayer']]],
   ['issomeipport',['isSomeIpPort',['../classpcpp_1_1_some_ip_layer.html#a85484b568172f1b36487218fdf216917',1,'pcpp::SomeIpLayer']]],
   ['issomeipsdport',['isSomeIpSdPort',['../classpcpp_1_1_some_ip_sd_layer.html#a62255b37a57fa25a481e42dc0f318ec5',1,'pcpp::SomeIpSdLayer']]],
