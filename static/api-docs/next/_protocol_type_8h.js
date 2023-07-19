@@ -14,6 +14,7 @@ var _protocol_type_8h =
     [ "ARP", "_protocol_type_8h.html#aead5ebeefddfe9c93b70ede2c99cea9d", null ],
     [ "AuthenticationHeader", "_protocol_type_8h.html#a39b3b994d91261bc96f7ff25172ce9d0", null ],
     [ "BGP", "_protocol_type_8h.html#a55e4061b1046f18acbdeb81960d2ae81", null ],
+    [ "COTP", "_protocol_type_8h.html#a3627d03d2d4427b2f960f258727236f0", null ],
     [ "DHCP", "_protocol_type_8h.html#a5f677ab02f328eb59216916238bea6c1", null ],
     [ "DHCPv6", "_protocol_type_8h.html#a1fde402917d83d7a139ba19209fc78cc", null ],
     [ "DNS", "_protocol_type_8h.html#ae432ae466e1de6accc18805e99efd0c7", null ],
