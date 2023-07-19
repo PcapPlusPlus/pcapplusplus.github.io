@@ -53,6 +53,7 @@
 *   - pcpp::MplsLayer, MplsLayer.h - MPLS protocol
 *   - pcpp::NDPNeighborSolicitationLayer, pcpp::NDPNeighborAdvertisementLayer, NdpLayer.h - NDP protocol
 *   - pcpp::VrrpV2Layer, pcpp::VrrpV3Layer, VrrpLayer.h - VRRP protocol
+*   - pcpp::CotpLayer, CotpLayer.h - COTP protocol
 *   - pcpp::GtpV1Layer, GtpLayer.h - GTP (v1) protocol
 *   - pcpp::AuthenticationHeaderLayer, pcpp::ESPLayer - IPSec AH & ESP - parsing only (no editing capabilities)
 *   - pcpp::TcpLayer, TcpLayer.h - TCP protocol
