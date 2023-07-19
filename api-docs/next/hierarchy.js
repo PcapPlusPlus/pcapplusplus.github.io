@@ -16,6 +16,7 @@ var hierarchy =
     [ "pcpp::BpfFilterWrapper", "classpcpp_1_1_bpf_filter_wrapper.html", null ],
     [ "pcpp::SSLClientHelloMessage::ClientHelloTLSFingerprint", "structpcpp_1_1_s_s_l_client_hello_message_1_1_client_hello_t_l_s_fingerprint.html", null ],
     [ "pcpp::ConnectionData", "structpcpp_1_1_connection_data.html", null ],
+    [ "pcpp::cotphdr", "structpcpp_1_1cotphdr.html", null ],
     [ "pcpp::PcapLiveDevice::DeviceConfiguration", "structpcpp_1_1_pcap_live_device_1_1_device_configuration.html", null ],
     [ "pcpp::dhcp_header", "structpcpp_1_1dhcp__header.html", null ],
     [ "pcpp::dhcpv6_header", "structpcpp_1_1dhcpv6__header.html", null ],
@@ -93,6 +94,7 @@ var hierarchy =
           [ "pcpp::BgpRouteRefreshMessageLayer", "classpcpp_1_1_bgp_route_refresh_message_layer.html", null ],
           [ "pcpp::BgpUpdateMessageLayer", "classpcpp_1_1_bgp_update_message_layer.html", null ]
         ] ],
+        [ "pcpp::CotpLayer", "classpcpp_1_1_cotp_layer.html", null ],
         [ "pcpp::DhcpLayer", "classpcpp_1_1_dhcp_layer.html", null ],
         [ "pcpp::DhcpV6Layer", "classpcpp_1_1_dhcp_v6_layer.html", null ],
         [ "pcpp::DnsLayer", "classpcpp_1_1_dns_layer.html", [

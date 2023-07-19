@@ -16,6 +16,8 @@ var namespacepcpp =
     [ "BpfFilterWrapper", "classpcpp_1_1_bpf_filter_wrapper.html", "classpcpp_1_1_bpf_filter_wrapper" ],
     [ "BPFStringFilter", "classpcpp_1_1_b_p_f_string_filter.html", "classpcpp_1_1_b_p_f_string_filter" ],
     [ "ConnectionData", "structpcpp_1_1_connection_data.html", "structpcpp_1_1_connection_data" ],
+    [ "cotphdr", "structpcpp_1_1cotphdr.html", "structpcpp_1_1cotphdr" ],
+    [ "CotpLayer", "classpcpp_1_1_cotp_layer.html", "classpcpp_1_1_cotp_layer" ],
     [ "dhcp_header", "structpcpp_1_1dhcp__header.html", "structpcpp_1_1dhcp__header" ],
     [ "DhcpLayer", "classpcpp_1_1_dhcp_layer.html", "classpcpp_1_1_dhcp_layer" ],
     [ "DhcpOption", "classpcpp_1_1_dhcp_option.html", "classpcpp_1_1_dhcp_option" ],
