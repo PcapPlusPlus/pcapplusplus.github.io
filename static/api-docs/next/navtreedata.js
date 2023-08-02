@@ -61,7 +61,7 @@ var NAVTREEINDEX =
 "classpcpp_1_1_tcp_stream_data.html#ab9cdd59044104a51a11271a9225cb88c",
 "classpcpp_1_1_win_pcap_live_device.html#a70126c098779937e5ce88360966c7aa1",
 "structpcpp_1_1_i_pv4_timestamp_option_value.html#aebdf61198a25c376676deec6fc6be0ef",
-"structpcpp_1_1icmp__time__exceeded.html"
+"structpcpp_1_1icmp__router__advertisement__hdr.html#aadfebe1e44b051e3a22dedfa32bec6c5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

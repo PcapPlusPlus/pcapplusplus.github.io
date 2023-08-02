@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"structpcpp_1_1icmp__router__advertisement__hdr.html#aadfebe1e44b051e3a22dedfa32bec6c5":[3,0,0,69,1],
 "structpcpp_1_1icmp__time__exceeded.html":[3,0,0,70],
 "structpcpp_1_1icmp__time__exceeded.html#aabe0b87bdc760c4aca3b9da3d3caf0b9":[3,0,0,70,0],
 "structpcpp_1_1icmp__timestamp__request.html":[3,0,0,71],
