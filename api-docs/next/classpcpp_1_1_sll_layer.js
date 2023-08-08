@@ -8,6 +8,6 @@ var classpcpp_1_1_sll_layer =
     [ "getSllHeader", "classpcpp_1_1_sll_layer.html#a7fbe447652dd001d7fa9fbccdae1e0c6", null ],
     [ "parseNextLayer", "classpcpp_1_1_sll_layer.html#a77739a7d98720c05eab96a09ce54f12d", null ],
     [ "setLinkLayerAddr", "classpcpp_1_1_sll_layer.html#a78053b4433c4378a004eda79cbb29d46", null ],
-    [ "setMacAddressAsLinkLayer", "classpcpp_1_1_sll_layer.html#aae8f13d547c763ec186679f72e597766", null ],
+    [ "setMacAddressAsLinkLayer", "classpcpp_1_1_sll_layer.html#a5efc2f9a24fc3975cfd5b080597797d5", null ],
     [ "toString", "classpcpp_1_1_sll_layer.html#abca09b7c2b25ab257276b9d038cd8695", null ]
 ];

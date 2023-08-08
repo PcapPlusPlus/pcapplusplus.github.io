@@ -65,7 +65,7 @@ var searchData=
   ['arp_5frequest',['ARP_REQUEST',['../namespacepcpp.html#a078cb0044494dbde4a73f32cbff6184ea1af8ec60de1d0747f88beedec5bd7d87',1,'pcpp']]],
   ['arpfilter',['ArpFilter',['../classpcpp_1_1_arp_filter.html',1,'pcpp::ArpFilter'],['../classpcpp_1_1_arp_filter.html#a26aef5e3b1f92d4cd3764d6f8d2660dd',1,'pcpp::ArpFilter::ArpFilter()']]],
   ['arphdr',['arphdr',['../structpcpp_1_1arphdr.html',1,'pcpp']]],
-  ['arphrd_5ftype',['ARPHRD_type',['../structpcpp_1_1sll__header.html#a8f8dbb002e720ec7700bc617d2429ab2',1,'pcpp::sll_header']]],
+  ['arphrd_5ftype',['ARPHRD_type',['../structpcpp_1_1sll2__header.html#a0910aa3d344585bf185eab704db35334',1,'pcpp::sll2_header::ARPHRD_type()'],['../structpcpp_1_1sll__header.html#a8f8dbb002e720ec7700bc617d2429ab2',1,'pcpp::sll_header::ARPHRD_type()']]],
   ['arplayer',['ArpLayer',['../classpcpp_1_1_arp_layer.html',1,'pcpp::ArpLayer'],['../classpcpp_1_1_arp_layer.html#aa067af1ff96f04fa052ce58b48fedf16',1,'pcpp::ArpLayer::ArpLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)'],['../classpcpp_1_1_arp_layer.html#a05f24931a4238bbf1246764b8e6e6b2e',1,'pcpp::ArpLayer::ArpLayer(ArpOpcode opCode, const MacAddress &amp;senderMacAddr, const MacAddress &amp;targetMacAddr, const IPv4Address &amp;senderIpAddr, const IPv4Address &amp;targetIpAddr)']]],
   ['arplayer_2eh',['ArpLayer.h',['../_arp_layer_8h.html',1,'']]],
   ['arpopcode',['ArpOpcode',['../namespacepcpp.html#a078cb0044494dbde4a73f32cbff6184e',1,'pcpp']]],

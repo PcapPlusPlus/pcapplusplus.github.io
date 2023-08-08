@@ -65,6 +65,7 @@ var searchData=
   ['linktype_5flinux_5firda',['LINKTYPE_LINUX_IRDA',['../namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea7ef0dac8dfcadabe16a7cb496315b57a',1,'pcpp']]],
   ['linktype_5flinux_5flapd',['LINKTYPE_LINUX_LAPD',['../namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02beaa76d59e548e2eb2edd78000fb8a5bf9c',1,'pcpp']]],
   ['linktype_5flinux_5fsll',['LINKTYPE_LINUX_SLL',['../namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea2a073b806eadc7af44a8fda4e1848044',1,'pcpp']]],
+  ['linktype_5flinux_5fsll2',['LINKTYPE_LINUX_SLL2',['../namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea31abc2862b6b2028178dc29039563537',1,'pcpp']]],
   ['linktype_5floop',['LINKTYPE_LOOP',['../namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea095bd7102e63a18e349517383c9363d7',1,'pcpp']]],
   ['linktype_5fltalk',['LINKTYPE_LTALK',['../namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02beaec94f41c5d5abf27466f9c1b364ea88f',1,'pcpp']]],
   ['linktype_5fmpeg_5f2_5fts',['LINKTYPE_MPEG_2_TS',['../namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea41d9113d1fef429776f818009a710670',1,'pcpp']]],
