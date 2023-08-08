@@ -38,6 +38,7 @@
 *   - pcpp::PacketTrailerLayer, PacketTrailerLayer.h - packet trailer (a.k.a footer or padding)
 *   - pcpp::PPPoESessionLayer, pcpp::PPPoEDiscoveryLayer, PPPoELayer.h - PPPoE protocol
 *   - pcpp::SllLayer, SllLayer.h - SLL protocol (Linux cooked capture)
+*   - pcpp::Sll2Layer, Sll2Layer.h - SLL2 protocol (Linux cooked capture v2)
 *   - pcpp::StpLayer, StpLayer.h - STP protocol
 *   - pcpp::VlanLayer, VlanLayer.h - VLAN protocol
 *   - pcpp::VxlanLayer, VxlanLayer.h - VXLAN protocol
