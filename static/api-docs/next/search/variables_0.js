@@ -15,7 +15,7 @@ var searchData=
   ['alertdescription',['alertDescription',['../structpcpp_1_1ssl__tls__alert.html#ac4c45f54bcc165e118945b4abd60c453',1,'pcpp::ssl_tls_alert']]],
   ['alertlevel',['alertLevel',['../structpcpp_1_1ssl__tls__alert.html#a0acc72153dcbe55e0f453461cd856346',1,'pcpp::ssl_tls_alert']]],
   ['arp',['ARP',['../namespacepcpp.html#aead5ebeefddfe9c93b70ede2c99cea9d',1,'pcpp']]],
-  ['arphrd_5ftype',['ARPHRD_type',['../structpcpp_1_1sll__header.html#a8f8dbb002e720ec7700bc617d2429ab2',1,'pcpp::sll_header']]],
+  ['arphrd_5ftype',['ARPHRD_type',['../structpcpp_1_1sll2__header.html#a0910aa3d344585bf185eab704db35334',1,'pcpp::sll2_header::ARPHRD_type()'],['../structpcpp_1_1sll__header.html#a8f8dbb002e720ec7700bc617d2429ab2',1,'pcpp::sll_header::ARPHRD_type()']]],
   ['authenticationheader',['AuthenticationHeader',['../namespacepcpp.html#a39b3b994d91261bc96f7ff25172ce9d0',1,'pcpp']]],
   ['authenticator',['authenticator',['../structpcpp_1_1radius__header.html#a12baeb5d7b2bcece1043131e1515663b',1,'pcpp::radius_header']]],
   ['authenticdata',['authenticData',['../structpcpp_1_1dnshdr.html#ac7e51ef9ae04bec1e3ce7530e39d53d8',1,'pcpp::dnshdr']]],

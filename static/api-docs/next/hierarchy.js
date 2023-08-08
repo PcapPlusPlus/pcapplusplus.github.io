@@ -145,6 +145,7 @@ var hierarchy =
             [ "pcpp::FtpResponseLayer", "classpcpp_1_1_ftp_response_layer.html", null ]
           ] ]
         ] ],
+        [ "pcpp::Sll2Layer", "classpcpp_1_1_sll2_layer.html", null ],
         [ "pcpp::SllLayer", "classpcpp_1_1_sll_layer.html", null ],
         [ "pcpp::SomeIpLayer", "classpcpp_1_1_some_ip_layer.html", [
           [ "pcpp::SomeIpSdLayer", "classpcpp_1_1_some_ip_sd_layer.html", null ],
@@ -314,6 +315,7 @@ var hierarchy =
     [ "pcpp::SSLServerHelloMessage::ServerHelloTLSFingerprint", "structpcpp_1_1_s_s_l_server_hello_message_1_1_server_hello_t_l_s_fingerprint.html", null ],
     [ "pcpp::SipRequestFirstLine", "classpcpp_1_1_sip_request_first_line.html", null ],
     [ "pcpp::SipResponseFirstLine", "classpcpp_1_1_sip_response_first_line.html", null ],
+    [ "pcpp::sll2_header", "structpcpp_1_1sll2__header.html", null ],
     [ "pcpp::sll_header", "structpcpp_1_1sll__header.html", null ],
     [ "pcpp::SomeIpLayer::someiphdr", "structpcpp_1_1_some_ip_layer_1_1someiphdr.html", [
       [ "pcpp::SomeIpTpLayer::someiptphdr", "structpcpp_1_1_some_ip_tp_layer_1_1someiptphdr.html", null ]

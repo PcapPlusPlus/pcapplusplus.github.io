@@ -149,6 +149,9 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 <li>getArpHeader()
 : <a class="el" href="classpcpp_1_1_arp_layer.html#a419792a83d567400e246bbb73c906b18">pcpp::ArpLayer</a>
 </li>
+<li>getArphrdType()
+: <a class="el" href="classpcpp_1_1_sll2_layer.html#aa1df2c296a8252cd65045af2849c7a39">pcpp::Sll2Layer</a>
+</li>
 <li>getAttribute()
 : <a class="el" href="classpcpp_1_1_radius_layer.html#a07b3660bd98ea613c7c74fcb9eec90ec">pcpp::RadiusLayer</a>
 </li>
@@ -724,6 +727,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 , <a class="el" href="classpcpp_1_1_p_p_po_e_session_layer.html#aee56e7343bb58bc0ce8a9603da239857">pcpp::PPPoESessionLayer</a>
 , <a class="el" href="classpcpp_1_1_radius_layer.html#aea94882354f164fe482111fc6af15c5d">pcpp::RadiusLayer</a>
 , <a class="el" href="classpcpp_1_1_rapid_stp_layer.html#a393235cf902d21c6bbd1422c9e8c6a21">pcpp::RapidStpLayer</a>
+, <a class="el" href="classpcpp_1_1_sll2_layer.html#a09921002890df3f6bc6bd90c7d783c3d">pcpp::Sll2Layer</a>
 , <a class="el" href="classpcpp_1_1_sll_layer.html#a29241783ec9dfd7fba06eb3c8837d0d1">pcpp::SllLayer</a>
 , <a class="el" href="classpcpp_1_1_some_ip_layer.html#afcc09ca8735bd1bfbb2204d243471dbb">pcpp::SomeIpLayer</a>
 , <a class="el" href="classpcpp_1_1_s_s_h_encrypted_message.html#aebe9e5270fc74868a3abde653a1866fc">pcpp::SSHEncryptedMessage</a>
@@ -807,6 +811,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 </li>
 <li>getInterfaceIndex()
 : <a class="el" href="classpcpp_1_1_pf_ring_device.html#a9d939956173c6246d02aa5bcbc576c0f">pcpp::PfRingDevice</a>
+, <a class="el" href="classpcpp_1_1_sll2_layer.html#aebb79efdca720c7c9581b64b3dd274f9">pcpp::Sll2Layer</a>
 </li>
 <li>getInterfaceVersion()
 : <a class="el" href="classpcpp_1_1_some_ip_layer.html#aaf3636a680a68f38aabff814110f492d">pcpp::SomeIpLayer</a>
@@ -897,8 +902,17 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 <li>getLengthField()
 : <a class="el" href="classpcpp_1_1_some_ip_layer.html#a9f574885ac4553befacc84126106a1ab">pcpp::SomeIpLayer</a>
 </li>
+<li>getLinkLayerAddr()
+: <a class="el" href="classpcpp_1_1_sll2_layer.html#a1cfdcc75779f15d3efb7f03050e6e113">pcpp::Sll2Layer</a>
+</li>
 <li>getLinkLayerAddress()
 : <a class="el" href="classpcpp_1_1_n_d_p_neighbor_solicitation_layer.html#aa4de53905a51f5458819be1415355d8b">pcpp::NDPNeighborSolicitationLayer</a>
+</li>
+<li>getLinkLayerAddrLen()
+: <a class="el" href="classpcpp_1_1_sll2_layer.html#a0a80b6da560f7e4a7d0e951574fc6698">pcpp::Sll2Layer</a>
+</li>
+<li>getLinkLayerAsMacAddress()
+: <a class="el" href="classpcpp_1_1_sll2_layer.html#aaf640bff587ec43eaed7d023e2a5d2c5">pcpp::Sll2Layer</a>
 </li>
 <li>getLinkLayerType()
 : <a class="el" href="classpcpp_1_1_pcap_file_reader_device.html#af37f3fb4fc7e57b56657435615c0cb27">pcpp::PcapFileReaderDevice</a>
@@ -1242,7 +1256,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 <li>getOptionData()
 : <a class="el" href="classpcpp_1_1_dhcp_layer.html#acd658b6d22bb6687e2722ae7bd543ca9">pcpp::DhcpLayer</a>
 , <a class="el" href="classpcpp_1_1_dhcp_v6_layer.html#a7b0ad1097a3044314789a84cc3511ddc">pcpp::DhcpV6Layer</a>
-, <a class="el" href="classpcpp_1_1_telnet_layer.html#abed6573561650db6599a7db1b75f27e1">pcpp::TelnetLayer</a>
+, <a class="el" href="classpcpp_1_1_telnet_layer.html#a65b707b8451ed49e9d53ca50bb9cdb25">pcpp::TelnetLayer</a>
 </li>
 <li>getOptions()
 : <a class="el" href="classpcpp_1_1_some_ip_sd_layer.html#af3710991e750393be51163dfca040498">pcpp::SomeIpSdLayer</a>
@@ -1298,6 +1312,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 , <a class="el" href="classpcpp_1_1_radius_layer.html#a7b470d5ae75f95489c5d56bdb3b94f8d">pcpp::RadiusLayer</a>
 , <a class="el" href="classpcpp_1_1_sdp_layer.html#aab3f6a256318dbfb96439d6b48807b81">pcpp::SdpLayer</a>
 , <a class="el" href="classpcpp_1_1_sip_layer.html#a1761eca73db8c6f1a5f8a54d89cb4d2d">pcpp::SipLayer</a>
+, <a class="el" href="classpcpp_1_1_sll2_layer.html#af02becb8842b840cd73dc648fd0579ac">pcpp::Sll2Layer</a>
 , <a class="el" href="classpcpp_1_1_sll_layer.html#ad9d6afb35c37187ef04aebca4d7965ac">pcpp::SllLayer</a>
 , <a class="el" href="classpcpp_1_1_some_ip_layer.html#a20f16486abe0fa16bfdd0cfd8936dfe5">pcpp::SomeIpLayer</a>
 , <a class="el" href="classpcpp_1_1_s_s_h_layer.html#a632810e9707896fefcd7b7c3142b0d88">pcpp::SSHLayer</a>
@@ -1320,6 +1335,9 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 </li>
 <li>getPacketTimeStamp()
 : <a class="el" href="classpcpp_1_1_raw_packet.html#a6ccee8471600cd6ed14c184b3252b469">pcpp::RawPacket</a>
+</li>
+<li>getPacketType()
+: <a class="el" href="classpcpp_1_1_sll2_layer.html#a32755e1df71c56fb6cbf8e5ca8281f8a">pcpp::Sll2Layer</a>
 </li>
 <li>getPaddingLength()
 : <a class="el" href="classpcpp_1_1_s_s_h_handshake_message.html#a1baaaa3f4cb9b89ef8ed65800077a19c">pcpp::SSHHandshakeMessage</a>
@@ -1450,6 +1468,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 : <a class="el" href="classpcpp_1_1_i_p_reassembly_1_1_i_pv4_packet_key.html#a48cfba0896917ecb38c57ec8cf6bdba9">pcpp::IPReassembly::IPv4PacketKey</a>
 , <a class="el" href="classpcpp_1_1_i_p_reassembly_1_1_i_pv6_packet_key.html#a8bd1215cb8650f04f6c7f413560fe721">pcpp::IPReassembly::IPv6PacketKey</a>
 , <a class="el" href="classpcpp_1_1_i_p_reassembly_1_1_packet_key.html#a36810a692eb627629bf0db6ad04c8fb1">pcpp::IPReassembly::PacketKey</a>
+, <a class="el" href="classpcpp_1_1_sll2_layer.html#a4f0891c288960d2ef6f6768e1f4883c6">pcpp::Sll2Layer</a>
 </li>
 <li>getProtocolVersion()
 : <a class="el" href="classpcpp_1_1_some_ip_layer.html#ad5beea6883c4f0500185e841285b3bc0">pcpp::SomeIpLayer</a>
@@ -1532,10 +1551,10 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 : <a class="el" href="classpcpp_1_1_multiple_stp_layer.html#afc2405a0cdb775a075195dfb23265a71">pcpp::MultipleStpLayer</a>
 </li>
 <li>getRemoteDeviceByIP()
-: <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#ad6b9e1731e22c6ebb36dae19b3a63acf">pcpp::PcapRemoteDeviceList</a>
+: <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#afcf906d4e0ce47f1a8c2d7a542972f6a">pcpp::PcapRemoteDeviceList</a>
 </li>
 <li>getRemoteDeviceList()
-: <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a9ad4f27a5e10b9b599b7a2a6412a398e">pcpp::PcapRemoteDeviceList</a>
+: <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#af9327198897d5b414815455435b9c037">pcpp::PcapRemoteDeviceList</a>
 </li>
 <li>getRemoteMachineIpAddress()
 : <a class="el" href="classpcpp_1_1_pcap_remote_device.html#a6db1c8e28807df8da42d685dd3ba22f4">pcpp::PcapRemoteDevice</a>
@@ -1682,6 +1701,9 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 , <a class="el" href="classpcpp_1_1_l_r_u_list.html#a98fd18ddc07c07dfa1ad1d4866389ee9">pcpp::LRUList&lt; T &gt;</a>
 , <a class="el" href="classpcpp_1_1_sip_request_first_line.html#a670a4ddc01ad92bff3d4ec913569942f">pcpp::SipRequestFirstLine</a>
 , <a class="el" href="classpcpp_1_1_sip_response_first_line.html#a795440a79ae4a93cc24731ac16050da0">pcpp::SipResponseFirstLine</a>
+</li>
+<li>getSll2Header()
+: <a class="el" href="classpcpp_1_1_sll2_layer.html#abaa0bd79a3b72bbb4d28c64db3f14a81">pcpp::Sll2Layer</a>
 </li>
 <li>getSllHeader()
 : <a class="el" href="classpcpp_1_1_sll_layer.html#a7fbe447652dd001d7fa9fbccdae1e0c6">pcpp::SllLayer</a>
@@ -2050,7 +2072,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 : <a class="el" href="classpcpp_1_1_gtp_v1_layer_1_1_gtp_extension.html#a71069bba8bf86b2c8bb30a1a944f76a7">pcpp::GtpV1Layer::GtpExtension</a>
 </li>
 <li>GtpV1Layer()
-: <a class="el" href="classpcpp_1_1_gtp_v1_layer.html#adeb4912ab05772b47ecd3cd64e1a8549">pcpp::GtpV1Layer</a>
+: <a class="el" href="classpcpp_1_1_gtp_v1_layer.html#a400504112c4045cd6eb09f06734e168a">pcpp::GtpV1Layer</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -2058,7 +2080,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Aug 4 2023 02:26:44 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Aug 8 2023 01:10:42 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

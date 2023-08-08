@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['packet_5ftype',['packet_type',['../structpcpp_1_1sll__header.html#a915dd77d81fbf0e815fc8e7e268582b8',1,'pcpp::sll_header']]],
+  ['packet_5ftype',['packet_type',['../structpcpp_1_1sll2__header.html#aef2cca7ca234595ea4450146104337de',1,'pcpp::sll2_header::packet_type()'],['../structpcpp_1_1sll__header.html#a915dd77d81fbf0e815fc8e7e268582b8',1,'pcpp::sll_header::packet_type()']]],
   ['packetbuffersize',['packetBufferSize',['../structpcpp_1_1_pcap_live_device_1_1_device_configuration.html#a8e3d6ec76ba3addc0bbe11838f925f9c',1,'pcpp::PcapLiveDevice::DeviceConfiguration']]],
   ['packetbuffertimeoutms',['packetBufferTimeoutMs',['../structpcpp_1_1_pcap_live_device_1_1_device_configuration.html#a0811c333b0b3b50f41c7826d20c9bfde',1,'pcpp::PcapLiveDevice::DeviceConfiguration']]],
   ['packets',['packets',['../structpcpp_1_1_dpdk_device_1_1_rx_tx_stats.html#a39ba9e581d7353a484f575487a334fc8',1,'pcpp::DpdkDevice::RxTxStats']]],
@@ -30,7 +30,7 @@ var searchData=
   ['prefix',['prefix',['../structpcpp_1_1_bgp_update_message_layer_1_1prefix__and__ip.html#a053cb9509acbd3e82eb37de9d34fa87e',1,'pcpp::BgpUpdateMessageLayer::prefix_and_ip']]],
   ['priority',['priority',['../structpcpp_1_1vrrp__header.html#af015f8b1a6ceaa4607779a98491c8c8b',1,'pcpp::vrrp_header']]],
   ['protocol',['protocol',['../structpcpp_1_1gre__basic__header.html#ad64488dc863563820f7541dfdb4ee910',1,'pcpp::gre_basic_header::protocol()'],['../structpcpp_1_1ppp__pptp__header.html#a9e49420e46bdc801452f9c30ef5b8659',1,'pcpp::ppp_pptp_header::protocol()'],['../structpcpp_1_1iphdr.html#a9600c9b8e380ba5468763cdf648d043c',1,'pcpp::iphdr::protocol()']]],
-  ['protocol_5ftype',['protocol_type',['../structpcpp_1_1sll__header.html#a133d6e18091bafa51d1a4558a9f6bda9',1,'pcpp::sll_header']]],
+  ['protocol_5ftype',['protocol_type',['../structpcpp_1_1sll2__header.html#a866d180e1004540f88e57d47b5d46a54',1,'pcpp::sll2_header::protocol_type()'],['../structpcpp_1_1sll__header.html#a133d6e18091bafa51d1a4558a9f6bda9',1,'pcpp::sll_header::protocol_type()']]],
   ['protocolsize',['protocolSize',['../structpcpp_1_1arphdr.html#a36e89262f76da9f28beb86cdec632c8c',1,'pcpp::arphdr']]],
   ['protocoltype',['protocolType',['../structpcpp_1_1arphdr.html#ae729b0afe661b105ceb7e5996f37a662',1,'pcpp::arphdr::protocolType()'],['../structpcpp_1_1gtpv1__header.html#add48e4b8c81c5971ac4048b75c44e009',1,'pcpp::gtpv1_header::protocolType()']]],
   ['protocolversion',['protocolVersion',['../structpcpp_1_1_some_ip_layer_1_1someiphdr.html#a1f9350f20eb2be42aac946be97143808',1,'pcpp::SomeIpLayer::someiphdr']]],

@@ -57,6 +57,7 @@ var _protocol_type_8h =
     [ "SIPRequest", "_protocol_type_8h.html#adece8af5b11fbea2e56d432983d02a35", null ],
     [ "SIPResponse", "_protocol_type_8h.html#aff4d6cf6335201f8e9fc80ec7aedb6a7", null ],
     [ "SLL", "_protocol_type_8h.html#ab7deab0d461579ac6b32b6151c3d6cf3", null ],
+    [ "SLL2", "_protocol_type_8h.html#aa46b3308731e536f28b8d85df1a0ef7b", null ],
     [ "SomeIP", "_protocol_type_8h.html#a6acddf0ad6f4a154aafc0b3094e72185", null ],
     [ "SSH", "_protocol_type_8h.html#a8dc28246e6a15709973f07452cbb403b", null ],
     [ "SSL", "_protocol_type_8h.html#a71041ee0360477d36d480d25ea10dbe4", null ],

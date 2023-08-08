@@ -197,6 +197,8 @@ var namespacepcpp =
     [ "SipRequestLayer", "classpcpp_1_1_sip_request_layer.html", "classpcpp_1_1_sip_request_layer" ],
     [ "SipResponseFirstLine", "classpcpp_1_1_sip_response_first_line.html", "classpcpp_1_1_sip_response_first_line" ],
     [ "SipResponseLayer", "classpcpp_1_1_sip_response_layer.html", "classpcpp_1_1_sip_response_layer" ],
+    [ "sll2_header", "structpcpp_1_1sll2__header.html", "structpcpp_1_1sll2__header" ],
+    [ "Sll2Layer", "classpcpp_1_1_sll2_layer.html", "classpcpp_1_1_sll2_layer" ],
     [ "sll_header", "structpcpp_1_1sll__header.html", "structpcpp_1_1sll__header" ],
     [ "SllLayer", "classpcpp_1_1_sll_layer.html", "classpcpp_1_1_sll_layer" ],
     [ "SnoopFileReaderDevice", "classpcpp_1_1_snoop_file_reader_device.html", "classpcpp_1_1_snoop_file_reader_device" ],
