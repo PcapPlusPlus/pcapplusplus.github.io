@@ -60,6 +60,7 @@ var namespacepcpp =
     [ "HttpRequestLayer", "classpcpp_1_1_http_request_layer.html", "classpcpp_1_1_http_request_layer" ],
     [ "HttpResponseFirstLine", "classpcpp_1_1_http_response_first_line.html", "classpcpp_1_1_http_response_first_line" ],
     [ "HttpResponseLayer", "classpcpp_1_1_http_response_layer.html", "classpcpp_1_1_http_response_layer" ],
+    [ "HttpResponseStatusCode", "classpcpp_1_1_http_response_status_code.html", "classpcpp_1_1_http_response_status_code" ],
     [ "icmp_address_mask_request", "structpcpp_1_1icmp__address__mask__request.html", "structpcpp_1_1icmp__address__mask__request" ],
     [ "icmp_destination_unreachable", "structpcpp_1_1icmp__destination__unreachable.html", "structpcpp_1_1icmp__destination__unreachable" ],
     [ "icmp_echo_hdr", "structpcpp_1_1icmp__echo__hdr.html", "structpcpp_1_1icmp__echo__hdr" ],

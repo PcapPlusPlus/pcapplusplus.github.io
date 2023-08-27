@@ -159,7 +159,7 @@ var searchData=
   ['setsrcipv4address',['setSrcIPv4Address',['../classpcpp_1_1_i_pv4_layer.html#a73890160a9c3a32df28aa6cb0f4a752f',1,'pcpp::IPv4Layer']]],
   ['setsrcipv6address',['setSrcIPv6Address',['../classpcpp_1_1_i_pv6_layer.html#abbebada9aa964bccf877ab3f0b7472a5',1,'pcpp::IPv6Layer']]],
   ['setstarttime',['setStartTime',['../structpcpp_1_1_connection_data.html#aa2cae679edbe342cbc5b4463e774949e',1,'pcpp::ConnectionData']]],
-  ['setstatuscode',['setStatusCode',['../classpcpp_1_1_ftp_response_layer.html#a60b21691fa71b3634d0ff8b2a5cc9ad4',1,'pcpp::FtpResponseLayer::setStatusCode()'],['../classpcpp_1_1_http_response_first_line.html#addb0a9537ba67e4f1d86e11fcd71d02c',1,'pcpp::HttpResponseFirstLine::setStatusCode()'],['../classpcpp_1_1_sip_response_first_line.html#a2ddb5a023bc342946fbbd691ec51c2ed',1,'pcpp::SipResponseFirstLine::setStatusCode()']]],
+  ['setstatuscode',['setStatusCode',['../classpcpp_1_1_ftp_response_layer.html#a60b21691fa71b3634d0ff8b2a5cc9ad4',1,'pcpp::FtpResponseLayer::setStatusCode()'],['../classpcpp_1_1_http_response_first_line.html#a4fd446ce4ea49bc7340494f79dad5a12',1,'pcpp::HttpResponseFirstLine::setStatusCode()'],['../classpcpp_1_1_sip_response_first_line.html#a2ddb5a023bc342946fbbd691ec51c2ed',1,'pcpp::SipResponseFirstLine::setStatusCode()']]],
   ['setstatusoption',['setStatusOption',['../classpcpp_1_1_ftp_response_layer.html#ac4057d918a2a4d87a53f15565e58b630',1,'pcpp::FtpResponseLayer']]],
   ['setstratum',['setStratum',['../classpcpp_1_1_ntp_layer.html#a1ecc3730bc2570eb357b1c3c4207bfff',1,'pcpp::NtpLayer']]],
   ['settargetaddr',['setTargetAddr',['../classpcpp_1_1_wake_on_lan_layer.html#aa596d99b57f73b1436be3db1bf127c13',1,'pcpp::WakeOnLanLayer']]],

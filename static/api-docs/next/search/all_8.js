@@ -315,6 +315,7 @@ var searchData=
   ['istelnetport',['isTelnetPort',['../classpcpp_1_1_telnet_layer.html#ab0859090e44f4fb8ceb0363c7a19b6f4',1,'pcpp::TelnetLayer']]],
   ['istpktport',['isTpktPort',['../classpcpp_1_1_tpkt_layer.html#a5ca8ff5a93cdc0410fec9bd12ef0b9b7',1,'pcpp::TpktLayer']]],
   ['istypeof',['isTypeOf',['../classpcpp_1_1_i_dns_resource_data.html#a8a0aba99fc544c523a10ed41b3fc80a4',1,'pcpp::IDnsResourceData::isTypeOf()'],['../classpcpp_1_1_dns_resource_data_ptr.html#ad8a149d31dc9e4081cd1db433ee06052',1,'pcpp::DnsResourceDataPtr::isTypeOf()']]],
+  ['isunsupportedcode',['isUnsupportedCode',['../classpcpp_1_1_http_response_status_code.html#a1cc5f1e64e42bcd9622072d53142855d',1,'pcpp::HttpResponseStatusCode']]],
   ['isvalid',['isValid',['../classpcpp_1_1_i_pv4_address.html#aa8132c15a9e74f3407d4dcd510f35cd6',1,'pcpp::IPv4Address::isValid()'],['../classpcpp_1_1_i_pv6_address.html#a7f2135107f3212d69f436c1edc367c0a',1,'pcpp::IPv6Address::isValid()'],['../classpcpp_1_1_i_p_address.html#a87c99d4671e64cc23ce3824c35290abf',1,'pcpp::IPAddress::isValid()'],['../classpcpp_1_1_mac_address.html#a16c78d3efcb5a63bc1bb95f98d418ca0',1,'pcpp::MacAddress::isValid()']]],
   ['isvirtual',['isVirtual',['../classpcpp_1_1_dpdk_device.html#ae45341ad236f07e92be61b33325aa3c1',1,'pcpp::DpdkDevice']]],
   ['isvxlanport',['isVxlanPort',['../classpcpp_1_1_vxlan_layer.html#a9de6b313716e3a00b7a6283d1f6998c4',1,'pcpp::VxlanLayer']]],
