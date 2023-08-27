@@ -7,5 +7,6 @@ var searchData=
   ['httprequestlayer',['HttpRequestLayer',['../classpcpp_1_1_http_request_layer.html',1,'pcpp']]],
   ['httpresponsefirstline',['HttpResponseFirstLine',['../classpcpp_1_1_http_response_first_line.html',1,'pcpp']]],
   ['httpresponsefirstlineexception',['HttpResponseFirstLineException',['../classpcpp_1_1_http_response_first_line_1_1_http_response_first_line_exception.html',1,'pcpp::HttpResponseFirstLine']]],
-  ['httpresponselayer',['HttpResponseLayer',['../classpcpp_1_1_http_response_layer.html',1,'pcpp']]]
+  ['httpresponselayer',['HttpResponseLayer',['../classpcpp_1_1_http_response_layer.html',1,'pcpp']]],
+  ['httpresponsestatuscode',['HttpResponseStatusCode',['../classpcpp_1_1_http_response_status_code.html',1,'pcpp']]]
 ];

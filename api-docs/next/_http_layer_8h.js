@@ -2,6 +2,7 @@ var _http_layer_8h =
 [
     [ "HttpMessage", "classpcpp_1_1_http_message.html", "classpcpp_1_1_http_message" ],
     [ "HttpRequestLayer", "classpcpp_1_1_http_request_layer.html", "classpcpp_1_1_http_request_layer" ],
+    [ "HttpResponseStatusCode", "classpcpp_1_1_http_response_status_code.html", "classpcpp_1_1_http_response_status_code" ],
     [ "HttpResponseLayer", "classpcpp_1_1_http_response_layer.html", "classpcpp_1_1_http_response_layer" ],
     [ "HttpRequestFirstLine", "classpcpp_1_1_http_request_first_line.html", "classpcpp_1_1_http_request_first_line" ],
     [ "HttpRequestFirstLineException", "classpcpp_1_1_http_request_first_line_1_1_http_request_first_line_exception.html", null ],

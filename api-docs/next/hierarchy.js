@@ -64,6 +64,7 @@ var hierarchy =
     [ "pcpp::HeaderField", "classpcpp_1_1_header_field.html", null ],
     [ "pcpp::HttpRequestFirstLine", "classpcpp_1_1_http_request_first_line.html", null ],
     [ "pcpp::HttpResponseFirstLine", "classpcpp_1_1_http_response_first_line.html", null ],
+    [ "pcpp::HttpResponseStatusCode", "classpcpp_1_1_http_response_status_code.html", null ],
     [ "pcpp::icmp_echo_request", "structpcpp_1_1icmp__echo__request.html", null ],
     [ "pcpp::icmp_router_address_structure", "structpcpp_1_1icmp__router__address__structure.html", null ],
     [ "pcpp::icmp_router_advertisement", "structpcpp_1_1icmp__router__advertisement.html", null ],
