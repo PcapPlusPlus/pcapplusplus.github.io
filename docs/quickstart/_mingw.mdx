@@ -1,49 +1,51 @@
 import ReleaseLink from '@site/src/components/ReleaseLink';
+import CodeLink from '@site/src/components/CodeLink';
 
 ### Step 1 - install PcapPlusPlus
 
 Before installing PcapPlusPlus make sure you have the prerequisites installed for [MinGW-w64](./install/mingw#prerequisites-for-building-with-mingw-w64).
 
-If you have MinGW-w64 with GCC version 6.3.0 you can download a pre-compiled package from the <ReleaseLink/>.
+Pre-compiled packages are available for MinGW-w64. You can find them under the <ReleaseLink/>.
 
-Otherwise you need to [build PcapPlusPlus from source](./install/mingw).
+Make sure your MinGW-w64 GCC version matches the pre-compiled package. Otherwise you need to [build PcapPlusPlus from source](./install/mingw).
 
 ### Step 2 - create your first app
 
 If you downloaded a pre-compiled package go to: `Drive:\path\to\your\package\example-app`.
 
-If you built it from source go to: `Drive:\path\to\pcapplusplus\source\Tutorials\Tutorial-HelloWorld`.
+If you built it from source, download the <CodeLink relativePath="/Examples/ExampleApp">ExampleApp</CodeLink> source files.
 
 Make sure you see the following files:
 
 ```shell
  |-- main.cpp
  |-- 1_packet.pcap
+ |-- CMakeLists.txt
 ```
 
 `main.cpp` is the example application we'll use.
 
 `1_packet.pcap` is a pcap file the app reads from.
 
-### Step 3 - create a Makefile
+`CMakeLists.txt` will help us build the app.
 
-If you downloaded a pre-compiled package you can find a Makefile in `Drive:\path\to\your\package\example-app`. This Makefile is already configured.
+### Step 3 - build and run your app
 
-If you built it from source:
+Configure CMake:
 
-- go to `Drive:\path\to\pcapplusplus\source\Tutorials\Tutorial-HelloWorld`
-- rename `Makefile.windows` to `Makefile`
-
-### Step 4 - build and run your app
-
-Run `make` to build the app:
-
-```shell
-C:\path\to\example\app>mingw32-make.exe
+```cmd
+cmake -G "MinGW Makefiles" -S . -B build -DPcapPlusPlus_ROOT=Drive:\path\to\your\package -DPCAP_ROOT=Drive:\path\to\npcap-sdk -DPacket_ROOT=Drive:\path\to\npcap-sdk
 ```
 
-An `.exe` file will be created which contains the compiled app. You can now run it and should be able to see the following output:
+Build the app:
 
-```shell
+```cmd
+cmake --build build
+```
+
+An executable file will be created which contains the compiled app. You can now run it and should be able to see the following output:
+
+```cmd
+example-app.exe
 Source IP is '10.0.0.138'; Dest IP is '10.0.0.1'
 ```
