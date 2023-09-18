@@ -107,8 +107,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a270b6153d32b56e7241a6fce4daa00c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2c50aa696e1c511821d3029c2c9f22f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_response_first_line.html#aa2c50aa696e1c511821d3029c2c9f22f">getStatusCodeString</a> () const</td></tr>
 <tr class="separator:aa2c50aa696e1c511821d3029c2c9f22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fd446ce4ea49bc7340494f79dad5a12"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_response_first_line.html#a4fd446ce4ea49bc7340494f79dad5a12">setStatusCode</a> (<a class="el" href="classpcpp_1_1_http_response_status_code.html">HttpResponseStatusCode</a> newStatusCode, std::string statusCodeString=&quot;&quot;)</td></tr>
-<tr class="separator:a4fd446ce4ea49bc7340494f79dad5a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca6f22cddd6cdafdfdd9325e0a4bffd9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_response_first_line.html#aca6f22cddd6cdafdfdd9325e0a4bffd9">setStatusCode</a> (const <a class="el" href="classpcpp_1_1_http_response_status_code.html">HttpResponseStatusCode</a> &amp;newStatusCode, const std::string &amp;statusCodeString)</td></tr>
+<tr class="separator:aca6f22cddd6cdafdfdd9325e0a4bffd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a405e658c0f537d9cebf7cd530e3d9059"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_response_first_line.html#a405e658c0f537d9cebf7cd530e3d9059">setStatusCode</a> (const <a class="el" href="classpcpp_1_1_http_response_status_code.html">HttpResponseStatusCode</a> &amp;newStatusCode)</td></tr>
+<tr class="separator:a405e658c0f537d9cebf7cd530e3d9059"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30a4b085ce065a918ad3373ac544ca7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcpp.html#a7680d508534c12b5ab8bcbe4cae06932">HttpVersion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_response_first_line.html#a30a4b085ce065a918ad3373ac544ca7c">getVersion</a> () const</td></tr>
 <tr class="separator:a30a4b085ce065a918ad3373ac544ca7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad38cc7272f790b1653cc1b7b4c58bec6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_response_first_line.html#ad38cc7272f790b1653cc1b7b4c58bec6">setVersion</a> (<a class="el" href="namespacepcpp.html#a7680d508534c12b5ab8bcbe4cae06932">HttpVersion</a> newVersion)</td></tr>
@@ -356,8 +358,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4fd446ce4ea49bc7340494f79dad5a12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fd446ce4ea49bc7340494f79dad5a12">&#9670;&nbsp;</a></span>setStatusCode()</h2>
+<a id="aca6f22cddd6cdafdfdd9325e0a4bffd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca6f22cddd6cdafdfdd9325e0a4bffd9">&#9670;&nbsp;</a></span>setStatusCode() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -365,14 +367,14 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">bool pcpp::HttpResponseFirstLine::setStatusCode </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classpcpp_1_1_http_response_status_code.html">HttpResponseStatusCode</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_http_response_status_code.html">HttpResponseStatusCode</a> &amp;&#160;</td>
           <td class="paramname"><em>newStatusCode</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>statusCodeString</em> = <code>&quot;&quot;</code>&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>statusCodeString</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -385,6 +387,32 @@ Static Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">newStatusCode</td><td>The new status code to set </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">statusCodeString</td><td>An optional parameter: set a non-default status code message (e.g "Bla Bla" instead of "Not Found"). If this parameter isn't supplied or supplied as empty string (""), the default message for the status code will be set </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if setting the status code was completed successfully, false otherwise </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>Use the other overload instead. </dd></dl>
+
+</div>
+</div>
+<a id="a405e658c0f537d9cebf7cd530e3d9059"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a405e658c0f537d9cebf7cd530e3d9059">&#9670;&nbsp;</a></span>setStatusCode() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::HttpResponseFirstLine::setStatusCode </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_http_response_status_code.html">HttpResponseStatusCode</a> &amp;&#160;</td>
+          <td class="paramname"><em>newStatusCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the status code </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">newStatusCode</td><td>The new status code to set </td></tr>
   </table>
   </dd>
 </dl>
@@ -422,7 +450,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_http_response_first_line.html">HttpResponseFirstLine</a></li>
-    <li class="footer">Generated on Sat Sep 16 2023 20:30:27 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Sep 18 2023 18:00:04 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

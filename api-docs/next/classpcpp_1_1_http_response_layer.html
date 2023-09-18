@@ -108,8 +108,10 @@ Inheritance diagram for pcpp::HttpResponseLayer:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a47e92e0f0065f5601b7e895b2321469b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_response_layer.html#a47e92e0f0065f5601b7e895b2321469b">HttpResponseLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_layer.html">Layer</a> *prevLayer, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet)</td></tr>
 <tr class="separator:a47e92e0f0065f5601b7e895b2321469b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd59ed096e2ebed5617552bfb37d61e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_response_layer.html#abd59ed096e2ebed5617552bfb37d61e6">HttpResponseLayer</a> (<a class="el" href="namespacepcpp.html#a7680d508534c12b5ab8bcbe4cae06932">HttpVersion</a> version, <a class="el" href="classpcpp_1_1_http_response_status_code.html">HttpResponseStatusCode</a> statusCode, std::string statusCodeString=&quot;&quot;)</td></tr>
-<tr class="separator:abd59ed096e2ebed5617552bfb37d61e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa291f3cd6289bf92258998ccdd7487ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_response_layer.html#aa291f3cd6289bf92258998ccdd7487ac">HttpResponseLayer</a> (<a class="el" href="namespacepcpp.html#a7680d508534c12b5ab8bcbe4cae06932">HttpVersion</a> version, const <a class="el" href="classpcpp_1_1_http_response_status_code.html">HttpResponseStatusCode</a> &amp;statusCode, const std::string &amp;statusCodeString)</td></tr>
+<tr class="separator:aa291f3cd6289bf92258998ccdd7487ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade1db35827d10621aa277c9b62642148"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_response_layer.html#ade1db35827d10621aa277c9b62642148">HttpResponseLayer</a> (<a class="el" href="namespacepcpp.html#a7680d508534c12b5ab8bcbe4cae06932">HttpVersion</a> version, const <a class="el" href="classpcpp_1_1_http_response_status_code.html">HttpResponseStatusCode</a> &amp;statusCode)</td></tr>
+<tr class="separator:ade1db35827d10621aa277c9b62642148"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af703a52f7688298d6ce5fae231264071"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_response_layer.html#af703a52f7688298d6ce5fae231264071">HttpResponseLayer</a> (const <a class="el" href="classpcpp_1_1_http_response_layer.html">HttpResponseLayer</a> &amp;other)</td></tr>
 <tr class="separator:af703a52f7688298d6ce5fae231264071"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7945a197547eb5819528502ea30a636"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_http_response_layer.html">HttpResponseLayer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_response_layer.html#ac7945a197547eb5819528502ea30a636">operator=</a> (const <a class="el" href="classpcpp_1_1_http_response_layer.html">HttpResponseLayer</a> &amp;other)</td></tr>
@@ -192,7 +194,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>Represents an HTTP response header and inherits all basic functionality of <a class="el" href="classpcpp_1_1_http_message.html">HttpMessage</a> and <a class="el" href="classpcpp_1_1_text_based_protocol_message.html">TextBasedProtocolMessage</a>. The functionality that is added for this class is the HTTP first line concept. An HTTP response has the following first line: <em>200 OK HTTP/1.1</em> Since it's not an "ordinary" HTTP field, it requires a special treatment and gets a class of it's own: <a class="el" href="classpcpp_1_1_http_response_first_line.html">HttpResponseFirstLine</a>. Unlike most L2-4 protocols, an HTTP response header can spread over more than 1 packet. PcapPlusPlus currently doesn't support a header that is spread over more than 1 packet so in such cases: 1) only the first packet will be parsed as <a class="el" href="classpcpp_1_1_http_response_layer.html">HttpResponseLayer</a> (the other packets won't be recognized as <a class="el" href="classpcpp_1_1_http_response_layer.html">HttpResponseLayer</a>) and 2) the HTTP header for the first packet won't be complete (as it continues in the following packets), this why PcapPlusPlus can indicate that HTTP response header is complete or not (doesn't end with "\r\n\r\n" or "\n\n") using <a class="el" href="classpcpp_1_1_text_based_protocol_message.html#a05cf5d4c1c076b719f7b3ad0b11efdfa">HttpMessage::isHeaderComplete()</a> </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a47e92e0f0065f5601b7e895b2321469b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47e92e0f0065f5601b7e895b2321469b">&#9670;&nbsp;</a></span>HttpResponseLayer() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a47e92e0f0065f5601b7e895b2321469b">&#9670;&nbsp;</a></span>HttpResponseLayer() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -240,11 +242,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="abd59ed096e2ebed5617552bfb37d61e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd59ed096e2ebed5617552bfb37d61e6">&#9670;&nbsp;</a></span>HttpResponseLayer() <span class="overload">[2/3]</span></h2>
+<a id="aa291f3cd6289bf92258998ccdd7487ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa291f3cd6289bf92258998ccdd7487ac">&#9670;&nbsp;</a></span>HttpResponseLayer() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">pcpp::HttpResponseLayer::HttpResponseLayer </td>
@@ -255,14 +260,14 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classpcpp_1_1_http_response_status_code.html">HttpResponseStatusCode</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_http_response_status_code.html">HttpResponseStatusCode</a> &amp;&#160;</td>
           <td class="paramname"><em>statusCode</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>statusCodeString</em> = <code>&quot;&quot;</code>&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>statusCodeString</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -270,6 +275,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>A constructor that allocates a new HTTP response header with only the first line filled. Object will be created without further fields. The user can then add fields using <a class="el" href="classpcpp_1_1_http_message.html#a10f4534ce8764aacae232c789bfa1884">addField()</a> methods </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -279,11 +289,55 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>Use other constructors instead. </dd></dl>
+
+</div>
+</div>
+<a id="ade1db35827d10621aa277c9b62642148"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade1db35827d10621aa277c9b62642148">&#9670;&nbsp;</a></span>HttpResponseLayer() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::HttpResponseLayer::HttpResponseLayer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacepcpp.html#a7680d508534c12b5ab8bcbe4cae06932">HttpVersion</a>&#160;</td>
+          <td class="paramname"><em>version</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_http_response_status_code.html">HttpResponseStatusCode</a> &amp;&#160;</td>
+          <td class="paramname"><em>statusCode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A constructor that allocates a new HTTP response header with only the first line filled. Object will be created without further fields. The user can then add fields using <a class="el" href="classpcpp_1_1_http_message.html#a10f4534ce8764aacae232c789bfa1884">addField()</a> methods </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">version</td><td>HTTP version to be used </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">statusCode</td><td>Status code to be used </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <a id="af703a52f7688298d6ce5fae231264071"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af703a52f7688298d6ce5fae231264071">&#9670;&nbsp;</a></span>HttpResponseLayer() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af703a52f7688298d6ce5fae231264071">&#9670;&nbsp;</a></span>HttpResponseLayer() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -454,7 +508,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_http_response_layer.html">HttpResponseLayer</a></li>
-    <li class="footer">Generated on Sat Sep 16 2023 20:30:27 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Sep 18 2023 18:00:04 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -86,8 +86,10 @@ var classpcpp_1_1_http_response_status_code =
       [ "Http599NetworkConnectTimeoutError", "classpcpp_1_1_http_response_status_code.html#ab95b1eaeb544f5eb1afabd0cdb3487b4a07e62148b67c86ec13311ff16652d635", null ],
       [ "HttpStatus1xxCodeUnknown", "classpcpp_1_1_http_response_status_code.html#ab95b1eaeb544f5eb1afabd0cdb3487b4ad36cb45a59f270ce1c56e8dccb372ee7", null ]
     ] ],
-    [ "HttpResponseStatusCode", "classpcpp_1_1_http_response_status_code.html#aa97b0498905b7cdf78cbf4bcf8e2f193", null ],
-    [ "HttpResponseStatusCode", "classpcpp_1_1_http_response_status_code.html#a2caabc6199d83d667f97f6fa87b89d75", null ],
+    [ "HttpResponseStatusCode", "classpcpp_1_1_http_response_status_code.html#afac32e0b0037d7665b0e1b349796750c", null ],
+    [ "HttpResponseStatusCode", "classpcpp_1_1_http_response_status_code.html#a36c82348162654a03a74ba94b3bab66e", null ],
+    [ "HttpResponseStatusCode", "classpcpp_1_1_http_response_status_code.html#a537afb59ddea3f8ed92f1d34e1d18e8f", null ],
+    [ "getMessage", "classpcpp_1_1_http_response_status_code.html#aa304552b8972452f4607af3864dfd85c", null ],
     [ "isUnsupportedCode", "classpcpp_1_1_http_response_status_code.html#a1cc5f1e64e42bcd9622072d53142855d", null ],
     [ "toInt", "classpcpp_1_1_http_response_status_code.html#a0387236ead376374baccf43c79fee651", null ],
     [ "toString", "classpcpp_1_1_http_response_status_code.html#a46a112a9c8249124faf5dbbac4dd5291", null ]
