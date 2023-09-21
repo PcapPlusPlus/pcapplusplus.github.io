@@ -1,0 +1,51 @@
+---
+title: Getting Started
+sidebar_position: 1
+hide_table_of_contents: true
+---
+
+**PcapPlusPlus** is a multi-platform C++ library for capturing, parsing and crafting of network packets. It is designed to be efficient, powerful and easy to use.
+
+PcapPlusPlus enables decoding and forging capabilities for a large variety of network protocols. It also provides easy to use C++ wrappers for the most popular packet processing engines such as [libpcap](https://www.tcpdump.org/), [WinPcap](https://www.winpcap.org/), [Npcap](https://nmap.org/npcap/) (WinPcap's successor), [DPDK](https://www.dpdk.org/) and [PF_RING](https://www.ntop.org/products/packet-capture/pf_ring/).
+
+import ReleaseButtonLink from '@site/src/components/ReleaseButtonLink';
+
+<ReleaseButtonLink />
+
+---
+
+## Quick Start
+
+This guide will help you install and build your first PcapPlusPlus application. You can find more information in the [Tutorials](./tutorials/intro) and in the [installation guide](./install).
+
+Please choose your platform:
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Linux from './quickstart/_linux.mdx';
+import MacOS from './quickstart/_macos.mdx';
+import MinGW from './quickstart/_mingw.mdx';
+import VS from './quickstart/_vs.mdx';
+import Android from './quickstart/_android.mdx';
+import FreeBSD from './quickstart/_freebsd.mdx';
+
+<Tabs>
+  <TabItem value="Linux">
+    <Linux />
+  </TabItem>
+  <TabItem value="MacOS">
+    <MacOS />
+  </TabItem>
+  <TabItem value="Windows - MinGW">
+    <MinGW />
+  </TabItem>
+  <TabItem value="Windows - Visual Studio">
+    <VS />
+  </TabItem>
+  <TabItem value="Android">
+    <Android />
+  </TabItem>
+  <TabItem value="FreeBSD">
+    <FreeBSD />
+  </TabItem>
+</Tabs>
