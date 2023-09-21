@@ -84,8 +84,8 @@ Available for: <ImageWithBaseUrl src="/img/os-logos/logo-windows.png" alt="drawi
 Each release of PcapPlusPlus ships with pre-compiled libraries for a variety of operating systems and GCC versions including:
 
 - Windows (MinGW-w64, Visual Studio)
-- Linux (multiple versions of Ubuntu, Fedora, CentOS)
-- MacOS (multiple versions combined with multiple Xcode versions)
+- Linux (multiple versions of Ubuntu, Fedora, CentOS, Alpine)
+- MacOS (multiple Xcode versions)
 - FreeBSD (multiple versions)
 
 Each package includes the following content:
@@ -93,19 +93,17 @@ Each package includes the following content:
 - Compiled **Common++**, **Packet++**, **Pcap++** libraries
 - PcapPlusPlus header files
 - Examples binaries
-- A makefile to include when building your app with PcapPlusPlus
-- A simple code example showing how to build applications using PcapPlusPlus compiled binaries
-
-There is an additional Linux package shipped with every release that contains the source code and installation scripts to automatically build and install PcapPlusPlus. Those scripts can be used on any Linux platform and include options to build PcapPlusPlus with DPDK or PF_RING.
+- CMake and pkgconfig files for building your app with PcapPlusPlus
+- A simple code example showing how to build applications using PcapPlusPlus compiled libraries
 
 ## Build From Source
 
 Download the source code for the latest version (**<ConstVal value={getRelease()}/>**) from GitHub which includes:
 
 - Source code for **Common++**, **Packet++**, **Pcap++**
-- Examples
+- Examples and tutorials
 - Unit tests
-- Configuration scripts for all platforms
+- CMakeLists file to build all source code
 
 <p>
   <ButtonLink
