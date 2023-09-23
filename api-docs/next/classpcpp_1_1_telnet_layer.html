@@ -106,108 +106,108 @@ Inheritance diagram for pcpp::TelnetLayer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a974ed00d860cbf61222159edb5194ac8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8">TelnetCommand</a> { <br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8ac3db468f809c7e939b40daeca2dac33e">TelnetCommandEndOfPacket</a> = -1, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8a381aa0e0ef2d3eaae8bd9a9018c1490a">EndOfFile</a> = 236, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8aef71e411c01ce0ea0d2191d5c57da743">Suspend</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8a29a58f7d85426b16fbc022fd7e862b71">Abort</a>, 
+<tr class="memitem:abe18a98c3b5908e72f446e52042ba589"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589">TelnetCommand</a> : int { <br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589a11f501615c77a0eb9d18a89c0360ce29">TelnetCommand::TelnetCommandEndOfPacket</a> = -1, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589a9556e151da49cd4bcf0352857cb33509">TelnetCommand::EndOfFile</a> = 236, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589ab3834d6f7a63e5e750e0ca5ecf31e3b9">TelnetCommand::Suspend</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589a727b63583e01fa2b3952dab580c84dc2">TelnetCommand::Abort</a>, 
 <br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8afcb0ad30377a0c33ab1ffd68ed237abb">EndOfRecordCommand</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8a62b6606cb6ffa06461b49a6f8c5af2bb">SubnegotiationEnd</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8af1597b6eb1b8cf777ae878c8eca8426c">NoOperation</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8a99b0b0d558f061fa18e8004968de4ac5">DataMark</a>, 
+&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589a99a9fae1646ba0d5d7c567697f62c975">TelnetCommand::EndOfRecordCommand</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589ae37518ff235a868c41d9f7516e5bc4d2">TelnetCommand::SubnegotiationEnd</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589a621666d91ebf4ce8af89ffdfdbdc7f44">TelnetCommand::NoOperation</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589a7b22af4eb9c33df5e49130872cb886d1">TelnetCommand::DataMark</a>, 
 <br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8a1a4e784f3df55f7c93d73e3191808e95">Break</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8a87de0474013e0061bd4d9aafb23c5189">InterruptProcess</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8a777a076505b97b4fe58a526190aa1589">AbortOutput</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8a06e0aea449e749c044e7c94e7ac861cf">AreYouThere</a>, 
+&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589ae4c38d6d45baf080943d323dd51a2ce8">TelnetCommand::Break</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589a62d4e7d8f33c79b574b44a1c70947665">TelnetCommand::InterruptProcess</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589ada7c16e8878acdf10549f73c33a630e3">TelnetCommand::AbortOutput</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589ac5b01d95d7099b90314991373efbb476">TelnetCommand::AreYouThere</a>, 
 <br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8a86bc10ef60cb75252696a675cfda44d8">EraseCharacter</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8a2a2fedc48d11ecf8a36e65d9546c2bb2">EraseLine</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8a1be337edf03fbbceb750fd8a5aa4b4b7">GoAhead</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8a1d358eee01ec5e4d73bef748cfaadc3a">Subnegotiation</a>, 
+&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589a44284904328617d435cb7f733bb2be66">TelnetCommand::EraseCharacter</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589a384ad959d86375d39389998d71217ea6">TelnetCommand::EraseLine</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589a8c408b6e7cee6e3127eb87af26190574">TelnetCommand::GoAhead</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589a3a5a09c614a96d095a1f145afebea183">TelnetCommand::Subnegotiation</a>, 
 <br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8a8755945ec9a5cdc54f6c15d453205515">WillPerform</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8a2b460dec185af09003beb46f6934c7f0">WontPerform</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8a5bdd7c905175e26b6d44aa4268706060">DoPerform</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8a6e8a584703f4682e6af5582a3fd1818e">DontPerform</a>, 
+&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589a60634d2591af1a2322e96f5523510163">TelnetCommand::WillPerform</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589a707dc5a21f70520ec615623f0b49eb8d">TelnetCommand::WontPerform</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589a20f6e1027fdbbe396e5c3b3c59a3da9b">TelnetCommand::DoPerform</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589a6760c6ea1f7f0969c71c80b2f935382c">TelnetCommand::DontPerform</a>, 
 <br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8a2e4adc26a9ee702a27862f1a753002df">InterpretAsCommand</a>
-<br />
- }</td></tr>
-<tr class="separator:a974ed00d860cbf61222159edb5194ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dd07ae255ff60808d54f34840048147"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147">TelnetOption</a> { <br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147aace0ba0b0d1c9076dadeae708917cd15">TelnetOptionNoOption</a> = -1, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a48f3e82a1330e3caf3be6a26d2d10c1c">TransmitBinary</a> = 0, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a6a920a1b9ea2de7eb57471bdb270558a">Echo</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a93bcad770e310d22629b465be2abfad5">Reconnection</a>, 
-<br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a614b24bef1aebf7ceb0c31db1a41d6ec">SuppressGoAhead</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a0810e60091b323d2b78102aead896456">ApproxMsgSizeNegotiation</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a25a58a186da84ef5d8b229f868cc9b4a">Status</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a6c46f0b99ddb5f9457167dbb56532b2e">TimingMark</a>, 
-<br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a7e2fcadad15549c664df9b4cd0c43d4e">RemoteControlledTransAndEcho</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a85bc1b9fece0a9e71a4b0da101f2fb3b">OutputLineWidth</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a6b4eb397a38a3f720b3944600360b0bd">OutputPageSize</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147ab72792f67882cf1bcb609fa4da9c200e">OutputCarriageReturnDisposition</a>, 
-<br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147ac7146a2ec181786feabeed66407c3047">OutputHorizontalTabStops</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a5fccfa39b2e51a93a677df711874a89f">OutputHorizontalTabDisposition</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147afeb9fbd4408b9d573bd443113efcd376">OutputFormfeedDisposition</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a8c0ae265d822dfce4f28afb0a8c4b99a">OutputVerticalTabStops</a>, 
-<br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147aab4f09f3521d7b9d29ab7afb804051a1">OutputVerticalTabDisposition</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a4ec3bbecd9e65d85e9a4d6155feeff3e">OutputLinefeedDisposition</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a05a1c6312a16887de354393dcf2dd091">ExtendedASCII</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a8e30c1a6868ce1eedb9e35850fb7067b">Logout</a>, 
-<br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a357bf74bf9502ef88c7c1a4a7a50e3bc">ByteMacro</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a058d19bd31239baacb653ab3d2e31302">DataEntryTerminal</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147aae0e55092a5f6bcd1e4ed17dad52c73c">SUPDUP</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a1358640cadc6df8619ddfbcf64657d5c">SUPDUPOutput</a>, 
-<br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a429552387f0b6334866b2b54e4c9b054">SendLocation</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a7ba5de4a0dd49df2d4c2348672ba755b">TerminalType</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147afed66a8b953b4ef0f27fa20671450aac">EndOfRecordOption</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a28d3bbc5d98b3d77ede7b053a2deb5af">TACACSUserIdentification</a>, 
-<br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a0ecc20dfeee8a5acc8e92808d16f57da">OutputMarking</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a62458b70c594b12b0c2f25a1f17c4bec">TerminalLocationNumber</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a4e3e1206dc12c0462460ebff9e8933fb">Telnet3270Regime</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a2204dad07c49993124203a42d9df8e76">X3Pad</a>, 
-<br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a87f4473618ed1a9fbbc1585bad2efdcf">NegotiateAboutWindowSize</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a6be6254e2111afb28ad4ac6b64325b33">TerminalSpeed</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a0c3c5a8eb8889c2ce0622047cddcf623">RemoteFlowControl</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a8f3c9d43daf7e90035c2a1777ce6b0e1">Linemode</a>, 
-<br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a875cda147ea4689ca2427f9a29fb5976">XDisplayLocation</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147aab7c677e724ccf6ea20ce1f986fd4658">EnvironmentOption</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a207588db1a16b32a78784d4128d0a62c">AuthenticationOption</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147aa933b10feb237f242f99ad9c82d2619c">EncryptionOption</a>, 
-<br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a4f26bc8cecaa4baaaad338ec15698e91">NewEnvironmentOption</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a060f87a458923d1b8fa309a8eff530c4">TN3270E</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a3544cd529decc4390eceb615d4c99bfd">XAuth</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147ac44abddd3d1d662013a7b3aa0f0874a7">Charset</a>, 
-<br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a6b38b83f02e2b25b58b80c0c31637379">TelnetRemoteSerialPort</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a52e4de32f3e878df7e93d9154c06405d">ComPortControlOption</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147ad71a93dfd4e2b3c152f290bc9245d7c6">TelnetSuppressLocalEcho</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147aaafcd69b570bc78d3a011523bfe13cbc">TelnetStartTLS</a>, 
-<br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a9bea6904f00738f71a01ca89bc82a768">Kermit</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147af650d552ef53301dd1cd9264e33c5de4">SendURL</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147aba4684733619ec0a6e5637c42d578732">ForwardX</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147ac93f98b799bdfca8dcbf494d913e410f">TelOptPragmaLogon</a> = 138, 
-<br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a6343201c77c603e63d7266074a409afc">TelOptSSPILogon</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a88280bb162c3565257f6b08ddc305535">TelOptPragmaHeartbeat</a>, 
-<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147a19b90292d3383490dcc37a35959612ab">ExtendedOptions</a> = 255
+&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589a363b1de91cd2c937ea20575c1eef2042">TelnetCommand::InterpretAsCommand</a>
 <br />
  }</td></tr>
-<tr class="separator:a0dd07ae255ff60808d54f34840048147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:abe18a98c3b5908e72f446e52042ba589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac42f0fb02472c196e4c65477c201682d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682d">TelnetOption</a> : int { <br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682daa6f03bb557bce8e02db0bcf8af1d6eda">TelnetOption::TelnetOptionNoOption</a> = -1, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682dac677eda5c5015799fae682c142c1bbe3">TelnetOption::TransmitBinary</a> = 0, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682dad31ef811301c6b4111380dda959d6125">TelnetOption::Echo</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682dae06889502a1e490d4e2a9238f6bfb11c">TelnetOption::Reconnection</a>, 
+<br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da0260f7dbcbd77a40ad1af58989e1b20f">TelnetOption::SuppressGoAhead</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682daef55a7202772ccb1d5f49d01c4177efb">TelnetOption::ApproxMsgSizeNegotiation</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682daec53a8c4f07baed5d8825072c89799be">TelnetOption::Status</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682daf5a5e5c53fe377982854568d122e7aaf">TelnetOption::TimingMark</a>, 
+<br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da6202022f858da4aa6b3e82715ebb3023">TelnetOption::RemoteControlledTransAndEcho</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682daaa01d23dfe89339bbe0a8ad15ac9f2ae">TelnetOption::OutputLineWidth</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da60ee0dbbdb608bb0a1459eb5bb09b6dc">TelnetOption::OutputPageSize</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682dac5cc4b01ddd5279c8abd1a1a4ea9a03f">TelnetOption::OutputCarriageReturnDisposition</a>, 
+<br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da97fb94c1e9bc19d837a91a4d4771c90c">TelnetOption::OutputHorizontalTabStops</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da15ffd0aa4c218d198fb2e97ec2602c32">TelnetOption::OutputHorizontalTabDisposition</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682dae4ffb7da3a0538a3cddfde1482c648f6">TelnetOption::OutputFormfeedDisposition</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da50fb5941f8e48cf53b2cf941a12c07c2">TelnetOption::OutputVerticalTabStops</a>, 
+<br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da7225fec31f7322aece068a86b66aeb89">TelnetOption::OutputVerticalTabDisposition</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682daf1c3b4a227c4ed90847f999a5b925887">TelnetOption::OutputLinefeedDisposition</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da0a8d406681054b555da71acf8bcd6688">TelnetOption::ExtendedASCII</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da0323de4f66a1700e2173e9bcdce02715">TelnetOption::Logout</a>, 
+<br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da452b6add36d819fe0bb8ae8f156a5d89">TelnetOption::ByteMacro</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682dabda1310285c38f5a7feaba04a9d7ab77">TelnetOption::DataEntryTerminal</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682dac0db09431c722c0d53019fb5f51f10fb">TelnetOption::SUPDUP</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682dacc49464ca62658d36085fe2fe40d92fc">TelnetOption::SUPDUPOutput</a>, 
+<br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682dadefc4bdfe31e142b4e7b1846d53b4f63">TelnetOption::SendLocation</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da65654e6556a288a23e5064f4cc51c240">TelnetOption::TerminalType</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da804f24d95d76da325b6d06c93b3c595c">TelnetOption::EndOfRecordOption</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da54f9b8ca57e1f30a246476e02aa70bb9">TelnetOption::TACACSUserIdentification</a>, 
+<br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da222870ca79007523f0dd88a777403468">TelnetOption::OutputMarking</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da7b7ddfd642b65be148fdc350fe8c6816">TelnetOption::TerminalLocationNumber</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da003011c12ccb0e18a33749bfa953b490">TelnetOption::Telnet3270Regime</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da838f899073f1ebd96caef6d95243376f">TelnetOption::X3Pad</a>, 
+<br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682daf03612ff4489257b9dca7622a495680a">TelnetOption::NegotiateAboutWindowSize</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682dae9032600c7dce2983020be6670d5feb8">TelnetOption::TerminalSpeed</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da226c113e74b2ae4954ef0524f1476187">TelnetOption::RemoteFlowControl</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da4792479a07b6d74d77927c52f6b7d1ca">TelnetOption::Linemode</a>, 
+<br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da1e71f08bdb475dd45b02a52bed148590">TelnetOption::XDisplayLocation</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da5d8099ddb5b3cb8d6dd798b5013b73df">TelnetOption::EnvironmentOption</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da909d671bf2f5af1c255862586edeff4f">TelnetOption::AuthenticationOption</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da5d0de0195863ca12436ae5a7e1ed6de9">TelnetOption::EncryptionOption</a>, 
+<br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da0468947dc6493a1cd21d1049b58a0a96">TelnetOption::NewEnvironmentOption</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da9b8a0cc8968347ca0d8cfd6875dea7dc">TelnetOption::TN3270E</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682dad67c1c6fb71de6dc670c96c07d8d5114">TelnetOption::XAuth</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682daf594c0052b0886932fe51eedb83fb2c3">TelnetOption::Charset</a>, 
+<br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682daa0c7b11c751b2e13656c4223653ee40d">TelnetOption::TelnetRemoteSerialPort</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682daea4a4d7789e7448b1bd04de7ee98f776">TelnetOption::ComPortControlOption</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682dad2f1550c7e717986958b773a24a4734e">TelnetOption::TelnetSuppressLocalEcho</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da4d633a0bb3b3206b0f47746dfaa1b55a">TelnetOption::TelnetStartTLS</a>, 
+<br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da8b17e5f857ece1039c142a99c3df1734">TelnetOption::Kermit</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da23d8e180fc977858ff287251d25a9dc7">TelnetOption::SendURL</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da452c993fd04f38fcf3b94d154b24042a">TelnetOption::ForwardX</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da92bc1c6c86793b663775e6035286b143">TelnetOption::TelOptPragmaLogon</a> = 138, 
+<br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da69717081589786cc9c11c1b2c63f5db1">TelnetOption::TelOptSSPILogon</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da42d276015cf04b67a62ac68dce303d09">TelnetOption::TelOptPragmaHeartbeat</a>, 
+<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da004eed36b6627e279c3d4779d36b8126">TelnetOption::ExtendedOptions</a> = 255
+<br />
+ }</td></tr>
+<tr class="separator:ac42f0fb02472c196e4c65477c201682d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -217,19 +217,19 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae89af0cbd8aadb79b8e0212b312f06b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab09bace32749aa90fda52bf2d170b763"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_telnet_layer.html#ab09bace32749aa90fda52bf2d170b763">getTotalNumberOfCommands</a> ()</td></tr>
 <tr class="separator:ab09bace32749aa90fda52bf2d170b763"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf2a51c8347f461b34d29de1c07e8321"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_telnet_layer.html#adf2a51c8347f461b34d29de1c07e8321">getNumberOfCommands</a> (<a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8">TelnetCommand</a> command)</td></tr>
+<tr class="memitem:adf2a51c8347f461b34d29de1c07e8321"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_telnet_layer.html#adf2a51c8347f461b34d29de1c07e8321">getNumberOfCommands</a> (<a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589">TelnetCommand</a> command)</td></tr>
 <tr class="separator:adf2a51c8347f461b34d29de1c07e8321"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6dffd3d1295d98bef2ce94daec38a15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8">TelnetCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_telnet_layer.html#ad6dffd3d1295d98bef2ce94daec38a15">getFirstCommand</a> ()</td></tr>
+<tr class="memitem:ad6dffd3d1295d98bef2ce94daec38a15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589">TelnetCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_telnet_layer.html#ad6dffd3d1295d98bef2ce94daec38a15">getFirstCommand</a> ()</td></tr>
 <tr class="separator:ad6dffd3d1295d98bef2ce94daec38a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e5366ce34dd207aa861fbe6b62e8365"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8">TelnetCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_telnet_layer.html#a6e5366ce34dd207aa861fbe6b62e8365">getNextCommand</a> ()</td></tr>
+<tr class="memitem:a6e5366ce34dd207aa861fbe6b62e8365"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589">TelnetCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_telnet_layer.html#a6e5366ce34dd207aa861fbe6b62e8365">getNextCommand</a> ()</td></tr>
 <tr class="separator:a6e5366ce34dd207aa861fbe6b62e8365"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5f93e3caf8fa7e81ec5c382461da954"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147">TelnetOption</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_telnet_layer.html#ad5f93e3caf8fa7e81ec5c382461da954">getOption</a> ()</td></tr>
+<tr class="memitem:ad5f93e3caf8fa7e81ec5c382461da954"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682d">TelnetOption</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_telnet_layer.html#ad5f93e3caf8fa7e81ec5c382461da954">getOption</a> ()</td></tr>
 <tr class="separator:ad5f93e3caf8fa7e81ec5c382461da954"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c5b6908a66039045bda047b575bf416"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147">TelnetOption</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_telnet_layer.html#a0c5b6908a66039045bda047b575bf416">getOption</a> (<a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8">TelnetCommand</a> command)</td></tr>
+<tr class="memitem:a0c5b6908a66039045bda047b575bf416"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682d">TelnetOption</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_telnet_layer.html#a0c5b6908a66039045bda047b575bf416">getOption</a> (<a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589">TelnetCommand</a> command)</td></tr>
 <tr class="separator:a0c5b6908a66039045bda047b575bf416"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65b707b8451ed49e9d53ca50bb9cdb25"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_telnet_layer.html#a65b707b8451ed49e9d53ca50bb9cdb25">getOptionData</a> (size_t &amp;length)</td></tr>
 <tr class="separator:a65b707b8451ed49e9d53ca50bb9cdb25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abed6573561650db6599a7db1b75f27e1"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_telnet_layer.html#abed6573561650db6599a7db1b75f27e1">getOptionData</a> (<a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8">TelnetCommand</a> command, size_t &amp;length)</td></tr>
+<tr class="memitem:abed6573561650db6599a7db1b75f27e1"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_telnet_layer.html#abed6573561650db6599a7db1b75f27e1">getOptionData</a> (<a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589">TelnetCommand</a> command, size_t &amp;length)</td></tr>
 <tr class="separator:abed6573561650db6599a7db1b75f27e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa58e90c6780955ffa469fd4a43acb38e"><td class="memItemLeft" align="right" valign="top"><a id="aa58e90c6780955ffa469fd4a43acb38e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_telnet_layer.html#aa58e90c6780955ffa469fd4a43acb38e">parseNextLayer</a> ()</td></tr>
@@ -271,9 +271,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a702ea02b1a8b1a0f0b5307ef6593caec"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_telnet_layer.html#a702ea02b1a8b1a0f0b5307ef6593caec">getTelnetCommandAsString</a> (<a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8">TelnetCommand</a> val)</td></tr>
+<tr class="memitem:a702ea02b1a8b1a0f0b5307ef6593caec"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_telnet_layer.html#a702ea02b1a8b1a0f0b5307ef6593caec">getTelnetCommandAsString</a> (<a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589">TelnetCommand</a> val)</td></tr>
 <tr class="separator:a702ea02b1a8b1a0f0b5307ef6593caec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a267546c13e48910509d6b249e217afd5"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_telnet_layer.html#a267546c13e48910509d6b249e217afd5">getTelnetOptionAsString</a> (<a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147">TelnetOption</a> val)</td></tr>
+<tr class="memitem:a267546c13e48910509d6b249e217afd5"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_telnet_layer.html#a267546c13e48910509d6b249e217afd5">getTelnetOptionAsString</a> (<a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682d">TelnetOption</a> val)</td></tr>
 <tr class="separator:a267546c13e48910509d6b249e217afd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0859090e44f4fb8ceb0363c7a19b6f4"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_telnet_layer.html#ab0859090e44f4fb8ceb0363c7a19b6f4">isTelnetPort</a> (uint16_t port)</td></tr>
 <tr class="separator:ab0859090e44f4fb8ceb0363c7a19b6f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -283,187 +283,203 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class for representing the Telnet <a class="el" href="classpcpp_1_1_layer.html">Layer</a> </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a974ed00d860cbf61222159edb5194ac8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a974ed00d860cbf61222159edb5194ac8">&#9670;&nbsp;</a></span>TelnetCommand</h2>
+<a id="abe18a98c3b5908e72f446e52042ba589"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe18a98c3b5908e72f446e52042ba589">&#9670;&nbsp;</a></span>TelnetCommand</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8">pcpp::TelnetLayer::TelnetCommand</a></td>
+          <td class="memname">enum <a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589">pcpp::TelnetLayer::TelnetCommand</a> : int</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Telnet Command Indicator </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a974ed00d860cbf61222159edb5194ac8ac3db468f809c7e939b40daeca2dac33e"></a>TelnetCommandEndOfPacket&#160;</td><td class="fielddoc"><p>Indicator to parser reached end of packet. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abe18a98c3b5908e72f446e52042ba589a11f501615c77a0eb9d18a89c0360ce29"></a>TelnetCommandEndOfPacket&#160;</td><td class="fielddoc"><p>Indicator to parser reached end of packet. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a974ed00d860cbf61222159edb5194ac8a381aa0e0ef2d3eaae8bd9a9018c1490a"></a>EndOfFile&#160;</td><td class="fielddoc"><p>End of file. </p>
+<tr><td class="fieldname"><a id="abe18a98c3b5908e72f446e52042ba589a9556e151da49cd4bcf0352857cb33509"></a>EndOfFile&#160;</td><td class="fielddoc"><p>End of file. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a974ed00d860cbf61222159edb5194ac8aef71e411c01ce0ea0d2191d5c57da743"></a>Suspend&#160;</td><td class="fielddoc"><p>Suspend current process. </p>
+<tr><td class="fieldname"><a id="abe18a98c3b5908e72f446e52042ba589ab3834d6f7a63e5e750e0ca5ecf31e3b9"></a>Suspend&#160;</td><td class="fielddoc"><p>Suspend current process. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a974ed00d860cbf61222159edb5194ac8a29a58f7d85426b16fbc022fd7e862b71"></a>Abort&#160;</td><td class="fielddoc"><p>Abort Process. </p>
+<tr><td class="fieldname"><a id="abe18a98c3b5908e72f446e52042ba589a727b63583e01fa2b3952dab580c84dc2"></a>Abort&#160;</td><td class="fielddoc"><p>Abort Process. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a974ed00d860cbf61222159edb5194ac8afcb0ad30377a0c33ab1ffd68ed237abb"></a>EndOfRecordCommand&#160;</td><td class="fielddoc"><p>End of Record. </p>
+<tr><td class="fieldname"><a id="abe18a98c3b5908e72f446e52042ba589a99a9fae1646ba0d5d7c567697f62c975"></a>EndOfRecordCommand&#160;</td><td class="fielddoc"><p>End of Record. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a974ed00d860cbf61222159edb5194ac8a62b6606cb6ffa06461b49a6f8c5af2bb"></a>SubnegotiationEnd&#160;</td><td class="fielddoc"><p>Marks the end of a Telnet option subnegotiation, used with the SB code to specify more specific option parameters. </p>
+<tr><td class="fieldname"><a id="abe18a98c3b5908e72f446e52042ba589ae37518ff235a868c41d9f7516e5bc4d2"></a>SubnegotiationEnd&#160;</td><td class="fielddoc"><p>Marks the end of a Telnet option subnegotiation, used with the SB code to specify more specific option parameters. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a974ed00d860cbf61222159edb5194ac8af1597b6eb1b8cf777ae878c8eca8426c"></a>NoOperation&#160;</td><td class="fielddoc"><p>Null command; does nothing. </p>
+<tr><td class="fieldname"><a id="abe18a98c3b5908e72f446e52042ba589a621666d91ebf4ce8af89ffdfdbdc7f44"></a>NoOperation&#160;</td><td class="fielddoc"><p>Null command; does nothing. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a974ed00d860cbf61222159edb5194ac8a99b0b0d558f061fa18e8004968de4ac5"></a>DataMark&#160;</td><td class="fielddoc"><p>Used to mark the end of a sequence of data that the recipient should scan for urgent Telnet commands. </p>
+<tr><td class="fieldname"><a id="abe18a98c3b5908e72f446e52042ba589a7b22af4eb9c33df5e49130872cb886d1"></a>DataMark&#160;</td><td class="fielddoc"><p>Used to mark the end of a sequence of data that the recipient should scan for urgent Telnet commands. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a974ed00d860cbf61222159edb5194ac8a1a4e784f3df55f7c93d73e3191808e95"></a>Break&#160;</td><td class="fielddoc"><p>Represents the pressing of the “break” or “attention” key on the terminal. </p>
+<tr><td class="fieldname"><a id="abe18a98c3b5908e72f446e52042ba589ae4c38d6d45baf080943d323dd51a2ce8"></a>Break&#160;</td><td class="fielddoc"><p>Represents the pressing of the “break” or “attention” key on the terminal. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a974ed00d860cbf61222159edb5194ac8a87de0474013e0061bd4d9aafb23c5189"></a>InterruptProcess&#160;</td><td class="fielddoc"><p>Tells the recipient to interrupt, abort, suspend or terminate the process currently in use. </p>
+<tr><td class="fieldname"><a id="abe18a98c3b5908e72f446e52042ba589a62d4e7d8f33c79b574b44a1c70947665"></a>InterruptProcess&#160;</td><td class="fielddoc"><p>Tells the recipient to interrupt, abort, suspend or terminate the process currently in use. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a974ed00d860cbf61222159edb5194ac8a777a076505b97b4fe58a526190aa1589"></a>AbortOutput&#160;</td><td class="fielddoc"><p>Instructs the remote host to continue running the current process, but discard all remaining output from it. This may be needed if a program starts to send unexpectedly large amounts of data to the user. </p>
+<tr><td class="fieldname"><a id="abe18a98c3b5908e72f446e52042ba589ada7c16e8878acdf10549f73c33a630e3"></a>AbortOutput&#160;</td><td class="fielddoc"><p>Instructs the remote host to continue running the current process, but discard all remaining output from it. This may be needed if a program starts to send unexpectedly large amounts of data to the user. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a974ed00d860cbf61222159edb5194ac8a06e0aea449e749c044e7c94e7ac861cf"></a>AreYouThere&#160;</td><td class="fielddoc"><p>May be used to check that the remote host is still “alive”. When this character is sent the remote host returns some type of output to indicate that it is still functioning. </p>
+<tr><td class="fieldname"><a id="abe18a98c3b5908e72f446e52042ba589ac5b01d95d7099b90314991373efbb476"></a>AreYouThere&#160;</td><td class="fielddoc"><p>May be used to check that the remote host is still “alive”. When this character is sent the remote host returns some type of output to indicate that it is still functioning. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a974ed00d860cbf61222159edb5194ac8a86bc10ef60cb75252696a675cfda44d8"></a>EraseCharacter&#160;</td><td class="fielddoc"><p>Instructs the recipient to delete the last undeleted character from the data stream. Used to “undo” the sending of a character. </p>
+<tr><td class="fieldname"><a id="abe18a98c3b5908e72f446e52042ba589a44284904328617d435cb7f733bb2be66"></a>EraseCharacter&#160;</td><td class="fielddoc"><p>Instructs the recipient to delete the last undeleted character from the data stream. Used to “undo” the sending of a character. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a974ed00d860cbf61222159edb5194ac8a2a2fedc48d11ecf8a36e65d9546c2bb2"></a>EraseLine&#160;</td><td class="fielddoc"><p>Tells the recipient to delete all characters from the data stream back to (but not including) the last end of line (CR+LF) sequence. </p>
+<tr><td class="fieldname"><a id="abe18a98c3b5908e72f446e52042ba589a384ad959d86375d39389998d71217ea6"></a>EraseLine&#160;</td><td class="fielddoc"><p>Tells the recipient to delete all characters from the data stream back to (but not including) the last end of line (CR+LF) sequence. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a974ed00d860cbf61222159edb5194ac8a1be337edf03fbbceb750fd8a5aa4b4b7"></a>GoAhead&#160;</td><td class="fielddoc"><p>Used in Telnet half-duplex mode to signal the other device that it may transmit. </p>
+<tr><td class="fieldname"><a id="abe18a98c3b5908e72f446e52042ba589a8c408b6e7cee6e3127eb87af26190574"></a>GoAhead&#160;</td><td class="fielddoc"><p>Used in Telnet half-duplex mode to signal the other device that it may transmit. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a974ed00d860cbf61222159edb5194ac8a1d358eee01ec5e4d73bef748cfaadc3a"></a>Subnegotiation&#160;</td><td class="fielddoc"><p>Marks the beginning of a Telnet option subnegotiation, used when an option requires the client and server to exchange parameters. </p>
+<tr><td class="fieldname"><a id="abe18a98c3b5908e72f446e52042ba589a3a5a09c614a96d095a1f145afebea183"></a>Subnegotiation&#160;</td><td class="fielddoc"><p>Marks the beginning of a Telnet option subnegotiation, used when an option requires the client and server to exchange parameters. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a974ed00d860cbf61222159edb5194ac8a8755945ec9a5cdc54f6c15d453205515"></a>WillPerform&#160;</td><td class="fielddoc"><p>Indicates that the device sending this code is willing to perform or continue performing a particular option. </p>
+<tr><td class="fieldname"><a id="abe18a98c3b5908e72f446e52042ba589a60634d2591af1a2322e96f5523510163"></a>WillPerform&#160;</td><td class="fielddoc"><p>Indicates that the device sending this code is willing to perform or continue performing a particular option. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a974ed00d860cbf61222159edb5194ac8a2b460dec185af09003beb46f6934c7f0"></a>WontPerform&#160;</td><td class="fielddoc"><p>Indicates that the device sending this code is either not willing to perform a particular option, or is now refusing to continue to perform it. </p>
+<tr><td class="fieldname"><a id="abe18a98c3b5908e72f446e52042ba589a707dc5a21f70520ec615623f0b49eb8d"></a>WontPerform&#160;</td><td class="fielddoc"><p>Indicates that the device sending this code is either not willing to perform a particular option, or is now refusing to continue to perform it. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a974ed00d860cbf61222159edb5194ac8a5bdd7c905175e26b6d44aa4268706060"></a>DoPerform&#160;</td><td class="fielddoc"><p>Requests that the other device perform a particular option or confirms the expectation that the other device will perform that option. </p>
+<tr><td class="fieldname"><a id="abe18a98c3b5908e72f446e52042ba589a20f6e1027fdbbe396e5c3b3c59a3da9b"></a>DoPerform&#160;</td><td class="fielddoc"><p>Requests that the other device perform a particular option or confirms the expectation that the other device will perform that option. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a974ed00d860cbf61222159edb5194ac8a6e8a584703f4682e6af5582a3fd1818e"></a>DontPerform&#160;</td><td class="fielddoc"><p>Specifies that the other party not perform an option, or confirms a device’s expectation that the other party not perform an option. </p>
+<tr><td class="fieldname"><a id="abe18a98c3b5908e72f446e52042ba589a6760c6ea1f7f0969c71c80b2f935382c"></a>DontPerform&#160;</td><td class="fielddoc"><p>Specifies that the other party not perform an option, or confirms a device’s expectation that the other party not perform an option. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a974ed00d860cbf61222159edb5194ac8a2e4adc26a9ee702a27862f1a753002df"></a>InterpretAsCommand&#160;</td><td class="fielddoc"><p>Precedes command values 240 through 254 as described above. A pair of IAC bytes in a row represents the data value 255. </p>
+<tr><td class="fieldname"><a id="abe18a98c3b5908e72f446e52042ba589a363b1de91cd2c937ea20575c1eef2042"></a>InterpretAsCommand&#160;</td><td class="fielddoc"><p>Precedes command values 240 through 254 as described above. A pair of IAC bytes in a row represents the data value 255. </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a id="a0dd07ae255ff60808d54f34840048147"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0dd07ae255ff60808d54f34840048147">&#9670;&nbsp;</a></span>TelnetOption</h2>
+<a id="ac42f0fb02472c196e4c65477c201682d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac42f0fb02472c196e4c65477c201682d">&#9670;&nbsp;</a></span>TelnetOption</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147">pcpp::TelnetLayer::TelnetOption</a></td>
+          <td class="memname">enum <a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682d">pcpp::TelnetLayer::TelnetOption</a> : int</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Telnet Options </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147aace0ba0b0d1c9076dadeae708917cd15"></a>TelnetOptionNoOption&#160;</td><td class="fielddoc"><p>Internal return for no option detected. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682daa6f03bb557bce8e02db0bcf8af1d6eda"></a>TelnetOptionNoOption&#160;</td><td class="fielddoc"><p>Internal return for no option detected. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a48f3e82a1330e3caf3be6a26d2d10c1c"></a>TransmitBinary&#160;</td><td class="fielddoc"><p>Binary Transmission RFC856 <a href="https://www.iana.org/go/rfc856">https://www.iana.org/go/rfc856</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682dac677eda5c5015799fae682c142c1bbe3"></a>TransmitBinary&#160;</td><td class="fielddoc"><p>Binary Transmission RFC856 <a href="https://www.iana.org/go/rfc856">https://www.iana.org/go/rfc856</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a6a920a1b9ea2de7eb57471bdb270558a"></a>Echo&#160;</td><td class="fielddoc"><p>Echo RFC857 <a href="https://www.iana.org/go/rfc857">https://www.iana.org/go/rfc857</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682dad31ef811301c6b4111380dda959d6125"></a>Echo&#160;</td><td class="fielddoc"><p>Echo RFC857 <a href="https://www.iana.org/go/rfc857">https://www.iana.org/go/rfc857</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a93bcad770e310d22629b465be2abfad5"></a>Reconnection&#160;</td><td class="fielddoc"><p>Reconnection. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682dae06889502a1e490d4e2a9238f6bfb11c"></a>Reconnection&#160;</td><td class="fielddoc"><p>Reconnection. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a614b24bef1aebf7ceb0c31db1a41d6ec"></a>SuppressGoAhead&#160;</td><td class="fielddoc"><p>Suppress Go Ahead RFC858 <a href="https://www.iana.org/go/rfc858">https://www.iana.org/go/rfc858</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da0260f7dbcbd77a40ad1af58989e1b20f"></a>SuppressGoAhead&#160;</td><td class="fielddoc"><p>Suppress Go Ahead RFC858 <a href="https://www.iana.org/go/rfc858">https://www.iana.org/go/rfc858</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a0810e60091b323d2b78102aead896456"></a>ApproxMsgSizeNegotiation&#160;</td><td class="fielddoc"><p>Negotiate approximate message size. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682daef55a7202772ccb1d5f49d01c4177efb"></a>ApproxMsgSizeNegotiation&#160;</td><td class="fielddoc"><p>Negotiate approximate message size. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a25a58a186da84ef5d8b229f868cc9b4a"></a>Status&#160;</td><td class="fielddoc"><p>Status RFC859 <a href="https://www.iana.org/go/rfc859">https://www.iana.org/go/rfc859</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682daec53a8c4f07baed5d8825072c89799be"></a>Status&#160;</td><td class="fielddoc"><p>Status RFC859 <a href="https://www.iana.org/go/rfc859">https://www.iana.org/go/rfc859</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a6c46f0b99ddb5f9457167dbb56532b2e"></a>TimingMark&#160;</td><td class="fielddoc"><p>Timing Mark RFC860 <a href="https://www.iana.org/go/rfc860">https://www.iana.org/go/rfc860</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682daf5a5e5c53fe377982854568d122e7aaf"></a>TimingMark&#160;</td><td class="fielddoc"><p>Timing Mark RFC860 <a href="https://www.iana.org/go/rfc860">https://www.iana.org/go/rfc860</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a7e2fcadad15549c664df9b4cd0c43d4e"></a>RemoteControlledTransAndEcho&#160;</td><td class="fielddoc"><p>RCTE, Remote Controlled Transmission and Echo RFC726 <a href="https://www.iana.org/go/rfc726">https://www.iana.org/go/rfc726</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da6202022f858da4aa6b3e82715ebb3023"></a>RemoteControlledTransAndEcho&#160;</td><td class="fielddoc"><p>RCTE, Remote Controlled Transmission and Echo RFC726 <a href="https://www.iana.org/go/rfc726">https://www.iana.org/go/rfc726</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a85bc1b9fece0a9e71a4b0da101f2fb3b"></a>OutputLineWidth&#160;</td><td class="fielddoc"><p>Output Line Width. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682daaa01d23dfe89339bbe0a8ad15ac9f2ae"></a>OutputLineWidth&#160;</td><td class="fielddoc"><p>Output Line Width. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a6b4eb397a38a3f720b3944600360b0bd"></a>OutputPageSize&#160;</td><td class="fielddoc"><p>Output Page Size. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da60ee0dbbdb608bb0a1459eb5bb09b6dc"></a>OutputPageSize&#160;</td><td class="fielddoc"><p>Output Page Size. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147ab72792f67882cf1bcb609fa4da9c200e"></a>OutputCarriageReturnDisposition&#160;</td><td class="fielddoc"><p>NAOCRD, Negotiate About Output Carriage-Return Disposition RFC652 <a href="https://www.iana.org/go/rfc652">https://www.iana.org/go/rfc652</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682dac5cc4b01ddd5279c8abd1a1a4ea9a03f"></a>OutputCarriageReturnDisposition&#160;</td><td class="fielddoc"><p>NAOCRD, Negotiate About Output Carriage-Return Disposition RFC652 <a href="https://www.iana.org/go/rfc652">https://www.iana.org/go/rfc652</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147ac7146a2ec181786feabeed66407c3047"></a>OutputHorizontalTabStops&#160;</td><td class="fielddoc"><p>NAOHTS, Negotiate About Output Horizontal Tabstops RFC653 <a href="https://www.iana.org/go/rfc653">https://www.iana.org/go/rfc653</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da97fb94c1e9bc19d837a91a4d4771c90c"></a>OutputHorizontalTabStops&#160;</td><td class="fielddoc"><p>NAOHTS, Negotiate About Output Horizontal Tabstops RFC653 <a href="https://www.iana.org/go/rfc653">https://www.iana.org/go/rfc653</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a5fccfa39b2e51a93a677df711874a89f"></a>OutputHorizontalTabDisposition&#160;</td><td class="fielddoc"><p>NAOHTD, Negotiate About Output Horizontal Tab Disposition RFC654 <a href="https://www.iana.org/go/rfc654">https://www.iana.org/go/rfc654</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da15ffd0aa4c218d198fb2e97ec2602c32"></a>OutputHorizontalTabDisposition&#160;</td><td class="fielddoc"><p>NAOHTD, Negotiate About Output Horizontal Tab Disposition RFC654 <a href="https://www.iana.org/go/rfc654">https://www.iana.org/go/rfc654</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147afeb9fbd4408b9d573bd443113efcd376"></a>OutputFormfeedDisposition&#160;</td><td class="fielddoc"><p>NAOFFD, Negotiate About Output Formfeed Disposition RFC655 <a href="https://www.iana.org/go/rfc655">https://www.iana.org/go/rfc655</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682dae4ffb7da3a0538a3cddfde1482c648f6"></a>OutputFormfeedDisposition&#160;</td><td class="fielddoc"><p>NAOFFD, Negotiate About Output Formfeed Disposition RFC655 <a href="https://www.iana.org/go/rfc655">https://www.iana.org/go/rfc655</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a8c0ae265d822dfce4f28afb0a8c4b99a"></a>OutputVerticalTabStops&#160;</td><td class="fielddoc"><p>NAOVTS, Negotiate About Vertical Tabstops RFC656 <a href="https://www.iana.org/go/rfc656">https://www.iana.org/go/rfc656</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da50fb5941f8e48cf53b2cf941a12c07c2"></a>OutputVerticalTabStops&#160;</td><td class="fielddoc"><p>NAOVTS, Negotiate About Vertical Tabstops RFC656 <a href="https://www.iana.org/go/rfc656">https://www.iana.org/go/rfc656</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147aab4f09f3521d7b9d29ab7afb804051a1"></a>OutputVerticalTabDisposition&#160;</td><td class="fielddoc"><p>NAOVTD, Negotiate About Output Vertcial Tab Disposition RFC657 <a href="https://www.iana.org/go/rfc657">https://www.iana.org/go/rfc657</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da7225fec31f7322aece068a86b66aeb89"></a>OutputVerticalTabDisposition&#160;</td><td class="fielddoc"><p>NAOVTD, Negotiate About Output Vertcial Tab Disposition RFC657 <a href="https://www.iana.org/go/rfc657">https://www.iana.org/go/rfc657</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a4ec3bbecd9e65d85e9a4d6155feeff3e"></a>OutputLinefeedDisposition&#160;</td><td class="fielddoc"><p>NAOLFD, Negotiate About Output Linefeed Disposition RFC658 <a href="https://www.iana.org/go/rfc658">https://www.iana.org/go/rfc658</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682daf1c3b4a227c4ed90847f999a5b925887"></a>OutputLinefeedDisposition&#160;</td><td class="fielddoc"><p>NAOLFD, Negotiate About Output Linefeed Disposition RFC658 <a href="https://www.iana.org/go/rfc658">https://www.iana.org/go/rfc658</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a05a1c6312a16887de354393dcf2dd091"></a>ExtendedASCII&#160;</td><td class="fielddoc"><p>Extended ASCII RFC698 <a href="https://www.iana.org/go/rfc698">https://www.iana.org/go/rfc698</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da0a8d406681054b555da71acf8bcd6688"></a>ExtendedASCII&#160;</td><td class="fielddoc"><p>Extended ASCII RFC698 <a href="https://www.iana.org/go/rfc698">https://www.iana.org/go/rfc698</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a8e30c1a6868ce1eedb9e35850fb7067b"></a>Logout&#160;</td><td class="fielddoc"><p>Logout RFC727 <a href="https://www.iana.org/go/rfc727">https://www.iana.org/go/rfc727</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da0323de4f66a1700e2173e9bcdce02715"></a>Logout&#160;</td><td class="fielddoc"><p>Logout RFC727 <a href="https://www.iana.org/go/rfc727">https://www.iana.org/go/rfc727</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a357bf74bf9502ef88c7c1a4a7a50e3bc"></a>ByteMacro&#160;</td><td class="fielddoc"><p>BM, Byte Macro RFC735 <a href="https://www.iana.org/go/rfc735">https://www.iana.org/go/rfc735</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da452b6add36d819fe0bb8ae8f156a5d89"></a>ByteMacro&#160;</td><td class="fielddoc"><p>BM, Byte Macro RFC735 <a href="https://www.iana.org/go/rfc735">https://www.iana.org/go/rfc735</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a058d19bd31239baacb653ab3d2e31302"></a>DataEntryTerminal&#160;</td><td class="fielddoc"><p>Data Entry Terminal RFC1043 - RFC732 <a href="https://www.iana.org/go/rfc1043">https://www.iana.org/go/rfc1043</a> <a href="https://www.iana.org/go/rfc732">https://www.iana.org/go/rfc732</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682dabda1310285c38f5a7feaba04a9d7ab77"></a>DataEntryTerminal&#160;</td><td class="fielddoc"><p>Data Entry Terminal RFC1043 - RFC732 <a href="https://www.iana.org/go/rfc1043">https://www.iana.org/go/rfc1043</a> <a href="https://www.iana.org/go/rfc732">https://www.iana.org/go/rfc732</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147aae0e55092a5f6bcd1e4ed17dad52c73c"></a>SUPDUP&#160;</td><td class="fielddoc"><p>SUPDUP RFC736 - RFC734 <a href="https://www.iana.org/go/rfc736">https://www.iana.org/go/rfc736</a> <a href="https://www.iana.org/go/rfc734">https://www.iana.org/go/rfc734</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682dac0db09431c722c0d53019fb5f51f10fb"></a>SUPDUP&#160;</td><td class="fielddoc"><p>SUPDUP RFC736 - RFC734 <a href="https://www.iana.org/go/rfc736">https://www.iana.org/go/rfc736</a> <a href="https://www.iana.org/go/rfc734">https://www.iana.org/go/rfc734</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a1358640cadc6df8619ddfbcf64657d5c"></a>SUPDUPOutput&#160;</td><td class="fielddoc"><p>SUPDUP Output RFC749 <a href="https://www.iana.org/go/rfc749">https://www.iana.org/go/rfc749</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682dacc49464ca62658d36085fe2fe40d92fc"></a>SUPDUPOutput&#160;</td><td class="fielddoc"><p>SUPDUP Output RFC749 <a href="https://www.iana.org/go/rfc749">https://www.iana.org/go/rfc749</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a429552387f0b6334866b2b54e4c9b054"></a>SendLocation&#160;</td><td class="fielddoc"><p>Send Location RFC779 <a href="https://www.iana.org/go/rfc779">https://www.iana.org/go/rfc779</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682dadefc4bdfe31e142b4e7b1846d53b4f63"></a>SendLocation&#160;</td><td class="fielddoc"><p>Send Location RFC779 <a href="https://www.iana.org/go/rfc779">https://www.iana.org/go/rfc779</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a7ba5de4a0dd49df2d4c2348672ba755b"></a>TerminalType&#160;</td><td class="fielddoc"><p>Terminal Type RFC1091 <a href="https://www.iana.org/go/rfc1091">https://www.iana.org/go/rfc1091</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da65654e6556a288a23e5064f4cc51c240"></a>TerminalType&#160;</td><td class="fielddoc"><p>Terminal Type RFC1091 <a href="https://www.iana.org/go/rfc1091">https://www.iana.org/go/rfc1091</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147afed66a8b953b4ef0f27fa20671450aac"></a>EndOfRecordOption&#160;</td><td class="fielddoc"><p>End of record RFC885 <a href="https://www.iana.org/go/rfc885">https://www.iana.org/go/rfc885</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da804f24d95d76da325b6d06c93b3c595c"></a>EndOfRecordOption&#160;</td><td class="fielddoc"><p>End of record RFC885 <a href="https://www.iana.org/go/rfc885">https://www.iana.org/go/rfc885</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a28d3bbc5d98b3d77ede7b053a2deb5af"></a>TACACSUserIdentification&#160;</td><td class="fielddoc"><p>TUID, TACACS User Identification RFC927 <a href="https://www.iana.org/go/rfc927">https://www.iana.org/go/rfc927</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da54f9b8ca57e1f30a246476e02aa70bb9"></a>TACACSUserIdentification&#160;</td><td class="fielddoc"><p>TUID, TACACS User Identification RFC927 <a href="https://www.iana.org/go/rfc927">https://www.iana.org/go/rfc927</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a0ecc20dfeee8a5acc8e92808d16f57da"></a>OutputMarking&#160;</td><td class="fielddoc"><p>OUTMRK, Output Marking RFC933 <a href="https://www.iana.org/go/rfc933">https://www.iana.org/go/rfc933</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da222870ca79007523f0dd88a777403468"></a>OutputMarking&#160;</td><td class="fielddoc"><p>OUTMRK, Output Marking RFC933 <a href="https://www.iana.org/go/rfc933">https://www.iana.org/go/rfc933</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a62458b70c594b12b0c2f25a1f17c4bec"></a>TerminalLocationNumber&#160;</td><td class="fielddoc"><p>TTYLOC, Terminal Location Number RFC946 <a href="https://www.iana.org/go/rfc946">https://www.iana.org/go/rfc946</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da7b7ddfd642b65be148fdc350fe8c6816"></a>TerminalLocationNumber&#160;</td><td class="fielddoc"><p>TTYLOC, Terminal Location Number RFC946 <a href="https://www.iana.org/go/rfc946">https://www.iana.org/go/rfc946</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a4e3e1206dc12c0462460ebff9e8933fb"></a>Telnet3270Regime&#160;</td><td class="fielddoc"><p>Telnet 3270 Regime RFC1041 <a href="https://www.iana.org/go/rfc1041">https://www.iana.org/go/rfc1041</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da003011c12ccb0e18a33749bfa953b490"></a>Telnet3270Regime&#160;</td><td class="fielddoc"><p>Telnet 3270 Regime RFC1041 <a href="https://www.iana.org/go/rfc1041">https://www.iana.org/go/rfc1041</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a2204dad07c49993124203a42d9df8e76"></a>X3Pad&#160;</td><td class="fielddoc"><p>X.3 PAD RFC1053 <a href="https://www.iana.org/go/rfc1053">https://www.iana.org/go/rfc1053</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da838f899073f1ebd96caef6d95243376f"></a>X3Pad&#160;</td><td class="fielddoc"><p>X.3 PAD RFC1053 <a href="https://www.iana.org/go/rfc1053">https://www.iana.org/go/rfc1053</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a87f4473618ed1a9fbbc1585bad2efdcf"></a>NegotiateAboutWindowSize&#160;</td><td class="fielddoc"><p>NAWS, Negotiate About Window Size RFC1073 <a href="https://www.iana.org/go/rfc1073">https://www.iana.org/go/rfc1073</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682daf03612ff4489257b9dca7622a495680a"></a>NegotiateAboutWindowSize&#160;</td><td class="fielddoc"><p>NAWS, Negotiate About Window Size RFC1073 <a href="https://www.iana.org/go/rfc1073">https://www.iana.org/go/rfc1073</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a6be6254e2111afb28ad4ac6b64325b33"></a>TerminalSpeed&#160;</td><td class="fielddoc"><p>Terminal Speed RFC1079 <a href="https://www.iana.org/go/rfc1079">https://www.iana.org/go/rfc1079</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682dae9032600c7dce2983020be6670d5feb8"></a>TerminalSpeed&#160;</td><td class="fielddoc"><p>Terminal Speed RFC1079 <a href="https://www.iana.org/go/rfc1079">https://www.iana.org/go/rfc1079</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a0c3c5a8eb8889c2ce0622047cddcf623"></a>RemoteFlowControl&#160;</td><td class="fielddoc"><p>Remote Flow Control RFC1372 <a href="https://www.iana.org/go/rfc1372">https://www.iana.org/go/rfc1372</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da226c113e74b2ae4954ef0524f1476187"></a>RemoteFlowControl&#160;</td><td class="fielddoc"><p>Remote Flow Control RFC1372 <a href="https://www.iana.org/go/rfc1372">https://www.iana.org/go/rfc1372</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a8f3c9d43daf7e90035c2a1777ce6b0e1"></a>Linemode&#160;</td><td class="fielddoc"><p>Line Mode RFC1184 <a href="https://www.iana.org/go/rfc1184">https://www.iana.org/go/rfc1184</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da4792479a07b6d74d77927c52f6b7d1ca"></a>Linemode&#160;</td><td class="fielddoc"><p>Line Mode RFC1184 <a href="https://www.iana.org/go/rfc1184">https://www.iana.org/go/rfc1184</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a875cda147ea4689ca2427f9a29fb5976"></a>XDisplayLocation&#160;</td><td class="fielddoc"><p>X Display Location RFC1096 <a href="https://www.iana.org/go/rfc1096">https://www.iana.org/go/rfc1096</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da1e71f08bdb475dd45b02a52bed148590"></a>XDisplayLocation&#160;</td><td class="fielddoc"><p>X Display Location RFC1096 <a href="https://www.iana.org/go/rfc1096">https://www.iana.org/go/rfc1096</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147aab7c677e724ccf6ea20ce1f986fd4658"></a>EnvironmentOption&#160;</td><td class="fielddoc"><p>Environment Option RFC1408 <a href="https://www.iana.org/go/rfc1408">https://www.iana.org/go/rfc1408</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da5d8099ddb5b3cb8d6dd798b5013b73df"></a>EnvironmentOption&#160;</td><td class="fielddoc"><p>Environment Option RFC1408 <a href="https://www.iana.org/go/rfc1408">https://www.iana.org/go/rfc1408</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a207588db1a16b32a78784d4128d0a62c"></a>AuthenticationOption&#160;</td><td class="fielddoc"><p>Authentication Option RFC2941 <a href="https://www.iana.org/go/rfc2941">https://www.iana.org/go/rfc2941</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da909d671bf2f5af1c255862586edeff4f"></a>AuthenticationOption&#160;</td><td class="fielddoc"><p>Authentication Option RFC2941 <a href="https://www.iana.org/go/rfc2941">https://www.iana.org/go/rfc2941</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147aa933b10feb237f242f99ad9c82d2619c"></a>EncryptionOption&#160;</td><td class="fielddoc"><p>Encryption Option RFC2946 <a href="https://www.iana.org/go/rfc2946">https://www.iana.org/go/rfc2946</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da5d0de0195863ca12436ae5a7e1ed6de9"></a>EncryptionOption&#160;</td><td class="fielddoc"><p>Encryption Option RFC2946 <a href="https://www.iana.org/go/rfc2946">https://www.iana.org/go/rfc2946</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a4f26bc8cecaa4baaaad338ec15698e91"></a>NewEnvironmentOption&#160;</td><td class="fielddoc"><p>New Environment Option RFC1572 <a href="https://www.iana.org/go/rfc1572">https://www.iana.org/go/rfc1572</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da0468947dc6493a1cd21d1049b58a0a96"></a>NewEnvironmentOption&#160;</td><td class="fielddoc"><p>New Environment Option RFC1572 <a href="https://www.iana.org/go/rfc1572">https://www.iana.org/go/rfc1572</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a060f87a458923d1b8fa309a8eff530c4"></a>TN3270E&#160;</td><td class="fielddoc"><p>TN3270E RFC2355 <a href="https://www.iana.org/go/rfc2355">https://www.iana.org/go/rfc2355</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da9b8a0cc8968347ca0d8cfd6875dea7dc"></a>TN3270E&#160;</td><td class="fielddoc"><p>TN3270E RFC2355 <a href="https://www.iana.org/go/rfc2355">https://www.iana.org/go/rfc2355</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a3544cd529decc4390eceb615d4c99bfd"></a>XAuth&#160;</td><td class="fielddoc"><p>X Server Authentication. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682dad67c1c6fb71de6dc670c96c07d8d5114"></a>XAuth&#160;</td><td class="fielddoc"><p>X Server Authentication. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147ac44abddd3d1d662013a7b3aa0f0874a7"></a>Charset&#160;</td><td class="fielddoc"><p>Charset RFC2066 <a href="https://www.iana.org/go/rfc2066">https://www.iana.org/go/rfc2066</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682daf594c0052b0886932fe51eedb83fb2c3"></a>Charset&#160;</td><td class="fielddoc"><p>Charset RFC2066 <a href="https://www.iana.org/go/rfc2066">https://www.iana.org/go/rfc2066</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a6b38b83f02e2b25b58b80c0c31637379"></a>TelnetRemoteSerialPort&#160;</td><td class="fielddoc"><p>RSP, Telnet Remote Serial Port. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682daa0c7b11c751b2e13656c4223653ee40d"></a>TelnetRemoteSerialPort&#160;</td><td class="fielddoc"><p>RSP, Telnet Remote Serial Port. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a52e4de32f3e878df7e93d9154c06405d"></a>ComPortControlOption&#160;</td><td class="fielddoc"><p>Com Port Control Option RFC2217 <a href="https://www.iana.org/go/rfc2217">https://www.iana.org/go/rfc2217</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682daea4a4d7789e7448b1bd04de7ee98f776"></a>ComPortControlOption&#160;</td><td class="fielddoc"><p>Com Port Control Option RFC2217 <a href="https://www.iana.org/go/rfc2217">https://www.iana.org/go/rfc2217</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147ad71a93dfd4e2b3c152f290bc9245d7c6"></a>TelnetSuppressLocalEcho&#160;</td><td class="fielddoc"><p>Telnet Suppress Local Echo. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682dad2f1550c7e717986958b773a24a4734e"></a>TelnetSuppressLocalEcho&#160;</td><td class="fielddoc"><p>Telnet Suppress Local Echo. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147aaafcd69b570bc78d3a011523bfe13cbc"></a>TelnetStartTLS&#160;</td><td class="fielddoc"><p>Telnet Start TLS. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da4d633a0bb3b3206b0f47746dfaa1b55a"></a>TelnetStartTLS&#160;</td><td class="fielddoc"><p>Telnet Start TLS. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a9bea6904f00738f71a01ca89bc82a768"></a>Kermit&#160;</td><td class="fielddoc"><p>Kermit RFC2840 <a href="https://www.iana.org/go/rfc2840">https://www.iana.org/go/rfc2840</a>. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da8b17e5f857ece1039c142a99c3df1734"></a>Kermit&#160;</td><td class="fielddoc"><p>Kermit RFC2840 <a href="https://www.iana.org/go/rfc2840">https://www.iana.org/go/rfc2840</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147af650d552ef53301dd1cd9264e33c5de4"></a>SendURL&#160;</td><td class="fielddoc"><p>Send URL. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da23d8e180fc977858ff287251d25a9dc7"></a>SendURL&#160;</td><td class="fielddoc"><p>Send URL. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147aba4684733619ec0a6e5637c42d578732"></a>ForwardX&#160;</td><td class="fielddoc"><p>Forward X Server. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da452c993fd04f38fcf3b94d154b24042a"></a>ForwardX&#160;</td><td class="fielddoc"><p>Forward X Server. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147ac93f98b799bdfca8dcbf494d913e410f"></a>TelOptPragmaLogon&#160;</td><td class="fielddoc"><p>Telnet Option Pragma Logon. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da92bc1c6c86793b663775e6035286b143"></a>TelOptPragmaLogon&#160;</td><td class="fielddoc"><p>Telnet Option Pragma Logon. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a6343201c77c603e63d7266074a409afc"></a>TelOptSSPILogon&#160;</td><td class="fielddoc"><p>Telnet Option SSPI Logon. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da69717081589786cc9c11c1b2c63f5db1"></a>TelOptSSPILogon&#160;</td><td class="fielddoc"><p>Telnet Option SSPI Logon. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a88280bb162c3565257f6b08ddc305535"></a>TelOptPragmaHeartbeat&#160;</td><td class="fielddoc"><p>Telnet Option Pragma Heartbeat. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da42d276015cf04b67a62ac68dce303d09"></a>TelOptPragmaHeartbeat&#160;</td><td class="fielddoc"><p>Telnet Option Pragma Heartbeat. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0dd07ae255ff60808d54f34840048147a19b90292d3383490dcc37a35959612ab"></a>ExtendedOptions&#160;</td><td class="fielddoc"><p>Extended option list. </p>
+<tr><td class="fieldname"><a id="ac42f0fb02472c196e4c65477c201682da004eed36b6627e279c3d4779d36b8126"></a>ExtendedOptions&#160;</td><td class="fielddoc"><p>Extended option list. </p>
 </td></tr>
 </table>
 
@@ -560,7 +576,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8">TelnetCommand</a> pcpp::TelnetLayer::getFirstCommand </td>
+          <td class="memname"><a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589">TelnetCommand</a> pcpp::TelnetLayer::getFirstCommand </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -606,7 +622,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8">TelnetCommand</a> pcpp::TelnetLayer::getNextCommand </td>
+          <td class="memname"><a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589">TelnetCommand</a> pcpp::TelnetLayer::getNextCommand </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -626,7 +642,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">size_t pcpp::TelnetLayer::getNumberOfCommands </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8">TelnetCommand</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589">TelnetCommand</a>&#160;</td>
           <td class="paramname"><em>command</em></td><td>)</td>
           <td></td>
         </tr>
@@ -649,7 +665,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147">TelnetOption</a> pcpp::TelnetLayer::getOption </td>
+          <td class="memname"><a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682d">TelnetOption</a> pcpp::TelnetLayer::getOption </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -667,9 +683,9 @@ Static Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147">TelnetOption</a> pcpp::TelnetLayer::getOption </td>
+          <td class="memname"><a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682d">TelnetOption</a> pcpp::TelnetLayer::getOption </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8">TelnetCommand</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589">TelnetCommand</a>&#160;</td>
           <td class="paramname"><em>command</em></td><td>)</td>
           <td></td>
         </tr>
@@ -719,7 +735,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">uint8_t* pcpp::TelnetLayer::getOptionData </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8">TelnetCommand</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589">TelnetCommand</a>&#160;</td>
           <td class="paramname"><em>command</em>, </td>
         </tr>
         <tr>
@@ -786,7 +802,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static std::string pcpp::TelnetLayer::getTelnetCommandAsString </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classpcpp_1_1_telnet_layer.html#a974ed00d860cbf61222159edb5194ac8">TelnetCommand</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589">TelnetCommand</a>&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
         </tr>
@@ -819,7 +835,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static std::string pcpp::TelnetLayer::getTelnetOptionAsString </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classpcpp_1_1_telnet_layer.html#a0dd07ae255ff60808d54f34840048147">TelnetOption</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682d">TelnetOption</a>&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
         </tr>
@@ -968,7 +984,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_telnet_layer.html">TelnetLayer</a></li>
-    <li class="footer">Generated on Wed Sep 20 2023 07:05:00 for PcapPlusPlus by
+    <li class="footer">Generated on Sat Sep 23 2023 18:32:19 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
