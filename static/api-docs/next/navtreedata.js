@@ -60,9 +60,8 @@ var NAVTREEINDEX =
 "classpcpp_1_1_some_ip_sd_configuration_option.html#aaf06b86135f9998831e7e840183abc71",
 "classpcpp_1_1_tcp_option_builder.html#a53cfd9ab111c7d9ebf2a9b879abec936",
 "classpcpp_1_1_vrrp_v2_layer.html#ae7fe4ff04bd89bcfd3e68de457b2ac6a",
-"structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration.html#ab031afa238020cf7389500461675d7fc",
-"structpcpp_1_1gtpv1__header.html#a94e1834458c55a3820bc2e7063858ce0",
-"structpcpp_1_1vxlan__header.html#aa4598ca59f075a7464cef0db92df6f8d"
+"structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html",
+"structpcpp_1_1icmp__address__mask__request.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
