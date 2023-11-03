@@ -112,15 +112,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9faebadf686bb3b6351bcb04c335b4e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_m_buf_raw_packet.html#a9faebadf686bb3b6351bcb04c335b4e6">init</a> (<a class="el" href="classpcpp_1_1_dpdk_device.html">DpdkDevice</a> *device)</td></tr>
 <tr class="memdesc:a9faebadf686bb3b6351bcb04c335b4e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an instance of this class from <a class="el" href="classpcpp_1_1_dpdk_device.html">DpdkDevice</a>. Initialization includes allocating an mbuf from the pool that resides in <a class="el" href="classpcpp_1_1_dpdk_device.html">DpdkDevice</a>. The user should call this method only once per instance. Calling it more than once will result with an error.  <a href="#a9faebadf686bb3b6351bcb04c335b4e6">More...</a><br /></td></tr>
 <tr class="separator:a9faebadf686bb3b6351bcb04c335b4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af58b7495df6fcbf81a0a0c1047dd8a2b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_m_buf_raw_packet.html#af58b7495df6fcbf81a0a0c1047dd8a2b">init</a> (<a class="el" href="classpcpp_1_1_kni_device.html">KniDevice</a> *device)</td></tr>
-<tr class="memdesc:af58b7495df6fcbf81a0a0c1047dd8a2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an instance of this class from <a class="el" href="classpcpp_1_1_kni_device.html">KniDevice</a>. Initialization includes allocating an mbuf from the pool that resides in <a class="el" href="classpcpp_1_1_kni_device.html">KniDevice</a>. The user should call this method only once per instance. Calling it more than once will result with an error.  <a href="#af58b7495df6fcbf81a0a0c1047dd8a2b">More...</a><br /></td></tr>
-<tr class="separator:af58b7495df6fcbf81a0a0c1047dd8a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a8f9f35e751a2edc16ff7a19ce85b88"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_m_buf_raw_packet.html#a0a8f9f35e751a2edc16ff7a19ce85b88">initFromRawPacket</a> (const <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *rawPacket, <a class="el" href="classpcpp_1_1_dpdk_device.html">DpdkDevice</a> *device)</td></tr>
 <tr class="memdesc:a0a8f9f35e751a2edc16ff7a19ce85b88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an instance of this class and copies the content of a <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> object. Initialization includes allocating an mbuf from the pool that resides in provided <a class="el" href="classpcpp_1_1_dpdk_device.html">DpdkDevice</a>, and copying the data from the input <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> object into this mBuf. The user should call this method only once per instance. Calling it more than once will result with an error.  <a href="#a0a8f9f35e751a2edc16ff7a19ce85b88">More...</a><br /></td></tr>
 <tr class="separator:a0a8f9f35e751a2edc16ff7a19ce85b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91a728abbe6a08520d019588c1aa8d16"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_m_buf_raw_packet.html#a91a728abbe6a08520d019588c1aa8d16">initFromRawPacket</a> (const <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *rawPacket, <a class="el" href="classpcpp_1_1_kni_device.html">KniDevice</a> *device)</td></tr>
-<tr class="memdesc:a91a728abbe6a08520d019588c1aa8d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an instance of this class and copies the content of a <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> object. Initialization includes allocating an mbuf from the pool that resides in provided <a class="el" href="classpcpp_1_1_kni_device.html">KniDevice</a>, and copying the data from the input <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> object into this mBuf. The user should call this method only once per instance. Calling it more than once will result with an error.  <a href="#a91a728abbe6a08520d019588c1aa8d16">More...</a><br /></td></tr>
-<tr class="separator:a91a728abbe6a08520d019588c1aa8d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a203b86f2e4098cd2a51e5e87c7c7ebdc"><td class="memItemLeft" align="right" valign="top">rte_mbuf *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_m_buf_raw_packet.html#a203b86f2e4098cd2a51e5e87c7c7ebdc">getMBuf</a> ()</td></tr>
 <tr class="separator:a203b86f2e4098cd2a51e5e87c7c7ebdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a567773df9153e6754f16628f0480a7f7"><td class="memItemLeft" align="right" valign="top">virtual uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_m_buf_raw_packet.html#a567773df9153e6754f16628f0480a7f7">getObjectType</a> () const</td></tr>
@@ -394,7 +388,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a9faebadf686bb3b6351bcb04c335b4e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9faebadf686bb3b6351bcb04c335b4e6">&#9670;&nbsp;</a></span>init() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9faebadf686bb3b6351bcb04c335b4e6">&#9670;&nbsp;</a></span>init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -420,35 +414,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="af58b7495df6fcbf81a0a0c1047dd8a2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af58b7495df6fcbf81a0a0c1047dd8a2b">&#9670;&nbsp;</a></span>init() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::MBufRawPacket::init </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classpcpp_1_1_kni_device.html">KniDevice</a> *&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize an instance of this class from <a class="el" href="classpcpp_1_1_kni_device.html">KniDevice</a>. Initialization includes allocating an mbuf from the pool that resides in <a class="el" href="classpcpp_1_1_kni_device.html">KniDevice</a>. The user should call this method only once per instance. Calling it more than once will result with an error. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>The <a class="el" href="classpcpp_1_1_kni_device.html">KniDevice</a> which has the pool to allocate the mbuf from </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if initialization succeeded and false if this method was already called for this instance (and an mbuf is already attached) or if allocating an mbuf from the pool failed for some reason </dd></dl>
-
-</div>
-</div>
 <a id="a0a8f9f35e751a2edc16ff7a19ce85b88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a8f9f35e751a2edc16ff7a19ce85b88">&#9670;&nbsp;</a></span>initFromRawPacket() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a8f9f35e751a2edc16ff7a19ce85b88">&#9670;&nbsp;</a></span>initFromRawPacket()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -478,44 +445,6 @@ Additional Inherited Members</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">rawPacket</td><td>A pointer to a <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> object from which data will be copied </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>The <a class="el" href="classpcpp_1_1_dpdk_device.html">DpdkDevice</a> which has the pool to allocate the mbuf from </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if initialization succeeded and false if this method was already called for this instance (and an mbuf is already attached) or if allocating an mbuf from the pool failed for some reason </dd></dl>
-
-</div>
-</div>
-<a id="a91a728abbe6a08520d019588c1aa8d16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91a728abbe6a08520d019588c1aa8d16">&#9670;&nbsp;</a></span>initFromRawPacket() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::MBufRawPacket::initFromRawPacket </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *&#160;</td>
-          <td class="paramname"><em>rawPacket</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classpcpp_1_1_kni_device.html">KniDevice</a> *&#160;</td>
-          <td class="paramname"><em>device</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize an instance of this class and copies the content of a <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> object. Initialization includes allocating an mbuf from the pool that resides in provided <a class="el" href="classpcpp_1_1_kni_device.html">KniDevice</a>, and copying the data from the input <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> object into this mBuf. The user should call this method only once per instance. Calling it more than once will result with an error. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">rawPacket</td><td>A pointer to a <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> object from which data will be copied </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>The <a class="el" href="classpcpp_1_1_kni_device.html">KniDevice</a> which has the pool to allocate the mbuf from </td></tr>
   </table>
   </dd>
 </dl>
@@ -785,7 +714,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_m_buf_raw_packet.html">MBufRawPacket</a></li>
-    <li class="footer">Generated on Sat Oct 21 2023 05:15:07 for PcapPlusPlus by
+    <li class="footer">Generated on Fri Nov 3 2023 07:39:48 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

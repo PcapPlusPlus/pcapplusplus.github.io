@@ -1,7 +1,5 @@
 var NAVTREEINDEX20 =
 {
-"structpcpp_1_1icmp__address__mask__request.html":[3,0,0,61],
-"structpcpp_1_1icmp__address__mask__request.html#a36c9a4edeb4b20a018f581a4bb8ca7a5":[3,0,0,61,1],
 "structpcpp_1_1icmp__address__mask__request.html#ab0a5755df7850387480f9fc150949ff5":[3,0,0,61,2],
 "structpcpp_1_1icmp__address__mask__request.html#ac510d5502a105ee92b9a5718089a4aa4":[3,0,0,61,0],
 "structpcpp_1_1icmp__destination__unreachable.html":[3,0,0,62],
