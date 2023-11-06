@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"classpcpp_1_1_arp_layer.html#a419792a83d567400e246bbb73c906b18":[3,0,0,5,3],
+"classpcpp_1_1_arp_layer.html#a468a4fd5c27276f92a44a06133a53374":[3,0,0,5,8],
 "classpcpp_1_1_arp_layer.html#a55487337c4b674b9b507db9382788de3":[3,0,0,5,10],
 "classpcpp_1_1_arp_layer.html#a8728896ce9bafbcc908bc6af184935ba":[3,0,0,5,13],
 "classpcpp_1_1_arp_layer.html#a87d93b07b01d0bb402ccfd8fd44ca9b3":[3,0,0,5,9],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "classpcpp_1_1_dns_over_tcp_layer.html#aeb225f3b2d4305207457fb119e2c64e3":[3,0,0,28,2],
 "classpcpp_1_1_dns_query.html":[3,0,0,29],
 "classpcpp_1_1_dns_query.html#a4976bfd3988803bba32e199330e99854":[3,0,0,29,1],
-"classpcpp_1_1_dns_query.html#aedb5e2fe3c9491d23c7e4b9267102b4d":[3,0,0,29,0],
-"classpcpp_1_1_dns_resource.html":[3,0,0,30],
-"classpcpp_1_1_dns_resource.html#a2f99de92eb4dd8f82d9fbbdecedc2f12":[3,0,0,30,9]
+"classpcpp_1_1_dns_query.html#aedb5e2fe3c9491d23c7e4b9267102b4d":[3,0,0,29,0]
 };

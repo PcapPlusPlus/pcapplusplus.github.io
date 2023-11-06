@@ -16,7 +16,7 @@ var searchData=
   ['mode',['mode',['../structpcpp_1_1_pcap_live_device_1_1_device_configuration.html#af44933f7a8a561384201368ef54b2d01',1,'pcpp::PcapLiveDevice::DeviceConfiguration']]],
   ['mpls',['MPLS',['../namespacepcpp.html#a2f69fdca66dec264f99da6e3de96345c',1,'pcpp']]],
   ['msgage',['msgAge',['../structpcpp_1_1stp__conf__bpdu.html#a6084af1bcd141e40aaef54d5f41e066a',1,'pcpp::stp_conf_bpdu']]],
-  ['msgtype',['msgType',['../structpcpp_1_1_some_ip_layer_1_1someiphdr.html#a61ebd7c9990b885f9015a60d169c409c',1,'pcpp::SomeIpLayer::someiphdr']]],
+  ['msgtype',['msgType',['../structpcpp_1_1s7commhdr.html#a21e5e84b3d92be789ae62adda8317397',1,'pcpp::s7commhdr::msgType()'],['../structpcpp_1_1_some_ip_layer_1_1someiphdr.html#a61ebd7c9990b885f9015a60d169c409c',1,'pcpp::SomeIpLayer::someiphdr::msgType()']]],
   ['mstconfigdigest',['mstConfigDigest',['../structpcpp_1_1mstp__conf__bpdu.html#aa463395b9c66bb4a74d4071e9b31e9e3',1,'pcpp::mstp_conf_bpdu']]],
   ['mstconfigformatselector',['mstConfigFormatSelector',['../structpcpp_1_1mstp__conf__bpdu.html#a1aadb228a624f64a69043d4d26e4df6c',1,'pcpp::mstp_conf_bpdu']]],
   ['mstconfigname',['mstConfigName',['../structpcpp_1_1mstp__conf__bpdu.html#a896df3b3c4821302e1b08d8ec765414f',1,'pcpp::mstp_conf_bpdu']]],
