@@ -4,7 +4,7 @@ var searchData=
   ['data_5falready_5fopen_5fstart_5ftransfer',['DATA_ALREADY_OPEN_START_TRANSFER',['../classpcpp_1_1_ftp_response_layer.html#aebec062665c1d8c6e4eba941782a59cdab95ff485b078cdb574b48d741419908c',1,'pcpp::FtpResponseLayer']]],
   ['data_5fopen_5fno_5ftransfer',['DATA_OPEN_NO_TRANSFER',['../classpcpp_1_1_ftp_response_layer.html#aebec062665c1d8c6e4eba941782a59cda5f4d0bbf5250ea4f4f538eb1d3603d34',1,'pcpp::FtpResponseLayer']]],
   ['dataentryterminal',['DataEntryTerminal',['../classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682dabda1310285c38f5a7feaba04a9d7ab77',1,'pcpp::TelnetLayer']]],
-  ['datalength',['dataLength',['../structpcpp_1_1icmp__echo__request.html#a4ed0221d15cb8465ae37cb8cc4311386',1,'pcpp::icmp_echo_request']]],
+  ['datalength',['dataLength',['../structpcpp_1_1icmp__echo__request.html#a4ed0221d15cb8465ae37cb8cc4311386',1,'pcpp::icmp_echo_request::dataLength()'],['../structpcpp_1_1s7commhdr.html#a0945d2e37f1811eb61121d1ceb6fb0f9',1,'pcpp::s7commhdr::dataLength()']]],
   ['datamark',['DataMark',['../classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589a7b22af4eb9c33df5e49130872cb886d1',1,'pcpp::TelnetLayer']]],
   ['dataoffset',['dataOffset',['../structpcpp_1_1tcphdr.html#a593a30084c297a99ea01b76fce5c5b11',1,'pcpp::tcphdr']]],
   ['dcf',['DCF',['../classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7a0cffd3fdeae73b73a43a5db8550c6418',1,'pcpp::NtpLayer']]],

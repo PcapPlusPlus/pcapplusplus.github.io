@@ -140,6 +140,7 @@ var hierarchy =
           [ "pcpp::PPPoESessionLayer", "classpcpp_1_1_p_p_po_e_session_layer.html", null ]
         ] ],
         [ "pcpp::RadiusLayer", "classpcpp_1_1_radius_layer.html", null ],
+        [ "pcpp::S7CommLayer", "classpcpp_1_1_s7_comm_layer.html", null ],
         [ "pcpp::SingleCommandTextProtocol", "classpcpp_1_1_single_command_text_protocol.html", [
           [ "pcpp::FtpLayer", "classpcpp_1_1_ftp_layer.html", [
             [ "pcpp::FtpRequestLayer", "classpcpp_1_1_ftp_request_layer.html", null ],
@@ -312,6 +313,10 @@ var hierarchy =
       [ "pcpp::MBufRawPacket", "classpcpp_1_1_m_buf_raw_packet.html", null ]
     ] ],
     [ "pcpp::DpdkDevice::RxTxStats", "structpcpp_1_1_dpdk_device_1_1_rx_tx_stats.html", null ],
+    [ "pcpp::s7commhdr", "structpcpp_1_1s7commhdr.html", [
+      [ "pcpp::s7comm_ack_data_hdr", "structpcpp_1_1s7comm__ack__data__hdr.html", null ]
+    ] ],
+    [ "pcpp::S7CommParameter", "classpcpp_1_1_s7_comm_parameter.html", null ],
     [ "pcpp::ScalarBuffer< T >", "structpcpp_1_1_scalar_buffer.html", null ],
     [ "pcpp::SSLServerHelloMessage::ServerHelloTLSFingerprint", "structpcpp_1_1_s_s_l_server_hello_message_1_1_server_hello_t_l_s_fingerprint.html", null ],
     [ "pcpp::SipRequestFirstLine", "classpcpp_1_1_sip_request_first_line.html", null ],

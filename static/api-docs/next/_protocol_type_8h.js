@@ -52,6 +52,7 @@ var _protocol_type_8h =
     [ "PPPoEDiscovery", "_protocol_type_8h.html#a9dc88bfe69fb13d599459ca9a7fb05e5", null ],
     [ "PPPoESession", "_protocol_type_8h.html#a2300a265174edb1daecfd97697c67d79", null ],
     [ "Radius", "_protocol_type_8h.html#a77b7ee03eb7a3de9be466af98b7f1f69", null ],
+    [ "S7COMM", "_protocol_type_8h.html#a151840f4ada46323351b89725c26f640", null ],
     [ "SDP", "_protocol_type_8h.html#aeb798bf954a057003adfa79648befa2a", null ],
     [ "SIP", "_protocol_type_8h.html#a6992dbf7b5105d00e6d4a95649599aba", null ],
     [ "SIPRequest", "_protocol_type_8h.html#adece8af5b11fbea2e56d432983d02a35", null ],
