@@ -123,6 +123,7 @@ var searchData=
   ['pcaplogmodulepfringdevice',['PcapLogModulePfRingDevice',['../namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aac8c88c94f4233b2b343c29d2b02cfd9b',1,'pcpp']]],
   ['pcaplogmoduleremotedevice',['PcapLogModuleRemoteDevice',['../namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa41327c44f9fd3ea426f5040dd9d0752c',1,'pcpp']]],
   ['pcaplogmodulewinpcaplivedevice',['PcapLogModuleWinPcapLiveDevice',['../namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aaac5bb0af4a05ddc08ac0d60e40f4af0b',1,'pcpp']]],
+  ['pcaplogmodulexdpdevice',['PcapLogModuleXdpDevice',['../namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa0389db13994d87bd82492e07eabe1ff1',1,'pcpp']]],
   ['pcapngfilereaderdevice',['PcapNgFileReaderDevice',['../classpcpp_1_1_pcap_ng_file_reader_device.html',1,'pcpp::PcapNgFileReaderDevice'],['../classpcpp_1_1_pcap_ng_file_reader_device.html#ad09458bfb5ccc383a8d96178a8fdbce5',1,'pcpp::PcapNgFileReaderDevice::PcapNgFileReaderDevice()']]],
   ['pcapngfilewriterdevice',['PcapNgFileWriterDevice',['../classpcpp_1_1_pcap_ng_file_writer_device.html',1,'pcpp::PcapNgFileWriterDevice'],['../classpcpp_1_1_pcap_ng_file_writer_device.html#a7b6c41a1a4590ea5da6404ae9090138f',1,'pcpp::PcapNgFileWriterDevice::PcapNgFileWriterDevice()']]],
   ['pcapplusplusversion_2eh',['PcapPlusPlusVersion.h',['../_pcap_plus_plus_version_8h.html',1,'']]],

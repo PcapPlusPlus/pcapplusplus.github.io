@@ -278,5 +278,10 @@ var files =
     ] ],
     [ "WinPcapLiveDevice.h", "_win_pcap_live_device_8h.html", [
       [ "WinPcapLiveDevice", "classpcpp_1_1_win_pcap_live_device.html", "classpcpp_1_1_win_pcap_live_device" ]
+    ] ],
+    [ "XdpDevice.h", "_xdp_device_8h.html", [
+      [ "XdpDevice", "classpcpp_1_1_xdp_device.html", "classpcpp_1_1_xdp_device" ],
+      [ "XdpDeviceConfiguration", "structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html", "structpcpp_1_1_xdp_device_1_1_xdp_device_configuration" ],
+      [ "XdpDeviceStats", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats" ]
     ] ]
 ];
