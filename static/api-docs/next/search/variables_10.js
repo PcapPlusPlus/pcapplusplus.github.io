@@ -36,8 +36,20 @@ var searchData=
   ['rsskey',['rssKey',['../structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration.html#ab031afa238020cf7389500461675d7fc',1,'pcpp::DpdkDevice::DpdkDeviceConfiguration']]],
   ['rsskeylength',['rssKeyLength',['../structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration.html#ad3ce4d27e30d5382fbdfe882cc5ab1f5',1,'pcpp::DpdkDevice::DpdkDeviceConfiguration']]],
   ['rstflag',['rstFlag',['../structpcpp_1_1tcphdr.html#a36a5abf30794062f32de013b6ddf39c9',1,'pcpp::tcphdr']]],
+  ['rxbytes',['rxBytes',['../structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#af725d5e57a43957ecd2f18eb2a82822a',1,'pcpp::XdpDevice::XdpDeviceStats']]],
+  ['rxbytespersec',['rxBytesPerSec',['../structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#aec59d81e4405120babe65fbe2a21c1b3',1,'pcpp::XdpDevice::XdpDeviceStats']]],
+  ['rxdroppedfillringpackets',['rxDroppedFillRingPackets',['../structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#ad8348b8fb7e78e8274319d21318c0164',1,'pcpp::XdpDevice::XdpDeviceStats']]],
+  ['rxdroppedinvalidpackets',['rxDroppedInvalidPackets',['../structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#a011b72149d85028e4fe6237e3d3fcc39',1,'pcpp::XdpDevice::XdpDeviceStats']]],
+  ['rxdroppedrxringfullpackets',['rxDroppedRxRingFullPackets',['../structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#ac1b10da020b007869b4362e5759a4976',1,'pcpp::XdpDevice::XdpDeviceStats']]],
+  ['rxdroppedtotalpackets',['rxDroppedTotalPackets',['../structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#ab5289b4baa3b142eb24f31001b33c0cf',1,'pcpp::XdpDevice::XdpDeviceStats']]],
   ['rxerroneouspackets',['rxErroneousPackets',['../structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html#aea2ad4acf3b506d68fdf608c8666942e',1,'pcpp::DpdkDevice::DpdkDeviceStats']]],
   ['rxmbufalocfailed',['rxMbufAlocFailed',['../structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html#a213f66e013a40f84cbfadae0f1232722',1,'pcpp::DpdkDevice::DpdkDeviceStats']]],
+  ['rxpackets',['rxPackets',['../structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#a37bf5195ef7c1cde404e7145538e53a5',1,'pcpp::XdpDevice::XdpDeviceStats']]],
   ['rxpacketsdroppedbyhw',['rxPacketsDroppedByHW',['../structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html#a7ddc688963120b6389b45d36924377d1',1,'pcpp::DpdkDevice::DpdkDeviceStats']]],
-  ['rxstats',['rxStats',['../structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html#abfb9e3e7e4370993c9a28a67402e70a8',1,'pcpp::DpdkDevice::DpdkDeviceStats']]]
+  ['rxpacketspersec',['rxPacketsPerSec',['../structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#ab6674101fcad492555657088ba1581fc',1,'pcpp::XdpDevice::XdpDeviceStats']]],
+  ['rxpolltimeout',['rxPollTimeout',['../structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#afaf1e608ac5858ab0baba6ff4e35fcbf',1,'pcpp::XdpDevice::XdpDeviceStats']]],
+  ['rxringid',['rxRingId',['../structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#a882cffd637127a8b17407d33bd8758f9',1,'pcpp::XdpDevice::XdpDeviceStats']]],
+  ['rxsize',['rxSize',['../structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#aea49f464cade2e1094f35eddef78983c',1,'pcpp::XdpDevice::XdpDeviceConfiguration']]],
+  ['rxstats',['rxStats',['../structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html#abfb9e3e7e4370993c9a28a67402e70a8',1,'pcpp::DpdkDevice::DpdkDeviceStats']]],
+  ['rxtxbatchsize',['rxTxBatchSize',['../structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#a84ec0bcd97ffb98da96426ef74552148',1,'pcpp::XdpDevice::XdpDeviceConfiguration']]]
 ];

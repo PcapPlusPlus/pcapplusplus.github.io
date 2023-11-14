@@ -220,7 +220,8 @@ var hierarchy =
       ] ],
       [ "pcpp::KniDevice", "classpcpp_1_1_kni_device.html", null ],
       [ "pcpp::PfRingDevice", "classpcpp_1_1_pf_ring_device.html", null ],
-      [ "pcpp::RawSocketDevice", "classpcpp_1_1_raw_socket_device.html", null ]
+      [ "pcpp::RawSocketDevice", "classpcpp_1_1_raw_socket_device.html", null ],
+      [ "pcpp::XdpDevice", "classpcpp_1_1_xdp_device.html", null ]
     ] ],
     [ "pcpp::IDnsResource", "classpcpp_1_1_i_dns_resource.html", [
       [ "pcpp::DnsQuery", "classpcpp_1_1_dns_query.html", null ],
@@ -419,5 +420,7 @@ var hierarchy =
     [ "pcpp::vlan_header", "structpcpp_1_1vlan__header.html", null ],
     [ "pcpp::vrrp_header", "structpcpp_1_1vrrp__header.html", null ],
     [ "pcpp::vxlan_header", "structpcpp_1_1vxlan__header.html", null ],
-    [ "pcpp::WakeOnLanLayer::wol_header", "structpcpp_1_1_wake_on_lan_layer_1_1wol__header.html", null ]
+    [ "pcpp::WakeOnLanLayer::wol_header", "structpcpp_1_1_wake_on_lan_layer_1_1wol__header.html", null ],
+    [ "pcpp::XdpDevice::XdpDeviceConfiguration", "structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html", null ],
+    [ "pcpp::XdpDevice::XdpDeviceStats", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html", null ]
 ];

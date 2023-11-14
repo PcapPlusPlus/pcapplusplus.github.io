@@ -290,5 +290,6 @@ var namespacepcpp =
     [ "vxlan_header", "structpcpp_1_1vxlan__header.html", "structpcpp_1_1vxlan__header" ],
     [ "VxlanLayer", "classpcpp_1_1_vxlan_layer.html", "classpcpp_1_1_vxlan_layer" ],
     [ "WakeOnLanLayer", "classpcpp_1_1_wake_on_lan_layer.html", "classpcpp_1_1_wake_on_lan_layer" ],
-    [ "WinPcapLiveDevice", "classpcpp_1_1_win_pcap_live_device.html", "classpcpp_1_1_win_pcap_live_device" ]
+    [ "WinPcapLiveDevice", "classpcpp_1_1_win_pcap_live_device.html", "classpcpp_1_1_win_pcap_live_device" ],
+    [ "XdpDevice", "classpcpp_1_1_xdp_device.html", "classpcpp_1_1_xdp_device" ]
 ];

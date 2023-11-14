@@ -14,6 +14,7 @@ var searchData=
   ['clientipaddress',['clientIpAddress',['../structpcpp_1_1dhcp__header.html#a9d8d81e0d19830b1c2f6a46d6a1570ba',1,'pcpp::dhcp_header']]],
   ['closedconnectiondelay',['closedConnectionDelay',['../structpcpp_1_1_tcp_reassembly_configuration.html#a291ecac743fe0e44af8998bb9e48479a',1,'pcpp::TcpReassemblyConfiguration']]],
   ['code',['code',['../structpcpp_1_1icmphdr.html#a6a428f920e2143563b39327b37985fea',1,'pcpp::icmphdr::code()'],['../structpcpp_1_1icmpv6hdr.html#aeba27dfc8becae5efc085d2e6b5e9606',1,'pcpp::icmpv6hdr::code()'],['../structpcpp_1_1pppoe__header.html#ab7f6d4c3dba01ad2212e4a71e738161c',1,'pcpp::pppoe_header::code()'],['../structpcpp_1_1radius__header.html#ad7341098e0278fdcac9f7d8da1e55ce0',1,'pcpp::radius_header::code()']]],
+  ['completionringsize',['completionRingSize',['../structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#a5d66562353b87817797a1f16634c7b8c',1,'pcpp::XdpDevice::XdpDeviceConfiguration']]],
   ['config_5fmac_5faddress',['config_mac_address',['../structpcpp_1_1_kni_device_1_1_kni_ioctl_callbacks.html#a935e5aa0c623107a4bf7088be436e68d',1,'pcpp::KniDevice::KniIoctlCallbacks']]],
   ['config_5fnetwork_5fif',['config_network_if',['../structpcpp_1_1_kni_device_1_1_kni_ioctl_callbacks.html#aa7202b6797b63f0f1cb779db56056c35',1,'pcpp::KniDevice::KniIoctlCallbacks::config_network_if()'],['../structpcpp_1_1_kni_device_1_1_kni_old_ioctl_callbacks.html#ab548ab7f397d18a78a767225f9fb3192',1,'pcpp::KniDevice::KniOldIoctlCallbacks::config_network_if()']]],
   ['config_5fpromiscusity',['config_promiscusity',['../structpcpp_1_1_kni_device_1_1_kni_ioctl_callbacks.html#ac3b5330e4ee138f16b4be662250634a3',1,'pcpp::KniDevice::KniIoctlCallbacks']]],
@@ -51,5 +52,6 @@ var searchData=
   ['core8',['Core8',['../structpcpp_1_1_system_cores.html#a2897e8551b595b0f7f01df1e43234b00',1,'pcpp::SystemCores']]],
   ['core9',['Core9',['../structpcpp_1_1_system_cores.html#a09ac98124b11cf18c33144059c8d4718',1,'pcpp::SystemCores']]],
   ['cotp',['COTP',['../namespacepcpp.html#a3627d03d2d4427b2f960f258727236f0',1,'pcpp']]],
+  ['cqringid',['cqRingId',['../structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#aecfefe59d795a5bd4052ec6c7962e254',1,'pcpp::XdpDevice::XdpDeviceStats']]],
   ['cwrflag',['cwrFlag',['../structpcpp_1_1tcphdr.html#a26d5425128be717916096e577f2561fe',1,'pcpp::tcphdr']]]
 ];

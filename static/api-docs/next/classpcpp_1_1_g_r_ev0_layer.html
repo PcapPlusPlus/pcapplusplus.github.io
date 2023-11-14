@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_g_r_ev0_layer.html','');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classpcpp_1_1_g_r_ev0_layer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::GREv0Layer Class Reference</div>  </div>
@@ -166,8 +167,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0d76629f081c34424c63794f4cf75a5a inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a0d76629f081c34424c63794f4cf75a5a">getDataPtr</a> (size_t offset=0) const</td></tr>
 <tr class="separator:a0d76629f081c34424c63794f4cf75a5a inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ac704320406687a1b0d29697c9b0372a0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_g_r_ev0_layer.html#ac704320406687a1b0d29697c9b0372a0">isDataValid</a> (const uint8_t *data, size_t dataLen)</td></tr>
+<tr class="separator:ac704320406687a1b0d29697c9b0372a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classpcpp_1_1_gre_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classpcpp_1_1_gre_layer')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classpcpp_1_1_gre_layer.html">pcpp::GreLayer</a></td></tr>
 <tr class="memitem:aed4d4fa0aefa22fe5a5a4ca79e451d79 inherit pub_static_methods_classpcpp_1_1_gre_layer"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_gre_layer.html#aed4d4fa0aefa22fe5a5a4ca79e451d79">getGREVersion</a> (uint8_t *greData, size_t greDataLen)</td></tr>
 <tr class="separator:aed4d4fa0aefa22fe5a5a4ca79e451d79 inherit pub_static_methods_classpcpp_1_1_gre_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -383,6 +386,50 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ac704320406687a1b0d29697c9b0372a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac704320406687a1b0d29697c9b0372a0">&#9670;&nbsp;</a></span>isDataValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool pcpp::GREv0Layer::isDataValid </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A static method that validates the input data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The pointer to the beginning of a byte stream of an GREv0 layer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>The length of the byte stream </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the data is valid and can represent an GREv0 layer </dd></dl>
+
+</div>
+</div>
 <a id="ac8e0328698bf7208f6a68c828a36a91b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac8e0328698bf7208f6a68c828a36a91b">&#9670;&nbsp;</a></span>setChecksum()</h2>
 
@@ -503,7 +550,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_g_r_ev0_layer.html">GREv0Layer</a></li>
-    <li class="footer">Generated on Mon Nov 13 2023 01:36:02 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Nov 14 2023 09:10:08 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

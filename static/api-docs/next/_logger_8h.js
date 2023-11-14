@@ -57,6 +57,7 @@ var _logger_8h =
       [ "PcapLogModuleMBufRawPacket", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aadfdb8aa4e0ae1db8892cac047dd68879", null ],
       [ "PcapLogModuleDpdkDevice", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa6b600aa8ac5b85687c8b390130d073af", null ],
       [ "PcapLogModuleKniDevice", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa215a3cc0bca9f02941f47cd013cdff3e", null ],
+      [ "PcapLogModuleXdpDevice", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa0389db13994d87bd82492e07eabe1ff1", null ],
       [ "NetworkUtils", "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa7c7b04d450484507109458e2ef341a68", null ]
     ] ]
 ];

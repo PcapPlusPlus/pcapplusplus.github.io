@@ -363,6 +363,7 @@ var searchData=
   ['dpdkpmdtype',['DpdkPMDType',['../namespacepcpp.html#adb43f1f8284d4e0b74d1c77b70152fa9',1,'pcpp']]],
   ['dpdkrsshashfunction',['DpdkRssHashFunction',['../classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4',1,'pcpp::DpdkDevice']]],
   ['dpdkworkerthread',['DpdkWorkerThread',['../classpcpp_1_1_dpdk_worker_thread.html',1,'pcpp']]],
+  ['drivermode',['DriverMode',['../structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#a32b2d451b6989425730a8bcd94e9b127a92cd6b9796617af0f2dc3db8fc52b7f3',1,'pcpp::XdpDevice::XdpDeviceConfiguration']]],
   ['drop',['drop',['../structpcpp_1_1_pf_ring_device_1_1_pf_ring_stats.html#a83db0ccadf101d72b41c3eb2ff6a72c3',1,'pcpp::PfRingDevice::PfRingStats::drop()'],['../classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738cabf8f3be424eb6a72b21549fbb24ffb57',1,'pcpp::NtpLayer::DROP()']]],
   ['dsap',['dsap',['../structpcpp_1_1llc__header.html#a3ddf6d46a9a9a3c03b673ad0bc1ee288',1,'pcpp::llc_header']]],
   ['dsiz',['DSIZ',['../classpcpp_1_1_ftp_request_layer.html#ad293dabbe652aed3ac548eb01963e781a77a001a5f2d0891595c0b92272b9ab95',1,'pcpp::FtpRequestLayer']]],

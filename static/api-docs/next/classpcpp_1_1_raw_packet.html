@@ -122,6 +122,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6babfc371bd3b9eac8c741cba5e097f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa11e800ab071df0a3c1c329868aea5a7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#aa11e800ab071df0a3c1c329868aea5a7">setRawData</a> (const uint8_t *pRawData, int rawDataLen, timespec timestamp, <a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> layerType=<a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a>, int frameLength=-1)</td></tr>
 <tr class="separator:aa11e800ab071df0a3c1c329868aea5a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74ac9d1097c7714f0fc23c6e8198a2a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#a74ac9d1097c7714f0fc23c6e8198a2a8">initWithRawData</a> (const uint8_t *pRawData, int rawDataLen, timespec timestamp, <a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> layerType=<a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a>)</td></tr>
+<tr class="separator:a74ac9d1097c7714f0fc23c6e8198a2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a095f2d3a3ac095b23c07af2bf095653f"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#a095f2d3a3ac095b23c07af2bf095653f">getRawData</a> () const</td></tr>
 <tr class="separator:a095f2d3a3ac095b23c07af2bf095653f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3cd4246f2c2e6a7d4238a02b28771ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#ad3cd4246f2c2e6a7d4238a02b28771ba">getLinkLayerType</a> () const</td></tr>
@@ -573,6 +575,56 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a74ac9d1097c7714f0fc23c6e8198a2a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74ac9d1097c7714f0fc23c6e8198a2a8">&#9670;&nbsp;</a></span>initWithRawData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::RawPacket::initWithRawData </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>pRawData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rawDataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">timespec&#160;</td>
+          <td class="paramname"><em>timestamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a>&#160;</td>
+          <td class="paramname"><em>layerType</em> = <code><a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialize a raw packet with data. The main difference between this method and <a class="el" href="classpcpp_1_1_raw_packet.html#a6babfc371bd3b9eac8c741cba5e097f6">setRawData()</a> is that <a class="el" href="classpcpp_1_1_raw_packet.html#a6babfc371bd3b9eac8c741cba5e097f6">setRawData()</a> is meant for replacing the data in an existing raw packet, whereas this method is meant to be used right after constructing a raw packet using the default c'tor, before setting any data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pRawData</td><td>A pointer to the new raw data </td></tr>
+    <tr><td class="paramname">rawDataLen</td><td>The new raw data length in bytes </td></tr>
+    <tr><td class="paramname">timestamp</td><td>The timestamp packet was received by the NIC (in nsec precision) </td></tr>
+    <tr><td class="paramname">layerType</td><td>The link layer type for this raw data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if raw data was set successfully, false otherwise </dd></dl>
+
+</div>
+</div>
 <a id="a3563f649177826c9e4f649eec7b35887"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3563f649177826c9e4f649eec7b35887">&#9670;&nbsp;</a></span>insertData()</h2>
 
@@ -993,7 +1045,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a></li>
-    <li class="footer">Generated on Mon Nov 13 2023 01:36:03 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Nov 14 2023 09:10:08 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
