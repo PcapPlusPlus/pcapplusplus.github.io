@@ -16,6 +16,7 @@
 *   - pcpp::PcapRemoteDevice, PcapRemoteDevice.h - remote live device, supported by WinPcap (Windows)
 *   - pcpp::PfRingDevice, PfRingDevice.h - Vanilla PF_RING device (Linux)
 *   - pcpp::DpdkDevice, DpdkDevice.h - DPDK device (Linux)
+*   - pcpp::XdpDevice, XdpDevice.h - AF_XDP device (Linux)
 *   - pcpp::RawSocketDevice, RawSocketDevice.h - raw socket wrapper (Windows and Linux)
 *   - PcapFilter.h - structured filter engine
 *
