@@ -181,6 +181,41 @@ As DPDK API is written in C, PcapPlusPlus wraps its main functionality in easy-t
 
 You can find more information about setting up DPDK and the API in [DPDK support page](./dpdk) and also in [DPDK tutorial](./tutorials/dpdk).
 
+## AF_XDP support (Beta)
+
+:::warning Feature in Beta
+
+Please note this feature is still in Beta. Its interface is unstable and may change in the future.
+
+:::
+
+AF_XDP represents an address family tailored for optimizing high-performance packet processing. It functions as a socket, specifically referred to as XSK sockets, introduced in Linux Kernel 4.18.
+Unlike complete kernel bypass solutions like DPDK, AF_XDP leverages kernel functionality to create an efficient framework akin to DPDK or AF_Packet.
+
+AF_XDP facilitates the direct transfer of packets to userspace, minimizing latency by circumventing the conventional kernel network stack.
+While it doesn't entirely bypass the kernel like DPDK, AF_XDP establishes an in-kernel fast path for accelerated packet processing.
+
+AF_XDP is built on the foundation of eBPF (extended Berkeley Packet Filter) and XDP (eXpress Data Path). eBPF provides means to run custom code in the kernel in response to various events.
+XDP is one of these hooks that gives access to nework packets as soon as they arrive at the network driver. The eBPF program can then decide what to do with these packets, like modifying them, dropping them, passing them to the network stack,
+or in the case of AF_XDP scokets - redirect them to userspace.
+
+Here are a few good sources to learn more about AF_XDP:
+
+- https://www.kernel.org/doc/html/next/networking/af_xdp.html (Linux kernel documentation)
+- https://medium.com/high-performance-network-programming/recapitulating-af-xdp-ef6c1ebead8
+- https://medium.com/pantheon-tech/af-xdp-and-its-potential-38485f267fe
+
+PcapPlusPlus currently provides fairly basic support for AF_XDP sockets which includes:
+
+- Creating an AF_XDP socket with either default or custom configuration
+- Receiving and sending packets through the socket
+- Collecting statistics on packets going through the socket
+
+While the interface is simple, it wraps most of the complexity working with AF_XDP sockets.
+Behind the scenes, it leverages [`libbpf`](https://github.com/libbpf/libbpf) to create and configure the socket, then utilize various rings for receiving packets from the kernel and transmitting packets to the kernel.
+
+AF_XDP is only available on Linux. In order to build PcapPlusplus with AF_XDP please make sure you have [`libbpf`](https://github.com/libbpf/libbpf) installed on your device and use the `-DPCAPPP_USE_XDP=ON` CMake option.
+
 ## PF_RING support
 
 PF_RING™ is a new type of network socket that dramatically improves the packet capture speed. It's providing high-speed packet capture, filtering and analysis (taken from [ntop's website](https://www.ntop.org/products/packet-capture/pf_ring/)).
