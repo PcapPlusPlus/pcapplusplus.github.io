@@ -17,5 +17,6 @@ var searchData=
   ['auth',['AUTH',['../classpcpp_1_1_ftp_request_layer.html#ad293dabbe652aed3ac548eb01963e781af458afcda462a9ed24f08634cb2ceced',1,'pcpp::FtpRequestLayer::AUTH()'],['../classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738caf458afcda462a9ed24f08634cb2ceced',1,'pcpp::NtpLayer::AUTH()']]],
   ['authenticationoption',['AuthenticationOption',['../classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da909d671bf2f5af1c255862586edeff4f',1,'pcpp::TelnetLayer']]],
   ['auto',['AUTO',['../classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738cae1f2d5134ed2543d38a0de9751cf75d9',1,'pcpp::NtpLayer']]],
+  ['automode',['AutoMode',['../structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#a32b2d451b6989425730a8bcd94e9b127af3a3794b069de592a3f8e9c2dc099add',1,'pcpp::XdpDevice::XdpDeviceConfiguration']]],
   ['avbl',['AVBL',['../classpcpp_1_1_ftp_request_layer.html#ad293dabbe652aed3ac548eb01963e781a0ddc1c58eb965abb56459f83189f0900',1,'pcpp::FtpRequestLayer']]]
 ];

@@ -80,6 +80,7 @@ var searchData=
   ['pcaplogmodulepfringdevice',['PcapLogModulePfRingDevice',['../namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aac8c88c94f4233b2b343c29d2b02cfd9b',1,'pcpp']]],
   ['pcaplogmoduleremotedevice',['PcapLogModuleRemoteDevice',['../namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa41327c44f9fd3ea426f5040dd9d0752c',1,'pcpp']]],
   ['pcaplogmodulewinpcaplivedevice',['PcapLogModuleWinPcapLiveDevice',['../namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aaac5bb0af4a05ddc08ac0d60e40f4af0b',1,'pcpp']]],
+  ['pcaplogmodulexdpdevice',['PcapLogModuleXdpDevice',['../namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa0389db13994d87bd82492e07eabe1ff1',1,'pcpp']]],
   ['pcpp_5fin',['PCPP_IN',['../classpcpp_1_1_pcap_live_device.html#a00efdbd7aca92b696dd585cf3301add5a9da5011f04f2f9cf302d144d311f27ab',1,'pcpp::PcapLiveDevice']]],
   ['pcpp_5finout',['PCPP_INOUT',['../classpcpp_1_1_pcap_live_device.html#a00efdbd7aca92b696dd585cf3301add5acf27653531bcc39386aecacd44416052',1,'pcpp::PcapLiveDevice']]],
   ['pcpp_5fout',['PCPP_OUT',['../classpcpp_1_1_pcap_live_device.html#a00efdbd7aca92b696dd585cf3301add5aa09daf455022a9dab650fdcb2171ba1c',1,'pcpp::PcapLiveDevice']]],
