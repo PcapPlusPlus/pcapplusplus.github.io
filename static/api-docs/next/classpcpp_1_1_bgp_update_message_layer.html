@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_bgp_update_message_layer
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classpcpp_1_1_bgp_update_message_layer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::BgpUpdateMessageLayer Class Reference</div>  </div>
@@ -182,6 +183,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0d76629f081c34424c63794f4cf75a5a inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a0d76629f081c34424c63794f4cf75a5a">getDataPtr</a> (size_t offset=0) const</td></tr>
 <tr class="separator:a0d76629f081c34424c63794f4cf75a5a inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a8297751a5e89b6c153be88ddbccc0b0d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_bgp_update_message_layer.html#a8297751a5e89b6c153be88ddbccc0b0d">isDataValid</a> (const uint8_t *data, size_t dataSize)</td></tr>
+<tr class="separator:a8297751a5e89b6c153be88ddbccc0b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classpcpp_1_1_bgp_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classpcpp_1_1_bgp_layer')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classpcpp_1_1_bgp_layer.html">pcpp::BgpLayer</a></td></tr>
+<tr class="memitem:a1e6e41a8cc678be1df72ab644d50a1de inherit pub_static_methods_classpcpp_1_1_bgp_layer"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_bgp_layer.html#a1e6e41a8cc678be1df72ab644d50a1de">isBgpPort</a> (uint16_t portSrc, uint16_t portDst)</td></tr>
+<tr class="separator:a1e6e41a8cc678be1df72ab644d50a1de inherit pub_static_methods_classpcpp_1_1_bgp_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adefb7613453603b63b4f3574a0b252e6 inherit pub_static_methods_classpcpp_1_1_bgp_layer"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classpcpp_1_1_bgp_layer.html">BgpLayer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_bgp_layer.html#adefb7613453603b63b4f3574a0b252e6">parseBgpLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_layer.html">Layer</a> *prevLayer, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet)</td></tr>
+<tr class="separator:adefb7613453603b63b4f3574a0b252e6 inherit pub_static_methods_classpcpp_1_1_bgp_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classpcpp_1_1_bgp_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classpcpp_1_1_bgp_layer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classpcpp_1_1_bgp_layer.html">pcpp::BgpLayer</a></td></tr>
@@ -195,11 +206,6 @@ Additional Inherited Members</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a2490690b9c7e6b33c1e5133ebd64ebe8 inherit pub_types_classpcpp_1_1_bgp_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_methods_classpcpp_1_1_bgp_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classpcpp_1_1_bgp_layer')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classpcpp_1_1_bgp_layer.html">pcpp::BgpLayer</a></td></tr>
-<tr class="memitem:a1e6e41a8cc678be1df72ab644d50a1de inherit pub_static_methods_classpcpp_1_1_bgp_layer"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_bgp_layer.html#a1e6e41a8cc678be1df72ab644d50a1de">isBgpPort</a> (uint16_t portSrc, uint16_t portDst)</td></tr>
-<tr class="separator:a1e6e41a8cc678be1df72ab644d50a1de inherit pub_static_methods_classpcpp_1_1_bgp_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adefb7613453603b63b4f3574a0b252e6 inherit pub_static_methods_classpcpp_1_1_bgp_layer"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classpcpp_1_1_bgp_layer.html">BgpLayer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_bgp_layer.html#adefb7613453603b63b4f3574a0b252e6">parseBgpLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_layer.html">Layer</a> *prevLayer, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet)</td></tr>
-<tr class="separator:adefb7613453603b63b4f3574a0b252e6 inherit pub_static_methods_classpcpp_1_1_bgp_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a BGP v4 UPDATE message </p>
@@ -546,6 +552,50 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a8297751a5e89b6c153be88ddbccc0b0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8297751a5e89b6c153be88ddbccc0b0d">&#9670;&nbsp;</a></span>isDataValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool pcpp::BgpUpdateMessageLayer::isDataValid </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A static method that takes a byte array and detects whether it is a BgpUpdateMessage </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A byte array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataSize</td><td>The byte array size (in bytes) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the data looks like a valid BgpUpdateMessage layer </dd></dl>
+
+</div>
+</div>
 <a id="a93bb42230876561743b4ac73184948f9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a93bb42230876561743b4ac73184948f9">&#9670;&nbsp;</a></span>setNetworkLayerReachabilityInfo()</h2>
 
@@ -627,7 +677,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_bgp_update_message_layer.html">BgpUpdateMessageLayer</a></li>
-    <li class="footer">Generated on Tue Nov 14 2023 09:10:08 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Nov 15 2023 09:44:19 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
