@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_t_l_v_record.html','');}
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classpcpp_1_1_t_l_v_record-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::TLVRecord&lt; TRecType, TRecLen &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -136,6 +137,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0df698c8dc4fd0bfe2daa39062edaa54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab756e2100b55a66339c102908164c788"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#ab756e2100b55a66339c102908164c788">getDataSize</a> () const =0</td></tr>
 <tr class="separator:ab756e2100b55a66339c102908164c788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aa1784bf9e0956fd4a973359ebe12e059"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#aa1784bf9e0956fd4a973359ebe12e059">canAssign</a> (const uint8_t *recordRawData, size_t tlvDataLen)</td></tr>
+<tr class="separator:aa1784bf9e0956fd4a973359ebe12e059"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename TRecType, typename TRecLen&gt;<br />
@@ -274,6 +280,52 @@ template&lt;typename TRecType, typename TRecLen&gt; </div>
 
 </div>
 </div>
+<a id="aa1784bf9e0956fd4a973359ebe12e059"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1784bf9e0956fd4a973359ebe12e059">&#9670;&nbsp;</a></span>canAssign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TRecType, typename TRecLen&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool <a class="el" href="classpcpp_1_1_t_l_v_record.html">pcpp::TLVRecord</a>&lt; TRecType, TRecLen &gt;::canAssign </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>recordRawData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>tlvDataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check if a pointer can be assigned to the TLV record data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">recordRawData</td><td>A pointer to the TLV record raw data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlvDataLen</td><td>The size of the TLV record raw data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if data is valid and can be assigned </dd></dl>
+
+</div>
+</div>
 <a id="ab756e2100b55a66339c102908164c788"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab756e2100b55a66339c102908164c788">&#9670;&nbsp;</a></span>getDataSize()</h2>
 
@@ -358,7 +410,7 @@ template&lt;typename TRecType, typename TRecLen&gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The total size of the TLV record (in bytes) </dd></dl>
 
-<p>Implemented in <a class="el" href="classpcpp_1_1_dhcp_option.html#adcc1721eddb9010f8ba9d57d822ec921">pcpp::DhcpOption</a>, <a class="el" href="classpcpp_1_1_i_pv4_option.html#ad1dbdc08ff76ffb47248d32805084ad9">pcpp::IPv4Option</a>, <a class="el" href="classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag.html#a32dfe60f1b3c32c4470b146e95d21da8">pcpp::PPPoEDiscoveryLayer::PPPoETag</a>, <a class="el" href="classpcpp_1_1_tcp_option.html#a482848b0f49f9bd5cc844fe33cf55122">pcpp::TcpOption</a>, <a class="el" href="classpcpp_1_1_dhcp_v6_option.html#a9c351f9bb9eedd86544bfe014a7ee475">pcpp::DhcpV6Option</a>, <a class="el" href="classpcpp_1_1_i_pv6_t_l_v_option_header_1_1_i_pv6_option.html#a2145e93d58855c929496a2a315a57e5a">pcpp::IPv6TLVOptionHeader::IPv6Option</a>, <a class="el" href="classpcpp_1_1_ndp_option.html#a79b6b5663ce45ef2a62fe38ca2efebcd">pcpp::NdpOption</a>, and <a class="el" href="classpcpp_1_1_radius_attribute.html#a1486cf38f7347a180b73a07945beeb2c">pcpp::RadiusAttribute</a>.</p>
+<p>Implemented in <a class="el" href="classpcpp_1_1_dhcp_option.html#adcc1721eddb9010f8ba9d57d822ec921">pcpp::DhcpOption</a>, <a class="el" href="classpcpp_1_1_i_pv4_option.html#ad1dbdc08ff76ffb47248d32805084ad9">pcpp::IPv4Option</a>, <a class="el" href="classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag.html#a32dfe60f1b3c32c4470b146e95d21da8">pcpp::PPPoEDiscoveryLayer::PPPoETag</a>, <a class="el" href="classpcpp_1_1_tcp_option.html#a482848b0f49f9bd5cc844fe33cf55122">pcpp::TcpOption</a>, <a class="el" href="classpcpp_1_1_i_pv6_t_l_v_option_header_1_1_i_pv6_option.html#a2145e93d58855c929496a2a315a57e5a">pcpp::IPv6TLVOptionHeader::IPv6Option</a>, <a class="el" href="classpcpp_1_1_dhcp_v6_option.html#a9c351f9bb9eedd86544bfe014a7ee475">pcpp::DhcpV6Option</a>, <a class="el" href="classpcpp_1_1_ndp_option.html#a79b6b5663ce45ef2a62fe38ca2efebcd">pcpp::NdpOption</a>, and <a class="el" href="classpcpp_1_1_radius_attribute.html#a1486cf38f7347a180b73a07945beeb2c">pcpp::RadiusAttribute</a>.</p>
 
 </div>
 </div>
@@ -698,7 +750,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a></li>
-    <li class="footer">Generated on Thu Nov 16 2023 08:57:52 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Nov 22 2023 01:46:40 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

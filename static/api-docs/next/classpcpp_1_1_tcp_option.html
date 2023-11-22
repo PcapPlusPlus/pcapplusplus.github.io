@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_tcp_option.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classpcpp_1_1_tcp_option-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::TcpOption Class Reference</div>  </div>
@@ -144,6 +145,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac69de0f3ed861718067b2ab81629c1d5 inherit pub_methods_classpcpp_1_1_t_l_v_record"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d7906d1980f8101d5312966193bf9bd inherit pub_methods_classpcpp_1_1_t_l_v_record"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a2d7906d1980f8101d5312966193bf9bd">setValue</a> (T newValue, int valueOffset=0)</td></tr>
 <tr class="separator:a2d7906d1980f8101d5312966193bf9bd inherit pub_methods_classpcpp_1_1_t_l_v_record"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ac3a62f2f5f49b755b21e1888f2b3e107"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_option.html#ac3a62f2f5f49b755b21e1888f2b3e107">canAssign</a> (const uint8_t *recordRawData, size_t tlvDataLen)</td></tr>
+<tr class="separator:ac3a62f2f5f49b755b21e1888f2b3e107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classpcpp_1_1_t_l_v_record"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classpcpp_1_1_t_l_v_record')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classpcpp_1_1_t_l_v_record.html">pcpp::TLVRecord&lt; uint8_t, uint8_t &gt;</a></td></tr>
+<tr class="memitem:aa1784bf9e0956fd4a973359ebe12e059 inherit pub_static_methods_classpcpp_1_1_t_l_v_record"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#aa1784bf9e0956fd4a973359ebe12e059">canAssign</a> (const uint8_t *recordRawData, size_t tlvDataLen)</td></tr>
+<tr class="separator:aa1784bf9e0956fd4a973359ebe12e059 inherit pub_static_methods_classpcpp_1_1_t_l_v_record"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A wrapper class for TCP options. This class does not create or modify TCP option records, but rather serves as a wrapper and provides useful methods for retrieving data from them </p>
@@ -207,6 +216,50 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac3a62f2f5f49b755b21e1888f2b3e107"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3a62f2f5f49b755b21e1888f2b3e107">&#9670;&nbsp;</a></span>canAssign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool pcpp::TcpOption::canAssign </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>recordRawData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>tlvDataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check if a pointer can be assigned to the TLV record data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">recordRawData</td><td>A pointer to the TLV record raw data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlvDataLen</td><td>The size of the TLV record raw data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if data is valid and can be assigned </dd></dl>
+
+</div>
+</div>
 <a id="a4df8e7002500ea5ab71e87e79031a672"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4df8e7002500ea5ab71e87e79031a672">&#9670;&nbsp;</a></span>getDataSize()</h2>
 
@@ -295,7 +348,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_tcp_option.html">TcpOption</a></li>
-    <li class="footer">Generated on Thu Nov 16 2023 08:57:52 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Nov 22 2023 01:46:40 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
