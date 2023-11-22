@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_nflog_tlv.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classpcpp_1_1_nflog_tlv-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::NflogTlv Class Reference</div>  </div>
@@ -109,6 +110,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5e8a4a87777183f988f05077d90d1f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7942d4de8c84697ac8a3cc2acf50ed6"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_nflog_tlv.html#ac7942d4de8c84697ac8a3cc2acf50ed6">getValue</a> () const</td></tr>
 <tr class="separator:ac7942d4de8c84697ac8a3cc2acf50ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aacb2412143cfdd955fc0200f5e49399d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_nflog_tlv.html#aacb2412143cfdd955fc0200f5e49399d">canAssign</a> (const uint8_t *recordRawData, size_t tlvDataLen)</td></tr>
+<tr class="separator:aacb2412143cfdd955fc0200f5e49399d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A wrapper class for NFLOG TLV fields. This class does not create or modify TLVs related to NFLOG, but rather serves as a wrapper and provides useful methods for setting and retrieving data to/from them </p>
@@ -175,6 +181,53 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aacb2412143cfdd955fc0200f5e49399d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacb2412143cfdd955fc0200f5e49399d">&#9670;&nbsp;</a></span>canAssign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool pcpp::NflogTlv::canAssign </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>recordRawData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>tlvDataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check if a pointer can be assigned to the TLV record data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">recordRawData</td><td>A pointer to the TLV record raw data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlvDataLen</td><td>The size of the TLV record raw data<ul>
+<li></li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if data is valid and can be assigned </dd></dl>
 
 </div>
 </div>
@@ -314,7 +367,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_nflog_tlv.html">NflogTlv</a></li>
-    <li class="footer">Generated on Thu Nov 16 2023 08:57:52 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Nov 22 2023 01:46:40 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
