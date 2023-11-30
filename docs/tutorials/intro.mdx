@@ -66,7 +66,7 @@ As can be seen in this diagram, a Packet (= parsed packet) holds a pointer to th
 It may be implied from this structure that the actual packet data (the raw byte stream) is duplicated between the raw packet and the various layers. This is not the case. We don't want to duplicate the data from various reasons:
 
 - We don't want the packet object to take up too much memory
-- We would like the avoid unnecessary data coping because it's expensive
+- We would like to avoid unnecessary data copying because it's expensive
 - Since each layer can be edited, we would like the edited data to be written directly to the byte stream and not copied from one place to another
 
 So the raw byte stream is actually stored once, in the RawPacket object. The various layers only point to the relevant place where their data begins. Here is a diagram to visualize it:
@@ -79,7 +79,7 @@ All of these structures and pointers are built by PcapPlusPlus packet parsing en
 
 ## Packet capture engines
 
-Capturing and sending packets is another fundamental principal in PcapPlusPlus and is the heart of the Pcap++ library. The idea is to provide a simple, easy-to-use and as similar as possible interface to capture and send packets from different types of packet capture engines. Different types can be files (pcap/pcap-ng), network interfaces via libpcap/WinPcap/Npcap, DPDK-enabled interfaces, PF_RING-enabled interfaces, etc. This is not always easy because the APIs and work-flows of the different engines is sometimes very different from one another and it's difficult to keep one flow who suits them all. Also, many of the engine have specific OS and platform requirements, and this is also a challenge. The engine families currently supported are:
+Capturing and sending packets is another fundamental principal in PcapPlusPlus and is the heart of the Pcap++ library. The idea is to provide a simple, easy-to-use and as similar as possible interface to capture and send packets from different types of packet capture engines. Different types can be files (pcap/pcap-ng), network interfaces via libpcap/WinPcap/Npcap, DPDK-enabled interfaces, PF_RING-enabled interfaces, etc. This is not always easy because the APIs and work-flows of the different engines are sometimes very different from one another and it's difficult to keep one flow that suits them all. Also, many of the engines have specific OS and platform requirements, and this is also a challenge. The engine families currently supported are:
 
 - Files (pcap and pcap-ng)
 - Network interfaces using libpcap or WinPcap/Npcap
