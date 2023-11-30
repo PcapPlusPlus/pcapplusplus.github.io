@@ -169,33 +169,32 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:ab475769b89eb8db08be50f96afe26450 inherit pub_static_methods_classpcpp_1_1_s_s_l_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents SSL/TLS handshake layer. This layer may contain one or more handshake messages (all of them inherit from the base class <a class="el" href="classpcpp_1_1_s_s_l_handshake_message.html">SSLHandshakeMessage</a>) which are the SSL/TLS handshake message sent between a client and a server until they establish a secure connection (e.g client-hello, server-hello, certificate, client-key-exchange, server-key-exchange, etc.). Usually this layer will contain just one message (as the first example below demonstrates). But there are cases a layer may contain more than 1 message. To better explain this layer structure we'll use 2 examples. The first will be client-hello message. The layer structure will look like this: </p><pre class="fragment">      |------------------- SSLHandshakeLayer ----------------------|
-      +----------------------+-------------------------------------+
-      | ssl_tls_record_layer |       SSLClientHelloMessage         |
-      |        struct        |                                     |
-      +----------------------+-------------------------------------+
-       /     |       \               |          \         \      \
-      /    version    \      |   handshake       \         \      \
-     /     TLS1_0      \            type          \         \     rest of
+<div class="textblock"><p>Represents SSL/TLS handshake layer. This layer may contain one or more handshake messages (all of them inherit from the base class <a class="el" href="classpcpp_1_1_s_s_l_handshake_message.html">SSLHandshakeMessage</a>) which are the SSL/TLS handshake message sent between a client and a server until they establish a secure connection (e.g client-hello, server-hello, certificate, client-key-exchange, server-key-exchange, etc.). Usually this layer will contain just one message (as the first example below demonstrates). But there are cases a layer may contain more than 1 message. To better explain this layer structure we'll use 2 examples. The first will be client-hello message. The layer structure will look like this: </p><pre class="fragment">        |------------------- SSLHandshakeLayer ----------------------|
+        +----------------------+-------------------------------------+
+        | ssl_tls_record_layer |       SSLClientHelloMessage         |
+        |        struct        |                                     |
+        +----------------------+-------------------------------------+
+         /     |       \               |          \         \      \
+        /    version    \      |   handshake       \         \      \
+       /     TLS1_0      \            type          \         \     rest of
     type                  \    | SSL_CLIENT_HELLO    \         \    message fields...
 SSL_HANDSHAKE           length                   handshake      \
     (22)                 xxx   |                  version      message
-                                                 TLS1_2      length
-                             |                                yyy
+                                                  TLS1_2      length
+                               |                                yyy
 </pre><p>Second example is a multiple-message handshake layer comprises of server-hello, certificate and server-key-exchange messages:</p>
-<pre class="fragment">      |---------------------------------------------- SSLHandshakeLayer -----------------------------------------------------|
-      +----------------------+-------------------------------------+---------------------------+-----------------------------+
-      | ssl_tls_record_layer |       SSLServerHelloMessage         |   SSLCertificateMessage   | SSLServerKeyExchangeMessage |
-      |        struct        |                                     |                           |                             |
-      +----------------------+-------------------------------------+---------------------------+-----------------------------+
-       /     |       \               |          \         \               |           \               |            \
-      /    version    \      |   handshake       \        rest of  |      |          rest      |      |            rest
-     /     TLS1_0      \            type          \       message      handshake   of fields...   handshake    of fields...
+<pre class="fragment">        |---------------------------------------------- SSLHandshakeLayer -----------------------------------------------------|
+        +----------------------+-------------------------------------+---------------------------+-----------------------------+
+        | ssl_tls_record_layer |       SSLServerHelloMessage         |   SSLCertificateMessage   | SSLServerKeyExchangeMessage |
+        |        struct        |                                     |                           |                             |
+        +----------------------+-------------------------------------+---------------------------+-----------------------------+
+         /     |       \               |          \         \               |           \               |            \
+        /    version    \      |   handshake       \        rest of  |      |          rest      |      |            rest
+       /     TLS1_0      \            type          \       message      handshake   of fields...   handshake    of fields...
     type                  \    | SSL_SERVER_HELLO    \      fields...|     type                  |     type
 SSL_HANDSHAKE           length                   handshake             SSL_CERTIFICATE             SSL_SERVER_KEY_EXCHANGE
     (22)                 xxx   |               version,length        |                           |
-
-                             |                                     |                           |</pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0b37d33d8342f166a5a1746820aa0c0b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0b37d33d8342f166a5a1746820aa0c0b">&#9670;&nbsp;</a></span>SSLHandshakeLayer()</h2>
 
@@ -407,7 +406,7 @@ template&lt;class THandshakeMessage &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_s_s_l_handshake_layer.html">SSLHandshakeLayer</a></li>
-    <li class="footer">Generated on Sun Nov 26 2023 08:32:56 for PcapPlusPlus by
+    <li class="footer">Generated on Thu Nov 30 2023 10:43:27 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

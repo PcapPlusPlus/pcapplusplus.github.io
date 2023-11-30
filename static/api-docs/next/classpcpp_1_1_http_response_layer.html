@@ -459,7 +459,11 @@ Additional Inherited Members</h2></td></tr>
 <li>If the "Content-Length" field exists - the method will only replace the existing value with the new value</li>
 <li>If the "Content-Length" field doesn't exist - the method will create this field and put the value in it. Here are also 2 cases:<ul>
 <li>If prevFieldName is specified - the new "Content-Length" field will be created after it</li>
-<li>If prevFieldName isn't specified or doesn't exist - the new "Content-Length" field will be created as the last field before end-of-header field <dl class="params"><dt>Parameters</dt><dd>
+<li>If prevFieldName isn't specified or doesn't exist - the new "Content-Length" field will be created as the last field before end-of-header field</li>
+</ul>
+</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">contentLength</td><td>The content length value to set </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">prevFieldName</td><td>Optional field, if specified and "Content-Length" field doesn't exist, it will be created after it </td></tr>
@@ -467,10 +471,6 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the "Content-Length" field, or NULL if creation failed for some reason </dd></dl>
-</li>
-</ul>
-</li>
-</ul>
 
 </div>
 </div>
@@ -508,7 +508,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_http_response_layer.html">HttpResponseLayer</a></li>
-    <li class="footer">Generated on Sun Nov 26 2023 08:32:56 for PcapPlusPlus by
+    <li class="footer">Generated on Thu Nov 30 2023 10:43:27 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
