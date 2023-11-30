@@ -187,11 +187,12 @@ Static Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class representing all of the non-encrypted SSH handshake messages. An handshake message typically has the following structure:</p>
-<pre class="fragment"> 0         1         2         3         4         5         6
- +---------+---------+---------+---------+---------+---------+-----------     ---------+
- |            Packet Length              | Padding | Message |  Message  ....  Padding |
- |                                       | Length  |  Type   |  Content  ....          |
- +---------------------------------------+---------+---------+-----------     ---------+</pre><p>The first 4 bytes hold the packet length, followed by 1 byte that holds the padding length (which comes at the end of the message), then 1 byte that holds the message type (which can be of type <a class="el" href="classpcpp_1_1_s_s_h_handshake_message.html#a4dbb7d358bef567cfe920c90f0f72508">SSHHandshakeMessage::SSHHandshakeMessageType</a>) and then the message content. At the end of the content there is typically padding.</p>
+<pre class="fragment">0         1         2         3         4         5         6
++---------+---------+---------+---------+---------+---------+-----------     ---------+
+|            Packet Length              | Padding | Message |  Message  ....  Padding |
+|                                       | Length  |  Type   |  Content  ....          |
++---------------------------------------+---------+---------+-----------     ---------+
+</pre><p>The first 4 bytes hold the packet length, followed by 1 byte that holds the padding length (which comes at the end of the message), then 1 byte that holds the message type (which can be of type <a class="el" href="classpcpp_1_1_s_s_h_handshake_message.html#a4dbb7d358bef567cfe920c90f0f72508">SSHHandshakeMessage::SSHHandshakeMessageType</a>) and then the message content. At the end of the content there is typically padding.</p>
 <p>This class provides access to all of these values. The message content itself is not parse with the exception of <a class="el" href="classpcpp_1_1_s_s_h_key_exchange_init_message.html">SSHKeyExchangeInitMessage</a> which inherits from this class and provides parsing of the Key Exchange Init message. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a4dbb7d358bef567cfe920c90f0f72508"></a>
@@ -438,7 +439,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_s_s_h_handshake_message.html">SSHHandshakeMessage</a></li>
-    <li class="footer">Generated on Sun Nov 26 2023 08:32:56 for PcapPlusPlus by
+    <li class="footer">Generated on Thu Nov 30 2023 10:43:27 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
