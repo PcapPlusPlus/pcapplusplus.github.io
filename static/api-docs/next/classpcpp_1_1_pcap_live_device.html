@@ -165,8 +165,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2933139d284d7c167283982ec8b56559"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a821bbac1ffad5a75c6a0be1ff362eb9f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a821bbac1ffad5a75c6a0be1ff362eb9f">startCapture</a> (<a class="el" href="namespacepcpp.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;capturedPacketsVector)</td></tr>
 <tr class="separator:a821bbac1ffad5a75c6a0be1ff362eb9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae479987f8faf52328061e18af2addcc5"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#ae479987f8faf52328061e18af2addcc5">startCaptureBlockingMode</a> (<a class="el" href="namespacepcpp.html#a3aaf0510013d8dec36c36757f769b156">OnPacketArrivesStopBlocking</a> onPacketArrives, void *userCookie, int timeout)</td></tr>
-<tr class="separator:ae479987f8faf52328061e18af2addcc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1948c03b6471a5dcea064a7a8950a0a0"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a1948c03b6471a5dcea064a7a8950a0a0">startCaptureBlockingMode</a> (<a class="el" href="namespacepcpp.html#a3aaf0510013d8dec36c36757f769b156">OnPacketArrivesStopBlocking</a> onPacketArrives, void *userCookie, const double timeout)</td></tr>
+<tr class="separator:a1948c03b6471a5dcea064a7a8950a0a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a818da3e11e0c953385badf6233ee0f43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a818da3e11e0c953385badf6233ee0f43">stopCapture</a> ()</td></tr>
 <tr class="separator:a818da3e11e0c953385badf6233ee0f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a058f8bc527935d97bbd044614ab93473"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a058f8bc527935d97bbd044614ab93473">captureActive</a> ()</td></tr>
@@ -1359,8 +1359,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ae479987f8faf52328061e18af2addcc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae479987f8faf52328061e18af2addcc5">&#9670;&nbsp;</a></span>startCaptureBlockingMode()</h2>
+<a id="a1948c03b6471a5dcea064a7a8950a0a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1948c03b6471a5dcea064a7a8950a0a0">&#9670;&nbsp;</a></span>startCaptureBlockingMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1383,7 +1383,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const double&#160;</td>
           <td class="paramname"><em>timeout</em>&#160;</td>
         </tr>
         <tr>
@@ -1403,7 +1403,7 @@ Additional Inherited Members</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">onPacketArrives</td><td>A callback given by the user for handling incoming packets. After handling each packet the user needs to return a boolean value. True value indicates stop capturing and stop blocking and false value indicates continue capturing and blocking </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to a user provided object. This object will be transferred to the onPacketArrives callback each time it is called. This cookie is very useful for transferring objects that give context to the capture callback, for example: objects that counts packets, manages flow state or manages the application state according to the packet that was captured </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>A timeout in seconds for the blocking to stop even if the user didn't return "true" in the onPacketArrives callback If this timeout is set to 0 or less the timeout will be ignored, meaning the method will keep blocking until the user frees it via the onPacketArrives callback </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>A timeout in seconds for the blocking to stop even if the user didn't return "true" in the onPacketArrives callback. The precision of <code>timeout</code> is millisecond, e.g. 2.345 seconds means 2345 milliseconds. If this timeout is set to 0 or less the timeout will be ignored, meaning the method will keep handling packets until the <code>onPacketArrives</code> callback returns <code>true</code>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1435,7 +1435,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a></li>
-    <li class="footer">Generated on Mon Dec 11 2023 06:58:13 for PcapPlusPlus by
+    <li class="footer">Generated on Thu Dec 14 2023 09:02:58 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
