@@ -216,6 +216,8 @@ Behind the scenes, it leverages [`libbpf`](https://github.com/libbpf/libbpf) to 
 
 AF_XDP is only available on Linux. In order to build PcapPlusplus with AF_XDP please make sure you have [`libbpf`](https://github.com/libbpf/libbpf) installed on your device and use the `-DPCAPPP_USE_XDP=ON` CMake option.
 
+To learn more about the API please take a look at the [AF_XDP example](./examples#xdpexample-filtertraffic).
+
 ## PF_RING support
 
 PF_RING™ is a new type of network socket that dramatically improves the packet capture speed. It's providing high-speed packet capture, filtering and analysis (taken from [ntop's website](https://www.ntop.org/products/packet-capture/pf_ring/)).
