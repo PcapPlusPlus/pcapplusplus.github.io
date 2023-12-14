@@ -61,8 +61,8 @@ var NAVTREEINDEX =
 "classpcpp_1_1_tcp_layer.html#a54812a58a88be8978b3e609f32504a87",
 "classpcpp_1_1_vrrp_layer.html#aa3bdeef80e12ec0f1ef4b1633eca2cab",
 "structpcpp_1_1_bgp_open_message_layer_1_1bgp__open__message.html#a9973998b4cc7b7d86bf4e7a23856bc14",
-"structpcpp_1_1arphdr.html#a36e89262f76da9f28beb86cdec632c8c",
-"structpcpp_1_1sll2__header.html#a9da9efe91cd55c248aaf5b18b254c7d9"
+"structpcpp_1_1arphdr.html#a318c9f31a0d60e5e5b65ebe400be1540",
+"structpcpp_1_1sll2__header.html#a8b690f4910a10ea8a09675aae12a02ce"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
