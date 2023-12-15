@@ -11,5 +11,6 @@ var searchData=
   ['unused2',['unused2',['../structpcpp_1_1icmp__param__problem.html#af2bcf2550c0d9923db235e169e495fe7',1,'pcpp::icmp_param_problem']]],
   ['urgentpointer',['urgentPointer',['../structpcpp_1_1tcphdr.html#a43efd09b5aad3f50f38bf2a689cc790c',1,'pcpp::tcphdr']]],
   ['urgflag',['urgFlag',['../structpcpp_1_1tcphdr.html#a2e2c38c9079e807f366b3cc62669b09c',1,'pcpp::tcphdr']]],
+  ['usepoll',['usePoll',['../structpcpp_1_1_pcap_live_device_1_1_device_configuration.html#a7b88bf6c78f99f192ca35caeb4e852c5',1,'pcpp::PcapLiveDevice::DeviceConfiguration']]],
   ['username',['userName',['../structpcpp_1_1_pcap_remote_authentication.html#ab20a5fd24c937d1432587cbec80a14a7',1,'pcpp::PcapRemoteAuthentication']]]
 ];

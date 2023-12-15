@@ -20,7 +20,7 @@ var searchData=
   ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]],
   ['detachlayer',['detachLayer',['../classpcpp_1_1_packet.html#a54d83577cda897699f28595477f2d92d',1,'pcpp::Packet::detachLayer(ProtocolType layerType, int index=0)'],['../classpcpp_1_1_packet.html#ad4dbb6b0bedb3f58f6855aa0329a8908',1,'pcpp::Packet::detachLayer(Layer *layer)']]],
   ['device_2eh',['Device.h',['../_device_8h.html',1,'']]],
-  ['deviceconfiguration',['DeviceConfiguration',['../structpcpp_1_1_pcap_live_device_1_1_device_configuration.html',1,'pcpp::PcapLiveDevice::DeviceConfiguration'],['../structpcpp_1_1_pcap_live_device_1_1_device_configuration.html#a9fc0def9aa3db1801e895520bb8fb9f2',1,'pcpp::PcapLiveDevice::DeviceConfiguration::DeviceConfiguration()']]],
+  ['deviceconfiguration',['DeviceConfiguration',['../structpcpp_1_1_pcap_live_device_1_1_device_configuration.html',1,'pcpp::PcapLiveDevice::DeviceConfiguration'],['../structpcpp_1_1_pcap_live_device_1_1_device_configuration.html#a223717e8d72c7119ca74b1a08d8b1f10',1,'pcpp::PcapLiveDevice::DeviceConfiguration::DeviceConfiguration()']]],
   ['devicemode',['DeviceMode',['../classpcpp_1_1_pcap_live_device.html#a2381e7f053285090f0f9620bcbd8f0f3',1,'pcpp::PcapLiveDevice']]],
   ['devid',['devId',['../structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html#a49e5bd913fde8b892d1bbe27dbf53065',1,'pcpp::DpdkDevice::DpdkDeviceStats']]],
   ['dhcp',['DHCP',['../namespacepcpp.html#a5f677ab02f328eb59216916238bea6c1',1,'pcpp']]],
