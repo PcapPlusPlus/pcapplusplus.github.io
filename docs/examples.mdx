@@ -39,7 +39,7 @@ An application that analyzes SSL/TLS traffic and presents detailed and diverse i
 
 ## <CodeLink relativePath="/Examples/DpdkExample-FilterTraffic">DpdkExample-FilterTraffic</CodeLink>
 
-An application that demonstrates PcapPlusPlus DPDK APIs. This application listens to one or more DPDK ports (a.k.a DPDK devices), captures all traffic and matches packets by user-defined matching criteria such as source/dest IP, source/dest TCP/UDP port and more. Matched packets can be send to another DPDK port and/or be save to a pcap file. In addition the application collects statistics on received and matched packets.
+An application that demonstrates PcapPlusPlus DPDK APIs. This application listens to one or more DPDK ports (a.k.a DPDK devices), captures all traffic and matches packets by user-defined matching criteria such as source/dest IP, source/dest TCP/UDP port and more. Matched packets can be sent to another DPDK port and/or be saved to a pcap file. In addition the application collects statistics on received and matched packets.
 
 ## <CodeLink relativePath="/Examples/DpdkBridge">DpdkBridge</CodeLink>
 
@@ -51,7 +51,11 @@ An application that demonstrates PcapPlusPlus wrapper for DPDK KNI. It emulates 
 
 ## <CodeLink relativePath="/Examples/PfRingExample-FilterTraffic">PfRingExample-FilterTraffic</CodeLink>
 
-An application that demonstrates PcapPlusPlus PF_RING APIs. This application listens to a PF_RING interface, captures all traffic and matches packets by user-defined matching criteria such as source/dest IP, source/dest TCP/UDP port and more. Matched packets can be send to another PF_RING interface and/or be save to a pcap file. In addition the application collects statistics on received and matched packets.
+An application that demonstrates PcapPlusPlus PF_RING APIs. This application listens to a PF_RING interface, captures all traffic and matches packets by user-defined matching criteria such as source/dest IP, source/dest TCP/UDP port and more. Matched packets can be sent to another PF_RING interface and/or be saved to a pcap file. In addition the application collects statistics on received and matched packets.
+
+## <CodeLink relativePath="/Examples/XdpExample-FilterTraffic">XdpExample-FilterTraffic</CodeLink>
+
+An application that demonstrates PcapPlusPlus [AF_XDP](https://www.kernel.org/doc/html/next/networking/af_xdp.html) APIs. This application opens an AF_XDP socket, receives packets on it and matches the packets by user-defined matching criteria such as source/dest IP, source/dest TCP/UDP port and more. Matched packets can be sent to another AF_XDP socket and/or be saved to a pcap file. In addition the application collects statistics on received and matched packets.
 
 ## <CodeLink relativePath="/Examples/PcapPrinter">PcapPrinter</CodeLink>
 
