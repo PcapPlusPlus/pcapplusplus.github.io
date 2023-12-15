@@ -1996,10 +1996,10 @@ Functions</h2></td></tr>
 <tr class="separator:a9da3b8abc599b1744dc36c64b802bbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d9b4fa3436a28221db583802b9524f5"><td class="memItemLeft" align="right" valign="top">CoreMask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a4d9b4fa3436a28221db583802b9524f5">getCoreMaskForAllMachineCores</a> ()</td></tr>
 <tr class="separator:a4d9b4fa3436a28221db583802b9524f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6f336984bb48eb504d5e23f04581697"><td class="memItemLeft" align="right" valign="top">CoreMask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ab6f336984bb48eb504d5e23f04581697">createCoreMaskFromCoreVector</a> (std::vector&lt; <a class="el" href="structpcpp_1_1_system_core.html">SystemCore</a> &gt; cores)</td></tr>
-<tr class="separator:ab6f336984bb48eb504d5e23f04581697"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a572ce60b003993527593a10e6da9481b"><td class="memItemLeft" align="right" valign="top">CoreMask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a572ce60b003993527593a10e6da9481b">createCoreMaskFromCoreIds</a> (std::vector&lt; int &gt; coreIds)</td></tr>
-<tr class="separator:a572ce60b003993527593a10e6da9481b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a474e178adaaa406515de424e0c99bcf5"><td class="memItemLeft" align="right" valign="top">CoreMask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a474e178adaaa406515de424e0c99bcf5">createCoreMaskFromCoreVector</a> (const std::vector&lt; <a class="el" href="structpcpp_1_1_system_core.html">SystemCore</a> &gt; &amp;cores)</td></tr>
+<tr class="separator:a474e178adaaa406515de424e0c99bcf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f565256c6c2078aec3edf12b43ae79"><td class="memItemLeft" align="right" valign="top">CoreMask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a00f565256c6c2078aec3edf12b43ae79">createCoreMaskFromCoreIds</a> (const std::vector&lt; int &gt; &amp;coreIds)</td></tr>
+<tr class="separator:a00f565256c6c2078aec3edf12b43ae79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74065e37f1f7390a6ab299ebc7c4c229"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a74065e37f1f7390a6ab299ebc7c4c229">createCoreVectorFromCoreMask</a> (CoreMask coreMask, std::vector&lt; <a class="el" href="structpcpp_1_1_system_core.html">SystemCore</a> &gt; &amp;resultVec)</td></tr>
 <tr class="separator:a74065e37f1f7390a6ab299ebc7c4c229"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a184531457fe2ad74873e41f2c0aa3b57"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a184531457fe2ad74873e41f2c0aa3b57">executeShellCommand</a> (const std::string &amp;command)</td></tr>
@@ -5066,8 +5066,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a572ce60b003993527593a10e6da9481b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a572ce60b003993527593a10e6da9481b">&#9670;&nbsp;</a></span>createCoreMaskFromCoreIds()</h2>
+<a id="a00f565256c6c2078aec3edf12b43ae79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00f565256c6c2078aec3edf12b43ae79">&#9670;&nbsp;</a></span>createCoreMaskFromCoreIds()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5075,7 +5075,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">CoreMask pcpp::createCoreMaskFromCoreIds </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; int &gt;&#160;</td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
           <td class="paramname"><em>coreIds</em></td><td>)</td>
           <td></td>
         </tr>
@@ -5091,8 +5091,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab6f336984bb48eb504d5e23f04581697"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6f336984bb48eb504d5e23f04581697">&#9670;&nbsp;</a></span>createCoreMaskFromCoreVector()</h2>
+<a id="a474e178adaaa406515de424e0c99bcf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a474e178adaaa406515de424e0c99bcf5">&#9670;&nbsp;</a></span>createCoreMaskFromCoreVector()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5100,7 +5100,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">CoreMask pcpp::createCoreMaskFromCoreVector </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="structpcpp_1_1_system_core.html">SystemCore</a> &gt;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structpcpp_1_1_system_core.html">SystemCore</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>cores</em></td><td>)</td>
           <td></td>
         </tr>
@@ -6695,7 +6695,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li>
-    <li class="footer">Generated on Thu Dec 14 2023 09:02:58 for PcapPlusPlus by
+    <li class="footer">Generated on Fri Dec 15 2023 06:27:10 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
