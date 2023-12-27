@@ -713,12 +713,12 @@ typedef <a class="el" href="structpcpp_1_1stp__tcn__bpdu.html">stp_tcn_bpdu</a>&
 <tr class="separator:a5d5c27837ffd86e49a6b4ce2cc1ed57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a594cff22cd51c0a8acc36590c9733ecd"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classpcpp_1_1_pointer_vector.html">PointerVector</a>&lt; <a class="el" href="classpcpp_1_1_m_buf_raw_packet.html">MBufRawPacket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a594cff22cd51c0a8acc36590c9733ecd">MBufRawPacketVector</a></td></tr>
 <tr class="separator:a594cff22cd51c0a8acc36590c9733ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa07524ba3fd4932968d2c302a936ae10"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#aa07524ba3fd4932968d2c302a936ae10">OnPacketArrivesCallback</a>) (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *pPacket, <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> *pDevice, void *userCookie)</td></tr>
-<tr class="separator:aa07524ba3fd4932968d2c302a936ae10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3aaf0510013d8dec36c36757f769b156"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a3aaf0510013d8dec36c36757f769b156">OnPacketArrivesStopBlocking</a>) (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *pPacket, <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> *pDevice, void *userCookie)</td></tr>
-<tr class="separator:a3aaf0510013d8dec36c36757f769b156"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bf335eaca5d498401aa85d012070298"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a7bf335eaca5d498401aa85d012070298">OnStatsUpdateCallback</a>) (<a class="el" href="structpcpp_1_1_i_pcap_device_1_1_pcap_stats.html">IPcapDevice::PcapStats</a> &amp;stats, void *userCookie)</td></tr>
-<tr class="separator:a7bf335eaca5d498401aa85d012070298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a700592e5086544411957be0242dec0f5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a700592e5086544411957be0242dec0f5">OnPacketArrivesCallback</a> = std::function&lt; void(<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *, <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> *, void *)&gt;</td></tr>
+<tr class="separator:a700592e5086544411957be0242dec0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a83c8855a6bb3681fafec04b00a6339"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a6a83c8855a6bb3681fafec04b00a6339">OnPacketArrivesStopBlocking</a> = std::function&lt; bool(<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *, <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> *, void *)&gt;</td></tr>
+<tr class="separator:a6a83c8855a6bb3681fafec04b00a6339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83363d443da98e485f8edb46a4184779"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a83363d443da98e485f8edb46a4184779">OnStatsUpdateCallback</a> = std::function&lt; void(<a class="el" href="structpcpp_1_1_i_pcap_device_1_1_pcap_stats.html">IPcapDevice::PcapStats</a> &amp;, void *)&gt;</td></tr>
+<tr class="separator:a83363d443da98e485f8edb46a4184779"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -2309,21 +2309,21 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aa07524ba3fd4932968d2c302a936ae10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa07524ba3fd4932968d2c302a936ae10">&#9670;&nbsp;</a></span>OnPacketArrivesCallback</h2>
+<a id="a700592e5086544411957be0242dec0f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a700592e5086544411957be0242dec0f5">&#9670;&nbsp;</a></span>OnPacketArrivesCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pcpp::OnPacketArrivesCallback</td>
+          <td class="memname">using <a class="el" href="namespacepcpp.html#a700592e5086544411957be0242dec0f5">pcpp::OnPacketArrivesCallback</a> = typedef std::function&lt;void(<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a>*, <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a>*, void*)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>A callback that is called when a packet is captured by <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pPacket</td><td>A pointer to the raw packet </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pDevice</td><td>A pointer to the <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> instance </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A pointer to the raw packet </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A pointer to the <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> instance </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to the object put by the user when packet capturing stared </td></tr>
   </table>
   </dd>
@@ -2331,21 +2331,21 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a3aaf0510013d8dec36c36757f769b156"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3aaf0510013d8dec36c36757f769b156">&#9670;&nbsp;</a></span>OnPacketArrivesStopBlocking</h2>
+<a id="a6a83c8855a6bb3681fafec04b00a6339"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a83c8855a6bb3681fafec04b00a6339">&#9670;&nbsp;</a></span>OnPacketArrivesStopBlocking</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pcpp::OnPacketArrivesStopBlocking</td>
+          <td class="memname">using <a class="el" href="namespacepcpp.html#a6a83c8855a6bb3681fafec04b00a6339">pcpp::OnPacketArrivesStopBlocking</a> = typedef std::function&lt;bool(<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a>*, <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a>*, void*)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>A callback that is called when a packet is captured by <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pPacket</td><td>A pointer to the raw packet </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pDevice</td><td>A pointer to the <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> instance </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A pointer to the raw packet </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>A pointer to the <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> instance </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to the object put by the user when packet capturing stared </td></tr>
   </table>
   </dd>
@@ -2354,14 +2354,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7bf335eaca5d498401aa85d012070298"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bf335eaca5d498401aa85d012070298">&#9670;&nbsp;</a></span>OnStatsUpdateCallback</h2>
+<a id="a83363d443da98e485f8edb46a4184779"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83363d443da98e485f8edb46a4184779">&#9670;&nbsp;</a></span>OnStatsUpdateCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pcpp::OnStatsUpdateCallback</td>
+          <td class="memname">using <a class="el" href="namespacepcpp.html#a83363d443da98e485f8edb46a4184779">pcpp::OnStatsUpdateCallback</a> = typedef std::function&lt;void(<a class="el" href="structpcpp_1_1_i_pcap_device_1_1_pcap_stats.html">IPcapDevice::PcapStats</a>&amp;, void*)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -6695,7 +6695,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li>
-    <li class="footer">Generated on Mon Dec 18 2023 00:53:59 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Dec 27 2023 21:07:47 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
