@@ -24,7 +24,7 @@ var searchData=
   ['portpriority',['portPriority',['../structpcpp_1_1msti__conf__msg.html#a06b865a38e6cc0f4e7d4ec2dedadcad6',1,'pcpp::msti_conf_msg']]],
   ['portsrc',['portSrc',['../structpcpp_1_1tcphdr.html#a4ba66caaf79a20c53a8e92f7537d50a6',1,'pcpp::tcphdr::portSrc()'],['../structpcpp_1_1udphdr.html#a72a8d8ad99698271461762079d3758a9',1,'pcpp::udphdr::portSrc()']]],
   ['ppp_5fpptp',['PPP_PPTP',['../namespacepcpp.html#a5c44d3da15807781b9fd46228f09610d',1,'pcpp']]],
-  ['pppoe',['PPPoE',['../namespacepcpp.html#a9ffb576d1b5a02c884a57605cf59f18d',1,'pcpp']]],
+  ['pppoe',['PPPoE',['../namespacepcpp.html#a416f257a01839f243cd1354317cfb96f',1,'pcpp']]],
   ['pppoediscovery',['PPPoEDiscovery',['../namespacepcpp.html#a9dc88bfe69fb13d599459ca9a7fb05e5',1,'pcpp']]],
   ['pppoesession',['PPPoESession',['../namespacepcpp.html#a2300a265174edb1daecfd97697c67d79',1,'pcpp']]],
   ['preference',['preference',['../structpcpp_1_1_mx_dns_resource_data_1_1_mx_data.html#aab435ee2e8b433677dfb84b495272f5b',1,'pcpp::MxDnsResourceData::MxData']]],

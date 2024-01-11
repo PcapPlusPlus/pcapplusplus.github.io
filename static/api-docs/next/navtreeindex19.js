@@ -1,5 +1,11 @@
 var NAVTREEINDEX19 =
 {
+"structpcpp_1_1_bgp_notification_message_layer_1_1bgp__notification__message.html#a0f8b49bd5387fe1122805f97b752382a":[3,0,0,9,0,1],
+"structpcpp_1_1_bgp_notification_message_layer_1_1bgp__notification__message.html#a6718b2c32f3aeec3c56bb5d8ddd206d2":[3,0,0,9,0,0],
+"structpcpp_1_1_bgp_open_message_layer_1_1bgp__open__message.html":[3,0,0,10,0],
+"structpcpp_1_1_bgp_open_message_layer_1_1bgp__open__message.html#a21f5d2a212b2cb6db91703ed9e15a3fc":[3,0,0,10,0,1],
+"structpcpp_1_1_bgp_open_message_layer_1_1bgp__open__message.html#a559f22c82f43395b1d7402521c4ffe2c":[3,0,0,10,0,4],
+"structpcpp_1_1_bgp_open_message_layer_1_1bgp__open__message.html#a83290dbefe0a66f3e7c6ff73c9a2a10a":[3,0,0,10,0,0],
 "structpcpp_1_1_bgp_open_message_layer_1_1bgp__open__message.html#a9973998b4cc7b7d86bf4e7a23856bc14":[3,0,0,10,0,2],
 "structpcpp_1_1_bgp_open_message_layer_1_1bgp__open__message.html#afa2938318ec6e946765be93f19e9a15f":[3,0,0,10,0,3],
 "structpcpp_1_1_bgp_open_message_layer_1_1optional__parameter.html":[3,0,0,10,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX19 =
 "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#ad8348b8fb7e78e8274319d21318c0164":[3,0,0,291,1,4],
 "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#ae0d8ab6744a09857d33af4b696bab702":[3,0,0,291,1,14],
 "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#aec59d81e4405120babe65fbe2a21c1b3":[3,0,0,291,1,3],
-"structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#aecfefe59d795a5bd4052ec6c7962e254":[3,0,0,291,1,0],
-"structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#af170a03c0e49a172c984930f3bde2e1f":[3,0,0,291,1,22],
-"structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#af725d5e57a43957ecd2f18eb2a82822a":[3,0,0,291,1,2],
-"structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#af9481e747c98592beb5cc238917d9a57":[3,0,0,291,1,19],
-"structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#afaf1e608ac5858ab0baba6ff4e35fcbf":[3,0,0,291,1,10],
-"structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#afd4e17223d65f34d6a8bef7fd285cb69":[3,0,0,291,1,20],
-"structpcpp_1_1arphdr.html":[3,0,0,4]
+"structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#aecfefe59d795a5bd4052ec6c7962e254":[3,0,0,291,1,0]
 };

@@ -14,6 +14,7 @@ var classpcpp_1_1_layer =
     [ "getPrevLayer", "classpcpp_1_1_layer.html#a9ff77f4ee3f160057f49db645a5c19bd", null ],
     [ "getProtocol", "classpcpp_1_1_layer.html#ab8c7cc855405c99b5fdfd778324241ef", null ],
     [ "isAllocatedToPacket", "classpcpp_1_1_layer.html#a8f9d719253a30852620f9595a99956ed", null ],
+    [ "isMemberOfProtocolFamily", "classpcpp_1_1_layer.html#a73339cf991e01301a34ec602ba9ec7d9", null ],
     [ "parseNextLayer", "classpcpp_1_1_layer.html#a6a8410015168a7fa42a7d71ac5b86673", null ],
     [ "toString", "classpcpp_1_1_layer.html#a1d07ea14d02b4a5cb383f89b3f40ed63", null ]
 ];
