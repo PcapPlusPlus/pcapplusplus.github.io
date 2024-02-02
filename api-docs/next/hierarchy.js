@@ -145,6 +145,10 @@ var hierarchy =
           [ "pcpp::FtpLayer", "classpcpp_1_1_ftp_layer.html", [
             [ "pcpp::FtpRequestLayer", "classpcpp_1_1_ftp_request_layer.html", null ],
             [ "pcpp::FtpResponseLayer", "classpcpp_1_1_ftp_response_layer.html", null ]
+          ] ],
+          [ "pcpp::SmtpLayer", "classpcpp_1_1_smtp_layer.html", [
+            [ "pcpp::SmtpRequestLayer", "classpcpp_1_1_smtp_request_layer.html", null ],
+            [ "pcpp::SmtpResponseLayer", "classpcpp_1_1_smtp_response_layer.html", null ]
           ] ]
         ] ],
         [ "pcpp::Sll2Layer", "classpcpp_1_1_sll2_layer.html", null ],

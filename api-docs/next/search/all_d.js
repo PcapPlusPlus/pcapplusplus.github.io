@@ -1,6 +1,7 @@
 var searchData=
 [
   ['name',['name',['../structpcpp_1_1_kni_device_1_1_kni_device_configuration.html#a2df48dfa7610b8e97f48a46403feb4c4',1,'pcpp::KniDevice::KniDeviceConfiguration']]],
+  ['name_5fnot_5fallowed',['NAME_NOT_ALLOWED',['../classpcpp_1_1_smtp_response_layer.html#a7a2bbbfd8b35cebc0bbb0afc5dbc4375a061502cf3ca44afe3cfb17e47322225c',1,'pcpp::SmtpResponseLayer']]],
   ['name_5fsystem_5ftype',['NAME_SYSTEM_TYPE',['../classpcpp_1_1_ftp_response_layer.html#aebec062665c1d8c6e4eba941782a59cdaa765171ef46db4df82b21ded2ae0d2c8',1,'pcpp::FtpResponseLayer']]],
   ['ndplayer_2eh',['NdpLayer.h',['../_ndp_layer_8h.html',1,'']]],
   ['ndplayerbase',['NDPLayerBase',['../classpcpp_1_1_n_d_p_layer_base.html',1,'pcpp']]],
@@ -55,7 +56,7 @@ var searchData=
   ['non_5fip_5fpacket',['NON_IP_PACKET',['../classpcpp_1_1_i_p_reassembly.html#aae7f2e113808978827abf3b7cdbe91afae35ca23b99eef8c92cb89994c1ee5e04',1,'pcpp::IPReassembly']]],
   ['nonippacket',['NonIpPacket',['../classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177a08445f1595412406ca139f294be48566',1,'pcpp::TcpReassembly']]],
   ['nontcppacket',['NonTcpPacket',['../classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177a6f9f634c9a8f9a3a5dbf81de12862317',1,'pcpp::TcpReassembly']]],
-  ['noop',['NOOP',['../classpcpp_1_1_ftp_request_layer.html#ad293dabbe652aed3ac548eb01963e781a722d122e81cbbe543bd5520bb8678c0e',1,'pcpp::FtpRequestLayer']]],
+  ['noop',['NOOP',['../classpcpp_1_1_ftp_request_layer.html#ad293dabbe652aed3ac548eb01963e781a722d122e81cbbe543bd5520bb8678c0e',1,'pcpp::FtpRequestLayer::NOOP()'],['../classpcpp_1_1_smtp_request_layer.html#a1128b00b6ca2592f837feea1bf9706dda722d122e81cbbe543bd5520bb8678c0e',1,'pcpp::SmtpRequestLayer::NOOP()']]],
   ['nooperation',['NoOperation',['../classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589a621666d91ebf4ce8af89ffdfdbdc7f44',1,'pcpp::TelnetLayer']]],
   ['nop',['NOP',['../classpcpp_1_1_tcp_option_builder.html#a4661af002e81ef759016b4640d0eb061a45f4b19818bd6c642ff853e0ba64eb36',1,'pcpp::TcpOptionBuilder']]],
   ['nopeoloptiontypes',['NopEolOptionTypes',['../classpcpp_1_1_tcp_option_builder.html#a4661af002e81ef759016b4640d0eb061',1,'pcpp::TcpOptionBuilder']]],
