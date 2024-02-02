@@ -73,6 +73,7 @@
 *   - pcpp::NtpLayer, NtpLayer.h - NTP (v3, v4) protocol
 *   - pcpp::RadiusLayer, RadiusLayer.h - RADIUS protocol
 *   - pcpp::S7CommLayer, S7CommLayer.h - S7 Communication protocol (S7comm)
+*   - pcpp::SmtpLayer, SmtpLayer.h - SMTP protocol
 *   - pcpp::SomeIpLayer, pcpp::SomeIpTpLayer, pcpp::SomeIpSdLayer, SomeIpLayer.h - SOME/IP protocol
 *   - pcpp::SSHLayer, SSHLayer.h - SSH protocol - parsing only (no editing capabilities)
 *   - pcpp::TelnetLayer, TelnetLayer.h - Telnet protocol
