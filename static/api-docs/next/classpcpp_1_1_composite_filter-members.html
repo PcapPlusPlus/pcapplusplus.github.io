@@ -64,7 +64,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('classpcpp_1_1_and_filter.html','');});
+$(document).ready(function(){initNavTree('classpcpp_1_1_composite_filter.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -83,25 +83,27 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_and_filter.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">pcpp::AndFilter Member List</div>  </div>
+<div class="title">pcpp::CompositeFilter Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="classpcpp_1_1_and_filter.html">pcpp::AndFilter</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="classpcpp_1_1_composite_filter.html">pcpp::CompositeFilter</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_and_filter.html#a31a8d91c6139693fa05a06fd6c6ab5fe">addFilter</a>(GeneralFilter *filter)</td><td class="entry"><a class="el" href="classpcpp_1_1_and_filter.html">pcpp::AndFilter</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classpcpp_1_1_and_filter.html#a136268df7041a70e46dcfed6c9c0711f">AndFilter</a>()</td><td class="entry"><a class="el" href="classpcpp_1_1_and_filter.html">pcpp::AndFilter</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_and_filter.html#ad863800306526e1c5b0bb0e90dfb2cf8">AndFilter</a>(std::vector&lt; GeneralFilter *&gt; &amp;filters)</td><td class="entry"><a class="el" href="classpcpp_1_1_and_filter.html">pcpp::AndFilter</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classpcpp_1_1_general_filter.html#a343f17fd42d63a17505f7c2d689a3e00">matchPacketWithFilter</a>(RawPacket *rawPacket)</td><td class="entry"><a class="el" href="classpcpp_1_1_general_filter.html">pcpp::GeneralFilter</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_and_filter.html#a59d7dd260b5f1bb4c9147263cb0b0308">parseToString</a>(std::string &amp;result)</td><td class="entry"><a class="el" href="classpcpp_1_1_and_filter.html">pcpp::AndFilter</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classpcpp_1_1_and_filter.html#a5a1eb212ce603fcf9714f0fe33f060f2">setFilters</a>(std::vector&lt; GeneralFilter *&gt; &amp;filters)</td><td class="entry"><a class="el" href="classpcpp_1_1_and_filter.html">pcpp::AndFilter</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_composite_filter.html#a87e762b7d74844350e39ae625853e729">addFilter</a>(GeneralFilter *filter)</td><td class="entry"><a class="el" href="classpcpp_1_1_composite_filter.html">pcpp::CompositeFilter</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classpcpp_1_1_composite_filter.html#ad2725f51fb8294784bd50a91972f9eef">clearAllFilters</a>()</td><td class="entry"><a class="el" href="classpcpp_1_1_composite_filter.html">pcpp::CompositeFilter</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_composite_filter.html#a19e005284233d44b1efa81d76b512bc6">CompositeFilter</a>()=default</td><td class="entry"><a class="el" href="classpcpp_1_1_composite_filter.html">pcpp::CompositeFilter</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classpcpp_1_1_composite_filter.html#a2f4abc02a441290b70c55447f36e417c">CompositeFilter</a>(const std::vector&lt; GeneralFilter *&gt; &amp;filters)</td><td class="entry"><a class="el" href="classpcpp_1_1_composite_filter.html">pcpp::CompositeFilter</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_general_filter.html#a343f17fd42d63a17505f7c2d689a3e00">matchPacketWithFilter</a>(RawPacket *rawPacket)</td><td class="entry"><a class="el" href="classpcpp_1_1_general_filter.html">pcpp::GeneralFilter</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classpcpp_1_1_general_filter.html#ae38fb802a74a1d9b7d7025b1b5cb83e5">parseToString</a>(std::string &amp;result)=0</td><td class="entry"><a class="el" href="classpcpp_1_1_general_filter.html">pcpp::GeneralFilter</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_composite_filter.html#a599bc7676adb522308816ea4896ef781">removeFilter</a>(GeneralFilter *filter)</td><td class="entry"><a class="el" href="classpcpp_1_1_composite_filter.html">pcpp::CompositeFilter</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classpcpp_1_1_composite_filter.html#a02fbbf2f00b9f7d90675445b1195e507">setFilters</a>(const std::vector&lt; GeneralFilter *&gt; &amp;filters)</td><td class="entry"><a class="el" href="classpcpp_1_1_composite_filter.html">pcpp::CompositeFilter</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_general_filter.html#aba731757009c1ce8db973aa334634765">~GeneralFilter</a>()</td><td class="entry"><a class="el" href="classpcpp_1_1_general_filter.html">pcpp::GeneralFilter</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Feb 14 2024 09:37:42 for PcapPlusPlus by
+    <li class="footer">Generated on Fri Feb 23 2024 01:08:47 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

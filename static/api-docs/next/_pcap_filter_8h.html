@@ -85,7 +85,9 @@ $(document).ready(function(){initNavTree('_pcap_filter_8h.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">PcapFilter.h File Reference</div>  </div>
 </div><!--header-->
@@ -126,9 +128,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ether_type_filter.html">pcpp::EtherTypeFilter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_and_filter.html">pcpp::AndFilter</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_composite_filter.html">pcpp::CompositeFilter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_or_filter.html">pcpp::OrFilter</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_composite_logic_filter.html">pcpp::CompositeLogicFilter&lt; op &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_not_filter.html">pcpp::NotFilter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,6 +153,13 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespacepcpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main namespace for the PcapPlusPlus lib. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a32759b78f540d917ac9e24b8559ea463"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a32759b78f540d917ac9e24b8559ea463">pcpp::AndFilter</a> = CompositeLogicFilter&lt; CompositeLogicFilterOp::AND &gt;</td></tr>
+<tr class="separator:a32759b78f540d917ac9e24b8559ea463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad80d920337291d98e1eac2c990b0ad16"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ad80d920337291d98e1eac2c990b0ad16">pcpp::OrFilter</a> = CompositeLogicFilter&lt; CompositeLogicFilterOp::OR &gt;</td></tr>
+<tr class="separator:ad80d920337291d98e1eac2c990b0ad16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a966edb536b73cf93cbc9b83f9c64930a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a966edb536b73cf93cbc9b83f9c64930a">pcpp::Direction</a> { <a class="el" href="namespacepcpp.html#a966edb536b73cf93cbc9b83f9c64930aacbfd6ae8daea0ea78970fd2ca4521925">pcpp::SRC</a>, 
@@ -169,19 +178,58 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a236073670782cc577b097b2fef4c7d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a979b15d51e4f361c61e1f726b051541d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a979b15d51e4f361c61e1f726b051541d">pcpp::CompositeLogicFilterOp</a> { <a class="el" href="namespacepcpp.html#a979b15d51e4f361c61e1f726b051541da558ffc8f5770d8e4f95f51d822685532">pcpp::CompositeLogicFilterOp::AND</a>, 
+<a class="el" href="namespacepcpp.html#a979b15d51e4f361c61e1f726b051541da1d00e7dce692e8dc3f6877f035e3a616">pcpp::CompositeLogicFilterOp::OR</a>
+ }</td></tr>
+<tr class="separator:a979b15d51e4f361c61e1f726b051541d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a1be216503ee0941d44fac65b72e7b722"><td class="memTemplParams" colspan="2">template&lt;CompositeLogicFilterOp op&gt; </td></tr>
+<tr class="memitem:a1be216503ee0941d44fac65b72e7b722"><td class="memTemplItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_pcap_filter_8h.html#a1be216503ee0941d44fac65b72e7b722">pcpp::detail::getCompositeLogicOpDelimiter</a> ()=delete</td></tr>
+<tr class="separator:a1be216503ee0941d44fac65b72e7b722"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Most packet capture engines contain packet filtering capabilities. In order to set the filters there should be a known syntax user can use. The most popular syntax is Berkeley Packet Filter (BPF) - see more in here: <a href="http://en.wikipedia.org/wiki/Berkeley_Packet_Filter">http://en.wikipedia.org/wiki/Berkeley_Packet_Filter</a>. Detailed explanation of the syntax can be found here: <a href="http://www.tcpdump.org/manpages/pcap-filter.7.html">http://www.tcpdump.org/manpages/pcap-filter.7.html</a>.<br />
  The problem with BPF is that, for my opinion, the syntax is too complicated and too poorly documented. In addition the BPF filter compilers may output syntax errors that are hard to understand. My experience with BPF was not good, so I decided to make the filters mechanism more structured, easier to understand and less error-prone by creating classes that represent filters. Each possible filter phrase is represented by a class. The filter, at the end, is that class.<br />
  For example: the filter "src host 1.1.1.1" will be represented by IPFilter instance; "dst port 80" will be represented by PortFilter, and so on.<br />
  So what about complex filters that involve "and", "or"? There are also 2 classes: AndFilter and OrFilter that can store more filters (in a composite idea) and connect them by "and" or "or". For example: "src host 1.1.1.1 and dst port 80" will be represented by an AndFilter that h olds IPFilter and PortFilter inside it </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="file_a1be216503ee0941d44fac65b72e7b722"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#file_a1be216503ee0941d44fac65b72e7b722">&#9670;&nbsp;</a></span>getCompositeLogicOpDelimiter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;CompositeLogicFilterOp op&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const char* pcpp::detail::getCompositeLogicOpDelimiter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the delimiter for joining filter strings for the composite logic filter operation. </p><dl class="section return"><dt>Returns</dt><dd>A string literal to place between the different filter strings to produce a composite expression. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1d5e652a4f74c687a1a254f16a4c3d59.html">Pcap++</a></li><li class="navelem"><a class="el" href="dir_24675e680cc699690f9ab00f0f74b528.html">header</a></li><li class="navelem"><a class="el" href="_pcap_filter_8h.html">PcapFilter.h</a></li>
-    <li class="footer">Generated on Wed Feb 14 2024 09:37:42 for PcapPlusPlus by
+    <li class="footer">Generated on Fri Feb 23 2024 01:08:47 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -98,8 +98,6 @@ $(document).ready(function(){initNavTree('namespacepcpp.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_and_filter.html">AndFilter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_application_event_handler.html">ApplicationEventHandler</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_app_name.html">AppName</a></td></tr>
@@ -127,6 +125,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_bpf_filter_wrapper.html">BpfFilterWrapper</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_b_p_f_string_filter.html">BPFStringFilter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_composite_filter.html">CompositeFilter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_composite_logic_filter.html">CompositeLogicFilter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -411,8 +413,6 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The NTP packet consists of an integral number of 32-bit (4 octet) words in network byte order. The packet format consists of three components: the header itself, one or more optional extension fields (for v4), and an optional message authentication code (MAC). Currently the extension fields are not supported. The NTP header is:  <a href="classpcpp_1_1_ntp_layer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_null_loopback_layer.html">NullLoopbackLayer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_or_filter.html">OrFilter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_o_u_i_lookup.html">OUILookup</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -721,6 +721,10 @@ typedef <a class="el" href="structpcpp_1_1stp__tcn__bpdu.html">stp_tcn_bpdu</a>&
 <tr class="separator:a5d5c27837ffd86e49a6b4ce2cc1ed57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a594cff22cd51c0a8acc36590c9733ecd"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classpcpp_1_1_pointer_vector.html">PointerVector</a>&lt; <a class="el" href="classpcpp_1_1_m_buf_raw_packet.html">MBufRawPacket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a594cff22cd51c0a8acc36590c9733ecd">MBufRawPacketVector</a></td></tr>
 <tr class="separator:a594cff22cd51c0a8acc36590c9733ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32759b78f540d917ac9e24b8559ea463"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a32759b78f540d917ac9e24b8559ea463">AndFilter</a> = <a class="el" href="classpcpp_1_1_composite_logic_filter.html">CompositeLogicFilter</a>&lt; <a class="el" href="namespacepcpp.html#a979b15d51e4f361c61e1f726b051541da558ffc8f5770d8e4f95f51d822685532">CompositeLogicFilterOp::AND</a> &gt;</td></tr>
+<tr class="separator:a32759b78f540d917ac9e24b8559ea463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad80d920337291d98e1eac2c990b0ad16"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ad80d920337291d98e1eac2c990b0ad16">OrFilter</a> = <a class="el" href="classpcpp_1_1_composite_logic_filter.html">CompositeLogicFilter</a>&lt; <a class="el" href="namespacepcpp.html#a979b15d51e4f361c61e1f726b051541da1d00e7dce692e8dc3f6877f035e3a616">CompositeLogicFilterOp::OR</a> &gt;</td></tr>
+<tr class="separator:ad80d920337291d98e1eac2c990b0ad16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a700592e5086544411957be0242dec0f5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a700592e5086544411957be0242dec0f5">OnPacketArrivesCallback</a> = std::function&lt; void(<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *, <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> *, void *)&gt;</td></tr>
 <tr class="separator:a700592e5086544411957be0242dec0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a83c8855a6bb3681fafec04b00a6339"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a6a83c8855a6bb3681fafec04b00a6339">OnPacketArrivesStopBlocking</a> = std::function&lt; bool(<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *, <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> *, void *)&gt;</td></tr>
@@ -1902,41 +1906,41 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a9de558bc6ff79cd1503e919ea6d63c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a470be375e45a572c355154116879301b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301b">TcpOptionType</a> { <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301ba313ec412b9693a6535bce5e111f228d6">PCPP_TCPOPT_NOP</a> = 1, 
-<a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301ba572937db672d4d69625f0662ed76b962">PCPP_TCPOPT_EOL</a> = 0, 
-<a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301ba2e397d517856130b7b8015a2a5116702">TCPOPT_MSS</a> = 2, 
-<a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301ba3887404116247fb2f34cdcf0f6ec3b46">PCPP_TCPOPT_WINDOW</a> = 3, 
+<tr class="memitem:ab2f3f36d158a9c44a6305f3e1356f278"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278">TcpOptionType</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a313ec412b9693a6535bce5e111f228d6">PCPP_TCPOPT_NOP</a> = 1, 
+<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a572937db672d4d69625f0662ed76b962">PCPP_TCPOPT_EOL</a> = 0, 
+<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a2e397d517856130b7b8015a2a5116702">TCPOPT_MSS</a> = 2, 
+<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a3887404116247fb2f34cdcf0f6ec3b46">PCPP_TCPOPT_WINDOW</a> = 3, 
 <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301bae8a33bd70ab512bd473f1ba75038285d">TCPOPT_SACK_PERM</a> = 4, 
-<a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301baf6f2d4d9c60472415287e15825eb24cf">PCPP_TCPOPT_SACK</a> = 5, 
-<a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301baf7e1c0704f4b2752500ea250ec05243a">TCPOPT_ECHO</a> = 6, 
-<a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301ba8e5a017910f13b5205a8109e2c898d2e">TCPOPT_ECHOREPLY</a> = 7, 
+&#160;&#160;<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278ae8a33bd70ab512bd473f1ba75038285d">TCPOPT_SACK_PERM</a> = 4, 
+<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278af6f2d4d9c60472415287e15825eb24cf">PCPP_TCPOPT_SACK</a> = 5, 
+<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278af7e1c0704f4b2752500ea250ec05243a">TCPOPT_ECHO</a> = 6, 
+<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a8e5a017910f13b5205a8109e2c898d2e">TCPOPT_ECHOREPLY</a> = 7, 
 <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301bad048b5042b768d619a7af21604d05a0d">PCPP_TCPOPT_TIMESTAMP</a> = 8, 
-<a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301ba82a419fa83ffede0528bbe66b9eb0a29">TCPOPT_CC</a> = 11, 
-<a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301ba39a5d63627b15bff0bd86fe2157dbe20">TCPOPT_CCNEW</a> = 12, 
-<a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301baecbe259aa1fb8dff733084929a25ca27">TCPOPT_CCECHO</a> = 13, 
+&#160;&#160;<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278ad048b5042b768d619a7af21604d05a0d">PCPP_TCPOPT_TIMESTAMP</a> = 8, 
+<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a82a419fa83ffede0528bbe66b9eb0a29">TCPOPT_CC</a> = 11, 
+<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a39a5d63627b15bff0bd86fe2157dbe20">TCPOPT_CCNEW</a> = 12, 
+<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278aecbe259aa1fb8dff733084929a25ca27">TCPOPT_CCECHO</a> = 13, 
 <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301bacf51a70b96198793030c576bf48111f6">TCPOPT_MD5</a> = 19, 
-<a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301ba6a8400173edfca48e2e795c1e9afc862">TCPOPT_MPTCP</a> = 0x1e, 
-<a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301ba2c4c5fa96b5f24013ef13e8bddf232f3">TCPOPT_SCPS</a> = 20, 
-<a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301bacfa8aa4d4604c71338bae5270e3df540">TCPOPT_SNACK</a> = 21, 
+&#160;&#160;<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278acf51a70b96198793030c576bf48111f6">TCPOPT_MD5</a> = 19, 
+<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a6a8400173edfca48e2e795c1e9afc862">TCPOPT_MPTCP</a> = 0x1e, 
+<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a2c4c5fa96b5f24013ef13e8bddf232f3">TCPOPT_SCPS</a> = 20, 
+<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278acfa8aa4d4604c71338bae5270e3df540">TCPOPT_SNACK</a> = 21, 
 <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301bae7b809cbdeefd6ef5caa8fda23f2c38a">TCPOPT_RECBOUND</a> = 22, 
-<a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301bad997623b58c2d423f13721d5570484b8">TCPOPT_CORREXP</a> = 23, 
-<a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301ba368220fcd77a952c25993ff0d328b34d">TCPOPT_QS</a> = 27, 
-<a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301ba0ea39933d465fbcf6eb99587c1ea7b7b">TCPOPT_USER_TO</a> = 28, 
+&#160;&#160;<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278ae7b809cbdeefd6ef5caa8fda23f2c38a">TCPOPT_RECBOUND</a> = 22, 
+<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278ad997623b58c2d423f13721d5570484b8">TCPOPT_CORREXP</a> = 23, 
+<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a368220fcd77a952c25993ff0d328b34d">TCPOPT_QS</a> = 27, 
+<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a0ea39933d465fbcf6eb99587c1ea7b7b">TCPOPT_USER_TO</a> = 28, 
 <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301ba0205491540fd32d17506aba9d94af517">TCPOPT_EXP_FD</a> = 0xfd, 
-<a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301ba7419b4758897f479aa1ae84c2061ccb2">TCPOPT_EXP_FE</a> = 0xfe, 
-<a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301babd01da185004dc3f371e2ec536c1bfd7">TCPOPT_RVBD_PROBE</a> = 76, 
-<a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301ba448a533dced328df05277c2daf60fb1d">TCPOPT_RVBD_TRPY</a> = 78, 
+&#160;&#160;<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a0205491540fd32d17506aba9d94af517">TCPOPT_EXP_FD</a> = 0xfd, 
+<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a7419b4758897f479aa1ae84c2061ccb2">TCPOPT_EXP_FE</a> = 0xfe, 
+<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278abd01da185004dc3f371e2ec536c1bfd7">TCPOPT_RVBD_PROBE</a> = 76, 
+<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a448a533dced328df05277c2daf60fb1d">TCPOPT_RVBD_TRPY</a> = 78, 
 <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301ba65518218f346096c1ed5381a3a2a3157">TCPOPT_Unknown</a> = 255
+&#160;&#160;<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a65518218f346096c1ed5381a3a2a3157">TCPOPT_Unknown</a> = 255
 <br />
  }</td></tr>
-<tr class="separator:a470be375e45a572c355154116879301b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ab2f3f36d158a9c44a6305f3e1356f278"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb43f1f8284d4e0b74d1c77b70152fa9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#adb43f1f8284d4e0b74d1c77b70152fa9">DpdkPMDType</a> { <br />
 &#160;&#160;<a class="el" href="namespacepcpp.html#adb43f1f8284d4e0b74d1c77b70152fa9a7284a3382423a4788038a93351da1068">PMD_UNKNOWN</a>, 
 <a class="el" href="namespacepcpp.html#adb43f1f8284d4e0b74d1c77b70152fa9a5ea9f73f02ab060961507d00b0116c3a">PMD_BOND</a>, 
@@ -1980,6 +1984,10 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a236073670782cc577b097b2fef4c7d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a979b15d51e4f361c61e1f726b051541d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a979b15d51e4f361c61e1f726b051541d">CompositeLogicFilterOp</a> { <a class="el" href="namespacepcpp.html#a979b15d51e4f361c61e1f726b051541da558ffc8f5770d8e4f95f51d822685532">CompositeLogicFilterOp::AND</a>, 
+<a class="el" href="namespacepcpp.html#a979b15d51e4f361c61e1f726b051541da1d00e7dce692e8dc3f6877f035e3a616">CompositeLogicFilterOp::OR</a>
+ }</td></tr>
+<tr class="separator:a979b15d51e4f361c61e1f726b051541d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -2174,6 +2182,24 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The main namespace for the PcapPlusPlus lib. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="a32759b78f540d917ac9e24b8559ea463"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32759b78f540d917ac9e24b8559ea463">&#9670;&nbsp;</a></span>AndFilter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacepcpp.html#a32759b78f540d917ac9e24b8559ea463">pcpp::AndFilter</a> = typedef <a class="el" href="classpcpp_1_1_composite_logic_filter.html">CompositeLogicFilter</a>&lt;<a class="el" href="namespacepcpp.html#a979b15d51e4f361c61e1f726b051541da558ffc8f5770d8e4f95f51d822685532">CompositeLogicFilterOp::AND</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A class for connecting several filters into one filter with logical "and" between them. For example: if the 2 filters are: "IPv4 address = x.x.x.x" + "TCP port dst = 80", then the new filter will be: "IPv4 address = x.x.x.x
+_AND_ TCP port dst = 80"<br />
+ This class follows the composite design pattern<br />
+ For deeper understanding of the filter concept please refer to <a class="el" href="_pcap_filter_8h.html">PcapFilter.h</a> </p>
+
+</div>
+</div>
 <a id="a061cad9d9ae05c46c200eb0b7ec31a53"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a061cad9d9ae05c46c200eb0b7ec31a53">&#9670;&nbsp;</a></span>icmp_address_mask_reply</h2>
 
@@ -2384,6 +2410,24 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="ad80d920337291d98e1eac2c990b0ad16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad80d920337291d98e1eac2c990b0ad16">&#9670;&nbsp;</a></span>OrFilter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacepcpp.html#ad80d920337291d98e1eac2c990b0ad16">pcpp::OrFilter</a> = typedef <a class="el" href="classpcpp_1_1_composite_logic_filter.html">CompositeLogicFilter</a>&lt;<a class="el" href="namespacepcpp.html#a979b15d51e4f361c61e1f726b051541da1d00e7dce692e8dc3f6877f035e3a616">CompositeLogicFilterOp::OR</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A class for connecting several filters into one filter with logical "or" between them. For example: if the 2 filters are: "IPv4 address = x.x.x.x" + "TCP port dst = 80", then the new filter will be: "IPv4 address = x.x.x.x
+_OR_ TCP port dst = 80"<br />
+ This class follows the composite design pattern<br />
+ For deeper understanding of the filter concept please refer to <a class="el" href="_pcap_filter_8h.html">PcapFilter.h</a> </p>
+
+</div>
+</div>
 <a id="a1d761f7cf37d3b1efb1574fb1177e6eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1d761f7cf37d3b1efb1574fb1177e6eb">&#9670;&nbsp;</a></span>ProtocolType</h2>
 
@@ -2467,6 +2511,35 @@ Variables</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a977d5d1fabe89dba06443bbca6a711bbac2dc2a02d77464f2ad09460e52027547"></a>DHCP_BOOTREQUEST&#160;</td><td class="fielddoc"><p>BootP request </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a977d5d1fabe89dba06443bbca6a711bbad6aa627bfd992b58dcb027c7c453483f"></a>DHCP_BOOTREPLY&#160;</td><td class="fielddoc"><p>BootP reply </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a979b15d51e4f361c61e1f726b051541d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a979b15d51e4f361c61e1f726b051541d">&#9670;&nbsp;</a></span>CompositeLogicFilterOp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacepcpp.html#a979b15d51e4f361c61e1f726b051541d">pcpp::CompositeLogicFilterOp</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Supported composite logic filter operators enum </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a979b15d51e4f361c61e1f726b051541da558ffc8f5770d8e4f95f51d822685532"></a>AND&#160;</td><td class="fielddoc"><p>Logical AND operation </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a979b15d51e4f361c61e1f726b051541da1d00e7dce692e8dc3f6877f035e3a616"></a>OR&#160;</td><td class="fielddoc"><p>Logical OR operation </p>
 </td></tr>
 </table>
 
@@ -4845,68 +4918,68 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a470be375e45a572c355154116879301b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a470be375e45a572c355154116879301b">&#9670;&nbsp;</a></span>TcpOptionType</h2>
+<a id="ab2f3f36d158a9c44a6305f3e1356f278"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2f3f36d158a9c44a6305f3e1356f278">&#9670;&nbsp;</a></span>TcpOptionType</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301b">pcpp::TcpOptionType</a></td>
+          <td class="memname">enum <a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278">pcpp::TcpOptionType</a> : uint8_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>TCP options types </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a470be375e45a572c355154116879301ba313ec412b9693a6535bce5e111f228d6"></a>PCPP_TCPOPT_NOP&#160;</td><td class="fielddoc"><p>Padding </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278a313ec412b9693a6535bce5e111f228d6"></a>PCPP_TCPOPT_NOP&#160;</td><td class="fielddoc"><p>Padding </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a470be375e45a572c355154116879301ba572937db672d4d69625f0662ed76b962"></a>PCPP_TCPOPT_EOL&#160;</td><td class="fielddoc"><p>End of options </p>
+<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278a572937db672d4d69625f0662ed76b962"></a>PCPP_TCPOPT_EOL&#160;</td><td class="fielddoc"><p>End of options </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a470be375e45a572c355154116879301ba2e397d517856130b7b8015a2a5116702"></a>TCPOPT_MSS&#160;</td><td class="fielddoc"><p>Segment size negotiating </p>
+<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278a2e397d517856130b7b8015a2a5116702"></a>TCPOPT_MSS&#160;</td><td class="fielddoc"><p>Segment size negotiating </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a470be375e45a572c355154116879301ba3887404116247fb2f34cdcf0f6ec3b46"></a>PCPP_TCPOPT_WINDOW&#160;</td><td class="fielddoc"><p>Window scaling </p>
+<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278a3887404116247fb2f34cdcf0f6ec3b46"></a>PCPP_TCPOPT_WINDOW&#160;</td><td class="fielddoc"><p>Window scaling </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a470be375e45a572c355154116879301bae8a33bd70ab512bd473f1ba75038285d"></a>TCPOPT_SACK_PERM&#160;</td><td class="fielddoc"><p>SACK Permitted </p>
+<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278ae8a33bd70ab512bd473f1ba75038285d"></a>TCPOPT_SACK_PERM&#160;</td><td class="fielddoc"><p>SACK Permitted </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a470be375e45a572c355154116879301baf6f2d4d9c60472415287e15825eb24cf"></a>PCPP_TCPOPT_SACK&#160;</td><td class="fielddoc"><p>SACK Block </p>
+<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278af6f2d4d9c60472415287e15825eb24cf"></a>PCPP_TCPOPT_SACK&#160;</td><td class="fielddoc"><p>SACK Block </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a470be375e45a572c355154116879301baf7e1c0704f4b2752500ea250ec05243a"></a>TCPOPT_ECHO&#160;</td><td class="fielddoc"><p>Echo (obsoleted by option <a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301bad048b5042b768d619a7af21604d05a0d">PCPP_TCPOPT_TIMESTAMP</a>) </p>
+<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278af7e1c0704f4b2752500ea250ec05243a"></a>TCPOPT_ECHO&#160;</td><td class="fielddoc"><p>Echo (obsoleted by option <a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278ad048b5042b768d619a7af21604d05a0d">PCPP_TCPOPT_TIMESTAMP</a>) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a470be375e45a572c355154116879301ba8e5a017910f13b5205a8109e2c898d2e"></a>TCPOPT_ECHOREPLY&#160;</td><td class="fielddoc"><p>Echo Reply (obsoleted by option <a class="el" href="namespacepcpp.html#a470be375e45a572c355154116879301bad048b5042b768d619a7af21604d05a0d">PCPP_TCPOPT_TIMESTAMP</a>) </p>
+<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278a8e5a017910f13b5205a8109e2c898d2e"></a>TCPOPT_ECHOREPLY&#160;</td><td class="fielddoc"><p>Echo Reply (obsoleted by option <a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278ad048b5042b768d619a7af21604d05a0d">PCPP_TCPOPT_TIMESTAMP</a>) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a470be375e45a572c355154116879301bad048b5042b768d619a7af21604d05a0d"></a>PCPP_TCPOPT_TIMESTAMP&#160;</td><td class="fielddoc"><p>TCP Timestamps </p>
+<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278ad048b5042b768d619a7af21604d05a0d"></a>PCPP_TCPOPT_TIMESTAMP&#160;</td><td class="fielddoc"><p>TCP Timestamps </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a470be375e45a572c355154116879301ba82a419fa83ffede0528bbe66b9eb0a29"></a>TCPOPT_CC&#160;</td><td class="fielddoc"><p>CC (obsolete) </p>
+<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278a82a419fa83ffede0528bbe66b9eb0a29"></a>TCPOPT_CC&#160;</td><td class="fielddoc"><p>CC (obsolete) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a470be375e45a572c355154116879301ba39a5d63627b15bff0bd86fe2157dbe20"></a>TCPOPT_CCNEW&#160;</td><td class="fielddoc"><p>CC.NEW (obsolete) </p>
+<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278a39a5d63627b15bff0bd86fe2157dbe20"></a>TCPOPT_CCNEW&#160;</td><td class="fielddoc"><p>CC.NEW (obsolete) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a470be375e45a572c355154116879301baecbe259aa1fb8dff733084929a25ca27"></a>TCPOPT_CCECHO&#160;</td><td class="fielddoc"><p>CC.ECHO(obsolete) </p>
+<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278aecbe259aa1fb8dff733084929a25ca27"></a>TCPOPT_CCECHO&#160;</td><td class="fielddoc"><p>CC.ECHO(obsolete) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a470be375e45a572c355154116879301bacf51a70b96198793030c576bf48111f6"></a>TCPOPT_MD5&#160;</td><td class="fielddoc"><p>MD5 Signature Option </p>
+<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278acf51a70b96198793030c576bf48111f6"></a>TCPOPT_MD5&#160;</td><td class="fielddoc"><p>MD5 Signature Option </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a470be375e45a572c355154116879301ba6a8400173edfca48e2e795c1e9afc862"></a>TCPOPT_MPTCP&#160;</td><td class="fielddoc"><p>Multipath TCP </p>
+<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278a6a8400173edfca48e2e795c1e9afc862"></a>TCPOPT_MPTCP&#160;</td><td class="fielddoc"><p>Multipath TCP </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a470be375e45a572c355154116879301ba2c4c5fa96b5f24013ef13e8bddf232f3"></a>TCPOPT_SCPS&#160;</td><td class="fielddoc"><p>SCPS Capabilities </p>
+<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278a2c4c5fa96b5f24013ef13e8bddf232f3"></a>TCPOPT_SCPS&#160;</td><td class="fielddoc"><p>SCPS Capabilities </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a470be375e45a572c355154116879301bacfa8aa4d4604c71338bae5270e3df540"></a>TCPOPT_SNACK&#160;</td><td class="fielddoc"><p>SCPS SNACK </p>
+<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278acfa8aa4d4604c71338bae5270e3df540"></a>TCPOPT_SNACK&#160;</td><td class="fielddoc"><p>SCPS SNACK </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a470be375e45a572c355154116879301bae7b809cbdeefd6ef5caa8fda23f2c38a"></a>TCPOPT_RECBOUND&#160;</td><td class="fielddoc"><p>SCPS Record Boundary </p>
+<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278ae7b809cbdeefd6ef5caa8fda23f2c38a"></a>TCPOPT_RECBOUND&#160;</td><td class="fielddoc"><p>SCPS Record Boundary </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a470be375e45a572c355154116879301bad997623b58c2d423f13721d5570484b8"></a>TCPOPT_CORREXP&#160;</td><td class="fielddoc"><p>SCPS Corruption Experienced </p>
+<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278ad997623b58c2d423f13721d5570484b8"></a>TCPOPT_CORREXP&#160;</td><td class="fielddoc"><p>SCPS Corruption Experienced </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a470be375e45a572c355154116879301ba368220fcd77a952c25993ff0d328b34d"></a>TCPOPT_QS&#160;</td><td class="fielddoc"><p>Quick-Start Response </p>
+<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278a368220fcd77a952c25993ff0d328b34d"></a>TCPOPT_QS&#160;</td><td class="fielddoc"><p>Quick-Start Response </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a470be375e45a572c355154116879301ba0ea39933d465fbcf6eb99587c1ea7b7b"></a>TCPOPT_USER_TO&#160;</td><td class="fielddoc"><p>User Timeout Option (also, other known unauthorized use) </p>
+<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278a0ea39933d465fbcf6eb99587c1ea7b7b"></a>TCPOPT_USER_TO&#160;</td><td class="fielddoc"><p>User Timeout Option (also, other known unauthorized use) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a470be375e45a572c355154116879301ba0205491540fd32d17506aba9d94af517"></a>TCPOPT_EXP_FD&#160;</td><td class="fielddoc"><p>RFC3692-style Experiment 1 (also improperly used for shipping products) </p>
+<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278a0205491540fd32d17506aba9d94af517"></a>TCPOPT_EXP_FD&#160;</td><td class="fielddoc"><p>RFC3692-style Experiment 1 (also improperly used for shipping products) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a470be375e45a572c355154116879301ba7419b4758897f479aa1ae84c2061ccb2"></a>TCPOPT_EXP_FE&#160;</td><td class="fielddoc"><p>RFC3692-style Experiment 2 (also improperly used for shipping products) </p>
+<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278a7419b4758897f479aa1ae84c2061ccb2"></a>TCPOPT_EXP_FE&#160;</td><td class="fielddoc"><p>RFC3692-style Experiment 2 (also improperly used for shipping products) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a470be375e45a572c355154116879301babd01da185004dc3f371e2ec536c1bfd7"></a>TCPOPT_RVBD_PROBE&#160;</td><td class="fielddoc"><p>Riverbed probe option, non IANA registered option number </p>
+<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278abd01da185004dc3f371e2ec536c1bfd7"></a>TCPOPT_RVBD_PROBE&#160;</td><td class="fielddoc"><p>Riverbed probe option, non IANA registered option number </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a470be375e45a572c355154116879301ba448a533dced328df05277c2daf60fb1d"></a>TCPOPT_RVBD_TRPY&#160;</td><td class="fielddoc"><p>Riverbed transparency option, non IANA registered option number </p>
+<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278a448a533dced328df05277c2daf60fb1d"></a>TCPOPT_RVBD_TRPY&#160;</td><td class="fielddoc"><p>Riverbed transparency option, non IANA registered option number </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a470be375e45a572c355154116879301ba65518218f346096c1ed5381a3a2a3157"></a>TCPOPT_Unknown&#160;</td><td class="fielddoc"><p>Unknown option </p>
+<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278a65518218f346096c1ed5381a3a2a3157"></a>TCPOPT_Unknown&#160;</td><td class="fielddoc"><p>Unknown option </p>
 </td></tr>
 </table>
 
@@ -6721,7 +6794,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li>
-    <li class="footer">Generated on Wed Feb 14 2024 09:37:42 for PcapPlusPlus by
+    <li class="footer">Generated on Fri Feb 23 2024 01:08:47 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

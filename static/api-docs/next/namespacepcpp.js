@@ -1,6 +1,5 @@
 var namespacepcpp =
 [
-    [ "AndFilter", "classpcpp_1_1_and_filter.html", "classpcpp_1_1_and_filter" ],
     [ "ApplicationEventHandler", "classpcpp_1_1_application_event_handler.html", "classpcpp_1_1_application_event_handler" ],
     [ "AppName", "classpcpp_1_1_app_name.html", null ],
     [ "ArpFilter", "classpcpp_1_1_arp_filter.html", "classpcpp_1_1_arp_filter" ],
@@ -15,6 +14,8 @@ var namespacepcpp =
     [ "BgpUpdateMessageLayer", "classpcpp_1_1_bgp_update_message_layer.html", "classpcpp_1_1_bgp_update_message_layer" ],
     [ "BpfFilterWrapper", "classpcpp_1_1_bpf_filter_wrapper.html", "classpcpp_1_1_bpf_filter_wrapper" ],
     [ "BPFStringFilter", "classpcpp_1_1_b_p_f_string_filter.html", "classpcpp_1_1_b_p_f_string_filter" ],
+    [ "CompositeFilter", "classpcpp_1_1_composite_filter.html", "classpcpp_1_1_composite_filter" ],
+    [ "CompositeLogicFilter", "classpcpp_1_1_composite_logic_filter.html", "classpcpp_1_1_composite_logic_filter" ],
     [ "ConnectionData", "structpcpp_1_1_connection_data.html", "structpcpp_1_1_connection_data" ],
     [ "cotphdr", "structpcpp_1_1cotphdr.html", "structpcpp_1_1cotphdr" ],
     [ "CotpLayer", "classpcpp_1_1_cotp_layer.html", "classpcpp_1_1_cotp_layer" ],
@@ -156,7 +157,6 @@ var namespacepcpp =
     [ "NotFilter", "classpcpp_1_1_not_filter.html", "classpcpp_1_1_not_filter" ],
     [ "NtpLayer", "classpcpp_1_1_ntp_layer.html", "classpcpp_1_1_ntp_layer" ],
     [ "NullLoopbackLayer", "classpcpp_1_1_null_loopback_layer.html", "classpcpp_1_1_null_loopback_layer" ],
-    [ "OrFilter", "classpcpp_1_1_or_filter.html", "classpcpp_1_1_or_filter" ],
     [ "OUILookup", "classpcpp_1_1_o_u_i_lookup.html", "classpcpp_1_1_o_u_i_lookup" ],
     [ "Packet", "classpcpp_1_1_packet.html", "classpcpp_1_1_packet" ],
     [ "PacketTrailerLayer", "classpcpp_1_1_packet_trailer_layer.html", "classpcpp_1_1_packet_trailer_layer" ],
