@@ -34,9 +34,11 @@ var hierarchy =
       [ "pcpp::SipResponseFirstLine::SipResponseFirstLineException", "classpcpp_1_1_sip_response_first_line_1_1_sip_response_first_line_exception.html", null ]
     ] ],
     [ "pcpp::GeneralFilter", "classpcpp_1_1_general_filter.html", [
-      [ "pcpp::AndFilter", "classpcpp_1_1_and_filter.html", null ],
       [ "pcpp::ArpFilter", "classpcpp_1_1_arp_filter.html", null ],
       [ "pcpp::BPFStringFilter", "classpcpp_1_1_b_p_f_string_filter.html", null ],
+      [ "pcpp::CompositeFilter", "classpcpp_1_1_composite_filter.html", [
+        [ "pcpp::CompositeLogicFilter< op >", "classpcpp_1_1_composite_logic_filter.html", null ]
+      ] ],
       [ "pcpp::EtherTypeFilter", "classpcpp_1_1_ether_type_filter.html", null ],
       [ "pcpp::IFilterWithDirection", "classpcpp_1_1_i_filter_with_direction.html", [
         [ "pcpp::IPFilter", "classpcpp_1_1_i_p_filter.html", null ],
@@ -51,7 +53,6 @@ var hierarchy =
         [ "pcpp::UdpLengthFilter", "classpcpp_1_1_udp_length_filter.html", null ]
       ] ],
       [ "pcpp::NotFilter", "classpcpp_1_1_not_filter.html", null ],
-      [ "pcpp::OrFilter", "classpcpp_1_1_or_filter.html", null ],
       [ "pcpp::ProtoFilter", "classpcpp_1_1_proto_filter.html", null ],
       [ "pcpp::TcpFlagsFilter", "classpcpp_1_1_tcp_flags_filter.html", null ],
       [ "pcpp::VlanFilter", "classpcpp_1_1_vlan_filter.html", null ]

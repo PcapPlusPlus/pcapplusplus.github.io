@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['rawpacketvector',['RawPacketVector',['../namespacepcpp.html#a4c0775fb93a0867d2afa7992d55957f0',1,'pcpp']]],
-  ['remotedevicelistiterator',['RemoteDeviceListIterator',['../classpcpp_1_1_pcap_remote_device_list.html#a17e3146371657cb2bf427c345ef8701a',1,'pcpp::PcapRemoteDeviceList']]]
+  ['protocoltype',['ProtocolType',['../namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb',1,'pcpp']]],
+  ['protocoltypefamily',['ProtocolTypeFamily',['../namespacepcpp.html#aa26bae020a295f1089e08c390fb21c52',1,'pcpp']]]
 ];

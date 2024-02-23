@@ -63,6 +63,7 @@ var searchData=
   ['removeconninfo',['removeConnInfo',['../structpcpp_1_1_tcp_reassembly_configuration.html#ade3576882946634b10b51172bcbe2285',1,'pcpp::TcpReassemblyConfiguration']]],
   ['removedata',['removeData',['../classpcpp_1_1_raw_packet.html#a9cf289e6bbf461f55c20784615c899ce',1,'pcpp::RawPacket::removeData()'],['../classpcpp_1_1_m_buf_raw_packet.html#a3895fef553d8345e18b7f97e52f1a10d',1,'pcpp::MBufRawPacket::removeData()']]],
   ['removefield',['removeField',['../classpcpp_1_1_text_based_protocol_message.html#a3751401eb05f223685abd0c7c6990c66',1,'pcpp::TextBasedProtocolMessage::removeField(HeaderField *fieldToRemove)'],['../classpcpp_1_1_text_based_protocol_message.html#a9712764bb961cc7485335d1d30920232',1,'pcpp::TextBasedProtocolMessage::removeField(std::string fieldName, int index=0)']]],
+  ['removefilter',['removeFilter',['../classpcpp_1_1_composite_filter.html#a599bc7676adb522308816ea4896ef781',1,'pcpp::CompositeFilter']]],
   ['removefirstlayer',['removeFirstLayer',['../classpcpp_1_1_packet.html#a2e7755654f74cc1280409f3f42d9c9e3',1,'pcpp::Packet']]],
   ['removegrouprecordatindex',['removeGroupRecordAtIndex',['../classpcpp_1_1_igmp_v3_report_layer.html#a6179870d8386e1761ad9233a345e4dd9',1,'pcpp::IgmpV3ReportLayer']]],
   ['removeipaddressatindex',['removeIPAddressAtIndex',['../classpcpp_1_1_vrrp_layer.html#a8d723400efe99635f6760fa06d232bf0',1,'pcpp::VrrpLayer']]],
