@@ -1,10 +1,11 @@
 var NAVTREEINDEX19 =
 {
+"functions_t.html":[3,3,0,18],
 "functions_type.html":[3,3,3],
 "functions_u.html":[3,3,0,19],
 "functions_v.html":[3,3,0,20],
-"functions_vars.html":[3,3,2],
 "functions_vars.html":[3,3,2,0],
+"functions_vars.html":[3,3,2],
 "functions_vars_b.html":[3,3,2,1],
 "functions_vars_c.html":[3,3,2,2],
 "functions_vars_d.html":[3,3,2,3],
@@ -43,8 +44,8 @@ var NAVTREEINDEX19 =
 "index.html":[0],
 "index.html#api_reference_sec":[0,1],
 "index.html#intro_sec":[0,0],
-"namespacemembers.html":[2,0,0],
 "namespacemembers.html":[2,0],
+"namespacemembers.html":[2,0,0],
 "namespacemembers_b.html":[2,0,1],
 "namespacemembers_c.html":[2,0,2],
 "namespacemembers_d.html":[2,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "structpcpp_1_1_s_s_l_client_hello_message_1_1_client_hello_t_l_s_fingerprint.html#a7c352834d88a00282795065fbe7008e9":[3,0,0,236,0,1],
 "structpcpp_1_1_s_s_l_client_hello_message_1_1_client_hello_t_l_s_fingerprint.html#a8c9ce6e64dc32d2d8265743a6b0c8c5f":[3,0,0,236,0,3],
 "structpcpp_1_1_s_s_l_client_hello_message_1_1_client_hello_t_l_s_fingerprint.html#ae22d847417248d53511bc45c3c195cb7":[3,0,0,236,0,6],
-"structpcpp_1_1_s_s_l_client_hello_message_1_1_client_hello_t_l_s_fingerprint.html#afb9551ea42619172864816c364d649ea":[3,0,0,236,0,7],
-"structpcpp_1_1_s_s_l_extension_1_1_s_s_l_extension_struct.html":[3,0,0,238,0]
+"structpcpp_1_1_s_s_l_client_hello_message_1_1_client_hello_t_l_s_fingerprint.html#afb9551ea42619172864816c364d649ea":[3,0,0,236,0,7]
 };

@@ -109,6 +109,7 @@ var _raw_packet_8h =
       [ "LINKTYPE_ZWAVE_R3", "_raw_packet_8h.html#ab3f43dd3ccd8c93acac8b67909be02bea943e6dcc8ed2384de0ee2a0ee145d60d", null ],
       [ "LINKTYPE_WATTSTOPPER_DLM", "_raw_packet_8h.html#ab3f43dd3ccd8c93acac8b67909be02bead3377ef4c7ab63bf62af9055a9d9de9a", null ],
       [ "LINKTYPE_ISO_14443", "_raw_packet_8h.html#ab3f43dd3ccd8c93acac8b67909be02beae5cad0d645d0ba0c3d7b65e36b430414", null ],
-      [ "LINKTYPE_LINUX_SLL2", "_raw_packet_8h.html#ab3f43dd3ccd8c93acac8b67909be02bea31abc2862b6b2028178dc29039563537", null ]
+      [ "LINKTYPE_LINUX_SLL2", "_raw_packet_8h.html#ab3f43dd3ccd8c93acac8b67909be02bea31abc2862b6b2028178dc29039563537", null ],
+      [ "LINKTYPE_INVALID", "_raw_packet_8h.html#ab3f43dd3ccd8c93acac8b67909be02bea2857e1fd45f0ef0a7916d153cd4c2572", null ]
     ] ]
 ];
