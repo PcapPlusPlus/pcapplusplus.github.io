@@ -67,6 +67,7 @@ var searchData=
   ['linktype_5fieee802_5f15_5f4_5fnonask_5fphy',['LINKTYPE_IEEE802_15_4_NONASK_PHY',['../namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02beabfdce8575ada3e1fd2553b18c2d3cd35',1,'pcpp']]],
   ['linktype_5fieee802_5f5',['LINKTYPE_IEEE802_5',['../namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4d1f2e8620b3dcdd126969559a8b8da8',1,'pcpp']]],
   ['linktype_5finfiniband',['LINKTYPE_INFINIBAND',['../namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02beaad9da1d0f598e4d9dc18eed1ee4483ff',1,'pcpp']]],
+  ['linktype_5finvalid',['LINKTYPE_INVALID',['../namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea2857e1fd45f0ef0a7916d153cd4c2572',1,'pcpp']]],
   ['linktype_5fip_5fover_5ffc',['LINKTYPE_IP_OVER_FC',['../namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea39fd365ddafb0fcac1383cb4f942df63',1,'pcpp']]],
   ['linktype_5fipmb_5flinux',['LINKTYPE_IPMB_LINUX',['../namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02beafb62e7280d3f0db3ad4f6b201229730f',1,'pcpp']]],
   ['linktype_5fipmi_5fhpm_5f2',['LINKTYPE_IPMI_HPM_2',['../namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea32d42528f0b67059a078ddcf32569fa3',1,'pcpp']]],

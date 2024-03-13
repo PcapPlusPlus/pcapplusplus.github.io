@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#aa78efe37218aa84de776fcf6f486c91b":[3,0,0,255,32],
 "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#ab32e9c786cbdba626c05a43ffdf6b3c5":[3,0,0,255,35],
 "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#abdfd3172e4b62019fc4ba44259ccc5a5":[3,0,0,255,9],
 "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#ac0b067be9dcff613d37003bdbef93fc2":[3,0,0,255,33],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682dadefc4bdfe31e142b4e7b1846d53b4f63":[3,0,0,271,1,24],
 "classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682dae06889502a1e490d4e2a9238f6bfb11c":[3,0,0,271,1,3],
 "classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682dae4ffb7da3a0538a3cddfde1482c648f6":[3,0,0,271,1,14],
-"classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682dae9032600c7dce2983020be6670d5feb8":[3,0,0,271,1,33],
-"classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682daea4a4d7789e7448b1bd04de7ee98f776":[3,0,0,271,1,45]
+"classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682dae9032600c7dce2983020be6670d5feb8":[3,0,0,271,1,33]
 };
