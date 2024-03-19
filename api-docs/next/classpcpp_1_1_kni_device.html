@@ -155,9 +155,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa16790972282b1abaf1116dc6cd32355"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_kni_device.html#aa16790972282b1abaf1116dc6cd32355">setLinkState</a> (<a class="el" href="classpcpp_1_1_kni_device.html#a9a016df4487ece71c8dc911961a4f329">KniLinkState</a> state)</td></tr>
 <tr class="memdesc:aa16790972282b1abaf1116dc6cd32355"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets link state of KNI device. Firstly the link information is updated as by call to getLinkState(INFO_RENEW). Then link state is set only if obtained state differs from provided. New link state of KNI device is cached.  <a href="#aa16790972282b1abaf1116dc6cd32355">More...</a><br /></td></tr>
 <tr class="separator:aa16790972282b1abaf1116dc6cd32355"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6baf3b2af2d5edd81e85d57a7a7a5ae3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_kni_device.html#a6baf3b2af2d5edd81e85d57a7a7a5ae3">setMacAddress</a> (<a class="el" href="classpcpp_1_1_mac_address.html">MacAddress</a> mac)</td></tr>
-<tr class="memdesc:a6baf3b2af2d5edd81e85d57a7a7a5ae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets MAC address of KNI device. Unconditionally changes MAC of KNI device. If MAC is updated successfully then it is cached.  <a href="#a6baf3b2af2d5edd81e85d57a7a7a5ae3">More...</a><br /></td></tr>
-<tr class="separator:a6baf3b2af2d5edd81e85d57a7a7a5ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf2a9fa9b16a093511788934a5533d68"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_kni_device.html#adf2a9fa9b16a093511788934a5533d68">setMacAddress</a> (const <a class="el" href="classpcpp_1_1_mac_address.html">MacAddress</a> &amp;mac)</td></tr>
+<tr class="memdesc:adf2a9fa9b16a093511788934a5533d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets MAC address of KNI device. Unconditionally changes MAC of KNI device. If MAC is updated successfully then it is cached.  <a href="#adf2a9fa9b16a093511788934a5533d68">More...</a><br /></td></tr>
+<tr class="separator:adf2a9fa9b16a093511788934a5533d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84eb855f4a1ca4df14d23374b752edd6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_kni_device.html#a84eb855f4a1ca4df14d23374b752edd6">setMtu</a> (uint16_t mtu)</td></tr>
 <tr class="memdesc:a84eb855f4a1ca4df14d23374b752edd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets MTU of KNI device. Unconditionally changes MTU of KNI device. If MTU is updated successfully then it is cached.  <a href="#a84eb855f4a1ca4df14d23374b752edd6">More...</a><br /></td></tr>
 <tr class="separator:a84eb855f4a1ca4df14d23374b752edd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -926,8 +926,8 @@ Generates change link state request </dd></dl>
 
 </div>
 </div>
-<a id="a6baf3b2af2d5edd81e85d57a7a7a5ae3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6baf3b2af2d5edd81e85d57a7a7a5ae3">&#9670;&nbsp;</a></span>setMacAddress()</h2>
+<a id="adf2a9fa9b16a093511788934a5533d68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf2a9fa9b16a093511788934a5533d68">&#9670;&nbsp;</a></span>setMacAddress()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -935,7 +935,7 @@ Generates change link state request </dd></dl>
         <tr>
           <td class="memname">bool pcpp::KniDevice::setMacAddress </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classpcpp_1_1_mac_address.html">MacAddress</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_mac_address.html">MacAddress</a> &amp;&#160;</td>
           <td class="paramname"><em>mac</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1216,7 +1216,7 @@ Generates promiscuous mode request </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_kni_device.html">KniDevice</a></li>
-    <li class="footer">Generated on Wed Mar 13 2024 05:25:07 for PcapPlusPlus by
+    <li class="footer">Generated on Tue Mar 19 2024 06:13:30 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

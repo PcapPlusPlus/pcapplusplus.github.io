@@ -38,7 +38,7 @@ var classpcpp_1_1_kni_device =
     [ "sendPackets", "classpcpp_1_1_kni_device.html#aa43aa821542e38f67503545175dc334e", null ],
     [ "sendPackets", "classpcpp_1_1_kni_device.html#acf6de9a122dcf513108f58daed609afa", null ],
     [ "setLinkState", "classpcpp_1_1_kni_device.html#aa16790972282b1abaf1116dc6cd32355", null ],
-    [ "setMacAddress", "classpcpp_1_1_kni_device.html#a6baf3b2af2d5edd81e85d57a7a7a5ae3", null ],
+    [ "setMacAddress", "classpcpp_1_1_kni_device.html#adf2a9fa9b16a093511788934a5533d68", null ],
     [ "setMtu", "classpcpp_1_1_kni_device.html#a84eb855f4a1ca4df14d23374b752edd6", null ],
     [ "setPromiscuous", "classpcpp_1_1_kni_device.html#a4ca4642ca8d30d931a084c7582aa3a6b", null ],
     [ "startCapture", "classpcpp_1_1_kni_device.html#a3f5f48e1e2950cb3f2385d1bdda5a25e", null ],
