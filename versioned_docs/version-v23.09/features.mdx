@@ -53,9 +53,9 @@ Consider this simple code snippet that shows how to read a packet from a PCAP fi
 
 ```cpp
 #include <iostream>
-#include "IPv4Layer.h"
-#include "Packet.h"
-#include "PcapFileDevice.h"
+#include <IPv4Layer.h>
+#include <Packet.h>
+#include <PcapFileDevice.h>
 
 int main(int argc, char* argv[])
 {
@@ -67,8 +67,7 @@ int main(int argc, char* argv[])
         return 1;
     }
 
-    // read the first packet from the file (in this case the
-    // file contains only one packet)
+    // read the first (and only) packet from the file
     pcpp::RawPacket rawPacket;
     if (!reader.getNextPacket(rawPacket))
     {
@@ -79,13 +78,12 @@ int main(int argc, char* argv[])
     // parse the raw packet into a parsed packet
     pcpp::Packet parsedPacket(&rawPacket);
 
-    // check if it's an IPv4 packet
+    // verify the packet is IPv4
     if (parsedPacket.isPacketOfType(pcpp::IPv4))
     {
         // extract source and dest IPs
-        pcpp::IPv4Address srcIP = parsedPacket.getLayerOfType()->getSrcIPv4Address();
-        pcpp::IPv4Address destIP = parsedPacket.getLayerOfType()->getDstIPv4Address();
-
+        pcpp::IPv4Address srcIP = parsedPacket.getLayerOfType<pcpp::IPv4Layer>()->getSrcIPv4Address();
+        pcpp::IPv4Address destIP = parsedPacket.getLayerOfType<pcpp::IPv4Layer>()->getDstIPv4Address();
 
         // print source and dest IPs
         std::cout
