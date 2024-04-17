@@ -14,7 +14,7 @@ var classpcpp_1_1_i_p_address =
     [ "isIPv4", "classpcpp_1_1_i_p_address.html#ab79cac12a5fe8253c7d981b7d47b0354", null ],
     [ "isIPv6", "classpcpp_1_1_i_p_address.html#acf60f8b4543e7fccc7123e85f65e2e34", null ],
     [ "isMulticast", "classpcpp_1_1_i_p_address.html#ad71cfa17f6142f3a64fa2e5d523f3d6a", null ],
-    [ "isValid", "classpcpp_1_1_i_p_address.html#a87c99d4671e64cc23ce3824c35290abf", null ],
+    [ "isZero", "classpcpp_1_1_i_p_address.html#ac2d53b8a90a0cb10c4ad135a18f1522f", null ],
     [ "operator!=", "classpcpp_1_1_i_p_address.html#a694f021bb98f29127cde0e2a19f40dfc", null ],
     [ "operator<", "classpcpp_1_1_i_p_address.html#aaa50740fda62aef69ec6cf01e16f5e6f", null ],
     [ "operator=", "classpcpp_1_1_i_p_address.html#ac5e81a386d9fcd33352de132903f9133", null ],
