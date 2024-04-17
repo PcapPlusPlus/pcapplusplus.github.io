@@ -118,8 +118,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa3d65be369c49372d2747b5f096fc7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16d19ff8459edd846ee7b6b3f121769c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#a16d19ff8459edd846ee7b6b3f121769c">toString</a> () const</td></tr>
 <tr class="separator:a16d19ff8459edd846ee7b6b3f121769c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87c99d4671e64cc23ce3824c35290abf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#a87c99d4671e64cc23ce3824c35290abf">isValid</a> () const</td></tr>
-<tr class="separator:a87c99d4671e64cc23ce3824c35290abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab79cac12a5fe8253c7d981b7d47b0354"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#ab79cac12a5fe8253c7d981b7d47b0354">isIPv4</a> () const</td></tr>
 <tr class="separator:ab79cac12a5fe8253c7d981b7d47b0354"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf60f8b4543e7fccc7123e85f65e2e34"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#acf60f8b4543e7fccc7123e85f65e2e34">isIPv6</a> () const</td></tr>
@@ -130,6 +128,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a584a911f130cea976cc73b46ab1672d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d61f3719cb001136a622d4622c003a8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#a6d61f3719cb001136a622d4622c003a8">getIPv6</a> () const</td></tr>
 <tr class="separator:a6d61f3719cb001136a622d4622c003a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2d53b8a90a0cb10c4ad135a18f1522f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#ac2d53b8a90a0cb10c4ad135a18f1522f">isZero</a> () const</td></tr>
+<tr class="separator:ac2d53b8a90a0cb10c4ad135a18f1522f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae40ad58764b28485323c729a8a72a575"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#ae40ad58764b28485323c729a8a72a575">operator==</a> (const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;rhs) const</td></tr>
 <tr class="separator:ae40ad58764b28485323c729a8a72a575"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa50740fda62aef69ec6cf01e16f5e6f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_address.html#aaa50740fda62aef69ec6cf01e16f5e6f">operator&lt;</a> (const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;rhs) const</td></tr>
@@ -433,8 +433,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a87c99d4671e64cc23ce3824c35290abf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87c99d4671e64cc23ce3824c35290abf">&#9670;&nbsp;</a></span>isValid()</h2>
+<a id="ac2d53b8a90a0cb10c4ad135a18f1522f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2d53b8a90a0cb10c4ad135a18f1522f">&#9670;&nbsp;</a></span>isZero()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -443,7 +443,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool pcpp::IPAddress::isValid </td>
+          <td class="memname">bool pcpp::IPAddress::isZero </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -455,7 +455,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Determine whether the address is unspecified </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the address is zero, false otherwise </dd></dl>
 
 </div>
 </div>
@@ -656,7 +656,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a></li>
-    <li class="footer">Generated on Wed Mar 27 2024 06:21:14 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Apr 17 2024 07:32:12 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

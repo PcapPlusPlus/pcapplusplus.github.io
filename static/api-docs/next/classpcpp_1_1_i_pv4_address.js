@@ -1,15 +1,12 @@
 var classpcpp_1_1_i_pv4_address =
 [
-    [ "IPv4Address", "classpcpp_1_1_i_pv4_address.html#a4a032fc43f898fb59556eb80a8ba715e", null ],
-    [ "IPv4Address", "classpcpp_1_1_i_pv4_address.html#a329a4f44a6a4139850351188bb1a139c", null ],
+    [ "IPv4Address", "classpcpp_1_1_i_pv4_address.html#a1bbd186a4c8d55983540387e5142b1c1", null ],
+    [ "IPv4Address", "classpcpp_1_1_i_pv4_address.html#a9b4aba6e77704845fd4e2021c1a46b16", null ],
     [ "IPv4Address", "classpcpp_1_1_i_pv4_address.html#aa25dc03222399468a0f23afcb5325935", null ],
     [ "IPv4Address", "classpcpp_1_1_i_pv4_address.html#a5881f8a346543fa171c32474e1ae130f", null ],
     [ "isMulticast", "classpcpp_1_1_i_pv4_address.html#ad51ed35f792f82bdbfb34d58607a04fc", null ],
-    [ "isValid", "classpcpp_1_1_i_pv4_address.html#aa8132c15a9e74f3407d4dcd510f35cd6", null ],
     [ "matchNetwork", "classpcpp_1_1_i_pv4_address.html#a0e24e44d5f404d7bda6abc58eae09b81", null ],
     [ "matchNetwork", "classpcpp_1_1_i_pv4_address.html#a01541ff239d0b784d3a1c36d3fb21491", null ],
-    [ "matchSubnet", "classpcpp_1_1_i_pv4_address.html#a01d6c0c03879b02699aa7801d080287e", null ],
-    [ "matchSubnet", "classpcpp_1_1_i_pv4_address.html#a2334fc86178ecdd35531b784e880e514", null ],
     [ "operator!=", "classpcpp_1_1_i_pv4_address.html#a8e7edf6c1606beedb7528d235d9d6906", null ],
     [ "operator<", "classpcpp_1_1_i_pv4_address.html#aadc8fd71dda69c7a0a9a69aa27c2c85f", null ],
     [ "operator==", "classpcpp_1_1_i_pv4_address.html#aa50bcabe1bcfeec33aceeea9badbe42f", null ],
