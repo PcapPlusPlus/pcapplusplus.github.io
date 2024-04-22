@@ -233,10 +233,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a56fae02490d62b97e0fdddb94787a2f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea5269c79bf49fcdaee09061a3d86123"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#aea5269c79bf49fcdaee09061a3d86123">rssHashFunctionMaskToString</a> (uint64_t rssHFMask) const</td></tr>
 <tr class="separator:aea5269c79bf49fcdaee09061a3d86123"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5717b8aa18dbb657e4c346adbb38163"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#ad5717b8aa18dbb657e4c346adbb38163">open</a> ()</td></tr>
-<tr class="separator:ad5717b8aa18dbb657e4c346adbb38163"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab772ecb6a13f970a1671a143dfcf8edc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#ab772ecb6a13f970a1671a143dfcf8edc">close</a> ()</td></tr>
-<tr class="separator:ab772ecb6a13f970a1671a143dfcf8edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27d469aab56898409f8ff43300406880"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#a27d469aab56898409f8ff43300406880">open</a> () override</td></tr>
+<tr class="separator:a27d469aab56898409f8ff43300406880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a674ce896499d738f2c3c83777b7f7fd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#a674ce896499d738f2c3c83777b7f7fd6">close</a> () override</td></tr>
+<tr class="separator:a674ce896499d738f2c3c83777b7f7fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classpcpp_1_1_i_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_i_device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_device.html">pcpp::IDevice</a></td></tr>
 <tr class="memitem:a5b75e7491597f271b8f29847bec2ee99 inherit pub_methods_classpcpp_1_1_i_device"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_device.html#a5b75e7491597f271b8f29847bec2ee99">isOpened</a> ()</td></tr>
 <tr class="separator:a5b75e7491597f271b8f29847bec2ee99 inherit pub_methods_classpcpp_1_1_i_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -341,8 +341,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab772ecb6a13f970a1671a143dfcf8edc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab772ecb6a13f970a1671a143dfcf8edc">&#9670;&nbsp;</a></span>close()</h2>
+<a id="a674ce896499d738f2c3c83777b7f7fd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a674ce896499d738f2c3c83777b7f7fd6">&#9670;&nbsp;</a></span>close()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -359,7 +359,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -897,8 +897,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad5717b8aa18dbb657e4c346adbb38163"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5717b8aa18dbb657e4c346adbb38163">&#9670;&nbsp;</a></span>open()</h2>
+<a id="a27d469aab56898409f8ff43300406880"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27d469aab56898409f8ff43300406880">&#9670;&nbsp;</a></span>open()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -915,7 +915,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -956,7 +956,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Open the DPDK device. Notice opening the device only makes it ready to use, it doesn't start packet capturing. This method initializes RX and TX queues, configures the DPDK port and starts it. Call <a class="el" href="classpcpp_1_1_dpdk_device.html#ab772ecb6a13f970a1671a143dfcf8edc">close()</a> to close the device. The device is opened in promiscuous mode </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Open the DPDK device. Notice opening the device only makes it ready to use, it doesn't start packet capturing. This method initializes RX and TX queues, configures the DPDK port and starts it. Call <a class="el" href="classpcpp_1_1_dpdk_device.html#a674ce896499d738f2c3c83777b7f7fd6">close()</a> to close the device. The device is opened in promiscuous mode </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">numOfRxQueuesToOpen</td><td>Number of RX queues to setup. This number must be smaller or equal to the return value of <a class="el" href="classpcpp_1_1_dpdk_device.html#a0b14848d6aa191dbfc499c8fffd91cf3">getTotalNumOfRxQueues()</a> </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">numOfTxQueuesToOpen</td><td>Number of TX queues to setup. This number must be smaller or equal to the return value of <a class="el" href="classpcpp_1_1_dpdk_device.html#ac58e4e1039dff5eebd8ad7ac0c19704a">getTotalNumOfTxQueues()</a> </td></tr>
@@ -1643,7 +1643,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_dpdk_device.html">DpdkDevice</a></li>
-    <li class="footer">Generated on Sun Apr 21 2024 21:57:28 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Apr 22 2024 02:33:26 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
