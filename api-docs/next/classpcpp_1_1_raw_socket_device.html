@@ -123,10 +123,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3a7822e719e2f5895b3bee1523327e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a348a0cfddc2d9b04857fd8bf8402b6ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_socket_device.html#a348a0cfddc2d9b04857fd8bf8402b6ba">sendPackets</a> (const <a class="el" href="namespacepcpp.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;packetVec)</td></tr>
 <tr class="separator:a348a0cfddc2d9b04857fd8bf8402b6ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afadbe3e75178913f1d9c2cc3f6d02909"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_socket_device.html#afadbe3e75178913f1d9c2cc3f6d02909">open</a> ()</td></tr>
-<tr class="separator:afadbe3e75178913f1d9c2cc3f6d02909"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a040fdad86cc60ef3b289834251a942c5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_socket_device.html#a040fdad86cc60ef3b289834251a942c5">close</a> ()</td></tr>
-<tr class="separator:a040fdad86cc60ef3b289834251a942c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff1eb10c3d601d602322849c31e98e10"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_socket_device.html#aff1eb10c3d601d602322849c31e98e10">open</a> () override</td></tr>
+<tr class="separator:aff1eb10c3d601d602322849c31e98e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbfa55120d23c91c9bd2e4ef11161ea3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_socket_device.html#afbfa55120d23c91c9bd2e4ef11161ea3">close</a> () override</td></tr>
+<tr class="separator:afbfa55120d23c91c9bd2e4ef11161ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classpcpp_1_1_i_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_i_device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_device.html">pcpp::IDevice</a></td></tr>
 <tr class="memitem:a5b75e7491597f271b8f29847bec2ee99 inherit pub_methods_classpcpp_1_1_i_device"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_device.html#a5b75e7491597f271b8f29847bec2ee99">isOpened</a> ()</td></tr>
 <tr class="separator:a5b75e7491597f271b8f29847bec2ee99 inherit pub_methods_classpcpp_1_1_i_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,13 +180,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A d'tor for this class. It closes the raw socket if not previously closed by calling <a class="el" href="classpcpp_1_1_raw_socket_device.html#a040fdad86cc60ef3b289834251a942c5">close()</a> </p>
+<p>A d'tor for this class. It closes the raw socket if not previously closed by calling <a class="el" href="classpcpp_1_1_raw_socket_device.html#afbfa55120d23c91c9bd2e4ef11161ea3">close()</a> </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a040fdad86cc60ef3b289834251a942c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a040fdad86cc60ef3b289834251a942c5">&#9670;&nbsp;</a></span>close()</h2>
+<a id="afbfa55120d23c91c9bd2e4ef11161ea3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbfa55120d23c91c9bd2e4ef11161ea3">&#9670;&nbsp;</a></span>close()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -195,7 +195,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void pcpp::RawSocketDevice::close </td>
+          <td class="memname">void pcpp::RawSocketDevice::close </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -203,7 +203,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -213,8 +213,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afadbe3e75178913f1d9c2cc3f6d02909"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afadbe3e75178913f1d9c2cc3f6d02909">&#9670;&nbsp;</a></span>open()</h2>
+<a id="aff1eb10c3d601d602322849c31e98e10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff1eb10c3d601d602322849c31e98e10">&#9670;&nbsp;</a></span>open()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -223,7 +223,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool pcpp::RawSocketDevice::open </td>
+          <td class="memname">bool pcpp::RawSocketDevice::open </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -231,7 +231,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -393,7 +393,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_raw_socket_device.html">RawSocketDevice</a></li>
-    <li class="footer">Generated on Sun Apr 21 2024 21:57:28 for PcapPlusPlus by
+    <li class="footer">Generated on Mon Apr 22 2024 02:33:26 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

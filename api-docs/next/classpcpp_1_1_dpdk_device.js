@@ -30,7 +30,7 @@ var classpcpp_1_1_dpdk_device =
       [ "RSS_DEFAULT", "classpcpp_1_1_dpdk_device.html#aa3acd5ec67d8777437c32f3af875dbc4ad57a4e8327ac5d4121a0c5e89eceaf71", null ]
     ] ],
     [ "clearStatistics", "classpcpp_1_1_dpdk_device.html#a6d7a2351db1dc534a7cc8605af1046a1", null ],
-    [ "close", "classpcpp_1_1_dpdk_device.html#ab772ecb6a13f970a1671a143dfcf8edc", null ],
+    [ "close", "classpcpp_1_1_dpdk_device.html#a674ce896499d738f2c3c83777b7f7fd6", null ],
     [ "flushTxBuffer", "classpcpp_1_1_dpdk_device.html#aaf80ebaaddb249744c657bd710193021", null ],
     [ "getAmountOfFreeMbufs", "classpcpp_1_1_dpdk_device.html#a66bdc2fc0e6d68767f87fccc49410011", null ],
     [ "getAmountOfMbufsInUse", "classpcpp_1_1_dpdk_device.html#a0f0ad97f7380da23a153a004b251daf1", null ],
@@ -53,7 +53,7 @@ var classpcpp_1_1_dpdk_device =
     [ "isDeviceSupportRssHashFunction", "classpcpp_1_1_dpdk_device.html#ad15280f1b6b50e75415e9080615be1ec", null ],
     [ "isDeviceSupportRssHashFunction", "classpcpp_1_1_dpdk_device.html#a99eee1fdff0411f1e3dc6e8ac5a5146b", null ],
     [ "isVirtual", "classpcpp_1_1_dpdk_device.html#ae45341ad236f07e92be61b33325aa3c1", null ],
-    [ "open", "classpcpp_1_1_dpdk_device.html#ad5717b8aa18dbb657e4c346adbb38163", null ],
+    [ "open", "classpcpp_1_1_dpdk_device.html#a27d469aab56898409f8ff43300406880", null ],
     [ "openMultiQueues", "classpcpp_1_1_dpdk_device.html#afae6116f6d0d7f515acb1c327fdcebbb", null ],
     [ "receivePackets", "classpcpp_1_1_dpdk_device.html#ad619e3e2eb39f461b776ee52e8e7625e", null ],
     [ "receivePackets", "classpcpp_1_1_dpdk_device.html#a692893a06ba97899321434830b93112e", null ],
