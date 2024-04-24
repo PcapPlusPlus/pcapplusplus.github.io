@@ -25,6 +25,7 @@ In this tutorial we'll write a simple application that reads and writes packets 
 So let's start our application with a "main" method and a single include to "PcapFileDevice.h" which contains all the API for reading and writing packets from/to files
 
 ```cpp
+#include <memory>
 #include <iostream>
 #include "stdlib.h"
 #include "PcapFileDevice.h"
@@ -45,10 +46,10 @@ But PcapPlusPlus also contains an interface class that automatically identifies 
 ```cpp
 // use the IFileReaderDevice interface to automatically identify file type (pcap/pcap-ng)
 // and create an interface instance that both readers implement
-pcpp::IFileReaderDevice* reader = pcpp::IFileReaderDevice::getReader("input.pcap");
+std::unique_ptr<pcpp::IFileReaderDevice> reader(pcpp::IFileReaderDevice::getReader("input.pcap"));
 
 // verify that a reader interface was indeed created
-if (reader == NULL)
+if (reader == nullptr)
 {
     std::cerr << "Cannot determine reader for file type" << std::endl;
     return 1;
@@ -136,6 +137,12 @@ We're done reading all packets that match the BPF filter and writing them to bot
 Another feature I'd like to demonstrate is getting reader/writer statistics. These are basic stats that only count packets that were read/written successfully and those who weren't. Let's get stats from reader and both writers and print them:
 
 ```cpp
+// Use lambda to simplify statistics output
+auto printStats = [](const std::string& writerName, const pcpp::IPcapDevice::PcapStats& stats) {
+    std::cout << "Written " << stats.packetsRecv << " packets successfully to " << writerName
+        << " and " << stats.packetsDrop << " packets could not be written" << std::endl;
+};
+
 // create the stats object
 pcpp::IPcapDevice::PcapStats stats;
 
@@ -145,11 +152,11 @@ std::cout << "Read " << stats.packetsRecv << " packets successfully and " << sta
 
 // read stats from pcap writer and print them
 pcapWriter.getStatistics(stats);
-std::cout << "Written " << stats.packetsRecv << " packets successfully to pcap writer and " << stats.packetsDrop << " packets could not be written" << std::endl;
+printStats("pcap writer", stats);
 
 // read stats from pcap-ng writer and print them
 pcapNgWriter.getStatistics(stats);
-std::cout << "Written " << stats.packetsRecv << " packets successfully to pcap-ng writer and " << stats.packetsDrop << " packets could not be written" << std::endl;
+printStats("pcap-ng writer", stats);
 ```
 
 We're done reading and writing packets. The only thing left is closing the reader and writers. We also need to free the reader because it was created by the `pcpp::IFileReaderDevice::getReader()` static method.
@@ -161,9 +168,6 @@ reader->close();
 // close writers
 pcapWriter.close();
 pcapNgWriter.close();
-
-// free reader memory because it was created by pcpp::IFileReaderDevice::getReader()
-delete reader;
 ```
 
 When running the application with the input.pcap file attached below, here is the output (on Windows):
