@@ -22,6 +22,7 @@ Let's start out application with a "main" method and a single include to "PcapLi
 
 ```cpp
 #include <iostream>
+#include <algorithm>
 #include "stdlib.h"
 #include "PcapLiveDeviceList.h"
 #include "SystemUtils.h"
@@ -42,8 +43,8 @@ The next step would be to find the `PcapLiveDevice` or `WinPcapLiveDevice` insta
 std::string interfaceIPAddr = "10.0.0.1";
 
 // find the interface by IP address
-pcpp::PcapLiveDevice* dev = pcpp::PcapLiveDeviceList::getInstance().getPcapLiveDeviceByIp(interfaceIPAddr);
-if (dev == NULL)
+auto* dev = pcpp::PcapLiveDeviceList::getInstance().getPcapLiveDeviceByIp(interfaceIPAddr);
+if (dev == nullptr)
 {
     std::cerr << "Cannot find interface with IPv4 address of '" << interfaceIPAddr << "'" << std::endl;
     return 1;
@@ -73,8 +74,10 @@ std::cout
     << "   Default gateway:       " << dev->getDefaultGateway() << std::endl // get default gateway
     << "   Interface MTU:         " << dev->getMtu() << std::endl; // get interface MTU
 
-if (dev->getDnsServers().size() > 0)
-    std::cout << "   DNS server:            " << dev->getDnsServers().at(0) << std::endl;
+if (!dev->getDnsServers().empty())
+{
+    std::cout << "   DNS server:            " << dev->getDnsServers().front() << std::endl;
+}
 ```
 
 ## Capturing packets
@@ -94,32 +97,31 @@ For the sake of this demo we'll create a struct that collects statistics on capt
 
 ```cpp
 /**
-* A struct for collecting packet statistics
-*/
+ * A struct for collecting packet statistics
+ */
 struct PacketStats
 {
-    int ethPacketCount;
-    int ipv4PacketCount;
-    int ipv6PacketCount;
-    int tcpPacketCount;
-    int udpPacketCount;
-    int dnsPacketCount;
-    int httpPacketCount;
-    int sslPacketCount;
+    int ethPacketCount = 0;
+    int ipv4PacketCount = 0;
+    int ipv6PacketCount = 0;
+    int tcpPacketCount = 0;
+    int udpPacketCount = 0;
+    int dnsPacketCount = 0;
+    int httpPacketCount = 0;
+    int sslPacketCount = 0;
+
 
     /**
-    * Clear all stats
-    */
-    void clear() { ethPacketCount = 0; ipv4PacketCount = 0; ipv6PacketCount = 0; tcpPacketCount = 0; udpPacketCount = 0; tcpPacketCount = 0; dnsPacketCount = 0; httpPacketCount = 0; sslPacketCount = 0; }
+     * Clear all stats
+     */
+    void clear() { ethPacketCount = ipv4PacketCount = ipv6PacketCount = tcpPacketCount = udpPacketCount = dnsPacketCount = httpPacketCount = sslPacketCount = 0; }
+
+    // Constructor is optional here since the members are already initialized
+    PacketStats() = default;
 
     /**
-    * C'tor
-    */
-    PacketStats() { clear(); }
-
-    /**
-    * Collect stats from a packet
-    */
+     * Collect stats from a packet
+     */
     void consumePacket(pcpp::Packet& packet)
     {
         if (packet.isPacketOfType(pcpp::Ethernet))
@@ -141,8 +143,8 @@ struct PacketStats
     }
 
     /**
-    * Print stats to console
-    */
+     * Print stats to console
+     */
     void printToConsole()
     {
         std::cout
@@ -177,12 +179,12 @@ The first way we'll demonstrate is capturing packets asynchronously, meaning the
 
 ```cpp
 /**
-* A callback function for the async capture which is called each time a packet is captured
-*/
+ * A callback function for the async capture which is called each time a packet is captured
+ */
 static void onPacketArrives(pcpp::RawPacket* packet, pcpp::PcapLiveDevice* dev, void* cookie)
 {
     // extract the stats object form the cookie
-    PacketStats* stats = (PacketStats*)cookie;
+    auto* stats = static_cast<PacketStats*>(cookie);
 
     // parsed the raw packet
     pcpp::Packet parsedPacket(packet);
@@ -274,12 +276,9 @@ Now the raw packet list is (hopefully) filled with packets that were captured. L
 
 ```cpp
 // go over the packet vector and feed all packets to the stats object
-for (pcpp::RawPacketVector::ConstVectorIterator iter = packetVec.begin(); iter != packetVec.end(); iter++)
+for (const auto& packet : packetVec)
 {
-    // parse raw packet
-    pcpp::Packet parsedPacket(*iter);
-
-    // feed packet to the stats object
+    pcpp::Packet parsedPacket(packet);
     stats.consumePacket(parsedPacket);
 }
 ```
@@ -313,12 +312,12 @@ The last way we'll demonstrate to capture packets is a synchronous way where the
 
 ```cpp
 /**
-* a callback function for the blocking mode capture which is called each time a packet is captured
-*/
+ * a callback function for the blocking mode capture which is called each time a packet is captured
+ */
 static bool onPacketArrivesBlockingMode(pcpp::RawPacket* packet, pcpp::PcapLiveDevice* dev, void* cookie)
 {
-    // extract the stats object form the cookie
-    PacketStats* stats = (PacketStats*)cookie;
+    // extract the stats object from the cookie
+    auto* stats = static_cast<PacketStats*>(cookie);
 
     // parsed the raw packet
     pcpp::Packet parsedPacket(packet);
@@ -378,15 +377,16 @@ Let's start with sending one raw packet. In this example we'll use the raw packe
 std::cout << std::endl << "Sending " << packetVec.size() << " packets one by one..." << std::endl;
 
 // go over the vector of packets and send them one by one
-for (pcpp::RawPacketVector::ConstVectorIterator iter = packetVec.begin(); iter != packetVec.end(); iter++)
+bool allSent = std::all_of(packetVec.begin(), packetVec.end(), [dev](pcpp::RawPacket* packet) {
+    return dev->sendPacket(*packet);
+});
+
+if (!allSent)
 {
-    // send the packet. If fails exit the application
-    if (!dev->sendPacket(**iter))
-    {
-        std::cerr << "Couldn't send packet" << std::endl;
-        return 1;
-    }
+    std::cerr << "Couldn't send packet" << std::endl;
+    return 1;
 }
+
 std::cout << packetVec.size() << " packets sent" << std::endl;
 ```
 
