@@ -37,7 +37,6 @@ The second step is done in the application's code and is a general DPDK initiali
 #include "SystemUtils.h"
 #include "DpdkDeviceList.h"
 #include "TablePrinter.h"
-
 #include "WorkerThread.h"
 
 #define MBUF_POOL_SIZE 16*1024-1
@@ -66,14 +65,14 @@ Now let's find the DPDK interfaces (devices) we'll use to send and receive packe
 ```cpp
 // Find DPDK devices
 pcpp::DpdkDevice* device1 = pcpp::DpdkDeviceList::getInstance().getDeviceByPort(DEVICE_ID_1);
-if (device1 == NULL)
+if (device1 == nullptr)
 {
     std::cerr << "Cannot find device1 with port '" << DEVICE_ID_1 << "'" << std::endl;
     return 1;
 }
 
 pcpp::DpdkDevice* device2 = pcpp::DpdkDeviceList::getInstance().getDeviceByPort(DEVICE_ID_2);
-if (device2 == NULL)
+if (device2 == nullptr)
 {
     std::cerr << "Cannot find device2 with port '" << DEVICE_ID_2 << "'" << std::endl;
     return 1;
@@ -258,6 +257,7 @@ int main(int argc, char* argv[])
 
     .....
     .....
+}
 ```
 
 Now let's implement this `onApplicationInterrupted` callback. It'll have a very simple logic which sets a global flag:
@@ -277,6 +277,7 @@ Now that we have this flag we can set up an endless loop that will run on the ma
 
 ```cpp
 #define COLLECT_STATS_EVERY_SEC 2
+
 uint64_t counter = 0;
 int statsCounter = 1;
 
@@ -289,27 +290,26 @@ while (keepRunning)
     // Print stats every COLLECT_STATS_EVERY_SEC seconds
     if (counter % COLLECT_STATS_EVERY_SEC == 0)
     {
-    // Clear screen and move to top left
-    std::cout << "\033[2J\033[1;1H";
+        // Clear screen and move to top left
+        std::cout << "\033[2J\033[1;1H";
 
-    std::cout
-        << "Stats #" << statsCounter++ << std::endl
-        << "==========" << std::endl
-        << std::endl;
+        std::cout
+            << "Stats #" << statsCounter++ << std::endl
+            << "==========" << std::endl
+            << std::endl;
 
-    // Print stats of traffic going from Device1 to Device2
-    std::cout << std::endl
-        << "Device1->Device2 stats:" << std::endl
-        << std::endl;
-    printStats(device1, device2);
+        // Print stats of traffic going from Device1 to Device2
+        std::cout << std::endl
+            << "Device1->Device2 stats:" << std::endl
+            << std::endl;
+        printStats(device1, device2);
 
-    // Print stats of traffic going from Device2 to Device1
-    std::cout << std::endl
-        << "Device2->Device1 stats:" << std::endl
-        << std::endl;
-    printStats(device2, device1);
+        // Print stats of traffic going from Device2 to Device1
+        std::cout << std::endl
+            << "Device2->Device1 stats:" << std::endl
+            << std::endl;
+        printStats(device2, device1);
     }
-
     counter++;
 }
 ```
@@ -326,19 +326,8 @@ void printStats(pcpp::DpdkDevice* rxDevice, pcpp::DpdkDevice* txDevice)
     rxDevice->getStatistics(rxStats);
     txDevice->getStatistics(txStats);
 
-    std::vector<std::string> columnNames;
-    columnNames.push_back(" ");
-    columnNames.push_back("Total Packets");
-    columnNames.push_back("Packets/sec");
-    columnNames.push_back("Bytes");
-    columnNames.push_back("Bits/sec");
-
-    std::vector<int> columnLengths;
-    columnLengths.push_back(10);
-    columnLengths.push_back(15);
-    columnLengths.push_back(15);
-    columnLengths.push_back(15);
-    columnLengths.push_back(15);
+    std::vector<std::string> columnNames = {" ", "Total Packets", "Packets/sec", "Bytes", "Bits/sec"};
+    std::vector<int> columnLengths = {10, 15, 15, 15, 15};
 
     pcpp::TablePrinter printer(columnNames, columnLengths);
 
