@@ -22,7 +22,7 @@ var searchData=
   ['link_5flayer_5faddr_5flen',['link_layer_addr_len',['../structpcpp_1_1sll2__header.html#a8b690f4910a10ea8a09675aae12a02ce',1,'pcpp::sll2_header::link_layer_addr_len()'],['../structpcpp_1_1sll__header.html#ac253e0a098c39f46d192619ed5d229bf',1,'pcpp::sll_header::link_layer_addr_len()']]],
   ['link_5fnot_5fsupported',['LINK_NOT_SUPPORTED',['../classpcpp_1_1_kni_device.html#a9a016df4487ece71c8dc911961a4f329a404b3c5554c11081ce5b42f59d43bbd0',1,'pcpp::KniDevice']]],
   ['link_5fup',['LINK_UP',['../classpcpp_1_1_kni_device.html#a9a016df4487ece71c8dc911961a4f329a46ddb813939e1f5ada002c78996649f2',1,'pcpp::KniDevice']]],
-  ['linkduplex',['linkDuplex',['../structpcpp_1_1_dpdk_device_1_1_link_status.html#a64cfc43e13a80ba49369288ad220bd1b',1,'pcpp::DpdkDevice::LinkStatus::linkDuplex()'],['../structpcpp_1_1_dpdk_device_1_1_link_status.html#a67ef869fa855fbe7c29add4e9d6ac45b',1,'pcpp::DpdkDevice::LinkStatus::LinkDuplex()']]],
+  ['linkduplex',['LinkDuplex',['../structpcpp_1_1_dpdk_device_1_1_link_status.html#a67ef869fa855fbe7c29add4e9d6ac45b',1,'pcpp::DpdkDevice::LinkStatus::LinkDuplex()'],['../structpcpp_1_1_dpdk_device_1_1_link_status.html#a64cfc43e13a80ba49369288ad220bd1b',1,'pcpp::DpdkDevice::LinkStatus::linkDuplex()']]],
   ['linklayertype',['LinkLayerType',['../namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be',1,'pcpp']]],
   ['linkspeedmbps',['linkSpeedMbps',['../structpcpp_1_1_dpdk_device_1_1_link_status.html#a6177ed98446f18d57be88d8c2411a473',1,'pcpp::DpdkDevice::LinkStatus']]],
   ['linkstatus',['LinkStatus',['../structpcpp_1_1_dpdk_device_1_1_link_status.html',1,'pcpp::DpdkDevice']]],
