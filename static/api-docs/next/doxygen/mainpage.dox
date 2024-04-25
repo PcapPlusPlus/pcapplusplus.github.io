@@ -64,6 +64,7 @@
 *   - pcpp::SdpLayer, SdpLayer.h - SDP protocol
 *   - pcpp::SipRequestLayer, pcpp::SipResponseLayer, SipLayer.h - SIP request protocol
 *   - pcpp::SSLLayer, SSLLayer.h - SSL/TLS protocol - parsing only (no editing capabilities)
+*   - pcpp::Asn1Record, Asn1Codec.h - ASN.1 decoder and encoder
 *   - pcpp::BgpLayer, BgpLayer.h - BGP protocol
 *   - pcpp::DhcpLayer, DhcpLayer.h - DHCP protocol
 *   - pcpp::DhcpV6Layer, DhcpV6Layer.h - DHCPv6 protocol
