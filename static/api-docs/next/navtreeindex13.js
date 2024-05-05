@@ -1,6 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"classpcpp_1_1_p_p_po_e_discovery_layer.html#ac761ea9a8298b8ee8614da86de314876a50129326ba9610b155586bc3d164ec08":[3,0,0,189,2,7],
 "classpcpp_1_1_p_p_po_e_discovery_layer.html#ac761ea9a8298b8ee8614da86de314876a63dfb5a25b626088f5b31588acba3c8f":[3,0,0,189,2,10],
 "classpcpp_1_1_p_p_po_e_discovery_layer.html#ac761ea9a8298b8ee8614da86de314876a6a740528d38100739c9704d5d28e297f":[3,0,0,189,2,17],
 "classpcpp_1_1_p_p_po_e_discovery_layer.html#ac761ea9a8298b8ee8614da86de314876a70bbfa6ec879a750a22e8e0a2a0762fb":[3,0,0,189,2,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX13 =
 "classpcpp_1_1_pf_ring_device.html#a8fabac9d1c87b2a6e79d5ce0bbfb7eeb":[3,0,0,181,25],
 "classpcpp_1_1_pf_ring_device.html#a923fa6c928456417a5985be210e3e487":[3,0,0,181,18],
 "classpcpp_1_1_pf_ring_device.html#a9259bcfd0d7e94822ec2a2930314c52e":[3,0,0,181,26],
-"classpcpp_1_1_pf_ring_device.html#a94f3512928cf7ccdb4f8a28532c6ee51":[3,0,0,181,17]
+"classpcpp_1_1_pf_ring_device.html#a94f3512928cf7ccdb4f8a28532c6ee51":[3,0,0,181,17],
+"classpcpp_1_1_pf_ring_device.html#a9954fb008030336858d57be7f3ccbc78":[3,0,0,181,11]
 };

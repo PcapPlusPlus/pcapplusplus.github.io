@@ -4,7 +4,6 @@ var classpcpp_1_1_i_p_network =
     [ "IPNetwork", "classpcpp_1_1_i_p_network.html#ab0cf1373bb8a3ee5f9f6de847dd385b6", null ],
     [ "IPNetwork", "classpcpp_1_1_i_p_network.html#af0b1c94b5fc0784fc5cf38a377421dcf", null ],
     [ "IPNetwork", "classpcpp_1_1_i_p_network.html#a9ac3298e7a56e719a681b26c974eb069", null ],
-    [ "~IPNetwork", "classpcpp_1_1_i_p_network.html#ab15ee0f245a7be1e94673ef54c3891ac", null ],
     [ "getHighestAddress", "classpcpp_1_1_i_p_network.html#a0d02e9c5ed2de985c81fde2c48ac1c0b", null ],
     [ "getLowestAddress", "classpcpp_1_1_i_p_network.html#a568413e851b58d900fb9a0ed03fca728", null ],
     [ "getNetmask", "classpcpp_1_1_i_p_network.html#aba3778aefa0dd3fb4decdee7162cd461", null ],
