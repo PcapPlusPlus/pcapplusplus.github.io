@@ -96,8 +96,10 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_bpf_filter_wrapper.html'
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad16670c3937b6cae90ceb323a3678a57"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_bpf_filter_wrapper.html#ad16670c3937b6cae90ceb323a3678a57">BpfFilterWrapper</a> ()</td></tr>
 <tr class="separator:ad16670c3937b6cae90ceb323a3678a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af85beb3b454c64d7d259139fc0b77bd0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_bpf_filter_wrapper.html#af85beb3b454c64d7d259139fc0b77bd0">~BpfFilterWrapper</a> ()</td></tr>
-<tr class="separator:af85beb3b454c64d7d259139fc0b77bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a638e2fba7acdd4ba3030f4046057b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_bpf_filter_wrapper.html#a4a638e2fba7acdd4ba3030f4046057b0">BpfFilterWrapper</a> (const <a class="el" href="classpcpp_1_1_bpf_filter_wrapper.html">BpfFilterWrapper</a> &amp;other)</td></tr>
+<tr class="separator:a4a638e2fba7acdd4ba3030f4046057b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a49c1e1af05c2ff02195ff8d2f67246"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_bpf_filter_wrapper.html">BpfFilterWrapper</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_bpf_filter_wrapper.html#a7a49c1e1af05c2ff02195ff8d2f67246">operator=</a> (const <a class="el" href="classpcpp_1_1_bpf_filter_wrapper.html">BpfFilterWrapper</a> &amp;other)</td></tr>
+<tr class="separator:a7a49c1e1af05c2ff02195ff8d2f67246"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6e6f30106eea22239f8f59eff701c33"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_bpf_filter_wrapper.html#ae6e6f30106eea22239f8f59eff701c33">setFilter</a> (const std::string &amp;filter, <a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> linkType=<a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a>)</td></tr>
 <tr class="separator:ae6e6f30106eea22239f8f59eff701c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cda4696a98a810756f1180cbdcef92c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_bpf_filter_wrapper.html#a0cda4696a98a810756f1180cbdcef92c">matchPacketWithFilter</a> (const <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *rawPacket)</td></tr>
@@ -109,7 +111,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>A wrapper class for BPF filtering. Enables setting a BPF filter and matching it against a packet </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad16670c3937b6cae90ceb323a3678a57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad16670c3937b6cae90ceb323a3678a57">&#9670;&nbsp;</a></span>BpfFilterWrapper()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad16670c3937b6cae90ceb323a3678a57">&#9670;&nbsp;</a></span>BpfFilterWrapper() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -126,21 +128,27 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af85beb3b454c64d7d259139fc0b77bd0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af85beb3b454c64d7d259139fc0b77bd0">&#9670;&nbsp;</a></span>~BpfFilterWrapper()</h2>
+<a id="a4a638e2fba7acdd4ba3030f4046057b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a638e2fba7acdd4ba3030f4046057b0">&#9670;&nbsp;</a></span>BpfFilterWrapper() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pcpp::BpfFilterWrapper::~BpfFilterWrapper </td>
+          <td class="memname">pcpp::BpfFilterWrapper::BpfFilterWrapper </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_bpf_filter_wrapper.html">BpfFilterWrapper</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A d'tor for this class. Makes sure to clear the bpf_program object if was previously set. </p>
+<p>A copy constructor for this class. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>The instance to copy from </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -220,6 +228,31 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a7a49c1e1af05c2ff02195ff8d2f67246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a49c1e1af05c2ff02195ff8d2f67246">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classpcpp_1_1_bpf_filter_wrapper.html">BpfFilterWrapper</a>&amp; pcpp::BpfFilterWrapper::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_bpf_filter_wrapper.html">BpfFilterWrapper</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A copy assignment operator for this class. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>An instance of <a class="el" href="classpcpp_1_1_i_p_network.html">IPNetwork</a> to assign </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the assignee </dd></dl>
+
+</div>
+</div>
 <a id="ae6e6f30106eea22239f8f59eff701c33"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae6e6f30106eea22239f8f59eff701c33">&#9670;&nbsp;</a></span>setFilter()</h2>
 
@@ -262,7 +295,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_bpf_filter_wrapper.html">BpfFilterWrapper</a></li>
-    <li class="footer">Generated on Sun May 5 2024 02:42:32 for PcapPlusPlus by
+    <li class="footer">Generated on Tue May 7 2024 06:59:19 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

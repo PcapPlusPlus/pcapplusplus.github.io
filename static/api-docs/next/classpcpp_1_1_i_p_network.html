@@ -94,6 +94,8 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_i_p_network.html','');})
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ae706fa9a9490bcb4bd584153f60a79d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_network.html#ae706fa9a9490bcb4bd584153f60a79d6">IPNetwork</a> (const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;address)</td></tr>
+<tr class="separator:ae706fa9a9490bcb4bd584153f60a79d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7899796518940cc22ef228504166e5d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_network.html#af7899796518940cc22ef228504166e5d">IPNetwork</a> (const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;address, uint8_t prefixLen)</td></tr>
 <tr class="separator:af7899796518940cc22ef228504166e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0cf1373bb8a3ee5f9f6de847dd385b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_network.html#ab0cf1373bb8a3ee5f9f6de847dd385b6">IPNetwork</a> (const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;address, const std::string &amp;netmask)</td></tr>
@@ -134,8 +136,41 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class representing version independent IP network definition, both IPv4 and IPv6 are included </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ae706fa9a9490bcb4bd584153f60a79d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae706fa9a9490bcb4bd584153f60a79d6">&#9670;&nbsp;</a></span>IPNetwork() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::IPNetwork::IPNetwork </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>address</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A constructor that creates an instance of the class out of an IP address and a full prefix length, essentially making a network of consisting of only 1 address.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">address</td><td>An address representing the network prefix. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="af7899796518940cc22ef228504166e5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7899796518940cc22ef228504166e5d">&#9670;&nbsp;</a></span>IPNetwork() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af7899796518940cc22ef228504166e5d">&#9670;&nbsp;</a></span>IPNetwork() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -170,7 +205,13 @@ Public Member Functions</h2></td></tr>
 <p>A constructor that creates an instance of the class out of an address representing the network prefix and a prefix length </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">address</td><td>An address representing the network prefix. If the address is invalid std::invalid_argument exception is thrown </td></tr>
-    <tr><td class="paramname">prefixLen</td><td>A number representing the prefix length. If the value isn't in the range allowed for the network (0 - 32 for IPv4 networks or 0 - 128 for IPv6 networks) and std::invalid_argument exception is thrown </td></tr>
+    <tr><td class="paramname">prefixLen</td><td>A number representing the prefix length. Allowed ranges are 0 - 32 for IPv4 networks and 0 - 128 for IPv6 networks. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Prefix length is out of acceptable range. </td></tr>
   </table>
   </dd>
 </dl>
@@ -178,7 +219,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ab0cf1373bb8a3ee5f9f6de847dd385b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0cf1373bb8a3ee5f9f6de847dd385b6">&#9670;&nbsp;</a></span>IPNetwork() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0cf1373bb8a3ee5f9f6de847dd385b6">&#9670;&nbsp;</a></span>IPNetwork() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -213,7 +254,13 @@ Public Member Functions</h2></td></tr>
 <p>A constructor that creates an instance of the class out of an address representing the network prefix and a netmask </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">address</td><td>An address representing the network prefix. If the address is invalid std::invalid_argument exception is thrown </td></tr>
-    <tr><td class="paramname">netmask</td><td>A string representing a netmask in valid format, for example: ffff:ffff:: for IPv6 networks or 255.255.0.0 for IPv4 networks. Please notice that netmasks that start with zeros are invalid, for example: 0:ffff:: or 0.255.255.255. The only netmask starting with zeros that is valid is all zeros (:: or 0.0.0.0). If the netmask is invalid std::invalid_argument exception is thrown </td></tr>
+    <tr><td class="paramname">netmask</td><td>A string representing a netmask in valid format, for example: ffff:ffff:: for IPv6 networks or 255.255.0.0 for IPv4 networks. Please notice that netmasks that start with zeros are invalid, for example: 0:ffff:: or 0.255.255.255. The only netmask starting with zeros that is valid is all zeros (:: or 0.0.0.0). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>The provided netmask is invalid. </td></tr>
   </table>
   </dd>
 </dl>
@@ -221,7 +268,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="af0b1c94b5fc0784fc5cf38a377421dcf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0b1c94b5fc0784fc5cf38a377421dcf">&#9670;&nbsp;</a></span>IPNetwork() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af0b1c94b5fc0784fc5cf38a377421dcf">&#9670;&nbsp;</a></span>IPNetwork() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -247,9 +294,15 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">addressAndNetmask</td><td>A string in one of these formats:<ul>
 <li>IP_ADDRESS/Y where IP_ADDRESS is a valid IP address representing the network prefix and Y is a number representing the network prefix</li>
-<li>IP_ADDRESS/NETMASK where IP_ADDRESS is a valid IP address representing the network prefix and NETMASK is a valid netmask for this type of network (IPv4 or IPv6 network) For any invalid value std::invalid_argument is thrown </li>
+<li>IP_ADDRESS/NETMASK where IP_ADDRESS is a valid IP address representing the network prefix and NETMASK is a valid netmask for this type of network (IPv4 or IPv6 network) </li>
 </ul>
 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>The provided string does not represent a valid address and netmask format. </td></tr>
   </table>
   </dd>
 </dl>
@@ -257,7 +310,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a9ac3298e7a56e719a681b26c974eb069"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ac3298e7a56e719a681b26c974eb069">&#9670;&nbsp;</a></span>IPNetwork() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ac3298e7a56e719a681b26c974eb069">&#9670;&nbsp;</a></span>IPNetwork() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -694,7 +747,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_p_network.html">IPNetwork</a></li>
-    <li class="footer">Generated on Sun May 5 2024 02:42:33 for PcapPlusPlus by
+    <li class="footer">Generated on Tue May 7 2024 06:59:20 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

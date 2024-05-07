@@ -1,5 +1,6 @@
 var classpcpp_1_1_i_pv6_network =
 [
+    [ "IPv6Network", "classpcpp_1_1_i_pv6_network.html#aeacad51ea0f8ad2e36b20b84084a6dff", null ],
     [ "IPv6Network", "classpcpp_1_1_i_pv6_network.html#a4c66cdc6235076ce99165ec16600a77a", null ],
     [ "IPv6Network", "classpcpp_1_1_i_pv6_network.html#a45b6464d883b9528b7a88444ce62fa09", null ],
     [ "IPv6Network", "classpcpp_1_1_i_pv6_network.html#a05797c741bee55b0d180bb3b7cd14cd7", null ],

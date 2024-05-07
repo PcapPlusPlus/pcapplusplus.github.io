@@ -18,6 +18,7 @@ var files =
       [ "bgp_route_refresh_message", "structpcpp_1_1_bgp_route_refresh_message_layer_1_1bgp__route__refresh__message.html", "structpcpp_1_1_bgp_route_refresh_message_layer_1_1bgp__route__refresh__message" ]
     ] ],
     [ "CotpLayer.h", "_cotp_layer_8h_source.html", null ],
+    [ "DeprecationUtils.h", "_deprecation_utils_8h.html", null ],
     [ "Device.h", "_device_8h.html", "_device_8h" ],
     [ "DhcpLayer.h", "_dhcp_layer_8h.html", "_dhcp_layer_8h" ],
     [ "DhcpV6Layer.h", "_dhcp_v6_layer_8h.html", "_dhcp_v6_layer_8h" ],

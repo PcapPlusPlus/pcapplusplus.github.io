@@ -1,5 +1,6 @@
 var _pcap_filter_8h =
 [
+    [ "BpfProgramDeleter", "structpcpp_1_1internal_1_1_bpf_program_deleter.html", null ],
     [ "BpfFilterWrapper", "classpcpp_1_1_bpf_filter_wrapper.html", "classpcpp_1_1_bpf_filter_wrapper" ],
     [ "GeneralFilter", "classpcpp_1_1_general_filter.html", "classpcpp_1_1_general_filter" ],
     [ "BPFStringFilter", "classpcpp_1_1_b_p_f_string_filter.html", "classpcpp_1_1_b_p_f_string_filter" ],
@@ -40,5 +41,5 @@ var _pcap_filter_8h =
       [ "LESS_THAN", "_pcap_filter_8h.html#a236073670782cc577b097b2fef4c7d62a93e91a67cf4247b10806a20ef10bc355", null ],
       [ "LESS_OR_EQUAL", "_pcap_filter_8h.html#a236073670782cc577b097b2fef4c7d62abde291e8ef8d48da33a90c99a0186529", null ]
     ] ],
-    [ "getCompositeLogicOpDelimiter", "_pcap_filter_8h.html#a1be216503ee0941d44fac65b72e7b722", null ]
+    [ "getCompositeLogicOpDelimiter", "_pcap_filter_8h.html#afde4f38619acafdb96187a31c42042c2", null ]
 ];

@@ -1,5 +1,8 @@
 var namespacepcpp =
 [
+    [ "internal", null, [
+      [ "BpfProgramDeleter", "structpcpp_1_1internal_1_1_bpf_program_deleter.html", null ]
+    ] ],
     [ "ApplicationEventHandler", "classpcpp_1_1_application_event_handler.html", "classpcpp_1_1_application_event_handler" ],
     [ "AppName", "classpcpp_1_1_app_name.html", null ],
     [ "ArpFilter", "classpcpp_1_1_arp_filter.html", "classpcpp_1_1_arp_filter" ],
