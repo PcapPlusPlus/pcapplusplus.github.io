@@ -11,5 +11,6 @@ var searchData=
   ['bgprouterefreshmessagelayer',['BgpRouteRefreshMessageLayer',['../classpcpp_1_1_bgp_route_refresh_message_layer.html',1,'pcpp']]],
   ['bgpupdatemessagelayer',['BgpUpdateMessageLayer',['../classpcpp_1_1_bgp_update_message_layer.html',1,'pcpp']]],
   ['bpffilterwrapper',['BpfFilterWrapper',['../classpcpp_1_1_bpf_filter_wrapper.html',1,'pcpp']]],
+  ['bpfprogramdeleter',['BpfProgramDeleter',['../structpcpp_1_1internal_1_1_bpf_program_deleter.html',1,'pcpp::internal']]],
   ['bpfstringfilter',['BPFStringFilter',['../classpcpp_1_1_b_p_f_string_filter.html',1,'pcpp']]]
 ];

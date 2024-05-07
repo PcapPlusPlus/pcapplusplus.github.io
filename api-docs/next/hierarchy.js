@@ -29,6 +29,7 @@ var hierarchy =
       [ "pcpp::BgpRouteRefreshMessageLayer::bgp_route_refresh_message", "structpcpp_1_1_bgp_route_refresh_message_layer_1_1bgp__route__refresh__message.html", null ]
     ] ],
     [ "pcpp::BpfFilterWrapper", "classpcpp_1_1_bpf_filter_wrapper.html", null ],
+    [ "pcpp::internal::BpfProgramDeleter", "structpcpp_1_1internal_1_1_bpf_program_deleter.html", null ],
     [ "pcpp::SSLClientHelloMessage::ClientHelloTLSFingerprint", "structpcpp_1_1_s_s_l_client_hello_message_1_1_client_hello_t_l_s_fingerprint.html", null ],
     [ "pcpp::ConnectionData", "structpcpp_1_1_connection_data.html", null ],
     [ "pcpp::cotphdr", "structpcpp_1_1cotphdr.html", null ],

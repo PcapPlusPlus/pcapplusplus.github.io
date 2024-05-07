@@ -1,5 +1,6 @@
 var classpcpp_1_1_i_p_network =
 [
+    [ "IPNetwork", "classpcpp_1_1_i_p_network.html#ae706fa9a9490bcb4bd584153f60a79d6", null ],
     [ "IPNetwork", "classpcpp_1_1_i_p_network.html#af7899796518940cc22ef228504166e5d", null ],
     [ "IPNetwork", "classpcpp_1_1_i_p_network.html#ab0cf1373bb8a3ee5f9f6de847dd385b6", null ],
     [ "IPNetwork", "classpcpp_1_1_i_p_network.html#af0b1c94b5fc0784fc5cf38a377421dcf", null ],

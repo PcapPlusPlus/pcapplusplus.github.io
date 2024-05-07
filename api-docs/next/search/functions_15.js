@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['_7ebpffilterwrapper',['~BpfFilterWrapper',['../classpcpp_1_1_bpf_filter_wrapper.html#af85beb3b454c64d7d259139fc0b77bd0',1,'pcpp::BpfFilterWrapper']]],
   ['_7edhcplayer',['~DhcpLayer',['../classpcpp_1_1_dhcp_layer.html#a41eaefdbfb7e73dcaf863c7639bd5db4',1,'pcpp::DhcpLayer']]],
   ['_7edhcpoption',['~DhcpOption',['../classpcpp_1_1_dhcp_option.html#a280836170d092e111cbad745e46b5e5c',1,'pcpp::DhcpOption']]],
   ['_7edhcpv6option',['~DhcpV6Option',['../classpcpp_1_1_dhcp_v6_option.html#afc0ffc4af7df90280b65c0bd0bc21e11',1,'pcpp::DhcpV6Option']]],

@@ -1,5 +1,6 @@
 var classpcpp_1_1_i_pv4_network =
 [
+    [ "IPv4Network", "classpcpp_1_1_i_pv4_network.html#a04d81512650fd329dab7f6dc54133acd", null ],
     [ "IPv4Network", "classpcpp_1_1_i_pv4_network.html#a73c5cdd013b6e38c047c223d474f9c02", null ],
     [ "IPv4Network", "classpcpp_1_1_i_pv4_network.html#a0f11760e3f19c80270e084075d415972", null ],
     [ "IPv4Network", "classpcpp_1_1_i_pv4_network.html#ac7deb8524afa49812c46e3287479c1c5", null ],
