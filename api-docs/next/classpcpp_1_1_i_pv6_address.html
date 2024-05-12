@@ -100,10 +100,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:addbd49b493c2e31988023127ec4a7770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a280738419ab305ac526b3523e74a6694"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_address.html#a280738419ab305ac526b3523e74a6694">IPv6Address</a> (const uint8_t bytes[16])</td></tr>
 <tr class="separator:a280738419ab305ac526b3523e74a6694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa3a8a8f1aa42607580bf8418619d8c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_address.html#afa3a8a8f1aa42607580bf8418619d8c6">IPv6Address</a> (const std::array&lt; uint8_t, 16 &gt; &amp;bytes)</td></tr>
+<tr class="separator:afa3a8a8f1aa42607580bf8418619d8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7a7bf99b8b750091094c89ba446545b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_address.html#aa7a7bf99b8b750091094c89ba446545b">IPv6Address</a> (const std::string &amp;addrAsString)</td></tr>
 <tr class="separator:aa7a7bf99b8b750091094c89ba446545b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a071111967b79ee8df07cc54d3b294233"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_address.html#a071111967b79ee8df07cc54d3b294233">toBytes</a> () const</td></tr>
 <tr class="separator:a071111967b79ee8df07cc54d3b294233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e776fe4c4b8a0b698083b5fe280c518"><td class="memItemLeft" align="right" valign="top">const std::array&lt; uint8_t, 16 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_address.html#a9e776fe4c4b8a0b698083b5fe280c518">toByteArray</a> () const</td></tr>
+<tr class="separator:a9e776fe4c4b8a0b698083b5fe280c518"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af643ac254cde788ff54574f838197bd3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_address.html#af643ac254cde788ff54574f838197bd3">toString</a> () const</td></tr>
 <tr class="separator:af643ac254cde788ff54574f838197bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab84e4b17cc8a81b72d06be8387b1c98c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_address.html#ab84e4b17cc8a81b72d06be8387b1c98c">isMulticast</a> () const</td></tr>
@@ -139,7 +143,7 @@ Static Public Attributes</h2></td></tr>
 <div class="textblock"><p>Represents an IPv6 address (of type xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="addbd49b493c2e31988023127ec4a7770"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#addbd49b493c2e31988023127ec4a7770">&#9670;&nbsp;</a></span>IPv6Address() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#addbd49b493c2e31988023127ec4a7770">&#9670;&nbsp;</a></span>IPv6Address() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,7 +169,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a280738419ab305ac526b3523e74a6694"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a280738419ab305ac526b3523e74a6694">&#9670;&nbsp;</a></span>IPv6Address() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a280738419ab305ac526b3523e74a6694">&#9670;&nbsp;</a></span>IPv6Address() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -196,8 +200,40 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="afa3a8a8f1aa42607580bf8418619d8c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa3a8a8f1aa42607580bf8418619d8c6">&#9670;&nbsp;</a></span>IPv6Address() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::IPv6Address::IPv6Address </td>
+          <td>(</td>
+          <td class="paramtype">const std::array&lt; uint8_t, 16 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>bytes</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A constructor that creates an instance of the class out of a 16-byte standard array. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bytes</td><td>The address as 16-byte standard array in network byte order </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aa7a7bf99b8b750091094c89ba446545b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7a7bf99b8b750091094c89ba446545b">&#9670;&nbsp;</a></span>IPv6Address() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7a7bf99b8b750091094c89ba446545b">&#9670;&nbsp;</a></span>IPv6Address() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -499,6 +535,32 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a9e776fe4c4b8a0b698083b5fe280c518"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e776fe4c4b8a0b698083b5fe280c518">&#9670;&nbsp;</a></span>toByteArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::array&lt;uint8_t, 16&gt;&amp; pcpp::IPv6Address::toByteArray </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a view of the IPv6 address as a std::array of bytes </p><dl class="section return"><dt>Returns</dt><dd>A reference to a 16-byte standard array representing the IPv6 address </dd></dl>
+
+</div>
+</div>
 <a id="a071111967b79ee8df07cc54d3b294233"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a071111967b79ee8df07cc54d3b294233">&#9670;&nbsp;</a></span>toBytes()</h2>
 
@@ -521,7 +583,7 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns a pointer to 16-byte array representing the IPv6 address </p>
+<p>Returns a view of the IPv6 address as a 16-byte raw C-style array </p><dl class="section return"><dt>Returns</dt><dd>A non-owning pointer to 16-byte array representing the IPv6 address </dd></dl>
 
 </div>
 </div>
@@ -596,7 +658,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a></li>
-    <li class="footer">Generated on Tue May 7 2024 06:59:20 for PcapPlusPlus by
+    <li class="footer">Generated on Sun May 12 2024 03:07:34 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
