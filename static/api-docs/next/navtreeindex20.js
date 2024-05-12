@@ -1,5 +1,9 @@
 var NAVTREEINDEX20 =
 {
+"structpcpp_1_1_dpdk_device_1_1_link_status.html#ac71de439a1f9d3f7c95aadd5b20b0469":[3,0,0,45,2,3],
+"structpcpp_1_1_dpdk_device_1_1_rx_tx_stats.html":[3,0,0,45,3],
+"structpcpp_1_1_dpdk_device_1_1_rx_tx_stats.html#a0531a2f378b09192aadf66e4ae1e5019":[3,0,0,45,3,3],
+"structpcpp_1_1_dpdk_device_1_1_rx_tx_stats.html#a31fa4203a8bf1ed1c39d8b8d6aa7fa0f":[3,0,0,45,3,1],
 "structpcpp_1_1_dpdk_device_1_1_rx_tx_stats.html#a39ba9e581d7353a484f575487a334fc8":[3,0,0,45,3,2],
 "structpcpp_1_1_dpdk_device_1_1_rx_tx_stats.html#aeeb02f0b115b0d7a81cd1076535c8ac2":[3,0,0,45,3,0],
 "structpcpp_1_1_i_pcap_device_1_1_pcap_stats.html":[3,0,0,113,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX20 =
 "structpcpp_1_1ether__header.html#a3200f5fc394812077b6c96d2b15f7658":[3,0,0,51,1],
 "structpcpp_1_1ether__header.html#a466d328a654e445f4d9cb594ff1486ff":[3,0,0,51,2],
 "structpcpp_1_1ether__header.html#a6fbac47e840aa3f6055d0b97c684bd45":[3,0,0,51,0],
-"structpcpp_1_1gre1__header.html":[3,0,0,60],
-"structpcpp_1_1gre1__header.html#a727e2a2affa2696a0177475af78a196b":[3,0,0,60,1],
-"structpcpp_1_1gre1__header.html#a8b495794c197d8cb79aff47177784f9b":[3,0,0,60,0],
-"structpcpp_1_1gre__basic__header.html":[3,0,0,61],
-"structpcpp_1_1gre__basic__header.html#a01d91f77713e08fe2c8baef6580b522c":[3,0,0,61,5]
+"structpcpp_1_1gre1__header.html":[3,0,0,60]
 };
