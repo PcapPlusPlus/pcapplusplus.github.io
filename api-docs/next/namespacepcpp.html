@@ -836,10 +836,10 @@ Enumerations</h2></td></tr>
 <a class="el" href="namespacepcpp.html#a078cb0044494dbde4a73f32cbff6184ea454be5e5734b03b8e54c8c419e030f09">ARP_REPLY</a> = 0x0002
  }</td></tr>
 <tr class="separator:a078cb0044494dbde4a73f32cbff6184e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10b210c011c2fca1a38566cab0b2d934"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a10b210c011c2fca1a38566cab0b2d934">Asn1TagClass</a> : uint8_t { <a class="el" href="namespacepcpp.html#a10b210c011c2fca1a38566cab0b2d934a7641e5f4e7e8517bd0477fd81e3de1b8">Asn1TagClass::Universal</a>, 
-<a class="el" href="namespacepcpp.html#a10b210c011c2fca1a38566cab0b2d934ae498749f3c42246d50b15c81c101d988">Asn1TagClass::Application</a>, 
-<a class="el" href="namespacepcpp.html#a10b210c011c2fca1a38566cab0b2d934a2f157e075f98719ae1e2b28eaa241bd9">Asn1TagClass::ContextSpecific</a>, 
-<a class="el" href="namespacepcpp.html#a10b210c011c2fca1a38566cab0b2d934a47f9082fc380ca62d531096aa1d110f1">Asn1TagClass::Private</a>
+<tr class="memitem:a10b210c011c2fca1a38566cab0b2d934"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a10b210c011c2fca1a38566cab0b2d934">Asn1TagClass</a> : uint8_t { <a class="el" href="namespacepcpp.html#a10b210c011c2fca1a38566cab0b2d934a7641e5f4e7e8517bd0477fd81e3de1b8">Asn1TagClass::Universal</a> = 0, 
+<a class="el" href="namespacepcpp.html#a10b210c011c2fca1a38566cab0b2d934ae498749f3c42246d50b15c81c101d988">Asn1TagClass::Application</a> = 1, 
+<a class="el" href="namespacepcpp.html#a10b210c011c2fca1a38566cab0b2d934a2f157e075f98719ae1e2b28eaa241bd9">Asn1TagClass::ContextSpecific</a> = 2, 
+<a class="el" href="namespacepcpp.html#a10b210c011c2fca1a38566cab0b2d934a47f9082fc380ca62d531096aa1d110f1">Asn1TagClass::Private</a> = 3
  }</td></tr>
 <tr class="separator:a10b210c011c2fca1a38566cab0b2d934"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b5b777cefd9f4b92bb6686d2c055bbe"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a9b5b777cefd9f4b92bb6686d2c055bbe">Asn1UniversalTagType</a> : uint8_t { <br />
@@ -2021,6 +2021,41 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:ab2f3f36d158a9c44a6305f3e1356f278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5532685beb35dba811dc72b4f06dba0c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0c">TcpOptionEnumType</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0cab7e7f2b46723f5b08d763041108f8fed">TcpOptionEnumType::Nop</a> = 1, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca278a5d42a1927c4700ce0821a946c9df">TcpOptionEnumType::Eol</a> = 0, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca738b1544aeef70d97c9e2096a4d84b6a">TcpOptionEnumType::Mss</a> = 2, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0cac89686a387d2b12b3c729ce35a0bcb5b">TcpOptionEnumType::Window</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0cabad06fd380f3c2a8d3df2d90a6fa8ff0">TcpOptionEnumType::SackPerm</a> = 4, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca3f2a09929a97815b0c7aea3839b088eb">TcpOptionEnumType::Sack</a> = 5, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0cad31ef811301c6b4111380dda959d6125">TcpOptionEnumType::Echo</a> = 6, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0caf2ad7a1fc1fd666a557437e48c654e8c">TcpOptionEnumType::EchoReply</a> = 7, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0caa3d5de3eac8bb00ae86fd1a1005f1500">TcpOptionEnumType::Timestamp</a> = 8, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0cae4c8f1de1c0855c7c2be33196d3c3537">TcpOptionEnumType::Cc</a> = 11, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0cacb69529f0bc9c745f766c7e8856434c6">TcpOptionEnumType::CcNew</a> = 12, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca8ee39cbed8edd3a04e0e85201d329fc5">TcpOptionEnumType::CcEcho</a> = 13, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca8d6c0760e7dae464f181d5fb9f6d3cb0">TcpOptionEnumType::Md5</a> = 19, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0cab17fc675e213767891d3bfd4aa976eb4">TcpOptionEnumType::MpTcp</a> = 0x1e, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca81269fbd1f4aa78ed43282c0df3f7bca">TcpOptionEnumType::Scps</a> = 20, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca090fff2375519910fe600106efd542bf">TcpOptionEnumType::Snack</a> = 21, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0caf8af0a4eab60ed8478fd8f10ec914043">TcpOptionEnumType::RecBound</a> = 22, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca6e6853c65222b98427481f37806a9be9">TcpOptionEnumType::CorrExp</a> = 23, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0caf2d5be7948c3aa5ac0e46d0e6036cf20">TcpOptionEnumType::Qs</a> = 27, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0cae67b8c2b515e34b75085850c549fef0d">TcpOptionEnumType::UserTo</a> = 28, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca797d28653cf4e48526975ec9a91b81de">TcpOptionEnumType::ExpFd</a> = 0xfd, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0cae4c35cdf8a4b44cbf71637fc5dc6d3f1">TcpOptionEnumType::ExpFe</a> = 0xfe, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca6a144145cbb3a858962f6a4ed57775d1">TcpOptionEnumType::RvbdProbe</a> = 76, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca131ad73762a1b520d4452759cd7cc8e1">TcpOptionEnumType::RvbdTrpy</a> = 78, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca88183b946cc5f0e8c96b2e66e1c74a7e">TcpOptionEnumType::Unknown</a> = 255
+<br />
+ }</td></tr>
+<tr class="separator:a5532685beb35dba811dc72b4f06dba0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb43f1f8284d4e0b74d1c77b70152fa9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#adb43f1f8284d4e0b74d1c77b70152fa9">DpdkPMDType</a> { <br />
 &#160;&#160;<a class="el" href="namespacepcpp.html#adb43f1f8284d4e0b74d1c77b70152fa9a7284a3382423a4788038a93351da1068">PMD_UNKNOWN</a>, 
 <a class="el" href="namespacepcpp.html#adb43f1f8284d4e0b74d1c77b70152fa9a5ea9f73f02ab060961507d00b0116c3a">PMD_BOND</a>, 
@@ -2048,6 +2083,11 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:adb43f1f8284d4e0b74d1c77b70152fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1993be71383c1533f46eab6af15bcb4b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a1993be71383c1533f46eab6af15bcb4b">FileTimestampPrecision</a> : int8_t { <a class="el" href="namespacepcpp.html#a1993be71383c1533f46eab6af15bcb4ba88183b946cc5f0e8c96b2e66e1c74a7e">FileTimestampPrecision::Unknown</a> = -1, 
+<a class="el" href="namespacepcpp.html#a1993be71383c1533f46eab6af15bcb4ba64068ed47d979c5efa036f027d656433">FileTimestampPrecision::Microseconds</a> = 0, 
+<a class="el" href="namespacepcpp.html#a1993be71383c1533f46eab6af15bcb4bafba00bdab687ce01136a86bac8bac578">FileTimestampPrecision::Nanoseconds</a> = 1
+ }</td></tr>
+<tr class="separator:a1993be71383c1533f46eab6af15bcb4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a966edb536b73cf93cbc9b83f9c64930a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a966edb536b73cf93cbc9b83f9c64930a">Direction</a> { <a class="el" href="namespacepcpp.html#a966edb536b73cf93cbc9b83f9c64930aacbfd6ae8daea0ea78970fd2ca4521925">SRC</a>, 
 <a class="el" href="namespacepcpp.html#a966edb536b73cf93cbc9b83f9c64930aa27a323e67a11c7d1fc922949a918fedb">DST</a>, 
 <a class="el" href="namespacepcpp.html#a966edb536b73cf93cbc9b83f9c64930aa0cf92996690ad72c66a8d00661b471a2">SRC_OR_DST</a>
@@ -2077,6 +2117,38 @@ Functions</h2></td></tr>
 <tr class="separator:a6213cd87b4851342b47ee3b769e9299d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a117af2ac2f57cf90b06a2557c1c06825"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a117af2ac2f57cf90b06a2557c1c06825">cross_platform_memmem</a> (const char *haystack, size_t haystackLen, const char *needle, size_t needleLen)</td></tr>
 <tr class="separator:a117af2ac2f57cf90b06a2557c1c06825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acad8025cfed2d3a4595fc516a00f8e24"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#acad8025cfed2d3a4595fc516a00f8e24">operator==</a> (const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;lhs, const in_addr &amp;rhs)</td></tr>
+<tr class="separator:acad8025cfed2d3a4595fc516a00f8e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a62a492c0d6cc6eb97cdbde67702136"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a2a62a492c0d6cc6eb97cdbde67702136">operator!=</a> (const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;lhs, const in_addr &amp;rhs)</td></tr>
+<tr class="separator:a2a62a492c0d6cc6eb97cdbde67702136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba0f0abcc956d5b2798fd848bb4bd151"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#aba0f0abcc956d5b2798fd848bb4bd151">operator==</a> (const in_addr &amp;lhs, const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;rhs)</td></tr>
+<tr class="separator:aba0f0abcc956d5b2798fd848bb4bd151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5d16cdf1c1e59da52f44d5adc8d5f6e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ad5d16cdf1c1e59da52f44d5adc8d5f6e">operator!=</a> (const in_addr &amp;lhs, const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;rhs)</td></tr>
+<tr class="separator:ad5d16cdf1c1e59da52f44d5adc8d5f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ee7a1e81f46896b33e27808d5da63c3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a2ee7a1e81f46896b33e27808d5da63c3">operator==</a> (const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> &amp;lhs, const in6_addr &amp;rhs)</td></tr>
+<tr class="separator:a2ee7a1e81f46896b33e27808d5da63c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22ca0a754c6209918470a680dd99aa7d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a22ca0a754c6209918470a680dd99aa7d">operator!=</a> (const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> &amp;lhs, const in6_addr &amp;rhs)</td></tr>
+<tr class="separator:a22ca0a754c6209918470a680dd99aa7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b21133a92faba72ae8155448ce35d62"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a0b21133a92faba72ae8155448ce35d62">operator==</a> (const in6_addr &amp;lhs, const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> &amp;rhs)</td></tr>
+<tr class="separator:a0b21133a92faba72ae8155448ce35d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f2023de56a9f55a84ec0a5d7844a2d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a2f2023de56a9f55a84ec0a5d7844a2d4">operator!=</a> (const in6_addr &amp;lhs, const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> &amp;rhs)</td></tr>
+<tr class="separator:a2f2023de56a9f55a84ec0a5d7844a2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a684076c640871b0eec11a563ee3fe99a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a684076c640871b0eec11a563ee3fe99a">operator==</a> (const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;lhs, const in_addr &amp;rhs)</td></tr>
+<tr class="separator:a684076c640871b0eec11a563ee3fe99a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a680994c84190c315e107036e23846b62"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a680994c84190c315e107036e23846b62">operator!=</a> (const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;lhs, const in_addr &amp;rhs)</td></tr>
+<tr class="separator:a680994c84190c315e107036e23846b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1de2487f7b346019c968859532313ce1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a1de2487f7b346019c968859532313ce1">operator==</a> (const in_addr &amp;lhs, const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;rhs)</td></tr>
+<tr class="separator:a1de2487f7b346019c968859532313ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3367b54d4f3f691c223985307ee5cea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#af3367b54d4f3f691c223985307ee5cea">operator!=</a> (const in_addr &amp;lhs, const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;rhs)</td></tr>
+<tr class="separator:af3367b54d4f3f691c223985307ee5cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22a4f3eb67c8cc7f1535e0d07c5cbed3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a22a4f3eb67c8cc7f1535e0d07c5cbed3">operator==</a> (const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;lhs, const in6_addr &amp;rhs)</td></tr>
+<tr class="separator:a22a4f3eb67c8cc7f1535e0d07c5cbed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a659684ba55eac239050cf851c431abe8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a659684ba55eac239050cf851c431abe8">operator!=</a> (const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;lhs, const in6_addr &amp;rhs)</td></tr>
+<tr class="separator:a659684ba55eac239050cf851c431abe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6c9031a4ea5068a2306a798b3c76ef0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#af6c9031a4ea5068a2306a798b3c76ef0">operator==</a> (const in6_addr &amp;lhs, const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;rhs)</td></tr>
+<tr class="separator:af6c9031a4ea5068a2306a798b3c76ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03607c7b6eb11b4fe27ae67f8061f1c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a03607c7b6eb11b4fe27ae67f8061f1c9">operator!=</a> (const in6_addr &amp;lhs, const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;rhs)</td></tr>
+<tr class="separator:a03607c7b6eb11b4fe27ae67f8061f1c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa818bc85ee8391b470263dc3aefa945b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#aa818bc85ee8391b470263dc3aefa945b">getPcapPlusPlusVersion</a> ()</td></tr>
 <tr class="separator:aa818bc85ee8391b470263dc3aefa945b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a405f96d13d38a7b86a8321c31edc6ef0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a405f96d13d38a7b86a8321c31edc6ef0">getPcapPlusPlusVersionFull</a> ()</td></tr>
@@ -3544,6 +3616,37 @@ _OR_ TCP port dst = 80"<br />
 <tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9aa64fbbe7b368497e49e6bbcf0d839858"></a>PMD_XENVIRT&#160;</td><td class="fielddoc"><p>Xen Project PMD </p>
 </td></tr>
 <tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9a6270057f3a91382d9efb64b469f19e8c"></a>PMD_AF_PACKET&#160;</td><td class="fielddoc"><p>AF_PACKET PMD </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a1993be71383c1533f46eab6af15bcb4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1993be71383c1533f46eab6af15bcb4b">&#9670;&nbsp;</a></span>FileTimestampPrecision</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacepcpp.html#a1993be71383c1533f46eab6af15bcb4b">pcpp::FileTimestampPrecision</a> : int8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>An enumeration representing the precision of timestamps in a pcap file. The precision can be Unknown, Micro, or Nano. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1993be71383c1533f46eab6af15bcb4ba88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"><p>Precision is unknown or not set/determined. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1993be71383c1533f46eab6af15bcb4ba64068ed47d979c5efa036f027d656433"></a>Microseconds&#160;</td><td class="fielddoc"><p>Precision is in microseconds. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1993be71383c1533f46eab6af15bcb4bafba00bdab687ce01136a86bac8bac578"></a>Nanoseconds&#160;</td><td class="fielddoc"><p>Precision is in nanoseconds. </p>
 </td></tr>
 </table>
 
@@ -5134,6 +5237,81 @@ _OR_ TCP port dst = 80"<br />
 
 </div>
 </div>
+<a id="a5532685beb35dba811dc72b4f06dba0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5532685beb35dba811dc72b4f06dba0c">&#9670;&nbsp;</a></span>TcpOptionEnumType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0c">pcpp::TcpOptionEnumType</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>TCP options types </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5532685beb35dba811dc72b4f06dba0cab7e7f2b46723f5b08d763041108f8fed"></a>Nop&#160;</td><td class="fielddoc"><p>Padding </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5532685beb35dba811dc72b4f06dba0ca278a5d42a1927c4700ce0821a946c9df"></a>Eol&#160;</td><td class="fielddoc"><p>End of options </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5532685beb35dba811dc72b4f06dba0ca738b1544aeef70d97c9e2096a4d84b6a"></a>Mss&#160;</td><td class="fielddoc"><p>Segment size negotiating </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5532685beb35dba811dc72b4f06dba0cac89686a387d2b12b3c729ce35a0bcb5b"></a>Window&#160;</td><td class="fielddoc"><p>Window scaling </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5532685beb35dba811dc72b4f06dba0cabad06fd380f3c2a8d3df2d90a6fa8ff0"></a>SackPerm&#160;</td><td class="fielddoc"><p>SACK Permitted </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5532685beb35dba811dc72b4f06dba0ca3f2a09929a97815b0c7aea3839b088eb"></a>Sack&#160;</td><td class="fielddoc"><p>SACK Block </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5532685beb35dba811dc72b4f06dba0cad31ef811301c6b4111380dda959d6125"></a>Echo&#160;</td><td class="fielddoc"><p>Echo (obsoleted by option <a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0caa3d5de3eac8bb00ae86fd1a1005f1500">TcpOptionEnumType::Timestamp</a>) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5532685beb35dba811dc72b4f06dba0caf2ad7a1fc1fd666a557437e48c654e8c"></a>EchoReply&#160;</td><td class="fielddoc"><p>Echo Reply (obsoleted by option <a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0caa3d5de3eac8bb00ae86fd1a1005f1500">TcpOptionEnumType::Timestamp</a>) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5532685beb35dba811dc72b4f06dba0caa3d5de3eac8bb00ae86fd1a1005f1500"></a>Timestamp&#160;</td><td class="fielddoc"><p>TCP Timestamps </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5532685beb35dba811dc72b4f06dba0cae4c8f1de1c0855c7c2be33196d3c3537"></a>Cc&#160;</td><td class="fielddoc"><p>CC (obsolete) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5532685beb35dba811dc72b4f06dba0cacb69529f0bc9c745f766c7e8856434c6"></a>CcNew&#160;</td><td class="fielddoc"><p>CC.NEW (obsolete) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5532685beb35dba811dc72b4f06dba0ca8ee39cbed8edd3a04e0e85201d329fc5"></a>CcEcho&#160;</td><td class="fielddoc"><p>CC.ECHO(obsolete) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5532685beb35dba811dc72b4f06dba0ca8d6c0760e7dae464f181d5fb9f6d3cb0"></a>Md5&#160;</td><td class="fielddoc"><p>MD5 Signature Option </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5532685beb35dba811dc72b4f06dba0cab17fc675e213767891d3bfd4aa976eb4"></a>MpTcp&#160;</td><td class="fielddoc"><p>Multipath TCP </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5532685beb35dba811dc72b4f06dba0ca81269fbd1f4aa78ed43282c0df3f7bca"></a>Scps&#160;</td><td class="fielddoc"><p>SCPS Capabilities </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5532685beb35dba811dc72b4f06dba0ca090fff2375519910fe600106efd542bf"></a>Snack&#160;</td><td class="fielddoc"><p>SCPS SNACK </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5532685beb35dba811dc72b4f06dba0caf8af0a4eab60ed8478fd8f10ec914043"></a>RecBound&#160;</td><td class="fielddoc"><p>SCPS Record Boundary </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5532685beb35dba811dc72b4f06dba0ca6e6853c65222b98427481f37806a9be9"></a>CorrExp&#160;</td><td class="fielddoc"><p>SCPS Corruption Experienced </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5532685beb35dba811dc72b4f06dba0caf2d5be7948c3aa5ac0e46d0e6036cf20"></a>Qs&#160;</td><td class="fielddoc"><p>Quick-Start Response </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5532685beb35dba811dc72b4f06dba0cae67b8c2b515e34b75085850c549fef0d"></a>UserTo&#160;</td><td class="fielddoc"><p>User Timeout Option (also, other known unauthorized use) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5532685beb35dba811dc72b4f06dba0ca797d28653cf4e48526975ec9a91b81de"></a>ExpFd&#160;</td><td class="fielddoc"><p>RFC3692-style Experiment 1 (also improperly used for shipping products) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5532685beb35dba811dc72b4f06dba0cae4c35cdf8a4b44cbf71637fc5dc6d3f1"></a>ExpFe&#160;</td><td class="fielddoc"><p>RFC3692-style Experiment 2 (also improperly used for shipping products) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5532685beb35dba811dc72b4f06dba0ca6a144145cbb3a858962f6a4ed57775d1"></a>RvbdProbe&#160;</td><td class="fielddoc"><p>Riverbed probe option, non IANA registered option number </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5532685beb35dba811dc72b4f06dba0ca131ad73762a1b520d4452759cd7cc8e1"></a>RvbdTrpy&#160;</td><td class="fielddoc"><p>Riverbed transparency option, non IANA registered option number </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5532685beb35dba811dc72b4f06dba0ca88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"><p>Unknown option </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="ab2f3f36d158a9c44a6305f3e1356f278"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab2f3f36d158a9c44a6305f3e1356f278">&#9670;&nbsp;</a></span>TcpOptionType</h2>
 
@@ -5159,9 +5337,9 @@ _OR_ TCP port dst = 80"<br />
 </td></tr>
 <tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278af6f2d4d9c60472415287e15825eb24cf"></a>PCPP_TCPOPT_SACK&#160;</td><td class="fielddoc"><p>SACK Block </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278af7e1c0704f4b2752500ea250ec05243a"></a>TCPOPT_ECHO&#160;</td><td class="fielddoc"><p>Echo (obsoleted by option <a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278ad048b5042b768d619a7af21604d05a0d">PCPP_TCPOPT_TIMESTAMP</a>) </p>
+<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278af7e1c0704f4b2752500ea250ec05243a"></a>TCPOPT_ECHO&#160;</td><td class="fielddoc"><p>Echo (obsoleted by option TcpOptionType::PCPP_TCPOPT_TIMESTAMP) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278a8e5a017910f13b5205a8109e2c898d2e"></a>TCPOPT_ECHOREPLY&#160;</td><td class="fielddoc"><p>Echo Reply (obsoleted by option <a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278ad048b5042b768d619a7af21604d05a0d">PCPP_TCPOPT_TIMESTAMP</a>) </p>
+<tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278a8e5a017910f13b5205a8109e2c898d2e"></a>TCPOPT_ECHOREPLY&#160;</td><td class="fielddoc"><p>Echo Reply (obsoleted by option TcpOptionType::PCPP_TCPOPT_TIMESTAMP) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ab2f3f36d158a9c44a6305f3e1356f278ad048b5042b768d619a7af21604d05a0d"></a>PCPP_TCPOPT_TIMESTAMP&#160;</td><td class="fielddoc"><p>TCP Timestamps </p>
 </td></tr>
@@ -6055,6 +6233,566 @@ _OR_ TCP port dst = 80"<br />
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Value in host byte order </dd></dl>
+
+</div>
+</div>
+<a id="a2a62a492c0d6cc6eb97cdbde67702136"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a62a492c0d6cc6eb97cdbde67702136">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[1/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const in_addr &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Overload of the not-equal-to operator </p><dl class="section return"><dt>Returns</dt><dd>True if the addresses differ, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="ad5d16cdf1c1e59da52f44d5adc8d5f6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5d16cdf1c1e59da52f44d5adc8d5f6e">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[2/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const in_addr &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Overload of the not-equal-to operator </p><dl class="section return"><dt>Returns</dt><dd>True if the addresses differ, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a22ca0a754c6209918470a680dd99aa7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22ca0a754c6209918470a680dd99aa7d">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[3/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const in6_addr &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Overload of the not-equal-to operator </p><dl class="section return"><dt>Returns</dt><dd>True if the addresses differ, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a2f2023de56a9f55a84ec0a5d7844a2d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f2023de56a9f55a84ec0a5d7844a2d4">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[4/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const in6_addr &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Overload of the not-equal-to operator </p><dl class="section return"><dt>Returns</dt><dd>True if the addresses differ, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a680994c84190c315e107036e23846b62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a680994c84190c315e107036e23846b62">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[5/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const in_addr &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Overload of the not-equal-to operator </p><dl class="section return"><dt>Returns</dt><dd>True if the addresses differ, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="af3367b54d4f3f691c223985307ee5cea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3367b54d4f3f691c223985307ee5cea">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[6/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const in_addr &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Overload of the not-equal-to operator </p><dl class="section return"><dt>Returns</dt><dd>True if the addresses differ, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a659684ba55eac239050cf851c431abe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a659684ba55eac239050cf851c431abe8">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[7/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const in6_addr &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Overload of the not-equal-to operator </p><dl class="section return"><dt>Returns</dt><dd>True if the addresses differ, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a03607c7b6eb11b4fe27ae67f8061f1c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03607c7b6eb11b4fe27ae67f8061f1c9">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[8/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const in6_addr &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Overload of the not-equal-to operator </p><dl class="section return"><dt>Returns</dt><dd>True if the addresses differ, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="acad8025cfed2d3a4595fc516a00f8e24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acad8025cfed2d3a4595fc516a00f8e24">&#9670;&nbsp;</a></span>operator==() <span class="overload">[1/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const in_addr &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Overload of the equal-to operator </p><dl class="section return"><dt>Returns</dt><dd>True if the addresses are equal, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="aba0f0abcc956d5b2798fd848bb4bd151"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba0f0abcc956d5b2798fd848bb4bd151">&#9670;&nbsp;</a></span>operator==() <span class="overload">[2/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const in_addr &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Overload of the equal-to operator </p><dl class="section return"><dt>Returns</dt><dd>True if the addresses are equal, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a2ee7a1e81f46896b33e27808d5da63c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ee7a1e81f46896b33e27808d5da63c3">&#9670;&nbsp;</a></span>operator==() <span class="overload">[3/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const in6_addr &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Overload of the equal-to operator </p><dl class="section return"><dt>Returns</dt><dd>True if the addresses are equal, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a0b21133a92faba72ae8155448ce35d62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b21133a92faba72ae8155448ce35d62">&#9670;&nbsp;</a></span>operator==() <span class="overload">[4/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const in6_addr &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Overload of the equal-to operator </p><dl class="section return"><dt>Returns</dt><dd>True if the addresses are equal, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a684076c640871b0eec11a563ee3fe99a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a684076c640871b0eec11a563ee3fe99a">&#9670;&nbsp;</a></span>operator==() <span class="overload">[5/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const in_addr &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Overload of the equal-to operator </p><dl class="section return"><dt>Returns</dt><dd>True if the addresses are equal, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a1de2487f7b346019c968859532313ce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1de2487f7b346019c968859532313ce1">&#9670;&nbsp;</a></span>operator==() <span class="overload">[6/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const in_addr &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Overload of the equal-to operator </p><dl class="section return"><dt>Returns</dt><dd>True if the addresses are equal, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a22a4f3eb67c8cc7f1535e0d07c5cbed3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22a4f3eb67c8cc7f1535e0d07c5cbed3">&#9670;&nbsp;</a></span>operator==() <span class="overload">[7/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const in6_addr &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Overload of the equal-to operator </p><dl class="section return"><dt>Returns</dt><dd>True if the addresses are equal, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="af6c9031a4ea5068a2306a798b3c76ef0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6c9031a4ea5068a2306a798b3c76ef0">&#9670;&nbsp;</a></span>operator==() <span class="overload">[8/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const in6_addr &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Overload of the equal-to operator </p><dl class="section return"><dt>Returns</dt><dd>True if the addresses are equal, false otherwise </dd></dl>
 
 </div>
 </div>
@@ -7010,7 +7748,7 @@ _OR_ TCP port dst = 80"<br />
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li>
-    <li class="footer">Generated on Sun May 12 2024 03:07:33 for PcapPlusPlus by
+    <li class="footer">Generated on Mon May 27 2024 06:37:58 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -121,8 +121,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1b1cd0c337cd0317ea60f472a5be8e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76aaa7957418d48fd444b993ff62bc48"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#a76aaa7957418d48fd444b993ff62bc48">getDstPort</a> () const</td></tr>
 <tr class="separator:a76aaa7957418d48fd444b993ff62bc48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9502c7f75395c19a44df4457ebafa537"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_tcp_option.html">TcpOption</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#a9502c7f75395c19a44df4457ebafa537">getTcpOption</a> (<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278">TcpOptionType</a> option) const</td></tr>
-<tr class="separator:a9502c7f75395c19a44df4457ebafa537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb4c71281be5ee8524f400b3213d3b87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#abb4c71281be5ee8524f400b3213d3b87">PCPP_DEPRECATED</a> (&quot;enum <a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278">TcpOptionType</a> is deprecated; &quot; &quot;Use enum class <a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0c">TcpOptionEnumType</a> instead&quot;) TcpOption <a class="el" href="classpcpp_1_1_tcp_layer.html#a1cb24654caae9461d80d77a326f460dd">getTcpOption</a>(<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278">TcpOptionType</a> option) const</td></tr>
+<tr class="separator:abb4c71281be5ee8524f400b3213d3b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cb24654caae9461d80d77a326f460dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_tcp_option.html">TcpOption</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#a1cb24654caae9461d80d77a326f460dd">getTcpOption</a> (<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0c">TcpOptionEnumType</a> option) const</td></tr>
+<tr class="separator:a1cb24654caae9461d80d77a326f460dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49daa29b59fa5c7c5166a28b581bcabe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_tcp_option.html">TcpOption</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#a49daa29b59fa5c7c5166a28b581bcabe">getFirstTcpOption</a> () const</td></tr>
 <tr class="separator:a49daa29b59fa5c7c5166a28b581bcabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8e7e06a93aad7a2fa95d8ce3e52609b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_tcp_option.html">TcpOption</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#af8e7e06a93aad7a2fa95d8ce3e52609b">getNextTcpOption</a> (<a class="el" href="classpcpp_1_1_tcp_option.html">TcpOption</a> &amp;tcpOption) const</td></tr>
@@ -131,10 +133,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ade5a826d63447a05e8b1b89586ec8323"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a823604fe485bf680cb3e74a55c8ad4ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_tcp_option.html">TcpOption</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#a823604fe485bf680cb3e74a55c8ad4ea">addTcpOption</a> (const <a class="el" href="classpcpp_1_1_tcp_option_builder.html">TcpOptionBuilder</a> &amp;optionBuilder)</td></tr>
 <tr class="separator:a823604fe485bf680cb3e74a55c8ad4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae277b1951e118aa02e2a53f3f49cc2ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_tcp_option.html">TcpOption</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#ae277b1951e118aa02e2a53f3f49cc2ca">addTcpOptionAfter</a> (const <a class="el" href="classpcpp_1_1_tcp_option_builder.html">TcpOptionBuilder</a> &amp;optionBuilder, <a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278">TcpOptionType</a> prevOptionType=<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a65518218f346096c1ed5381a3a2a3157">TCPOPT_Unknown</a>)</td></tr>
-<tr class="separator:ae277b1951e118aa02e2a53f3f49cc2ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac24e0b402da8a1489379e80876eb8dcf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#ac24e0b402da8a1489379e80876eb8dcf">removeTcpOption</a> (<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278">TcpOptionType</a> optionType)</td></tr>
-<tr class="separator:ac24e0b402da8a1489379e80876eb8dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90bad5659cf8c12fa486c11d1d46cab1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_tcp_option.html">TcpOption</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#a90bad5659cf8c12fa486c11d1d46cab1">addTcpOptionAfter</a> (const <a class="el" href="classpcpp_1_1_tcp_option_builder.html">TcpOptionBuilder</a> &amp;optionBuilder, <a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278">TcpOptionType</a> prevOptionType=TcpOptionType::TCPOPT_Unknown)</td></tr>
+<tr class="separator:a90bad5659cf8c12fa486c11d1d46cab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9079a342a6e43808c47dfb1977a722e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_tcp_option.html">TcpOption</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#a9079a342a6e43808c47dfb1977a722e6">insertTcpOptionAfter</a> (const <a class="el" href="classpcpp_1_1_tcp_option_builder.html">TcpOptionBuilder</a> &amp;optionBuilder, <a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0c">TcpOptionEnumType</a> prevOptionType=<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca88183b946cc5f0e8c96b2e66e1c74a7e">TcpOptionEnumType::Unknown</a>)</td></tr>
+<tr class="separator:a9079a342a6e43808c47dfb1977a722e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeb5f24dc73d786ccc285580d0b2c762"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#aeeb5f24dc73d786ccc285580d0b2c762">PCPP_DEPRECATED</a> (&quot;enum <a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278">TcpOptionType</a> is deprecated; &quot; &quot;Use enum class <a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0c">TcpOptionEnumType</a> instead&quot;) bool <a class="el" href="classpcpp_1_1_tcp_layer.html#a12da1f78961105f8ec0ae206fb4910a9">removeTcpOption</a>(<a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278">TcpOptionType</a> optionType)</td></tr>
+<tr class="separator:aeeb5f24dc73d786ccc285580d0b2c762"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12da1f78961105f8ec0ae206fb4910a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#a12da1f78961105f8ec0ae206fb4910a9">removeTcpOption</a> (<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0c">TcpOptionEnumType</a> optionType)</td></tr>
+<tr class="separator:a12da1f78961105f8ec0ae206fb4910a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54812a58a88be8978b3e609f32504a87"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#a54812a58a88be8978b3e609f32504a87">removeAllTcpOptions</a> ()</td></tr>
 <tr class="separator:a54812a58a88be8978b3e609f32504a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf39676d5adf4e2b3b2d90a616428780"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#abf39676d5adf4e2b3b2d90a616428780">calculateChecksum</a> (bool writeResultToPacket)</td></tr>
@@ -330,8 +336,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae277b1951e118aa02e2a53f3f49cc2ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae277b1951e118aa02e2a53f3f49cc2ca">&#9670;&nbsp;</a></span>addTcpOptionAfter()</h2>
+<a id="a90bad5659cf8c12fa486c11d1d46cab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90bad5659cf8c12fa486c11d1d46cab1">&#9670;&nbsp;</a></span>addTcpOptionAfter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -346,7 +352,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278">TcpOptionType</a>&#160;</td>
-          <td class="paramname"><em>prevOptionType</em> = <code><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a65518218f346096c1ed5381a3a2a3157">TCPOPT_Unknown</a></code>&#160;</td>
+          <td class="paramname"><em>prevOptionType</em> = <code>TcpOptionType::TCPOPT_Unknown</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -355,14 +361,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add a new TCP option after an existing one </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">optionBuilder</td><td>A <a class="el" href="classpcpp_1_1_tcp_option_builder.html">TcpOptionBuilder</a> object that contains the requested TCP option data to be added </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">prevOptionType</td><td>The TCP option which the newly added option should come after. This is an optional parameter which gets a default value of <a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a65518218f346096c1ed5381a3a2a3157">TCPOPT_Unknown</a> if omitted, which means the new option will be added as the first option in the layer </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classpcpp_1_1_tcp_option.html">TcpOption</a> object containing the newly added TCP option data or logical NULL (<a class="el" href="classpcpp_1_1_t_l_v_record.html#ac645af1daf82e0062d3c15fe92418801">TcpOption::isNull()</a> == true) if addition failed. In case of a failure a corresponding error message will be printed to log </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>This method is deprecated, please use insertTcpOptionAfter(const <a class="el" href="classpcpp_1_1_tcp_option_builder.html">TcpOptionBuilder</a>&amp; optionBuilder, TcpOptionEnumType prevOptionType = <a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca88183b946cc5f0e8c96b2e66e1c74a7e">TcpOptionEnumType::Unknown</a>) </dd></dl>
 
 </div>
 </div>
@@ -580,8 +579,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9502c7f75395c19a44df4457ebafa537"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9502c7f75395c19a44df4457ebafa537">&#9670;&nbsp;</a></span>getTcpOption()</h2>
+<a id="a1cb24654caae9461d80d77a326f460dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cb24654caae9461d80d77a326f460dd">&#9670;&nbsp;</a></span>getTcpOption()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -589,7 +588,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classpcpp_1_1_tcp_option.html">TcpOption</a> pcpp::TcpLayer::getTcpOption </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278">TcpOptionType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0c">TcpOptionEnumType</a>&#160;</td>
           <td class="paramname"><em>option</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -620,6 +619,42 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The number of TCP options in this layer </dd></dl>
+
+</div>
+</div>
+<a id="a9079a342a6e43808c47dfb1977a722e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9079a342a6e43808c47dfb1977a722e6">&#9670;&nbsp;</a></span>insertTcpOptionAfter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classpcpp_1_1_tcp_option.html">TcpOption</a> pcpp::TcpLayer::insertTcpOptionAfter </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_tcp_option_builder.html">TcpOptionBuilder</a> &amp;&#160;</td>
+          <td class="paramname"><em>optionBuilder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0c">TcpOptionEnumType</a>&#160;</td>
+          <td class="paramname"><em>prevOptionType</em> = <code><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca88183b946cc5f0e8c96b2e66e1c74a7e">TcpOptionEnumType::Unknown</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Insert a new TCP option after an existing one </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">optionBuilder</td><td>A <a class="el" href="classpcpp_1_1_tcp_option_builder.html">TcpOptionBuilder</a> object that contains the requested TCP option data to be inserted </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prevOptionType</td><td>The TCP option which the newly inserted option should come after. This is an optional parameter which gets a default value of <a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca88183b946cc5f0e8c96b2e66e1c74a7e">TcpOptionType::Unknown</a> if omitted, which means the new option will be inserted as the first option in the layer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classpcpp_1_1_tcp_option.html">TcpOption</a> object containing the newly inserted TCP option data or logical NULL (<a class="el" href="classpcpp_1_1_t_l_v_record.html#ac645af1daf82e0062d3c15fe92418801">TcpOption::isNull()</a> == true) if insertion failed. In case of a failure a corresponding error message will be printed to log </dd></dl>
 
 </div>
 </div>
@@ -714,6 +749,44 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="abb4c71281be5ee8524f400b3213d3b87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb4c71281be5ee8524f400b3213d3b87">&#9670;&nbsp;</a></span>PCPP_DEPRECATED() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::TcpLayer::PCPP_DEPRECATED </td>
+          <td>(</td>
+          <td class="paramtype">&quot;enum <a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278">TcpOptionType</a> is deprecated; &quot; &quot;Use enum class <a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0c">TcpOptionEnumType</a> instead&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>This method is deprecated, please use getTcpOption(TcpOptionEnumType option) </dd></dl>
+
+</div>
+</div>
+<a id="aeeb5f24dc73d786ccc285580d0b2c762"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeb5f24dc73d786ccc285580d0b2c762">&#9670;&nbsp;</a></span>PCPP_DEPRECATED() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::TcpLayer::PCPP_DEPRECATED </td>
+          <td>(</td>
+          <td class="paramtype">&quot;enum <a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278">TcpOptionType</a> is deprecated; &quot; &quot;Use enum class <a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0c">TcpOptionEnumType</a> instead&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>This method is deprecated, please use <a class="el" href="classpcpp_1_1_tcp_layer.html#a12da1f78961105f8ec0ae206fb4910a9">removeTcpOption(TcpOptionEnumType)</a> </dd></dl>
+
+</div>
+</div>
 <a id="a54812a58a88be8978b3e609f32504a87"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a54812a58a88be8978b3e609f32504a87">&#9670;&nbsp;</a></span>removeAllTcpOptions()</h2>
 
@@ -732,8 +805,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac24e0b402da8a1489379e80876eb8dcf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac24e0b402da8a1489379e80876eb8dcf">&#9670;&nbsp;</a></span>removeTcpOption()</h2>
+<a id="a12da1f78961105f8ec0ae206fb4910a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12da1f78961105f8ec0ae206fb4910a9">&#9670;&nbsp;</a></span>removeTcpOption()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -741,7 +814,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">bool pcpp::TcpLayer::removeTcpOption </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278">TcpOptionType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0c">TcpOptionEnumType</a>&#160;</td>
           <td class="paramname"><em>optionType</em></td><td>)</td>
           <td></td>
         </tr>
@@ -791,7 +864,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_tcp_layer.html">TcpLayer</a></li>
-    <li class="footer">Generated on Sun May 12 2024 03:07:34 for PcapPlusPlus by
+    <li class="footer">Generated on Mon May 27 2024 06:37:59 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

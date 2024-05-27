@@ -91,7 +91,8 @@ $(document).ready(function(){initNavTree('_tcp_layer_8h.html','');});
 <div class="title">TcpLayer.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="_layer_8h_source.html">Layer.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_deprecation_utils_8h_source.html">DeprecationUtils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_layer_8h_source.html">Layer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_t_l_v_data_8h_source.html">TLVData.h</a>&quot;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 </div>
@@ -200,6 +201,41 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:ab2f3f36d158a9c44a6305f3e1356f278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5532685beb35dba811dc72b4f06dba0c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0c">pcpp::TcpOptionEnumType</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0cab7e7f2b46723f5b08d763041108f8fed">pcpp::TcpOptionEnumType::Nop</a> = 1, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca278a5d42a1927c4700ce0821a946c9df">pcpp::TcpOptionEnumType::Eol</a> = 0, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca738b1544aeef70d97c9e2096a4d84b6a">pcpp::TcpOptionEnumType::Mss</a> = 2, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0cac89686a387d2b12b3c729ce35a0bcb5b">pcpp::TcpOptionEnumType::Window</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0cabad06fd380f3c2a8d3df2d90a6fa8ff0">pcpp::TcpOptionEnumType::SackPerm</a> = 4, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca3f2a09929a97815b0c7aea3839b088eb">pcpp::TcpOptionEnumType::Sack</a> = 5, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0cad31ef811301c6b4111380dda959d6125">pcpp::TcpOptionEnumType::Echo</a> = 6, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0caf2ad7a1fc1fd666a557437e48c654e8c">pcpp::TcpOptionEnumType::EchoReply</a> = 7, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0caa3d5de3eac8bb00ae86fd1a1005f1500">pcpp::TcpOptionEnumType::Timestamp</a> = 8, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0cae4c8f1de1c0855c7c2be33196d3c3537">pcpp::TcpOptionEnumType::Cc</a> = 11, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0cacb69529f0bc9c745f766c7e8856434c6">pcpp::TcpOptionEnumType::CcNew</a> = 12, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca8ee39cbed8edd3a04e0e85201d329fc5">pcpp::TcpOptionEnumType::CcEcho</a> = 13, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca8d6c0760e7dae464f181d5fb9f6d3cb0">pcpp::TcpOptionEnumType::Md5</a> = 19, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0cab17fc675e213767891d3bfd4aa976eb4">pcpp::TcpOptionEnumType::MpTcp</a> = 0x1e, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca81269fbd1f4aa78ed43282c0df3f7bca">pcpp::TcpOptionEnumType::Scps</a> = 20, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca090fff2375519910fe600106efd542bf">pcpp::TcpOptionEnumType::Snack</a> = 21, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0caf8af0a4eab60ed8478fd8f10ec914043">pcpp::TcpOptionEnumType::RecBound</a> = 22, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca6e6853c65222b98427481f37806a9be9">pcpp::TcpOptionEnumType::CorrExp</a> = 23, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0caf2d5be7948c3aa5ac0e46d0e6036cf20">pcpp::TcpOptionEnumType::Qs</a> = 27, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0cae67b8c2b515e34b75085850c549fef0d">pcpp::TcpOptionEnumType::UserTo</a> = 28, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca797d28653cf4e48526975ec9a91b81de">pcpp::TcpOptionEnumType::ExpFd</a> = 0xfd, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0cae4c35cdf8a4b44cbf71637fc5dc6d3f1">pcpp::TcpOptionEnumType::ExpFe</a> = 0xfe, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca6a144145cbb3a858962f6a4ed57775d1">pcpp::TcpOptionEnumType::RvbdProbe</a> = 76, 
+<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca131ad73762a1b520d4452759cd7cc8e1">pcpp::TcpOptionEnumType::RvbdTrpy</a> = 78, 
+<br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca88183b946cc5f0e8c96b2e66e1c74a7e">pcpp::TcpOptionEnumType::Unknown</a> = 255
+<br />
+ }</td></tr>
+<tr class="separator:a5532685beb35dba811dc72b4f06dba0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a2ba3f9ff28dbd65780526d5306b653a0"></a>
@@ -213,7 +249,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a82a419fa83ffede0528bbe66b9eb0a29">pcpp::TCPOPT_CC</a> length </p>
+<p><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0cae4c8f1de1c0855c7c2be33196d3c3537">pcpp::TcpOptionEnumType::Cc</a> length </p>
 
 </div>
 </div>
@@ -228,7 +264,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278aecbe259aa1fb8dff733084929a25ca27">pcpp::TCPOPT_CCECHO</a> length </p>
+<p><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca8ee39cbed8edd3a04e0e85201d329fc5">pcpp::TcpOptionEnumType::CcEcho</a> length </p>
 
 </div>
 </div>
@@ -243,7 +279,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a39a5d63627b15bff0bd86fe2157dbe20">pcpp::TCPOPT_CCNEW</a> length </p>
+<p><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0cacb69529f0bc9c745f766c7e8856434c6">pcpp::TcpOptionEnumType::CcNew</a> length </p>
 
 </div>
 </div>
@@ -258,7 +294,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278ad997623b58c2d423f13721d5570484b8">pcpp::TCPOPT_CORREXP</a> length </p>
+<p><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca6e6853c65222b98427481f37806a9be9">pcpp::TcpOptionEnumType::CorrExp</a> length </p>
 
 </div>
 </div>
@@ -273,7 +309,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278af7e1c0704f4b2752500ea250ec05243a">pcpp::TCPOPT_ECHO</a> length </p>
+<p><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0cad31ef811301c6b4111380dda959d6125">pcpp::TcpOptionEnumType::Echo</a> length </p>
 
 </div>
 </div>
@@ -288,7 +324,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a8e5a017910f13b5205a8109e2c898d2e">pcpp::TCPOPT_ECHOREPLY</a> length </p>
+<p><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0caf2ad7a1fc1fd666a557437e48c654e8c">pcpp::TcpOptionEnumType::EchoReply</a> length </p>
 
 </div>
 </div>
@@ -303,7 +339,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a572937db672d4d69625f0662ed76b962">pcpp::PCPP_TCPOPT_EOL</a> length </p>
+<p><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca278a5d42a1927c4700ce0821a946c9df">pcpp::TcpOptionEnumType::Eol</a> length </p>
 
 </div>
 </div>
@@ -318,7 +354,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a0205491540fd32d17506aba9d94af517">pcpp::TCPOPT_EXP_FD</a> and <a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a7419b4758897f479aa1ae84c2061ccb2">pcpp::TCPOPT_EXP_FE</a> length </p>
+<p><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca797d28653cf4e48526975ec9a91b81de">pcpp::TcpOptionEnumType::ExpFd</a> and <a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0cae4c35cdf8a4b44cbf71637fc5dc6d3f1">pcpp::TcpOptionEnumType::ExpFe</a> length </p>
 
 </div>
 </div>
@@ -333,7 +369,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278acf51a70b96198793030c576bf48111f6">pcpp::TCPOPT_MD5</a> length </p>
+<p><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca8d6c0760e7dae464f181d5fb9f6d3cb0">pcpp::TcpOptionEnumType::Md5</a> length </p>
 
 </div>
 </div>
@@ -348,7 +384,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a6a8400173edfca48e2e795c1e9afc862">pcpp::TCPOPT_MPTCP</a> length </p>
+<p><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0cab17fc675e213767891d3bfd4aa976eb4">pcpp::TcpOptionEnumType::MpTcp</a> length </p>
 
 </div>
 </div>
@@ -363,7 +399,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a2e397d517856130b7b8015a2a5116702">pcpp::TCPOPT_MSS</a> length </p>
+<p><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca738b1544aeef70d97c9e2096a4d84b6a">pcpp::TcpOptionEnumType::Mss</a> length </p>
 
 </div>
 </div>
@@ -378,7 +414,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a313ec412b9693a6535bce5e111f228d6">pcpp::PCPP_TCPOPT_NOP</a> length </p>
+<p><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0cab7e7f2b46723f5b08d763041108f8fed">pcpp::TcpOptionEnumType::Nop</a> length </p>
 
 </div>
 </div>
@@ -393,7 +429,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a368220fcd77a952c25993ff0d328b34d">pcpp::TCPOPT_QS</a> length </p>
+<p><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0caf2d5be7948c3aa5ac0e46d0e6036cf20">pcpp::TcpOptionEnumType::Qs</a> length </p>
 
 </div>
 </div>
@@ -408,7 +444,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278ae7b809cbdeefd6ef5caa8fda23f2c38a">pcpp::TCPOPT_RECBOUND</a> length </p>
+<p><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0caf8af0a4eab60ed8478fd8f10ec914043">pcpp::TcpOptionEnumType::RecBound</a> length </p>
 
 </div>
 </div>
@@ -423,7 +459,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278abd01da185004dc3f371e2ec536c1bfd7">pcpp::TCPOPT_RVBD_PROBE</a> length </p>
+<p><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca6a144145cbb3a858962f6a4ed57775d1">pcpp::TcpOptionEnumType::RvbdProbe</a> length </p>
 
 </div>
 </div>
@@ -438,7 +474,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a448a533dced328df05277c2daf60fb1d">pcpp::TCPOPT_RVBD_TRPY</a> length </p>
+<p><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca131ad73762a1b520d4452759cd7cc8e1">pcpp::TcpOptionEnumType::RvbdTrpy</a> length </p>
 
 </div>
 </div>
@@ -453,7 +489,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278af6f2d4d9c60472415287e15825eb24cf">pcpp::PCPP_TCPOPT_SACK</a> length </p>
+<p><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca3f2a09929a97815b0c7aea3839b088eb">pcpp::TcpOptionEnumType::Sack</a> length </p>
 
 </div>
 </div>
@@ -468,7 +504,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278ae8a33bd70ab512bd473f1ba75038285d">pcpp::TCPOPT_SACK_PERM</a> length </p>
+<p><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0cabad06fd380f3c2a8d3df2d90a6fa8ff0">pcpp::TcpOptionEnumType::SackPerm</a> length </p>
 
 </div>
 </div>
@@ -483,7 +519,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a2c4c5fa96b5f24013ef13e8bddf232f3">pcpp::TCPOPT_SCPS</a> length </p>
+<p><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca81269fbd1f4aa78ed43282c0df3f7bca">pcpp::TcpOptionEnumType::Scps</a> length </p>
 
 </div>
 </div>
@@ -498,7 +534,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278acfa8aa4d4604c71338bae5270e3df540">pcpp::TCPOPT_SNACK</a> length </p>
+<p><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca090fff2375519910fe600106efd542bf">pcpp::TcpOptionEnumType::Snack</a> length </p>
 
 </div>
 </div>
@@ -513,7 +549,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278ad048b5042b768d619a7af21604d05a0d">pcpp::PCPP_TCPOPT_TIMESTAMP</a> length </p>
+<p><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0caa3d5de3eac8bb00ae86fd1a1005f1500">pcpp::TcpOptionEnumType::Timestamp</a> length </p>
 
 </div>
 </div>
@@ -528,7 +564,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a0ea39933d465fbcf6eb99587c1ea7b7b">pcpp::TCPOPT_USER_TO</a> length </p>
+<p><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0cae67b8c2b515e34b75085850c549fef0d">pcpp::TcpOptionEnumType::UserTo</a> length </p>
 
 </div>
 </div>
@@ -543,7 +579,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="namespacepcpp.html#ab2f3f36d158a9c44a6305f3e1356f278a3887404116247fb2f34cdcf0f6ec3b46">pcpp::PCPP_TCPOPT_WINDOW</a> length </p>
+<p><a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0cac89686a387d2b12b3c729ce35a0bcb5b">pcpp::TcpOptionEnumType::Window</a> length </p>
 
 </div>
 </div>
@@ -553,7 +589,7 @@ Enumerations</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_tcp_layer_8h.html">TcpLayer.h</a></li>
-    <li class="footer">Generated on Sun May 12 2024 03:07:33 for PcapPlusPlus by
+    <li class="footer">Generated on Mon May 27 2024 06:37:58 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

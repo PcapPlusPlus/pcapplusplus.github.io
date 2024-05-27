@@ -66,6 +66,7 @@ var files =
     [ "IcmpV6Layer.h", "_icmp_v6_layer_8h.html", "_icmp_v6_layer_8h" ],
     [ "IgmpLayer.h", "_igmp_layer_8h.html", "_igmp_layer_8h" ],
     [ "IpAddress.h", "_ip_address_8h.html", "_ip_address_8h" ],
+    [ "IpAddressUtils.h", "_ip_address_utils_8h.html", "_ip_address_utils_8h" ],
     [ "IPLayer.h", "_i_p_layer_8h.html", [
       [ "IPLayer", "classpcpp_1_1_i_p_layer.html", "classpcpp_1_1_i_p_layer" ]
     ] ],
