@@ -38,7 +38,7 @@ var searchData=
   ['removesomeipport',['removeSomeIpPort',['../classpcpp_1_1_some_ip_layer.html#a57abe2e9d7940cc52b4a245e01481c38',1,'pcpp::SomeIpLayer']]],
   ['removesourceaddressatindex',['removeSourceAddressAtIndex',['../classpcpp_1_1_igmp_v3_query_layer.html#a87009d34db619dcfd3a54e40f696fece',1,'pcpp::IgmpV3QueryLayer']]],
   ['removetag',['removeTag',['../classpcpp_1_1_p_p_po_e_discovery_layer.html#aaa3f807f3db2c33ae7bf157a2ecae951',1,'pcpp::PPPoEDiscoveryLayer']]],
-  ['removetcpoption',['removeTcpOption',['../classpcpp_1_1_tcp_layer.html#ac24e0b402da8a1489379e80876eb8dcf',1,'pcpp::TcpLayer']]],
+  ['removetcpoption',['removeTcpOption',['../classpcpp_1_1_tcp_layer.html#a12da1f78961105f8ec0ae206fb4910a9',1,'pcpp::TcpLayer']]],
   ['reset',['reset',['../classpcpp_1_1_pcap_live_device_list.html#af4e002ab316a892b4ea46f5294447830',1,'pcpp::PcapLiveDeviceList']]],
   ['resetlogprinter',['resetLogPrinter',['../classpcpp_1_1_logger.html#a90be870adb5dad753552392ffe2c89dd',1,'pcpp::Logger']]],
   ['rsshashfunctionmasktostring',['rssHashFunctionMaskToString',['../classpcpp_1_1_dpdk_device.html#aea5269c79bf49fcdaee09061a3d86123',1,'pcpp::DpdkDevice']]],

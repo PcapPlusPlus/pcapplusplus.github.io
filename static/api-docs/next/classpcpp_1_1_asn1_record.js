@@ -7,5 +7,6 @@ var classpcpp_1_1_asn1_record =
     [ "getTotalLength", "classpcpp_1_1_asn1_record.html#aabaab3ebda841a97dbacc2406ea2dffd", null ],
     [ "getUniversalTagType", "classpcpp_1_1_asn1_record.html#a95333dd96821448d7a7d02a7806d8fef", null ],
     [ "getValueLength", "classpcpp_1_1_asn1_record.html#ad52df587eaad0f04da86d95fca3b6586", null ],
-    [ "isConstructed", "classpcpp_1_1_asn1_record.html#a911a63457452bf36e645ce2d0ce3b67a", null ]
+    [ "isConstructed", "classpcpp_1_1_asn1_record.html#a911a63457452bf36e645ce2d0ce3b67a", null ],
+    [ "toString", "classpcpp_1_1_asn1_record.html#a9daa6568be038c6387f4782c3c238f50", null ]
 ];

@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_pcap_file_writer_device.
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classpcpp_1_1_pcap_file_writer_device-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::PcapFileWriterDevice Class Reference</div>  </div>
@@ -107,14 +108,16 @@ Inheritance diagram for pcpp::PcapFileWriterDevice:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0ca330ee1dbc31a1256a0fd5dfb7e86b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_file_writer_device.html#a0ca330ee1dbc31a1256a0fd5dfb7e86b">PcapFileWriterDevice</a> (const std::string &amp;fileName, <a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> linkLayerType=<a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a>)</td></tr>
-<tr class="separator:a0ca330ee1dbc31a1256a0fd5dfb7e86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a739022f56d412482258711a87e3bbae6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_file_writer_device.html#a739022f56d412482258711a87e3bbae6">PcapFileWriterDevice</a> (const std::string &amp;fileName, <a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> linkLayerType=<a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a>, bool nanosecondsPrecision=false)</td></tr>
+<tr class="separator:a739022f56d412482258711a87e3bbae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3aa347668d24475e9f750fcb5959d93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_file_writer_device.html#ac3aa347668d24475e9f750fcb5959d93">~PcapFileWriterDevice</a> ()</td></tr>
 <tr class="separator:ac3aa347668d24475e9f750fcb5959d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9105e95084d0b8f0e377f0b2049d8b17"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_file_writer_device.html#a9105e95084d0b8f0e377f0b2049d8b17">writePacket</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> const &amp;packet) override</td></tr>
 <tr class="separator:a9105e95084d0b8f0e377f0b2049d8b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb762a21a8bec1b3b9cd081091006851"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_file_writer_device.html#afb762a21a8bec1b3b9cd081091006851">writePackets</a> (const <a class="el" href="namespacepcpp.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;packets) override</td></tr>
 <tr class="separator:afb762a21a8bec1b3b9cd081091006851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2193647eeb2ef552251db99e26fd93f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcpp.html#a1993be71383c1533f46eab6af15bcb4b">FileTimestampPrecision</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_file_writer_device.html#af2193647eeb2ef552251db99e26fd93f">getTimestampPrecision</a> () const</td></tr>
+<tr class="separator:af2193647eeb2ef552251db99e26fd93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca7b8942a0752be446815fab1014be47"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_file_writer_device.html#aca7b8942a0752be446815fab1014be47">open</a> () override</td></tr>
 <tr class="separator:aca7b8942a0752be446815fab1014be47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02bda80e2c63a5ffa6897b42362e57fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_file_writer_device.html#a02bda80e2c63a5ffa6897b42362e57fc">open</a> (bool appendMode) override</td></tr>
@@ -143,8 +146,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af334503822ac7076373c64109f3e6d64 inherit pub_methods_classpcpp_1_1_i_filterable_device"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_filterable_device.html#af334503822ac7076373c64109f3e6d64">setFilter</a> (<a class="el" href="classpcpp_1_1_general_filter.html">GeneralFilter</a> &amp;filter)</td></tr>
 <tr class="separator:af334503822ac7076373c64109f3e6d64 inherit pub_methods_classpcpp_1_1_i_filterable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:af0596521910ef713ad24ffdb512f3515"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_file_writer_device.html#af0596521910ef713ad24ffdb512f3515">isNanoSecondPrecisionSupported</a> ()</td></tr>
+<tr class="separator:af0596521910ef713ad24ffdb512f3515"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classpcpp_1_1_i_pcap_device"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classpcpp_1_1_i_pcap_device')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_pcap_device.html">pcpp::IPcapDevice</a></td></tr>
 <tr class="memitem:ac9e91fa6b66ced9a92d09068712ccffc inherit pub_static_methods_classpcpp_1_1_i_pcap_device"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#ac9e91fa6b66ced9a92d09068712ccffc">getPcapLibVersionInfo</a> ()</td></tr>
 <tr class="separator:ac9e91fa6b66ced9a92d09068712ccffc inherit pub_static_methods_classpcpp_1_1_i_pcap_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,8 +159,8 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for opening a pcap file for writing or create a new pcap file and write packets to it. This class adds a unique capability that isn't supported in WinPcap and in older libpcap versions which is to open a pcap file in append mode where packets are written at the end of the pcap file instead of running it over </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0ca330ee1dbc31a1256a0fd5dfb7e86b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ca330ee1dbc31a1256a0fd5dfb7e86b">&#9670;&nbsp;</a></span>PcapFileWriterDevice()</h2>
+<a id="a739022f56d412482258711a87e3bbae6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a739022f56d412482258711a87e3bbae6">&#9670;&nbsp;</a></span>PcapFileWriterDevice()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -170,7 +175,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a>&#160;</td>
-          <td class="paramname"><em>linkLayerType</em> = <code><a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a></code>&#160;</td>
+          <td class="paramname"><em>linkLayerType</em> = <code><a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>nanosecondsPrecision</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -183,6 +194,7 @@ Additional Inherited Members</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">fileName</td><td>The full path of the file </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">linkLayerType</td><td>The link layer type all packet in this file will be based on. The default is Ethernet </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nanosecondsPrecision</td><td>A boolean indicating whether to write timestamps in nano-precision. If set to false, timestamps will be written in micro-precision </td></tr>
   </table>
   </dd>
 </dl>
@@ -293,6 +305,58 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 
 <p>Implements <a class="el" href="classpcpp_1_1_i_pcap_device.html#a785987975c2e9eb09e5d86305180e2c7">pcpp::IPcapDevice</a>.</p>
+
+</div>
+</div>
+<a id="af2193647eeb2ef552251db99e26fd93f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2193647eeb2ef552251db99e26fd93f">&#9670;&nbsp;</a></span>getTimestampPrecision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacepcpp.html#a1993be71383c1533f46eab6af15bcb4b">FileTimestampPrecision</a> pcpp::PcapFileWriterDevice::getTimestampPrecision </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The precision of the timestamps in the file. </dd></dl>
+
+</div>
+</div>
+<a id="af0596521910ef713ad24ffdb512f3515"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0596521910ef713ad24ffdb512f3515">&#9670;&nbsp;</a></span>isNanoSecondPrecisionSupported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool pcpp::PcapFileWriterDevice::isNanoSecondPrecisionSupported </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A static method that checks if nano-second precision is supported in the current platform and environment </p><dl class="section return"><dt>Returns</dt><dd>True if nano-second precision is supported, false otherwise </dd></dl>
 
 </div>
 </div>
@@ -435,7 +499,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_pcap_file_writer_device.html">PcapFileWriterDevice</a></li>
-    <li class="footer">Generated on Sun May 12 2024 03:07:34 for PcapPlusPlus by
+    <li class="footer">Generated on Mon May 27 2024 06:37:59 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

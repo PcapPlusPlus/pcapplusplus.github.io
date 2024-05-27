@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_pcap_file_reader_device.
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classpcpp_1_1_pcap_file_reader_device-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::PcapFileReaderDevice Class Reference</div>  </div>
@@ -113,6 +114,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa6c4637873a1a830372449a81f048ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af37f3fb4fc7e57b56657435615c0cb27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_file_reader_device.html#af37f3fb4fc7e57b56657435615c0cb27">getLinkLayerType</a> () const</td></tr>
 <tr class="separator:af37f3fb4fc7e57b56657435615c0cb27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8db4236b7f0f98bacbeaebacd25803ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcpp.html#a1993be71383c1533f46eab6af15bcb4b">FileTimestampPrecision</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_file_reader_device.html#a8db4236b7f0f98bacbeaebacd25803ed">getTimestampPrecision</a> () const</td></tr>
+<tr class="separator:a8db4236b7f0f98bacbeaebacd25803ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc4c2142b7787e6c191b0d2ab6822c07"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_file_reader_device.html#afc4c2142b7787e6c191b0d2ab6822c07">getNextPacket</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> &amp;rawPacket)</td></tr>
 <tr class="separator:afc4c2142b7787e6c191b0d2ab6822c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9e798abe511b1ba8bd14360535753a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_file_reader_device.html#af9e798abe511b1ba8bd14360535753a1">open</a> ()</td></tr>
@@ -143,8 +146,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af334503822ac7076373c64109f3e6d64 inherit pub_methods_classpcpp_1_1_i_filterable_device"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_filterable_device.html#af334503822ac7076373c64109f3e6d64">setFilter</a> (<a class="el" href="classpcpp_1_1_general_filter.html">GeneralFilter</a> &amp;filter)</td></tr>
 <tr class="separator:af334503822ac7076373c64109f3e6d64 inherit pub_methods_classpcpp_1_1_i_filterable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a4ce65614c821fd78d848bdf0a1c55155"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_file_reader_device.html#a4ce65614c821fd78d848bdf0a1c55155">isNanoSecondPrecisionSupported</a> ()</td></tr>
+<tr class="separator:a4ce65614c821fd78d848bdf0a1c55155"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classpcpp_1_1_i_file_reader_device"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classpcpp_1_1_i_file_reader_device')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_file_reader_device.html">pcpp::IFileReaderDevice</a></td></tr>
 <tr class="memitem:a86c1f85162fa5f7dea66e96ba8f4c317 inherit pub_static_methods_classpcpp_1_1_i_file_reader_device"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classpcpp_1_1_i_file_reader_device.html">IFileReaderDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_file_reader_device.html#a86c1f85162fa5f7dea66e96ba8f4c317">getReader</a> (const std::string &amp;fileName)</td></tr>
 <tr class="separator:a86c1f85162fa5f7dea66e96ba8f4c317 inherit pub_static_methods_classpcpp_1_1_i_file_reader_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,6 +158,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:ac9e91fa6b66ced9a92d09068712ccffc inherit pub_static_methods_classpcpp_1_1_i_pcap_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9095bdfe0c8e79b656b2651a721a2ea2 inherit pub_static_methods_classpcpp_1_1_i_pcap_device"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#a9095bdfe0c8e79b656b2651a721a2ea2">matchPacketWithFilter</a> (<a class="el" href="classpcpp_1_1_general_filter.html">GeneralFilter</a> &amp;filter, <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *rawPacket)</td></tr>
 <tr class="separator:a9095bdfe0c8e79b656b2651a721a2ea2 inherit pub_static_methods_classpcpp_1_1_i_pcap_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classpcpp_1_1_i_file_reader_device"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classpcpp_1_1_i_file_reader_device')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classpcpp_1_1_i_file_reader_device.html">pcpp::IFileReaderDevice</a></td></tr>
 <tr class="memitem:aaf7d8d9af86c65cf539c5c4e39804295 inherit pro_methods_classpcpp_1_1_i_file_reader_device"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_file_reader_device.html#aaf7d8d9af86c65cf539c5c4e39804295">IFileReaderDevice</a> (const std::string &amp;fileName)</td></tr>
 <tr class="separator:aaf7d8d9af86c65cf539c5c4e39804295 inherit pro_methods_classpcpp_1_1_i_file_reader_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -314,6 +322,58 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a8db4236b7f0f98bacbeaebacd25803ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8db4236b7f0f98bacbeaebacd25803ed">&#9670;&nbsp;</a></span>getTimestampPrecision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacepcpp.html#a1993be71383c1533f46eab6af15bcb4b">FileTimestampPrecision</a> pcpp::PcapFileReaderDevice::getTimestampPrecision </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The precision of the timestamps in the file. If the platform supports nanosecond precision, this method will return nanoseconds even if the file has microseconds since libpcap scales timestamps before supply. Otherwise, it will return microseconds. </dd></dl>
+
+</div>
+</div>
+<a id="a4ce65614c821fd78d848bdf0a1c55155"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ce65614c821fd78d848bdf0a1c55155">&#9670;&nbsp;</a></span>isNanoSecondPrecisionSupported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool pcpp::PcapFileReaderDevice::isNanoSecondPrecisionSupported </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A static method that checks if nano-second precision is supported in the current platform and environment </p><dl class="section return"><dt>Returns</dt><dd>True if nano-second precision is supported, false otherwise </dd></dl>
+
+</div>
+</div>
 <a id="af9e798abe511b1ba8bd14360535753a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af9e798abe511b1ba8bd14360535753a1">&#9670;&nbsp;</a></span>open()</h2>
 
@@ -348,7 +408,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_pcap_file_reader_device.html">PcapFileReaderDevice</a></li>
-    <li class="footer">Generated on Sun May 12 2024 03:07:34 for PcapPlusPlus by
+    <li class="footer">Generated on Mon May 27 2024 06:37:59 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
