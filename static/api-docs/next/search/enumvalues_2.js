@@ -30,6 +30,8 @@ var searchData=
   ['commonlogmodulegenericutils',['CommonLogModuleGenericUtils',['../namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aaa25499cec092ad6adc02d738dcacd0ed',1,'pcpp']]],
   ['commonlogmoduleiputils',['CommonLogModuleIpUtils',['../namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa488fbdb95747a99c14eed410adaedeba',1,'pcpp']]],
   ['commonlogmoduletableprinter',['CommonLogModuleTablePrinter',['../namespacepcpp.html#ac6557f5dc8fcb14858f231b12bdc1c1aa19e1e3077dd9686b33d231086d30fab0',1,'pcpp']]],
+  ['comparerequest',['CompareRequest',['../classpcpp_1_1_ldap_operation_type.html#a614c0d12379a40d7e1ea830f7bdfbcada82fdb2b2b1d5c0e0484a9298b3d9d0ea',1,'pcpp::LdapOperationType']]],
+  ['compareresponse',['CompareResponse',['../classpcpp_1_1_ldap_operation_type.html#a614c0d12379a40d7e1ea830f7bdfbcadacebd3393c5462c7c9d6f992c9c0671ba',1,'pcpp::LdapOperationType']]],
   ['completed',['COMPLETED',['../classpcpp_1_1_smtp_response_layer.html#a7a2bbbfd8b35cebc0bbb0afc5dbc4375a8f7afecbc8fbc4cd0f50a57d1172482e',1,'pcpp::SmtpResponseLayer']]],
   ['comportcontroloption',['ComPortControlOption',['../classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682daea4a4d7789e7448b1bd04de7ee98f776',1,'pcpp::TelnetLayer']]],
   ['conf',['CONF',['../classpcpp_1_1_ftp_request_layer.html#ad293dabbe652aed3ac548eb01963e781a8d428c502adec040b6a51e880034b9f4',1,'pcpp::FtpRequestLayer']]],

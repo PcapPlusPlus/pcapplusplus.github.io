@@ -19,6 +19,8 @@ var searchData=
   ['default_5fip_5fttl',['DEFAULT_IP_TTL',['../namespacepcpp.html#a211aac29a5c4d0b7844926cfd369c32ca52613a0f6470ba606c5b755e5c32d59c',1,'pcpp']]],
   ['defaulttimeout',['DefaultTimeout',['../classpcpp_1_1_network_utils.html#a6c8310c11abf274e400a9b2be59ab873',1,'pcpp::NetworkUtils']]],
   ['dele',['DELE',['../classpcpp_1_1_ftp_request_layer.html#ad293dabbe652aed3ac548eb01963e781a178522587663ca1b2c3e10d8d1351a4c',1,'pcpp::FtpRequestLayer']]],
+  ['delrequest',['DelRequest',['../classpcpp_1_1_ldap_operation_type.html#a614c0d12379a40d7e1ea830f7bdfbcadab52b1e37cfe3fc03b4dcc29a17fc8442',1,'pcpp::LdapOperationType']]],
+  ['delresponse',['DelResponse',['../classpcpp_1_1_ldap_operation_type.html#a614c0d12379a40d7e1ea830f7bdfbcada887e468ae12cfa9f895536c46ed13778',1,'pcpp::LdapOperationType']]],
   ['deny',['DENY',['../classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738ca264ecc6e6542b05976cd28ae19093d0a',1,'pcpp::NtpLayer']]],
   ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]],
   ['deprecationutils_2eh',['DeprecationUtils.h',['../_deprecation_utils_8h.html',1,'']]],
