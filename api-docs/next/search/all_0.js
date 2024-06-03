@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['abandonrequest',['AbandonRequest',['../classpcpp_1_1_ldap_operation_type.html#a614c0d12379a40d7e1ea830f7bdfbcadad9235bcc86b606241b87ddb4197a8f85',1,'pcpp::LdapOperationType']]],
   ['abor',['ABOR',['../classpcpp_1_1_ftp_request_layer.html#ad293dabbe652aed3ac548eb01963e781a23093bdd98f6160e1c1508adb2247345',1,'pcpp::FtpRequestLayer']]],
   ['abort',['Abort',['../classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589a727b63583e01fa2b3952dab580c84dc2',1,'pcpp::TelnetLayer']]],
   ['abort_5flocal_5ferror',['ABORT_LOCAL_ERROR',['../classpcpp_1_1_smtp_response_layer.html#a7a2bbbfd8b35cebc0bbb0afc5dbc4375a5ac88e9422f4d55151df7e624d7e7d02',1,'pcpp::SmtpResponseLayer']]],
@@ -34,6 +35,8 @@ var searchData=
   ['addoptionto',['addOptionTo',['../classpcpp_1_1_some_ip_sd_layer.html#a3493ecbf628eb87d4f7787b1d7007f32',1,'pcpp::SomeIpSdLayer']]],
   ['addquery',['addQuery',['../classpcpp_1_1_dns_layer.html#a80db9f0dfb1b6c4641a0357b54e47138',1,'pcpp::DnsLayer::addQuery(const std::string &amp;name, DnsType dnsType, DnsClass dnsClass)'],['../classpcpp_1_1_dns_layer.html#a3d36a88b61c4cf83ef5b20748d589ab8',1,'pcpp::DnsLayer::addQuery(DnsQuery *const copyQuery)']]],
   ['addrbody',['addrBody',['../structpcpp_1_1_wake_on_lan_layer_1_1wol__header.html#a5c00b5223bbea95c5e0bb118488bcafd',1,'pcpp::WakeOnLanLayer::wol_header']]],
+  ['addrequest',['AddRequest',['../classpcpp_1_1_ldap_operation_type.html#a614c0d12379a40d7e1ea830f7bdfbcadad2f44fa88e3b3353e6433cfba629159c',1,'pcpp::LdapOperationType']]],
+  ['addresponse',['AddResponse',['../classpcpp_1_1_ldap_operation_type.html#a614c0d12379a40d7e1ea830f7bdfbcada2f855ee1dc3f37fd515064ef4f820385',1,'pcpp::LdapOperationType']]],
   ['address',['address',['../structpcpp_1_1ppp__pptp__header.html#ab0d4dbeb685845400c93be1636b9b2fb',1,'pcpp::ppp_pptp_header']]],
   ['addressentrysize',['addressEntrySize',['../structpcpp_1_1icmp__router__advertisement__hdr.html#a7ae4d3591f09904126f1a19f3dc799a6',1,'pcpp::icmp_router_advertisement_hdr']]],
   ['addressfamily',['addressFamily',['../structpcpp_1_1nflog__header.html#aaa3ff89281948ca6505efb7f07b1692f',1,'pcpp::nflog_header']]],
@@ -77,7 +80,7 @@ var searchData=
   ['asn1codec_2eh',['Asn1Codec.h',['../_asn1_codec_8h.html',1,'']]],
   ['asn1constructedrecord',['Asn1ConstructedRecord',['../classpcpp_1_1_asn1_constructed_record.html',1,'pcpp::Asn1ConstructedRecord'],['../classpcpp_1_1_asn1_constructed_record.html#a05474271146921a48c28f5ebf0d7f870',1,'pcpp::Asn1ConstructedRecord::Asn1ConstructedRecord(Asn1TagClass tagClass, uint8_t tagType, const std::vector&lt; Asn1Record *&gt; &amp;subRecords)'],['../classpcpp_1_1_asn1_constructed_record.html#a8a26251b3faa5b14e71d5263e1e6f9c1',1,'pcpp::Asn1ConstructedRecord::Asn1ConstructedRecord(Asn1TagClass tagClass, uint8_t tagType, const PointerVector&lt; Asn1Record &gt; &amp;subRecords)']]],
   ['asn1enumeratedrecord',['Asn1EnumeratedRecord',['../classpcpp_1_1_asn1_enumerated_record.html',1,'pcpp::Asn1EnumeratedRecord'],['../classpcpp_1_1_asn1_enumerated_record.html#a39450d2085a75ddd5c8ffd80ac7d1b20',1,'pcpp::Asn1EnumeratedRecord::Asn1EnumeratedRecord()']]],
-  ['asn1genericrecord',['Asn1GenericRecord',['../classpcpp_1_1_asn1_generic_record.html',1,'pcpp::Asn1GenericRecord'],['../classpcpp_1_1_asn1_generic_record.html#a4cedb308dea409beaeb11bb15159b0e6',1,'pcpp::Asn1GenericRecord::Asn1GenericRecord()']]],
+  ['asn1genericrecord',['Asn1GenericRecord',['../classpcpp_1_1_asn1_generic_record.html',1,'pcpp::Asn1GenericRecord'],['../classpcpp_1_1_asn1_generic_record.html#a4cedb308dea409beaeb11bb15159b0e6',1,'pcpp::Asn1GenericRecord::Asn1GenericRecord(Asn1TagClass tagClass, bool isConstructed, uint8_t tagType, const uint8_t *value, size_t valueLen)'],['../classpcpp_1_1_asn1_generic_record.html#aa250181d441788a4d22134d930e6cbb4',1,'pcpp::Asn1GenericRecord::Asn1GenericRecord(Asn1TagClass tagClass, bool isConstructed, uint8_t tagType, const std::string &amp;value)']]],
   ['asn1integerrecord',['Asn1IntegerRecord',['../classpcpp_1_1_asn1_integer_record.html',1,'pcpp::Asn1IntegerRecord'],['../classpcpp_1_1_asn1_integer_record.html#a27e7342597387541a8949d250c0fbbc3',1,'pcpp::Asn1IntegerRecord::Asn1IntegerRecord()']]],
   ['asn1nullrecord',['Asn1NullRecord',['../classpcpp_1_1_asn1_null_record.html',1,'pcpp::Asn1NullRecord'],['../classpcpp_1_1_asn1_null_record.html#a97c09d1572b9a60e860df5d036f476ee',1,'pcpp::Asn1NullRecord::Asn1NullRecord()']]],
   ['asn1octetstringrecord',['Asn1OctetStringRecord',['../classpcpp_1_1_asn1_octet_string_record.html',1,'pcpp::Asn1OctetStringRecord'],['../classpcpp_1_1_asn1_octet_string_record.html#a0be59e524d12904923f5b99a4eed5673',1,'pcpp::Asn1OctetStringRecord::Asn1OctetStringRecord(const std::string &amp;value)'],['../classpcpp_1_1_asn1_octet_string_record.html#adb7376eb46415f265237d308d8fac3a3',1,'pcpp::Asn1OctetStringRecord::Asn1OctetStringRecord(const uint8_t *value, size_t valueLength)']]],

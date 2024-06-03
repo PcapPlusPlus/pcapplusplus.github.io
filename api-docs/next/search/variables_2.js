@@ -19,6 +19,8 @@ var searchData=
   ['config_5fnetwork_5fif',['config_network_if',['../structpcpp_1_1_kni_device_1_1_kni_ioctl_callbacks.html#aa7202b6797b63f0f1cb779db56056c35',1,'pcpp::KniDevice::KniIoctlCallbacks::config_network_if()'],['../structpcpp_1_1_kni_device_1_1_kni_old_ioctl_callbacks.html#ab548ab7f397d18a78a767225f9fb3192',1,'pcpp::KniDevice::KniOldIoctlCallbacks::config_network_if()']]],
   ['config_5fpromiscusity',['config_promiscusity',['../structpcpp_1_1_kni_device_1_1_kni_ioctl_callbacks.html#ac3b5330e4ee138f16b4be662250634a3',1,'pcpp::KniDevice::KniIoctlCallbacks']]],
   ['control',['control',['../structpcpp_1_1ppp__pptp__header.html#ae925aba063d9662de4efe5151c128372',1,'pcpp::ppp_pptp_header::control()'],['../structpcpp_1_1llc__header.html#a52d68b57537b8829e25815ade8debc98',1,'pcpp::llc_header::control()']]],
+  ['controltype',['controlType',['../structpcpp_1_1_ldap_control.html#a768c795c7ed35b16c3bcbf4f84ea4e9c',1,'pcpp::LdapControl']]],
+  ['controlvalue',['controlValue',['../structpcpp_1_1_ldap_control.html#ab33e1dc2fbbf6e6236b68c224bcf1653',1,'pcpp::LdapControl']]],
   ['core0',['Core0',['../structpcpp_1_1_system_cores.html#a92ed579741faa0024f6f5bdcd5e5f9e7',1,'pcpp::SystemCores']]],
   ['core1',['Core1',['../structpcpp_1_1_system_cores.html#a330ced3414e906341f98c2f899b7f8a7',1,'pcpp::SystemCores']]],
   ['core10',['Core10',['../structpcpp_1_1_system_cores.html#a25d8fa04716db02dc1b7205eff0f7c0c',1,'pcpp::SystemCores']]],

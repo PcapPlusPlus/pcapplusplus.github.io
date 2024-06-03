@@ -15,6 +15,8 @@ var searchData=
   ['default',['Default',['../classpcpp_1_1_vrrp_layer.html#ada6835095bf4476ddcd72789413ab2e0aaf5cfb90fa184cdd29cfcc39b154d7b2',1,'pcpp::VrrpLayer']]],
   ['default_5fip_5fttl',['DEFAULT_IP_TTL',['../namespacepcpp.html#a211aac29a5c4d0b7844926cfd369c32ca52613a0f6470ba606c5b755e5c32d59c',1,'pcpp']]],
   ['dele',['DELE',['../classpcpp_1_1_ftp_request_layer.html#ad293dabbe652aed3ac548eb01963e781a178522587663ca1b2c3e10d8d1351a4c',1,'pcpp::FtpRequestLayer']]],
+  ['delrequest',['DelRequest',['../classpcpp_1_1_ldap_operation_type.html#a614c0d12379a40d7e1ea830f7bdfbcadab52b1e37cfe3fc03b4dcc29a17fc8442',1,'pcpp::LdapOperationType']]],
+  ['delresponse',['DelResponse',['../classpcpp_1_1_ldap_operation_type.html#a614c0d12379a40d7e1ea830f7bdfbcada887e468ae12cfa9f895536c46ed13778',1,'pcpp::LdapOperationType']]],
   ['deny',['DENY',['../classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738ca264ecc6e6542b05976cd28ae19093d0a',1,'pcpp::NtpLayer']]],
   ['dhcp_5fack',['DHCP_ACK',['../namespacepcpp.html#a960a2fb425b0c54c217309ff6215a0deac094d7ad5204b559d5881e7c16e7a17f',1,'pcpp']]],
   ['dhcp_5fbootreply',['DHCP_BOOTREPLY',['../namespacepcpp.html#a977d5d1fabe89dba06443bbca6a711bbad6aa627bfd992b58dcb027c7c453483f',1,'pcpp']]],

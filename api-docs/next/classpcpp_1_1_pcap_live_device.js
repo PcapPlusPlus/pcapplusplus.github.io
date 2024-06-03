@@ -17,7 +17,7 @@ var classpcpp_1_1_pcap_live_device =
     ] ],
     [ "~PcapLiveDevice", "classpcpp_1_1_pcap_live_device.html#a841eda2bc4582ad8f71e68f140aca064", null ],
     [ "captureActive", "classpcpp_1_1_pcap_live_device.html#a058f8bc527935d97bbd044614ab93473", null ],
-    [ "clone", "classpcpp_1_1_pcap_live_device.html#a81fc7607e3ac31e87df37d15c159cca0", null ],
+    [ "clone", "classpcpp_1_1_pcap_live_device.html#ab91ce2f1ae1cc80c5da77cc053742d91", null ],
     [ "close", "classpcpp_1_1_pcap_live_device.html#a02254c8ce454a469d9846dfc63fab4f6", null ],
     [ "doMtuCheck", "classpcpp_1_1_pcap_live_device.html#a6a4073105d21336a4f9539a8302d47cb", null ],
     [ "getAddresses", "classpcpp_1_1_pcap_live_device.html#a688940ed03c33b88fec2f297b7efe5a8", null ],

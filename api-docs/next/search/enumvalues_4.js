@@ -34,5 +34,7 @@ var searchData=
   ['expn',['EXPN',['../classpcpp_1_1_smtp_request_layer.html#a1128b00b6ca2592f837feea1bf9706dda8197861d33f31b3b58ecfb65e403bbf1',1,'pcpp::SmtpRequestLayer']]],
   ['extendedascii',['ExtendedASCII',['../classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da0a8d406681054b555da71acf8bcd6688',1,'pcpp::TelnetLayer']]],
   ['extendedoptions',['ExtendedOptions',['../classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da004eed36b6627e279c3d4779d36b8126',1,'pcpp::TelnetLayer']]],
+  ['extendedrequest',['ExtendedRequest',['../classpcpp_1_1_ldap_operation_type.html#a614c0d12379a40d7e1ea830f7bdfbcada5faad3386cdadacf2c5f4dddf53cff2d',1,'pcpp::LdapOperationType']]],
+  ['extendedresponse',['ExtendedResponse',['../classpcpp_1_1_ldap_operation_type.html#a614c0d12379a40d7e1ea830f7bdfbcadaad9096105a24e25f4c1faf43e14603b8',1,'pcpp::LdapOperationType']]],
   ['external',['External',['../namespacepcpp.html#a9b5b777cefd9f4b92bb6686d2c055bbeab206a1b4ea1097761f78e8876f6da779',1,'pcpp']]]
 ];
