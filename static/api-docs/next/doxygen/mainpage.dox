@@ -71,6 +71,7 @@
 *   - pcpp::DnsLayer, DnsLayer.h - DNS protocol
 *   - pcpp::FtpRequestLayer, pcpp::FtpResponseLayer, FtpLayer.h - FTP protocol
 *   - pcpp::HttpRequestLayer, pcpp::HttpResponseLayer, HttpLayer.h - HTTP protocol
+*   - pcpp::LdapLayer, LdapLayer.h - LDAP protocol
 *   - pcpp::NtpLayer, NtpLayer.h - NTP (v3, v4) protocol
 *   - pcpp::RadiusLayer, RadiusLayer.h - RADIUS protocol
 *   - pcpp::S7CommLayer, S7CommLayer.h - S7 Communication protocol (S7comm)
