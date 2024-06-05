@@ -108,12 +108,16 @@ Functions</h2></td></tr>
 <tr class="separator:a2a4b830a00870799ee852d4c6a72a1eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdce1d46efd09e8485a2f682b388ebc0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ip_utils_8h.html#acdce1d46efd09e8485a2f682b388ebc0">inet_pton</a> (int af, const char *src, void *dst)</td></tr>
 <tr class="separator:acdce1d46efd09e8485a2f682b388ebc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72f53de9ad280a337d0e6e10285ca44e"><td class="memItemLeft" align="right" valign="top">in_addr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ip_utils_8h.html#a72f53de9ad280a337d0e6e10285ca44e">pcpp::internal::sockaddr2in_addr</a> (struct sockaddr *sa)</td></tr>
-<tr class="separator:a72f53de9ad280a337d0e6e10285ca44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb11c752781ef27046c71dfc566e9cd6"><td class="memItemLeft" align="right" valign="top">in6_addr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ip_utils_8h.html#adb11c752781ef27046c71dfc566e9cd6">pcpp::internal::sockaddr2in6_addr</a> (struct sockaddr *sa)</td></tr>
-<tr class="separator:adb11c752781ef27046c71dfc566e9cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac04374477bd21735d8bbc2b25de4bb59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ip_utils_8h.html#ac04374477bd21735d8bbc2b25de4bb59">pcpp::internal::sockaddr2string</a> (struct sockaddr *sa, char *resultString)</td></tr>
-<tr class="separator:ac04374477bd21735d8bbc2b25de4bb59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a595491af11d729ff69e500b46b98e82b"><td class="memItemLeft" align="right" valign="top">in_addr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ip_utils_8h.html#a595491af11d729ff69e500b46b98e82b">pcpp::internal::sockaddr2in_addr</a> (sockaddr *sa)</td></tr>
+<tr class="separator:a595491af11d729ff69e500b46b98e82b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f81b449d5a87b4bfbe9984b0b82087"><td class="memItemLeft" align="right" valign="top">in_addr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ip_utils_8h.html#ab0f81b449d5a87b4bfbe9984b0b82087">pcpp::internal::try_sockaddr2in_addr</a> (sockaddr *sa)</td></tr>
+<tr class="separator:ab0f81b449d5a87b4bfbe9984b0b82087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace52594901af49a6a53d9c30b8ad04d6"><td class="memItemLeft" align="right" valign="top">in6_addr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ip_utils_8h.html#ace52594901af49a6a53d9c30b8ad04d6">pcpp::internal::sockaddr2in6_addr</a> (sockaddr *sa)</td></tr>
+<tr class="separator:ace52594901af49a6a53d9c30b8ad04d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab67891af8eb0de311e32a4810ebe41b0"><td class="memItemLeft" align="right" valign="top">in6_addr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ip_utils_8h.html#ab67891af8eb0de311e32a4810ebe41b0">pcpp::internal::try_sockaddr2in6_addr</a> (sockaddr *sa)</td></tr>
+<tr class="separator:ab67891af8eb0de311e32a4810ebe41b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab06fc3386a584ed25384970876e234e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ip_utils_8h.html#ab06fc3386a584ed25384970876e234e6">pcpp::internal::sockaddr2string</a> (sockaddr const *sa, char *resultString, size_t resultBufLen)</td></tr>
+<tr class="separator:ab06fc3386a584ed25384970876e234e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af93e0c8b044823c2dc011a26c26cca44"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ip_utils_8h.html#af93e0c8b044823c2dc011a26c26cca44">pcpp::internal::in_addr2int</a> (in_addr inAddr)</td></tr>
 <tr class="separator:af93e0c8b044823c2dc011a26c26cca44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -236,8 +240,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="file_adb11c752781ef27046c71dfc566e9cd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#file_adb11c752781ef27046c71dfc566e9cd6">&#9670;&nbsp;</a></span>sockaddr2in6_addr()</h2>
+<a id="file_ace52594901af49a6a53d9c30b8ad04d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#file_ace52594901af49a6a53d9c30b8ad04d6">&#9670;&nbsp;</a></span>sockaddr2in6_addr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -245,7 +249,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">in6_addr* pcpp::internal::sockaddr2in6_addr </td>
           <td>(</td>
-          <td class="paramtype">struct sockaddr *&#160;</td>
+          <td class="paramtype">sockaddr *&#160;</td>
           <td class="paramname"><em>sa</em></td><td>)</td>
           <td></td>
         </tr>
@@ -258,11 +262,17 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Address in in6_addr format </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Sockaddr family is not AF_INET6 or sockaddr is nullptr. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="file_a72f53de9ad280a337d0e6e10285ca44e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#file_a72f53de9ad280a337d0e6e10285ca44e">&#9670;&nbsp;</a></span>sockaddr2in_addr()</h2>
+<a id="file_a595491af11d729ff69e500b46b98e82b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#file_a595491af11d729ff69e500b46b98e82b">&#9670;&nbsp;</a></span>sockaddr2in_addr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -270,7 +280,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">in_addr* pcpp::internal::sockaddr2in_addr </td>
           <td>(</td>
-          <td class="paramtype">struct sockaddr *&#160;</td>
+          <td class="paramtype">sockaddr *&#160;</td>
           <td class="paramname"><em>sa</em></td><td>)</td>
           <td></td>
         </tr>
@@ -283,11 +293,17 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Address in in_addr format </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Sockaddr family is not AF_INET or sockaddr is nullptr. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="file_ac04374477bd21735d8bbc2b25de4bb59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#file_ac04374477bd21735d8bbc2b25de4bb59">&#9670;&nbsp;</a></span>sockaddr2string()</h2>
+<a id="file_ab06fc3386a584ed25384970876e234e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#file_ab06fc3386a584ed25384970876e234e6">&#9670;&nbsp;</a></span>sockaddr2string()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -295,14 +311,20 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void pcpp::internal::sockaddr2string </td>
           <td>(</td>
-          <td class="paramtype">struct sockaddr *&#160;</td>
+          <td class="paramtype">sockaddr const *&#160;</td>
           <td class="paramname"><em>sa</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>resultString</em>&#160;</td>
+          <td class="paramname"><em>resultString</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>resultBufLen</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -315,9 +337,66 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">sa</td><td>Address in sockaddr format </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">resultString</td><td>String representation of the address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">resultBufLen</td><td>Length of the result buffer. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Sockaddr family is not AF_INET or AF_INET6, sockaddr is nullptr or the result str buffer is insufficient. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="file_ab67891af8eb0de311e32a4810ebe41b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#file_ab67891af8eb0de311e32a4810ebe41b0">&#9670;&nbsp;</a></span>try_sockaddr2in6_addr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in6_addr* pcpp::internal::try_sockaddr2in6_addr </td>
+          <td>(</td>
+          <td class="paramtype">sockaddr *&#160;</td>
+          <td class="paramname"><em>sa</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Attempt to extract IPv6 address from sockaddr </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sa</td><td>- input sockaddr </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to address in in6_addr format or nullptr if extraction fails. </dd></dl>
+
+</div>
+</div>
+<a id="file_ab0f81b449d5a87b4bfbe9984b0b82087"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#file_ab0f81b449d5a87b4bfbe9984b0b82087">&#9670;&nbsp;</a></span>try_sockaddr2in_addr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">in_addr* pcpp::internal::try_sockaddr2in_addr </td>
+          <td>(</td>
+          <td class="paramtype">sockaddr *&#160;</td>
+          <td class="paramname"><em>sa</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Attempt to extract IPv4 address from sockaddr </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sa</td><td>- input sockaddr </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to address in in_addr format or nullptr if extraction fails. </dd></dl>
 
 </div>
 </div>
@@ -327,7 +406,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b003f564e33ffc88e35d7a9df43b3691.html">Common++</a></li><li class="navelem"><a class="el" href="dir_9a3e9207f3f2c743963c543f58e0ab18.html">header</a></li><li class="navelem"><a class="el" href="_ip_utils_8h.html">IpUtils.h</a></li>
-    <li class="footer">Generated on Mon Jun 3 2024 00:25:37 for PcapPlusPlus by
+    <li class="footer">Generated on Wed Jun 5 2024 05:54:39 for PcapPlusPlus by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
