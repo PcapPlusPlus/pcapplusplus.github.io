@@ -492,6 +492,7 @@ var searchData=
   ['prot',['PROT',['../classpcpp_1_1_ftp_request_layer.html#ad293dabbe652aed3ac548eb01963e781a987a70821eb884ca13ccdf425fde0b14',1,'pcpp::FtpRequestLayer']]],
   ['protocol',['protocol',['../structpcpp_1_1gre__basic__header.html#ad64488dc863563820f7541dfdb4ee910',1,'pcpp::gre_basic_header::protocol()'],['../structpcpp_1_1ppp__pptp__header.html#a9e49420e46bdc801452f9c30ef5b8659',1,'pcpp::ppp_pptp_header::protocol()'],['../structpcpp_1_1iphdr.html#a9600c9b8e380ba5468763cdf648d043c',1,'pcpp::iphdr::protocol()']]],
   ['protocol_5ftype',['protocol_type',['../structpcpp_1_1sll2__header.html#a866d180e1004540f88e57d47b5d46a54',1,'pcpp::sll2_header::protocol_type()'],['../structpcpp_1_1sll__header.html#a133d6e18091bafa51d1a4558a9f6bda9',1,'pcpp::sll_header::protocol_type()']]],
+  ['protocolerror',['ProtocolError',['../classpcpp_1_1_ldap_result_code.html#a7a003e1ab1aa1fff4a502b4a292ba831a5c9c34435962c91fb04bebf1ff9680de',1,'pcpp::LdapResultCode']]],
   ['protocolid',['protocolId',['../structpcpp_1_1s7commhdr.html#a1682a75c4f28f39501d5352e559247ca',1,'pcpp::s7commhdr']]],
   ['protocolsize',['protocolSize',['../structpcpp_1_1arphdr.html#a36e89262f76da9f28beb86cdec632c8c',1,'pcpp::arphdr']]],
   ['protocoltype',['protocolType',['../structpcpp_1_1arphdr.html#ae729b0afe661b105ceb7e5996f37a662',1,'pcpp::arphdr::protocolType()'],['../structpcpp_1_1gtpv1__header.html#add48e4b8c81c5971ac4048b75c44e009',1,'pcpp::gtpv1_header::protocolType()'],['../namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb',1,'pcpp::ProtocolType()']]],

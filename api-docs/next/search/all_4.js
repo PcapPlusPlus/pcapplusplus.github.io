@@ -21,6 +21,7 @@ var searchData=
   ['endtime',['endTime',['../structpcpp_1_1_connection_data.html#a443a3fe2d4ed8061e867cc9dadfb522c',1,'pcpp::ConnectionData']]],
   ['entering_5fextended_5fpassive',['ENTERING_EXTENDED_PASSIVE',['../classpcpp_1_1_ftp_response_layer.html#aebec062665c1d8c6e4eba941782a59cda5ebe57a228afd1c1462ebd4d91e0411e',1,'pcpp::FtpResponseLayer']]],
   ['entering_5fpassive',['ENTERING_PASSIVE',['../classpcpp_1_1_ftp_response_layer.html#aebec062665c1d8c6e4eba941782a59cda330540345172bfcfee7f366183568ff9',1,'pcpp::FtpResponseLayer']]],
+  ['entryalreadyexists',['EntryAlreadyExists',['../classpcpp_1_1_ldap_result_code.html#a7a003e1ab1aa1fff4a502b4a292ba831a36ce8d8b57af1b9565bef08676e49c5f',1,'pcpp::LdapResultCode']]],
   ['entrytype',['EntryType',['../classpcpp_1_1_some_ip_sd_entry.html#a74334e18cd309a1abfcbbae37d1ef2e6',1,'pcpp::SomeIpSdEntry']]],
   ['enumclasshash',['EnumClassHash',['../structpcpp_1_1_enum_class_hash.html',1,'pcpp']]],
   ['enumerated',['Enumerated',['../namespacepcpp.html#a9b5b777cefd9f4b92bb6686d2c055bbea0416b63774d9876d28b528d592de8b57',1,'pcpp']]],

@@ -11,5 +11,6 @@ var searchData=
   ['boolean',['Boolean',['../namespacepcpp.html#a9b5b777cefd9f4b92bb6686d2c055bbea27226c864bac7454a8504f8edb15d95b',1,'pcpp']]],
   ['break',['Break',['../classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589ae4c38d6d45baf080943d323dd51a2ce8',1,'pcpp::TelnetLayer']]],
   ['broadcast',['Broadcast',['../classpcpp_1_1_ntp_layer.html#ac2f7eecaf3da9628fad8d2d2cf785666a6180ee941a4c9bb5f3707d385e148b05',1,'pcpp::NtpLayer']]],
+  ['busy',['Busy',['../classpcpp_1_1_ldap_result_code.html#a7a003e1ab1aa1fff4a502b4a292ba831a5a88eccb27674562409a6531e57004f5',1,'pcpp::LdapResultCode']]],
   ['bytemacro',['ByteMacro',['../classpcpp_1_1_telnet_layer.html#ac42f0fb02472c196e4c65477c201682da452b6add36d819fe0bb8ae8f156a5d89',1,'pcpp::TelnetLayer']]]
 ];
