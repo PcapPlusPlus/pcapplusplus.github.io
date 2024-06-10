@@ -20,6 +20,7 @@ var files =
     [ "CotpLayer.h", "_cotp_layer_8h_source.html", null ],
     [ "DeprecationUtils.h", "_deprecation_utils_8h.html", null ],
     [ "Device.h", "_device_8h.html", "_device_8h" ],
+    [ "DeviceUtils.h", "_device_utils_8h.html", null ],
     [ "DhcpLayer.h", "_dhcp_layer_8h.html", "_dhcp_layer_8h" ],
     [ "DhcpV6Layer.h", "_dhcp_v6_layer_8h.html", "_dhcp_v6_layer_8h" ],
     [ "DnsLayer.h", "_dns_layer_8h.html", [
@@ -150,6 +151,7 @@ var files =
     [ "PcapRemoteDeviceList.h", "_pcap_remote_device_list_8h.html", [
       [ "PcapRemoteDeviceList", "classpcpp_1_1_pcap_remote_device_list.html", "classpcpp_1_1_pcap_remote_device_list" ]
     ] ],
+    [ "PcapUtils.h", "_pcap_utils_8h_source.html", null ],
     [ "PfRingDevice.h", "_pf_ring_device_8h.html", "_pf_ring_device_8h" ],
     [ "PfRingDeviceList.h", "_pf_ring_device_list_8h.html", [
       [ "PfRingDeviceList", "classpcpp_1_1_pf_ring_device_list.html", "classpcpp_1_1_pf_ring_device_list" ]
