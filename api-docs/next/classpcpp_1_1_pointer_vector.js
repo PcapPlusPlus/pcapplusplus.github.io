@@ -7,6 +7,7 @@ var classpcpp_1_1_pointer_vector =
     [ "PointerVector", "classpcpp_1_1_pointer_vector.html#a6528e240e35f7ee2407d22f24c3dd644", null ],
     [ "at", "classpcpp_1_1_pointer_vector.html#a992816f6d10f86ccafca4b36991378dc", null ],
     [ "at", "classpcpp_1_1_pointer_vector.html#aa3609cc0782248fbdafa90b91066b4a9", null ],
+    [ "back", "classpcpp_1_1_pointer_vector.html#a9915bba3e7dd38f2941140bf2ad663dc", null ],
     [ "begin", "classpcpp_1_1_pointer_vector.html#a15e41c4b220465138e47b5083098e30e", null ],
     [ "begin", "classpcpp_1_1_pointer_vector.html#ac5dc7892ac45d111f4bf8be1843f35b4", null ],
     [ "clear", "classpcpp_1_1_pointer_vector.html#ad6b5d1fb386f9d3fe9a9916058875433", null ],
