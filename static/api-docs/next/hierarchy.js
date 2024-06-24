@@ -21,11 +21,9 @@ var hierarchy =
     [ "std::auto_ptr< T >", null, [
       [ "pcpp::DnsResourceDataPtr", "classpcpp_1_1_dns_resource_data_ptr.html", null ]
     ] ],
-    [ "bgp_common_header", null, [
-      [ "pcpp::BgpOpenMessageLayer::bgp_open_message", "structpcpp_1_1_bgp_open_message_layer_1_1bgp__open__message.html", null ]
-    ] ],
     [ "pcpp::BgpLayer::bgp_common_header", "structpcpp_1_1_bgp_layer_1_1bgp__common__header.html", [
       [ "pcpp::BgpNotificationMessageLayer::bgp_notification_message", "structpcpp_1_1_bgp_notification_message_layer_1_1bgp__notification__message.html", null ],
+      [ "pcpp::BgpOpenMessageLayer::bgp_open_message", "structpcpp_1_1_bgp_open_message_layer_1_1bgp__open__message.html", null ],
       [ "pcpp::BgpRouteRefreshMessageLayer::bgp_route_refresh_message", "structpcpp_1_1_bgp_route_refresh_message_layer_1_1bgp__route__refresh__message.html", null ]
     ] ],
     [ "pcpp::BpfFilterWrapper", "classpcpp_1_1_bpf_filter_wrapper.html", null ],
@@ -99,9 +97,9 @@ var hierarchy =
       [ "pcpp::icmp_timestamp_request", "structpcpp_1_1icmp__timestamp__request.html", null ]
     ] ],
     [ "pcpp::icmpv6hdr", "structpcpp_1_1icmpv6hdr.html", [
-      [ "pcpp::icmpv6_echo_hdr", "structpcpp_1_1icmpv6__echo__hdr.html", null ],
       [ "pcpp::NDPNeighborAdvertisementLayer::ndpneighboradvertisementhdr", "structpcpp_1_1_n_d_p_neighbor_advertisement_layer_1_1ndpneighboradvertisementhdr.html", null ],
-      [ "pcpp::NDPNeighborSolicitationLayer::ndpneighborsolicitationhdr", "structpcpp_1_1_n_d_p_neighbor_solicitation_layer_1_1ndpneighborsolicitationhdr.html", null ]
+      [ "pcpp::NDPNeighborSolicitationLayer::ndpneighborsolicitationhdr", "structpcpp_1_1_n_d_p_neighbor_solicitation_layer_1_1ndpneighborsolicitationhdr.html", null ],
+      [ "pcpp::icmpv6_echo_hdr", "structpcpp_1_1icmpv6__echo__hdr.html", null ]
     ] ],
     [ "pcpp::IDataContainer", "classpcpp_1_1_i_data_container.html", [
       [ "pcpp::Layer", "classpcpp_1_1_layer.html", [
@@ -128,6 +126,8 @@ var hierarchy =
           [ "pcpp::GREv1Layer", "classpcpp_1_1_g_r_ev1_layer.html", null ]
         ] ],
         [ "pcpp::GtpV1Layer", "classpcpp_1_1_gtp_v1_layer.html", null ],
+        [ "pcpp::IPv4Layer", "classpcpp_1_1_i_pv4_layer.html", null ],
+        [ "pcpp::IPv6Layer", "classpcpp_1_1_i_pv6_layer.html", null ],
         [ "pcpp::IcmpLayer", "classpcpp_1_1_icmp_layer.html", null ],
         [ "pcpp::IcmpV6Layer", "classpcpp_1_1_icmp_v6_layer.html", [
           [ "pcpp::ICMPv6EchoLayer", "classpcpp_1_1_i_c_m_pv6_echo_layer.html", null ],
@@ -142,8 +142,7 @@ var hierarchy =
           [ "pcpp::IgmpV3QueryLayer", "classpcpp_1_1_igmp_v3_query_layer.html", null ],
           [ "pcpp::IgmpV3ReportLayer", "classpcpp_1_1_igmp_v3_report_layer.html", null ]
         ] ],
-        [ "pcpp::IPv4Layer", "classpcpp_1_1_i_pv4_layer.html", null ],
-        [ "pcpp::IPv6Layer", "classpcpp_1_1_i_pv6_layer.html", null ],
+        [ "pcpp::LLCLayer", "classpcpp_1_1_l_l_c_layer.html", null ],
         [ "pcpp::LdapLayer", "classpcpp_1_1_ldap_layer.html", [
           [ "pcpp::LdapBindRequestLayer", "classpcpp_1_1_ldap_bind_request_layer.html", null ],
           [ "pcpp::LdapResponseLayer", "classpcpp_1_1_ldap_response_layer.html", [
@@ -159,22 +158,34 @@ var hierarchy =
           [ "pcpp::LdapSearchResultEntryLayer", "classpcpp_1_1_ldap_search_result_entry_layer.html", null ],
           [ "pcpp::LdapUnbindRequestLayer", "classpcpp_1_1_ldap_unbind_request_layer.html", null ]
         ] ],
-        [ "pcpp::LLCLayer", "classpcpp_1_1_l_l_c_layer.html", null ],
         [ "pcpp::MplsLayer", "classpcpp_1_1_mpls_layer.html", null ],
         [ "pcpp::NflogLayer", "classpcpp_1_1_nflog_layer.html", null ],
         [ "pcpp::NtpLayer", "classpcpp_1_1_ntp_layer.html", null ],
         [ "pcpp::NullLoopbackLayer", "classpcpp_1_1_null_loopback_layer.html", null ],
-        [ "pcpp::PacketTrailerLayer", "classpcpp_1_1_packet_trailer_layer.html", null ],
-        [ "pcpp::PayloadLayer", "classpcpp_1_1_payload_layer.html", [
-          [ "pcpp::FtpDataLayer", "classpcpp_1_1_ftp_data_layer.html", null ]
-        ] ],
         [ "pcpp::PPP_PPTPLayer", "classpcpp_1_1_p_p_p___p_p_t_p_layer.html", null ],
         [ "pcpp::PPPoELayer", "classpcpp_1_1_p_p_po_e_layer.html", [
           [ "pcpp::PPPoEDiscoveryLayer", "classpcpp_1_1_p_p_po_e_discovery_layer.html", null ],
           [ "pcpp::PPPoESessionLayer", "classpcpp_1_1_p_p_po_e_session_layer.html", null ]
         ] ],
+        [ "pcpp::PacketTrailerLayer", "classpcpp_1_1_packet_trailer_layer.html", null ],
+        [ "pcpp::PayloadLayer", "classpcpp_1_1_payload_layer.html", [
+          [ "pcpp::FtpDataLayer", "classpcpp_1_1_ftp_data_layer.html", null ]
+        ] ],
         [ "pcpp::RadiusLayer", "classpcpp_1_1_radius_layer.html", null ],
         [ "pcpp::S7CommLayer", "classpcpp_1_1_s7_comm_layer.html", null ],
+        [ "pcpp::SSHLayer", "classpcpp_1_1_s_s_h_layer.html", [
+          [ "pcpp::SSHEncryptedMessage", "classpcpp_1_1_s_s_h_encrypted_message.html", null ],
+          [ "pcpp::SSHHandshakeMessage", "classpcpp_1_1_s_s_h_handshake_message.html", [
+            [ "pcpp::SSHKeyExchangeInitMessage", "classpcpp_1_1_s_s_h_key_exchange_init_message.html", null ]
+          ] ],
+          [ "pcpp::SSHIdentificationMessage", "classpcpp_1_1_s_s_h_identification_message.html", null ]
+        ] ],
+        [ "pcpp::SSLLayer", "classpcpp_1_1_s_s_l_layer.html", [
+          [ "pcpp::SSLAlertLayer", "classpcpp_1_1_s_s_l_alert_layer.html", null ],
+          [ "pcpp::SSLApplicationDataLayer", "classpcpp_1_1_s_s_l_application_data_layer.html", null ],
+          [ "pcpp::SSLChangeCipherSpecLayer", "classpcpp_1_1_s_s_l_change_cipher_spec_layer.html", null ],
+          [ "pcpp::SSLHandshakeLayer", "classpcpp_1_1_s_s_l_handshake_layer.html", null ]
+        ] ],
         [ "pcpp::SingleCommandTextProtocol", "classpcpp_1_1_single_command_text_protocol.html", [
           [ "pcpp::FtpLayer", "classpcpp_1_1_ftp_layer.html", [
             [ "pcpp::FtpRequestLayer", "classpcpp_1_1_ftp_request_layer.html", null ],
@@ -190,19 +201,6 @@ var hierarchy =
         [ "pcpp::SomeIpLayer", "classpcpp_1_1_some_ip_layer.html", [
           [ "pcpp::SomeIpSdLayer", "classpcpp_1_1_some_ip_sd_layer.html", null ],
           [ "pcpp::SomeIpTpLayer", "classpcpp_1_1_some_ip_tp_layer.html", null ]
-        ] ],
-        [ "pcpp::SSHLayer", "classpcpp_1_1_s_s_h_layer.html", [
-          [ "pcpp::SSHEncryptedMessage", "classpcpp_1_1_s_s_h_encrypted_message.html", null ],
-          [ "pcpp::SSHHandshakeMessage", "classpcpp_1_1_s_s_h_handshake_message.html", [
-            [ "pcpp::SSHKeyExchangeInitMessage", "classpcpp_1_1_s_s_h_key_exchange_init_message.html", null ]
-          ] ],
-          [ "pcpp::SSHIdentificationMessage", "classpcpp_1_1_s_s_h_identification_message.html", null ]
-        ] ],
-        [ "pcpp::SSLLayer", "classpcpp_1_1_s_s_l_layer.html", [
-          [ "pcpp::SSLAlertLayer", "classpcpp_1_1_s_s_l_alert_layer.html", null ],
-          [ "pcpp::SSLApplicationDataLayer", "classpcpp_1_1_s_s_l_application_data_layer.html", null ],
-          [ "pcpp::SSLChangeCipherSpecLayer", "classpcpp_1_1_s_s_l_change_cipher_spec_layer.html", null ],
-          [ "pcpp::SSLHandshakeLayer", "classpcpp_1_1_s_s_l_handshake_layer.html", null ]
         ] ],
         [ "pcpp::StpLayer", "classpcpp_1_1_stp_layer.html", [
           [ "pcpp::StpTopologyChangeBPDULayer", "classpcpp_1_1_stp_topology_change_b_p_d_u_layer.html", [
