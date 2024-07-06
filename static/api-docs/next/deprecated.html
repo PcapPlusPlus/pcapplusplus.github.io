@@ -90,19 +90,21 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <div class="contents">
 <div class="textblock"><dl class="reflist">
 <dt>Member <a class="el" href="classpcpp_1_1_http_response_first_line.html#aca6f22cddd6cdafdfdd9325e0a4bffd9">pcpp::HttpResponseFirstLine::setStatusCode</a>  (const <a class="el" href="classpcpp_1_1_http_response_status_code.html" title="The enum wrapper class of HTTP response status codes.">HttpResponseStatusCode</a> &amp;newStatusCode, const std::string &amp;statusCodeString)</dt>
-<dd><a class="anchor" id="_deprecated000002"></a>Use the other overload instead.  </dd>
+<dd><a class="anchor" id="_deprecated000003"></a>Use the other overload instead.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_http_response_layer.html#aa291f3cd6289bf92258998ccdd7487ac">pcpp::HttpResponseLayer::HttpResponseLayer</a>  (HttpVersion version, const <a class="el" href="classpcpp_1_1_http_response_status_code.html" title="The enum wrapper class of HTTP response status codes.">HttpResponseStatusCode</a> &amp;statusCode, const std::string &amp;statusCodeString)</dt>
-<dd><a class="anchor" id="_deprecated000001"></a>Use other constructors instead.  </dd>
+<dd><a class="anchor" id="_deprecated000002"></a>Use other constructors instead.  </dd>
+<dt>Member <a class="el" href="classpcpp_1_1_pointer_vector.html#a496fc8a59393820699c9af6f99ef8fa1">pcpp::PointerVector&lt; T &gt;::getAndRemoveFromVector</a>  (VectorIterator &amp;position)</dt>
+<dd><a class="anchor" id="_deprecated000001"></a>Deprecated in favor of 'getAndDetach' as that function provides memory safety.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_tcp_layer.html#a90bad5659cf8c12fa486c11d1d46cab1">pcpp::TcpLayer::addTcpOptionAfter</a>  (const <a class="el" href="classpcpp_1_1_tcp_option_builder.html">TcpOptionBuilder</a> &amp;optionBuilder, TcpOptionType prevOptionType=TcpOptionType::TCPOPT_Unknown)</dt>
-<dd><a class="anchor" id="_deprecated000006"></a>This method is deprecated, please use insertTcpOptionAfter(const <a class="el" href="classpcpp_1_1_tcp_option_builder.html">TcpOptionBuilder</a>&amp; optionBuilder, TcpOptionEnumType prevOptionType = <a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca88183b946cc5f0e8c96b2e66e1c74a7e">TcpOptionEnumType::Unknown</a>)  </dd>
+<dd><a class="anchor" id="_deprecated000007"></a>This method is deprecated, please use insertTcpOptionAfter(const <a class="el" href="classpcpp_1_1_tcp_option_builder.html">TcpOptionBuilder</a>&amp; optionBuilder, TcpOptionEnumType prevOptionType = <a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca88183b946cc5f0e8c96b2e66e1c74a7e">TcpOptionEnumType::Unknown</a>)  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_tcp_layer.html#abb4c71281be5ee8524f400b3213d3b87">pcpp::TcpLayer::PCPP_DEPRECATED</a>  ("enum TcpOptionType is deprecated; " "Use enum class TcpOptionEnumType instead") <a class="el" href="classpcpp_1_1_tcp_option.html">TcpOption</a> getTcpOption(TcpOptionType option) const</dt>
-<dd><a class="anchor" id="_deprecated000005"></a>This method is deprecated, please use getTcpOption(TcpOptionEnumType option)  </dd>
+<dd><a class="anchor" id="_deprecated000006"></a>This method is deprecated, please use getTcpOption(TcpOptionEnumType option)  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_tcp_layer.html#aeeb5f24dc73d786ccc285580d0b2c762">pcpp::TcpLayer::PCPP_DEPRECATED</a>  ("enum TcpOptionType is deprecated; " "Use enum class TcpOptionEnumType instead") bool removeTcpOption(TcpOptionType optionType)</dt>
-<dd><a class="anchor" id="_deprecated000007"></a>This method is deprecated, please use <a class="el" href="classpcpp_1_1_tcp_layer.html#a12da1f78961105f8ec0ae206fb4910a9">removeTcpOption(TcpOptionEnumType)</a>  </dd>
+<dd><a class="anchor" id="_deprecated000008"></a>This method is deprecated, please use <a class="el" href="classpcpp_1_1_tcp_layer.html#a12da1f78961105f8ec0ae206fb4910a9">removeTcpOption(TcpOptionEnumType)</a>  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_tcp_option.html#a23a5b85b766ac1d26bc8e9588cc20092">pcpp::TcpOption::getTcpOptionType</a>  () const</dt>
-<dd><a class="anchor" id="_deprecated000003"></a>This method is deprecated, please use <a class="el" href="classpcpp_1_1_tcp_option.html#a0496612a4b1d2fcb164597edf3287a5a">getTcpOptionEnumType()</a>  </dd>
+<dd><a class="anchor" id="_deprecated000004"></a>This method is deprecated, please use <a class="el" href="classpcpp_1_1_tcp_option.html#a0496612a4b1d2fcb164597edf3287a5a">getTcpOptionEnumType()</a>  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_tcp_option_builder.html#acc10673517347c6d92069976f113e91b">pcpp::TcpOptionBuilder::PCPP_DEPRECATED</a>  ("enum TcpOptionType is deprecated; " "Use enum class TcpOptionEnumType instead") <a class="el" href="classpcpp_1_1_tcp_option_builder.html">TcpOptionBuilder</a>(TcpOptionType optionType</dt>
-<dd><a class="anchor" id="_deprecated000004"></a>This method is deprecated, please use constructor with TcpOptionEnumType </dd>
+<dd><a class="anchor" id="_deprecated000005"></a>This method is deprecated, please use constructor with TcpOptionEnumType </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
@@ -110,7 +112,7 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jul 6 2024 11:04:20 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jul 6 2024 20:05:44 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
