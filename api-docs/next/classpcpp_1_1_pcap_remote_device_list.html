@@ -98,10 +98,10 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_pcap_remote_device_list.
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a17e3146371657cb2bf427c345ef8701a"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="classpcpp_1_1_pcap_remote_device.html">PcapRemoteDevice</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a17e3146371657cb2bf427c345ef8701a">RemoteDeviceListIterator</a></td></tr>
-<tr class="separator:a17e3146371657cb2bf427c345ef8701a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cfb21ecc08849c812b6ab6115071969"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="classpcpp_1_1_pcap_remote_device.html">PcapRemoteDevice</a> * &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a9cfb21ecc08849c812b6ab6115071969">ConstRemoteDeviceListIterator</a></td></tr>
-<tr class="separator:a9cfb21ecc08849c812b6ab6115071969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa8bdfae406a2b64cfcf05607fe6eaed"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#aaa8bdfae406a2b64cfcf05607fe6eaed">RemoteDeviceListIterator</a> = typename std::vector&lt; <a class="el" href="classpcpp_1_1_pcap_remote_device.html">PcapRemoteDevice</a> * &gt;::iterator</td></tr>
+<tr class="separator:aaa8bdfae406a2b64cfcf05607fe6eaed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aace7181fa00c286167eda3dea6c94801"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#aace7181fa00c286167eda3dea6c94801">ConstRemoteDeviceListIterator</a> = typename std::vector&lt; <a class="el" href="classpcpp_1_1_pcap_remote_device.html">PcapRemoteDevice</a> * &gt;::const_iterator</td></tr>
+<tr class="separator:aace7181fa00c286167eda3dea6c94801"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -117,34 +117,38 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7bc8bad418fb81558e1350d693fa3161"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5890c36829219ddcf35a6ccf609c1a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_pcap_remote_device.html">PcapRemoteDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#af5890c36829219ddcf35a6ccf609c1a4">getRemoteDeviceByIP</a> (const std::string &amp;ipAddrAsString) const</td></tr>
 <tr class="separator:af5890c36829219ddcf35a6ccf609c1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af155f1d0d02b252b968f8bfc60bfa285"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a17e3146371657cb2bf427c345ef8701a">RemoteDeviceListIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#af155f1d0d02b252b968f8bfc60bfa285">begin</a> ()</td></tr>
+<tr class="memitem:af155f1d0d02b252b968f8bfc60bfa285"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#aaa8bdfae406a2b64cfcf05607fe6eaed">RemoteDeviceListIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#af155f1d0d02b252b968f8bfc60bfa285">begin</a> ()</td></tr>
 <tr class="separator:af155f1d0d02b252b968f8bfc60bfa285"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a566211bca06fde70a3dfde4f2eade8c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a9cfb21ecc08849c812b6ab6115071969">ConstRemoteDeviceListIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a566211bca06fde70a3dfde4f2eade8c9">begin</a> () const</td></tr>
+<tr class="memitem:a566211bca06fde70a3dfde4f2eade8c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#aace7181fa00c286167eda3dea6c94801">ConstRemoteDeviceListIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a566211bca06fde70a3dfde4f2eade8c9">begin</a> () const</td></tr>
 <tr class="separator:a566211bca06fde70a3dfde4f2eade8c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc2fb3ae2a7acc851d7e2e57b87cd2f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a17e3146371657cb2bf427c345ef8701a">RemoteDeviceListIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#abc2fb3ae2a7acc851d7e2e57b87cd2f1">end</a> ()</td></tr>
+<tr class="memitem:abc2fb3ae2a7acc851d7e2e57b87cd2f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#aaa8bdfae406a2b64cfcf05607fe6eaed">RemoteDeviceListIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#abc2fb3ae2a7acc851d7e2e57b87cd2f1">end</a> ()</td></tr>
 <tr class="separator:abc2fb3ae2a7acc851d7e2e57b87cd2f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a306bdf08f57c0295509eb1e52cb12b74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a9cfb21ecc08849c812b6ab6115071969">ConstRemoteDeviceListIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a306bdf08f57c0295509eb1e52cb12b74">end</a> () const</td></tr>
+<tr class="memitem:a306bdf08f57c0295509eb1e52cb12b74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#aace7181fa00c286167eda3dea6c94801">ConstRemoteDeviceListIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a306bdf08f57c0295509eb1e52cb12b74">end</a> () const</td></tr>
 <tr class="separator:a306bdf08f57c0295509eb1e52cb12b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a9ad4f27a5e10b9b599b7a2a6412a398e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html">PcapRemoteDeviceList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a9ad4f27a5e10b9b599b7a2a6412a398e">getRemoteDeviceList</a> (const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;ipAddress, uint16_t port)</td></tr>
 <tr class="separator:a9ad4f27a5e10b9b599b7a2a6412a398e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abed7d7bc6ee8fa365d218a207cc51add"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html">PcapRemoteDeviceList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#abed7d7bc6ee8fa365d218a207cc51add">createRemoteDeviceList</a> (const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;ipAddress, uint16_t port)</td></tr>
+<tr class="separator:abed7d7bc6ee8fa365d218a207cc51add"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9327198897d5b414815455435b9c037"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html">PcapRemoteDeviceList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#af9327198897d5b414815455435b9c037">getRemoteDeviceList</a> (const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;ipAddress, uint16_t port, <a class="el" href="structpcpp_1_1_pcap_remote_authentication.html">PcapRemoteAuthentication</a> *remoteAuth)</td></tr>
 <tr class="separator:af9327198897d5b414815455435b9c037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a850481a784c2d17041226de989163a15"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html">PcapRemoteDeviceList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a850481a784c2d17041226de989163a15">createRemoteDeviceList</a> (const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;ipAddress, uint16_t port, <a class="el" href="structpcpp_1_1_pcap_remote_authentication.html">PcapRemoteAuthentication</a> const *remoteAuth)</td></tr>
+<tr class="separator:a850481a784c2d17041226de989163a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class that creates, stores and provides access to all instances of <a class="el" href="classpcpp_1_1_pcap_remote_device.html">PcapRemoteDevice</a> for a certain remote machine. To get an instance of this class use one of the static methods of <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a9ad4f27a5e10b9b599b7a2a6412a398e">getRemoteDeviceList()</a>. These methods creates a <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html">PcapRemoteDeviceList</a> instance for the certain remote machine which holds a list of <a class="el" href="classpcpp_1_1_pcap_remote_device.html">PcapRemoteDevice</a> instances, one for each remote network interface. Note there is not a public constructor for this class, so the only way to get an instance of it is through <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a9ad4f27a5e10b9b599b7a2a6412a398e">getRemoteDeviceList()</a>. After getting this object, this class provides ways to access the <a class="el" href="classpcpp_1_1_pcap_remote_device.html">PcapRemoteDevice</a> instances: either through IP address of the remote network interface or by iterating the <a class="el" href="classpcpp_1_1_pcap_remote_device.html">PcapRemoteDevice</a> instances (through the <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a17e3146371657cb2bf427c345ef8701a">PcapRemoteDeviceList::RemoteDeviceListIterator</a> iterator)<br  />
+<div class="textblock"><p>A class that creates, stores and provides access to all instances of <a class="el" href="classpcpp_1_1_pcap_remote_device.html">PcapRemoteDevice</a> for a certain remote machine. To get an instance of this class use one of the static methods of <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a9ad4f27a5e10b9b599b7a2a6412a398e">getRemoteDeviceList()</a>. These methods creates a <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html">PcapRemoteDeviceList</a> instance for the certain remote machine which holds a list of <a class="el" href="classpcpp_1_1_pcap_remote_device.html">PcapRemoteDevice</a> instances, one for each remote network interface. Note there is not a public constructor for this class, so the only way to get an instance of it is through <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a9ad4f27a5e10b9b599b7a2a6412a398e">getRemoteDeviceList()</a>. After getting this object, this class provides ways to access the <a class="el" href="classpcpp_1_1_pcap_remote_device.html">PcapRemoteDevice</a> instances: either through IP address of the remote network interface or by iterating the <a class="el" href="classpcpp_1_1_pcap_remote_device.html">PcapRemoteDevice</a> instances (through the <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#aaa8bdfae406a2b64cfcf05607fe6eaed">PcapRemoteDeviceList::RemoteDeviceListIterator</a> iterator)<br  />
  Since Remote Capture is supported in WinPcap and Npcap only, this class is available in Windows only </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a9cfb21ecc08849c812b6ab6115071969"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cfb21ecc08849c812b6ab6115071969">&#9670;&nbsp;</a></span>ConstRemoteDeviceListIterator</h2>
+<a id="aace7181fa00c286167eda3dea6c94801"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aace7181fa00c286167eda3dea6c94801">&#9670;&nbsp;</a></span>ConstRemoteDeviceListIterator</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::vector&lt;<a class="el" href="classpcpp_1_1_pcap_remote_device.html">PcapRemoteDevice</a>*&gt;::const_iterator <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a9cfb21ecc08849c812b6ab6115071969">pcpp::PcapRemoteDeviceList::ConstRemoteDeviceListIterator</a></td>
+          <td class="memname">using <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#aace7181fa00c286167eda3dea6c94801">pcpp::PcapRemoteDeviceList::ConstRemoteDeviceListIterator</a> =  typename std::vector&lt;<a class="el" href="classpcpp_1_1_pcap_remote_device.html">PcapRemoteDevice</a>*&gt;::const_iterator</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -152,14 +156,14 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a17e3146371657cb2bf427c345ef8701a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17e3146371657cb2bf427c345ef8701a">&#9670;&nbsp;</a></span>RemoteDeviceListIterator</h2>
+<a id="aaa8bdfae406a2b64cfcf05607fe6eaed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa8bdfae406a2b64cfcf05607fe6eaed">&#9670;&nbsp;</a></span>RemoteDeviceListIterator</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::vector&lt;<a class="el" href="classpcpp_1_1_pcap_remote_device.html">PcapRemoteDevice</a>*&gt;::iterator <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a17e3146371657cb2bf427c345ef8701a">pcpp::PcapRemoteDeviceList::RemoteDeviceListIterator</a></td>
+          <td class="memname">using <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#aaa8bdfae406a2b64cfcf05607fe6eaed">pcpp::PcapRemoteDeviceList::RemoteDeviceListIterator</a> =  typename std::vector&lt;<a class="el" href="classpcpp_1_1_pcap_remote_device.html">PcapRemoteDevice</a>*&gt;::iterator</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -178,7 +182,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a17e3146371657cb2bf427c345ef8701a">RemoteDeviceListIterator</a> pcpp::PcapRemoteDeviceList::begin </td>
+          <td class="memname"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#aaa8bdfae406a2b64cfcf05607fe6eaed">RemoteDeviceListIterator</a> pcpp::PcapRemoteDeviceList::begin </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -204,7 +208,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a9cfb21ecc08849c812b6ab6115071969">ConstRemoteDeviceListIterator</a> pcpp::PcapRemoteDeviceList::begin </td>
+          <td class="memname"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#aace7181fa00c286167eda3dea6c94801">ConstRemoteDeviceListIterator</a> pcpp::PcapRemoteDeviceList::begin </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -220,6 +224,113 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="abed7d7bc6ee8fa365d218a207cc51add"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abed7d7bc6ee8fa365d218a207cc51add">&#9670;&nbsp;</a></span>createRemoteDeviceList() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::unique_ptr&lt;<a class="el" href="classpcpp_1_1_pcap_remote_device_list.html">PcapRemoteDeviceList</a>&gt; pcpp::PcapRemoteDeviceList::createRemoteDeviceList </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>ipAddress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A static method for creating a <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html">PcapRemoteDeviceList</a> instance for a specific remote machine. This methods creates the instance and populates it with <a class="el" href="classpcpp_1_1_pcap_remote_device.html">PcapRemoteDevice</a> instances. Each <a class="el" href="classpcpp_1_1_pcap_remote_device.html">PcapRemoteDevice</a> instance corresponds to a network interface on the remote machine.</p>
+<p>This method overload is for remote daemons which don't require authentication for accessing them. For daemons which do require authentication use the other method overload.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ipAddress</td><td>The IP address of the remote machine through which clients can connect to the rpcapd daemon </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The port of the remote machine through which clients can connect to the rpcapd daemon </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A smart pointer to the newly created <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html">PcapRemoteDeviceList</a>, or nullptr if (an appropriate error will be printed to log in each case):<ul>
+<li>WinPcap/Npcap encountered an error in creating the remote connection string</li>
+<li>WinPcap/Npcap encountered an error connecting to the rpcapd daemon on the remote machine or retrieving devices on the remote machine </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a850481a784c2d17041226de989163a15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a850481a784c2d17041226de989163a15">&#9670;&nbsp;</a></span>createRemoteDeviceList() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::unique_ptr&lt;<a class="el" href="classpcpp_1_1_pcap_remote_device_list.html">PcapRemoteDeviceList</a>&gt; pcpp::PcapRemoteDeviceList::createRemoteDeviceList </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>ipAddress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpcpp_1_1_pcap_remote_authentication.html">PcapRemoteAuthentication</a> const *&#160;</td>
+          <td class="paramname"><em>remoteAuth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A static method for creating a <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html">PcapRemoteDeviceList</a> instance for a specific remote machine. This methods creates the instance and populates it with <a class="el" href="classpcpp_1_1_pcap_remote_device.html">PcapRemoteDevice</a> instances. Each <a class="el" href="classpcpp_1_1_pcap_remote_device.html">PcapRemoteDevice</a> instance corresponds to a network interface on the remote machine.</p>
+<p>This method overload is for remote daemons which require authentication for accessing them. If no authentication is required, use the other method overload.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ipAddress</td><td>The IP address of the remote machine through which clients can connect to the rpcapd daemon </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The port of the remote machine through which clients can connect to the rpcapd daemon </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">remoteAuth</td><td>A pointer to the authentication object which contains the username and password for connecting to the remote daemon </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A smart pointer to the newly created <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html">PcapRemoteDeviceList</a>, or nullptr if (an appropriate error will be printed to log in each case):<ul>
+<li>WinPcap/Npcap encountered an error in creating the remote connection string</li>
+<li>WinPcap/Npcap encountered an error connecting to the rpcapd daemon on the remote machine or retrieving devices on the remote machine </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
 <a id="abc2fb3ae2a7acc851d7e2e57b87cd2f1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abc2fb3ae2a7acc851d7e2e57b87cd2f1">&#9670;&nbsp;</a></span>end() <span class="overload">[1/2]</span></h2>
 
@@ -230,7 +341,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a17e3146371657cb2bf427c345ef8701a">RemoteDeviceListIterator</a> pcpp::PcapRemoteDeviceList::end </td>
+          <td class="memname"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#aaa8bdfae406a2b64cfcf05607fe6eaed">RemoteDeviceListIterator</a> pcpp::PcapRemoteDeviceList::end </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -256,7 +367,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a9cfb21ecc08849c812b6ab6115071969">ConstRemoteDeviceListIterator</a> pcpp::PcapRemoteDeviceList::end </td>
+          <td class="memname"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#aace7181fa00c286167eda3dea6c94801">ConstRemoteDeviceListIterator</a> pcpp::PcapRemoteDeviceList::end </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -419,6 +530,7 @@ Static Public Member Functions</h2></td></tr>
 <li>WinPcap/Npcap encountered an error connecting to the rpcapd daemon on the remote machine or retrieving devices on the remote machine </li>
 </ul>
 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated:</a></b></dt><dd>This factory function has been deprecated in favor of 'createRemoteDeviceList' factory for better memory safety. </dd></dl>
 
 </div>
 </div>
@@ -475,6 +587,7 @@ Static Public Member Functions</h2></td></tr>
 <li>WinPcap/Npcap encountered an error connecting to the rpcapd daemon on the remote machine or retrieving devices on the remote machine </li>
 </ul>
 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>This factory function has been deprecated in favor of 'createRemoteDeviceList' factory for better memory safety. </dd></dl>
 
 </div>
 </div>
@@ -536,7 +649,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_pcap_remote_device_list.html">PcapRemoteDeviceList</a></li>
-    <li class="footer">Generated on Wed Jul 17 2024 00:59:25 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Jul 19 2024 08:20:53 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
