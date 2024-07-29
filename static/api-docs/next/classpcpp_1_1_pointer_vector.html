@@ -118,8 +118,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adc3369cf538ec5f4e43219d8a6a8700d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6b5d1fb386f9d3fe9a9916058875433"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pointer_vector.html#ad6b5d1fb386f9d3fe9a9916058875433">clear</a> ()</td></tr>
 <tr class="separator:ad6b5d1fb386f9d3fe9a9916058875433"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5f6f474c257f00373c049f32fe9c653"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pointer_vector.html#ad5f6f474c257f00373c049f32fe9c653">pushBack</a> (T *element)</td></tr>
-<tr class="separator:ad5f6f474c257f00373c049f32fe9c653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aade852c69e134bdcea9e73850f212bcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pointer_vector.html#aade852c69e134bdcea9e73850f212bcf">pushBack</a> (std::nullptr_t element, bool freeElementOnError=true)=delete</td></tr>
+<tr class="separator:aade852c69e134bdcea9e73850f212bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9732f3d81f820f1e9677917b9a058f86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pointer_vector.html#a9732f3d81f820f1e9677917b9a058f86">pushBack</a> (T *element, bool freeElementOnError=true)</td></tr>
+<tr class="separator:a9732f3d81f820f1e9677917b9a058f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49dd48e9465ecef08debd3c41b10ddff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pointer_vector.html#a49dd48e9465ecef08debd3c41b10ddff">pushBack</a> (std::unique_ptr&lt; T &gt; element)</td></tr>
 <tr class="separator:a49dd48e9465ecef08debd3c41b10ddff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15e41c4b220465138e47b5083098e30e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_pointer_vector.html#acfe908951a176cd14127f08e57898647">VectorIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pointer_vector.html#a15e41c4b220465138e47b5083098e30e">begin</a> ()</td></tr>
@@ -823,8 +825,47 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="aade852c69e134bdcea9e73850f212bcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aade852c69e134bdcea9e73850f212bcf">&#9670;&nbsp;</a></span>pushBack() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classpcpp_1_1_pointer_vector.html">pcpp::PointerVector</a>&lt; T &gt;::pushBack </td>
+          <td>(</td>
+          <td class="paramtype">std::nullptr_t&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>freeElementOnError</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Adding a nullptr to the vector is not allowed. </p>
+
+</div>
+</div>
 <a id="a49dd48e9465ecef08debd3c41b10ddff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49dd48e9465ecef08debd3c41b10ddff">&#9670;&nbsp;</a></span>pushBack() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a49dd48e9465ecef08debd3c41b10ddff">&#9670;&nbsp;</a></span>pushBack() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -864,8 +905,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ad5f6f474c257f00373c049f32fe9c653"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5f6f474c257f00373c049f32fe9c653">&#9670;&nbsp;</a></span>pushBack() <span class="overload">[2/2]</span></h2>
+<a id="a9732f3d81f820f1e9677917b9a058f86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9732f3d81f820f1e9677917b9a058f86">&#9670;&nbsp;</a></span>pushBack() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -879,8 +920,18 @@ template&lt;typename T &gt; </div>
           <td class="memname">void <a class="el" href="classpcpp_1_1_pointer_vector.html">pcpp::PointerVector</a>&lt; T &gt;::pushBack </td>
           <td>(</td>
           <td class="paramtype">T *&#160;</td>
-          <td class="paramname"><em>element</em></td><td>)</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>freeElementOnError</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -892,6 +943,7 @@ template&lt;typename T &gt; </div>
 <p>Add a new (pointer to an) element to the vector </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">element</td><td>A pointer to an element to assume ownership of. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">freeElementOnError</td><td>If set to true, the element is freed if an exception is thrown during the push. </td></tr>
   </table>
   </dd>
 </dl>
@@ -938,7 +990,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_pointer_vector.html">PointerVector</a></li>
-    <li class="footer">Generated on Fri Jul 19 2024 08:20:52 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jul 29 2024 08:01:23 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -149,6 +149,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab80a7d9e829f0b0a4c7eddeb746a69be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a688940ed03c33b88fec2f297b7efe5a8"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; pcap_addr_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a688940ed03c33b88fec2f297b7efe5a8">getAddresses</a> () const</td></tr>
 <tr class="separator:a688940ed03c33b88fec2f297b7efe5a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2e91ef6742fdcbbf2f41dc35266c99d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#af2e91ef6742fdcbbf2f41dc35266c99d">getIPAddresses</a> () const</td></tr>
+<tr class="separator:af2e91ef6742fdcbbf2f41dc35266c99d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bc13ec8552ffbf5ae2fe281c4d0905b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classpcpp_1_1_mac_address.html">MacAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a4bc13ec8552ffbf5ae2fe281c4d0905b">getMacAddress</a> () const</td></tr>
 <tr class="separator:a4bc13ec8552ffbf5ae2fe281c4d0905b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a3915b20de33f61dd40e434688fa63c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a9a3915b20de33f61dd40e434688fa63c">getIPv4Address</a> () const</td></tr>
@@ -438,6 +440,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>A vector containing all addresses defined for this interface, each in pcap_addr_t struct </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated:</a></b></dt><dd>This method is deprecated and will be removed in future versions. Please use <a class="el" href="classpcpp_1_1_pcap_live_device.html#af2e91ef6742fdcbbf2f41dc35266c99d">getIPAddresses()</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -528,6 +531,24 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>A list of all DNS servers defined for this machine. If this list is empty it means no DNS servers were defined or they couldn't be extracted from some reason. This list is created in <a class="el" href="classpcpp_1_1_pcap_live_device_list.html">PcapLiveDeviceList</a> class and can be also retrieved from there. This method exists for convenience - so it'll be possible to get this list from <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> as well </dd></dl>
+
+</div>
+</div>
+<a id="af2e91ef6742fdcbbf2f41dc35266c99d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2e91ef6742fdcbbf2f41dc35266c99d">&#9670;&nbsp;</a></span>getIPAddresses()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a>&gt; pcpp::PcapLiveDevice::getIPAddresses </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A vector containing all IP addresses defined for this interface. </dd></dl>
 
 </div>
 </div>
@@ -1442,7 +1463,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a></li>
-    <li class="footer">Generated on Fri Jul 19 2024 08:20:53 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jul 29 2024 08:01:24 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
