@@ -22,7 +22,8 @@ var classpcpp_1_1_pointer_vector =
     [ "getAndRemoveFromVector", "classpcpp_1_1_pointer_vector.html#a496fc8a59393820699c9af6f99ef8fa1", null ],
     [ "operator=", "classpcpp_1_1_pointer_vector.html#a691d751acb54ae3b969899f5499cc468", null ],
     [ "operator=", "classpcpp_1_1_pointer_vector.html#adc3369cf538ec5f4e43219d8a6a8700d", null ],
+    [ "pushBack", "classpcpp_1_1_pointer_vector.html#aade852c69e134bdcea9e73850f212bcf", null ],
     [ "pushBack", "classpcpp_1_1_pointer_vector.html#a49dd48e9465ecef08debd3c41b10ddff", null ],
-    [ "pushBack", "classpcpp_1_1_pointer_vector.html#ad5f6f474c257f00373c049f32fe9c653", null ],
+    [ "pushBack", "classpcpp_1_1_pointer_vector.html#a9732f3d81f820f1e9677917b9a058f86", null ],
     [ "size", "classpcpp_1_1_pointer_vector.html#a9baaf544074aaa6a842e8136bea5b112", null ]
 ];

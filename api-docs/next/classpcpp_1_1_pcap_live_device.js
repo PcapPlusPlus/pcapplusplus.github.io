@@ -25,6 +25,7 @@ var classpcpp_1_1_pcap_live_device =
     [ "getDesc", "classpcpp_1_1_pcap_live_device.html#a54ee9e8c709de885bdb738844fca76b3", null ],
     [ "getDeviceType", "classpcpp_1_1_pcap_live_device.html#a76bd1af9e2079c71a790834e2f14baa7", null ],
     [ "getDnsServers", "classpcpp_1_1_pcap_live_device.html#a6b173d2702c2e33c05eec8f5676affd8", null ],
+    [ "getIPAddresses", "classpcpp_1_1_pcap_live_device.html#af2e91ef6742fdcbbf2f41dc35266c99d", null ],
     [ "getIPv4Address", "classpcpp_1_1_pcap_live_device.html#a9a3915b20de33f61dd40e434688fa63c", null ],
     [ "getIPv6Address", "classpcpp_1_1_pcap_live_device.html#a80e77bde8d290d33376ac8825c272534", null ],
     [ "getLinkType", "classpcpp_1_1_pcap_live_device.html#ab80a7d9e829f0b0a4c7eddeb746a69be", null ],
