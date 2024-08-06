@@ -19,6 +19,7 @@ var classpcpp_1_1_pointer_vector =
     [ "front", "classpcpp_1_1_pointer_vector.html#a860f1b66a6b18037263368aad8c6d416", null ],
     [ "getAndDetach", "classpcpp_1_1_pointer_vector.html#a2f5d8439ca238ad6a6e2af5dbc0a5f2b", null ],
     [ "getAndDetach", "classpcpp_1_1_pointer_vector.html#adcabe3c54895e0dbbc4a5b17a4e821ab", null ],
+    [ "getAndDetach", "classpcpp_1_1_pointer_vector.html#a77ecc0c3e8f7fdd3232d7c8c61e4a700", null ],
     [ "getAndRemoveFromVector", "classpcpp_1_1_pointer_vector.html#a496fc8a59393820699c9af6f99ef8fa1", null ],
     [ "operator=", "classpcpp_1_1_pointer_vector.html#a691d751acb54ae3b969899f5499cc468", null ],
     [ "operator=", "classpcpp_1_1_pointer_vector.html#adc3369cf538ec5f4e43219d8a6a8700d", null ],
