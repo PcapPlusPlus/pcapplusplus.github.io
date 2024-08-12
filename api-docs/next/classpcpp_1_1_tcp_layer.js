@@ -20,8 +20,8 @@ var classpcpp_1_1_tcp_layer =
     [ "insertTcpOptionAfter", "classpcpp_1_1_tcp_layer.html#a9079a342a6e43808c47dfb1977a722e6", null ],
     [ "operator=", "classpcpp_1_1_tcp_layer.html#a7dea7265510eda5cd67b984c2634ef19", null ],
     [ "parseNextLayer", "classpcpp_1_1_tcp_layer.html#ab26777b6ea7d6bfaed5032b20630fc72", null ],
-    [ "PCPP_DEPRECATED", "classpcpp_1_1_tcp_layer.html#aeeb5f24dc73d786ccc285580d0b2c762", null ],
-    [ "PCPP_DEPRECATED", "classpcpp_1_1_tcp_layer.html#abb4c71281be5ee8524f400b3213d3b87", null ],
+    [ "PCPP_DEPRECATED", "classpcpp_1_1_tcp_layer.html#a07903b52fb726291b37db165671142c4", null ],
+    [ "PCPP_DEPRECATED", "classpcpp_1_1_tcp_layer.html#ab20303e4db20175f6d321c3e3a59efe2", null ],
     [ "removeAllTcpOptions", "classpcpp_1_1_tcp_layer.html#a54812a58a88be8978b3e609f32504a87", null ],
     [ "removeTcpOption", "classpcpp_1_1_tcp_layer.html#a12da1f78961105f8ec0ae206fb4910a9", null ],
     [ "toString", "classpcpp_1_1_tcp_layer.html#afae42615bae53c59374017becd6dfac0", null ]

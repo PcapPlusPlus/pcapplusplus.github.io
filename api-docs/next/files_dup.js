@@ -34,7 +34,16 @@ var files_dup =
       [ "DnsQuery", "classpcpp_1_1_dns_query.html", "classpcpp_1_1_dns_query" ],
       [ "DnsResource", "classpcpp_1_1_dns_resource.html", "classpcpp_1_1_dns_resource" ]
     ] ],
-    [ "DnsResourceData.h", "_dns_resource_data_8h.html", "_dns_resource_data_8h" ],
+    [ "DnsResourceData.h", "_dns_resource_data_8h.html", [
+      [ "IDnsResourceData", "classpcpp_1_1_i_dns_resource_data.html", "classpcpp_1_1_i_dns_resource_data" ],
+      [ "DnsResourceDataPtr", "classpcpp_1_1_dns_resource_data_ptr.html", "classpcpp_1_1_dns_resource_data_ptr" ],
+      [ "StringDnsResourceData", "classpcpp_1_1_string_dns_resource_data.html", "classpcpp_1_1_string_dns_resource_data" ],
+      [ "IPv4DnsResourceData", "classpcpp_1_1_i_pv4_dns_resource_data.html", "classpcpp_1_1_i_pv4_dns_resource_data" ],
+      [ "IPv6DnsResourceData", "classpcpp_1_1_i_pv6_dns_resource_data.html", "classpcpp_1_1_i_pv6_dns_resource_data" ],
+      [ "MxDnsResourceData", "classpcpp_1_1_mx_dns_resource_data.html", "classpcpp_1_1_mx_dns_resource_data" ],
+      [ "MxData", "structpcpp_1_1_mx_dns_resource_data_1_1_mx_data.html", "structpcpp_1_1_mx_dns_resource_data_1_1_mx_data" ],
+      [ "GenericDnsResourceData", "classpcpp_1_1_generic_dns_resource_data.html", "classpcpp_1_1_generic_dns_resource_data" ]
+    ] ],
     [ "DpdkDevice.h", "_dpdk_device_8h.html", "_dpdk_device_8h" ],
     [ "DpdkDeviceList.h", "_dpdk_device_list_8h.html", [
       [ "DpdkWorkerThread", "classpcpp_1_1_dpdk_worker_thread.html", "classpcpp_1_1_dpdk_worker_thread" ],

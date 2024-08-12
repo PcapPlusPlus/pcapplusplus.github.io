@@ -10,5 +10,5 @@ var classpcpp_1_1_tcp_option_builder =
     ] ],
     [ "TcpOptionBuilder", "classpcpp_1_1_tcp_option_builder.html#a430cb8f76559c476df261da10c4940fa", null ],
     [ "build", "classpcpp_1_1_tcp_option_builder.html#a970fb85f72b9bf001863a15e5ae6a26f", null ],
-    [ "PCPP_DEPRECATED", "classpcpp_1_1_tcp_option_builder.html#acc10673517347c6d92069976f113e91b", null ]
+    [ "PCPP_DEPRECATED", "classpcpp_1_1_tcp_option_builder.html#a0102a5206eb592911d5b725d2002be81", null ]
 ];

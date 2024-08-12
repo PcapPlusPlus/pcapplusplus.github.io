@@ -18,9 +18,6 @@ var hierarchy =
         [ "pcpp::Asn1OctetStringRecord", "classpcpp_1_1_asn1_octet_string_record.html", null ]
       ] ]
     ] ],
-    [ "std::auto_ptr< T >", null, [
-      [ "pcpp::DnsResourceDataPtr", "classpcpp_1_1_dns_resource_data_ptr.html", null ]
-    ] ],
     [ "pcpp::BgpLayer::bgp_common_header", "structpcpp_1_1_bgp_layer_1_1bgp__common__header.html", [
       [ "pcpp::BgpNotificationMessageLayer::bgp_notification_message", "structpcpp_1_1_bgp_notification_message_layer_1_1bgp__notification__message.html", null ],
       [ "pcpp::BgpOpenMessageLayer::bgp_open_message", "structpcpp_1_1_bgp_open_message_layer_1_1bgp__open__message.html", null ],
@@ -460,6 +457,9 @@ var hierarchy =
     [ "pcpp::TLVRecordReader< pcpp::TcpOption >", "classpcpp_1_1_t_l_v_record_reader.html", null ],
     [ "pcpp::tpkthdr", "structpcpp_1_1tpkthdr.html", null ],
     [ "pcpp::udphdr", "structpcpp_1_1udphdr.html", null ],
+    [ "std::unique_ptr< T >", null, [
+      [ "pcpp::DnsResourceDataPtr", "classpcpp_1_1_dns_resource_data_ptr.html", null ]
+    ] ],
     [ "pcpp::vlan_header", "structpcpp_1_1vlan__header.html", null ],
     [ "pcpp::vrrp_header", "structpcpp_1_1vrrp__header.html", null ],
     [ "pcpp::vxlan_header", "structpcpp_1_1vxlan__header.html", null ],

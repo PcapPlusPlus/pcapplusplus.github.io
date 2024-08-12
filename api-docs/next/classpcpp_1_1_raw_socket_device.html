@@ -117,10 +117,10 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a16669eaf3e120d99ff07a07223aca9b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_socket_device.html#a16669eaf3e120d99ff07a07223aca9b6">~RawSocketDevice</a> ()</td></tr>
 <tr class="separator:a16669eaf3e120d99ff07a07223aca9b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a184663a2718b6e4f5f7ad353d840dfbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_raw_socket_device.html#a06ec60dc8d38dfab0333fb793ad0da76">RecvPacketResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_socket_device.html#a184663a2718b6e4f5f7ad353d840dfbc">receivePacket</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> &amp;rawPacket, bool blocking=true, int timeout=-1)</td></tr>
-<tr class="separator:a184663a2718b6e4f5f7ad353d840dfbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83f604ddccbb3dad4dbee74bcda6d21d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_socket_device.html#a83f604ddccbb3dad4dbee74bcda6d21d">receivePackets</a> (<a class="el" href="namespacepcpp.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;packetVec, int timeout, int &amp;failedRecv)</td></tr>
-<tr class="separator:a83f604ddccbb3dad4dbee74bcda6d21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3819d6840a9d1bbdb9bd4d38c464430"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_raw_socket_device.html#a06ec60dc8d38dfab0333fb793ad0da76">RecvPacketResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_socket_device.html#ad3819d6840a9d1bbdb9bd4d38c464430">receivePacket</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> &amp;rawPacket, bool blocking=true, double timeout=-1)</td></tr>
+<tr class="separator:ad3819d6840a9d1bbdb9bd4d38c464430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a130fcdee203ddabc332e612e36da5b12"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_socket_device.html#a130fcdee203ddabc332e612e36da5b12">receivePackets</a> (<a class="el" href="namespacepcpp.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;packetVec, double timeout, int &amp;failedRecv)</td></tr>
+<tr class="separator:a130fcdee203ddabc332e612e36da5b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a7822e719e2f5895b3bee1523327e08"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_socket_device.html#a3a7822e719e2f5895b3bee1523327e08">sendPacket</a> (const <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *rawPacket)</td></tr>
 <tr class="separator:a3a7822e719e2f5895b3bee1523327e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a348a0cfddc2d9b04857fd8bf8402b6ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_socket_device.html#a348a0cfddc2d9b04857fd8bf8402b6ba">sendPackets</a> (const <a class="el" href="namespacepcpp.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;packetVec)</td></tr>
@@ -243,8 +243,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a184663a2718b6e4f5f7ad353d840dfbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a184663a2718b6e4f5f7ad353d840dfbc">&#9670;&nbsp;</a></span>receivePacket()</h2>
+<a id="ad3819d6840a9d1bbdb9bd4d38c464430"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3819d6840a9d1bbdb9bd4d38c464430">&#9670;&nbsp;</a></span>receivePacket()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -264,7 +264,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>timeout</em> = <code>-1</code>&#160;</td>
         </tr>
         <tr>
@@ -282,7 +282,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">rawPacket</td><td>An empty packet instance where the received packet data will be written to </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">blocking</td><td>Indicates whether to run in blocking or non-blocking mode. Default value is blocking </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>When in blocking mode, specifies the timeout [in seconds] to wait for a packet. If timeout expired and no packets were captured the method will return <a class="el" href="classpcpp_1_1_raw_socket_device.html#a06ec60dc8d38dfab0333fb793ad0da76a0ad5957368155861234acd2c5251b95c">RawSocketDevice::RecvTimeout</a>. Zero or negative values mean no timeout. The default value is no timeout </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>When in blocking mode, specifies the timeout [in seconds] to wait for a packet. If timeout expired and no packets were captured the method will return <a class="el" href="classpcpp_1_1_raw_socket_device.html#a06ec60dc8d38dfab0333fb793ad0da76a0ad5957368155861234acd2c5251b95c">RawSocketDevice::RecvTimeout</a>. Zero or negative values mean no timeout. The default value is no timeout. The timeout precision is in milliseconds, for example a timeout of 0.123 means 123 milliseconds. </td></tr>
   </table>
   </dd>
 </dl>
@@ -296,8 +296,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a83f604ddccbb3dad4dbee74bcda6d21d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83f604ddccbb3dad4dbee74bcda6d21d">&#9670;&nbsp;</a></span>receivePackets()</h2>
+<a id="a130fcdee203ddabc332e612e36da5b12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a130fcdee203ddabc332e612e36da5b12">&#9670;&nbsp;</a></span>receivePackets()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -311,7 +311,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>timeout</em>, </td>
         </tr>
         <tr>
@@ -327,10 +327,10 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Receive packets into a packet vector for a certain amount of time. This method starts a timer and invokes the <a class="el" href="classpcpp_1_1_raw_socket_device.html#a184663a2718b6e4f5f7ad353d840dfbc">receivePacket()</a> method in blocking mode repeatedly until the timeout expires. All packets received successfully are put into a packet vector </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Receive packets into a packet vector for a certain amount of time. This method starts a timer and invokes the <a class="el" href="classpcpp_1_1_raw_socket_device.html#ad3819d6840a9d1bbdb9bd4d38c464430">receivePacket()</a> method in blocking mode repeatedly until the timeout expires. All packets received successfully are put into a packet vector </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">packetVec</td><td>The packet vector to add the received packet to </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>Timeout in seconds to receive packets on the raw socket </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>Timeout in seconds to receive packets on the raw socket. The timeout precision is in milliseconds, for example a timeout of 0.123 means 123 milliseconds. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">failedRecv</td><td>Number of receive attempts that failed </td></tr>
   </table>
   </dd>
@@ -395,7 +395,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_raw_socket_device.html">RawSocketDevice</a></li>
-    <li class="footer">Generated on Tue Aug 6 2024 08:03:07 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Aug 12 2024 02:07:21 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
