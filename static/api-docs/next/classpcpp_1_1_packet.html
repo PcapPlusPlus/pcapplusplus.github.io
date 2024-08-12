@@ -409,7 +409,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A constructor for creating a packet out of already allocated <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a>. Very useful when parsing packets that came from the network. When using this constructor a pointer to the <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> is saved (data isn't copied) and the <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> is parsed, meaning all layers are created and linked to each other in the right order. In this overload of the constructor the user can specify whether to free the instance of raw packet when the <a class="el" href="classpcpp_1_1_packet.html">Packet</a> is free or not. . This constructor should be used to parse the packet up to a certain layer in the OSI model </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A constructor for creating a packet out of already allocated <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a>. Very useful when parsing packets that came from the network. When using this constructor a pointer to the <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> is saved (data isn't copied) and the <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> is parsed, meaning all layers are created and linked to each other in the right order. In this overload of the constructor the user can specify whether to free the instance of raw packet when the <a class="el" href="classpcpp_1_1_packet.html">Packet</a> is free or not. This constructor should be used to parse the packet up to a certain layer in the OSI model </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">rawPacket</td><td>A pointer to the raw packet </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">parseUntilLayer</td><td>Optional parameter. Parse the packet until you reach a certain layer in the OSI model (inclusive). Can be useful for cases when you need to parse only up to a certain OSI layer (for example transport layer) and want to avoid the performance impact and memory consumption of parsing the whole packet </td></tr>
@@ -1159,7 +1159,7 @@ template&lt;class TLayer &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_packet.html">Packet</a></li>
-    <li class="footer">Generated on Tue Aug 6 2024 08:03:07 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Aug 12 2024 02:07:20 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

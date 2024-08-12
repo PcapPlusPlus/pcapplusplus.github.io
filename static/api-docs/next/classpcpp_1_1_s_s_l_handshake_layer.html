@@ -173,7 +173,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:ab475769b89eb8db08be50f96afe26450 inherit pub_static_methods_classpcpp_1_1_s_s_l_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents SSL/TLS handshake layer. This layer may contain one or more handshake messages (all of them inherit from the base class <a class="el" href="classpcpp_1_1_s_s_l_handshake_message.html">SSLHandshakeMessage</a>) which are the SSL/TLS handshake message sent between a client and a server until they establish a secure connection (e.g client-hello, server-hello, certificate, client-key-exchange, server-key-exchange, etc.). Usually this layer will contain just one message (as the first example below demonstrates). But there are cases a layer may contain more than 1 message. To better explain this layer structure we'll use 2 examples. The first will be client-hello message. The layer structure will look like this: </p><pre class="fragment">        |------------------- SSLHandshakeLayer ----------------------|
+<div class="textblock"><p>Represents SSL/TLS handshake layer. This layer may contain one or more handshake messages (all of them inherit from the base class <a class="el" href="classpcpp_1_1_s_s_l_handshake_message.html">SSLHandshakeMessage</a>) which are the SSL/TLS handshake message sent between a client and a server until they establish a secure connection (e.g client-hello, server-hello, certificate, client-key-exchange, server-key-exchange, etc.). Usually this layer will contain just one message (as the first example below demonstrates). But there are cases a layer may contain more than 1 message. To better explain this layer structure. We'll use 2 examples. The first will be client-hello message. The layer structure will look like this: </p><pre class="fragment">        |------------------- SSLHandshakeLayer ----------------------|
         +----------------------+-------------------------------------+
         | ssl_tls_record_layer |       SSLClientHelloMessage         |
         |        struct        |                                     |
@@ -407,7 +407,7 @@ template&lt;class THandshakeMessage &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_s_s_l_handshake_layer.html">SSLHandshakeLayer</a></li>
-    <li class="footer">Generated on Tue Aug 6 2024 08:03:07 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Aug 12 2024 02:07:21 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

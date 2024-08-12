@@ -123,24 +123,25 @@ Namespaces</h2></td></tr>
 <p>These current implementation supports parsing of SSH packets when possible (meaning when they are not encrypted). Creation and editing of SSH packets is currently <b>not supported</b>.</p>
 <p>SSH typically uses TCP port 22 so PcapPlusPlus assumes all traffic on this port is SSH traffic. PcapPlusPlus uses some heuristics to determine the type of the SSH message (which will be covered later). If it doesn't find a match to one of the other SSH messages, it assumes it is an encrypted SSH message.</p>
 <p>Following is an overview of the SSH protocol classes currently supported in PcapPlusPlus. They cover the different messages of the SSH protocol:</p>
-<pre class="fragment">                               +----------------------------+      SSH version identification
-                           +---|  SSHIdentificationMessage  | ===&gt; as described here:
-                           |   +----------------------------+      https://tools.ietf.org/html/rfc4253#section-4.2
-                           |
-+------------+             |   +----------------------------+      SSH handshake message
-|  SSHLayer  |-------------+---|  SSHHandshakeMessage       | ===&gt; which is typically one of the messages described here:
-| (abstract) |             |   +----------------------------+      https://tools.ietf.org/html/rfc4253#section-12
-+------------+             |                 |
-                           |                 |     +----------------------------+      SSH Key Exchange message
-                           |                 +-----|  SSHKeyExchangeInitMessage | ===&gt; as described here:
-                           |                       +----------------------------+      https://tools.ietf.org/html/rfc4253#section-7
-                           |
-                           |   +----------------------------+
-                           +---|  SSHEncryptedMessage       | ===&gt; An encrypted SSH message
-                               +----------------------------+</pre><p>The following points describe the heuristics for deciding the message type for each packet:</p><ol type="1">
+<pre class="fragment">                           +----------------------------+      SSH version identification
+                       +---|  SSHIdentificationMessage  | ===&gt; as described here:
+                       |   +----------------------------+      https://tools.ietf.org/html/rfc4253#section-4.2
+                       |
++------------+         |   +----------------------------+      SSH handshake message
+|  SSHLayer  |---------+---|  SSHHandshakeMessage       | ===&gt; which is typically one of the messages described here:
+| (abstract) |         |   +----------------------------+      https://tools.ietf.org/html/rfc4253#section-12
++------------+         |                 |
+                       |                 |     +----------------------------+
+                       |                 +-----|  SSHKeyExchangeInitMessage | ===&gt; SSH Key Exchange message
+                       |                       +----------------------------+      as described here:
+                       |                                                 https://tools.ietf.org/html/rfc4253#section-7
+                       |
+                       |   +----------------------------+
+                       +---|  SSHEncryptedMessage       | ===&gt; An encrypted SSH message
+                           +----------------------------+</pre><p>The following points describe the heuristics for deciding the message type for each packet:</p><ol type="1">
 <li>If the data starts with the characters "SSH-" and ends with "\n" (or "\r\n") it's assumed the message is of type <a class="el" href="classpcpp_1_1_s_s_h_identification_message.html">pcpp::SSHIdentificationMessage</a></li>
 <li><p class="startli">Try to determine if this is a non-encrypted SSH handshake message:</p><ul>
-<li>Look at the first 4 bytes of the data which may contain the packet length and see if the value is smaller of equal than the entire layer length</li>
+<li>Look at the first 4 bytes of the data which may contain the packet length and see if the value is smaller of equal than the entire layer length.</li>
 <li>The next byte contains the padding length, check if it's smaller or equal than the packet length</li>
 <li>The next byte contains the message type, check if the value is a valid message type as described in: <a href="https://tools.ietf.org/html/rfc4253#section-12">https://tools.ietf.org/html/rfc4253#section-12</a></li>
 </ul>
@@ -154,7 +155,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_s_s_h_layer_8h.html">SSHLayer.h</a></li>
-    <li class="footer">Generated on Tue Aug 6 2024 08:03:06 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Aug 12 2024 02:07:20 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

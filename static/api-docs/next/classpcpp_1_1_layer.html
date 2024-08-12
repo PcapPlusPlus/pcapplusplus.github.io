@@ -186,21 +186,21 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af9e51f48a58a3b0dcd1a7341111c66e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classpcpp_1_1_layer.html">Layer</a> is the base class for all protocol layers. Each protocol supported in PcapPlusPlus has a class that inherits <a class="el" href="classpcpp_1_1_layer.html">Layer</a>. The protocol layer class expose all properties and methods relevant for viewing and editing protocol fields. For example: a pointer to a structured header (e.g tcphdr, iphdr, etc.), protocol header size, payload size, compute fields that can be automatically computed, print protocol data to string, etc. Each protocol instance is obviously part of a protocol stack (which construct a packet). This protocol stack is represented in PcapPlusPlus in a linked list, and each layer is an element in this list. That's why each layer has properties to the next and previous layer in the protocol stack The <a class="el" href="classpcpp_1_1_layer.html">Layer</a> class, as a base class, is abstract and the user can't create an instance of it (it has a private constructor) Each layer holds a pointer to the relevant place in the packet. The layer sees all the data from this pointer forward until the end of the packet. Here is an example packet showing this concept:</p>
-<pre class="fragment">====================================================
-|Eth       |IPv4       |TCP       |Packet          |
-|Header    |Header     |Header    |Payload         |
-====================================================
-
-|--------------------------------------------------|
-EthLayer data
-           |---------------------------------------|
-           IPv4Layer data
-                       |---------------------------|
-                       TcpLayer data
-                                  |----------------|
-                                  PayloadLayer data
-</pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<div class="textblock"><p><a class="el" href="classpcpp_1_1_layer.html">Layer</a> is the base class for all protocol layers. Each protocol supported in PcapPlusPlus has a class that inherits <a class="el" href="classpcpp_1_1_layer.html">Layer</a>. The protocol layer class expose all properties and methods relevant for viewing and editing protocol fields. For example: a pointer to a structured header (e.g tcphdr, iphdr, etc.), protocol header size, payload size, compute fields that can be automatically computed, print protocol data to string, etc. Each protocol instance is obviously part of a protocol stack (which construct a packet). This protocol stack is represented in PcapPlusPlus in a linked list, and each layer is an element in this list. That's why each layer has properties to the next and previous layer in the protocol stack. The <a class="el" href="classpcpp_1_1_layer.html">Layer</a> class, as a base class, is abstract and the user can't create an instance of it (it has a private constructor). Each layer holds a pointer to the relevant place in the packet. The layer sees all the data from this pointer forward until the end of the packet. Here is an example packet showing this concept:</p>
+<pre class="fragment">* ====================================================
+* |Eth       |IPv4       |TCP       |Packet          |
+* |Header    |Header     |Header    |Payload         |
+* ====================================================
+*
+* |--------------------------------------------------|
+* EthLayer data
+*            |---------------------------------------|
+*            IPv4Layer data
+*                        |---------------------------|
+*                        TcpLayer data
+*                                   |----------------|
+*                                   PayloadLayer data
+* </pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9d02400f5421309786e1ea6c031c8d19"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9d02400f5421309786e1ea6c031c8d19">&#9670;&nbsp;</a></span>~Layer()</h2>
 
@@ -670,7 +670,7 @@ EthLayer data
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_layer.html">Layer</a></li>
-    <li class="footer">Generated on Tue Aug 6 2024 08:03:07 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Aug 12 2024 02:07:20 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
