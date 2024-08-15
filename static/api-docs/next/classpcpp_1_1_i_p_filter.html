@@ -146,8 +146,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aba731757009c1ce8db973aa334634765 inherit pub_methods_classpcpp_1_1_general_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class for representing IPv4 address filter, equivalent to "net src x.x.x.x" or "net dst x.x.x.x"<br  />
- For deeper understanding of the filter concept please refer to <a class="el" href="_pcap_filter_8h.html">PcapFilter.h</a>  </p>
+<div class="textblock"><p>A class for representing IPv4 or IPv6 address filter, equivalent to "net src x.x.x.x" or "net dst x.x.x.x"</p>
+<p>For deeper understanding of the filter concept please refer to <a class="el" href="_pcap_filter_8h.html">PcapFilter.h</a> </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a953d29c9f7d99369acea260016ab6825"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a953d29c9f7d99369acea260016ab6825">&#9670;&nbsp;</a></span>IPFilter() <span class="overload">[1/7]</span></h2>
@@ -280,8 +280,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A constructor that enable to filter only part of the address by using a mask (aka subnet). For example: "filter only IP addresses that matches
-the subnet 10.0.0.x" </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A constructor that enable to filter only part of the address by using a mask (aka subnet). For example: "filter only IP addresses that matches the subnet 10.0.0.x" </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ipAddress</td><td>The IP address to use. Only the part of the address that is not masked will be matched. For example: if the address is "1.2.3.4" and the mask is "255.255.255.0" than the part of the address that will be matched is "1.2.3.X". </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">dir</td><td>The address direction to filter (source or destination) </td></tr>
@@ -393,7 +392,8 @@ the subnet 10.0.0.x" </p><dl class="params"><dt>Parameters</dt><dd>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A constructor that enables to filter by a subnet. For example: "filter only IP addresses that matches the subnet 10.0.0.3/24" which means the part of the address that will be matched is "10.0.0.X" </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A constructor that enables to filter by a subnet. For example: "filter only IP addresses that matches the
+subnet 10.0.0.3/24" which means the part of the address that will be matched is "10.0.0.X" </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ipAddress</td><td>The IP address to use. Only the part of the address that is not masked will be matched. For example: if the address is "1.2.3.4" and the subnet is "/24" than the part of the address that will be matched is "1.2.3.X". </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">dir</td><td>The address direction to filter (source or destination) </td></tr>
@@ -731,7 +731,7 @@ subnet 10.0.0.3/24" which means the part of the address that will be matched is 
 </div><div class="memdoc">
 <p>Set the subnet mask </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">netmask</td><td>The mask to use. The mask should match the IP versrion and be in a valid format. Valid formats: IPv4 - (X.X.X.X) - 'X' - a number in the range of 0 and 255 (inclusive)): IPv6 - (YYYY:YYYY:YYYY:YYYY:YYYY:YYYY:YYYY:YYYY) - 'Y' - a hexadecimal digit [0 - 9, A - F]. Short form IPv6 formats are allowed. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">netmask</td><td>The mask to use. The mask should match the IP version and be in a valid format. Valid formats: IPv4 - (X.X.X.X) - 'X' - a number in the range of 0 and 255 (inclusive)): IPv6 - (YYYY:YYYY:YYYY:YYYY:YYYY:YYYY:YYYY:YYYY) - 'Y' - a hexadecimal digit [0 - 9, A - F]. Short form IPv6 formats are allowed. </td></tr>
   </table>
   </dd>
 </dl>
@@ -782,7 +782,7 @@ subnet 10.0.0.3/24" which means the part of the address that will be matched is 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_p_filter.html">IPFilter</a></li>
-    <li class="footer">Generated on Mon Aug 12 2024 02:07:21 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Aug 15 2024 07:50:59 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
