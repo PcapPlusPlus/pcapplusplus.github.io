@@ -8,7 +8,7 @@ function NetworkIcons() {
         <span>DPDK</span>
       </li>
       <li>
-        <span>PF_RING</span>
+        <span>eBPF AF_XDP</span>
       </li>
       <li>
         <span>LIBPCAP</span>
@@ -18,6 +18,9 @@ function NetworkIcons() {
       </li>
       <li>
         <span>NPCAP</span>
+      </li>
+      <li>
+        <span>PF_RING</span>
       </li>
     </ul>
   );

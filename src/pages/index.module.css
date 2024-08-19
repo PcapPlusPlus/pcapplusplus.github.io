@@ -306,17 +306,19 @@ html[data-theme='light'] .DisplayNetwork li:nth-child(1) {
 }
 
 .DisplayNetwork li:nth-child(2) {
-  padding-left: 3.3rem;
+  padding-left: 3.5rem;
   padding-right: 1.25rem;
-  background: url('/static/img/packet-engines/pfring_mono_white.png') 3px 0px
+  background: url('/static/img/packet-engines/ebpf_mono_white.png') 10px 5px
     no-repeat var(--lp-bg-color-dark1) !important;
-  background-size: 2.5rem !important;
+  background-size: 2rem !important;
 }
 
 html[data-theme='light'] .DisplayNetwork li:nth-child(2) {
-  background: url('/static/img/packet-engines/pfring_mono_grey.png') 3px 0px
+  padding-left: 3.5rem;
+  padding-right: 1.25rem;
+  background: url('/static/img/packet-engines/ebpf_mono_grey.png') 10px 5px
     no-repeat var(--lp-box-color-light) !important;
-  background-size: 2.5rem !important;
+  background-size: 2rem !important;
 }
 
 .DisplayNetwork li:nth-child(3) {
@@ -359,6 +361,20 @@ html[data-theme='light'] .DisplayNetwork li:nth-child(5) {
   background: url('/static/img/packet-engines/npcap_mono_grey.png') 5px 12px
     no-repeat var(--lp-box-color-light) !important;
   background-size: 5rem !important;
+}
+
+.DisplayNetwork li:nth-child(6) {
+  padding-left: 3.3rem;
+  padding-right: 1.25rem;
+  background: url('/static/img/packet-engines/pfring_mono_white.png') 3px 0px
+    no-repeat var(--lp-bg-color-dark1) !important;
+  background-size: 2.5rem !important;
+}
+
+html[data-theme='light'] .DisplayNetwork li:nth-child(6) {
+  background: url('/static/img/packet-engines/pfring_mono_grey.png') 3px 0px
+    no-repeat var(--lp-box-color-light) !important;
+  background-size: 2.5rem !important;
 }
 
 .DisplayNetwork li:hover {
