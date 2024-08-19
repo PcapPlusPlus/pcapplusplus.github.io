@@ -180,13 +180,7 @@ As DPDK API is written in C, PcapPlusPlus wraps its main functionality in easy-t
 
 You can find more information about setting up DPDK and the API in [DPDK support page](./dpdk) and also in [DPDK tutorial](./tutorials/dpdk).
 
-## AF_XDP support (Beta)
-
-:::warning Feature in Beta
-
-Please note this feature is still in Beta. Its interface is unstable and may change in the future.
-
-:::
+## AF_XDP support
 
 AF_XDP represents an address family tailored for optimizing high-performance packet processing. It functions as a socket, specifically referred to as XSK sockets, introduced in Linux Kernel 4.18.
 Unlike complete kernel bypass solutions like DPDK, AF_XDP leverages kernel functionality to create an efficient framework akin to DPDK or AF_Packet.
