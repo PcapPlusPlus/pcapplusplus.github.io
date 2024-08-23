@@ -2,6 +2,7 @@ var annotated_dup =
 [
     [ "pcpp", "namespacepcpp.html", [
       [ "internal", null, [
+        [ "PcapHandle", "classpcpp_1_1internal_1_1_pcap_handle.html", "classpcpp_1_1internal_1_1_pcap_handle" ],
         [ "BpfProgramDeleter", "structpcpp_1_1internal_1_1_bpf_program_deleter.html", null ]
       ] ],
       [ "EnumClassHash", "structpcpp_1_1_enum_class_hash.html", null ],
