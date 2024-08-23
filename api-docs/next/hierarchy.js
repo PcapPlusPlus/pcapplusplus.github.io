@@ -331,6 +331,7 @@ var hierarchy =
       [ "pcpp::IPReassembly::IPv6PacketKey", "classpcpp_1_1_i_p_reassembly_1_1_i_pv6_packet_key.html", null ]
     ] ],
     [ "pcpp::BgpUpdateMessageLayer::path_attribute", "structpcpp_1_1_bgp_update_message_layer_1_1path__attribute.html", null ],
+    [ "pcpp::internal::PcapHandle", "classpcpp_1_1internal_1_1_pcap_handle.html", null ],
     [ "pcpp::PcapLiveDeviceList", "classpcpp_1_1_pcap_live_device_list.html", null ],
     [ "pcpp::PcapRemoteAuthentication", "structpcpp_1_1_pcap_remote_authentication.html", null ],
     [ "pcpp::PcapRemoteDeviceList", "classpcpp_1_1_pcap_remote_device_list.html", null ],

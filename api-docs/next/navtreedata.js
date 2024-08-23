@@ -86,9 +86,9 @@ var NAVTREEINDEX =
 "classpcpp_1_1_some_ip_sd_i_pv6_option.html#ae95f52f94b45d5f1540e3e6238249ba2a12ea42f1db91bf79d580ba31a9452439",
 "classpcpp_1_1_telnet_layer.html#a6e5366ce34dd207aa861fbe6b62e8365",
 "classpcpp_1_1_xdp_device.html",
-"structpcpp_1_1_i_pv4_timestamp_option_value.html#a7e40161cb0427081efb75885ae38d2fb",
-"structpcpp_1_1gre1__header.html#a727e2a2affa2696a0177475af78a196b",
-"structpcpp_1_1tpkthdr.html"
+"structpcpp_1_1_dpdk_device_1_1_rx_tx_stats.html#aeeb02f0b115b0d7a81cd1076535c8ac2",
+"structpcpp_1_1ether__dot3__header.html",
+"structpcpp_1_1tcphdr.html#a4ae26537b0e824c5b0fc1bcf9adf2fdc"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_dhcp_layer.html',''); in
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classpcpp_1_1_dhcp_layer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::DhcpLayer Class Reference</div>  </div>
@@ -193,6 +194,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a019a07d6f9d8fc7eb233e61826b11964 inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d76629f081c34424c63794f4cf75a5a inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a0d76629f081c34424c63794f4cf75a5a">getDataPtr</a> (size_t offset=0) const</td></tr>
 <tr class="separator:a0d76629f081c34424c63794f4cf75a5a inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a2dc502696dff2e4314b3a64fff6200c4"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dhcp_layer.html#a2dc502696dff2e4314b3a64fff6200c4">isDhcpPorts</a> (uint16_t portSrc, uint16_t portDst)</td></tr>
+<tr class="separator:a2dc502696dff2e4314b3a64fff6200c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a DHCP (Dynamic Host Configuration Protocol) protocol layer </p>
@@ -754,6 +760,50 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a2dc502696dff2e4314b3a64fff6200c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dc502696dff2e4314b3a64fff6200c4">&#9670;&nbsp;</a></span>isDhcpPorts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::DhcpLayer::isDhcpPorts </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>portSrc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>portDst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A static method that checks whether a pair of ports are considered DHCP ports </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">portSrc</td><td>The source port number to check </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">portDst</td><td>The destination port number to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if these are DHCP port numbers, false otherwise </dd></dl>
+
+</div>
+</div>
 <a id="a252452218ffc43dae0de4cb8b9fb0315"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a252452218ffc43dae0de4cb8b9fb0315">&#9670;&nbsp;</a></span>parseNextLayer()</h2>
 
@@ -1036,7 +1086,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_dhcp_layer.html">DhcpLayer</a></li>
-    <li class="footer">Generated on Wed Aug 21 2024 06:23:44 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Aug 23 2024 06:56:04 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
