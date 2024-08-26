@@ -446,13 +446,13 @@ $(document).ready(function(){initNavTree('_http_layer_8h_source.html',''); initR
 <div class="line"><a name="l00710"></a><span class="lineno"><a class="line" href="classpcpp_1_1_http_request_first_line_1_1_http_request_first_line_exception.html">  710</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classpcpp_1_1_http_request_first_line_1_1_http_request_first_line_exception.html">HttpRequestFirstLineException</a> : <span class="keyword">public</span> std::exception</div>
 <div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;        {</div>
 <div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;            ~<a class="code" href="classpcpp_1_1_http_request_first_line_1_1_http_request_first_line_exception.html">HttpRequestFirstLineException</a>() <span class="keywordflow">throw</span>()</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;            ~<a class="code" href="classpcpp_1_1_http_request_first_line_1_1_http_request_first_line_exception.html">HttpRequestFirstLineException</a>() noexcept</div>
 <div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;            {}</div>
 <div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;            <span class="keywordtype">void</span> setMessage(<span class="keyword">const</span> std::string&amp; message)</div>
 <div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;            {</div>
 <div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;                m_Message = message;</div>
 <div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;            }</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;            <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* what() <span class="keyword">const</span> <span class="keywordflow">throw</span>()</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;            <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* what() <span class="keyword">const</span> noexcept</div>
 <div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;            {</div>
 <div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;                <span class="keywordflow">return</span> m_Message.c_str();</div>
 <div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;            }</div>
@@ -523,13 +523,13 @@ $(document).ready(function(){initNavTree('_http_layer_8h_source.html',''); initR
 <div class="line"><a name="l00857"></a><span class="lineno"><a class="line" href="classpcpp_1_1_http_response_first_line_1_1_http_response_first_line_exception.html">  857</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classpcpp_1_1_http_response_first_line_1_1_http_response_first_line_exception.html">HttpResponseFirstLineException</a> : <span class="keyword">public</span> std::exception</div>
 <div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;        {</div>
 <div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;            ~<a class="code" href="classpcpp_1_1_http_response_first_line_1_1_http_response_first_line_exception.html">HttpResponseFirstLineException</a>() <span class="keywordflow">throw</span>()</div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;            ~<a class="code" href="classpcpp_1_1_http_response_first_line_1_1_http_response_first_line_exception.html">HttpResponseFirstLineException</a>() noexcept</div>
 <div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;            {}</div>
 <div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;            <span class="keywordtype">void</span> setMessage(<span class="keyword">const</span> std::string&amp; message)</div>
 <div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;            {</div>
 <div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;                m_Message = message;</div>
 <div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;            }</div>
-<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;            <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* what() <span class="keyword">const</span> <span class="keywordflow">throw</span>()</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;            <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* what() <span class="keyword">const</span> noexcept</div>
 <div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;            {</div>
 <div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;                <span class="keywordflow">return</span> m_Message.c_str();</div>
 <div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;            }</div>
@@ -720,7 +720,7 @@ $(document).ready(function(){initNavTree('_http_layer_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_http_layer_8h.html">HttpLayer.h</a></li>
-    <li class="footer">Generated on Fri Aug 23 2024 06:56:03 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Aug 26 2024 07:01:53 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
