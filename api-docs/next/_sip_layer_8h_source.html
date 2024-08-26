@@ -370,13 +370,13 @@ $(document).ready(function(){initNavTree('_sip_layer_8h_source.html',''); initRe
 <div class="line"><a name="l00614"></a><span class="lineno"><a class="line" href="classpcpp_1_1_sip_request_first_line_1_1_sip_request_first_line_exception.html">  614</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classpcpp_1_1_sip_request_first_line_1_1_sip_request_first_line_exception.html">SipRequestFirstLineException</a> : <span class="keyword">public</span> std::exception</div>
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;        {</div>
 <div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;            ~<a class="code" href="classpcpp_1_1_sip_request_first_line_1_1_sip_request_first_line_exception.html">SipRequestFirstLineException</a>() <span class="keywordflow">throw</span>()</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;            ~<a class="code" href="classpcpp_1_1_sip_request_first_line_1_1_sip_request_first_line_exception.html">SipRequestFirstLineException</a>() noexcept</div>
 <div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;            {}</div>
 <div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;            <span class="keywordtype">void</span> setMessage(<span class="keyword">const</span> std::string&amp; message)</div>
 <div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;            {</div>
 <div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;                m_Message = message;</div>
 <div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;            }</div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;            <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* what() <span class="keyword">const</span> <span class="keywordflow">throw</span>()</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;            <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* what() <span class="keyword">const</span> noexcept</div>
 <div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;            {</div>
 <div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;                <span class="keywordflow">return</span> m_Message.c_str();</div>
 <div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;            }</div>
@@ -442,13 +442,13 @@ $(document).ready(function(){initNavTree('_sip_layer_8h_source.html',''); initRe
 <div class="line"><a name="l00748"></a><span class="lineno"><a class="line" href="classpcpp_1_1_sip_response_first_line_1_1_sip_response_first_line_exception.html">  748</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classpcpp_1_1_sip_response_first_line_1_1_sip_response_first_line_exception.html">SipResponseFirstLineException</a> : <span class="keyword">public</span> std::exception</div>
 <div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;        {</div>
 <div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;            ~<a class="code" href="classpcpp_1_1_sip_response_first_line_1_1_sip_response_first_line_exception.html">SipResponseFirstLineException</a>() <span class="keywordflow">throw</span>()</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;            ~<a class="code" href="classpcpp_1_1_sip_response_first_line_1_1_sip_response_first_line_exception.html">SipResponseFirstLineException</a>() noexcept</div>
 <div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;            {}</div>
 <div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;            <span class="keywordtype">void</span> setMessage(<span class="keyword">const</span> std::string&amp; message)</div>
 <div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;            {</div>
 <div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;                m_Message = message;</div>
 <div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;            }</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;            <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* what() <span class="keyword">const</span> <span class="keywordflow">throw</span>()</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;            <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* what() <span class="keyword">const</span> noexcept</div>
 <div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;            {</div>
 <div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;                <span class="keywordflow">return</span> m_Message.c_str();</div>
 <div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;            }</div>
@@ -623,7 +623,7 @@ $(document).ready(function(){initNavTree('_sip_layer_8h_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_sip_layer_8h.html">SipLayer.h</a></li>
-    <li class="footer">Generated on Fri Aug 23 2024 06:56:03 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Aug 26 2024 07:01:53 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
