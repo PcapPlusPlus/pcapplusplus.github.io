@@ -98,8 +98,8 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_l_r_u_list.html',''); in
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0d64da0d4ca5386c8ce3f63c6409fab5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_l_r_u_list.html#a0d64da0d4ca5386c8ce3f63c6409fab5">LRUList</a> (size_t maxSize)</td></tr>
 <tr class="separator:a0d64da0d4ca5386c8ce3f63c6409fab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2350bfb578b4c652158029e5fe8688b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_l_r_u_list.html#ac2350bfb578b4c652158029e5fe8688b">put</a> (const T &amp;element, T *deletedValue=NULL)</td></tr>
-<tr class="separator:ac2350bfb578b4c652158029e5fe8688b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a435619a03fecbe8d8a5b77e22957ec86"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_l_r_u_list.html#a435619a03fecbe8d8a5b77e22957ec86">put</a> (const T &amp;element, T *deletedValue=nullptr)</td></tr>
+<tr class="separator:a435619a03fecbe8d8a5b77e22957ec86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5641f23d74e63753c6ef8e29a459de7b"><td class="memItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_l_r_u_list.html#a5641f23d74e63753c6ef8e29a459de7b">getMRUElement</a> () const</td></tr>
 <tr class="separator:a5641f23d74e63753c6ef8e29a459de7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40a0136ecbef19e4e529586cb74bf586"><td class="memItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_l_r_u_list.html#a40a0136ecbef19e4e529586cb74bf586">getLRUElement</a> () const</td></tr>
@@ -298,8 +298,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ac2350bfb578b4c652158029e5fe8688b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2350bfb578b4c652158029e5fe8688b">&#9670;&nbsp;</a></span>put()</h2>
+<a id="a435619a03fecbe8d8a5b77e22957ec86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a435619a03fecbe8d8a5b77e22957ec86">&#9670;&nbsp;</a></span>put()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -319,7 +319,7 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">T *&#160;</td>
-          <td class="paramname"><em>deletedValue</em> = <code>NULL</code>&#160;</td>
+          <td class="paramname"><em>deletedValue</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -336,11 +336,11 @@ template&lt;typename T &gt; </div>
 <p>Puts an element in the list. This element will be inserted (or advanced if it already exists) to the head of the list as the most recently used element. If the list already reached its max size and the element is new this method will remove the least recently used element and return a value in deletedValue. Method complexity is O(log(getSize())). This is a optimized version of the method T* put(const T&amp;). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">element</td><td>The element to insert or to advance to the head of the list (if already exists) </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">deletedValue</td><td>The value of deleted element if a pointer is not NULL. This parameter is optional. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">deletedValue</td><td>The value of deleted element if a pointer is not nullptr. This parameter is optional. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if the list didn't reach its max size, 1 otherwise. In case the list already reached its max size and deletedValue is not NULL the value of deleted element is copied into the place the deletedValue points to. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if the list didn't reach its max size, 1 otherwise. In case the list already reached its max size and deletedValue is not nullptr the value of deleted element is copied into the place the deletedValue points to. </dd></dl>
 
 </div>
 </div>
@@ -350,7 +350,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_l_r_u_list.html">LRUList</a></li>
-    <li class="footer">Generated on Mon Aug 26 2024 07:01:53 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Aug 30 2024 07:11:57 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

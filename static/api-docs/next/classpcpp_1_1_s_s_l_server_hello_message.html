@@ -238,7 +238,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the cipher suite encapsulated in this message (server-hello message contains one cipher-suite, the one that will be used to for encryption between client and server). May return NULL if the parsing of the message failed or the cipher-suite ID is unknown. If you still want to get the cipher-suite ID you can use the <a class="el" href="classpcpp_1_1_s_s_l_server_hello_message.html#a530c9fb56f68073b9371f9e5cd4d40cb">getCipherSuiteID()</a> method </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the cipher suite encapsulated in this message (server-hello message contains one cipher-suite, the one that will be used to for encryption between client and server). May return nullptr if the parsing of the message failed or the cipher-suite ID is unknown. If you still want to get the cipher-suite ID you can use the <a class="el" href="classpcpp_1_1_s_s_l_server_hello_message.html#a530c9fb56f68073b9371f9e5cd4d40cb">getCipherSuiteID()</a> method </dd></dl>
 
 </div>
 </div>
@@ -300,13 +300,13 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get a pointer to an extension by index. The extensions are numbered according to their order of appearance in the message. If index is out of bounds (less than 0 or larger than total amount of extensions) NULL will be returned </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get a pointer to an extension by index. The extensions are numbered according to their order of appearance in the message. If index is out of bounds (less than 0 or larger than total amount of extensions) nullptr will be returned </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The index of the extension to return </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The pointer to the extension or NULL if index is out of bounds </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The pointer to the extension or nullptr if index is out of bounds </dd></dl>
 
 </div>
 </div>
@@ -341,7 +341,7 @@ template&lt;class TExtension &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get a pointer to an extension by its class type. This is a templated method that is used with the type of the requested extension and returns the first extension instance of this type </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the extension object or NULL if this extension type doesn't exist in this message </dd></dl>
+<p>Get a pointer to an extension by its class type. This is a templated method that is used with the type of the requested extension and returns the first extension instance of this type </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the extension object or nullptr if this extension type doesn't exist in this message </dd></dl>
 
 </div>
 </div>
@@ -366,7 +366,7 @@ template&lt;class TExtension &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the extension object or NULL if this type doesn't exist in this message </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the extension object or nullptr if this type doesn't exist in this message </dd></dl>
 
 </div>
 </div>
@@ -391,7 +391,7 @@ template&lt;class TExtension &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the extension object of NULL if this type doesn't exist in this message </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the extension object of nullptr if this type doesn't exist in this message </dd></dl>
 
 </div>
 </div>
@@ -472,7 +472,7 @@ template&lt;class TExtension &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Session ID as byte array. If server-hello message doesn't include session ID NULL will be returned </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Session ID as byte array. If server-hello message doesn't include session ID nullptr will be returned </dd></dl>
 
 </div>
 </div>
@@ -528,7 +528,7 @@ template&lt;class TExtension &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_s_s_l_server_hello_message.html">SSLServerHelloMessage</a></li>
-    <li class="footer">Generated on Mon Aug 26 2024 07:01:54 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Aug 30 2024 07:11:58 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

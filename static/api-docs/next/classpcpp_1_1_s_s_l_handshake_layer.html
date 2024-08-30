@@ -292,13 +292,13 @@ SSL_HANDSHAKE           length                   handshake             SSL_CERTI
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get a pointer to an handshake message by index. The message are numbered according to their order of appearance in the layer. If index is out of bounds (less than 0 or larger than total amount of message) NULL will be returned </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get a pointer to an handshake message by index. The message are numbered according to their order of appearance in the layer. If index is out of bounds (less than 0 or larger than total amount of message) nullptr will be returned </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The index of the message to return </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The pointer to the message object or NULL if index is out of bounds </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The pointer to the message object or nullptr if index is out of bounds </dd></dl>
 
 </div>
 </div>
@@ -315,7 +315,7 @@ template&lt;class THandshakeMessage &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A templated method to get a message of a certain type. If no message of such type is found, NULL is returned </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the message of the requested type, NULL if not found </dd></dl>
+<p>A templated method to get a message of a certain type. If no message of such type is found, nullptr is returned </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the message of the requested type, nullptr if not found </dd></dl>
 
 </div>
 </div>
@@ -363,13 +363,13 @@ template&lt;class THandshakeMessage &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>A templated method to get the first message of a certain type, starting to search from a certain message. For example: if the layer looks like: HelloRequest(1) -&gt; HelloRequest(2) and the user put HelloRequest(1) as a parameter and wishes to search for an HelloRequest message, the HelloRequest(2) will be returned.<br  />
- If no layer of such type is found, NULL is returned </p><dl class="params"><dt>Parameters</dt><dd>
+ If no layer of such type is found, nullptr is returned </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">after</td><td>A pointer to the message to start search from </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the message of the requested type, NULL if not found </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the message of the requested type, nullptr if not found </dd></dl>
 
 </div>
 </div>
@@ -407,7 +407,7 @@ template&lt;class THandshakeMessage &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_s_s_l_handshake_layer.html">SSLHandshakeLayer</a></li>
-    <li class="footer">Generated on Mon Aug 26 2024 07:01:54 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Aug 30 2024 07:11:58 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

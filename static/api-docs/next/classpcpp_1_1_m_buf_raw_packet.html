@@ -297,7 +297,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Append packet data at the end of current data. This method uses the same mbuf already allocated and tries to append more space and copy the data to it. If <a class="el" href="classpcpp_1_1_m_buf_raw_packet.html">MBufRawPacket</a> is not initialize (mbuf is NULL) or mbuf append failed an error is printed to log </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Append packet data at the end of current data. This method uses the same mbuf already allocated and tries to append more space and copy the data to it. If <a class="el" href="classpcpp_1_1_m_buf_raw_packet.html">MBufRawPacket</a> is not initialize (mbuf is nullptr) or mbuf append failed an error is printed to log </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">dataToAppend</td><td>A pointer to the data to append </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">dataToAppendLen</td><td>Length in bytes of dataToAppend </td></tr>
@@ -495,7 +495,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Insert raw data at some index of the current data and shift the remaining data to the end. This method uses the same mbuf already allocated and tries to append more space to it. Then it just copies dataToAppend at the relevant index and shifts the remaining data to the end. If <a class="el" href="classpcpp_1_1_m_buf_raw_packet.html">MBufRawPacket</a> is not initialize (mbuf is NULL) or mbuf append failed an error is printed to log </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Insert raw data at some index of the current data and shift the remaining data to the end. This method uses the same mbuf already allocated and tries to append more space to it. Then it just copies dataToAppend at the relevant index and shifts the remaining data to the end. If <a class="el" href="classpcpp_1_1_m_buf_raw_packet.html">MBufRawPacket</a> is not initialize (mbuf is nullptr) or mbuf append failed an error is printed to log </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">atIndex</td><td>The index to insert the new data to </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">dataToInsert</td><td>A pointer to the new data to insert </td></tr>
@@ -607,7 +607,7 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if all bytes were removed successfully, or false if <a class="el" href="classpcpp_1_1_m_buf_raw_packet.html">MBufRawPacket</a> is not initialize (mbuf is NULL), mbuf trim failed or logatIndex+numOfBytesToRemove is out-of-bounds of the raw data buffer. In all of these cases an error is printed to log </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if all bytes were removed successfully, or false if <a class="el" href="classpcpp_1_1_m_buf_raw_packet.html">MBufRawPacket</a> is not initialize (mbuf is nullptr), mbuf trim failed or logatIndex+numOfBytesToRemove is out-of-bounds of the raw data buffer. In all of these cases an error is printed to log </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classpcpp_1_1_raw_packet.html#a9cf289e6bbf461f55c20784615c899ce">pcpp::RawPacket</a>.</p>
 
@@ -696,7 +696,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set raw data to the mbuf by copying the data to it. In order to stay compatible with the ancestor method which takes control of the data pointer and frees it when <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> is destroyed, this method frees this pointer right away after data is copied to the mbuf. So when using this method please notice that after it's called pRawData memory is free, don't use this pointer again. In addition, if raw packet isn't initialized (mbuf is NULL), this method will call the init() method </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Set raw data to the mbuf by copying the data to it. In order to stay compatible with the ancestor method which takes control of the data pointer and frees it when <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> is destroyed, this method frees this pointer right away after data is copied to the mbuf. So when using this method please notice that after it's called pRawData memory is free, don't use this pointer again. In addition, if raw packet isn't initialized (mbuf is nullptr), this method will call the init() method </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pRawData</td><td>A pointer to the new raw data </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">rawDataLen</td><td>The new raw data length in bytes </td></tr>
@@ -718,7 +718,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_m_buf_raw_packet.html">MBufRawPacket</a></li>
-    <li class="footer">Generated on Mon Aug 26 2024 07:01:54 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Aug 30 2024 07:11:58 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

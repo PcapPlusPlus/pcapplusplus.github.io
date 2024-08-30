@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('structpcpp_1_1_kni_device_1_1_kni_ioct
 </div><!--header-->
 <div class="contents">
 
-<p>New callbacks for KNI device events. This structure MUST be used ONLY when <a class="el" href="classpcpp_1_1_kni_device_list.html#afa8b65d977557e02a19e87139e1fbcc0">KniDeviceList::callbackVersion</a> returns KniDeviceList::KniCallbackVersion::CALLBACKS_NEW. Or if You are sure that DPDK version used is 17.11 or higher. If some callback is not provided (NULL) the request will always succeeds if other is not specified in callback description.  
+<p>New callbacks for KNI device events. This structure MUST be used ONLY when <a class="el" href="classpcpp_1_1_kni_device_list.html#afa8b65d977557e02a19e87139e1fbcc0">KniDeviceList::callbackVersion</a> returns KniDeviceList::KniCallbackVersion::CALLBACKS_NEW. Or if You are sure that DPDK version used is 17.11 or higher. If some callback is not provided (nullptr) the request will always succeeds if other is not specified in callback description.  
  <a href="structpcpp_1_1_kni_device_1_1_kni_ioctl_callbacks.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_kni_device_8h_source.html">KniDevice.h</a>&gt;</code></p>
@@ -109,7 +109,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ac3b5330e4ee138f16b4be662250634a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>New callbacks for KNI device events. This structure MUST be used ONLY when <a class="el" href="classpcpp_1_1_kni_device_list.html#afa8b65d977557e02a19e87139e1fbcc0">KniDeviceList::callbackVersion</a> returns KniDeviceList::KniCallbackVersion::CALLBACKS_NEW. Or if You are sure that DPDK version used is 17.11 or higher. If some callback is not provided (NULL) the request will always succeeds if other is not specified in callback description. </p>
+<div class="textblock"><p>New callbacks for KNI device events. This structure MUST be used ONLY when <a class="el" href="classpcpp_1_1_kni_device_list.html#afa8b65d977557e02a19e87139e1fbcc0">KniDeviceList::callbackVersion</a> returns KniDeviceList::KniCallbackVersion::CALLBACKS_NEW. Or if You are sure that DPDK version used is 17.11 or higher. If some callback is not provided (nullptr) the request will always succeeds if other is not specified in callback description. </p>
 <dl class="section note"><dt>Note</dt><dd>This callbacks are direct copy of one defined in rte_kni_ops. Future maintainers of KNI device feature MUST refer to rte_kni_ops structure in rte_kni.h header file of DPDK to track the difference in signatures </dd></dl>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a1af9caa75f5c83e134e2e606c648762c"></a>
@@ -178,7 +178,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_kni_device.html">KniDevice</a></li><li class="navelem"><a class="el" href="structpcpp_1_1_kni_device_1_1_kni_ioctl_callbacks.html">KniIoctlCallbacks</a></li>
-    <li class="footer">Generated on Mon Aug 26 2024 07:01:54 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Aug 30 2024 07:11:58 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

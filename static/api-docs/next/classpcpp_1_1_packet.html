@@ -605,7 +605,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the detached layer or NULL if detaching process failed. In any case of failure an appropriate error log message will be printed </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the detached layer or nullptr if detaching process failed. In any case of failure an appropriate error log message will be printed </dd></dl>
 
 </div>
 </div>
@@ -678,13 +678,13 @@ template&lt;class TLayer &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A templated method to get a layer of a certain type (protocol). If no layer of such type is found, NULL is returned </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A templated method to get a layer of a certain type (protocol). If no layer of such type is found, nullptr is returned </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">reverseOrder</td><td>The optional parameter that indicates that the lookup should run in reverse order, the default value is false </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the layer of the requested type, NULL if not found </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the layer of the requested type, nullptr if not found </dd></dl>
 
 </div>
 </div>
@@ -720,7 +720,7 @@ template&lt;class TLayer &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the layer or NULL if no such layer was found </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the layer or nullptr if no such layer was found </dd></dl>
 
 </div>
 </div>
@@ -741,13 +741,13 @@ template&lt;class TLayer &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A templated method to get the first layer of a certain type (protocol), start searching from a certain layer. For example: if a packet looks like: <a class="el" href="classpcpp_1_1_eth_layer.html">EthLayer</a> -&gt; VlanLayer(1) -&gt; VlanLayer(2) -&gt; VlanLayer(3) -&gt; <a class="el" href="classpcpp_1_1_i_pv4_layer.html">IPv4Layer</a> and the user put VlanLayer(2) as a parameter and wishes to search for a <a class="el" href="classpcpp_1_1_vlan_layer.html">VlanLayer</a>, VlanLayer(3) will be returned If no layer of such type is found, NULL is returned </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A templated method to get the first layer of a certain type (protocol), start searching from a certain layer. For example: if a packet looks like: <a class="el" href="classpcpp_1_1_eth_layer.html">EthLayer</a> -&gt; VlanLayer(1) -&gt; VlanLayer(2) -&gt; VlanLayer(3) -&gt; <a class="el" href="classpcpp_1_1_i_pv4_layer.html">IPv4Layer</a> and the user put VlanLayer(2) as a parameter and wishes to search for a <a class="el" href="classpcpp_1_1_vlan_layer.html">VlanLayer</a>, VlanLayer(3) will be returned If no layer of such type is found, nullptr is returned </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">startLayer</td><td>A pointer to the layer to start search from </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the layer of the requested type, NULL if not found </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the layer of the requested type, nullptr if not found </dd></dl>
 
 </div>
 </div>
@@ -768,13 +768,13 @@ template&lt;class TLayer &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A templated method to get the first layer of a certain type (protocol), start searching from a certain layer. For example: if a packet looks like: <a class="el" href="classpcpp_1_1_eth_layer.html">EthLayer</a> -&gt; VlanLayer(1) -&gt; VlanLayer(2) -&gt; VlanLayer(3) -&gt; <a class="el" href="classpcpp_1_1_i_pv4_layer.html">IPv4Layer</a> and the user put VlanLayer(2) as a parameter and wishes to search for a <a class="el" href="classpcpp_1_1_vlan_layer.html">VlanLayer</a>, VlanLayer(1) will be returned If no layer of such type is found, NULL is returned </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A templated method to get the first layer of a certain type (protocol), start searching from a certain layer. For example: if a packet looks like: <a class="el" href="classpcpp_1_1_eth_layer.html">EthLayer</a> -&gt; VlanLayer(1) -&gt; VlanLayer(2) -&gt; VlanLayer(3) -&gt; <a class="el" href="classpcpp_1_1_i_pv4_layer.html">IPv4Layer</a> and the user put VlanLayer(2) as a parameter and wishes to search for a <a class="el" href="classpcpp_1_1_vlan_layer.html">VlanLayer</a>, VlanLayer(1) will be returned If no layer of such type is found, nullptr is returned </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">startLayer</td><td>A pointer to the layer to start search from </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the layer of the requested type, NULL if not found </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the layer of the requested type, nullptr if not found </dd></dl>
 
 </div>
 </div>
@@ -1159,7 +1159,7 @@ template&lt;class TLayer &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_packet.html">Packet</a></li>
-    <li class="footer">Generated on Mon Aug 26 2024 07:01:54 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Aug 30 2024 07:11:57 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

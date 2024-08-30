@@ -222,14 +222,14 @@ $(document).ready(function(){initNavTree('_packet_8h_source.html',''); initResiz
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        <span class="keywordflow">if</span> (!reverse)</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        {</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;            <span class="keywordflow">if</span> (<span class="keyword">dynamic_cast&lt;</span>TLayer*<span class="keyword">&gt;</span>(<a class="code" href="classpcpp_1_1_packet.html#afbe8bb3d1c8ef829120fa1bc9bac5677">getFirstLayer</a>()) != NULL)</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;            <span class="keywordflow">if</span> (<span class="keyword">dynamic_cast&lt;</span>TLayer*<span class="keyword">&gt;</span>(<a class="code" href="classpcpp_1_1_packet.html#afbe8bb3d1c8ef829120fa1bc9bac5677">getFirstLayer</a>()) != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>TLayer*<span class="keyword">&gt;</span>(<a class="code" href="classpcpp_1_1_packet.html#afbe8bb3d1c8ef829120fa1bc9bac5677">getFirstLayer</a>());</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160; </div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;            <span class="keywordflow">return</span> getNextLayerOfType&lt;TLayer&gt;(<a class="code" href="classpcpp_1_1_packet.html#afbe8bb3d1c8ef829120fa1bc9bac5677">getFirstLayer</a>());</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;        }</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160; </div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;        <span class="comment">// lookup in reverse order</span></div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        <span class="keywordflow">if</span> (<span class="keyword">dynamic_cast&lt;</span>TLayer*<span class="keyword">&gt;</span>(<a class="code" href="classpcpp_1_1_packet.html#aa207dcf476921fbd53959e7da47ad1ac">getLastLayer</a>()) != NULL)</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        <span class="keywordflow">if</span> (<span class="keyword">dynamic_cast&lt;</span>TLayer*<span class="keyword">&gt;</span>(<a class="code" href="classpcpp_1_1_packet.html#aa207dcf476921fbd53959e7da47ad1ac">getLastLayer</a>()) != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>TLayer*<span class="keyword">&gt;</span>(<a class="code" href="classpcpp_1_1_packet.html#aa207dcf476921fbd53959e7da47ad1ac">getLastLayer</a>());</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160; </div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        <span class="keywordflow">return</span> getPrevLayerOfType&lt;TLayer&gt;(<a class="code" href="classpcpp_1_1_packet.html#aa207dcf476921fbd53959e7da47ad1ac">getLastLayer</a>());</div>
@@ -237,11 +237,11 @@ $(document).ready(function(){initNavTree('_packet_8h_source.html',''); initResiz
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160; </div>
 <div class="line"><a name="l00420"></a><span class="lineno"><a class="line" href="classpcpp_1_1_packet.html#aa72a2ce1030ddbc55a8bcee7f130081f">  420</a></span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> TLayer&gt; TLayer* <a class="code" href="classpcpp_1_1_packet.html#aa72a2ce1030ddbc55a8bcee7f130081f">Packet::getNextLayerOfType</a>(<a class="code" href="classpcpp_1_1_layer.html">Layer</a>* curLayer)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        <span class="keywordflow">if</span> (curLayer == NULL)</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;            <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        <span class="keywordflow">if</span> (curLayer == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160; </div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        curLayer = curLayer-&gt;<a class="code" href="classpcpp_1_1_layer.html#a73b23d182802ec4ac4021042897eb410">getNextLayer</a>();</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        <span class="keywordflow">while</span> ((curLayer != NULL) &amp;&amp; (<span class="keyword">dynamic_cast&lt;</span>TLayer*<span class="keyword">&gt;</span>(curLayer) == NULL))</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        <span class="keywordflow">while</span> ((curLayer != <span class="keyword">nullptr</span>) &amp;&amp; (<span class="keyword">dynamic_cast&lt;</span>TLayer*<span class="keyword">&gt;</span>(curLayer) == <span class="keyword">nullptr</span>))</div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;        {</div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;            curLayer = curLayer-&gt;<a class="code" href="classpcpp_1_1_layer.html#a73b23d182802ec4ac4021042897eb410">getNextLayer</a>();</div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        }</div>
@@ -251,11 +251,11 @@ $(document).ready(function(){initNavTree('_packet_8h_source.html',''); initResiz
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160; </div>
 <div class="line"><a name="l00434"></a><span class="lineno"><a class="line" href="classpcpp_1_1_packet.html#a99db82a5813c139b538a09ae195f2bf4">  434</a></span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> TLayer&gt; TLayer* <a class="code" href="classpcpp_1_1_packet.html#a99db82a5813c139b538a09ae195f2bf4">Packet::getPrevLayerOfType</a>(<a class="code" href="classpcpp_1_1_layer.html">Layer</a>* curLayer)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        <span class="keywordflow">if</span> (curLayer == NULL)</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;            <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        <span class="keywordflow">if</span> (curLayer == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160; </div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        curLayer = curLayer-&gt;<a class="code" href="classpcpp_1_1_layer.html#a9ff77f4ee3f160057f49db645a5c19bd">getPrevLayer</a>();</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        <span class="keywordflow">while</span> (curLayer != NULL &amp;&amp; <span class="keyword">dynamic_cast&lt;</span>TLayer*<span class="keyword">&gt;</span>(curLayer) == NULL)</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        <span class="keywordflow">while</span> (curLayer != <span class="keyword">nullptr</span> &amp;&amp; <span class="keyword">dynamic_cast&lt;</span>TLayer*<span class="keyword">&gt;</span>(curLayer) == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;        {</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;            curLayer = curLayer-&gt;<a class="code" href="classpcpp_1_1_layer.html#a9ff77f4ee3f160057f49db645a5c19bd">getPrevLayer</a>();</div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        }</div>
@@ -320,7 +320,7 @@ $(document).ready(function(){initNavTree('_packet_8h_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_packet_8h.html">Packet.h</a></li>
-    <li class="footer">Generated on Mon Aug 26 2024 07:01:53 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Aug 30 2024 07:11:57 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

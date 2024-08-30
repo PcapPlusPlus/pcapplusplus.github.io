@@ -6,5 +6,5 @@ var classpcpp_1_1_l_r_u_list =
     [ "getMaxSize", "classpcpp_1_1_l_r_u_list.html#a0f0677594831fb56c91aff3af9cbd269", null ],
     [ "getMRUElement", "classpcpp_1_1_l_r_u_list.html#a5641f23d74e63753c6ef8e29a459de7b", null ],
     [ "getSize", "classpcpp_1_1_l_r_u_list.html#a98fd18ddc07c07dfa1ad1d4866389ee9", null ],
-    [ "put", "classpcpp_1_1_l_r_u_list.html#ac2350bfb578b4c652158029e5fe8688b", null ]
+    [ "put", "classpcpp_1_1_l_r_u_list.html#a435619a03fecbe8d8a5b77e22957ec86", null ]
 ];
