@@ -350,13 +350,13 @@ template&lt;class TIPv6Extension &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add a new extension of type TIPv6Extension to the layer. This is a templated method and TIPv6Extension has to be one of the supported IPv6 extensions, meaning a class that inherits <a class="el" href="classpcpp_1_1_i_pv6_extension.html">IPv6Extension</a>. If the extension is added successfully a pointer to the newly added extension object is returned, otherwise NULL is returned </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Add a new extension of type TIPv6Extension to the layer. This is a templated method and TIPv6Extension has to be one of the supported IPv6 extensions, meaning a class that inherits <a class="el" href="classpcpp_1_1_i_pv6_extension.html">IPv6Extension</a>. If the extension is added successfully a pointer to the newly added extension object is returned, otherwise nullptr is returned </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">extensionHeader</td><td>The extension object to add. Notice the object passed here is read-only, meaning its data is copied but the object itself isn't modified </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>If the extension is added successfully a pointer to the newly added extension object is returned. Otherwise NULL is returned </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>If the extension is added successfully a pointer to the newly added extension object is returned. Otherwise nullptr is returned </dd></dl>
 
 </div>
 </div>
@@ -477,7 +477,7 @@ template&lt;class TIPv6Extension &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A templated getter for an IPv6 extension of a type TIPv6Extension. TIPv6Extension has to be one of the supported IPv6 extensions, meaning a class that inherits <a class="el" href="classpcpp_1_1_i_pv6_extension.html">IPv6Extension</a>. If the requested extension type isn't found NULL is returned </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the extension instance or NULL if the requested extension type isn't found </dd></dl>
+<p>A templated getter for an IPv6 extension of a type TIPv6Extension. TIPv6Extension has to be one of the supported IPv6 extensions, meaning a class that inherits <a class="el" href="classpcpp_1_1_i_pv6_extension.html">IPv6Extension</a>. If the requested extension type isn't found nullptr is returned </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the extension instance or nullptr if the requested extension type isn't found </dd></dl>
 
 </div>
 </div>
@@ -851,7 +851,7 @@ template&lt;class TIPv6Extension &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_pv6_layer.html">IPv6Layer</a></li>
-    <li class="footer">Generated on Mon Aug 26 2024 07:01:54 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Aug 30 2024 07:11:57 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

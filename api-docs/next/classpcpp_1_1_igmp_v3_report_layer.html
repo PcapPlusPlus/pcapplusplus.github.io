@@ -306,7 +306,7 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The method constructs a new group record, adds it to the end of the group record list of IGMPv3 report message and returns a pointer to the new message. If something went wrong in creating or adding the new group record a NULL value is returned and an appropriate error message is printed to log </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The method constructs a new group record, adds it to the end of the group record list of IGMPv3 report message and returns a pointer to the new message. If something went wrong in creating or adding the new group record a nullptr value is returned and an appropriate error message is printed to log </dd></dl>
 
 </div>
 </div>
@@ -356,7 +356,7 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The method constructs a new group record, adds it to the IGMPv3 report message and returns a pointer to the new message. If something went wrong in creating or adding the new group record a NULL value is returned and an appropriate error message is printed to log </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The method constructs a new group record, adds it to the IGMPv3 report message and returns a pointer to the new message. If something went wrong in creating or adding the new group record a nullptr value is returned and an appropriate error message is printed to log </dd></dl>
 
 </div>
 </div>
@@ -402,7 +402,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the first group record or NULL if no group records exist. Notice the return value is a pointer to the real data, so changes in the return value will affect the packet data </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the first group record or nullptr if no group records exist. Notice the return value is a pointer to the real data, so changes in the return value will affect the packet data </dd></dl>
 
 </div>
 </div>
@@ -467,13 +467,13 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the group record that comes next to a given group record. If "groupRecord" is NULL then NULL will be returned. If "groupRecord" is the last group record or if it is out of layer bounds NULL will be returned also. Notice the return value is a pointer to the real data casted to <a class="el" href="structpcpp_1_1igmpv3__group__record.html">igmpv3_group_record</a> type (as opposed to a copy of the option data). So changes in the return value will affect the packet data </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get the group record that comes next to a given group record. If "groupRecord" is nullptr then nullptr will be returned. If "groupRecord" is the last group record or if it is out of layer bounds nullptr will be returned also. Notice the return value is a pointer to the real data casted to <a class="el" href="structpcpp_1_1igmpv3__group__record.html">igmpv3_group_record</a> type (as opposed to a copy of the option data). So changes in the return value will affect the packet data </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">groupRecord</td><td>The group record to start searching from </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The next group record or NULL if "groupRecord" is NULL, last or out of layer bounds </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The next group record or nullptr if "groupRecord" is nullptr, last or out of layer bounds </dd></dl>
 
 </div>
 </div>
@@ -552,7 +552,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_igmp_v3_report_layer.html">IgmpV3ReportLayer</a></li>
-    <li class="footer">Generated on Mon Aug 26 2024 07:01:54 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Aug 30 2024 07:11:57 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

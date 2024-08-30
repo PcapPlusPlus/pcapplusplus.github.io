@@ -192,7 +192,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add the special end-of-header field (see the explanation in <a class="el" href="classpcpp_1_1_header_field.html">HeaderField</a>) </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created header field, or NULL if the field could not be created </dd></dl>
+<p>Add the special end-of-header field (see the explanation in <a class="el" href="classpcpp_1_1_header_field.html">HeaderField</a>) </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created header field, or nullptr if the field could not be created </dd></dl>
 
 </div>
 </div>
@@ -225,7 +225,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created header field, or NULL if the field could not be created </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created header field, or nullptr if the field could not be created </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classpcpp_1_1_http_message.html#ad51afc66df73de546fa6e0c30184bb2c">pcpp::HttpMessage</a>.</p>
 
@@ -271,7 +271,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created header field, or NULL if the field could not be created </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created header field, or nullptr if the field could not be created </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classpcpp_1_1_http_message.html#a10f4534ce8764aacae232c789bfa1884">pcpp::HttpMessage</a>.</p>
 
@@ -339,7 +339,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to an <a class="el" href="classpcpp_1_1_header_field.html">HeaderField</a> instance, or NULL if field doesn't exist </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to an <a class="el" href="classpcpp_1_1_header_field.html">HeaderField</a> instance, or nullptr if field doesn't exist </dd></dl>
 
 </div>
 </div>
@@ -383,7 +383,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the first header field exists in this message, or NULL if no such field exists </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the first header field exists in this message, or nullptr if no such field exists </dd></dl>
 
 </div>
 </div>
@@ -444,7 +444,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The field after prevField or NULL if prevField is the last field. If prevField is NULL, this method will return NULL </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The field after prevField or nullptr if prevField is the last field. If prevField is nullptr, this method will return nullptr </dd></dl>
 
 </div>
 </div>
@@ -488,7 +488,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created header field, or NULL if the field could not be created </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created header field, or nullptr if the field could not be created </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classpcpp_1_1_http_message.html#a6c69d36f3197df9ee3f9fb7e3de186fc">pcpp::HttpMessage</a>.</p>
 
@@ -535,13 +535,13 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Insert a new field after an existing field </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">prevField</td><td>A pointer to the existing field. If it's NULL the new field will be added as first field </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prevField</td><td>A pointer to the existing field. If it's nullptr the new field will be added as first field </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">fieldName</td><td>The field name </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">fieldValue</td><td>The field value </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created header field, or NULL if the field could not be created </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created header field, or nullptr if the field could not be created </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classpcpp_1_1_http_message.html#afc89318693401eeeff64f852c8c1c5e6">pcpp::HttpMessage</a>.</p>
 
@@ -588,13 +588,13 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Insert a new field after an existing field </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">prevFieldName</td><td>A name of an existing field. If the field doesn't exist NULL will be returned. If field name is empty ('') the new field will be added as first field </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prevFieldName</td><td>A name of an existing field. If the field doesn't exist nullptr will be returned. If field name is empty ('') the new field will be added as first field </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">fieldName</td><td>The field name </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">fieldValue</td><td>The field value </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created header field, or NULL if the field could not be created </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created header field, or nullptr if the field could not be created </dd></dl>
 
 </div>
 </div>
@@ -667,7 +667,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the field was removed successfully, or false otherwise (for example: if fieldToRemove is NULL, if it doesn't exist in the message, or if the removal failed) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the field was removed successfully, or false otherwise (for example: if fieldToRemove is nullptr, if it doesn't exist in the message, or if the removal failed) </dd></dl>
 
 </div>
 </div>
@@ -713,7 +713,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_text_based_protocol_message.html">TextBasedProtocolMessage</a></li>
-    <li class="footer">Generated on Mon Aug 26 2024 07:01:54 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Aug 30 2024 07:11:58 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

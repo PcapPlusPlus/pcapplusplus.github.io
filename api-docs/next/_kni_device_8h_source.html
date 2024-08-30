@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('_kni_device_8h_source.html',''); initR
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
 <div class="line"><a name="l00289"></a><span class="lineno"><a class="line" href="classpcpp_1_1_kni_device.html#a40f81fc75157860db3c6ff93c70e228f">  289</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_kni_device.html#a40f81fc75157860db3c6ff93c70e228f">isInitialized</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <span class="keywordflow">return</span> !(m_Device == NULL || m_MBufMempool == NULL);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <span class="keywordflow">return</span> !(m_Device == <span class="keyword">nullptr</span> || m_MBufMempool == <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        }</div>
 <div class="line"><a name="l00296"></a><span class="lineno"><a class="line" href="classpcpp_1_1_kni_device.html#a313c357df59ca65f3c390f9bc2dd98d1">  296</a></span>&#160;        <span class="keyword">inline</span> std::string <a class="code" href="classpcpp_1_1_kni_device.html#a313c357df59ca65f3c390f9bc2dd98d1">getName</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="keyword">        </span>{</div>
@@ -255,7 +255,7 @@ $(document).ready(function(){initNavTree('_kni_device_8h_source.html',''); initR
 <div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">void</span> runCapture(<span class="keywordtype">void</span>* devicePointer, std::atomic&lt;bool&gt;&amp; stopThread);</div>
 <div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;            <span class="keyword">inline</span> <span class="keywordtype">bool</span> isRunning()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;<span class="keyword">            </span>{</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;                <span class="keywordflow">return</span> thread != NULL;</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;                <span class="keywordflow">return</span> thread != <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;            }</div>
 <div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;            <span class="keywordtype">void</span> cleanup();</div>
 <div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;        } m_Capturing;</div>
@@ -348,7 +348,7 @@ $(document).ready(function(){initNavTree('_kni_device_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1d5e652a4f74c687a1a254f16a4c3d59.html">Pcap++</a></li><li class="navelem"><a class="el" href="dir_24675e680cc699690f9ab00f0f74b528.html">header</a></li><li class="navelem"><a class="el" href="_kni_device_8h.html">KniDevice.h</a></li>
-    <li class="footer">Generated on Mon Aug 26 2024 07:01:53 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Aug 30 2024 07:11:57 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

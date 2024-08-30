@@ -597,11 +597,11 @@ $(document).ready(function(){initNavTree('_s_s_l_handshake_8h_source.html',''); 
 <div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; vecSize; i++)</div>
 <div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;        {</div>
 <div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;            <a class="code" href="classpcpp_1_1_s_s_l_extension.html">SSLExtension</a>* curElem = <span class="keyword">const_cast&lt;</span><a class="code" href="classpcpp_1_1_s_s_l_extension.html">SSLExtension</a>*<span class="keyword">&gt;</span>(m_ExtensionList.at(i));</div>
-<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;            <span class="keywordflow">if</span> (<span class="keyword">dynamic_cast&lt;</span>TExtension*<span class="keyword">&gt;</span>(curElem) != NULL)</div>
+<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;            <span class="keywordflow">if</span> (<span class="keyword">dynamic_cast&lt;</span>TExtension*<span class="keyword">&gt;</span>(curElem) != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;                <span class="keywordflow">return</span> (TExtension*)curElem;</div>
 <div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;        }</div>
 <div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160; </div>
-<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;    }</div>
 <div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160; </div>
 <div class="line"><a name="l01173"></a><span class="lineno"><a class="line" href="classpcpp_1_1_s_s_l_server_hello_message.html#acbc2d563df36424bc3d0eff806a30654"> 1173</a></span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> TExtension&gt; TExtension* <a class="code" href="classpcpp_1_1_s_s_l_server_hello_message.html#acbc2d563df36424bc3d0eff806a30654">SSLServerHelloMessage::getExtensionOfType</a>()<span class="keyword"> const</span></div>
@@ -610,11 +610,11 @@ $(document).ready(function(){initNavTree('_s_s_l_handshake_8h_source.html',''); 
 <div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; vecSize; i++)</div>
 <div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;        {</div>
 <div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;            <a class="code" href="classpcpp_1_1_s_s_l_extension.html">SSLExtension</a>* curElem = <span class="keyword">const_cast&lt;</span><a class="code" href="classpcpp_1_1_s_s_l_extension.html">SSLExtension</a>*<span class="keyword">&gt;</span>(m_ExtensionList.at(i));</div>
-<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;            <span class="keywordflow">if</span> (<span class="keyword">dynamic_cast&lt;</span>TExtension*<span class="keyword">&gt;</span>(curElem) != NULL)</div>
+<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;            <span class="keywordflow">if</span> (<span class="keyword">dynamic_cast&lt;</span>TExtension*<span class="keyword">&gt;</span>(curElem) != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;                <span class="keywordflow">return</span> (TExtension*)curElem;</div>
 <div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;        }</div>
 <div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160; </div>
-<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;    }</div>
 <div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160; </div>
 <div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
@@ -783,7 +783,7 @@ $(document).ready(function(){initNavTree('_s_s_l_handshake_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_s_s_l_handshake_8h.html">SSLHandshake.h</a></li>
-    <li class="footer">Generated on Mon Aug 26 2024 07:01:53 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Aug 30 2024 07:11:57 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

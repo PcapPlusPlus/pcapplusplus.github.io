@@ -375,7 +375,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS additional record or NULL if additional record could not be created (an appropriate error log message will be printed in this case) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS additional record or nullptr if additional record could not be created (an appropriate error log message will be printed in this case) </dd></dl>
 
 </div>
 </div>
@@ -432,7 +432,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS additional record or NULL if additional record could not be created (an appropriate error log message will be printed in this case) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS additional record or nullptr if additional record could not be created (an appropriate error log message will be printed in this case) </dd></dl>
 
 </div>
 </div>
@@ -457,7 +457,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS additional record or NULL if query could not be created (an appropriate error log message will be printed in this case) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS additional record or nullptr if query could not be created (an appropriate error log message will be printed in this case) </dd></dl>
 
 </div>
 </div>
@@ -514,7 +514,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS answer or NULL if answer could not be created (an appropriate error log message will be printed in this case) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS answer or nullptr if answer could not be created (an appropriate error log message will be printed in this case) </dd></dl>
 
 </div>
 </div>
@@ -539,7 +539,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS answer or NULL if query could not be created (an appropriate error log message will be printed in this case) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS answer or nullptr if query could not be created (an appropriate error log message will be printed in this case) </dd></dl>
 
 </div>
 </div>
@@ -596,7 +596,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS authority or NULL if authority could not be created (an appropriate error log message will be printed in this case) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS authority or nullptr if authority could not be created (an appropriate error log message will be printed in this case) </dd></dl>
 
 </div>
 </div>
@@ -621,7 +621,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS authority or NULL if query could not be created (an appropriate error log message will be printed in this case) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS authority or nullptr if query could not be created (an appropriate error log message will be printed in this case) </dd></dl>
 
 </div>
 </div>
@@ -664,7 +664,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS query or NULL if query could not be created (an appropriate error log message will be printed in this case) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS query or nullptr if query could not be created (an appropriate error log message will be printed in this case) </dd></dl>
 
 </div>
 </div>
@@ -689,7 +689,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS query or NULL if query could not be created (an appropriate error log message will be printed in this case) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS query or nullptr if query could not be created (an appropriate error log message will be printed in this case) </dd></dl>
 
 </div>
 </div>
@@ -748,14 +748,14 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Searches for a DNS additional record by its name field. Notice this method returns only an additional record which its name equals to the requested name. If several additional records match the requested name, the first one will be returned. If no additional records match the requested name, NULL will be returned </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Searches for a DNS additional record by its name field. Notice this method returns only an additional record which its name equals to the requested name. If several additional records match the requested name, the first one will be returned. If no additional records match the requested name, nullptr will be returned </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of the additional record to search </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">exactMatch</td><td>Indicate whether to match the whole name or just a part of it </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The first matching DNS additional record or NULL if no additional records were found </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The first matching DNS additional record or nullptr if no additional records were found </dd></dl>
 
 </div>
 </div>
@@ -802,14 +802,14 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Searches for a DNS answer by its name field. Notice this method returns only an answer which its name equals to the requested name. If several answers match the requested name, the first one will be returned. If no answers match the requested name, NULL will be returned </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Searches for a DNS answer by its name field. Notice this method returns only an answer which its name equals to the requested name. If several answers match the requested name, the first one will be returned. If no answers match the requested name, nullptr will be returned </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of the answer to search </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">exactMatch</td><td>Indicate whether to match the whole name or just a part of it </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The first matching DNS answer or NULL if no answers were found </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The first matching DNS answer or nullptr if no answers were found </dd></dl>
 
 </div>
 </div>
@@ -856,14 +856,14 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Searches for a DNS authority by its name field. Notice this method returns only an authority which its name equals to the requested name. If several authorities match the requested name, the first one will be returned. If no authorities match the requested name, NULL will be returned </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Searches for a DNS authority by its name field. Notice this method returns only an authority which its name equals to the requested name. If several authorities match the requested name, the first one will be returned. If no authorities match the requested name, nullptr will be returned </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of the authority to search </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">exactMatch</td><td>Indicate whether to match the whole name or just a part of it </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The first matching DNS authority or NULL if no authorities were found </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The first matching DNS authority or nullptr if no authorities were found </dd></dl>
 
 </div>
 </div>
@@ -917,7 +917,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The first DNS additional record in the packet or NULL if packet doesn't contain any additional records </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The first DNS additional record in the packet or nullptr if packet doesn't contain any additional records </dd></dl>
 
 </div>
 </div>
@@ -935,7 +935,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The first DNS answer in the packet or NULL if packet doesn't contain any answers </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The first DNS answer in the packet or nullptr if packet doesn't contain any answers </dd></dl>
 
 </div>
 </div>
@@ -953,7 +953,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The first DNS authority in the packet or NULL if packet doesn't contain any authorities </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The first DNS authority in the packet or nullptr if packet doesn't contain any authorities </dd></dl>
 
 </div>
 </div>
@@ -971,7 +971,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The first DNS query in the packet or NULL if packet doesn't contain any queries </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The first DNS query in the packet or nullptr if packet doesn't contain any queries </dd></dl>
 
 </div>
 </div>
@@ -1024,7 +1024,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The DNS additional record following 'additionalRecord'. If 'additionalRecord' is NULL or 'additionalRecord' is the last additional record in the packet NULL will be returned </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The DNS additional record following 'additionalRecord'. If 'additionalRecord' is nullptr or 'additionalRecord' is the last additional record in the packet nullptr will be returned </dd></dl>
 
 </div>
 </div>
@@ -1049,7 +1049,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The DNS answer following 'answer'. If 'answer' is NULL or 'answer' is the last answer in the packet NULL will be returned </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The DNS answer following 'answer'. If 'answer' is nullptr or 'answer' is the last answer in the packet nullptr will be returned </dd></dl>
 
 </div>
 </div>
@@ -1074,7 +1074,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The DNS authority following 'authority'. If 'authority' is NULL or 'authority' is the last authority in the packet NULL will be returned </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The DNS authority following 'authority'. If 'authority' is nullptr or 'authority' is the last authority in the packet nullptr will be returned </dd></dl>
 
 </div>
 </div>
@@ -1099,7 +1099,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The DNS query following 'query'. If 'query' is NULL or 'query' is the last query in the packet NULL will be returned </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The DNS query following 'query'. If 'query' is nullptr or 'query' is the last query in the packet nullptr will be returned </dd></dl>
 
 </div>
 </div>
@@ -1156,14 +1156,14 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Searches for a DNS query by its name field. Notice this method returns only a query which its name equals to the requested name. If several queries match the requested name, the first one will be returned. If no queries match the requested name, NULL will be returned </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Searches for a DNS query by its name field. Notice this method returns only a query which its name equals to the requested name. If several queries match the requested name, the first one will be returned. If no queries match the requested name, nullptr will be returned </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of the query to search </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">exactMatch</td><td>Indicate whether to match the whole name or just a part of it </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The first matching DNS query or NULL if no queries were found </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The first matching DNS query or nullptr if no queries were found </dd></dl>
 
 </div>
 </div>
@@ -1600,7 +1600,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_dns_layer.html">DnsLayer</a></li>
-    <li class="footer">Generated on Mon Aug 26 2024 07:01:53 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Aug 30 2024 07:11:57 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

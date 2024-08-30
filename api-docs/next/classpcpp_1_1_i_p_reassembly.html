@@ -124,8 +124,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9a55c126f0361bc1a928d0e39924c16d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_reassembly.html#a9a55c126f0361bc1a928d0e39924c16d">IPReassembly</a> (<a class="el" href="classpcpp_1_1_i_p_reassembly.html#a8836fa2c9aca7ee90a2f6cf44ec12a8a">OnFragmentsClean</a> onFragmentsCleanCallback=NULL, void *callbackUserCookie=NULL, size_t maxPacketsToStore=500000)</td></tr>
-<tr class="separator:a9a55c126f0361bc1a928d0e39924c16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f48d744a81b1f1319fad6f0cbfe4476"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_reassembly.html#a7f48d744a81b1f1319fad6f0cbfe4476">IPReassembly</a> (<a class="el" href="classpcpp_1_1_i_p_reassembly.html#a8836fa2c9aca7ee90a2f6cf44ec12a8a">OnFragmentsClean</a> onFragmentsCleanCallback=nullptr, void *callbackUserCookie=nullptr, size_t maxPacketsToStore=500000)</td></tr>
+<tr class="separator:a7f48d744a81b1f1319fad6f0cbfe4476"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3a3885752f5254e99d8a3b0d59f1507"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_reassembly.html#ad3a3885752f5254e99d8a3b0d59f1507">~IPReassembly</a> ()</td></tr>
 <tr class="separator:ad3a3885752f5254e99d8a3b0d59f1507"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92fcfd5f8b3cfe10c0c69ee24d2766f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_packet.html">Packet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_reassembly.html#a92fcfd5f8b3cfe10c0c69ee24d2766f7">processPacket</a> (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> *fragment, <a class="el" href="classpcpp_1_1_i_p_reassembly.html#aae7f2e113808978827abf3b7cdbe91af">ReassemblyStatus</a> &amp;status, <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> parseUntil=<a class="el" href="namespacepcpp.html#ad94e3dd833f818889f676d2352eac829">UnknownProtocol</a>, <a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> parseUntilLayer=<a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">OsiModelLayerUnknown</a>)</td></tr>
@@ -162,7 +162,7 @@ Public Member Functions</h2></td></tr>
 <p>The IP reassembly mechanism has a certain capacity of concurrent packets it can handle. This capacity is determined in its c'tor (default value is <a class="el" href="_i_p_reassembly_8h.html#a15bf1bb934fcb4a1d7ea4093edd598c5">PCPP_IP_REASSEMBLY_DEFAULT_MAX_PACKETS_TO_STORE</a>). When traffic volume exceeds this capacity the mechanism starts dropping packets in a LRU manner (least recently used are dropped first). Whenever a packet is dropped this callback is fired </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>A pointer to the identifier of the packet that is being dropped </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to the cookie provided by the user in IPReassemby c'tor (or NULL if no cookie provided) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to the cookie provided by the user in IPReassemby c'tor (or nullptr if no cookie provided) </td></tr>
   </table>
   </dd>
 </dl>
@@ -202,8 +202,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a9a55c126f0361bc1a928d0e39924c16d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a55c126f0361bc1a928d0e39924c16d">&#9670;&nbsp;</a></span>IPReassembly()</h2>
+<a id="a7f48d744a81b1f1319fad6f0cbfe4476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f48d744a81b1f1319fad6f0cbfe4476">&#9670;&nbsp;</a></span>IPReassembly()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -215,13 +215,13 @@ Public Member Functions</h2></td></tr>
           <td class="memname">pcpp::IPReassembly::IPReassembly </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classpcpp_1_1_i_p_reassembly.html#a8836fa2c9aca7ee90a2f6cf44ec12a8a">OnFragmentsClean</a>&#160;</td>
-          <td class="paramname"><em>onFragmentsCleanCallback</em> = <code>NULL</code>, </td>
+          <td class="paramname"><em>onFragmentsCleanCallback</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>callbackUserCookie</em> = <code>NULL</code>, </td>
+          <td class="paramname"><em>callbackUserCookie</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -243,8 +243,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>A c'tor for this class. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">onFragmentsCleanCallback</td><td>The callback to be called when packets are dropped due to capacity limit. Please read more about capacity limit in <a class="el" href="_i_p_reassembly_8h.html">IPReassembly.h</a> file description. This parameter is optional, default value is NULL (no callback) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">callbackUserCookie</td><td>A pointer to an object provided by the user. This pointer will be returned when invoking the onFragmentsCleanCallback. This parameter is optional, default cookie is NULL </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">onFragmentsCleanCallback</td><td>The callback to be called when packets are dropped due to capacity limit. Please read more about capacity limit in <a class="el" href="_i_p_reassembly_8h.html">IPReassembly.h</a> file description. This parameter is optional, default value is nullptr (no callback) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callbackUserCookie</td><td>A pointer to an object provided by the user. This pointer will be returned when invoking the onFragmentsCleanCallback. This parameter is optional, default cookie is nullptr </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">maxPacketsToStore</td><td>Set the capacity limit of the IP reassembly mechanism. Default capacity is <a class="el" href="_i_p_reassembly_8h.html#a15bf1bb934fcb4a1d7ea4093edd598c5">PCPP_IP_REASSEMBLY_DEFAULT_MAX_PACKETS_TO_STORE</a> </td></tr>
   </table>
   </dd>
@@ -406,7 +406,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><ul>
 <li>If the input fragment isn't an IPv4/IPv6 packet or if it isn't an IPv4/IPv6 fragment, the return value is a pointer to the input fragment</li>
 <li>If the input fragment is the last one and the reassembled packet is ready - a pointer to the reassembled packet is returned. Notice it's the user's responsibility to free this pointer when done using it</li>
-<li>If the reassembled packet isn't ready then NULL is returned </li>
+<li>If the reassembled packet isn't ready then nullptr is returned </li>
 </ul>
 </dd></dl>
 
@@ -470,7 +470,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><ul>
 <li>If the input fragment isn't an IPv4/IPv6 packet or if it isn't an IPv4/IPv6 fragment, the return value is a pointer to a <a class="el" href="classpcpp_1_1_packet.html">Packet</a> object wrapping the input fragment <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> object. It's the user responsibility to free this instance</li>
 <li>If the input fragment is the last one and the reassembled packet is ready - a pointer to the reassembled packet is returned. Notice it's the user's responsibility to free this pointer when done using it</li>
-<li>If the reassembled packet isn't ready then NULL is returned </li>
+<li>If the reassembled packet isn't ready then nullptr is returned </li>
 </ul>
 </dd></dl>
 
@@ -506,7 +506,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_p_reassembly.html">IPReassembly</a></li>
-    <li class="footer">Generated on Mon Aug 26 2024 07:01:54 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Aug 30 2024 07:11:57 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

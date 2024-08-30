@@ -128,8 +128,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a66205ac4b99b320454c875d0348c10b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a66205ac4b99b320454c875d0348c10b1">TcpReassembly</a> (<a class="el" href="classpcpp_1_1_tcp_reassembly.html#ad9c41ac805585a4e3cd826c8aec371ca">OnTcpMessageReady</a> onMessageReadyCallback, void *userCookie=NULL, <a class="el" href="classpcpp_1_1_tcp_reassembly.html#ac3a1cfc6fe6b8616da6e307f03e5fa40">OnTcpConnectionStart</a> onConnectionStartCallback=NULL, <a class="el" href="classpcpp_1_1_tcp_reassembly.html#afa7c398942772e262aee596d0b63a52d">OnTcpConnectionEnd</a> onConnectionEndCallback=NULL, const <a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html">TcpReassemblyConfiguration</a> &amp;config=<a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html">TcpReassemblyConfiguration</a>())</td></tr>
-<tr class="separator:a66205ac4b99b320454c875d0348c10b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a727d5d6572b69ae0ad2600fcd8ca91d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a727d5d6572b69ae0ad2600fcd8ca91d4">TcpReassembly</a> (<a class="el" href="classpcpp_1_1_tcp_reassembly.html#ad9c41ac805585a4e3cd826c8aec371ca">OnTcpMessageReady</a> onMessageReadyCallback, void *userCookie=nullptr, <a class="el" href="classpcpp_1_1_tcp_reassembly.html#ac3a1cfc6fe6b8616da6e307f03e5fa40">OnTcpConnectionStart</a> onConnectionStartCallback=nullptr, <a class="el" href="classpcpp_1_1_tcp_reassembly.html#afa7c398942772e262aee596d0b63a52d">OnTcpConnectionEnd</a> onConnectionEndCallback=nullptr, const <a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html">TcpReassemblyConfiguration</a> &amp;config=<a class="el" href="structpcpp_1_1_tcp_reassembly_configuration.html">TcpReassemblyConfiguration</a>())</td></tr>
+<tr class="separator:a727d5d6572b69ae0ad2600fcd8ca91d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0ecd6c2e334c55f4d6393e23a205e04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177">ReassemblyStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#ad0ecd6c2e334c55f4d6393e23a205e04">reassemblePacket</a> (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> &amp;tcpData)</td></tr>
 <tr class="separator:ad0ecd6c2e334c55f4d6393e23a205e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3259ca75ab6594a335b6404b55c0f0e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177">ReassemblyStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a3259ca75ab6594a335b6404b55c0f0e0">reassemblePacket</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *tcpRawData)</td></tr>
@@ -178,7 +178,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">connectionData</td><td>Connection information </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">reason</td><td>The reason for connection termination: FIN/RST packet or manually by the user </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to the cookie provided by the user in <a class="el" href="classpcpp_1_1_tcp_reassembly.html">TcpReassembly</a> c'tor (or NULL if no cookie provided) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to the cookie provided by the user in <a class="el" href="classpcpp_1_1_tcp_reassembly.html">TcpReassembly</a> c'tor (or nullptr if no cookie provided) </td></tr>
   </table>
   </dd>
 </dl>
@@ -199,7 +199,7 @@ Public Member Functions</h2></td></tr>
 <p>A callback invoked when a new TCP connection is identified (whether it begins with a SYN packet or not) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">connectionData</td><td>Connection information </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to the cookie provided by the user in <a class="el" href="classpcpp_1_1_tcp_reassembly.html">TcpReassembly</a> c'tor (or NULL if no cookie provided) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to the cookie provided by the user in <a class="el" href="classpcpp_1_1_tcp_reassembly.html">TcpReassembly</a> c'tor (or nullptr if no cookie provided) </td></tr>
   </table>
   </dd>
 </dl>
@@ -221,7 +221,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">side</td><td>The side this data belongs to (MachineA-&gt;MachineB or vice versa). The value is 0 or 1 where 0 is the first side seen in the connection and 1 is the second side seen </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">tcpData</td><td>The TCP data itself + connection information </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to the cookie provided by the user in <a class="el" href="classpcpp_1_1_tcp_reassembly.html">TcpReassembly</a> c'tor (or NULL if no cookie provided) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to the cookie provided by the user in <a class="el" href="classpcpp_1_1_tcp_reassembly.html">TcpReassembly</a> c'tor (or nullptr if no cookie provided) </td></tr>
   </table>
   </dd>
 </dl>
@@ -292,8 +292,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a66205ac4b99b320454c875d0348c10b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66205ac4b99b320454c875d0348c10b1">&#9670;&nbsp;</a></span>TcpReassembly()</h2>
+<a id="a727d5d6572b69ae0ad2600fcd8ca91d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a727d5d6572b69ae0ad2600fcd8ca91d4">&#9670;&nbsp;</a></span>TcpReassembly()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -311,19 +311,19 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>userCookie</em> = <code>NULL</code>, </td>
+          <td class="paramname"><em>userCookie</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#ac3a1cfc6fe6b8616da6e307f03e5fa40">OnTcpConnectionStart</a>&#160;</td>
-          <td class="paramname"><em>onConnectionStartCallback</em> = <code>NULL</code>, </td>
+          <td class="paramname"><em>onConnectionStartCallback</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#afa7c398942772e262aee596d0b63a52d">OnTcpConnectionEnd</a>&#160;</td>
-          <td class="paramname"><em>onConnectionEndCallback</em> = <code>NULL</code>, </td>
+          <td class="paramname"><em>onConnectionEndCallback</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -346,7 +346,7 @@ Public Member Functions</h2></td></tr>
 <p>A c'tor for this class </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">onMessageReadyCallback</td><td>The callback to be invoked when new data arrives </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to an object provided by the user. This pointer will be returned when invoking the various callbacks. This parameter is optional, default cookie is NULL </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userCookie</td><td>A pointer to an object provided by the user. This pointer will be returned when invoking the various callbacks. This parameter is optional, default cookie is nullptr </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">onConnectionStartCallback</td><td>The callback to be invoked when a new connection is identified. This parameter is optional </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">onConnectionEndCallback</td><td>The callback to be invoked when a new connection is terminated (either by a FIN/RST packet or manually by the user). This parameter is optional </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>Optional parameter for defining special configuration parameters. If not set the default parameters will be set </td></tr>
@@ -531,7 +531,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_tcp_reassembly.html">TcpReassembly</a></li>
-    <li class="footer">Generated on Mon Aug 26 2024 07:01:54 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Aug 30 2024 07:11:58 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

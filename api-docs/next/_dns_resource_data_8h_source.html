@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('_dns_resource_data_8h_source.html','')
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_dns_resource_data.html#a8a0aba99fc544c523a10ed41b3fc80a4">   51</a></span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">class</span> IDnsResourceDataType&gt; <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_i_dns_resource_data.html#a8a0aba99fc544c523a10ed41b3fc80a4">isTypeOf</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>IDnsResourceDataType*<span class="keyword">&gt;</span>(<span class="keyword">this</span>) != NULL;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>IDnsResourceDataType*<span class="keyword">&gt;</span>(<span class="keyword">this</span>) != <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_dns_resource_data.html#a56a9d85bb7e5cbdb9dad80f50f398202">   62</a></span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">class</span> IDnsResourceDataType&gt; IDnsResourceDataType* <a class="code" href="classpcpp_1_1_i_dns_resource_data.html#a56a9d85bb7e5cbdb9dad80f50f398202">castAs</a>()</div>
@@ -294,7 +294,7 @@ $(document).ready(function(){initNavTree('_dns_resource_data_8h_source.html','')
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        ~<a class="code" href="classpcpp_1_1_generic_dns_resource_data.html">GenericDnsResourceData</a>()</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        {</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;            <span class="keywordflow">if</span> (m_Data != NULL)</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;            <span class="keywordflow">if</span> (m_Data != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;                <span class="keyword">delete</span>[] m_Data;</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        }</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
@@ -372,7 +372,7 @@ $(document).ready(function(){initNavTree('_dns_resource_data_8h_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_dns_resource_data_8h.html">DnsResourceData.h</a></li>
-    <li class="footer">Generated on Mon Aug 26 2024 07:01:53 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Aug 30 2024 07:11:57 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
