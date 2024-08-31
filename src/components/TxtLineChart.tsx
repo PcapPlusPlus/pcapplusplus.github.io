@@ -60,7 +60,7 @@ function TxtLineChart({ txtUrl }: TxtLineChartProps) {
         },
         backgroundColor: 'transparent',
         legend: {
-          position: "bottom",
+          position: 'bottom',
           textStyle: {
             fontSize: 10
           }
