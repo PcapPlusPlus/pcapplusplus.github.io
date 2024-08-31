@@ -57,6 +57,13 @@ function TxtLineChart({ txtUrl }: TxtLineChartProps) {
         },
         vAxis: {
           title: 'Execution Time per packet (ns)'
+        },
+        backgroundColor: 'transparent',
+        legend: {
+          position: "bottom",
+          textStyle: {
+            fontSize: 10
+          }
         }
       }}
     />
