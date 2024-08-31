@@ -17,16 +17,21 @@ function TxtLineChart({ txtUrl }: TxtLineChartProps) {
         Papa.parse(text, {
           header: false,
           complete: (results) => {
-            const parsedData = results.data.map((row) => [
-              row[0],
-              parseFloat(row[1]),
-              parseFloat(row[2]),
-              parseFloat(row[3]),
-              parseFloat(row[4])
-            ]);
+            const parsedData = results.data
+              .filter(
+                (row) =>
+                  row.length > 1 && row.some((cell) => cell.trim() !== '')
+              ) // Filter out empty rows
+              .map((row) => [
+                row[0],
+                parseFloat(row[1]),
+                parseFloat(row[2]),
+                parseFloat(row[3]),
+                parseFloat(row[4])
+              ]);
             setData([
               [
-                'Commit SHA',
+                'Commit',
                 'BM_PcapFileRead',
                 'BM_PcapFileWrite',
                 'BM_PcapPacketParsing',
@@ -50,7 +55,7 @@ function TxtLineChart({ txtUrl }: TxtLineChartProps) {
           title: 'Commit'
         },
         vAxis: {
-          title: 'Benchmark'
+          title: 'Execution Time per packet (ns)'
         }
       }}
     />
