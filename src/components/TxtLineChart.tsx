@@ -18,6 +18,7 @@ function TxtLineChart({ txtUrl }: TxtLineChartProps) {
           header: false,
           complete: (results) => {
             const parsedData = results.data
+              .slice(1) // Skip header row
               .filter(
                 (row) =>
                   row.length > 1 && row.some((cell) => cell.trim() !== '')
