@@ -25,10 +25,10 @@ function TxtLineChart({ txtUrl }: TxtLineChartProps) {
               ) // Filter out empty rows
               .map((row) => [
                 row[0],
-                parseFloat(row[1]),
-                parseFloat(row[2]),
-                parseFloat(row[3]),
-                parseFloat(row[4])
+                parseInt(row[1]),
+                parseInt(row[2]),
+                parseInt(row[3]),
+                parseInt(row[4])
               ]);
             setData([
               [
