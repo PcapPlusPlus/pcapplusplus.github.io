@@ -56,7 +56,7 @@ function TxtLineChart({ txtUrl }: TxtLineChartProps) {
           title: 'Commit'
         },
         vAxis: {
-          title: 'Execution Time per packet (ns)'
+          title: 'Packet per second (PPS)'
         },
         backgroundColor: 'transparent',
         legend: {
