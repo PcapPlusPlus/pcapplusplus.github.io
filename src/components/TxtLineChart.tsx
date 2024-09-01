@@ -35,8 +35,8 @@ function TxtLineChart({ txtUrl }: TxtLineChartProps) {
                 'Commit',
                 'BM_PcapFileRead',
                 'BM_PcapFileWrite',
-                'BM_PcapPacketParsing',
-                'BM_PcapPacketGeneration'
+                'BM_PacketParsing',
+                'BM_PacketGeneration'
               ],
               ...parsedData
             ]);
