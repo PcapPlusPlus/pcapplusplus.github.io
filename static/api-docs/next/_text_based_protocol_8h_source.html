@@ -210,30 +210,31 @@ $(document).ready(function(){initNavTree('_text_based_protocol_8h_source.html','
 <div class="line"><a name="l00260"></a><span class="lineno"><a class="line" href="classpcpp_1_1_text_based_protocol_message.html#aab0f4a2beb4bf2a423e8b0b7c18e3645">  260</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_text_based_protocol_message.html#aab0f4a2beb4bf2a423e8b0b7c18e3645">computeCalculateFields</a>();</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <a class="code" href="classpcpp_1_1_text_based_protocol_message.html">TextBasedProtocolMessage</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="classpcpp_1_1_layer.html">Layer</a>* prevLayer, <a class="code" href="classpcpp_1_1_packet.html">Packet</a>* packet);</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        <a class="code" href="classpcpp_1_1_text_based_protocol_message.html">TextBasedProtocolMessage</a>() : m_FieldList(nullptr), m_LastField(nullptr), m_FieldsOffset(0)</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        {}</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="comment">// copy c&#39;tor</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <a class="code" href="classpcpp_1_1_text_based_protocol_message.html">TextBasedProtocolMessage</a>(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_text_based_protocol_message.html">TextBasedProtocolMessage</a>&amp; other);</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <a class="code" href="classpcpp_1_1_text_based_protocol_message.html">TextBasedProtocolMessage</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_text_based_protocol_message.html">TextBasedProtocolMessage</a>&amp; other);</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <span class="keywordtype">void</span> copyDataFrom(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_text_based_protocol_message.html">TextBasedProtocolMessage</a>&amp; other);</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordtype">void</span> parseFields();</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="keywordtype">void</span> shiftFieldsOffset(<a class="code" href="classpcpp_1_1_header_field.html">HeaderField</a>* fromField, <span class="keywordtype">int</span> numOfBytesToShift);</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        <span class="comment">// abstract methods</span></div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">char</span> getHeaderFieldNameValueSeparator() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> spacesAllowedBetweenHeaderFieldNameAndValue() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <a class="code" href="classpcpp_1_1_header_field.html">HeaderField</a>* m_FieldList;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <a class="code" href="classpcpp_1_1_header_field.html">HeaderField</a>* m_LastField;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <span class="keywordtype">int</span> m_FieldsOffset;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        std::multimap&lt;std::string, HeaderField*&gt; m_FieldNameToFieldMap;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    };</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <a class="code" href="classpcpp_1_1_text_based_protocol_message.html">TextBasedProtocolMessage</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="classpcpp_1_1_layer.html">Layer</a>* prevLayer, <a class="code" href="classpcpp_1_1_packet.html">Packet</a>* packet,</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                                 <a class="code" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> protocol);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <a class="code" href="classpcpp_1_1_text_based_protocol_message.html">TextBasedProtocolMessage</a>() : m_FieldList(nullptr), m_LastField(nullptr), m_FieldsOffset(0)</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        {}</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160; </div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="comment">// copy c&#39;tor</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <a class="code" href="classpcpp_1_1_text_based_protocol_message.html">TextBasedProtocolMessage</a>(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_text_based_protocol_message.html">TextBasedProtocolMessage</a>&amp; other);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <a class="code" href="classpcpp_1_1_text_based_protocol_message.html">TextBasedProtocolMessage</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_text_based_protocol_message.html">TextBasedProtocolMessage</a>&amp; other);</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keywordtype">void</span> copyDataFrom(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_text_based_protocol_message.html">TextBasedProtocolMessage</a>&amp; other);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="keywordtype">void</span> parseFields();</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="keywordtype">void</span> shiftFieldsOffset(<a class="code" href="classpcpp_1_1_header_field.html">HeaderField</a>* fromField, <span class="keywordtype">int</span> numOfBytesToShift);</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="comment">// abstract methods</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">char</span> getHeaderFieldNameValueSeparator() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> spacesAllowedBetweenHeaderFieldNameAndValue() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <a class="code" href="classpcpp_1_1_header_field.html">HeaderField</a>* m_FieldList;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <a class="code" href="classpcpp_1_1_header_field.html">HeaderField</a>* m_LastField;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <span class="keywordtype">int</span> m_FieldsOffset;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        std::multimap&lt;std::string, HeaderField*&gt; m_FieldNameToFieldMap;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    };</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
 <div class="ttc" id="a_layer_8h_html"><div class="ttname"><a href="_layer_8h.html">Layer.h</a></div></div>
 <div class="ttc" id="aclasspcpp_1_1_header_field_html"><div class="ttname"><a href="classpcpp_1_1_header_field.html">pcpp::HeaderField</a></div><div class="ttdef"><b>Definition:</b> TextBasedProtocol.h:30</div></div>
 <div class="ttc" id="aclasspcpp_1_1_header_field_html_a5cf6794cc8e08accb69e486493396d18"><div class="ttname"><a href="classpcpp_1_1_header_field.html#a5cf6794cc8e08accb69e486493396d18">pcpp::HeaderField::getFieldSize</a></div><div class="ttdeci">size_t getFieldSize() const</div><div class="ttdef"><b>Definition:</b> TextBasedProtocol.h:56</div></div>
@@ -263,13 +264,14 @@ $(document).ready(function(){initNavTree('_text_based_protocol_8h_source.html','
 <div class="ttc" id="aclasspcpp_1_1_text_based_protocol_message_html_aeada4c60e7c10924b6fa82d5ddfa9908"><div class="ttname"><a href="classpcpp_1_1_text_based_protocol_message.html#aeada4c60e7c10924b6fa82d5ddfa9908">pcpp::TextBasedProtocolMessage::addField</a></div><div class="ttdeci">virtual HeaderField * addField(const HeaderField &amp;newField)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_text_based_protocol_message_html_af2bc9956fb5ddd6f19fceb35a8a7ad3b"><div class="ttname"><a href="classpcpp_1_1_text_based_protocol_message.html#af2bc9956fb5ddd6f19fceb35a8a7ad3b">pcpp::TextBasedProtocolMessage::addEndOfHeader</a></div><div class="ttdeci">HeaderField * addEndOfHeader()</div></div>
 <div class="ttc" id="anamespacepcpp_html"><div class="ttname"><a href="namespacepcpp.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib.</div></div>
+<div class="ttc" id="anamespacepcpp_html_a1d761f7cf37d3b1efb1574fb1177e6eb"><div class="ttname"><a href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">pcpp::ProtocolType</a></div><div class="ttdeci">uint8_t ProtocolType</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_text_based_protocol_8h.html">TextBasedProtocol.h</a></li>
-    <li class="footer">Generated on Fri Aug 30 2024 07:11:57 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 4 2024 07:31:02 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
