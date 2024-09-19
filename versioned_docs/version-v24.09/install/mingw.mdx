@@ -1,0 +1,84 @@
+---
+title: Build on Windows (MinGW-w64)
+---
+
+# Build From Source on Windows - MinGW-w64
+
+## Prerequisites
+
+In order to compile PcapPlusPlus on Windows using MinGW-w64 you need the following components:
+
+1. `CMake` which can be installed from: <https://cmake.org/install/> or with `pacman` if using MSYS2: `pacman -S mingw-w64-x86_64-cmake`
+2. Download and run MinGW-w64 installer from here: <https://sourceforge.net/projects/mingw-w64/>
+3. Make sure that MinGW-w64 `bin` directory is in your `PATH` environment variable, for example:
+   ```shell
+   PATH=%PATH%;C:\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin
+   ```
+4. Download and install [WinPcap](https://www.winpcap.org/install/) **OR** [Npcap](https://npcap.com/#download) on your system
+   :::tip Note for Npcap:
+   If you install **Npcap** please check the `Install Npcap in WinPcap API-compatilbility mode` option during installation:
+
+   ![Npcap-WinPcap compatilibitly](/img/install/Npcap_compatibility_mode.png)
+   :::
+
+5. [WinPcap developer's pack](https://www.winpcap.org/devel.htm) **OR** [Npcap SDK](https://nmap.org/npcap/guide/npcap-devguide.html) - containing the `wpcap` library PcapPlusPlus is linking with plus relevant `.h` files.
+   1. WinPcap developer's pack can be downloaded from here: <https://www.winpcap.org/devel.htm>
+   2. Npcap SDK can be downloaded from here: <https://nmap.org/npcap/#download>
+
+## Build
+
+Assuming you want to build PcapPlusPlus into a `build` directory:
+
+```shell
+cmake -G "MinGW Makefiles" -DPCAP_ROOT=<NpcapSDK_or_WinPcapDevPack_Directory> -S . -B build
+```
+
+And then initiate the build in one of two ways:
+
+- Using CMake:
+  ```shell
+  cmake --build build
+  ```
+- Using `make`:
+  ```shell
+  cd build
+  make
+  ```
+
+This process will build the following artifacts:
+
+- PcapPlusPlus libs:
+  - `build\Common++\libCommon++.a`
+  - `build\Packet++\libPacket++.a`
+  - `build\Pcap++\libPcap++.a`
+- PcapPlusPlus examples binaries under `build\examples_bin`
+- PcapPlusPlus tests:
+  - `<PcapPlusPlus_Dir>\Tests\Packet++Test\Bin\Packet++Test.exe`
+  - `<PcapPlusPlus_Dir>\Tests\Pcap++Test\Bin\Pcap++Test.exe`
+
+The following configuration options are available (on top of CMake's built-in options):
+
+| Option                                             | Description                                                                                                                                                                     |
+| :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **`-DPCAP_ROOT=<DIR>`**                            | Npcap SDK or WinPcap developer pack directory (mandatory option)                                                                                                                |
+| **`-DPCAPPP_BUILD_EXAMPLES=<ON/OFF>`**             | Build PcapPlusPlus examples (default value is `ON` if building the project itself, otherwise `OFF`)                                                                             |
+| **`-DPCAPPP_BUILD_TESTS=<ON/OFF>`**                | Build PcapPlusPlus tests (default value is `ON` if building the project itself, otherwise `OFF`)                                                                                |
+| **`-DPCAPPP_BUILD_TUTORIALS=<ON/OFF>`**            | Build PcapPlusPlus tutorials. This option is only available if `DPCAPPP_BUILD_EXAMPLES=ON`. The tutorials binaries will be under `build\tutorials_bin` (default value is `OFF`) |
+| **`-DPCAPPP_INSTALL=<ON/OFF>`**                    | Install PcapPlusPlus (default value is `ON` if building the project itself, otherwise `OFF`)                                                                                    |
+| **`-DBUILD_SHARED_LIBS=<ON/OFF>`**                 | Build shared libs (default value is `OFF`)                                                                                                                                      |
+| **`-DPCAPPP_ENABLE_PCAP_IMMEDIATE_MODE=<ON/OFF>`** | Enable pcap immediate mode, available only in Npcap (default value is `OFF`)                                                                                                    |
+| **`-DPCAPPP_ENABLE_PCAP_SET_DIRECTION=<ON/OFF>`**  | Enable set direction for capturing incoming or outgoing packets (default value is `OFF`)                                                                                        |
+
+## Installation
+
+Windows doesn't have a default install directory, but you may want to see all libs, header files and examples under one directory (which is not the `build` directory).
+Here is how to acheive that:
+
+```shell
+set DESTDIR=<DIR>
+cmake --install build --prefix "/"
+```
+
+## Running tests
+
+PcapPlusPlus contains a set of test-cases you can run to make sure that everything works correctly on your system. [This guide](../tests) contains detailed instructions on how to run them.
