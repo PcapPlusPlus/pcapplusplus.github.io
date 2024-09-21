@@ -166,6 +166,8 @@ var files_dup =
       [ "PfRingDeviceList", "classpcpp_1_1_pf_ring_device_list.html", "classpcpp_1_1_pf_ring_device_list" ]
     ] ],
     [ "PointerVector.h", "_pointer_vector_8h.html", [
+      [ "Copier", "structpcpp_1_1internal_1_1_copier.html", null ],
+      [ "Copier< T, typename std::enable_if< std::is_polymorphic< T >::value >::type >", "structpcpp_1_1internal_1_1_copier_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__polymoe27fb9c89d58dc63857240a0734df6f3.html", null ],
       [ "PointerVector", "classpcpp_1_1_pointer_vector.html", "classpcpp_1_1_pointer_vector" ]
     ] ],
     [ "PPPoELayer.h", "_p_p_po_e_layer_8h.html", "_p_p_po_e_layer_8h" ],
