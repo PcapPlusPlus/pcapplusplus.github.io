@@ -27,6 +27,8 @@ var hierarchy =
     [ "pcpp::internal::BpfProgramDeleter", "structpcpp_1_1internal_1_1_bpf_program_deleter.html", null ],
     [ "pcpp::SSLClientHelloMessage::ClientHelloTLSFingerprint", "structpcpp_1_1_s_s_l_client_hello_message_1_1_client_hello_t_l_s_fingerprint.html", null ],
     [ "pcpp::ConnectionData", "structpcpp_1_1_connection_data.html", null ],
+    [ "pcpp::internal::Copier< T, Enable >", "structpcpp_1_1internal_1_1_copier.html", null ],
+    [ "pcpp::internal::Copier< T, typename std::enable_if< std::is_polymorphic< T >::value >::type >", "structpcpp_1_1internal_1_1_copier_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__polymoe27fb9c89d58dc63857240a0734df6f3.html", null ],
     [ "pcpp::cotphdr", "structpcpp_1_1cotphdr.html", null ],
     [ "pcpp::LdapSearchRequestLayer::DerefAliases", "classpcpp_1_1_ldap_search_request_layer_1_1_deref_aliases.html", null ],
     [ "pcpp::PcapLiveDevice::DeviceConfiguration", "structpcpp_1_1_pcap_live_device_1_1_device_configuration.html", null ],

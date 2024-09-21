@@ -7,6 +7,7 @@ var classpcpp_1_1_raw_packet =
     [ "RawPacket", "classpcpp_1_1_raw_packet.html#a38d24eda21061c53f0801f3bcbe34193", null ],
     [ "appendData", "classpcpp_1_1_raw_packet.html#a6ed098d0dfcf60fa561b56e6c73bed9c", null ],
     [ "clear", "classpcpp_1_1_raw_packet.html#ab6b169b02bda40e90279e7d8f6816e41", null ],
+    [ "clone", "classpcpp_1_1_raw_packet.html#af7fea4b64de7faf8313436adc8668a6d", null ],
     [ "getFrameLength", "classpcpp_1_1_raw_packet.html#a19819af25bdac6217aad301b7b243b15", null ],
     [ "getLinkLayerType", "classpcpp_1_1_raw_packet.html#ad3cd4246f2c2e6a7d4238a02b28771ba", null ],
     [ "getObjectType", "classpcpp_1_1_raw_packet.html#a84cca99a63eeaa7653e984462686f2bc", null ],

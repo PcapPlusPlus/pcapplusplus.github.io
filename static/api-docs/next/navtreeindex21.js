@@ -1,5 +1,7 @@
 var NAVTREEINDEX21 =
 {
+"structpcpp_1_1_dpdk_device_1_1_rx_tx_stats.html#a31fa4203a8bf1ed1c39d8b8d6aa7fa0f":[3,0,0,277,3,1],
+"structpcpp_1_1_dpdk_device_1_1_rx_tx_stats.html#a39ba9e581d7353a484f575487a334fc8":[3,0,0,277,3,2],
 "structpcpp_1_1_dpdk_device_1_1_rx_tx_stats.html#aeeb02f0b115b0d7a81cd1076535c8ac2":[3,0,0,277,3,0],
 "structpcpp_1_1_enum_class_hash.html":[3,0,0,1],
 "structpcpp_1_1_i_pcap_device_1_1_pcap_stats.html":[3,0,0,285,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX21 =
 "structpcpp_1_1dnshdr.html#ac1c882f5f9bd83d50a671b09a08683bf":[3,0,0,47,4],
 "structpcpp_1_1dnshdr.html#ac7e51ef9ae04bec1e3ce7530e39d53d8":[3,0,0,47,0],
 "structpcpp_1_1dnshdr.html#ac9995bbebc0af173ef829ad425e385f4":[3,0,0,47,7],
-"structpcpp_1_1dnshdr.html#accb70bf9b2e440c94820dd8e22651326":[3,0,0,47,9],
-"structpcpp_1_1dnshdr.html#adfb415bb642ceba8a9d8e826bd95830a":[3,0,0,47,10],
-"structpcpp_1_1dnshdr.html#af22351368a518e3597634f9ad6338952":[3,0,0,47,6]
+"structpcpp_1_1dnshdr.html#accb70bf9b2e440c94820dd8e22651326":[3,0,0,47,9]
 };

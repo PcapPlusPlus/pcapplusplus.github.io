@@ -1,5 +1,7 @@
 var NAVTREEINDEX19 =
 {
+"classpcpp_1_1_telnet_layer.html#a0c5b6908a66039045bda047b575bf416":[3,0,0,256,10],
+"classpcpp_1_1_telnet_layer.html#a65b707b8451ed49e9d53ca50bb9cdb25":[3,0,0,256,11],
 "classpcpp_1_1_telnet_layer.html#a6e5366ce34dd207aa861fbe6b62e8365":[3,0,0,256,7],
 "classpcpp_1_1_telnet_layer.html#a8bd333d7320cebcb4a4d827948c4c86c":[3,0,0,256,16],
 "classpcpp_1_1_telnet_layer.html#aa58e90c6780955ffa469fd4a43acb38e":[3,0,0,256,15],
@@ -247,7 +249,5 @@ var NAVTREEINDEX19 =
 "classpcpp_1_1_win_pcap_live_device.html#a86b56db9d815fc8c6017c9a1232554ed":[3,0,0,323,0],
 "classpcpp_1_1_win_pcap_live_device.html#a8e2487bad421ea945119a872c346c595":[3,0,0,323,1],
 "classpcpp_1_1_win_pcap_live_device.html#a9fb54c1f769a409743c6710f02b4de56":[3,0,0,323,2],
-"classpcpp_1_1_win_pcap_live_device.html#aa11efe575402d9e06624376d87caf4fb":[3,0,0,323,4],
-"classpcpp_1_1_win_pcap_live_device.html#adc89b5d18a2a00f078d339189d2f7c62":[3,0,0,323,7],
-"classpcpp_1_1_win_pcap_live_device.html#aebff78da9d57c6ec9046de32746943bd":[3,0,0,323,5]
+"classpcpp_1_1_win_pcap_live_device.html#aa11efe575402d9e06624376d87caf4fb":[3,0,0,323,4]
 };

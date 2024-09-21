@@ -5,6 +5,7 @@ var classpcpp_1_1_m_buf_raw_packet =
     [ "MBufRawPacket", "classpcpp_1_1_m_buf_raw_packet.html#a0b2a21888dbcbdc2e50c703938de6804", null ],
     [ "appendData", "classpcpp_1_1_m_buf_raw_packet.html#af1c5144634729ce1ab2da2aa89946e89", null ],
     [ "clear", "classpcpp_1_1_m_buf_raw_packet.html#a265214f9d02a63d0cff85b4e1a93c396", null ],
+    [ "clone", "classpcpp_1_1_m_buf_raw_packet.html#a74e4efa1c3f7c4b8a16561ecbba73fbf", null ],
     [ "getMBuf", "classpcpp_1_1_m_buf_raw_packet.html#a203b86f2e4098cd2a51e5e87c7c7ebdc", null ],
     [ "getObjectType", "classpcpp_1_1_m_buf_raw_packet.html#a75ff3b18bc4510106ae045e711fb1827", null ],
     [ "init", "classpcpp_1_1_m_buf_raw_packet.html#a9faebadf686bb3b6351bcb04c335b4e6", null ],
