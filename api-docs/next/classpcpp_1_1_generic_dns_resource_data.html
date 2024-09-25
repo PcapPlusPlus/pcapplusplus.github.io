@@ -113,13 +113,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af5e9af4b57f24bf19f0ff12ae1c76458"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a002904e1c014581b87277fcf23b3ae4f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_generic_dns_resource_data.html#a002904e1c014581b87277fcf23b3ae4f">operator==</a> (const <a class="el" href="classpcpp_1_1_generic_dns_resource_data.html">GenericDnsResourceData</a> &amp;other) const</td></tr>
 <tr class="separator:a002904e1c014581b87277fcf23b3ae4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30abd7ed0f3978921bf37de923cced04"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_generic_dns_resource_data.html#a30abd7ed0f3978921bf37de923cced04">toString</a> () const</td></tr>
-<tr class="separator:a30abd7ed0f3978921bf37de923cced04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cbacedd1189058bd007f7081e58df02"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_generic_dns_resource_data.html#a4cbacedd1189058bd007f7081e58df02">toByteArr</a> (uint8_t *arr, size_t &amp;arrLength, <a class="el" href="classpcpp_1_1_i_dns_resource.html">IDnsResource</a> *dnsResource) const</td></tr>
-<tr class="separator:a4cbacedd1189058bd007f7081e58df02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72b52f7913bbd563139c4096fde9ebaa"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_generic_dns_resource_data.html#a72b52f7913bbd563139c4096fde9ebaa">toString</a> () const override</td></tr>
+<tr class="separator:a72b52f7913bbd563139c4096fde9ebaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a679808e8c86d96b2b04dd2274ea419f8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_generic_dns_resource_data.html#a679808e8c86d96b2b04dd2274ea419f8">toByteArr</a> (uint8_t *arr, size_t &amp;arrLength, <a class="el" href="classpcpp_1_1_i_dns_resource.html">IDnsResource</a> *dnsResource) const override</td></tr>
+<tr class="separator:a679808e8c86d96b2b04dd2274ea419f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classpcpp_1_1_i_dns_resource_data"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_i_dns_resource_data')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_dns_resource_data.html">pcpp::IDnsResourceData</a></td></tr>
-<tr class="memitem:a63db72c6b97ce4ae2c3411c6c41a24c0 inherit pub_methods_classpcpp_1_1_i_dns_resource_data"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_dns_resource_data.html#a63db72c6b97ce4ae2c3411c6c41a24c0">~IDnsResourceData</a> ()</td></tr>
-<tr class="separator:a63db72c6b97ce4ae2c3411c6c41a24c0 inherit pub_methods_classpcpp_1_1_i_dns_resource_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad86fb391e74eb3e156b38a281928241 inherit pub_methods_classpcpp_1_1_i_dns_resource_data"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_dns_resource_data.html#aad86fb391e74eb3e156b38a281928241">~IDnsResourceData</a> ()=default</td></tr>
+<tr class="separator:aad86fb391e74eb3e156b38a281928241 inherit pub_methods_classpcpp_1_1_i_dns_resource_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a0aba99fc544c523a10ed41b3fc80a4 inherit pub_methods_classpcpp_1_1_i_dns_resource_data"><td class="memTemplParams" colspan="2">template&lt;class IDnsResourceDataType &gt; </td></tr>
 <tr class="memitem:a8a0aba99fc544c523a10ed41b3fc80a4 inherit pub_methods_classpcpp_1_1_i_dns_resource_data"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_dns_resource_data.html#a8a0aba99fc544c523a10ed41b3fc80a4">isTypeOf</a> () const</td></tr>
 <tr class="separator:a8a0aba99fc544c523a10ed41b3fc80a4 inherit pub_methods_classpcpp_1_1_i_dns_resource_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -247,8 +247,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4cbacedd1189058bd007f7081e58df02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cbacedd1189058bd007f7081e58df02">&#9670;&nbsp;</a></span>toByteArr()</h2>
+<a id="a679808e8c86d96b2b04dd2274ea419f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a679808e8c86d96b2b04dd2274ea419f8">&#9670;&nbsp;</a></span>toByteArr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -282,7 +282,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -300,8 +300,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a30abd7ed0f3978921bf37de923cced04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30abd7ed0f3978921bf37de923cced04">&#9670;&nbsp;</a></span>toString()</h2>
+<a id="a72b52f7913bbd563139c4096fde9ebaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72b52f7913bbd563139c4096fde9ebaa">&#9670;&nbsp;</a></span>toString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -318,7 +318,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -334,7 +334,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_generic_dns_resource_data.html">GenericDnsResourceData</a></li>
-    <li class="footer">Generated on Sat Sep 21 2024 07:10:49 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 25 2024 07:19:06 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

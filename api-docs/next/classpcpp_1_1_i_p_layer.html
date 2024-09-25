@@ -110,14 +110,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7afd6c9806facdb60435968120925e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c493d8d47346fc9770e01c01eb534ab"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_layer.html#a6c493d8d47346fc9770e01c01eb534ab">getDstIPAddress</a> () const =0</td></tr>
 <tr class="separator:a6c493d8d47346fc9770e01c01eb534ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f4340c851a49c6a33170c9825db3c83"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_layer.html#a1f4340c851a49c6a33170c9825db3c83">~IPLayer</a> ()</td></tr>
-<tr class="separator:a1f4340c851a49c6a33170c9825db3c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48d71e484fd49e9bd0d273dea6f77946"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_layer.html#a48d71e484fd49e9bd0d273dea6f77946">~IPLayer</a> ()=default</td></tr>
+<tr class="separator:a48d71e484fd49e9bd0d273dea6f77946"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is an interface (abstract class) implemented in the IP layers (<a class="el" href="classpcpp_1_1_i_pv4_layer.html">IPv4Layer</a> and <a class="el" href="classpcpp_1_1_i_pv6_layer.html">IPv6Layer</a>). It provides methods to fetch the source and destination IP addresses in an abdtract way that hides the IP type (IPv4 or IPv6). This is useful for use-cases in which the IP type doesn't matter. For example: if you're only interested in printing the IP address the IP type shouldn't matter. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a1f4340c851a49c6a33170c9825db3c83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f4340c851a49c6a33170c9825db3c83">&#9670;&nbsp;</a></span>~IPLayer()</h2>
+<a id="a48d71e484fd49e9bd0d273dea6f77946"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48d71e484fd49e9bd0d273dea6f77946">&#9670;&nbsp;</a></span>~IPLayer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -134,7 +134,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -167,7 +167,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>An abstract method to get the destination IP address </p><dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> object containing the destination address </dd></dl>
 
-<p>Implemented in <a class="el" href="classpcpp_1_1_i_pv6_layer.html#a08367d5d88a039be73b0915d7a635889">pcpp::IPv6Layer</a>, and <a class="el" href="classpcpp_1_1_i_pv4_layer.html#a4446cd92f698e71072af9cb81c345492">pcpp::IPv4Layer</a>.</p>
+<p>Implemented in <a class="el" href="classpcpp_1_1_i_pv6_layer.html#ae8fc710de1b4ebe38c96da2cd968fd52">pcpp::IPv6Layer</a>, and <a class="el" href="classpcpp_1_1_i_pv4_layer.html#a25aeb8c75b4a5b16e679a4fb48ca144a">pcpp::IPv4Layer</a>.</p>
 
 </div>
 </div>
@@ -195,7 +195,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>An abstract method to get the source IP address </p><dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> object containing the source address </dd></dl>
 
-<p>Implemented in <a class="el" href="classpcpp_1_1_i_pv6_layer.html#aaeb21fcd5e317d3901323aaed49345f0">pcpp::IPv6Layer</a>, and <a class="el" href="classpcpp_1_1_i_pv4_layer.html#a7033f37011447d0b5267449b94485632">pcpp::IPv4Layer</a>.</p>
+<p>Implemented in <a class="el" href="classpcpp_1_1_i_pv6_layer.html#ac3b6cb94734bbad6e996b7f386d0fed3">pcpp::IPv6Layer</a>, and <a class="el" href="classpcpp_1_1_i_pv4_layer.html#a28a052e25199e7be029851006af0073b">pcpp::IPv4Layer</a>.</p>
 
 </div>
 </div>
@@ -205,7 +205,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_p_layer.html">IPLayer</a></li>
-    <li class="footer">Generated on Sat Sep 21 2024 07:10:49 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 25 2024 07:19:06 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

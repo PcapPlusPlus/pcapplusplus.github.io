@@ -13,7 +13,7 @@ var classpcpp_1_1_p_p_po_e_layer =
       [ "PPPOE_CODE_PADM", "classpcpp_1_1_p_p_po_e_layer.html#aa170ba4bb5e03d3ac1dddb45118ed9cbabd64c3c502f0270a3b069f7f4f1226d3", null ],
       [ "PPPOE_CODE_PADN", "classpcpp_1_1_p_p_po_e_layer.html#aa170ba4bb5e03d3ac1dddb45118ed9cba6da6f1ebfe6bc0415acb9cef210d18af", null ]
     ] ],
-    [ "computeCalculateFields", "classpcpp_1_1_p_p_po_e_layer.html#aea130ab24ed851b7d2ffab48db145d16", null ],
-    [ "getOsiModelLayer", "classpcpp_1_1_p_p_po_e_layer.html#ad2733a1a71e3c18806700c79f414bb0e", null ],
+    [ "computeCalculateFields", "classpcpp_1_1_p_p_po_e_layer.html#ada38ffe6c5f43e66fb8cb13295106690", null ],
+    [ "getOsiModelLayer", "classpcpp_1_1_p_p_po_e_layer.html#a532264ee2b2bc39b5b35010f595a136e", null ],
     [ "getPPPoEHeader", "classpcpp_1_1_p_p_po_e_layer.html#af8eb0e3151849bb73e161ce925d9ec5e", null ]
 ];

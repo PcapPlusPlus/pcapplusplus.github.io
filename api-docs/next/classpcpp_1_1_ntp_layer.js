@@ -72,9 +72,9 @@ var classpcpp_1_1_ntp_layer =
     ] ],
     [ "NtpLayer", "classpcpp_1_1_ntp_layer.html#a69f54a5b75a966dd34f5ac5e6363f1e7", null ],
     [ "NtpLayer", "classpcpp_1_1_ntp_layer.html#a8c3659cc9a900a070382443ae9b1f251", null ],
-    [ "computeCalculateFields", "classpcpp_1_1_ntp_layer.html#ab907a5f512375497df0e4caa1416d911", null ],
+    [ "computeCalculateFields", "classpcpp_1_1_ntp_layer.html#afd4b972d6463c677372d609d61df6e2a", null ],
     [ "getDigest", "classpcpp_1_1_ntp_layer.html#a8df14e78d0aa50bf45333f1f0c8750a3", null ],
-    [ "getHeaderLen", "classpcpp_1_1_ntp_layer.html#a3a92fea9e983aa92cf2e5a3d268be628", null ],
+    [ "getHeaderLen", "classpcpp_1_1_ntp_layer.html#aa9e3ac126b445235d7af0c39f2da4a7e", null ],
     [ "getKeyID", "classpcpp_1_1_ntp_layer.html#a3ac9b842f9472338e77059f14606416a", null ],
     [ "getLeapIndicator", "classpcpp_1_1_ntp_layer.html#aa0d900fca99b330c0e901f241943d225", null ],
     [ "getMode", "classpcpp_1_1_ntp_layer.html#a67cf7fbb8126129b4a5d98d039060526", null ],
@@ -82,7 +82,7 @@ var classpcpp_1_1_ntp_layer =
     [ "getOriginTimestamp", "classpcpp_1_1_ntp_layer.html#a30b405212ef9b1b27dd483c57261b900", null ],
     [ "getOriginTimestampAsString", "classpcpp_1_1_ntp_layer.html#a49cd4cf0ab4d76bf440f068be08f43bc", null ],
     [ "getOriginTimestampInSecs", "classpcpp_1_1_ntp_layer.html#a5c906fefa3d936a5d136c9794b9493d6", null ],
-    [ "getOsiModelLayer", "classpcpp_1_1_ntp_layer.html#ac4ce382e3e22ee769d590d659904d5ee", null ],
+    [ "getOsiModelLayer", "classpcpp_1_1_ntp_layer.html#aa16697b7a922f7895c984a83b5ab97d8", null ],
     [ "getPollInterval", "classpcpp_1_1_ntp_layer.html#a564066b3409418782d2c7328f458b5e5", null ],
     [ "getPollIntervalInSecs", "classpcpp_1_1_ntp_layer.html#a5b7184d62e40115d39e05a41cb56c504", null ],
     [ "getPrecision", "classpcpp_1_1_ntp_layer.html#aa301c07511bcb94ae733d8eb897e8af6", null ],
@@ -104,7 +104,7 @@ var classpcpp_1_1_ntp_layer =
     [ "getTransmitTimestampAsString", "classpcpp_1_1_ntp_layer.html#ae4a812f85478218a53c43d8a93a420c7", null ],
     [ "getTransmitTimestampInSecs", "classpcpp_1_1_ntp_layer.html#a08a38fa10169b8b250e1f7969a0a552d", null ],
     [ "getVersion", "classpcpp_1_1_ntp_layer.html#adde5c87238411a47df1fc2ab8069c03d", null ],
-    [ "parseNextLayer", "classpcpp_1_1_ntp_layer.html#a678ecfd02e5ca40aa4ab8de065fe4eba", null ],
+    [ "parseNextLayer", "classpcpp_1_1_ntp_layer.html#a9508aaf1bac099ce0cdd83c7cef95edb", null ],
     [ "setLeapIndicator", "classpcpp_1_1_ntp_layer.html#ace7b249855967ad7e55ae12157c6ccfd", null ],
     [ "setMode", "classpcpp_1_1_ntp_layer.html#ac0ca1ee3bb4a91202d680e4c0e818e00", null ],
     [ "setOriginTimestamp", "classpcpp_1_1_ntp_layer.html#a80fae57dbddfe6b0c221177b6c40ba87", null ],
@@ -126,5 +126,5 @@ var classpcpp_1_1_ntp_layer =
     [ "setTransmitTimestamp", "classpcpp_1_1_ntp_layer.html#a7374fbdfdd3a0109fb8b5f35bbad2359", null ],
     [ "setTransmitTimestampInSecs", "classpcpp_1_1_ntp_layer.html#a0ce421a221384299225b29ed839b7e5c", null ],
     [ "setVersion", "classpcpp_1_1_ntp_layer.html#a0f87209f90c6560e486d91012519c419", null ],
-    [ "toString", "classpcpp_1_1_ntp_layer.html#af6711d737fce686161d59dc5fc5bee3c", null ]
+    [ "toString", "classpcpp_1_1_ntp_layer.html#aded4a62471cc0fda1e54a6e045a90106", null ]
 ];

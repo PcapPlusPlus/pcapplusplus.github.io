@@ -8,7 +8,7 @@ var classpcpp_1_1_bgp_update_message_layer =
     [ "clearPathAttributes", "classpcpp_1_1_bgp_update_message_layer.html#a28b3306416950831a444b4cb8842b043", null ],
     [ "clearWithdrawnRoutes", "classpcpp_1_1_bgp_update_message_layer.html#acf31750218d44aba74039cf05572c7dc", null ],
     [ "getBasicMsgHeader", "classpcpp_1_1_bgp_update_message_layer.html#adf542bc113e35e66262650144edfa1f1", null ],
-    [ "getBgpMessageType", "classpcpp_1_1_bgp_update_message_layer.html#a648323779cf7d65a25ba16579cb81a9c", null ],
+    [ "getBgpMessageType", "classpcpp_1_1_bgp_update_message_layer.html#a6cb3b34c24fe0456439a756752bf32e9", null ],
     [ "getNetworkLayerReachabilityInfo", "classpcpp_1_1_bgp_update_message_layer.html#ae92fce124d2926c54edd3ce00a3d95cb", null ],
     [ "getNetworkLayerReachabilityInfoLength", "classpcpp_1_1_bgp_update_message_layer.html#aa7589d1816f421ce549a9c7b8929bc84", null ],
     [ "getPathAttributes", "classpcpp_1_1_bgp_update_message_layer.html#a6264e30596da7029874d908208b77485", null ],

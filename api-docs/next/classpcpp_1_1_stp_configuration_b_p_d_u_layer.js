@@ -8,7 +8,7 @@ var classpcpp_1_1_stp_configuration_b_p_d_u_layer =
     [ "getBridgeSystemIDExtension", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#a4e0c33cacefa5aee1bc2f377c16d592a", null ],
     [ "getFlag", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#a060fee54eddfc5048ea5d3151cead8df", null ],
     [ "getForwardDelay", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#a4b08a7fcc7bef47e8515ec674f828cfd", null ],
-    [ "getHeaderLen", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#ae0ccd2d154d3c436dbc52ace3e6e6adc", null ],
+    [ "getHeaderLen", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#a0f2f0674922d29ca67db952b474e4753", null ],
     [ "getMaximumAge", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#abdfd3172e4b62019fc4ba44259ccc5a5", null ],
     [ "getMessageAge", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#a9847b54f94d7af4dee83ed203541db89", null ],
     [ "getPathCost", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#ad8ee88cbd9d39d31847b2644ab9d7401", null ],
@@ -19,7 +19,7 @@ var classpcpp_1_1_stp_configuration_b_p_d_u_layer =
     [ "getRootSystemIDExtension", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#aa430a442e9cac0061996a45aea7e1fcc", null ],
     [ "getStpConfHeader", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#a957375ab588aa0916bd7899a4c8137b9", null ],
     [ "getTransmissionInterval", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#a73f31fe685aba596039fcfe64ad6af59", null ],
-    [ "parseNextLayer", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#ad3cfbf05bc7477d928730f2f99b5cae3", null ],
+    [ "parseNextLayer", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#a4c1acef3402e2fe7c0817f72b13164ad", null ],
     [ "setBridgeId", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#aebe27395a30d2fa4250b8786fb324625", null ],
     [ "setBridgePriority", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#a041a613d87f19072a3660ecf77004630", null ],
     [ "setBridgeSystemID", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#a6875a4d0fcc7a5983d453231793c5094", null ],
@@ -35,5 +35,5 @@ var classpcpp_1_1_stp_configuration_b_p_d_u_layer =
     [ "setRootSystemID", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#aa78efe37218aa84de776fcf6f486c91b", null ],
     [ "setRootSystemIDExtension", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#ac0b067be9dcff613d37003bdbef93fc2", null ],
     [ "setTransmissionInterval", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#ae47b135173b7de2345f05888abe0c28d", null ],
-    [ "toString", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#ab32e9c786cbdba626c05a43ffdf6b3c5", null ]
+    [ "toString", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#af1f24bf70a8818e516194fba37bc3928", null ]
 ];

@@ -5,7 +5,7 @@ var classpcpp_1_1_bgp_notification_message_layer =
     [ "BgpNotificationMessageLayer", "classpcpp_1_1_bgp_notification_message_layer.html#a1b6b986b34e7da5ab309fedf11a18246", null ],
     [ "BgpNotificationMessageLayer", "classpcpp_1_1_bgp_notification_message_layer.html#a7e76ca49bec81afdcfe0d882d6cedbd0", null ],
     [ "BgpNotificationMessageLayer", "classpcpp_1_1_bgp_notification_message_layer.html#a28730707012c464f3acc2c75290f28d0", null ],
-    [ "getBgpMessageType", "classpcpp_1_1_bgp_notification_message_layer.html#aba37eb6eaca03f5539ed5c46e5f5104f", null ],
+    [ "getBgpMessageType", "classpcpp_1_1_bgp_notification_message_layer.html#a3244be3c44cae34b42e632bd2582f7a4", null ],
     [ "getNotificationData", "classpcpp_1_1_bgp_notification_message_layer.html#ac54a5a52b9d5dff4b8d8f1edb59b7f1c", null ],
     [ "getNotificationDataAsHexString", "classpcpp_1_1_bgp_notification_message_layer.html#a440adf5d7b2ea8be2ca0c52c9924a432", null ],
     [ "getNotificationDataLen", "classpcpp_1_1_bgp_notification_message_layer.html#aa5522a27a80eb0b4bba45582f9d350b1", null ],
