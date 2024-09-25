@@ -108,8 +108,8 @@ Inheritance diagram for pcpp::DhcpOption:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac6ef6cbf88e0b2fe67677963ed492c48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dhcp_option.html#ac6ef6cbf88e0b2fe67677963ed492c48">DhcpOption</a> (uint8_t *optionRawData)</td></tr>
 <tr class="separator:ac6ef6cbf88e0b2fe67677963ed492c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a280836170d092e111cbad745e46b5e5c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dhcp_option.html#a280836170d092e111cbad745e46b5e5c">~DhcpOption</a> ()</td></tr>
-<tr class="separator:a280836170d092e111cbad745e46b5e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a4abd9edde2c59c139060013dd49e7f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dhcp_option.html#a1a4abd9edde2c59c139060013dd49e7f">~DhcpOption</a> () override=default</td></tr>
+<tr class="separator:a1a4abd9edde2c59c139060013dd49e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6e0bc9451e502e7f798a99e76e2be5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dhcp_option.html#ad6e0bc9451e502e7f798a99e76e2be5f">getValueAsIpAddr</a> () const</td></tr>
 <tr class="separator:ad6e0bc9451e502e7f798a99e76e2be5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8877956c1ad2fb5d64988134d1c2eab8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dhcp_option.html#a8877956c1ad2fb5d64988134d1c2eab8">setValueIpAddr</a> (const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;addr, int valueOffset=0)</td></tr>
@@ -118,17 +118,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a336013dd5cab77544833d77fbb0e4417"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d8b72aeaa4425947c0ef9bcc5229631"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dhcp_option.html#a1d8b72aeaa4425947c0ef9bcc5229631">setValueString</a> (const std::string &amp;stringValue, int valueOffset=0)</td></tr>
 <tr class="separator:a1d8b72aeaa4425947c0ef9bcc5229631"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcc1721eddb9010f8ba9d57d822ec921"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dhcp_option.html#adcc1721eddb9010f8ba9d57d822ec921">getTotalSize</a> () const</td></tr>
-<tr class="separator:adcc1721eddb9010f8ba9d57d822ec921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7c1d4278af10a599276a46ce045e080"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dhcp_option.html#ad7c1d4278af10a599276a46ce045e080">getDataSize</a> () const</td></tr>
-<tr class="separator:ad7c1d4278af10a599276a46ce045e080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b8f200848e1b18a4a00ee3f357a4d2a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dhcp_option.html#a9b8f200848e1b18a4a00ee3f357a4d2a">getTotalSize</a> () const override</td></tr>
+<tr class="separator:a9b8f200848e1b18a4a00ee3f357a4d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a380870773ecd2bc12088fe7170c30626"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dhcp_option.html#a380870773ecd2bc12088fe7170c30626">getDataSize</a> () const override</td></tr>
+<tr class="separator:a380870773ecd2bc12088fe7170c30626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classpcpp_1_1_t_l_v_record"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_t_l_v_record')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_t_l_v_record.html">pcpp::TLVRecord&lt; uint8_t, uint8_t &gt;</a></td></tr>
 <tr class="memitem:a026522df3430ba5cc60f03c1a41aceb6 inherit pub_methods_classpcpp_1_1_t_l_v_record"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a026522df3430ba5cc60f03c1a41aceb6">TLVRecord</a> (uint8_t *recordRawData)</td></tr>
 <tr class="separator:a026522df3430ba5cc60f03c1a41aceb6 inherit pub_methods_classpcpp_1_1_t_l_v_record"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06c65d738332174555360bf0fcf79752 inherit pub_methods_classpcpp_1_1_t_l_v_record"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a06c65d738332174555360bf0fcf79752">TLVRecord</a> (const <a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a> &amp;other)</td></tr>
 <tr class="separator:a06c65d738332174555360bf0fcf79752 inherit pub_methods_classpcpp_1_1_t_l_v_record"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af13172efa5e96f1bcad08b53819307a3 inherit pub_methods_classpcpp_1_1_t_l_v_record"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#af13172efa5e96f1bcad08b53819307a3">~TLVRecord</a> ()</td></tr>
-<tr class="separator:af13172efa5e96f1bcad08b53819307a3 inherit pub_methods_classpcpp_1_1_t_l_v_record"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a233ff1535e95b15b514731033579d148 inherit pub_methods_classpcpp_1_1_t_l_v_record"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a233ff1535e95b15b514731033579d148">~TLVRecord</a> ()=default</td></tr>
+<tr class="separator:a233ff1535e95b15b514731033579d148 inherit pub_methods_classpcpp_1_1_t_l_v_record"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc60806af9572d14483ed3b961579a60 inherit pub_methods_classpcpp_1_1_t_l_v_record"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#afc60806af9572d14483ed3b961579a60">assign</a> (uint8_t *recordRawData)</td></tr>
 <tr class="separator:afc60806af9572d14483ed3b961579a60 inherit pub_methods_classpcpp_1_1_t_l_v_record"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad742ccc40d30398c30d194e7f97bbc07 inherit pub_methods_classpcpp_1_1_t_l_v_record"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#ad742ccc40d30398c30d194e7f97bbc07">operator=</a> (const <a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a> &amp;other)</td></tr>
@@ -197,8 +197,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a280836170d092e111cbad745e46b5e5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a280836170d092e111cbad745e46b5e5c">&#9670;&nbsp;</a></span>~DhcpOption()</h2>
+<a id="a1a4abd9edde2c59c139060013dd49e7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a4abd9edde2c59c139060013dd49e7f">&#9670;&nbsp;</a></span>~DhcpOption()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -207,7 +207,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual pcpp::DhcpOption::~DhcpOption </td>
+          <td class="memname">pcpp::DhcpOption::~DhcpOption </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -215,7 +215,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -268,8 +268,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad7c1d4278af10a599276a46ce045e080"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7c1d4278af10a599276a46ce045e080">&#9670;&nbsp;</a></span>getDataSize()</h2>
+<a id="a380870773ecd2bc12088fe7170c30626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a380870773ecd2bc12088fe7170c30626">&#9670;&nbsp;</a></span>getDataSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -286,7 +286,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -296,8 +296,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adcc1721eddb9010f8ba9d57d822ec921"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcc1721eddb9010f8ba9d57d822ec921">&#9670;&nbsp;</a></span>getTotalSize()</h2>
+<a id="a9b8f200848e1b18a4a00ee3f357a4d2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b8f200848e1b18a4a00ee3f357a4d2a">&#9670;&nbsp;</a></span>getTotalSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -314,7 +314,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -475,7 +475,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_dhcp_option.html">DhcpOption</a></li>
-    <li class="footer">Generated on Sat Sep 21 2024 07:10:49 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 25 2024 07:19:06 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
