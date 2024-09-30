@@ -231,7 +231,13 @@ var hierarchy =
           [ "pcpp::VrrpV3Layer", "classpcpp_1_1_vrrp_v3_layer.html", null ]
         ] ],
         [ "pcpp::VxlanLayer", "classpcpp_1_1_vxlan_layer.html", null ],
-        [ "pcpp::WakeOnLanLayer", "classpcpp_1_1_wake_on_lan_layer.html", null ]
+        [ "pcpp::WakeOnLanLayer", "classpcpp_1_1_wake_on_lan_layer.html", null ],
+        [ "pcpp::WireGuardLayer", "classpcpp_1_1_wire_guard_layer.html", [
+          [ "pcpp::WireGuardCookieReplyLayer", "classpcpp_1_1_wire_guard_cookie_reply_layer.html", null ],
+          [ "pcpp::WireGuardHandshakeInitiationLayer", "classpcpp_1_1_wire_guard_handshake_initiation_layer.html", null ],
+          [ "pcpp::WireGuardHandshakeResponseLayer", "classpcpp_1_1_wire_guard_handshake_response_layer.html", null ],
+          [ "pcpp::WireGuardTransportDataLayer", "classpcpp_1_1_wire_guard_transport_data_layer.html", null ]
+        ] ]
       ] ]
     ] ],
     [ "pcpp::IDevice", "classpcpp_1_1_i_device.html", [
@@ -466,6 +472,7 @@ var hierarchy =
     [ "pcpp::vlan_header", "structpcpp_1_1vlan__header.html", null ],
     [ "pcpp::vrrp_header", "structpcpp_1_1vrrp__header.html", null ],
     [ "pcpp::vxlan_header", "structpcpp_1_1vxlan__header.html", null ],
+    [ "pcpp::WireGuardLayer::wg_common_header", "structpcpp_1_1_wire_guard_layer_1_1wg__common__header.html", null ],
     [ "pcpp::WakeOnLanLayer::wol_header", "structpcpp_1_1_wake_on_lan_layer_1_1wol__header.html", null ],
     [ "pcpp::XdpDevice::XdpDeviceConfiguration", "structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html", null ],
     [ "pcpp::XdpDevice::XdpDeviceStats", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html", null ]
