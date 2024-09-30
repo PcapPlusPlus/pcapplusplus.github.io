@@ -301,6 +301,14 @@ var files_dup =
     [ "WinPcapLiveDevice.h", "_win_pcap_live_device_8h.html", [
       [ "WinPcapLiveDevice", "classpcpp_1_1_win_pcap_live_device.html", "classpcpp_1_1_win_pcap_live_device" ]
     ] ],
+    [ "WireGuardLayer.h", "_wire_guard_layer_8h.html", [
+      [ "WireGuardLayer", "classpcpp_1_1_wire_guard_layer.html", "classpcpp_1_1_wire_guard_layer" ],
+      [ "wg_common_header", "structpcpp_1_1_wire_guard_layer_1_1wg__common__header.html", "structpcpp_1_1_wire_guard_layer_1_1wg__common__header" ],
+      [ "WireGuardHandshakeInitiationLayer", "classpcpp_1_1_wire_guard_handshake_initiation_layer.html", "classpcpp_1_1_wire_guard_handshake_initiation_layer" ],
+      [ "WireGuardHandshakeResponseLayer", "classpcpp_1_1_wire_guard_handshake_response_layer.html", "classpcpp_1_1_wire_guard_handshake_response_layer" ],
+      [ "WireGuardCookieReplyLayer", "classpcpp_1_1_wire_guard_cookie_reply_layer.html", "classpcpp_1_1_wire_guard_cookie_reply_layer" ],
+      [ "WireGuardTransportDataLayer", "classpcpp_1_1_wire_guard_transport_data_layer.html", "classpcpp_1_1_wire_guard_transport_data_layer" ]
+    ] ],
     [ "XdpDevice.h", "_xdp_device_8h.html", [
       [ "XdpDevice", "classpcpp_1_1_xdp_device.html", "classpcpp_1_1_xdp_device" ],
       [ "XdpDeviceConfiguration", "structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html", "structpcpp_1_1_xdp_device_1_1_xdp_device_configuration" ],

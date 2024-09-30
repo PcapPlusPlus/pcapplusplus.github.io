@@ -229,7 +229,7 @@ var NAVTREEINDEX2 =
 "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1a":[4,0,40,1],
 "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa0025ed15da2a62fb8a238935e3cff176":[4,0,40,1,3],
 "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa007ea70046eb889350b7c0ad367cfb15":[4,0,40,1,11],
-"_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa0389db13994d87bd82492e07eabe1ff1":[4,0,40,1,56],
+"_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa0389db13994d87bd82492e07eabe1ff1":[4,0,40,1,57],
 "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa05c3c946e561a9df0f7c16cce779118d":[4,0,40,1,13],
 "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa1014ab8a1636c1c7b45ffe2768e81add":[4,0,40,1,39],
 "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa19e1e3077dd9686b33d231086d30fab0":[4,0,40,1,1],
@@ -237,7 +237,7 @@ var NAVTREEINDEX2 =
 "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa1b471ed9b860901662d96ade7712e9da":[4,0,40,1,21],
 "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa1c20fe8215d4844681b6462d87e49a7e":[4,0,40,1,41],
 "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa1cf3ebd1c9d8cfbb9b2be2bd8b1a3c23":[4,0,40,1,14],
-"_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa215a3cc0bca9f02941f47cd013cdff3e":[4,0,40,1,55],
+"_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa215a3cc0bca9f02941f47cd013cdff3e":[4,0,40,1,56],
 "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa264bce541709cd9fbb7bc2332f158b61":[4,0,40,1,44],
 "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa2a8edf00f8e0414805f5227a84f3a233":[4,0,40,1,8],
 "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa2dc43feb7bbb1f5e9dc487037cfeb772":[4,0,40,1,29],
@@ -247,7 +247,7 @@ var NAVTREEINDEX2 =
 "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa3d2a1dcbfbae2615c1c54564a83669c9":[4,0,40,1,26],
 "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa3f1c25db7bec90b531e8dd7340885261":[4,0,40,1,28],
 "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa4084b08997fad8c0bb4c604f0c06856b":[4,0,40,1,24],
-"_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa41327c44f9fd3ea426f5040dd9d0752c":[4,0,40,1,49],
+"_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa41327c44f9fd3ea426f5040dd9d0752c":[4,0,40,1,50],
 "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa475a0b85e7f832fc54a964c4e6dae04a":[4,0,40,1,42],
 "_logger_8h.html#ac6557f5dc8fcb14858f231b12bdc1c1aa488fbdb95747a99c14eed410adaedeba":[4,0,40,1,0]
 };
