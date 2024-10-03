@@ -17,5 +17,6 @@ var classpcpp_1_1_wire_guard_layer =
     [ "getReserved", "classpcpp_1_1_wire_guard_layer.html#a63263f1566b86a8b0257aad32f1dd825", null ],
     [ "getWireGuardMessageType", "classpcpp_1_1_wire_guard_layer.html#a2415b395230e0acf8c7f15f3d3c95381", null ],
     [ "parseNextLayer", "classpcpp_1_1_wire_guard_layer.html#aaee84ecae27cce60d8d52e3ef00c5a33", null ],
+    [ "setReserved", "classpcpp_1_1_wire_guard_layer.html#a007b428dfcb0d135f0b5b30f5e4ff7d2", null ],
     [ "toString", "classpcpp_1_1_wire_guard_layer.html#a422f4205c7adf66e7be34b239bb89e40", null ]
 ];
