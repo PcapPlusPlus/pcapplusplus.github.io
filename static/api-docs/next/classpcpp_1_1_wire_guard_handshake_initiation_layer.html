@@ -124,6 +124,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a40a2cfd8f517c7a56b6534f3cac722a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a501f4112a9eda82c7004c7945cb291b3"><td class="memItemLeft" align="right" valign="top">std::array&lt; uint8_t, 16 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_handshake_initiation_layer.html#a501f4112a9eda82c7004c7945cb291b3">getMac2</a> () const</td></tr>
 <tr class="separator:a501f4112a9eda82c7004c7945cb291b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af232b45a875a20101346dbec973f2dbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_handshake_initiation_layer.html#af232b45a875a20101346dbec973f2dbb">setSenderIndex</a> (uint32_t senderIndex)</td></tr>
+<tr class="separator:af232b45a875a20101346dbec973f2dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeb469199c5225df78f32e7d1b542b1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_handshake_initiation_layer.html#aeeb469199c5225df78f32e7d1b542b1d">setInitiatorEphemeral</a> (const std::array&lt; uint8_t, 32 &gt; &amp;initiatorEphemeral)</td></tr>
+<tr class="separator:aeeb469199c5225df78f32e7d1b542b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa196e87a7b163f94c5da199812af1b18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_handshake_initiation_layer.html#aa196e87a7b163f94c5da199812af1b18">setEncryptedInitiatorStatic</a> (const std::array&lt; uint8_t, 48 &gt; &amp;encryptedInitiatorStatic)</td></tr>
+<tr class="separator:aa196e87a7b163f94c5da199812af1b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac15a1b683eacda51e54d07366750798"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_handshake_initiation_layer.html#aac15a1b683eacda51e54d07366750798">setEncryptedTimestamp</a> (const std::array&lt; uint8_t, 28 &gt; &amp;encryptedTimestamp)</td></tr>
+<tr class="separator:aac15a1b683eacda51e54d07366750798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a349cd1a2405e311783b8975ad9706c74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_handshake_initiation_layer.html#a349cd1a2405e311783b8975ad9706c74">setMac1</a> (const std::array&lt; uint8_t, 16 &gt; &amp;mac1)</td></tr>
+<tr class="separator:a349cd1a2405e311783b8975ad9706c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f96c5d47743269c73b2322e60a9db42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_handshake_initiation_layer.html#a0f96c5d47743269c73b2322e60a9db42">setMac2</a> (const std::array&lt; uint8_t, 16 &gt; &amp;mac2)</td></tr>
+<tr class="separator:a0f96c5d47743269c73b2322e60a9db42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a161e07e42dba0d763073abc6c55425ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_wire_guard_layer.html#a2e88b34ce97ccb97f16112fcef512b4d">WireGuardMessageType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_handshake_initiation_layer.html#a161e07e42dba0d763073abc6c55425ca">getWireGuardMessageType</a> () const override</td></tr>
 <tr class="separator:a161e07e42dba0d763073abc6c55425ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classpcpp_1_1_wire_guard_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_wire_guard_layer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_wire_guard_layer.html">pcpp::WireGuardLayer</a></td></tr>
@@ -135,6 +147,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae907f5bd9c42f535049a4165614698cb inherit pub_methods_classpcpp_1_1_wire_guard_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63263f1566b86a8b0257aad32f1dd825 inherit pub_methods_classpcpp_1_1_wire_guard_layer"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_layer.html#a63263f1566b86a8b0257aad32f1dd825">getReserved</a> () const</td></tr>
 <tr class="separator:a63263f1566b86a8b0257aad32f1dd825 inherit pub_methods_classpcpp_1_1_wire_guard_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a007b428dfcb0d135f0b5b30f5e4ff7d2 inherit pub_methods_classpcpp_1_1_wire_guard_layer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_layer.html#a007b428dfcb0d135f0b5b30f5e4ff7d2">setReserved</a> (const std::array&lt; uint8_t, 3 &gt; &amp;reserved)</td></tr>
+<tr class="separator:a007b428dfcb0d135f0b5b30f5e4ff7d2 inherit pub_methods_classpcpp_1_1_wire_guard_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaee84ecae27cce60d8d52e3ef00c5a33 inherit pub_methods_classpcpp_1_1_wire_guard_layer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_layer.html#aaee84ecae27cce60d8d52e3ef00c5a33">parseNextLayer</a> () override</td></tr>
 <tr class="separator:aaee84ecae27cce60d8d52e3ef00c5a33 inherit pub_methods_classpcpp_1_1_wire_guard_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d43d9c70b490ce20a0dec706f1a7f3b inherit pub_methods_classpcpp_1_1_wire_guard_layer"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_layer.html#a0d43d9c70b490ce20a0dec706f1a7f3b">getHeaderLen</a> () const override</td></tr>
@@ -452,13 +466,157 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="aa196e87a7b163f94c5da199812af1b18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa196e87a7b163f94c5da199812af1b18">&#9670;&nbsp;</a></span>setEncryptedInitiatorStatic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::WireGuardHandshakeInitiationLayer::setEncryptedInitiatorStatic </td>
+          <td>(</td>
+          <td class="paramtype">const std::array&lt; uint8_t, 48 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>encryptedInitiatorStatic</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">encryptedInitiatorStatic</td><td>An array containing the 48-byte encrypted initiator's static key. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aac15a1b683eacda51e54d07366750798"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac15a1b683eacda51e54d07366750798">&#9670;&nbsp;</a></span>setEncryptedTimestamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::WireGuardHandshakeInitiationLayer::setEncryptedTimestamp </td>
+          <td>(</td>
+          <td class="paramtype">const std::array&lt; uint8_t, 28 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>encryptedTimestamp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">encryptedTimestamp</td><td>An array containing the 28-byte encrypted timestamp. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aeeb469199c5225df78f32e7d1b542b1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeb469199c5225df78f32e7d1b542b1d">&#9670;&nbsp;</a></span>setInitiatorEphemeral()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::WireGuardHandshakeInitiationLayer::setInitiatorEphemeral </td>
+          <td>(</td>
+          <td class="paramtype">const std::array&lt; uint8_t, 32 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>initiatorEphemeral</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">initiatorEphemeral</td><td>An array containing the 32-byte initiator ephemeral public key. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a349cd1a2405e311783b8975ad9706c74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a349cd1a2405e311783b8975ad9706c74">&#9670;&nbsp;</a></span>setMac1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::WireGuardHandshakeInitiationLayer::setMac1 </td>
+          <td>(</td>
+          <td class="paramtype">const std::array&lt; uint8_t, 16 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mac1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mac1</td><td>An array containing the 16-byte MAC1 field. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0f96c5d47743269c73b2322e60a9db42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f96c5d47743269c73b2322e60a9db42">&#9670;&nbsp;</a></span>setMac2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::WireGuardHandshakeInitiationLayer::setMac2 </td>
+          <td>(</td>
+          <td class="paramtype">const std::array&lt; uint8_t, 16 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mac2</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mac2</td><td>An array containing the 16-byte MAC2 field. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af232b45a875a20101346dbec973f2dbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af232b45a875a20101346dbec973f2dbb">&#9670;&nbsp;</a></span>setSenderIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::WireGuardHandshakeInitiationLayer::setSenderIndex </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>senderIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">senderIndex</td><td>A 32-bit integer representing the sender index. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_wire_guard_handshake_initiation_layer.html">WireGuardHandshakeInitiationLayer</a></li>
-    <li class="footer">Generated on Mon Sep 30 2024 07:07:25 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Oct 3 2024 07:17:32 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

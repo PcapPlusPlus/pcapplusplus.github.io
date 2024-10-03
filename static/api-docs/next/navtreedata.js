@@ -86,9 +86,9 @@ var NAVTREEINDEX =
 "classpcpp_1_1_some_ip_sd_i_pv6_option.html#a53eb5a4fde0076ac06889048d640cab4",
 "classpcpp_1_1_tcp_window_size_filter.html#ac0147c8f7cd9f7f167c0e6fc44aab634",
 "classpcpp_1_1_win_pcap_live_device.html#aa11efe575402d9e06624376d87caf4fb",
-"structpcpp_1_1_bgp_route_refresh_message_layer_1_1bgp__route__refresh__message.html",
-"structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#ae0d8ab6744a09857d33af4b696bab702",
-"structpcpp_1_1s7comm__ack__data__hdr.html#a0c4d6692c8956b3c45443c908ab370d6"
+"structpcpp_1_1_bgp_layer_1_1bgp__common__header.html",
+"structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#a84ec0bcd97ffb98da96426ef74552148",
+"structpcpp_1_1nflog__header.html#aaa3ff89281948ca6505efb7f07b1692f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

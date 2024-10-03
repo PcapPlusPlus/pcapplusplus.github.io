@@ -118,6 +118,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a613cb1fa4c4a3c82c50241c0148e58eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a769fdc7a08db287455f9490996bbb150"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_transport_data_layer.html#a769fdc7a08db287455f9490996bbb150">getEncryptedData</a> () const</td></tr>
 <tr class="separator:a769fdc7a08db287455f9490996bbb150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac9956dee18bb416cdce83227cc87127"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_transport_data_layer.html#aac9956dee18bb416cdce83227cc87127">setReceiverIndex</a> (uint32_t receiverIndex)</td></tr>
+<tr class="separator:aac9956dee18bb416cdce83227cc87127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4583c3c0600f0e5bc3274a0a8ce9146b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_transport_data_layer.html#a4583c3c0600f0e5bc3274a0a8ce9146b">setCounter</a> (uint64_t counter)</td></tr>
+<tr class="separator:a4583c3c0600f0e5bc3274a0a8ce9146b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00dce7c64c8c98598f295b9370f9edaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_transport_data_layer.html#a00dce7c64c8c98598f295b9370f9edaf">setEncryptedData</a> (const uint8_t *encryptedData, size_t encryptedDataLen)</td></tr>
+<tr class="separator:a00dce7c64c8c98598f295b9370f9edaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae25b264071c5a2e6a96887d498157d5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_wire_guard_layer.html#a2e88b34ce97ccb97f16112fcef512b4d">WireGuardMessageType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_transport_data_layer.html#ae25b264071c5a2e6a96887d498157d5b">getWireGuardMessageType</a> () const override</td></tr>
 <tr class="separator:ae25b264071c5a2e6a96887d498157d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classpcpp_1_1_wire_guard_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_wire_guard_layer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_wire_guard_layer.html">pcpp::WireGuardLayer</a></td></tr>
@@ -129,6 +135,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae907f5bd9c42f535049a4165614698cb inherit pub_methods_classpcpp_1_1_wire_guard_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63263f1566b86a8b0257aad32f1dd825 inherit pub_methods_classpcpp_1_1_wire_guard_layer"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_layer.html#a63263f1566b86a8b0257aad32f1dd825">getReserved</a> () const</td></tr>
 <tr class="separator:a63263f1566b86a8b0257aad32f1dd825 inherit pub_methods_classpcpp_1_1_wire_guard_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a007b428dfcb0d135f0b5b30f5e4ff7d2 inherit pub_methods_classpcpp_1_1_wire_guard_layer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_layer.html#a007b428dfcb0d135f0b5b30f5e4ff7d2">setReserved</a> (const std::array&lt; uint8_t, 3 &gt; &amp;reserved)</td></tr>
+<tr class="separator:a007b428dfcb0d135f0b5b30f5e4ff7d2 inherit pub_methods_classpcpp_1_1_wire_guard_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaee84ecae27cce60d8d52e3ef00c5a33 inherit pub_methods_classpcpp_1_1_wire_guard_layer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_layer.html#aaee84ecae27cce60d8d52e3ef00c5a33">parseNextLayer</a> () override</td></tr>
 <tr class="separator:aaee84ecae27cce60d8d52e3ef00c5a33 inherit pub_methods_classpcpp_1_1_wire_guard_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d43d9c70b490ce20a0dec706f1a7f3b inherit pub_methods_classpcpp_1_1_wire_guard_layer"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_layer.html#a0d43d9c70b490ce20a0dec706f1a7f3b">getHeaderLen</a> () const override</td></tr>
@@ -378,13 +386,96 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a4583c3c0600f0e5bc3274a0a8ce9146b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4583c3c0600f0e5bc3274a0a8ce9146b">&#9670;&nbsp;</a></span>setCounter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::WireGuardTransportDataLayer::setCounter </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>counter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">counter</td><td>A 64-bit unsigned integer representing the counter field. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a00dce7c64c8c98598f295b9370f9edaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00dce7c64c8c98598f295b9370f9edaf">&#9670;&nbsp;</a></span>setEncryptedData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::WireGuardTransportDataLayer::setEncryptedData </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>encryptedData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>encryptedDataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">encryptedData</td><td>A pointer to the encrypted data. </td></tr>
+    <tr><td class="paramname">encryptedDataLen</td><td>The length of the encrypted data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aac9956dee18bb416cdce83227cc87127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac9956dee18bb416cdce83227cc87127">&#9670;&nbsp;</a></span>setReceiverIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::WireGuardTransportDataLayer::setReceiverIndex </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>receiverIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">receiverIndex</td><td>A 32-bit unsigned integer representing the receiver index. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_wire_guard_transport_data_layer.html">WireGuardTransportDataLayer</a></li>
-    <li class="footer">Generated on Mon Sep 30 2024 07:07:25 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Oct 3 2024 07:17:32 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
