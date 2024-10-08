@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"classpcpp_1_1_tcp_window_size_filter.html#a75aa8d55e009368ede3ece19e18751b1":[3,0,0,318,1],
 "classpcpp_1_1_tcp_window_size_filter.html#ac0147c8f7cd9f7f167c0e6fc44aab634":[3,0,0,318,0],
 "classpcpp_1_1_telnet_layer.html":[3,0,0,256],
 "classpcpp_1_1_telnet_layer.html#a0c4ad8d22cf1ce9a29c1b518b9cb0806":[3,0,0,256,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "classpcpp_1_1_win_pcap_live_device.html":[3,0,0,328],
 "classpcpp_1_1_win_pcap_live_device.html#a6505fd526ca0ff27b17c06d2c2c29d84":[3,0,0,328,8],
 "classpcpp_1_1_win_pcap_live_device.html#a71eb799bb039b9b4b182958bf5fdf563":[3,0,0,328,3],
-"classpcpp_1_1_win_pcap_live_device.html#a8e2487bad421ea945119a872c346c595":[3,0,0,328,1],
-"classpcpp_1_1_win_pcap_live_device.html#a9fb54c1f769a409743c6710f02b4de56":[3,0,0,328,2]
+"classpcpp_1_1_win_pcap_live_device.html#a8e2487bad421ea945119a872c346c595":[3,0,0,328,1]
 };

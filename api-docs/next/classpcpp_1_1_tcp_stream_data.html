@@ -96,8 +96,8 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_tcp_stream_data.html',''
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0a750615a1baec3dad2b98d3b42b683a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_stream_data.html#a0a750615a1baec3dad2b98d3b42b683a">TcpStreamData</a> (const uint8_t *tcpData, size_t tcpDataLength, size_t missingBytes, const <a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a> &amp;connData, timeval timestamp)</td></tr>
-<tr class="separator:a0a750615a1baec3dad2b98d3b42b683a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d477592be4cd5abd3716c0edfee3366"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_stream_data.html#a9d477592be4cd5abd3716c0edfee3366">TcpStreamData</a> (const uint8_t *tcpData, size_t tcpDataLength, size_t missingBytes, const <a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a> &amp;connData, std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt; timestamp)</td></tr>
+<tr class="separator:a9d477592be4cd5abd3716c0edfee3366"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab39688bc764ebc72178a1f067092571b"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_stream_data.html#ab39688bc764ebc72178a1f067092571b">getData</a> () const</td></tr>
 <tr class="separator:ab39688bc764ebc72178a1f067092571b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62c25f857008495fda229c527c166088"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_stream_data.html#a62c25f857008495fda229c527c166088">getDataLength</a> () const</td></tr>
@@ -110,12 +110,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab9cdd59044104a51a11271a9225cb88c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b05910d96860d0b4f6a29223d576e89"><td class="memItemLeft" align="right" valign="top">timeval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_stream_data.html#a6b05910d96860d0b4f6a29223d576e89">getTimeStamp</a> () const</td></tr>
 <tr class="separator:a6b05910d96860d0b4f6a29223d576e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae869e2fdcd810d4b25fb445c733ef3f"><td class="memItemLeft" align="right" valign="top">std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_stream_data.html#aae869e2fdcd810d4b25fb445c733ef3f">getTimeStampPrecise</a> () const</td></tr>
+<tr class="separator:aae869e2fdcd810d4b25fb445c733ef3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>When following a TCP connection each packet may contain a piece of the data transferred between the client and the server. This class represents these pieces: each instance of it contains a piece of data, usually extracted from a single packet, as well as information about the connection </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0a750615a1baec3dad2b98d3b42b683a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a750615a1baec3dad2b98d3b42b683a">&#9670;&nbsp;</a></span>TcpStreamData()</h2>
+<a id="a9d477592be4cd5abd3716c0edfee3366"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d477592be4cd5abd3716c0edfee3366">&#9670;&nbsp;</a></span>TcpStreamData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -150,7 +152,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">timeval&#160;</td>
+          <td class="paramtype">std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt;&#160;</td>
           <td class="paramname"><em>timestamp</em>&#160;</td>
         </tr>
         <tr>
@@ -288,12 +290,30 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">timeval pcpp::TcpStreamData::getTimeStamp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A microsecond precision of the packet timestamp </dd></dl>
+
+</div>
+</div>
+<a id="aae869e2fdcd810d4b25fb445c733ef3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae869e2fdcd810d4b25fb445c733ef3f">&#9670;&nbsp;</a></span>getTimeStampPrecise()</h2>
+
+<div class="memitem">
+<div class="memproto">
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">timeval pcpp::TcpStreamData::getTimeStamp </td>
+          <td class="memname">std::chrono::time_point&lt;std::chrono::high_resolution_clock&gt; pcpp::TcpStreamData::getTimeStampPrecise </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -305,7 +325,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A getter for the timestamp of this packet </p><dl class="section return"><dt>Returns</dt><dd>The const timeval object with timestamp of this packet </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A nanosecond precision of the packet timestamp </dd></dl>
 
 </div>
 </div>
@@ -341,7 +361,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_tcp_stream_data.html">TcpStreamData</a></li>
-    <li class="footer">Generated on Thu Oct 3 2024 07:17:32 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Oct 8 2024 09:48:26 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

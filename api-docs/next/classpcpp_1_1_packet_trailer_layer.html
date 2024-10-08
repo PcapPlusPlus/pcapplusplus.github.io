@@ -151,7 +151,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4c5d6f648a6878895a714004f937830d inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class for representing packet tailer (a.k.a footer or padding) which refers to supplemental data placed at the end of a block of data being stored or transmitted, which may contain information for the handling of the data block, or just mark its end (taken from Wikipedia: <a href="https://en.wikipedia.org/wiki/Trailer_(computing)">https://en.wikipedia.org/wiki/Trailer_(computing)</a> )</p>
+<div class="textblock"><p>A class for representing packet trailer (a.k.a footer or padding) which refers to supplemental data placed at the end of a block of data being stored or transmitted, which may contain information for the handling of the data block, or just mark its end (taken from Wikipedia: <a href="https://en.wikipedia.org/wiki/Trailer_(computing)">https://en.wikipedia.org/wiki/Trailer_(computing)</a> )</p>
 <p>There are various reasons for adding a packet trailer, one of the most famous is FCS (Frame check sequence) which refers to the extra error-detecting code added to a frame. Another usage is padding which means adding data to reach a minimum required packet length.</p>
 <p>Although this layer inherits from the <a class="el" href="classpcpp_1_1_layer.html">Layer</a> class, it is not a standard layer in the sense that it can't be constructed by the user. This layer may be only be constructed in the <a class="el" href="classpcpp_1_1_packet.html">Packet</a> class, in the process of parsing the packet and creating the layers; if at the end of the parsing process there is data left that is not allocated to any layer, it's assumed to be the packet trailer and an instance of this class is created. This means this layer can only exist as the last layer in a packet, if a packet trailer indeed exists.</p>
 <p>No layer can be added by the user after this layer (trying to do that will result with an error).</p>
@@ -432,7 +432,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_packet_trailer_layer.html">PacketTrailerLayer</a></li>
-    <li class="footer">Generated on Thu Oct 3 2024 07:17:32 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Oct 8 2024 09:48:26 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
