@@ -32,6 +32,7 @@ var hierarchy =
     [ "pcpp::cotphdr", "structpcpp_1_1cotphdr.html", null ],
     [ "pcpp::LdapSearchRequestLayer::DerefAliases", "classpcpp_1_1_ldap_search_request_layer_1_1_deref_aliases.html", null ],
     [ "pcpp::PcapLiveDevice::DeviceConfiguration", "structpcpp_1_1_pcap_live_device_1_1_device_configuration.html", null ],
+    [ "pcpp::PcapLiveDevice::DeviceInterfaceDetails", "structpcpp_1_1_pcap_live_device_1_1_device_interface_details.html", null ],
     [ "pcpp::dhcp_header", "structpcpp_1_1dhcp__header.html", null ],
     [ "pcpp::dhcpv6_header", "structpcpp_1_1dhcpv6__header.html", null ],
     [ "pcpp::dnshdr", "structpcpp_1_1dnshdr.html", null ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX21 =
 {
+"namespacemembers_z.html":[2,0,20],
 "pages.html":[],
 "structpcpp_1_1_bgp_layer_1_1bgp__common__header.html":[3,0,0,31,0],
 "structpcpp_1_1_bgp_layer_1_1bgp__common__header.html#a498670976c145733e0ce2236ec470f61":[3,0,0,31,0,2],
@@ -161,6 +162,11 @@ var NAVTREEINDEX21 =
 "structpcpp_1_1_pcap_live_device_1_1_device_configuration.html#aa693ec55a5483958814c8a0e819630ca":[3,0,0,320,0,3],
 "structpcpp_1_1_pcap_live_device_1_1_device_configuration.html#ab5d5b0ed427abf26af79ed8cc80486a5":[3,0,0,320,0,1],
 "structpcpp_1_1_pcap_live_device_1_1_device_configuration.html#af44933f7a8a561384201368ef54b2d01":[3,0,0,320,0,2],
+"structpcpp_1_1_pcap_live_device_1_1_device_interface_details.html":[3,0,0,320,1],
+"structpcpp_1_1_pcap_live_device_1_1_device_interface_details.html#a04c570b770282a1a9d4e3090c79bf988":[3,0,0,320,1,1],
+"structpcpp_1_1_pcap_live_device_1_1_device_interface_details.html#a0e7564d05e3f7ab340ffe8ace87e1339":[3,0,0,320,1,3],
+"structpcpp_1_1_pcap_live_device_1_1_device_interface_details.html#a3a6c764fce88057355a101fbfbd21a4e":[3,0,0,320,1,0],
+"structpcpp_1_1_pcap_live_device_1_1_device_interface_details.html#a4929b01c8845dcd4bc814edf480a89c3":[3,0,0,320,1,2],
 "structpcpp_1_1_pcap_remote_authentication.html":[3,0,0,322],
 "structpcpp_1_1_pcap_remote_authentication.html#a03d1f1975d4fe33e33616c1addba68ed":[3,0,0,322,2],
 "structpcpp_1_1_pcap_remote_authentication.html#a2f464437d3df5c609c4f91675ea73a63":[3,0,0,322,3],
@@ -243,11 +249,5 @@ var NAVTREEINDEX21 =
 "structpcpp_1_1_wire_guard_layer_1_1wg__common__header.html#a7be1bc265d41b88d5adbfb2141f1b731":[3,0,0,275,0,1],
 "structpcpp_1_1_wire_guard_layer_1_1wg__common__header.html#aa0b2dcc8cb60e6681eda37dff441015b":[3,0,0,275,0,0],
 "structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html":[3,0,0,329,0],
-"structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#a132dbef29f45c2abff3353f962ec2f8d":[3,0,0,329,0,9],
-"structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#a1be5b4131b92eb80c0e8125414fc9571":[3,0,0,329,0,4],
-"structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#a28bf70b57f2ab069e5ec885354f6167c":[3,0,0,329,0,8],
-"structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#a32b2d451b6989425730a8bcd94e9b127":[3,0,0,329,0,0],
-"structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#a32b2d451b6989425730a8bcd94e9b127a92cd6b9796617af0f2dc3db8fc52b7f3":[3,0,0,329,0,0,1],
-"structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#a32b2d451b6989425730a8bcd94e9b127ac0b4671902e86042969afc6d92f56a89":[3,0,0,329,0,0,0],
-"structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#a32b2d451b6989425730a8bcd94e9b127af3a3794b069de592a3f8e9c2dc099add":[3,0,0,329,0,0,2]
+"structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#a132dbef29f45c2abff3353f962ec2f8d":[3,0,0,329,0,9]
 };

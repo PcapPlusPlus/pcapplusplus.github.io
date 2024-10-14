@@ -120,6 +120,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aebff78da9d57c6ec9046de32746943bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e2487bad421ea945119a872c346c595"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_win_pcap_live_device.html#a8e2487bad421ea945119a872c346c595">getMinAmountOfDataToCopyFromKernelToApplication</a> () const</td></tr>
 <tr class="separator:a8e2487bad421ea945119a872c346c595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa1ea09ecf301d6ae212965383d098a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_win_pcap_live_device.html">WinPcapLiveDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_win_pcap_live_device.html#afa1ea09ecf301d6ae212965383d098a4">clone</a> () const override</td></tr>
+<tr class="separator:afa1ea09ecf301d6ae212965383d098a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa11efe575402d9e06624376d87caf4fb"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_win_pcap_live_device.html#aa11efe575402d9e06624376d87caf4fb">sendPackets</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *rawPacketsArr, int arrLength, bool checkMtu=false)</td></tr>
 <tr class="separator:aa11efe575402d9e06624376d87caf4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71eb799bb039b9b4b182958bf5fdf563"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_win_pcap_live_device.html#a71eb799bb039b9b4b182958bf5fdf563">sendPackets</a> (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> **packetsArr, int arrLength, bool checkMtu=true)</td></tr>
@@ -139,8 +141,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2eeadb33b0e5097213752a76d1e71ba7 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab80a7d9e829f0b0a4c7eddeb746a69be inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#ab80a7d9e829f0b0a4c7eddeb746a69be">getLinkType</a> () const</td></tr>
 <tr class="separator:ab80a7d9e829f0b0a4c7eddeb746a69be inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a688940ed03c33b88fec2f297b7efe5a8 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; pcap_addr_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a688940ed03c33b88fec2f297b7efe5a8">getAddresses</a> () const</td></tr>
-<tr class="separator:a688940ed03c33b88fec2f297b7efe5a8 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2e91ef6742fdcbbf2f41dc35266c99d inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#af2e91ef6742fdcbbf2f41dc35266c99d">getIPAddresses</a> () const</td></tr>
 <tr class="separator:af2e91ef6742fdcbbf2f41dc35266c99d inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bc13ec8552ffbf5ae2fe281c4d0905b inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classpcpp_1_1_mac_address.html">MacAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a4bc13ec8552ffbf5ae2fe281c4d0905b">getMacAddress</a> () const</td></tr>
@@ -183,8 +183,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3f58e22a71cbed9109ae75bd1759e8ed inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02254c8ce454a469d9846dfc63fab4f6 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a02254c8ce454a469d9846dfc63fab4f6">close</a> () override</td></tr>
 <tr class="separator:a02254c8ce454a469d9846dfc63fab4f6 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab91ce2f1ae1cc80c5da77cc053742d91 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#ab91ce2f1ae1cc80c5da77cc053742d91">clone</a> () const</td></tr>
-<tr class="separator:ab91ce2f1ae1cc80c5da77cc053742d91 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a5928913d4fb57ffc5b3afe08a10b0f inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a3a5928913d4fb57ffc5b3afe08a10b0f">getStatistics</a> (<a class="el" href="structpcpp_1_1_i_pcap_device_1_1_pcap_stats.html">IPcapDevice::PcapStats</a> &amp;stats) const override</td></tr>
 <tr class="separator:a3a5928913d4fb57ffc5b3afe08a10b0f inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classpcpp_1_1_i_pcap_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_i_pcap_device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_pcap_device.html">pcpp::IPcapDevice</a></td></tr>
@@ -229,6 +227,34 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class that wraps a Windows network interface (each of the interfaces listed in ipconfig). This class is almost similar in its capabilities to <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> (its parent class) with some small changes that mainly result from differences between libpcap and WinPcap/Npcap. Please see the reference for <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> for more details </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="afa1ea09ecf301d6ae212965383d098a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa1ea09ecf301d6ae212965383d098a4">&#9670;&nbsp;</a></span>clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classpcpp_1_1_win_pcap_live_device.html">WinPcapLiveDevice</a>* pcpp::WinPcapLiveDevice::clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Clones the current device class </p><dl class="section return"><dt>Returns</dt><dd>Pointer to the copied class </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classpcpp_1_1_pcap_live_device.html#acba1065b450b4caf17e7d0c99959aa99">pcpp::PcapLiveDevice</a>.</p>
+
+</div>
+</div>
 <a id="aa447e59136942fd86f21933b85d901a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa447e59136942fd86f21933b85d901a3">&#9670;&nbsp;</a></span>getDeviceType()</h2>
 
@@ -571,7 +597,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_win_pcap_live_device.html">WinPcapLiveDevice</a></li>
-    <li class="footer">Generated on Tue Oct 8 2024 09:48:26 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Oct 14 2024 08:30:24 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
