@@ -247,7 +247,7 @@ var NAVTREEINDEX19 =
 "classpcpp_1_1_wake_on_lan_layer.html#af218dc9fb99ec11e8ab9909fbc73729a":[3,0,0,274,1],
 "classpcpp_1_1_wake_on_lan_layer.html#afad3525201852d25337d29cbd72a31e8":[3,0,0,274,12],
 "classpcpp_1_1_win_pcap_live_device.html":[3,0,0,328],
-"classpcpp_1_1_win_pcap_live_device.html#a6505fd526ca0ff27b17c06d2c2c29d84":[3,0,0,328,8],
-"classpcpp_1_1_win_pcap_live_device.html#a71eb799bb039b9b4b182958bf5fdf563":[3,0,0,328,3],
-"classpcpp_1_1_win_pcap_live_device.html#a8e2487bad421ea945119a872c346c595":[3,0,0,328,1]
+"classpcpp_1_1_win_pcap_live_device.html#a6505fd526ca0ff27b17c06d2c2c29d84":[3,0,0,328,9],
+"classpcpp_1_1_win_pcap_live_device.html#a71eb799bb039b9b4b182958bf5fdf563":[3,0,0,328,4],
+"classpcpp_1_1_win_pcap_live_device.html#a8e2487bad421ea945119a872c346c595":[3,0,0,328,2]
 };

@@ -1,5 +1,6 @@
 var classpcpp_1_1_win_pcap_live_device =
 [
+    [ "clone", "classpcpp_1_1_win_pcap_live_device.html#afa1ea09ecf301d6ae212965383d098a4", null ],
     [ "getDeviceType", "classpcpp_1_1_win_pcap_live_device.html#aa447e59136942fd86f21933b85d901a3", null ],
     [ "getMinAmountOfDataToCopyFromKernelToApplication", "classpcpp_1_1_win_pcap_live_device.html#a8e2487bad421ea945119a872c346c595", null ],
     [ "sendPackets", "classpcpp_1_1_win_pcap_live_device.html#a9fb54c1f769a409743c6710f02b4de56", null ],

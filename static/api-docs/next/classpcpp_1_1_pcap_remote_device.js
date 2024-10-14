@@ -1,5 +1,6 @@
 var classpcpp_1_1_pcap_remote_device =
 [
+    [ "clone", "classpcpp_1_1_pcap_remote_device.html#a13ab40f135b475281db2e833baff5965", null ],
     [ "getDeviceType", "classpcpp_1_1_pcap_remote_device.html#acec79d2c4dd6842632485fa6d9fd78aa", null ],
     [ "getMacAddress", "classpcpp_1_1_pcap_remote_device.html#a84ef0acd04879b3ef4dd0c90fe7d901f", null ],
     [ "getMtu", "classpcpp_1_1_pcap_remote_device.html#a575d0d6348053f6063ac90a156bdfd6d", null ],

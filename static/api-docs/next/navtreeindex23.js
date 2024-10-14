@@ -1,5 +1,11 @@
 var NAVTREEINDEX23 =
 {
+"structpcpp_1_1mstp__conf__bpdu.html#a41bc6bb491b93ebf370ff0ec50fb60dc":[3,0,0,241,7],
+"structpcpp_1_1mstp__conf__bpdu.html#a896df3b3c4821302e1b08d8ec765414f":[3,0,0,241,4],
+"structpcpp_1_1mstp__conf__bpdu.html#a9425aa5b58ce0c85c0c7f1cbc64b5c27":[3,0,0,241,0],
+"structpcpp_1_1mstp__conf__bpdu.html#a9539300ee1f8bb091743a59d2fa6ac4d":[3,0,0,241,6],
+"structpcpp_1_1mstp__conf__bpdu.html#aa463395b9c66bb4a74d4071e9b31e9e3":[3,0,0,241,2],
+"structpcpp_1_1mstp__conf__bpdu.html#ab7efb9ed95b3fca7c70921507af22f3f":[3,0,0,241,5],
 "structpcpp_1_1nflog__header.html":[3,0,0,157],
 "structpcpp_1_1nflog__header.html#a72adfefff6a047d6ad992f267a666155":[3,0,0,157,1],
 "structpcpp_1_1nflog__header.html#aa9a986546fdf3de49f6a1049670c5ef0":[3,0,0,157,2],

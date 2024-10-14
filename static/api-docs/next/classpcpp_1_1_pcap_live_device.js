@@ -1,6 +1,7 @@
 var classpcpp_1_1_pcap_live_device =
 [
     [ "DeviceConfiguration", "structpcpp_1_1_pcap_live_device_1_1_device_configuration.html", "structpcpp_1_1_pcap_live_device_1_1_device_configuration" ],
+    [ "DeviceInterfaceDetails", "structpcpp_1_1_pcap_live_device_1_1_device_interface_details.html", "structpcpp_1_1_pcap_live_device_1_1_device_interface_details" ],
     [ "DeviceMode", "classpcpp_1_1_pcap_live_device.html#a2381e7f053285090f0f9620bcbd8f0f3", [
       [ "Normal", "classpcpp_1_1_pcap_live_device.html#a2381e7f053285090f0f9620bcbd8f0f3ad57df3ce2415ba6f804539bb268aecdf", null ],
       [ "Promiscuous", "classpcpp_1_1_pcap_live_device.html#a2381e7f053285090f0f9620bcbd8f0f3af1c5bb543295a735a99cc9f88ac67bca", null ]
@@ -17,10 +18,9 @@ var classpcpp_1_1_pcap_live_device =
     ] ],
     [ "~PcapLiveDevice", "classpcpp_1_1_pcap_live_device.html#a841eda2bc4582ad8f71e68f140aca064", null ],
     [ "captureActive", "classpcpp_1_1_pcap_live_device.html#a058f8bc527935d97bbd044614ab93473", null ],
-    [ "clone", "classpcpp_1_1_pcap_live_device.html#ab91ce2f1ae1cc80c5da77cc053742d91", null ],
+    [ "clone", "classpcpp_1_1_pcap_live_device.html#acba1065b450b4caf17e7d0c99959aa99", null ],
     [ "close", "classpcpp_1_1_pcap_live_device.html#a02254c8ce454a469d9846dfc63fab4f6", null ],
     [ "doMtuCheck", "classpcpp_1_1_pcap_live_device.html#a4bbfee245406c59d1683610fd8819ec5", null ],
-    [ "getAddresses", "classpcpp_1_1_pcap_live_device.html#a688940ed03c33b88fec2f297b7efe5a8", null ],
     [ "getDefaultGateway", "classpcpp_1_1_pcap_live_device.html#a53a12fdc4a19fb23acea4c0ed11c4cfd", null ],
     [ "getDesc", "classpcpp_1_1_pcap_live_device.html#a54ee9e8c709de885bdb738844fca76b3", null ],
     [ "getDeviceType", "classpcpp_1_1_pcap_live_device.html#a76bd1af9e2079c71a790834e2f14baa7", null ],
