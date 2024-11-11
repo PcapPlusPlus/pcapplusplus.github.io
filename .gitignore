@@ -25,4 +25,4 @@ yarn-error.log*
 .vscode
 
 # Playwright / Argos
-/test-results
+/tests/argos/test-results

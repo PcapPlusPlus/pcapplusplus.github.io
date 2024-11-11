@@ -26,8 +26,8 @@ function pathnameToArgosName(pathname: string): string {
 
 // Constants
 const siteUrl = 'http://localhost:3000';
-const sitemapPath = '../../build/sitemap.xml';
-const stylesheetPath = './tests/screenshot.css';
+const sitemapPath = './build/sitemap.xml';
+const stylesheetPath = './tests/argos/tests/screenshot.css';
 const stylesheet = fs.readFileSync(stylesheetPath).toString();
 
 // Wait for hydration, requires Docusaurus v2.4.3+

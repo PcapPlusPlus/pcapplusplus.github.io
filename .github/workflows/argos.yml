@@ -29,7 +29,7 @@ jobs:
         run: npm run build
 
       - name: Take screenshots with Playwright
-        run: npx playwright test
+        run: npm run argos:screenshot
 
       - name: Upload screenshots to Argos
         run: npx argos upload ./screenshots
