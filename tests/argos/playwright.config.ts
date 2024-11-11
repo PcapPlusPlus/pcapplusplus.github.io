@@ -6,19 +6,6 @@ const config: PlaywrightTestConfig = {
     port: 3000,
     command: 'npm run start'
   },
-  // reporter: [
-  //   process.env.CI ? ['dot'] : ['list'],
-  //   [
-  //     '@argos-ci/playwright/reporter',
-  //     {
-  //       // // Upload to Argos on CI only.
-  //       // uploadToArgos: !!process.env.CI,
-
-  //       // Set your Argos token (required if not using GitHub Actions).
-  //       // token: 'TOKEN'
-  //     }
-  //   ]
-  // ],
   projects: [
     {
       name: 'chromium',

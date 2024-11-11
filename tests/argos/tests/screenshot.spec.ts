@@ -12,7 +12,11 @@ function extractSitemapPathnames(sitemapPath: string): string[] {
   const urls: string[] = [];
   $('loc').each(function handleLoc() {
     const url = new URL($(this).text()).pathname;
-    if (url.startsWith('/docs/next') || !url.startsWith('/docs')) {
+    if (
+      url.startsWith('/docs/next') ||
+      !url.startsWith('/docs/v2') ||
+      !url.startsWith('/docs')
+    ) {
       urls.push(url);
     }
   });
