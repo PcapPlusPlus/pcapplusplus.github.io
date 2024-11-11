@@ -16,14 +16,19 @@
     "format": "prettier --config .prettierrc . --check .",
     "format:fix": "prettier --config .prettierrc . --write",
     "lint": "eslint --ext js,jsx,ts,tsx src/",
-    "lint:fix": "eslint --ext js,jsx,ts,tsx --fix src/"
+    "lint:fix": "eslint --ext js,jsx,ts,tsx --fix src/",
+    "argos:screenshot": "playwright test --config=tests/argos/playwright.config.ts"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.3.1",
-    "@docusaurus/plugin-google-analytics": "^2.3.1",
-    "@docusaurus/preset-classic": "^2.3.1",
+    "@argos-ci/cli": "^2.5.0",
+    "@argos-ci/playwright": "^3.9.1",
+    "@docusaurus/core": "^2.4.3",
+    "@docusaurus/plugin-google-analytics": "^2.4.3",
+    "@docusaurus/preset-classic": "^2.4.3",
     "@mdx-js/react": "^1.6.21",
+    "@playwright/test": "^1.48.2",
     "@svgr/webpack": "^5.5.0",
+    "cheerio": "^1.0.0",
     "clsx": "^1.1.1",
     "file-loader": "^6.2.0",
     "prism-react-renderer": "^1.2.1",

@@ -23,3 +23,8 @@ yarn-error.log*
 #Visual studio code
 .project
 .vscode
+
+# Playwright / Argos
+/test-results
+/tests/argos/test-results
+/screenshots
