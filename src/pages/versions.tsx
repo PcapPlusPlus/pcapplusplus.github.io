@@ -44,7 +44,9 @@ function Version() {
                 </td>
                 <td>
                   <Link
-                    to={useBaseUrl(`/api-docs/${latestVersion}/index.html`)}
+                    to={`pathname://${useBaseUrl(
+                      `/api-docs/${latestVersion}/index.html`
+                    )}`}
                   >
                     API Documentation
                   </Link>
@@ -72,7 +74,7 @@ function Version() {
                   <a href={getRepoURL()}>Source Code</a>
                 </td>
                 <td>
-                  <Link to={useBaseUrl('/api-docs/next/')}>
+                  <Link to={`pathname://${useBaseUrl('/api-docs/next/')}`}>
                     API Documentation
                   </Link>
                 </td>
@@ -109,7 +111,11 @@ function Version() {
                       </a>
                     </td>
                     <td>
-                      <Link to={useBaseUrl(`/api-docs/${version}/index.html`)}>
+                      <Link
+                        to={`pathname://${useBaseUrl(
+                          `/api-docs/${version}/index.html`
+                        )}`}
+                      >
                         API Documentation
                       </Link>
                     </td>

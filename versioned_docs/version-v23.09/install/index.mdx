@@ -105,30 +105,28 @@ Download the source code for the latest version (**<ConstVal value={getRelease()
 - Unit tests
 - CMakeLists file to build all source code
 
-<p>
+<div style={{ display: 'flex', gap: '5px', marginBottom: '20px' }}>
   <ButtonLink
     text={'Download ' + getRelease() + ' zip format'}
     link={getReleaseZipURL()}
   />
-  &nbsp;
   <ButtonLink
     text={'Download ' + getRelease() + ' tar.gz format'}
     link={getReleaseTarURL()}
   />
-</p>
+</div>
 
 You can also download the latest source code from `master`:
 
-<p>
+<div style={{ display: 'flex', gap: '5px', marginBottom: '20px' }}>
   <ButtonLink
     text={'Download master zip format'}
     link={getSourceCodeZipURL()}
   />
-  &nbsp;
   <ButtonLink
     text={'Download master tar.gz format'}
     link={getSourceCodeTarURL()}
   />
-</p>
+</div>
 
 Please find detailed instructions on how to build PcapPlusPlus on the various supported platforms in the following pages.
