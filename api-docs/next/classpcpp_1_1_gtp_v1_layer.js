@@ -18,7 +18,7 @@ var classpcpp_1_1_gtp_v1_layer =
     [ "isGTPCMessage", "classpcpp_1_1_gtp_v1_layer.html#a12bbb923dc2fd557b0233d515b203f82", null ],
     [ "isGTPUMessage", "classpcpp_1_1_gtp_v1_layer.html#a3ec7019f97751549c6c1a8ad850c8cdd", null ],
     [ "parseNextLayer", "classpcpp_1_1_gtp_v1_layer.html#a8caaacc0e8534a8ab00c5173a02c3966", null ],
-    [ "setNpduNumber", "classpcpp_1_1_gtp_v1_layer.html#a5bef14dca0dfc855b1ea44a404a0da43", null ],
-    [ "setSequenceNumber", "classpcpp_1_1_gtp_v1_layer.html#abff3a238686f0996baf1229e699d704b", null ],
+    [ "setNpduNumber", "classpcpp_1_1_gtp_v1_layer.html#a57e21974cdf8f6e2226562ca1e153a92", null ],
+    [ "setSequenceNumber", "classpcpp_1_1_gtp_v1_layer.html#a04eebb848fedecb475e020769873f775", null ],
     [ "toString", "classpcpp_1_1_gtp_v1_layer.html#a297acd5c7da5baf3e199ddeaea7e4069", null ]
 ];

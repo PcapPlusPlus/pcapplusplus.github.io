@@ -29,6 +29,7 @@ var _protocol_type_8h =
     [ "GREv1", "_protocol_type_8h.html#a68f4401792a1994f4b050b614cbf1c44", null ],
     [ "GTP", "_protocol_type_8h.html#ab70943e3982ec8faf4cf7c145d8e0311", null ],
     [ "GTPv1", "_protocol_type_8h.html#ab1a8b83ad72bbbbaebf25a86304ee3d7", null ],
+    [ "GTPv2", "_protocol_type_8h.html#ab566bc5d89ce0f34bc1ed909b1bc010c", null ],
     [ "HTTP", "_protocol_type_8h.html#a4818bf02f268ca6fa442451860d6dda5", null ],
     [ "HTTPRequest", "_protocol_type_8h.html#acd42edf1ca5da0c50d131e2ba801720d", null ],
     [ "HTTPResponse", "_protocol_type_8h.html#af6b953db5db49c9e04b36112cca3822e", null ],
