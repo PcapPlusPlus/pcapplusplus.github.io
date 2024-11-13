@@ -3,6 +3,10 @@ var _gtp_layer_8h =
     [ "gtpv1_header", "structpcpp_1_1gtpv1__header.html", "structpcpp_1_1gtpv1__header" ],
     [ "GtpV1Layer", "classpcpp_1_1_gtp_v1_layer.html", "classpcpp_1_1_gtp_v1_layer" ],
     [ "GtpExtension", "classpcpp_1_1_gtp_v1_layer_1_1_gtp_extension.html", "classpcpp_1_1_gtp_v1_layer_1_1_gtp_extension" ],
+    [ "GtpV2MessageType", "classpcpp_1_1_gtp_v2_message_type.html", "classpcpp_1_1_gtp_v2_message_type" ],
+    [ "GtpV2InformationElement", "classpcpp_1_1_gtp_v2_information_element.html", "classpcpp_1_1_gtp_v2_information_element" ],
+    [ "GtpV2InformationElementBuilder", "classpcpp_1_1_gtp_v2_information_element_builder.html", "classpcpp_1_1_gtp_v2_information_element_builder" ],
+    [ "GtpV2Layer", "classpcpp_1_1_gtp_v2_layer.html", "classpcpp_1_1_gtp_v2_layer" ],
     [ "GtpV1MessageType", "_gtp_layer_8h.html#ad25a3d51c0198c1ddfdaa69ad990eead", [
       [ "GtpV1_MessageTypeUnknown", "_gtp_layer_8h.html#ad25a3d51c0198c1ddfdaa69ad990eeada01fc10fc282d5f90d566b6c127b22be1", null ],
       [ "GtpV1_EchoRequest", "_gtp_layer_8h.html#ad25a3d51c0198c1ddfdaa69ad990eeada3540f7ac043e4a3808469c8a02d1ebfa", null ],

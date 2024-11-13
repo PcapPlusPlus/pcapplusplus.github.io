@@ -214,8 +214,8 @@ $(document).ready(function(){initNavTree('_asn1_codec_8h_source.html',''); initR
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> decodeValue(uint8_t* data, <span class="keywordtype">bool</span> lazy) = 0;</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keyword">virtual</span> std::vector&lt;uint8_t&gt; encodeValue() <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="keyword">static</span> <a class="code" href="classpcpp_1_1_asn1_record.html">Asn1Record</a>* decodeTagAndCreateRecord(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <span class="keywordtype">int</span>&amp; tagLen);</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keywordtype">int</span> decodeLength(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> dataLen);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="keyword">static</span> <a class="code" href="classpcpp_1_1_asn1_record.html">Asn1Record</a>* decodeTagAndCreateRecord(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> dataLen, uint8_t&amp; tagLen);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        uint8_t decodeLength(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> dataLen);</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keywordtype">void</span> decodeValueIfNeeded();</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        uint8_t encodeTag();</div>
@@ -537,7 +537,7 @@ $(document).ready(function(){initNavTree('_asn1_codec_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_asn1_codec_8h.html">Asn1Codec.h</a></li>
-    <li class="footer">Generated on Fri Nov 8 2024 07:32:58 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Nov 13 2024 01:52:36 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

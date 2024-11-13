@@ -78,6 +78,7 @@ var hierarchy =
     ] ],
     [ "pcpp::GtpV1Layer::GtpExtension", "classpcpp_1_1_gtp_v1_layer_1_1_gtp_extension.html", null ],
     [ "pcpp::gtpv1_header", "structpcpp_1_1gtpv1__header.html", null ],
+    [ "pcpp::GtpV2MessageType", "classpcpp_1_1_gtp_v2_message_type.html", null ],
     [ "pcpp::HeaderField", "classpcpp_1_1_header_field.html", null ],
     [ "pcpp::HttpRequestFirstLine", "classpcpp_1_1_http_request_first_line.html", null ],
     [ "pcpp::HttpResponseFirstLine", "classpcpp_1_1_http_response_first_line.html", null ],
@@ -126,6 +127,7 @@ var hierarchy =
           [ "pcpp::GREv1Layer", "classpcpp_1_1_g_r_ev1_layer.html", null ]
         ] ],
         [ "pcpp::GtpV1Layer", "classpcpp_1_1_gtp_v1_layer.html", null ],
+        [ "pcpp::GtpV2Layer", "classpcpp_1_1_gtp_v2_layer.html", null ],
         [ "pcpp::IPv4Layer", "classpcpp_1_1_i_pv4_layer.html", null ],
         [ "pcpp::IPv6Layer", "classpcpp_1_1_i_pv6_layer.html", null ],
         [ "pcpp::IcmpLayer", "classpcpp_1_1_icmp_layer.html", null ],
@@ -437,6 +439,9 @@ var hierarchy =
       [ "pcpp::DhcpV6Option", "classpcpp_1_1_dhcp_v6_option.html", null ],
       [ "pcpp::PPPoEDiscoveryLayer::PPPoETag", "classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag.html", null ]
     ] ],
+    [ "pcpp::TLVRecord< uint8_t, uint16_t >", "classpcpp_1_1_t_l_v_record.html", [
+      [ "pcpp::GtpV2InformationElement", "classpcpp_1_1_gtp_v2_information_element.html", null ]
+    ] ],
     [ "pcpp::TLVRecord< uint8_t, uint8_t >", "classpcpp_1_1_t_l_v_record.html", [
       [ "pcpp::DhcpOption", "classpcpp_1_1_dhcp_option.html", null ],
       [ "pcpp::IPv4Option", "classpcpp_1_1_i_pv4_option.html", null ],
@@ -448,6 +453,7 @@ var hierarchy =
     [ "pcpp::TLVRecordBuilder", "classpcpp_1_1_t_l_v_record_builder.html", [
       [ "pcpp::DhcpOptionBuilder", "classpcpp_1_1_dhcp_option_builder.html", null ],
       [ "pcpp::DhcpV6OptionBuilder", "classpcpp_1_1_dhcp_v6_option_builder.html", null ],
+      [ "pcpp::GtpV2InformationElementBuilder", "classpcpp_1_1_gtp_v2_information_element_builder.html", null ],
       [ "pcpp::IPv4OptionBuilder", "classpcpp_1_1_i_pv4_option_builder.html", null ],
       [ "pcpp::IPv6TLVOptionHeader::IPv6TLVOptionBuilder", "classpcpp_1_1_i_pv6_t_l_v_option_header_1_1_i_pv6_t_l_v_option_builder.html", null ],
       [ "pcpp::NdpOptionBuilder", "classpcpp_1_1_ndp_option_builder.html", null ],
@@ -458,6 +464,7 @@ var hierarchy =
     [ "pcpp::TLVRecordReader< TLVRecordType >", "classpcpp_1_1_t_l_v_record_reader.html", null ],
     [ "pcpp::TLVRecordReader< pcpp::DhcpOption >", "classpcpp_1_1_t_l_v_record_reader.html", null ],
     [ "pcpp::TLVRecordReader< pcpp::DhcpV6Option >", "classpcpp_1_1_t_l_v_record_reader.html", null ],
+    [ "pcpp::TLVRecordReader< pcpp::GtpV2InformationElement >", "classpcpp_1_1_t_l_v_record_reader.html", null ],
     [ "pcpp::TLVRecordReader< pcpp::IPv4Option >", "classpcpp_1_1_t_l_v_record_reader.html", null ],
     [ "pcpp::TLVRecordReader< pcpp::IPv6TLVOptionHeader::IPv6Option >", "classpcpp_1_1_t_l_v_record_reader.html", null ],
     [ "pcpp::TLVRecordReader< pcpp::NdpOption >", "classpcpp_1_1_t_l_v_record_reader.html", null ],
