@@ -24,7 +24,7 @@
     "@argos-ci/playwright": "^3.9.1",
     "@docusaurus/core": "^3.6.1",
     "@docusaurus/plugin-google-analytics": "^3.6.1",
-    "@docusaurus/preset-classic": "^3.6.1",
+    "@docusaurus/preset-classic": "^3.6.3",
     "@mdx-js/react": "^3.1.0",
     "@playwright/test": "^1.48.2",
     "@svgr/webpack": "^8.1.0",
