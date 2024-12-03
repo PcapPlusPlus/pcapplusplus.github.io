@@ -658,43 +658,44 @@ $(document).ready(function(){initNavTree('_ip_address_8h_source.html',''); initR
 <div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;        std::unique_ptr&lt;IPv4Network&gt; m_IPv4Network;</div>
 <div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;        std::unique_ptr&lt;IPv6Network&gt; m_IPv6Network;</div>
 <div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;    };</div>
-<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
-<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160; </div>
-<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;<span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_pv4_address.html">pcpp::IPv4Address</a>&amp; ipv4Address)</div>
-<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;{</div>
-<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;    os &lt;&lt; ipv4Address.<a class="code" href="classpcpp_1_1_i_pv4_address.html#a1cb5f933aa63c49a7de0ede7fa220ee8">toString</a>();</div>
-<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;    <span class="keywordflow">return</span> os;</div>
-<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;}</div>
-<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160; </div>
-<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;<span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_pv6_address.html">pcpp::IPv6Address</a>&amp; ipv6Address)</div>
-<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;{</div>
-<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;    os &lt;&lt; ipv6Address.<a class="code" href="classpcpp_1_1_i_pv6_address.html#af643ac254cde788ff54574f838197bd3">toString</a>();</div>
-<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;    <span class="keywordflow">return</span> os;</div>
-<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;}</div>
-<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160; </div>
-<div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;<span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_p_address.html">pcpp::IPAddress</a>&amp; ipAddress)</div>
-<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;{</div>
-<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;    os &lt;&lt; ipAddress.<a class="code" href="classpcpp_1_1_i_p_address.html#a16d19ff8459edd846ee7b6b3f121769c">toString</a>();</div>
-<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;    <span class="keywordflow">return</span> os;</div>
-<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;}</div>
-<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160; </div>
-<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;<span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_pv4_network.html">pcpp::IPv4Network</a>&amp; network)</div>
-<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;{</div>
-<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;    os &lt;&lt; network.<a class="code" href="classpcpp_1_1_i_pv4_network.html#a29444b95d44d75a1c32c5ef474d9090b">toString</a>();</div>
-<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;    <span class="keywordflow">return</span> os;</div>
-<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;}</div>
-<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160; </div>
-<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;<span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_pv6_network.html">pcpp::IPv6Network</a>&amp; network)</div>
-<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;{</div>
-<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;    os &lt;&lt; network.<a class="code" href="classpcpp_1_1_i_pv6_network.html#abb2272db4e9eecbf92c18aa1345e7168">toString</a>();</div>
-<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;    <span class="keywordflow">return</span> os;</div>
-<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;}</div>
-<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160; </div>
-<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;<span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_p_network.html">pcpp::IPNetwork</a>&amp; network)</div>
-<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;{</div>
-<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;    os &lt;&lt; network.<a class="code" href="classpcpp_1_1_i_p_network.html#a6dc3ee1fcf4777bed9db23d9f6d44641">toString</a>();</div>
-<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;    <span class="keywordflow">return</span> os;</div>
-<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;}</div>
+<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160; </div>
+<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;    <span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_pv4_address.html">pcpp::IPv4Address</a>&amp; ipv4Address)</div>
+<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;    {</div>
+<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;        os &lt;&lt; ipv4Address.<a class="code" href="classpcpp_1_1_i_pv4_address.html#a1cb5f933aa63c49a7de0ede7fa220ee8">toString</a>();</div>
+<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;        <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;    }</div>
+<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160; </div>
+<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;    <span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_pv6_address.html">pcpp::IPv6Address</a>&amp; ipv6Address)</div>
+<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;    {</div>
+<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;        os &lt;&lt; ipv6Address.<a class="code" href="classpcpp_1_1_i_pv6_address.html#af643ac254cde788ff54574f838197bd3">toString</a>();</div>
+<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;        <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;    }</div>
+<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160; </div>
+<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;    <span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_p_address.html">pcpp::IPAddress</a>&amp; ipAddress)</div>
+<div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;    {</div>
+<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;        os &lt;&lt; ipAddress.<a class="code" href="classpcpp_1_1_i_p_address.html#a16d19ff8459edd846ee7b6b3f121769c">toString</a>();</div>
+<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;        <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;    }</div>
+<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160; </div>
+<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;    <span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_pv4_network.html">pcpp::IPv4Network</a>&amp; network)</div>
+<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;    {</div>
+<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;        os &lt;&lt; network.<a class="code" href="classpcpp_1_1_i_pv4_network.html#a29444b95d44d75a1c32c5ef474d9090b">toString</a>();</div>
+<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;        <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;    }</div>
+<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160; </div>
+<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;    <span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_pv6_network.html">pcpp::IPv6Network</a>&amp; network)</div>
+<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;    {</div>
+<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;        os &lt;&lt; network.<a class="code" href="classpcpp_1_1_i_pv6_network.html#abb2272db4e9eecbf92c18aa1345e7168">toString</a>();</div>
+<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;        <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;    }</div>
+<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160; </div>
+<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;    <span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_p_network.html">pcpp::IPNetwork</a>&amp; network)</div>
+<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;    {</div>
+<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;        os &lt;&lt; network.<a class="code" href="classpcpp_1_1_i_p_network.html#a6dc3ee1fcf4777bed9db23d9f6d44641">toString</a>();</div>
+<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;        <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;    }</div>
+<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160; </div>
+<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
 <div class="ttc" id="aclasspcpp_1_1_i_p_address_html"><div class="ttname"><a href="classpcpp_1_1_i_p_address.html">pcpp::IPAddress</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:358</div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_p_address_html_a0f66006f76b2edbf56adea2499be4d19"><div class="ttname"><a href="classpcpp_1_1_i_p_address.html#a0f66006f76b2edbf56adea2499be4d19">pcpp::IPAddress::IPAddress</a></div><div class="ttdeci">IPAddress()</div><div class="ttdef"><b>Definition:</b> IpAddress.h:378</div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_p_address_html_a16d19ff8459edd846ee7b6b3f121769c"><div class="ttname"><a href="classpcpp_1_1_i_p_address.html#a16d19ff8459edd846ee7b6b3f121769c">pcpp::IPAddress::toString</a></div><div class="ttdeci">std::string toString() const</div><div class="ttdef"><b>Definition:</b> IpAddress.h:430</div></div>
@@ -808,7 +809,7 @@ $(document).ready(function(){initNavTree('_ip_address_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b003f564e33ffc88e35d7a9df43b3691.html">Common++</a></li><li class="navelem"><a class="el" href="dir_9a3e9207f3f2c743963c543f58e0ab18.html">header</a></li><li class="navelem"><a class="el" href="_ip_address_8h.html">IpAddress.h</a></li>
-    <li class="footer">Generated on Sun Nov 24 2024 08:25:22 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 3 2024 02:11:34 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
