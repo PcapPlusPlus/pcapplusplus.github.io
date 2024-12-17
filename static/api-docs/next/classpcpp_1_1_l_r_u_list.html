@@ -96,8 +96,8 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_l_r_u_list.html',''); in
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0d64da0d4ca5386c8ce3f63c6409fab5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_l_r_u_list.html#a0d64da0d4ca5386c8ce3f63c6409fab5">LRUList</a> (size_t maxSize)</td></tr>
-<tr class="separator:a0d64da0d4ca5386c8ce3f63c6409fab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70919bd9baeab8a0dd6a26adb0089564"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_l_r_u_list.html#a70919bd9baeab8a0dd6a26adb0089564">LRUList</a> (std::size_t maxSize)</td></tr>
+<tr class="separator:a70919bd9baeab8a0dd6a26adb0089564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a435619a03fecbe8d8a5b77e22957ec86"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_l_r_u_list.html#a435619a03fecbe8d8a5b77e22957ec86">put</a> (const T &amp;element, T *deletedValue=nullptr)</td></tr>
 <tr class="separator:a435619a03fecbe8d8a5b77e22957ec86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5641f23d74e63753c6ef8e29a459de7b"><td class="memItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_l_r_u_list.html#a5641f23d74e63753c6ef8e29a459de7b">getMRUElement</a> () const</td></tr>
@@ -117,8 +117,8 @@ class pcpp::LRUList&lt; T &gt;</h3>
 
 <p>A template class that implements a LRU cache with limited size. Each time the user puts an element it goes to head of the list as the most recently used element (if the element was already in the list it advances to the head of the list). The last element in the list is the one least recently used and will be pulled out of the list if it reaches its max size and a new element comes in. All actions on this LRU list are O(1) </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0d64da0d4ca5386c8ce3f63c6409fab5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d64da0d4ca5386c8ce3f63c6409fab5">&#9670;&nbsp;</a></span>LRUList()</h2>
+<a id="a70919bd9baeab8a0dd6a26adb0089564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70919bd9baeab8a0dd6a26adb0089564">&#9670;&nbsp;</a></span>LRUList()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -131,7 +131,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classpcpp_1_1_l_r_u_list.html">pcpp::LRUList</a>&lt; T &gt;::<a class="el" href="classpcpp_1_1_l_r_u_list.html">LRUList</a> </td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>maxSize</em></td><td>)</td>
           <td></td>
         </tr>
@@ -350,7 +350,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_l_r_u_list.html">LRUList</a></li>
-    <li class="footer">Generated on Mon Dec 9 2024 08:55:46 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 17 2024 08:20:13 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

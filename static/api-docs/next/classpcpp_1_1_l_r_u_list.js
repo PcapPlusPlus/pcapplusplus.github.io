@@ -1,6 +1,6 @@
 var classpcpp_1_1_l_r_u_list =
 [
-    [ "LRUList", "classpcpp_1_1_l_r_u_list.html#a0d64da0d4ca5386c8ce3f63c6409fab5", null ],
+    [ "LRUList", "classpcpp_1_1_l_r_u_list.html#a70919bd9baeab8a0dd6a26adb0089564", null ],
     [ "eraseElement", "classpcpp_1_1_l_r_u_list.html#a5682e992a5b22c9ed24242a38265ce73", null ],
     [ "getLRUElement", "classpcpp_1_1_l_r_u_list.html#a40a0136ecbef19e4e529586cb74bf586", null ],
     [ "getMaxSize", "classpcpp_1_1_l_r_u_list.html#a0f0677594831fb56c91aff3af9cbd269", null ],
