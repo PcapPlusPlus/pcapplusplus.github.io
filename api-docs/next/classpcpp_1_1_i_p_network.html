@@ -161,8 +161,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A constructor that creates an instance of the class out of an IP address and a full prefix length, essentially making a network of consisting of only 1 address.</p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>A constructor that creates an instance of the class out of an IP address and a full prefix length, essentially making a network of consisting of only 1 address. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">address</td><td>An address representing the network prefix. </td></tr>
   </table>
@@ -207,7 +206,10 @@ Public Member Functions</h2></td></tr>
 <p>A constructor that creates an instance of the class out of an address representing the network prefix and a prefix length </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">address</td><td>An address representing the network prefix. If the address is invalid std::invalid_argument exception is thrown </td></tr>
-    <tr><td class="paramname">prefixLen</td><td>A number representing the prefix length. Allowed ranges are 0 - 32 for IPv4 networks and 0 - 128 for IPv6 networks. </td></tr>
+    <tr><td class="paramname">prefixLen</td><td>A number representing the prefix length. Allowed ranges are 0 - 32 for IPv4 networks and 0<ul>
+<li>128 for IPv6 networks. </li>
+</ul>
+</td></tr>
   </table>
   </dd>
 </dl>
@@ -749,7 +751,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_p_network.html">IPNetwork</a></li>
-    <li class="footer">Generated on Mon Dec 9 2024 08:55:46 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 17 2024 08:20:13 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

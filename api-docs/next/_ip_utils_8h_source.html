@@ -114,28 +114,29 @@ $(document).ready(function(){initNavTree('_ip_utils_8h_source.html',''); initRes
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// We use &quot;__MINGW64_VERSION_MAJOR&quot; and not __MINGW64__ to detect MinGW-w64 compiler</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// because the second one is not defined for MinGW-w64 in 32bits mode</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#if defined(_WIN32) &amp;&amp; !defined(_MSC_VER) &amp;&amp; (!defined(__MINGW64_VERSION_MAJOR) || (__MINGW64_VERSION_MAJOR &lt; 8))</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="_ip_utils_8h.html#a2a4b830a00870799ee852d4c6a72a1eb">   36</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="_ip_utils_8h.html#a2a4b830a00870799ee852d4c6a72a1eb">inet_ntop</a>(<span class="keywordtype">int</span> af, <span class="keyword">const</span> <span class="keywordtype">void</span>* src, <span class="keywordtype">char</span>* dst, <span class="keywordtype">size_t</span> size);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="_ip_utils_8h.html#acdce1d46efd09e8485a2f682b388ebc0">   49</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="_ip_utils_8h.html#acdce1d46efd09e8485a2f682b388ebc0">inet_pton</a>(<span class="keywordtype">int</span> af, <span class="keyword">const</span> <span class="keywordtype">char</span>* src, <span class="keywordtype">void</span>* dst);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepcpp.html">pcpp</a></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">namespace </span>internal</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="_ip_utils_8h.html#a595491af11d729ff69e500b46b98e82b">   66</a></span>&#160;        in_addr* <a class="code" href="_ip_utils_8h.html#a595491af11d729ff69e500b46b98e82b">sockaddr2in_addr</a>(sockaddr* sa);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="_ip_utils_8h.html#ab0f81b449d5a87b4bfbe9984b0b82087">   73</a></span>&#160;        in_addr* <a class="code" href="_ip_utils_8h.html#ab0f81b449d5a87b4bfbe9984b0b82087">try_sockaddr2in_addr</a>(sockaddr* sa);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="_ip_utils_8h.html#ace52594901af49a6a53d9c30b8ad04d6">   81</a></span>&#160;        in6_addr* <a class="code" href="_ip_utils_8h.html#ace52594901af49a6a53d9c30b8ad04d6">sockaddr2in6_addr</a>(sockaddr* sa);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="_ip_utils_8h.html#ab67891af8eb0de311e32a4810ebe41b0">   88</a></span>&#160;        in6_addr* <a class="code" href="_ip_utils_8h.html#ab67891af8eb0de311e32a4810ebe41b0">try_sockaddr2in6_addr</a>(sockaddr* sa);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="_ip_utils_8h.html#ab06fc3386a584ed25384970876e234e6">   98</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="_ip_utils_8h.html#ab06fc3386a584ed25384970876e234e6">sockaddr2string</a>(sockaddr <span class="keyword">const</span>* sa, <span class="keywordtype">char</span>* resultString, <span class="keywordtype">size_t</span> resultBufLen);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="_ip_utils_8h.html#af93e0c8b044823c2dc011a26c26cca44">  105</a></span>&#160;        uint32_t <a class="code" href="_ip_utils_8h.html#af93e0c8b044823c2dc011a26c26cca44">in_addr2int</a>(in_addr inAddr);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }  <span class="comment">// namespace internal</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="_ip_utils_8h.html#a2a4b830a00870799ee852d4c6a72a1eb">   35</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="_ip_utils_8h.html#a2a4b830a00870799ee852d4c6a72a1eb">inet_ntop</a>(<span class="keywordtype">int</span> af, <span class="keyword">const</span> <span class="keywordtype">void</span>* src, <span class="keywordtype">char</span>* dst, <span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="_ip_utils_8h.html#acdce1d46efd09e8485a2f682b388ebc0">   46</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="_ip_utils_8h.html#acdce1d46efd09e8485a2f682b388ebc0">inet_pton</a>(<span class="keywordtype">int</span> af, <span class="keyword">const</span> <span class="keywordtype">char</span>* src, <span class="keywordtype">void</span>* dst);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepcpp.html">pcpp</a></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">namespace </span>internal</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="_ip_utils_8h.html#a595491af11d729ff69e500b46b98e82b">   59</a></span>&#160;        in_addr* <a class="code" href="_ip_utils_8h.html#a595491af11d729ff69e500b46b98e82b">sockaddr2in_addr</a>(sockaddr* sa);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="_ip_utils_8h.html#ab0f81b449d5a87b4bfbe9984b0b82087">   64</a></span>&#160;        in_addr* <a class="code" href="_ip_utils_8h.html#ab0f81b449d5a87b4bfbe9984b0b82087">try_sockaddr2in_addr</a>(sockaddr* sa);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="_ip_utils_8h.html#ace52594901af49a6a53d9c30b8ad04d6">   70</a></span>&#160;        in6_addr* <a class="code" href="_ip_utils_8h.html#ace52594901af49a6a53d9c30b8ad04d6">sockaddr2in6_addr</a>(sockaddr* sa);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="_ip_utils_8h.html#ab67891af8eb0de311e32a4810ebe41b0">   75</a></span>&#160;        in6_addr* <a class="code" href="_ip_utils_8h.html#ab67891af8eb0de311e32a4810ebe41b0">try_sockaddr2in6_addr</a>(sockaddr* sa);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="_ip_utils_8h.html#ab06fc3386a584ed25384970876e234e6">   83</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="_ip_utils_8h.html#ab06fc3386a584ed25384970876e234e6">sockaddr2string</a>(sockaddr <span class="keyword">const</span>* sa, <span class="keywordtype">char</span>* resultString, <span class="keywordtype">size_t</span> resultBufLen);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="_ip_utils_8h.html#af93e0c8b044823c2dc011a26c26cca44">   88</a></span>&#160;        uint32_t <a class="code" href="_ip_utils_8h.html#af93e0c8b044823c2dc011a26c26cca44">in_addr2int</a>(in_addr inAddr);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }  <span class="comment">// namespace internal</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
 <div class="ttc" id="a_ip_utils_8h_html_a2a4b830a00870799ee852d4c6a72a1eb"><div class="ttname"><a href="_ip_utils_8h.html#a2a4b830a00870799ee852d4c6a72a1eb">inet_ntop</a></div><div class="ttdeci">const char * inet_ntop(int af, const void *src, char *dst, size_t size)</div></div>
 <div class="ttc" id="a_ip_utils_8h_html_a595491af11d729ff69e500b46b98e82b"><div class="ttname"><a href="_ip_utils_8h.html#a595491af11d729ff69e500b46b98e82b">pcpp::internal::sockaddr2in_addr</a></div><div class="ttdeci">in_addr * sockaddr2in_addr(sockaddr *sa)</div></div>
 <div class="ttc" id="a_ip_utils_8h_html_ab06fc3386a584ed25384970876e234e6"><div class="ttname"><a href="_ip_utils_8h.html#ab06fc3386a584ed25384970876e234e6">pcpp::internal::sockaddr2string</a></div><div class="ttdeci">void sockaddr2string(sockaddr const *sa, char *resultString, size_t resultBufLen)</div></div>
@@ -151,7 +152,7 @@ $(document).ready(function(){initNavTree('_ip_utils_8h_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b003f564e33ffc88e35d7a9df43b3691.html">Common++</a></li><li class="navelem"><a class="el" href="dir_9a3e9207f3f2c743963c543f58e0ab18.html">header</a></li><li class="navelem"><a class="el" href="_ip_utils_8h.html">IpUtils.h</a></li>
-    <li class="footer">Generated on Mon Dec 9 2024 08:55:46 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Dec 17 2024 08:20:13 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
