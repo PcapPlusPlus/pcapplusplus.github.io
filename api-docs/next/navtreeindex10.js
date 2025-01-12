@@ -243,10 +243,10 @@ var NAVTREEINDEX10 =
 "classpcpp_1_1_i_file_device.html#a570d8ed7208e8ba9412686f32bc453f3":[3,0,0,295,1],
 "classpcpp_1_1_i_file_device.html#a91f7ba10d391de3b408b5176e0cee81b":[3,0,0,295,0],
 "classpcpp_1_1_i_file_reader_device.html":[3,0,0,296],
+"classpcpp_1_1_i_file_reader_device.html#a27308d664b9c084069cf54af48462a5e":[3,0,0,296,1],
 "classpcpp_1_1_i_file_reader_device.html#a279a1c148671df93bd85afd43af1f958":[3,0,0,296,3],
 "classpcpp_1_1_i_file_reader_device.html#a4f18812c646fb59957073bb14980ba72":[3,0,0,296,2],
 "classpcpp_1_1_i_file_reader_device.html#aaf7d8d9af86c65cf539c5c4e39804295":[3,0,0,296,0],
-"classpcpp_1_1_i_file_reader_device.html#acdc7b6e2db17994aaf167c081ddfaafb":[3,0,0,296,1],
 "classpcpp_1_1_i_file_writer_device.html":[3,0,0,300],
 "classpcpp_1_1_i_file_writer_device.html#ad1efdc8f258b6981d0429c61992f2e13":[3,0,0,300,0],
 "classpcpp_1_1_i_filter_with_direction.html":[3,0,0,306]

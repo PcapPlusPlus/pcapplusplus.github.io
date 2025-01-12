@@ -794,11 +794,15 @@ Typedefs</h2></td></tr>
 typedef <a class="el" href="structpcpp_1_1stp__tcn__bpdu.html">stp_tcn_bpdu</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a7f45440e183e2d487db71424afc89793">stp_header</a></td></tr>
 <tr class="memdesc:a7f45440e183e2d487db71424afc89793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spanning Tree protocol common header. <br /></td></tr>
 <tr class="separator:a7f45440e183e2d487db71424afc89793"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c0775fb93a0867d2afa7992d55957f0"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classpcpp_1_1_pointer_vector.html">PointerVector</a>&lt; <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a></td></tr>
+<tr class="memitem:a4c0775fb93a0867d2afa7992d55957f0"><td class="memItemLeft" align="right" valign="top"><a id="a4c0775fb93a0867d2afa7992d55957f0"></a>
+typedef <a class="el" href="classpcpp_1_1_pointer_vector.html">PointerVector</a>&lt; <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a></td></tr>
+<tr class="memdesc:a4c0775fb93a0867d2afa7992d55957f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">A vector of pointers to <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a>. <br /></td></tr>
 <tr class="separator:a4c0775fb93a0867d2afa7992d55957f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebc46b2f805a197cd4b79316a9237c26"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#aebc46b2f805a197cd4b79316a9237c26">OnDpdkPacketsArriveCallback</a>) (<a class="el" href="classpcpp_1_1_m_buf_raw_packet.html">MBufRawPacket</a> *packets, uint32_t numOfPackets, uint8_t threadId, <a class="el" href="classpcpp_1_1_dpdk_device.html">DpdkDevice</a> *device, void *userCookie)</td></tr>
 <tr class="separator:aebc46b2f805a197cd4b79316a9237c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d5c27837ffd86e49a6b4ce2cc1ed57b"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a5d5c27837ffd86e49a6b4ce2cc1ed57b">OnKniPacketArriveCallback</a>) (<a class="el" href="classpcpp_1_1_m_buf_raw_packet.html">MBufRawPacket</a> *packets, uint32_t numOfPackets, <a class="el" href="classpcpp_1_1_kni_device.html">KniDevice</a> *device, void *userCookie)</td></tr>
+<tr class="memitem:a5d5c27837ffd86e49a6b4ce2cc1ed57b"><td class="memItemLeft" align="right" valign="top"><a id="a5d5c27837ffd86e49a6b4ce2cc1ed57b"></a>
+typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a5d5c27837ffd86e49a6b4ce2cc1ed57b">OnKniPacketArriveCallback</a>) (<a class="el" href="classpcpp_1_1_m_buf_raw_packet.html">MBufRawPacket</a> *packets, uint32_t numOfPackets, <a class="el" href="classpcpp_1_1_kni_device.html">KniDevice</a> *device, void *userCookie)</td></tr>
+<tr class="memdesc:a5d5c27837ffd86e49a6b4ce2cc1ed57b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the signature callback used by capturing API on KNI device. <br /></td></tr>
 <tr class="separator:a5d5c27837ffd86e49a6b4ce2cc1ed57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a594cff22cd51c0a8acc36590c9733ecd"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classpcpp_1_1_pointer_vector.html">PointerVector</a>&lt; <a class="el" href="classpcpp_1_1_m_buf_raw_packet.html">MBufRawPacket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a594cff22cd51c0a8acc36590c9733ecd">MBufRawPacketVector</a></td></tr>
 <tr class="separator:a594cff22cd51c0a8acc36590c9733ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2080,6 +2084,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacepcpp.html#a966edb536b73cf93cbc9b83f9c64930aa27a323e67a11c7d1fc922949a918fedb">DST</a>
 , <a class="el" href="namespacepcpp.html#a966edb536b73cf93cbc9b83f9c64930aa0cf92996690ad72c66a8d00661b471a2">SRC_OR_DST</a>
  }</td></tr>
+<tr class="memdesc:a966edb536b73cf93cbc9b83f9c64930a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enum that contains direction (source or destination)  <a href="namespacepcpp.html#a966edb536b73cf93cbc9b83f9c64930a">More...</a><br /></td></tr>
 <tr class="separator:a966edb536b73cf93cbc9b83f9c64930a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a236073670782cc577b097b2fef4c7d62"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a236073670782cc577b097b2fef4c7d62">FilterOperator</a> { <br />
 &#160;&#160;<a class="el" href="namespacepcpp.html#a236073670782cc577b097b2fef4c7d62a53506f1c14ae7561fd4a38510273b4ab">EQUALS</a>
@@ -2091,10 +2096,12 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacepcpp.html#a236073670782cc577b097b2fef4c7d62abde291e8ef8d48da33a90c99a0186529">LESS_OR_EQUAL</a>
 <br />
  }</td></tr>
+<tr class="memdesc:a236073670782cc577b097b2fef4c7d62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supported operators enum.  <a href="namespacepcpp.html#a236073670782cc577b097b2fef4c7d62">More...</a><br /></td></tr>
 <tr class="separator:a236073670782cc577b097b2fef4c7d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a979b15d51e4f361c61e1f726b051541d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a979b15d51e4f361c61e1f726b051541d">CompositeLogicFilterOp</a> { <a class="el" href="namespacepcpp.html#a979b15d51e4f361c61e1f726b051541da558ffc8f5770d8e4f95f51d822685532">AND</a>
 , <a class="el" href="namespacepcpp.html#a979b15d51e4f361c61e1f726b051541da1d00e7dce692e8dc3f6877f035e3a616">OR</a>
  }</td></tr>
+<tr class="memdesc:a979b15d51e4f361c61e1f726b051541d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supported composite logic filter operators enum.  <a href="namespacepcpp.html#a979b15d51e4f361c61e1f726b051541d">More...</a><br /></td></tr>
 <tr class="separator:a979b15d51e4f361c61e1f726b051541d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -2323,6 +2330,7 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The main namespace for the PcapPlusPlus lib. </p>
+<p>@ </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="a32759b78f540d917ac9e24b8559ea463"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a32759b78f540d917ac9e24b8559ea463">&#9670;&nbsp;</a></span>AndFilter</h2>
@@ -2335,8 +2343,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A class for connecting several filters into one filter with logical "and" between them. For example: if the 2 filters are: "IPv4 address = x.x.x.x" + "TCP port dst = 80", then the new filter will be: "IPv4 address = x.x.x.x
-_AND_ TCP port dst = 80"</p>
+<p>A class for connecting several filters into one filter with logical "and" between them. For example: if the 2 filters are: "IPv4 address = x.x.x.x" + "TCP port dst = 80", then the new filter will be: "IPv4 address =
+x.x.x.x _AND_ TCP port dst = 80"</p>
 <p>This class follows the composite design pattern.</p>
 <p>For deeper understanding of the filter concept please refer to <a class="el" href="_pcap_filter_8h.html">PcapFilter.h</a> </p>
 
@@ -2471,21 +2479,6 @@ _AND_ TCP port dst = 80"</p>
 
 </div>
 </div>
-<a id="a5d5c27837ffd86e49a6b4ce2cc1ed57b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d5c27837ffd86e49a6b4ce2cc1ed57b">&#9670;&nbsp;</a></span>OnKniPacketArriveCallback</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef bool(* pcpp::OnKniPacketArriveCallback) (<a class="el" href="classpcpp_1_1_m_buf_raw_packet.html">MBufRawPacket</a> *packets, uint32_t numOfPackets, <a class="el" href="classpcpp_1_1_kni_device.html">KniDevice</a> *device, void *userCookie)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Defines the signature callback used by capturing API on KNI device </p>
-
-</div>
-</div>
 <a id="a700592e5086544411957be0242dec0f5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a700592e5086544411957be0242dec0f5">&#9670;&nbsp;</a></span>OnPacketArrivesCallback</h2>
 
@@ -2563,8 +2556,8 @@ _AND_ TCP port dst = 80"</p>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A class for connecting several filters into one filter with logical "or" between them. For example: if the 2 filters are: "IPv4 address = x.x.x.x" + "TCP port dst = 80", then the new filter will be: "IPv4 address = x.x.x.x
-_OR_ TCP port dst = 80"</p>
+<p>A class for connecting several filters into one filter with logical "or" between them. For example: if the 2 filters are: "IPv4 address = x.x.x.x" + "TCP port dst = 80", then the new filter will be: "IPv4 address =
+x.x.x.x _OR_ TCP port dst = 80"</p>
 <p>This class follows the composite design pattern.</p>
 <p>For deeper understanding of the filter concept please refer to <a class="el" href="_pcap_filter_8h.html">PcapFilter.h</a> </p>
 
@@ -2597,21 +2590,6 @@ _OR_ TCP port dst = 80"</p>
       </table>
 </div><div class="memdoc">
 <p>Representing a family of protocols </p>
-
-</div>
-</div>
-<a id="a4c0775fb93a0867d2afa7992d55957f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c0775fb93a0867d2afa7992d55957f0">&#9670;&nbsp;</a></span>RawPacketVector</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="classpcpp_1_1_pointer_vector.html">PointerVector</a>&lt;<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a>&gt; <a class="el" href="namespacepcpp.html#a4c0775fb93a0867d2afa7992d55957f0">pcpp::RawPacketVector</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A vector of pointers to <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> </p>
 
 </div>
 </div>
@@ -2811,11 +2789,12 @@ _OR_ TCP port dst = 80"</p>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Supported composite logic filter operators enum </p>
+
+<p>Supported composite logic filter operators enum. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a979b15d51e4f361c61e1f726b051541da558ffc8f5770d8e4f95f51d822685532"></a>AND&#160;</td><td class="fielddoc"><p>Logical AND operation </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a979b15d51e4f361c61e1f726b051541da558ffc8f5770d8e4f95f51d822685532"></a>AND&#160;</td><td class="fielddoc"><p>Logical AND operation. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a979b15d51e4f361c61e1f726b051541da1d00e7dce692e8dc3f6877f035e3a616"></a>OR&#160;</td><td class="fielddoc"><p>Logical OR operation </p>
+<tr><td class="fieldname"><a id="a979b15d51e4f361c61e1f726b051541da1d00e7dce692e8dc3f6877f035e3a616"></a>OR&#160;</td><td class="fielddoc"><p>Logical OR operation. </p>
 </td></tr>
 </table>
 
@@ -3371,13 +3350,14 @@ _OR_ TCP port dst = 80"</p>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>An enum that contains direction (source or destination) </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a966edb536b73cf93cbc9b83f9c64930aacbfd6ae8daea0ea78970fd2ca4521925"></a>SRC&#160;</td><td class="fielddoc"><p>Source </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a966edb536b73cf93cbc9b83f9c64930aacbfd6ae8daea0ea78970fd2ca4521925"></a>SRC&#160;</td><td class="fielddoc"><p>Source. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a966edb536b73cf93cbc9b83f9c64930aa27a323e67a11c7d1fc922949a918fedb"></a>DST&#160;</td><td class="fielddoc"><p>Destination </p>
+<tr><td class="fieldname"><a id="a966edb536b73cf93cbc9b83f9c64930aa27a323e67a11c7d1fc922949a918fedb"></a>DST&#160;</td><td class="fielddoc"><p>Destination. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a966edb536b73cf93cbc9b83f9c64930aa0cf92996690ad72c66a8d00661b471a2"></a>SRC_OR_DST&#160;</td><td class="fielddoc"><p>Source or destination </p>
+<tr><td class="fieldname"><a id="a966edb536b73cf93cbc9b83f9c64930aa0cf92996690ad72c66a8d00661b471a2"></a>SRC_OR_DST&#160;</td><td class="fielddoc"><p>Source or destination. </p>
 </td></tr>
 </table>
 
@@ -3569,43 +3549,43 @@ _OR_ TCP port dst = 80"</p>
 </div><div class="memdoc">
 <p>An enum describing all PMD (poll mode driver) types supported by DPDK. For more info about these PMDs please visit the DPDK web-site </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9a7284a3382423a4788038a93351da1068"></a>PMD_UNKNOWN&#160;</td><td class="fielddoc"><p>Unknown PMD type </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9a7284a3382423a4788038a93351da1068"></a>PMD_UNKNOWN&#160;</td><td class="fielddoc"><p>Unknown PMD type. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9a5ea9f73f02ab060961507d00b0116c3a"></a>PMD_BOND&#160;</td><td class="fielddoc"><p>Link Bonding for 1GbE and 10GbE ports to allow the aggregation of multiple (slave) NICs into a single logical interface </p>
 </td></tr>
-<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9a897a951640e193c23e5551ff6d262721"></a>PMD_E1000EM&#160;</td><td class="fielddoc"><p>Intel E1000 PMD </p>
+<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9a897a951640e193c23e5551ff6d262721"></a>PMD_E1000EM&#160;</td><td class="fielddoc"><p>Intel E1000 PMD. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9a0285f774aac5c7361ba8d37a4661d54c"></a>PMD_IGB&#160;</td><td class="fielddoc"><p>Intel 1GbE PMD </p>
+<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9a0285f774aac5c7361ba8d37a4661d54c"></a>PMD_IGB&#160;</td><td class="fielddoc"><p>Intel 1GbE PMD. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9ac9bd02c20553db57a436d2cdcefb19e4"></a>PMD_IGBVF&#160;</td><td class="fielddoc"><p>Intel 1GbE virtual function PMD </p>
+<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9ac9bd02c20553db57a436d2cdcefb19e4"></a>PMD_IGBVF&#160;</td><td class="fielddoc"><p>Intel 1GbE virtual function PMD. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9ab78a0d3109436b0b81bd74f3da4aeb4f"></a>PMD_ENIC&#160;</td><td class="fielddoc"><p>Cisco enic (UCS Virtual Interface Card) PMD </p>
+<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9ab78a0d3109436b0b81bd74f3da4aeb4f"></a>PMD_ENIC&#160;</td><td class="fielddoc"><p>Cisco enic (UCS Virtual Interface Card) PMD. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9aa5cf85f23e598984e33982f43bf68336"></a>PMD_FM10K&#160;</td><td class="fielddoc"><p>Intel fm10k PMD </p>
+<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9aa5cf85f23e598984e33982f43bf68336"></a>PMD_FM10K&#160;</td><td class="fielddoc"><p>Intel fm10k PMD. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9a74b4ff3e1cfac5e22e15a9e70ef16c85"></a>PMD_I40E&#160;</td><td class="fielddoc"><p>Intel 40GbE PMD </p>
+<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9a74b4ff3e1cfac5e22e15a9e70ef16c85"></a>PMD_I40E&#160;</td><td class="fielddoc"><p>Intel 40GbE PMD. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9a72526282b86fa593ae6e558ed0a9da53"></a>PMD_I40EVF&#160;</td><td class="fielddoc"><p>Intel 40GbE virtual function PMD </p>
+<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9a72526282b86fa593ae6e558ed0a9da53"></a>PMD_I40EVF&#160;</td><td class="fielddoc"><p>Intel 40GbE virtual function PMD. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9aa98f261841430d2b8c0317f2fc7a8019"></a>PMD_IXGBE&#160;</td><td class="fielddoc"><p>Intel 10GbE PMD </p>
+<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9aa98f261841430d2b8c0317f2fc7a8019"></a>PMD_IXGBE&#160;</td><td class="fielddoc"><p>Intel 10GbE PMD. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9a5a0f116ac9d5559dbb4639e246441682"></a>PMD_IXGBEVF&#160;</td><td class="fielddoc"><p>Intel 10GbE virtual function PMD </p>
+<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9a5a0f116ac9d5559dbb4639e246441682"></a>PMD_IXGBEVF&#160;</td><td class="fielddoc"><p>Intel 10GbE virtual function PMD. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9a1e1a82a8e62126ffbd49e62fbbd1e3e6"></a>PMD_MLX4&#160;</td><td class="fielddoc"><p>Mellanox ConnectX-3, ConnectX-3 Pro PMD </p>
+<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9a1e1a82a8e62126ffbd49e62fbbd1e3e6"></a>PMD_MLX4&#160;</td><td class="fielddoc"><p>Mellanox ConnectX-3, ConnectX-3 Pro PMD. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9afcf0ab0cfbf5794de42cb6cd68ab63a9"></a>PMD_NULL&#160;</td><td class="fielddoc"><p>Null PMD </p>
+<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9afcf0ab0cfbf5794de42cb6cd68ab63a9"></a>PMD_NULL&#160;</td><td class="fielddoc"><p>Null PMD. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9a8d00786a5d2f4e3ff6170c428878219e"></a>PMD_PCAP&#160;</td><td class="fielddoc"><p>pcap file PMD </p>
 </td></tr>
 <tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9a53259a7926134fe9f6e8902fa92b07fe"></a>PMD_RING&#160;</td><td class="fielddoc"><p>ring-based (memory) PMD </p>
 </td></tr>
-<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9ad24add478b9c88c8b2d735c98c1d2580"></a>PMD_VIRTIO&#160;</td><td class="fielddoc"><p>VirtIO PMD </p>
+<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9ad24add478b9c88c8b2d735c98c1d2580"></a>PMD_VIRTIO&#160;</td><td class="fielddoc"><p>VirtIO PMD. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9ab1cf6b5ef8ce9b1dd85a96784ea87779"></a>PMD_VMXNET3&#160;</td><td class="fielddoc"><p>VMWare VMXNET3 PMD </p>
+<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9ab1cf6b5ef8ce9b1dd85a96784ea87779"></a>PMD_VMXNET3&#160;</td><td class="fielddoc"><p>VMWare VMXNET3 PMD. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9aa64fbbe7b368497e49e6bbcf0d839858"></a>PMD_XENVIRT&#160;</td><td class="fielddoc"><p>Xen Project PMD </p>
+<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9aa64fbbe7b368497e49e6bbcf0d839858"></a>PMD_XENVIRT&#160;</td><td class="fielddoc"><p>Xen Project PMD. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9a6270057f3a91382d9efb64b469f19e8c"></a>PMD_AF_PACKET&#160;</td><td class="fielddoc"><p>AF_PACKET PMD </p>
+<tr><td class="fieldname"><a id="adb43f1f8284d4e0b74d1c77b70152fa9a6270057f3a91382d9efb64b469f19e8c"></a>PMD_AF_PACKET&#160;</td><td class="fielddoc"><p>AF_PACKET PMD. </p>
 </td></tr>
 </table>
 
@@ -3653,19 +3633,20 @@ _OR_ TCP port dst = 80"</p>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Supported operators enum </p>
+
+<p>Supported operators enum. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a236073670782cc577b097b2fef4c7d62a53506f1c14ae7561fd4a38510273b4ab"></a>EQUALS&#160;</td><td class="fielddoc"><p>Equals </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a236073670782cc577b097b2fef4c7d62a53506f1c14ae7561fd4a38510273b4ab"></a>EQUALS&#160;</td><td class="fielddoc"><p>Equals. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a236073670782cc577b097b2fef4c7d62aa5cd5ef2f39bf8efeeca1d5a95c7e37b"></a>NOT_EQUALS&#160;</td><td class="fielddoc"><p>Not equals </p>
+<tr><td class="fieldname"><a id="a236073670782cc577b097b2fef4c7d62aa5cd5ef2f39bf8efeeca1d5a95c7e37b"></a>NOT_EQUALS&#160;</td><td class="fielddoc"><p>Not equals. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a236073670782cc577b097b2fef4c7d62a30bbe6ce1abd380c5ae67861d079a805"></a>GREATER_THAN&#160;</td><td class="fielddoc"><p>Greater than </p>
+<tr><td class="fieldname"><a id="a236073670782cc577b097b2fef4c7d62a30bbe6ce1abd380c5ae67861d079a805"></a>GREATER_THAN&#160;</td><td class="fielddoc"><p>Greater than. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a236073670782cc577b097b2fef4c7d62a6a699f41533a623a8af26d1da6bef2d9"></a>GREATER_OR_EQUAL&#160;</td><td class="fielddoc"><p>Greater or equal </p>
+<tr><td class="fieldname"><a id="a236073670782cc577b097b2fef4c7d62a6a699f41533a623a8af26d1da6bef2d9"></a>GREATER_OR_EQUAL&#160;</td><td class="fielddoc"><p>Greater or equal. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a236073670782cc577b097b2fef4c7d62a93e91a67cf4247b10806a20ef10bc355"></a>LESS_THAN&#160;</td><td class="fielddoc"><p>Less than </p>
+<tr><td class="fieldname"><a id="a236073670782cc577b097b2fef4c7d62a93e91a67cf4247b10806a20ef10bc355"></a>LESS_THAN&#160;</td><td class="fielddoc"><p>Less than. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a236073670782cc577b097b2fef4c7d62abde291e8ef8d48da33a90c99a0186529"></a>LESS_OR_EQUAL&#160;</td><td class="fielddoc"><p>Less or equal </p>
+<tr><td class="fieldname"><a id="a236073670782cc577b097b2fef4c7d62abde291e8ef8d48da33a90c99a0186529"></a>LESS_OR_EQUAL&#160;</td><td class="fielddoc"><p>Less or equal. </p>
 </td></tr>
 </table>
 
@@ -7762,7 +7743,7 @@ _OR_ TCP port dst = 80"</p>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li>
-    <li class="footer">Generated on Tue Dec 31 2024 03:14:47 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

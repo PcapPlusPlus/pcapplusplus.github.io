@@ -105,11 +105,15 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a971b099355d4da2fc8f85224f50ed42c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22df3fac00ba8927f0554bf970e389ac"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_kni_device_1_1_kni_device_configuration.html#a22df3fac00ba8927f0554bf970e389ac">portId</a></td></tr>
 <tr class="separator:a22df3fac00ba8927f0554bf970e389ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a367e9fa4227ef174aff1f4c9a0f85ab6"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_kni_device_1_1_kni_device_configuration.html#a367e9fa4227ef174aff1f4c9a0f85ab6">mtu</a></td></tr>
+<tr class="memitem:a367e9fa4227ef174aff1f4c9a0f85ab6"><td class="memItemLeft" align="right" valign="top"><a id="a367e9fa4227ef174aff1f4c9a0f85ab6"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_kni_device_1_1_kni_device_configuration.html#a367e9fa4227ef174aff1f4c9a0f85ab6">mtu</a></td></tr>
+<tr class="memdesc:a367e9fa4227ef174aff1f4c9a0f85ab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">MTU of new KNI device. Will be cached by new KNI device info structure. <br /></td></tr>
 <tr class="separator:a367e9fa4227ef174aff1f4c9a0f85ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75e4fec9e87b52e390e1d79e3d8e6dd6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_kni_device_1_1_kni_device_configuration.html#a75e4fec9e87b52e390e1d79e3d8e6dd6">bindKthread</a></td></tr>
 <tr class="separator:a75e4fec9e87b52e390e1d79e3d8e6dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e04ae1b8e56cb5cfe523dea16113d1b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_kni_device_1_1_kni_device_configuration.html#a4e04ae1b8e56cb5cfe523dea16113d1b">kthreadCoreId</a></td></tr>
+<tr class="memitem:a4e04ae1b8e56cb5cfe523dea16113d1b"><td class="memItemLeft" align="right" valign="top"><a id="a4e04ae1b8e56cb5cfe523dea16113d1b"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_kni_device_1_1_kni_device_configuration.html#a4e04ae1b8e56cb5cfe523dea16113d1b">kthreadCoreId</a></td></tr>
+<tr class="memdesc:a4e04ae1b8e56cb5cfe523dea16113d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID of core to bind Linux kernel thread to (same as DPDK cores IDs) <br /></td></tr>
 <tr class="separator:a4e04ae1b8e56cb5cfe523dea16113d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -130,21 +134,6 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a4e04ae1b8e56cb5cfe523dea16113d1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e04ae1b8e56cb5cfe523dea16113d1b">&#9670;&nbsp;</a></span>kthreadCoreId</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t pcpp::KniDevice::KniDeviceConfiguration::kthreadCoreId</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>ID of core to bind Linux kernel thread to (same as DPDK cores IDs) </p>
-
-</div>
-</div>
 <a id="a971b099355d4da2fc8f85224f50ed42c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a971b099355d4da2fc8f85224f50ed42c">&#9670;&nbsp;</a></span>mac</h2>
 
@@ -157,21 +146,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>MAC (ETHERNET) address of new KNI device. If <a class="el" href="classpcpp_1_1_mac_address.html#a1b210f1cf39a31d9ea947c57e6c65e2e" title="A static value representing a zero value of MAC address, meaning address of value &quot;00:00:00:00:00:00&quot;...">MacAddress::Zero</a> is provided then some valid address will be automatically generated. If provided (not <a class="el" href="classpcpp_1_1_mac_address.html#a1b210f1cf39a31d9ea947c57e6c65e2e" title="A static value representing a zero value of MAC address, meaning address of value &quot;00:00:00:00:00:00&quot;...">MacAddress::Zero</a>) will be cached by new KNI device info structure. </p>
-
-</div>
-</div>
-<a id="a367e9fa4227ef174aff1f4c9a0f85ab6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a367e9fa4227ef174aff1f4c9a0f85ab6">&#9670;&nbsp;</a></span>mtu</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t pcpp::KniDevice::KniDeviceConfiguration::mtu</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>MTU of new KNI device. Will be cached by new KNI device info structure </p>
 
 </div>
 </div>
@@ -211,7 +185,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_kni_device.html">KniDevice</a></li><li class="navelem"><a class="el" href="structpcpp_1_1_kni_device_1_1_kni_device_configuration.html">KniDeviceConfiguration</a></li>
-    <li class="footer">Generated on Tue Dec 31 2024 03:14:48 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

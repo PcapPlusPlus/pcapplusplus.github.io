@@ -96,8 +96,10 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_dpdk_worker_thread.html'
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afee1cd32d8aa6bbb639f7e45ca85e68d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_worker_thread.html#afee1cd32d8aa6bbb639f7e45ca85e68d">~DpdkWorkerThread</a> ()</td></tr>
-<tr class="separator:afee1cd32d8aa6bbb639f7e45ca85e68d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adacab812f7f4c82cc8fd13d9b94f3b89"><td class="memItemLeft" align="right" valign="top"><a id="adacab812f7f4c82cc8fd13d9b94f3b89"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_worker_thread.html#adacab812f7f4c82cc8fd13d9b94f3b89">~DpdkWorkerThread</a> ()=default</td></tr>
+<tr class="memdesc:adacab812f7f4c82cc8fd13d9b94f3b89"><td class="mdescLeft">&#160;</td><td class="mdescRight">A virtual d'tor. Can be overridden by child class if needed. <br /></td></tr>
+<tr class="separator:adacab812f7f4c82cc8fd13d9b94f3b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf8c2b08e51679b20e9f56e166483492"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_worker_thread.html#adf8c2b08e51679b20e9f56e166483492">run</a> (uint32_t coreId)=0</td></tr>
 <tr class="separator:adf8c2b08e51679b20e9f56e166483492"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ae564e0ed9544c9e06ddbf5f1f1ecb9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_worker_thread.html#a7ae564e0ed9544c9e06ddbf5f1f1ecb9">stop</a> ()=0</td></tr>
@@ -107,34 +109,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>There are two ways to capture packets using <a class="el" href="classpcpp_1_1_dpdk_device.html">DpdkDevice</a>: one of them is using worker threads and the other way is using a callback which is invoked on each a burst of packets are captured (see <a class="el" href="classpcpp_1_1_dpdk_device.html#ae200ae83e4eb63c66ff18a1004836f3d">DpdkDevice::startCaptureSingleThread()</a> ). This class is a base class for implementing workers. A worker is basically a class that is activated by <a class="el" href="classpcpp_1_1_dpdk_device_list.html#a6a2d2fdf700451adb9a27567f6e6eda3">DpdkDeviceList::startDpdkWorkerThreads()</a> and runs on a designated core. When it runs it can do whatever the user wants it to do. The most common use it running in an endless loop and receive, analyze and send packets using one or more <a class="el" href="classpcpp_1_1_dpdk_device.html">DpdkDevice</a> instances. It can do all kinds of processing for these packets. The only restriction for a worker class is that it must implement the 3 abstract methods stated in this class-interface for start running, stop running and get the core ID the worker is running on. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="afee1cd32d8aa6bbb639f7e45ca85e68d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afee1cd32d8aa6bbb639f7e45ca85e68d">&#9670;&nbsp;</a></span>~DpdkWorkerThread()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual pcpp::DpdkWorkerThread::~DpdkWorkerThread </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>A virtual d'tor. Can be overridden by child class if needed </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a33ceb1809348c3d81a07b727474effe4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a33ceb1809348c3d81a07b727474effe4">&#9670;&nbsp;</a></span>getCoreId()</h2>
 
@@ -226,7 +201,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_dpdk_worker_thread.html">DpdkWorkerThread</a></li>
-    <li class="footer">Generated on Tue Dec 31 2024 03:14:48 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

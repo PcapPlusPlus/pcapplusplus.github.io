@@ -116,11 +116,14 @@ Public Types</h2></td></tr>
 <tr class="memitem:a2a7113725490fea52c9702998e6a8f78"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#a2a7113725490fea52c9702998e6a8f78">ChannelDistribution</a> { <a class="el" href="classpcpp_1_1_pf_ring_device.html#a2a7113725490fea52c9702998e6a8f78a707c1b0c55e37f2cb7d4978370332712">RoundRobin</a>
 , <a class="el" href="classpcpp_1_1_pf_ring_device.html#a2a7113725490fea52c9702998e6a8f78a7b91b5daaad7f4b2f754afa4b69f48b6">PerFlow</a>
  }</td></tr>
+<tr class="memdesc:a2a7113725490fea52c9702998e6a8f78"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enum representing the type of packet distribution between different RX channels.  <a href="classpcpp_1_1_pf_ring_device.html#a2a7113725490fea52c9702998e6a8f78">More...</a><br /></td></tr>
 <tr class="separator:a2a7113725490fea52c9702998e6a8f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a72463fcbd7eae62523c58fec6ecd2385"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#a72463fcbd7eae62523c58fec6ecd2385">~PfRingDevice</a> ()</td></tr>
+<tr class="memitem:a72463fcbd7eae62523c58fec6ecd2385"><td class="memItemLeft" align="right" valign="top"><a id="a72463fcbd7eae62523c58fec6ecd2385"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#a72463fcbd7eae62523c58fec6ecd2385">~PfRingDevice</a> ()</td></tr>
+<tr class="memdesc:a72463fcbd7eae62523c58fec6ecd2385"><td class="mdescLeft">&#160;</td><td class="mdescRight">A destructor for <a class="el" href="classpcpp_1_1_pf_ring_device.html">PfRingDevice</a> class. <br /></td></tr>
 <tr class="separator:a72463fcbd7eae62523c58fec6ecd2385"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3f349a204036f5de153e5a45e1a4f50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_mac_address.html">MacAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#ab3f349a204036f5de153e5a45e1a4f50">getMacAddress</a> ()</td></tr>
 <tr class="separator:ab3f349a204036f5de153e5a45e1a4f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,7 +139,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2d15fc696287e4a5dc16bd809fdce893"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2267f74af554b8651d771ab7f453dc50"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#a2267f74af554b8651d771ab7f453dc50">startCaptureMultiThread</a> (OnPfRingPacketsArriveCallback onPacketsArrive, void *onPacketsArriveUserCookie, CoreMask coreMask)</td></tr>
 <tr class="separator:a2267f74af554b8651d771ab7f453dc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31d086cb96e4e8de1e1d5ee640812575"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#a31d086cb96e4e8de1e1d5ee640812575">stopCapture</a> ()</td></tr>
+<tr class="memitem:a31d086cb96e4e8de1e1d5ee640812575"><td class="memItemLeft" align="right" valign="top"><a id="a31d086cb96e4e8de1e1d5ee640812575"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#a31d086cb96e4e8de1e1d5ee640812575">stopCapture</a> ()</td></tr>
+<tr class="memdesc:a31d086cb96e4e8de1e1d5ee640812575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops capturing packets (works will all type of startCapture*) <br /></td></tr>
 <tr class="separator:a31d086cb96e4e8de1e1d5ee640812575"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a06e5e4364538de4b4fc71df0153c27"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#a4a06e5e4364538de4b4fc71df0153c27">openSingleRxChannel</a> (uint8_t channelId)</td></tr>
 <tr class="separator:a4a06e5e4364538de4b4fc71df0153c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,7 +177,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9259bcfd0d7e94822ec2a2930314c52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94f3512928cf7ccdb4f8a28532c6ee51"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#a94f3512928cf7ccdb4f8a28532c6ee51">open</a> ()</td></tr>
 <tr class="separator:a94f3512928cf7ccdb4f8a28532c6ee51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9df26e45654c94c08bfd73c0c18474d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#ad9df26e45654c94c08bfd73c0c18474d">close</a> ()</td></tr>
+<tr class="memitem:ad9df26e45654c94c08bfd73c0c18474d"><td class="memItemLeft" align="right" valign="top"><a id="ad9df26e45654c94c08bfd73c0c18474d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#ad9df26e45654c94c08bfd73c0c18474d">close</a> ()</td></tr>
+<tr class="memdesc:ad9df26e45654c94c08bfd73c0c18474d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes all RX channels currently opened in device. <br /></td></tr>
 <tr class="separator:ad9df26e45654c94c08bfd73c0c18474d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addd683b41cf717a08248ddf86b08df49"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pf_ring_device.html#addd683b41cf717a08248ddf86b08df49">setFilter</a> (std::string filterAsString)</td></tr>
 <tr class="separator:addd683b41cf717a08248ddf86b08df49"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,32 +210,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>An enum representing the type of packet distribution between different RX channels </p>
+
+<p>An enum representing the type of packet distribution between different RX channels. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2a7113725490fea52c9702998e6a8f78a707c1b0c55e37f2cb7d4978370332712"></a>RoundRobin&#160;</td><td class="fielddoc"><p>Packets are distributed between channels in a round-robin manner </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2a7113725490fea52c9702998e6a8f78a707c1b0c55e37f2cb7d4978370332712"></a>RoundRobin&#160;</td><td class="fielddoc"><p>Packets are distributed between channels in a round-robin manner. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a2a7113725490fea52c9702998e6a8f78a7b91b5daaad7f4b2f754afa4b69f48b6"></a>PerFlow&#160;</td><td class="fielddoc"><p>Packets are distributed between channels per flow (each flow goes for different channel) </p>
 </td></tr>
 </table>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a72463fcbd7eae62523c58fec6ecd2385"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72463fcbd7eae62523c58fec6ecd2385">&#9670;&nbsp;</a></span>~PfRingDevice()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::PfRingDevice::~PfRingDevice </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A destructor for <a class="el" href="classpcpp_1_1_pf_ring_device.html">PfRingDevice</a> class </p>
 
 </div>
 </div>
@@ -258,34 +247,6 @@ Public Member Functions</h2></td></tr>
 <p>Remove a filter if currently set </p><dl class="section return"><dt>Returns</dt><dd>True if filter was removed successfully or if no filter was set, false otherwise </dd></dl>
 
 <p>Implements <a class="el" href="classpcpp_1_1_i_filterable_device.html#abfccd588fbbbb6634332a834e039ddf3">pcpp::IFilterableDevice</a>.</p>
-
-</div>
-</div>
-<a id="ad9df26e45654c94c08bfd73c0c18474d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9df26e45654c94c08bfd73c0c18474d">&#9670;&nbsp;</a></span>close()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::PfRingDevice::close </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Closes all RX channels currently opened in device </p>
-
-<p>Implements <a class="el" href="classpcpp_1_1_i_device.html#acebd2ae24e39e620ed66f65e6623089b">pcpp::IDevice</a>.</p>
 
 </div>
 </div>
@@ -1053,31 +1014,13 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a31d086cb96e4e8de1e1d5ee640812575"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31d086cb96e4e8de1e1d5ee640812575">&#9670;&nbsp;</a></span>stopCapture()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::PfRingDevice::stopCapture </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Stops capturing packets (works will all type of startCapture*) </p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_pf_ring_device.html">PfRingDevice</a></li>
-    <li class="footer">Generated on Tue Dec 31 2024 03:14:48 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
