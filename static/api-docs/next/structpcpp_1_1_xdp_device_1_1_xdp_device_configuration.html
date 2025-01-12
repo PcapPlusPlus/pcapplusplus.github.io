@@ -111,7 +111,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:af0229c98a683ba3b6d50c7f0045093b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#a32b2d451b6989425730a8bcd94e9b127">AttachMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#af0229c98a683ba3b6d50c7f0045093b6">attachMode</a></td></tr>
+<tr class="memitem:af0229c98a683ba3b6d50c7f0045093b6"><td class="memItemLeft" align="right" valign="top"><a id="af0229c98a683ba3b6d50c7f0045093b6"></a>
+<a class="el" href="structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#a32b2d451b6989425730a8bcd94e9b127">AttachMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#af0229c98a683ba3b6d50c7f0045093b6">attachMode</a></td></tr>
+<tr class="memdesc:af0229c98a683ba3b6d50c7f0045093b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">AF_XDP operation mode. <br /></td></tr>
 <tr class="separator:af0229c98a683ba3b6d50c7f0045093b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a132dbef29f45c2abff3353f962ec2f8d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#a132dbef29f45c2abff3353f962ec2f8d">umemNumFrames</a></td></tr>
 <tr class="separator:a132dbef29f45c2abff3353f962ec2f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,7 +127,9 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aea49f464cade2e1094f35eddef78983c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5360e35913671566d4f7bf5875d7b0d5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#a5360e35913671566d4f7bf5875d7b0d5">txSize</a></td></tr>
 <tr class="separator:a5360e35913671566d4f7bf5875d7b0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84ec0bcd97ffb98da96426ef74552148"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#a84ec0bcd97ffb98da96426ef74552148">rxTxBatchSize</a></td></tr>
+<tr class="memitem:a84ec0bcd97ffb98da96426ef74552148"><td class="memItemLeft" align="right" valign="top"><a id="a84ec0bcd97ffb98da96426ef74552148"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#a84ec0bcd97ffb98da96426ef74552148">rxTxBatchSize</a></td></tr>
+<tr class="memdesc:a84ec0bcd97ffb98da96426ef74552148"><td class="mdescLeft">&#160;</td><td class="mdescRight">The max number of packets to be received or sent in one batch. <br /></td></tr>
 <tr class="separator:a84ec0bcd97ffb98da96426ef74552148"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -146,9 +150,9 @@ Public Attributes</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a32b2d451b6989425730a8bcd94e9b127ac0b4671902e86042969afc6d92f56a89"></a>SkbMode&#160;</td><td class="fielddoc"><p>A fallback mode that works for any network device. Use it if the network driver doesn't have support for XDP </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a32b2d451b6989425730a8bcd94e9b127a92cd6b9796617af0f2dc3db8fc52b7f3"></a>DriverMode&#160;</td><td class="fielddoc"><p>Use this mode if the network driver has support for XDP </p>
+<tr><td class="fieldname"><a id="a32b2d451b6989425730a8bcd94e9b127a92cd6b9796617af0f2dc3db8fc52b7f3"></a>DriverMode&#160;</td><td class="fielddoc"><p>Use this mode if the network driver has support for XDP. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a32b2d451b6989425730a8bcd94e9b127af3a3794b069de592a3f8e9c2dc099add"></a>AutoMode&#160;</td><td class="fielddoc"><p>Automatically detect whether driver mode is supported, otherwise fallback to SKB mode </p>
+<tr><td class="fieldname"><a id="a32b2d451b6989425730a8bcd94e9b127af3a3794b069de592a3f8e9c2dc099add"></a>AutoMode&#160;</td><td class="fielddoc"><p>Automatically detect whether driver mode is supported, otherwise fallback to SKB mode. </p>
 </td></tr>
 </table>
 
@@ -241,21 +245,6 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="af0229c98a683ba3b6d50c7f0045093b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0229c98a683ba3b6d50c7f0045093b6">&#9670;&nbsp;</a></span>attachMode</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#a32b2d451b6989425730a8bcd94e9b127">AttachMode</a> pcpp::XdpDevice::XdpDeviceConfiguration::attachMode</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>AF_XDP operation mode </p>
-
-</div>
-</div>
 <a id="a5d66562353b87817797a1f16634c7b8c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5d66562353b87817797a1f16634c7b8c">&#9670;&nbsp;</a></span>completionRingSize</h2>
 
@@ -298,21 +287,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The size of the RX ring used by the AF_XDP socket. This size should be a power of two and less or equal to the total number of UMEM frames </p>
-
-</div>
-</div>
-<a id="a84ec0bcd97ffb98da96426ef74552148"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84ec0bcd97ffb98da96426ef74552148">&#9670;&nbsp;</a></span>rxTxBatchSize</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t pcpp::XdpDevice::XdpDeviceConfiguration::rxTxBatchSize</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The max number of packets to be received or sent in one batch </p>
 
 </div>
 </div>
@@ -367,7 +341,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_xdp_device.html">XdpDevice</a></li><li class="navelem"><a class="el" href="structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html">XdpDeviceConfiguration</a></li>
-    <li class="footer">Generated on Tue Dec 31 2024 03:14:48 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Jan 12 2025 07:23:57 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

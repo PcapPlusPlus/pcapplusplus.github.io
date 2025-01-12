@@ -221,7 +221,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0f0ad97f7380da23a153a004b251daf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abac0fd84ff44bbccea5ef57e81704756"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#abac0fd84ff44bbccea5ef57e81704756">getStatistics</a> (<a class="el" href="structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html">DpdkDeviceStats</a> &amp;stats) const</td></tr>
 <tr class="separator:abac0fd84ff44bbccea5ef57e81704756"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d7a2351db1dc534a7cc8605af1046a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#a6d7a2351db1dc534a7cc8605af1046a1">clearStatistics</a> ()</td></tr>
+<tr class="memitem:a6d7a2351db1dc534a7cc8605af1046a1"><td class="memItemLeft" align="right" valign="top"><a id="a6d7a2351db1dc534a7cc8605af1046a1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#a6d7a2351db1dc534a7cc8605af1046a1">clearStatistics</a> ()</td></tr>
+<tr class="memdesc:a6d7a2351db1dc534a7cc8605af1046a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear device statistics. <br /></td></tr>
 <tr class="separator:a6d7a2351db1dc534a7cc8605af1046a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf80ebaaddb249744c657bd710193021"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#aaf80ebaaddb249744c657bd710193021">flushTxBuffer</a> (bool flushOnlyIfTimeoutExpired=false, uint16_t txQueueId=0)</td></tr>
 <tr class="separator:aaf80ebaaddb249744c657bd710193021"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,7 +239,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aea5269c79bf49fcdaee09061a3d86123"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27d469aab56898409f8ff43300406880"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#a27d469aab56898409f8ff43300406880">open</a> () override</td></tr>
 <tr class="separator:a27d469aab56898409f8ff43300406880"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a674ce896499d738f2c3c83777b7f7fd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#a674ce896499d738f2c3c83777b7f7fd6">close</a> () override</td></tr>
+<tr class="memitem:a674ce896499d738f2c3c83777b7f7fd6"><td class="memItemLeft" align="right" valign="top"><a id="a674ce896499d738f2c3c83777b7f7fd6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#a674ce896499d738f2c3c83777b7f7fd6">close</a> () override</td></tr>
+<tr class="memdesc:a674ce896499d738f2c3c83777b7f7fd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the <a class="el" href="classpcpp_1_1_dpdk_device.html">DpdkDevice</a>. When device is closed it's not possible work with it. <br /></td></tr>
 <tr class="separator:a674ce896499d738f2c3c83777b7f7fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classpcpp_1_1_i_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_i_device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_device.html">pcpp::IDevice</a></td></tr>
 <tr class="memitem:a5b75e7491597f271b8f29847bec2ee99 inherit pub_methods_classpcpp_1_1_i_device"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_device.html#a5b75e7491597f271b8f29847bec2ee99">isOpened</a> ()</td></tr>
@@ -274,103 +278,57 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>An enum describing all RSS (Receive Side Scaling) hash functions supported in DPDK. Notice not all PMDs support all types of hash functions </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4a378fcc61cc54a53c8c781ff0d6de73cb"></a>RSS_NONE&#160;</td><td class="fielddoc"><p>No RSS </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4a378fcc61cc54a53c8c781ff0d6de73cb"></a>RSS_NONE&#160;</td><td class="fielddoc"><p>No RSS. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4a19f70ffdb5724a1491089fbfc3bea86a"></a>RSS_IPV4&#160;</td><td class="fielddoc"><p>IPv4 based flow </p>
+<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4a19f70ffdb5724a1491089fbfc3bea86a"></a>RSS_IPV4&#160;</td><td class="fielddoc"><p>IPv4 based flow. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4ad35e8d99ee794f88c1584c047c817589"></a>RSS_FRAG_IPV4&#160;</td><td class="fielddoc"><p>Fragmented IPv4 based flow </p>
+<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4ad35e8d99ee794f88c1584c047c817589"></a>RSS_FRAG_IPV4&#160;</td><td class="fielddoc"><p>Fragmented IPv4 based flow. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4ae07d8e4b16a46a338e0672ad497d23bf"></a>RSS_NONFRAG_IPV4_TCP&#160;</td><td class="fielddoc"><p>Non-fragmented IPv4 + TCP flow </p>
+<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4ae07d8e4b16a46a338e0672ad497d23bf"></a>RSS_NONFRAG_IPV4_TCP&#160;</td><td class="fielddoc"><p>Non-fragmented IPv4 + TCP flow. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4ab23bce2d8946826a963c3d76a406914c"></a>RSS_NONFRAG_IPV4_UDP&#160;</td><td class="fielddoc"><p>Non-fragmented IPv4 + UDP flow </p>
+<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4ab23bce2d8946826a963c3d76a406914c"></a>RSS_NONFRAG_IPV4_UDP&#160;</td><td class="fielddoc"><p>Non-fragmented IPv4 + UDP flow. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4aac15cad73402a10cad9ea81211b2816e"></a>RSS_NONFRAG_IPV4_SCTP&#160;</td><td class="fielddoc"><p>Non-fragmented IPv4 + SCTP flow </p>
+<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4aac15cad73402a10cad9ea81211b2816e"></a>RSS_NONFRAG_IPV4_SCTP&#160;</td><td class="fielddoc"><p>Non-fragmented IPv4 + SCTP flow. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4a649eb294f839c7b535b797c590334f8f"></a>RSS_NONFRAG_IPV4_OTHER&#160;</td><td class="fielddoc"><p>Non-fragmented IPv4 + non TCP/UDP/SCTP flow </p>
+<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4a649eb294f839c7b535b797c590334f8f"></a>RSS_NONFRAG_IPV4_OTHER&#160;</td><td class="fielddoc"><p>Non-fragmented IPv4 + non TCP/UDP/SCTP flow. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4ad643bd6c0561dedcf5c12af8f85ebe80"></a>RSS_IPV6&#160;</td><td class="fielddoc"><p>IPv6 based flow </p>
+<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4ad643bd6c0561dedcf5c12af8f85ebe80"></a>RSS_IPV6&#160;</td><td class="fielddoc"><p>IPv6 based flow. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4a68b15d26b363368eee62f858ef7f9955"></a>RSS_FRAG_IPV6&#160;</td><td class="fielddoc"><p>Fragmented IPv6 based flow </p>
+<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4a68b15d26b363368eee62f858ef7f9955"></a>RSS_FRAG_IPV6&#160;</td><td class="fielddoc"><p>Fragmented IPv6 based flow. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4acd0b389965168fbce0b8b8131253c3c1"></a>RSS_NONFRAG_IPV6_TCP&#160;</td><td class="fielddoc"><p>Non-fragmented IPv6 + TCP flow </p>
+<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4acd0b389965168fbce0b8b8131253c3c1"></a>RSS_NONFRAG_IPV6_TCP&#160;</td><td class="fielddoc"><p>Non-fragmented IPv6 + TCP flow. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4a9976020e46b9a778eed6b0cc87b294e2"></a>RSS_NONFRAG_IPV6_UDP&#160;</td><td class="fielddoc"><p>Non-fragmented IPv6 + UDP flow </p>
+<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4a9976020e46b9a778eed6b0cc87b294e2"></a>RSS_NONFRAG_IPV6_UDP&#160;</td><td class="fielddoc"><p>Non-fragmented IPv6 + UDP flow. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4adde152fd596c158f284153d8807ec542"></a>RSS_NONFRAG_IPV6_SCTP&#160;</td><td class="fielddoc"><p>Non-fragmented IPv6 + SCTP flow </p>
+<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4adde152fd596c158f284153d8807ec542"></a>RSS_NONFRAG_IPV6_SCTP&#160;</td><td class="fielddoc"><p>Non-fragmented IPv6 + SCTP flow. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4ac2f4c335c9dcb4d3712b3dd405d43933"></a>RSS_NONFRAG_IPV6_OTHER&#160;</td><td class="fielddoc"><p>Non-fragmented IPv6 + non TCP/UDP/SCTP flow </p>
+<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4ac2f4c335c9dcb4d3712b3dd405d43933"></a>RSS_NONFRAG_IPV6_OTHER&#160;</td><td class="fielddoc"><p>Non-fragmented IPv6 + non TCP/UDP/SCTP flow. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4ad2ddd2177053992915002cfff68474ca"></a>RSS_L2_PAYLOAD&#160;</td><td class="fielddoc"><p>L2 payload based flow </p>
+<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4ad2ddd2177053992915002cfff68474ca"></a>RSS_L2_PAYLOAD&#160;</td><td class="fielddoc"><p>L2 payload based flow. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4a7f43799ac40a36f9160b19fad02f2df4"></a>RSS_IPV6_EX&#160;</td><td class="fielddoc"><p>IPv6 Ex based flow </p>
+<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4a7f43799ac40a36f9160b19fad02f2df4"></a>RSS_IPV6_EX&#160;</td><td class="fielddoc"><p>IPv6 Ex based flow. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4a44e7775330a92edf617db85d8822dd91"></a>RSS_IPV6_TCP_EX&#160;</td><td class="fielddoc"><p>IPv6 + TCP Ex based flow </p>
+<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4a44e7775330a92edf617db85d8822dd91"></a>RSS_IPV6_TCP_EX&#160;</td><td class="fielddoc"><p>IPv6 + TCP Ex based flow. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4a986e2fd06f8682f80f3a631a23759f09"></a>RSS_IPV6_UDP_EX&#160;</td><td class="fielddoc"><p>IPv6 + UDP Ex based flow </p>
+<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4a986e2fd06f8682f80f3a631a23759f09"></a>RSS_IPV6_UDP_EX&#160;</td><td class="fielddoc"><p>IPv6 + UDP Ex based flow. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4a38b2263ccfa9418ddf1aaddd0184a100"></a>RSS_PORT&#160;</td><td class="fielddoc"><p>Consider device port number as a flow differentiator </p>
+<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4a38b2263ccfa9418ddf1aaddd0184a100"></a>RSS_PORT&#160;</td><td class="fielddoc"><p>Consider device port number as a flow differentiator. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4af9370abcf15bdf7a514e9d5c2fcb689d"></a>RSS_VXLAN&#160;</td><td class="fielddoc"><p>VXLAN protocol based flow </p>
+<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4af9370abcf15bdf7a514e9d5c2fcb689d"></a>RSS_VXLAN&#160;</td><td class="fielddoc"><p>VXLAN protocol based flow. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4a51f61ea0b54c244e2289a065ecc0182c"></a>RSS_GENEVE&#160;</td><td class="fielddoc"><p>GENEVE protocol based flow </p>
+<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4a51f61ea0b54c244e2289a065ecc0182c"></a>RSS_GENEVE&#160;</td><td class="fielddoc"><p>GENEVE protocol based flow. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4a0fceb079a83cc9676e7c63bf42c97fbf"></a>RSS_NVGRE&#160;</td><td class="fielddoc"><p>NVGRE protocol based flow </p>
+<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4a0fceb079a83cc9676e7c63bf42c97fbf"></a>RSS_NVGRE&#160;</td><td class="fielddoc"><p>NVGRE protocol based flow. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4a1ca130ff097dc9af5c0d45e6a0d6bf04"></a>RSS_ALL_SUPPORTED&#160;</td><td class="fielddoc"><p>All RSS functions supported by the device </p>
+<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4a1ca130ff097dc9af5c0d45e6a0d6bf04"></a>RSS_ALL_SUPPORTED&#160;</td><td class="fielddoc"><p>All RSS functions supported by the device. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4ad57a4e8327ac5d4121a0c5e89eceaf71"></a>RSS_DEFAULT&#160;</td><td class="fielddoc"><p>A default set of RSS functions supported by the device </p>
+<tr><td class="fieldname"><a id="aa3acd5ec67d8777437c32f3af875dbc4ad57a4e8327ac5d4121a0c5e89eceaf71"></a>RSS_DEFAULT&#160;</td><td class="fielddoc"><p>A default set of RSS functions supported by the device. </p>
 </td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6d7a2351db1dc534a7cc8605af1046a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d7a2351db1dc534a7cc8605af1046a1">&#9670;&nbsp;</a></span>clearStatistics()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::DpdkDevice::clearStatistics </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Clear device statistics </p>
-
-</div>
-</div>
-<a id="a674ce896499d738f2c3c83777b7f7fd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a674ce896499d738f2c3c83777b7f7fd6">&#9670;&nbsp;</a></span>close()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::DpdkDevice::close </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Close the <a class="el" href="classpcpp_1_1_dpdk_device.html">DpdkDevice</a>. When device is closed it's not possible work with it </p>
-
-<p>Implements <a class="el" href="classpcpp_1_1_i_device.html#acebd2ae24e39e620ed66f65e6623089b">pcpp::IDevice</a>.</p>
-
-</div>
-</div>
 <a id="aaf80ebaaddb249744c657bd710193021"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaf80ebaaddb249744c657bd710193021">&#9670;&nbsp;</a></span>flushTxBuffer()</h2>
 
@@ -958,7 +916,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Open the DPDK device. Notice opening the device only makes it ready to use, it doesn't start packet capturing. This method initializes RX and TX queues, configures the DPDK port and starts it. Call <a class="el" href="classpcpp_1_1_dpdk_device.html#a674ce896499d738f2c3c83777b7f7fd6">close()</a> to close the device. The device is opened in promiscuous mode </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Open the DPDK device. Notice opening the device only makes it ready to use, it doesn't start packet capturing. This method initializes RX and TX queues, configures the DPDK port and starts it. Call <a class="el" href="classpcpp_1_1_dpdk_device.html#a674ce896499d738f2c3c83777b7f7fd6" title="Close the DpdkDevice. When device is closed it&#39;s not possible work with it.">close()</a> to close the device. The device is opened in promiscuous mode </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">numOfRxQueuesToOpen</td><td>Number of RX queues to setup. This number must be smaller or equal to the return value of <a class="el" href="classpcpp_1_1_dpdk_device.html#a0b14848d6aa191dbfc499c8fffd91cf3">getTotalNumOfRxQueues()</a> </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">numOfTxQueuesToOpen</td><td>Number of TX queues to setup. This number must be smaller or equal to the return value of <a class="el" href="classpcpp_1_1_dpdk_device.html#ac58e4e1039dff5eebd8ad7ac0c19704a">getTotalNumOfTxQueues()</a> </td></tr>
@@ -1645,7 +1603,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_dpdk_device.html">DpdkDevice</a></li>
-    <li class="footer">Generated on Tue Dec 31 2024 03:14:48 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

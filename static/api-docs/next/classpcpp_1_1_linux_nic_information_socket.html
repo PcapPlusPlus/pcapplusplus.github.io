@@ -97,9 +97,13 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_linux_nic_information_so
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a01722c01a7fb72295efbfc5e8aa27723"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_linux_nic_information_socket.html#a01722c01a7fb72295efbfc5e8aa27723">LinuxSocket</a></td></tr>
+<tr class="memitem:a01722c01a7fb72295efbfc5e8aa27723"><td class="memItemLeft" align="right" valign="top"><a id="a01722c01a7fb72295efbfc5e8aa27723"></a>
+typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_linux_nic_information_socket.html#a01722c01a7fb72295efbfc5e8aa27723">LinuxSocket</a></td></tr>
+<tr class="memdesc:a01722c01a7fb72295efbfc5e8aa27723"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple type rename for convenience. <br /></td></tr>
 <tr class="separator:a01722c01a7fb72295efbfc5e8aa27723"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa9b5d6420de52d330e43a65663c523d"><td class="memItemLeft" align="right" valign="top">typedef unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_linux_nic_information_socket.html#aaa9b5d6420de52d330e43a65663c523d">IoctlType</a></td></tr>
+<tr class="memitem:aaa9b5d6420de52d330e43a65663c523d"><td class="memItemLeft" align="right" valign="top"><a id="aaa9b5d6420de52d330e43a65663c523d"></a>
+typedef unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_linux_nic_information_socket.html#aaa9b5d6420de52d330e43a65663c523d">IoctlType</a></td></tr>
+<tr class="memdesc:aaa9b5d6420de52d330e43a65663c523d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple type rename for convenience. <br /></td></tr>
 <tr class="separator:aaa9b5d6420de52d330e43a65663c523d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -114,38 +118,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Simple wrapper over Linux socket for making the information requests about NICs or making some changes in NICs setup. All possible requests are described in <a href="http://man7.org/linux/man-pages/man7/netdevice.7.html">netdevice(7)</a>. The instance of this class handles underlying socket during its lifetime and takes an appropriate actions to close socket on destruction. The user must call <a class="el" href="classpcpp_1_1_linux_nic_information_socket.html#a86176bab7ca80b09d271d1335ad987aa" title="Makes request to socket. Firstly tries to open socket if it is not opened. Then makes an ioctl(2) req...">LinuxNicInformationSocket::makeRequest</a> method with known ioctl type and properly filled ifreq structure for this ioctl type. Filling of ifr_name may be omitted as it will be done automatically from provided NIC name. </p><dl class="section note"><dt>Note</dt><dd>Usage of this class requires the inclusion of &lt;sys/ioctl.h&gt; and &lt;net/if.h&gt; Linux headers </dd></dl>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="aaa9b5d6420de52d330e43a65663c523d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa9b5d6420de52d330e43a65663c523d">&#9670;&nbsp;</a></span>IoctlType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef unsigned long <a class="el" href="classpcpp_1_1_linux_nic_information_socket.html#aaa9b5d6420de52d330e43a65663c523d">pcpp::LinuxNicInformationSocket::IoctlType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Simple type rename for convenience </p>
-
-</div>
-</div>
-<a id="a01722c01a7fb72295efbfc5e8aa27723"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01722c01a7fb72295efbfc5e8aa27723">&#9670;&nbsp;</a></span>LinuxSocket</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef int <a class="el" href="classpcpp_1_1_linux_nic_information_socket.html#a01722c01a7fb72295efbfc5e8aa27723">pcpp::LinuxNicInformationSocket::LinuxSocket</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Simple type rename for convenience </p>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab61d863ff5a60c25059d9627ee214c16"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab61d863ff5a60c25059d9627ee214c16">&#9670;&nbsp;</a></span>LinuxNicInformationSocket()</h2>
 
@@ -236,7 +209,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_linux_nic_information_socket.html">LinuxNicInformationSocket</a></li>
-    <li class="footer">Generated on Tue Dec 31 2024 03:14:48 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -529,173 +529,155 @@ $(document).ready(function(){initNavTree('_ip_address_8h_source.html',''); initR
 <div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160; </div>
 <div class="line"><a name="l00708"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_p_network.html#adabda716903a0766ac529f9815ba5ea4">  708</a></span>&#160;        <a class="code" href="classpcpp_1_1_i_p_network.html">IPNetwork</a>&amp; <a class="code" href="classpcpp_1_1_i_p_network.html#adabda716903a0766ac529f9815ba5ea4">operator=</a>(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_pv4_network.html">IPv4Network</a>&amp; other)</div>
 <div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;        {</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;            <span class="keywordflow">if</span> (m_IPv4Network)</div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;            {</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;                m_IPv4Network = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;            }</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160; </div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;            <span class="keywordflow">if</span> (m_IPv6Network)</div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;            {</div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;                m_IPv6Network = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;            }</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160; </div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;            m_IPv4Network = std::unique_ptr&lt;IPv4Network&gt;(<span class="keyword">new</span> <a class="code" href="classpcpp_1_1_i_pv4_network.html">IPv4Network</a>(other));</div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160; </div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;        }</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160; </div>
-<div class="line"><a name="l00728"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_p_network.html#a4182897d1e5381b89ff3f9e478166186">  728</a></span>&#160;        <a class="code" href="classpcpp_1_1_i_p_network.html">IPNetwork</a>&amp; <a class="code" href="classpcpp_1_1_i_p_network.html#a4182897d1e5381b89ff3f9e478166186">operator=</a>(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_pv6_network.html">IPv6Network</a>&amp; other)</div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;        {</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;            <span class="keywordflow">if</span> (m_IPv4Network)</div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;            {</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;                m_IPv4Network = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;            }</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160; </div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;            <span class="keywordflow">if</span> (m_IPv6Network)</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;            {</div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;                m_IPv6Network = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;            }</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160; </div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;            m_IPv6Network = std::unique_ptr&lt;IPv6Network&gt;(<span class="keyword">new</span> <a class="code" href="classpcpp_1_1_i_pv6_network.html">IPv6Network</a>(other));</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160; </div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;        }</div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160; </div>
-<div class="line"><a name="l00747"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_p_network.html#ac7b6312e48c32240818a3c47fcb8b5ec">  747</a></span>&#160;        uint8_t <a class="code" href="classpcpp_1_1_i_p_network.html#ac7b6312e48c32240818a3c47fcb8b5ec">getPrefixLen</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;            <span class="keywordflow">return</span> (m_IPv4Network != <span class="keyword">nullptr</span> ? m_IPv4Network-&gt;getPrefixLen() : m_IPv6Network-&gt;getPrefixLen());</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;        }</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160; </div>
-<div class="line"><a name="l00754"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_p_network.html#aba3778aefa0dd3fb4decdee7162cd461">  754</a></span>&#160;        std::string <a class="code" href="classpcpp_1_1_i_p_network.html#aba3778aefa0dd3fb4decdee7162cd461">getNetmask</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;            <span class="keywordflow">return</span> (m_IPv4Network != <span class="keyword">nullptr</span> ? m_IPv4Network-&gt;getNetmask() : m_IPv6Network-&gt;getNetmask());</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;        }</div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160; </div>
-<div class="line"><a name="l00761"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_p_network.html#aa1616c2c4b779e0ba4ca94146559a10d">  761</a></span>&#160;        <a class="code" href="classpcpp_1_1_i_p_address.html">IPAddress</a> <a class="code" href="classpcpp_1_1_i_p_network.html#aa1616c2c4b779e0ba4ca94146559a10d">getNetworkPrefix</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;            <span class="keywordflow">return</span> (m_IPv4Network != <span class="keyword">nullptr</span> ? <a class="code" href="classpcpp_1_1_i_p_address.html">IPAddress</a>(m_IPv4Network-&gt;getNetworkPrefix())</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;                                             : <a class="code" href="classpcpp_1_1_i_p_address.html">IPAddress</a>(m_IPv6Network-&gt;getNetworkPrefix()));</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;        }</div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160; </div>
-<div class="line"><a name="l00769"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_p_network.html#a568413e851b58d900fb9a0ed03fca728">  769</a></span>&#160;        <a class="code" href="classpcpp_1_1_i_p_address.html">IPAddress</a> <a class="code" href="classpcpp_1_1_i_p_network.html#a568413e851b58d900fb9a0ed03fca728">getLowestAddress</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;            <span class="keywordflow">return</span> (m_IPv4Network != <span class="keyword">nullptr</span> ? <a class="code" href="classpcpp_1_1_i_p_address.html">IPAddress</a>(m_IPv4Network-&gt;getLowestAddress())</div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;                                             : <a class="code" href="classpcpp_1_1_i_p_address.html">IPAddress</a>(m_IPv6Network-&gt;getLowestAddress()));</div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;        }</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160; </div>
-<div class="line"><a name="l00777"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_p_network.html#a0d02e9c5ed2de985c81fde2c48ac1c0b">  777</a></span>&#160;        <a class="code" href="classpcpp_1_1_i_p_address.html">IPAddress</a> <a class="code" href="classpcpp_1_1_i_p_network.html#a0d02e9c5ed2de985c81fde2c48ac1c0b">getHighestAddress</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;            <span class="keywordflow">return</span> (m_IPv4Network != <span class="keyword">nullptr</span> ? <a class="code" href="classpcpp_1_1_i_p_address.html">IPAddress</a>(m_IPv4Network-&gt;getHighestAddress())</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;                                             : <a class="code" href="classpcpp_1_1_i_p_address.html">IPAddress</a>(m_IPv6Network-&gt;getHighestAddress()));</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;        }</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160; </div>
-<div class="line"><a name="l00786"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_p_network.html#ab20d73418474fa44b0d89547c8d05897">  786</a></span>&#160;        uint64_t <a class="code" href="classpcpp_1_1_i_p_network.html#ab20d73418474fa44b0d89547c8d05897">getTotalAddressCount</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;            <span class="keywordflow">return</span> (m_IPv4Network != <span class="keyword">nullptr</span> ? m_IPv4Network-&gt;getTotalAddressCount()</div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;                                             : m_IPv6Network-&gt;getTotalAddressCount());</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;        }</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160; </div>
-<div class="line"><a name="l00793"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_p_network.html#a750668114b017abd8e8e3eb399a8b7f0">  793</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_i_p_network.html#a750668114b017abd8e8e3eb399a8b7f0">isIPv4Network</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;            <span class="keywordflow">return</span> m_IPv4Network != <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;        }</div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160; </div>
-<div class="line"><a name="l00799"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_p_network.html#a5c76e38da2dfb37fa3be0a62385c2b95">  799</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_i_p_network.html#a5c76e38da2dfb37fa3be0a62385c2b95">isIPv6Network</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;            <span class="keywordflow">return</span> m_IPv6Network != <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;        }</div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160; </div>
-<div class="line"><a name="l00806"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_p_network.html#a5bfe7b849da51e85b5d8c5d73ed76862">  806</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_i_p_network.html#a5bfe7b849da51e85b5d8c5d73ed76862">includes</a>(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_p_address.html">IPAddress</a>&amp; address)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;            <span class="keywordflow">if</span> (m_IPv4Network != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;            {</div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;                <span class="keywordflow">if</span> (address.<a class="code" href="classpcpp_1_1_i_p_address.html#acf60f8b4543e7fccc7123e85f65e2e34">isIPv6</a>())</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;                {</div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;                }</div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160; </div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;                <span class="keywordflow">return</span> m_IPv4Network-&gt;includes(address.<a class="code" href="classpcpp_1_1_i_p_address.html#a584a911f130cea976cc73b46ab1672d2">getIPv4</a>());</div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;            }</div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;            {</div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;                <span class="keywordflow">if</span> (address.<a class="code" href="classpcpp_1_1_i_p_address.html#ab79cac12a5fe8253c7d981b7d47b0354">isIPv4</a>())</div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;                {</div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;                }</div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160; </div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;                <span class="keywordflow">return</span> m_IPv6Network-&gt;includes(address.<a class="code" href="classpcpp_1_1_i_p_address.html#a6d61f3719cb001136a622d4622c003a8">getIPv6</a>());</div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;            }</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;        }</div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160; </div>
-<div class="line"><a name="l00830"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_p_network.html#a5e9318c558d7d215d2bb4e28127f3831">  830</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_i_p_network.html#a5e9318c558d7d215d2bb4e28127f3831">includes</a>(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_p_network.html">IPNetwork</a>&amp; network)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;            <span class="keywordflow">if</span> (m_IPv4Network != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;            {</div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;                <span class="keywordflow">if</span> (network.<a class="code" href="classpcpp_1_1_i_p_network.html#a5c76e38da2dfb37fa3be0a62385c2b95">isIPv6Network</a>())</div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;                {</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;                }</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160; </div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;                <span class="keywordflow">return</span> m_IPv4Network-&gt;includes(*network.m_IPv4Network);</div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;            }</div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;            {</div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;                <span class="keywordflow">if</span> (network.<a class="code" href="classpcpp_1_1_i_p_network.html#a750668114b017abd8e8e3eb399a8b7f0">isIPv4Network</a>())</div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;                {</div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;                }</div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160; </div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;                <span class="keywordflow">return</span> m_IPv6Network-&gt;includes(*network.m_IPv6Network);</div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;            }</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;        }</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;            <span class="comment">// Create the new instance first to maintain strong exception guarantee.</span></div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;            m_IPv4Network = std::unique_ptr&lt;IPv4Network&gt;(<span class="keyword">new</span> <a class="code" href="classpcpp_1_1_i_pv4_network.html">IPv4Network</a>(other));</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;            m_IPv6Network = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;        }</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160; </div>
+<div class="line"><a name="l00719"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_p_network.html#a4182897d1e5381b89ff3f9e478166186">  719</a></span>&#160;        <a class="code" href="classpcpp_1_1_i_p_network.html">IPNetwork</a>&amp; <a class="code" href="classpcpp_1_1_i_p_network.html#a4182897d1e5381b89ff3f9e478166186">operator=</a>(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_pv6_network.html">IPv6Network</a>&amp; other)</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;        {</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;            <span class="comment">// Create the new instance first to maintain strong exception guarantee.</span></div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;            m_IPv6Network = std::unique_ptr&lt;IPv6Network&gt;(<span class="keyword">new</span> <a class="code" href="classpcpp_1_1_i_pv6_network.html">IPv6Network</a>(other));</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;            m_IPv4Network = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;        }</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160; </div>
+<div class="line"><a name="l00729"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_p_network.html#ac7b6312e48c32240818a3c47fcb8b5ec">  729</a></span>&#160;        uint8_t <a class="code" href="classpcpp_1_1_i_p_network.html#ac7b6312e48c32240818a3c47fcb8b5ec">getPrefixLen</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;            <span class="keywordflow">return</span> (m_IPv4Network != <span class="keyword">nullptr</span> ? m_IPv4Network-&gt;getPrefixLen() : m_IPv6Network-&gt;getPrefixLen());</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;        }</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160; </div>
+<div class="line"><a name="l00736"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_p_network.html#aba3778aefa0dd3fb4decdee7162cd461">  736</a></span>&#160;        std::string <a class="code" href="classpcpp_1_1_i_p_network.html#aba3778aefa0dd3fb4decdee7162cd461">getNetmask</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;            <span class="keywordflow">return</span> (m_IPv4Network != <span class="keyword">nullptr</span> ? m_IPv4Network-&gt;getNetmask() : m_IPv6Network-&gt;getNetmask());</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;        }</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160; </div>
+<div class="line"><a name="l00743"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_p_network.html#aa1616c2c4b779e0ba4ca94146559a10d">  743</a></span>&#160;        <a class="code" href="classpcpp_1_1_i_p_address.html">IPAddress</a> <a class="code" href="classpcpp_1_1_i_p_network.html#aa1616c2c4b779e0ba4ca94146559a10d">getNetworkPrefix</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;            <span class="keywordflow">return</span> (m_IPv4Network != <span class="keyword">nullptr</span> ? <a class="code" href="classpcpp_1_1_i_p_address.html">IPAddress</a>(m_IPv4Network-&gt;getNetworkPrefix())</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;                                             : <a class="code" href="classpcpp_1_1_i_p_address.html">IPAddress</a>(m_IPv6Network-&gt;getNetworkPrefix()));</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;        }</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160; </div>
+<div class="line"><a name="l00751"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_p_network.html#a568413e851b58d900fb9a0ed03fca728">  751</a></span>&#160;        <a class="code" href="classpcpp_1_1_i_p_address.html">IPAddress</a> <a class="code" href="classpcpp_1_1_i_p_network.html#a568413e851b58d900fb9a0ed03fca728">getLowestAddress</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;            <span class="keywordflow">return</span> (m_IPv4Network != <span class="keyword">nullptr</span> ? <a class="code" href="classpcpp_1_1_i_p_address.html">IPAddress</a>(m_IPv4Network-&gt;getLowestAddress())</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;                                             : <a class="code" href="classpcpp_1_1_i_p_address.html">IPAddress</a>(m_IPv6Network-&gt;getLowestAddress()));</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;        }</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160; </div>
+<div class="line"><a name="l00759"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_p_network.html#a0d02e9c5ed2de985c81fde2c48ac1c0b">  759</a></span>&#160;        <a class="code" href="classpcpp_1_1_i_p_address.html">IPAddress</a> <a class="code" href="classpcpp_1_1_i_p_network.html#a0d02e9c5ed2de985c81fde2c48ac1c0b">getHighestAddress</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;            <span class="keywordflow">return</span> (m_IPv4Network != <span class="keyword">nullptr</span> ? <a class="code" href="classpcpp_1_1_i_p_address.html">IPAddress</a>(m_IPv4Network-&gt;getHighestAddress())</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;                                             : <a class="code" href="classpcpp_1_1_i_p_address.html">IPAddress</a>(m_IPv6Network-&gt;getHighestAddress()));</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;        }</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160; </div>
+<div class="line"><a name="l00768"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_p_network.html#ab20d73418474fa44b0d89547c8d05897">  768</a></span>&#160;        uint64_t <a class="code" href="classpcpp_1_1_i_p_network.html#ab20d73418474fa44b0d89547c8d05897">getTotalAddressCount</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;            <span class="keywordflow">return</span> (m_IPv4Network != <span class="keyword">nullptr</span> ? m_IPv4Network-&gt;getTotalAddressCount()</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;                                             : m_IPv6Network-&gt;getTotalAddressCount());</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;        }</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160; </div>
+<div class="line"><a name="l00775"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_p_network.html#a750668114b017abd8e8e3eb399a8b7f0">  775</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_i_p_network.html#a750668114b017abd8e8e3eb399a8b7f0">isIPv4Network</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;            <span class="keywordflow">return</span> m_IPv4Network != <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;        }</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160; </div>
+<div class="line"><a name="l00781"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_p_network.html#a5c76e38da2dfb37fa3be0a62385c2b95">  781</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_i_p_network.html#a5c76e38da2dfb37fa3be0a62385c2b95">isIPv6Network</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;            <span class="keywordflow">return</span> m_IPv6Network != <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;        }</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160; </div>
+<div class="line"><a name="l00788"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_p_network.html#a5bfe7b849da51e85b5d8c5d73ed76862">  788</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_i_p_network.html#a5bfe7b849da51e85b5d8c5d73ed76862">includes</a>(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_p_address.html">IPAddress</a>&amp; address)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;            <span class="keywordflow">if</span> (m_IPv4Network != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;            {</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;                <span class="keywordflow">if</span> (address.<a class="code" href="classpcpp_1_1_i_p_address.html#acf60f8b4543e7fccc7123e85f65e2e34">isIPv6</a>())</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;                {</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;                }</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160; </div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;                <span class="keywordflow">return</span> m_IPv4Network-&gt;includes(address.<a class="code" href="classpcpp_1_1_i_p_address.html#a584a911f130cea976cc73b46ab1672d2">getIPv4</a>());</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;            }</div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;            {</div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;                <span class="keywordflow">if</span> (address.<a class="code" href="classpcpp_1_1_i_p_address.html#ab79cac12a5fe8253c7d981b7d47b0354">isIPv4</a>())</div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;                {</div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;                }</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160; </div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;                <span class="keywordflow">return</span> m_IPv6Network-&gt;includes(address.<a class="code" href="classpcpp_1_1_i_p_address.html#a6d61f3719cb001136a622d4622c003a8">getIPv6</a>());</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;            }</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;        }</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160; </div>
+<div class="line"><a name="l00812"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_p_network.html#a5e9318c558d7d215d2bb4e28127f3831">  812</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_i_p_network.html#a5e9318c558d7d215d2bb4e28127f3831">includes</a>(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_p_network.html">IPNetwork</a>&amp; network)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;            <span class="keywordflow">if</span> (m_IPv4Network != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;            {</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;                <span class="keywordflow">if</span> (network.<a class="code" href="classpcpp_1_1_i_p_network.html#a5c76e38da2dfb37fa3be0a62385c2b95">isIPv6Network</a>())</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;                {</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;                }</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160; </div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;                <span class="keywordflow">return</span> m_IPv4Network-&gt;includes(*network.m_IPv4Network);</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;            }</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;            {</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;                <span class="keywordflow">if</span> (network.<a class="code" href="classpcpp_1_1_i_p_network.html#a750668114b017abd8e8e3eb399a8b7f0">isIPv4Network</a>())</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;                {</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;                }</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160; </div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;                <span class="keywordflow">return</span> m_IPv6Network-&gt;includes(*network.m_IPv6Network);</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;            }</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;        }</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160; </div>
+<div class="line"><a name="l00836"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_p_network.html#a6dc3ee1fcf4777bed9db23d9f6d44641">  836</a></span>&#160;        std::string <a class="code" href="classpcpp_1_1_i_p_network.html#a6dc3ee1fcf4777bed9db23d9f6d44641">toString</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;            <span class="keywordflow">return</span> (m_IPv4Network != <span class="keyword">nullptr</span> ? m_IPv4Network-&gt;toString() : m_IPv6Network-&gt;toString());</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;        }</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160; </div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;        std::unique_ptr&lt;IPv4Network&gt; m_IPv4Network;</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;        std::unique_ptr&lt;IPv6Network&gt; m_IPv6Network;</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;    };</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160; </div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;    <span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_pv4_address.html">pcpp::IPv4Address</a>&amp; ipv4Address)</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;    {</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;        os &lt;&lt; ipv4Address.<a class="code" href="classpcpp_1_1_i_pv4_address.html#a1cb5f933aa63c49a7de0ede7fa220ee8">toString</a>();</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;        <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;    }</div>
 <div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160; </div>
-<div class="line"><a name="l00854"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_p_network.html#a6dc3ee1fcf4777bed9db23d9f6d44641">  854</a></span>&#160;        std::string <a class="code" href="classpcpp_1_1_i_p_network.html#a6dc3ee1fcf4777bed9db23d9f6d44641">toString</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;            <span class="keywordflow">return</span> (m_IPv4Network != <span class="keyword">nullptr</span> ? m_IPv4Network-&gt;toString() : m_IPv6Network-&gt;toString());</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;        }</div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160; </div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;        std::unique_ptr&lt;IPv4Network&gt; m_IPv4Network;</div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;        std::unique_ptr&lt;IPv6Network&gt; m_IPv6Network;</div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;    };</div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;    <span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_pv6_address.html">pcpp::IPv6Address</a>&amp; ipv6Address)</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;    {</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;        os &lt;&lt; ipv6Address.<a class="code" href="classpcpp_1_1_i_pv6_address.html#af643ac254cde788ff54574f838197bd3">toString</a>();</div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;        <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;    }</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160; </div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;    <span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_p_address.html">pcpp::IPAddress</a>&amp; ipAddress)</div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;    {</div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;        os &lt;&lt; ipAddress.<a class="code" href="classpcpp_1_1_i_p_address.html#a16d19ff8459edd846ee7b6b3f121769c">toString</a>();</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;        <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;    }</div>
 <div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160; </div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;    <span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_pv4_address.html">pcpp::IPv4Address</a>&amp; ipv4Address)</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;    <span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_pv4_network.html">pcpp::IPv4Network</a>&amp; network)</div>
 <div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;    {</div>
-<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;        os &lt;&lt; ipv4Address.<a class="code" href="classpcpp_1_1_i_pv4_address.html#a1cb5f933aa63c49a7de0ede7fa220ee8">toString</a>();</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;        os &lt;&lt; network.<a class="code" href="classpcpp_1_1_i_pv4_network.html#a29444b95d44d75a1c32c5ef474d9090b">toString</a>();</div>
 <div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;        <span class="keywordflow">return</span> os;</div>
 <div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;    }</div>
 <div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160; </div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;    <span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_pv6_address.html">pcpp::IPv6Address</a>&amp; ipv6Address)</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;    <span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_pv6_network.html">pcpp::IPv6Network</a>&amp; network)</div>
 <div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;    {</div>
-<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;        os &lt;&lt; ipv6Address.<a class="code" href="classpcpp_1_1_i_pv6_address.html#af643ac254cde788ff54574f838197bd3">toString</a>();</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;        os &lt;&lt; network.<a class="code" href="classpcpp_1_1_i_pv6_network.html#abb2272db4e9eecbf92c18aa1345e7168">toString</a>();</div>
 <div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;        <span class="keywordflow">return</span> os;</div>
 <div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;    }</div>
 <div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160; </div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;    <span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_p_address.html">pcpp::IPAddress</a>&amp; ipAddress)</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;    <span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_p_network.html">pcpp::IPNetwork</a>&amp; network)</div>
 <div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;    {</div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;        os &lt;&lt; ipAddress.<a class="code" href="classpcpp_1_1_i_p_address.html#a16d19ff8459edd846ee7b6b3f121769c">toString</a>();</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;        os &lt;&lt; network.<a class="code" href="classpcpp_1_1_i_p_network.html#a6dc3ee1fcf4777bed9db23d9f6d44641">toString</a>();</div>
 <div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;        <span class="keywordflow">return</span> os;</div>
 <div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;    }</div>
 <div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160; </div>
-<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;    <span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_pv4_network.html">pcpp::IPv4Network</a>&amp; network)</div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;    {</div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;        os &lt;&lt; network.<a class="code" href="classpcpp_1_1_i_pv4_network.html#a29444b95d44d75a1c32c5ef474d9090b">toString</a>();</div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;        <span class="keywordflow">return</span> os;</div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;    }</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160; </div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;    <span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_pv6_network.html">pcpp::IPv6Network</a>&amp; network)</div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;    {</div>
-<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;        os &lt;&lt; network.<a class="code" href="classpcpp_1_1_i_pv6_network.html#abb2272db4e9eecbf92c18aa1345e7168">toString</a>();</div>
-<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;        <span class="keywordflow">return</span> os;</div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;    }</div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160; </div>
-<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;    <span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_p_network.html">pcpp::IPNetwork</a>&amp; network)</div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;    {</div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;        os &lt;&lt; network.<a class="code" href="classpcpp_1_1_i_p_network.html#a6dc3ee1fcf4777bed9db23d9f6d44641">toString</a>();</div>
-<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;        <span class="keywordflow">return</span> os;</div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;    }</div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160; </div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
 <div class="ttc" id="aclasspcpp_1_1_i_p_address_html"><div class="ttname"><a href="classpcpp_1_1_i_p_address.html">pcpp::IPAddress</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:276</div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_p_address_html_a0f66006f76b2edbf56adea2499be4d19"><div class="ttname"><a href="classpcpp_1_1_i_p_address.html#a0f66006f76b2edbf56adea2499be4d19">pcpp::IPAddress::IPAddress</a></div><div class="ttdeci">IPAddress()</div><div class="ttdoc">A default constructor that creates an instance of the class with unspecified IPv4 address.</div><div class="ttdef"><b>Definition:</b> IpAddress.h:288</div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_p_address_html_a16d19ff8459edd846ee7b6b3f121769c"><div class="ttname"><a href="classpcpp_1_1_i_p_address.html#a16d19ff8459edd846ee7b6b3f121769c">pcpp::IPAddress::toString</a></div><div class="ttdeci">std::string toString() const</div><div class="ttdef"><b>Definition:</b> IpAddress.h:325</div></div>
@@ -717,21 +699,21 @@ $(document).ready(function(){initNavTree('_ip_address_8h_source.html',''); initR
 <div class="ttc" id="aclasspcpp_1_1_i_p_address_html_ae40ad58764b28485323c729a8a72a575"><div class="ttname"><a href="classpcpp_1_1_i_p_address.html#ae40ad58764b28485323c729a8a72a575">pcpp::IPAddress::operator==</a></div><div class="ttdeci">bool operator==(const IPAddress &amp;rhs) const</div><div class="ttdef"><b>Definition:</b> IpAddress.h:395</div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_p_address_html_afa2611d7eb51e09867f57aec18e1ca45"><div class="ttname"><a href="classpcpp_1_1_i_p_address.html#afa2611d7eb51e09867f57aec18e1ca45">pcpp::IPAddress::IPAddress</a></div><div class="ttdeci">IPAddress(const IPv6Address &amp;addr)</div><div class="ttdef"><b>Definition:</b> IpAddress.h:298</div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_p_network_html"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html">pcpp::IPNetwork</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:607</div></div>
-<div class="ttc" id="aclasspcpp_1_1_i_p_network_html_a0d02e9c5ed2de985c81fde2c48ac1c0b"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#a0d02e9c5ed2de985c81fde2c48ac1c0b">pcpp::IPNetwork::getHighestAddress</a></div><div class="ttdeci">IPAddress getHighestAddress() const</div><div class="ttdef"><b>Definition:</b> IpAddress.h:777</div></div>
-<div class="ttc" id="aclasspcpp_1_1_i_p_network_html_a4182897d1e5381b89ff3f9e478166186"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#a4182897d1e5381b89ff3f9e478166186">pcpp::IPNetwork::operator=</a></div><div class="ttdeci">IPNetwork &amp; operator=(const IPv6Network &amp;other)</div><div class="ttdef"><b>Definition:</b> IpAddress.h:728</div></div>
-<div class="ttc" id="aclasspcpp_1_1_i_p_network_html_a568413e851b58d900fb9a0ed03fca728"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#a568413e851b58d900fb9a0ed03fca728">pcpp::IPNetwork::getLowestAddress</a></div><div class="ttdeci">IPAddress getLowestAddress() const</div><div class="ttdef"><b>Definition:</b> IpAddress.h:769</div></div>
-<div class="ttc" id="aclasspcpp_1_1_i_p_network_html_a5bfe7b849da51e85b5d8c5d73ed76862"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#a5bfe7b849da51e85b5d8c5d73ed76862">pcpp::IPNetwork::includes</a></div><div class="ttdeci">bool includes(const IPAddress &amp;address) const</div><div class="ttdef"><b>Definition:</b> IpAddress.h:806</div></div>
-<div class="ttc" id="aclasspcpp_1_1_i_p_network_html_a5c76e38da2dfb37fa3be0a62385c2b95"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#a5c76e38da2dfb37fa3be0a62385c2b95">pcpp::IPNetwork::isIPv6Network</a></div><div class="ttdeci">bool isIPv6Network() const</div><div class="ttdef"><b>Definition:</b> IpAddress.h:799</div></div>
-<div class="ttc" id="aclasspcpp_1_1_i_p_network_html_a5e9318c558d7d215d2bb4e28127f3831"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#a5e9318c558d7d215d2bb4e28127f3831">pcpp::IPNetwork::includes</a></div><div class="ttdeci">bool includes(const IPNetwork &amp;network) const</div><div class="ttdef"><b>Definition:</b> IpAddress.h:830</div></div>
-<div class="ttc" id="aclasspcpp_1_1_i_p_network_html_a6dc3ee1fcf4777bed9db23d9f6d44641"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#a6dc3ee1fcf4777bed9db23d9f6d44641">pcpp::IPNetwork::toString</a></div><div class="ttdeci">std::string toString() const</div><div class="ttdef"><b>Definition:</b> IpAddress.h:854</div></div>
-<div class="ttc" id="aclasspcpp_1_1_i_p_network_html_a750668114b017abd8e8e3eb399a8b7f0"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#a750668114b017abd8e8e3eb399a8b7f0">pcpp::IPNetwork::isIPv4Network</a></div><div class="ttdeci">bool isIPv4Network() const</div><div class="ttdef"><b>Definition:</b> IpAddress.h:793</div></div>
+<div class="ttc" id="aclasspcpp_1_1_i_p_network_html_a0d02e9c5ed2de985c81fde2c48ac1c0b"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#a0d02e9c5ed2de985c81fde2c48ac1c0b">pcpp::IPNetwork::getHighestAddress</a></div><div class="ttdeci">IPAddress getHighestAddress() const</div><div class="ttdef"><b>Definition:</b> IpAddress.h:759</div></div>
+<div class="ttc" id="aclasspcpp_1_1_i_p_network_html_a4182897d1e5381b89ff3f9e478166186"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#a4182897d1e5381b89ff3f9e478166186">pcpp::IPNetwork::operator=</a></div><div class="ttdeci">IPNetwork &amp; operator=(const IPv6Network &amp;other)</div><div class="ttdef"><b>Definition:</b> IpAddress.h:719</div></div>
+<div class="ttc" id="aclasspcpp_1_1_i_p_network_html_a568413e851b58d900fb9a0ed03fca728"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#a568413e851b58d900fb9a0ed03fca728">pcpp::IPNetwork::getLowestAddress</a></div><div class="ttdeci">IPAddress getLowestAddress() const</div><div class="ttdef"><b>Definition:</b> IpAddress.h:751</div></div>
+<div class="ttc" id="aclasspcpp_1_1_i_p_network_html_a5bfe7b849da51e85b5d8c5d73ed76862"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#a5bfe7b849da51e85b5d8c5d73ed76862">pcpp::IPNetwork::includes</a></div><div class="ttdeci">bool includes(const IPAddress &amp;address) const</div><div class="ttdef"><b>Definition:</b> IpAddress.h:788</div></div>
+<div class="ttc" id="aclasspcpp_1_1_i_p_network_html_a5c76e38da2dfb37fa3be0a62385c2b95"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#a5c76e38da2dfb37fa3be0a62385c2b95">pcpp::IPNetwork::isIPv6Network</a></div><div class="ttdeci">bool isIPv6Network() const</div><div class="ttdef"><b>Definition:</b> IpAddress.h:781</div></div>
+<div class="ttc" id="aclasspcpp_1_1_i_p_network_html_a5e9318c558d7d215d2bb4e28127f3831"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#a5e9318c558d7d215d2bb4e28127f3831">pcpp::IPNetwork::includes</a></div><div class="ttdeci">bool includes(const IPNetwork &amp;network) const</div><div class="ttdef"><b>Definition:</b> IpAddress.h:812</div></div>
+<div class="ttc" id="aclasspcpp_1_1_i_p_network_html_a6dc3ee1fcf4777bed9db23d9f6d44641"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#a6dc3ee1fcf4777bed9db23d9f6d44641">pcpp::IPNetwork::toString</a></div><div class="ttdeci">std::string toString() const</div><div class="ttdef"><b>Definition:</b> IpAddress.h:836</div></div>
+<div class="ttc" id="aclasspcpp_1_1_i_p_network_html_a750668114b017abd8e8e3eb399a8b7f0"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#a750668114b017abd8e8e3eb399a8b7f0">pcpp::IPNetwork::isIPv4Network</a></div><div class="ttdeci">bool isIPv4Network() const</div><div class="ttdef"><b>Definition:</b> IpAddress.h:775</div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_p_network_html_a8587b18bc1593b268bfaa2047f12787e"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#a8587b18bc1593b268bfaa2047f12787e">pcpp::IPNetwork::operator=</a></div><div class="ttdeci">IPNetwork &amp; operator=(const IPNetwork &amp;other)</div><div class="ttdef"><b>Definition:</b> IpAddress.h:693</div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_p_network_html_a9ac3298e7a56e719a681b26c974eb069"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#a9ac3298e7a56e719a681b26c974eb069">pcpp::IPNetwork::IPNetwork</a></div><div class="ttdeci">IPNetwork(const IPNetwork &amp;other)</div><div class="ttdef"><b>Definition:</b> IpAddress.h:677</div></div>
-<div class="ttc" id="aclasspcpp_1_1_i_p_network_html_aa1616c2c4b779e0ba4ca94146559a10d"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#aa1616c2c4b779e0ba4ca94146559a10d">pcpp::IPNetwork::getNetworkPrefix</a></div><div class="ttdeci">IPAddress getNetworkPrefix() const</div><div class="ttdef"><b>Definition:</b> IpAddress.h:761</div></div>
+<div class="ttc" id="aclasspcpp_1_1_i_p_network_html_aa1616c2c4b779e0ba4ca94146559a10d"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#aa1616c2c4b779e0ba4ca94146559a10d">pcpp::IPNetwork::getNetworkPrefix</a></div><div class="ttdeci">IPAddress getNetworkPrefix() const</div><div class="ttdef"><b>Definition:</b> IpAddress.h:743</div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_p_network_html_ab0cf1373bb8a3ee5f9f6de847dd385b6"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#ab0cf1373bb8a3ee5f9f6de847dd385b6">pcpp::IPNetwork::IPNetwork</a></div><div class="ttdeci">IPNetwork(const IPAddress &amp;address, const std::string &amp;netmask)</div><div class="ttdef"><b>Definition:</b> IpAddress.h:643</div></div>
-<div class="ttc" id="aclasspcpp_1_1_i_p_network_html_ab20d73418474fa44b0d89547c8d05897"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#ab20d73418474fa44b0d89547c8d05897">pcpp::IPNetwork::getTotalAddressCount</a></div><div class="ttdeci">uint64_t getTotalAddressCount() const</div><div class="ttdef"><b>Definition:</b> IpAddress.h:786</div></div>
-<div class="ttc" id="aclasspcpp_1_1_i_p_network_html_aba3778aefa0dd3fb4decdee7162cd461"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#aba3778aefa0dd3fb4decdee7162cd461">pcpp::IPNetwork::getNetmask</a></div><div class="ttdeci">std::string getNetmask() const</div><div class="ttdef"><b>Definition:</b> IpAddress.h:754</div></div>
-<div class="ttc" id="aclasspcpp_1_1_i_p_network_html_ac7b6312e48c32240818a3c47fcb8b5ec"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#ac7b6312e48c32240818a3c47fcb8b5ec">pcpp::IPNetwork::getPrefixLen</a></div><div class="ttdeci">uint8_t getPrefixLen() const</div><div class="ttdef"><b>Definition:</b> IpAddress.h:747</div></div>
+<div class="ttc" id="aclasspcpp_1_1_i_p_network_html_ab20d73418474fa44b0d89547c8d05897"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#ab20d73418474fa44b0d89547c8d05897">pcpp::IPNetwork::getTotalAddressCount</a></div><div class="ttdeci">uint64_t getTotalAddressCount() const</div><div class="ttdef"><b>Definition:</b> IpAddress.h:768</div></div>
+<div class="ttc" id="aclasspcpp_1_1_i_p_network_html_aba3778aefa0dd3fb4decdee7162cd461"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#aba3778aefa0dd3fb4decdee7162cd461">pcpp::IPNetwork::getNetmask</a></div><div class="ttdeci">std::string getNetmask() const</div><div class="ttdef"><b>Definition:</b> IpAddress.h:736</div></div>
+<div class="ttc" id="aclasspcpp_1_1_i_p_network_html_ac7b6312e48c32240818a3c47fcb8b5ec"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#ac7b6312e48c32240818a3c47fcb8b5ec">pcpp::IPNetwork::getPrefixLen</a></div><div class="ttdeci">uint8_t getPrefixLen() const</div><div class="ttdef"><b>Definition:</b> IpAddress.h:729</div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_p_network_html_adabda716903a0766ac529f9815ba5ea4"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#adabda716903a0766ac529f9815ba5ea4">pcpp::IPNetwork::operator=</a></div><div class="ttdeci">IPNetwork &amp; operator=(const IPv4Network &amp;other)</div><div class="ttdef"><b>Definition:</b> IpAddress.h:708</div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_p_network_html_ae706fa9a9490bcb4bd584153f60a79d6"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#ae706fa9a9490bcb4bd584153f60a79d6">pcpp::IPNetwork::IPNetwork</a></div><div class="ttdeci">IPNetwork(const IPAddress &amp;address)</div><div class="ttdef"><b>Definition:</b> IpAddress.h:612</div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_p_network_html_af0b1c94b5fc0784fc5cf38a377421dcf"><div class="ttname"><a href="classpcpp_1_1_i_p_network.html#af0b1c94b5fc0784fc5cf38a377421dcf">pcpp::IPNetwork::IPNetwork</a></div><div class="ttdeci">IPNetwork(const std::string &amp;addressAndNetmask)</div><div class="ttdef"><b>Definition:</b> IpAddress.h:663</div></div>
@@ -809,7 +791,7 @@ $(document).ready(function(){initNavTree('_ip_address_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b003f564e33ffc88e35d7a9df43b3691.html">Common++</a></li><li class="navelem"><a class="el" href="dir_9a3e9207f3f2c743963c543f58e0ab18.html">header</a></li><li class="navelem"><a class="el" href="_ip_address_8h.html">IpAddress.h</a></li>
-    <li class="footer">Generated on Tue Dec 31 2024 03:14:47 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Jan 12 2025 07:23:55 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
