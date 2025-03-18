@@ -109,11 +109,15 @@ Inheritance diagram for pcpp::TcpLayer:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a586788dd716915a61f263996ebaae626"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#a586788dd716915a61f263996ebaae626">TcpLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_layer.html">Layer</a> *prevLayer, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet)</td></tr>
 <tr class="separator:a586788dd716915a61f263996ebaae626"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dfca9bce5c6ec475894d476e8372156"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#a3dfca9bce5c6ec475894d476e8372156">TcpLayer</a> ()</td></tr>
+<tr class="memitem:a3dfca9bce5c6ec475894d476e8372156"><td class="memItemLeft" align="right" valign="top"><a id="a3dfca9bce5c6ec475894d476e8372156"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#a3dfca9bce5c6ec475894d476e8372156">TcpLayer</a> ()</td></tr>
+<tr class="memdesc:a3dfca9bce5c6ec475894d476e8372156"><td class="mdescLeft">&#160;</td><td class="mdescRight">A constructor that allocates a new TCP header with zero TCP options. <br /></td></tr>
 <tr class="separator:a3dfca9bce5c6ec475894d476e8372156"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a9a7a8f1be4cfa9a181330d48b676ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#a9a9a7a8f1be4cfa9a181330d48b676ef">TcpLayer</a> (uint16_t portSrc, uint16_t portDst)</td></tr>
 <tr class="separator:a9a9a7a8f1be4cfa9a181330d48b676ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5501475794c2db27489dcd27d01423bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#a5501475794c2db27489dcd27d01423bd">TcpLayer</a> (const <a class="el" href="classpcpp_1_1_tcp_layer.html">TcpLayer</a> &amp;other)</td></tr>
+<tr class="memitem:a5501475794c2db27489dcd27d01423bd"><td class="memItemLeft" align="right" valign="top"><a id="a5501475794c2db27489dcd27d01423bd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#a5501475794c2db27489dcd27d01423bd">TcpLayer</a> (const <a class="el" href="classpcpp_1_1_tcp_layer.html">TcpLayer</a> &amp;other)</td></tr>
+<tr class="memdesc:a5501475794c2db27489dcd27d01423bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">A copy constructor that copy the entire header from the other <a class="el" href="classpcpp_1_1_tcp_layer.html">TcpLayer</a> (including TCP options) <br /></td></tr>
 <tr class="separator:a5501475794c2db27489dcd27d01423bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dea7265510eda5cd67b984c2634ef19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_tcp_layer.html">TcpLayer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#a7dea7265510eda5cd67b984c2634ef19">operator=</a> (const <a class="el" href="classpcpp_1_1_tcp_layer.html">TcpLayer</a> &amp;other)</td></tr>
 <tr class="separator:a7dea7265510eda5cd67b984c2634ef19"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,7 +155,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7c673fbe5201c0c72b2e2d55472e87e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7417bb4faff0f7e91bbad296cf91d004"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#a7417bb4faff0f7e91bbad296cf91d004">getHeaderLen</a> () const override</td></tr>
 <tr class="separator:a7417bb4faff0f7e91bbad296cf91d004"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98707bcb17ec3f31388bbf0393ec4eaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#a98707bcb17ec3f31388bbf0393ec4eaa">computeCalculateFields</a> () override</td></tr>
+<tr class="memitem:a98707bcb17ec3f31388bbf0393ec4eaa"><td class="memItemLeft" align="right" valign="top"><a id="a98707bcb17ec3f31388bbf0393ec4eaa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#a98707bcb17ec3f31388bbf0393ec4eaa">computeCalculateFields</a> () override</td></tr>
+<tr class="memdesc:a98707bcb17ec3f31388bbf0393ec4eaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate <a class="el" href="structpcpp_1_1tcphdr.html#af25c27d92c75ab68816d23c3ead02d5a">tcphdr::headerChecksum</a> field. <br /></td></tr>
 <tr class="separator:a98707bcb17ec3f31388bbf0393ec4eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af44fd496d9ad7849b5ff0e36015d5d92"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_layer.html#af44fd496d9ad7849b5ff0e36015d5d92">toString</a> () const override</td></tr>
 <tr class="separator:af44fd496d9ad7849b5ff0e36015d5d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,7 +198,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Represents a TCP (Transmission Control Protocol) protocol layer </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a586788dd716915a61f263996ebaae626"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a586788dd716915a61f263996ebaae626">&#9670;&nbsp;</a></span>TcpLayer() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a586788dd716915a61f263996ebaae626">&#9670;&nbsp;</a></span>TcpLayer() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -240,26 +246,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3dfca9bce5c6ec475894d476e8372156"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3dfca9bce5c6ec475894d476e8372156">&#9670;&nbsp;</a></span>TcpLayer() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::TcpLayer::TcpLayer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A constructor that allocates a new TCP header with zero TCP options </p>
-
-</div>
-</div>
 <a id="a9a9a7a8f1be4cfa9a181330d48b676ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a9a7a8f1be4cfa9a181330d48b676ef">&#9670;&nbsp;</a></span>TcpLayer() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a9a7a8f1be4cfa9a181330d48b676ef">&#9670;&nbsp;</a></span>TcpLayer() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -290,25 +278,6 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a5501475794c2db27489dcd27d01423bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5501475794c2db27489dcd27d01423bd">&#9670;&nbsp;</a></span>TcpLayer() <span class="overload">[4/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::TcpLayer::TcpLayer </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classpcpp_1_1_tcp_layer.html">TcpLayer</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A copy constructor that copy the entire header from the other <a class="el" href="classpcpp_1_1_tcp_layer.html">TcpLayer</a> (including TCP options) </p>
 
 </div>
 </div>
@@ -363,7 +332,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>This method is deprecated, please use insertTcpOptionAfter(const <a class="el" href="classpcpp_1_1_tcp_option_builder.html">TcpOptionBuilder</a>&amp; optionBuilder, TcpOptionEnumType prevOptionType = <a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca88183b946cc5f0e8c96b2e66e1c74a7e">TcpOptionEnumType::Unknown</a>) </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated:</a></b></dt><dd>This method is deprecated, please use insertTcpOptionAfter(const <a class="el" href="classpcpp_1_1_tcp_option_builder.html">TcpOptionBuilder</a>&amp; optionBuilder, TcpOptionEnumType prevOptionType = <a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca88183b946cc5f0e8c96b2e66e1c74a7e" title="Unknown option.">TcpOptionEnumType::Unknown</a>) </dd></dl>
 
 </div>
 </div>
@@ -389,34 +358,6 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The checksum result </dd></dl>
-
-</div>
-</div>
-<a id="a98707bcb17ec3f31388bbf0393ec4eaa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98707bcb17ec3f31388bbf0393ec4eaa">&#9670;&nbsp;</a></span>computeCalculateFields()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::TcpLayer::computeCalculateFields </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Calculate <a class="el" href="structpcpp_1_1tcphdr.html#af25c27d92c75ab68816d23c3ead02d5a">tcphdr::headerChecksum</a> field </p>
-
-<p>Implements <a class="el" href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">pcpp::Layer</a>.</p>
 
 </div>
 </div>
@@ -766,7 +707,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated:</a></b></dt><dd>This method is deprecated, please use <a class="el" href="classpcpp_1_1_tcp_layer.html#a12da1f78961105f8ec0ae206fb4910a9">removeTcpOption(TcpOptionEnumType)</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>This method is deprecated, please use <a class="el" href="classpcpp_1_1_tcp_layer.html#a12da1f78961105f8ec0ae206fb4910a9">removeTcpOption(TcpOptionEnumType)</a> </dd></dl>
 
 </div>
 </div>
@@ -785,7 +726,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>This method is deprecated, please use getTcpOption(TcpOptionEnumType option) </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated:</a></b></dt><dd>This method is deprecated, please use getTcpOption(TcpOptionEnumType option) </dd></dl>
 
 </div>
 </div>
@@ -866,7 +807,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_tcp_layer.html">TcpLayer</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:44 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

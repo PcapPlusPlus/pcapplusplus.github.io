@@ -146,7 +146,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a019a07d6f9d8fc7eb233e61826b11964 inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c5d6f648a6878895a714004f937830d inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a4c5d6f648a6878895a714004f937830d">getDataPtr</a> (size_t offset=0) const override</td></tr>
 <tr class="separator:a4c5d6f648a6878895a714004f937830d inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abea112176d18e896f48214ca7accac71 inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">computeCalculateFields</a> ()=0</td></tr>
+<tr class="memitem:abea112176d18e896f48214ca7accac71 inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top"><a id="abea112176d18e896f48214ca7accac71"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">computeCalculateFields</a> ()=0</td></tr>
+<tr class="memdesc:abea112176d18e896f48214ca7accac71 inherit pub_methods_classpcpp_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each layer can compute field values automatically using this method. This is an abstract method. <br /></td></tr>
 <tr class="separator:abea112176d18e896f48214ca7accac71 inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d07ea14d02b4a5cb383f89b3f40ed63 inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a1d07ea14d02b4a5cb383f89b3f40ed63">toString</a> () const =0</td></tr>
 <tr class="separator:a1d07ea14d02b4a5cb383f89b3f40ed63 inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,14 +194,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A static method that determines the GRE version of GRE layer raw data by looking at the <a class="el" href="structpcpp_1_1gre__basic__header.html#af58a09ec8526b9576275214accbb05d7">gre_basic_header::version</a> field </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A static method that determines the GRE version of GRE layer raw data by looking at the <a class="el" href="structpcpp_1_1gre__basic__header.html#af58a09ec8526b9576275214accbb05d7" title="GRE version - can be 0 or 1.">gre_basic_header::version</a> field </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">greData</td><td>GRE layer raw data </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">greDataLen</td><td>Size of raw data </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespacepcpp.html#a29568c577f00703971ed5b741e4154fb">GREv0</a> or <a class="el" href="namespacepcpp.html#a68f4401792a1994f4b050b614cbf1c44">GREv1</a> values if raw data is GREv0 or GREv1 (accordingly) or <a class="el" href="namespacepcpp.html#ad94e3dd833f818889f676d2352eac829">UnknownProtocol</a> otherwise </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespacepcpp.html#a29568c577f00703971ed5b741e4154fb" title="GRE version 0 protocol.">GREv0</a> or <a class="el" href="namespacepcpp.html#a68f4401792a1994f4b050b614cbf1c44" title="GRE version 1 protocol.">GREv1</a> values if raw data is GREv0 or GREv1 (accordingly) or <a class="el" href="namespacepcpp.html#ad94e3dd833f818889f676d2352eac829" title="Unknown protocol (or unsupported by PcapPlusPlus)">UnknownProtocol</a> otherwise </dd></dl>
 
 </div>
 </div>
@@ -327,7 +329,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set sequence number value. If field already exists (<a class="el" href="structpcpp_1_1gre__basic__header.html#a2189d1d50075e911ce84e27a5767c2b9">gre_basic_header::sequenceNumBit</a> is set) then only the new value is set. If field doesn't exist it will be added to the layer, <a class="el" href="structpcpp_1_1gre__basic__header.html#a2189d1d50075e911ce84e27a5767c2b9">gre_basic_header::sequenceNumBit</a> will be set and the new value will be set </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Set sequence number value. If field already exists (<a class="el" href="structpcpp_1_1gre__basic__header.html#a2189d1d50075e911ce84e27a5767c2b9" title="Set if sequence number exists.">gre_basic_header::sequenceNumBit</a> is set) then only the new value is set. If field doesn't exist it will be added to the layer, <a class="el" href="structpcpp_1_1gre__basic__header.html#a2189d1d50075e911ce84e27a5767c2b9" title="Set if sequence number exists.">gre_basic_header::sequenceNumBit</a> will be set and the new value will be set </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">seqNumber</td><td>The sequence number value to set </td></tr>
   </table>
@@ -361,7 +363,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_gre_layer.html">GreLayer</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:43 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

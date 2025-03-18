@@ -98,12 +98,12 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_application_event_handle
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:abfff8961708dec4b1c4802fc42180284"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_application_event_handler.html#abfff8961708dec4b1c4802fc42180284">EventHandlerCallback</a>) (void *cookie)</td></tr>
-<tr class="separator:abfff8961708dec4b1c4802fc42180284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77b281ce4eac6e2c7331a8a03fd0a6e9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_application_event_handler.html#a77b281ce4eac6e2c7331a8a03fd0a6e9">EventHandlerCallback</a> = void(*)(void *)</td></tr>
+<tr class="separator:a77b281ce4eac6e2c7331a8a03fd0a6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adb15e6e3b2b082cb5eebafcc7df15aa7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_application_event_handler.html#adb15e6e3b2b082cb5eebafcc7df15aa7">onApplicationInterrupted</a> (<a class="el" href="classpcpp_1_1_application_event_handler.html#abfff8961708dec4b1c4802fc42180284">EventHandlerCallback</a> handler, void *cookie)</td></tr>
+<tr class="memitem:adb15e6e3b2b082cb5eebafcc7df15aa7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_application_event_handler.html#adb15e6e3b2b082cb5eebafcc7df15aa7">onApplicationInterrupted</a> (<a class="el" href="classpcpp_1_1_application_event_handler.html#a77b281ce4eac6e2c7331a8a03fd0a6e9">EventHandlerCallback</a> handler, void *cookie)</td></tr>
 <tr class="separator:adb15e6e3b2b082cb5eebafcc7df15aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -114,14 +114,14 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A singleton class that provides callbacks for events that occur during application life-cycle such as ctrl+c pressed, application closed, killed, etc. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="abfff8961708dec4b1c4802fc42180284"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abfff8961708dec4b1c4802fc42180284">&#9670;&nbsp;</a></span>EventHandlerCallback</h2>
+<a id="a77b281ce4eac6e2c7331a8a03fd0a6e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77b281ce4eac6e2c7331a8a03fd0a6e9">&#9670;&nbsp;</a></span>EventHandlerCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pcpp::ApplicationEventHandler::EventHandlerCallback</td>
+          <td class="memname"><a class="el" href="classpcpp_1_1_application_event_handler.html#a77b281ce4eac6e2c7331a8a03fd0a6e9">pcpp::ApplicationEventHandler::EventHandlerCallback</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -170,7 +170,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void pcpp::ApplicationEventHandler::onApplicationInterrupted </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classpcpp_1_1_application_event_handler.html#abfff8961708dec4b1c4802fc42180284">EventHandlerCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_application_event_handler.html#a77b281ce4eac6e2c7331a8a03fd0a6e9">EventHandlerCallback</a>&#160;</td>
           <td class="paramname"><em>handler</em>, </td>
         </tr>
         <tr>
@@ -202,7 +202,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_application_event_handler.html">ApplicationEventHandler</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:43 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

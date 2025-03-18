@@ -114,11 +114,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae09baf2e2392c86dd9d97cf33183ce59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e9bfd6cb271dca77c21cb3f6e292fe8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet_trailer_layer.html#a4e9bfd6cb271dca77c21cb3f6e292fe8">getTrailerLen</a> () const</td></tr>
 <tr class="separator:a4e9bfd6cb271dca77c21cb3f6e292fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5964605f415cd211664362366632d82d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet_trailer_layer.html#a5964605f415cd211664362366632d82d">parseNextLayer</a> () override</td></tr>
+<tr class="memitem:a5964605f415cd211664362366632d82d"><td class="memItemLeft" align="right" valign="top"><a id="a5964605f415cd211664362366632d82d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet_trailer_layer.html#a5964605f415cd211664362366632d82d">parseNextLayer</a> () override</td></tr>
+<tr class="memdesc:a5964605f415cd211664362366632d82d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does nothing for this layer (<a class="el" href="classpcpp_1_1_packet_trailer_layer.html">PacketTrailerLayer</a> is always last) <br /></td></tr>
 <tr class="separator:a5964605f415cd211664362366632d82d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc982c2fd06453230c0457168983ddcf"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet_trailer_layer.html#abc982c2fd06453230c0457168983ddcf">getHeaderLen</a> () const override</td></tr>
 <tr class="separator:abc982c2fd06453230c0457168983ddcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59e7f38f18b64960b9c3ad1ad63a0723"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet_trailer_layer.html#a59e7f38f18b64960b9c3ad1ad63a0723">computeCalculateFields</a> () override</td></tr>
+<tr class="memitem:a59e7f38f18b64960b9c3ad1ad63a0723"><td class="memItemLeft" align="right" valign="top"><a id="a59e7f38f18b64960b9c3ad1ad63a0723"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet_trailer_layer.html#a59e7f38f18b64960b9c3ad1ad63a0723">computeCalculateFields</a> () override</td></tr>
+<tr class="memdesc:a59e7f38f18b64960b9c3ad1ad63a0723"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does nothing for this layer. <br /></td></tr>
 <tr class="separator:a59e7f38f18b64960b9c3ad1ad63a0723"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65404678aadf393d024490d9e7352bd1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet_trailer_layer.html#a65404678aadf393d024490d9e7352bd1">toString</a> () const override</td></tr>
 <tr class="separator:a65404678aadf393d024490d9e7352bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,34 +220,6 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a59e7f38f18b64960b9c3ad1ad63a0723"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59e7f38f18b64960b9c3ad1ad63a0723">&#9670;&nbsp;</a></span>computeCalculateFields()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::PacketTrailerLayer::computeCalculateFields </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Does nothing for this layer </p>
-
-<p>Implements <a class="el" href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">pcpp::Layer</a>.</p>
-
-</div>
-</div>
 <a id="abc982c2fd06453230c0457168983ddcf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abc982c2fd06453230c0457168983ddcf">&#9670;&nbsp;</a></span>getHeaderLen()</h2>
 
@@ -370,34 +346,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5964605f415cd211664362366632d82d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5964605f415cd211664362366632d82d">&#9670;&nbsp;</a></span>parseNextLayer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::PacketTrailerLayer::parseNextLayer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Does nothing for this layer (<a class="el" href="classpcpp_1_1_packet_trailer_layer.html">PacketTrailerLayer</a> is always last) </p>
-
-<p>Implements <a class="el" href="classpcpp_1_1_layer.html#a6a8410015168a7fa42a7d71ac5b86673">pcpp::Layer</a>.</p>
-
-</div>
-</div>
 <a id="a65404678aadf393d024490d9e7352bd1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a65404678aadf393d024490d9e7352bd1">&#9670;&nbsp;</a></span>toString()</h2>
 
@@ -432,7 +380,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_packet_trailer_layer.html">PacketTrailerLayer</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:44 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

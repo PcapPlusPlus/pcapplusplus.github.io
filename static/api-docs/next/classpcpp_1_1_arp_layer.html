@@ -120,15 +120,21 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9cc5e6b8b5d1f2817cd05671b5417858"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a468a4fd5c27276f92a44a06133a53374"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_arp_layer.html#a468a4fd5c27276f92a44a06133a53374">getTargetIpAddr</a> () const</td></tr>
 <tr class="separator:a468a4fd5c27276f92a44a06133a53374"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a1d714c4b37f8eb2d89b27c8d10dcfe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_arp_layer.html#a4a1d714c4b37f8eb2d89b27c8d10dcfe">parseNextLayer</a> () override</td></tr>
+<tr class="memitem:a4a1d714c4b37f8eb2d89b27c8d10dcfe"><td class="memItemLeft" align="right" valign="top"><a id="a4a1d714c4b37f8eb2d89b27c8d10dcfe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_arp_layer.html#a4a1d714c4b37f8eb2d89b27c8d10dcfe">parseNextLayer</a> () override</td></tr>
+<tr class="memdesc:a4a1d714c4b37f8eb2d89b27c8d10dcfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does nothing for this layer (<a class="el" href="classpcpp_1_1_arp_layer.html">ArpLayer</a> is always last) <br /></td></tr>
 <tr class="separator:a4a1d714c4b37f8eb2d89b27c8d10dcfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7377b9c9b51bea1c59399f55535ce755"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_arp_layer.html#a7377b9c9b51bea1c59399f55535ce755">getHeaderLen</a> () const override</td></tr>
 <tr class="separator:a7377b9c9b51bea1c59399f55535ce755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ac14f5641ec6f268bbd4e4912903aaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_arp_layer.html#a8ac14f5641ec6f268bbd4e4912903aaf">computeCalculateFields</a> () override</td></tr>
 <tr class="separator:a8ac14f5641ec6f268bbd4e4912903aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b706b494e8830d241f50a5b5ae205f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_arp_layer.html#a9b706b494e8830d241f50a5b5ae205f7">isRequest</a> () const</td></tr>
+<tr class="memitem:a9b706b494e8830d241f50a5b5ae205f7"><td class="memItemLeft" align="right" valign="top"><a id="a9b706b494e8830d241f50a5b5ae205f7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_arp_layer.html#a9b706b494e8830d241f50a5b5ae205f7">isRequest</a> () const</td></tr>
+<tr class="memdesc:a9b706b494e8830d241f50a5b5ae205f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this packet an ARP request? <br /></td></tr>
 <tr class="separator:a9b706b494e8830d241f50a5b5ae205f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55487337c4b674b9b507db9382788de3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_arp_layer.html#a55487337c4b674b9b507db9382788de3">isReply</a> () const</td></tr>
+<tr class="memitem:a55487337c4b674b9b507db9382788de3"><td class="memItemLeft" align="right" valign="top"><a id="a55487337c4b674b9b507db9382788de3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_arp_layer.html#a55487337c4b674b9b507db9382788de3">isReply</a> () const</td></tr>
+<tr class="memdesc:a55487337c4b674b9b507db9382788de3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this packet an ARP reply? <br /></td></tr>
 <tr class="separator:a55487337c4b674b9b507db9382788de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fe8dac3273e04e86ff2fe65699412d7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_arp_layer.html#a9fe8dac3273e04e86ff2fe65699412d7">toString</a> () const override</td></tr>
 <tr class="separator:a9fe8dac3273e04e86ff2fe65699412d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -266,10 +272,10 @@ Public Member Functions</h2></td></tr>
 <p>A constructor that allocates a new ARP header </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">opCode</td><td>ARP message type (ARP request or ARP reply) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">senderMacAddr</td><td>The sender MAC address (will be put in <a class="el" href="structpcpp_1_1arphdr.html#accf7624ca7cf307853bf9cee623a3433">arphdr::senderMacAddr</a>) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">targetMacAddr</td><td>The target MAC address (will be put in <a class="el" href="structpcpp_1_1arphdr.html#a9f8954a5001ddafb365b165f30b06a12">arphdr::targetMacAddr</a>) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">senderIpAddr</td><td>The sender IP address (will be put in <a class="el" href="structpcpp_1_1arphdr.html#aca7c16b83b2464ef081c10b0aa8cb9ad">arphdr::senderIpAddr</a>) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">targetIpAddr</td><td>The target IP address (will be put in <a class="el" href="structpcpp_1_1arphdr.html#a318c9f31a0d60e5e5b65ebe400be1540">arphdr::targetIpAddr</a>) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">senderMacAddr</td><td>The sender MAC address (will be put in <a class="el" href="structpcpp_1_1arphdr.html#accf7624ca7cf307853bf9cee623a3433" title="Sender hardware address (SHA)">arphdr::senderMacAddr</a>) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">targetMacAddr</td><td>The target MAC address (will be put in <a class="el" href="structpcpp_1_1arphdr.html#a9f8954a5001ddafb365b165f30b06a12" title="Target hardware address (THA)">arphdr::targetMacAddr</a>) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">senderIpAddr</td><td>The sender IP address (will be put in <a class="el" href="structpcpp_1_1arphdr.html#aca7c16b83b2464ef081c10b0aa8cb9ad" title="Sender protocol address (SPA)">arphdr::senderIpAddr</a>) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">targetIpAddr</td><td>The target IP address (will be put in <a class="el" href="structpcpp_1_1arphdr.html#a318c9f31a0d60e5e5b65ebe400be1540" title="Target protocol address (TPA)">arphdr::targetIpAddr</a>) </td></tr>
   </table>
   </dd>
 </dl>
@@ -497,70 +503,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a55487337c4b674b9b507db9382788de3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55487337c4b674b9b507db9382788de3">&#9670;&nbsp;</a></span>isReply()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::ArpLayer::isReply </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Is this packet an ARP reply? </p>
-
-</div>
-</div>
-<a id="a9b706b494e8830d241f50a5b5ae205f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b706b494e8830d241f50a5b5ae205f7">&#9670;&nbsp;</a></span>isRequest()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::ArpLayer::isRequest </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Is this packet an ARP request? </p>
-
-</div>
-</div>
-<a id="a4a1d714c4b37f8eb2d89b27c8d10dcfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a1d714c4b37f8eb2d89b27c8d10dcfe">&#9670;&nbsp;</a></span>parseNextLayer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::ArpLayer::parseNextLayer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Does nothing for this layer (<a class="el" href="classpcpp_1_1_arp_layer.html">ArpLayer</a> is always last) </p>
-
-<p>Implements <a class="el" href="classpcpp_1_1_layer.html#a6a8410015168a7fa42a7d71ac5b86673">pcpp::Layer</a>.</p>
-
-</div>
-</div>
 <a id="a9fe8dac3273e04e86ff2fe65699412d7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9fe8dac3273e04e86ff2fe65699412d7">&#9670;&nbsp;</a></span>toString()</h2>
 
@@ -595,7 +537,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_arp_layer.html">ArpLayer</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:43 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

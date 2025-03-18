@@ -117,6 +117,7 @@ Public Types</h2></td></tr>
 , <a class="el" href="classpcpp_1_1_ntp_layer.html#a09e3e98cd55c3e7046a1e6a30677c8d1a34ed2248ca6e2fdfe4bde3f0028f360d">Last59Secs</a>
 , <a class="el" href="classpcpp_1_1_ntp_layer.html#a09e3e98cd55c3e7046a1e6a30677c8d1a975f459d18a819d1ea0ef0da5afb216c">Unknown</a>
  }</td></tr>
+<tr class="memdesc:a09e3e98cd55c3e7046a1e6a30677c8d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Warning of an impending leap second to be inserted or deleted in the last minute of the current month.  <a href="classpcpp_1_1_ntp_layer.html#a09e3e98cd55c3e7046a1e6a30677c8d1">More...</a><br /></td></tr>
 <tr class="separator:a09e3e98cd55c3e7046a1e6a30677c8d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2f7eecaf3da9628fad8d2d2cf785666"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#ac2f7eecaf3da9628fad8d2d2cf785666">Mode</a> { <br />
 &#160;&#160;<a class="el" href="classpcpp_1_1_ntp_layer.html#ac2f7eecaf3da9628fad8d2d2cf785666affc08c5f9f98f37b2df542c487c6be26">Reserved</a> = 0
@@ -130,6 +131,7 @@ Public Types</h2></td></tr>
 , <a class="el" href="classpcpp_1_1_ntp_layer.html#ac2f7eecaf3da9628fad8d2d2cf785666aaacaa7a5693baafdbd16f12e8c8b950a">PrivateUse</a>
 <br />
  }</td></tr>
+<tr class="memdesc:ac2f7eecaf3da9628fad8d2d2cf785666"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representing the NTP association modes.  <a href="classpcpp_1_1_ntp_layer.html#ac2f7eecaf3da9628fad8d2d2cf785666">More...</a><br /></td></tr>
 <tr class="separator:ac2f7eecaf3da9628fad8d2d2cf785666"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6503ccedcd279b455e4deb7a0835c4b7"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7">ClockSource</a> : uint32_t { <br />
 &#160;&#160;<a class="el" href="classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7a1ceb10e4767555f663a1789a5e9be18b">GOES</a> = ('G') | ('O' &lt;&lt; 8) | ('E' &lt;&lt; 16) | ('S' &lt;&lt; 24)
@@ -199,31 +201,42 @@ Public Types</h2></td></tr>
 , <a class="el" href="classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738ca522f694f92e679d874a1cc2b2616c3d7">STEP</a> = ('S') | ('T' &lt;&lt; 8) | ('E' &lt;&lt; 16) | ('P' &lt;&lt; 24)
 <br />
  }</td></tr>
+<tr class="memdesc:a88d989ff0f826adab5e3b14faf11738c"><td class="mdescLeft">&#160;</td><td class="mdescRight">32-bit Kiss of Death (KoD) codes  <a href="classpcpp_1_1_ntp_layer.html#a88d989ff0f826adab5e3b14faf11738c">More...</a><br /></td></tr>
 <tr class="separator:a88d989ff0f826adab5e3b14faf11738c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a69f54a5b75a966dd34f5ac5e6363f1e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#a69f54a5b75a966dd34f5ac5e6363f1e7">NtpLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_layer.html">Layer</a> *prevLayer, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet)</td></tr>
 <tr class="separator:a69f54a5b75a966dd34f5ac5e6363f1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c3659cc9a900a070382443ae9b1f251"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#a8c3659cc9a900a070382443ae9b1f251">NtpLayer</a> ()</td></tr>
+<tr class="memitem:a8c3659cc9a900a070382443ae9b1f251"><td class="memItemLeft" align="right" valign="top"><a id="a8c3659cc9a900a070382443ae9b1f251"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#a8c3659cc9a900a070382443ae9b1f251">NtpLayer</a> ()</td></tr>
+<tr class="memdesc:a8c3659cc9a900a070382443ae9b1f251"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empty c'tor. <br /></td></tr>
 <tr class="separator:a8c3659cc9a900a070382443ae9b1f251"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0d900fca99b330c0e901f241943d225"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_ntp_layer.html#a09e3e98cd55c3e7046a1e6a30677c8d1">LeapIndicator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#aa0d900fca99b330c0e901f241943d225">getLeapIndicator</a> () const</td></tr>
 <tr class="separator:aa0d900fca99b330c0e901f241943d225"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace7b249855967ad7e55ae12157c6ccfd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#ace7b249855967ad7e55ae12157c6ccfd">setLeapIndicator</a> (<a class="el" href="classpcpp_1_1_ntp_layer.html#a09e3e98cd55c3e7046a1e6a30677c8d1">LeapIndicator</a> val)</td></tr>
+<tr class="memitem:ace7b249855967ad7e55ae12157c6ccfd"><td class="memItemLeft" align="right" valign="top"><a id="ace7b249855967ad7e55ae12157c6ccfd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#ace7b249855967ad7e55ae12157c6ccfd">setLeapIndicator</a> (<a class="el" href="classpcpp_1_1_ntp_layer.html#a09e3e98cd55c3e7046a1e6a30677c8d1">LeapIndicator</a> val)</td></tr>
+<tr class="memdesc:ace7b249855967ad7e55ae12157c6ccfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the leap indicator. <br /></td></tr>
 <tr class="separator:ace7b249855967ad7e55ae12157c6ccfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adde5c87238411a47df1fc2ab8069c03d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#adde5c87238411a47df1fc2ab8069c03d">getVersion</a> () const</td></tr>
 <tr class="separator:adde5c87238411a47df1fc2ab8069c03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f87209f90c6560e486d91012519c419"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#a0f87209f90c6560e486d91012519c419">setVersion</a> (uint8_t val)</td></tr>
+<tr class="memitem:a0f87209f90c6560e486d91012519c419"><td class="memItemLeft" align="right" valign="top"><a id="a0f87209f90c6560e486d91012519c419"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#a0f87209f90c6560e486d91012519c419">setVersion</a> (uint8_t val)</td></tr>
+<tr class="memdesc:a0f87209f90c6560e486d91012519c419"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the version of NTP. <br /></td></tr>
 <tr class="separator:a0f87209f90c6560e486d91012519c419"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67cf7fbb8126129b4a5d98d039060526"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_ntp_layer.html#ac2f7eecaf3da9628fad8d2d2cf785666">Mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#a67cf7fbb8126129b4a5d98d039060526">getMode</a> () const</td></tr>
 <tr class="separator:a67cf7fbb8126129b4a5d98d039060526"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cd3d9355948f58896ce32c532c7eb7d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#a7cd3d9355948f58896ce32c532c7eb7d">getModeString</a> () const</td></tr>
 <tr class="separator:a7cd3d9355948f58896ce32c532c7eb7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0ca1ee3bb4a91202d680e4c0e818e00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#ac0ca1ee3bb4a91202d680e4c0e818e00">setMode</a> (<a class="el" href="classpcpp_1_1_ntp_layer.html#ac2f7eecaf3da9628fad8d2d2cf785666">Mode</a> val)</td></tr>
+<tr class="memitem:ac0ca1ee3bb4a91202d680e4c0e818e00"><td class="memItemLeft" align="right" valign="top"><a id="ac0ca1ee3bb4a91202d680e4c0e818e00"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#ac0ca1ee3bb4a91202d680e4c0e818e00">setMode</a> (<a class="el" href="classpcpp_1_1_ntp_layer.html#ac2f7eecaf3da9628fad8d2d2cf785666">Mode</a> val)</td></tr>
+<tr class="memdesc:ac0ca1ee3bb4a91202d680e4c0e818e00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the mode. <br /></td></tr>
 <tr class="separator:ac0ca1ee3bb4a91202d680e4c0e818e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d40253ff6ddae9f0ed14ecd3bb9c769"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#a0d40253ff6ddae9f0ed14ecd3bb9c769">getStratum</a> () const</td></tr>
 <tr class="separator:a0d40253ff6ddae9f0ed14ecd3bb9c769"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ecc3730bc2570eb357b1c3c4207bfff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#a1ecc3730bc2570eb357b1c3c4207bfff">setStratum</a> (uint8_t val)</td></tr>
+<tr class="memitem:a1ecc3730bc2570eb357b1c3c4207bfff"><td class="memItemLeft" align="right" valign="top"><a id="a1ecc3730bc2570eb357b1c3c4207bfff"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#a1ecc3730bc2570eb357b1c3c4207bfff">setStratum</a> (uint8_t val)</td></tr>
+<tr class="memdesc:a1ecc3730bc2570eb357b1c3c4207bfff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value of stratum. <br /></td></tr>
 <tr class="separator:a1ecc3730bc2570eb357b1c3c4207bfff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a564066b3409418782d2c7328f458b5e5"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_ntp_layer.html#a564066b3409418782d2c7328f458b5e5">getPollInterval</a> () const</td></tr>
 <tr class="separator:a564066b3409418782d2c7328f458b5e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -369,52 +382,52 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The NTP packet consists of an integral number of 32-bit (4 octet) words in network byte order. The packet format consists of three components: the header itself, one or more optional extension fields (for v4), and an optional message authentication code (MAC). Currently the extension fields are not supported. The NTP header is: </p>
 <p>Represents a NTP (Network Time Protocol) layer</p>
-<pre class="fragment">  0                   1                   2                   3
-  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
- +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
- |LI | VN  |Mode |    Stratum     |     Poll      |  Precision   |
- +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
- |                         Root Delay                            |
- +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
- |                         Root Dispersion                       |
- +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
- |                          Reference ID                         |
- +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
- |                                                               |
- +                     Reference Timestamp (64)                  +
- |                                                               |
- +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
- |                                                               |
- +                      Origin Timestamp (64)                    +
- |                                                               |
- +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
- |                                                               |
- +                      Receive Timestamp (64)                   +
- |                                                               |
- +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
- |                                                               |
- +                      Transmit Timestamp (64)                  +
- |                                                               |
- +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
- |                                                               |
- .                                                               .
- .                Extension Field 1 (variable, only v4)          .
- .                                                               .
- |                                                               |
- +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
- |                                                               |
- .                                                               .
- .                Extension Field 1 (variable, only v4)          .
- .                                                               .
- |                                                               |
- +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
- |                          Key Identifier                       |
- +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
- |                                                               |
- |                   dgst (128 for v4, 64 for v3)                |
- |                                                               |
- +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-</pre> </div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<div class="fragment"><div class="line"> 0                   1                   2                   3</div>
+<div class="line"> 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1</div>
+<div class="line">+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+</div>
+<div class="line">|LI | VN  |Mode |    Stratum     |     Poll      |  Precision   |</div>
+<div class="line">+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+</div>
+<div class="line">|                         Root Delay                            |</div>
+<div class="line">+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+</div>
+<div class="line">|                         Root Dispersion                       |</div>
+<div class="line">+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+</div>
+<div class="line">|                          Reference ID                         |</div>
+<div class="line">+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+</div>
+<div class="line">|                                                               |</div>
+<div class="line">+                     Reference Timestamp (64)                  +</div>
+<div class="line">|                                                               |</div>
+<div class="line">+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+</div>
+<div class="line">|                                                               |</div>
+<div class="line">+                      Origin Timestamp (64)                    +</div>
+<div class="line">|                                                               |</div>
+<div class="line">+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+</div>
+<div class="line">|                                                               |</div>
+<div class="line">+                      Receive Timestamp (64)                   +</div>
+<div class="line">|                                                               |</div>
+<div class="line">+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+</div>
+<div class="line">|                                                               |</div>
+<div class="line">+                      Transmit Timestamp (64)                  +</div>
+<div class="line">|                                                               |</div>
+<div class="line">+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+</div>
+<div class="line">|                                                               |</div>
+<div class="line">.                                                               .</div>
+<div class="line">.                Extension Field 1 (variable, only v4)          .</div>
+<div class="line">.                                                               .</div>
+<div class="line">|                                                               |</div>
+<div class="line">+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+</div>
+<div class="line">|                                                               |</div>
+<div class="line">.                                                               .</div>
+<div class="line">.                Extension Field 1 (variable, only v4)          .</div>
+<div class="line">.                                                               .</div>
+<div class="line">|                                                               |</div>
+<div class="line">+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+</div>
+<div class="line">|                          Key Identifier                       |</div>
+<div class="line">+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+</div>
+<div class="line">|                                                               |</div>
+<div class="line">|                   dgst (128 for v4, 64 for v3)                |</div>
+<div class="line">|                                                               |</div>
+<div class="line">+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+</div>
+</div><!-- fragment --> </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a6503ccedcd279b455e4deb7a0835c4b7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6503ccedcd279b455e4deb7a0835c4b7">&#9670;&nbsp;</a></span>ClockSource</h2>
 
@@ -531,6 +544,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>32-bit Kiss of Death (KoD) codes </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a88d989ff0f826adab5e3b14faf11738cab85d19b35615f1190c135a148ac836a8"></a>ACST&#160;</td><td class="fielddoc"><p>The association belongs to a anycast server. </p>
@@ -576,7 +590,8 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Warning of an impending leap second to be inserted or deleted in the last minute of the current month </p>
+
+<p>Warning of an impending leap second to be inserted or deleted in the last minute of the current month. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a09e3e98cd55c3e7046a1e6a30677c8d1a5f92ebdd995887c775b3b85bab8c7c9e"></a>NoWarning&#160;</td><td class="fielddoc"><p>Normal, no leap second. </p>
 </td></tr>
@@ -601,7 +616,8 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Representing the NTP association modes </p>
+
+<p>Representing the NTP association modes. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac2f7eecaf3da9628fad8d2d2cf785666affc08c5f9f98f37b2df542c487c6be26"></a>Reserved&#160;</td><td class="fielddoc"><p>Reserved variable. </p>
 </td></tr>
@@ -625,7 +641,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a69f54a5b75a966dd34f5ac5e6363f1e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69f54a5b75a966dd34f5ac5e6363f1e7">&#9670;&nbsp;</a></span>NtpLayer() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a69f54a5b75a966dd34f5ac5e6363f1e7">&#9670;&nbsp;</a></span>NtpLayer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -681,24 +697,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8c3659cc9a900a070382443ae9b1f251"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c3659cc9a900a070382443ae9b1f251">&#9670;&nbsp;</a></span>NtpLayer() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::NtpLayer::NtpLayer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Empty c'tor </p>
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="afa950de6ff01ef3df34b54ced9b189fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa950de6ff01ef3df34b54ced9b189fd">&#9670;&nbsp;</a></span>convertFromShortFormat()</h2>
@@ -723,8 +721,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Convert NTP short format to seconds from the Unix Epoch</p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Convert NTP short format to seconds from the Unix Epoch </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td>Value in NTP short format </td></tr>
   </table>
@@ -757,8 +754,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Convert NTP timestamp format to seconds from the Unix Epoch</p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Convert NTP timestamp format to seconds from the Unix Epoch </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td>Value in NTP timestamp format </td></tr>
   </table>
@@ -857,8 +853,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Convert seconds from the Unix Epoch to NTP short format</p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Convert seconds from the Unix Epoch to NTP short format </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td>Value in seconds from Unix Epoch (1 Jan 1970) </td></tr>
   </table>
@@ -891,8 +886,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Convert seconds from the Unix Epoch to NTP timestamp format</p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Convert seconds from the Unix Epoch to NTP timestamp format </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td>Value in seconds from Unix Epoch (1 Jan 1970) </td></tr>
   </table>
@@ -1556,44 +1550,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ace7b249855967ad7e55ae12157c6ccfd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace7b249855967ad7e55ae12157c6ccfd">&#9670;&nbsp;</a></span>setLeapIndicator()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::NtpLayer::setLeapIndicator </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classpcpp_1_1_ntp_layer.html#a09e3e98cd55c3e7046a1e6a30677c8d1">LeapIndicator</a>&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set the leap indicator </p>
-
-</div>
-</div>
-<a id="ac0ca1ee3bb4a91202d680e4c0e818e00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0ca1ee3bb4a91202d680e4c0e818e00">&#9670;&nbsp;</a></span>setMode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::NtpLayer::setMode </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classpcpp_1_1_ntp_layer.html#ac2f7eecaf3da9628fad8d2d2cf785666">Mode</a>&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set the mode </p>
-
-</div>
-</div>
 <a id="a80fae57dbddfe6b0c221177b6c40ba87"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a80fae57dbddfe6b0c221177b6c40ba87">&#9670;&nbsp;</a></span>setOriginTimestamp()</h2>
 
@@ -1954,25 +1910,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1ecc3730bc2570eb357b1c3c4207bfff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ecc3730bc2570eb357b1c3c4207bfff">&#9670;&nbsp;</a></span>setStratum()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::NtpLayer::setStratum </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set the value of stratum </p>
-
-</div>
-</div>
 <a id="a7374fbdfdd3a0109fb8b5f35bbad2359"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7374fbdfdd3a0109fb8b5f35bbad2359">&#9670;&nbsp;</a></span>setTransmitTimestamp()</h2>
 
@@ -2021,25 +1958,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0f87209f90c6560e486d91012519c419"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f87209f90c6560e486d91012519c419">&#9670;&nbsp;</a></span>setVersion()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::NtpLayer::setVersion </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set the version of NTP </p>
-
-</div>
-</div>
 <a id="aded4a62471cc0fda1e54a6e045a90106"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aded4a62471cc0fda1e54a6e045a90106">&#9670;&nbsp;</a></span>toString()</h2>
 
@@ -2074,7 +1992,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_ntp_layer.html">NtpLayer</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:44 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

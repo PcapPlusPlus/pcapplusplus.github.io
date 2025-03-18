@@ -127,6 +127,7 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="classpcpp_1_1_wire_guard_layer.html#a2e88b34ce97ccb97f16112fcef512b4da8709513ba04bd6e6e7178a1ecba0c41c">TransportData</a> = 4
 <br />
  }</td></tr>
+<tr class="memdesc:a2e88b34ce97ccb97f16112fcef512b4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">WireGuard message types.  <a href="classpcpp_1_1_wire_guard_layer.html#a2e88b34ce97ccb97f16112fcef512b4d">More...</a><br /></td></tr>
 <tr class="separator:a2e88b34ce97ccb97f16112fcef512b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -141,11 +142,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a63263f1566b86a8b0257aad32f1dd825"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a007b428dfcb0d135f0b5b30f5e4ff7d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_layer.html#a007b428dfcb0d135f0b5b30f5e4ff7d2">setReserved</a> (const std::array&lt; uint8_t, 3 &gt; &amp;reserved)</td></tr>
 <tr class="separator:a007b428dfcb0d135f0b5b30f5e4ff7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaee84ecae27cce60d8d52e3ef00c5a33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_layer.html#aaee84ecae27cce60d8d52e3ef00c5a33">parseNextLayer</a> () override</td></tr>
+<tr class="memitem:aaee84ecae27cce60d8d52e3ef00c5a33"><td class="memItemLeft" align="right" valign="top"><a id="aaee84ecae27cce60d8d52e3ef00c5a33"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_layer.html#aaee84ecae27cce60d8d52e3ef00c5a33">parseNextLayer</a> () override</td></tr>
+<tr class="memdesc:aaee84ecae27cce60d8d52e3ef00c5a33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does nothing for this layer (WireGuard layer is always last) <br /></td></tr>
 <tr class="separator:aaee84ecae27cce60d8d52e3ef00c5a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d43d9c70b490ce20a0dec706f1a7f3b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_layer.html#a0d43d9c70b490ce20a0dec706f1a7f3b">getHeaderLen</a> () const override</td></tr>
 <tr class="separator:a0d43d9c70b490ce20a0dec706f1a7f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc6966b5a3b38c3ae0b1e01a50f434e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_layer.html#adc6966b5a3b38c3ae0b1e01a50f434e9">computeCalculateFields</a> () override</td></tr>
+<tr class="memitem:adc6966b5a3b38c3ae0b1e01a50f434e9"><td class="memItemLeft" align="right" valign="top"><a id="adc6966b5a3b38c3ae0b1e01a50f434e9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_layer.html#adc6966b5a3b38c3ae0b1e01a50f434e9">computeCalculateFields</a> () override</td></tr>
+<tr class="memdesc:adc6966b5a3b38c3ae0b1e01a50f434e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">No fields to compute or update, so this method is left empty. <br /></td></tr>
 <tr class="separator:adc6966b5a3b38c3ae0b1e01a50f434e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a422f4205c7adf66e7be34b239bb89e40"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_wire_guard_layer.html#a422f4205c7adf66e7be34b239bb89e40">toString</a> () const override</td></tr>
 <tr class="separator:a422f4205c7adf66e7be34b239bb89e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,17 +215,18 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>WireGuard message types </p>
+
+<p>WireGuard message types. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2e88b34ce97ccb97f16112fcef512b4da88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"><p>Unknown Initiation message </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2e88b34ce97ccb97f16112fcef512b4da88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"><p>Unknown Initiation message. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2e88b34ce97ccb97f16112fcef512b4da0e0e2b019cb32017422db7b73c6e194a"></a>HandshakeInitiation&#160;</td><td class="fielddoc"><p>Handshake Initiation message </p>
+<tr><td class="fieldname"><a id="a2e88b34ce97ccb97f16112fcef512b4da0e0e2b019cb32017422db7b73c6e194a"></a>HandshakeInitiation&#160;</td><td class="fielddoc"><p>Handshake Initiation message. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2e88b34ce97ccb97f16112fcef512b4da2176c4183471fb469efdb19fd34731bf"></a>HandshakeResponse&#160;</td><td class="fielddoc"><p>Handshake Response message </p>
+<tr><td class="fieldname"><a id="a2e88b34ce97ccb97f16112fcef512b4da2176c4183471fb469efdb19fd34731bf"></a>HandshakeResponse&#160;</td><td class="fielddoc"><p>Handshake Response message. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2e88b34ce97ccb97f16112fcef512b4da7a6f71cdfe4aa3406c48b072e390fb16"></a>CookieReply&#160;</td><td class="fielddoc"><p>Cookie Reply message </p>
+<tr><td class="fieldname"><a id="a2e88b34ce97ccb97f16112fcef512b4da7a6f71cdfe4aa3406c48b072e390fb16"></a>CookieReply&#160;</td><td class="fielddoc"><p>Cookie Reply message. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2e88b34ce97ccb97f16112fcef512b4da8709513ba04bd6e6e7178a1ecba0c41c"></a>TransportData&#160;</td><td class="fielddoc"><p>Transport Data message </p>
+<tr><td class="fieldname"><a id="a2e88b34ce97ccb97f16112fcef512b4da8709513ba04bd6e6e7178a1ecba0c41c"></a>TransportData&#160;</td><td class="fielddoc"><p>Transport Data message. </p>
 </td></tr>
 </table>
 
@@ -272,8 +278,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Constructs a <a class="el" href="classpcpp_1_1_wire_guard_layer.html">WireGuardLayer</a> object.</p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Constructs a <a class="el" href="classpcpp_1_1_wire_guard_layer.html">WireGuardLayer</a> object. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>Pointer to the raw data representing the WireGuard layer </td></tr>
     <tr><td class="paramname">dataLen</td><td>Length of the data </td></tr>
@@ -286,34 +291,6 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="adc6966b5a3b38c3ae0b1e01a50f434e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc6966b5a3b38c3ae0b1e01a50f434e9">&#9670;&nbsp;</a></span>computeCalculateFields()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::WireGuardLayer::computeCalculateFields </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>No fields to compute or update, so this method is left empty. </p>
-
-<p>Implements <a class="el" href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">pcpp::Layer</a>.</p>
-
-</div>
-</div>
 <a id="a0d43d9c70b490ce20a0dec706f1a7f3b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0d43d9c70b490ce20a0dec706f1a7f3b">&#9670;&nbsp;</a></span>getHeaderLen()</h2>
 
@@ -485,8 +462,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Checks if the given data represents a WireGuard message.</p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Checks if the given data represents a WireGuard message. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>Pointer to the raw data </td></tr>
     <tr><td class="paramname">dataLen</td><td>Length of the data </td></tr>
@@ -530,8 +506,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Checks if the given port numbers are WireGuard ports.</p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Checks if the given port numbers are WireGuard ports. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">portSrc</td><td>The source port number to check </td></tr>
     <tr><td class="paramname">portDst</td><td>The destination port number to check </td></tr>
@@ -539,34 +514,6 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if either port matches the WireGuard port (51820), false otherwise </dd></dl>
-
-</div>
-</div>
-<a id="aaee84ecae27cce60d8d52e3ef00c5a33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaee84ecae27cce60d8d52e3ef00c5a33">&#9670;&nbsp;</a></span>parseNextLayer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::WireGuardLayer::parseNextLayer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Does nothing for this layer (WireGuard layer is always last) </p>
-
-<p>Implements <a class="el" href="classpcpp_1_1_layer.html#a6a8410015168a7fa42a7d71ac5b86673">pcpp::Layer</a>.</p>
 
 </div>
 </div>
@@ -615,8 +562,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Parses the raw data into a WireGuard layer.</p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Parses the raw data into a WireGuard layer. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>Pointer to the raw data </td></tr>
     <tr><td class="paramname">dataLen</td><td>Length of the data </td></tr>
@@ -675,8 +621,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Converts the WireGuard layer to a string representation.</p>
-<dl class="section return"><dt>Returns</dt><dd>String representation of the WireGuard layer </dd></dl>
+<p>Converts the WireGuard layer to a string representation. </p><dl class="section return"><dt>Returns</dt><dd>String representation of the WireGuard layer </dd></dl>
 
 <p>Implements <a class="el" href="classpcpp_1_1_layer.html#a1d07ea14d02b4a5cb383f89b3f40ed63">pcpp::Layer</a>.</p>
 
@@ -688,7 +633,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_wire_guard_layer.html">WireGuardLayer</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:44 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

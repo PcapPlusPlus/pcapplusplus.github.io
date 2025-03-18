@@ -125,9 +125,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9f7a980923001c275b2c730b4712dfa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac774ac4bc6133bbd2336531696a6205e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_cotp_layer.html#ac774ac4bc6133bbd2336531696a6205e">setTpduNumber</a> (uint8_t tpduNumber) const</td></tr>
 <tr class="separator:ac774ac4bc6133bbd2336531696a6205e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af28eb4e750cae81597917a739d46d062"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_cotp_layer.html#af28eb4e750cae81597917a739d46d062">computeCalculateFields</a> () override</td></tr>
+<tr class="memitem:af28eb4e750cae81597917a739d46d062"><td class="memItemLeft" align="right" valign="top"><a id="af28eb4e750cae81597917a739d46d062"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_cotp_layer.html#af28eb4e750cae81597917a739d46d062">computeCalculateFields</a> () override</td></tr>
+<tr class="memdesc:af28eb4e750cae81597917a739d46d062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does nothing for this layer. <br /></td></tr>
 <tr class="separator:af28eb4e750cae81597917a739d46d062"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf9df4a1d6388436c7c064758ec05324"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_cotp_layer.html#adf9df4a1d6388436c7c064758ec05324">parseNextLayer</a> () override</td></tr>
+<tr class="memitem:adf9df4a1d6388436c7c064758ec05324"><td class="memItemLeft" align="right" valign="top"><a id="adf9df4a1d6388436c7c064758ec05324"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_cotp_layer.html#adf9df4a1d6388436c7c064758ec05324">parseNextLayer</a> () override</td></tr>
+<tr class="memdesc:adf9df4a1d6388436c7c064758ec05324"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently parses the rest of the packet as a S7COMM or generic payload (<a class="el" href="classpcpp_1_1_payload_layer.html">PayloadLayer</a>) <br /></td></tr>
 <tr class="separator:adf9df4a1d6388436c7c064758ec05324"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabebf9eff1ba8642eb09ea092b668e87"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_cotp_layer.html#aabebf9eff1ba8642eb09ea092b668e87">toString</a> () const override</td></tr>
 <tr class="separator:aabebf9eff1ba8642eb09ea092b668e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,34 +261,6 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af28eb4e750cae81597917a739d46d062"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af28eb4e750cae81597917a739d46d062">&#9670;&nbsp;</a></span>computeCalculateFields()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::CotpLayer::computeCalculateFields </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Does nothing for this layer </p>
-
-<p>Implements <a class="el" href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">pcpp::Layer</a>.</p>
-
-</div>
-</div>
 <a id="a23ea3454b59c947478c4c9a6bfafeccd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a23ea3454b59c947478c4c9a6bfafeccd">&#9670;&nbsp;</a></span>getHeaderLen()</h2>
 
@@ -439,34 +415,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adf9df4a1d6388436c7c064758ec05324"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf9df4a1d6388436c7c064758ec05324">&#9670;&nbsp;</a></span>parseNextLayer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::CotpLayer::parseNextLayer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Currently parses the rest of the packet as a S7COMM or generic payload (<a class="el" href="classpcpp_1_1_payload_layer.html">PayloadLayer</a>) </p>
-
-<p>Implements <a class="el" href="classpcpp_1_1_layer.html#a6a8410015168a7fa42a7d71ac5b86673">pcpp::Layer</a>.</p>
-
-</div>
-</div>
 <a id="ac10a7c1465ea1be951eee40f36143f42"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac10a7c1465ea1be951eee40f36143f42">&#9670;&nbsp;</a></span>setLength()</h2>
 
@@ -573,7 +521,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_cotp_layer.html">CotpLayer</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:43 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -96,13 +96,19 @@ $(document).ready(function(){initNavTree('structpcpp_1_1_i_pv6_fragmentation_hea
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ad8163575c2faa31dc56ef5e004168f77"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_i_pv6_fragmentation_header_1_1ipv6__frag__header.html#ad8163575c2faa31dc56ef5e004168f77">nextHeader</a></td></tr>
+<tr class="memitem:ad8163575c2faa31dc56ef5e004168f77"><td class="memItemLeft" align="right" valign="top"><a id="ad8163575c2faa31dc56ef5e004168f77"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_i_pv6_fragmentation_header_1_1ipv6__frag__header.html#ad8163575c2faa31dc56ef5e004168f77">nextHeader</a></td></tr>
+<tr class="memdesc:ad8163575c2faa31dc56ef5e004168f77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next header type. <br /></td></tr>
 <tr class="separator:ad8163575c2faa31dc56ef5e004168f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5856041f7a061a0d6d0c0c53a0bdc493"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_i_pv6_fragmentation_header_1_1ipv6__frag__header.html#a5856041f7a061a0d6d0c0c53a0bdc493">headerLen</a></td></tr>
+<tr class="memitem:a5856041f7a061a0d6d0c0c53a0bdc493"><td class="memItemLeft" align="right" valign="top"><a id="a5856041f7a061a0d6d0c0c53a0bdc493"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_i_pv6_fragmentation_header_1_1ipv6__frag__header.html#a5856041f7a061a0d6d0c0c53a0bdc493">headerLen</a></td></tr>
+<tr class="memdesc:a5856041f7a061a0d6d0c0c53a0bdc493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fragmentation header size is fixed 8 bytes, so len is always zero. <br /></td></tr>
 <tr class="separator:a5856041f7a061a0d6d0c0c53a0bdc493"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa25c6f0e0649e2ce43c4cca084f9ea62"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_i_pv6_fragmentation_header_1_1ipv6__frag__header.html#aa25c6f0e0649e2ce43c4cca084f9ea62">fragOffsetAndFlags</a></td></tr>
 <tr class="separator:aa25c6f0e0649e2ce43c4cca084f9ea62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa385b898dc21535012593791a41358dd"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_i_pv6_fragmentation_header_1_1ipv6__frag__header.html#aa385b898dc21535012593791a41358dd">id</a></td></tr>
+<tr class="memitem:aa385b898dc21535012593791a41358dd"><td class="memItemLeft" align="right" valign="top"><a id="aa385b898dc21535012593791a41358dd"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_i_pv6_fragmentation_header_1_1ipv6__frag__header.html#aa385b898dc21535012593791a41358dd">id</a></td></tr>
+<tr class="memdesc:aa385b898dc21535012593791a41358dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">packet identification value. Needed for reassembly of the original packet <br /></td></tr>
 <tr class="separator:aa385b898dc21535012593791a41358dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -123,58 +129,13 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a5856041f7a061a0d6d0c0c53a0bdc493"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5856041f7a061a0d6d0c0c53a0bdc493">&#9670;&nbsp;</a></span>headerLen</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t pcpp::IPv6FragmentationHeader::ipv6_frag_header::headerLen</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Fragmentation header size is fixed 8 bytes, so len is always zero </p>
-
-</div>
-</div>
-<a id="aa385b898dc21535012593791a41358dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa385b898dc21535012593791a41358dd">&#9670;&nbsp;</a></span>id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t pcpp::IPv6FragmentationHeader::ipv6_frag_header::id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>packet identification value. Needed for reassembly of the original packet </p>
-
-</div>
-</div>
-<a id="ad8163575c2faa31dc56ef5e004168f77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8163575c2faa31dc56ef5e004168f77">&#9670;&nbsp;</a></span>nextHeader</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t pcpp::IPv6FragmentationHeader::ipv6_frag_header::nextHeader</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Next header type </p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_pv6_fragmentation_header.html">IPv6FragmentationHeader</a></li><li class="navelem"><a class="el" href="structpcpp_1_1_i_pv6_fragmentation_header_1_1ipv6__frag__header.html">ipv6_frag_header</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:43 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

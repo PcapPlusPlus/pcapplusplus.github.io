@@ -137,6 +137,7 @@ Public Types</h2></td></tr>
 , <a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1a2642758711d7d85c17cb19b2549ebef4">TP_ERROR</a> = 0xa1
 <br />
  }</td></tr>
+<tr class="memdesc:a9cf342f59c28ade99336103189f097c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">SOME/IP message types.  <a href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1">More...</a><br /></td></tr>
 <tr class="separator:a9cf342f59c28ade99336103189f097c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -145,7 +146,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a91a010314632035e9edb491a66c8025a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63297b76f2ab0fce65b3d503259a8942"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#a63297b76f2ab0fce65b3d503259a8942">SomeIpLayer</a> (uint16_t serviceID, uint16_t methodID, uint16_t clientID, uint16_t sessionID, uint8_t interfaceVersion, <a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1">MsgType</a> type, uint8_t returnCode, const uint8_t *const data=nullptr, size_t dataLen=0)</td></tr>
 <tr class="separator:a63297b76f2ab0fce65b3d503259a8942"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27df3ed59cc694d14c80cd6dc94f85ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#a27df3ed59cc694d14c80cd6dc94f85ea">~SomeIpLayer</a> () override=default</td></tr>
+<tr class="memitem:a27df3ed59cc694d14c80cd6dc94f85ea"><td class="memItemLeft" align="right" valign="top"><a id="a27df3ed59cc694d14c80cd6dc94f85ea"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#a27df3ed59cc694d14c80cd6dc94f85ea">~SomeIpLayer</a> () override=default</td></tr>
+<tr class="memdesc:a27df3ed59cc694d14c80cd6dc94f85ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the layer object. <br /></td></tr>
 <tr class="separator:a27df3ed59cc694d14c80cd6dc94f85ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d8dcea065690cb5ca6922d2ede01b3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpcpp_1_1_some_ip_layer_1_1someiphdr.html">someiphdr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#a8d8dcea065690cb5ca6922d2ede01b3f">getSomeIpHeader</a> () const</td></tr>
 <tr class="separator:a8d8dcea065690cb5ca6922d2ede01b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,9 +206,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1cf2e2ac1c23fa8afdde6b3456adec90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89ea285a434adf389a8947a9d29604b4"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#a89ea285a434adf389a8947a9d29604b4">getHeaderLen</a> () const override</td></tr>
 <tr class="separator:a89ea285a434adf389a8947a9d29604b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a422a7b780c6c8c3b543fe7d2f0eaf3fa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#a422a7b780c6c8c3b543fe7d2f0eaf3fa">computeCalculateFields</a> () override</td></tr>
+<tr class="memitem:a422a7b780c6c8c3b543fe7d2f0eaf3fa"><td class="memItemLeft" align="right" valign="top"><a id="a422a7b780c6c8c3b543fe7d2f0eaf3fa"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#a422a7b780c6c8c3b543fe7d2f0eaf3fa">computeCalculateFields</a> () override</td></tr>
+<tr class="memdesc:a422a7b780c6c8c3b543fe7d2f0eaf3fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does nothing for this layer. <br /></td></tr>
 <tr class="separator:a422a7b780c6c8c3b543fe7d2f0eaf3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8adfa4ea34760494df2776d35202bf37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#a8adfa4ea34760494df2776d35202bf37">parseNextLayer</a> () override</td></tr>
+<tr class="memitem:a8adfa4ea34760494df2776d35202bf37"><td class="memItemLeft" align="right" valign="top"><a id="a8adfa4ea34760494df2776d35202bf37"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#a8adfa4ea34760494df2776d35202bf37">parseNextLayer</a> () override</td></tr>
+<tr class="memdesc:a8adfa4ea34760494df2776d35202bf37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies the following next layers: <a class="el" href="classpcpp_1_1_some_ip_layer.html">SomeIpLayer</a>, <a class="el" href="classpcpp_1_1_some_ip_tp_layer.html">SomeIpTpLayer</a>, <a class="el" href="classpcpp_1_1_some_ip_sd_layer.html">SomeIpSdLayer</a>. Otherwise sets <a class="el" href="classpcpp_1_1_payload_layer.html">PayloadLayer</a>. <br /></td></tr>
 <tr class="separator:a8adfa4ea34760494df2776d35202bf37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a572aa445bf199105526c1dfbb8c3c3cb"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#a572aa445bf199105526c1dfbb8c3c3cb">toString</a> () const override</td></tr>
 <tr class="separator:a572aa445bf199105526c1dfbb8c3c3cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -247,7 +254,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ae03401daa97ddfda6d214879ec61da24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57abe2e9d7940cc52b4a245e01481c38"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#a57abe2e9d7940cc52b4a245e01481c38">removeSomeIpPort</a> (uint16_t port)</td></tr>
 <tr class="separator:a57abe2e9d7940cc52b4a245e01481c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afabdf97fa63b0fb24348ff7839f44ce6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#afabdf97fa63b0fb24348ff7839f44ce6">removeAllSomeIpPorts</a> ()</td></tr>
+<tr class="memitem:afabdf97fa63b0fb24348ff7839f44ce6"><td class="memItemLeft" align="right" valign="top"><a id="afabdf97fa63b0fb24348ff7839f44ce6"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#afabdf97fa63b0fb24348ff7839f44ce6">removeAllSomeIpPorts</a> ()</td></tr>
+<tr class="memdesc:afabdf97fa63b0fb24348ff7839f44ce6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all ports from a list of ports where pcap checks for SOME/IP communication. <br /></td></tr>
 <tr class="separator:afabdf97fa63b0fb24348ff7839f44ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -272,37 +281,38 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>SOME/IP message types </p>
+
+<p>SOME/IP message types. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9cf342f59c28ade99336103189f097c1aad6c35880c58d97c03d60a6ad0f23737"></a>REQUEST&#160;</td><td class="fielddoc"><p>A request expecting a response (even void) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9cf342f59c28ade99336103189f097c1a5dd3f5618610085f751ea151d8a5fe1c"></a>REQUEST_ACK&#160;</td><td class="fielddoc"><p>Acknowledgment for REQUEST(optional) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a9cf342f59c28ade99336103189f097c1ae1e7e94b723432614a8d5a6ac164f059"></a>REQUEST_NO_RETURN&#160;</td><td class="fielddoc"><p>A fire&amp;forget request </p>
+<tr><td class="fieldname"><a id="a9cf342f59c28ade99336103189f097c1ae1e7e94b723432614a8d5a6ac164f059"></a>REQUEST_NO_RETURN&#160;</td><td class="fielddoc"><p>A fire&amp;forget request. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9cf342f59c28ade99336103189f097c1a0b3c0494b6f5668498228386aa6af8aa"></a>REQUEST_NO_RETURN_ACK&#160;</td><td class="fielddoc"><p>Acknowledgment for REQUEST_NO_RETURN(informational) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a9cf342f59c28ade99336103189f097c1a9814d942b7e24870084a3dce24867ab3"></a>NOTIFICATION&#160;</td><td class="fielddoc"><p>A request of a notification expecting no response </p>
+<tr><td class="fieldname"><a id="a9cf342f59c28ade99336103189f097c1a9814d942b7e24870084a3dce24867ab3"></a>NOTIFICATION&#160;</td><td class="fielddoc"><p>A request of a notification expecting no response. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9cf342f59c28ade99336103189f097c1abad4bcf3377a81877a9278f439763c94"></a>NOTIFICATION_ACK&#160;</td><td class="fielddoc"><p>Acknowledgment for NOTIFICATION(informational) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a9cf342f59c28ade99336103189f097c1a4fa1a4d2e48aa765093ca6aae57a5150"></a>RESPONSE&#160;</td><td class="fielddoc"><p>The response message </p>
+<tr><td class="fieldname"><a id="a9cf342f59c28ade99336103189f097c1a4fa1a4d2e48aa765093ca6aae57a5150"></a>RESPONSE&#160;</td><td class="fielddoc"><p>The response message. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9cf342f59c28ade99336103189f097c1a3fc82a25abb83232a4ef0e41a73a0b79"></a>RESPONSE_ACK&#160;</td><td class="fielddoc"><p>The Acknowledgment for RESPONSE(informational) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a9cf342f59c28ade99336103189f097c1a6f3a603fac4d817f1848c3173b243b57"></a>ERRORS&#160;</td><td class="fielddoc"><p>The response containing an error </p>
+<tr><td class="fieldname"><a id="a9cf342f59c28ade99336103189f097c1a6f3a603fac4d817f1848c3173b243b57"></a>ERRORS&#160;</td><td class="fielddoc"><p>The response containing an error. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9cf342f59c28ade99336103189f097c1aace06615e719801d944ce1192c7a93c7"></a>ERROR_ACK&#160;</td><td class="fielddoc"><p>Acknowledgment for ERROR(informational) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9cf342f59c28ade99336103189f097c1a657e441b358cc02440b1f2c6aa5c9d93"></a>TP_REQUEST&#160;</td><td class="fielddoc"><p>A TP request expecting a response (even void) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a9cf342f59c28ade99336103189f097c1a7018452c9a9fc8df6064eb089df0fbc1"></a>TP_REQUEST_NO_RETURN&#160;</td><td class="fielddoc"><p>A TP fire&amp;forget request </p>
+<tr><td class="fieldname"><a id="a9cf342f59c28ade99336103189f097c1a7018452c9a9fc8df6064eb089df0fbc1"></a>TP_REQUEST_NO_RETURN&#160;</td><td class="fielddoc"><p>A TP fire&amp;forget request. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a9cf342f59c28ade99336103189f097c1a8626d09405574f50e5e3db8968817063"></a>TP_NOTIFICATION&#160;</td><td class="fielddoc"><p>A TP request of a notification/event callback expecting no response </p>
+<tr><td class="fieldname"><a id="a9cf342f59c28ade99336103189f097c1a8626d09405574f50e5e3db8968817063"></a>TP_NOTIFICATION&#160;</td><td class="fielddoc"><p>A TP request of a notification/event callback expecting no response. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a9cf342f59c28ade99336103189f097c1a93f7ea21ef403f978eb1023df539354a"></a>TP_RESPONSE&#160;</td><td class="fielddoc"><p>The TP response message </p>
+<tr><td class="fieldname"><a id="a9cf342f59c28ade99336103189f097c1a93f7ea21ef403f978eb1023df539354a"></a>TP_RESPONSE&#160;</td><td class="fielddoc"><p>The TP response message. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a9cf342f59c28ade99336103189f097c1a2642758711d7d85c17cb19b2549ebef4"></a>TP_ERROR&#160;</td><td class="fielddoc"><p>The TP response containing an error </p>
+<tr><td class="fieldname"><a id="a9cf342f59c28ade99336103189f097c1a2642758711d7d85c17cb19b2549ebef4"></a>TP_ERROR&#160;</td><td class="fielddoc"><p>The TP response containing an error. </p>
 </td></tr>
 </table>
 
@@ -450,32 +460,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a27df3ed59cc694d14c80cd6dc94f85ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27df3ed59cc694d14c80cd6dc94f85ea">&#9670;&nbsp;</a></span>~SomeIpLayer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::SomeIpLayer::~SomeIpLayer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Destroy the layer object </p>
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae03401daa97ddfda6d214879ec61da24"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae03401daa97ddfda6d214879ec61da24">&#9670;&nbsp;</a></span>addSomeIpPort()</h2>
@@ -506,36 +490,6 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a422a7b780c6c8c3b543fe7d2f0eaf3fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a422a7b780c6c8c3b543fe7d2f0eaf3fa">&#9670;&nbsp;</a></span>computeCalculateFields()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void pcpp::SomeIpLayer::computeCalculateFields </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Does nothing for this layer </p>
-
-<p>Implements <a class="el" href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">pcpp::Layer</a>.</p>
-
-<p>Reimplemented in <a class="el" href="classpcpp_1_1_some_ip_sd_layer.html#a83127e6e9a07046855d1ea0289ad86ee">pcpp::SomeIpSdLayer</a>, and <a class="el" href="classpcpp_1_1_some_ip_tp_layer.html#a71dd8fc35ca96910687ea8fa258e03e6">pcpp::SomeIpTpLayer</a>.</p>
 
 </div>
 </div>
@@ -653,7 +607,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the message type </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1">SomeIpLayer::MsgType</a> </dd></dl>
+<p>Get the message type </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1" title="SOME/IP message types.">SomeIpLayer::MsgType</a> </dd></dl>
 
 </div>
 </div>
@@ -922,34 +876,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8adfa4ea34760494df2776d35202bf37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8adfa4ea34760494df2776d35202bf37">&#9670;&nbsp;</a></span>parseNextLayer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::SomeIpLayer::parseNextLayer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Identifies the following next layers: <a class="el" href="classpcpp_1_1_some_ip_layer.html">SomeIpLayer</a>, <a class="el" href="classpcpp_1_1_some_ip_tp_layer.html">SomeIpTpLayer</a>, <a class="el" href="classpcpp_1_1_some_ip_sd_layer.html">SomeIpSdLayer</a>. Otherwise sets <a class="el" href="classpcpp_1_1_payload_layer.html">PayloadLayer</a> </p>
-
-<p>Implements <a class="el" href="classpcpp_1_1_layer.html#a6a8410015168a7fa42a7d71ac5b86673">pcpp::Layer</a>.</p>
-
-</div>
-</div>
 <a id="affd724197a8efceb2ed595655658f1d0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#affd724197a8efceb2ed595655658f1d0">&#9670;&nbsp;</a></span>parseSomeIpLayer()</h2>
 
@@ -1005,32 +931,6 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Layer* A newly allocated layer </dd></dl>
-
-</div>
-</div>
-<a id="afabdf97fa63b0fb24348ff7839f44ce6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afabdf97fa63b0fb24348ff7839f44ce6">&#9670;&nbsp;</a></span>removeAllSomeIpPorts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void pcpp::SomeIpLayer::removeAllSomeIpPorts </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Removes all ports from a list of ports where pcap checks for SOME/IP communication. </p>
 
 </div>
 </div>
@@ -1390,7 +1290,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_some_ip_layer.html">SomeIpLayer</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:44 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -93,6 +93,9 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_single_command_text_prot
 </div><!--header-->
 <div class="contents">
 
+<p>Class for single command text based protocol (FTP, SMTP) messages.  
+ <a href="classpcpp_1_1_single_command_text_protocol.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_single_command_text_protocol_8h_source.html">SingleCommandTextProtocol.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for pcpp::SingleCommandTextProtocol:</div>
@@ -102,12 +105,12 @@ Inheritance diagram for pcpp::SingleCommandTextProtocol:</div>
   <map id="pcpp::SingleCommandTextProtocol_map" name="pcpp::SingleCommandTextProtocol_map">
 <area href="classpcpp_1_1_layer.html" alt="pcpp::Layer" shape="rect" coords="324,56,530,80"/>
 <area href="classpcpp_1_1_i_data_container.html" alt="pcpp::IDataContainer" shape="rect" coords="324,0,530,24"/>
-<area href="classpcpp_1_1_ftp_layer.html" alt="pcpp::FtpLayer" shape="rect" coords="108,168,314,192"/>
-<area href="classpcpp_1_1_smtp_layer.html" alt="pcpp::SmtpLayer" shape="rect" coords="540,168,746,192"/>
-<area href="classpcpp_1_1_ftp_request_layer.html" alt="pcpp::FtpRequestLayer" shape="rect" coords="0,224,206,248"/>
-<area href="classpcpp_1_1_ftp_response_layer.html" alt="pcpp::FtpResponseLayer" shape="rect" coords="216,224,422,248"/>
-<area href="classpcpp_1_1_smtp_request_layer.html" alt="pcpp::SmtpRequestLayer" shape="rect" coords="432,224,638,248"/>
-<area href="classpcpp_1_1_smtp_response_layer.html" alt="pcpp::SmtpResponseLayer" shape="rect" coords="648,224,854,248"/>
+<area href="classpcpp_1_1_ftp_layer.html" title="Class for general FTP message." alt="pcpp::FtpLayer" shape="rect" coords="108,168,314,192"/>
+<area href="classpcpp_1_1_smtp_layer.html" title="Class for general SMTP message." alt="pcpp::SmtpLayer" shape="rect" coords="540,168,746,192"/>
+<area href="classpcpp_1_1_ftp_request_layer.html" title="Class for representing the request messages of FTP Layer." alt="pcpp::FtpRequestLayer" shape="rect" coords="0,224,206,248"/>
+<area href="classpcpp_1_1_ftp_response_layer.html" title="Class for representing the response messages of FTP Layer." alt="pcpp::FtpResponseLayer" shape="rect" coords="216,224,422,248"/>
+<area href="classpcpp_1_1_smtp_request_layer.html" title="Class for representing the request messages of SMTP Layer." alt="pcpp::SmtpRequestLayer" shape="rect" coords="432,224,638,248"/>
+<area href="classpcpp_1_1_smtp_response_layer.html" title="Class for representing the response messages of SMTP Layer." alt="pcpp::SmtpResponseLayer" shape="rect" coords="648,224,854,248"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -140,11 +143,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a019a07d6f9d8fc7eb233e61826b11964 inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c5d6f648a6878895a714004f937830d inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a4c5d6f648a6878895a714004f937830d">getDataPtr</a> (size_t offset=0) const override</td></tr>
 <tr class="separator:a4c5d6f648a6878895a714004f937830d inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a8410015168a7fa42a7d71ac5b86673 inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a6a8410015168a7fa42a7d71ac5b86673">parseNextLayer</a> ()=0</td></tr>
+<tr class="memitem:a6a8410015168a7fa42a7d71ac5b86673 inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top"><a id="a6a8410015168a7fa42a7d71ac5b86673"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a6a8410015168a7fa42a7d71ac5b86673">parseNextLayer</a> ()=0</td></tr>
+<tr class="memdesc:a6a8410015168a7fa42a7d71ac5b86673 inherit pub_methods_classpcpp_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each layer is responsible for parsing the next layer. <br /></td></tr>
 <tr class="separator:a6a8410015168a7fa42a7d71ac5b86673 inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acabe7022caf7cf5fabcad4b5a0eec832 inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#acabe7022caf7cf5fabcad4b5a0eec832">getHeaderLen</a> () const =0</td></tr>
 <tr class="separator:acabe7022caf7cf5fabcad4b5a0eec832 inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abea112176d18e896f48214ca7accac71 inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">computeCalculateFields</a> ()=0</td></tr>
+<tr class="memitem:abea112176d18e896f48214ca7accac71 inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top"><a id="abea112176d18e896f48214ca7accac71"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">computeCalculateFields</a> ()=0</td></tr>
+<tr class="memdesc:abea112176d18e896f48214ca7accac71 inherit pub_methods_classpcpp_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each layer can compute field values automatically using this method. This is an abstract method. <br /></td></tr>
 <tr class="separator:abea112176d18e896f48214ca7accac71 inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d07ea14d02b4a5cb383f89b3f40ed63 inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a1d07ea14d02b4a5cb383f89b3f40ed63">toString</a> () const =0</td></tr>
 <tr class="separator:a1d07ea14d02b4a5cb383f89b3f40ed63 inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,7 +164,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:aabdee2c76e92bf78c3d2f9b704e7cabd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Class for single command text based protocol (FTP, SMTP) messages </p>
+<div class="textblock"><p>Class for single command text based protocol (FTP, SMTP) messages. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aabdee2c76e92bf78c3d2f9b704e7cabd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aabdee2c76e92bf78c3d2f9b704e7cabd">&#9670;&nbsp;</a></span>isDataValid()</h2>
@@ -229,7 +236,7 @@ false Otherwise </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_single_command_text_protocol.html">SingleCommandTextProtocol</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:44 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

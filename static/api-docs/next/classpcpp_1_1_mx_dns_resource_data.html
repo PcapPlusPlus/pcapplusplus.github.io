@@ -107,6 +107,7 @@ Inheritance diagram for pcpp::MxDnsResourceData:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_mx_dns_resource_data_1_1_mx_data.html">MxData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A struct that represents mail exchange (MX) data.  <a href="structpcpp_1_1_mx_dns_resource_data_1_1_mx_data.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -126,7 +127,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad9b435ce4a812c41177398fbce9693ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_mx_dns_resource_data.html#ad9b435ce4a812c41177398fbce9693ec">toByteArr</a> (uint8_t *arr, size_t &amp;arrLength, <a class="el" href="classpcpp_1_1_i_dns_resource.html">IDnsResource</a> *dnsResource) const override</td></tr>
 <tr class="separator:ad9b435ce4a812c41177398fbce9693ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classpcpp_1_1_i_dns_resource_data"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_i_dns_resource_data')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_dns_resource_data.html">pcpp::IDnsResourceData</a></td></tr>
-<tr class="memitem:aad86fb391e74eb3e156b38a281928241 inherit pub_methods_classpcpp_1_1_i_dns_resource_data"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_dns_resource_data.html#aad86fb391e74eb3e156b38a281928241">~IDnsResourceData</a> ()=default</td></tr>
+<tr class="memitem:aad86fb391e74eb3e156b38a281928241 inherit pub_methods_classpcpp_1_1_i_dns_resource_data"><td class="memItemLeft" align="right" valign="top"><a id="aad86fb391e74eb3e156b38a281928241"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_dns_resource_data.html#aad86fb391e74eb3e156b38a281928241">~IDnsResourceData</a> ()=default</td></tr>
+<tr class="memdesc:aad86fb391e74eb3e156b38a281928241 inherit pub_methods_classpcpp_1_1_i_dns_resource_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">A virtual d'tor, does nothing. <br /></td></tr>
 <tr class="separator:aad86fb391e74eb3e156b38a281928241 inherit pub_methods_classpcpp_1_1_i_dns_resource_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a0aba99fc544c523a10ed41b3fc80a4 inherit pub_methods_classpcpp_1_1_i_dns_resource_data"><td class="memTemplParams" colspan="2">template&lt;class IDnsResourceDataType &gt; </td></tr>
 <tr class="memitem:a8a0aba99fc544c523a10ed41b3fc80a4 inherit pub_methods_classpcpp_1_1_i_dns_resource_data"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_dns_resource_data.html#a8a0aba99fc544c523a10ed41b3fc80a4">isTypeOf</a> () const</td></tr>
@@ -136,7 +139,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a56a9d85bb7e5cbdb9dad80f50f398202 inherit pub_methods_classpcpp_1_1_i_dns_resource_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class that represents DNS RR mail exchange (MX) data, used in DNS RRs of type <a class="el" href="namespacepcpp.html#ad888578fe7df9849bbfbb10cdf245886ab221342597b257341e1ddb4c9d78c183">DNS_TYPE_MX</a> </p>
+<div class="textblock"><p>A class that represents DNS RR mail exchange (MX) data, used in DNS RRs of type <a class="el" href="namespacepcpp.html#ad888578fe7df9849bbfbb10cdf245886ab221342597b257341e1ddb4c9d78c183" title="Mail exchanger record.">DNS_TYPE_MX</a> </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aba8f26beaedf8657c8b98aed15ea539c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aba8f26beaedf8657c8b98aed15ea539c">&#9670;&nbsp;</a></span>MxDnsResourceData() <span class="overload">[1/2]</span></h2>
@@ -389,7 +392,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_mx_dns_resource_data.html">MxDnsResourceData</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:43 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -112,6 +112,7 @@ Inheritance diagram for pcpp::SSHHandshakeMessage:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_s_s_h_handshake_message_1_1ssh__message__base.html">ssh_message_base</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An internal struct representing the SSH handshake message header.  <a href="structpcpp_1_1_s_s_h_handshake_message_1_1ssh__message__base.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -128,6 +129,7 @@ Public Types</h2></td></tr>
 , <a class="el" href="classpcpp_1_1_s_s_h_handshake_message.html#a4dbb7d358bef567cfe920c90f0f72508a2cf2daf56146884b59da00446a0d4bfd">SSH_MSG_UNKNOWN</a> = 999
 <br />
  }</td></tr>
+<tr class="memdesc:a4dbb7d358bef567cfe920c90f0f72508"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enum that represents SSH non-encrypted message types.  <a href="classpcpp_1_1_s_s_h_handshake_message.html#a4dbb7d358bef567cfe920c90f0f72508">More...</a><br /></td></tr>
 <tr class="separator:a4dbb7d358bef567cfe920c90f0f72508"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -149,7 +151,9 @@ Public Member Functions</h2></td></tr>
 <tr class="inherit_header pub_methods_classpcpp_1_1_s_s_h_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_s_s_h_layer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_s_s_h_layer.html">pcpp::SSHLayer</a></td></tr>
 <tr class="memitem:aad8dc8bc658fb68c1bf5f7b7170761dc inherit pub_methods_classpcpp_1_1_s_s_h_layer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_h_layer.html#aad8dc8bc658fb68c1bf5f7b7170761dc">parseNextLayer</a> () override</td></tr>
 <tr class="separator:aad8dc8bc658fb68c1bf5f7b7170761dc inherit pub_methods_classpcpp_1_1_s_s_h_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a399d537a00ac41f7cfe754413d3900e6 inherit pub_methods_classpcpp_1_1_s_s_h_layer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_h_layer.html#a399d537a00ac41f7cfe754413d3900e6">computeCalculateFields</a> () override</td></tr>
+<tr class="memitem:a399d537a00ac41f7cfe754413d3900e6 inherit pub_methods_classpcpp_1_1_s_s_h_layer"><td class="memItemLeft" align="right" valign="top"><a id="a399d537a00ac41f7cfe754413d3900e6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_h_layer.html#a399d537a00ac41f7cfe754413d3900e6">computeCalculateFields</a> () override</td></tr>
+<tr class="memdesc:a399d537a00ac41f7cfe754413d3900e6 inherit pub_methods_classpcpp_1_1_s_s_h_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does nothing for this layer. <br /></td></tr>
 <tr class="separator:a399d537a00ac41f7cfe754413d3900e6 inherit pub_methods_classpcpp_1_1_s_s_h_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79b2d8ff19ec750e8335e8950d550a6d inherit pub_methods_classpcpp_1_1_s_s_h_layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_h_layer.html#a79b2d8ff19ec750e8335e8950d550a6d">getOsiModelLayer</a> () const override</td></tr>
 <tr class="separator:a79b2d8ff19ec750e8335e8950d550a6d inherit pub_methods_classpcpp_1_1_s_s_h_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,12 +195,12 @@ Static Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class representing all of the non-encrypted SSH handshake messages. An handshake message typically has the following structure:</p>
-<pre class="fragment">0         1         2         3         4         5         6
-+---------+---------+---------+---------+---------+---------+-----------     ---------+
-|            Packet Length              | Padding | Message |  Message  ....  Padding |
-|                                       | Length  |  Type   |  Content  ....          |
-+---------------------------------------+---------+---------+-----------     ---------+
-</pre><p>The first 4 bytes hold the packet length, followed by 1 byte that holds the padding length (which comes at the end of the message), then 1 byte that holds the message type (which can be of type <a class="el" href="classpcpp_1_1_s_s_h_handshake_message.html#a4dbb7d358bef567cfe920c90f0f72508">SSHHandshakeMessage::SSHHandshakeMessageType</a>) and then the message content. At the end of the content there is typically padding.</p>
+<div class="fragment"><div class="line">0         1         2         3         4         5         6</div>
+<div class="line">+---------+---------+---------+---------+---------+---------+-----------     ---------+</div>
+<div class="line">|            Packet Length              | Padding | Message |  Message  ....  Padding |</div>
+<div class="line">|                                       | Length  |  Type   |  Content  ....          |</div>
+<div class="line">+---------------------------------------+---------+---------+-----------     ---------+</div>
+</div><!-- fragment --><p>The first 4 bytes hold the packet length, followed by 1 byte that holds the padding length (which comes at the end of the message), then 1 byte that holds the message type (which can be of type <a class="el" href="classpcpp_1_1_s_s_h_handshake_message.html#a4dbb7d358bef567cfe920c90f0f72508" title="An enum that represents SSH non-encrypted message types.">SSHHandshakeMessage::SSHHandshakeMessageType</a>) and then the message content. At the end of the content there is typically padding.</p>
 <p>This class provides access to all of these values. The message content itself is not parse with the exception of <a class="el" href="classpcpp_1_1_s_s_h_key_exchange_init_message.html">SSHKeyExchangeInitMessage</a> which inherits from this class and provides parsing of the Key Exchange Init message. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a4dbb7d358bef567cfe920c90f0f72508"></a>
@@ -210,23 +214,24 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>An enum that represents SSH non-encrypted message types </p>
+
+<p>An enum that represents SSH non-encrypted message types. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4dbb7d358bef567cfe920c90f0f72508ab6d105ca6f529a61846e4263ee25b64d"></a>SSH_MSG_KEX_INIT&#160;</td><td class="fielddoc"><p>Key Exchange Init message </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4dbb7d358bef567cfe920c90f0f72508ab6d105ca6f529a61846e4263ee25b64d"></a>SSH_MSG_KEX_INIT&#160;</td><td class="fielddoc"><p>Key Exchange Init message. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a4dbb7d358bef567cfe920c90f0f72508aa3926481e5843396ed969109f026d71b"></a>SSH_MSG_NEW_KEYS&#160;</td><td class="fielddoc"><p>New Keys message </p>
+<tr><td class="fieldname"><a id="a4dbb7d358bef567cfe920c90f0f72508aa3926481e5843396ed969109f026d71b"></a>SSH_MSG_NEW_KEYS&#160;</td><td class="fielddoc"><p>New Keys message. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a4dbb7d358bef567cfe920c90f0f72508a02e9d01c63e6b33cb7466abac5ffb039"></a>SSH_MSG_KEX_DH_INIT&#160;</td><td class="fielddoc"><p>Diffie-Hellman Key Exchange Init message </p>
+<tr><td class="fieldname"><a id="a4dbb7d358bef567cfe920c90f0f72508a02e9d01c63e6b33cb7466abac5ffb039"></a>SSH_MSG_KEX_DH_INIT&#160;</td><td class="fielddoc"><p>Diffie-Hellman Key Exchange Init message. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a4dbb7d358bef567cfe920c90f0f72508ae3b91d0a9f2817112c23bfbe1d74f089"></a>SSH_MSG_KEX_DH_REPLY&#160;</td><td class="fielddoc"><p>message </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a4dbb7d358bef567cfe920c90f0f72508ae8888c9f8e9e893a212470349a687582"></a>SSH_MSG_KEX_DH_GEX_INIT&#160;</td><td class="fielddoc"><p>Diffie-Hellman Group Exchange Init message </p>
+<tr><td class="fieldname"><a id="a4dbb7d358bef567cfe920c90f0f72508ae8888c9f8e9e893a212470349a687582"></a>SSH_MSG_KEX_DH_GEX_INIT&#160;</td><td class="fielddoc"><p>Diffie-Hellman Group Exchange Init message. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a4dbb7d358bef567cfe920c90f0f72508a34dedb708a1c36089d7d07334fe8d98b"></a>SSH_MSG_KEX_DH_GEX_REPLY&#160;</td><td class="fielddoc"><p>"Diffie-Hellman Group Exchange Reply message </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a4dbb7d358bef567cfe920c90f0f72508a7e8706fc09c696136ec5a0150f50ac0c"></a>SSH_MSG_KEX_DH_GEX_REQUEST&#160;</td><td class="fielddoc"><p>Diffie-Hellman Group Exchange Request message </p>
+<tr><td class="fieldname"><a id="a4dbb7d358bef567cfe920c90f0f72508a7e8706fc09c696136ec5a0150f50ac0c"></a>SSH_MSG_KEX_DH_GEX_REQUEST&#160;</td><td class="fielddoc"><p>Diffie-Hellman Group Exchange Request message. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a4dbb7d358bef567cfe920c90f0f72508a2cf2daf56146884b59da00446a0d4bfd"></a>SSH_MSG_UNKNOWN&#160;</td><td class="fielddoc"><p>Unknown message </p>
+<tr><td class="fieldname"><a id="a4dbb7d358bef567cfe920c90f0f72508a2cf2daf56146884b59da00446a0d4bfd"></a>SSH_MSG_UNKNOWN&#160;</td><td class="fielddoc"><p>Unknown message. </p>
 </td></tr>
 </table>
 
@@ -443,7 +448,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_s_s_h_handshake_message.html">SSHHandshakeMessage</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:44 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

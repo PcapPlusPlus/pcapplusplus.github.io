@@ -110,7 +110,9 @@ Inheritance diagram for pcpp::GREv0Layer:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8cab834d500d69bd53ea9f980080aa66"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_g_r_ev0_layer.html#a8cab834d500d69bd53ea9f980080aa66">GREv0Layer</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_layer.html">Layer</a> *prevLayer, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet)</td></tr>
 <tr class="separator:a8cab834d500d69bd53ea9f980080aa66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e6349fa245ab6fec55236aeeff2e79e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_g_r_ev0_layer.html#a4e6349fa245ab6fec55236aeeff2e79e">GREv0Layer</a> ()</td></tr>
+<tr class="memitem:a4e6349fa245ab6fec55236aeeff2e79e"><td class="memItemLeft" align="right" valign="top"><a id="a4e6349fa245ab6fec55236aeeff2e79e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_g_r_ev0_layer.html#a4e6349fa245ab6fec55236aeeff2e79e">GREv0Layer</a> ()</td></tr>
+<tr class="memdesc:a4e6349fa245ab6fec55236aeeff2e79e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A constructor that creates a new GREv0 header and allocates the data. <br /></td></tr>
 <tr class="separator:a4e6349fa245ab6fec55236aeeff2e79e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a2e31d26ebf2f2437e780a38cecd0cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpcpp_1_1gre__basic__header.html">gre_basic_header</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_g_r_ev0_layer.html#a8a2e31d26ebf2f2437e780a38cecd0cc">getGreHeader</a> () const</td></tr>
 <tr class="separator:a8a2e31d26ebf2f2437e780a38cecd0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,7 +185,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Represents a GRE version 0 protocol. Limitation: currently this layer doesn't support GRE routing information parsing and editing. So if a GREv0 packet includes routing information it won't be parse correctly. I didn't add it because of lack of time, but if you need it please tell me and I'll add it </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8cab834d500d69bd53ea9f980080aa66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8cab834d500d69bd53ea9f980080aa66">&#9670;&nbsp;</a></span>GREv0Layer() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cab834d500d69bd53ea9f980080aa66">&#9670;&nbsp;</a></span>GREv0Layer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -239,24 +241,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4e6349fa245ab6fec55236aeeff2e79e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e6349fa245ab6fec55236aeeff2e79e">&#9670;&nbsp;</a></span>GREv0Layer() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::GREv0Layer::GREv0Layer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A constructor that creates a new GREv0 header and allocates the data </p>
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="aae6bc8fee0bc0cb7be059abe5f437fdd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aae6bc8fee0bc0cb7be059abe5f437fdd">&#9670;&nbsp;</a></span>computeCalculateFields()</h2>
@@ -281,7 +265,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Calculate the following fields:</p><ul>
-<li><a class="el" href="structpcpp_1_1gre__basic__header.html#ad64488dc863563820f7541dfdb4ee910">gre_basic_header::protocol</a></li>
+<li><a class="el" href="structpcpp_1_1gre__basic__header.html#ad64488dc863563820f7541dfdb4ee910" title="Protocol type of the next layer.">gre_basic_header::protocol</a></li>
 <li>GRE checksum field (if exists in packet) </li>
 </ul>
 
@@ -336,7 +320,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get a pointer to the basic GRE header containing only non-optional fields. Notice this points directly to the data, so every change will change the actual packet data. Also please notice that changing the set bits (<a class="el" href="structpcpp_1_1gre__basic__header.html#a3fbc55bc0bdf9653f08939fe8a6c8312">gre_basic_header::strictSourceRouteBit</a>, <a class="el" href="structpcpp_1_1gre__basic__header.html#a2189d1d50075e911ce84e27a5767c2b9">gre_basic_header::sequenceNumBit</a>, <a class="el" href="structpcpp_1_1gre__basic__header.html#a7d2e844896f8a4d14f07626891b67f8d">gre_basic_header::keyBit</a>, <a class="el" href="structpcpp_1_1gre__basic__header.html#a58ed856400ff63a74bd1f6b4d08ea6c8">gre_basic_header::routingBit</a>, <a class="el" href="structpcpp_1_1gre__basic__header.html#af12d9d73804241f3e31a70cfb8afc5af">gre_basic_header::checksumBit</a>, <a class="el" href="structpcpp_1_1gre__basic__header.html#a659ab94bc214af116075f48367c0ae25">gre_basic_header::ackSequenceNumBit</a>) without using the proper set or unset methods (such as <a class="el" href="classpcpp_1_1_g_r_ev0_layer.html#ac8e0328698bf7208f6a68c828a36a91b">setChecksum()</a>, <a class="el" href="classpcpp_1_1_g_r_ev0_layer.html#a165866e7549b82b339eb4cd26bd27ee9">unsetChecksum()</a>, etc.) may result to wrong calculation of header length and really weird bugs. Please avoid doing so </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="structpcpp_1_1gre__basic__header.html">gre_basic_header</a> </dd></dl>
+<p>Get a pointer to the basic GRE header containing only non-optional fields. Notice this points directly to the data, so every change will change the actual packet data. Also please notice that changing the set bits (<a class="el" href="structpcpp_1_1gre__basic__header.html#a3fbc55bc0bdf9653f08939fe8a6c8312" title="Strict source routing bit (GRE v0 only)">gre_basic_header::strictSourceRouteBit</a>, <a class="el" href="structpcpp_1_1gre__basic__header.html#a2189d1d50075e911ce84e27a5767c2b9" title="Set if sequence number exists.">gre_basic_header::sequenceNumBit</a>, <a class="el" href="structpcpp_1_1gre__basic__header.html#a7d2e844896f8a4d14f07626891b67f8d" title="Set if key exists.">gre_basic_header::keyBit</a>, <a class="el" href="structpcpp_1_1gre__basic__header.html#a58ed856400ff63a74bd1f6b4d08ea6c8" title="Set if routing exists (GRE v0 only)">gre_basic_header::routingBit</a>, <a class="el" href="structpcpp_1_1gre__basic__header.html#af12d9d73804241f3e31a70cfb8afc5af" title="Set if checksum exists (GRE v0 only)">gre_basic_header::checksumBit</a>, <a class="el" href="structpcpp_1_1gre__basic__header.html#a659ab94bc214af116075f48367c0ae25" title="Set if acknowledgment number is set (GRE v1 only)">gre_basic_header::ackSequenceNumBit</a>) without using the proper set or unset methods (such as <a class="el" href="classpcpp_1_1_g_r_ev0_layer.html#ac8e0328698bf7208f6a68c828a36a91b">setChecksum()</a>, <a class="el" href="classpcpp_1_1_g_r_ev0_layer.html#a165866e7549b82b339eb4cd26bd27ee9">unsetChecksum()</a>, etc.) may result to wrong calculation of header length and really weird bugs. Please avoid doing so </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="structpcpp_1_1gre__basic__header.html">gre_basic_header</a> </dd></dl>
 
 </div>
 </div>
@@ -449,7 +433,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set checksum value. If checksum or offset fields already exist (<a class="el" href="structpcpp_1_1gre__basic__header.html#af12d9d73804241f3e31a70cfb8afc5af">gre_basic_header::checksumBit</a> or <a class="el" href="structpcpp_1_1gre__basic__header.html#a58ed856400ff63a74bd1f6b4d08ea6c8">gre_basic_header::routingBit</a> are set) then only the new value is set. If both fields don't exist a new 4-byte value will be added to the layer, <a class="el" href="structpcpp_1_1gre__basic__header.html#af12d9d73804241f3e31a70cfb8afc5af">gre_basic_header::checksumBit</a> will be set (<a class="el" href="structpcpp_1_1gre__basic__header.html#a58ed856400ff63a74bd1f6b4d08ea6c8">gre_basic_header::routingBit</a> will remain unset), the new checksum value will be set and offset value will be set to 0. The reason both fields are added is that GREv0 protocol states both of them or none of them should exist on packet (even if only one of the bits are set) </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Set checksum value. If checksum or offset fields already exist (<a class="el" href="structpcpp_1_1gre__basic__header.html#af12d9d73804241f3e31a70cfb8afc5af" title="Set if checksum exists (GRE v0 only)">gre_basic_header::checksumBit</a> or <a class="el" href="structpcpp_1_1gre__basic__header.html#a58ed856400ff63a74bd1f6b4d08ea6c8" title="Set if routing exists (GRE v0 only)">gre_basic_header::routingBit</a> are set) then only the new value is set. If both fields don't exist a new 4-byte value will be added to the layer, <a class="el" href="structpcpp_1_1gre__basic__header.html#af12d9d73804241f3e31a70cfb8afc5af" title="Set if checksum exists (GRE v0 only)">gre_basic_header::checksumBit</a> will be set (<a class="el" href="structpcpp_1_1gre__basic__header.html#a58ed856400ff63a74bd1f6b4d08ea6c8" title="Set if routing exists (GRE v0 only)">gre_basic_header::routingBit</a> will remain unset), the new checksum value will be set and offset value will be set to 0. The reason both fields are added is that GREv0 protocol states both of them or none of them should exist on packet (even if only one of the bits are set) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">checksum</td><td>The checksum value to set </td></tr>
   </table>
@@ -474,7 +458,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set key value. If field already exists (<a class="el" href="structpcpp_1_1gre__basic__header.html#a7d2e844896f8a4d14f07626891b67f8d">gre_basic_header::keyBit</a> is set) then only the new value is set. If field doesn't exist it will be added to the layer, <a class="el" href="structpcpp_1_1gre__basic__header.html#a7d2e844896f8a4d14f07626891b67f8d">gre_basic_header::keyBit</a> will be set and the new value will be set </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Set key value. If field already exists (<a class="el" href="structpcpp_1_1gre__basic__header.html#a7d2e844896f8a4d14f07626891b67f8d" title="Set if key exists.">gre_basic_header::keyBit</a> is set) then only the new value is set. If field doesn't exist it will be added to the layer, <a class="el" href="structpcpp_1_1gre__basic__header.html#a7d2e844896f8a4d14f07626891b67f8d" title="Set if key exists.">gre_basic_header::keyBit</a> will be set and the new value will be set </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>The key value to set </td></tr>
   </table>
@@ -526,7 +510,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Unset checksum and possibly remove it from the layer. It will be removed from the layer only if <a class="el" href="structpcpp_1_1gre__basic__header.html#a58ed856400ff63a74bd1f6b4d08ea6c8">gre_basic_header::routingBit</a> is not set as well. Otherwise checksum field will remain on packet with value of 0 </p><dl class="section return"><dt>Returns</dt><dd>True if managed to unset successfully or false (and error log) if checksum wasn't set in the first place or if didn't manage to remove it from the layer </dd></dl>
+<p>Unset checksum and possibly remove it from the layer. It will be removed from the layer only if <a class="el" href="structpcpp_1_1gre__basic__header.html#a58ed856400ff63a74bd1f6b4d08ea6c8" title="Set if routing exists (GRE v0 only)">gre_basic_header::routingBit</a> is not set as well. Otherwise checksum field will remain on packet with value of 0 </p><dl class="section return"><dt>Returns</dt><dd>True if managed to unset successfully or false (and error log) if checksum wasn't set in the first place or if didn't manage to remove it from the layer </dd></dl>
 
 </div>
 </div>
@@ -554,7 +538,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_g_r_ev0_layer.html">GREv0Layer</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:43 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

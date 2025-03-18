@@ -106,7 +106,9 @@ Inheritance diagram for pcpp::IPReassembly::PacketKey:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2ce1d95afd049da4dff5d155c7e6dddc"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_reassembly_1_1_packet_key.html#a2ce1d95afd049da4dff5d155c7e6dddc">~PacketKey</a> ()=default</td></tr>
+<tr class="memitem:a2ce1d95afd049da4dff5d155c7e6dddc"><td class="memItemLeft" align="right" valign="top"><a id="a2ce1d95afd049da4dff5d155c7e6dddc"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_reassembly_1_1_packet_key.html#a2ce1d95afd049da4dff5d155c7e6dddc">~PacketKey</a> ()=default</td></tr>
+<tr class="memdesc:a2ce1d95afd049da4dff5d155c7e6dddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">A default virtual d'tor. <br /></td></tr>
 <tr class="separator:a2ce1d95afd049da4dff5d155c7e6dddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd42f4375f021a1bf7d89a151b231911"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_reassembly_1_1_packet_key.html#abd42f4375f021a1bf7d89a151b231911">getHashValue</a> () const =0</td></tr>
 <tr class="separator:abd42f4375f021a1bf7d89a151b231911"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,34 +119,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An abstract class that represents a key that can uniquely identify an IP packet. This class cannot be instantiated or copied, only its derived classes can </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a2ce1d95afd049da4dff5d155c7e6dddc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ce1d95afd049da4dff5d155c7e6dddc">&#9670;&nbsp;</a></span>~PacketKey()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual pcpp::IPReassembly::PacketKey::~PacketKey </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>A default virtual d'tor </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a38bb114ec2d125fa47d7a1d113203a4c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a38bb114ec2d125fa47d7a1d113203a4c">&#9670;&nbsp;</a></span>clone()</h2>
 
@@ -223,7 +198,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The IP protocol this key represents (<a class="el" href="namespacepcpp.html#aa465f388784082dafaf5dce0b9f67817">pcpp::IPv4</a> or <a class="el" href="namespacepcpp.html#aab30bccb509b8fcf2fea7d4db3b46046">pcpp::IPv6</a>) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The IP protocol this key represents (<a class="el" href="namespacepcpp.html#aa465f388784082dafaf5dce0b9f67817" title="IPv4 protocol.">pcpp::IPv4</a> or <a class="el" href="namespacepcpp.html#aab30bccb509b8fcf2fea7d4db3b46046" title="IPv6 protocol.">pcpp::IPv6</a>) </dd></dl>
 
 <p>Implemented in <a class="el" href="classpcpp_1_1_i_p_reassembly_1_1_i_pv6_packet_key.html#a2e3ca09df591869d9e204f8ccefc8faa">pcpp::IPReassembly::IPv6PacketKey</a>, and <a class="el" href="classpcpp_1_1_i_p_reassembly_1_1_i_pv4_packet_key.html#a648d77caabe742dedd7878b87a1ef4b5">pcpp::IPReassembly::IPv4PacketKey</a>.</p>
 
@@ -235,7 +210,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_p_reassembly.html">IPReassembly</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_p_reassembly_1_1_packet_key.html">PacketKey</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:43 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

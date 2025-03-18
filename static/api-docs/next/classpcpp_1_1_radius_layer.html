@@ -113,7 +113,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a24b8e066bb934019f838f226eff2e96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac72d091251c369a023c45e4c6078f05e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_radius_layer.html#ac72d091251c369a023c45e4c6078f05e">RadiusLayer</a> (uint8_t code, uint8_t id, const std::string &amp;authenticator)</td></tr>
 <tr class="separator:ac72d091251c369a023c45e4c6078f05e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d784ecbff0f458d4fde6c5e78cf0dba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_radius_layer.html#a2d784ecbff0f458d4fde6c5e78cf0dba">~RadiusLayer</a> () override=default</td></tr>
+<tr class="memitem:a2d784ecbff0f458d4fde6c5e78cf0dba"><td class="memItemLeft" align="right" valign="top"><a id="a2d784ecbff0f458d4fde6c5e78cf0dba"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_radius_layer.html#a2d784ecbff0f458d4fde6c5e78cf0dba">~RadiusLayer</a> () override=default</td></tr>
+<tr class="memdesc:a2d784ecbff0f458d4fde6c5e78cf0dba"><td class="mdescLeft">&#160;</td><td class="mdescRight">A d'tor for this layer, currently does nothing. <br /></td></tr>
 <tr class="separator:a2d784ecbff0f458d4fde6c5e78cf0dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d17e0b0e7361497ebb90177600b9e56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpcpp_1_1radius__header.html">radius_header</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_radius_layer.html#a1d17e0b0e7361497ebb90177600b9e56">getRadiusHeader</a> () const</td></tr>
 <tr class="separator:a1d17e0b0e7361497ebb90177600b9e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,9 +141,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0f0fe6d64980e46a48f1e14aa0257e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a065f03207d26517391d1bbcea1af5749"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_radius_layer.html#a065f03207d26517391d1bbcea1af5749">getHeaderLen</a> () const override</td></tr>
 <tr class="separator:a065f03207d26517391d1bbcea1af5749"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e9f693473ad9af94273de5f70b8692b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_radius_layer.html#a8e9f693473ad9af94273de5f70b8692b">parseNextLayer</a> () override</td></tr>
+<tr class="memitem:a8e9f693473ad9af94273de5f70b8692b"><td class="memItemLeft" align="right" valign="top"><a id="a8e9f693473ad9af94273de5f70b8692b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_radius_layer.html#a8e9f693473ad9af94273de5f70b8692b">parseNextLayer</a> () override</td></tr>
+<tr class="memdesc:a8e9f693473ad9af94273de5f70b8692b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does nothing for this layer, RADIUS is always last. <br /></td></tr>
 <tr class="separator:a8e9f693473ad9af94273de5f70b8692b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af99729383e2690b69241e6e2c6228546"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_radius_layer.html#af99729383e2690b69241e6e2c6228546">computeCalculateFields</a> () override</td></tr>
+<tr class="memitem:af99729383e2690b69241e6e2c6228546"><td class="memItemLeft" align="right" valign="top"><a id="af99729383e2690b69241e6e2c6228546"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_radius_layer.html#af99729383e2690b69241e6e2c6228546">computeCalculateFields</a> () override</td></tr>
+<tr class="memdesc:af99729383e2690b69241e6e2c6228546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate and store the value of <a class="el" href="structpcpp_1_1radius__header.html#a8e58d8ed1ec3e9a5edae83302b2ef1e5" title="RADIUS message length.">radius_header::length</a> according to the layer size. <br /></td></tr>
 <tr class="separator:af99729383e2690b69241e6e2c6228546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d2c62758da47fcd271d715fbd1d9c29"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_radius_layer.html#a7d2c62758da47fcd271d715fbd1d9c29">toString</a> () const override</td></tr>
 <tr class="separator:a7d2c62758da47fcd271d715fbd1d9c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -333,32 +339,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2d784ecbff0f458d4fde6c5e78cf0dba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d784ecbff0f458d4fde6c5e78cf0dba">&#9670;&nbsp;</a></span>~RadiusLayer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::RadiusLayer::~RadiusLayer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>A d'tor for this layer, currently does nothing </p>
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6cc9497abf345423bb8a5e386b426631"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6cc9497abf345423bb8a5e386b426631">&#9670;&nbsp;</a></span>addAttribute()</h2>
@@ -421,34 +401,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af99729383e2690b69241e6e2c6228546"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af99729383e2690b69241e6e2c6228546">&#9670;&nbsp;</a></span>computeCalculateFields()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::RadiusLayer::computeCalculateFields </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Calculate and store the value of <a class="el" href="structpcpp_1_1radius__header.html#a8e58d8ed1ec3e9a5edae83302b2ef1e5">radius_header::length</a> according to the layer size </p>
-
-<p>Implements <a class="el" href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">pcpp::Layer</a>.</p>
-
-</div>
-</div>
 <a id="a07b3660bd98ea613c7c74fcb9eec90ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a07b3660bd98ea613c7c74fcb9eec90ec">&#9670;&nbsp;</a></span>getAttribute()</h2>
 
@@ -506,7 +458,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>A hex string representation of the <a class="el" href="structpcpp_1_1radius__header.html#a12baeb5d7b2bcece1043131e1515663b">radius_header::authenticator</a> byte array value </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A hex string representation of the <a class="el" href="structpcpp_1_1radius__header.html#a12baeb5d7b2bcece1043131e1515663b" title="Used to authenticate the reply from the RADIUS server and to encrypt passwords.">radius_header::authenticator</a> byte array value </dd></dl>
 
 </div>
 </div>
@@ -550,7 +502,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The size written in <a class="el" href="structpcpp_1_1radius__header.html#a8e58d8ed1ec3e9a5edae83302b2ef1e5">radius_header::length</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The size written in <a class="el" href="structpcpp_1_1radius__header.html#a8e58d8ed1ec3e9a5edae83302b2ef1e5" title="RADIUS message length.">radius_header::length</a> </dd></dl>
 
 <p>Implements <a class="el" href="classpcpp_1_1_layer.html#acabe7022caf7cf5fabcad4b5a0eec832">pcpp::Layer</a>.</p>
 
@@ -744,34 +696,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8e9f693473ad9af94273de5f70b8692b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e9f693473ad9af94273de5f70b8692b">&#9670;&nbsp;</a></span>parseNextLayer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::RadiusLayer::parseNextLayer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Does nothing for this layer, RADIUS is always last </p>
-
-<p>Implements <a class="el" href="classpcpp_1_1_layer.html#a6a8410015168a7fa42a7d71ac5b86673">pcpp::Layer</a>.</p>
-
-</div>
-</div>
 <a id="a0f0fe6d64980e46a48f1e14aa0257e3f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0f0fe6d64980e46a48f1e14aa0257e3f">&#9670;&nbsp;</a></span>removeAllAttributes()</h2>
 
@@ -830,7 +754,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Setter for <a class="el" href="structpcpp_1_1radius__header.html#a12baeb5d7b2bcece1043131e1515663b">radius_header::authenticator</a> </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Setter for <a class="el" href="structpcpp_1_1radius__header.html#a12baeb5d7b2bcece1043131e1515663b" title="Used to authenticate the reply from the RADIUS server and to encrypt passwords.">radius_header::authenticator</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">authValue</td><td>A hex string representing the requested authenticator value </td></tr>
   </table>
@@ -873,7 +797,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_radius_layer.html">RadiusLayer</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:44 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

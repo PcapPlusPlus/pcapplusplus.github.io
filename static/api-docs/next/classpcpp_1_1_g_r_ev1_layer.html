@@ -287,8 +287,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Calculate the following fields:</p><ul>
-<li><a class="el" href="structpcpp_1_1gre1__header.html#a727e2a2affa2696a0177475af78a196b">gre1_header::payloadLength</a></li>
-<li><a class="el" href="structpcpp_1_1gre__basic__header.html#ad64488dc863563820f7541dfdb4ee910">gre_basic_header::protocol</a> </li>
+<li><a class="el" href="structpcpp_1_1gre1__header.html#a727e2a2affa2696a0177475af78a196b" title="Size of the payload not including the GRE header.">gre1_header::payloadLength</a></li>
+<li><a class="el" href="structpcpp_1_1gre__basic__header.html#ad64488dc863563820f7541dfdb4ee910" title="Protocol type of the next layer.">gre_basic_header::protocol</a> </li>
 </ul>
 
 <p>Implements <a class="el" href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">pcpp::Layer</a>.</p>
@@ -342,7 +342,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get a pointer to the basic GREv1 header containing all non-optional fields. Notice this points directly to the data, so every change will change the actual packet data. Also please notice that changing the set bits (<a class="el" href="structpcpp_1_1gre__basic__header.html#a3fbc55bc0bdf9653f08939fe8a6c8312">gre_basic_header::strictSourceRouteBit</a>, <a class="el" href="structpcpp_1_1gre__basic__header.html#a2189d1d50075e911ce84e27a5767c2b9">gre_basic_header::sequenceNumBit</a>, <a class="el" href="structpcpp_1_1gre__basic__header.html#a7d2e844896f8a4d14f07626891b67f8d">gre_basic_header::keyBit</a>, <a class="el" href="structpcpp_1_1gre__basic__header.html#a58ed856400ff63a74bd1f6b4d08ea6c8">gre_basic_header::routingBit</a>, <a class="el" href="structpcpp_1_1gre__basic__header.html#af12d9d73804241f3e31a70cfb8afc5af">gre_basic_header::checksumBit</a>, <a class="el" href="structpcpp_1_1gre__basic__header.html#a659ab94bc214af116075f48367c0ae25">gre_basic_header::ackSequenceNumBit</a>) without using the proper set or unset methods (such as <a class="el" href="classpcpp_1_1_g_r_ev1_layer.html#a5adce7bc05cabe68f5680b44fb5a0d12">setAcknowledgmentNum()</a>, <a class="el" href="classpcpp_1_1_gre_layer.html#a2557f69597006f086a09ba54a80a5ea7">unsetSequenceNumber()</a>, etc.) may result to wrong calculation of header length or illegal GREv1 packet and to some really weird bugs. Please avoid doing so </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="structpcpp_1_1gre1__header.html">gre1_header</a> </dd></dl>
+<p>Get a pointer to the basic GREv1 header containing all non-optional fields. Notice this points directly to the data, so every change will change the actual packet data. Also please notice that changing the set bits (<a class="el" href="structpcpp_1_1gre__basic__header.html#a3fbc55bc0bdf9653f08939fe8a6c8312" title="Strict source routing bit (GRE v0 only)">gre_basic_header::strictSourceRouteBit</a>, <a class="el" href="structpcpp_1_1gre__basic__header.html#a2189d1d50075e911ce84e27a5767c2b9" title="Set if sequence number exists.">gre_basic_header::sequenceNumBit</a>, <a class="el" href="structpcpp_1_1gre__basic__header.html#a7d2e844896f8a4d14f07626891b67f8d" title="Set if key exists.">gre_basic_header::keyBit</a>, <a class="el" href="structpcpp_1_1gre__basic__header.html#a58ed856400ff63a74bd1f6b4d08ea6c8" title="Set if routing exists (GRE v0 only)">gre_basic_header::routingBit</a>, <a class="el" href="structpcpp_1_1gre__basic__header.html#af12d9d73804241f3e31a70cfb8afc5af" title="Set if checksum exists (GRE v0 only)">gre_basic_header::checksumBit</a>, <a class="el" href="structpcpp_1_1gre__basic__header.html#a659ab94bc214af116075f48367c0ae25" title="Set if acknowledgment number is set (GRE v1 only)">gre_basic_header::ackSequenceNumBit</a>) without using the proper set or unset methods (such as <a class="el" href="classpcpp_1_1_g_r_ev1_layer.html#a5adce7bc05cabe68f5680b44fb5a0d12">setAcknowledgmentNum()</a>, <a class="el" href="classpcpp_1_1_gre_layer.html#a2557f69597006f086a09ba54a80a5ea7">unsetSequenceNumber()</a>, etc.) may result to wrong calculation of header length or illegal GREv1 packet and to some really weird bugs. Please avoid doing so </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="structpcpp_1_1gre1__header.html">gre1_header</a> </dd></dl>
 
 </div>
 </div>
@@ -405,7 +405,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set acknowledgment (ack) number value. If field already exists (<a class="el" href="structpcpp_1_1gre__basic__header.html#a659ab94bc214af116075f48367c0ae25">gre_basic_header::ackSequenceNumBit</a> is set) then only the new value is set. If field doesn't exist it will be added to the layer, <a class="el" href="structpcpp_1_1gre__basic__header.html#a659ab94bc214af116075f48367c0ae25">gre_basic_header::ackSequenceNumBit</a> will be set and the new value will be set </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Set acknowledgment (ack) number value. If field already exists (<a class="el" href="structpcpp_1_1gre__basic__header.html#a659ab94bc214af116075f48367c0ae25" title="Set if acknowledgment number is set (GRE v1 only)">gre_basic_header::ackSequenceNumBit</a> is set) then only the new value is set. If field doesn't exist it will be added to the layer, <a class="el" href="structpcpp_1_1gre__basic__header.html#a659ab94bc214af116075f48367c0ae25" title="Set if acknowledgment number is set (GRE v1 only)">gre_basic_header::ackSequenceNumBit</a> will be set and the new value will be set </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ackNum</td><td>The ack number value to set </td></tr>
   </table>
@@ -467,7 +467,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_g_r_ev1_layer.html">GREv1Layer</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:43 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

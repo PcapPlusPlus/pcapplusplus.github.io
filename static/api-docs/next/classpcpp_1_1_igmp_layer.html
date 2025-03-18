@@ -121,7 +121,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7667561a5380f9ed3698a90b36c358a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5da5a6be635a67d4d1de24b74a0a6db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_igmp_layer.html#aa5da5a6be635a67d4d1de24b74a0a6db">setType</a> (<a class="el" href="namespacepcpp.html#ad59f90b2f755654b75205c3e06fb2bd8">IgmpType</a> type)</td></tr>
 <tr class="separator:aa5da5a6be635a67d4d1de24b74a0a6db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4aaed0580825ed726ad903bf7eaa23ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_igmp_layer.html#a4aaed0580825ed726ad903bf7eaa23ff">parseNextLayer</a> () override</td></tr>
+<tr class="memitem:a4aaed0580825ed726ad903bf7eaa23ff"><td class="memItemLeft" align="right" valign="top"><a id="a4aaed0580825ed726ad903bf7eaa23ff"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_igmp_layer.html#a4aaed0580825ed726ad903bf7eaa23ff">parseNextLayer</a> () override</td></tr>
+<tr class="memdesc:a4aaed0580825ed726ad903bf7eaa23ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does nothing for this layer (IGMP layer is always last) <br /></td></tr>
 <tr class="separator:a4aaed0580825ed726ad903bf7eaa23ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47afc4761e3836096797186fb9eb889d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_igmp_layer.html#a47afc4761e3836096797186fb9eb889d">getHeaderLen</a> () const override</td></tr>
 <tr class="separator:a47afc4761e3836096797186fb9eb889d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,7 +156,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a019a07d6f9d8fc7eb233e61826b11964 inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c5d6f648a6878895a714004f937830d inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a4c5d6f648a6878895a714004f937830d">getDataPtr</a> (size_t offset=0) const override</td></tr>
 <tr class="separator:a4c5d6f648a6878895a714004f937830d inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abea112176d18e896f48214ca7accac71 inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">computeCalculateFields</a> ()=0</td></tr>
+<tr class="memitem:abea112176d18e896f48214ca7accac71 inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top"><a id="abea112176d18e896f48214ca7accac71"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">computeCalculateFields</a> ()=0</td></tr>
+<tr class="memdesc:abea112176d18e896f48214ca7accac71 inherit pub_methods_classpcpp_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each layer can compute field values automatically using this method. This is an abstract method. <br /></td></tr>
 <tr class="separator:abea112176d18e896f48214ca7accac71 inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -187,7 +191,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The IPv4 multicast address stored <a class="el" href="structpcpp_1_1igmp__header.html#a7cb1aa348a4ce129e4c34f05afd9bf95">igmp_header::groupAddress</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The IPv4 multicast address stored <a class="el" href="structpcpp_1_1igmp__header.html#a7cb1aa348a4ce129e4c34f05afd9bf95" title="This is the multicast address being queried when sending a Group-Specific or Group-and-Source-Specifi...">igmp_header::groupAddress</a> </dd></dl>
 
 </div>
 </div>
@@ -290,11 +294,11 @@ Static Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The IGMP raw data (byte stream) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>Raw data length </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">isQuery</td><td>Return true if IGMP message type is <a class="el" href="namespacepcpp.html#ad59f90b2f755654b75205c3e06fb2bd8af7e7ff46f1373500c65709de204764ab">IgmpType_MembershipQuery</a> and false otherwise </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">isQuery</td><td>Return true if IGMP message type is <a class="el" href="namespacepcpp.html#ad59f90b2f755654b75205c3e06fb2bd8af7e7ff46f1373500c65709de204764ab" title="IGMP Membership Query.">IgmpType_MembershipQuery</a> and false otherwise </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>One of the values <a class="el" href="namespacepcpp.html#ab73aa665e280eb57ccd96422de561c91">IGMPv1</a>, <a class="el" href="namespacepcpp.html#a554228f63e4a107a34cb36c34187a634">IGMPv2</a>, <a class="el" href="namespacepcpp.html#a58575f3fdb517e7b7e8126f159ff57e3">IGMPv3</a> according to detected IGMP version or <a class="el" href="namespacepcpp.html#ad94e3dd833f818889f676d2352eac829">UnknownProtocol</a> if couldn't detect IGMP version </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>One of the values <a class="el" href="namespacepcpp.html#ab73aa665e280eb57ccd96422de561c91" title="IGMPv1 protocol.">IGMPv1</a>, <a class="el" href="namespacepcpp.html#a554228f63e4a107a34cb36c34187a634" title="IGMPv2 protocol.">IGMPv2</a>, <a class="el" href="namespacepcpp.html#a58575f3fdb517e7b7e8126f159ff57e3" title="IGMPv3 protocol.">IGMPv3</a> according to detected IGMP version or <a class="el" href="namespacepcpp.html#ad94e3dd833f818889f676d2352eac829" title="Unknown protocol (or unsupported by PcapPlusPlus)">UnknownProtocol</a> if couldn't detect IGMP version </dd></dl>
 
 </div>
 </div>
@@ -340,35 +344,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>IGMP type set in <a class="el" href="structpcpp_1_1igmp__header.html#a38773a7e9464e7e366ec07b73cfbfdd2">igmp_header::type</a> as <a class="el" href="namespacepcpp.html#ad59f90b2f755654b75205c3e06fb2bd8">IgmpType</a> enum. Notice that if <a class="el" href="structpcpp_1_1igmp__header.html#a38773a7e9464e7e366ec07b73cfbfdd2">igmp_header::type</a> contains a value that doesn't appear in the <a class="el" href="namespacepcpp.html#ad59f90b2f755654b75205c3e06fb2bd8">IgmpType</a> enum, <a class="el" href="namespacepcpp.html#ad59f90b2f755654b75205c3e06fb2bd8a521b2cf2cf22d4f523c9aa8e0003d58d">IgmpType_Unknown</a> will be returned </dd></dl>
-
-</div>
-</div>
-<a id="a4aaed0580825ed726ad903bf7eaa23ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4aaed0580825ed726ad903bf7eaa23ff">&#9670;&nbsp;</a></span>parseNextLayer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::IgmpLayer::parseNextLayer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Does nothing for this layer (IGMP layer is always last) </p>
-
-<p>Implements <a class="el" href="classpcpp_1_1_layer.html#a6a8410015168a7fa42a7d71ac5b86673">pcpp::Layer</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>IGMP type set in <a class="el" href="structpcpp_1_1igmp__header.html#a38773a7e9464e7e366ec07b73cfbfdd2" title="Indicates the message type. The enum for message type is pcpp::IgmpType.">igmp_header::type</a> as <a class="el" href="namespacepcpp.html#ad59f90b2f755654b75205c3e06fb2bd8" title="IGMP message types.">IgmpType</a> enum. Notice that if <a class="el" href="structpcpp_1_1igmp__header.html#a38773a7e9464e7e366ec07b73cfbfdd2" title="Indicates the message type. The enum for message type is pcpp::IgmpType.">igmp_header::type</a> contains a value that doesn't appear in the <a class="el" href="namespacepcpp.html#ad59f90b2f755654b75205c3e06fb2bd8" title="IGMP message types.">IgmpType</a> enum, <a class="el" href="namespacepcpp.html#ad59f90b2f755654b75205c3e06fb2bd8a521b2cf2cf22d4f523c9aa8e0003d58d" title="Unknown message type.">IgmpType_Unknown</a> will be returned </dd></dl>
 
 </div>
 </div>
@@ -411,7 +387,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set IGMP type (will be written to <a class="el" href="structpcpp_1_1igmp__header.html#a38773a7e9464e7e366ec07b73cfbfdd2">igmp_header::type</a> field) </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Set IGMP type (will be written to <a class="el" href="structpcpp_1_1igmp__header.html#a38773a7e9464e7e366ec07b73cfbfdd2" title="Indicates the message type. The enum for message type is pcpp::IgmpType.">igmp_header::type</a> field) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>The type to set </td></tr>
   </table>
@@ -454,7 +430,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_igmp_layer.html">IgmpLayer</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:43 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

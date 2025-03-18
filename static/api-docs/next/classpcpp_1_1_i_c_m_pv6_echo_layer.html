@@ -111,6 +111,7 @@ Public Types</h2></td></tr>
 <tr class="memitem:ae1b917c24096885c06e3a88bd436120a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_c_m_pv6_echo_layer.html#ae1b917c24096885c06e3a88bd436120a">ICMPv6EchoType</a> { <a class="el" href="classpcpp_1_1_i_c_m_pv6_echo_layer.html#ae1b917c24096885c06e3a88bd436120aabe40186d2556b417f9a05d99f998566f">REQUEST</a>
 , <a class="el" href="classpcpp_1_1_i_c_m_pv6_echo_layer.html#ae1b917c24096885c06e3a88bd436120aace978e869b381638e90571d6d615c4cc">REPLY</a>
  }</td></tr>
+<tr class="memdesc:ae1b917c24096885c06e3a88bd436120a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enum representing ICMPv6 echo message types.  <a href="classpcpp_1_1_i_c_m_pv6_echo_layer.html#ae1b917c24096885c06e3a88bd436120a">More...</a><br /></td></tr>
 <tr class="separator:ae1b917c24096885c06e3a88bd436120a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -142,11 +143,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9bdaf078e61123ddc64d9f72e79975bd inherit pub_methods_classpcpp_1_1_icmp_v6_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbcf733c9f7db5d432a05f9ba4b31cd0 inherit pub_methods_classpcpp_1_1_icmp_v6_layer"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_icmp_v6_layer.html#afbcf733c9f7db5d432a05f9ba4b31cd0">getChecksum</a> () const</td></tr>
 <tr class="separator:afbcf733c9f7db5d432a05f9ba4b31cd0 inherit pub_methods_classpcpp_1_1_icmp_v6_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3b4b61c0414c54a247097d150717d1f inherit pub_methods_classpcpp_1_1_icmp_v6_layer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_icmp_v6_layer.html#ae3b4b61c0414c54a247097d150717d1f">parseNextLayer</a> () override</td></tr>
+<tr class="memitem:ae3b4b61c0414c54a247097d150717d1f inherit pub_methods_classpcpp_1_1_icmp_v6_layer"><td class="memItemLeft" align="right" valign="top"><a id="ae3b4b61c0414c54a247097d150717d1f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_icmp_v6_layer.html#ae3b4b61c0414c54a247097d150717d1f">parseNextLayer</a> () override</td></tr>
+<tr class="memdesc:ae3b4b61c0414c54a247097d150717d1f inherit pub_methods_classpcpp_1_1_icmp_v6_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does nothing for this layer. ICMPv6 is the last layer. <br /></td></tr>
 <tr class="separator:ae3b4b61c0414c54a247097d150717d1f inherit pub_methods_classpcpp_1_1_icmp_v6_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f4cbd82aeb0ee0d2fb517c6a9d78cd0 inherit pub_methods_classpcpp_1_1_icmp_v6_layer"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_icmp_v6_layer.html#a2f4cbd82aeb0ee0d2fb517c6a9d78cd0">getHeaderLen</a> () const override</td></tr>
 <tr class="separator:a2f4cbd82aeb0ee0d2fb517c6a9d78cd0 inherit pub_methods_classpcpp_1_1_icmp_v6_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dc435d2a698a4a3e5d0c7ca33bb5f98 inherit pub_methods_classpcpp_1_1_icmp_v6_layer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_icmp_v6_layer.html#a3dc435d2a698a4a3e5d0c7ca33bb5f98">computeCalculateFields</a> () override</td></tr>
+<tr class="memitem:a3dc435d2a698a4a3e5d0c7ca33bb5f98 inherit pub_methods_classpcpp_1_1_icmp_v6_layer"><td class="memItemLeft" align="right" valign="top"><a id="a3dc435d2a698a4a3e5d0c7ca33bb5f98"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_icmp_v6_layer.html#a3dc435d2a698a4a3e5d0c7ca33bb5f98">computeCalculateFields</a> () override</td></tr>
+<tr class="memdesc:a3dc435d2a698a4a3e5d0c7ca33bb5f98 inherit pub_methods_classpcpp_1_1_icmp_v6_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate ICMPv6 checksum field. <br /></td></tr>
 <tr class="separator:a3dc435d2a698a4a3e5d0c7ca33bb5f98 inherit pub_methods_classpcpp_1_1_icmp_v6_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad0a9f1b628170c107d95412c8260174 inherit pub_methods_classpcpp_1_1_icmp_v6_layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_icmp_v6_layer.html#aad0a9f1b628170c107d95412c8260174">getOsiModelLayer</a> () const override</td></tr>
 <tr class="separator:aad0a9f1b628170c107d95412c8260174 inherit pub_methods_classpcpp_1_1_icmp_v6_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,11 +201,12 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>An enum representing ICMPv6 echo message types </p>
+
+<p>An enum representing ICMPv6 echo message types. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae1b917c24096885c06e3a88bd436120aabe40186d2556b417f9a05d99f998566f"></a>REQUEST&#160;</td><td class="fielddoc"><p>Echo Request Type </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae1b917c24096885c06e3a88bd436120aabe40186d2556b417f9a05d99f998566f"></a>REQUEST&#160;</td><td class="fielddoc"><p>Echo Request Type. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae1b917c24096885c06e3a88bd436120aace978e869b381638e90571d6d615c4cc"></a>REPLY&#160;</td><td class="fielddoc"><p>Echo Reply Type </p>
+<tr><td class="fieldname"><a id="ae1b917c24096885c06e3a88bd436120aace978e869b381638e90571d6d615c4cc"></a>REPLY&#160;</td><td class="fielddoc"><p>Echo Reply Type. </p>
 </td></tr>
 </table>
 
@@ -443,7 +449,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_c_m_pv6_echo_layer.html">ICMPv6EchoLayer</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:43 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
