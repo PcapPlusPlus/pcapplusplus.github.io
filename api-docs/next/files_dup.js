@@ -17,7 +17,10 @@ var files_dup =
       [ "BgpRouteRefreshMessageLayer", "classpcpp_1_1_bgp_route_refresh_message_layer.html", "classpcpp_1_1_bgp_route_refresh_message_layer" ],
       [ "bgp_route_refresh_message", "structpcpp_1_1_bgp_route_refresh_message_layer_1_1bgp__route__refresh__message.html", "structpcpp_1_1_bgp_route_refresh_message_layer_1_1bgp__route__refresh__message" ]
     ] ],
-    [ "CotpLayer.h", "_cotp_layer_8h_source.html", null ],
+    [ "CotpLayer.h", "_cotp_layer_8h.html", [
+      [ "cotphdr", "structpcpp_1_1cotphdr.html", "structpcpp_1_1cotphdr" ],
+      [ "CotpLayer", "classpcpp_1_1_cotp_layer.html", "classpcpp_1_1_cotp_layer" ]
+    ] ],
     [ "DeprecationUtils.h", "_deprecation_utils_8h.html", null ],
     [ "Device.h", "_device_8h.html", "_device_8h" ],
     [ "DeviceUtils.h", "_device_utils_8h.html", null ],
@@ -134,6 +137,7 @@ var files_dup =
       [ "NtpLayer", "classpcpp_1_1_ntp_layer.html", "classpcpp_1_1_ntp_layer" ]
     ] ],
     [ "NullLoopbackLayer.h", "_null_loopback_layer_8h.html", "_null_loopback_layer_8h" ],
+    [ "ObjectPool.h", "_object_pool_8h_source.html", null ],
     [ "OUILookup.h", "_o_u_i_lookup_8h.html", [
       [ "OUILookup", "classpcpp_1_1_o_u_i_lookup.html", "classpcpp_1_1_o_u_i_lookup" ]
     ] ],

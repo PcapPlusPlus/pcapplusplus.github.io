@@ -53,6 +53,7 @@ var NAVTREEINDEX0 =
 "_asn1_codec_8h_source.html":[4,0,1],
 "_bgp_layer_8h.html":[4,0,2],
 "_bgp_layer_8h_source.html":[4,0,2],
+"_cotp_layer_8h.html":[4,0,3],
 "_cotp_layer_8h_source.html":[4,0,3],
 "_deprecation_utils_8h.html":[4,0,4],
 "_deprecation_utils_8h_source.html":[4,0,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "_dhcp_v6_layer_8h.html#a7ac6ea66237371473bd095e2b1465735a10d1669b5504600bd1eb9a49c8107b44":[4,0,8,5,23],
 "_dhcp_v6_layer_8h.html#a7ac6ea66237371473bd095e2b1465735a1647e1250d55e7a2d737e394cbd62b76":[4,0,8,5,21],
 "_dhcp_v6_layer_8h.html#a7ac6ea66237371473bd095e2b1465735a19faa2e41eb8eb1d2fb0a06172efd081":[4,0,8,5,38],
-"_dhcp_v6_layer_8h.html#a7ac6ea66237371473bd095e2b1465735a1f2603dc32826a314f935f5c86c96b01":[4,0,8,5,47],
-"_dhcp_v6_layer_8h.html#a7ac6ea66237371473bd095e2b1465735a268ccf8a005ab5672c1c4096a262a2cf":[4,0,8,5,48]
+"_dhcp_v6_layer_8h.html#a7ac6ea66237371473bd095e2b1465735a1f2603dc32826a314f935f5c86c96b01":[4,0,8,5,47]
 };

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['linuxsocket_6901',['LinuxSocket',['../classpcpp_1_1_linux_nic_information_socket.html#a01722c01a7fb72295efbfc5e8aa27723',1,'pcpp::LinuxNicInformationSocket']]],
-  ['logprinter_6902',['LogPrinter',['../classpcpp_1_1_logger.html#ad45f39ab462f7c7506cd27ab9a1ba260',1,'pcpp::Logger']]]
+  ['linuxsocket_6958',['LinuxSocket',['../classpcpp_1_1_linux_nic_information_socket.html#a01722c01a7fb72295efbfc5e8aa27723',1,'pcpp::LinuxNicInformationSocket']]],
+  ['logprinter_6959',['LogPrinter',['../classpcpp_1_1_logger.html#af0fd32b6d106cb3eeff8c0338593ae56',1,'pcpp::Logger']]]
 ];

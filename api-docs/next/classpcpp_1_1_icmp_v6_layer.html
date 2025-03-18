@@ -123,11 +123,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9bdaf078e61123ddc64d9f72e79975bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbcf733c9f7db5d432a05f9ba4b31cd0"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_icmp_v6_layer.html#afbcf733c9f7db5d432a05f9ba4b31cd0">getChecksum</a> () const</td></tr>
 <tr class="separator:afbcf733c9f7db5d432a05f9ba4b31cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3b4b61c0414c54a247097d150717d1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_icmp_v6_layer.html#ae3b4b61c0414c54a247097d150717d1f">parseNextLayer</a> () override</td></tr>
+<tr class="memitem:ae3b4b61c0414c54a247097d150717d1f"><td class="memItemLeft" align="right" valign="top"><a id="ae3b4b61c0414c54a247097d150717d1f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_icmp_v6_layer.html#ae3b4b61c0414c54a247097d150717d1f">parseNextLayer</a> () override</td></tr>
+<tr class="memdesc:ae3b4b61c0414c54a247097d150717d1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does nothing for this layer. ICMPv6 is the last layer. <br /></td></tr>
 <tr class="separator:ae3b4b61c0414c54a247097d150717d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f4cbd82aeb0ee0d2fb517c6a9d78cd0"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_icmp_v6_layer.html#a2f4cbd82aeb0ee0d2fb517c6a9d78cd0">getHeaderLen</a> () const override</td></tr>
 <tr class="separator:a2f4cbd82aeb0ee0d2fb517c6a9d78cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dc435d2a698a4a3e5d0c7ca33bb5f98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_icmp_v6_layer.html#a3dc435d2a698a4a3e5d0c7ca33bb5f98">computeCalculateFields</a> () override</td></tr>
+<tr class="memitem:a3dc435d2a698a4a3e5d0c7ca33bb5f98"><td class="memItemLeft" align="right" valign="top"><a id="a3dc435d2a698a4a3e5d0c7ca33bb5f98"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_icmp_v6_layer.html#a3dc435d2a698a4a3e5d0c7ca33bb5f98">computeCalculateFields</a> () override</td></tr>
+<tr class="memdesc:a3dc435d2a698a4a3e5d0c7ca33bb5f98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate ICMPv6 checksum field. <br /></td></tr>
 <tr class="separator:a3dc435d2a698a4a3e5d0c7ca33bb5f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad0a9f1b628170c107d95412c8260174"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_icmp_v6_layer.html#aad0a9f1b628170c107d95412c8260174">getOsiModelLayer</a> () const override</td></tr>
 <tr class="separator:aad0a9f1b628170c107d95412c8260174"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,34 +278,6 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3dc435d2a698a4a3e5d0c7ca33bb5f98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3dc435d2a698a4a3e5d0c7ca33bb5f98">&#9670;&nbsp;</a></span>computeCalculateFields()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::IcmpV6Layer::computeCalculateFields </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Calculate ICMPv6 checksum field </p>
-
-<p>Implements <a class="el" href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">pcpp::Layer</a>.</p>
-
-</div>
-</div>
 <a id="afbcf733c9f7db5d432a05f9ba4b31cd0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afbcf733c9f7db5d432a05f9ba4b31cd0">&#9670;&nbsp;</a></span>getChecksum()</h2>
 
@@ -503,34 +479,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae3b4b61c0414c54a247097d150717d1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3b4b61c0414c54a247097d150717d1f">&#9670;&nbsp;</a></span>parseNextLayer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::IcmpV6Layer::parseNextLayer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Does nothing for this layer. ICMPv6 is the last layer. </p>
-
-<p>Implements <a class="el" href="classpcpp_1_1_layer.html#a6a8410015168a7fa42a7d71ac5b86673">pcpp::Layer</a>.</p>
-
-</div>
-</div>
 <a id="ab5b8cf0ebbd1417453ec33a6fbd779ee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5b8cf0ebbd1417453ec33a6fbd779ee">&#9670;&nbsp;</a></span>toString()</h2>
 
@@ -567,7 +515,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_icmp_v6_layer.html">IcmpV6Layer</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:43 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

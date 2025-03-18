@@ -184,11 +184,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad8bf786e4e820138e07eb1a242d7af20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a523b41db73c4105c0d9627cd2b02294d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dns_layer.html#a523b41db73c4105c0d9627cd2b02294d">removeAdditionalRecord</a> (<a class="el" href="classpcpp_1_1_dns_resource.html">DnsResource</a> *additionalRecordToRemove)</td></tr>
 <tr class="separator:a523b41db73c4105c0d9627cd2b02294d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab627b59fa753737f4fd8f61a961f1c3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dns_layer.html#ab627b59fa753737f4fd8f61a961f1c3b">parseNextLayer</a> () override</td></tr>
+<tr class="memitem:ab627b59fa753737f4fd8f61a961f1c3b"><td class="memItemLeft" align="right" valign="top"><a id="ab627b59fa753737f4fd8f61a961f1c3b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dns_layer.html#ab627b59fa753737f4fd8f61a961f1c3b">parseNextLayer</a> () override</td></tr>
+<tr class="memdesc:ab627b59fa753737f4fd8f61a961f1c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does nothing for this layer (<a class="el" href="classpcpp_1_1_dns_layer.html">DnsLayer</a> is always last) <br /></td></tr>
 <tr class="separator:ab627b59fa753737f4fd8f61a961f1c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a133cb88fd6984bdc4a48a60c143f2ff7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dns_layer.html#a133cb88fd6984bdc4a48a60c143f2ff7">getHeaderLen</a> () const override</td></tr>
 <tr class="separator:a133cb88fd6984bdc4a48a60c143f2ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73c2d8737c0dd6593def4bedcefc0003"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dns_layer.html#a73c2d8737c0dd6593def4bedcefc0003">computeCalculateFields</a> () override</td></tr>
+<tr class="memitem:a73c2d8737c0dd6593def4bedcefc0003"><td class="memItemLeft" align="right" valign="top"><a id="a73c2d8737c0dd6593def4bedcefc0003"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dns_layer.html#a73c2d8737c0dd6593def4bedcefc0003">computeCalculateFields</a> () override</td></tr>
+<tr class="memdesc:a73c2d8737c0dd6593def4bedcefc0003"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does nothing for this layer. <br /></td></tr>
 <tr class="separator:a73c2d8737c0dd6593def4bedcefc0003"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6baa949f6174f120cb2c911ac77fcb92"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dns_layer.html#a6baa949f6174f120cb2c911ac77fcb92">toString</a> () const override</td></tr>
 <tr class="separator:a6baa949f6174f120cb2c911ac77fcb92"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -690,36 +694,6 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created DNS query or nullptr if query could not be created (an appropriate error log message will be printed in this case) </dd></dl>
-
-</div>
-</div>
-<a id="a73c2d8737c0dd6593def4bedcefc0003"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73c2d8737c0dd6593def4bedcefc0003">&#9670;&nbsp;</a></span>computeCalculateFields()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::DnsLayer::computeCalculateFields </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Does nothing for this layer </p>
-
-<p>Implements <a class="el" href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">pcpp::Layer</a>.</p>
-
-<p>Reimplemented in <a class="el" href="classpcpp_1_1_dns_over_tcp_layer.html#a4f92e090e4a7cf024a4690d39eda04c0">pcpp::DnsOverTcpLayer</a>.</p>
 
 </div>
 </div>
@@ -1294,34 +1268,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab627b59fa753737f4fd8f61a961f1c3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab627b59fa753737f4fd8f61a961f1c3b">&#9670;&nbsp;</a></span>parseNextLayer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::DnsLayer::parseNextLayer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Does nothing for this layer (<a class="el" href="classpcpp_1_1_dns_layer.html">DnsLayer</a> is always last) </p>
-
-<p>Implements <a class="el" href="classpcpp_1_1_layer.html#a6a8410015168a7fa42a7d71ac5b86673">pcpp::Layer</a>.</p>
-
-</div>
-</div>
 <a id="ad8bf786e4e820138e07eb1a242d7af20"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad8bf786e4e820138e07eb1a242d7af20">&#9670;&nbsp;</a></span>removeAdditionalRecord() <span class="overload">[1/2]</span></h2>
 
@@ -1600,7 +1546,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_dns_layer.html">DnsLayer</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:43 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

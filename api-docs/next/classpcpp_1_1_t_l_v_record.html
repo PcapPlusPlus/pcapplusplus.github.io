@@ -99,6 +99,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_t_l_v_record.html',''); 
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_t_l_v_record_1_1_t_l_v_raw_data.html">TLVRawData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A struct representing the TLV construct.  <a href="structpcpp_1_1_t_l_v_record_1_1_t_l_v_raw_data.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -107,7 +108,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a026522df3430ba5cc60f03c1a41aceb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06c65d738332174555360bf0fcf79752"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a06c65d738332174555360bf0fcf79752">TLVRecord</a> (const <a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a> &amp;other)</td></tr>
 <tr class="separator:a06c65d738332174555360bf0fcf79752"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a233ff1535e95b15b514731033579d148"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a233ff1535e95b15b514731033579d148">~TLVRecord</a> ()=default</td></tr>
+<tr class="memitem:a233ff1535e95b15b514731033579d148"><td class="memItemLeft" align="right" valign="top"><a id="a233ff1535e95b15b514731033579d148"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a233ff1535e95b15b514731033579d148">~TLVRecord</a> ()=default</td></tr>
+<tr class="memdesc:a233ff1535e95b15b514731033579d148"><td class="mdescLeft">&#160;</td><td class="mdescRight">A d'tor for this class, currently does nothing. <br /></td></tr>
 <tr class="separator:a233ff1535e95b15b514731033579d148"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc60806af9572d14483ed3b961579a60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#afc60806af9572d14483ed3b961579a60">assign</a> (uint8_t *recordRawData)</td></tr>
 <tr class="separator:afc60806af9572d14483ed3b961579a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,7 +130,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac19ebe875b28350a38b555f2fe12d865"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cef912b3e79835e782e64e7947e4aa2"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#a3cef912b3e79835e782e64e7947e4aa2">getRecordBasePtr</a> () const</td></tr>
 <tr class="separator:a3cef912b3e79835e782e64e7947e4aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae083ae0b87a8a0f4fd097a52b7dd41fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#ae083ae0b87a8a0f4fd097a52b7dd41fa">purgeRecordData</a> ()</td></tr>
+<tr class="memitem:ae083ae0b87a8a0f4fd097a52b7dd41fa"><td class="memItemLeft" align="right" valign="top"><a id="ae083ae0b87a8a0f4fd097a52b7dd41fa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#ae083ae0b87a8a0f4fd097a52b7dd41fa">purgeRecordData</a> ()</td></tr>
+<tr class="memdesc:ae083ae0b87a8a0f4fd097a52b7dd41fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the memory of the TLV record raw data. <br /></td></tr>
 <tr class="separator:ae083ae0b87a8a0f4fd097a52b7dd41fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac69de0f3ed861718067b2ab81629c1d5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ac69de0f3ed861718067b2ab81629c1d5"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_t_l_v_record.html#ac69de0f3ed861718067b2ab81629c1d5">getValueAs</a> (size_t offset=0) const</td></tr>
@@ -216,34 +221,6 @@ template&lt;typename TRecType , typename TRecLen &gt; </div>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a233ff1535e95b15b514731033579d148"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a233ff1535e95b15b514731033579d148">&#9670;&nbsp;</a></span>~TLVRecord()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TRecType , typename TRecLen &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classpcpp_1_1_t_l_v_record.html">pcpp::TLVRecord</a>&lt; TRecType, TRecLen &gt;::~<a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>A d'tor for this class, currently does nothing </p>
 
 </div>
 </div>
@@ -670,34 +647,6 @@ template&lt;typename TRecType , typename TRecLen &gt; </div>
 
 </div>
 </div>
-<a id="ae083ae0b87a8a0f4fd097a52b7dd41fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae083ae0b87a8a0f4fd097a52b7dd41fa">&#9670;&nbsp;</a></span>purgeRecordData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TRecType , typename TRecLen &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classpcpp_1_1_t_l_v_record.html">pcpp::TLVRecord</a>&lt; TRecType, TRecLen &gt;::purgeRecordData </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Free the memory of the TLV record raw data </p>
-
-</div>
-</div>
 <a id="a2d7906d1980f8101d5312966193bf9bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2d7906d1980f8101d5312966193bf9bd">&#9670;&nbsp;</a></span>setValue()</h2>
 
@@ -752,7 +701,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:44 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

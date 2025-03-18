@@ -137,12 +137,12 @@ Namespaces</h2></td></tr>
 <li>When a packet arrives, it is first classified to a certain TCP connection</li>
 <li>Then it is classified to a certain side of the TCP connection</li>
 <li>Then the <a class="el" href="classpcpp_1_1_tcp_reassembly.html">pcpp::TcpReassembly</a> logic tries to understand if the data in this packet is the expected data (sequence-wise) and if it's new (e.g isn't a retransmission).</li>
-<li>If the packet data matches these criteria a callback is being invoked. This callback is supplied by the user in the creation of the <a class="el" href="classpcpp_1_1_tcp_reassembly.html">pcpp::TcpReassembly</a> instance. This callback contains the new data (of course), but also information about the connection (5-tuple, 4-byte hash key describing the connection, etc.) and also a pointer to a "user
-  cookie", meaning a pointer to a structure provided by the user during the creation of the <a class="el" href="classpcpp_1_1_tcp_reassembly.html">pcpp::TcpReassembly</a> instance.</li>
+<li>If the packet data matches these criteria a callback is being invoked. This callback is supplied by the user in the creation of the <a class="el" href="classpcpp_1_1_tcp_reassembly.html">pcpp::TcpReassembly</a> instance. This callback contains the new data (of course), but also information about the connection (5-tuple, 4-byte hash key describing the connection, etc.) and also a pointer to a "user cookie", meaning a pointer to a structure provided by the user during the creation of the <a class="el" href="classpcpp_1_1_tcp_reassembly.html">pcpp::TcpReassembly</a> instance.</li>
 <li>If the data in this packet isn't new, it's being ignored</li>
 <li>If the data in this packet isn't expected (meaning this packet came out-of-order), then the data is being queued internally and will be sent to the user when its turn arrives (meaning, after the data before arrives).</li>
 <li>If the missing data doesn't arrive until a new message from the other side of the connection arrives or until the connection ends - this will be considered as missing data and the queued data will be sent to the user, but the string "[X bytes missing]" will be added to the message sent in the callback.</li>
-<li><a class="el" href="classpcpp_1_1_tcp_reassembly.html">pcpp::TcpReassembly</a> supports 2 more callbacks - one is invoked when a new TCP connection is first seen and the other when it's ended (either by a FIN/RST packet or manually by the user). Both of these callbacks contain data about the connection (5-tuple, 4-byte hash key describing the connection, etc.) and also a pointer to a "user cookie", meaning a pointer to a structure provided by the user during the creation of the <a class="el" href="classpcpp_1_1_tcp_reassembly.html">pcpp::TcpReassembly</a> instance. The end connection callback also provides the reason for closing it ("naturally" or manually).</li>
+<li><a class="el" href="classpcpp_1_1_tcp_reassembly.html">pcpp::TcpReassembly</a> supports 2 more callbacks - one is invoked when a new TCP connection is first seen and the other when it's ended (either by a FIN/RST packet or manually by the user). Both of these callbacks contain data about the connection (5-tuple, 4-byte hash key describing the connection, etc.) and also a pointer to a "user
+  cookie", meaning a pointer to a structure provided by the user during the creation of the <a class="el" href="classpcpp_1_1_tcp_reassembly.html">pcpp::TcpReassembly</a> instance. The end connection callback also provides the reason for closing it ("naturally" or manually).</li>
 </ul>
 <p><b>Basic Usage and APIs:</b></p><ul>
 <li><a class="el" href="classpcpp_1_1_tcp_reassembly.html">pcpp::TcpReassembly</a> c'tor - Create an instance, provide the callbacks and the user cookie to the instance</li>
@@ -169,7 +169,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_tcp_reassembly_8h.html">TcpReassembly.h</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:55 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:43 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -2,6 +2,8 @@ var annotated_dup =
 [
     [ "pcpp", "namespacepcpp.html", [
       [ "internal", null, [
+        [ "LogContext", "classpcpp_1_1internal_1_1_log_context.html", "classpcpp_1_1internal_1_1_log_context" ],
+        [ "DynamicObjectPool", "classpcpp_1_1internal_1_1_dynamic_object_pool.html", "classpcpp_1_1internal_1_1_dynamic_object_pool" ],
         [ "Copier", "structpcpp_1_1internal_1_1_copier.html", null ],
         [ "Copier< T, typename std::enable_if< std::is_polymorphic< T >::value >::type >", "structpcpp_1_1internal_1_1_copier_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__polymoe27fb9c89d58dc63857240a0734df6f3.html", null ],
         [ "PcapHandle", "classpcpp_1_1internal_1_1_pcap_handle.html", "classpcpp_1_1internal_1_1_pcap_handle" ],
@@ -14,6 +16,7 @@ var annotated_dup =
       [ "IPv4Network", "classpcpp_1_1_i_pv4_network.html", "classpcpp_1_1_i_pv4_network" ],
       [ "IPv6Network", "classpcpp_1_1_i_pv6_network.html", "classpcpp_1_1_i_pv6_network" ],
       [ "IPNetwork", "classpcpp_1_1_i_p_network.html", "classpcpp_1_1_i_p_network" ],
+      [ "LogSource", "structpcpp_1_1_log_source.html", "structpcpp_1_1_log_source" ],
       [ "Logger", "classpcpp_1_1_logger.html", "classpcpp_1_1_logger" ],
       [ "LRUList", "classpcpp_1_1_l_r_u_list.html", "classpcpp_1_1_l_r_u_list" ],
       [ "MacAddress", "classpcpp_1_1_mac_address.html", "classpcpp_1_1_mac_address" ],

@@ -139,11 +139,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2c26e88530a720aa470205737ff66aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a756eacbfe74be65daebef0f214d64f4e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dhcp_v6_layer.html#a756eacbfe74be65daebef0f214d64f4e">removeAllOptions</a> ()</td></tr>
 <tr class="separator:a756eacbfe74be65daebef0f214d64f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69b53037beea9372646abb45873cf981"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dhcp_v6_layer.html#a69b53037beea9372646abb45873cf981">parseNextLayer</a> () override</td></tr>
+<tr class="memitem:a69b53037beea9372646abb45873cf981"><td class="memItemLeft" align="right" valign="top"><a id="a69b53037beea9372646abb45873cf981"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dhcp_v6_layer.html#a69b53037beea9372646abb45873cf981">parseNextLayer</a> () override</td></tr>
+<tr class="memdesc:a69b53037beea9372646abb45873cf981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does nothing for this layer (<a class="el" href="classpcpp_1_1_dhcp_v6_layer.html">DhcpV6Layer</a> is always last) <br /></td></tr>
 <tr class="separator:a69b53037beea9372646abb45873cf981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37d883ebce03e869302b306e447a855f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dhcp_v6_layer.html#a37d883ebce03e869302b306e447a855f">getHeaderLen</a> () const override</td></tr>
 <tr class="separator:a37d883ebce03e869302b306e447a855f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae28e78077efd2e32019dd4e1061944b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dhcp_v6_layer.html#aae28e78077efd2e32019dd4e1061944b">computeCalculateFields</a> () override</td></tr>
+<tr class="memitem:aae28e78077efd2e32019dd4e1061944b"><td class="memItemLeft" align="right" valign="top"><a id="aae28e78077efd2e32019dd4e1061944b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dhcp_v6_layer.html#aae28e78077efd2e32019dd4e1061944b">computeCalculateFields</a> () override</td></tr>
+<tr class="memdesc:aae28e78077efd2e32019dd4e1061944b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does nothing for this layer. <br /></td></tr>
 <tr class="separator:aae28e78077efd2e32019dd4e1061944b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a188893e6b8b25d20287d8b432844142a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dhcp_v6_layer.html#a188893e6b8b25d20287d8b432844142a">toString</a> () const override</td></tr>
 <tr class="separator:a188893e6b8b25d20287d8b432844142a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -364,34 +368,6 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classpcpp_1_1_dhcp_v6_option.html">DhcpV6Option</a> object containing the newly added DHCPv6 option data or logical null (<a class="el" href="classpcpp_1_1_t_l_v_record.html#ac645af1daf82e0062d3c15fe92418801">DhcpV6Option::isNull()</a> == true) if addition failed </dd></dl>
-
-</div>
-</div>
-<a id="aae28e78077efd2e32019dd4e1061944b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae28e78077efd2e32019dd4e1061944b">&#9670;&nbsp;</a></span>computeCalculateFields()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::DhcpV6Layer::computeCalculateFields </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Does nothing for this layer </p>
-
-<p>Implements <a class="el" href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">pcpp::Layer</a>.</p>
 
 </div>
 </div>
@@ -668,34 +644,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a69b53037beea9372646abb45873cf981"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69b53037beea9372646abb45873cf981">&#9670;&nbsp;</a></span>parseNextLayer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::DhcpV6Layer::parseNextLayer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Does nothing for this layer (<a class="el" href="classpcpp_1_1_dhcp_v6_layer.html">DhcpV6Layer</a> is always last) </p>
-
-<p>Implements <a class="el" href="classpcpp_1_1_layer.html#a6a8410015168a7fa42a7d71ac5b86673">pcpp::Layer</a>.</p>
-
-</div>
-</div>
 <a id="a756eacbfe74be65daebef0f214d64f4e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a756eacbfe74be65daebef0f214d64f4e">&#9670;&nbsp;</a></span>removeAllOptions()</h2>
 
@@ -821,7 +769,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_dhcp_v6_layer.html">DhcpV6Layer</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:43 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

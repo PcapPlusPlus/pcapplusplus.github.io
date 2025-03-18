@@ -113,7 +113,9 @@ Inheritance diagram for pcpp::SSHLayer:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aad8dc8bc658fb68c1bf5f7b7170761dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_h_layer.html#aad8dc8bc658fb68c1bf5f7b7170761dc">parseNextLayer</a> () override</td></tr>
 <tr class="separator:aad8dc8bc658fb68c1bf5f7b7170761dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a399d537a00ac41f7cfe754413d3900e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_h_layer.html#a399d537a00ac41f7cfe754413d3900e6">computeCalculateFields</a> () override</td></tr>
+<tr class="memitem:a399d537a00ac41f7cfe754413d3900e6"><td class="memItemLeft" align="right" valign="top"><a id="a399d537a00ac41f7cfe754413d3900e6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_h_layer.html#a399d537a00ac41f7cfe754413d3900e6">computeCalculateFields</a> () override</td></tr>
+<tr class="memdesc:a399d537a00ac41f7cfe754413d3900e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does nothing for this layer. <br /></td></tr>
 <tr class="separator:a399d537a00ac41f7cfe754413d3900e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79b2d8ff19ec750e8335e8950d550a6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_h_layer.html#a79b2d8ff19ec750e8335e8950d550a6d">getOsiModelLayer</a> () const override</td></tr>
 <tr class="separator:a79b2d8ff19ec750e8335e8950d550a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,34 +159,6 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is the base class for the SSH layer. It is an abstract class that cannot be instantiated. It holds some common functionality, but its most important method is <a class="el" href="classpcpp_1_1_s_s_h_layer.html#a6b54ef04e80cdc407b3b169858e2a642">createSSHMessage()</a> which takes raw data and creates an SSH message according to the heuristics described in the <a class="el" href="_s_s_h_layer_8h.html">SSHLayer.h</a> file description </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a399d537a00ac41f7cfe754413d3900e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a399d537a00ac41f7cfe754413d3900e6">&#9670;&nbsp;</a></span>computeCalculateFields()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::SSHLayer::computeCalculateFields </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Does nothing for this layer </p>
-
-<p>Implements <a class="el" href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">pcpp::Layer</a>.</p>
-
-</div>
-</div>
 <a id="a6b54ef04e80cdc407b3b169858e2a642"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6b54ef04e80cdc407b3b169858e2a642">&#9670;&nbsp;</a></span>createSSHMessage()</h2>
 
@@ -349,7 +323,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_s_s_h_layer.html">SSHLayer</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:44 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

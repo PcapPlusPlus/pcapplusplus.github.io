@@ -126,7 +126,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae976fcb7f5de313017356da7ceec23e3 inherit pub_methods_classpcpp_1_1_i_pv6_extension"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4a1868491c4ad09e95a8649c2fad8f0 inherit pub_methods_classpcpp_1_1_i_pv6_extension"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_i_pv6_extension.html#a6b445a68c4313bfabd44a6f57de03379">IPv6ExtensionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_extension.html#ae4a1868491c4ad09e95a8649c2fad8f0">getExtensionType</a> () const</td></tr>
 <tr class="separator:ae4a1868491c4ad09e95a8649c2fad8f0 inherit pub_methods_classpcpp_1_1_i_pv6_extension"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8925687d2b0eeae8fbdcf8999e7c60c2 inherit pub_methods_classpcpp_1_1_i_pv6_extension"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_extension.html#a8925687d2b0eeae8fbdcf8999e7c60c2">~IPv6Extension</a> ()</td></tr>
+<tr class="memitem:a8925687d2b0eeae8fbdcf8999e7c60c2 inherit pub_methods_classpcpp_1_1_i_pv6_extension"><td class="memItemLeft" align="right" valign="top"><a id="a8925687d2b0eeae8fbdcf8999e7c60c2"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_extension.html#a8925687d2b0eeae8fbdcf8999e7c60c2">~IPv6Extension</a> ()</td></tr>
+<tr class="memdesc:a8925687d2b0eeae8fbdcf8999e7c60c2 inherit pub_methods_classpcpp_1_1_i_pv6_extension"><td class="mdescLeft">&#160;</td><td class="mdescRight">A destructor for this class. <br /></td></tr>
 <tr class="separator:a8925687d2b0eeae8fbdcf8999e7c60c2 inherit pub_methods_classpcpp_1_1_i_pv6_extension"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c978a65986486e476edc3d2eb5e927b inherit pub_methods_classpcpp_1_1_i_pv6_extension"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_i_pv6_extension.html">IPv6Extension</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_extension.html#a9c978a65986486e476edc3d2eb5e927b">getNextHeader</a> () const</td></tr>
 <tr class="separator:a9c978a65986486e476edc3d2eb5e927b inherit pub_methods_classpcpp_1_1_i_pv6_extension"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,6 +146,7 @@ Additional Inherited Members</h2></td></tr>
 , <a class="el" href="classpcpp_1_1_i_pv6_extension.html#a6b445a68c4313bfabd44a6f57de03379ae3395e712995d3fec2e28e1b2df278db">IPv6ExtensionUnknown</a> = 255
 <br />
  }</td></tr>
+<tr class="memdesc:a6b445a68c4313bfabd44a6f57de03379"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enum representing all supported IPv6 extension types.  <a href="classpcpp_1_1_i_pv6_extension.html#a6b445a68c4313bfabd44a6f57de03379">More...</a><br /></td></tr>
 <tr class="separator:a6b445a68c4313bfabd44a6f57de03379 inherit pub_types_classpcpp_1_1_i_pv6_extension"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -188,8 +191,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>A c'tor for creating a new IPv6 routing extension object not bounded to a packet. Useful for adding new extensions to an IPv6 layer with <a class="el" href="classpcpp_1_1_i_pv6_layer.html#adee1cdbf42f6003d3c748ae51afe4d44">IPv6Layer::addExtension()</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">routingType</td><td>Routing type value (will be written to <a class="el" href="structpcpp_1_1_i_pv6_routing_header_1_1ipv6__routing__header.html#a7c4579b3c40ab7180339addc210d0898">ipv6_routing_header::routingType</a> field) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">segmentsLeft</td><td>Segments left value (will be written to <a class="el" href="structpcpp_1_1_i_pv6_routing_header_1_1ipv6__routing__header.html#a0f695f69f4ef95239ac86212a8fcd4dd">ipv6_routing_header::segmentsLeft</a> field) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">routingType</td><td>Routing type value (will be written to <a class="el" href="structpcpp_1_1_i_pv6_routing_header_1_1ipv6__routing__header.html#a7c4579b3c40ab7180339addc210d0898" title="A value representing the routing type.">ipv6_routing_header::routingType</a> field) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">segmentsLeft</td><td>Segments left value (will be written to <a class="el" href="structpcpp_1_1_i_pv6_routing_header_1_1ipv6__routing__header.html#a0f695f69f4ef95239ac86212a8fcd4dd" title="Number of nodes this packet still has to visit before reaching its final destination.">ipv6_routing_header::segmentsLeft</a> field) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">additionalRoutingData</td><td>A pointer to a buffer containing the additional routing data for this extension. Notice this buffer is read-only and its content isn't modified </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">additionalRoutingDataLen</td><td>The length of the additional routing data buffer </td></tr>
   </table>
@@ -292,7 +295,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_pv6_routing_header.html">IPv6RoutingHeader</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:43 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

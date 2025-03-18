@@ -101,6 +101,7 @@ Public Types</h2></td></tr>
 <tr class="memitem:aea5fdf7b5322d1bb8f6fe43b59a9edc0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0">ConnectionEndReason</a> { <a class="el" href="classpcpp_1_1_tcp_reassembly.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a68df28b933182962d50800572b013133">TcpReassemblyConnectionClosedByFIN_RST</a>
 , <a class="el" href="classpcpp_1_1_tcp_reassembly.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9">TcpReassemblyConnectionClosedManually</a>
  }</td></tr>
+<tr class="memdesc:aea5fdf7b5322d1bb8f6fe43b59a9edc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enum for connection end reasons.  <a href="classpcpp_1_1_tcp_reassembly.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0">More...</a><br /></td></tr>
 <tr class="separator:aea5fdf7b5322d1bb8f6fe43b59a9edc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9604d95c87c7023962d2250cd28d5177"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177">ReassemblyStatus</a> { <br />
 &#160;&#160;<a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177a9f25906863b5f67225ae77f81347fd62">TcpMessageHandled</a>
@@ -116,8 +117,11 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177a3380cc0fe3cc4979fa2c5c4a9a658921">Error_PacketDoesNotMatchFlow</a>
 <br />
  }</td></tr>
+<tr class="memdesc:a9604d95c87c7023962d2250cd28d5177"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enum for providing reassembly status for each processed packet.  <a href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177">More...</a><br /></td></tr>
 <tr class="separator:a9604d95c87c7023962d2250cd28d5177"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5c4a693c518ed630d82bbc137e635a6"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; uint32_t, <a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#ad5c4a693c518ed630d82bbc137e635a6">ConnectionInfoList</a></td></tr>
+<tr class="memitem:ad5c4a693c518ed630d82bbc137e635a6"><td class="memItemLeft" align="right" valign="top"><a id="ad5c4a693c518ed630d82bbc137e635a6"></a>
+typedef std::unordered_map&lt; uint32_t, <a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#ad5c4a693c518ed630d82bbc137e635a6">ConnectionInfoList</a></td></tr>
+<tr class="memdesc:ad5c4a693c518ed630d82bbc137e635a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type for storing the connection information. <br /></td></tr>
 <tr class="separator:ad5c4a693c518ed630d82bbc137e635a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9c41ac805585a4e3cd826c8aec371ca"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#ad9c41ac805585a4e3cd826c8aec371ca">OnTcpMessageReady</a>) (int8_t side, const <a class="el" href="classpcpp_1_1_tcp_stream_data.html">TcpStreamData</a> &amp;tcpData, void *userCookie)</td></tr>
 <tr class="separator:ad9c41ac805585a4e3cd826c8aec371ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,21 +152,6 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class containing the TCP reassembly logic. Please refer to the documentation at the top of <a class="el" href="_tcp_reassembly_8h.html">TcpReassembly.h</a> for understanding how to use this class </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="ad5c4a693c518ed630d82bbc137e635a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5c4a693c518ed630d82bbc137e635a6">&#9670;&nbsp;</a></span>ConnectionInfoList</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::unordered_map&lt;uint32_t, <a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a>&gt; <a class="el" href="classpcpp_1_1_tcp_reassembly.html#ad5c4a693c518ed630d82bbc137e635a6">pcpp::TcpReassembly::ConnectionInfoList</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The type for storing the connection information </p>
-
-</div>
-</div>
 <a id="afa7c398942772e262aee596d0b63a52d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa7c398942772e262aee596d0b63a52d">&#9670;&nbsp;</a></span>OnTcpConnectionEnd</h2>
 
@@ -240,11 +229,12 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>An enum for connection end reasons </p>
+
+<p>An enum for connection end reasons. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aea5fdf7b5322d1bb8f6fe43b59a9edc0a68df28b933182962d50800572b013133"></a>TcpReassemblyConnectionClosedByFIN_RST&#160;</td><td class="fielddoc"><p>Connection ended because of FIN or RST packet </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aea5fdf7b5322d1bb8f6fe43b59a9edc0a68df28b933182962d50800572b013133"></a>TcpReassemblyConnectionClosedByFIN_RST&#160;</td><td class="fielddoc"><p>Connection ended because of FIN or RST packet. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9"></a>TcpReassemblyConnectionClosedManually&#160;</td><td class="fielddoc"><p>Connection ended manually by the user </p>
+<tr><td class="fieldname"><a id="aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9"></a>TcpReassemblyConnectionClosedManually&#160;</td><td class="fielddoc"><p>Connection ended manually by the user. </p>
 </td></tr>
 </table>
 
@@ -261,7 +251,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>An enum for providing reassembly status for each processed packet </p>
+
+<p>An enum for providing reassembly status for each processed packet. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9604d95c87c7023962d2250cd28d5177a9f25906863b5f67225ae77f81347fd62"></a>TcpMessageHandled&#160;</td><td class="fielddoc"><p>The processed packet contains valid TCP payload, and its payload is processed by <code>OnMessageReadyCallback</code> callback function. The packet may be:</p><ol type="1">
 <li>An in-order TCP packet, meaning <code>packet_sequence == sequence_expected</code>. Note if there's any buffered out-of-order packet waiting for this packet, their associated callbacks are called in this <code>reassemblePacket</code> call.</li>
@@ -371,7 +362,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Close all open connections manually. This method will cause the <a class="el" href="classpcpp_1_1_tcp_reassembly.html#afa7c398942772e262aee596d0b63a52d">TcpReassembly::OnTcpConnectionEnd</a> to be invoked for each connection with a reason of <a class="el" href="classpcpp_1_1_tcp_reassembly.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9">TcpReassembly::TcpReassemblyConnectionClosedManually</a> </p>
+<p>Close all open connections manually. This method will cause the <a class="el" href="classpcpp_1_1_tcp_reassembly.html#afa7c398942772e262aee596d0b63a52d">TcpReassembly::OnTcpConnectionEnd</a> to be invoked for each connection with a reason of <a class="el" href="classpcpp_1_1_tcp_reassembly.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9" title="Connection ended manually by the user.">TcpReassembly::TcpReassemblyConnectionClosedManually</a> </p>
 
 </div>
 </div>
@@ -390,7 +381,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Close a connection manually. If the connection doesn't exist or already closed an error log is printed. This method will cause the <a class="el" href="classpcpp_1_1_tcp_reassembly.html#afa7c398942772e262aee596d0b63a52d">TcpReassembly::OnTcpConnectionEnd</a> to be invoked with a reason of <a class="el" href="classpcpp_1_1_tcp_reassembly.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9">TcpReassembly::TcpReassemblyConnectionClosedManually</a> </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Close a connection manually. If the connection doesn't exist or already closed an error log is printed. This method will cause the <a class="el" href="classpcpp_1_1_tcp_reassembly.html#afa7c398942772e262aee596d0b63a52d">TcpReassembly::OnTcpConnectionEnd</a> to be invoked with a reason of <a class="el" href="classpcpp_1_1_tcp_reassembly.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0a7a8b5b4c5a9074468ec706916b74bfb9" title="Connection ended manually by the user.">TcpReassembly::TcpReassemblyConnectionClosedManually</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">flowKey</td><td>A 4-byte hash key representing the connection. Can be taken from a <a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a> instance </td></tr>
   </table>
@@ -496,7 +487,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A enum of <code><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177">TcpReassembly::ReassemblyStatus</a></code>, indicating status of TCP reassembly </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A enum of <code><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177" title="An enum for providing reassembly status for each processed packet.">TcpReassembly::ReassemblyStatus</a></code>, indicating status of TCP reassembly </dd></dl>
 
 </div>
 </div>
@@ -521,7 +512,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A enum of <code><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177">TcpReassembly::ReassemblyStatus</a></code>, indicating status of TCP reassembly </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A enum of <code><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177" title="An enum for providing reassembly status for each processed packet.">TcpReassembly::ReassemblyStatus</a></code>, indicating status of TCP reassembly </dd></dl>
 
 </div>
 </div>
@@ -531,7 +522,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_tcp_reassembly.html">TcpReassembly</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:44 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

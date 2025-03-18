@@ -161,7 +161,7 @@ Public Member Functions</h2></td></tr>
 <p>A c'tor for building IPv4 options which their value is a byte array. The <a class="el" href="classpcpp_1_1_i_pv4_option.html">IPv4Option</a> object can be later retrieved by calling <a class="el" href="classpcpp_1_1_i_pv4_option_builder.html#ac5f9fee29c811dd951f65e717bd18b31">build()</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">optionType</td><td>IPv4 option type </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">optionValue</td><td>A buffer containing the option value. This buffer is read-only and isn't modified in any way. For option types <a class="el" href="namespacepcpp.html#a4ac8e7540b72db061b0078f1e2ca2b68a5730c6990b55c67a401892b5a0f76f06">IPV4OPT_NOP</a> and <a class="el" href="namespacepcpp.html#a4ac8e7540b72db061b0078f1e2ca2b68a734e77c03392a1bbf101ba9a09fff2a1">IPV4OPT_EndOfOptionsList</a> this parameter is ignored (expected to be nullptr) as these option types don't contain any data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">optionValue</td><td>A buffer containing the option value. This buffer is read-only and isn't modified in any way. For option types <a class="el" href="namespacepcpp.html#a4ac8e7540b72db061b0078f1e2ca2b68a5730c6990b55c67a401892b5a0f76f06" title="No Operation.">IPV4OPT_NOP</a> and <a class="el" href="namespacepcpp.html#a4ac8e7540b72db061b0078f1e2ca2b68a734e77c03392a1bbf101ba9a09fff2a1" title="End of Options List.">IPV4OPT_EndOfOptionsList</a> this parameter is ignored (expected to be nullptr) as these option types don't contain any data </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">optionValueLen</td><td>Option value length in bytes </td></tr>
   </table>
   </dd>
@@ -237,7 +237,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A c'tor for building IPv4 options which their value is a list of IPv4 addresses, for example: <a class="el" href="namespacepcpp.html#a4ac8e7540b72db061b0078f1e2ca2b68afe07927ed68f096b794425d396d3cc50">IPV4OPT_RecordRoute</a>, <a class="el" href="namespacepcpp.html#a4ac8e7540b72db061b0078f1e2ca2b68ae542288e706da4062872975d7a126ab0">IPV4OPT_StrictSourceRoute</a>, <a class="el" href="namespacepcpp.html#a4ac8e7540b72db061b0078f1e2ca2b68a4a89e19c9e3e20847149686506190eb0">IPV4OPT_LooseSourceRoute</a>. The <a class="el" href="classpcpp_1_1_i_pv4_option.html">IPv4Option</a> object can be later retrieved by calling <a class="el" href="classpcpp_1_1_i_pv4_option_builder.html#ac5f9fee29c811dd951f65e717bd18b31">build()</a> </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A c'tor for building IPv4 options which their value is a list of IPv4 addresses, for example: <a class="el" href="namespacepcpp.html#a4ac8e7540b72db061b0078f1e2ca2b68afe07927ed68f096b794425d396d3cc50" title="Record Route.">IPV4OPT_RecordRoute</a>, <a class="el" href="namespacepcpp.html#a4ac8e7540b72db061b0078f1e2ca2b68ae542288e706da4062872975d7a126ab0" title="Strict Source Route.">IPV4OPT_StrictSourceRoute</a>, <a class="el" href="namespacepcpp.html#a4ac8e7540b72db061b0078f1e2ca2b68a4a89e19c9e3e20847149686506190eb0" title="Loose Source Route.">IPV4OPT_LooseSourceRoute</a>. The <a class="el" href="classpcpp_1_1_i_pv4_option.html">IPv4Option</a> object can be later retrieved by calling <a class="el" href="classpcpp_1_1_i_pv4_option_builder.html#ac5f9fee29c811dd951f65e717bd18b31">build()</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">optionType</td><td>IPv4 option type </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ipList</td><td>A vector of IPv4 addresses that will be used as the option value </td></tr>
@@ -270,7 +270,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A c'tor for building IPv4 timestamp option (<a class="el" href="namespacepcpp.html#a4ac8e7540b72db061b0078f1e2ca2b68aa77e6e483eb6b730d83c8e4193c6ae13">IPV4OPT_Timestamp</a>). The <a class="el" href="classpcpp_1_1_i_pv4_option.html">IPv4Option</a> object can be later retrieved by calling <a class="el" href="classpcpp_1_1_i_pv4_option_builder.html#ac5f9fee29c811dd951f65e717bd18b31">build()</a> </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A c'tor for building IPv4 timestamp option (<a class="el" href="namespacepcpp.html#a4ac8e7540b72db061b0078f1e2ca2b68aa77e6e483eb6b730d83c8e4193c6ae13" title="Timestamp.">IPV4OPT_Timestamp</a>). The <a class="el" href="classpcpp_1_1_i_pv4_option.html">IPv4Option</a> object can be later retrieved by calling <a class="el" href="classpcpp_1_1_i_pv4_option_builder.html#ac5f9fee29c811dd951f65e717bd18b31">build()</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">timestampValue</td><td>The timestamp value to build the IPv4 option with </td></tr>
   </table>
@@ -304,7 +304,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_pv4_option_builder.html">IPv4OptionBuilder</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:43 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

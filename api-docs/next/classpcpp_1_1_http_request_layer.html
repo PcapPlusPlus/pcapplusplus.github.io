@@ -124,6 +124,7 @@ Public Types</h2></td></tr>
 , <a class="el" href="classpcpp_1_1_http_request_layer.html#a71d3731486391e8356628dae79023fd6a55c6c7eda87b115fad966750d9ad5b84">HttpMethodUnknown</a>
 <br />
  }</td></tr>
+<tr class="memdesc:a71d3731486391e8356628dae79023fd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP request methods.  <a href="classpcpp_1_1_http_request_layer.html#a71d3731486391e8356628dae79023fd6">More...</a><br /></td></tr>
 <tr class="separator:a71d3731486391e8356628dae79023fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -172,11 +173,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9712764bb961cc7485335d1d30920232 inherit pub_methods_classpcpp_1_1_text_based_protocol_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05cf5d4c1c076b719f7b3ad0b11efdfa inherit pub_methods_classpcpp_1_1_text_based_protocol_message"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_text_based_protocol_message.html#a05cf5d4c1c076b719f7b3ad0b11efdfa">isHeaderComplete</a> () const</td></tr>
 <tr class="separator:a05cf5d4c1c076b719f7b3ad0b11efdfa inherit pub_methods_classpcpp_1_1_text_based_protocol_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42d1e9c827b864b795015c3160815690 inherit pub_methods_classpcpp_1_1_text_based_protocol_message"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_text_based_protocol_message.html#a42d1e9c827b864b795015c3160815690">parseNextLayer</a> () override</td></tr>
+<tr class="memitem:a42d1e9c827b864b795015c3160815690 inherit pub_methods_classpcpp_1_1_text_based_protocol_message"><td class="memItemLeft" align="right" valign="top"><a id="a42d1e9c827b864b795015c3160815690"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_text_based_protocol_message.html#a42d1e9c827b864b795015c3160815690">parseNextLayer</a> () override</td></tr>
+<tr class="memdesc:a42d1e9c827b864b795015c3160815690 inherit pub_methods_classpcpp_1_1_text_based_protocol_message"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently set only <a class="el" href="classpcpp_1_1_payload_layer.html">PayloadLayer</a> for the rest of the data. <br /></td></tr>
 <tr class="separator:a42d1e9c827b864b795015c3160815690 inherit pub_methods_classpcpp_1_1_text_based_protocol_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2629330620bbfaf692934dc7db11a0ae inherit pub_methods_classpcpp_1_1_text_based_protocol_message"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_text_based_protocol_message.html#a2629330620bbfaf692934dc7db11a0ae">getHeaderLen</a> () const override</td></tr>
 <tr class="separator:a2629330620bbfaf692934dc7db11a0ae inherit pub_methods_classpcpp_1_1_text_based_protocol_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa54b61f3f13b9528af2400da7a800a21 inherit pub_methods_classpcpp_1_1_text_based_protocol_message"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_text_based_protocol_message.html#aa54b61f3f13b9528af2400da7a800a21">computeCalculateFields</a> () override</td></tr>
+<tr class="memitem:aa54b61f3f13b9528af2400da7a800a21 inherit pub_methods_classpcpp_1_1_text_based_protocol_message"><td class="memItemLeft" align="right" valign="top"><a id="aa54b61f3f13b9528af2400da7a800a21"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_text_based_protocol_message.html#aa54b61f3f13b9528af2400da7a800a21">computeCalculateFields</a> () override</td></tr>
+<tr class="memdesc:aa54b61f3f13b9528af2400da7a800a21 inherit pub_methods_classpcpp_1_1_text_based_protocol_message"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does nothing for this class. <br /></td></tr>
 <tr class="separator:aa54b61f3f13b9528af2400da7a800a21 inherit pub_methods_classpcpp_1_1_text_based_protocol_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classpcpp_1_1_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_layer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td></tr>
 <tr class="memitem:adc5fdf997375b58400a55fdcc3bdff87 inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#adc5fdf997375b58400a55fdcc3bdff87">~Layer</a> () override</td></tr>
@@ -224,27 +229,28 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>HTTP request methods </p>
+
+<p>HTTP request methods. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a71d3731486391e8356628dae79023fd6aca2c0c8c436248769c39cb34739cec5c"></a>HttpGET&#160;</td><td class="fielddoc"><p>GET </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a71d3731486391e8356628dae79023fd6aca2c0c8c436248769c39cb34739cec5c"></a>HttpGET&#160;</td><td class="fielddoc"><p>GET. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a71d3731486391e8356628dae79023fd6a84812d8086233153a0a3157cfc85b4cd"></a>HttpHEAD&#160;</td><td class="fielddoc"><p>HEAD </p>
+<tr><td class="fieldname"><a id="a71d3731486391e8356628dae79023fd6a84812d8086233153a0a3157cfc85b4cd"></a>HttpHEAD&#160;</td><td class="fielddoc"><p>HEAD. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a71d3731486391e8356628dae79023fd6a3f10b07b1a8d6f96654b1ce34b3a889c"></a>HttpPOST&#160;</td><td class="fielddoc"><p>POST </p>
+<tr><td class="fieldname"><a id="a71d3731486391e8356628dae79023fd6a3f10b07b1a8d6f96654b1ce34b3a889c"></a>HttpPOST&#160;</td><td class="fielddoc"><p>POST. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a71d3731486391e8356628dae79023fd6ad115490a4decc52c9c6450ff62744bd2"></a>HttpPUT&#160;</td><td class="fielddoc"><p>PUT </p>
+<tr><td class="fieldname"><a id="a71d3731486391e8356628dae79023fd6ad115490a4decc52c9c6450ff62744bd2"></a>HttpPUT&#160;</td><td class="fielddoc"><p>PUT. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a71d3731486391e8356628dae79023fd6a12498e77411b154593fd29c583f16b68"></a>HttpDELETE&#160;</td><td class="fielddoc"><p>DELETE </p>
+<tr><td class="fieldname"><a id="a71d3731486391e8356628dae79023fd6a12498e77411b154593fd29c583f16b68"></a>HttpDELETE&#160;</td><td class="fielddoc"><p>DELETE. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a71d3731486391e8356628dae79023fd6a582bb6e90af4c09288238261fa67634c"></a>HttpTRACE&#160;</td><td class="fielddoc"><p>TRACE </p>
+<tr><td class="fieldname"><a id="a71d3731486391e8356628dae79023fd6a582bb6e90af4c09288238261fa67634c"></a>HttpTRACE&#160;</td><td class="fielddoc"><p>TRACE. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a71d3731486391e8356628dae79023fd6a5bb6d21991329af5470521159fcebddf"></a>HttpOPTIONS&#160;</td><td class="fielddoc"><p>OPTIONS </p>
+<tr><td class="fieldname"><a id="a71d3731486391e8356628dae79023fd6a5bb6d21991329af5470521159fcebddf"></a>HttpOPTIONS&#160;</td><td class="fielddoc"><p>OPTIONS. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a71d3731486391e8356628dae79023fd6a26f98fe3f9cbb8ee3be09db7c69a3511"></a>HttpCONNECT&#160;</td><td class="fielddoc"><p>CONNECT </p>
+<tr><td class="fieldname"><a id="a71d3731486391e8356628dae79023fd6a26f98fe3f9cbb8ee3be09db7c69a3511"></a>HttpCONNECT&#160;</td><td class="fielddoc"><p>CONNECT. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a71d3731486391e8356628dae79023fd6ab54a5ffede2c843fdfb957763125b022"></a>HttpPATCH&#160;</td><td class="fielddoc"><p>PATCH </p>
+<tr><td class="fieldname"><a id="a71d3731486391e8356628dae79023fd6ab54a5ffede2c843fdfb957763125b022"></a>HttpPATCH&#160;</td><td class="fielddoc"><p>PATCH. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a71d3731486391e8356628dae79023fd6a55c6c7eda87b115fad966750d9ad5b84"></a>HttpMethodUnknown&#160;</td><td class="fielddoc"><p>Unknown HTTP method </p>
+<tr><td class="fieldname"><a id="a71d3731486391e8356628dae79023fd6a55c6c7eda87b115fad966750d9ad5b84"></a>HttpMethodUnknown&#160;</td><td class="fielddoc"><p>Unknown HTTP method. </p>
 </td></tr>
 </table>
 
@@ -470,7 +476,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_http_request_layer.html">HttpRequestLayer</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:43 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -96,85 +96,32 @@ $(document).ready(function(){initNavTree('structpcpp_1_1igmp__header.html',''); 
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a38773a7e9464e7e366ec07b73cfbfdd2"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1igmp__header.html#a38773a7e9464e7e366ec07b73cfbfdd2">type</a></td></tr>
+<tr class="memitem:a38773a7e9464e7e366ec07b73cfbfdd2"><td class="memItemLeft" align="right" valign="top"><a id="a38773a7e9464e7e366ec07b73cfbfdd2"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1igmp__header.html#a38773a7e9464e7e366ec07b73cfbfdd2">type</a></td></tr>
+<tr class="memdesc:a38773a7e9464e7e366ec07b73cfbfdd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the message type. The enum for message type is <a class="el" href="namespacepcpp.html#ad59f90b2f755654b75205c3e06fb2bd8" title="IGMP message types.">pcpp::IgmpType</a>. <br /></td></tr>
 <tr class="separator:a38773a7e9464e7e366ec07b73cfbfdd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f27621294fb1d9a9e0016150c6c4133"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1igmp__header.html#a7f27621294fb1d9a9e0016150c6c4133">maxResponseTime</a></td></tr>
+<tr class="memitem:a7f27621294fb1d9a9e0016150c6c4133"><td class="memItemLeft" align="right" valign="top"><a id="a7f27621294fb1d9a9e0016150c6c4133"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1igmp__header.html#a7f27621294fb1d9a9e0016150c6c4133">maxResponseTime</a></td></tr>
+<tr class="memdesc:a7f27621294fb1d9a9e0016150c6c4133"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the time limit for the corresponding report. The field has a resolution of 100 milliseconds. <br /></td></tr>
 <tr class="separator:a7f27621294fb1d9a9e0016150c6c4133"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46db4b30167d803fa9ef00f510c9a69d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1igmp__header.html#a46db4b30167d803fa9ef00f510c9a69d">checksum</a></td></tr>
+<tr class="memitem:a46db4b30167d803fa9ef00f510c9a69d"><td class="memItemLeft" align="right" valign="top"><a id="a46db4b30167d803fa9ef00f510c9a69d"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1igmp__header.html#a46db4b30167d803fa9ef00f510c9a69d">checksum</a></td></tr>
+<tr class="memdesc:a46db4b30167d803fa9ef00f510c9a69d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the 16-bit one's complement of the one's complement sum of the entire IGMP message. <br /></td></tr>
 <tr class="separator:a46db4b30167d803fa9ef00f510c9a69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cb1aa348a4ce129e4c34f05afd9bf95"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1igmp__header.html#a7cb1aa348a4ce129e4c34f05afd9bf95">groupAddress</a></td></tr>
+<tr class="memitem:a7cb1aa348a4ce129e4c34f05afd9bf95"><td class="memItemLeft" align="right" valign="top"><a id="a7cb1aa348a4ce129e4c34f05afd9bf95"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1igmp__header.html#a7cb1aa348a4ce129e4c34f05afd9bf95">groupAddress</a></td></tr>
+<tr class="memdesc:a7cb1aa348a4ce129e4c34f05afd9bf95"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the multicast address being queried when sending a Group-Specific or Group-and-Source-Specific Query. <br /></td></tr>
 <tr class="separator:a7cb1aa348a4ce129e4c34f05afd9bf95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>IGMPv1 and IGMPv2 basic protocol header </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="a46db4b30167d803fa9ef00f510c9a69d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46db4b30167d803fa9ef00f510c9a69d">&#9670;&nbsp;</a></span>checksum</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t pcpp::igmp_header::checksum</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This is the 16-bit one's complement of the one's complement sum of the entire IGMP message </p>
-
-</div>
-</div>
-<a id="a7cb1aa348a4ce129e4c34f05afd9bf95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cb1aa348a4ce129e4c34f05afd9bf95">&#9670;&nbsp;</a></span>groupAddress</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t pcpp::igmp_header::groupAddress</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This is the multicast address being queried when sending a Group-Specific or Group-and-Source-Specific Query </p>
-
-</div>
-</div>
-<a id="a7f27621294fb1d9a9e0016150c6c4133"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f27621294fb1d9a9e0016150c6c4133">&#9670;&nbsp;</a></span>maxResponseTime</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t pcpp::igmp_header::maxResponseTime</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Specifies the time limit for the corresponding report. The field has a resolution of 100 milliseconds </p>
-
-</div>
-</div>
-<a id="a38773a7e9464e7e366ec07b73cfbfdd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38773a7e9464e7e366ec07b73cfbfdd2">&#9670;&nbsp;</a></span>type</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t pcpp::igmp_header::type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Indicates the message type. The enum for message type is <a class="el" href="namespacepcpp.html#ad59f90b2f755654b75205c3e06fb2bd8">pcpp::IgmpType</a> </p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="structpcpp_1_1igmp__header.html">igmp_header</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:43 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

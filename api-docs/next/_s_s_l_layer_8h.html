@@ -136,34 +136,36 @@ Namespaces</h2></td></tr>
 <li>Alert record type</li>
 <li>Application data record type</li>
 </ul>
-<p>Each record type corresponds to a layer class, and these classes inherit from one base class which is <a class="el" href="classpcpp_1_1_s_s_l_layer.html">pcpp::SSLLayer</a>. The <a class="el" href="classpcpp_1_1_s_s_l_layer.html">pcpp::SSLLayer</a> is an abstract class which cannot be instantiated. Only its 4 derived classes can be instantiated. This means you'll never see a layer of type <a class="el" href="classpcpp_1_1_s_s_l_layer.html">pcpp::SSLLayer</a>, you'll only see the type of the derived classes. A basic class diagram looks like this: </p><pre class="fragment">                                +----------------------------+
-                            +---|     SSLHandshakeLayer      | ===&gt; Handshake record type
-                            |   +----------------------------+
-                            |
-                            |   +----------------------------+
-                            +---|  SSLChangeCipherSpecLayer  | ===&gt; Change cipher spec record type
-                            |   +----------------------------+
-                            |
- +------------+             |   +----------------------------+
- |  SSLLayer  |-------------+---|      SSLAlertLayer         | ===&gt; Alert record type
- | (abstract) |             |   +----------------------------+
- +------------+             |
-                            |   +----------------------------+
-                            +---|   SSLApplicationDataLayer  | ===&gt; Application data record type
-                                +----------------------------+</pre><p>A single packet may include several SSL/TLS records, meaning several layer instances of these types, for example:</p>
-<pre class="fragment">           +--------------------------+
-           |          EthLayer        |
-           +--------------------------+
-           |          IPv4Layer       |
-           +--------------------------+
-           |          TcpLayer        |
-           +--------------------------+
-           |    SSLHandshakeLayer     | \
-           +--------------------------+  \
-           | SSLChangeCipherSpecLayer | -------- 3 SSL/TLS records in the same packet!
-           +--------------------------+  /
-           |    SSLHandshakeLayer     | /
-           +--------------------------+</pre><p><br  />
+<p>Each record type corresponds to a layer class, and these classes inherit from one base class which is <a class="el" href="classpcpp_1_1_s_s_l_layer.html">pcpp::SSLLayer</a>. The <a class="el" href="classpcpp_1_1_s_s_l_layer.html">pcpp::SSLLayer</a> is an abstract class which cannot be instantiated. Only its 4 derived classes can be instantiated. This means you'll never see a layer of type <a class="el" href="classpcpp_1_1_s_s_l_layer.html">pcpp::SSLLayer</a>, you'll only see the type of the derived classes. A basic class diagram looks like this: </p><div class="fragment"><div class="line">                            +----------------------------+</div>
+<div class="line">                        +---|     SSLHandshakeLayer      | ===&gt; Handshake record type</div>
+<div class="line">                        |   +----------------------------+</div>
+<div class="line">                        |</div>
+<div class="line">                        |   +----------------------------+</div>
+<div class="line">                        +---|  SSLChangeCipherSpecLayer  | ===&gt; Change cipher spec record type</div>
+<div class="line">                        |   +----------------------------+</div>
+<div class="line">                        |</div>
+<div class="line">+------------+          |   +----------------------------+</div>
+<div class="line">|  SSLLayer  |----------+---|      SSLAlertLayer         | ===&gt; Alert record type</div>
+<div class="line">| (abstract) |          |   +----------------------------+</div>
+<div class="line">+------------+          |</div>
+<div class="line">                        |   +----------------------------+</div>
+<div class="line">                        +---|   SSLApplicationDataLayer  | ===&gt; Application data record type</div>
+<div class="line">                            +----------------------------+</div>
+</div><!-- fragment --><p>A single packet may include several SSL/TLS records, meaning several layer instances of these types, for example:</p>
+<div class="fragment"><div class="line">+--------------------------+</div>
+<div class="line">|          EthLayer        |</div>
+<div class="line">+--------------------------+</div>
+<div class="line">|          IPv4Layer       |</div>
+<div class="line">+--------------------------+</div>
+<div class="line">|          TcpLayer        |</div>
+<div class="line">+--------------------------+</div>
+<div class="line">|    SSLHandshakeLayer     | --+</div>
+<div class="line">+--------------------------+   |</div>
+<div class="line">| SSLChangeCipherSpecLayer | --+----- 3 SSL/TLS records in the same packet!</div>
+<div class="line">+--------------------------+   |</div>
+<div class="line">|    SSLHandshakeLayer     | --+</div>
+<div class="line">+--------------------------+</div>
+</div><!-- fragment --><p><br  />
 <br  />
 </p>
 <p><b>SSL/TLS Handshake records:</b> <br  />
@@ -182,29 +184,30 @@ Namespaces</h2></td></tr>
 <li>New-session-ticket</li>
 </ul>
 <p>All handshake messages classes inherit from a base abstract class: <a class="el" href="classpcpp_1_1_s_s_l_handshake_message.html">pcpp::SSLHandshakeMessage</a> which cannot be instantiated. Also, all of them reside in <a class="el" href="_s_s_l_handshake_8h.html">SSLHandshake.h</a>. Following is a simple diagram of these classes:</p>
-<pre class="fragment">                                         SSLHandshakeMessage
-                                            |
-+-------------------------------+           |--- SSLClientHelloMessage        ==&gt; Client-hello message
-|       SSLHandshakeLayer       |           |
-+-------------------------------+           |--- SSLServerHelloMessage        ==&gt; Server-hello message
-| -List of SSLHandshakeMessage  |           |
-|     Message1                  |           |---SSLCertificateMessage         ==&gt; Certificate message
-|     Message2                  |           |
-|     ...                       |           |---SSLHelloRequestMessage        ==&gt; Hello-request message
-|                               |           |
-+-------------------------------+           |---SSLServerKeyExchangeMessage   ==&gt; Server-key-exchange message
-                                            |
-                                            |---SSLClientKeyExchangeMessage   ==&gt; Client-key-exchange message
-                                            |
-                                            |---SSLCertificateRequestMessage  ==&gt; Certificate-request message
-                                            |
-                                            |---SSLServerHelloDoneMessage     ==&gt; Server-hello-done message
-                                            |
-                                            |---SSLCertificateVerifyMessage   ==&gt; Certificate-verify message
-                                            |
-                                            |---SSLFinishedMessage            ==&gt; Finished message
-                                            |
-                                            |---SSLNewSessionTicketMessage    ==&gt; New-session-ticket message</pre><p>In addition, for all handshake messages which aren't supported in PcapPlusPlus or for encrypted handshake messages There is another class: <a class="el" href="classpcpp_1_1_s_s_l_unknown_message.html">pcpp::SSLUnknownMessage</a></p>
+<div class="fragment"><div class="line">                                         SSLHandshakeMessage</div>
+<div class="line">                                            |</div>
+<div class="line">+-------------------------------+           |--- SSLClientHelloMessage        ==&gt; Client-hello message</div>
+<div class="line">|       SSLHandshakeLayer       |           |</div>
+<div class="line">+-------------------------------+           |--- SSLServerHelloMessage        ==&gt; Server-hello message</div>
+<div class="line">| -List of SSLHandshakeMessage  |           |</div>
+<div class="line">|     Message1                  |           |---SSLCertificateMessage         ==&gt; Certificate message</div>
+<div class="line">|     Message2                  |           |</div>
+<div class="line">|     ...                       |           |---SSLHelloRequestMessage        ==&gt; Hello-request message</div>
+<div class="line">|                               |           |</div>
+<div class="line">+-------------------------------+           |---SSLServerKeyExchangeMessage   ==&gt; Server-key-exchange message</div>
+<div class="line">                                            |</div>
+<div class="line">                                            |---SSLClientKeyExchangeMessage   ==&gt; Client-key-exchange message</div>
+<div class="line">                                            |</div>
+<div class="line">                                            |---SSLCertificateRequestMessage  ==&gt; Certificate-request message</div>
+<div class="line">                                            |</div>
+<div class="line">                                            |---SSLServerHelloDoneMessage     ==&gt; Server-hello-done message</div>
+<div class="line">                                            |</div>
+<div class="line">                                            |---SSLCertificateVerifyMessage   ==&gt; Certificate-verify message</div>
+<div class="line">                                            |</div>
+<div class="line">                                            |---SSLFinishedMessage            ==&gt; Finished message</div>
+<div class="line">                                            |</div>
+<div class="line">                                            |---SSLNewSessionTicketMessage    ==&gt; New-session-ticket message</div>
+</div><!-- fragment --><p>In addition, for all handshake messages which aren't supported in PcapPlusPlus or for encrypted handshake messages There is another class: <a class="el" href="classpcpp_1_1_s_s_l_unknown_message.html">pcpp::SSLUnknownMessage</a></p>
 <p><br  />
 <br  />
 </p>
@@ -223,7 +226,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_s_s_l_layer_8h.html">SSLLayer.h</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:55 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:43 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

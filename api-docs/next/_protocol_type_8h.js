@@ -43,6 +43,7 @@ var _protocol_type_8h =
     [ "IPSec", "_protocol_type_8h.html#ad14931a6e7ed768f9ba274fa2cd85ae3", null ],
     [ "IPv4", "_protocol_type_8h.html#aa465f388784082dafaf5dce0b9f67817", null ],
     [ "IPv6", "_protocol_type_8h.html#aab30bccb509b8fcf2fea7d4db3b46046", null ],
+    [ "LDAP", "_protocol_type_8h.html#a741fe571bb0b0ec59ac88ee726b39787", null ],
     [ "LLC", "_protocol_type_8h.html#a7b2855f37ecc5f6c1d4971b6cee809d2", null ],
     [ "MPLS", "_protocol_type_8h.html#a2f69fdca66dec264f99da6e3de96345c", null ],
     [ "NFLOG", "_protocol_type_8h.html#afac6cd4f566ffec968466a8c056a79d7", null ],
@@ -61,6 +62,7 @@ var _protocol_type_8h =
     [ "SIPResponse", "_protocol_type_8h.html#aff4d6cf6335201f8e9fc80ec7aedb6a7", null ],
     [ "SLL", "_protocol_type_8h.html#ab7deab0d461579ac6b32b6151c3d6cf3", null ],
     [ "SLL2", "_protocol_type_8h.html#aa46b3308731e536f28b8d85df1a0ef7b", null ],
+    [ "SMTP", "_protocol_type_8h.html#a9ee0377b3496fa32e7b1a5d558cd5417", null ],
     [ "SomeIP", "_protocol_type_8h.html#a6acddf0ad6f4a154aafc0b3094e72185", null ],
     [ "SSH", "_protocol_type_8h.html#a8dc28246e6a15709973f07452cbb403b", null ],
     [ "SSL", "_protocol_type_8h.html#a71041ee0360477d36d480d25ea10dbe4", null ],
@@ -75,5 +77,6 @@ var _protocol_type_8h =
     [ "VRRPv2", "_protocol_type_8h.html#aba129630eb60805019f23f06770c3bed", null ],
     [ "VRRPv3", "_protocol_type_8h.html#a152a22f04cde148b3560aebdf6e2220b", null ],
     [ "VXLAN", "_protocol_type_8h.html#ab8798e89f8c24e040572e6f571ad5c3c", null ],
-    [ "WakeOnLan", "_protocol_type_8h.html#a300fcf81c682b3b401c33df71b114716", null ]
+    [ "WakeOnLan", "_protocol_type_8h.html#a300fcf81c682b3b401c33df71b114716", null ],
+    [ "WireGuard", "_protocol_type_8h.html#ace45e581be5edc1996167933f16413b7", null ]
 ];

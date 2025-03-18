@@ -1,8 +1,8 @@
 var classpcpp_1_1_i_p_address =
 [
-    [ "AddressType", "classpcpp_1_1_i_p_address.html#ac389e5507d75b60d2b0ca939db195231", [
-      [ "IPv4AddressType", "classpcpp_1_1_i_p_address.html#ac389e5507d75b60d2b0ca939db195231a86660b750c5fbdcf8479f5a86727f383", null ],
-      [ "IPv6AddressType", "classpcpp_1_1_i_p_address.html#ac389e5507d75b60d2b0ca939db195231a8629f2dca0a4280cee6679795cc9e838", null ]
+    [ "AddressType", "classpcpp_1_1_i_p_address.html#a1aef9ddd6042732f3faabc55f4f5c0f0", [
+      [ "IPv4AddressType", "classpcpp_1_1_i_p_address.html#a1aef9ddd6042732f3faabc55f4f5c0f0a86660b750c5fbdcf8479f5a86727f383", null ],
+      [ "IPv6AddressType", "classpcpp_1_1_i_p_address.html#a1aef9ddd6042732f3faabc55f4f5c0f0a8629f2dca0a4280cee6679795cc9e838", null ]
     ] ],
     [ "IPAddress", "classpcpp_1_1_i_p_address.html#a0f66006f76b2edbf56adea2499be4d19", null ],
     [ "IPAddress", "classpcpp_1_1_i_p_address.html#a9f7c0805f46aface885aab6adaafac00", null ],

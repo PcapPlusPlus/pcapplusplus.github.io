@@ -125,13 +125,16 @@ Public Types</h2></td></tr>
 , <a class="el" href="classpcpp_1_1_p_p_po_e_layer.html#aa170ba4bb5e03d3ac1dddb45118ed9cba6da6f1ebfe6bc0415acb9cef210d18af">PPPOE_CODE_PADN</a> = 0xd4
 <br />
  }</td></tr>
+<tr class="memdesc:aa170ba4bb5e03d3ac1dddb45118ed9cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">PPPoE possible codes.  <a href="classpcpp_1_1_p_p_po_e_layer.html#aa170ba4bb5e03d3ac1dddb45118ed9cb">More...</a><br /></td></tr>
 <tr class="separator:aa170ba4bb5e03d3ac1dddb45118ed9cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af8eb0e3151849bb73e161ce925d9ec5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpcpp_1_1pppoe__header.html">pppoe_header</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_p_p_po_e_layer.html#af8eb0e3151849bb73e161ce925d9ec5e">getPPPoEHeader</a> () const</td></tr>
 <tr class="separator:af8eb0e3151849bb73e161ce925d9ec5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada38ffe6c5f43e66fb8cb13295106690"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_p_p_po_e_layer.html#ada38ffe6c5f43e66fb8cb13295106690">computeCalculateFields</a> () override</td></tr>
+<tr class="memitem:ada38ffe6c5f43e66fb8cb13295106690"><td class="memItemLeft" align="right" valign="top"><a id="ada38ffe6c5f43e66fb8cb13295106690"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_p_p_po_e_layer.html#ada38ffe6c5f43e66fb8cb13295106690">computeCalculateFields</a> () override</td></tr>
+<tr class="memdesc:ada38ffe6c5f43e66fb8cb13295106690"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate <a class="el" href="structpcpp_1_1pppoe__header.html#a08e5841209e619cc327971361264f02e">pppoe_header::payloadLength</a> field. <br /></td></tr>
 <tr class="separator:ada38ffe6c5f43e66fb8cb13295106690"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a532264ee2b2bc39b5b35010f595a136e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_p_p_po_e_layer.html#a532264ee2b2bc39b5b35010f595a136e">getOsiModelLayer</a> () const override</td></tr>
 <tr class="separator:a532264ee2b2bc39b5b35010f595a136e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,7 +163,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a019a07d6f9d8fc7eb233e61826b11964 inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c5d6f648a6878895a714004f937830d inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a4c5d6f648a6878895a714004f937830d">getDataPtr</a> (size_t offset=0) const override</td></tr>
 <tr class="separator:a4c5d6f648a6878895a714004f937830d inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a8410015168a7fa42a7d71ac5b86673 inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a6a8410015168a7fa42a7d71ac5b86673">parseNextLayer</a> ()=0</td></tr>
+<tr class="memitem:a6a8410015168a7fa42a7d71ac5b86673 inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top"><a id="a6a8410015168a7fa42a7d71ac5b86673"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a6a8410015168a7fa42a7d71ac5b86673">parseNextLayer</a> ()=0</td></tr>
+<tr class="memdesc:a6a8410015168a7fa42a7d71ac5b86673 inherit pub_methods_classpcpp_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each layer is responsible for parsing the next layer. <br /></td></tr>
 <tr class="separator:a6a8410015168a7fa42a7d71ac5b86673 inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acabe7022caf7cf5fabcad4b5a0eec832 inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#acabe7022caf7cf5fabcad4b5a0eec832">getHeaderLen</a> () const =0</td></tr>
 <tr class="separator:acabe7022caf7cf5fabcad4b5a0eec832 inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,63 +186,36 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>PPPoE possible codes </p>
+
+<p>PPPoE possible codes. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa170ba4bb5e03d3ac1dddb45118ed9cba9fb4696beb11d854841cb2f34a74c2c6"></a>PPPOE_CODE_SESSION&#160;</td><td class="fielddoc"><p>PPPoE session code </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa170ba4bb5e03d3ac1dddb45118ed9cba9fb4696beb11d854841cb2f34a74c2c6"></a>PPPOE_CODE_SESSION&#160;</td><td class="fielddoc"><p>PPPoE session code. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa170ba4bb5e03d3ac1dddb45118ed9cbadd39fce4cc7ba1175c40bdd2fc0c4ea6"></a>PPPOE_CODE_PADO&#160;</td><td class="fielddoc"><p>PPPoE discovery PADO </p>
+<tr><td class="fieldname"><a id="aa170ba4bb5e03d3ac1dddb45118ed9cbadd39fce4cc7ba1175c40bdd2fc0c4ea6"></a>PPPOE_CODE_PADO&#160;</td><td class="fielddoc"><p>PPPoE discovery PADO. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa170ba4bb5e03d3ac1dddb45118ed9cba4cfc6eacd8f24563f70de1cd020089df"></a>PPPOE_CODE_PADI&#160;</td><td class="fielddoc"><p>PPPoE discovery PADI </p>
+<tr><td class="fieldname"><a id="aa170ba4bb5e03d3ac1dddb45118ed9cba4cfc6eacd8f24563f70de1cd020089df"></a>PPPOE_CODE_PADI&#160;</td><td class="fielddoc"><p>PPPoE discovery PADI. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa170ba4bb5e03d3ac1dddb45118ed9cbaf47876aa3ee3c729532f4942897ff27b"></a>PPPOE_CODE_PADG&#160;</td><td class="fielddoc"><p>PPPoE discovery PADG </p>
+<tr><td class="fieldname"><a id="aa170ba4bb5e03d3ac1dddb45118ed9cbaf47876aa3ee3c729532f4942897ff27b"></a>PPPOE_CODE_PADG&#160;</td><td class="fielddoc"><p>PPPoE discovery PADG. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa170ba4bb5e03d3ac1dddb45118ed9cba81f27ffc6d0b746a6fe0b7b693506683"></a>PPPOE_CODE_PADC&#160;</td><td class="fielddoc"><p>PPPoE discovery PADC </p>
+<tr><td class="fieldname"><a id="aa170ba4bb5e03d3ac1dddb45118ed9cba81f27ffc6d0b746a6fe0b7b693506683"></a>PPPOE_CODE_PADC&#160;</td><td class="fielddoc"><p>PPPoE discovery PADC. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa170ba4bb5e03d3ac1dddb45118ed9cba427396faf93405ac3c30dab5d5b11cab"></a>PPPOE_CODE_PADQ&#160;</td><td class="fielddoc"><p>PPPoE discovery PADQ </p>
+<tr><td class="fieldname"><a id="aa170ba4bb5e03d3ac1dddb45118ed9cba427396faf93405ac3c30dab5d5b11cab"></a>PPPOE_CODE_PADQ&#160;</td><td class="fielddoc"><p>PPPoE discovery PADQ. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa170ba4bb5e03d3ac1dddb45118ed9cba2976cd6b40d32216558b85dfe6945157"></a>PPPOE_CODE_PADR&#160;</td><td class="fielddoc"><p>PPPoE discovery PADR </p>
+<tr><td class="fieldname"><a id="aa170ba4bb5e03d3ac1dddb45118ed9cba2976cd6b40d32216558b85dfe6945157"></a>PPPOE_CODE_PADR&#160;</td><td class="fielddoc"><p>PPPoE discovery PADR. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa170ba4bb5e03d3ac1dddb45118ed9cba5e1027cc3e095fdb7b92058fa3b2f232"></a>PPPOE_CODE_PADS&#160;</td><td class="fielddoc"><p>PPPoE discovery PADS </p>
+<tr><td class="fieldname"><a id="aa170ba4bb5e03d3ac1dddb45118ed9cba5e1027cc3e095fdb7b92058fa3b2f232"></a>PPPOE_CODE_PADS&#160;</td><td class="fielddoc"><p>PPPoE discovery PADS. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa170ba4bb5e03d3ac1dddb45118ed9cbace194e64a7c276e24f3a45ddc1d14a52"></a>PPPOE_CODE_PADT&#160;</td><td class="fielddoc"><p>PPPoE discovery PADT </p>
+<tr><td class="fieldname"><a id="aa170ba4bb5e03d3ac1dddb45118ed9cbace194e64a7c276e24f3a45ddc1d14a52"></a>PPPOE_CODE_PADT&#160;</td><td class="fielddoc"><p>PPPoE discovery PADT. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa170ba4bb5e03d3ac1dddb45118ed9cbabd64c3c502f0270a3b069f7f4f1226d3"></a>PPPOE_CODE_PADM&#160;</td><td class="fielddoc"><p>PPPoE discovery PADM </p>
+<tr><td class="fieldname"><a id="aa170ba4bb5e03d3ac1dddb45118ed9cbabd64c3c502f0270a3b069f7f4f1226d3"></a>PPPOE_CODE_PADM&#160;</td><td class="fielddoc"><p>PPPoE discovery PADM. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa170ba4bb5e03d3ac1dddb45118ed9cba6da6f1ebfe6bc0415acb9cef210d18af"></a>PPPOE_CODE_PADN&#160;</td><td class="fielddoc"><p>PPPoE discovery PADN </p>
+<tr><td class="fieldname"><a id="aa170ba4bb5e03d3ac1dddb45118ed9cba6da6f1ebfe6bc0415acb9cef210d18af"></a>PPPOE_CODE_PADN&#160;</td><td class="fielddoc"><p>PPPoE discovery PADN. </p>
 </td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ada38ffe6c5f43e66fb8cb13295106690"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada38ffe6c5f43e66fb8cb13295106690">&#9670;&nbsp;</a></span>computeCalculateFields()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::PPPoELayer::computeCalculateFields </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Calculate <a class="el" href="structpcpp_1_1pppoe__header.html#a08e5841209e619cc327971361264f02e">pppoe_header::payloadLength</a> field </p>
-
-<p>Implements <a class="el" href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">pcpp::Layer</a>.</p>
-
-</div>
-</div>
 <a id="a532264ee2b2bc39b5b35010f595a136e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a532264ee2b2bc39b5b35010f595a136e">&#9670;&nbsp;</a></span>getOsiModelLayer()</h2>
 
@@ -298,7 +276,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_p_p_po_e_layer.html">PPPoELayer</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:44 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

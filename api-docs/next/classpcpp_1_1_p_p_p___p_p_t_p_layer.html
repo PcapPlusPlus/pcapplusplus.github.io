@@ -112,7 +112,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a94bbc5c4830cedde68a0cabf9a009f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a739da4ebcba9ac74f78f3df05d6ef21a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpcpp_1_1ppp__pptp__header.html">ppp_pptp_header</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_p_p_p___p_p_t_p_layer.html#a739da4ebcba9ac74f78f3df05d6ef21a">getPPP_PPTPHeader</a> () const</td></tr>
 <tr class="separator:a739da4ebcba9ac74f78f3df05d6ef21a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ba7aaccab747a0f7fc5a56a8e998173"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_p_p_p___p_p_t_p_layer.html#a9ba7aaccab747a0f7fc5a56a8e998173">parseNextLayer</a> () override</td></tr>
+<tr class="memitem:a9ba7aaccab747a0f7fc5a56a8e998173"><td class="memItemLeft" align="right" valign="top"><a id="a9ba7aaccab747a0f7fc5a56a8e998173"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_p_p_p___p_p_t_p_layer.html#a9ba7aaccab747a0f7fc5a56a8e998173">parseNextLayer</a> () override</td></tr>
+<tr class="memdesc:a9ba7aaccab747a0f7fc5a56a8e998173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently identifies the following next layers: <a class="el" href="classpcpp_1_1_i_pv4_layer.html">IPv4Layer</a>, <a class="el" href="classpcpp_1_1_i_pv6_layer.html">IPv6Layer</a>. Otherwise sets <a class="el" href="classpcpp_1_1_payload_layer.html">PayloadLayer</a>. <br /></td></tr>
 <tr class="separator:a9ba7aaccab747a0f7fc5a56a8e998173"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b91f93a6c39d12675f824068783c443"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_p_p_p___p_p_t_p_layer.html#a0b91f93a6c39d12675f824068783c443">getHeaderLen</a> () const override</td></tr>
 <tr class="separator:a0b91f93a6c39d12675f824068783c443"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -267,7 +269,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Calculate the following fields:</p><ul>
-<li><a class="el" href="structpcpp_1_1ppp__pptp__header.html#a9e49420e46bdc801452f9c30ef5b8659">ppp_pptp_header::protocol</a> </li>
+<li><a class="el" href="structpcpp_1_1ppp__pptp__header.html#a9e49420e46bdc801452f9c30ef5b8659" title="Protocol type of the next layer (see PPP_* macros at PPPoELayer.h)">ppp_pptp_header::protocol</a> </li>
 </ul>
 
 <p>Implements <a class="el" href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">pcpp::Layer</a>.</p>
@@ -356,34 +358,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9ba7aaccab747a0f7fc5a56a8e998173"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ba7aaccab747a0f7fc5a56a8e998173">&#9670;&nbsp;</a></span>parseNextLayer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::PPP_PPTPLayer::parseNextLayer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Currently identifies the following next layers: <a class="el" href="classpcpp_1_1_i_pv4_layer.html">IPv4Layer</a>, <a class="el" href="classpcpp_1_1_i_pv6_layer.html">IPv6Layer</a>. Otherwise sets <a class="el" href="classpcpp_1_1_payload_layer.html">PayloadLayer</a> </p>
-
-<p>Implements <a class="el" href="classpcpp_1_1_layer.html#a6a8410015168a7fa42a7d71ac5b86673">pcpp::Layer</a>.</p>
-
-</div>
-</div>
 <a id="a7c3a4d648a4b2510fc91be09b86e3c7a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7c3a4d648a4b2510fc91be09b86e3c7a">&#9670;&nbsp;</a></span>toString()</h2>
 
@@ -418,7 +392,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_p_p_p___p_p_t_p_layer.html">PPP_PPTPLayer</a></li>
-    <li class="footer">Generated on Sun Jan 12 2025 07:23:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 18 2025 10:13:43 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
