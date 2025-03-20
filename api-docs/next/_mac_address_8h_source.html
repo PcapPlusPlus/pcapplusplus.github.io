@@ -180,17 +180,18 @@ $(document).ready(function(){initNavTree('_mac_address_8h_source.html',''); init
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        }</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
 <div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="classpcpp_1_1_mac_address.html#a1b210f1cf39a31d9ea947c57e6c65e2e">  145</a></span>&#160;        <span class="keyword">static</span> <a class="code" href="classpcpp_1_1_mac_address.html">MacAddress</a> <a class="code" href="classpcpp_1_1_mac_address.html#a1b210f1cf39a31d9ea947c57e6c65e2e">Zero</a>;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        std::array&lt;uint8_t, 6&gt; m_Address{};</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    };</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; oss, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_mac_address.html">pcpp::MacAddress</a>&amp; macAddress)</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    {</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        oss &lt;&lt; macAddress.<a class="code" href="classpcpp_1_1_mac_address.html#af0a3d86661b9f91cabaa8924b5ef0493">toString</a>();</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">return</span> oss;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="classpcpp_1_1_mac_address.html#a68120302d3416556cbdef5188f2ff335">  147</a></span>&#160;        <span class="keyword">static</span> <a class="code" href="classpcpp_1_1_mac_address.html">MacAddress</a> <a class="code" href="classpcpp_1_1_mac_address.html#a68120302d3416556cbdef5188f2ff335">Broadcast</a>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        std::array&lt;uint8_t, 6&gt; m_Address{};</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    };</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; oss, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_mac_address.html">pcpp::MacAddress</a>&amp; macAddress)</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    {</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        oss &lt;&lt; macAddress.<a class="code" href="classpcpp_1_1_mac_address.html#af0a3d86661b9f91cabaa8924b5ef0493">toString</a>();</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordflow">return</span> oss;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
 <div class="ttc" id="aclasspcpp_1_1_mac_address_html"><div class="ttname"><a href="classpcpp_1_1_mac_address.html">pcpp::MacAddress</a></div><div class="ttdef"><b>Definition:</b> MacAddress.h:21</div></div>
 <div class="ttc" id="aclasspcpp_1_1_mac_address_html_a0dd5a37e4b8e635e670caf15d5c2d610"><div class="ttname"><a href="classpcpp_1_1_mac_address.html#a0dd5a37e4b8e635e670caf15d5c2d610">pcpp::MacAddress::operator=</a></div><div class="ttdeci">MacAddress &amp; operator=(std::initializer_list&lt; uint8_t &gt; octets)</div><div class="ttdef"><b>Definition:</b> MacAddress.h:99</div></div>
 <div class="ttc" id="aclasspcpp_1_1_mac_address_html_a0f481baf3a799061e5f43f0bcb545dc5"><div class="ttname"><a href="classpcpp_1_1_mac_address.html#a0f481baf3a799061e5f43f0bcb545dc5">pcpp::MacAddress::MacAddress</a></div><div class="ttdeci">MacAddress(const T &amp;addr)</div><div class="ttdef"><b>Definition:</b> MacAddress.h:51</div></div>
@@ -199,6 +200,7 @@ $(document).ready(function(){initNavTree('_mac_address_8h_source.html',''); init
 <div class="ttc" id="aclasspcpp_1_1_mac_address_html_a4d1561f4cc845ee612ff061ace76f378"><div class="ttname"><a href="classpcpp_1_1_mac_address.html#a4d1561f4cc845ee612ff061ace76f378">pcpp::MacAddress::MacAddress</a></div><div class="ttdeci">MacAddress(uint8_t firstOctet, uint8_t secondOctet, uint8_t thirdOctet, uint8_t fourthOctet, uint8_t fifthOctet, uint8_t sixthOctet)</div><div class="ttdef"><b>Definition:</b> MacAddress.h:61</div></div>
 <div class="ttc" id="aclasspcpp_1_1_mac_address_html_a598dff4498c2c11e284dd469626f3a96"><div class="ttname"><a href="classpcpp_1_1_mac_address.html#a598dff4498c2c11e284dd469626f3a96">pcpp::MacAddress::MacAddress</a></div><div class="ttdeci">MacAddress(const uint8_t addr[6])</div><div class="ttdef"><b>Definition:</b> MacAddress.h:31</div></div>
 <div class="ttc" id="aclasspcpp_1_1_mac_address_html_a5ba30ea649bcf0073d6304f4a8517895"><div class="ttname"><a href="classpcpp_1_1_mac_address.html#a5ba30ea649bcf0073d6304f4a8517895">pcpp::MacAddress::toByteArray</a></div><div class="ttdeci">std::array&lt; uint8_t, 6 &gt; toByteArray() const</div><div class="ttdef"><b>Definition:</b> MacAddress.h:122</div></div>
+<div class="ttc" id="aclasspcpp_1_1_mac_address_html_a68120302d3416556cbdef5188f2ff335"><div class="ttname"><a href="classpcpp_1_1_mac_address.html#a68120302d3416556cbdef5188f2ff335">pcpp::MacAddress::Broadcast</a></div><div class="ttdeci">static MacAddress Broadcast</div><div class="ttdoc">A static value representing a broadcast MAC address, meaning address of value &quot;ff:ff:ff:ff:ff:ff&quot;.</div><div class="ttdef"><b>Definition:</b> MacAddress.h:147</div></div>
 <div class="ttc" id="aclasspcpp_1_1_mac_address_html_a73902a4cbfee4aee51805bb5a72bce12"><div class="ttname"><a href="classpcpp_1_1_mac_address.html#a73902a4cbfee4aee51805bb5a72bce12">pcpp::MacAddress::MacAddress</a></div><div class="ttdeci">MacAddress(const std::array&lt; uint8_t, 6 &gt; &amp;addr)</div><div class="ttdef"><b>Definition:</b> MacAddress.h:39</div></div>
 <div class="ttc" id="aclasspcpp_1_1_mac_address_html_a7a078d6cd0997e81b1b33b42a9675624"><div class="ttname"><a href="classpcpp_1_1_mac_address.html#a7a078d6cd0997e81b1b33b42a9675624">pcpp::MacAddress::MacAddress</a></div><div class="ttdeci">MacAddress()=default</div></div>
 <div class="ttc" id="aclasspcpp_1_1_mac_address_html_a7b34a561182bcf4626fd60198fc049dd"><div class="ttname"><a href="classpcpp_1_1_mac_address.html#a7b34a561182bcf4626fd60198fc049dd">pcpp::MacAddress::operator==</a></div><div class="ttdeci">bool operator==(const MacAddress &amp;other) const</div><div class="ttdef"><b>Definition:</b> MacAddress.h:82</div></div>
@@ -215,7 +217,7 @@ $(document).ready(function(){initNavTree('_mac_address_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b003f564e33ffc88e35d7a9df43b3691.html">Common++</a></li><li class="navelem"><a class="el" href="dir_9a3e9207f3f2c743963c543f58e0ab18.html">header</a></li><li class="navelem"><a class="el" href="_mac_address_8h.html">MacAddress.h</a></li>
-    <li class="footer">Generated on Tue Mar 18 2025 10:13:43 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Mar 20 2025 08:15:37 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

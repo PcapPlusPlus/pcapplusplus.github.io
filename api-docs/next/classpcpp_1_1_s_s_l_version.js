@@ -1,7 +1,6 @@
 var classpcpp_1_1_s_s_l_version =
 [
     [ "SSLVersionEnum", "classpcpp_1_1_s_s_l_version.html#ab5a4809df84ce2449243739977554cc5", [
-      [ "SSL2", "classpcpp_1_1_s_s_l_version.html#ab5a4809df84ce2449243739977554cc5a6e96776e61aa1ce354358b76ebcf1152", null ],
       [ "SSL3", "classpcpp_1_1_s_s_l_version.html#ab5a4809df84ce2449243739977554cc5a5522a37bd55022b3895307b9a9131f1a", null ],
       [ "TLS1_0", "classpcpp_1_1_s_s_l_version.html#ab5a4809df84ce2449243739977554cc5a2a189606ca2cdac7c57a898b232da4f4", null ],
       [ "TLS1_1", "classpcpp_1_1_s_s_l_version.html#ab5a4809df84ce2449243739977554cc5a9eb935702692f978e7dc48af868d07ed", null ],
