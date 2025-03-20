@@ -3,6 +3,8 @@ var hierarchy =
     [ "pcpp::ApplicationEventHandler", "classpcpp_1_1_application_event_handler.html", null ],
     [ "pcpp::AppName", "classpcpp_1_1_app_name.html", null ],
     [ "pcpp::arphdr", "structpcpp_1_1arphdr.html", null ],
+    [ "pcpp::ArpReply", "structpcpp_1_1_arp_reply.html", null ],
+    [ "pcpp::ArpRequest", "structpcpp_1_1_arp_request.html", null ],
     [ "pcpp::Asn1Record", "classpcpp_1_1_asn1_record.html", [
       [ "pcpp::Asn1ConstructedRecord", "classpcpp_1_1_asn1_constructed_record.html", [
         [ "pcpp::Asn1SequenceRecord", "classpcpp_1_1_asn1_sequence_record.html", null ],
@@ -75,6 +77,8 @@ var hierarchy =
       [ "pcpp::TcpFlagsFilter", "classpcpp_1_1_tcp_flags_filter.html", null ],
       [ "pcpp::VlanFilter", "classpcpp_1_1_vlan_filter.html", null ]
     ] ],
+    [ "pcpp::GratuitousArpReply", "structpcpp_1_1_gratuitous_arp_reply.html", null ],
+    [ "pcpp::GratuitousArpRequest", "structpcpp_1_1_gratuitous_arp_request.html", null ],
     [ "pcpp::gre_basic_header", "structpcpp_1_1gre__basic__header.html", [
       [ "pcpp::gre1_header", "structpcpp_1_1gre1__header.html", null ]
     ] ],
