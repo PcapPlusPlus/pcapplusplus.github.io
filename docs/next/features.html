@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="PcapPlusPlus" href="/opensearch.xml"><link rel="stylesheet" href="/assets/css/styles.5966e090.css">
-<script src="/assets/js/runtime~main.0a82d655.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.1d6b8c03.js" defer="defer"></script>
 <script src="/assets/js/main.4a173bdd.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -140,6 +140,7 @@ Behind the scenes, it leverages <a href="https://github.com/libbpf/libbpf" targe
 <p>PcapPlusPlus currently supports parsing, editing and generation of packets of the following protocols:</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="data-link-layer-l2">Data Link Layer (L2)<a href="#data-link-layer-l2" class="hash-link" aria-label="Direct link to Data Link Layer (L2)" title="Direct link to Data Link Layer (L2)">​</a></h3>
 <ol>
+<li>Cisco HDLC</li>
 <li>Ethernet II</li>
 <li>IEEE 802.3 Ethernet</li>
 <li>LLC (Only BPDU supported)</li>
@@ -155,7 +156,7 @@ Behind the scenes, it leverages <a href="https://github.com/libbpf/libbpf" targe
 <li>NFLOG (Linux Netfilter NFLOG) - parsing only (no editing capabilities)</li>
 </ol>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="network-layer-l3">Network Layer (L3)<a href="#network-layer-l3" class="hash-link" aria-label="Direct link to Network Layer (L3)" title="Direct link to Network Layer (L3)">​</a></h3>
-<ol start="14">
+<ol start="15">
 <li>ARP</li>
 <li>GRE</li>
 <li>ICMP</li>
@@ -170,7 +171,7 @@ Behind the scenes, it leverages <a href="https://github.com/libbpf/libbpf" targe
 <li>WireGuard</li>
 </ol>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="transport-layer-l4">Transport Layer (L4)<a href="#transport-layer-l4" class="hash-link" aria-label="Direct link to Transport Layer (L4)" title="Direct link to Transport Layer (L4)">​</a></h3>
-<ol start="26">
+<ol start="27">
 <li>COTP</li>
 <li>GTP (v1 &amp; v2)</li>
 <li>IPSec AH &amp; ESP - parsing only (no editing capabilities)</li>
@@ -179,16 +180,16 @@ Behind the scenes, it leverages <a href="https://github.com/libbpf/libbpf" targe
 <li>UDP</li>
 </ol>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="session-layer-l5">Session Layer (L5)<a href="#session-layer-l5" class="hash-link" aria-label="Direct link to Session Layer (L5)" title="Direct link to Session Layer (L5)">​</a></h3>
-<ol start="32">
+<ol start="33">
 <li>SDP</li>
 <li>SIP</li>
 </ol>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="presentation-layer-l6">Presentation Layer (L6)<a href="#presentation-layer-l6" class="hash-link" aria-label="Direct link to Presentation Layer (L6)" title="Direct link to Presentation Layer (L6)">​</a></h3>
-<ol start="34">
+<ol start="35">
 <li>SSL/TLS - parsing only (no editing capabilities)</li>
 </ol>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="application-layer-l7">Application Layer (L7)<a href="#application-layer-l7" class="hash-link" aria-label="Direct link to Application Layer (L7)" title="Direct link to Application Layer (L7)">​</a></h3>
-<ol start="35">
+<ol start="36">
 <li>ASN.1 decoder and encoder</li>
 <li>BGP (v4)</li>
 <li>DHCP</li>
