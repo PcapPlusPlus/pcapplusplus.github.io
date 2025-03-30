@@ -119,6 +119,7 @@ var hierarchy =
           [ "pcpp::BgpRouteRefreshMessageLayer", "classpcpp_1_1_bgp_route_refresh_message_layer.html", null ],
           [ "pcpp::BgpUpdateMessageLayer", "classpcpp_1_1_bgp_update_message_layer.html", null ]
         ] ],
+        [ "pcpp::CiscoHdlcLayer", "classpcpp_1_1_cisco_hdlc_layer.html", null ],
         [ "pcpp::CotpLayer", "classpcpp_1_1_cotp_layer.html", null ],
         [ "pcpp::DhcpLayer", "classpcpp_1_1_dhcp_layer.html", null ],
         [ "pcpp::DhcpV6Layer", "classpcpp_1_1_dhcp_v6_layer.html", null ],
