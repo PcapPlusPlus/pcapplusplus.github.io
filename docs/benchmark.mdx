@@ -5,7 +5,7 @@ sidebar_position: 8
 
 export const TCP_NO_OPTIONS_PCAPPLUSPLUS_SEC = 0.197;
 export const TCP_NO_OPTIONS_LIBTINS_SEC = 0.209;
-export const TCP_NO_OPTIONS_LIBPCAP_SEC = 0.120;
+export const TCP_NO_OPTIONS_LIBPCAP_SEC = 0.12;
 
 export const TCP_NO_OPTIONS_PCAPPLUSPLUS_PPS = 2538071;
 export const TCP_NO_OPTIONS_LIBTINS_PPS = 2392344;
@@ -66,7 +66,7 @@ The following versions were used during the benchmark:
     ['Library', 'Seconds'],
     ['libpcap', TCP_NO_OPTIONS_LIBPCAP_SEC],
     ['PcapPlusPlus', TCP_NO_OPTIONS_PCAPPLUSPLUS_SEC],
-    ['libtins', TCP_NO_OPTIONS_LIBTINS_SEC],
+    ['libtins', TCP_NO_OPTIONS_LIBTINS_SEC]
   ]}
 />
 
@@ -83,7 +83,7 @@ The following versions were used during the benchmark:
     ['Library', 'Seconds'],
     ['libpcap', TCP_WITH_OPTIONS_LIBPCAP_SEC],
     ['PcapPlusPlus', TCP_WITH_OPTIONS_PCAPPLUSPLUS_SEC],
-    ['libtins', TCP_WITH_OPTIONS_LIBTINS_SEC],
+    ['libtins', TCP_WITH_OPTIONS_LIBTINS_SEC]
   ]}
 />
 
@@ -100,13 +100,13 @@ The following versions were used during the benchmark:
     ['Library', 'Seconds'],
     ['libpcap', DNS_LIBPCAP_SEC],
     ['PcapPlusPlus', DNS_PCAPPLUSPLUS_SEC],
-    ['libtins', DNS_LIBTINS_SEC],
+    ['libtins', DNS_LIBTINS_SEC]
   ]}
 />
 
 ## Google Benchmark
 
-[Google Benchmark](https://github.com/google/benchmark) is a library designed for measuring the performance of C++ applications. We utilized it to evaluate several aspects of PcapPlusPlus. 
+[Google Benchmark](https://github.com/google/benchmark) is a library designed for measuring the performance of C++ applications. We utilized it to evaluate several aspects of PcapPlusPlus.
 The benchmark code can be found in [PcapPlusPlus Examples - Google Benchmark](https://github.com/seladb/PcapPlusPlus/blob/master/Examples/PcapPlusPlus-benchmark/benchmark-google.cpp).
 
 The benchmark covers the following operations:
@@ -117,7 +117,7 @@ The benchmark covers the following operations:
 - Packet crafting (`BM_PacketCrafting`)
 
 | Benchmark         | Time    | CPU     | Iterations | Bytes Per Second | Items Per Second |
-| :---------------- |:--------|:--------|:-----------|:-----------------|:-----------------|
+| :---------------- | :------ | :------ | :--------- | :--------------- | :--------------- |
 | BM_PcapFileRead   | 177 ns  | 177 ns  | 3828289    | 2.35172Gi/s      | 5.63843M/s       |
 | BM_PcapFileWrite  | 79.1 ns | 79.1 ns | 9080461    | 650.828Mi/s      | 12.6378M/s       |
 | BM_PacketParsing  | 352 ns  | 352 ns  | 1994805    | 1.18917Gi/s      | 2.84116M/s       |
