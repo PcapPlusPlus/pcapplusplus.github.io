@@ -17,6 +17,7 @@ var files_dup =
       [ "BgpRouteRefreshMessageLayer", "classpcpp_1_1_bgp_route_refresh_message_layer.html", "classpcpp_1_1_bgp_route_refresh_message_layer" ],
       [ "bgp_route_refresh_message", "structpcpp_1_1_bgp_route_refresh_message_layer_1_1bgp__route__refresh__message.html", "structpcpp_1_1_bgp_route_refresh_message_layer_1_1bgp__route__refresh__message" ]
     ] ],
+    [ "CiscoHdlcLayer.h", "_cisco_hdlc_layer_8h_source.html", null ],
     [ "CotpLayer.h", "_cotp_layer_8h.html", [
       [ "cotphdr", "structpcpp_1_1cotphdr.html", "structpcpp_1_1cotphdr" ],
       [ "CotpLayer", "classpcpp_1_1_cotp_layer.html", "classpcpp_1_1_cotp_layer" ]

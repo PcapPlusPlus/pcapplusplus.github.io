@@ -96,10 +96,10 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_packet.html',''); initRe
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1a6d4e157661ba7ec6f552c78c82d7fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#a1a6d4e157661ba7ec6f552c78c82d7fa">Packet</a> (size_t maxPacketLen=1)</td></tr>
-<tr class="separator:a1a6d4e157661ba7ec6f552c78c82d7fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55c68b56daa9ac792c1f9741221c21ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#a55c68b56daa9ac792c1f9741221c21ed">Packet</a> (uint8_t *buffer, size_t bufferSize)</td></tr>
-<tr class="separator:a55c68b56daa9ac792c1f9741221c21ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1ebb4cce7a9569106d6820739d3adf1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#ad1ebb4cce7a9569106d6820739d3adf1">Packet</a> (size_t maxPacketLen=1, <a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> linkType=<a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a>)</td></tr>
+<tr class="separator:ad1ebb4cce7a9569106d6820739d3adf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62bcbe09251ec6c6c99138fb783c90e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#a62bcbe09251ec6c6c99138fb783c90e2">Packet</a> (uint8_t *buffer, size_t bufferSize, <a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> linkType=<a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a>)</td></tr>
+<tr class="separator:a62bcbe09251ec6c6c99138fb783c90e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf61c3f9a5c12a7047774b42f31ee2ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#aaf61c3f9a5c12a7047774b42f31ee2ec">Packet</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *rawPacket, bool freeRawPacket=false, <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> parseUntil=<a class="el" href="namespacepcpp.html#ad94e3dd833f818889f676d2352eac829">UnknownProtocol</a>, <a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> parseUntilLayer=<a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">OsiModelLayerUnknown</a>)</td></tr>
 <tr class="separator:aaf61c3f9a5c12a7047774b42f31ee2ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9b12034dca53509c273e4ef954b8099"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#aa9b12034dca53509c273e4ef954b8099">Packet</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *rawPacket, <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> parseUntil)</td></tr>
@@ -166,8 +166,8 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>This class represents a parsed packet. It contains the raw data (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> instance), and a linked list of layers, each layer is a parsed protocol that this packet contains. The layers linked list is ordered where the first layer is the lowest in the packet (currently it's always Ethernet protocol as PcapPlusPlus supports only Ethernet packets), the next layer will be L2.5 or L3 (e.g VLAN, IPv4, IPv6, etc.), and so on. etc.), etc. The last layer in the linked list will be the highest in the packet. For example: for a standard HTTP request packet the layer will look like this: <a class="el" href="classpcpp_1_1_eth_layer.html">EthLayer</a> -&gt; <a class="el" href="classpcpp_1_1_i_pv4_layer.html">IPv4Layer</a> -&gt; <a class="el" href="classpcpp_1_1_tcp_layer.html">TcpLayer</a> -&gt; <a class="el" href="classpcpp_1_1_http_request_layer.html">HttpRequestLayer</a> <br  />
  <a class="el" href="classpcpp_1_1_packet.html">Packet</a> instance isn't read only. The user can add or remove layers, update current layer, etc. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a1a6d4e157661ba7ec6f552c78c82d7fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a6d4e157661ba7ec6f552c78c82d7fa">&#9670;&nbsp;</a></span>Packet() <span class="overload">[1/7]</span></h2>
+<a id="ad1ebb4cce7a9569106d6820739d3adf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1ebb4cce7a9569106d6820739d3adf1">&#9670;&nbsp;</a></span>Packet() <span class="overload">[1/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,8 +179,18 @@ Public Member Functions</h2></td></tr>
           <td class="memname">pcpp::Packet::Packet </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>maxPacketLen</em> = <code>1</code></td><td>)</td>
+          <td class="paramname"><em>maxPacketLen</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a>&#160;</td>
+          <td class="paramname"><em>linkType</em> = <code><a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -192,14 +202,15 @@ Public Member Functions</h2></td></tr>
 <p>A constructor for creating a new packet (with no layers). When using this constructor an empty raw buffer is allocated (with the size of maxPacketLen) and a new <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> is created </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">maxPacketLen</td><td>The expected packet length in bytes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">linkType</td><td>The link type to use for this packet (the default is Ethernet) </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a55c68b56daa9ac792c1f9741221c21ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55c68b56daa9ac792c1f9741221c21ed">&#9670;&nbsp;</a></span>Packet() <span class="overload">[2/7]</span></h2>
+<a id="a62bcbe09251ec6c6c99138fb783c90e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62bcbe09251ec6c6c99138fb783c90e2">&#9670;&nbsp;</a></span>Packet() <span class="overload">[2/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -214,7 +225,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>bufferSize</em>&#160;</td>
+          <td class="paramname"><em>bufferSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a>&#160;</td>
+          <td class="paramname"><em>linkType</em> = <code><a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -227,6 +244,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">buffer</td><td>A pointer to a pre-allocated memory buffer </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bufferSize</td><td>The size of the buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">linkType</td><td>The link type to use for this packet (the default is Ethernet) </td></tr>
   </table>
   </dd>
 </dl>
@@ -1159,7 +1177,7 @@ template&lt;class TLayer &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_packet.html">Packet</a></li>
-    <li class="footer">Generated on Thu Mar 27 2025 08:36:32 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 30 2025 01:33:46 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
