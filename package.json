@@ -20,7 +20,7 @@
     "argos:screenshot": "playwright test --config=tests/argos/playwright.config.ts"
   },
   "dependencies": {
-    "@argos-ci/cli": "^2.5.0",
+    "@argos-ci/cli": "^2.5.6",
     "@argos-ci/playwright": "^4.1.0",
     "@docusaurus/core": "^3.7.0",
     "@docusaurus/plugin-google-analytics": "^3.7.0",
