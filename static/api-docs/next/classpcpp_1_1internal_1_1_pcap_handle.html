@@ -119,6 +119,12 @@ constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <tr class="memitem:a31ceb2f8db96873cbbd100b20e1612b6"><td class="memItemLeft" align="right" valign="top">char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_pcap_handle.html#a31ceb2f8db96873cbbd100b20e1612b6">getLastError</a> () const noexcept</td></tr>
 <tr class="memdesc:a31ceb2f8db96873cbbd100b20e1612b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to retrieve a view of the last error string for this handle.  <a href="classpcpp_1_1internal_1_1_pcap_handle.html#a31ceb2f8db96873cbbd100b20e1612b6">More...</a><br /></td></tr>
 <tr class="separator:a31ceb2f8db96873cbbd100b20e1612b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36bcd43cc07e3e174044a888472e5be8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_pcap_handle.html#a36bcd43cc07e3e174044a888472e5be8">setFilter</a> (std::string const &amp;filter)</td></tr>
+<tr class="memdesc:a36bcd43cc07e3e174044a888472e5be8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a filter on the handle. Only packets that match the filter will be captured by the handle.  <a href="classpcpp_1_1internal_1_1_pcap_handle.html#a36bcd43cc07e3e174044a888472e5be8">More...</a><br /></td></tr>
+<tr class="separator:a36bcd43cc07e3e174044a888472e5be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90aff84a2db4fcd7449d498ec8a6f672"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_pcap_handle.html#a90aff84a2db4fcd7449d498ec8a6f672">clearFilter</a> ()</td></tr>
+<tr class="memdesc:a90aff84a2db4fcd7449d498ec8a6f672"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the filter currently set on the handle.  <a href="classpcpp_1_1internal_1_1_pcap_handle.html#a90aff84a2db4fcd7449d498ec8a6f672">More...</a><br /></td></tr>
+<tr class="separator:a90aff84a2db4fcd7449d498ec8a6f672"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c6690e5fc8750ef6c503aaa83244a56"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_pcap_handle.html#a2c6690e5fc8750ef6c503aaa83244a56">operator bool</a> () const noexcept</td></tr>
 <tr class="separator:a2c6690e5fc8750ef6c503aaa83244a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -160,6 +166,26 @@ constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a90aff84a2db4fcd7449d498ec8a6f672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90aff84a2db4fcd7449d498ec8a6f672">&#9670;&nbsp;</a></span>clearFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::internal::PcapHandle::clearFilter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clears the filter currently set on the handle. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if the filter was removed successfully or if no filter was set, false otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="aa55376a699b8567e357683e3b5249602"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa55376a699b8567e357683e3b5249602">&#9670;&nbsp;</a></span>get()</h2>
 
@@ -330,13 +356,41 @@ constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 
 </div>
 </div>
+<a id="a36bcd43cc07e3e174044a888472e5be8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36bcd43cc07e3e174044a888472e5be8">&#9670;&nbsp;</a></span>setFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::internal::PcapHandle::setFilter </td>
+          <td>(</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
+          <td class="paramname"><em>filter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a filter on the handle. Only packets that match the filter will be captured by the handle. </p>
+<p>The filter uses Berkeley <a class="el" href="classpcpp_1_1_packet.html">Packet</a> Filter (BPF) syntax (<a href="http://biot.com/capstats/bpf.html">http://biot.com/capstats/bpf.html</a>).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td>The filter to set in Berkeley <a class="el" href="classpcpp_1_1_packet.html">Packet</a> Filter (BPF) syntax. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the filter was set successfully, false otherwise. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><b>internal</b></li><li class="navelem"><a class="el" href="classpcpp_1_1internal_1_1_pcap_handle.html">PcapHandle</a></li>
-    <li class="footer">Generated on Sun Mar 30 2025 01:33:46 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Apr 3 2025 04:11:23 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
