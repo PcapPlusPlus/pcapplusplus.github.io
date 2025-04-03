@@ -126,10 +126,10 @@ Classes</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a785987975c2e9eb09e5d86305180e2c7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#a785987975c2e9eb09e5d86305180e2c7">getStatistics</a> (<a class="el" href="structpcpp_1_1_i_pcap_device_1_1_pcap_stats.html">PcapStats</a> &amp;stats) const =0</td></tr>
 <tr class="separator:a785987975c2e9eb09e5d86305180e2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a134f061d7883abbdb256abd48d53e66c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#a134f061d7883abbdb256abd48d53e66c">setFilter</a> (std::string filterAsString)</td></tr>
-<tr class="separator:a134f061d7883abbdb256abd48d53e66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ca7eb3d99231a8cfd9d68cde0b5067c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#a8ca7eb3d99231a8cfd9d68cde0b5067c">clearFilter</a> ()</td></tr>
-<tr class="separator:a8ca7eb3d99231a8cfd9d68cde0b5067c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5308f2b55bb22afdef5ddfda63332398"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#a5308f2b55bb22afdef5ddfda63332398">setFilter</a> (std::string filterAsString) override</td></tr>
+<tr class="separator:a5308f2b55bb22afdef5ddfda63332398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55ad37f74e67d152ca8973535d5f7ddf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#a55ad37f74e67d152ca8973535d5f7ddf">clearFilter</a> () override</td></tr>
+<tr class="separator:a55ad37f74e67d152ca8973535d5f7ddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af334503822ac7076373c64109f3e6d64"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#af334503822ac7076373c64109f3e6d64">setFilter</a> (<a class="el" href="classpcpp_1_1_general_filter.html">GeneralFilter</a> &amp;filter)</td></tr>
 <tr class="separator:af334503822ac7076373c64109f3e6d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf01bb590d975d28fc38053820a69130"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#adf01bb590d975d28fc38053820a69130">setFilter</a> (std::string filterAsString)=0</td></tr>
@@ -157,8 +157,8 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An abstract class representing all libpcap-based packet capturing devices: files, libPcap, WinPcap/Npcap and RemoteCapture. This class is abstract and cannot be instantiated </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8ca7eb3d99231a8cfd9d68cde0b5067c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ca7eb3d99231a8cfd9d68cde0b5067c">&#9670;&nbsp;</a></span>clearFilter()</h2>
+<a id="a55ad37f74e67d152ca8973535d5f7ddf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55ad37f74e67d152ca8973535d5f7ddf">&#9670;&nbsp;</a></span>clearFilter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -175,7 +175,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -318,8 +318,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a134f061d7883abbdb256abd48d53e66c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a134f061d7883abbdb256abd48d53e66c">&#9670;&nbsp;</a></span>setFilter() <span class="overload">[2/3]</span></h2>
+<a id="a5308f2b55bb22afdef5ddfda63332398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5308f2b55bb22afdef5ddfda63332398">&#9670;&nbsp;</a></span>setFilter() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -328,7 +328,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool pcpp::IPcapDevice::setFilter </td>
+          <td class="memname">bool pcpp::IPcapDevice::setFilter </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>filterAsString</em></td><td>)</td>
@@ -337,7 +337,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -382,7 +382,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_pcap_device.html">IPcapDevice</a></li>
-    <li class="footer">Generated on Sun Mar 30 2025 01:33:46 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Apr 3 2025 04:11:23 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

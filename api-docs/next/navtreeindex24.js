@@ -1,5 +1,7 @@
 var NAVTREEINDEX24 =
 {
+"structpcpp_1_1icmp__router__address__structure.html#ad9c6d64fbf2388f90eacfc4d0e3269ca":[3,0,0,101,2],
+"structpcpp_1_1icmp__router__advertisement.html":[3,0,0,103],
 "structpcpp_1_1icmp__router__advertisement.html#a3d7ac9a46e261e4710db729aed32361d":[3,0,0,103,1],
 "structpcpp_1_1icmp__router__advertisement.html#aff329421c146cb43928dcf2e2ee1db29":[3,0,0,103,0],
 "structpcpp_1_1icmp__router__advertisement__hdr.html":[3,0,0,102],

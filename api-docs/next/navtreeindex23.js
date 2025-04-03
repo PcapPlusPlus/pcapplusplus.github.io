@@ -1,5 +1,7 @@
 var NAVTREEINDEX23 =
 {
+"structpcpp_1_1_n_d_p_neighbor_advertisement_layer_1_1ndpneighboradvertisementhdr.html#aa11a93574a98c6601fe8171f12d53581":[3,0,0,166,0,3],
+"structpcpp_1_1_n_d_p_neighbor_advertisement_layer_1_1ndpneighboradvertisementhdr.html#ae4770ee0b3e30ccc1888ef75c5a2c442":[3,0,0,166,0,1],
 "structpcpp_1_1_n_d_p_neighbor_advertisement_layer_1_1ndpneighboradvertisementhdr.html#ae58f9099e519dc26fe1d287968f6c12f":[3,0,0,166,0,2],
 "structpcpp_1_1_n_d_p_neighbor_solicitation_layer_1_1ndpneighborsolicitationhdr.html":[3,0,0,165,0],
 "structpcpp_1_1_n_d_p_neighbor_solicitation_layer_1_1ndpneighborsolicitationhdr.html#a2d1f999c9fcf374afbd1f1ebe2bfb2b1":[3,0,0,165,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX23 =
 "structpcpp_1_1icmp__router__address__structure.html":[3,0,0,101],
 "structpcpp_1_1icmp__router__address__structure.html#a0e6269c0e36f52dbea0ba6dd9ca7ceaa":[3,0,0,101,1],
 "structpcpp_1_1icmp__router__address__structure.html#a5d698807f7397470f2c04a54fe862e37":[3,0,0,101,3],
-"structpcpp_1_1icmp__router__address__structure.html#a9cc2fb694f710163a4234854d91da683":[3,0,0,101,0],
-"structpcpp_1_1icmp__router__address__structure.html#ad9c6d64fbf2388f90eacfc4d0e3269ca":[3,0,0,101,2],
-"structpcpp_1_1icmp__router__advertisement.html":[3,0,0,103]
+"structpcpp_1_1icmp__router__address__structure.html#a9cc2fb694f710163a4234854d91da683":[3,0,0,101,0]
 };
