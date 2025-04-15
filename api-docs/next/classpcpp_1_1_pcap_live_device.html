@@ -135,6 +135,21 @@ Public Types</h2></td></tr>
 , <a class="el" href="classpcpp_1_1_pcap_live_device.html#a00efdbd7aca92b696dd585cf3301add5aa09daf455022a9dab650fdcb2171ba1c">PCPP_OUT</a>
  }</td></tr>
 <tr class="separator:a00efdbd7aca92b696dd585cf3301add5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5b95d68aa486b7ac038096fe1b8d71e"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#ac5b95d68aa486b7ac038096fe1b8d71e">TimestampProvider</a> { <br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_pcap_live_device.html#ac5b95d68aa486b7ac038096fe1b8d71eac2ca16d048ec66e04bca283eab048ec2">Host</a> = 0
+, <a class="el" href="classpcpp_1_1_pcap_live_device.html#ac5b95d68aa486b7ac038096fe1b8d71ea81a53679545718b26c514315c26db901">HostLowPrecision</a>
+, <a class="el" href="classpcpp_1_1_pcap_live_device.html#ac5b95d68aa486b7ac038096fe1b8d71eaa0d6622487e925677aec54f04dd30ac9">HostHighPrecision</a>
+, <a class="el" href="classpcpp_1_1_pcap_live_device.html#ac5b95d68aa486b7ac038096fe1b8d71ea8601c10b2797050a900697daac0c0001">Adapter</a>
+, <br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_pcap_live_device.html#ac5b95d68aa486b7ac038096fe1b8d71ea18ac6b0e8fa6cc2bf36b556bdd3feb70">AdapterUnsynced</a>
+, <a class="el" href="classpcpp_1_1_pcap_live_device.html#ac5b95d68aa486b7ac038096fe1b8d71eafd90a006b8288716dc2baebdfe845269">HostHighPrecisionUnsynced</a>
+<br />
+ }</td></tr>
+<tr class="separator:ac5b95d68aa486b7ac038096fe1b8d71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b819cd593026da0e65274221f52db82"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a7b819cd593026da0e65274221f52db82">TimestampPrecision</a> { <a class="el" href="classpcpp_1_1_pcap_live_device.html#a7b819cd593026da0e65274221f52db82a64068ed47d979c5efa036f027d656433">Microseconds</a> = 0
+, <a class="el" href="classpcpp_1_1_pcap_live_device.html#a7b819cd593026da0e65274221f52db82afba00bdab687ce01136a86bac8bac578">Nanoseconds</a>
+ }</td></tr>
+<tr class="separator:a7b819cd593026da0e65274221f52db82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -304,6 +319,72 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="a00efdbd7aca92b696dd585cf3301add5a9da5011f04f2f9cf302d144d311f27ab"></a>PCPP_IN&#160;</td><td class="fielddoc"><p>Only capture incoming traffics. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a00efdbd7aca92b696dd585cf3301add5aa09daf455022a9dab650fdcb2171ba1c"></a>PCPP_OUT&#160;</td><td class="fielddoc"><p>Only capture outgoing traffics. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a7b819cd593026da0e65274221f52db82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b819cd593026da0e65274221f52db82">&#9670;&nbsp;</a></span>TimestampPrecision</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classpcpp_1_1_pcap_live_device.html#a7b819cd593026da0e65274221f52db82">pcpp::PcapLiveDevice::TimestampPrecision</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the precision of timestamps associated to each captured packet (you can read more here: <a href="https://www.tcpdump.org/manpages/pcap-tstamp.7.html">https://www.tcpdump.org/manpages/pcap-tstamp.7.html</a>) </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7b819cd593026da0e65274221f52db82a64068ed47d979c5efa036f027d656433"></a>Microseconds&#160;</td><td class="fielddoc"><p>use timestamps with microsecond precision, default </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7b819cd593026da0e65274221f52db82afba00bdab687ce01136a86bac8bac578"></a>Nanoseconds&#160;</td><td class="fielddoc"><p>use timestamps with nanosecond precision </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ac5b95d68aa486b7ac038096fe1b8d71e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5b95d68aa486b7ac038096fe1b8d71e">&#9670;&nbsp;</a></span>TimestampProvider</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classpcpp_1_1_pcap_live_device.html#ac5b95d68aa486b7ac038096fe1b8d71e">pcpp::PcapLiveDevice::TimestampProvider</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set which source provides timestamps associated to each captured packet (you can read more here: <a href="https://www.tcpdump.org/manpages/pcap-tstamp.7.html">https://www.tcpdump.org/manpages/pcap-tstamp.7.html</a>) </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac5b95d68aa486b7ac038096fe1b8d71eac2ca16d048ec66e04bca283eab048ec2"></a>Host&#160;</td><td class="fielddoc"><p>host-provided, unknown characteristics, default </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac5b95d68aa486b7ac038096fe1b8d71ea81a53679545718b26c514315c26db901"></a>HostLowPrecision&#160;</td><td class="fielddoc"><p>host-provided, low precision, synced with the system clock </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac5b95d68aa486b7ac038096fe1b8d71eaa0d6622487e925677aec54f04dd30ac9"></a>HostHighPrecision&#160;</td><td class="fielddoc"><p>host-provided, high precision, synced with the system clock </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac5b95d68aa486b7ac038096fe1b8d71ea8601c10b2797050a900697daac0c0001"></a>Adapter&#160;</td><td class="fielddoc"><p>device-provided, synced with the system clock </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac5b95d68aa486b7ac038096fe1b8d71ea18ac6b0e8fa6cc2bf36b556bdd3feb70"></a>AdapterUnsynced&#160;</td><td class="fielddoc"><p>device-provided, not synced with the system clock </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac5b95d68aa486b7ac038096fe1b8d71eafd90a006b8288716dc2baebdfe845269"></a>HostHighPrecisionUnsynced&#160;</td><td class="fielddoc"><p>host-provided, high precision, not synced with the system clock </p>
 </td></tr>
 </table>
 
@@ -1408,7 +1489,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a></li>
-    <li class="footer">Generated on Thu Apr 3 2025 04:11:23 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 15 2025 07:16:05 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

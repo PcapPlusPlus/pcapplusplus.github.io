@@ -91,7 +91,9 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_cotp_layer.html',''); in
 
 <p>This is the complete list of members for <a class="el" href="classpcpp_1_1_cotp_layer.html">pcpp::CotpLayer</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_cotp_layer.html#af28eb4e750cae81597917a739d46d062">computeCalculateFields</a>() override</td><td class="entry"><a class="el" href="classpcpp_1_1_cotp_layer.html">pcpp::CotpLayer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_layer.html#acb031e00ee13b0c299cc6c0458a61a18">canReinterpretAs</a>(const uint8_t *data, size_t dataLen)</td><td class="entry"><a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classpcpp_1_1_cotp_layer.html#af28eb4e750cae81597917a739d46d062">computeCalculateFields</a>() override</td><td class="entry"><a class="el" href="classpcpp_1_1_cotp_layer.html">pcpp::CotpLayer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_layer.html#a73210de1c3e4361189be96b40bf109d9">constructNextLayer</a>(uint8_t *data, size_t dataLen, Packet *packet, Args &amp;&amp;... extraArgs)</td><td class="entry"><a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classpcpp_1_1_layer.html#a019a07d6f9d8fc7eb233e61826b11964">copyData</a>(uint8_t *toArr) const</td><td class="entry"><a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_cotp_layer.html#aa8b788cf108bc64df92a1bc6241ba3bd">CotpLayer</a>(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</td><td class="entry"><a class="el" href="classpcpp_1_1_cotp_layer.html">pcpp::CotpLayer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classpcpp_1_1_cotp_layer.html#a2389c5c4793603e68c2f502694e02677">CotpLayer</a>(uint8_t tpduNumber)</td><td class="entry"><a class="el" href="classpcpp_1_1_cotp_layer.html">pcpp::CotpLayer</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
@@ -116,13 +118,14 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_cotp_layer.html',''); in
   <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_cotp_layer.html#a9f7a980923001c275b2c730b4712dfa3">setPduType</a>(uint8_t pduType) const</td><td class="entry"><a class="el" href="classpcpp_1_1_cotp_layer.html">pcpp::CotpLayer</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classpcpp_1_1_cotp_layer.html#ac774ac4bc6133bbd2336531696a6205e">setTpduNumber</a>(uint8_t tpduNumber) const</td><td class="entry"><a class="el" href="classpcpp_1_1_cotp_layer.html">pcpp::CotpLayer</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_cotp_layer.html#aabebf9eff1ba8642eb09ea092b668e87">toString</a>() const override</td><td class="entry"><a class="el" href="classpcpp_1_1_cotp_layer.html">pcpp::CotpLayer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classpcpp_1_1_layer.html#adc5fdf997375b58400a55fdcc3bdff87">~Layer</a>() override</td><td class="entry"><a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classpcpp_1_1_layer.html#ac180476870fbef9a104d775d81c70c74">tryConstructNextLayerWithFallback</a>(uint8_t *data, size_t dataLen, Packet *packet, Args &amp;&amp;... extraArgs)</td><td class="entry"><a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_layer.html#adc5fdf997375b58400a55fdcc3bdff87">~Layer</a>() override</td><td class="entry"><a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Apr 3 2025 04:11:23 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 15 2025 07:16:04 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

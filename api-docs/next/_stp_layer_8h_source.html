@@ -274,7 +274,7 @@ $(document).ready(function(){initNavTree('_stp_layer_8h_source.html',''); initRe
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
 <div class="line"><a name="l00278"></a><span class="lineno"><a class="line" href="classpcpp_1_1_stp_topology_change_b_p_d_u_layer.html#af93fd7de9ca644040cd5b190f83b459a">  278</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_stp_topology_change_b_p_d_u_layer.html#af93fd7de9ca644040cd5b190f83b459a">isDataValid</a>(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> dataLen)</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        {</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            <span class="keywordflow">return</span> data &amp;&amp; dataLen &gt;= <span class="keyword">sizeof</span>(<a class="code" href="structpcpp_1_1stp__tcn__bpdu.html">stp_tcn_bpdu</a>);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            <span class="keywordflow">return</span> canReinterpretAs&lt;stp_tcn_bpdu&gt;(data, dataLen);</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        }</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    };</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
@@ -384,7 +384,7 @@ $(document).ready(function(){initNavTree('_stp_layer_8h_source.html',''); initRe
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160; </div>
 <div class="line"><a name="l00466"></a><span class="lineno"><a class="line" href="classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#a9fa5877a88b45a89bfaa70469545dfe3">  466</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#a9fa5877a88b45a89bfaa70469545dfe3">isDataValid</a>(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> dataLen)</div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;        {</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;            <span class="keywordflow">return</span> data &amp;&amp; dataLen &gt;= <span class="keyword">sizeof</span>(<a class="code" href="structpcpp_1_1stp__conf__bpdu.html">stp_conf_bpdu</a>);</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;            <span class="keywordflow">return</span> canReinterpretAs&lt;stp_conf_bpdu&gt;(data, dataLen);</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;        }</div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    };</div>
 <div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160; </div>
@@ -432,7 +432,7 @@ $(document).ready(function(){initNavTree('_stp_layer_8h_source.html',''); initRe
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160; </div>
 <div class="line"><a name="l00536"></a><span class="lineno"><a class="line" href="classpcpp_1_1_rapid_stp_layer.html#aad220a66e9bdacf015a779bdf955830a">  536</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_rapid_stp_layer.html#aad220a66e9bdacf015a779bdf955830a">isDataValid</a>(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> dataLen)</div>
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        {</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;            <span class="keywordflow">return</span> data &amp;&amp; dataLen &gt;= <span class="keyword">sizeof</span>(<a class="code" href="structpcpp_1_1rstp__conf__bpdu.html">rstp_conf_bpdu</a>);</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;            <span class="keywordflow">return</span> canReinterpretAs&lt;rstp_conf_bpdu&gt;(data, dataLen);</div>
 <div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;        }</div>
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;    };</div>
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160; </div>
@@ -532,13 +532,13 @@ $(document).ready(function(){initNavTree('_stp_layer_8h_source.html',''); initRe
 <div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160; </div>
 <div class="line"><a name="l00704"></a><span class="lineno"><a class="line" href="classpcpp_1_1_multiple_stp_layer.html#aee8e8e1981a449413f892f140fcc4207">  704</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_multiple_stp_layer.html#aee8e8e1981a449413f892f140fcc4207">isDataValid</a>(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> dataLen)</div>
 <div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;        {</div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;            <span class="keywordflow">return</span> data &amp;&amp; dataLen &gt;= <span class="keyword">sizeof</span>(<a class="code" href="structpcpp_1_1mstp__conf__bpdu.html">mstp_conf_bpdu</a>);</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;            <span class="keywordflow">return</span> canReinterpretAs&lt;mstp_conf_bpdu&gt;(data, dataLen);</div>
 <div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;        }</div>
 <div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;    };</div>
 <div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
 <div class="ttc" id="a_layer_8h_html"><div class="ttname"><a href="_layer_8h.html">Layer.h</a></div></div>
 <div class="ttc" id="a_mac_address_8h_html"><div class="ttname"><a href="_mac_address_8h.html">MacAddress.h</a></div></div>
-<div class="ttc" id="aclasspcpp_1_1_layer_html"><div class="ttname"><a href="classpcpp_1_1_layer.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:60</div></div>
+<div class="ttc" id="aclasspcpp_1_1_layer_html"><div class="ttname"><a href="classpcpp_1_1_layer.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:62</div></div>
 <div class="ttc" id="aclasspcpp_1_1_mac_address_html"><div class="ttname"><a href="classpcpp_1_1_mac_address.html">pcpp::MacAddress</a></div><div class="ttdef"><b>Definition:</b> MacAddress.h:21</div></div>
 <div class="ttc" id="aclasspcpp_1_1_multiple_stp_layer_html"><div class="ttname"><a href="classpcpp_1_1_multiple_stp_layer.html">pcpp::MultipleStpLayer</a></div><div class="ttdef"><b>Definition:</b> StpLayer.h:546</div></div>
 <div class="ttc" id="aclasspcpp_1_1_multiple_stp_layer_html_a07dadcb0b520cfa6ded5c8d994535ee8"><div class="ttname"><a href="classpcpp_1_1_multiple_stp_layer.html#a07dadcb0b520cfa6ded5c8d994535ee8">pcpp::MultipleStpLayer::setMstConfigRevision</a></div><div class="ttdeci">void setMstConfigRevision(uint16_t value)</div></div>
@@ -686,7 +686,7 @@ $(document).ready(function(){initNavTree('_stp_layer_8h_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_stp_layer_8h.html">StpLayer.h</a></li>
-    <li class="footer">Generated on Thu Apr 3 2025 04:11:22 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 15 2025 07:16:04 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

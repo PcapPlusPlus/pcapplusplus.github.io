@@ -150,16 +150,22 @@ $(document).ready(function(){initNavTree('_vlan_layer_8h_source.html',''); initR
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">        </span>{</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2">OsiModelDataLinkLayer</a>;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    };</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="classpcpp_1_1_vlan_layer.html#a377f26c125ee6331c4e349262b4cda47">  119</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_vlan_layer.html#a377f26c125ee6331c4e349262b4cda47">isDataValid</a>(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> dataLen)</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="keywordflow">return</span> canReinterpretAs&lt;vlan_header&gt;(data, dataLen);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    };</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
 <div class="ttc" id="a_eth_layer_8h_html"><div class="ttname"><a href="_eth_layer_8h.html">EthLayer.h</a></div></div>
 <div class="ttc" id="a_layer_8h_html"><div class="ttname"><a href="_layer_8h.html">Layer.h</a></div></div>
-<div class="ttc" id="aclasspcpp_1_1_layer_html"><div class="ttname"><a href="classpcpp_1_1_layer.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:60</div></div>
+<div class="ttc" id="aclasspcpp_1_1_layer_html"><div class="ttname"><a href="classpcpp_1_1_layer.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:62</div></div>
 <div class="ttc" id="aclasspcpp_1_1_packet_html"><div class="ttname"><a href="classpcpp_1_1_packet.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:22</div></div>
 <div class="ttc" id="aclasspcpp_1_1_vlan_layer_html"><div class="ttname"><a href="classpcpp_1_1_vlan_layer.html">pcpp::VlanLayer</a></div><div class="ttdef"><b>Definition:</b> VlanLayer.h:34</div></div>
 <div class="ttc" id="aclasspcpp_1_1_vlan_layer_html_a16ed17dab42d1c6b6b6cce813b39178a"><div class="ttname"><a href="classpcpp_1_1_vlan_layer.html#a16ed17dab42d1c6b6b6cce813b39178a">pcpp::VlanLayer::getCFI</a></div><div class="ttdeci">uint8_t getCFI() const</div></div>
 <div class="ttc" id="aclasspcpp_1_1_vlan_layer_html_a196559bb020d58c68913c9ede485986c"><div class="ttname"><a href="classpcpp_1_1_vlan_layer.html#a196559bb020d58c68913c9ede485986c">pcpp::VlanLayer::toString</a></div><div class="ttdeci">std::string toString() const override</div></div>
 <div class="ttc" id="aclasspcpp_1_1_vlan_layer_html_a2a0c09dcb6672f4ac371df94502bea16"><div class="ttname"><a href="classpcpp_1_1_vlan_layer.html#a2a0c09dcb6672f4ac371df94502bea16">pcpp::VlanLayer::getVlanID</a></div><div class="ttdeci">uint16_t getVlanID() const</div></div>
+<div class="ttc" id="aclasspcpp_1_1_vlan_layer_html_a377f26c125ee6331c4e349262b4cda47"><div class="ttname"><a href="classpcpp_1_1_vlan_layer.html#a377f26c125ee6331c4e349262b4cda47">pcpp::VlanLayer::isDataValid</a></div><div class="ttdeci">static bool isDataValid(const uint8_t *data, size_t dataLen)</div><div class="ttdef"><b>Definition:</b> VlanLayer.h:119</div></div>
 <div class="ttc" id="aclasspcpp_1_1_vlan_layer_html_a3f0f8a200a5956b6e1bd52c6c1311b5b"><div class="ttname"><a href="classpcpp_1_1_vlan_layer.html#a3f0f8a200a5956b6e1bd52c6c1311b5b">pcpp::VlanLayer::VlanLayer</a></div><div class="ttdeci">VlanLayer(const uint16_t vlanID, bool cfi, uint8_t priority, uint16_t etherType=0)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_vlan_layer_html_a44b77ea2ea59f82d90383f3ab0546c77"><div class="ttname"><a href="classpcpp_1_1_vlan_layer.html#a44b77ea2ea59f82d90383f3ab0546c77">pcpp::VlanLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer() override</div></div>
 <div class="ttc" id="aclasspcpp_1_1_vlan_layer_html_a5e2229a489ef1a9a250269f255a11922"><div class="ttname"><a href="classpcpp_1_1_vlan_layer.html#a5e2229a489ef1a9a250269f255a11922">pcpp::VlanLayer::getPriority</a></div><div class="ttdeci">uint8_t getPriority() const</div></div>
@@ -184,7 +190,7 @@ $(document).ready(function(){initNavTree('_vlan_layer_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_vlan_layer_8h.html">VlanLayer.h</a></li>
-    <li class="footer">Generated on Thu Apr 3 2025 04:11:22 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 15 2025 07:16:04 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

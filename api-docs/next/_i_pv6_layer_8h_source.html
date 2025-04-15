@@ -253,10 +253,11 @@ $(document).ready(function(){initNavTree('_i_pv6_layer_8h_source.html',''); init
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
 <div class="line"><a name="l00245"></a><span class="lineno"><a class="line" href="classpcpp_1_1_i_pv6_layer.html#a901348cc5bf8635cede637cb17bc2285">  245</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_i_pv6_layer.html#a901348cc5bf8635cede637cb17bc2285">IPv6Layer::isDataValid</a>(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> dataLen)</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    {</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordflow">return</span> data &amp;&amp; dataLen &gt;= <span class="keyword">sizeof</span>(<a class="code" href="structpcpp_1_1ip6__hdr.html">ip6_hdr</a>);</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    }</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keyword">auto</span> ip6Header = <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><a class="code" href="structpcpp_1_1ip6__hdr.html">ip6_hdr</a>*<span class="keyword">&gt;</span>(data);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="keywordflow">return</span> canReinterpretAs&lt;ip6_hdr&gt;(data, dataLen) &amp;&amp; ip6Header-&gt;<a class="code" href="structpcpp_1_1ip6__hdr.html#aee7025c3316d0ecbb3db29bfdecb1e25">ipVersion</a> == 6;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    }</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
 <div class="ttc" id="a_i_p_layer_8h_html"><div class="ttname"><a href="_i_p_layer_8h.html">IPLayer.h</a></div></div>
 <div class="ttc" id="a_i_pv6_extensions_8h_html"><div class="ttname"><a href="_i_pv6_extensions_8h.html">IPv6Extensions.h</a></div></div>
 <div class="ttc" id="a_ip_address_8h_html"><div class="ttname"><a href="_ip_address_8h.html">IpAddress.h</a></div></div>
@@ -292,7 +293,7 @@ $(document).ready(function(){initNavTree('_i_pv6_layer_8h_source.html',''); init
 <div class="ttc" id="aclasspcpp_1_1_i_pv6_layer_html_adee1cdbf42f6003d3c748ae51afe4d44"><div class="ttname"><a href="classpcpp_1_1_i_pv6_layer.html#adee1cdbf42f6003d3c748ae51afe4d44">pcpp::IPv6Layer::addExtension</a></div><div class="ttdeci">TIPv6Extension * addExtension(const TIPv6Extension &amp;extensionHeader)</div><div class="ttdef"><b>Definition:</b> IPv6Layer.h:212</div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_pv6_layer_html_ae3bc27e677a1873373098f9e8e40f8d5"><div class="ttname"><a href="classpcpp_1_1_i_pv6_layer.html#ae3bc27e677a1873373098f9e8e40f8d5">pcpp::IPv6Layer::~IPv6Layer</a></div><div class="ttdeci">~IPv6Layer() override</div><div class="ttdoc">A destructor for this layer.</div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_pv6_layer_html_ae8fc710de1b4ebe38c96da2cd968fd52"><div class="ttname"><a href="classpcpp_1_1_i_pv6_layer.html#ae8fc710de1b4ebe38c96da2cd968fd52">pcpp::IPv6Layer::getDstIPAddress</a></div><div class="ttdeci">IPAddress getDstIPAddress() const override</div><div class="ttdef"><b>Definition:</b> IPv6Layer.h:117</div></div>
-<div class="ttc" id="aclasspcpp_1_1_layer_html"><div class="ttname"><a href="classpcpp_1_1_layer.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:60</div></div>
+<div class="ttc" id="aclasspcpp_1_1_layer_html"><div class="ttname"><a href="classpcpp_1_1_layer.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:62</div></div>
 <div class="ttc" id="aclasspcpp_1_1_packet_html"><div class="ttname"><a href="classpcpp_1_1_packet.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:22</div></div>
 <div class="ttc" id="anamespacepcpp_html"><div class="ttname"><a href="namespacepcpp.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib.</div></div>
 <div class="ttc" id="anamespacepcpp_html_a69e2ee6a9dc68797612cf8dc38461025"><div class="ttname"><a href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a></div><div class="ttdeci">OsiModelLayer</div><div class="ttdoc">An enum representing OSI model layers.</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:225</div></div>
@@ -312,7 +313,7 @@ $(document).ready(function(){initNavTree('_i_pv6_layer_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_i_pv6_layer_8h.html">IPv6Layer.h</a></li>
-    <li class="footer">Generated on Thu Apr 3 2025 04:11:22 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 15 2025 07:16:04 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

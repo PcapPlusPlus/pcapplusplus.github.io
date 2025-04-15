@@ -91,7 +91,9 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_s_s_l_change_cipher_spec
 
 <p>This is the complete list of members for <a class="el" href="classpcpp_1_1_s_s_l_change_cipher_spec_layer.html">pcpp::SSLChangeCipherSpecLayer</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_s_s_l_change_cipher_spec_layer.html#ad9907eadf0dad0be2c025cea940da979">computeCalculateFields</a>() override</td><td class="entry"><a class="el" href="classpcpp_1_1_s_s_l_change_cipher_spec_layer.html">pcpp::SSLChangeCipherSpecLayer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_layer.html#acb031e00ee13b0c299cc6c0458a61a18">canReinterpretAs</a>(const uint8_t *data, size_t dataLen)</td><td class="entry"><a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classpcpp_1_1_s_s_l_change_cipher_spec_layer.html#ad9907eadf0dad0be2c025cea940da979">computeCalculateFields</a>() override</td><td class="entry"><a class="el" href="classpcpp_1_1_s_s_l_change_cipher_spec_layer.html">pcpp::SSLChangeCipherSpecLayer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_layer.html#a73210de1c3e4361189be96b40bf109d9">constructNextLayer</a>(uint8_t *data, size_t dataLen, Packet *packet, Args &amp;&amp;... extraArgs)</td><td class="entry"><a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classpcpp_1_1_layer.html#a019a07d6f9d8fc7eb233e61826b11964">copyData</a>(uint8_t *toArr) const</td><td class="entry"><a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_s_s_l_layer.html#ab475769b89eb8db08be50f96afe26450">createSSLMessage</a>(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</td><td class="entry"><a class="el" href="classpcpp_1_1_s_s_l_layer.html">pcpp::SSLLayer</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="classpcpp_1_1_layer.html#a4e3c72d568a8d43c0fd82d781255e98f">getData</a>() const</td><td class="entry"><a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -114,13 +116,14 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_s_s_l_change_cipher_spec
   <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_s_s_l_layer.html#a48cf37d3062e9a04444639cf80924bf2">parseNextLayer</a>() override</td><td class="entry"><a class="el" href="classpcpp_1_1_s_s_l_layer.html">pcpp::SSLLayer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classpcpp_1_1_s_s_l_change_cipher_spec_layer.html#a7c8ad60a5877520ba242db95471fb8c2">SSLChangeCipherSpecLayer</a>(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</td><td class="entry"><a class="el" href="classpcpp_1_1_s_s_l_change_cipher_spec_layer.html">pcpp::SSLChangeCipherSpecLayer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_s_s_l_change_cipher_spec_layer.html#a82a3507a265f53f4ba30b2e8eba8c18c">toString</a>() const override</td><td class="entry"><a class="el" href="classpcpp_1_1_s_s_l_change_cipher_spec_layer.html">pcpp::SSLChangeCipherSpecLayer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classpcpp_1_1_layer.html#adc5fdf997375b58400a55fdcc3bdff87">~Layer</a>() override</td><td class="entry"><a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classpcpp_1_1_layer.html#ac180476870fbef9a104d775d81c70c74">tryConstructNextLayerWithFallback</a>(uint8_t *data, size_t dataLen, Packet *packet, Args &amp;&amp;... extraArgs)</td><td class="entry"><a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_layer.html#adc5fdf997375b58400a55fdcc3bdff87">~Layer</a>() override</td><td class="entry"><a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Apr 3 2025 04:11:23 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 15 2025 07:16:05 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
