@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_i_p_layer.html',''); ini
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classpcpp_1_1_i_p_layer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::IPLayer Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -114,6 +115,12 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_layer.html#a48d71e484fd49e9bd0d273dea6f77946">~IPLayer</a> ()=default</td></tr>
 <tr class="memdesc:a48d71e484fd49e9bd0d273dea6f77946"><td class="mdescLeft">&#160;</td><td class="mdescRight">An empty destructor. <br /></td></tr>
 <tr class="separator:a48d71e484fd49e9bd0d273dea6f77946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:abccf0a0d8b1cb2769a6ac76821e60287"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_p_layer.html#abccf0a0d8b1cb2769a6ac76821e60287">getIPVersion</a> (uint8_t const *data, size_t dataLen)</td></tr>
+<tr class="memdesc:abccf0a0d8b1cb2769a6ac76821e60287"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the IP version of a given packet data.  <a href="classpcpp_1_1_i_p_layer.html#abccf0a0d8b1cb2769a6ac76821e60287">More...</a><br /></td></tr>
+<tr class="separator:abccf0a0d8b1cb2769a6ac76821e60287"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is an interface (abstract class) implemented in the IP layers (<a class="el" href="classpcpp_1_1_i_pv4_layer.html">IPv4Layer</a> and <a class="el" href="classpcpp_1_1_i_pv6_layer.html">IPv6Layer</a>). It provides methods to fetch the source and destination IP addresses in an abdtract way that hides the IP type (IPv4 or IPv6). This is useful for use-cases in which the IP type doesn't matter. For example: if you're only interested in printing the IP address the IP type shouldn't matter. </p>
@@ -143,6 +150,53 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <p>An abstract method to get the destination IP address </p><dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> object containing the destination address </dd></dl>
 
 <p>Implemented in <a class="el" href="classpcpp_1_1_i_pv6_layer.html#ae8fc710de1b4ebe38c96da2cd968fd52">pcpp::IPv6Layer</a>, and <a class="el" href="classpcpp_1_1_i_pv4_layer.html#a25aeb8c75b4a5b16e679a4fb48ca144a">pcpp::IPv4Layer</a>.</p>
+
+</div>
+</div>
+<a id="abccf0a0d8b1cb2769a6ac76821e60287"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abccf0a0d8b1cb2769a6ac76821e60287">&#9670;&nbsp;</a></span>getIPVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> pcpp::IPLayer::getIPVersion </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t const *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the IP version of a given packet data. </p>
+<p>The buffer is expected to start with the IP header and contain at least the first byte of it. The method will recognize IPv4 and IPv6 headers and return the respective protocol constant. If the IP version is not recognized or the buffer is malformed, UnknownProtocol will be returned.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the packet data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>The length of the packet data in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A ProtocolType representing the IP version of the packet data. </dd></dl>
 
 </div>
 </div>
@@ -180,7 +234,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_p_layer.html">IPLayer</a></li>
-    <li class="footer">Generated on Thu Apr 3 2025 04:11:23 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 15 2025 07:16:05 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

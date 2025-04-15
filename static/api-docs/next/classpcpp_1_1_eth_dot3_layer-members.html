@@ -91,7 +91,9 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_eth_dot3_layer.html','')
 
 <p>This is the complete list of members for <a class="el" href="classpcpp_1_1_eth_dot3_layer.html">pcpp::EthDot3Layer</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_eth_dot3_layer.html#a93efdd8f5315e535baaaf863525bbd60">computeCalculateFields</a>() override</td><td class="entry"><a class="el" href="classpcpp_1_1_eth_dot3_layer.html">pcpp::EthDot3Layer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_layer.html#acb031e00ee13b0c299cc6c0458a61a18">canReinterpretAs</a>(const uint8_t *data, size_t dataLen)</td><td class="entry"><a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classpcpp_1_1_eth_dot3_layer.html#a93efdd8f5315e535baaaf863525bbd60">computeCalculateFields</a>() override</td><td class="entry"><a class="el" href="classpcpp_1_1_eth_dot3_layer.html">pcpp::EthDot3Layer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_layer.html#a73210de1c3e4361189be96b40bf109d9">constructNextLayer</a>(uint8_t *data, size_t dataLen, Packet *packet, Args &amp;&amp;... extraArgs)</td><td class="entry"><a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classpcpp_1_1_layer.html#a019a07d6f9d8fc7eb233e61826b11964">copyData</a>(uint8_t *toArr) const</td><td class="entry"><a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_eth_dot3_layer.html#a308cb49ddcc503a32f52d93ee199db53">EthDot3Layer</a>(uint8_t *data, size_t dataLen, Packet *packet)</td><td class="entry"><a class="el" href="classpcpp_1_1_eth_dot3_layer.html">pcpp::EthDot3Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classpcpp_1_1_eth_dot3_layer.html#a0a07cfac377be2388282bde5ecaafdaa">EthDot3Layer</a>(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</td><td class="entry"><a class="el" href="classpcpp_1_1_eth_dot3_layer.html">pcpp::EthDot3Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -116,13 +118,14 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_eth_dot3_layer.html','')
   <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_eth_dot3_layer.html#a2c9bdf00c480cfc06783867034783415">setDestMac</a>(const MacAddress &amp;destMac)</td><td class="entry"><a class="el" href="classpcpp_1_1_eth_dot3_layer.html">pcpp::EthDot3Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classpcpp_1_1_eth_dot3_layer.html#aaf0ad98341397f4f0da7d447910c9e3f">setSourceMac</a>(const MacAddress &amp;sourceMac)</td><td class="entry"><a class="el" href="classpcpp_1_1_eth_dot3_layer.html">pcpp::EthDot3Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_eth_dot3_layer.html#a56fca8bab449069f885f3b30cfb2c4e3">toString</a>() const override</td><td class="entry"><a class="el" href="classpcpp_1_1_eth_dot3_layer.html">pcpp::EthDot3Layer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classpcpp_1_1_layer.html#adc5fdf997375b58400a55fdcc3bdff87">~Layer</a>() override</td><td class="entry"><a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classpcpp_1_1_layer.html#ac180476870fbef9a104d775d81c70c74">tryConstructNextLayerWithFallback</a>(uint8_t *data, size_t dataLen, Packet *packet, Args &amp;&amp;... extraArgs)</td><td class="entry"><a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classpcpp_1_1_layer.html#adc5fdf997375b58400a55fdcc3bdff87">~Layer</a>() override</td><td class="entry"><a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Apr 3 2025 04:11:23 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 15 2025 07:16:05 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

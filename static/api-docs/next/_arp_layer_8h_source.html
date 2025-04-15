@@ -248,9 +248,14 @@ $(document).ready(function(){initNavTree('_arp_layer_8h_source.html',''); initRe
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="keyword">        </span>{</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a94d470045f06f720e3cd7db069535412">OsiModelNetworkLayer</a>;</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        }</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    };</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160; </div>
+<div class="line"><a name="l00279"></a><span class="lineno"><a class="line" href="classpcpp_1_1_arp_layer.html#ae92debb2da72e4a00fdc3bdaa8a9946b">  279</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_arp_layer.html#ae92debb2da72e4a00fdc3bdaa8a9946b">isDataValid</a>(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> dataLen)</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        {</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            <span class="keywordflow">return</span> canReinterpretAs&lt;arphdr&gt;(data, dataLen);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        }</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    };</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
 <div class="ttc" id="a_deprecation_utils_8h_html"><div class="ttname"><a href="_deprecation_utils_8h.html">DeprecationUtils.h</a></div></div>
 <div class="ttc" id="a_ip_address_8h_html"><div class="ttname"><a href="_ip_address_8h.html">IpAddress.h</a></div></div>
 <div class="ttc" id="a_layer_8h_html"><div class="ttname"><a href="_layer_8h.html">Layer.h</a></div></div>
@@ -271,9 +276,10 @@ $(document).ready(function(){initNavTree('_arp_layer_8h_source.html',''); initRe
 <div class="ttc" id="aclasspcpp_1_1_arp_layer_html_a9fe8dac3273e04e86ff2fe65699412d7"><div class="ttname"><a href="classpcpp_1_1_arp_layer.html#a9fe8dac3273e04e86ff2fe65699412d7">pcpp::ArpLayer::toString</a></div><div class="ttdeci">std::string toString() const override</div></div>
 <div class="ttc" id="aclasspcpp_1_1_arp_layer_html_aa067af1ff96f04fa052ce58b48fedf16"><div class="ttname"><a href="classpcpp_1_1_arp_layer.html#aa067af1ff96f04fa052ce58b48fedf16">pcpp::ArpLayer::ArpLayer</a></div><div class="ttdeci">ArpLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</div><div class="ttdef"><b>Definition:</b> ArpLayer.h:151</div></div>
 <div class="ttc" id="aclasspcpp_1_1_arp_layer_html_ad7f15635c5a573384b3aef6e50f8ab95"><div class="ttname"><a href="classpcpp_1_1_arp_layer.html#ad7f15635c5a573384b3aef6e50f8ab95">pcpp::ArpLayer::getOsiModelLayer</a></div><div class="ttdeci">OsiModelLayer getOsiModelLayer() const override</div><div class="ttdef"><b>Definition:</b> ArpLayer.h:270</div></div>
+<div class="ttc" id="aclasspcpp_1_1_arp_layer_html_ae92debb2da72e4a00fdc3bdaa8a9946b"><div class="ttname"><a href="classpcpp_1_1_arp_layer.html#ae92debb2da72e4a00fdc3bdaa8a9946b">pcpp::ArpLayer::isDataValid</a></div><div class="ttdeci">static bool isDataValid(const uint8_t *data, size_t dataLen)</div><div class="ttdef"><b>Definition:</b> ArpLayer.h:279</div></div>
 <div class="ttc" id="aclasspcpp_1_1_arp_layer_html_afebedcb672bb8ad278f0918d4051a848"><div class="ttname"><a href="classpcpp_1_1_arp_layer.html#afebedcb672bb8ad278f0918d4051a848">pcpp::ArpLayer::getSenderMacAddress</a></div><div class="ttdeci">MacAddress getSenderMacAddress() const</div><div class="ttdef"><b>Definition:</b> ArpLayer.h:213</div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_pv4_address_html"><div class="ttname"><a href="classpcpp_1_1_i_pv4_address.html">pcpp::IPv4Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:28</div></div>
-<div class="ttc" id="aclasspcpp_1_1_layer_html"><div class="ttname"><a href="classpcpp_1_1_layer.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:60</div></div>
+<div class="ttc" id="aclasspcpp_1_1_layer_html"><div class="ttname"><a href="classpcpp_1_1_layer.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:62</div></div>
 <div class="ttc" id="aclasspcpp_1_1_mac_address_html"><div class="ttname"><a href="classpcpp_1_1_mac_address.html">pcpp::MacAddress</a></div><div class="ttdef"><b>Definition:</b> MacAddress.h:21</div></div>
 <div class="ttc" id="aclasspcpp_1_1_packet_html"><div class="ttname"><a href="classpcpp_1_1_packet.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:22</div></div>
 <div class="ttc" id="anamespacepcpp_html"><div class="ttname"><a href="namespacepcpp.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib.</div></div>
@@ -313,7 +319,7 @@ $(document).ready(function(){initNavTree('_arp_layer_8h_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_arp_layer_8h.html">ArpLayer.h</a></li>
-    <li class="footer">Generated on Thu Apr 3 2025 04:11:22 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 15 2025 07:16:04 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

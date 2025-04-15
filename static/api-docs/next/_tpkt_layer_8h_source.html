@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('_tpkt_layer_8h_source.html',''); initR
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classpcpp_1_1_tpkt_layer.html#a8d94369d340a77ab9a429aad37b26633">   91</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_tpkt_layer.html#a8d94369d340a77ab9a429aad37b26633">isDataValid</a>(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> dataSize)</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordflow">return</span> data &amp;&amp; dataSize &gt;= <span class="keyword">sizeof</span>(<a class="code" href="structpcpp_1_1tpkthdr.html">tpkthdr</a>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordflow">return</span> canReinterpretAs&lt;tpkthdr&gt;(data, dataSize);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        }</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
 <div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classpcpp_1_1_tpkt_layer.html#a05dc0bfc7c4f5c8f72ffa0aafab05d3c">   96</a></span>&#160;        std::string <a class="code" href="classpcpp_1_1_tpkt_layer.html#a05dc0bfc7c4f5c8f72ffa0aafab05d3c">toString</a>() <span class="keyword">const override</span>;</div>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('_tpkt_layer_8h_source.html',''); initR
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
 <div class="ttc" id="a_eth_layer_8h_html"><div class="ttname"><a href="_eth_layer_8h.html">EthLayer.h</a></div></div>
 <div class="ttc" id="a_layer_8h_html"><div class="ttname"><a href="_layer_8h.html">Layer.h</a></div></div>
-<div class="ttc" id="aclasspcpp_1_1_layer_html"><div class="ttname"><a href="classpcpp_1_1_layer.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:60</div></div>
+<div class="ttc" id="aclasspcpp_1_1_layer_html"><div class="ttname"><a href="classpcpp_1_1_layer.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:62</div></div>
 <div class="ttc" id="aclasspcpp_1_1_packet_html"><div class="ttname"><a href="classpcpp_1_1_packet.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:22</div></div>
 <div class="ttc" id="aclasspcpp_1_1_tpkt_layer_html"><div class="ttname"><a href="classpcpp_1_1_tpkt_layer.html">pcpp::TpktLayer</a></div><div class="ttdef"><b>Definition:</b> TpktLayer.h:30</div></div>
 <div class="ttc" id="aclasspcpp_1_1_tpkt_layer_html_a0180d8fa07e6d89b6254d039adc8b6cd"><div class="ttname"><a href="classpcpp_1_1_tpkt_layer.html#a0180d8fa07e6d89b6254d039adc8b6cd">pcpp::TpktLayer::setVersion</a></div><div class="ttdeci">void setVersion(uint8_t version) const</div></div>
@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('_tpkt_layer_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_tpkt_layer_8h.html">TpktLayer.h</a></li>
-    <li class="footer">Generated on Thu Apr 3 2025 04:11:22 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 15 2025 07:16:04 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

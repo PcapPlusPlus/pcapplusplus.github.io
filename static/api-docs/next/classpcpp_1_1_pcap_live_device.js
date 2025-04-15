@@ -16,6 +16,18 @@ var classpcpp_1_1_pcap_live_device =
       [ "PCPP_IN", "classpcpp_1_1_pcap_live_device.html#a00efdbd7aca92b696dd585cf3301add5a9da5011f04f2f9cf302d144d311f27ab", null ],
       [ "PCPP_OUT", "classpcpp_1_1_pcap_live_device.html#a00efdbd7aca92b696dd585cf3301add5aa09daf455022a9dab650fdcb2171ba1c", null ]
     ] ],
+    [ "TimestampPrecision", "classpcpp_1_1_pcap_live_device.html#a7b819cd593026da0e65274221f52db82", [
+      [ "Microseconds", "classpcpp_1_1_pcap_live_device.html#a7b819cd593026da0e65274221f52db82a64068ed47d979c5efa036f027d656433", null ],
+      [ "Nanoseconds", "classpcpp_1_1_pcap_live_device.html#a7b819cd593026da0e65274221f52db82afba00bdab687ce01136a86bac8bac578", null ]
+    ] ],
+    [ "TimestampProvider", "classpcpp_1_1_pcap_live_device.html#ac5b95d68aa486b7ac038096fe1b8d71e", [
+      [ "Host", "classpcpp_1_1_pcap_live_device.html#ac5b95d68aa486b7ac038096fe1b8d71eac2ca16d048ec66e04bca283eab048ec2", null ],
+      [ "HostLowPrecision", "classpcpp_1_1_pcap_live_device.html#ac5b95d68aa486b7ac038096fe1b8d71ea81a53679545718b26c514315c26db901", null ],
+      [ "HostHighPrecision", "classpcpp_1_1_pcap_live_device.html#ac5b95d68aa486b7ac038096fe1b8d71eaa0d6622487e925677aec54f04dd30ac9", null ],
+      [ "Adapter", "classpcpp_1_1_pcap_live_device.html#ac5b95d68aa486b7ac038096fe1b8d71ea8601c10b2797050a900697daac0c0001", null ],
+      [ "AdapterUnsynced", "classpcpp_1_1_pcap_live_device.html#ac5b95d68aa486b7ac038096fe1b8d71ea18ac6b0e8fa6cc2bf36b556bdd3feb70", null ],
+      [ "HostHighPrecisionUnsynced", "classpcpp_1_1_pcap_live_device.html#ac5b95d68aa486b7ac038096fe1b8d71eafd90a006b8288716dc2baebdfe845269", null ]
+    ] ],
     [ "~PcapLiveDevice", "classpcpp_1_1_pcap_live_device.html#a841eda2bc4582ad8f71e68f140aca064", null ],
     [ "captureActive", "classpcpp_1_1_pcap_live_device.html#a058f8bc527935d97bbd044614ab93473", null ],
     [ "clone", "classpcpp_1_1_pcap_live_device.html#acba1065b450b4caf17e7d0c99959aa99", null ],

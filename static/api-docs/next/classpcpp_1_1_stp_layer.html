@@ -183,6 +183,21 @@ static <a class="el" href="classpcpp_1_1_mac_address.html">pcpp::MacAddress</a>&
 static <a class="el" href="classpcpp_1_1_mac_address.html">pcpp::MacAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_stp_layer.html#a4d2e2d40af97d9c6a8a6ebf5606f1931">StpUplinkFastMulticastDstMAC</a></td></tr>
 <tr class="memdesc:a4d2e2d40af97d9c6a8a6ebf5606f1931"><td class="mdescLeft">&#160;</td><td class="mdescRight">STP Uplink Fast protocol uses "01:00:0C:CD:CD:CD" as destination MAC. <br /></td></tr>
 <tr class="separator:a4d2e2d40af97d9c6a8a6ebf5606f1931"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_classpcpp_1_1_layer"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classpcpp_1_1_layer')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td></tr>
+<tr class="memitem:a73210de1c3e4361189be96b40bf109d9 inherit pro_methods_classpcpp_1_1_layer"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:a73210de1c3e4361189be96b40bf109d9 inherit pro_methods_classpcpp_1_1_layer"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_layer.html">Layer</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a73210de1c3e4361189be96b40bf109d9">constructNextLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet, Args &amp;&amp;... extraArgs)</td></tr>
+<tr class="separator:a73210de1c3e4361189be96b40bf109d9 inherit pro_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac180476870fbef9a104d775d81c70c74 inherit pro_methods_classpcpp_1_1_layer"><td class="memTemplParams" colspan="2">template&lt;typename T , typename TFallback , typename... Args&gt; </td></tr>
+<tr class="memitem:ac180476870fbef9a104d775d81c70c74 inherit pro_methods_classpcpp_1_1_layer"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_layer.html">Layer</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#ac180476870fbef9a104d775d81c70c74">tryConstructNextLayerWithFallback</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet, Args &amp;&amp;... extraArgs)</td></tr>
+<tr class="separator:ac180476870fbef9a104d775d81c70c74 inherit pro_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_classpcpp_1_1_layer"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classpcpp_1_1_layer')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td></tr>
+<tr class="memitem:acb031e00ee13b0c299cc6c0458a61a18 inherit pro_static_methods_classpcpp_1_1_layer"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:acb031e00ee13b0c299cc6c0458a61a18 inherit pro_static_methods_classpcpp_1_1_layer"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#acb031e00ee13b0c299cc6c0458a61a18">canReinterpretAs</a> (const uint8_t *data, size_t dataLen)</td></tr>
+<tr class="memdesc:acb031e00ee13b0c299cc6c0458a61a18 inherit pro_static_methods_classpcpp_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the data is large enough to reinterpret as a type.  <a href="classpcpp_1_1_layer.html#acb031e00ee13b0c299cc6c0458a61a18">More...</a><br /></td></tr>
+<tr class="separator:acb031e00ee13b0c299cc6c0458a61a18 inherit pro_static_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents an Spanning Tree Protocol <a class="el" href="classpcpp_1_1_layer.html">Layer</a> </p>
@@ -553,7 +568,7 @@ static <a class="el" href="classpcpp_1_1_mac_address.html">pcpp::MacAddress</a>&
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_stp_layer.html">StpLayer</a></li>
-    <li class="footer">Generated on Thu Apr 3 2025 04:11:23 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 15 2025 07:16:05 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

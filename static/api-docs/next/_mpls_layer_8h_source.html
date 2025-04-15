@@ -161,11 +161,16 @@ $(document).ready(function(){initNavTree('_mpls_layer_8h_source.html',''); initR
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">        </span>{</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a94d470045f06f720e3cd7db069535412">OsiModelNetworkLayer</a>;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    };</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classpcpp_1_1_mpls_layer.html#aa06d2a343edaaa443dff72aeaedaedbc">  114</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_mpls_layer.html#aa06d2a343edaaa443dff72aeaedaedbc">isDataValid</a>(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> dataLen)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordflow">return</span> canReinterpretAs&lt;mpls_header&gt;(data, dataLen);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    };</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
 <div class="ttc" id="a_layer_8h_html"><div class="ttname"><a href="_layer_8h.html">Layer.h</a></div></div>
-<div class="ttc" id="aclasspcpp_1_1_layer_html"><div class="ttname"><a href="classpcpp_1_1_layer.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:60</div></div>
+<div class="ttc" id="aclasspcpp_1_1_layer_html"><div class="ttname"><a href="classpcpp_1_1_layer.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:62</div></div>
 <div class="ttc" id="aclasspcpp_1_1_mpls_layer_html"><div class="ttname"><a href="classpcpp_1_1_mpls_layer.html">pcpp::MplsLayer</a></div><div class="ttdef"><b>Definition:</b> MplsLayer.h:14</div></div>
 <div class="ttc" id="aclasspcpp_1_1_mpls_layer_html_a10be1c8f277ab1bec8512ac203eb0b32"><div class="ttname"><a href="classpcpp_1_1_mpls_layer.html#a10be1c8f277ab1bec8512ac203eb0b32">pcpp::MplsLayer::getTTL</a></div><div class="ttdeci">uint8_t getTTL() const</div><div class="ttdef"><b>Definition:</b> MplsLayer.h:52</div></div>
 <div class="ttc" id="aclasspcpp_1_1_mpls_layer_html_a21cf86ca8c689c68d70a6451e337a706"><div class="ttname"><a href="classpcpp_1_1_mpls_layer.html#a21cf86ca8c689c68d70a6451e337a706">pcpp::MplsLayer::setMplsLabel</a></div><div class="ttdeci">bool setMplsLabel(uint32_t label)</div></div>
@@ -175,6 +180,7 @@ $(document).ready(function(){initNavTree('_mpls_layer_8h_source.html',''); initR
 <div class="ttc" id="aclasspcpp_1_1_mpls_layer_html_a76f0a12e0c4060c7c5fd7873a6b73ed2"><div class="ttname"><a href="classpcpp_1_1_mpls_layer.html#a76f0a12e0c4060c7c5fd7873a6b73ed2">pcpp::MplsLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields() override</div></div>
 <div class="ttc" id="aclasspcpp_1_1_mpls_layer_html_a78a145f83cfa7322875f9b6ea16e7b01"><div class="ttname"><a href="classpcpp_1_1_mpls_layer.html#a78a145f83cfa7322875f9b6ea16e7b01">pcpp::MplsLayer::MplsLayer</a></div><div class="ttdeci">MplsLayer(uint8_t *data, size_t dataLen, Layer *prevLayer, Packet *packet)</div><div class="ttdef"><b>Definition:</b> MplsLayer.h:37</div></div>
 <div class="ttc" id="aclasspcpp_1_1_mpls_layer_html_a89c20c7d9d47206e52ddb51c536b79c8"><div class="ttname"><a href="classpcpp_1_1_mpls_layer.html#a89c20c7d9d47206e52ddb51c536b79c8">pcpp::MplsLayer::setTTL</a></div><div class="ttdeci">void setTTL(uint8_t ttl)</div><div class="ttdef"><b>Definition:</b> MplsLayer.h:59</div></div>
+<div class="ttc" id="aclasspcpp_1_1_mpls_layer_html_aa06d2a343edaaa443dff72aeaedaedbc"><div class="ttname"><a href="classpcpp_1_1_mpls_layer.html#aa06d2a343edaaa443dff72aeaedaedbc">pcpp::MplsLayer::isDataValid</a></div><div class="ttdeci">static bool isDataValid(const uint8_t *data, size_t dataLen)</div><div class="ttdef"><b>Definition:</b> MplsLayer.h:114</div></div>
 <div class="ttc" id="aclasspcpp_1_1_mpls_layer_html_ab1a2685ae808d5563f56c1aeeae7ff3f"><div class="ttname"><a href="classpcpp_1_1_mpls_layer.html#ab1a2685ae808d5563f56c1aeeae7ff3f">pcpp::MplsLayer::getOsiModelLayer</a></div><div class="ttdeci">OsiModelLayer getOsiModelLayer() const override</div><div class="ttdef"><b>Definition:</b> MplsLayer.h:105</div></div>
 <div class="ttc" id="aclasspcpp_1_1_mpls_layer_html_ab662be648cbc3d2a7d6a83dd8cb71ec0"><div class="ttname"><a href="classpcpp_1_1_mpls_layer.html#ab662be648cbc3d2a7d6a83dd8cb71ec0">pcpp::MplsLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen() const override</div><div class="ttdef"><b>Definition:</b> MplsLayer.h:94</div></div>
 <div class="ttc" id="aclasspcpp_1_1_mpls_layer_html_ac328b74e4960b4e96456e9c63015a695"><div class="ttname"><a href="classpcpp_1_1_mpls_layer.html#ac328b74e4960b4e96456e9c63015a695">pcpp::MplsLayer::isBottomOfStack</a></div><div class="ttdeci">bool isBottomOfStack() const</div></div>
@@ -193,7 +199,7 @@ $(document).ready(function(){initNavTree('_mpls_layer_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_mpls_layer_8h.html">MplsLayer.h</a></li>
-    <li class="footer">Generated on Thu Apr 3 2025 04:11:22 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 15 2025 07:16:04 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
