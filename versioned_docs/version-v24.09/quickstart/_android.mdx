@@ -1,38 +1,19 @@
 import ReleaseLink from '@site/src/components/ReleaseLink';
+import { ImageWithBaseUrl } from '@site/src/components/ImageWithBaseUrl';
 
-### ToyVpn
+[ToyVpn-PcapPlusPlus](https://github.com/seladb/ToyVpn-PcapPlusPlus) is an Android application designed for monitoring and analyzing network traffic on an Android device. It works by creating a VPN tunnel and routing all device traffic through it, allowing access to raw packets for real-time analysis and data storage.
 
-[ToyVpn](https://android.googlesource.com/platform/development/+/master/samples/ToyVpn) is an Android example app provided by Google that demonstrates Android APIs to create VPN solutions. You can read more about it in the [Android documentation](https://developer.android.com/guide/topics/connectivity/vpn).
+The app is heavily inspired by Google’s [ToyVpn](https://android.googlesource.com/platform/development/+/master/samples/ToyVpn) example, which demonstrates how to use Android's VPN APIs to implement custom VPN solutions.
 
-ToyVpn uses [`VpnService`](https://developer.android.com/reference/android/net/VpnService) to handle incoming and outgoing network traffic, which means is has access to the network packets going through the VPN (which is otherwise not possible on non-rooted devices). This makes it a great example of how PcapPlusPlus can be used in Android apps and run on any device without special requirements such as a rooted device.
+For more details, check out the [ToyVpn-PcapPlusPlus's `README.md`](https://github.com/seladb/ToyVpn-PcapPlusPlus/blob/master/README.md) file, including instructions on how to [build and install the app](https://github.com/seladb/ToyVpn-PcapPlusPlus#build-and-run-instructions-%EF%B8%8F).
 
-### ToyVpn-PcapPlusPlus
+Pre-compiled PcapPlusPlus libraries for Android are available on the release page: <ReleaseLink/>.
 
-[ToyVpn-PcapPlusPlus](https://github.com/seladb/ToyVpn-PcapPlusPlus) is a version of ToyVpn that uses PcapPlusplus to gather data and metrics on the network traffic that goes through the VPN. It collects data such as packet count of different protocols (IPv4, IPv6, DNS, TLS, etc.), TCP connections, DNS requests and responses, TLS versions, TLS Server Name Indication (SNI), and more. These metrics are collected and written to the app's log. In addition to data collection, all of the network traffic is captured and saved to a pcap file that can be used for further investigation.
+Here are a few screenshot of the app:
 
-[ToyVpn-PcapPlusPlus's `README.md`](https://github.com/seladb/ToyVpn-PcapPlusPlus/blob/master/README.md) file contains detailed information on how to [build and install the app](https://github.com/seladb/ToyVpn-PcapPlusPlus#build-and-run-instructions).
-
-PcapPlusPlus pre-compiled libraries are available in the release page: <ReleaseLink/>.
-
-Here is a screenshot of the app:
-
-![ToyVpn Screenshot](/img/toyvpn.png)
-
-And here is an example of the metrics collected by the app (as written to the app's log):
-
-```shell
-03-19 00:57:33.076  6085  6130 I PcapPlusPlusInterface: Packet stats:
-03-19 00:57:33.076  6085  6130 I PcapPlusPlusInterface: Packets=2639
-03-19 00:57:33.076  6085  6130 I PcapPlusPlusInterface: IPv4=2620
-03-19 00:57:33.076  6085  6130 I PcapPlusPlusInterface: IPv6=11
-03-19 00:57:33.076  6085  6130 I PcapPlusPlusInterface: TCP=2583
-03-19 00:57:33.076  6085  6130 I PcapPlusPlusInterface: UDP=37
-03-19 00:57:33.076  6085  6130 I PcapPlusPlusInterface: Connections=48
-03-19 00:57:33.076  6085  6130 I PcapPlusPlusInterface: DNS_req=18
-03-19 00:57:33.076  6085  6130 I PcapPlusPlusInterface: DNS_res=19
-03-19 00:57:33.076  6085  6130 I PcapPlusPlusInterface: Top_TLS_Version=[(TLS 1.3, 27)]
-03-19 00:57:33.076  6085  6130 I PcapPlusPlusInterface: TOP_SNI=[(i.ytimg.com, 4), (cdn.ampproject.org, 4), (lh5.googleusercontent.com, 2), (google.com, 2), (googleads.g.doubleclick.net, 2)]
-```
+<ImageWithBaseUrl src="/img/toyvpn/screenshot1.png" alt="ToyVpn Screenshot1" width="300" title="Windows"/>
+<br />
+<ImageWithBaseUrl src="/img/toyvpn/screenshot2.png" alt="ToyVpn Screenshot1" width="300" title="Windows"/>
 
 ### Do I need a rooted device in order to use PcapPlusPlus in my Android app?
 
