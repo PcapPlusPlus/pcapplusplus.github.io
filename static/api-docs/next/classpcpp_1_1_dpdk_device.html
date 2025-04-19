@@ -171,8 +171,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9b3ab407d91e32668c844ed36b64fea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae45341ad236f07e92be61b33325aa3c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#ae45341ad236f07e92be61b33325aa3c1">isVirtual</a> () const</td></tr>
 <tr class="separator:ae45341ad236f07e92be61b33325aa3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f65c338b9324cde0c90b476bff23960"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#a5f65c338b9324cde0c90b476bff23960">getLinkStatus</a> (<a class="el" href="structpcpp_1_1_dpdk_device_1_1_link_status.html">LinkStatus</a> &amp;linkStatus) const</td></tr>
-<tr class="separator:a5f65c338b9324cde0c90b476bff23960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b8addda706921bed8f804a9ba2cc822"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#a5b8addda706921bed8f804a9ba2cc822">getLinkStatus</a> (<a class="el" href="structpcpp_1_1_dpdk_device_1_1_link_status.html">LinkStatus</a> &amp;linkStatus) const</td></tr>
+<tr class="separator:a5b8addda706921bed8f804a9ba2cc822"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaf620a31d39cd95e4be75f1fa0bfb60"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#adaf620a31d39cd95e4be75f1fa0bfb60">getCurrentCoreId</a> () const</td></tr>
 <tr class="separator:adaf620a31d39cd95e4be75f1fa0bfb60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fa507a96741290b47888c0a084f38f9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#a9fa507a96741290b47888c0a084f38f9">getNumOfOpenedRxQueues</a> () const</td></tr>
@@ -489,14 +489,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a5f65c338b9324cde0c90b476bff23960"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f65c338b9324cde0c90b476bff23960">&#9670;&nbsp;</a></span>getLinkStatus()</h2>
+<a id="a5b8addda706921bed8f804a9ba2cc822"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b8addda706921bed8f804a9ba2cc822">&#9670;&nbsp;</a></span>getLinkStatus()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void pcpp::DpdkDevice::getLinkStatus </td>
+          <td class="memname">bool pcpp::DpdkDevice::getLinkStatus </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structpcpp_1_1_dpdk_device_1_1_link_status.html">LinkStatus</a> &amp;&#160;</td>
           <td class="paramname"><em>linkStatus</em></td><td>)</td>
@@ -510,6 +510,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>True if managed to fetch the link status and <code>linkStatus</code> was updated, false otherwise </dd></dl>
 
 </div>
 </div>
@@ -1603,7 +1604,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_dpdk_device.html">DpdkDevice</a></li>
-    <li class="footer">Generated on Wed Apr 16 2025 07:14:23 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Apr 19 2025 09:05:18 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

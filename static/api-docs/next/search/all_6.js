@@ -275,7 +275,7 @@ var searchData=
   ['getlinklayerasmacaddress_1211',['getLinkLayerAsMacAddress',['../classpcpp_1_1_sll2_layer.html#aaf640bff587ec43eaed7d023e2a5d2c5',1,'pcpp::Sll2Layer']]],
   ['getlinklayertype_1212',['getLinkLayerType',['../classpcpp_1_1_raw_packet.html#ad3cd4246f2c2e6a7d4238a02b28771ba',1,'pcpp::RawPacket::getLinkLayerType()'],['../classpcpp_1_1_pcap_file_reader_device.html#af37f3fb4fc7e57b56657435615c0cb27',1,'pcpp::PcapFileReaderDevice::getLinkLayerType()'],['../classpcpp_1_1_snoop_file_reader_device.html#ab2ececce94a791a6b893191c2f440bb8',1,'pcpp::SnoopFileReaderDevice::getLinkLayerType()']]],
   ['getlinkstate_1213',['getLinkState',['../classpcpp_1_1_kni_device.html#a65ad16846869b52da79397723cd4e691',1,'pcpp::KniDevice']]],
-  ['getlinkstatus_1214',['getLinkStatus',['../classpcpp_1_1_dpdk_device.html#a5f65c338b9324cde0c90b476bff23960',1,'pcpp::DpdkDevice']]],
+  ['getlinkstatus_1214',['getLinkStatus',['../classpcpp_1_1_dpdk_device.html#a5b8addda706921bed8f804a9ba2cc822',1,'pcpp::DpdkDevice']]],
   ['getlinktype_1215',['getLinkType',['../classpcpp_1_1_pcap_live_device.html#ab80a7d9e829f0b0a4c7eddeb746a69be',1,'pcpp::PcapLiveDevice']]],
   ['getllcheader_1216',['getLlcHeader',['../classpcpp_1_1_l_l_c_layer.html#ae4a4233064040c866aacccf26b384c5f',1,'pcpp::LLCLayer']]],
   ['getloglevel_1217',['getLogLevel',['../classpcpp_1_1_logger.html#a4d5efab1e243845931d56d13cc3f45cf',1,'pcpp::Logger']]],
