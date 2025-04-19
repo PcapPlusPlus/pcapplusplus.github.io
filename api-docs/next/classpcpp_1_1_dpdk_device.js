@@ -38,7 +38,7 @@ var classpcpp_1_1_dpdk_device =
     [ "getCurrentCoreId", "classpcpp_1_1_dpdk_device.html#adaf620a31d39cd95e4be75f1fa0bfb60", null ],
     [ "getDeviceId", "classpcpp_1_1_dpdk_device.html#a264df71d9bb3a600a8cd80c27f61a876", null ],
     [ "getDeviceName", "classpcpp_1_1_dpdk_device.html#af4f7eca0cb3362b3934f29c6777241c6", null ],
-    [ "getLinkStatus", "classpcpp_1_1_dpdk_device.html#a5f65c338b9324cde0c90b476bff23960", null ],
+    [ "getLinkStatus", "classpcpp_1_1_dpdk_device.html#a5b8addda706921bed8f804a9ba2cc822", null ],
     [ "getMacAddress", "classpcpp_1_1_dpdk_device.html#a64a6c016e10248b9519b14c5618d06a4", null ],
     [ "getMtu", "classpcpp_1_1_dpdk_device.html#a1d00bddc84e57a88e2ec582bc0809488", null ],
     [ "getNumOfOpenedRxQueues", "classpcpp_1_1_dpdk_device.html#a9fa507a96741290b47888c0a084f38f9", null ],
