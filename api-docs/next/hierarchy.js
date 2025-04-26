@@ -358,7 +358,7 @@ var hierarchy =
     [ "pcpp::IPcapDevice::PcapStats", "structpcpp_1_1_i_pcap_device_1_1_pcap_stats.html", null ],
     [ "pcpp::PfRingDeviceList", "classpcpp_1_1_pf_ring_device_list.html", null ],
     [ "pcpp::PfRingDevice::PfRingStats", "structpcpp_1_1_pf_ring_device_1_1_pf_ring_stats.html", null ],
-    [ "pcpp::PointerVector< T >", "classpcpp_1_1_pointer_vector.html", null ],
+    [ "pcpp::PointerVector< T, Deleter >", "classpcpp_1_1_pointer_vector.html", null ],
     [ "pcpp::PointerVector< IPFragment >", "classpcpp_1_1_pointer_vector.html", null ],
     [ "pcpp::PointerVector< pcpp::Asn1Record >", "classpcpp_1_1_pointer_vector.html", null ],
     [ "pcpp::PointerVector< pcpp::SSLExtension >", "classpcpp_1_1_pointer_vector.html", null ],

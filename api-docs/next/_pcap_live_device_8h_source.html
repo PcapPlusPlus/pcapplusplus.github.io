@@ -356,7 +356,7 @@ $(document).ready(function(){initNavTree('_pcap_live_device_8h_source.html','');
 <div class="line"><a name="l00600"></a><span class="lineno"><a class="line" href="classpcpp_1_1_pcap_live_device.html#a3a5928913d4fb57ffc5b3afe08a10b0f">  600</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_pcap_live_device.html#a3a5928913d4fb57ffc5b3afe08a10b0f">getStatistics</a>(<a class="code" href="structpcpp_1_1_i_pcap_device_1_1_pcap_stats.html">IPcapDevice::PcapStats</a>&amp; stats) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160; </div>
 <div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;        pcap_t* doOpen(<span class="keyword">const</span> <a class="code" href="structpcpp_1_1_pcap_live_device_1_1_device_configuration.html">DeviceConfiguration</a>&amp; config);</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;        <a class="code" href="classpcpp_1_1internal_1_1_pcap_handle.html">internal::PcapHandle</a> doOpen(<span class="keyword">const</span> <a class="code" href="structpcpp_1_1_pcap_live_device_1_1_device_configuration.html">DeviceConfiguration</a>&amp; config);</div>
 <div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160; </div>
 <div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;        <span class="keywordtype">bool</span> isNflogDevice() <span class="keyword">const</span>;</div>
@@ -427,6 +427,7 @@ $(document).ready(function(){initNavTree('_pcap_live_device_8h_source.html','');
 <div class="ttc" id="aclasspcpp_1_1_pcap_live_device_list_html"><div class="ttname"><a href="classpcpp_1_1_pcap_live_device_list.html">pcpp::PcapLiveDeviceList</a></div><div class="ttdef"><b>Definition:</b> PcapLiveDeviceList.h:20</div></div>
 <div class="ttc" id="aclasspcpp_1_1_pointer_vector_html"><div class="ttname"><a href="classpcpp_1_1_pointer_vector.html">pcpp::PointerVector</a></div><div class="ttdef"><b>Definition:</b> PointerVector.h:50</div></div>
 <div class="ttc" id="aclasspcpp_1_1_raw_packet_html"><div class="ttname"><a href="classpcpp_1_1_raw_packet.html">pcpp::RawPacket</a></div><div class="ttdef"><b>Definition:</b> RawPacket.h:259</div></div>
+<div class="ttc" id="aclasspcpp_1_1internal_1_1_pcap_handle_html"><div class="ttname"><a href="classpcpp_1_1internal_1_1_pcap_handle.html">pcpp::internal::PcapHandle</a></div><div class="ttdoc">A wrapper class for pcap_t* which is the libpcap packet capture descriptor. This class is used to man...</div><div class="ttdef"><b>Definition:</b> PcapDevice.h:25</div></div>
 <div class="ttc" id="anamespacepcpp_html"><div class="ttname"><a href="namespacepcpp.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib.</div></div>
 <div class="ttc" id="anamespacepcpp_html_a6a83c8855a6bb3681fafec04b00a6339"><div class="ttname"><a href="namespacepcpp.html#a6a83c8855a6bb3681fafec04b00a6339">pcpp::OnPacketArrivesStopBlocking</a></div><div class="ttdeci">std::function&lt; bool(RawPacket *, PcapLiveDevice *, void *)&gt; OnPacketArrivesStopBlocking</div><div class="ttdef"><b>Definition:</b> PcapLiveDevice.h:36</div></div>
 <div class="ttc" id="anamespacepcpp_html_a700592e5086544411957be0242dec0f5"><div class="ttname"><a href="namespacepcpp.html#a700592e5086544411957be0242dec0f5">pcpp::OnPacketArrivesCallback</a></div><div class="ttdeci">std::function&lt; void(RawPacket *, PcapLiveDevice *, void *)&gt; OnPacketArrivesCallback</div><div class="ttdef"><b>Definition:</b> PcapLiveDevice.h:29</div></div>
@@ -456,7 +457,7 @@ $(document).ready(function(){initNavTree('_pcap_live_device_8h_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1d5e652a4f74c687a1a254f16a4c3d59.html">Pcap++</a></li><li class="navelem"><a class="el" href="dir_24675e680cc699690f9ab00f0f74b528.html">header</a></li><li class="navelem"><a class="el" href="_pcap_live_device_8h.html">PcapLiveDevice.h</a></li>
-    <li class="footer">Generated on Wed Apr 23 2025 06:30:48 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Apr 26 2025 08:23:49 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
