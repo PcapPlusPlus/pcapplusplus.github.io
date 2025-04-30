@@ -35,6 +35,10 @@ var hierarchy =
     [ "pcpp::LdapSearchRequestLayer::DerefAliases", "classpcpp_1_1_ldap_search_request_layer_1_1_deref_aliases.html", null ],
     [ "pcpp::PcapLiveDevice::DeviceConfiguration", "structpcpp_1_1_pcap_live_device_1_1_device_configuration.html", null ],
     [ "pcpp::PcapLiveDevice::DeviceInterfaceDetails", "structpcpp_1_1_pcap_live_device_1_1_device_interface_details.html", null ],
+    [ "pcpp::internal::DeviceListBase< T, Deleter >", "classpcpp_1_1internal_1_1_device_list_base.html", null ],
+    [ "pcpp::internal::DeviceListBase< PcapLiveDevice >", "classpcpp_1_1internal_1_1_device_list_base.html", [
+      [ "pcpp::PcapLiveDeviceList", "classpcpp_1_1_pcap_live_device_list.html", null ]
+    ] ],
     [ "pcpp::dhcp_header", "structpcpp_1_1dhcp__header.html", null ],
     [ "pcpp::dhcpv6_header", "structpcpp_1_1dhcpv6__header.html", null ],
     [ "pcpp::dnshdr", "structpcpp_1_1dnshdr.html", null ],
@@ -352,7 +356,6 @@ var hierarchy =
     ] ],
     [ "pcpp::BgpUpdateMessageLayer::path_attribute", "structpcpp_1_1_bgp_update_message_layer_1_1path__attribute.html", null ],
     [ "pcpp::internal::PcapHandle", "classpcpp_1_1internal_1_1_pcap_handle.html", null ],
-    [ "pcpp::PcapLiveDeviceList", "classpcpp_1_1_pcap_live_device_list.html", null ],
     [ "pcpp::PcapRemoteAuthentication", "structpcpp_1_1_pcap_remote_authentication.html", null ],
     [ "pcpp::PcapRemoteDeviceList", "classpcpp_1_1_pcap_remote_device_list.html", null ],
     [ "pcpp::IPcapDevice::PcapStats", "structpcpp_1_1_i_pcap_device_1_1_pcap_stats.html", null ],
@@ -364,6 +367,7 @@ var hierarchy =
     [ "pcpp::PointerVector< pcpp::SSLExtension >", "classpcpp_1_1_pointer_vector.html", null ],
     [ "pcpp::PointerVector< pcpp::SSLHandshakeMessage >", "classpcpp_1_1_pointer_vector.html", null ],
     [ "pcpp::PointerVector< pcpp::SSLx509Certificate >", "classpcpp_1_1_pointer_vector.html", null ],
+    [ "pcpp::PointerVector< T, std::default_delete< T > >", "classpcpp_1_1_pointer_vector.html", null ],
     [ "pcpp::PointerVector< TcpFragment >", "classpcpp_1_1_pointer_vector.html", null ],
     [ "pcpp::ppp_pptp_header", "structpcpp_1_1ppp__pptp__header.html", null ],
     [ "pcpp::pppoe_header", "structpcpp_1_1pppoe__header.html", null ],
