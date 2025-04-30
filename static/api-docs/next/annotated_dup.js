@@ -6,6 +6,7 @@ var annotated_dup =
         [ "DynamicObjectPool", "classpcpp_1_1internal_1_1_dynamic_object_pool.html", "classpcpp_1_1internal_1_1_dynamic_object_pool" ],
         [ "Copier", "structpcpp_1_1internal_1_1_copier.html", null ],
         [ "Copier< T, typename std::enable_if< std::is_polymorphic< T >::value >::type >", "structpcpp_1_1internal_1_1_copier_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__polymoe27fb9c89d58dc63857240a0734df6f3.html", null ],
+        [ "DeviceListBase", "classpcpp_1_1internal_1_1_device_list_base.html", "classpcpp_1_1internal_1_1_device_list_base" ],
         [ "PcapHandle", "classpcpp_1_1internal_1_1_pcap_handle.html", "classpcpp_1_1internal_1_1_pcap_handle" ],
         [ "BpfProgramDeleter", "structpcpp_1_1internal_1_1_bpf_program_deleter.html", null ]
       ] ],

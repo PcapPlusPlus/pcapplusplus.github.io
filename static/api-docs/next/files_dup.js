@@ -24,6 +24,7 @@ var files_dup =
     ] ],
     [ "DeprecationUtils.h", "_deprecation_utils_8h.html", null ],
     [ "Device.h", "_device_8h.html", "_device_8h" ],
+    [ "DeviceListBase.h", "_device_list_base_8h_source.html", null ],
     [ "DeviceUtils.h", "_device_utils_8h.html", null ],
     [ "DhcpLayer.h", "_dhcp_layer_8h.html", "_dhcp_layer_8h" ],
     [ "DhcpV6Layer.h", "_dhcp_v6_layer_8h.html", "_dhcp_v6_layer_8h" ],

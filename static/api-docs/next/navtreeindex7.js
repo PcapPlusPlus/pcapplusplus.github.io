@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"classpcpp_1_1_bgp_open_message_layer.html#aca9cbdb448a43703d6ded6e0c14400f8":[3,0,0,37,5],
 "classpcpp_1_1_bgp_open_message_layer.html#adfb80aedf3d2cbd47c87f2d31e064177":[3,0,0,37,9],
 "classpcpp_1_1_bgp_route_refresh_message_layer.html":[3,0,0,41],
 "classpcpp_1_1_bgp_route_refresh_message_layer.html#a0556a10c0655247ecb72b532751e35c0":[3,0,0,41,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "classpcpp_1_1_dpdk_device.html#a6c7f3490db464e565322fcf04d1158f4":[3,0,0,292,40],
 "classpcpp_1_1_dpdk_device.html#a6d7a2351db1dc534a7cc8605af1046a1":[3,0,0,292,5],
 "classpcpp_1_1_dpdk_device.html#a76b3bf26f2e77126c6ebc443600316e5":[3,0,0,292,42],
-"classpcpp_1_1_dpdk_device.html#a8cc950c85c0fada668f978db3d6bf4c0":[3,0,0,292,39],
-"classpcpp_1_1_dpdk_device.html#a9567a72ecd2fb46dbaace7ca81aacd6f":[3,0,0,292,23]
+"classpcpp_1_1_dpdk_device.html#a8cc950c85c0fada668f978db3d6bf4c0":[3,0,0,292,39]
 };
