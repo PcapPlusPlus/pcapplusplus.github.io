@@ -36,14 +36,25 @@ var hierarchy =
     [ "pcpp::PcapLiveDevice::DeviceConfiguration", "structpcpp_1_1_pcap_live_device_1_1_device_configuration.html", null ],
     [ "pcpp::PcapLiveDevice::DeviceInterfaceDetails", "structpcpp_1_1_pcap_live_device_1_1_device_interface_details.html", null ],
     [ "pcpp::internal::DeviceListBase< T, Deleter >", "classpcpp_1_1internal_1_1_device_list_base.html", null ],
+    [ "pcpp::internal::DeviceListBase< DpdkDevice >", "classpcpp_1_1internal_1_1_device_list_base.html", [
+      [ "pcpp::DpdkDeviceList", "classpcpp_1_1_dpdk_device_list.html", null ]
+    ] ],
+    [ "pcpp::internal::DeviceListBase< KniDevice >", "classpcpp_1_1internal_1_1_device_list_base.html", [
+      [ "pcpp::KniDeviceList", "classpcpp_1_1_kni_device_list.html", null ]
+    ] ],
     [ "pcpp::internal::DeviceListBase< PcapLiveDevice >", "classpcpp_1_1internal_1_1_device_list_base.html", [
       [ "pcpp::PcapLiveDeviceList", "classpcpp_1_1_pcap_live_device_list.html", null ]
+    ] ],
+    [ "pcpp::internal::DeviceListBase< PcapRemoteDevice >", "classpcpp_1_1internal_1_1_device_list_base.html", [
+      [ "pcpp::PcapRemoteDeviceList", "classpcpp_1_1_pcap_remote_device_list.html", null ]
+    ] ],
+    [ "pcpp::internal::DeviceListBase< PfRingDevice >", "classpcpp_1_1internal_1_1_device_list_base.html", [
+      [ "pcpp::PfRingDeviceList", "classpcpp_1_1_pf_ring_device_list.html", null ]
     ] ],
     [ "pcpp::dhcp_header", "structpcpp_1_1dhcp__header.html", null ],
     [ "pcpp::dhcpv6_header", "structpcpp_1_1dhcpv6__header.html", null ],
     [ "pcpp::dnshdr", "structpcpp_1_1dnshdr.html", null ],
     [ "pcpp::DpdkDevice::DpdkDeviceConfiguration", "structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration.html", null ],
-    [ "pcpp::DpdkDeviceList", "classpcpp_1_1_dpdk_device_list.html", null ],
     [ "pcpp::DpdkDevice::DpdkDeviceStats", "structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html", null ],
     [ "pcpp::DpdkWorkerThread", "classpcpp_1_1_dpdk_worker_thread.html", null ],
     [ "pcpp::internal::DynamicObjectPool< T, type >", "classpcpp_1_1internal_1_1_dynamic_object_pool.html", null ],
@@ -326,7 +337,6 @@ var hierarchy =
     ] ],
     [ "pcpp::IPv6Network", "classpcpp_1_1_i_pv6_network.html", null ],
     [ "pcpp::KniDevice::KniDeviceConfiguration", "structpcpp_1_1_kni_device_1_1_kni_device_configuration.html", null ],
-    [ "pcpp::KniDeviceList", "classpcpp_1_1_kni_device_list.html", null ],
     [ "pcpp::KniDevice::KniIoctlCallbacks", "structpcpp_1_1_kni_device_1_1_kni_ioctl_callbacks.html", null ],
     [ "pcpp::KniDevice::KniOldIoctlCallbacks", "structpcpp_1_1_kni_device_1_1_kni_old_ioctl_callbacks.html", null ],
     [ "pcpp::LdapAttribute", "structpcpp_1_1_ldap_attribute.html", null ],
@@ -357,9 +367,7 @@ var hierarchy =
     [ "pcpp::BgpUpdateMessageLayer::path_attribute", "structpcpp_1_1_bgp_update_message_layer_1_1path__attribute.html", null ],
     [ "pcpp::internal::PcapHandle", "classpcpp_1_1internal_1_1_pcap_handle.html", null ],
     [ "pcpp::PcapRemoteAuthentication", "structpcpp_1_1_pcap_remote_authentication.html", null ],
-    [ "pcpp::PcapRemoteDeviceList", "classpcpp_1_1_pcap_remote_device_list.html", null ],
     [ "pcpp::IPcapDevice::PcapStats", "structpcpp_1_1_i_pcap_device_1_1_pcap_stats.html", null ],
-    [ "pcpp::PfRingDeviceList", "classpcpp_1_1_pf_ring_device_list.html", null ],
     [ "pcpp::PfRingDevice::PfRingStats", "structpcpp_1_1_pf_ring_device_1_1_pf_ring_stats.html", null ],
     [ "pcpp::PointerVector< T, Deleter >", "classpcpp_1_1_pointer_vector.html", null ],
     [ "pcpp::PointerVector< IPFragment >", "classpcpp_1_1_pointer_vector.html", null ],
