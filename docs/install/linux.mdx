@@ -71,6 +71,7 @@ The following configuration options are available (on top of CMake's built-in op
 | **`-DPCAPPP_USE_PF_RING=<ON/OFF>`**                | Setup PcapPlusplus with PF_RING (default value is `OFF`). When this option is used CMake will look for an installed version of PF_RING on the build machine (usually under `/usr/local`). If PF_RING is not installed please use `-DPF_RING_ROOT`          |
 | **`-DPF_RING_ROOT=<DIR>`**                         | When setting up PcapPlusPlus with PF_RING and PF_RING is not installed on the machine use this option to indicate the PF_RING directory (for example `/PF_RING`)                                                                                           |
 | **`-DPCAPPP_USE_XDP=<ON/OFF>`**                    | Setup PcapPlusPlus with AF_XDP (default value is `OFF`). When this option is used CMake will look for an installed version of `libbpf` on the build machine                                                                                                |
+| **`-DPCAPPP_BUILD_PCAPPP=<ON/OFF>`**               | Build the Pcap++ library (default value is `ON`). Turning it off will only build Common++ and Packet++ and avoid third-party dependencies such as libpcap or WinPcap/Npcap                                                                                 |
 
 ## Installation
 
