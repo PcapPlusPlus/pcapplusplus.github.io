@@ -1,5 +1,6 @@
 var NAVTREEINDEX24 =
 {
+"structpcpp_1_1icmp__address__mask__request.html#a36c9a4edeb4b20a018f581a4bb8ca7a5":[3,0,0,104,1],
 "structpcpp_1_1icmp__address__mask__request.html#ab0a5755df7850387480f9fc150949ff5":[3,0,0,104,2],
 "structpcpp_1_1icmp__address__mask__request.html#ac510d5502a105ee92b9a5718089a4aa4":[3,0,0,104,0],
 "structpcpp_1_1icmp__destination__unreachable.html":[3,0,0,97],
@@ -248,6 +249,5 @@ var NAVTREEINDEX24 =
 "structpcpp_1_1vrrp__header.html#ae05cde003e50684a7b93fb595739fc04":[3,0,0,278,5],
 "structpcpp_1_1vrrp__header.html#af015f8b1a6ceaa4607779a98491c8c8b":[3,0,0,278,4],
 "structpcpp_1_1vrrp__header.html#afceccd0fa179c7497a0a373791891ee5":[3,0,0,278,6],
-"structpcpp_1_1vxlan__header.html":[3,0,0,282],
-"structpcpp_1_1vxlan__header.html#a11efc5349d82e0342a51d0ceaa9d7c5a":[3,0,0,282,4]
+"structpcpp_1_1vxlan__header.html":[3,0,0,282]
 };

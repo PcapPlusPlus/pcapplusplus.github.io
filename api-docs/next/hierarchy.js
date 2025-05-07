@@ -343,6 +343,7 @@ var hierarchy =
     [ "pcpp::LdapControl", "structpcpp_1_1_ldap_control.html", null ],
     [ "pcpp::LdapOperationType", "classpcpp_1_1_ldap_operation_type.html", null ],
     [ "pcpp::LdapResultCode", "classpcpp_1_1_ldap_result_code.html", null ],
+    [ "LightPcapNgHandle", "struct_light_pcap_ng_handle.html", null ],
     [ "pcpp::DpdkDevice::LinkStatus", "structpcpp_1_1_dpdk_device_1_1_link_status.html", null ],
     [ "pcpp::LinuxNicInformationSocket", "classpcpp_1_1_linux_nic_information_socket.html", null ],
     [ "pcpp::llc_header", "structpcpp_1_1llc__header.html", null ],

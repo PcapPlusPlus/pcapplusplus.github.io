@@ -349,5 +349,6 @@ var annotated_dup =
       [ "RawSocketDevice", "classpcpp_1_1_raw_socket_device.html", "classpcpp_1_1_raw_socket_device" ],
       [ "WinPcapLiveDevice", "classpcpp_1_1_win_pcap_live_device.html", "classpcpp_1_1_win_pcap_live_device" ],
       [ "XdpDevice", "classpcpp_1_1_xdp_device.html", "classpcpp_1_1_xdp_device" ]
-    ] ]
+    ] ],
+    [ "LightPcapNgHandle", "struct_light_pcap_ng_handle.html", null ]
 ];
