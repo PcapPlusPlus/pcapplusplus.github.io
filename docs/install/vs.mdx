@@ -70,18 +70,16 @@ After a successful build the following artifacts will be created:
 
 The following configuration options are available (on top of CMake's built-in options):
 
-| Option                                             | Description                                                                                                                                                                     |
-| :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **`-DPCAP_ROOT=<DIR>`**                            | Npcap SDK or WinPcap developer pack directory (mandatory option)                                                                                                                |
-| **`-DPCAPPP_BUILD_EXAMPLES=<ON/OFF>`**             | Build PcapPlusPlus examples (default value is `ON` if building the project itself, otherwise `OFF`)                                                                             |
-| **`-DPCAPPP_BUILD_TESTS=<ON/OFF>`**                | Build PcapPlusPlus tests (default value is `ON` if building the project itself, otherwise `OFF`)                                                                                |
-| **`-DPCAPPP_BUILD_TUTORIALS=<ON/OFF>`**            | Build PcapPlusPlus tutorials. This option is only available if `DPCAPPP_BUILD_EXAMPLES=ON`. The tutorials binaries will be under `build\tutorials_bin` (default value is `OFF`) |
-| **`-DPCAPPP_INSTALL=<ON/OFF>`**                    | Install PcapPlusPlus (default value is `ON` if building the project itself, otherwise `OFF`)                                                                                    |
-| **`-DBUILD_SHARED_LIBS=<ON/OFF>`**                 | Build shared libs (default value is `OFF`)                                                                                                                                      |
-| **`-DPCAPPP_ENABLE_PCAP_IMMEDIATE_MODE=<ON/OFF>`** | Enable pcap immediate mode, available only in Npcap (default value is `OFF`)                                                                                                    |
-| **`-DPCAPPP_ENABLE_PCAP_SET_DIRECTION=<ON/OFF>`**  | Enable set direction for capturing incoming or outgoing packets (default value is `OFF`)                                                                                        |
-| **`-DPCAPPP_BUILD_PCAPPP=<ON/OFF>`**               | Build the Pcap++ library (default value is `ON`). Turning it off will only build Common++ and Packet++ and avoid third-party dependencies such as libpcap or WinPcap/Npcap      |
-| **`-DPCAPPP_LOG_LEVEL=<0/1/2/3>`**                 | Set compile time log level: Off (`0`), Error (`1`), Info (`2`), Debug (`1`) (Default value is `Debug`)                                                                          |
+| Option                                  | Description                                                                                                                                                                     |
+| :-------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **`-DPCAP_ROOT=<DIR>`**                 | Npcap SDK or WinPcap developer pack directory (mandatory option)                                                                                                                |
+| **`-DPCAPPP_BUILD_EXAMPLES=<ON/OFF>`**  | Build PcapPlusPlus examples (default value is `ON` if building the project itself, otherwise `OFF`)                                                                             |
+| **`-DPCAPPP_BUILD_TESTS=<ON/OFF>`**     | Build PcapPlusPlus tests (default value is `ON` if building the project itself, otherwise `OFF`)                                                                                |
+| **`-DPCAPPP_BUILD_TUTORIALS=<ON/OFF>`** | Build PcapPlusPlus tutorials. This option is only available if `DPCAPPP_BUILD_EXAMPLES=ON`. The tutorials binaries will be under `build\tutorials_bin` (default value is `OFF`) |
+| **`-DPCAPPP_INSTALL=<ON/OFF>`**         | Install PcapPlusPlus (default value is `ON` if building the project itself, otherwise `OFF`)                                                                                    |
+| **`-DBUILD_SHARED_LIBS=<ON/OFF>`**      | Build shared libs (default value is `OFF`)                                                                                                                                      |
+| **`-DPCAPPP_BUILD_PCAPPP=<ON/OFF>`**    | Build the Pcap++ library (default value is `ON`). Turning it off will only build Common++ and Packet++ and avoid third-party dependencies such as libpcap or WinPcap/Npcap      |
+| **`-DPCAPPP_LOG_LEVEL=<0/1/2/3>`**      | Set compile time log level: Off (`0`), Error (`1`), Info (`2`), Debug (`1`) (Default value is `Debug`)                                                                          |
 
 ## Installation
 
