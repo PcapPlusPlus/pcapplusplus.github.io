@@ -57,8 +57,6 @@ The following configuration options are available (on top of CMake's built-in op
 | **`-DBUILD_SHARED_LIBS=<ON/OFF>`**                 | Build shared libs (default value is `OFF`)                                                                                                                                      |
 | **`-DLIGHT_PCAPNG_ZSTD=<ON/OFF>`**                 | Build with Zstd to enable [PCAPNG streaming compression support](../features#readingwriting-pcapng-files-with-compression) (default value is `OFF`)                             |
 | **`-DCMAKE_OSX_ARCHITECTURES=<x86_64,arm64>`**     | Build for either Intel (x86_64) or Apple Silicon (arm64) architecture. If not provided, the default is the machine's architecture                                               |
-| **`-DPCAPPP_ENABLE_PCAP_IMMEDIATE_MODE=<ON/OFF>`** | Enable pcap immediate mode (default value is `OFF`)                                                                                                                             |
-| **`-DPCAPPP_ENABLE_PCAP_SET_DIRECTION=<ON/OFF>`**  | Enable set direction for capturing incoming or outgoing packets (default value is `OFF`)                                                                                        |
 | **`-DPCAPPP_BUILD_PCAPPP=<ON/OFF>`**               | Build the Pcap++ library (default value is `ON`). Turning it off will only build Common++ and Packet++ and avoid third-party dependencies such as libpcap or WinPcap/Npcap      |
 | **`-DPCAPPP_LOG_LEVEL=<0/1/2/3>`**                 | Set compile time log level: Off (`0`), Error (`1`), Info (`2`), Debug (`1`) (Default value is `Debug`)                                                                          |
 
