@@ -1,0 +1,74 @@
+---
+title: Build on FreeBSD
+---
+
+# Build From Source on FreeBSD
+
+## Prerequisites
+
+In order to compile PcapPlusPlus on FreeBSD please make sure you have the following components installed:
+
+1. `git` (if not installed please run: `pkg install git`)
+2. `CMake` (if not installed please run: `pkg install cmake`)
+3. `libpcap` (if not installed please run: `pkg install libpcap`)
+
+## Build
+
+Assuming you want to build PcapPlusPlus into a `build` directory:
+
+```shell
+cmake -S . -B build
+```
+
+And then initiate the build in one of two ways:
+
+- Using CMake:
+  ```shell
+  cmake --build build
+  ```
+- Using `make`:
+  ```shell
+  cd build
+  make
+  ```
+
+This process will build the following artifacts:
+
+- PcapPlusPlus libs:
+  - `build/Common++/libCommon++.a`
+  - `build/Packet++/libPacket++.a`
+  - `build/Pcap++/libPcap++.a`
+- PcapPlusPlus examples binaries under `build/examples_bin`
+- PcapPlusPlus tests:
+  - `<PcapPlusPlus_Dir>/Tests/Packet++Test/Bin/Packet++Test`
+  - `<PcapPlusPlus_Dir>/Tests/Pcap++Test/Bin/Pcap++Test`
+
+The following configuration options are available (on top of CMake's built-in options):
+
+| Option                                  | Description                                                                                                                                                                     |
+| :-------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **`-DPCAPPP_BUILD_EXAMPLES=<ON/OFF>`**  | Build PcapPlusPlus examples (default value is `ON` if building the project itself, otherwise `OFF`)                                                                             |
+| **`-DPCAPPP_BUILD_TESTS=<ON/OFF>`**     | Build PcapPlusPlus tests (default value is `ON` if building the project itself, otherwise `OFF`)                                                                                |
+| **`-DPCAPPP_BUILD_TUTORIALS=<ON/OFF>`** | Build PcapPlusPlus tutorials. This option is only available if `DPCAPPP_BUILD_EXAMPLES=ON`. The tutorials binaries will be under `build/tutorials_bin` (default value is `OFF`) |
+| **`-DPCAPPP_INSTALL=<ON/OFF>`**         | Install PcapPlusPlus (default value is `ON` if building the project itself, otherwise `OFF`)                                                                                    |
+| **`-DBUILD_SHARED_LIBS=<ON/OFF>`**      | Build shared libs (default value is `OFF`)                                                                                                                                      |
+| **`-DPCAPPP_BUILD_PCAPPP=<ON/OFF>`**    | Build the Pcap++ library (default value is `ON`). Turning it off will only build Common++ and Packet++ and avoid third-party dependencies such as libpcap or WinPcap/Npcap      |
+| **`-DPCAPPP_LOG_LEVEL=<0/1/2/3>`**      | Set compile time log level: Off (`0`), Error (`1`), Info (`2`), Debug (`1`) (Default value is `Debug`)                                                                          |
+
+## Installation
+
+After the build is complete you can run the installation script which will copy the libraries, header files and examples into the installation directories:
+
+```shell
+sudo cmake --install .
+```
+
+If you want to install on a non-default directory you can use this command:
+
+```shell
+DESTDIR=<DIR> cmake --install build --prefix "/"
+```
+
+## Running tests
+
+PcapPlusPlus contains a set of test-cases you can run to make sure that everything works correctly on your system. [This guide](../tests) contains detailed instructions on how to run them.
