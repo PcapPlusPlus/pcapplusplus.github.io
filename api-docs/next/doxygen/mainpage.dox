@@ -32,6 +32,7 @@
 *   - pcpp::Layer, Layer.h - protocol base class
 *
 * <b>Supported protocols (Packet++):</b>
+*   - pcpp::CiscoHdlcLayer, CiscoHdlcLayer.h - Cisco HDLC protocol
 *   - pcpp::EthLayer, EthLayer.h - Ethernet II protocol
 *   - pcpp::EthDot3Layer, EthDot3Layer.h - IEEE 802.3 Ethernet protocol
 *   - pcpp::LLCLayer, LLCLayer.h - LLC protocol
@@ -55,8 +56,9 @@
 *   - pcpp::MplsLayer, MplsLayer.h - MPLS protocol
 *   - pcpp::NDPNeighborSolicitationLayer, pcpp::NDPNeighborAdvertisementLayer, NdpLayer.h - NDP protocol
 *   - pcpp::VrrpV2Layer, pcpp::VrrpV3Layer, VrrpLayer.h - VRRP protocol
+*   - pcpp::WireGuardLayer, WireGuardLayer.h - WireGuard protocol
 *   - pcpp::CotpLayer, CotpLayer.h - COTP protocol
-*   - pcpp::GtpV1Layer, GtpLayer.h - GTP (v1) protocol
+*   - pcpp::GtpV1Layer, pcpp::GtpV2Layer, GtpLayer.h - GTP (v1 & v2) protocol
 *   - pcpp::AuthenticationHeaderLayer, pcpp::ESPLayer - IPSec AH & ESP - parsing only (no editing capabilities)
 *   - pcpp::TcpLayer, TcpLayer.h - TCP protocol
 *   - pcpp::TpktLayer, TpktLayer.h - TPKT protocol
