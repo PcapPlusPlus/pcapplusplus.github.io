@@ -1,0 +1,96 @@
+---
+title: Build on Windows (VS)
+---
+
+# Build From Source on Windows - Visual Studio
+
+Please visit the [supported platforms page](../platforms) to see the Visual Studio versions currently supported in PcapPlusPlus.
+
+## Prerequisites
+
+In order to build PcapPlusPlus on Windows with Visual Studio you need the following components:
+
+1. A [supported version](../platforms) of Microsoft Visual Studio
+2. `CMake` which can be installed from: [https://cmake.org/install/](https://cmake.org/install/) or with `pacman` if using MSYS2: `pacman -S mingw-w64-x86_64-cmake`
+3. Download and install [WinPcap](https://www.winpcap.org/install/) **OR** [Npcap](https://npcap.com/#download) on your system
+   :::tip Note for Npcap:
+   If you install **Npcap** please check the `Install Npcap in WinPcap API-compatilbility mode` option during installation:
+
+   ![Npcap-WinPcap compatilibitly](/img/install/Npcap_compatibility_mode.png)
+   :::
+
+4. [WinPcap developer's pack](https://www.winpcap.org/devel.htm) **OR** [Npcap SDK](https://nmap.org/npcap/guide/npcap-devguide.html) - containing the wpcap library PcapPlusPlus is linking with plus relevant `h` files.
+   1. WinPcap developer's pack can be downloaded from here: [https://www.winpcap.org/devel.htm](https://www.winpcap.org/devel.htm)
+   2. Npcap SDK can be downloaded from here: [https://nmap.org/npcap/#download](https://nmap.org/npcap/#download)
+5. In some cases you also need to download and install:
+   1. [Microsoft Visual C++ Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads) for your version of Visual Studio
+   2. [Microsoft Visual C++ 2010 Redistributable](https://www.microsoft.com/en-us/download/confirmation.aspx?id=14632)
+6. OPTIONAL - download [Zstd](https://github.com/facebook/zstd/releases/latest) libraries if you wish to enable [PCAPNG streaming compression support](../features#readingwriting-pcapng-files-with-compression)
+
+## Build
+
+Assuming you want to build PcapPlusPlus into a `build` directory:
+
+```shell
+cmake -DPCAP_ROOT=<NpcapSDK_or_WinPcapDevPack_Directory> -S . -B build
+```
+
+You can use the following CMake options to determine specific parameters:
+
+- To build for a specific (non-default) version of Visual Studio you can use the `-G` option, for example `-G "Visual Studio 16 2019"` will builf for VS 2019
+- To build for a specific platform you can use the `-A` option, for example: `-A x64` or `-A Win32`
+
+This will create a VS Solution file in the build directory: `build\PcapPlusPlus.sln` and multiple VS project files `.vcxproj`.
+
+This solution file contains all the projects required to build the PcapPlusPlus libraries, examples, and tests. In this solution you'll find the `ALL_BUILD`
+project that builds everything.
+
+There are multiple options to build PcapPlusPlus:
+
+- Use CMake and choose the configuration:
+  ```shell
+  cmake --build build --config Release
+  ```
+- Open Visual Studio, choose platform and configuration and build the `ALL_BUILD` project
+- Use `MSBuild` and choose the platform and configuration, for example:
+  ```shell
+  msbuild PcapPlusPlus.sln -target:ALL_BUILD /p:Configuration=Release /p:Platform=x64
+  ```
+
+After a successful build the following artifacts will be created:
+
+- PcapPlusPlus libs:
+  - `build\Common++\<Debug/Release>\libCommon++.a`
+  - `build\Packet++\<Debug/Release>\libPacket++.a`
+  - `build\Pcap++\<Debug/Release>\libPcap++.a`
+- PcapPlusPlus examples binaries under `build\examples_bin\<Debug/Release>`
+- PcapPlusPlus tests:
+  - `<PcapPlusPlus_Dir>\Tests\Packet++Test\Bin\Packet++Test.exe`
+  - `<PcapPlusPlus_Dir>\Tests\Pcap++Test\Bin\Pcap++Test.exe`
+
+The following configuration options are available (on top of CMake's built-in options):
+
+| Option                                  | Description                                                                                                                                                                     |
+| :-------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **`-DPCAP_ROOT=<DIR>`**                 | Npcap SDK or WinPcap developer pack directory (mandatory option)                                                                                                                |
+| **`-DPCAPPP_BUILD_EXAMPLES=<ON/OFF>`**  | Build PcapPlusPlus examples (default value is `ON` if building the project itself, otherwise `OFF`)                                                                             |
+| **`-DPCAPPP_BUILD_TESTS=<ON/OFF>`**     | Build PcapPlusPlus tests (default value is `ON` if building the project itself, otherwise `OFF`)                                                                                |
+| **`-DPCAPPP_BUILD_TUTORIALS=<ON/OFF>`** | Build PcapPlusPlus tutorials. This option is only available if `DPCAPPP_BUILD_EXAMPLES=ON`. The tutorials binaries will be under `build\tutorials_bin` (default value is `OFF`) |
+| **`-DPCAPPP_INSTALL=<ON/OFF>`**         | Install PcapPlusPlus (default value is `ON` if building the project itself, otherwise `OFF`)                                                                                    |
+| **`-DBUILD_SHARED_LIBS=<ON/OFF>`**      | Build shared libs (default value is `OFF`)                                                                                                                                      |
+| **`-DPCAPPP_BUILD_PCAPPP=<ON/OFF>`**    | Build the Pcap++ library (default value is `ON`). Turning it off will only build Common++ and Packet++ and avoid third-party dependencies such as libpcap or WinPcap/Npcap      |
+| **`-DPCAPPP_LOG_LEVEL=<0/1/2/3>`**      | Set compile time log level: Off (`0`), Error (`1`), Info (`2`), Debug (`1`) (Default value is `Debug`)                                                                          |
+
+## Installation
+
+Windows doesn't have a default install directory, but you may want to see all libs, header files and examples under one directory (which is not the `build` directory).
+Here is how to acheive that:
+
+```shell
+set DESTDIR=<DIR>
+cmake --install build --prefix "/"
+```
+
+## Running tests
+
+PcapPlusPlus contains a set of test-cases you can run to make sure that everything works correctly on your system. [This guide](../tests) contains detailed instructions on how to run them.

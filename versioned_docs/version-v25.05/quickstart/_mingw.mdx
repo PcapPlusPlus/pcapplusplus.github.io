@@ -1,0 +1,51 @@
+import ReleaseLink from '@site/src/components/ReleaseLink';
+import CodeLink from '@site/src/components/CodeLink';
+
+### Step 1 - install PcapPlusPlus
+
+Before installing PcapPlusPlus make sure you have the prerequisites installed for [MinGW-w64](./install/mingw#prerequisites).
+
+Pre-compiled packages are available for MinGW-w64. You can find them under the <ReleaseLink/>.
+
+Make sure your MinGW-w64 GCC version matches the pre-compiled package. Otherwise you need to [build PcapPlusPlus from source](./install/mingw).
+
+### Step 2 - create your first app
+
+If you downloaded a pre-compiled package go to: `Drive:\path\to\your\package\example-app`.
+
+If you built it from source, download the <CodeLink relativePath="/Examples/ExampleApp">ExampleApp</CodeLink> source files.
+
+Make sure you see the following files:
+
+```shell
+ |-- main.cpp
+ |-- 1_packet.pcap
+ |-- CMakeLists.txt
+```
+
+`main.cpp` is the example application we'll use.
+
+`1_packet.pcap` is a pcap file the app reads from.
+
+`CMakeLists.txt` will help us build the app.
+
+### Step 3 - build and run your app
+
+Configure CMake:
+
+```cmd
+cmake -G "MinGW Makefiles" -S . -B build -DPcapPlusPlus_ROOT=Drive:\path\to\your\package -DPCAP_ROOT=Drive:\path\to\npcap-sdk -DPacket_ROOT=Drive:\path\to\npcap-sdk
+```
+
+Build the app:
+
+```cmd
+cmake --build build
+```
+
+An executable file will be created which contains the compiled app. You can now run it and should be able to see the following output:
+
+```cmd
+example-app.exe
+Source IP is '10.0.0.138'; Dest IP is '10.0.0.1'
+```
