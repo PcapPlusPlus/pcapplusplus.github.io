@@ -310,6 +310,9 @@ var hierarchy =
     [ "pcpp::igmpv3_report_header", "structpcpp_1_1igmpv3__report__header.html", null ],
     [ "pcpp::ip6_hdr", "structpcpp_1_1ip6__hdr.html", null ],
     [ "pcpp::IPAddress", "classpcpp_1_1_i_p_address.html", null ],
+    [ "pcpp::IPcapStatisticsProvider", "classpcpp_1_1_i_pcap_statistics_provider.html", [
+      [ "pcpp::IPcapDevice", "classpcpp_1_1_i_pcap_device.html", null ]
+    ] ],
     [ "pcpp::iphdr", "structpcpp_1_1iphdr.html", null ],
     [ "pcpp::IPLayer", "classpcpp_1_1_i_p_layer.html", [
       [ "pcpp::IPv4Layer", "classpcpp_1_1_i_pv4_layer.html", null ],
@@ -368,7 +371,7 @@ var hierarchy =
     [ "pcpp::BgpUpdateMessageLayer::path_attribute", "structpcpp_1_1_bgp_update_message_layer_1_1path__attribute.html", null ],
     [ "pcpp::internal::PcapHandle", "classpcpp_1_1internal_1_1_pcap_handle.html", null ],
     [ "pcpp::PcapRemoteAuthentication", "structpcpp_1_1_pcap_remote_authentication.html", null ],
-    [ "pcpp::IPcapDevice::PcapStats", "structpcpp_1_1_i_pcap_device_1_1_pcap_stats.html", null ],
+    [ "pcpp::internal::PcapStats", "structpcpp_1_1internal_1_1_pcap_stats.html", null ],
     [ "pcpp::PfRingDevice::PfRingStats", "structpcpp_1_1_pf_ring_device_1_1_pf_ring_stats.html", null ],
     [ "pcpp::PointerVector< T, Deleter >", "classpcpp_1_1_pointer_vector.html", null ],
     [ "pcpp::PointerVector< IPFragment >", "classpcpp_1_1_pointer_vector.html", null ],
@@ -441,6 +444,7 @@ var hierarchy =
     ] ],
     [ "pcpp::SSLVersion", "classpcpp_1_1_s_s_l_version.html", null ],
     [ "pcpp::SSLx509Certificate", "classpcpp_1_1_s_s_lx509_certificate.html", null ],
+    [ "pcpp::PcapLiveDevice::StatisticsUpdateWorker", "classpcpp_1_1_pcap_live_device_1_1_statistics_update_worker.html", null ],
     [ "pcpp::stp_tcn_bpdu", "structpcpp_1_1stp__tcn__bpdu.html", [
       [ "pcpp::stp_conf_bpdu", "structpcpp_1_1stp__conf__bpdu.html", [
         [ "pcpp::rstp_conf_bpdu", "structpcpp_1_1rstp__conf__bpdu.html", [

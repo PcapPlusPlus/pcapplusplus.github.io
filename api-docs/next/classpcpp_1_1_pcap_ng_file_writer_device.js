@@ -2,14 +2,14 @@ var classpcpp_1_1_pcap_ng_file_writer_device =
 [
     [ "PcapNgFileWriterDevice", "classpcpp_1_1_pcap_ng_file_writer_device.html#a7b6c41a1a4590ea5da6404ae9090138f", null ],
     [ "~PcapNgFileWriterDevice", "classpcpp_1_1_pcap_ng_file_writer_device.html#a93312aab61a193df522f8046af6d291e", null ],
-    [ "close", "classpcpp_1_1_pcap_ng_file_writer_device.html#a87cdcca0ace3ba4ccbaad4093def33a8", null ],
+    [ "close", "classpcpp_1_1_pcap_ng_file_writer_device.html#a93f410843d3a47adb8bb6daad56d59a9", null ],
     [ "flush", "classpcpp_1_1_pcap_ng_file_writer_device.html#ae30124bbbca266327a23b54b85c39bca", null ],
-    [ "getStatistics", "classpcpp_1_1_pcap_ng_file_writer_device.html#a51ac0b014137c0366fcb26c0d2904af6", null ],
-    [ "open", "classpcpp_1_1_pcap_ng_file_writer_device.html#a9c709c035f8ba98682693a248d6d1e5d", null ],
-    [ "open", "classpcpp_1_1_pcap_ng_file_writer_device.html#a69ab330b859dc45892f3d7666b7b0671", null ],
+    [ "getStatistics", "classpcpp_1_1_pcap_ng_file_writer_device.html#a85348c9b0cb18eed34ee3b369cfea251", null ],
+    [ "open", "classpcpp_1_1_pcap_ng_file_writer_device.html#add853a580d13ece58ce06d09bad6a219", null ],
+    [ "open", "classpcpp_1_1_pcap_ng_file_writer_device.html#acba1c1c3dbdc076bb7e6399b00ad14d2", null ],
     [ "open", "classpcpp_1_1_pcap_ng_file_writer_device.html#a61c831f871c33514b934a749f3e4d2b5", null ],
-    [ "setFilter", "classpcpp_1_1_pcap_ng_file_writer_device.html#a4ad636213ad5ae9af2936c1c4ea29682", null ],
-    [ "writePacket", "classpcpp_1_1_pcap_ng_file_writer_device.html#a25c7f060803d907e7e7f3c00d3c2891b", null ],
+    [ "setFilter", "classpcpp_1_1_pcap_ng_file_writer_device.html#ad74549e9a5084f6653e00634162028a0", null ],
+    [ "writePacket", "classpcpp_1_1_pcap_ng_file_writer_device.html#a93723b54705f296118e2fb4aa53ba680", null ],
     [ "writePacket", "classpcpp_1_1_pcap_ng_file_writer_device.html#adb4aff7706bb5e6d06d39e8ae4355eff", null ],
-    [ "writePackets", "classpcpp_1_1_pcap_ng_file_writer_device.html#a214c363a167e1538d9ea29a58efd9640", null ]
+    [ "writePackets", "classpcpp_1_1_pcap_ng_file_writer_device.html#aa67c8394816b9bfa13023fac1d2dfa82", null ]
 ];

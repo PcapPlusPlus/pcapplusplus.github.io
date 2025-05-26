@@ -125,24 +125,28 @@ $(document).ready(function(){initNavTree('_pf_ring_device_list_8h_source.html','
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">return</span> m_PfRingDeviceListView;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classpcpp_1_1_pf_ring_device_list.html#a28072ef36082db19445bb891e58d7318">   51</a></span>&#160;        <a class="code" href="classpcpp_1_1_pf_ring_device.html">PfRingDevice</a>* <a class="code" href="classpcpp_1_1_pf_ring_device_list.html#a28072ef36082db19445bb891e58d7318">getPfRingDeviceByName</a>(<span class="keyword">const</span> std::string&amp; devName) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classpcpp_1_1_pf_ring_device_list.html#a98ead9cab76648d082b4194b532b9002">   55</a></span>&#160;        std::string <a class="code" href="classpcpp_1_1_pf_ring_device_list.html#a98ead9cab76648d082b4194b532b9002">getPfRingVersion</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">return</span> m_PfRingVersion;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    };</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">// GCOVR_EXCL_STOP</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        PCPP_DEPRECATED(<span class="stringliteral">&quot;Use `getDeviceByName`&quot;</span>)</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classpcpp_1_1_pf_ring_device_list.html#a28072ef36082db19445bb891e58d7318">   52</a></span>&#160;        <a class="code" href="classpcpp_1_1_pf_ring_device.html">PfRingDevice</a>* <a class="code" href="classpcpp_1_1_pf_ring_device_list.html#a28072ef36082db19445bb891e58d7318">getPfRingDeviceByName</a>(const std::<span class="keywordtype">string</span>&amp; devName) const;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classpcpp_1_1_pf_ring_device_list.html#aeb3b11514e81f921d9b2692a800d115b">   57</a></span>&#160;        <a class="code" href="classpcpp_1_1_pf_ring_device.html">PfRingDevice</a>* <a class="code" href="classpcpp_1_1_pf_ring_device_list.html#aeb3b11514e81f921d9b2692a800d115b">getDeviceByName</a>(const std::<span class="keywordtype">string</span>&amp; devName) const;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classpcpp_1_1_pf_ring_device_list.html#a98ead9cab76648d082b4194b532b9002">   61</a></span>&#160;        std::<span class="keywordtype">string</span> <a class="code" href="classpcpp_1_1_pf_ring_device_list.html#a98ead9cab76648d082b4194b532b9002">getPfRingVersion</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">return</span> m_PfRingVersion;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    };</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">// GCOVR_EXCL_STOP</span></div>
 <div class="ttc" id="a_pf_ring_device_8h_html"><div class="ttname"><a href="_pf_ring_device_8h.html">PfRingDevice.h</a></div></div>
 <div class="ttc" id="aclasspcpp_1_1_pf_ring_device_html"><div class="ttname"><a href="classpcpp_1_1_pf_ring_device.html">pcpp::PfRingDevice</a></div><div class="ttdef"><b>Definition:</b> PfRingDevice.h:35</div></div>
 <div class="ttc" id="aclasspcpp_1_1_pf_ring_device_list_html"><div class="ttname"><a href="classpcpp_1_1_pf_ring_device_list.html">pcpp::PfRingDeviceList</a></div><div class="ttdef"><b>Definition:</b> PfRingDeviceList.h:18</div></div>
 <div class="ttc" id="aclasspcpp_1_1_pf_ring_device_list_html_a28072ef36082db19445bb891e58d7318"><div class="ttname"><a href="classpcpp_1_1_pf_ring_device_list.html#a28072ef36082db19445bb891e58d7318">pcpp::PfRingDeviceList::getPfRingDeviceByName</a></div><div class="ttdeci">PfRingDevice * getPfRingDeviceByName(const std::string &amp;devName) const</div></div>
 <div class="ttc" id="aclasspcpp_1_1_pf_ring_device_list_html_a528af6c800a69fc2ff486c98ac546052"><div class="ttname"><a href="classpcpp_1_1_pf_ring_device_list.html#a528af6c800a69fc2ff486c98ac546052">pcpp::PfRingDeviceList::getPfRingDevicesList</a></div><div class="ttdeci">const std::vector&lt; PfRingDevice * &gt; &amp; getPfRingDevicesList() const</div><div class="ttdef"><b>Definition:</b> PfRingDeviceList.h:43</div></div>
-<div class="ttc" id="aclasspcpp_1_1_pf_ring_device_list_html_a98ead9cab76648d082b4194b532b9002"><div class="ttname"><a href="classpcpp_1_1_pf_ring_device_list.html#a98ead9cab76648d082b4194b532b9002">pcpp::PfRingDeviceList::getPfRingVersion</a></div><div class="ttdeci">std::string getPfRingVersion() const</div><div class="ttdef"><b>Definition:</b> PfRingDeviceList.h:55</div></div>
+<div class="ttc" id="aclasspcpp_1_1_pf_ring_device_list_html_a98ead9cab76648d082b4194b532b9002"><div class="ttname"><a href="classpcpp_1_1_pf_ring_device_list.html#a98ead9cab76648d082b4194b532b9002">pcpp::PfRingDeviceList::getPfRingVersion</a></div><div class="ttdeci">std::string getPfRingVersion() const</div><div class="ttdef"><b>Definition:</b> PfRingDeviceList.h:61</div></div>
 <div class="ttc" id="aclasspcpp_1_1_pf_ring_device_list_html_ac54f6f37245641b2ae23bd82c3bb1313"><div class="ttname"><a href="classpcpp_1_1_pf_ring_device_list.html#ac54f6f37245641b2ae23bd82c3bb1313">pcpp::PfRingDeviceList::getInstance</a></div><div class="ttdeci">static PfRingDeviceList &amp; getInstance()</div><div class="ttdef"><b>Definition:</b> PfRingDeviceList.h:35</div></div>
+<div class="ttc" id="aclasspcpp_1_1_pf_ring_device_list_html_aeb3b11514e81f921d9b2692a800d115b"><div class="ttname"><a href="classpcpp_1_1_pf_ring_device_list.html#aeb3b11514e81f921d9b2692a800d115b">pcpp::PfRingDeviceList::getDeviceByName</a></div><div class="ttdeci">PfRingDevice * getDeviceByName(const std::string &amp;devName) const</div></div>
 <div class="ttc" id="aclasspcpp_1_1internal_1_1_device_list_base_html"><div class="ttname"><a href="classpcpp_1_1internal_1_1_device_list_base.html">pcpp::internal::DeviceListBase</a></div><div class="ttdoc">A base class for device lists, providing common functionality for managing a list of devices.</div><div class="ttdef"><b>Definition:</b> DeviceListBase.h:10</div></div>
 <div class="ttc" id="anamespacepcpp_html"><div class="ttname"><a href="namespacepcpp.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib.</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -151,7 +155,7 @@ $(document).ready(function(){initNavTree('_pf_ring_device_list_8h_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1d5e652a4f74c687a1a254f16a4c3d59.html">Pcap++</a></li><li class="navelem"><a class="el" href="dir_24675e680cc699690f9ab00f0f74b528.html">header</a></li><li class="navelem"><a class="el" href="_pf_ring_device_list_8h.html">PfRingDeviceList.h</a></li>
-    <li class="footer">Generated on Thu May 15 2025 06:37:58 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon May 26 2025 06:06:14 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
