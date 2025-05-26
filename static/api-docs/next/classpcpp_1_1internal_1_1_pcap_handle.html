@@ -125,6 +125,9 @@ constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <tr class="memitem:a90aff84a2db4fcd7449d498ec8a6f672"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_pcap_handle.html#a90aff84a2db4fcd7449d498ec8a6f672">clearFilter</a> ()</td></tr>
 <tr class="memdesc:a90aff84a2db4fcd7449d498ec8a6f672"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the filter currently set on the handle.  <a href="classpcpp_1_1internal_1_1_pcap_handle.html#a90aff84a2db4fcd7449d498ec8a6f672">More...</a><br /></td></tr>
 <tr class="separator:a90aff84a2db4fcd7449d498ec8a6f672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f2c1fe9ab769fad36f4a447323c5c0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_pcap_handle.html#a9f2c1fe9ab769fad36f4a447323c5c0d">getStatistics</a> (<a class="el" href="structpcpp_1_1internal_1_1_pcap_stats.html">PcapStats</a> &amp;stats) const</td></tr>
+<tr class="memdesc:a9f2c1fe9ab769fad36f4a447323c5c0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves statistics from the pcap handle.  <a href="classpcpp_1_1internal_1_1_pcap_handle.html#a9f2c1fe9ab769fad36f4a447323c5c0d">More...</a><br /></td></tr>
+<tr class="separator:a9f2c1fe9ab769fad36f4a447323c5c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c6690e5fc8750ef6c503aaa83244a56"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_pcap_handle.html#a2c6690e5fc8750ef6c503aaa83244a56">operator bool</a> () const noexcept</td></tr>
 <tr class="separator:a2c6690e5fc8750ef6c503aaa83244a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -238,6 +241,34 @@ constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <p>Helper function to retrieve a view of the last error string for this handle. </p>
 <dl class="section return"><dt>Returns</dt><dd>A null-terminated view of the last error string. </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>The returned view is only valid until the next call to a pcap function. </dd></dl>
+
+</div>
+</div>
+<a id="a9f2c1fe9ab769fad36f4a447323c5c0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f2c1fe9ab769fad36f4a447323c5c0d">&#9670;&nbsp;</a></span>getStatistics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::internal::PcapHandle::getStatistics </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpcpp_1_1internal_1_1_pcap_stats.html">PcapStats</a> &amp;&#160;</td>
+          <td class="paramname"><em>stats</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves statistics from the pcap handle. </p>
+<p>The function internally calls pcap_stats() to retrieve the statistics and only works on live devices.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stats</td><td>Structure to store the statistics. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the statistics were retrieved successfully, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -390,7 +421,7 @@ constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><b>internal</b></li><li class="navelem"><a class="el" href="classpcpp_1_1internal_1_1_pcap_handle.html">PcapHandle</a></li>
-    <li class="footer">Generated on Thu May 15 2025 06:37:59 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon May 26 2025 06:06:16 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

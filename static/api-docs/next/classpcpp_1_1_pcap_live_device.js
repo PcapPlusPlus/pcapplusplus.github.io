@@ -2,6 +2,7 @@ var classpcpp_1_1_pcap_live_device =
 [
     [ "DeviceConfiguration", "structpcpp_1_1_pcap_live_device_1_1_device_configuration.html", "structpcpp_1_1_pcap_live_device_1_1_device_configuration" ],
     [ "DeviceInterfaceDetails", "structpcpp_1_1_pcap_live_device_1_1_device_interface_details.html", "structpcpp_1_1_pcap_live_device_1_1_device_interface_details" ],
+    [ "StatisticsUpdateWorker", "classpcpp_1_1_pcap_live_device_1_1_statistics_update_worker.html", "classpcpp_1_1_pcap_live_device_1_1_statistics_update_worker" ],
     [ "DeviceMode", "classpcpp_1_1_pcap_live_device.html#a2381e7f053285090f0f9620bcbd8f0f3", [
       [ "Normal", "classpcpp_1_1_pcap_live_device.html#a2381e7f053285090f0f9620bcbd8f0f3ad57df3ce2415ba6f804539bb268aecdf", null ],
       [ "Promiscuous", "classpcpp_1_1_pcap_live_device.html#a2381e7f053285090f0f9620bcbd8f0f3af1c5bb543295a735a99cc9f88ac67bca", null ]

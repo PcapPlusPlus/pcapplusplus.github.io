@@ -101,11 +101,12 @@ Inheritance diagram for pcpp::PcapLiveDevice:</div>
  <div class="center">
   <img src="classpcpp_1_1_pcap_live_device.png" usemap="#pcpp::PcapLiveDevice_map" alt=""/>
   <map id="pcpp::PcapLiveDevice_map" name="pcpp::PcapLiveDevice_map">
-<area href="classpcpp_1_1_i_pcap_device.html" alt="pcpp::IPcapDevice" shape="rect" coords="85,56,245,80"/>
-<area href="classpcpp_1_1_i_device.html" alt="pcpp::IDevice" shape="rect" coords="0,0,160,24"/>
-<area href="classpcpp_1_1_i_filterable_device.html" alt="pcpp::IFilterableDevice" shape="rect" coords="170,0,330,24"/>
-<area href="classpcpp_1_1_pcap_remote_device.html" alt="pcpp::PcapRemoteDevice" shape="rect" coords="0,168,160,192"/>
-<area href="classpcpp_1_1_win_pcap_live_device.html" alt="pcpp::WinPcapLiveDevice" shape="rect" coords="170,168,330,192"/>
+<area href="classpcpp_1_1_i_pcap_device.html" alt="pcpp::IPcapDevice" shape="rect" coords="186,56,362,80"/>
+<area href="classpcpp_1_1_i_device.html" alt="pcpp::IDevice" shape="rect" coords="0,0,176,24"/>
+<area href="classpcpp_1_1_i_filterable_device.html" alt="pcpp::IFilterableDevice" shape="rect" coords="186,0,362,24"/>
+<area href="classpcpp_1_1_i_pcap_statistics_provider.html" title="An interface for providing Pcap-based device statistics." alt="pcpp::IPcapStatisticsProvider" shape="rect" coords="372,0,548,24"/>
+<area href="classpcpp_1_1_pcap_remote_device.html" alt="pcpp::PcapRemoteDevice" shape="rect" coords="93,168,269,192"/>
+<area href="classpcpp_1_1_win_pcap_live_device.html" alt="pcpp::WinPcapLiveDevice" shape="rect" coords="279,168,455,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -115,6 +116,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_pcap_live_device_1_1_device_interface_details.html">DeviceInterfaceDetails</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A struct that contains all details of a network interface.  <a href="structpcpp_1_1_pcap_live_device_1_1_device_interface_details.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device_1_1_statistics_update_worker.html">StatisticsUpdateWorker</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A worker thread that periodically calls the provided callback with updated statistics.  <a href="classpcpp_1_1_pcap_live_device_1_1_statistics_update_worker.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -221,7 +225,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a02254c8ce454a469d9846dfc63fab4f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acba1065b450b4caf17e7d0c99959aa99"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#acba1065b450b4caf17e7d0c99959aa99">clone</a> () const</td></tr>
 <tr class="separator:acba1065b450b4caf17e7d0c99959aa99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a5928913d4fb57ffc5b3afe08a10b0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a3a5928913d4fb57ffc5b3afe08a10b0f">getStatistics</a> (<a class="el" href="structpcpp_1_1_i_pcap_device_1_1_pcap_stats.html">IPcapDevice::PcapStats</a> &amp;stats) const override</td></tr>
+<tr class="memitem:a3a5928913d4fb57ffc5b3afe08a10b0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a3a5928913d4fb57ffc5b3afe08a10b0f">getStatistics</a> (<a class="el" href="structpcpp_1_1internal_1_1_pcap_stats.html">IPcapDevice::PcapStats</a> &amp;stats) const override</td></tr>
 <tr class="separator:a3a5928913d4fb57ffc5b3afe08a10b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classpcpp_1_1_i_pcap_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_i_pcap_device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_pcap_device.html">pcpp::IPcapDevice</a></td></tr>
 <tr class="memitem:a5308f2b55bb22afdef5ddfda63332398 inherit pub_methods_classpcpp_1_1_i_pcap_device"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#a5308f2b55bb22afdef5ddfda63332398">setFilter</a> (std::string filterAsString) override</td></tr>
@@ -238,6 +242,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="inherit_header pub_methods_classpcpp_1_1_i_filterable_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_i_filterable_device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_filterable_device.html">pcpp::IFilterableDevice</a></td></tr>
 <tr class="memitem:af334503822ac7076373c64109f3e6d64 inherit pub_methods_classpcpp_1_1_i_filterable_device"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_filterable_device.html#af334503822ac7076373c64109f3e6d64">setFilter</a> (<a class="el" href="classpcpp_1_1_general_filter.html">GeneralFilter</a> &amp;filter)</td></tr>
 <tr class="separator:af334503822ac7076373c64109f3e6d64 inherit pub_methods_classpcpp_1_1_i_filterable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classpcpp_1_1_i_pcap_statistics_provider"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_i_pcap_statistics_provider')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_pcap_statistics_provider.html">pcpp::IPcapStatisticsProvider</a></td></tr>
+<tr class="memitem:affac08c8925f77baf4a5db28dd1a0d83 inherit pub_methods_classpcpp_1_1_i_pcap_statistics_provider"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpcpp_1_1internal_1_1_pcap_stats.html">PcapStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_statistics_provider.html#affac08c8925f77baf4a5db28dd1a0d83">getStatistics</a> () const</td></tr>
+<tr class="memdesc:affac08c8925f77baf4a5db28dd1a0d83 inherit pub_methods_classpcpp_1_1_i_pcap_statistics_provider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get statistics from the device.  <a href="classpcpp_1_1_i_pcap_statistics_provider.html#affac08c8925f77baf4a5db28dd1a0d83">More...</a><br /></td></tr>
+<tr class="separator:affac08c8925f77baf4a5db28dd1a0d83 inherit pub_methods_classpcpp_1_1_i_pcap_statistics_provider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -760,7 +768,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void pcpp::PcapLiveDevice::getStatistics </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structpcpp_1_1_i_pcap_device_1_1_pcap_stats.html">IPcapDevice::PcapStats</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structpcpp_1_1internal_1_1_pcap_stats.html">IPcapDevice::PcapStats</a> &amp;&#160;</td>
           <td class="paramname"><em>stats</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -778,7 +786,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classpcpp_1_1_i_pcap_device.html#a785987975c2e9eb09e5d86305180e2c7">pcpp::IPcapDevice</a>.</p>
+<p>Implements <a class="el" href="classpcpp_1_1_i_pcap_statistics_provider.html#a04c676bd9013cf597f7b6512924b7ee2">pcpp::IPcapStatisticsProvider</a>.</p>
 
 <p>Reimplemented in <a class="el" href="classpcpp_1_1_pcap_remote_device.html#a00ca1adcbd9baccfcb89d167934b929d">pcpp::PcapRemoteDevice</a>.</p>
 
@@ -1489,7 +1497,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a></li>
-    <li class="footer">Generated on Thu May 15 2025 06:37:59 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon May 26 2025 06:06:16 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

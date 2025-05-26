@@ -2,6 +2,10 @@ var classpcpp_1_1_pcap_remote_device_list =
 [
     [ "ConstRemoteDeviceListIterator", "classpcpp_1_1_pcap_remote_device_list.html#a6ae5ea2d626fb0d0a93295046dace271", null ],
     [ "RemoteDeviceListIterator", "classpcpp_1_1_pcap_remote_device_list.html#a4ba95e67e0b0127d7bdea155c2ee6181", null ],
+    [ "getDeviceByIP", "classpcpp_1_1_pcap_remote_device_list.html#ac7fdd214df7a9f7b6ea19e2e802c6ac1", null ],
+    [ "getDeviceByIP", "classpcpp_1_1_pcap_remote_device_list.html#a5df72b4b619ed30fdf077a637a06f249", null ],
+    [ "getDeviceByIP", "classpcpp_1_1_pcap_remote_device_list.html#a911695699f91cf3fb5501c30322774c0", null ],
+    [ "getDeviceByIP", "classpcpp_1_1_pcap_remote_device_list.html#a9a0dc2f3f8f4f542e740ae17e4a9ded2", null ],
     [ "getRemoteDeviceByIP", "classpcpp_1_1_pcap_remote_device_list.html#a7bc8bad418fb81558e1350d693fa3161", null ],
     [ "getRemoteDeviceByIP", "classpcpp_1_1_pcap_remote_device_list.html#ad6b9e1731e22c6ebb36dae19b3a63acf", null ],
     [ "getRemoteDeviceByIP", "classpcpp_1_1_pcap_remote_device_list.html#afcf906d4e0ce47f1a8c2d7a542972f6a", null ],
