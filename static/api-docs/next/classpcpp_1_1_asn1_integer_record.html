@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_asn1_integer_record.html
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classpcpp_1_1_asn1_integer_record-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -107,10 +108,17 @@ Inheritance diagram for pcpp::Asn1IntegerRecord:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a27e7342597387541a8949d250c0fbbc3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_asn1_integer_record.html#a27e7342597387541a8949d250c0fbbc3">Asn1IntegerRecord</a> (uint32_t value)</td></tr>
-<tr class="separator:a27e7342597387541a8949d250c0fbbc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42bf885318622486447348938f50831d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_asn1_integer_record.html#a42bf885318622486447348938f50831d">Asn1IntegerRecord</a> (uint64_t value)</td></tr>
+<tr class="separator:a42bf885318622486447348938f50831d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc2b0fb524a27298446fa10f848bd50e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_asn1_integer_record.html#afc2b0fb524a27298446fa10f848bd50e">Asn1IntegerRecord</a> (const std::string &amp;value)</td></tr>
+<tr class="separator:afc2b0fb524a27298446fa10f848bd50e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ad6857cbe1e346ca09f1602f1420458"><td class="memTemplParams" colspan="2">template&lt;typename T , EnableIfUnsignedIntegral&lt; T &gt;  = 0&gt; </td></tr>
+<tr class="memitem:a5ad6857cbe1e346ca09f1602f1420458"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_asn1_integer_record.html#a5ad6857cbe1e346ca09f1602f1420458">getIntValue</a> ()</td></tr>
+<tr class="separator:a5ad6857cbe1e346ca09f1602f1420458"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab55607bab1dcfe57d348b380120c6136"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_asn1_integer_record.html#ab55607bab1dcfe57d348b380120c6136">getValue</a> ()</td></tr>
 <tr class="separator:ab55607bab1dcfe57d348b380120c6136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba72a37a1cb66ff226e67618d128a307"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_asn1_integer_record.html#aba72a37a1cb66ff226e67618d128a307">getValueAsString</a> ()</td></tr>
+<tr class="separator:aba72a37a1cb66ff226e67618d128a307"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classpcpp_1_1_asn1_record"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_asn1_record')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_asn1_record.html">pcpp::Asn1Record</a></td></tr>
 <tr class="memitem:a8b1ded317913dd8b5b91b35b2a91ee4f inherit pub_methods_classpcpp_1_1_asn1_record"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_asn1_record.html#a8b1ded317913dd8b5b91b35b2a91ee4f">encode</a> ()</td></tr>
 <tr class="separator:a8b1ded317913dd8b5b91b35b2a91ee4f inherit pub_methods_classpcpp_1_1_asn1_record"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,8 +149,8 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents an ASN.1 record with a value of type Integer </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a27e7342597387541a8949d250c0fbbc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27e7342597387541a8949d250c0fbbc3">&#9670;&nbsp;</a></span>Asn1IntegerRecord()</h2>
+<a id="a42bf885318622486447348938f50831d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42bf885318622486447348938f50831d">&#9670;&nbsp;</a></span>Asn1IntegerRecord() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,7 +161,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">pcpp::Asn1IntegerRecord::Asn1IntegerRecord </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype">uint64_t&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
           <td></td>
         </tr>
@@ -173,7 +181,79 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="afc2b0fb524a27298446fa10f848bd50e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc2b0fb524a27298446fa10f848bd50e">&#9670;&nbsp;</a></span>Asn1IntegerRecord() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::Asn1IntegerRecord::Asn1IntegerRecord </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A constructor to create a record of type Integer </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>An integer represented as a hex stream to set as the record value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>if the value isn't a valid hex stream </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5ad6857cbe1e346ca09f1602f1420458"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ad6857cbe1e346ca09f1602f1420458">&#9670;&nbsp;</a></span>getIntValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , EnableIfUnsignedIntegral&lt; T &gt;  = 0&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T pcpp::Asn1IntegerRecord::getIntValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The integer value of this record </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>if the value doesn't fit the requested integer size </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ab55607bab1dcfe57d348b380120c6136"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab55607bab1dcfe57d348b380120c6136">&#9670;&nbsp;</a></span>getValue()</h2>
 
@@ -196,7 +276,33 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The integer value of this record </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>This method is deprecated, please use <a class="el" href="classpcpp_1_1_asn1_integer_record.html#a5ad6857cbe1e346ca09f1602f1420458">getIntValue()</a> </dd></dl>
+
+</div>
+</div>
+<a id="aba72a37a1cb66ff226e67618d128a307"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba72a37a1cb66ff226e67618d128a307">&#9670;&nbsp;</a></span>getValueAsString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string pcpp::Asn1IntegerRecord::getValueAsString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A hex string representation of the record value </dd></dl>
 
 </div>
 </div>
@@ -206,7 +312,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_asn1_integer_record.html">Asn1IntegerRecord</a></li>
-    <li class="footer">Generated on Mon May 26 2025 06:06:15 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Jun 1 2025 23:10:04 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
