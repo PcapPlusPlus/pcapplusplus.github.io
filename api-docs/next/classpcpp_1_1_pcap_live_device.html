@@ -88,6 +88,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_pcap_live_device.html','
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classpcpp_1_1_pcap_live_device-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::PcapLiveDevice Class Reference</div>  </div>
@@ -201,14 +202,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a058f8bc527935d97bbd044614ab93473"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bbfee245406c59d1683610fd8819ec5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a4bbfee245406c59d1683610fd8819ec5">doMtuCheck</a> (int packetPayloadLength) const</td></tr>
 <tr class="separator:a4bbfee245406c59d1683610fd8819ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d8a41394806dd5e5245046908f60f16"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a9d8a41394806dd5e5245046908f60f16">sendPacket</a> (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet, bool checkMtu=true)</td></tr>
+<tr class="separator:a9d8a41394806dd5e5245046908f60f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89a20db2f68dcba1675a4895f03180bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a89a20db2f68dcba1675a4895f03180bb">sendPacket</a> (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> const &amp;packet, bool checkMtu=true)</td></tr>
+<tr class="separator:a89a20db2f68dcba1675a4895f03180bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ec557886562d8af27bb7bce07016544"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a2ec557886562d8af27bb7bce07016544">sendPacket</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> const &amp;rawPacket, bool checkMtu=false)</td></tr>
 <tr class="separator:a2ec557886562d8af27bb7bce07016544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e5b87c1864ee727e12bb246b071c964"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a4e5b87c1864ee727e12bb246b071c964">sendPacket</a> (const uint8_t *packetData, int packetDataLength, int packetPayloadLength)</td></tr>
 <tr class="separator:a4e5b87c1864ee727e12bb246b071c964"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62c57a5a0fd0427188e4c89ac87f12d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a62c57a5a0fd0427188e4c89ac87f12d8">sendPacket</a> (const uint8_t *packetData, int packetDataLength, bool checkMtu=false, <a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">pcpp::LinkLayerType</a> linkType=<a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">pcpp::LINKTYPE_ETHERNET</a>)</td></tr>
 <tr class="separator:a62c57a5a0fd0427188e4c89ac87f12d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d8a41394806dd5e5245046908f60f16"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a9d8a41394806dd5e5245046908f60f16">sendPacket</a> (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet, bool checkMtu=true)</td></tr>
-<tr class="separator:a9d8a41394806dd5e5245046908f60f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa11efe575402d9e06624376d87caf4fb"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#aa11efe575402d9e06624376d87caf4fb">sendPackets</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *rawPacketsArr, int arrLength, bool checkMtu=false)</td></tr>
 <tr class="separator:aa11efe575402d9e06624376d87caf4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71eb799bb039b9b4b182958bf5fdf563"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a71eb799bb039b9b4b182958bf5fdf563">sendPackets</a> (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> **packetsArr, int arrLength, bool checkMtu=true)</td></tr>
@@ -246,6 +249,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:affac08c8925f77baf4a5db28dd1a0d83 inherit pub_methods_classpcpp_1_1_i_pcap_statistics_provider"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpcpp_1_1internal_1_1_pcap_stats.html">PcapStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_statistics_provider.html#affac08c8925f77baf4a5db28dd1a0d83">getStatistics</a> () const</td></tr>
 <tr class="memdesc:affac08c8925f77baf4a5db28dd1a0d83 inherit pub_methods_classpcpp_1_1_i_pcap_statistics_provider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get statistics from the device.  <a href="classpcpp_1_1_i_pcap_statistics_provider.html#affac08c8925f77baf4a5db28dd1a0d83">More...</a><br /></td></tr>
 <tr class="separator:affac08c8925f77baf4a5db28dd1a0d83 inherit pub_methods_classpcpp_1_1_i_pcap_statistics_provider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:af9eb88d92d3221c6edb0da7b181869cc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#af9eb88d92d3221c6edb0da7b181869cc">prepareCapture</a> (bool asyncCapture, bool captureStats)</td></tr>
+<tr class="memdesc:af9eb88d92d3221c6edb0da7b181869cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called before starting a capture to prepare the device for capturing packets.  <a href="classpcpp_1_1_pcap_live_device.html#af9eb88d92d3221c6edb0da7b181869cc">More...</a><br /></td></tr>
+<tr class="separator:af9eb88d92d3221c6edb0da7b181869cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -847,8 +856,56 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="af9eb88d92d3221c6edb0da7b181869cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9eb88d92d3221c6edb0da7b181869cc">&#9670;&nbsp;</a></span>prepareCapture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void pcpp::PcapLiveDevice::prepareCapture </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>asyncCapture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>captureStats</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called before starting a capture to prepare the device for capturing packets. </p>
+<p>This method can be overridden by derived classes to perform additional preparations before starting the packet capture.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">asyncCapture</td><td>True if the capture is asynchronous (i.e. packets are captured in a separate thread), </td></tr>
+    <tr><td class="paramname">captureStats</td><td>True if statistics should be captured during the capture process. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="classpcpp_1_1_win_pcap_live_device.html#aad3ce3cfe5b02316936a986a4f270da2">pcpp::WinPcapLiveDevice</a>.</p>
+
+</div>
+</div>
 <a id="a62c57a5a0fd0427188e4c89ac87f12d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62c57a5a0fd0427188e4c89ac87f12d8">&#9670;&nbsp;</a></span>sendPacket() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a62c57a5a0fd0427188e4c89ac87f12d8">&#9670;&nbsp;</a></span>sendPacket() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -904,7 +961,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a4e5b87c1864ee727e12bb246b071c964"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e5b87c1864ee727e12bb246b071c964">&#9670;&nbsp;</a></span>sendPacket() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e5b87c1864ee727e12bb246b071c964">&#9670;&nbsp;</a></span>sendPacket() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -953,10 +1010,13 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a9d8a41394806dd5e5245046908f60f16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d8a41394806dd5e5245046908f60f16">&#9670;&nbsp;</a></span>sendPacket() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d8a41394806dd5e5245046908f60f16">&#9670;&nbsp;</a></span>sendPacket() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool pcpp::PcapLiveDevice::sendPacket </td>
@@ -976,6 +1036,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Send a parsed <a class="el" href="classpcpp_1_1_packet.html">Packet</a> to the network </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -991,11 +1056,54 @@ Additional Inherited Members</h2></td></tr>
 <li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> could not be sent due to some error in libpcap/WinPcap/Npcap </li>
 </ul>
 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">Deprecated:</a></b></dt><dd>This method is deprecated. Use <a class="el" href="classpcpp_1_1_pcap_live_device.html#a89a20db2f68dcba1675a4895f03180bb">sendPacket(Packet const&amp; packet, bool checkMtu)</a> instead. </dd></dl>
+
+</div>
+</div>
+<a id="a89a20db2f68dcba1675a4895f03180bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89a20db2f68dcba1675a4895f03180bb">&#9670;&nbsp;</a></span>sendPacket() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::PcapLiveDevice::sendPacket </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_packet.html">Packet</a> const &amp;&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>checkMtu</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Send a parsed <a class="el" href="classpcpp_1_1_packet.html">Packet</a> to the network </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>A reference to the packet to send. This method treats the packet as read-only, it doesn't change anything in it </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">checkMtu</td><td>Whether the length of the packet's payload should be checked against the MTU. Default value is true, since the packet being passed in has already been parsed, so checking the MTU does not incur significant processing overhead. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if packet was sent successfully. False will be returned in the following cases (relevant log error is printed in any case):<ul>
+<li>Device is not opened</li>
+<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is 0</li>
+<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> length is larger than device MTU and checkMtu is true</li>
+<li><a class="el" href="classpcpp_1_1_packet.html">Packet</a> could not be sent due to some error in libpcap/WinPcap/Npcap </li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
 <a id="a2ec557886562d8af27bb7bce07016544"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ec557886562d8af27bb7bce07016544">&#9670;&nbsp;</a></span>sendPacket() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ec557886562d8af27bb7bce07016544">&#9670;&nbsp;</a></span>sendPacket() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1253,8 +1361,7 @@ Additional Inherited Members</h2></td></tr>
 <li>Stats collection thread could not be created </li>
 </ul>
 </dd></dl>
-
-<p>Reimplemented in <a class="el" href="classpcpp_1_1_win_pcap_live_device.html#af432e1434cf1ca4f37fb34b442d69e2b">pcpp::WinPcapLiveDevice</a>.</p>
+<dl class="section remark"><dt>Remarks</dt><dd>This method is planned for conversion to non-virtual in the future, so it should not be overridden. </dd></dl>
 
 </div>
 </div>
@@ -1304,6 +1411,7 @@ Additional Inherited Members</h2></td></tr>
 <li>Capture thread could not be created </li>
 </ul>
 </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This method is planned for conversion to non-virtual in the future, so it should not be overridden. </dd></dl>
 
 </div>
 </div>
@@ -1375,8 +1483,7 @@ Additional Inherited Members</h2></td></tr>
 <li>Stats collection thread could not be created </li>
 </ul>
 </dd></dl>
-
-<p>Reimplemented in <a class="el" href="classpcpp_1_1_win_pcap_live_device.html#aeb2d967114a4f6135820b8e2bc326b1c">pcpp::WinPcapLiveDevice</a>.</p>
+<dl class="section remark"><dt>Remarks</dt><dd>This method is planned for conversion to non-virtual in the future, so it should not be overridden. </dd></dl>
 
 </div>
 </div>
@@ -1415,8 +1522,7 @@ Additional Inherited Members</h2></td></tr>
 <li>Capture thread could not be created </li>
 </ul>
 </dd></dl>
-
-<p>Reimplemented in <a class="el" href="classpcpp_1_1_win_pcap_live_device.html#a6505fd526ca0ff27b17c06d2c2c29d84">pcpp::WinPcapLiveDevice</a>.</p>
+<dl class="section remark"><dt>Remarks</dt><dd>This method is planned for conversion to non-virtual in the future, so it should not be overridden. </dd></dl>
 
 </div>
 </div>
@@ -1470,6 +1576,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>-1 if timeout expired, 1 if blocking was stopped via onPacketArrives callback or 0 if an error occurred (such as device not open etc.). When returning 0 an appropriate error message is printed to log </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>On Unix-like systems, enabling the <code>usePoll</code> option in <code><a class="el" href="structpcpp_1_1_pcap_live_device_1_1_device_configuration.html">DeviceConfiguration</a></code> prevents the method from blocking indefinitely when no packets are available, even if a timeout is set. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This method is planned for conversion to non-virtual in the future, so it should not be overridden. </dd></dl>
 
 </div>
 </div>
@@ -1497,7 +1604,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a></li>
-    <li class="footer">Generated on Mon May 26 2025 06:06:16 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Jun 1 2025 23:10:05 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

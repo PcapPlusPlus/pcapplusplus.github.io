@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_win_pcap_live_device.htm
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classpcpp_1_1_win_pcap_live_device-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::WinPcapLiveDevice Class Reference</div>  </div>
@@ -111,12 +112,6 @@ Inheritance diagram for pcpp::WinPcapLiveDevice:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa447e59136942fd86f21933b85d901a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a0e343585711ee4e02d4b9507467135ab">LiveDeviceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_win_pcap_live_device.html#aa447e59136942fd86f21933b85d901a3">getDeviceType</a> () const override</td></tr>
 <tr class="separator:aa447e59136942fd86f21933b85d901a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb2d967114a4f6135820b8e2bc326b1c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_win_pcap_live_device.html#aeb2d967114a4f6135820b8e2bc326b1c">startCapture</a> (<a class="el" href="namespacepcpp.html#a700592e5086544411957be0242dec0f5">OnPacketArrivesCallback</a> onPacketArrives, void *onPacketArrivesUserCookie, int intervalInSecondsToUpdateStats, <a class="el" href="namespacepcpp.html#a83363d443da98e485f8edb46a4184779">OnStatsUpdateCallback</a> onStatsUpdate, void *onStatsUpdateUserCookie) override</td></tr>
-<tr class="separator:aeb2d967114a4f6135820b8e2bc326b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af432e1434cf1ca4f37fb34b442d69e2b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_win_pcap_live_device.html#af432e1434cf1ca4f37fb34b442d69e2b">startCapture</a> (int intervalInSecondsToUpdateStats, <a class="el" href="namespacepcpp.html#a83363d443da98e485f8edb46a4184779">OnStatsUpdateCallback</a> onStatsUpdate, void *onStatsUpdateUserCookie) override</td></tr>
-<tr class="separator:af432e1434cf1ca4f37fb34b442d69e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6505fd526ca0ff27b17c06d2c2c29d84"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_win_pcap_live_device.html#a6505fd526ca0ff27b17c06d2c2c29d84">startCapture</a> (<a class="el" href="namespacepcpp.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;capturedPacketsVector) override</td></tr>
-<tr class="separator:a6505fd526ca0ff27b17c06d2c2c29d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebff78da9d57c6ec9046de32746943bd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_win_pcap_live_device.html#aebff78da9d57c6ec9046de32746943bd">setMinAmountOfDataToCopyFromKernelToApplication</a> (int size)</td></tr>
 <tr class="separator:aebff78da9d57c6ec9046de32746943bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e2487bad421ea945119a872c346c595"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_win_pcap_live_device.html#a8e2487bad421ea945119a872c346c595">getMinAmountOfDataToCopyFromKernelToApplication</a> () const</td></tr>
@@ -158,6 +153,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6b173d2702c2e33c05eec8f5676affd8 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a349b001c38b0f1e43a1691fedbd1b0cc inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a349b001c38b0f1e43a1691fedbd1b0cc">startCapture</a> (<a class="el" href="namespacepcpp.html#a700592e5086544411957be0242dec0f5">OnPacketArrivesCallback</a> onPacketArrives, void *onPacketArrivesUserCookie)</td></tr>
 <tr class="separator:a349b001c38b0f1e43a1691fedbd1b0cc inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78306fe44879e457df4043a117f6863a inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a78306fe44879e457df4043a117f6863a">startCapture</a> (<a class="el" href="namespacepcpp.html#a700592e5086544411957be0242dec0f5">OnPacketArrivesCallback</a> onPacketArrives, void *onPacketArrivesUserCookie, int intervalInSecondsToUpdateStats, <a class="el" href="namespacepcpp.html#a83363d443da98e485f8edb46a4184779">OnStatsUpdateCallback</a> onStatsUpdate, void *onStatsUpdateUserCookie)</td></tr>
+<tr class="separator:a78306fe44879e457df4043a117f6863a inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2933139d284d7c167283982ec8b56559 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a2933139d284d7c167283982ec8b56559">startCapture</a> (int intervalInSecondsToUpdateStats, <a class="el" href="namespacepcpp.html#a83363d443da98e485f8edb46a4184779">OnStatsUpdateCallback</a> onStatsUpdate, void *onStatsUpdateUserCookie)</td></tr>
+<tr class="separator:a2933139d284d7c167283982ec8b56559 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a821bbac1ffad5a75c6a0be1ff362eb9f inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a821bbac1ffad5a75c6a0be1ff362eb9f">startCapture</a> (<a class="el" href="namespacepcpp.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;capturedPacketsVector)</td></tr>
+<tr class="separator:a821bbac1ffad5a75c6a0be1ff362eb9f inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1948c03b6471a5dcea064a7a8950a0a0 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a1948c03b6471a5dcea064a7a8950a0a0">startCaptureBlockingMode</a> (<a class="el" href="namespacepcpp.html#a6a83c8855a6bb3681fafec04b00a6339">OnPacketArrivesStopBlocking</a> onPacketArrives, void *userCookie, const double timeout)</td></tr>
 <tr class="separator:a1948c03b6471a5dcea064a7a8950a0a0 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a818da3e11e0c953385badf6233ee0f43 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a818da3e11e0c953385badf6233ee0f43">stopCapture</a> ()</td></tr>
@@ -166,14 +167,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a058f8bc527935d97bbd044614ab93473 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bbfee245406c59d1683610fd8819ec5 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a4bbfee245406c59d1683610fd8819ec5">doMtuCheck</a> (int packetPayloadLength) const</td></tr>
 <tr class="separator:a4bbfee245406c59d1683610fd8819ec5 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d8a41394806dd5e5245046908f60f16 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a9d8a41394806dd5e5245046908f60f16">sendPacket</a> (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet, bool checkMtu=true)</td></tr>
+<tr class="separator:a9d8a41394806dd5e5245046908f60f16 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89a20db2f68dcba1675a4895f03180bb inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a89a20db2f68dcba1675a4895f03180bb">sendPacket</a> (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> const &amp;packet, bool checkMtu=true)</td></tr>
+<tr class="separator:a89a20db2f68dcba1675a4895f03180bb inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ec557886562d8af27bb7bce07016544 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a2ec557886562d8af27bb7bce07016544">sendPacket</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> const &amp;rawPacket, bool checkMtu=false)</td></tr>
 <tr class="separator:a2ec557886562d8af27bb7bce07016544 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e5b87c1864ee727e12bb246b071c964 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a4e5b87c1864ee727e12bb246b071c964">sendPacket</a> (const uint8_t *packetData, int packetDataLength, int packetPayloadLength)</td></tr>
 <tr class="separator:a4e5b87c1864ee727e12bb246b071c964 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62c57a5a0fd0427188e4c89ac87f12d8 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a62c57a5a0fd0427188e4c89ac87f12d8">sendPacket</a> (const uint8_t *packetData, int packetDataLength, bool checkMtu=false, <a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">pcpp::LinkLayerType</a> linkType=<a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">pcpp::LINKTYPE_ETHERNET</a>)</td></tr>
 <tr class="separator:a62c57a5a0fd0427188e4c89ac87f12d8 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d8a41394806dd5e5245046908f60f16 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a9d8a41394806dd5e5245046908f60f16">sendPacket</a> (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet, bool checkMtu=true)</td></tr>
-<tr class="separator:a9d8a41394806dd5e5245046908f60f16 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa11efe575402d9e06624376d87caf4fb inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#aa11efe575402d9e06624376d87caf4fb">sendPackets</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *rawPacketsArr, int arrLength, bool checkMtu=false)</td></tr>
 <tr class="separator:aa11efe575402d9e06624376d87caf4fb inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71eb799bb039b9b4b182958bf5fdf563 inherit pub_methods_classpcpp_1_1_pcap_live_device"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a71eb799bb039b9b4b182958bf5fdf563">sendPackets</a> (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> **packetsArr, int arrLength, bool checkMtu=true)</td></tr>
@@ -209,6 +212,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:affac08c8925f77baf4a5db28dd1a0d83 inherit pub_methods_classpcpp_1_1_i_pcap_statistics_provider"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpcpp_1_1internal_1_1_pcap_stats.html">PcapStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_statistics_provider.html#affac08c8925f77baf4a5db28dd1a0d83">getStatistics</a> () const</td></tr>
 <tr class="memdesc:affac08c8925f77baf4a5db28dd1a0d83 inherit pub_methods_classpcpp_1_1_i_pcap_statistics_provider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get statistics from the device.  <a href="classpcpp_1_1_i_pcap_statistics_provider.html#affac08c8925f77baf4a5db28dd1a0d83">More...</a><br /></td></tr>
 <tr class="separator:affac08c8925f77baf4a5db28dd1a0d83 inherit pub_methods_classpcpp_1_1_i_pcap_statistics_provider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aad3ce3cfe5b02316936a986a4f270da2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_win_pcap_live_device.html#aad3ce3cfe5b02316936a986a4f270da2">prepareCapture</a> (bool asyncCapture, bool captureStats) override</td></tr>
+<tr class="memdesc:aad3ce3cfe5b02316936a986a4f270da2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called before starting a capture to prepare the device for capturing packets.  <a href="classpcpp_1_1_win_pcap_live_device.html#aad3ce3cfe5b02316936a986a4f270da2">More...</a><br /></td></tr>
+<tr class="separator:aad3ce3cfe5b02316936a986a4f270da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -335,6 +344,54 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="aad3ce3cfe5b02316936a986a4f270da2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad3ce3cfe5b02316936a986a4f270da2">&#9670;&nbsp;</a></span>prepareCapture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::WinPcapLiveDevice::prepareCapture </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>asyncCapture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>captureStats</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called before starting a capture to prepare the device for capturing packets. </p>
+<p>This method can be overridden by derived classes to perform additional preparations before starting the packet capture.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">asyncCapture</td><td>True if the capture is asynchronous (i.e. packets are captured in a separate thread), </td></tr>
+    <tr><td class="paramname">captureStats</td><td>True if statistics should be captured during the capture process. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="classpcpp_1_1_pcap_live_device.html#af9eb88d92d3221c6edb0da7b181869cc">pcpp::PcapLiveDevice</a>.</p>
+
+</div>
+</div>
 <a id="a9fb54c1f769a409743c6710f02b4de56"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9fb54c1f769a409743c6710f02b4de56">&#9670;&nbsp;</a></span>sendPackets() <span class="overload">[1/3]</span></h2>
 
@@ -446,184 +503,13 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="af432e1434cf1ca4f37fb34b442d69e2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af432e1434cf1ca4f37fb34b442d69e2b">&#9670;&nbsp;</a></span>startCapture() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::WinPcapLiveDevice::startCapture </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>intervalInSecondsToUpdateStats</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacepcpp.html#a83363d443da98e485f8edb46a4184779">OnStatsUpdateCallback</a>&#160;</td>
-          <td class="paramname"><em>onStatsUpdate</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>onStatsUpdateUserCookie</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Start capturing packets on this network interface (device) with periodic stats collection only. This means that packets arriving to the network interface aren't delivered to the user but only counted. Each intervalInSecondsToUpdateStats seconds stats are collected from the device and the onStatsUpdate callback is called with the updated counters. The periodic stats collection is done on a new thread created by this method, meaning all callback calls are done in threads other than the caller thread. Stats collection will stop and threads will be terminated when calling <a class="el" href="classpcpp_1_1_pcap_live_device.html#a818da3e11e0c953385badf6233ee0f43">stopCapture()</a>. This method must be called after the device is opened (i.e the <a class="el" href="classpcpp_1_1_pcap_live_device.html#ae40c27c0bfd5b397af813fd37a819e73">open()</a> method was called), otherwise an error will be returned. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">intervalInSecondsToUpdateStats</td><td>The interval in seconds to activate periodic stats collection </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">onStatsUpdate</td><td>A callback that will be called each time intervalInSecondsToUpdateStats expires and stats are collected. This callback will contain the collected stats </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">onStatsUpdateUserCookie</td><td>A pointer to a user provided object. This object will be transferred to the onStatsUpdate callback each time it is called </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if capture started successfully, false if (relevant log error is printed in any case):<ul>
-<li>Capture is already running</li>
-<li>Device is not opened</li>
-<li>Stats collection thread could not be created </li>
-</ul>
-</dd></dl>
-
-<p>Reimplemented from <a class="el" href="classpcpp_1_1_pcap_live_device.html#a2933139d284d7c167283982ec8b56559">pcpp::PcapLiveDevice</a>.</p>
-
-</div>
-</div>
-<a id="aeb2d967114a4f6135820b8e2bc326b1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb2d967114a4f6135820b8e2bc326b1c">&#9670;&nbsp;</a></span>startCapture() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::WinPcapLiveDevice::startCapture </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacepcpp.html#a700592e5086544411957be0242dec0f5">OnPacketArrivesCallback</a>&#160;</td>
-          <td class="paramname"><em>onPacketArrives</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>onPacketArrivesUserCookie</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>intervalInSecondsToUpdateStats</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacepcpp.html#a83363d443da98e485f8edb46a4184779">OnStatsUpdateCallback</a>&#160;</td>
-          <td class="paramname"><em>onStatsUpdate</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>onStatsUpdateUserCookie</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Start capturing packets on this network interface (device) with periodic stats collection. Each time a packet is captured the onPacketArrives callback is called. In addition, each intervalInSecondsToUpdateStats seconds stats are collected from the device and the onStatsUpdate callback is called. Both the capture and periodic stats collection are done on new threads created by this method, each on a different thread, meaning all callback calls are done in threads other than the caller thread. Capture process and stats collection will stop and threads will be terminated when calling <a class="el" href="classpcpp_1_1_pcap_live_device.html#a818da3e11e0c953385badf6233ee0f43">stopCapture()</a>. This method must be called after the device is opened (i.e the <a class="el" href="classpcpp_1_1_pcap_live_device.html#ae40c27c0bfd5b397af813fd37a819e73">open()</a> method was called), otherwise an error will be returned. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">onPacketArrives</td><td>A callback that is called each time a packet is captured </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">onPacketArrivesUserCookie</td><td>A pointer to a user provided object. This object will be transferred to the onPacketArrives callback each time it is called. This cookie is very useful for transferring objects that give context to the capture callback, for example: objects that counts packets, manages flow state or manages the application state according to the packet that was captured </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">intervalInSecondsToUpdateStats</td><td>The interval in seconds to activate periodic stats collection </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">onStatsUpdate</td><td>A callback that will be called each time intervalInSecondsToUpdateStats expires and stats are collected. This callback will contain the collected stats </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">onStatsUpdateUserCookie</td><td>A pointer to a user provided object. This object will be transferred to the onStatsUpdate callback each time it is called </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if capture started successfully, false if (relevant log error is printed in any case):<ul>
-<li>Capture is already running</li>
-<li>Device is not opened</li>
-<li>Capture thread could not be created</li>
-<li>Stats collection thread could not be created </li>
-</ul>
-</dd></dl>
-
-<p>Reimplemented from <a class="el" href="classpcpp_1_1_pcap_live_device.html#a78306fe44879e457df4043a117f6863a">pcpp::PcapLiveDevice</a>.</p>
-
-</div>
-</div>
-<a id="a6505fd526ca0ff27b17c06d2c2c29d84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6505fd526ca0ff27b17c06d2c2c29d84">&#9670;&nbsp;</a></span>startCapture() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::WinPcapLiveDevice::startCapture </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacepcpp.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;&#160;</td>
-          <td class="paramname"><em>capturedPacketsVector</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Start capturing packets on this network interface (device). All captured packets are added to capturedPacketsVector, so at the end of the capture (when calling <a class="el" href="classpcpp_1_1_pcap_live_device.html#a818da3e11e0c953385badf6233ee0f43">stopCapture()</a>) this vector contains pointers to all captured packets in the form of <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a>. The capture is done on a new thread created by this method, meaning capturedPacketsVector is updated from another thread other than the caller thread (so user should avoid changing or iterating this vector while capture is on). Capture process will stop and this capture thread will be terminated when calling <a class="el" href="classpcpp_1_1_pcap_live_device.html#a818da3e11e0c953385badf6233ee0f43">stopCapture()</a>. This method must be called after the device is opened (i.e the <a class="el" href="classpcpp_1_1_pcap_live_device.html#ae40c27c0bfd5b397af813fd37a819e73">open()</a> method was called), otherwise an error will be returned. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">capturedPacketsVector</td><td>A reference to a RawPacketVector, meaning a vector of pointer to <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> objects </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if capture started successfully, false if (relevant log error is printed in any case):<ul>
-<li>Capture is already running</li>
-<li>Device is not opened</li>
-<li>Capture thread could not be created </li>
-</ul>
-</dd></dl>
-
-<p>Reimplemented from <a class="el" href="classpcpp_1_1_pcap_live_device.html#a821bbac1ffad5a75c6a0be1ff362eb9f">pcpp::PcapLiveDevice</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_win_pcap_live_device.html">WinPcapLiveDevice</a></li>
-    <li class="footer">Generated on Mon May 26 2025 06:06:16 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Jun 1 2025 23:10:05 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
