@@ -106,12 +106,12 @@ Inheritance diagram for pcpp::RawPacket:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aad676f9942c34f234deecc7da921dd67"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#aad676f9942c34f234deecc7da921dd67">RawPacket</a> ()=default</td></tr>
+<tr class="separator:aad676f9942c34f234deecc7da921dd67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8834cea9fc72516c3d22a841479ee684"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#a8834cea9fc72516c3d22a841479ee684">RawPacket</a> (const uint8_t *pRawData, int rawDataLen, timeval timestamp, bool deleteRawDataAtDestructor, <a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> layerType=<a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a>)</td></tr>
 <tr class="separator:a8834cea9fc72516c3d22a841479ee684"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76475bd10f2bda34a6fee2686a26c475"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#a76475bd10f2bda34a6fee2686a26c475">RawPacket</a> (const uint8_t *pRawData, int rawDataLen, timespec timestamp, bool deleteRawDataAtDestructor, <a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> layerType=<a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a>)</td></tr>
 <tr class="separator:a76475bd10f2bda34a6fee2686a26c475"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc12f855f36a798ce0e8c7dc8a4618f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#acc12f855f36a798ce0e8c7dc8a4618f9">RawPacket</a> ()</td></tr>
-<tr class="separator:acc12f855f36a798ce0e8c7dc8a4618f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb8b8a3574217ab88b406cba3d2551fb"><td class="memItemLeft" align="right" valign="top"><a id="abb8b8a3574217ab88b406cba3d2551fb"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#abb8b8a3574217ab88b406cba3d2551fb">~RawPacket</a> ()</td></tr>
 <tr class="memdesc:abb8b8a3574217ab88b406cba3d2551fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">A destructor for this class. Frees the raw data if deleteRawDataAtDestructor was set to 'true'. <br /></td></tr>
@@ -166,8 +166,41 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class holds the packet as raw (not parsed) data. The data is held as byte array. In addition to the data itself every instance also holds a timestamp representing the time the packet was received by the NIC. <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> instance isn't read only. The user can change the packet data, add or remove data, etc. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aad676f9942c34f234deecc7da921dd67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad676f9942c34f234deecc7da921dd67">&#9670;&nbsp;</a></span>RawPacket() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::RawPacket::RawPacket </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A default constructor that initializes class'es attributes to default value:</p><ul>
+<li>data pointer is set to nullptr</li>
+<li>data length is set to 0</li>
+<li>frame length is set to 0</li>
+<li>deleteRawDataAtDestructor is set to 'true'</li>
+<li>timestamp is set to 0</li>
+<li>layer type is set to Ethernet </li>
+</ul>
+
+</div>
+</div>
 <a id="a8834cea9fc72516c3d22a841479ee684"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8834cea9fc72516c3d22a841479ee684">&#9670;&nbsp;</a></span>RawPacket() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8834cea9fc72516c3d22a841479ee684">&#9670;&nbsp;</a></span>RawPacket() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -223,7 +256,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a76475bd10f2bda34a6fee2686a26c475"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76475bd10f2bda34a6fee2686a26c475">&#9670;&nbsp;</a></span>RawPacket() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a76475bd10f2bda34a6fee2686a26c475">&#9670;&nbsp;</a></span>RawPacket() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -275,28 +308,6 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="acc12f855f36a798ce0e8c7dc8a4618f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc12f855f36a798ce0e8c7dc8a4618f9">&#9670;&nbsp;</a></span>RawPacket() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pcpp::RawPacket::RawPacket </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A default constructor that initializes class'es attributes to default value:</p><ul>
-<li>data pointer is set to nullptr</li>
-<li>data length is set to 0</li>
-<li>deleteRawDataAtDestructor is set to 'true'  </li>
-</ul>
 
 </div>
 </div>
@@ -981,7 +992,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if raw data was set successfully, false otherwise </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classpcpp_1_1_m_buf_raw_packet.html#ab2a9026bb43a9255fadb43ca5c398dfd">pcpp::MBufRawPacket</a>.</p>
+<p>Reimplemented in <a class="el" href="classpcpp_1_1_m_buf_raw_packet.html#a0f63a85bab7bf81ad20e6167d1cd76f6">pcpp::MBufRawPacket</a>.</p>
 
 </div>
 </div>
@@ -1056,7 +1067,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a></li>
-    <li class="footer">Generated on Sun Jun 1 2025 23:10:04 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jun 12 2025 03:23:14 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

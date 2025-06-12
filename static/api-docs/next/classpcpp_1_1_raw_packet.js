@@ -1,8 +1,8 @@
 var classpcpp_1_1_raw_packet =
 [
+    [ "RawPacket", "classpcpp_1_1_raw_packet.html#aad676f9942c34f234deecc7da921dd67", null ],
     [ "RawPacket", "classpcpp_1_1_raw_packet.html#a8834cea9fc72516c3d22a841479ee684", null ],
     [ "RawPacket", "classpcpp_1_1_raw_packet.html#a76475bd10f2bda34a6fee2686a26c475", null ],
-    [ "RawPacket", "classpcpp_1_1_raw_packet.html#acc12f855f36a798ce0e8c7dc8a4618f9", null ],
     [ "~RawPacket", "classpcpp_1_1_raw_packet.html#abb8b8a3574217ab88b406cba3d2551fb", null ],
     [ "RawPacket", "classpcpp_1_1_raw_packet.html#a38d24eda21061c53f0801f3bcbe34193", null ],
     [ "appendData", "classpcpp_1_1_raw_packet.html#a6ed098d0dfcf60fa561b56e6c73bed9c", null ],
