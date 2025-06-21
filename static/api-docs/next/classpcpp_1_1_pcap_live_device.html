@@ -255,6 +255,18 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:af9eb88d92d3221c6edb0da7b181869cc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#af9eb88d92d3221c6edb0da7b181869cc">prepareCapture</a> (bool asyncCapture, bool captureStats)</td></tr>
 <tr class="memdesc:af9eb88d92d3221c6edb0da7b181869cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called before starting a capture to prepare the device for capturing packets.  <a href="classpcpp_1_1_pcap_live_device.html#af9eb88d92d3221c6edb0da7b181869cc">More...</a><br /></td></tr>
 <tr class="separator:af9eb88d92d3221c6edb0da7b181869cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a729d3f09aeb52e59382eef9c6069567e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a729d3f09aeb52e59382eef9c6069567e">isPayloadWithinMtu</a> (size_t payloadLength) const</td></tr>
+<tr class="memdesc:a729d3f09aeb52e59382eef9c6069567e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the packetPayloadLength is smaller or equal than the device MTU.  <a href="classpcpp_1_1_pcap_live_device.html#a729d3f09aeb52e59382eef9c6069567e">More...</a><br /></td></tr>
+<tr class="separator:a729d3f09aeb52e59382eef9c6069567e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6ada849695721d0b21ca03a00befc3f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#ab6ada849695721d0b21ca03a00befc3f">isPayloadWithinMtu</a> (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> const &amp;packet, bool allowUnknownLength=false, size_t *outPayloadLength=nullptr) const</td></tr>
+<tr class="memdesc:ab6ada849695721d0b21ca03a00befc3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the packet's payload length is smaller or equal than the device MTU.  <a href="classpcpp_1_1_pcap_live_device.html#ab6ada849695721d0b21ca03a00befc3f">More...</a><br /></td></tr>
+<tr class="separator:ab6ada849695721d0b21ca03a00befc3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb224a2e5d31724ac15e11c5bfa7e778"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#adb224a2e5d31724ac15e11c5bfa7e778">isPayloadWithinMtu</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> const &amp;rawPacket, bool allowUnknownLength=false, size_t *outPayloadLength=nullptr) const</td></tr>
+<tr class="memdesc:adb224a2e5d31724ac15e11c5bfa7e778"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the payload length of a <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> is smaller or equal than the device MTU.  <a href="classpcpp_1_1_pcap_live_device.html#adb224a2e5d31724ac15e11c5bfa7e778">More...</a><br /></td></tr>
+<tr class="separator:adb224a2e5d31724ac15e11c5bfa7e778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ead45cde4c727a706ff8f9967d65660"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a8ead45cde4c727a706ff8f9967d65660">isPayloadWithinMtu</a> (uint8_t const *packetData, size_t packetLen, <a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> linkType=<a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">pcpp::LINKTYPE_ETHERNET</a>, bool allowUnknownLength=false, size_t *outPayloadLength=nullptr) const</td></tr>
+<tr class="memdesc:a8ead45cde4c727a706ff8f9967d65660"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the payload length of a packet's raw data is smaller or equal than the device MTU.  <a href="classpcpp_1_1_pcap_live_device.html#a8ead45cde4c727a706ff8f9967d65660">More...</a><br /></td></tr>
+<tr class="separator:a8ead45cde4c727a706ff8f9967d65660"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -798,6 +810,217 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classpcpp_1_1_i_pcap_statistics_provider.html#a04c676bd9013cf597f7b6512924b7ee2">pcpp::IPcapStatisticsProvider</a>.</p>
 
 <p>Reimplemented in <a class="el" href="classpcpp_1_1_pcap_remote_device.html#a00ca1adcbd9baccfcb89d167934b929d">pcpp::PcapRemoteDevice</a>.</p>
+
+</div>
+</div>
+<a id="ab6ada849695721d0b21ca03a00befc3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6ada849695721d0b21ca03a00befc3f">&#9670;&nbsp;</a></span>isPayloadWithinMtu() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::PcapLiveDevice::isPayloadWithinMtu </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_packet.html">Packet</a> const &amp;&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>allowUnknownLength</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>outPayloadLength</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks whether the packet's payload length is smaller or equal than the device MTU. </p>
+<p>If the payload length cannot be determined, the function will return the value of allowUnknownLength. In such cases, if outPayloadLength is not nullptr, it will be set to the maximum value of size_t (i.e., std::numeric_limits&lt;size_t&gt;::max()), indicating that the payload length could not be determined.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>The packet to check </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">allowUnknownLength</td><td>Controls whether packets with unknown payload length are allowed. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outPayloadLength</td><td>If not nullptr, the payload length of the packet will be written to this pointer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the packet's payload length is less than or equal to the device MTU. If the packet's length cannot be determined, it will return true if allowUnknownLength is true. </dd></dl>
+
+</div>
+</div>
+<a id="adb224a2e5d31724ac15e11c5bfa7e778"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb224a2e5d31724ac15e11c5bfa7e778">&#9670;&nbsp;</a></span>isPayloadWithinMtu() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::PcapLiveDevice::isPayloadWithinMtu </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> const &amp;&#160;</td>
+          <td class="paramname"><em>rawPacket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>allowUnknownLength</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>outPayloadLength</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks whether the payload length of a <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> is smaller or equal than the device MTU. </p>
+<p>If the payload length cannot be determined, the function will return the value of allowUnknownLength. In such cases, if outPayloadLength is not nullptr, it will be set to the maximum value of size_t (i.e., std::numeric_limits&lt;size_t&gt;::max()), indicating that the payload length could not be determined.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rawPacket</td><td>The <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> to check. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">allowUnknownLength</td><td>Controls whether packets with unknown payload length are allowed. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outPayloadLength</td><td>If not nullptr, the payload length of the packet will be written to this pointer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the packet's payload length is less than or equal to the device MTU. If the packet's length cannot be determined, it will return true if allowUnknownLength is true. </dd></dl>
+
+</div>
+</div>
+<a id="a729d3f09aeb52e59382eef9c6069567e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a729d3f09aeb52e59382eef9c6069567e">&#9670;&nbsp;</a></span>isPayloadWithinMtu() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::PcapLiveDevice::isPayloadWithinMtu </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>payloadLength</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks whether the packetPayloadLength is smaller or equal than the device MTU. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">payloadLength</td><td>The length of the IP layer of the packet </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the payloadLength is less than or equal to the device MTU </dd></dl>
+
+</div>
+</div>
+<a id="a8ead45cde4c727a706ff8f9967d65660"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ead45cde4c727a706ff8f9967d65660">&#9670;&nbsp;</a></span>isPayloadWithinMtu() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::PcapLiveDevice::isPayloadWithinMtu </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t const *&#160;</td>
+          <td class="paramname"><em>packetData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>packetLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a>&#160;</td>
+          <td class="paramname"><em>linkType</em> = <code><a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">pcpp::LINKTYPE_ETHERNET</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>allowUnknownLength</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>outPayloadLength</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks whether the payload length of a packet's raw data is smaller or equal than the device MTU. </p>
+<p>If the payload length cannot be determined, the function will return the value of allowUnknownLength. In such cases, if outPayloadLength is not nullptr, it will be set to the maximum value of size_t (i.e., std::numeric_limits&lt;size_t&gt;::max()), indicating that the payload length could not be determined.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">packetData</td><td>A pointer to the raw data of the packet. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packetLen</td><td>The length of the raw data in bytes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">linkType</td><td>The link layer type of the packet. Default is <a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215" title="IEEE 802.3 Ethernet.">pcpp::LINKTYPE_ETHERNET</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">allowUnknownLength</td><td>Controls whether packets with unknown payload length are allowed. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outPayloadLength</td><td>If not nullptr, the payload length of the packet will be written to this pointer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the packet's payload length is less than or equal to the device MTU. If the packet's length cannot be determined, it will return true if allowUnknownLength is true. </dd></dl>
 
 </div>
 </div>
@@ -1604,7 +1827,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a></li>
-    <li class="footer">Generated on Thu Jun 12 2025 03:23:15 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jun 21 2025 20:59:53 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
