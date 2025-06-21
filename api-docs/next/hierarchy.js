@@ -5,6 +5,7 @@ var hierarchy =
     [ "pcpp::arphdr", "structpcpp_1_1arphdr.html", null ],
     [ "pcpp::ArpReply", "structpcpp_1_1_arp_reply.html", null ],
     [ "pcpp::ArpRequest", "structpcpp_1_1_arp_request.html", null ],
+    [ "pcpp::Asn1ObjectIdentifier", "classpcpp_1_1_asn1_object_identifier.html", null ],
     [ "pcpp::Asn1Record", "classpcpp_1_1_asn1_record.html", [
       [ "pcpp::Asn1ConstructedRecord", "classpcpp_1_1_asn1_constructed_record.html", [
         [ "pcpp::Asn1SequenceRecord", "classpcpp_1_1_asn1_sequence_record.html", null ],
@@ -12,12 +13,18 @@ var hierarchy =
       ] ],
       [ "pcpp::Asn1GenericRecord", "classpcpp_1_1_asn1_generic_record.html", null ],
       [ "pcpp::Asn1PrimitiveRecord", "classpcpp_1_1_asn1_primitive_record.html", [
+        [ "pcpp::Asn1BitStringRecord", "classpcpp_1_1_asn1_bit_string_record.html", null ],
         [ "pcpp::Asn1BooleanRecord", "classpcpp_1_1_asn1_boolean_record.html", null ],
         [ "pcpp::Asn1IntegerRecord", "classpcpp_1_1_asn1_integer_record.html", [
           [ "pcpp::Asn1EnumeratedRecord", "classpcpp_1_1_asn1_enumerated_record.html", null ]
         ] ],
         [ "pcpp::Asn1NullRecord", "classpcpp_1_1_asn1_null_record.html", null ],
-        [ "pcpp::Asn1OctetStringRecord", "classpcpp_1_1_asn1_octet_string_record.html", null ]
+        [ "pcpp::Asn1ObjectIdentifierRecord", "classpcpp_1_1_asn1_object_identifier_record.html", null ],
+        [ "pcpp::Asn1OctetStringRecord", "classpcpp_1_1_asn1_octet_string_record.html", null ],
+        [ "pcpp::Asn1TimeRecord", "classpcpp_1_1_asn1_time_record.html", [
+          [ "pcpp::Asn1GeneralizedTimeRecord", "classpcpp_1_1_asn1_generalized_time_record.html", null ],
+          [ "pcpp::Asn1UtcTimeRecord", "classpcpp_1_1_asn1_utc_time_record.html", null ]
+        ] ]
       ] ]
     ] ],
     [ "pcpp::BgpLayer::bgp_common_header", "structpcpp_1_1_bgp_layer_1_1bgp__common__header.html", [

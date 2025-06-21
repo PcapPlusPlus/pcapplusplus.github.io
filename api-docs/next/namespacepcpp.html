@@ -175,6 +175,18 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_asn1_null_record.html">Asn1NullRecord</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_asn1_object_identifier.html">Asn1ObjectIdentifier</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_asn1_object_identifier_record.html">Asn1ObjectIdentifierRecord</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_asn1_time_record.html">Asn1TimeRecord</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_asn1_utc_time_record.html">Asn1UtcTimeRecord</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_asn1_generalized_time_record.html">Asn1GeneralizedTimeRecord</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_asn1_bit_string_record.html">Asn1BitStringRecord</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_bgp_layer.html">BgpLayer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_bgp_open_message_layer.html">BgpOpenMessageLayer</a></td></tr>
@@ -2253,6 +2265,8 @@ Functions</h2></td></tr>
 <tr class="separator:af748f89cff0a616aacba75ffafc4840a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae517edc41624400eebc521c6c5bc8a82"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ae517edc41624400eebc521c6c5bc8a82">clockGetTime</a> (long &amp;sec, long &amp;nsec)</td></tr>
 <tr class="separator:ae517edc41624400eebc521c6c5bc8a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82910fda088251d5328fff6c3e41995d"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a82910fda088251d5328fff6c3e41995d">mkUtcTime</a> (std::tm &amp;tm)</td></tr>
+<tr class="separator:a82910fda088251d5328fff6c3e41995d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeea6070ccbb359bc4f819a4fbd40130d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#aeea6070ccbb359bc4f819a4fbd40130d">multiPlatformSleep</a> (uint32_t seconds)</td></tr>
 <tr class="separator:aeea6070ccbb359bc4f819a4fbd40130d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddf7aceda5ec39d4b4c01a8d98b578c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a0ddf7aceda5ec39d4b4c01a8d98b578c">multiPlatformMSleep</a> (uint32_t milliseconds)</td></tr>
@@ -6447,6 +6461,37 @@ x.x.x.x _OR_ TCP port dst = 80"</p>
 
 </div>
 </div>
+<a id="a82910fda088251d5328fff6c3e41995d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82910fda088251d5328fff6c3e41995d">&#9670;&nbsp;</a></span>mkUtcTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">time_t pcpp::mkUtcTime </td>
+          <td>(</td>
+          <td class="paramtype">std::tm &amp;&#160;</td>
+          <td class="paramname"><em>tm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Convert std::tm to time_t in UTC time, ignoring local timezone </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tm</td><td>The time to convert </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A time_t object representing the input time </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>if a conversion error occurs </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a0ddf7aceda5ec39d4b4c01a8d98b578c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ddf7aceda5ec39d4b4c01a8d98b578c">&#9670;&nbsp;</a></span>multiPlatformMSleep()</h2>
 
@@ -7113,7 +7158,7 @@ x.x.x.x _OR_ TCP port dst = 80"</p>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li>
-    <li class="footer">Generated on Thu Jun 12 2025 03:23:14 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jun 21 2025 20:59:52 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

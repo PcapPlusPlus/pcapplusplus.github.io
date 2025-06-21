@@ -11,6 +11,12 @@ var _asn1_codec_8h =
     [ "Asn1OctetStringRecord", "classpcpp_1_1_asn1_octet_string_record.html", "classpcpp_1_1_asn1_octet_string_record" ],
     [ "Asn1BooleanRecord", "classpcpp_1_1_asn1_boolean_record.html", "classpcpp_1_1_asn1_boolean_record" ],
     [ "Asn1NullRecord", "classpcpp_1_1_asn1_null_record.html", "classpcpp_1_1_asn1_null_record" ],
+    [ "Asn1ObjectIdentifier", "classpcpp_1_1_asn1_object_identifier.html", "classpcpp_1_1_asn1_object_identifier" ],
+    [ "Asn1ObjectIdentifierRecord", "classpcpp_1_1_asn1_object_identifier_record.html", "classpcpp_1_1_asn1_object_identifier_record" ],
+    [ "Asn1TimeRecord", "classpcpp_1_1_asn1_time_record.html", "classpcpp_1_1_asn1_time_record" ],
+    [ "Asn1UtcTimeRecord", "classpcpp_1_1_asn1_utc_time_record.html", "classpcpp_1_1_asn1_utc_time_record" ],
+    [ "Asn1GeneralizedTimeRecord", "classpcpp_1_1_asn1_generalized_time_record.html", "classpcpp_1_1_asn1_generalized_time_record" ],
+    [ "Asn1BitStringRecord", "classpcpp_1_1_asn1_bit_string_record.html", "classpcpp_1_1_asn1_bit_string_record" ],
     [ "Asn1TagClass", "_asn1_codec_8h.html#a10b210c011c2fca1a38566cab0b2d934", [
       [ "Universal", "_asn1_codec_8h.html#a10b210c011c2fca1a38566cab0b2d934a7641e5f4e7e8517bd0477fd81e3de1b8", null ],
       [ "Application", "_asn1_codec_8h.html#a10b210c011c2fca1a38566cab0b2d934ae498749f3c42246d50b15c81c101d988", null ],

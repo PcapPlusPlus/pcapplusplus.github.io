@@ -14,6 +14,7 @@ var _system_utils_8h =
     [ "getNumOfCores", "_system_utils_8h.html#a9da3b8abc599b1744dc36c64b802bbd2", null ],
     [ "hostToNet16", "_system_utils_8h.html#aafb06a06afd919ad4d81a7cc209b6416", null ],
     [ "hostToNet32", "_system_utils_8h.html#abf3bfbe836ec11af9350526ef8023380", null ],
+    [ "mkUtcTime", "_system_utils_8h.html#a82910fda088251d5328fff6c3e41995d", null ],
     [ "multiPlatformMSleep", "_system_utils_8h.html#a0ddf7aceda5ec39d4b4c01a8d98b578c", null ],
     [ "multiPlatformSleep", "_system_utils_8h.html#aeea6070ccbb359bc4f819a4fbd40130d", null ],
     [ "netToHost16", "_system_utils_8h.html#ae131f1b0ed7a00808f93086b67a668e2", null ],
