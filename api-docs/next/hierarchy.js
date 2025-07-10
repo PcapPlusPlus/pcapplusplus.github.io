@@ -13,6 +13,18 @@ var hierarchy =
       ] ],
       [ "pcpp::Asn1GenericRecord", "classpcpp_1_1_asn1_generic_record.html", null ],
       [ "pcpp::Asn1PrimitiveRecord", "classpcpp_1_1_asn1_primitive_record.html", [
+        [ "pcpp::Asn1StringRecord< Asn1UniversalTagType::OctetString >", "classpcpp_1_1_asn1_string_record.html", [
+          [ "pcpp::Asn1OctetStringRecord", "classpcpp_1_1_asn1_octet_string_record.html", null ]
+        ] ],
+        [ "pcpp::Asn1StringRecord< Asn1UniversalTagType::IA5String >", "classpcpp_1_1_asn1_string_record.html", [
+          [ "pcpp::Asn1IA5StringRecord", "classpcpp_1_1_asn1_i_a5_string_record.html", null ]
+        ] ],
+        [ "pcpp::Asn1StringRecord< Asn1UniversalTagType::PrintableString >", "classpcpp_1_1_asn1_string_record.html", [
+          [ "pcpp::Asn1PrintableStringRecord", "classpcpp_1_1_asn1_printable_string_record.html", null ]
+        ] ],
+        [ "pcpp::Asn1StringRecord< Asn1UniversalTagType::UTF8String >", "classpcpp_1_1_asn1_string_record.html", [
+          [ "pcpp::Asn1UTF8StringRecord", "classpcpp_1_1_asn1_u_t_f8_string_record.html", null ]
+        ] ],
         [ "pcpp::Asn1BitStringRecord", "classpcpp_1_1_asn1_bit_string_record.html", null ],
         [ "pcpp::Asn1BooleanRecord", "classpcpp_1_1_asn1_boolean_record.html", null ],
         [ "pcpp::Asn1IntegerRecord", "classpcpp_1_1_asn1_integer_record.html", [
@@ -20,7 +32,7 @@ var hierarchy =
         ] ],
         [ "pcpp::Asn1NullRecord", "classpcpp_1_1_asn1_null_record.html", null ],
         [ "pcpp::Asn1ObjectIdentifierRecord", "classpcpp_1_1_asn1_object_identifier_record.html", null ],
-        [ "pcpp::Asn1OctetStringRecord", "classpcpp_1_1_asn1_octet_string_record.html", null ],
+        [ "pcpp::Asn1StringRecord< TagType >", "classpcpp_1_1_asn1_string_record.html", null ],
         [ "pcpp::Asn1TimeRecord", "classpcpp_1_1_asn1_time_record.html", [
           [ "pcpp::Asn1GeneralizedTimeRecord", "classpcpp_1_1_asn1_generalized_time_record.html", null ],
           [ "pcpp::Asn1UtcTimeRecord", "classpcpp_1_1_asn1_utc_time_record.html", null ]
