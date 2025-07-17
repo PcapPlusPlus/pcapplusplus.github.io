@@ -90,35 +90,39 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <div class="contents">
 <div class="textblock"><dl class="reflist">
 <dt>Member <a class="el" href="classpcpp_1_1_arp_layer.html#a05f24931a4238bbf1246764b8e6e6b2e">pcpp::ArpLayer::ArpLayer</a>  (ArpOpcode opCode, const <a class="el" href="classpcpp_1_1_mac_address.html">MacAddress</a> &amp;senderMacAddr, const <a class="el" href="classpcpp_1_1_mac_address.html">MacAddress</a> &amp;targetMacAddr, const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;senderIpAddr, const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;targetIpAddr)</dt>
-<dd><a class="anchor" id="_deprecated000004"></a>This constructor has been deprecated. Please use one of the other overloads.  </dd>
+<dd><a class="anchor" id="_deprecated000006"></a>This constructor has been deprecated. Please use one of the other overloads.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_asn1_integer_record.html#ab55607bab1dcfe57d348b380120c6136">pcpp::Asn1IntegerRecord::getValue</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000005"></a>This method is deprecated, please use <a class="el" href="classpcpp_1_1_asn1_integer_record.html#a5ad6857cbe1e346ca09f1602f1420458">getIntValue()</a>  </dd>
+<dd><a class="anchor" id="_deprecated000007"></a>This method is deprecated, please use <a class="el" href="classpcpp_1_1_asn1_integer_record.html#a5ad6857cbe1e346ca09f1602f1420458">getIntValue()</a>  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_http_response_first_line.html#aca6f22cddd6cdafdfdd9325e0a4bffd9">pcpp::HttpResponseFirstLine::setStatusCode</a>  (const <a class="el" href="classpcpp_1_1_http_response_status_code.html" title="The enum wrapper class of HTTP response status codes.">HttpResponseStatusCode</a> &amp;newStatusCode, const std::string &amp;statusCodeString)</dt>
-<dd><a class="anchor" id="_deprecated000007"></a>Use the other overload instead.  </dd>
+<dd><a class="anchor" id="_deprecated000009"></a>Use the other overload instead.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_http_response_layer.html#aa291f3cd6289bf92258998ccdd7487ac">pcpp::HttpResponseLayer::HttpResponseLayer</a>  (HttpVersion version, const <a class="el" href="classpcpp_1_1_http_response_status_code.html" title="The enum wrapper class of HTTP response status codes.">HttpResponseStatusCode</a> &amp;statusCode, const std::string &amp;statusCodeString)</dt>
-<dd><a class="anchor" id="_deprecated000006"></a>Use other constructors instead.  </dd>
+<dd><a class="anchor" id="_deprecated000008"></a>Use other constructors instead.  </dd>
+<dt>Member <a class="el" href="classpcpp_1_1_i_pv6_address.html#a0552d9f226b1aa7dd168deb3436a4f41">pcpp::IPv6Address::copyTo</a>  (uint8_t **arr, size_t &amp;length) const</dt>
+<dd><a class="anchor" id="_deprecated000001"></a>Use copyToNewBuffer instead.  </dd>
+<dt>Member <a class="el" href="classpcpp_1_1_mac_address.html#aee73706ca1f0e403adbf4c2f691e7da1">pcpp::MacAddress::copyTo</a>  (uint8_t **arr) const</dt>
+<dd><a class="anchor" id="_deprecated000002"></a>Use copyToNewBuffer instead.  </dd>
 <dt>Member <a class="el" href="namespacepcpp.html#a0ddf7aceda5ec39d4b4c01a8d98b578c">pcpp::multiPlatformMSleep</a>  (uint32_t milliseconds)</dt>
-<dd><a class="anchor" id="_deprecated000003"></a>Please use std::this_thread::sleep_for(). It is a standard C++ (since C++11) method which is already cross-platform  </dd>
+<dd><a class="anchor" id="_deprecated000005"></a>Please use std::this_thread::sleep_for(). It is a standard C++ (since C++11) method which is already cross-platform  </dd>
 <dt>Member <a class="el" href="namespacepcpp.html#aeea6070ccbb359bc4f819a4fbd40130d">pcpp::multiPlatformSleep</a>  (uint32_t seconds)</dt>
-<dd><a class="anchor" id="_deprecated000002"></a>Please use std::this_thread::sleep_for(). It is a standard C++ (since C++11) method which is already cross-platform  </dd>
+<dd><a class="anchor" id="_deprecated000004"></a>Please use std::this_thread::sleep_for(). It is a standard C++ (since C++11) method which is already cross-platform  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_pcap_live_device.html#a9d8a41394806dd5e5245046908f60f16">pcpp::PcapLiveDevice::sendPacket</a>  (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet, bool checkMtu=true)</dt>
-<dd><a class="anchor" id="_deprecated000013"></a>This method is deprecated. Use <a class="el" href="classpcpp_1_1_pcap_live_device.html#a89a20db2f68dcba1675a4895f03180bb">sendPacket(Packet const&amp; packet, bool checkMtu)</a> instead.  </dd>
+<dd><a class="anchor" id="_deprecated000015"></a>This method is deprecated. Use <a class="el" href="classpcpp_1_1_pcap_live_device.html#a89a20db2f68dcba1675a4895f03180bb">sendPacket(Packet const&amp; packet, bool checkMtu)</a> instead.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a9ad4f27a5e10b9b599b7a2a6412a398e">pcpp::PcapRemoteDeviceList::getRemoteDeviceList</a>  (const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;ipAddress, uint16_t port)</dt>
-<dd><a class="anchor" id="_deprecated000014"></a>This factory function has been deprecated in favor of 'createRemoteDeviceList' factory for better memory safety.  </dd>
+<dd><a class="anchor" id="_deprecated000016"></a>This factory function has been deprecated in favor of 'createRemoteDeviceList' factory for better memory safety.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#af9327198897d5b414815455435b9c037">pcpp::PcapRemoteDeviceList::getRemoteDeviceList</a>  (const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;ipAddress, uint16_t port, <a class="el" href="structpcpp_1_1_pcap_remote_authentication.html">PcapRemoteAuthentication</a> *remoteAuth)</dt>
-<dd><a class="anchor" id="_deprecated000015"></a>This factory function has been deprecated in favor of 'createRemoteDeviceList' factory for better memory safety.  </dd>
+<dd><a class="anchor" id="_deprecated000017"></a>This factory function has been deprecated in favor of 'createRemoteDeviceList' factory for better memory safety.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_pointer_vector.html#ae7e330635cb7107f0097f5056e7976fa">pcpp::PointerVector&lt; T, Deleter &gt;::getAndRemoveFromVector</a>  (VectorIterator &amp;position)</dt>
-<dd><a class="anchor" id="_deprecated000001"></a>Deprecated in favor of 'getAndDetach' as that function provides memory safety.  </dd>
+<dd><a class="anchor" id="_deprecated000003"></a>Deprecated in favor of 'getAndDetach' as that function provides memory safety.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_tcp_layer.html#a90bad5659cf8c12fa486c11d1d46cab1">pcpp::TcpLayer::addTcpOptionAfter</a>  (const <a class="el" href="classpcpp_1_1_tcp_option_builder.html">TcpOptionBuilder</a> &amp;optionBuilder, TcpOptionType prevOptionType=TcpOptionType::TCPOPT_Unknown)</dt>
-<dd><a class="anchor" id="_deprecated000011"></a>This method is deprecated, please use insertTcpOptionAfter(const <a class="el" href="classpcpp_1_1_tcp_option_builder.html">TcpOptionBuilder</a>&amp; optionBuilder, TcpOptionEnumType prevOptionType = <a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca88183b946cc5f0e8c96b2e66e1c74a7e" title="Unknown option.">TcpOptionEnumType::Unknown</a>)  </dd>
+<dd><a class="anchor" id="_deprecated000013"></a>This method is deprecated, please use insertTcpOptionAfter(const <a class="el" href="classpcpp_1_1_tcp_option_builder.html">TcpOptionBuilder</a>&amp; optionBuilder, TcpOptionEnumType prevOptionType = <a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca88183b946cc5f0e8c96b2e66e1c74a7e" title="Unknown option.">TcpOptionEnumType::Unknown</a>)  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_tcp_layer.html#ab20303e4db20175f6d321c3e3a59efe2">pcpp::TcpLayer::PCPP_DEPRECATED</a>  ("enum TcpOptionType is deprecated; Use enum class TcpOptionEnumType instead") <a class="el" href="classpcpp_1_1_tcp_option.html">TcpOption</a> getTcpOption(TcpOptionType option) const</dt>
-<dd><a class="anchor" id="_deprecated000010"></a>This method is deprecated, please use getTcpOption(TcpOptionEnumType option)  </dd>
+<dd><a class="anchor" id="_deprecated000012"></a>This method is deprecated, please use getTcpOption(TcpOptionEnumType option)  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_tcp_layer.html#a07903b52fb726291b37db165671142c4">pcpp::TcpLayer::PCPP_DEPRECATED</a>  ("enum TcpOptionType is deprecated; Use enum class TcpOptionEnumType instead") bool removeTcpOption(TcpOptionType optionType)</dt>
-<dd><a class="anchor" id="_deprecated000012"></a>This method is deprecated, please use <a class="el" href="classpcpp_1_1_tcp_layer.html#a12da1f78961105f8ec0ae206fb4910a9">removeTcpOption(TcpOptionEnumType)</a>  </dd>
+<dd><a class="anchor" id="_deprecated000014"></a>This method is deprecated, please use <a class="el" href="classpcpp_1_1_tcp_layer.html#a12da1f78961105f8ec0ae206fb4910a9">removeTcpOption(TcpOptionEnumType)</a>  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_tcp_option.html#a23a5b85b766ac1d26bc8e9588cc20092">pcpp::TcpOption::getTcpOptionType</a>  () const</dt>
-<dd><a class="anchor" id="_deprecated000008"></a>This method is deprecated, please use <a class="el" href="classpcpp_1_1_tcp_option.html#a0496612a4b1d2fcb164597edf3287a5a">getTcpOptionEnumType()</a>  </dd>
+<dd><a class="anchor" id="_deprecated000010"></a>This method is deprecated, please use <a class="el" href="classpcpp_1_1_tcp_option.html#a0496612a4b1d2fcb164597edf3287a5a">getTcpOptionEnumType()</a>  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_tcp_option_builder.html#a0102a5206eb592911d5b725d2002be81">pcpp::TcpOptionBuilder::PCPP_DEPRECATED</a>  ("enum TcpOptionType is deprecated; Use enum class TcpOptionEnumType instead") <a class="el" href="classpcpp_1_1_tcp_option_builder.html">TcpOptionBuilder</a>(TcpOptionType optionType</dt>
-<dd><a class="anchor" id="_deprecated000009"></a>This method is deprecated, please use constructor with TcpOptionEnumType </dd>
+<dd><a class="anchor" id="_deprecated000011"></a>This method is deprecated, please use constructor with TcpOptionEnumType </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
@@ -126,7 +130,7 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jul 10 2025 01:06:50 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jul 17 2025 07:01:53 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

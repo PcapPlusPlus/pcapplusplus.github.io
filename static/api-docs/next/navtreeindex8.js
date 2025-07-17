@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"classpcpp_1_1_dns_resource.html#a90d6eb6fca366559f63a04da21fbdb09":[3,0,0,68,0],
 "classpcpp_1_1_dns_resource.html#aac911f6cd14ee1dd2a8b67322027444d":[3,0,0,68,6],
 "classpcpp_1_1_dns_resource.html#ac25fd3909c4287486a014e74698ad922":[3,0,0,68,3],
 "classpcpp_1_1_dns_resource.html#ad27c446c21feb8b801817abe3b046250":[3,0,0,68,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "classpcpp_1_1_ftp_response_layer.html#aebec062665c1d8c6e4eba941782a59cda43d6c64f1115588520a18a7cd22dc079":[3,0,0,82,0,54],
 "classpcpp_1_1_ftp_response_layer.html#aebec062665c1d8c6e4eba941782a59cda4631d4566db3b818611b10ef8979e815":[3,0,0,82,0,21],
 "classpcpp_1_1_ftp_response_layer.html#aebec062665c1d8c6e4eba941782a59cda4e5da42c7e758f7dc1f3fc3b12c6d5b1":[3,0,0,82,0,5],
-"classpcpp_1_1_ftp_response_layer.html#aebec062665c1d8c6e4eba941782a59cda58775d26af090b5159b2c611ea653c9e":[3,0,0,82,0,7],
-"classpcpp_1_1_ftp_response_layer.html#aebec062665c1d8c6e4eba941782a59cda59f8b21bfcb19e4fcdd3a9dd6b76cade":[3,0,0,82,0,18]
+"classpcpp_1_1_ftp_response_layer.html#aebec062665c1d8c6e4eba941782a59cda58775d26af090b5159b2c611ea653c9e":[3,0,0,82,0,7]
 };

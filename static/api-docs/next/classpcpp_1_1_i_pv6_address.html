@@ -104,6 +104,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:addbd49b493c2e31988023127ec4a7770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a280738419ab305ac526b3523e74a6694"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_address.html#a280738419ab305ac526b3523e74a6694">IPv6Address</a> (const uint8_t bytes[16])</td></tr>
 <tr class="separator:a280738419ab305ac526b3523e74a6694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d0a503749a70a20feaae0a902e43c72"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_address.html#a3d0a503749a70a20feaae0a902e43c72">IPv6Address</a> (const uint8_t *bytes, size_t size)</td></tr>
+<tr class="memdesc:a3d0a503749a70a20feaae0a902e43c72"><td class="mdescLeft">&#160;</td><td class="mdescRight">A constructor that creates an instance of the class out of a 16-byte array.  <a href="classpcpp_1_1_i_pv6_address.html#a3d0a503749a70a20feaae0a902e43c72">More...</a><br /></td></tr>
+<tr class="separator:a3d0a503749a70a20feaae0a902e43c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa3a8a8f1aa42607580bf8418619d8c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_address.html#afa3a8a8f1aa42607580bf8418619d8c6">IPv6Address</a> (const std::array&lt; uint8_t, 16 &gt; &amp;bytes)</td></tr>
 <tr class="separator:afa3a8a8f1aa42607580bf8418619d8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7a7bf99b8b750091094c89ba446545b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_address.html#aa7a7bf99b8b750091094c89ba446545b">IPv6Address</a> (const std::string &amp;addrAsString)</td></tr>
@@ -126,6 +129,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0552d9f226b1aa7dd168deb3436a4f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a039182943235feb705b2ebd08052d075"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_address.html#a039182943235feb705b2ebd08052d075">copyTo</a> (uint8_t *arr) const</td></tr>
 <tr class="separator:a039182943235feb705b2ebd08052d075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abff6c2e59eee5779f557c9a27a704d79"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_address.html#abff6c2e59eee5779f557c9a27a704d79">copyTo</a> (uint8_t *buffer, size_t size) const</td></tr>
+<tr class="memdesc:abff6c2e59eee5779f557c9a27a704d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the address value to a user-provided buffer.  <a href="classpcpp_1_1_i_pv6_address.html#abff6c2e59eee5779f557c9a27a704d79">More...</a><br /></td></tr>
+<tr class="separator:abff6c2e59eee5779f557c9a27a704d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab68bbfe22ff65c05a4504025c6d5e807"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_address.html#ab68bbfe22ff65c05a4504025c6d5e807">copyToNewBuffer</a> (uint8_t **buffer, size_t &amp;size) const</td></tr>
+<tr class="memdesc:ab68bbfe22ff65c05a4504025c6d5e807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates a new buffer and copies the address value to it. The user is responsible for deallocating the buffer.  <a href="classpcpp_1_1_i_pv6_address.html#ab68bbfe22ff65c05a4504025c6d5e807">More...</a><br /></td></tr>
+<tr class="separator:ab68bbfe22ff65c05a4504025c6d5e807"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a112d899626deb2aed6034ba53b00a53d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_address.html#a112d899626deb2aed6034ba53b00a53d">matchNetwork</a> (const <a class="el" href="classpcpp_1_1_i_pv6_network.html">IPv6Network</a> &amp;network) const</td></tr>
 <tr class="separator:a112d899626deb2aed6034ba53b00a53d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bc9dede7b586a0d26632ad9cb100105"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv6_address.html#a4bc9dede7b586a0d26632ad9cb100105">matchNetwork</a> (const std::string &amp;network) const</td></tr>
@@ -147,7 +156,7 @@ Static Public Attributes</h2></td></tr>
 <div class="textblock"><p>Represents an IPv6 address (of type xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a280738419ab305ac526b3523e74a6694"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a280738419ab305ac526b3523e74a6694">&#9670;&nbsp;</a></span>IPv6Address() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a280738419ab305ac526b3523e74a6694">&#9670;&nbsp;</a></span>IPv6Address() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -175,11 +184,56 @@ Static Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This constructor assumes that the provided array is exactly 16 bytes long. Prefer using the constructor with size parameter if the array length is not guaranteed to be 16 bytes. </dd></dl>
+
+</div>
+</div>
+<a id="a3d0a503749a70a20feaae0a902e43c72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d0a503749a70a20feaae0a902e43c72">&#9670;&nbsp;</a></span>IPv6Address() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::IPv6Address::IPv6Address </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A constructor that creates an instance of the class out of a 16-byte array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bytes</td><td>The address as 16-byte array in network byte order </td></tr>
+    <tr><td class="paramname">size</td><td>The size of the array in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>If the provided buffer is null. </td></tr>
+    <tr><td class="paramname">std::out_of_range</td><td>If the provided size is smaller than 16 bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <a id="afa3a8a8f1aa42607580bf8418619d8c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa3a8a8f1aa42607580bf8418619d8c6">&#9670;&nbsp;</a></span>IPv6Address() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afa3a8a8f1aa42607580bf8418619d8c6">&#9670;&nbsp;</a></span>IPv6Address() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -211,7 +265,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="aa7a7bf99b8b750091094c89ba446545b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7a7bf99b8b750091094c89ba446545b">&#9670;&nbsp;</a></span>IPv6Address() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7a7bf99b8b750091094c89ba446545b">&#9670;&nbsp;</a></span>IPv6Address() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,7 +296,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0552d9f226b1aa7dd168deb3436a4f41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0552d9f226b1aa7dd168deb3436a4f41">&#9670;&nbsp;</a></span>copyTo() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0552d9f226b1aa7dd168deb3436a4f41">&#9670;&nbsp;</a></span>copyTo() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -273,11 +327,18 @@ Static Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>If the provided pointer is null. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Use copyToNewBuffer instead. </dd></dl>
 
 </div>
 </div>
 <a id="a039182943235feb705b2ebd08052d075"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a039182943235feb705b2ebd08052d075">&#9670;&nbsp;</a></span>copyTo() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a039182943235feb705b2ebd08052d075">&#9670;&nbsp;</a></span>copyTo() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -302,6 +363,96 @@ Static Public Attributes</h2></td></tr>
 <p>Gets a pointer to an already allocated byte array and copies the address value to it. This method assumes array allocated size is at least 16 (the size of an IPv6 address) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">arr</td><td>A pointer to the array which address will be copied to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This method assumes that the provided array is at least 16 bytes long. Prefer using the copyTo(uint8_t* buffer, size_t size) method if the array length is not guaranteed to be 16 bytes. </dd></dl>
+
+</div>
+</div>
+<a id="abff6c2e59eee5779f557c9a27a704d79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abff6c2e59eee5779f557c9a27a704d79">&#9670;&nbsp;</a></span>copyTo() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t pcpp::IPv6Address::copyTo </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copies the address value to a user-provided buffer. </p>
+<p>This function supports querying. If the buffer is null and size is zero, it returns the required size.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer</td><td>A pointer to the buffer where the address will be copied </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>The size of the buffer in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of bytes copied to the buffer or the number of required bytes, which is always 16 for IPv6 addresses. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>If the provided buffer is null and size is not zero. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab68bbfe22ff65c05a4504025c6d5e807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab68bbfe22ff65c05a4504025c6d5e807">&#9670;&nbsp;</a></span>copyToNewBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::IPv6Address::copyToNewBuffer </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t **&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocates a new buffer and copies the address value to it. The user is responsible for deallocating the buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>A pointer to a pointer where the new buffer will be allocated </td></tr>
+    <tr><td class="paramname">size</td><td>A reference to a size_t variable that will be updated with the size of the allocated buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the buffer was successfully allocated and the address was copied, false otherwise. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>If the buffer pointer is null. </td></tr>
   </table>
   </dd>
 </dl>
@@ -635,7 +786,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a></li>
-    <li class="footer">Generated on Thu Jul 10 2025 01:06:50 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jul 17 2025 07:01:53 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

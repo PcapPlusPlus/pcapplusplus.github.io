@@ -3,6 +3,7 @@ var classpcpp_1_1_i_pv4_address =
     [ "IPv4Address", "classpcpp_1_1_i_pv4_address.html#a1bbd186a4c8d55983540387e5142b1c1", null ],
     [ "IPv4Address", "classpcpp_1_1_i_pv4_address.html#a9b4aba6e77704845fd4e2021c1a46b16", null ],
     [ "IPv4Address", "classpcpp_1_1_i_pv4_address.html#aa25dc03222399468a0f23afcb5325935", null ],
+    [ "IPv4Address", "classpcpp_1_1_i_pv4_address.html#a949a01606aa8b0deff2b341fd56b8556", null ],
     [ "IPv4Address", "classpcpp_1_1_i_pv4_address.html#a0d7b4f66bd13de51adbbfdf177e64e85", null ],
     [ "IPv4Address", "classpcpp_1_1_i_pv4_address.html#a5881f8a346543fa171c32474e1ae130f", null ],
     [ "isMulticast", "classpcpp_1_1_i_pv4_address.html#ad51ed35f792f82bdbfb34d58607a04fc", null ],
