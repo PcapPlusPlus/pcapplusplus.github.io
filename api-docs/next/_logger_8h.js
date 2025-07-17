@@ -6,6 +6,7 @@ var _logger_8h =
     [ "LogLevel", "_logger_8h.html#a57b5ff7ede7d42869bd6301d186e562f", [
       [ "Off", "_logger_8h.html#a57b5ff7ede7d42869bd6301d186e562fad15305d7a4e34e02489c74a5ef542f36", null ],
       [ "Error", "_logger_8h.html#a57b5ff7ede7d42869bd6301d186e562fa902b0d55fddef6f8d651fe1035b7d4bd", null ],
+      [ "Warn", "_logger_8h.html#a57b5ff7ede7d42869bd6301d186e562fa56525ae64d370c0b448ac0d60710ef17", null ],
       [ "Info", "_logger_8h.html#a57b5ff7ede7d42869bd6301d186e562fa4059b0251f66a18cb56f544728796875", null ],
       [ "Debug", "_logger_8h.html#a57b5ff7ede7d42869bd6301d186e562faa603905470e2a5b8c13e96b579ef0dba", null ]
     ] ],

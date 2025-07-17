@@ -106,6 +106,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9b4aba6e77704845fd4e2021c1a46b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa25dc03222399468a0f23afcb5325935"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv4_address.html#aa25dc03222399468a0f23afcb5325935">IPv4Address</a> (const uint8_t bytes[4])</td></tr>
 <tr class="separator:aa25dc03222399468a0f23afcb5325935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a949a01606aa8b0deff2b341fd56b8556"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv4_address.html#a949a01606aa8b0deff2b341fd56b8556">IPv4Address</a> (const uint8_t *bytes, size_t size)</td></tr>
+<tr class="separator:a949a01606aa8b0deff2b341fd56b8556"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d7b4f66bd13de51adbbfdf177e64e85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv4_address.html#a0d7b4f66bd13de51adbbfdf177e64e85">IPv4Address</a> (const std::array&lt; uint8_t, 4 &gt; &amp;bytes)</td></tr>
 <tr class="separator:a0d7b4f66bd13de51adbbfdf177e64e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5881f8a346543fa171c32474e1ae130f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pv4_address.html#a5881f8a346543fa171c32474e1ae130f">IPv4Address</a> (const std::string &amp;addrAsString)</td></tr>
@@ -149,7 +151,7 @@ static const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</
 <div class="textblock"><p>Represents an IPv4 address (of type XXX.XXX.XXX.XXX) </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9b4aba6e77704845fd4e2021c1a46b16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b4aba6e77704845fd4e2021c1a46b16">&#9670;&nbsp;</a></span>IPv4Address() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b4aba6e77704845fd4e2021c1a46b16">&#9670;&nbsp;</a></span>IPv4Address() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -181,7 +183,7 @@ static const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</
 </div>
 </div>
 <a id="aa25dc03222399468a0f23afcb5325935"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa25dc03222399468a0f23afcb5325935">&#9670;&nbsp;</a></span>IPv4Address() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa25dc03222399468a0f23afcb5325935">&#9670;&nbsp;</a></span>IPv4Address() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -209,11 +211,54 @@ static const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</
   </table>
   </dd>
 </dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This constructor assumes that the provided array is exactly 4 bytes long. Prefer using the constructor with size parameter if the array length is not guaranteed to be 4 bytes. </dd></dl>
+
+</div>
+</div>
+<a id="a949a01606aa8b0deff2b341fd56b8556"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a949a01606aa8b0deff2b341fd56b8556">&#9670;&nbsp;</a></span>IPv4Address() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::IPv4Address::IPv4Address </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A constructor that creates an instance of the class out of a 4-byte array. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bytes</td><td>The address as 4-byte array in network byte order </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>The size of the array in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>If the provided bytes pointer is null. </td></tr>
+    <tr><td class="paramname">std::out_of_range</td><td>If the provided size is smaller than 4 bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <a id="a0d7b4f66bd13de51adbbfdf177e64e85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d7b4f66bd13de51adbbfdf177e64e85">&#9670;&nbsp;</a></span>IPv4Address() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d7b4f66bd13de51adbbfdf177e64e85">&#9670;&nbsp;</a></span>IPv4Address() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -245,7 +290,7 @@ static const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</
 </div>
 </div>
 <a id="a5881f8a346543fa171c32474e1ae130f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5881f8a346543fa171c32474e1ae130f">&#9670;&nbsp;</a></span>IPv4Address() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5881f8a346543fa171c32474e1ae130f">&#9670;&nbsp;</a></span>IPv4Address() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -605,7 +650,7 @@ static const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a></li>
-    <li class="footer">Generated on Thu Jul 10 2025 01:06:50 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jul 17 2025 07:01:53 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
