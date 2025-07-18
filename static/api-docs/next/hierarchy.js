@@ -407,6 +407,7 @@ var hierarchy =
     [ "pcpp::RawPacket", "classpcpp_1_1_raw_packet.html", [
       [ "pcpp::MBufRawPacket", "classpcpp_1_1_m_buf_raw_packet.html", null ]
     ] ],
+    [ "pcpp::X509Name::RDN", "structpcpp_1_1_x509_name_1_1_r_d_n.html", null ],
     [ "pcpp::DpdkDevice::RxTxStats", "structpcpp_1_1_dpdk_device_1_1_rx_tx_stats.html", null ],
     [ "pcpp::s7commhdr", "structpcpp_1_1s7commhdr.html", [
       [ "pcpp::s7comm_ack_data_hdr", "structpcpp_1_1s7comm__ack__data__hdr.html", null ]
@@ -527,6 +528,31 @@ var hierarchy =
     [ "pcpp::vxlan_header", "structpcpp_1_1vxlan__header.html", null ],
     [ "pcpp::WireGuardLayer::wg_common_header", "structpcpp_1_1_wire_guard_layer_1_1wg__common__header.html", null ],
     [ "pcpp::WakeOnLanLayer::wol_header", "structpcpp_1_1_wake_on_lan_layer_1_1wol__header.html", null ],
+    [ "pcpp::X509Algorithm", "classpcpp_1_1_x509_algorithm.html", null ],
+    [ "pcpp::X509Internal::X509Base< Asn1RecordType >", "classpcpp_1_1_x509_internal_1_1_x509_base.html", null ],
+    [ "pcpp::X509Internal::X509Base< Asn1ConstructedRecord >", "classpcpp_1_1_x509_internal_1_1_x509_base.html", [
+      [ "pcpp::X509Internal::X509Extensions", "classpcpp_1_1_x509_internal_1_1_x509_extensions.html", null ],
+      [ "pcpp::X509Internal::X509VersionRecord", "classpcpp_1_1_x509_internal_1_1_x509_version_record.html", null ]
+    ] ],
+    [ "pcpp::X509Internal::X509Base< Asn1SequenceRecord >", "classpcpp_1_1_x509_internal_1_1_x509_base.html", [
+      [ "pcpp::X509Internal::X509AlgorithmIdentifier", "classpcpp_1_1_x509_internal_1_1_x509_algorithm_identifier.html", null ],
+      [ "pcpp::X509Internal::X509Extension", "classpcpp_1_1_x509_internal_1_1_x509_extension.html", null ],
+      [ "pcpp::X509Internal::X509Name", "classpcpp_1_1_x509_internal_1_1_x509_name.html", null ],
+      [ "pcpp::X509Internal::X509SubjectPublicKeyInfo", "classpcpp_1_1_x509_internal_1_1_x509_subject_public_key_info.html", null ],
+      [ "pcpp::X509Internal::X509TBSCertificate", "classpcpp_1_1_x509_internal_1_1_x509_t_b_s_certificate.html", null ],
+      [ "pcpp::X509Internal::X509Validity", "classpcpp_1_1_x509_internal_1_1_x509_validity.html", null ]
+    ] ],
+    [ "pcpp::X509Internal::X509Base< Asn1SetRecord >", "classpcpp_1_1_x509_internal_1_1_x509_base.html", [
+      [ "pcpp::X509Internal::X509RelativeDistinguishedName", "classpcpp_1_1_x509_internal_1_1_x509_relative_distinguished_name.html", null ]
+    ] ],
+    [ "pcpp::X509Certificate", "classpcpp_1_1_x509_certificate.html", null ],
+    [ "pcpp::X509Internal::X509Certificate", "classpcpp_1_1_x509_internal_1_1_x509_certificate.html", null ],
+    [ "pcpp::X509ExtensionType", "classpcpp_1_1_x509_extension_type.html", null ],
+    [ "pcpp::X509Key", "classpcpp_1_1_x509_key.html", null ],
+    [ "pcpp::X509Name", "classpcpp_1_1_x509_name.html", null ],
+    [ "pcpp::X509SerialNumber", "classpcpp_1_1_x509_serial_number.html", null ],
+    [ "pcpp::X509Timestamp", "classpcpp_1_1_x509_timestamp.html", null ],
+    [ "pcpp::X520DistinguishedName", "classpcpp_1_1_x520_distinguished_name.html", null ],
     [ "pcpp::XdpDevice::XdpDeviceConfiguration", "structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html", null ],
     [ "pcpp::XdpDevice::XdpDeviceStats", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html", null ]
 ];
