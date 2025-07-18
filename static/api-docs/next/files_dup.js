@@ -315,6 +315,7 @@ var files_dup =
       [ "WireGuardCookieReplyLayer", "classpcpp_1_1_wire_guard_cookie_reply_layer.html", "classpcpp_1_1_wire_guard_cookie_reply_layer" ],
       [ "WireGuardTransportDataLayer", "classpcpp_1_1_wire_guard_transport_data_layer.html", "classpcpp_1_1_wire_guard_transport_data_layer" ]
     ] ],
+    [ "X509Decoder.h", "_x509_decoder_8h_source.html", null ],
     [ "XdpDevice.h", "_xdp_device_8h.html", [
       [ "XdpDevice", "classpcpp_1_1_xdp_device.html", "classpcpp_1_1_xdp_device" ],
       [ "XdpDeviceConfiguration", "structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html", "structpcpp_1_1_xdp_device_1_1_xdp_device_configuration" ],

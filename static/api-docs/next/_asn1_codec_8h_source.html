@@ -208,13 +208,13 @@ $(document).ready(function(){initNavTree('_asn1_codec_8h_source.html',''); initR
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordtype">size_t</span> m_ValueLength = 0;</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordtype">size_t</span> m_TotalLength = 0;</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        uint8_t* m_EncodedValue = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        uint8_t <span class="keyword">const</span>* m_EncodedValue = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_record.html">Asn1Record</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keyword">static</span> std::unique_ptr&lt;Asn1Record&gt; decodeInternal(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <span class="keywordtype">bool</span> lazy);</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> decodeValue(uint8_t* data, <span class="keywordtype">bool</span> lazy) = 0;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> decodeValue(uint8_t <span class="keyword">const</span>* data, <span class="keywordtype">bool</span> lazy) = 0;</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keyword">virtual</span> std::vector&lt;uint8_t&gt; encodeValue() <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keyword">static</span> std::unique_ptr&lt;Asn1Record&gt; decodeTagAndCreateRecord(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> dataLen,</div>
@@ -240,22 +240,22 @@ $(document).ready(function(){initNavTree('_asn1_codec_8h_source.html',''); initR
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
 <div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_generic_record.html#aa250181d441788a4d22134d930e6cbb4">  237</a></span>&#160;        <a class="code" href="classpcpp_1_1_asn1_generic_record.html#aa250181d441788a4d22134d930e6cbb4">Asn1GenericRecord</a>(<a class="code" href="namespacepcpp.html#a10b210c011c2fca1a38566cab0b2d934">Asn1TagClass</a> tagClass, <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_asn1_record.html#a911a63457452bf36e645ce2d0ce3b67a">isConstructed</a>, uint8_t tagType, <span class="keyword">const</span> std::string&amp; value);</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        ~<a class="code" href="classpcpp_1_1_asn1_generic_record.html">Asn1GenericRecord</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        ~<a class="code" href="classpcpp_1_1_asn1_generic_record.html">Asn1GenericRecord</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
 <div class="line"><a name="l00242"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_generic_record.html#a296af75cd43046a50506352e42c06fed">  242</a></span>&#160;        <span class="keyword">const</span> uint8_t* <a class="code" href="classpcpp_1_1_asn1_generic_record.html#a296af75cd43046a50506352e42c06fed">getValue</a>()</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        {</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            decodeValueIfNeeded();</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            <span class="keywordflow">return</span> m_Value;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            <span class="keywordflow">return</span> m_Value.get();</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        }</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_generic_record.html">Asn1GenericRecord</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="keywordtype">void</span> decodeValue(uint8_t* data, <span class="keywordtype">bool</span> lazy) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="keywordtype">void</span> decodeValue(uint8_t <span class="keyword">const</span>* data, <span class="keywordtype">bool</span> lazy) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        std::vector&lt;uint8_t&gt; encodeValue() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        uint8_t* m_Value = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        std::unique_ptr&lt;uint8_t[]&gt; m_Value = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <span class="keywordtype">void</span> init(<a class="code" href="namespacepcpp.html#a10b210c011c2fca1a38566cab0b2d934">Asn1TagClass</a> tagClass, <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_asn1_record.html#a911a63457452bf36e645ce2d0ce3b67a">isConstructed</a>, uint8_t tagType, <span class="keyword">const</span> uint8_t* value, <span class="keywordtype">size_t</span> valueLen);</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    };</div>
@@ -280,7 +280,7 @@ $(document).ready(function(){initNavTree('_asn1_codec_8h_source.html',''); initR
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_constructed_record.html">Asn1ConstructedRecord</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        <span class="keywordtype">void</span> decodeValue(uint8_t* data, <span class="keywordtype">bool</span> lazy) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        <span class="keywordtype">void</span> decodeValue(uint8_t <span class="keyword">const</span>* data, <span class="keywordtype">bool</span> lazy) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        std::vector&lt;uint8_t&gt; encodeValue() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        std::vector&lt;std::string&gt; toStringList() <span class="keyword">override</span>;</div>
@@ -377,7 +377,7 @@ $(document).ready(function(){initNavTree('_asn1_codec_8h_source.html',''); initR
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_integer_record.html">Asn1IntegerRecord</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160; </div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        <span class="keywordtype">void</span> decodeValue(uint8_t* data, <span class="keywordtype">bool</span> lazy) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        <span class="keywordtype">void</span> decodeValue(uint8_t <span class="keyword">const</span>* data, <span class="keywordtype">bool</span> lazy) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        std::vector&lt;uint8_t&gt; encodeValue() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160; </div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        std::vector&lt;std::string&gt; toStringList() <span class="keyword">override</span>;</div>
@@ -473,9 +473,9 @@ $(document).ready(function(){initNavTree('_asn1_codec_8h_source.html',''); initR
 <div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;            m_TotalLength = m_ValueLength + 2;</div>
 <div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;        }</div>
 <div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160; </div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        <span class="keywordtype">void</span> decodeValue(uint8_t* data, <span class="keywordtype">bool</span> lazy)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        <span class="keywordtype">void</span> decodeValue(uint8_t <span class="keyword">const</span>* data, <span class="keywordtype">bool</span> lazy)<span class="keyword"> override</span></div>
 <div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;            m_Value = std::string(<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(data), m_ValueLength);</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;            m_Value = std::string(<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">char</span> const*<span class="keyword">&gt;</span>(data), m_ValueLength);</div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;        }</div>
 <div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;        std::vector&lt;uint8_t&gt; encodeValue()<span class="keyword"> const override</span></div>
 <div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;<span class="keyword">        </span>{</div>
@@ -503,7 +503,7 @@ $(document).ready(function(){initNavTree('_asn1_codec_8h_source.html',''); initR
 <div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;        {}</div>
 <div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160; </div>
 <div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;        <span class="keywordtype">void</span> decodeValue(uint8_t* data, <span class="keywordtype">bool</span> lazy) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;        <span class="keywordtype">void</span> decodeValue(uint8_t <span class="keyword">const</span>* data, <span class="keywordtype">bool</span> lazy) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;        std::vector&lt;uint8_t&gt; encodeValue() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160; </div>
 <div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;    <span class="keyword">private</span>:</div>
@@ -562,7 +562,7 @@ $(document).ready(function(){initNavTree('_asn1_codec_8h_source.html',''); initR
 <div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;        };</div>
 <div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160; </div>
 <div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;        <span class="keywordtype">void</span> decodeValue(uint8_t* data, <span class="keywordtype">bool</span> lazy) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;        <span class="keywordtype">void</span> decodeValue(uint8_t <span class="keyword">const</span>* data, <span class="keywordtype">bool</span> lazy) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;        std::vector&lt;uint8_t&gt; encodeValue() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160; </div>
 <div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;        std::vector&lt;std::string&gt; toStringList() <span class="keyword">override</span>;</div>
@@ -581,7 +581,7 @@ $(document).ready(function(){initNavTree('_asn1_codec_8h_source.html',''); initR
 <div class="line"><a name="l00651"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_null_record.html#a97c09d1572b9a60e860df5d036f476ee">  651</a></span>&#160;        <a class="code" href="classpcpp_1_1_asn1_null_record.html#a97c09d1572b9a60e860df5d036f476ee">Asn1NullRecord</a>();</div>
 <div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160; </div>
 <div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;        <span class="keywordtype">void</span> decodeValue(uint8_t* data, <span class="keywordtype">bool</span> lazy)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;        <span class="keywordtype">void</span> decodeValue(uint8_t <span class="keyword">const</span>* data, <span class="keywordtype">bool</span> lazy)<span class="keyword"> override</span></div>
 <div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;<span class="keyword">        </span>{}</div>
 <div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;        std::vector&lt;uint8_t&gt; encodeValue()<span class="keyword"> const override</span></div>
 <div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;<span class="keyword">        </span>{</div>
@@ -643,7 +643,7 @@ $(document).ready(function(){initNavTree('_asn1_codec_8h_source.html',''); initR
 <div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;        }</div>
 <div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160; </div>
 <div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;        <span class="keywordtype">void</span> decodeValue(uint8_t* data, <span class="keywordtype">bool</span> lazy) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;        <span class="keywordtype">void</span> decodeValue(uint8_t <span class="keyword">const</span>* data, <span class="keywordtype">bool</span> lazy) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;        std::vector&lt;uint8_t&gt; encodeValue() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160; </div>
 <div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;        std::vector&lt;std::string&gt; toStringList() <span class="keyword">override</span>;</div>
@@ -689,7 +689,7 @@ $(document).ready(function(){initNavTree('_asn1_codec_8h_source.html',''); initR
 <div class="line"><a name="l00799"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_utc_time_record.html#aeb6de323007668629ab0bd7e70bec64d">  799</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_utc_time_record.html#aeb6de323007668629ab0bd7e70bec64d">Asn1UtcTimeRecord</a>(<span class="keyword">const</span> std::chrono::system_clock::time_point&amp; value, <span class="keywordtype">bool</span> withSeconds = <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160; </div>
 <div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;        <span class="keywordtype">void</span> decodeValue(uint8_t* data, <span class="keywordtype">bool</span> lazy) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;        <span class="keywordtype">void</span> decodeValue(uint8_t <span class="keyword">const</span>* data, <span class="keywordtype">bool</span> lazy) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;        std::vector&lt;uint8_t&gt; encodeValue() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160; </div>
 <div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;    <span class="keyword">private</span>:</div>
@@ -706,7 +706,7 @@ $(document).ready(function(){initNavTree('_asn1_codec_8h_source.html',''); initR
 <div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;                                           <span class="keyword">const</span> std::string&amp; timezone = <span class="stringliteral">&quot;Z&quot;</span>);</div>
 <div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160; </div>
 <div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;        <span class="keywordtype">void</span> decodeValue(uint8_t* data, <span class="keywordtype">bool</span> lazy) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;        <span class="keywordtype">void</span> decodeValue(uint8_t <span class="keyword">const</span>* data, <span class="keywordtype">bool</span> lazy) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;        std::vector&lt;uint8_t&gt; encodeValue() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160; </div>
 <div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;    <span class="keyword">private</span>:</div>
@@ -727,45 +727,52 @@ $(document).ready(function(){initNavTree('_asn1_codec_8h_source.html',''); initR
 <div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;            <span class="keywordflow">return</span> m_Value.toString();</div>
 <div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;        };</div>
 <div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160; </div>
-<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;        <span class="keywordtype">void</span> decodeValue(uint8_t* data, <span class="keywordtype">bool</span> lazy) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;        std::vector&lt;uint8_t&gt; encodeValue() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160; </div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;        std::vector&lt;std::string&gt; toStringList() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160; </div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;        <span class="keyword">class </span>BitSet</div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;        {</div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;            BitSet() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;            <span class="keyword">explicit</span> BitSet(<span class="keyword">const</span> std::string&amp; value);</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;            BitSet(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> numBits);</div>
-<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160; </div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;            BitSet&amp; operator=(<span class="keyword">const</span> std::string&amp; value);</div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160; </div>
-<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;            <span class="keywordtype">size_t</span> sizeInBytes() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;            std::string <a class="code" href="classpcpp_1_1_asn1_record.html#a9daa6568be038c6387f4782c3c238f50">toString</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;            std::vector&lt;uint8_t&gt; toBytes() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;            <span class="keywordtype">size_t</span> getNumBits()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;<span class="keyword">            </span>{</div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;                <span class="keywordflow">return</span> m_NumBits;</div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;            }</div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160; </div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;            <span class="keywordtype">void</span> initFromString(<span class="keyword">const</span> std::string&amp; value);</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160; </div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;            std::vector&lt;std::bitset&lt;8&gt;&gt; m_Data;</div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;            <span class="keywordtype">size_t</span> m_NumBits = 0;</div>
-<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;        };</div>
+<div class="line"><a name="l00854"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_bit_string_record.html#a77dbac1eb7df5bb958c62038179e0979">  854</a></span>&#160;        std::vector&lt;uint8_t&gt; <a class="code" href="classpcpp_1_1_asn1_bit_string_record.html#a77dbac1eb7df5bb958c62038179e0979">getVecValue</a>()</div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;        {</div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;            decodeValueIfNeeded();</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;            <span class="keywordflow">return</span> m_Value.toBytes();</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;        }</div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160; </div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;        <span class="keywordtype">void</span> decodeValue(uint8_t <span class="keyword">const</span>* data, <span class="keywordtype">bool</span> lazy) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;        std::vector&lt;uint8_t&gt; encodeValue() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160; </div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;        std::vector&lt;std::string&gt; toStringList() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160; </div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;        <span class="keyword">class </span>BitSet</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;        {</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;            BitSet() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;            <span class="keyword">explicit</span> BitSet(<span class="keyword">const</span> std::string&amp; value);</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;            BitSet(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> numBits);</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160; </div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;            BitSet&amp; operator=(<span class="keyword">const</span> std::string&amp; value);</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160; </div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;            <span class="keywordtype">size_t</span> sizeInBytes() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;            std::string <a class="code" href="classpcpp_1_1_asn1_record.html#a9daa6568be038c6387f4782c3c238f50">toString</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;            std::vector&lt;uint8_t&gt; toBytes() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;            <span class="keywordtype">size_t</span> getNumBits()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;<span class="keyword">            </span>{</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;                <span class="keywordflow">return</span> m_NumBits;</div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;            }</div>
 <div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160; </div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_bit_string_record.html#aa08b5adae9d5cbd965554ef46136cad3">Asn1BitStringRecord</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160; </div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;        BitSet m_Value;</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;    };</div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;            <span class="keywordtype">void</span> initFromString(<span class="keyword">const</span> std::string&amp; value);</div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160; </div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;            std::vector&lt;std::bitset&lt;8&gt;&gt; m_Data;</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;            <span class="keywordtype">size_t</span> m_NumBits = 0;</div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;        };</div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160; </div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_bit_string_record.html#aa08b5adae9d5cbd965554ef46136cad3">Asn1BitStringRecord</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160; </div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;        BitSet m_Value;</div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;    };</div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
 <div class="ttc" id="a_pointer_vector_8h_html"><div class="ttname"><a href="_pointer_vector_8h.html">PointerVector.h</a></div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_bit_string_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_bit_string_record.html">pcpp::Asn1BitStringRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:837</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_bit_string_record_html_a0ba8728a88e61e7176cde5d07f109c33"><div class="ttname"><a href="classpcpp_1_1_asn1_bit_string_record.html#a0ba8728a88e61e7176cde5d07f109c33">pcpp::Asn1BitStringRecord::getValue</a></div><div class="ttdeci">std::string getValue()</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:847</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_bit_string_record_html_a77dbac1eb7df5bb958c62038179e0979"><div class="ttname"><a href="classpcpp_1_1_asn1_bit_string_record.html#a77dbac1eb7df5bb958c62038179e0979">pcpp::Asn1BitStringRecord::getVecValue</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; getVecValue()</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:854</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_bit_string_record_html_aa08b5adae9d5cbd965554ef46136cad3"><div class="ttname"><a href="classpcpp_1_1_asn1_bit_string_record.html#aa08b5adae9d5cbd965554ef46136cad3">pcpp::Asn1BitStringRecord::Asn1BitStringRecord</a></div><div class="ttdeci">Asn1BitStringRecord(const std::string &amp;value)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_boolean_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_boolean_record.html">pcpp::Asn1BooleanRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:616</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_boolean_record_html_ab5a7aad24fe1da765a1174a5fa1effad"><div class="ttname"><a href="classpcpp_1_1_asn1_boolean_record.html#ab5a7aad24fe1da765a1174a5fa1effad">pcpp::Asn1BooleanRecord::Asn1BooleanRecord</a></div><div class="ttdeci">Asn1BooleanRecord(bool value)</div></div>
@@ -887,7 +894,7 @@ $(document).ready(function(){initNavTree('_asn1_codec_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_asn1_codec_8h.html">Asn1Codec.h</a></li>
-    <li class="footer">Generated on Thu Jul 17 2025 07:01:53 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Jul 18 2025 06:17:47 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
