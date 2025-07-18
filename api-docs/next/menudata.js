@@ -132,6 +132,7 @@ var menudata={children:[
 {text:"d",url:"functions_eval_d.html#index_d"},
 {text:"e",url:"functions_eval_e.html#index_e"},
 {text:"f",url:"functions_eval_f.html#index_f"},
+{text:"g",url:"functions_eval_g.html#index_g"},
 {text:"h",url:"functions_eval_h.html#index_h"},
 {text:"i",url:"functions_eval_i.html#index_i"},
 {text:"k",url:"functions_eval_k.html#index_k"},
@@ -145,7 +146,8 @@ var menudata={children:[
 {text:"t",url:"functions_eval_t.html#index_t"},
 {text:"u",url:"functions_eval_u.html#index_u"},
 {text:"v",url:"functions_eval_v.html#index_v"},
-{text:"w",url:"functions_eval_w.html#index_w"}]}]}]},
+{text:"w",url:"functions_eval_w.html#index_w"}]},
+{text:"Related Functions",url:"functions_rela.html"}]}]},
 {text:"Files",url:"files.html",children:[
 {text:"File List",url:"files.html"},
 {text:"File Members",url:"globals.html",children:[
