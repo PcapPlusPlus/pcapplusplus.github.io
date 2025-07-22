@@ -547,6 +547,20 @@ var hierarchy =
     ] ],
     [ "pcpp::X509Certificate", "classpcpp_1_1_x509_certificate.html", null ],
     [ "pcpp::X509Internal::X509Certificate", "classpcpp_1_1_x509_internal_1_1_x509_certificate.html", null ],
+    [ "pcpp::X509ExtendedKeyUsagePurpose", "classpcpp_1_1_x509_extended_key_usage_purpose.html", null ],
+    [ "pcpp::X509Extension", "classpcpp_1_1_x509_extension.html", null ],
+    [ "pcpp::X509ExtensionData", "classpcpp_1_1_x509_extension_data.html", [
+      [ "pcpp::X509BasicConstraintsExtension", "classpcpp_1_1_x509_basic_constraints_extension.html", null ],
+      [ "pcpp::X509ExtendedKeyUsageExtension", "classpcpp_1_1_x509_extended_key_usage_extension.html", null ],
+      [ "pcpp::X509KeyUsageExtension", "classpcpp_1_1_x509_key_usage_extension.html", null ],
+      [ "pcpp::X509SubjectKeyIdentifierExtension", "classpcpp_1_1_x509_subject_key_identifier_extension.html", null ]
+    ] ],
+    [ "pcpp::X509Internal::X509ExtensionDataDecoder", "classpcpp_1_1_x509_internal_1_1_x509_extension_data_decoder.html", [
+      [ "pcpp::X509Internal::X509BasicConstraintsDataDecoder", "classpcpp_1_1_x509_internal_1_1_x509_basic_constraints_data_decoder.html", null ],
+      [ "pcpp::X509Internal::X509ExtendedKeyUsageDataDecoder", "classpcpp_1_1_x509_internal_1_1_x509_extended_key_usage_data_decoder.html", null ],
+      [ "pcpp::X509Internal::X509KeyUsageDataDecoder", "classpcpp_1_1_x509_internal_1_1_x509_key_usage_data_decoder.html", null ],
+      [ "pcpp::X509Internal::X509SubjectKeyIdentifierDataDecoder", "classpcpp_1_1_x509_internal_1_1_x509_subject_key_identifier_data_decoder.html", null ]
+    ] ],
     [ "pcpp::X509ExtensionType", "classpcpp_1_1_x509_extension_type.html", null ],
     [ "pcpp::X509Key", "classpcpp_1_1_x509_key.html", null ],
     [ "pcpp::X509Name", "classpcpp_1_1_x509_name.html", null ],
