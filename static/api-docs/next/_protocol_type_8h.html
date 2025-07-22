@@ -88,6 +88,7 @@ $(document).ready(function(){initNavTree('_protocol_type_8h.html',''); initResiz
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">ProtocolType.h File Reference</div>  </div>
@@ -126,6 +127,12 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a69e2ee6a9dc68797612cf8dc38461025"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enum representing OSI model layers.  <a href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">More...</a><br /></td></tr>
 <tr class="separator:a69e2ee6a9dc68797612cf8dc38461025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ae5f6d95f269b594fc413882772bf9867"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_protocol_type_8h.html#ae5f6d95f269b594fc413882772bf9867">pcpp::internal::protoFamilyContainsProtocol</a> (ProtocolTypeFamily family, ProtocolType protocol)</td></tr>
+<tr class="memdesc:ae5f6d95f269b594fc413882772bf9867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a protocol family contains a specific protocol.  <a href="_protocol_type_8h.html#ae5f6d95f269b594fc413882772bf9867">More...</a><br /></td></tr>
+<tr class="separator:ae5f6d95f269b594fc413882772bf9867"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -402,13 +409,60 @@ const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="
 <tr class="memdesc:abc8840ff6a854c8b275ab93d6789cd26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cisco HDLC protocol. <br /></td></tr>
 <tr class="separator:abc8840ff6a854c8b275ab93d6789cd26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ae5f6d95f269b594fc413882772bf9867"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5f6d95f269b594fc413882772bf9867">&#9670;&nbsp;</a></span>protoFamilyContainsProtocol()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool pcpp::internal::protoFamilyContainsProtocol </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacepcpp.html#aa26bae020a295f1089e08c390fb21c52">ProtocolTypeFamily</a>&#160;</td>
+          <td class="paramname"><em>family</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td>
+          <td class="paramname"><em>protocol</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if a protocol family contains a specific protocol. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">family</td><td>A protocol type family value. </td></tr>
+    <tr><td class="paramname">protocol</td><td>A protocol type value to check against the family. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the protocol is part of the family, false otherwise. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_protocol_type_8h.html">ProtocolType.h</a></li>
-    <li class="footer">Generated on Fri Jul 18 2025 06:17:47 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jul 22 2025 08:34:54 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

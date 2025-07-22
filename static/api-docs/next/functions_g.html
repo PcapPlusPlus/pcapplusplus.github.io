@@ -401,9 +401,6 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>getCRFlag()
 : <a class="el" href="classpcpp_1_1_gtp_v2_information_element.html#adfa8ecc4a62bbcad7f2e1aa96577c656">pcpp::GtpV2InformationElement</a>
 </li>
-<li>getCritical()
-: <a class="el" href="classpcpp_1_1_x509_internal_1_1_x509_extension.html#a3a9603046a0e3852693f96116c4fb630">pcpp::X509Internal::X509Extension</a>
-</li>
 <li>getCurrentCapacity()
 : <a class="el" href="classpcpp_1_1_i_p_reassembly.html#adc24c508640b64fe41eefa99a5296800">pcpp::IPReassembly</a>
 </li>
@@ -427,6 +424,7 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 , <a class="el" href="classpcpp_1_1_s_s_l_extension.html#ac9f760bf400ea59ec50e81309f381a9b">pcpp::SSLExtension</a>
 , <a class="el" href="classpcpp_1_1_s_s_lx509_certificate.html#ac3cc7459835cec5162938031e2bd8f73">pcpp::SSLx509Certificate</a>
 , <a class="el" href="classpcpp_1_1_tcp_stream_data.html#ab39688bc764ebc72178a1f067092571b">pcpp::TcpStreamData</a>
+, <a class="el" href="classpcpp_1_1_x509_extension.html#a7a1f507c8af082e5d9616ca23e835e3a">pcpp::X509Extension</a>
 </li>
 <li>getDataAsString()
 : <a class="el" href="classpcpp_1_1_telnet_layer.html#ae89af0cbd8aadb79b8e0212b312f06b8">pcpp::TelnetLayer</a>
@@ -620,15 +618,18 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>getExperimentalUseValue()
 : <a class="el" href="classpcpp_1_1_mpls_layer.html#a58a756973de0940367075a2b610b8ca3">pcpp::MplsLayer</a>
 </li>
+<li>getExtendedKeyUsagePurposes()
+: <a class="el" href="classpcpp_1_1_x509_internal_1_1_x509_extended_key_usage_data_decoder.html#a9ff4d5d595b2c630bea374d1531793f2">pcpp::X509Internal::X509ExtendedKeyUsageDataDecoder</a>
+</li>
 <li>getExtension()
 : <a class="el" href="classpcpp_1_1_s_s_l_client_hello_message.html#add21f3f197fa7aac1fab20bca7d209fd">pcpp::SSLClientHelloMessage</a>
 , <a class="el" href="classpcpp_1_1_s_s_l_server_hello_message.html#a882d79b1d28ec952287fae873cb3d2bc">pcpp::SSLServerHelloMessage</a>
+, <a class="el" href="classpcpp_1_1_x509_certificate.html#a11526d35b41e2e83ea62a3c9349d786c">pcpp::X509Certificate</a>
 </li>
 <li>getExtensionCount()
 : <a class="el" href="classpcpp_1_1_i_pv6_layer.html#ade099f395b1912f006c61264ddf0f53a">pcpp::IPv6Layer</a>
 , <a class="el" href="classpcpp_1_1_s_s_l_client_hello_message.html#aeadd0d297b58f2c799cd33ba4fc952e7">pcpp::SSLClientHelloMessage</a>
 , <a class="el" href="classpcpp_1_1_s_s_l_server_hello_message.html#a380e5f7292ffbc80d04cac858e112bed">pcpp::SSLServerHelloMessage</a>
-, <a class="el" href="classpcpp_1_1_x509_certificate.html#ae68f0e96f45154257a4e7d0ca327833a">pcpp::X509Certificate</a>
 </li>
 <li>getExtensionLen()
 : <a class="el" href="classpcpp_1_1_i_pv6_authentication_header.html#a5a3064172e398377e6249d6838e3c2ac">pcpp::IPv6AuthenticationHeader</a>
@@ -640,7 +641,8 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 , <a class="el" href="classpcpp_1_1_s_s_l_server_hello_message.html#a0475132b738578af6d6fd33a26238b93">pcpp::SSLServerHelloMessage</a>
 </li>
 <li>getExtensions()
-: <a class="el" href="classpcpp_1_1_x509_internal_1_1_x509_extensions.html#aa54571ab1147d78d5e507957d9e2e20d">pcpp::X509Internal::X509Extensions</a>
+: <a class="el" href="classpcpp_1_1_x509_certificate.html#a7efe7d311c9827d984264bb85736dc1a">pcpp::X509Certificate</a>
+, <a class="el" href="classpcpp_1_1_x509_internal_1_1_x509_extensions.html#aa54571ab1147d78d5e507957d9e2e20d">pcpp::X509Internal::X509Extensions</a>
 , <a class="el" href="classpcpp_1_1_x509_internal_1_1_x509_t_b_s_certificate.html#aaaee935291dfb83177f2858cd7736464">pcpp::X509Internal::X509TBSCertificate</a>
 </li>
 <li>getExtensionsLength()
@@ -1008,6 +1010,13 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 </li>
 <li>getKeyID()
 : <a class="el" href="classpcpp_1_1_ntp_layer.html#a3ac9b842f9472338e77059f14606416a">pcpp::NtpLayer</a>
+</li>
+<li>getKeyIdentifier()
+: <a class="el" href="classpcpp_1_1_x509_internal_1_1_x509_subject_key_identifier_data_decoder.html#ae533edbccf2fe67ce546815228526d76">pcpp::X509Internal::X509SubjectKeyIdentifierDataDecoder</a>
+, <a class="el" href="classpcpp_1_1_x509_subject_key_identifier_extension.html#a5bfbf215e056b0c2d60e52d412a722cc">pcpp::X509SubjectKeyIdentifierExtension</a>
+</li>
+<li>getKeyUsage()
+: <a class="el" href="classpcpp_1_1_x509_internal_1_1_x509_key_usage_data_decoder.html#a07fe21c43ad916cfd57e78cd6433bda9">pcpp::X509Internal::X509KeyUsageDataDecoder</a>
 </li>
 <li>getLanguagesClientToServer()
 : <a class="el" href="classpcpp_1_1_s_s_h_key_exchange_init_message.html#a755b5bbcbed4634c39b4d2bd59df2274">pcpp::SSHKeyExchangeInitMessage</a>
@@ -1429,6 +1438,7 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 </li>
 <li>getOidValue()
 : <a class="el" href="classpcpp_1_1_x509_algorithm.html#a42d2f77f677122f45a1aec777929b5ab">pcpp::X509Algorithm</a>
+, <a class="el" href="classpcpp_1_1_x509_extended_key_usage_purpose.html#ab84e167a19e8e3de924794bbcc490708">pcpp::X509ExtendedKeyUsagePurpose</a>
 , <a class="el" href="classpcpp_1_1_x509_extension_type.html#adc25c810e201b01dc53c9c79515e70a1">pcpp::X509ExtensionType</a>
 , <a class="el" href="classpcpp_1_1_x520_distinguished_name.html#a90ede22e4abca9fef87ea48cbc904bf2">pcpp::X520DistinguishedName</a>
 </li>
@@ -1460,7 +1470,7 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>getOptionData()
 : <a class="el" href="classpcpp_1_1_dhcp_layer.html#acd658b6d22bb6687e2722ae7bd543ca9">pcpp::DhcpLayer</a>
 , <a class="el" href="classpcpp_1_1_dhcp_v6_layer.html#a7b0ad1097a3044314789a84cc3511ddc">pcpp::DhcpV6Layer</a>
-, <a class="el" href="classpcpp_1_1_telnet_layer.html#abed6573561650db6599a7db1b75f27e1">pcpp::TelnetLayer</a>
+, <a class="el" href="classpcpp_1_1_telnet_layer.html#a65b707b8451ed49e9d53ca50bb9cdb25">pcpp::TelnetLayer</a>
 </li>
 <li>getOptions()
 : <a class="el" href="classpcpp_1_1_some_ip_sd_layer.html#af3710991e750393be51163dfca040498">pcpp::SomeIpSdLayer</a>
@@ -1572,6 +1582,10 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 </li>
 <li>getPathCost()
 : <a class="el" href="classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#ad8ee88cbd9d39d31847b2644ab9d7401">pcpp::StpConfigurationBPDULayer</a>
+</li>
+<li>getPathLenConstraint()
+: <a class="el" href="classpcpp_1_1_x509_basic_constraints_extension.html#a446fdea2e6563ca2c8e437b48aad643c">pcpp::X509BasicConstraintsExtension</a>
+, <a class="el" href="classpcpp_1_1_x509_internal_1_1_x509_basic_constraints_data_decoder.html#a59c623edd642488221fecb53411a743c">pcpp::X509Internal::X509BasicConstraintsDataDecoder</a>
 </li>
 <li>getPayload()
 : <a class="el" href="classpcpp_1_1_payload_layer.html#a0883f46fee516b697d6c44997b6f775a">pcpp::PayloadLayer</a>
@@ -1704,6 +1718,9 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>getPublicKeyAlgorithm()
 : <a class="el" href="classpcpp_1_1_x509_certificate.html#aa8e13bd2c46892735ba71b090275418e">pcpp::X509Certificate</a>
 </li>
+<li>getPurposes()
+: <a class="el" href="classpcpp_1_1_x509_extended_key_usage_extension.html#ad020636984891e8f231922e55674c0f5">pcpp::X509ExtendedKeyUsageExtension</a>
+</li>
 <li>getQuery()
 : <a class="el" href="classpcpp_1_1_dns_layer.html#a1e350c5f5c2686900c91a8753f70745b">pcpp::DnsLayer</a>
 </li>
@@ -1722,6 +1739,9 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>getRawData()
 : <a class="el" href="classpcpp_1_1_mac_address.html#ac97e371aec192c213ea444f0094255d2">pcpp::MacAddress</a>
 , <a class="el" href="classpcpp_1_1_raw_packet.html#a095f2d3a3ac095b23c07af2bf095653f">pcpp::RawPacket</a>
+</li>
+<li>getRawDataAsHexString()
+: <a class="el" href="classpcpp_1_1_x509_extension.html#aacce9ad1e64d835563ff5424bb72939b">pcpp::X509Extension</a>
 </li>
 <li>getRawDataLen()
 : <a class="el" href="classpcpp_1_1_raw_packet.html#a15e5700fb9d76cdfbcb3c3d505f22904">pcpp::RawPacket</a>
@@ -2311,6 +2331,7 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 , <a class="el" href="classpcpp_1_1_stp_layer.html#a493a06fe3892b56c1342e14607a61c64">pcpp::StpLayer</a>
 , <a class="el" href="classpcpp_1_1_t_l_v_record.html#a2c03958af00bae5ff4cb953e206becf0">pcpp::TLVRecord&lt; TRecType, TRecLen &gt;</a>
 , <a class="el" href="classpcpp_1_1_vrrp_layer.html#ab37e4eb83629b52b17a424bdaf5af93c">pcpp::VrrpLayer</a>
+, <a class="el" href="classpcpp_1_1_x509_extension.html#a620ecbb24840533ca2430912ade06998">pcpp::X509Extension</a>
 , <a class="el" href="classpcpp_1_1_x509_internal_1_1_x509_extension.html#a27d1c0ca219c0d0e5004c007f572d476">pcpp::X509Internal::X509Extension</a>
 , <a class="el" href="classpcpp_1_1_x509_internal_1_1_x509_relative_distinguished_name.html#aab3fe4c7478f80cf3ee333c2fd39526d">pcpp::X509Internal::X509RelativeDistinguishedName</a>
 </li>
@@ -2450,7 +2471,7 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 : <a class="el" href="structpcpp_1_1_gratuitous_arp_request.html#a0432be73ead961951b6620481467a72a">pcpp::GratuitousArpRequest</a>
 </li>
 <li>GREv0Layer()
-: <a class="el" href="classpcpp_1_1_g_r_ev0_layer.html#a4e6349fa245ab6fec55236aeeff2e79e">pcpp::GREv0Layer</a>
+: <a class="el" href="classpcpp_1_1_g_r_ev0_layer.html#a8cab834d500d69bd53ea9f980080aa66">pcpp::GREv0Layer</a>
 </li>
 <li>GREv1Layer()
 : <a class="el" href="classpcpp_1_1_g_r_ev1_layer.html#affdd47adeca80911b621a14421853e8e">pcpp::GREv1Layer</a>
@@ -2486,7 +2507,7 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jul 18 2025 06:17:48 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jul 22 2025 08:34:55 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

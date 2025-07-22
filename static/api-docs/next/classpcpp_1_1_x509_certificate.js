@@ -1,6 +1,7 @@
 var classpcpp_1_1_x509_certificate =
 [
-    [ "getExtensionCount", "classpcpp_1_1_x509_certificate.html#ae68f0e96f45154257a4e7d0ca327833a", null ],
+    [ "getExtension", "classpcpp_1_1_x509_certificate.html#a11526d35b41e2e83ea62a3c9349d786c", null ],
+    [ "getExtensions", "classpcpp_1_1_x509_certificate.html#a7efe7d311c9827d984264bb85736dc1a", null ],
     [ "getIssuer", "classpcpp_1_1_x509_certificate.html#a5cac645a51167d3b59e8e8be178f8622", null ],
     [ "getNotAfter", "classpcpp_1_1_x509_certificate.html#a8c5df8e6af0ed50cd5ab12b434ee4105", null ],
     [ "getNotBefore", "classpcpp_1_1_x509_certificate.html#a72fb7ad0241b54c773a2d14fda373fe9", null ],

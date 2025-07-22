@@ -117,10 +117,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af9a288f1b40585f0976e98a5493bd34a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a662fce5f7a6d7ab23f34d75ec9efeb84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_x509_key.html">X509Key</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_x509_certificate.html#a662fce5f7a6d7ab23f34d75ec9efeb84">getSignature</a> () const</td></tr>
 <tr class="separator:a662fce5f7a6d7ab23f34d75ec9efeb84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae68f0e96f45154257a4e7d0ca327833a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_x509_certificate.html#ae68f0e96f45154257a4e7d0ca327833a">getExtensionCount</a> () const</td></tr>
-<tr class="separator:ae68f0e96f45154257a4e7d0ca327833a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7efe7d311c9827d984264bb85736dc1a"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classpcpp_1_1_x509_extension.html">X509Extension</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_x509_certificate.html#a7efe7d311c9827d984264bb85736dc1a">getExtensions</a> () const</td></tr>
+<tr class="separator:a7efe7d311c9827d984264bb85736dc1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf6468b9cc9ac5fac38b16149d85a0a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_x509_certificate.html#aaf6468b9cc9ac5fac38b16149d85a0a1">hasExtension</a> (const <a class="el" href="classpcpp_1_1_x509_extension_type.html">X509ExtensionType</a> &amp;extensionType) const</td></tr>
 <tr class="separator:aaf6468b9cc9ac5fac38b16149d85a0a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11526d35b41e2e83ea62a3c9349d786c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classpcpp_1_1_x509_extension.html">X509Extension</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_x509_certificate.html#a11526d35b41e2e83ea62a3c9349d786c">getExtension</a> (<a class="el" href="classpcpp_1_1_x509_extension_type.html">X509ExtensionType</a> extensionType) const</td></tr>
+<tr class="separator:a11526d35b41e2e83ea62a3c9349d786c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45fa4c1790631729ffda99dd91312629"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_x509_certificate.html#a45fa4c1790631729ffda99dd91312629">toDER</a> () const</td></tr>
 <tr class="separator:a45fa4c1790631729ffda99dd91312629"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc9217bd9fea21a92a60666986c94179"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_x509_certificate.html#afc9217bd9fea21a92a60666986c94179">toJson</a> (int indent=-1) const</td></tr>
@@ -275,21 +277,46 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae68f0e96f45154257a4e7d0ca327833a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae68f0e96f45154257a4e7d0ca327833a">&#9670;&nbsp;</a></span>getExtensionCount()</h2>
+<a id="a11526d35b41e2e83ea62a3c9349d786c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11526d35b41e2e83ea62a3c9349d786c">&#9670;&nbsp;</a></span>getExtension()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t pcpp::X509Certificate::getExtensionCount </td>
+          <td class="memname">const <a class="el" href="classpcpp_1_1_x509_extension.html">X509Extension</a>* pcpp::X509Certificate::getExtension </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_x509_extension_type.html">X509ExtensionType</a>&#160;</td>
+          <td class="paramname"><em>extensionType</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets an extension by its type </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">extensionType</td><td>The type of extension to get </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the extension if found or nullptr otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a7efe7d311c9827d984264bb85736dc1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7efe7d311c9827d984264bb85736dc1a">&#9670;&nbsp;</a></span>getExtensions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;<a class="el" href="classpcpp_1_1_x509_extension.html">X509Extension</a>&gt;&amp; pcpp::X509Certificate::getExtensions </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Gets the number of extensions in the certificate </p><dl class="section return"><dt>Returns</dt><dd>The number of extensions </dd></dl>
+<p>Gets the list of extensions in the certificate </p><dl class="section return"><dt>Returns</dt><dd>A vector containing the certificate's extensions </dd></dl>
 
 </div>
 </div>
@@ -565,7 +592,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a></li>
-    <li class="footer">Generated on Fri Jul 18 2025 06:17:48 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jul 22 2025 08:34:55 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

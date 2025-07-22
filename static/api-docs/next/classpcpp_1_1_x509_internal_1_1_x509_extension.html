@@ -107,32 +107,14 @@ Inheritance diagram for pcpp::X509Internal::X509Extension:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a27d1c0ca219c0d0e5004c007f572d476"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_x509_extension_type.html">X509ExtensionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_x509_internal_1_1_x509_extension.html#a27d1c0ca219c0d0e5004c007f572d476">getType</a> () const</td></tr>
 <tr class="separator:a27d1c0ca219c0d0e5004c007f572d476"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a9603046a0e3852693f96116c4fb630"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_x509_internal_1_1_x509_extension.html#a3a9603046a0e3852693f96116c4fb630">getCritical</a> () const</td></tr>
-<tr class="separator:a3a9603046a0e3852693f96116c4fb630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fee48df3267667f7704dcf79132fb1f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_x509_internal_1_1_x509_extension.html#a0fee48df3267667f7704dcf79132fb1f">isCritical</a> () const</td></tr>
+<tr class="separator:a0fee48df3267667f7704dcf79132fb1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86f3ed40cf2b13205fe2b763734a90fb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_x509_internal_1_1_x509_extension.html#a86f3ed40cf2b13205fe2b763734a90fb">getValue</a> () const</td></tr>
 <tr class="separator:a86f3ed40cf2b13205fe2b763734a90fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Internal class for handling X.509 extension records </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3a9603046a0e3852693f96116c4fb630"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a9603046a0e3852693f96116c4fb630">&#9670;&nbsp;</a></span>getCritical()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool pcpp::X509Internal::X509Extension::getCritical </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Checks if this extension is marked as critical </p><dl class="section return"><dt>Returns</dt><dd>true if the extension is critical, false otherwise </dd></dl>
-
-</div>
-</div>
 <a id="a27d1c0ca219c0d0e5004c007f572d476"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a27d1c0ca219c0d0e5004c007f572d476">&#9670;&nbsp;</a></span>getType()</h2>
 
@@ -169,13 +151,31 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a0fee48df3267667f7704dcf79132fb1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fee48df3267667f7704dcf79132fb1f">&#9670;&nbsp;</a></span>isCritical()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::X509Internal::X509Extension::isCritical </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Checks if this extension is marked as critical </p><dl class="section return"><dt>Returns</dt><dd>true if the extension is critical, false otherwise </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><b>X509Internal</b></li><li class="navelem"><a class="el" href="classpcpp_1_1_x509_internal_1_1_x509_extension.html">X509Extension</a></li>
-    <li class="footer">Generated on Fri Jul 18 2025 06:17:48 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jul 22 2025 08:34:55 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

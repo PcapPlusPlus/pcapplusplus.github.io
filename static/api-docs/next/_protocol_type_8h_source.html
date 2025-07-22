@@ -246,7 +246,18 @@ $(document).ready(function(){initNavTree('_protocol_type_8h_source.html',''); in
 <div class="line"><a name="l00239"></a><span class="lineno"><a class="line" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a56f0bba682cc695d49efecf8a0152270">  239</a></span>&#160;        <a class="code" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a56f0bba682cc695d49efecf8a0152270">OsiModelApplicationLayer</a> = 7,</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <a class="code" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">OsiModelLayerUnknown</a> = 8</div>
 <div class="line"><a name="l00242"></a><span class="lineno"><a class="line" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">  242</a></span>&#160;    };</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keyword">namespace </span>internal</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    {</div>
+<div class="line"><a name="l00250"></a><span class="lineno"><a class="line" href="_protocol_type_8h.html#ae5f6d95f269b594fc413882772bf9867">  250</a></span>&#160;        constexpr <span class="keywordtype">bool</span> <a class="code" href="_protocol_type_8h.html#ae5f6d95f269b594fc413882772bf9867">protoFamilyContainsProtocol</a>(<a class="code" href="namespacepcpp.html#aa26bae020a295f1089e08c390fb21c52">ProtocolTypeFamily</a> family, <a class="code" href="namespacepcpp.html#a1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> protocol)</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        {</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            <span class="keyword">auto</span> <span class="keyword">const</span> protocolToFamily = <span class="keyword">static_cast&lt;</span><a class="code" href="namespacepcpp.html#aa26bae020a295f1089e08c390fb21c52">ProtocolTypeFamily</a><span class="keyword">&gt;</span>(protocol);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            <span class="keywordflow">return</span> (protocolToFamily == (family &amp; 0xff) || protocolToFamily &lt;&lt; 8 == (family &amp; 0xff00) ||</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                    protocolToFamily &lt;&lt; 16 == (family &amp; 0xff0000) || protocolToFamily &lt;&lt; 24 == (family &amp; 0xff000000));</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        }</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    }  <span class="comment">// namespace internal</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="ttc" id="a_protocol_type_8h_html_ae5f6d95f269b594fc413882772bf9867"><div class="ttname"><a href="_protocol_type_8h.html#ae5f6d95f269b594fc413882772bf9867">pcpp::internal::protoFamilyContainsProtocol</a></div><div class="ttdeci">constexpr bool protoFamilyContainsProtocol(ProtocolTypeFamily family, ProtocolType protocol)</div><div class="ttdoc">Check if a protocol family contains a specific protocol.</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:250</div></div>
 <div class="ttc" id="anamespacepcpp_html"><div class="ttname"><a href="namespacepcpp.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib.</div></div>
 <div class="ttc" id="anamespacepcpp_html_a058312702b3e3b1a4b0feec23f6c6249"><div class="ttname"><a href="namespacepcpp.html#a058312702b3e3b1a4b0feec23f6c6249">pcpp::GRE</a></div><div class="ttdeci">const ProtocolTypeFamily GRE</div><div class="ttdoc">GRE protocol family (GREv0 and GREv1 protocols)</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:80</div></div>
 <div class="ttc" id="anamespacepcpp_html_a136e4aac56cb58fee399e02bf12bc720"><div class="ttname"><a href="namespacepcpp.html#a136e4aac56cb58fee399e02bf12bc720">pcpp::STP</a></div><div class="ttdeci">const ProtocolType STP</div><div class="ttdoc">Spanning Tree Protocol.</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:173</div></div>
@@ -333,7 +344,7 @@ $(document).ready(function(){initNavTree('_protocol_type_8h_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_protocol_type_8h.html">ProtocolType.h</a></li>
-    <li class="footer">Generated on Fri Jul 18 2025 06:17:47 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jul 22 2025 08:34:54 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
