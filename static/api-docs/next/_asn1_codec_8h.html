@@ -215,14 +215,50 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a9b5b777cefd9f4b92bb6686d2c055bbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enum for representing ASN.1 Universal tag types.  <a href="namespacepcpp.html#a9b5b777cefd9f4b92bb6686d2c055bbe">More...</a><br /></td></tr>
 <tr class="separator:a9b5b777cefd9f4b92bb6686d2c055bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc72f6fcbe79f8150a6c7f8dcbed2b6d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_asn1_codec_8h.html#afc72f6fcbe79f8150a6c7f8dcbed2b6d">pcpp::internal::Asn1LoadPolicy</a> { <a class="el" href="_asn1_codec_8h.html#afc72f6fcbe79f8150a6c7f8dcbed2b6da46a9ebdb80117bfa1f0cdea65438290a">Lazy</a>
+, <a class="el" href="_asn1_codec_8h.html#afc72f6fcbe79f8150a6c7f8dcbed2b6da483c336d7d9fe614a8b5aae1e746e01f">Eager</a>
+ }</td></tr>
+<tr class="memdesc:afc72f6fcbe79f8150a6c7f8dcbed2b6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Policy for when to evaluate (decode) ASN.1 record values. Determines whether the value is decoded immediately (eager) or on first access (lazy).  <a href="_asn1_codec_8h.html#afc72f6fcbe79f8150a6c7f8dcbed2b6d">More...</a><br /></td></tr>
+<tr class="separator:afc72f6fcbe79f8150a6c7f8dcbed2b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="afc72f6fcbe79f8150a6c7f8dcbed2b6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc72f6fcbe79f8150a6c7f8dcbed2b6d">&#9670;&nbsp;</a></span>Asn1LoadPolicy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_asn1_codec_8h.html#afc72f6fcbe79f8150a6c7f8dcbed2b6d">pcpp::internal::Asn1LoadPolicy</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Policy for when to evaluate (decode) ASN.1 record values. Determines whether the value is decoded immediately (eager) or on first access (lazy). </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="afc72f6fcbe79f8150a6c7f8dcbed2b6da46a9ebdb80117bfa1f0cdea65438290a"></a>Lazy&#160;</td><td class="fielddoc"><p>The value is evaluated on first access (lazy decoding). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afc72f6fcbe79f8150a6c7f8dcbed2b6da483c336d7d9fe614a8b5aae1e746e01f"></a>Eager&#160;</td><td class="fielddoc"><p>The value is evaluated immediately on construction (eager decoding). </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_asn1_codec_8h.html">Asn1Codec.h</a></li>
-    <li class="footer">Generated on Tue Jul 22 2025 08:34:54 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jul 28 2025 07:54:03 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

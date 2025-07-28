@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PcapPlusPlus: pcpp::internal::DynamicObjectPool&lt; T, type &gt; Class Template Reference</title>
+<title>PcapPlusPlus: pcpp::internal::DynamicObjectPool&lt; T, &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1internal_1_1_dynamic_obje
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classpcpp_1_1internal_1_1_dynamic_object_pool-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">pcpp::internal::DynamicObjectPool&lt; T, type &gt; Class Template Reference</div>  </div>
+<div class="title">pcpp::internal::DynamicObjectPool&lt; T, &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -99,47 +99,47 @@ $(document).ready(function(){initNavTree('classpcpp_1_1internal_1_1_dynamic_obje
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9fb74c7d9a5c8dfaee2439bec71b7474"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#a9fb74c7d9a5c8dfaee2439bec71b7474">DynamicObjectPool</a> (std::size_t maxPoolSize=DEFAULT_POOL_SIZE, std::size_t initialSize=0)</td></tr>
-<tr class="separator:a9fb74c7d9a5c8dfaee2439bec71b7474"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbd95b08279e2f9c54e016180beacd22"><td class="memItemLeft" align="right" valign="top"><a id="adbd95b08279e2f9c54e016180beacd22"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#adbd95b08279e2f9c54e016180beacd22">~DynamicObjectPool</a> ()</td></tr>
-<tr class="memdesc:adbd95b08279e2f9c54e016180beacd22"><td class="mdescLeft">&#160;</td><td class="mdescRight">A destructor for this class that deletes all objects in the pool. <br /></td></tr>
-<tr class="separator:adbd95b08279e2f9c54e016180beacd22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a706ce00950dd6213891720e27cca99bb"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#a706ce00950dd6213891720e27cca99bb">acquireObject</a> ()</td></tr>
-<tr class="memdesc:a706ce00950dd6213891720e27cca99bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquires a unique pointer to an object from the pool.  <a href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#a706ce00950dd6213891720e27cca99bb">More...</a><br /></td></tr>
-<tr class="separator:a706ce00950dd6213891720e27cca99bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaad32a3084d7984793b365df5a7d8711"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#aaad32a3084d7984793b365df5a7d8711">acquireObjectRaw</a> ()</td></tr>
-<tr class="memdesc:aaad32a3084d7984793b365df5a7d8711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquires a raw pointer to an object from the pool.  <a href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#aaad32a3084d7984793b365df5a7d8711">More...</a><br /></td></tr>
-<tr class="separator:aaad32a3084d7984793b365df5a7d8711"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc24448bf153b834c9608466122cd57b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#afc24448bf153b834c9608466122cd57b">releaseObject</a> (std::unique_ptr&lt; T &gt; obj)</td></tr>
-<tr class="memdesc:afc24448bf153b834c9608466122cd57b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases a unique pointer to an object back to the pool.  <a href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#afc24448bf153b834c9608466122cd57b">More...</a><br /></td></tr>
-<tr class="separator:afc24448bf153b834c9608466122cd57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a532918c1704c817da94041302e1cf96c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#a532918c1704c817da94041302e1cf96c">releaseObjectRaw</a> (T *obj)</td></tr>
-<tr class="memdesc:a532918c1704c817da94041302e1cf96c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases a raw pointer to an object back to the pool.  <a href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#a532918c1704c817da94041302e1cf96c">More...</a><br /></td></tr>
-<tr class="separator:a532918c1704c817da94041302e1cf96c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a263f83fc7df1bb4a8e9d2b4596879b80"><td class="memItemLeft" align="right" valign="top"><a id="a263f83fc7df1bb4a8e9d2b4596879b80"></a>
-std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#a263f83fc7df1bb4a8e9d2b4596879b80">size</a> () const</td></tr>
-<tr class="memdesc:a263f83fc7df1bb4a8e9d2b4596879b80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current number of objects in the pool. <br /></td></tr>
-<tr class="separator:a263f83fc7df1bb4a8e9d2b4596879b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05731bc1b100d81cbaa0358a1bc98600"><td class="memItemLeft" align="right" valign="top"><a id="a05731bc1b100d81cbaa0358a1bc98600"></a>
-std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#a05731bc1b100d81cbaa0358a1bc98600">maxSize</a> () const</td></tr>
-<tr class="memdesc:a05731bc1b100d81cbaa0358a1bc98600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the maximum number of objects in the pool. <br /></td></tr>
-<tr class="separator:a05731bc1b100d81cbaa0358a1bc98600"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab078f2cf3b5a9326e5616c7493cce458"><td class="memItemLeft" align="right" valign="top"><a id="ab078f2cf3b5a9326e5616c7493cce458"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#ab078f2cf3b5a9326e5616c7493cce458">setMaxSize</a> (std::size_t <a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#a05731bc1b100d81cbaa0358a1bc98600">maxSize</a>)</td></tr>
-<tr class="memdesc:ab078f2cf3b5a9326e5616c7493cce458"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the maximum number of objects in the pool. <br /></td></tr>
-<tr class="separator:ab078f2cf3b5a9326e5616c7493cce458"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25155bff69651654a1a637dc4bb1d1bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#a25155bff69651654a1a637dc4bb1d1bd">preallocate</a> (std::size_t count)</td></tr>
-<tr class="memdesc:a25155bff69651654a1a637dc4bb1d1bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-allocates up to a minimum number of objects in the pool.  <a href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#a25155bff69651654a1a637dc4bb1d1bd">More...</a><br /></td></tr>
-<tr class="separator:a25155bff69651654a1a637dc4bb1d1bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a852c9082fddec34ec17b8aefc76e4314"><td class="memItemLeft" align="right" valign="top"><a id="a852c9082fddec34ec17b8aefc76e4314"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#a852c9082fddec34ec17b8aefc76e4314">clear</a> ()</td></tr>
-<tr class="memdesc:a852c9082fddec34ec17b8aefc76e4314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocates and releases all objects currently held by the pool. <br /></td></tr>
-<tr class="separator:a852c9082fddec34ec17b8aefc76e4314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45ec8c38624addfdf9b4b0f51ab3b59f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#a45ec8c38624addfdf9b4b0f51ab3b59f">DynamicObjectPool</a> (std::size_t maxPoolSize=DEFAULT_POOL_SIZE, std::size_t initialSize=0)</td></tr>
+<tr class="separator:a45ec8c38624addfdf9b4b0f51ab3b59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac550df86432a1d9db5cebb4419071c5"><td class="memItemLeft" align="right" valign="top"><a id="aac550df86432a1d9db5cebb4419071c5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#aac550df86432a1d9db5cebb4419071c5">~DynamicObjectPool</a> ()</td></tr>
+<tr class="memdesc:aac550df86432a1d9db5cebb4419071c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A destructor for this class that deletes all objects in the pool. <br /></td></tr>
+<tr class="separator:aac550df86432a1d9db5cebb4419071c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec5f94744dde14751e9f9e3d7cc4f5ad"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#aec5f94744dde14751e9f9e3d7cc4f5ad">acquireObject</a> ()</td></tr>
+<tr class="memdesc:aec5f94744dde14751e9f9e3d7cc4f5ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquires a unique pointer to an object from the pool.  <a href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#aec5f94744dde14751e9f9e3d7cc4f5ad">More...</a><br /></td></tr>
+<tr class="separator:aec5f94744dde14751e9f9e3d7cc4f5ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac73a2347803422a42800f4ad69df9599"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#ac73a2347803422a42800f4ad69df9599">acquireObjectRaw</a> ()</td></tr>
+<tr class="memdesc:ac73a2347803422a42800f4ad69df9599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquires a raw pointer to an object from the pool.  <a href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#ac73a2347803422a42800f4ad69df9599">More...</a><br /></td></tr>
+<tr class="separator:ac73a2347803422a42800f4ad69df9599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1226c587591f5125a257c4b72cf1fff1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#a1226c587591f5125a257c4b72cf1fff1">releaseObject</a> (std::unique_ptr&lt; T &gt; obj)</td></tr>
+<tr class="memdesc:a1226c587591f5125a257c4b72cf1fff1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases a unique pointer to an object back to the pool.  <a href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#a1226c587591f5125a257c4b72cf1fff1">More...</a><br /></td></tr>
+<tr class="separator:a1226c587591f5125a257c4b72cf1fff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a992bb463cedab3267a2572dbb5371c73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#a992bb463cedab3267a2572dbb5371c73">releaseObjectRaw</a> (T *obj)</td></tr>
+<tr class="memdesc:a992bb463cedab3267a2572dbb5371c73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases a raw pointer to an object back to the pool.  <a href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#a992bb463cedab3267a2572dbb5371c73">More...</a><br /></td></tr>
+<tr class="separator:a992bb463cedab3267a2572dbb5371c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eeb9296ecf4b9c144332ecb56d49ff0"><td class="memItemLeft" align="right" valign="top"><a id="a9eeb9296ecf4b9c144332ecb56d49ff0"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#a9eeb9296ecf4b9c144332ecb56d49ff0">size</a> () const</td></tr>
+<tr class="memdesc:a9eeb9296ecf4b9c144332ecb56d49ff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current number of objects in the pool. <br /></td></tr>
+<tr class="separator:a9eeb9296ecf4b9c144332ecb56d49ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb80fa06643bbe341cefa2c636bad601"><td class="memItemLeft" align="right" valign="top"><a id="adb80fa06643bbe341cefa2c636bad601"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#adb80fa06643bbe341cefa2c636bad601">maxSize</a> () const</td></tr>
+<tr class="memdesc:adb80fa06643bbe341cefa2c636bad601"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the maximum number of objects in the pool. <br /></td></tr>
+<tr class="separator:adb80fa06643bbe341cefa2c636bad601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abab9013a32be4caadae909b9573991e5"><td class="memItemLeft" align="right" valign="top"><a id="abab9013a32be4caadae909b9573991e5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#abab9013a32be4caadae909b9573991e5">setMaxSize</a> (std::size_t <a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#adb80fa06643bbe341cefa2c636bad601">maxSize</a>)</td></tr>
+<tr class="memdesc:abab9013a32be4caadae909b9573991e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the maximum number of objects in the pool. <br /></td></tr>
+<tr class="separator:abab9013a32be4caadae909b9573991e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad199ed85caaa825bcaa86360161e1843"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#ad199ed85caaa825bcaa86360161e1843">preallocate</a> (std::size_t count)</td></tr>
+<tr class="memdesc:ad199ed85caaa825bcaa86360161e1843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-allocates up to a minimum number of objects in the pool.  <a href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#ad199ed85caaa825bcaa86360161e1843">More...</a><br /></td></tr>
+<tr class="separator:ad199ed85caaa825bcaa86360161e1843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f64f271ddd6dba78a9e1c63dbce81fc"><td class="memItemLeft" align="right" valign="top"><a id="a6f64f271ddd6dba78a9e1c63dbce81fc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html#a6f64f271ddd6dba78a9e1c63dbce81fc">clear</a> ()</td></tr>
+<tr class="memdesc:a6f64f271ddd6dba78a9e1c63dbce81fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocates and releases all objects currently held by the pool. <br /></td></tr>
+<tr class="separator:a6f64f271ddd6dba78a9e1c63dbce81fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class T, typename std::enable_if&lt; std::is_default_constructible&lt; T &gt;::value, bool &gt;::type = true&gt;<br />
-class pcpp::internal::DynamicObjectPool&lt; T, type &gt;</h3>
+<div class="textblock"><h3>template&lt;class T, std::enable_if_t&lt; std::is_default_constructible&lt; T &gt;::value, bool &gt; = true&gt;<br />
+class pcpp::internal::DynamicObjectPool&lt; T, &gt;</h3>
 
 <p>A generic object pool implementation. </p>
 <p>This class provides a generic object pool that can be used to efficiently manage and reuse objects of any type. Objects can be acquired from the pool using the <code>acquireObject</code> method, and released back to the pool using the <code>releaseObject</code> method. If the pool is empty when acquiring an object, a new object will be created. If the pool is full when releasing an object, the object will be deleted.</p>
@@ -150,19 +150,19 @@ class pcpp::internal::DynamicObjectPool&lt; T, type &gt;</h3>
   </dd>
 </dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a9fb74c7d9a5c8dfaee2439bec71b7474"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fb74c7d9a5c8dfaee2439bec71b7474">&#9670;&nbsp;</a></span>DynamicObjectPool()</h2>
+<a id="a45ec8c38624addfdf9b4b0f51ab3b59f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45ec8c38624addfdf9b4b0f51ab3b59f">&#9670;&nbsp;</a></span>DynamicObjectPool()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T , typename std::enable_if&lt; std::is_default_constructible&lt; T &gt;::value, bool &gt;::type  = true&gt; </div>
+template&lt;class T , std::enable_if_t&lt; std::is_default_constructible&lt; T &gt;::value, bool &gt;  = true&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html">pcpp::internal::DynamicObjectPool</a>&lt; T, type &gt;::<a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html">DynamicObjectPool</a> </td>
+          <td class="memname"><a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html">pcpp::internal::DynamicObjectPool</a>&lt; T, &gt;::<a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html">DynamicObjectPool</a> </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>maxPoolSize</em> = <code>DEFAULT_POOL_SIZE</code>, </td>
@@ -196,19 +196,19 @@ template&lt;class T , typename std::enable_if&lt; std::is_default_constructible&
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a706ce00950dd6213891720e27cca99bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a706ce00950dd6213891720e27cca99bb">&#9670;&nbsp;</a></span>acquireObject()</h2>
+<a id="aec5f94744dde14751e9f9e3d7cc4f5ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec5f94744dde14751e9f9e3d7cc4f5ad">&#9670;&nbsp;</a></span>acquireObject()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T , typename std::enable_if&lt; std::is_default_constructible&lt; T &gt;::value, bool &gt;::type  = true&gt; </div>
+template&lt;class T , std::enable_if_t&lt; std::is_default_constructible&lt; T &gt;::value, bool &gt;  = true&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;T&gt; <a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html">pcpp::internal::DynamicObjectPool</a>&lt; T, type &gt;::acquireObject </td>
+          <td class="memname">std::unique_ptr&lt;T&gt; <a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html">pcpp::internal::DynamicObjectPool</a>&lt; T, &gt;::acquireObject </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -227,19 +227,19 @@ template&lt;class T , typename std::enable_if&lt; std::is_default_constructible&
 
 </div>
 </div>
-<a id="aaad32a3084d7984793b365df5a7d8711"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaad32a3084d7984793b365df5a7d8711">&#9670;&nbsp;</a></span>acquireObjectRaw()</h2>
+<a id="ac73a2347803422a42800f4ad69df9599"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac73a2347803422a42800f4ad69df9599">&#9670;&nbsp;</a></span>acquireObjectRaw()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T , typename std::enable_if&lt; std::is_default_constructible&lt; T &gt;::value, bool &gt;::type  = true&gt; </div>
+template&lt;class T , std::enable_if_t&lt; std::is_default_constructible&lt; T &gt;::value, bool &gt;  = true&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T* <a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html">pcpp::internal::DynamicObjectPool</a>&lt; T, type &gt;::acquireObjectRaw </td>
+          <td class="memname">T* <a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html">pcpp::internal::DynamicObjectPool</a>&lt; T, &gt;::acquireObjectRaw </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -258,19 +258,19 @@ template&lt;class T , typename std::enable_if&lt; std::is_default_constructible&
 
 </div>
 </div>
-<a id="a25155bff69651654a1a637dc4bb1d1bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25155bff69651654a1a637dc4bb1d1bd">&#9670;&nbsp;</a></span>preallocate()</h2>
+<a id="ad199ed85caaa825bcaa86360161e1843"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad199ed85caaa825bcaa86360161e1843">&#9670;&nbsp;</a></span>preallocate()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T , typename std::enable_if&lt; std::is_default_constructible&lt; T &gt;::value, bool &gt;::type  = true&gt; </div>
+template&lt;class T , std::enable_if_t&lt; std::is_default_constructible&lt; T &gt;::value, bool &gt;  = true&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html">pcpp::internal::DynamicObjectPool</a>&lt; T, type &gt;::preallocate </td>
+          <td class="memname">void <a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html">pcpp::internal::DynamicObjectPool</a>&lt; T, &gt;::preallocate </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>count</em></td><td>)</td>
@@ -294,19 +294,19 @@ template&lt;class T , typename std::enable_if&lt; std::is_default_constructible&
 
 </div>
 </div>
-<a id="afc24448bf153b834c9608466122cd57b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc24448bf153b834c9608466122cd57b">&#9670;&nbsp;</a></span>releaseObject()</h2>
+<a id="a1226c587591f5125a257c4b72cf1fff1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1226c587591f5125a257c4b72cf1fff1">&#9670;&nbsp;</a></span>releaseObject()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T , typename std::enable_if&lt; std::is_default_constructible&lt; T &gt;::value, bool &gt;::type  = true&gt; </div>
+template&lt;class T , std::enable_if_t&lt; std::is_default_constructible&lt; T &gt;::value, bool &gt;  = true&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html">pcpp::internal::DynamicObjectPool</a>&lt; T, type &gt;::releaseObject </td>
+          <td class="memname">void <a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html">pcpp::internal::DynamicObjectPool</a>&lt; T, &gt;::releaseObject </td>
           <td>(</td>
           <td class="paramtype">std::unique_ptr&lt; T &gt;&#160;</td>
           <td class="paramname"><em>obj</em></td><td>)</td>
@@ -331,19 +331,19 @@ template&lt;class T , typename std::enable_if&lt; std::is_default_constructible&
 
 </div>
 </div>
-<a id="a532918c1704c817da94041302e1cf96c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a532918c1704c817da94041302e1cf96c">&#9670;&nbsp;</a></span>releaseObjectRaw()</h2>
+<a id="a992bb463cedab3267a2572dbb5371c73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a992bb463cedab3267a2572dbb5371c73">&#9670;&nbsp;</a></span>releaseObjectRaw()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T , typename std::enable_if&lt; std::is_default_constructible&lt; T &gt;::value, bool &gt;::type  = true&gt; </div>
+template&lt;class T , std::enable_if_t&lt; std::is_default_constructible&lt; T &gt;::value, bool &gt;  = true&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html">pcpp::internal::DynamicObjectPool</a>&lt; T, type &gt;::releaseObjectRaw </td>
+          <td class="memname">void <a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html">pcpp::internal::DynamicObjectPool</a>&lt; T, &gt;::releaseObjectRaw </td>
           <td>(</td>
           <td class="paramtype">T *&#160;</td>
           <td class="paramname"><em>obj</em></td><td>)</td>
@@ -374,7 +374,7 @@ template&lt;class T , typename std::enable_if&lt; std::is_default_constructible&
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><b>internal</b></li><li class="navelem"><a class="el" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html">DynamicObjectPool</a></li>
-    <li class="footer">Generated on Tue Jul 22 2025 08:34:55 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jul 28 2025 07:54:05 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

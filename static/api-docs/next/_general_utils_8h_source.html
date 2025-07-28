@@ -112,27 +112,26 @@ $(document).ready(function(){initNavTree('_general_utils_8h_source.html',''); in
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">return</span> (number + mask) &amp; ~mask;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    template &lt;typename EnumClass, typename std::enable_if&lt;std::is_enum&lt;EnumClass&gt;::value, <span class="keywordtype">bool</span>&gt;::type = <span class="keyword">false</span>&gt;</div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="structpcpp_1_1_enum_class_hash.html">   61</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structpcpp_1_1_enum_class_hash.html">EnumClassHash</a></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">size_t</span> operator()(EnumClass value)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>typename std::underlying_type&lt;EnumClass&gt;::type<span class="keyword">&gt;</span>(value);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    };</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="structpcpp_1_1_enum_class_hash.html">   60</a></span>&#160;    template &lt;typename EnumClass, std::enable_if_t&lt;std::is_enum&lt;EnumClass&gt;::value, <span class="keywordtype">bool</span>&gt; = <span class="keyword">false</span>&gt; <span class="keyword">struct </span><a class="code" href="structpcpp_1_1_enum_class_hash.html">EnumClassHash</a></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">size_t</span> operator()(EnumClass value)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::underlying_type_t&lt;EnumClass&gt;<span class="keyword">&gt;</span>(value);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    };</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
 <div class="ttc" id="anamespacepcpp_html"><div class="ttname"><a href="namespacepcpp.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib.</div></div>
 <div class="ttc" id="anamespacepcpp_html_a117af2ac2f57cf90b06a2557c1c06825"><div class="ttname"><a href="namespacepcpp.html#a117af2ac2f57cf90b06a2557c1c06825">pcpp::cross_platform_memmem</a></div><div class="ttdeci">char * cross_platform_memmem(const char *haystack, size_t haystackLen, const char *needle, size_t needleLen)</div></div>
 <div class="ttc" id="anamespacepcpp_html_a13d338c123afbd98ee99a9b2ac78f59a"><div class="ttname"><a href="namespacepcpp.html#a13d338c123afbd98ee99a9b2ac78f59a">pcpp::byteArrayToHexString</a></div><div class="ttdeci">std::string byteArrayToHexString(const uint8_t *byteArr, size_t byteArrSize, int stringSizeLimit=-1)</div></div>
 <div class="ttc" id="anamespacepcpp_html_a6213cd87b4851342b47ee3b769e9299d"><div class="ttname"><a href="namespacepcpp.html#a6213cd87b4851342b47ee3b769e9299d">pcpp::hexStringToByteArray</a></div><div class="ttdeci">size_t hexStringToByteArray(const std::string &amp;hexString, uint8_t *resultByteArr, size_t resultByteArrSize)</div></div>
-<div class="ttc" id="astructpcpp_1_1_enum_class_hash_html"><div class="ttname"><a href="structpcpp_1_1_enum_class_hash.html">pcpp::EnumClassHash</a></div><div class="ttdef"><b>Definition:</b> GeneralUtils.h:62</div></div>
+<div class="ttc" id="astructpcpp_1_1_enum_class_hash_html"><div class="ttname"><a href="structpcpp_1_1_enum_class_hash.html">pcpp::EnumClassHash</a></div><div class="ttdef"><b>Definition:</b> GeneralUtils.h:61</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b003f564e33ffc88e35d7a9df43b3691.html">Common++</a></li><li class="navelem"><a class="el" href="dir_9a3e9207f3f2c743963c543f58e0ab18.html">header</a></li><li class="navelem"><a class="el" href="_general_utils_8h.html">GeneralUtils.h</a></li>
-    <li class="footer">Generated on Tue Jul 22 2025 08:34:53 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jul 28 2025 07:54:03 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -3,12 +3,12 @@ var _logger_8h =
     [ "LogSource", "structpcpp_1_1_log_source.html", "structpcpp_1_1_log_source" ],
     [ "LogContext", "classpcpp_1_1internal_1_1_log_context.html", "classpcpp_1_1internal_1_1_log_context" ],
     [ "Logger", "classpcpp_1_1_logger.html", "classpcpp_1_1_logger" ],
-    [ "LogLevel", "_logger_8h.html#a57b5ff7ede7d42869bd6301d186e562f", [
-      [ "Off", "_logger_8h.html#a57b5ff7ede7d42869bd6301d186e562fad15305d7a4e34e02489c74a5ef542f36", null ],
-      [ "Error", "_logger_8h.html#a57b5ff7ede7d42869bd6301d186e562fa902b0d55fddef6f8d651fe1035b7d4bd", null ],
-      [ "Warn", "_logger_8h.html#a57b5ff7ede7d42869bd6301d186e562fa56525ae64d370c0b448ac0d60710ef17", null ],
-      [ "Info", "_logger_8h.html#a57b5ff7ede7d42869bd6301d186e562fa4059b0251f66a18cb56f544728796875", null ],
-      [ "Debug", "_logger_8h.html#a57b5ff7ede7d42869bd6301d186e562faa603905470e2a5b8c13e96b579ef0dba", null ]
+    [ "LogLevel", "_logger_8h.html#aee0f425194721553645781a20bcc6164", [
+      [ "Off", "_logger_8h.html#aee0f425194721553645781a20bcc6164ad15305d7a4e34e02489c74a5ef542f36", null ],
+      [ "Error", "_logger_8h.html#aee0f425194721553645781a20bcc6164a902b0d55fddef6f8d651fe1035b7d4bd", null ],
+      [ "Warn", "_logger_8h.html#aee0f425194721553645781a20bcc6164a56525ae64d370c0b448ac0d60710ef17", null ],
+      [ "Info", "_logger_8h.html#aee0f425194721553645781a20bcc6164a4059b0251f66a18cb56f544728796875", null ],
+      [ "Debug", "_logger_8h.html#aee0f425194721553645781a20bcc6164aa603905470e2a5b8c13e96b579ef0dba", null ]
     ] ],
     [ "LogModule", "_logger_8h.html#ad870d7a6722b97c35dc161a7e67a03ae", [
       [ "CommonLogModuleIpUtils", "_logger_8h.html#ad870d7a6722b97c35dc161a7e67a03aea488fbdb95747a99c14eed410adaedeba", null ],
