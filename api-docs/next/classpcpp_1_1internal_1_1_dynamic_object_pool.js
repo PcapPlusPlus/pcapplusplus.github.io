@@ -1,14 +1,14 @@
 var classpcpp_1_1internal_1_1_dynamic_object_pool =
 [
-    [ "DynamicObjectPool", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#a9fb74c7d9a5c8dfaee2439bec71b7474", null ],
-    [ "~DynamicObjectPool", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#adbd95b08279e2f9c54e016180beacd22", null ],
-    [ "acquireObject", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#a706ce00950dd6213891720e27cca99bb", null ],
-    [ "acquireObjectRaw", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#aaad32a3084d7984793b365df5a7d8711", null ],
-    [ "clear", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#a852c9082fddec34ec17b8aefc76e4314", null ],
-    [ "maxSize", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#a05731bc1b100d81cbaa0358a1bc98600", null ],
-    [ "preallocate", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#a25155bff69651654a1a637dc4bb1d1bd", null ],
-    [ "releaseObject", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#afc24448bf153b834c9608466122cd57b", null ],
-    [ "releaseObjectRaw", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#a532918c1704c817da94041302e1cf96c", null ],
-    [ "setMaxSize", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#ab078f2cf3b5a9326e5616c7493cce458", null ],
-    [ "size", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#a263f83fc7df1bb4a8e9d2b4596879b80", null ]
+    [ "DynamicObjectPool", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#a45ec8c38624addfdf9b4b0f51ab3b59f", null ],
+    [ "~DynamicObjectPool", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#aac550df86432a1d9db5cebb4419071c5", null ],
+    [ "acquireObject", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#aec5f94744dde14751e9f9e3d7cc4f5ad", null ],
+    [ "acquireObjectRaw", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#ac73a2347803422a42800f4ad69df9599", null ],
+    [ "clear", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#a6f64f271ddd6dba78a9e1c63dbce81fc", null ],
+    [ "maxSize", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#adb80fa06643bbe341cefa2c636bad601", null ],
+    [ "preallocate", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#ad199ed85caaa825bcaa86360161e1843", null ],
+    [ "releaseObject", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#a1226c587591f5125a257c4b72cf1fff1", null ],
+    [ "releaseObjectRaw", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#a992bb463cedab3267a2572dbb5371c73", null ],
+    [ "setMaxSize", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#abab9013a32be4caadae909b9573991e5", null ],
+    [ "size", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#a9eeb9296ecf4b9c144332ecb56d49ff0", null ]
 ];

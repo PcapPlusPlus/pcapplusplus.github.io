@@ -179,7 +179,7 @@ $(document).ready(function(){initNavTree('_system_utils_8h_source.html',''); ini
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
 <div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="namespacepcpp.html#ae517edc41624400eebc521c6c5bc8a82">  163</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="namespacepcpp.html#ae517edc41624400eebc521c6c5bc8a82">clockGetTime</a>(<span class="keywordtype">long</span>&amp; sec, <span class="keywordtype">long</span>&amp; nsec);</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="namespacepcpp.html#a82910fda088251d5328fff6c3e41995d">  169</a></span>&#160;    time_t <a class="code" href="namespacepcpp.html#a82910fda088251d5328fff6c3e41995d">mkUtcTime</a>(std::tm&amp; tm);</div>
+<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="namespacepcpp.html#a9e9e7aa3d90a88182649d079e78f4959">  169</a></span>&#160;    time_t <a class="code" href="namespacepcpp.html#a9e9e7aa3d90a88182649d079e78f4959">mkUtcTime</a>(std::tm&amp; time);</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    PCPP_DEPRECATED(<span class="stringliteral">&quot;Please use std::this_thread::sleep_for(std::chrono::seconds(seconds)) instead&quot;</span>)</div>
 <div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="namespacepcpp.html#aeea6070ccbb359bc4f819a4fbd40130d">  177</a></span>&#160;    void <a class="code" href="namespacepcpp.html#aeea6070ccbb359bc4f819a4fbd40130d">multiPlatformSleep</a>(uint32_t seconds);</div>
@@ -284,8 +284,8 @@ $(document).ready(function(){initNavTree('_system_utils_8h_source.html',''); ini
 <div class="ttc" id="anamespacepcpp_html_a4d9b4fa3436a28221db583802b9524f5"><div class="ttname"><a href="namespacepcpp.html#a4d9b4fa3436a28221db583802b9524f5">pcpp::getCoreMaskForAllMachineCores</a></div><div class="ttdeci">CoreMask getCoreMaskForAllMachineCores()</div></div>
 <div class="ttc" id="anamespacepcpp_html_a74065e37f1f7390a6ab299ebc7c4c229"><div class="ttname"><a href="namespacepcpp.html#a74065e37f1f7390a6ab299ebc7c4c229">pcpp::createCoreVectorFromCoreMask</a></div><div class="ttdeci">void createCoreVectorFromCoreMask(CoreMask coreMask, std::vector&lt; SystemCore &gt; &amp;resultVec)</div></div>
 <div class="ttc" id="anamespacepcpp_html_a7a59a2b4aeef3b2efca9a56bd1525d2e"><div class="ttname"><a href="namespacepcpp.html#a7a59a2b4aeef3b2efca9a56bd1525d2e">pcpp::netToHost32</a></div><div class="ttdeci">uint32_t netToHost32(uint32_t net)</div></div>
-<div class="ttc" id="anamespacepcpp_html_a82910fda088251d5328fff6c3e41995d"><div class="ttname"><a href="namespacepcpp.html#a82910fda088251d5328fff6c3e41995d">pcpp::mkUtcTime</a></div><div class="ttdeci">time_t mkUtcTime(std::tm &amp;tm)</div></div>
 <div class="ttc" id="anamespacepcpp_html_a9da3b8abc599b1744dc36c64b802bbd2"><div class="ttname"><a href="namespacepcpp.html#a9da3b8abc599b1744dc36c64b802bbd2">pcpp::getNumOfCores</a></div><div class="ttdeci">int getNumOfCores()</div></div>
+<div class="ttc" id="anamespacepcpp_html_a9e9e7aa3d90a88182649d079e78f4959"><div class="ttname"><a href="namespacepcpp.html#a9e9e7aa3d90a88182649d079e78f4959">pcpp::mkUtcTime</a></div><div class="ttdeci">time_t mkUtcTime(std::tm &amp;time)</div></div>
 <div class="ttc" id="anamespacepcpp_html_aafb06a06afd919ad4d81a7cc209b6416"><div class="ttname"><a href="namespacepcpp.html#aafb06a06afd919ad4d81a7cc209b6416">pcpp::hostToNet16</a></div><div class="ttdeci">uint16_t hostToNet16(uint16_t host)</div></div>
 <div class="ttc" id="anamespacepcpp_html_abf3bfbe836ec11af9350526ef8023380"><div class="ttname"><a href="namespacepcpp.html#abf3bfbe836ec11af9350526ef8023380">pcpp::hostToNet32</a></div><div class="ttdeci">uint32_t hostToNet32(uint32_t host)</div></div>
 <div class="ttc" id="anamespacepcpp_html_ae131f1b0ed7a00808f93086b67a668e2"><div class="ttname"><a href="namespacepcpp.html#ae131f1b0ed7a00808f93086b67a668e2">pcpp::netToHost16</a></div><div class="ttdeci">uint16_t netToHost16(uint16_t net)</div></div>
@@ -336,7 +336,7 @@ $(document).ready(function(){initNavTree('_system_utils_8h_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b003f564e33ffc88e35d7a9df43b3691.html">Common++</a></li><li class="navelem"><a class="el" href="dir_9a3e9207f3f2c743963c543f58e0ab18.html">header</a></li><li class="navelem"><a class="el" href="_system_utils_8h.html">SystemUtils.h</a></li>
-    <li class="footer">Generated on Tue Jul 22 2025 08:34:54 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jul 28 2025 07:54:03 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

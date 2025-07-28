@@ -87,6 +87,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_asn1_record.html',''); i
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classpcpp_1_1_asn1_record-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::Asn1Record Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -121,8 +122,8 @@ Inheritance diagram for pcpp::Asn1Record:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8b1ded317913dd8b5b91b35b2a91ee4f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_asn1_record.html#a8b1ded317913dd8b5b91b35b2a91ee4f">encode</a> ()</td></tr>
-<tr class="separator:a8b1ded317913dd8b5b91b35b2a91ee4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad33f30a7559ce3f35417ff16eab3a222"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_asn1_record.html#ad33f30a7559ce3f35417ff16eab3a222">encode</a> () const</td></tr>
+<tr class="separator:ad33f30a7559ce3f35417ff16eab3a222"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98dfe78b24dc5d3ae16e1534de793a94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcpp.html#a10b210c011c2fca1a38566cab0b2d934">Asn1TagClass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_asn1_record.html#a98dfe78b24dc5d3ae16e1534de793a94">getTagClass</a> () const</td></tr>
 <tr class="separator:a98dfe78b24dc5d3ae16e1534de793a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a911a63457452bf36e645ce2d0ce3b67a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_asn1_record.html#a911a63457452bf36e645ce2d0ce3b67a">isConstructed</a> () const</td></tr>
@@ -135,8 +136,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad52df587eaad0f04da86d95fca3b6586"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabaab3ebda841a97dbacc2406ea2dffd"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_asn1_record.html#aabaab3ebda841a97dbacc2406ea2dffd">getTotalLength</a> () const</td></tr>
 <tr class="separator:aabaab3ebda841a97dbacc2406ea2dffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9daa6568be038c6387f4782c3c238f50"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_asn1_record.html#a9daa6568be038c6387f4782c3c238f50">toString</a> ()</td></tr>
-<tr class="separator:a9daa6568be038c6387f4782c3c238f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e9a40bbe23c6b00457246e44e143f0a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_asn1_record.html#a1e9a40bbe23c6b00457246e44e143f0a">toString</a> () const</td></tr>
+<tr class="separator:a1e9a40bbe23c6b00457246e44e143f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbec69843fe988714ffc3a7fae6ab467"><td class="memTemplParams" colspan="2">template&lt;class Asn1RecordType &gt; </td></tr>
 <tr class="memitem:abbec69843fe988714ffc3a7fae6ab467"><td class="memTemplItemLeft" align="right" valign="top">Asn1RecordType *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_asn1_record.html#abbec69843fe988714ffc3a7fae6ab467">castAs</a> ()</td></tr>
 <tr class="separator:abbec69843fe988714ffc3a7fae6ab467"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,6 +146,21 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aeabfd091f67d8ab2d8e154eeefd6d8f5"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classpcpp_1_1_asn1_record.html">Asn1Record</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_asn1_record.html#aeabfd091f67d8ab2d8e154eeefd6d8f5">decode</a> (const uint8_t *data, size_t dataLen, bool lazy=true)</td></tr>
 <tr class="separator:aeabfd091f67d8ab2d8e154eeefd6d8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a86a494fe6e0b19a101cc12387ffd18e5"><td class="memItemLeft" align="right" valign="top"><a id="a86a494fe6e0b19a101cc12387ffd18e5"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_asn1_record.html#a86a494fe6e0b19a101cc12387ffd18e5">decodeValue</a> (uint8_t const *data) const =0</td></tr>
+<tr class="memdesc:a86a494fe6e0b19a101cc12387ffd18e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes the record value from a byte array into the mutable cache variables. This method is marked as const as it can be called on a const instance of the record for lazy decoding. <br /></td></tr>
+<tr class="separator:a86a494fe6e0b19a101cc12387ffd18e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af605159bb39315a6d50262a90909f43a"><td class="memItemLeft" align="right" valign="top"><a id="af605159bb39315a6d50262a90909f43a"></a>
+virtual std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_asn1_record.html#af605159bb39315a6d50262a90909f43a">encodeValue</a> () const =0</td></tr>
+<tr class="memdesc:af605159bb39315a6d50262a90909f43a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes the record value into a byte array Prefer using <a class="el" href="classpcpp_1_1_asn1_record.html#add29397f9335ae923305b818cfa86b79" title="Encodes the record value into a byte array, ensuring that the value is decoded first if needed.">encodeValueSafe()</a> to ensure the value is decoded first if needed. <br /></td></tr>
+<tr class="separator:af605159bb39315a6d50262a90909f43a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add29397f9335ae923305b818cfa86b79"><td class="memItemLeft" align="right" valign="top"><a id="add29397f9335ae923305b818cfa86b79"></a>
+std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_asn1_record.html#add29397f9335ae923305b818cfa86b79">encodeValueSafe</a> () const</td></tr>
+<tr class="memdesc:add29397f9335ae923305b818cfa86b79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes the record value into a byte array, ensuring that the value is decoded first if needed. <br /></td></tr>
+<tr class="separator:add29397f9335ae923305b818cfa86b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents an ASN.1 record, as described in ITU-T Recommendation X.680: <a href="https://www.itu.int/rec/T-REC-X.680/en">https://www.itu.int/rec/T-REC-X.680/en</a> <a href="https://en.wikipedia.org/wiki/ASN.1">https://en.wikipedia.org/wiki/ASN.1</a> </p>
@@ -234,8 +250,8 @@ template&lt;class Asn1RecordType &gt; </div>
 
 </div>
 </div>
-<a id="a8b1ded317913dd8b5b91b35b2a91ee4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b1ded317913dd8b5b91b35b2a91ee4f">&#9670;&nbsp;</a></span>encode()</h2>
+<a id="ad33f30a7559ce3f35417ff16eab3a222"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad33f30a7559ce3f35417ff16eab3a222">&#9670;&nbsp;</a></span>encode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,7 +260,7 @@ template&lt;class Asn1RecordType &gt; </div>
           <td class="memname">std::vector&lt;uint8_t&gt; pcpp::Asn1Record::encode </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -400,8 +416,8 @@ template&lt;class Asn1RecordType &gt; </div>
 
 </div>
 </div>
-<a id="a9daa6568be038c6387f4782c3c238f50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9daa6568be038c6387f4782c3c238f50">&#9670;&nbsp;</a></span>toString()</h2>
+<a id="a1e9a40bbe23c6b00457246e44e143f0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e9a40bbe23c6b00457246e44e143f0a">&#9670;&nbsp;</a></span>toString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -410,7 +426,7 @@ template&lt;class Asn1RecordType &gt; </div>
           <td class="memname">std::string pcpp::Asn1Record::toString </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -424,7 +440,7 @@ template&lt;class Asn1RecordType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_asn1_record.html">Asn1Record</a></li>
-    <li class="footer">Generated on Tue Jul 22 2025 08:34:54 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jul 28 2025 07:54:04 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
