@@ -26,7 +26,10 @@ PcapPlusPlus tries to cover the main functionality of DPDK and its most importan
 - Multi RX/TX queue support
 - Detailed statistics about packets being captured and processed
 - Seamless integration to other PcapPlusPlus capabilities including: parsing of packets received with DPDK using the various protocol parsers offered in PcapPlusPlus, saving packets to a pcap file, sending crafted/edited packets through a DPDK-controlled interface, packet reassembly, and more.
-- An easy-to-use C++ wrapper for [DPDK KNI (Kernel NIC Interface)](https://doc.dpdk.org/guides/prog_guide/kernel_nic_interface.html)
+- An easy-to-use C++ wrapper for [DPDK KNI (Kernel NIC Interface)](https://doc.dpdk.org/guides-22.11/prog_guide/kernel_nic_interface.html)
+  :::warning Deprecation notice
+  KNI was deprecated in [DPDK 23.11](https://doc.dpdk.org/guides/rel_notes/release_23_11.html) and PcapPlusPlus support for it might be removed in future versions
+  :::
 
 ## Set up PcapPlusPlus with DPDK
 
@@ -45,7 +48,7 @@ In addition, not all poll-mode drivers (PMDs) were tested, but the majority of t
 
 The following operating systems and configurations were tested:
 
-- Ubuntu 22.04, 20.04 LTS 64bit with gcc version >= 4.8
+- Ubuntu 24.04 LTS 64bit with gcc version >= 4.8
 
 ### Download and install DPDK - prior to DPDK 20.11
 
