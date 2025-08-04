@@ -127,6 +127,9 @@ $(document).ready(function(){initNavTree('functions_p.html',''); initResizable()
 <li>parseBgpLayer()
 : <a class="el" href="classpcpp_1_1_bgp_layer.html#adefb7613453603b63b4f3574a0b252e6">pcpp::BgpLayer</a>
 </li>
+<li>parseDoIpLayer()
+: <a class="el" href="classpcpp_1_1_do_ip_layer.html#a218b93e090d9ee816192b24e67403fc9">pcpp::DoIpLayer</a>
+</li>
 <li>parseIcmpV6Layer()
 : <a class="el" href="classpcpp_1_1_icmp_v6_layer.html#a4aa272809dffe70c4d0a8f03bfe940a3">pcpp::IcmpV6Layer</a>
 </li>
@@ -146,6 +149,7 @@ $(document).ready(function(){initNavTree('functions_p.html',''); initResizable()
 , <a class="el" href="classpcpp_1_1_dhcp_layer.html#a158168214c937681b4b31bce26963580">pcpp::DhcpLayer</a>
 , <a class="el" href="classpcpp_1_1_dhcp_v6_layer.html#a69b53037beea9372646abb45873cf981">pcpp::DhcpV6Layer</a>
 , <a class="el" href="classpcpp_1_1_dns_layer.html#ab627b59fa753737f4fd8f61a961f1c3b">pcpp::DnsLayer</a>
+, <a class="el" href="classpcpp_1_1_do_ip_layer.html#ab77fd637d659ec07ee09cea0c7e5df12">pcpp::DoIpLayer</a>
 , <a class="el" href="classpcpp_1_1_e_s_p_layer.html#ac2a18393f729d4826b04085df503e930">pcpp::ESPLayer</a>
 , <a class="el" href="classpcpp_1_1_eth_dot3_layer.html#ab072435dfff0499ac0e6081eb42d744e">pcpp::EthDot3Layer</a>
 , <a class="el" href="classpcpp_1_1_eth_layer.html#a71450fd9d4fa58bafc7e21fdaa756e91">pcpp::EthLayer</a>
@@ -247,9 +251,13 @@ $(document).ready(function(){initNavTree('functions_p.html',''); initResizable()
 : <a class="el" href="structpcpp_1_1ipsec__authentication__header.html#ab02b43bf72a758ac0f623c99aeb59a62">pcpp::ipsec_authentication_header</a>
 </li>
 <li>payloadLength
-: <a class="el" href="structpcpp_1_1gre1__header.html#a727e2a2affa2696a0177475af78a196b">pcpp::gre1_header</a>
+: <a class="el" href="structpcpp_1_1doiphdr.html#a29de2069f439308d8134d990e5e34bed">pcpp::doiphdr</a>
+, <a class="el" href="structpcpp_1_1gre1__header.html#a727e2a2affa2696a0177475af78a196b">pcpp::gre1_header</a>
 , <a class="el" href="structpcpp_1_1ip6__hdr.html#ae5849394b92e6a7d3cd0b2972e30391e">pcpp::ip6_hdr</a>
 , <a class="el" href="structpcpp_1_1pppoe__header.html#a08e5841209e619cc327971361264f02e">pcpp::pppoe_header</a>
+</li>
+<li>payloadType
+: <a class="el" href="structpcpp_1_1doiphdr.html#a1b4a6c76c1dd3f5de6c4c96c2f62d376">pcpp::doiphdr</a>
 </li>
 <li>PcapDirection
 : <a class="el" href="classpcpp_1_1_pcap_live_device.html#a00efdbd7aca92b696dd585cf3301add5">pcpp::PcapLiveDevice</a>
@@ -261,7 +269,7 @@ $(document).ready(function(){initNavTree('functions_p.html',''); initResizable()
 : <a class="el" href="classpcpp_1_1_pcap_file_writer_device.html#a739022f56d412482258711a87e3bbae6">pcpp::PcapFileWriterDevice</a>
 </li>
 <li>PcapHandle()
-: <a class="el" href="classpcpp_1_1internal_1_1_pcap_handle.html#ad2937d7a01c388ea6ff7fbf316fe47fb">pcpp::internal::PcapHandle</a>
+: <a class="el" href="classpcpp_1_1internal_1_1_pcap_handle.html#a9e107198e10e23c5b897675aad5634ee">pcpp::internal::PcapHandle</a>
 </li>
 <li>PcapNgFileReaderDevice()
 : <a class="el" href="classpcpp_1_1_pcap_ng_file_reader_device.html#ad09458bfb5ccc383a8d96178a8fdbce5">pcpp::PcapNgFileReaderDevice</a>
@@ -270,7 +278,7 @@ $(document).ready(function(){initNavTree('functions_p.html',''); initResizable()
 : <a class="el" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a7b6c41a1a4590ea5da6404ae9090138f">pcpp::PcapNgFileWriterDevice</a>
 </li>
 <li>PcapRemoteAuthentication()
-: <a class="el" href="structpcpp_1_1_pcap_remote_authentication.html#a7f1d4e564af1f378e6778d71910d1581">pcpp::PcapRemoteAuthentication</a>
+: <a class="el" href="structpcpp_1_1_pcap_remote_authentication.html#a85dba51c6b7530db22f029a030374c2d">pcpp::PcapRemoteAuthentication</a>
 </li>
 <li>PCPP_DEPRECATED()
 : <a class="el" href="classpcpp_1_1_tcp_layer.html#ab20303e4db20175f6d321c3e3a59efe2">pcpp::TcpLayer</a>
@@ -519,7 +527,8 @@ $(document).ready(function(){initNavTree('functions_p.html',''); initResizable()
 , <a class="el" href="structpcpp_1_1gtpv1__header.html#add48e4b8c81c5971ac4048b75c44e009">pcpp::gtpv1_header</a>
 </li>
 <li>protocolVersion
-: <a class="el" href="structpcpp_1_1_some_ip_layer_1_1someiphdr.html#a1f9350f20eb2be42aac946be97143808">pcpp::SomeIpLayer::someiphdr</a>
+: <a class="el" href="structpcpp_1_1doiphdr.html#a106e318051b37812e22dd8c82c9b3057">pcpp::doiphdr</a>
+, <a class="el" href="structpcpp_1_1_some_ip_layer_1_1someiphdr.html#a1f9350f20eb2be42aac946be97143808">pcpp::SomeIpLayer::someiphdr</a>
 </li>
 <li>ProtoFilter()
 : <a class="el" href="classpcpp_1_1_proto_filter.html#a7da0456df8d7486bfe18d31b7929baae">pcpp::ProtoFilter</a>
@@ -551,7 +560,7 @@ $(document).ready(function(){initNavTree('functions_p.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jul 28 2025 07:54:05 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Aug 4 2025 09:00:00 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

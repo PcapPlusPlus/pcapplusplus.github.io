@@ -61,6 +61,7 @@ var _logger_8h =
       [ "PacketLogModuleWakeOnLanLayer", "_logger_8h.html#ad870d7a6722b97c35dc161a7e67a03aea6f1a5e2936878d6a68b0a504052f60b9", null ],
       [ "PacketLogModuleSmtpLayer", "_logger_8h.html#ad870d7a6722b97c35dc161a7e67a03aeafe040fa13ef0bedd28429e461948c6b5", null ],
       [ "PacketLogModuleWireGuardLayer", "_logger_8h.html#ad870d7a6722b97c35dc161a7e67a03aea9728b6bad71d5a4260280433114ad27a", null ],
+      [ "PacketLogModuleDoIpLayer", "_logger_8h.html#ad870d7a6722b97c35dc161a7e67a03aeab972bc15fa7d6f9a6a212332656370bf", null ],
       [ "PcapLogModuleWinPcapLiveDevice", "_logger_8h.html#ad870d7a6722b97c35dc161a7e67a03aeaac5bb0af4a05ddc08ac0d60e40f4af0b", null ],
       [ "PcapLogModuleRemoteDevice", "_logger_8h.html#ad870d7a6722b97c35dc161a7e67a03aea41327c44f9fd3ea426f5040dd9d0752c", null ],
       [ "PcapLogModuleLiveDevice", "_logger_8h.html#ad870d7a6722b97c35dc161a7e67a03aeae794add926803bcab76bc2fbe66230b7", null ],

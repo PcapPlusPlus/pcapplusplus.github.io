@@ -21,6 +21,7 @@ var _protocol_type_8h =
     [ "DHCP", "_protocol_type_8h.html#a5f677ab02f328eb59216916238bea6c1", null ],
     [ "DHCPv6", "_protocol_type_8h.html#a1fde402917d83d7a139ba19209fc78cc", null ],
     [ "DNS", "_protocol_type_8h.html#ae432ae466e1de6accc18805e99efd0c7", null ],
+    [ "DOIP", "_protocol_type_8h.html#a608a26befd66896542df468d70414404", null ],
     [ "ESP", "_protocol_type_8h.html#a24767a0234b927837786cc51a00c110e", null ],
     [ "Ethernet", "_protocol_type_8h.html#a3dc726346808ce2a90d3c8daeb76d09d", null ],
     [ "EthernetDot3", "_protocol_type_8h.html#afce15d7fa5441fd5eeb00ed4f981146c", null ],
