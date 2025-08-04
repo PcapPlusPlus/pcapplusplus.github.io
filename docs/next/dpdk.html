@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="PcapPlusPlus" href="/opensearch.xml"><link rel="stylesheet" href="/assets/css/styles.d4faa30b.css">
-<script src="/assets/js/runtime~main.deba6137.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.08b4f5e2.js" defer="defer"></script>
 <script src="/assets/js/main.61f378ad.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -30,7 +30,9 @@
 <li>Multi RX/TX queue support</li>
 <li>Detailed statistics about packets being captured and processed</li>
 <li>Seamless integration to other PcapPlusPlus capabilities including: parsing of packets received with DPDK using the various protocol parsers offered in PcapPlusPlus, saving packets to a pcap file, sending crafted/edited packets through a DPDK-controlled interface, packet reassembly, and more.</li>
-<li>An easy-to-use C++ wrapper for <a href="https://doc.dpdk.org/guides/prog_guide/kernel_nic_interface.html" target="_blank" rel="noopener noreferrer">DPDK KNI (Kernel NIC Interface)</a></li>
+<li>An easy-to-use C++ wrapper for <a href="https://doc.dpdk.org/guides-22.11/prog_guide/kernel_nic_interface.html" target="_blank" rel="noopener noreferrer">DPDK KNI (Kernel NIC Interface)</a>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Deprecation notice</div><div class="admonitionContent_BuS1"><p>KNI was deprecated in <a href="https://doc.dpdk.org/guides/rel_notes/release_23_11.html" target="_blank" rel="noopener noreferrer">DPDK 23.11</a> and PcapPlusPlus support for it might be removed in future versions</p></div></div>
+</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="set-up-pcapplusplus-with-dpdk">Set up PcapPlusPlus with DPDK<a href="#set-up-pcapplusplus-with-dpdk" class="hash-link" aria-label="Direct link to Set up PcapPlusPlus with DPDK" title="Direct link to Set up PcapPlusPlus with DPDK">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="supported-dpdk-versions">Supported DPDK versions<a href="#supported-dpdk-versions" class="hash-link" aria-label="Direct link to Supported DPDK versions" title="Direct link to Supported DPDK versions">​</a></h3>
@@ -45,7 +47,7 @@ The non-LTS versions may also work, but are not regularly tested.</p>
 <p>In addition, not all poll-mode drivers (PMDs) were tested, but the majority of them should work. Please report an issue if the PMD you&#x27;re using isn&#x27;t working.</p>
 <p>The following operating systems and configurations were tested:</p>
 <ul>
-<li>Ubuntu 22.04, 20.04 LTS 64bit with gcc version &gt;= 4.8</li>
+<li>Ubuntu 24.04 LTS 64bit with gcc version &gt;= 4.8</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="download-and-install-dpdk---prior-to-dpdk-2011">Download and install DPDK - prior to DPDK 20.11<a href="#download-and-install-dpdk---prior-to-dpdk-2011" class="hash-link" aria-label="Direct link to Download and install DPDK - prior to DPDK 20.11" title="Direct link to Download and install DPDK - prior to DPDK 20.11">​</a></h3>
 <p>Building and installing DPDK is pretty straight-forward and in a nutshell goes like this:</p>
