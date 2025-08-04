@@ -49,6 +49,7 @@ var files_dup =
       [ "MxData", "structpcpp_1_1_mx_dns_resource_data_1_1_mx_data.html", "structpcpp_1_1_mx_dns_resource_data_1_1_mx_data" ],
       [ "GenericDnsResourceData", "classpcpp_1_1_generic_dns_resource_data.html", "classpcpp_1_1_generic_dns_resource_data" ]
     ] ],
+    [ "DoIpLayer.h", "_do_ip_layer_8h.html", "_do_ip_layer_8h" ],
     [ "DpdkDevice.h", "_dpdk_device_8h.html", "_dpdk_device_8h" ],
     [ "DpdkDeviceList.h", "_dpdk_device_list_8h.html", [
       [ "DpdkWorkerThread", "classpcpp_1_1_dpdk_worker_thread.html", "classpcpp_1_1_dpdk_worker_thread" ],
@@ -167,6 +168,9 @@ var files_dup =
       [ "PcapRemoteDeviceList", "classpcpp_1_1_pcap_remote_device_list.html", "classpcpp_1_1_pcap_remote_device_list" ]
     ] ],
     [ "PcapUtils.h", "_pcap_utils_8h_source.html", null ],
+    [ "PemCodec.h", "_pem_codec_8h.html", [
+      [ "PemCodec", "classpcpp_1_1_pem_codec.html", null ]
+    ] ],
     [ "PfRingDevice.h", "_pf_ring_device_8h.html", "_pf_ring_device_8h" ],
     [ "PfRingDeviceList.h", "_pf_ring_device_list_8h.html", [
       [ "PfRingDeviceList", "classpcpp_1_1_pf_ring_device_list.html", "classpcpp_1_1_pf_ring_device_list" ]

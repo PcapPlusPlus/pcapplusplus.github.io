@@ -39,6 +39,7 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "pcpp::Base64", "classpcpp_1_1_base64.html", null ],
     [ "pcpp::BgpLayer::bgp_common_header", "structpcpp_1_1_bgp_layer_1_1bgp__common__header.html", [
       [ "pcpp::BgpNotificationMessageLayer::bgp_notification_message", "structpcpp_1_1_bgp_notification_message_layer_1_1bgp__notification__message.html", null ],
       [ "pcpp::BgpOpenMessageLayer::bgp_open_message", "structpcpp_1_1_bgp_open_message_layer_1_1bgp__open__message.html", null ],
@@ -73,6 +74,9 @@ var hierarchy =
     [ "pcpp::dhcp_header", "structpcpp_1_1dhcp__header.html", null ],
     [ "pcpp::dhcpv6_header", "structpcpp_1_1dhcpv6__header.html", null ],
     [ "pcpp::dnshdr", "structpcpp_1_1dnshdr.html", null ],
+    [ "pcpp::doiphdr", "structpcpp_1_1doiphdr.html", [
+      [ "pcpp::DoIpDiagnosticBase::common_diagnostic_header", "structpcpp_1_1_do_ip_diagnostic_base_1_1common__diagnostic__header.html", null ]
+    ] ],
     [ "pcpp::DpdkDevice::DpdkDeviceConfiguration", "structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration.html", null ],
     [ "pcpp::DpdkDevice::DpdkDeviceStats", "structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html", null ],
     [ "pcpp::DpdkWorkerThread", "classpcpp_1_1_dpdk_worker_thread.html", null ],
@@ -159,6 +163,28 @@ var hierarchy =
         [ "pcpp::DhcpV6Layer", "classpcpp_1_1_dhcp_v6_layer.html", null ],
         [ "pcpp::DnsLayer", "classpcpp_1_1_dns_layer.html", [
           [ "pcpp::DnsOverTcpLayer", "classpcpp_1_1_dns_over_tcp_layer.html", null ]
+        ] ],
+        [ "pcpp::DoIpLayer", "classpcpp_1_1_do_ip_layer.html", [
+          [ "pcpp::DoIpAliveCheckRequest", "classpcpp_1_1_do_ip_alive_check_request.html", null ],
+          [ "pcpp::DoIpAliveCheckResponse", "classpcpp_1_1_do_ip_alive_check_response.html", null ],
+          [ "pcpp::DoIpDiagnosticBase", "classpcpp_1_1_do_ip_diagnostic_base.html", [
+            [ "pcpp::DoIpDiagnosticMessage", "classpcpp_1_1_do_ip_diagnostic_message.html", null ],
+            [ "pcpp::DoIpDiagnosticResponseMessageBase", "classpcpp_1_1_do_ip_diagnostic_response_message_base.html", [
+              [ "pcpp::DoIpDiagnosticMessageAck", "classpcpp_1_1_do_ip_diagnostic_message_ack.html", null ],
+              [ "pcpp::DoIpDiagnosticMessageNack", "classpcpp_1_1_do_ip_diagnostic_message_nack.html", null ]
+            ] ]
+          ] ],
+          [ "pcpp::DoIpDiagnosticPowerModeRequest", "classpcpp_1_1_do_ip_diagnostic_power_mode_request.html", null ],
+          [ "pcpp::DoIpDiagnosticPowerModeResponse", "classpcpp_1_1_do_ip_diagnostic_power_mode_response.html", null ],
+          [ "pcpp::DoIpEntityStatusRequest", "classpcpp_1_1_do_ip_entity_status_request.html", null ],
+          [ "pcpp::DoIpEntityStatusResponse", "classpcpp_1_1_do_ip_entity_status_response.html", null ],
+          [ "pcpp::DoIpGenericHeaderNack", "classpcpp_1_1_do_ip_generic_header_nack.html", null ],
+          [ "pcpp::DoIpRoutingActivationRequest", "classpcpp_1_1_do_ip_routing_activation_request.html", null ],
+          [ "pcpp::DoIpRoutingActivationResponse", "classpcpp_1_1_do_ip_routing_activation_response.html", null ],
+          [ "pcpp::DoIpVehicleAnnouncementMessage", "classpcpp_1_1_do_ip_vehicle_announcement_message.html", null ],
+          [ "pcpp::DoIpVehicleIdentificationRequest", "classpcpp_1_1_do_ip_vehicle_identification_request.html", null ],
+          [ "pcpp::DoIpVehicleIdentificationRequestWithEID", "classpcpp_1_1_do_ip_vehicle_identification_request_with_e_i_d.html", null ],
+          [ "pcpp::DoIpVehicleIdentificationRequestWithVIN", "classpcpp_1_1_do_ip_vehicle_identification_request_with_v_i_n.html", null ]
         ] ],
         [ "pcpp::ESPLayer", "classpcpp_1_1_e_s_p_layer.html", null ],
         [ "pcpp::EthDot3Layer", "classpcpp_1_1_eth_dot3_layer.html", null ],
@@ -391,6 +417,7 @@ var hierarchy =
     [ "pcpp::internal::PcapHandle", "classpcpp_1_1internal_1_1_pcap_handle.html", null ],
     [ "pcpp::PcapRemoteAuthentication", "structpcpp_1_1_pcap_remote_authentication.html", null ],
     [ "pcpp::internal::PcapStats", "structpcpp_1_1internal_1_1_pcap_stats.html", null ],
+    [ "pcpp::PemCodec", "classpcpp_1_1_pem_codec.html", null ],
     [ "pcpp::PfRingDevice::PfRingStats", "structpcpp_1_1_pf_ring_device_1_1_pf_ring_stats.html", null ],
     [ "pcpp::PointerVector< T, Deleter >", "classpcpp_1_1_pointer_vector.html", null ],
     [ "pcpp::PointerVector< IPFragment >", "classpcpp_1_1_pointer_vector.html", null ],

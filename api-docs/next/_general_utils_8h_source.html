@@ -93,45 +93,82 @@ $(document).ready(function(){initNavTree('_general_utils_8h_source.html',''); in
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;type_traits&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepcpp.html">pcpp</a></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespacepcpp.html#a13d338c123afbd98ee99a9b2ac78f59a">   22</a></span>&#160;    std::string <a class="code" href="namespacepcpp.html#a13d338c123afbd98ee99a9b2ac78f59a">byteArrayToHexString</a>(<span class="keyword">const</span> uint8_t* byteArr, <span class="keywordtype">size_t</span> byteArrSize, <span class="keywordtype">int</span> stringSizeLimit = -1);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="namespacepcpp.html#a6213cd87b4851342b47ee3b769e9299d">   35</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="namespacepcpp.html#a6213cd87b4851342b47ee3b769e9299d">hexStringToByteArray</a>(<span class="keyword">const</span> std::string&amp; hexString, uint8_t* resultByteArr, <span class="keywordtype">size_t</span> resultByteArrSize);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="namespacepcpp.html#a117af2ac2f57cf90b06a2557c1c06825">   44</a></span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="namespacepcpp.html#a117af2ac2f57cf90b06a2557c1c06825">cross_platform_memmem</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* haystack, <span class="keywordtype">size_t</span> haystackLen, <span class="keyword">const</span> <span class="keywordtype">char</span>* needle, <span class="keywordtype">size_t</span> needleLen);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> alignment&gt; <span class="keyword">static</span> <span class="keywordtype">int</span> align(<span class="keywordtype">int</span> number)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="comment">// Only works for alignment with power of 2</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        constexpr <span class="keywordtype">bool</span> isPowerOfTwo = alignment &amp;&amp; ((alignment &amp; (alignment - 1)) == 0);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        static_assert(isPowerOfTwo, <span class="stringliteral">&quot;Alignment must be a power of 2&quot;</span>);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">int</span> mask = alignment - 1;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">return</span> (number + mask) &amp; ~mask;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="structpcpp_1_1_enum_class_hash.html">   60</a></span>&#160;    template &lt;typename EnumClass, std::enable_if_t&lt;std::is_enum&lt;EnumClass&gt;::value, <span class="keywordtype">bool</span>&gt; = <span class="keyword">false</span>&gt; <span class="keyword">struct </span><a class="code" href="structpcpp_1_1_enum_class_hash.html">EnumClassHash</a></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">size_t</span> operator()(EnumClass value)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::underlying_type_t&lt;EnumClass&gt;<span class="keyword">&gt;</span>(value);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    };</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepcpp.html">pcpp</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespacepcpp.html#a13d338c123afbd98ee99a9b2ac78f59a">   23</a></span>&#160;    std::string <a class="code" href="namespacepcpp.html#a13d338c123afbd98ee99a9b2ac78f59a">byteArrayToHexString</a>(<span class="keyword">const</span> uint8_t* byteArr, <span class="keywordtype">size_t</span> byteArrSize, <span class="keywordtype">int</span> stringSizeLimit = -1);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="namespacepcpp.html#a6213cd87b4851342b47ee3b769e9299d">   36</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="namespacepcpp.html#a6213cd87b4851342b47ee3b769e9299d">hexStringToByteArray</a>(<span class="keyword">const</span> std::string&amp; hexString, uint8_t* resultByteArr, <span class="keywordtype">size_t</span> resultByteArrSize);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="namespacepcpp.html#a117af2ac2f57cf90b06a2557c1c06825">   45</a></span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="namespacepcpp.html#a117af2ac2f57cf90b06a2557c1c06825">cross_platform_memmem</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* haystack, <span class="keywordtype">size_t</span> haystackLen, <span class="keyword">const</span> <span class="keywordtype">char</span>* needle, <span class="keywordtype">size_t</span> needleLen);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> alignment&gt; <span class="keyword">static</span> <span class="keywordtype">int</span> align(<span class="keywordtype">int</span> number)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">// Only works for alignment with power of 2</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        constexpr <span class="keywordtype">bool</span> isPowerOfTwo = alignment &amp;&amp; ((alignment &amp; (alignment - 1)) == 0);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        static_assert(isPowerOfTwo, <span class="stringliteral">&quot;Alignment must be a power of 2&quot;</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">int</span> mask = alignment - 1;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> (number + mask) &amp; ~mask;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classpcpp_1_1_base64.html">   62</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_base64.html">Base64</a></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classpcpp_1_1_base64.html#a24141ee0c81121e51a0c521661a10e6f">   69</a></span>&#160;        <span class="keyword">static</span> std::string <a class="code" href="classpcpp_1_1_base64.html#a24141ee0c81121e51a0c521661a10e6f">encode</a>(<span class="keyword">const</span> uint8_t* input, <span class="keywordtype">size_t</span> inputLen);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classpcpp_1_1_base64.html#ab28906f485faf8a1cf3e417490e434c7">   74</a></span>&#160;        <span class="keyword">static</span> std::string <a class="code" href="classpcpp_1_1_base64.html#ab28906f485faf8a1cf3e417490e434c7">encode</a>(<span class="keyword">const</span> std::string&amp; input);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classpcpp_1_1_base64.html#ab7ea3c9a0e9e1319db8c61f9575aafd3">   79</a></span>&#160;        <span class="keyword">static</span> std::string <a class="code" href="classpcpp_1_1_base64.html#ab7ea3c9a0e9e1319db8c61f9575aafd3">encodeHexString</a>(<span class="keyword">const</span> std::string&amp; hexStringInput);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classpcpp_1_1_base64.html#a24d8e8c851a22ef180b145f18c153274">   84</a></span>&#160;        <span class="keyword">static</span> std::string <a class="code" href="classpcpp_1_1_base64.html#a24d8e8c851a22ef180b145f18c153274">encode</a>(<span class="keyword">const</span> std::vector&lt;uint8_t&gt;&amp; input);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classpcpp_1_1_base64.html#a2efae0bd3140fd44f28fedc04467ca35">   89</a></span>&#160;        <span class="keyword">static</span> std::vector&lt;uint8_t&gt; <a class="code" href="classpcpp_1_1_base64.html#a2efae0bd3140fd44f28fedc04467ca35">decodeToByteVector</a>(<span class="keyword">const</span> std::string&amp; input);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classpcpp_1_1_base64.html#a9c0e2d9386f2c6706b84d8a8898c87dc">   94</a></span>&#160;        <span class="keyword">static</span> std::string <a class="code" href="classpcpp_1_1_base64.html#a9c0e2d9386f2c6706b84d8a8898c87dc">decodeToHexString</a>(<span class="keyword">const</span> std::string&amp; input);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classpcpp_1_1_base64.html#a176941f7c013fd4ba3ca0ac90e4f6373">   99</a></span>&#160;        <span class="keyword">static</span> std::string <a class="code" href="classpcpp_1_1_base64.html#a176941f7c013fd4ba3ca0ac90e4f6373">decodeToString</a>(<span class="keyword">const</span> std::string&amp; input);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classpcpp_1_1_base64.html#a2892c00e314c02b0b15455f5367824c6">  106</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">size_t</span> <a class="code" href="classpcpp_1_1_base64.html#a2892c00e314c02b0b15455f5367824c6">decodeToByteArray</a>(<span class="keyword">const</span> std::string&amp; input, uint8_t* resultByteArr, <span class="keywordtype">size_t</span> resultByteArrSize);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classpcpp_1_1_base64.html#a813130eda97e79e6311b534a27e4f8a2">  111</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">size_t</span> <a class="code" href="classpcpp_1_1_base64.html#a813130eda97e79e6311b534a27e4f8a2">getDecodedSize</a>(<span class="keyword">const</span> std::string&amp; input);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keyword">static</span> constexpr uint32_t badChar = 0x01ffffff;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keyword">static</span> constexpr <span class="keywordtype">char</span> paddingChar = <span class="charliteral">&#39;=&#39;</span>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    };</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="structpcpp_1_1_enum_class_hash.html">  120</a></span>&#160;    template &lt;typename EnumClass, std::enable_if_t&lt;std::is_enum&lt;EnumClass&gt;::value, <span class="keywordtype">bool</span>&gt; = <span class="keyword">false</span>&gt; <span class="keyword">struct </span><a class="code" href="structpcpp_1_1_enum_class_hash.html">EnumClassHash</a></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordtype">size_t</span> operator()(EnumClass value)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::underlying_type_t&lt;EnumClass&gt;<span class="keyword">&gt;</span>(value);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    };</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="ttc" id="aclasspcpp_1_1_base64_html"><div class="ttname"><a href="classpcpp_1_1_base64.html">pcpp::Base64</a></div><div class="ttdef"><b>Definition:</b> GeneralUtils.h:63</div></div>
+<div class="ttc" id="aclasspcpp_1_1_base64_html_a176941f7c013fd4ba3ca0ac90e4f6373"><div class="ttname"><a href="classpcpp_1_1_base64.html#a176941f7c013fd4ba3ca0ac90e4f6373">pcpp::Base64::decodeToString</a></div><div class="ttdeci">static std::string decodeToString(const std::string &amp;input)</div></div>
+<div class="ttc" id="aclasspcpp_1_1_base64_html_a24141ee0c81121e51a0c521661a10e6f"><div class="ttname"><a href="classpcpp_1_1_base64.html#a24141ee0c81121e51a0c521661a10e6f">pcpp::Base64::encode</a></div><div class="ttdeci">static std::string encode(const uint8_t *input, size_t inputLen)</div></div>
+<div class="ttc" id="aclasspcpp_1_1_base64_html_a24d8e8c851a22ef180b145f18c153274"><div class="ttname"><a href="classpcpp_1_1_base64.html#a24d8e8c851a22ef180b145f18c153274">pcpp::Base64::encode</a></div><div class="ttdeci">static std::string encode(const std::vector&lt; uint8_t &gt; &amp;input)</div></div>
+<div class="ttc" id="aclasspcpp_1_1_base64_html_a2892c00e314c02b0b15455f5367824c6"><div class="ttname"><a href="classpcpp_1_1_base64.html#a2892c00e314c02b0b15455f5367824c6">pcpp::Base64::decodeToByteArray</a></div><div class="ttdeci">static size_t decodeToByteArray(const std::string &amp;input, uint8_t *resultByteArr, size_t resultByteArrSize)</div></div>
+<div class="ttc" id="aclasspcpp_1_1_base64_html_a2efae0bd3140fd44f28fedc04467ca35"><div class="ttname"><a href="classpcpp_1_1_base64.html#a2efae0bd3140fd44f28fedc04467ca35">pcpp::Base64::decodeToByteVector</a></div><div class="ttdeci">static std::vector&lt; uint8_t &gt; decodeToByteVector(const std::string &amp;input)</div></div>
+<div class="ttc" id="aclasspcpp_1_1_base64_html_a813130eda97e79e6311b534a27e4f8a2"><div class="ttname"><a href="classpcpp_1_1_base64.html#a813130eda97e79e6311b534a27e4f8a2">pcpp::Base64::getDecodedSize</a></div><div class="ttdeci">static size_t getDecodedSize(const std::string &amp;input)</div></div>
+<div class="ttc" id="aclasspcpp_1_1_base64_html_a9c0e2d9386f2c6706b84d8a8898c87dc"><div class="ttname"><a href="classpcpp_1_1_base64.html#a9c0e2d9386f2c6706b84d8a8898c87dc">pcpp::Base64::decodeToHexString</a></div><div class="ttdeci">static std::string decodeToHexString(const std::string &amp;input)</div></div>
+<div class="ttc" id="aclasspcpp_1_1_base64_html_ab28906f485faf8a1cf3e417490e434c7"><div class="ttname"><a href="classpcpp_1_1_base64.html#ab28906f485faf8a1cf3e417490e434c7">pcpp::Base64::encode</a></div><div class="ttdeci">static std::string encode(const std::string &amp;input)</div></div>
+<div class="ttc" id="aclasspcpp_1_1_base64_html_ab7ea3c9a0e9e1319db8c61f9575aafd3"><div class="ttname"><a href="classpcpp_1_1_base64.html#ab7ea3c9a0e9e1319db8c61f9575aafd3">pcpp::Base64::encodeHexString</a></div><div class="ttdeci">static std::string encodeHexString(const std::string &amp;hexStringInput)</div></div>
 <div class="ttc" id="anamespacepcpp_html"><div class="ttname"><a href="namespacepcpp.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib.</div></div>
 <div class="ttc" id="anamespacepcpp_html_a117af2ac2f57cf90b06a2557c1c06825"><div class="ttname"><a href="namespacepcpp.html#a117af2ac2f57cf90b06a2557c1c06825">pcpp::cross_platform_memmem</a></div><div class="ttdeci">char * cross_platform_memmem(const char *haystack, size_t haystackLen, const char *needle, size_t needleLen)</div></div>
 <div class="ttc" id="anamespacepcpp_html_a13d338c123afbd98ee99a9b2ac78f59a"><div class="ttname"><a href="namespacepcpp.html#a13d338c123afbd98ee99a9b2ac78f59a">pcpp::byteArrayToHexString</a></div><div class="ttdeci">std::string byteArrayToHexString(const uint8_t *byteArr, size_t byteArrSize, int stringSizeLimit=-1)</div></div>
 <div class="ttc" id="anamespacepcpp_html_a6213cd87b4851342b47ee3b769e9299d"><div class="ttname"><a href="namespacepcpp.html#a6213cd87b4851342b47ee3b769e9299d">pcpp::hexStringToByteArray</a></div><div class="ttdeci">size_t hexStringToByteArray(const std::string &amp;hexString, uint8_t *resultByteArr, size_t resultByteArrSize)</div></div>
-<div class="ttc" id="astructpcpp_1_1_enum_class_hash_html"><div class="ttname"><a href="structpcpp_1_1_enum_class_hash.html">pcpp::EnumClassHash</a></div><div class="ttdef"><b>Definition:</b> GeneralUtils.h:61</div></div>
+<div class="ttc" id="astructpcpp_1_1_enum_class_hash_html"><div class="ttname"><a href="structpcpp_1_1_enum_class_hash.html">pcpp::EnumClassHash</a></div><div class="ttdef"><b>Definition:</b> GeneralUtils.h:121</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b003f564e33ffc88e35d7a9df43b3691.html">Common++</a></li><li class="navelem"><a class="el" href="dir_9a3e9207f3f2c743963c543f58e0ab18.html">header</a></li><li class="navelem"><a class="el" href="_general_utils_8h.html">GeneralUtils.h</a></li>
-    <li class="footer">Generated on Mon Jul 28 2025 07:54:03 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Aug 4 2025 08:59:58 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
