@@ -15,5 +15,6 @@ var classpcpp_1_1_x509_certificate =
     [ "getVersion", "classpcpp_1_1_x509_certificate.html#acb6d729f3c1fdeba3e800edf629f89d3", null ],
     [ "hasExtension", "classpcpp_1_1_x509_certificate.html#aaf6468b9cc9ac5fac38b16149d85a0a1", null ],
     [ "toDER", "classpcpp_1_1_x509_certificate.html#a45fa4c1790631729ffda99dd91312629", null ],
-    [ "toJson", "classpcpp_1_1_x509_certificate.html#afc9217bd9fea21a92a60666986c94179", null ]
+    [ "toJson", "classpcpp_1_1_x509_certificate.html#afc9217bd9fea21a92a60666986c94179", null ],
+    [ "toPEM", "classpcpp_1_1_x509_certificate.html#a86c996a86d46185bb2b612eba1f92a5b", null ]
 ];

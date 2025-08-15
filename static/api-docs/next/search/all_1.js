@@ -14,7 +14,7 @@ var searchData=
   ['bearerresourcefailure_179',['BearerResourceFailure',['../classpcpp_1_1_gtp_v2_message_type.html#a05f195ad620ccb947ddd686540e867e2a805e1f0fc98dac392401d943fbc5bb85',1,'pcpp::GtpV2MessageType']]],
   ['bearertft_180',['BearerTft',['../classpcpp_1_1_gtp_v2_information_element.html#a92c02befac4fc7d0156e42d5e51d18a0a7ae88e861fcfc45cb12d814f92964d26',1,'pcpp::GtpV2InformationElement']]],
   ['begin_181',['begin',['../classpcpp_1_1_pointer_vector.html#ac46c77824475d23eda4b7a9cee3cbcf8',1,'pcpp::PointerVector::begin()'],['../classpcpp_1_1_pointer_vector.html#a45ee37fcf04c2f8339a6378d9db972e2',1,'pcpp::PointerVector::begin() const'],['../classpcpp_1_1internal_1_1_device_list_base.html#a24c98c0c339e28e947f0f8165e8d45f0',1,'pcpp::internal::DeviceListBase::begin()'],['../classpcpp_1_1internal_1_1_device_list_base.html#a4cb6fbe6d153594a4aee5ab1f355cc31',1,'pcpp::internal::DeviceListBase::begin() const']]],
-  ['bgp_182',['BGP',['../namespacepcpp.html#a55e4061b1046f18acbdeb81960d2ae81',1,'pcpp']]],
+  ['bgp_182',['BGP',['../group___protocol_types.html#ga55e4061b1046f18acbdeb81960d2ae81',1,'pcpp']]],
   ['bgp_5fcommon_5fheader_183',['bgp_common_header',['../structpcpp_1_1_bgp_layer_1_1bgp__common__header.html',1,'pcpp::BgpLayer']]],
   ['bgp_5fkeepalive_5fmessage_184',['bgp_keepalive_message',['../classpcpp_1_1_bgp_keepalive_message_layer.html#a23e6c00d4eb469cd2d315e98edd15601',1,'pcpp::BgpKeepaliveMessageLayer']]],
   ['bgp_5fnotification_5fmessage_185',['bgp_notification_message',['../structpcpp_1_1_bgp_notification_message_layer_1_1bgp__notification__message.html',1,'pcpp::BgpNotificationMessageLayer']]],
