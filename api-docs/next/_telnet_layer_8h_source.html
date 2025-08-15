@@ -208,7 +208,7 @@ $(document).ready(function(){initNavTree('_telnet_layer_8h_source.html',''); ini
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        };</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
 <div class="line"><a name="l00218"></a><span class="lineno"><a class="line" href="classpcpp_1_1_telnet_layer.html#abca8635ca2fc5a39d26e7c7497c0e302">  218</a></span>&#160;        <a class="code" href="classpcpp_1_1_telnet_layer.html#abca8635ca2fc5a39d26e7c7497c0e302">TelnetLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="classpcpp_1_1_layer.html">Layer</a>* prevLayer, <a class="code" href="classpcpp_1_1_packet.html">Packet</a>* packet)</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            : <a class="code" href="classpcpp_1_1_layer.html">Layer</a>(data, dataLen, prevLayer, packet, <a class="code" href="namespacepcpp.html#af27a025c71e9f27fd298c4c9b027310c">Telnet</a>)</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            : <a class="code" href="classpcpp_1_1_layer.html">Layer</a>(data, dataLen, prevLayer, packet, <a class="code" href="group___protocol_types.html#gaf27a025c71e9f27fd298c4c9b027310c">Telnet</a>)</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        {</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            lastPositionOffset = SIZE_MAX;</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        };</div>
@@ -368,17 +368,17 @@ $(document).ready(function(){initNavTree('_telnet_layer_8h_source.html',''); ini
 <div class="ttc" id="aclasspcpp_1_1_telnet_layer_html_adf2a51c8347f461b34d29de1c07e8321"><div class="ttname"><a href="classpcpp_1_1_telnet_layer.html#adf2a51c8347f461b34d29de1c07e8321">pcpp::TelnetLayer::getNumberOfCommands</a></div><div class="ttdeci">size_t getNumberOfCommands(TelnetCommand command)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_telnet_layer_html_ae89af0cbd8aadb79b8e0212b312f06b8"><div class="ttname"><a href="classpcpp_1_1_telnet_layer.html#ae89af0cbd8aadb79b8e0212b312f06b8">pcpp::TelnetLayer::getDataAsString</a></div><div class="ttdeci">std::string getDataAsString(bool removeEscapeCharacters=true)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_telnet_layer_html_af410e8eac0ba887c9fdf1b2aff352de4"><div class="ttname"><a href="classpcpp_1_1_telnet_layer.html#af410e8eac0ba887c9fdf1b2aff352de4">pcpp::TelnetLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen() const override</div><div class="ttdef"><b>Definition:</b> TelnetLayer.h:301</div></div>
+<div class="ttc" id="agroup___protocol_types_html_gaf27a025c71e9f27fd298c4c9b027310c"><div class="ttname"><a href="group___protocol_types.html#gaf27a025c71e9f27fd298c4c9b027310c">pcpp::Telnet</a></div><div class="ttdeci">const ProtocolType Telnet</div><div class="ttdoc">Telnet Protocol.</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:186</div></div>
 <div class="ttc" id="anamespacepcpp_html"><div class="ttname"><a href="namespacepcpp.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib.</div></div>
-<div class="ttc" id="anamespacepcpp_html_a69e2ee6a9dc68797612cf8dc38461025"><div class="ttname"><a href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a></div><div class="ttdeci">OsiModelLayer</div><div class="ttdoc">An enum representing OSI model layers.</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:228</div></div>
-<div class="ttc" id="anamespacepcpp_html_a69e2ee6a9dc68797612cf8dc38461025a56f0bba682cc695d49efecf8a0152270"><div class="ttname"><a href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a56f0bba682cc695d49efecf8a0152270">pcpp::OsiModelApplicationLayer</a></div><div class="ttdeci">@ OsiModelApplicationLayer</div><div class="ttdoc">Application layer (layer 7)</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:242</div></div>
-<div class="ttc" id="anamespacepcpp_html_af27a025c71e9f27fd298c4c9b027310c"><div class="ttname"><a href="namespacepcpp.html#af27a025c71e9f27fd298c4c9b027310c">pcpp::Telnet</a></div><div class="ttdeci">const ProtocolType Telnet</div><div class="ttdoc">Telnet Protocol.</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:164</div></div>
+<div class="ttc" id="anamespacepcpp_html_a69e2ee6a9dc68797612cf8dc38461025"><div class="ttname"><a href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a></div><div class="ttdeci">OsiModelLayer</div><div class="ttdoc">An enum representing OSI model layers.</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:258</div></div>
+<div class="ttc" id="anamespacepcpp_html_a69e2ee6a9dc68797612cf8dc38461025a56f0bba682cc695d49efecf8a0152270"><div class="ttname"><a href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a56f0bba682cc695d49efecf8a0152270">pcpp::OsiModelApplicationLayer</a></div><div class="ttdeci">@ OsiModelApplicationLayer</div><div class="ttdoc">Application layer (layer 7)</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:272</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_telnet_layer_8h.html">TelnetLayer.h</a></li>
-    <li class="footer">Generated on Mon Aug 4 2025 08:59:58 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Aug 15 2025 08:38:31 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

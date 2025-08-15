@@ -104,6 +104,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a98078029809ceba7035095bc9df5c821"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87e1991f1640b0a66287e0b34ea59534"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_asn1_sequence_record.html">Asn1SequenceRecord</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_lx509_certificate.html#a87e1991f1640b0a66287e0b34ea59534">getRootAsn1Record</a> ()</td></tr>
 <tr class="separator:a87e1991f1640b0a66287e0b34ea59534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd7f253ee6f540394668089dbaaa83a0"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_lx509_certificate.html#abd7f253ee6f540394668089dbaaa83a0">getX509Certificate</a> ()</td></tr>
+<tr class="separator:abd7f253ee6f540394668089dbaaa83a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa16d26c9b46dd50c60aab517cfd9f4c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_lx509_certificate.html#aa16d26c9b46dd50c60aab517cfd9f4c4">allDataExists</a> () const</td></tr>
 <tr class="separator:aa16d26c9b46dd50c60aab517cfd9f4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -253,7 +255,25 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The root ASN.1 record of the certificate data. All of the certificate data will be under this record. If the Root ASN.1 record is malformed, an exception is thrown </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The root ASN.1 record of the certificate data. All the certificate data will be under this record. If the certificate data isn't complete, this method will return nullptr. If the Root ASN.1 record is malformed, an exception is thrown </dd></dl>
+
+</div>
+</div>
+<a id="abd7f253ee6f540394668089dbaaa83a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd7f253ee6f540394668089dbaaa83a0">&#9670;&nbsp;</a></span>getX509Certificate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a>&gt; pcpp::SSLx509Certificate::getX509Certificate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parse the certificate data as X509 certificate. If the certificate data isn't complete, this method will return nullptr </p><dl class="section return"><dt>Returns</dt><dd>A unique pointer to the parsed X509 certificate </dd></dl>
 
 </div>
 </div>
@@ -263,7 +283,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_s_s_lx509_certificate.html">SSLx509Certificate</a></li>
-    <li class="footer">Generated on Mon Aug 4 2025 08:59:59 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Aug 15 2025 08:38:32 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
