@@ -40,6 +40,7 @@ var group___protocol_types =
     [ "IPv6", "group___protocol_types.html#gaab30bccb509b8fcf2fea7d4db3b46046", null ],
     [ "LDAP", "group___protocol_types.html#ga741fe571bb0b0ec59ac88ee726b39787", null ],
     [ "LLC", "group___protocol_types.html#ga7b2855f37ecc5f6c1d4971b6cee809d2", null ],
+    [ "Modbus", "group___protocol_types.html#ga3b37175150a1a43a291c824856d3f6d6", null ],
     [ "MPLS", "group___protocol_types.html#ga2f69fdca66dec264f99da6e3de96345c", null ],
     [ "NFLOG", "group___protocol_types.html#gafac6cd4f566ffec968466a8c056a79d7", null ],
     [ "NTP", "group___protocol_types.html#ga42aeacd48824aad0f3c672df53b4f3dd", null ],
