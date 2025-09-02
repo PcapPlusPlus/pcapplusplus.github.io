@@ -16,13 +16,13 @@ var classpcpp_1_1_tcp_layer =
     [ "getSrcPort", "classpcpp_1_1_tcp_layer.html#a1b1cd0c337cd0317ea60f472a5be8e1f", null ],
     [ "getTcpHeader", "classpcpp_1_1_tcp_layer.html#a007f04ef5e9b3828d02de504766c6e40", null ],
     [ "getTcpOption", "classpcpp_1_1_tcp_layer.html#a1cb24654caae9461d80d77a326f460dd", null ],
+    [ "getTcpOption", "classpcpp_1_1_tcp_layer.html#a9502c7f75395c19a44df4457ebafa537", null ],
     [ "getTcpOptionCount", "classpcpp_1_1_tcp_layer.html#ade5a826d63447a05e8b1b89586ec8323", null ],
     [ "insertTcpOptionAfter", "classpcpp_1_1_tcp_layer.html#a9079a342a6e43808c47dfb1977a722e6", null ],
     [ "operator=", "classpcpp_1_1_tcp_layer.html#a7dea7265510eda5cd67b984c2634ef19", null ],
     [ "parseNextLayer", "classpcpp_1_1_tcp_layer.html#a7c673fbe5201c0c72b2e2d55472e87e8", null ],
-    [ "PCPP_DEPRECATED", "classpcpp_1_1_tcp_layer.html#a07903b52fb726291b37db165671142c4", null ],
-    [ "PCPP_DEPRECATED", "classpcpp_1_1_tcp_layer.html#ab20303e4db20175f6d321c3e3a59efe2", null ],
     [ "removeAllTcpOptions", "classpcpp_1_1_tcp_layer.html#a54812a58a88be8978b3e609f32504a87", null ],
     [ "removeTcpOption", "classpcpp_1_1_tcp_layer.html#a12da1f78961105f8ec0ae206fb4910a9", null ],
+    [ "removeTcpOption", "classpcpp_1_1_tcp_layer.html#ac24e0b402da8a1489379e80876eb8dcf", null ],
     [ "toString", "classpcpp_1_1_tcp_layer.html#af44fd496d9ad7849b5ff0e36015d5d92", null ]
 ];

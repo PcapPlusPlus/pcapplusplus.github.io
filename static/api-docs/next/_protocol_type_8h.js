@@ -50,6 +50,7 @@ var _protocol_type_8h =
     [ "IPv6", "_protocol_type_8h.html#gaab30bccb509b8fcf2fea7d4db3b46046", null ],
     [ "LDAP", "_protocol_type_8h.html#ga741fe571bb0b0ec59ac88ee726b39787", null ],
     [ "LLC", "_protocol_type_8h.html#ga7b2855f37ecc5f6c1d4971b6cee809d2", null ],
+    [ "Modbus", "_protocol_type_8h.html#ga3b37175150a1a43a291c824856d3f6d6", null ],
     [ "MPLS", "_protocol_type_8h.html#ga2f69fdca66dec264f99da6e3de96345c", null ],
     [ "NFLOG", "_protocol_type_8h.html#gafac6cd4f566ffec968466a8c056a79d7", null ],
     [ "NTP", "_protocol_type_8h.html#ga42aeacd48824aad0f3c672df53b4f3dd", null ],

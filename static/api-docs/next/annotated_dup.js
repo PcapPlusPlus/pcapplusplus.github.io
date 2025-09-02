@@ -2,6 +2,7 @@ var annotated_dup =
 [
     [ "pcpp", "namespacepcpp.html", [
       [ "internal", null, [
+        [ "AssertionError", "classpcpp_1_1internal_1_1_assertion_error.html", null ],
         [ "LogContext", "classpcpp_1_1internal_1_1_log_context.html", "classpcpp_1_1internal_1_1_log_context" ],
         [ "DynamicObjectPool", "classpcpp_1_1internal_1_1_dynamic_object_pool.html", "classpcpp_1_1internal_1_1_dynamic_object_pool" ],
         [ "Copier", "structpcpp_1_1internal_1_1_copier.html", null ],
@@ -220,6 +221,8 @@ var annotated_dup =
       [ "LdapCompareResponseLayer", "classpcpp_1_1_ldap_compare_response_layer.html", "classpcpp_1_1_ldap_compare_response_layer" ],
       [ "llc_header", "structpcpp_1_1llc__header.html", "structpcpp_1_1llc__header" ],
       [ "LLCLayer", "classpcpp_1_1_l_l_c_layer.html", "classpcpp_1_1_l_l_c_layer" ],
+      [ "modbus_header", "structpcpp_1_1modbus__header.html", "structpcpp_1_1modbus__header" ],
+      [ "ModbusLayer", "classpcpp_1_1_modbus_layer.html", "classpcpp_1_1_modbus_layer" ],
       [ "MplsLayer", "classpcpp_1_1_mpls_layer.html", "classpcpp_1_1_mpls_layer" ],
       [ "NdpOption", "classpcpp_1_1_ndp_option.html", "classpcpp_1_1_ndp_option" ],
       [ "NdpOptionBuilder", "classpcpp_1_1_ndp_option_builder.html", "classpcpp_1_1_ndp_option_builder" ],

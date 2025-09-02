@@ -89,7 +89,10 @@ var hierarchy =
       [ "pcpp::HttpRequestFirstLine::HttpRequestFirstLineException", "classpcpp_1_1_http_request_first_line_1_1_http_request_first_line_exception.html", null ],
       [ "pcpp::HttpResponseFirstLine::HttpResponseFirstLineException", "classpcpp_1_1_http_response_first_line_1_1_http_response_first_line_exception.html", null ],
       [ "pcpp::SipRequestFirstLine::SipRequestFirstLineException", "classpcpp_1_1_sip_request_first_line_1_1_sip_request_first_line_exception.html", null ],
-      [ "pcpp::SipResponseFirstLine::SipResponseFirstLineException", "classpcpp_1_1_sip_response_first_line_1_1_sip_response_first_line_exception.html", null ]
+      [ "pcpp::SipResponseFirstLine::SipResponseFirstLineException", "classpcpp_1_1_sip_response_first_line_1_1_sip_response_first_line_exception.html", null ],
+      [ "std::logic_error", null, [
+        [ "pcpp::internal::AssertionError", "classpcpp_1_1internal_1_1_assertion_error.html", null ]
+      ] ]
     ] ],
     [ "pcpp::GeneralFilter", "classpcpp_1_1_general_filter.html", [
       [ "pcpp::ArpFilter", "classpcpp_1_1_arp_filter.html", null ],
@@ -227,6 +230,7 @@ var hierarchy =
           [ "pcpp::LdapSearchResultEntryLayer", "classpcpp_1_1_ldap_search_result_entry_layer.html", null ],
           [ "pcpp::LdapUnbindRequestLayer", "classpcpp_1_1_ldap_unbind_request_layer.html", null ]
         ] ],
+        [ "pcpp::ModbusLayer", "classpcpp_1_1_modbus_layer.html", null ],
         [ "pcpp::MplsLayer", "classpcpp_1_1_mpls_layer.html", null ],
         [ "pcpp::NflogLayer", "classpcpp_1_1_nflog_layer.html", null ],
         [ "pcpp::NtpLayer", "classpcpp_1_1_ntp_layer.html", null ],
@@ -401,6 +405,8 @@ var hierarchy =
     [ "pcpp::LRUList< T >", "classpcpp_1_1_l_r_u_list.html", null ],
     [ "pcpp::LRUList< uint32_t >", "classpcpp_1_1_l_r_u_list.html", null ],
     [ "pcpp::MacAddress", "classpcpp_1_1_mac_address.html", null ],
+    [ "pcpp::modbus_header", "structpcpp_1_1modbus__header.html", null ],
+    [ "pcpp::ModbusLayer::ModbusReadInputRegisters", "structpcpp_1_1_modbus_layer_1_1_modbus_read_input_registers.html", null ],
     [ "pcpp::msti_conf_msg", "structpcpp_1_1msti__conf__msg.html", null ],
     [ "pcpp::MxDnsResourceData::MxData", "structpcpp_1_1_mx_dns_resource_data_1_1_mx_data.html", null ],
     [ "pcpp::NetworkUtils", "classpcpp_1_1_network_utils.html", null ],
