@@ -72,16 +72,20 @@
 *   - pcpp::DhcpLayer, DhcpLayer.h - DHCP protocol
 *   - pcpp::DhcpV6Layer, DhcpV6Layer.h - DHCPv6 protocol
 *   - pcpp::DnsLayer, DnsLayer.h - DNS protocol
+*   - pcpp::DoIpLayer, DoIpLayer.h - DoIP protocol
 *   - pcpp::FtpRequestLayer, pcpp::FtpResponseLayer, FtpLayer.h - FTP protocol
 *   - pcpp::HttpRequestLayer, pcpp::HttpResponseLayer, HttpLayer.h - HTTP protocol
 *   - pcpp::LdapLayer, LdapLayer.h - LDAP protocol
+*   - pcpp::ModbusLayer, ModbusLayer.h - Modbus protocol
 *   - pcpp::NtpLayer, NtpLayer.h - NTP (v3, v4) protocol
+*   - pcpp::PemCodec, PemCodec.h - PEM decoder and encoder
 *   - pcpp::RadiusLayer, RadiusLayer.h - RADIUS protocol
 *   - pcpp::S7CommLayer, S7CommLayer.h - S7 Communication protocol (S7comm)
 *   - pcpp::SmtpLayer, SmtpLayer.h - SMTP protocol
 *   - pcpp::SomeIpLayer, pcpp::SomeIpTpLayer, pcpp::SomeIpSdLayer, SomeIpLayer.h - SOME/IP protocol
 *   - pcpp::SSHLayer, SSHLayer.h - SSH protocol - parsing only (no editing capabilities)
 *   - pcpp::TelnetLayer, TelnetLayer.h - Telnet protocol
+*   - pcpp::X509Certificate , X509Decoder.h - X509 certificates - parsing only (no editing capabilities)
 *   - pcpp::PayloadLayer, PayloadLayer.h - unknown layer or payload
 *
 * <b>Common utilities and infrastructure (Common++, Packet++, Pcap++):</b>
