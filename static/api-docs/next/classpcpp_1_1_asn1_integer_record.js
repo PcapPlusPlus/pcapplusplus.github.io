@@ -6,5 +6,5 @@ var classpcpp_1_1_asn1_integer_record =
     [ "encodeValue", "classpcpp_1_1_asn1_integer_record.html#a3f745f6567f0dedaf1fd4e687d049e39", null ],
     [ "getIntValue", "classpcpp_1_1_asn1_integer_record.html#a16c19f833565d9f4a03f05ef17c12afc", null ],
     [ "getValue", "classpcpp_1_1_asn1_integer_record.html#ab55607bab1dcfe57d348b380120c6136", null ],
-    [ "getValueAsString", "classpcpp_1_1_asn1_integer_record.html#a93661bd67095e28555a743d6b621b4d9", null ]
+    [ "getValueAsString", "classpcpp_1_1_asn1_integer_record.html#ae9c42db83792a28175f7667b4fc645bb", null ]
 ];

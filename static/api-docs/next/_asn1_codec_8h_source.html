@@ -390,420 +390,420 @@ $(document).ready(function(){initNavTree('_asn1_codec_8h_source.html',''); initR
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;            <span class="keywordflow">return</span> getIntValue&lt;uint32_t&gt;();</div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        }</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160; </div>
-<div class="line"><a name="l00438"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_integer_record.html#a93661bd67095e28555a743d6b621b4d9">  438</a></span>&#160;        std::string <a class="code" href="classpcpp_1_1_asn1_integer_record.html#a93661bd67095e28555a743d6b621b4d9">getValueAsString</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;            decodeValueIfNeeded();</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;            <span class="keywordflow">return</span> m_Value.toString();</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        }</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160; </div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_integer_record.html">Asn1IntegerRecord</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160; </div>
-<div class="line"><a name="l00447"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_integer_record.html#aa924b7fa2d963ff674d7a2a490376921">  447</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_asn1_integer_record.html#aa924b7fa2d963ff674d7a2a490376921">decodeValue</a>(uint8_t <span class="keyword">const</span>* data) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00448"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_integer_record.html#a3f745f6567f0dedaf1fd4e687d049e39">  448</a></span>&#160;        std::vector&lt;uint8_t&gt; <a class="code" href="classpcpp_1_1_asn1_integer_record.html#a3f745f6567f0dedaf1fd4e687d049e39">encodeValue</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160; </div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;        std::vector&lt;std::string&gt; toStringList() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00440"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_integer_record.html#ae9c42db83792a28175f7667b4fc645bb">  440</a></span>&#160;        std::string <a class="code" href="classpcpp_1_1_asn1_integer_record.html#ae9c42db83792a28175f7667b4fc645bb">getValueAsString</a>(<span class="keywordtype">bool</span> removeLeadingZeros = <span class="keyword">false</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;            decodeValueIfNeeded();</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;            <span class="keywordflow">return</span> m_Value.toString(removeLeadingZeros);</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        }</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160; </div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_integer_record.html">Asn1IntegerRecord</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160; </div>
+<div class="line"><a name="l00449"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_integer_record.html#aa924b7fa2d963ff674d7a2a490376921">  449</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_asn1_integer_record.html#aa924b7fa2d963ff674d7a2a490376921">decodeValue</a>(uint8_t <span class="keyword">const</span>* data) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00450"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_integer_record.html#a3f745f6567f0dedaf1fd4e687d049e39">  450</a></span>&#160;        std::vector&lt;uint8_t&gt; <a class="code" href="classpcpp_1_1_asn1_integer_record.html#a3f745f6567f0dedaf1fd4e687d049e39">encodeValue</a>() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160; </div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        <span class="keyword">class </span>BigInt</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        {</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;            BigInt() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160; </div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, EnableIfUn<span class="keywordtype">signed</span>Integral&lt;T&gt; = 0&gt; <span class="keyword">explicit</span> BigInt(T value)</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;            {</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;                m_Value = initFromInt(value);</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;            }</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160; </div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;            <span class="keyword">explicit</span> BigInt(<span class="keyword">const</span> std::string&amp; value);</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;            BigInt(<span class="keyword">const</span> BigInt&amp; other);</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160; </div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, EnableIfUn<span class="keywordtype">signed</span>Integral&lt;T&gt; = 0&gt; BigInt&amp; operator=(T value)</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;            {</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;                m_Value = initFromInt(value);</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;                <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;            }</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;            BigInt&amp; operator=(<span class="keyword">const</span> std::string&amp; value);</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;            <span class="keywordtype">size_t</span> size() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160; </div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, EnableIfUn<span class="keywordtype">signed</span>Integral&lt;T&gt; = 0&gt; T getInt()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;<span class="keyword">            </span>{</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;                <span class="keywordflow">if</span> (!canFit&lt;T&gt;())</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;                {</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;                    <span class="keywordflow">throw</span> std::overflow_error(<span class="stringliteral">&quot;Value cannot fit into requested int type&quot;</span>);</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;                }</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160; </div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;                std::stringstream sstream;</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;                sstream &lt;&lt; std::hex &lt;&lt; m_Value;</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160; </div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;                uint64_t result;</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;                sstream &gt;&gt; result;</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(result);</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;            }</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160; </div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, EnableIfUn<span class="keywordtype">signed</span>Integral&lt;T&gt; = 0&gt; <span class="keywordtype">bool</span> canFit()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;<span class="keyword">            </span>{</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(T) &gt;= (m_Value.size() + 1) / 2;</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;            }</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160; </div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;            std::string <a class="code" href="classpcpp_1_1_asn1_record.html#a1e9a40bbe23c6b00457246e44e143f0a">toString</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;            std::vector&lt;uint8_t&gt; toBytes() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160; </div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;            std::string m_Value;</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160; </div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;            <span class="keyword">static</span> std::string initFromString(<span class="keyword">const</span> std::string&amp; value);</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        std::vector&lt;std::string&gt; toStringList() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160; </div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        <span class="keyword">class </span>BigInt</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        {</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;            BigInt() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160; </div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, EnableIfUn<span class="keywordtype">signed</span>Integral&lt;T&gt; = 0&gt; <span class="keyword">explicit</span> BigInt(T value)</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;            {</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;                m_Value = initFromInt(value);</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;            }</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160; </div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;            <span class="keyword">explicit</span> BigInt(<span class="keyword">const</span> std::string&amp; value);</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;            BigInt(<span class="keyword">const</span> BigInt&amp; other);</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160; </div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, EnableIfUn<span class="keywordtype">signed</span>Integral&lt;T&gt; = 0&gt; BigInt&amp; operator=(T value)</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;            {</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                m_Value = initFromInt(value);</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;                <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;            }</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;            BigInt&amp; operator=(<span class="keyword">const</span> std::string&amp; value);</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;            <span class="keywordtype">size_t</span> size() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160; </div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, EnableIfUn<span class="keywordtype">signed</span>Integral&lt;T&gt; = 0&gt; T getInt()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;<span class="keyword">            </span>{</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;                <span class="keywordflow">if</span> (!canFit&lt;T&gt;())</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;                {</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;                    <span class="keywordflow">throw</span> std::overflow_error(<span class="stringliteral">&quot;Value cannot fit into requested int type&quot;</span>);</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;                }</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160; </div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;                std::stringstream sstream;</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;                sstream &lt;&lt; std::hex &lt;&lt; m_Value;</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160; </div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;                uint64_t result;</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;                sstream &gt;&gt; result;</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(result);</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;            }</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160; </div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, EnableIfUn<span class="keywordtype">signed</span>Integral&lt;T&gt; = 0&gt; <span class="keywordtype">bool</span> canFit()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;<span class="keyword">            </span>{</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(T) &gt;= (m_Value.size() + 1) / 2;</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;            }</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160; </div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;            std::string <a class="code" href="classpcpp_1_1_asn1_record.html#a1e9a40bbe23c6b00457246e44e143f0a">toString</a>(<span class="keywordtype">bool</span> removeLeadingZeros = <span class="keyword">false</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;            std::vector&lt;uint8_t&gt; toBytes() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160; </div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;            std::string m_Value;</div>
 <div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160; </div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, EnableIfUn<span class="keywordtype">signed</span>Integral&lt;T&gt; = 0&gt; <span class="keyword">static</span> std::string initFromInt(T value)</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;            {</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;                std::stringstream ss;</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;                ss &lt;&lt; std::hex &lt;&lt; static_cast&lt;uint64_t&gt;(value);</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;                <span class="keywordflow">return</span> ss.str();</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;            }</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;        };</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160; </div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;        <span class="keyword">mutable</span> BigInt m_Value;</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    };</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160; </div>
-<div class="line"><a name="l00515"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_enumerated_record.html">  515</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_enumerated_record.html">Asn1EnumeratedRecord</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_asn1_integer_record.html">Asn1IntegerRecord</a></div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    {</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_record.html">Asn1Record</a>;</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160; </div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00522"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_enumerated_record.html#a39450d2085a75ddd5c8ffd80ac7d1b20">  522</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_enumerated_record.html#a39450d2085a75ddd5c8ffd80ac7d1b20">Asn1EnumeratedRecord</a>(uint32_t value);</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160; </div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_enumerated_record.html">Asn1EnumeratedRecord</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    };</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160; </div>
-<div class="line"><a name="l00531"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_string_record.html">  531</a></span>&#160;    <span class="keyword">template</span> &lt;Asn1UniversalTagType TagType&gt; <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_string_record.html">Asn1StringRecord</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_asn1_primitive_record.html">Asn1PrimitiveRecord</a></div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    {</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00535"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_string_record.html#a70afd434a1182f5c7af3c2b5afce4c32">  535</a></span>&#160;        std::string <a class="code" href="classpcpp_1_1_asn1_string_record.html#a70afd434a1182f5c7af3c2b5afce4c32">getValue</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;            decodeValueIfNeeded();</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;            <span class="keywordflow">return</span> m_Value;</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;        };</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160; </div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_string_record.html">Asn1StringRecord</a>() : <a class="code" href="classpcpp_1_1_asn1_primitive_record.html">Asn1PrimitiveRecord</a>(TagType)</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;        {}</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160; </div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;        <span class="keyword">explicit</span> Asn1StringRecord(<span class="keyword">const</span> std::string&amp; value) : Asn1PrimitiveRecord(TagType), m_Value(value)</div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;        {</div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;            m_ValueLength = value.size();</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;            m_TotalLength = m_ValueLength + 2;</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;        }</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160; </div>
-<div class="line"><a name="l00551"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_string_record.html#a96284f4f4dea8d299a5caf52e6d0a1c1">  551</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_asn1_string_record.html#a96284f4f4dea8d299a5caf52e6d0a1c1">decodeValue</a>(uint8_t <span class="keyword">const</span>* data)<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;            m_Value = std::string(<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">char</span> const*<span class="keyword">&gt;</span>(data), m_ValueLength);</div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;        }</div>
-<div class="line"><a name="l00555"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_string_record.html#aa304c2d098cdaf83df72957643350b90">  555</a></span>&#160;        std::vector&lt;uint8_t&gt; <a class="code" href="classpcpp_1_1_asn1_string_record.html#aa304c2d098cdaf83df72957643350b90">encodeValue</a>()<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;            <span class="keywordflow">return</span> { m_Value.begin(), m_Value.end() };</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;        }</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160; </div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;        std::vector&lt;std::string&gt; toStringList()<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;            <span class="keywordflow">return</span> { Asn1Record::toStringList().front() + <span class="stringliteral">&quot;, Value: &quot;</span> + <a class="code" href="classpcpp_1_1_asn1_string_record.html#a70afd434a1182f5c7af3c2b5afce4c32">getValue</a>() };</div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;        }</div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160; </div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;        <span class="keyword">mutable</span> std::string m_Value;</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    };</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160; </div>
-<div class="line"><a name="l00570"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_octet_string_record.html">  570</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_octet_string_record.html">Asn1OctetStringRecord</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_asn1_string_record.html">Asn1StringRecord</a>&lt;Asn1UniversalTagType::OctetString&gt;</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;    {</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_record.html">Asn1Record</a>;</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160; </div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;        <span class="keyword">using</span> Asn1StringRecord::Asn1StringRecord;</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160; </div>
-<div class="line"><a name="l00580"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_octet_string_record.html#adb7376eb46415f265237d308d8fac3a3">  580</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_octet_string_record.html#adb7376eb46415f265237d308d8fac3a3">Asn1OctetStringRecord</a>(<span class="keyword">const</span> uint8_t* value, <span class="keywordtype">size_t</span> valueLength);</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160; </div>
-<div class="line"><a name="l00584"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_octet_string_record.html#a0be59e524d12904923f5b99a4eed5673">  584</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_octet_string_record.html#a0be59e524d12904923f5b99a4eed5673">Asn1OctetStringRecord</a>(<span class="keyword">const</span> std::string&amp; value) : <a class="code" href="classpcpp_1_1_asn1_string_record.html">Asn1StringRecord</a>(value)</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;        {}</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160; </div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00588"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_octet_string_record.html#a4b61ed77a35a6a0a4152b103926ba5b9">  588</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_asn1_octet_string_record.html#a4b61ed77a35a6a0a4152b103926ba5b9">decodeValue</a>(uint8_t <span class="keyword">const</span>* data) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00589"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_octet_string_record.html#a972feedbfdc275c9895f4cf4e342fb11">  589</a></span>&#160;        std::vector&lt;uint8_t&gt; <a class="code" href="classpcpp_1_1_asn1_octet_string_record.html#a972feedbfdc275c9895f4cf4e342fb11">encodeValue</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160; </div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_octet_string_record.html">Asn1OctetStringRecord</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160; </div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;        <span class="keyword">mutable</span> <span class="keywordtype">bool</span> m_IsPrintable = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;    };</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160; </div>
-<div class="line"><a name="l00599"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_u_t_f8_string_record.html">  599</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_u_t_f8_string_record.html">Asn1UTF8StringRecord</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_asn1_string_record.html">Asn1StringRecord</a>&lt;Asn1UniversalTagType::UTF8String&gt;</div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;    {</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_record.html">Asn1Record</a>;</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160; </div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00606"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_u_t_f8_string_record.html#a1ae2092c87bef7378640206945000e5f">  606</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_u_t_f8_string_record.html#a1ae2092c87bef7378640206945000e5f">Asn1UTF8StringRecord</a>(<span class="keyword">const</span> std::string&amp; value) : <a class="code" href="classpcpp_1_1_asn1_string_record.html">Asn1StringRecord</a>(value)</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;        {}</div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160; </div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_u_t_f8_string_record.html">Asn1UTF8StringRecord</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;    };</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160; </div>
-<div class="line"><a name="l00615"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_printable_string_record.html">  615</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_printable_string_record.html">Asn1PrintableStringRecord</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_asn1_string_record.html">Asn1StringRecord</a>&lt;Asn1UniversalTagType::PrintableString&gt;</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;    {</div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_record.html">Asn1Record</a>;</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160; </div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00622"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_printable_string_record.html#a0c603a966035e455898125b8f5172ae4">  622</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_printable_string_record.html#a0c603a966035e455898125b8f5172ae4">Asn1PrintableStringRecord</a>(<span class="keyword">const</span> std::string&amp; value) : <a class="code" href="classpcpp_1_1_asn1_string_record.html">Asn1StringRecord</a>(value)</div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;        {}</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160; </div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_printable_string_record.html">Asn1PrintableStringRecord</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    };</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160; </div>
-<div class="line"><a name="l00631"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_i_a5_string_record.html">  631</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_i_a5_string_record.html">Asn1IA5StringRecord</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_asn1_string_record.html">Asn1StringRecord</a>&lt;Asn1UniversalTagType::IA5String&gt;</div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;    {</div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_record.html">Asn1Record</a>;</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160; </div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00638"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_i_a5_string_record.html#a036bf5287fb044676fc1d688cd42ae93">  638</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_i_a5_string_record.html#a036bf5287fb044676fc1d688cd42ae93">Asn1IA5StringRecord</a>(<span class="keyword">const</span> std::string&amp; value) : <a class="code" href="classpcpp_1_1_asn1_string_record.html">Asn1StringRecord</a>(value)</div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;        {}</div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160; </div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_i_a5_string_record.html">Asn1IA5StringRecord</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;    };</div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160; </div>
-<div class="line"><a name="l00647"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_boolean_record.html">  647</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_boolean_record.html">Asn1BooleanRecord</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_asn1_primitive_record.html">Asn1PrimitiveRecord</a></div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;    {</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_record.html">Asn1Record</a>;</div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160; </div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00654"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_boolean_record.html#ab5a7aad24fe1da765a1174a5fa1effad">  654</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_boolean_record.html#ab5a7aad24fe1da765a1174a5fa1effad">Asn1BooleanRecord</a>(<span class="keywordtype">bool</span> value);</div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160; </div>
-<div class="line"><a name="l00657"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_boolean_record.html#a1562aadfee2e64389b095db3caeba94d">  657</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_asn1_boolean_record.html#a1562aadfee2e64389b095db3caeba94d">getValue</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;            decodeValueIfNeeded();</div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;            <span class="keywordflow">return</span> m_Value;</div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;        };</div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160; </div>
-<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00664"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_boolean_record.html#a06b3dfc32127e50e45ca4d3e55794010">  664</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_asn1_boolean_record.html#a06b3dfc32127e50e45ca4d3e55794010">decodeValue</a>(uint8_t <span class="keyword">const</span>* data) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00665"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_boolean_record.html#afb022f9c5f38580b2542c23a9f21faa3">  665</a></span>&#160;        std::vector&lt;uint8_t&gt; <a class="code" href="classpcpp_1_1_asn1_boolean_record.html#afb022f9c5f38580b2542c23a9f21faa3">encodeValue</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160; </div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;        std::vector&lt;std::string&gt; toStringList() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;            <span class="keyword">static</span> std::string initFromString(<span class="keyword">const</span> std::string&amp; value);</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160; </div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, EnableIfUn<span class="keywordtype">signed</span>Integral&lt;T&gt; = 0&gt; <span class="keyword">static</span> std::string initFromInt(T value)</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;            {</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;                std::stringstream ss;</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;                ss &lt;&lt; std::hex &lt;&lt; static_cast&lt;uint64_t&gt;(value);</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;                <span class="keywordflow">return</span> ss.str();</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;            }</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;        };</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160; </div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;        <span class="keyword">mutable</span> BigInt m_Value;</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    };</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160; </div>
+<div class="line"><a name="l00517"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_enumerated_record.html">  517</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_enumerated_record.html">Asn1EnumeratedRecord</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_asn1_integer_record.html">Asn1IntegerRecord</a></div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    {</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_record.html">Asn1Record</a>;</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160; </div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00524"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_enumerated_record.html#a39450d2085a75ddd5c8ffd80ac7d1b20">  524</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_enumerated_record.html#a39450d2085a75ddd5c8ffd80ac7d1b20">Asn1EnumeratedRecord</a>(uint32_t value);</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160; </div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_enumerated_record.html">Asn1EnumeratedRecord</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;    };</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160; </div>
+<div class="line"><a name="l00533"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_string_record.html">  533</a></span>&#160;    <span class="keyword">template</span> &lt;Asn1UniversalTagType TagType&gt; <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_string_record.html">Asn1StringRecord</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_asn1_primitive_record.html">Asn1PrimitiveRecord</a></div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    {</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00537"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_string_record.html#a70afd434a1182f5c7af3c2b5afce4c32">  537</a></span>&#160;        std::string <a class="code" href="classpcpp_1_1_asn1_string_record.html#a70afd434a1182f5c7af3c2b5afce4c32">getValue</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;            decodeValueIfNeeded();</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;            <span class="keywordflow">return</span> m_Value;</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;        };</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160; </div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_string_record.html">Asn1StringRecord</a>() : <a class="code" href="classpcpp_1_1_asn1_primitive_record.html">Asn1PrimitiveRecord</a>(TagType)</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;        {}</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160; </div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;        <span class="keyword">explicit</span> Asn1StringRecord(<span class="keyword">const</span> std::string&amp; value) : Asn1PrimitiveRecord(TagType), m_Value(value)</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;        {</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;            m_ValueLength = value.size();</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;            m_TotalLength = m_ValueLength + 2;</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;        }</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160; </div>
+<div class="line"><a name="l00553"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_string_record.html#a96284f4f4dea8d299a5caf52e6d0a1c1">  553</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_asn1_string_record.html#a96284f4f4dea8d299a5caf52e6d0a1c1">decodeValue</a>(uint8_t <span class="keyword">const</span>* data)<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;            m_Value = std::string(<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">char</span> const*<span class="keyword">&gt;</span>(data), m_ValueLength);</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;        }</div>
+<div class="line"><a name="l00557"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_string_record.html#aa304c2d098cdaf83df72957643350b90">  557</a></span>&#160;        std::vector&lt;uint8_t&gt; <a class="code" href="classpcpp_1_1_asn1_string_record.html#aa304c2d098cdaf83df72957643350b90">encodeValue</a>()<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;            <span class="keywordflow">return</span> { m_Value.begin(), m_Value.end() };</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;        }</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160; </div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;        std::vector&lt;std::string&gt; toStringList()<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;            <span class="keywordflow">return</span> { Asn1Record::toStringList().front() + <span class="stringliteral">&quot;, Value: &quot;</span> + <a class="code" href="classpcpp_1_1_asn1_string_record.html#a70afd434a1182f5c7af3c2b5afce4c32">getValue</a>() };</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;        }</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160; </div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;        <span class="keyword">mutable</span> std::string m_Value;</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    };</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160; </div>
+<div class="line"><a name="l00572"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_octet_string_record.html">  572</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_octet_string_record.html">Asn1OctetStringRecord</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_asn1_string_record.html">Asn1StringRecord</a>&lt;Asn1UniversalTagType::OctetString&gt;</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    {</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_record.html">Asn1Record</a>;</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160; </div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;        <span class="keyword">using</span> Asn1StringRecord::Asn1StringRecord;</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160; </div>
+<div class="line"><a name="l00582"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_octet_string_record.html#adb7376eb46415f265237d308d8fac3a3">  582</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_octet_string_record.html#adb7376eb46415f265237d308d8fac3a3">Asn1OctetStringRecord</a>(<span class="keyword">const</span> uint8_t* value, <span class="keywordtype">size_t</span> valueLength);</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160; </div>
+<div class="line"><a name="l00586"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_octet_string_record.html#a0be59e524d12904923f5b99a4eed5673">  586</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_octet_string_record.html#a0be59e524d12904923f5b99a4eed5673">Asn1OctetStringRecord</a>(<span class="keyword">const</span> std::string&amp; value) : <a class="code" href="classpcpp_1_1_asn1_string_record.html">Asn1StringRecord</a>(value)</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;        {}</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160; </div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00590"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_octet_string_record.html#a4b61ed77a35a6a0a4152b103926ba5b9">  590</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_asn1_octet_string_record.html#a4b61ed77a35a6a0a4152b103926ba5b9">decodeValue</a>(uint8_t <span class="keyword">const</span>* data) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00591"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_octet_string_record.html#a972feedbfdc275c9895f4cf4e342fb11">  591</a></span>&#160;        std::vector&lt;uint8_t&gt; <a class="code" href="classpcpp_1_1_asn1_octet_string_record.html#a972feedbfdc275c9895f4cf4e342fb11">encodeValue</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160; </div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_octet_string_record.html">Asn1OctetStringRecord</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160; </div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;        <span class="keyword">mutable</span> <span class="keywordtype">bool</span> m_IsPrintable = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;    };</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160; </div>
+<div class="line"><a name="l00601"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_u_t_f8_string_record.html">  601</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_u_t_f8_string_record.html">Asn1UTF8StringRecord</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_asn1_string_record.html">Asn1StringRecord</a>&lt;Asn1UniversalTagType::UTF8String&gt;</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    {</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_record.html">Asn1Record</a>;</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160; </div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00608"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_u_t_f8_string_record.html#a1ae2092c87bef7378640206945000e5f">  608</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_u_t_f8_string_record.html#a1ae2092c87bef7378640206945000e5f">Asn1UTF8StringRecord</a>(<span class="keyword">const</span> std::string&amp; value) : <a class="code" href="classpcpp_1_1_asn1_string_record.html">Asn1StringRecord</a>(value)</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;        {}</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160; </div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_u_t_f8_string_record.html">Asn1UTF8StringRecord</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;    };</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160; </div>
+<div class="line"><a name="l00617"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_printable_string_record.html">  617</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_printable_string_record.html">Asn1PrintableStringRecord</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_asn1_string_record.html">Asn1StringRecord</a>&lt;Asn1UniversalTagType::PrintableString&gt;</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    {</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_record.html">Asn1Record</a>;</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160; </div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00624"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_printable_string_record.html#a0c603a966035e455898125b8f5172ae4">  624</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_printable_string_record.html#a0c603a966035e455898125b8f5172ae4">Asn1PrintableStringRecord</a>(<span class="keyword">const</span> std::string&amp; value) : <a class="code" href="classpcpp_1_1_asn1_string_record.html">Asn1StringRecord</a>(value)</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;        {}</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160; </div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_printable_string_record.html">Asn1PrintableStringRecord</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;    };</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160; </div>
+<div class="line"><a name="l00633"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_i_a5_string_record.html">  633</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_i_a5_string_record.html">Asn1IA5StringRecord</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_asn1_string_record.html">Asn1StringRecord</a>&lt;Asn1UniversalTagType::IA5String&gt;</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    {</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_record.html">Asn1Record</a>;</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160; </div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00640"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_i_a5_string_record.html#a036bf5287fb044676fc1d688cd42ae93">  640</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_i_a5_string_record.html#a036bf5287fb044676fc1d688cd42ae93">Asn1IA5StringRecord</a>(<span class="keyword">const</span> std::string&amp; value) : <a class="code" href="classpcpp_1_1_asn1_string_record.html">Asn1StringRecord</a>(value)</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;        {}</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160; </div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_i_a5_string_record.html">Asn1IA5StringRecord</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;    };</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160; </div>
+<div class="line"><a name="l00649"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_boolean_record.html">  649</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_boolean_record.html">Asn1BooleanRecord</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_asn1_primitive_record.html">Asn1PrimitiveRecord</a></div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;    {</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_record.html">Asn1Record</a>;</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160; </div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00656"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_boolean_record.html#ab5a7aad24fe1da765a1174a5fa1effad">  656</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_boolean_record.html#ab5a7aad24fe1da765a1174a5fa1effad">Asn1BooleanRecord</a>(<span class="keywordtype">bool</span> value);</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160; </div>
+<div class="line"><a name="l00659"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_boolean_record.html#a1562aadfee2e64389b095db3caeba94d">  659</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_asn1_boolean_record.html#a1562aadfee2e64389b095db3caeba94d">getValue</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;            decodeValueIfNeeded();</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;            <span class="keywordflow">return</span> m_Value;</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;        };</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160; </div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00666"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_boolean_record.html#a06b3dfc32127e50e45ca4d3e55794010">  666</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_asn1_boolean_record.html#a06b3dfc32127e50e45ca4d3e55794010">decodeValue</a>(uint8_t <span class="keyword">const</span>* data) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00667"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_boolean_record.html#afb022f9c5f38580b2542c23a9f21faa3">  667</a></span>&#160;        std::vector&lt;uint8_t&gt; <a class="code" href="classpcpp_1_1_asn1_boolean_record.html#afb022f9c5f38580b2542c23a9f21faa3">encodeValue</a>() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160; </div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_boolean_record.html">Asn1BooleanRecord</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160; </div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;        <span class="keyword">mutable</span> <span class="keywordtype">bool</span> m_Value = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;    };</div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160; </div>
-<div class="line"><a name="l00677"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_null_record.html">  677</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_null_record.html">Asn1NullRecord</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_asn1_primitive_record.html">Asn1PrimitiveRecord</a></div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;    {</div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_record.html">Asn1Record</a>;</div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160; </div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00683"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_null_record.html#a97c09d1572b9a60e860df5d036f476ee">  683</a></span>&#160;        <a class="code" href="classpcpp_1_1_asn1_null_record.html#a97c09d1572b9a60e860df5d036f476ee">Asn1NullRecord</a>();</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160; </div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00686"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_null_record.html#a0f9d31e8255f6951562fd04b48657e82">  686</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_asn1_null_record.html#a0f9d31e8255f6951562fd04b48657e82">decodeValue</a>(uint8_t <span class="keyword">const</span>* data)<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;<span class="keyword">        </span>{}</div>
-<div class="line"><a name="l00688"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_null_record.html#a2a55ac348ce2059d78d705b93345b366">  688</a></span>&#160;        std::vector&lt;uint8_t&gt; <a class="code" href="classpcpp_1_1_asn1_null_record.html#a2a55ac348ce2059d78d705b93345b366">encodeValue</a>()<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;            <span class="keywordflow">return</span> {};</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;        }</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;    };</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160; </div>
-<div class="line"><a name="l00696"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_object_identifier.html">  696</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_object_identifier.html">Asn1ObjectIdentifier</a></div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;    {</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_object_identifier_record.html">Asn1ObjectIdentifierRecord</a>;</div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160; </div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00704"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_object_identifier.html#a58757656f8756ebdbf9f691b43c2f3ed">  704</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_object_identifier.html#a58757656f8756ebdbf9f691b43c2f3ed">Asn1ObjectIdentifier</a>(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> dataLen);</div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160; </div>
-<div class="line"><a name="l00709"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_object_identifier.html#aa26caedfe0d7aa0d942d26b59efb1354">  709</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_object_identifier.html#aa26caedfe0d7aa0d942d26b59efb1354">Asn1ObjectIdentifier</a>(<span class="keyword">const</span> std::string&amp; oidString);</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160; </div>
-<div class="line"><a name="l00712"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_object_identifier.html#aeee379dd70526f027dba8ebf5feb364a">  712</a></span>&#160;        <span class="keyword">const</span> std::vector&lt;uint32_t&gt;&amp; <a class="code" href="classpcpp_1_1_asn1_object_identifier.html#aeee379dd70526f027dba8ebf5feb364a">getComponents</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;            <span class="keywordflow">return</span> m_Components;</div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;        }</div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160; </div>
-<div class="line"><a name="l00719"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_object_identifier.html#a31fe03f2c80b64317a7913f4a44c482b">  719</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_asn1_object_identifier.html#a31fe03f2c80b64317a7913f4a44c482b">operator==</a>(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_asn1_object_identifier.html">Asn1ObjectIdentifier</a>&amp; other)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;            <span class="keywordflow">return</span> m_Components == other.m_Components;</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;        }</div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160; </div>
-<div class="line"><a name="l00726"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_object_identifier.html#a61a313d6ee65f6da698ba7054c7c761f">  726</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_asn1_object_identifier.html#a61a313d6ee65f6da698ba7054c7c761f">operator!=</a>(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_asn1_object_identifier.html">Asn1ObjectIdentifier</a>&amp; other)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;            <span class="keywordflow">return</span> m_Components != other.m_Components;</div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;        }</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160; </div>
-<div class="line"><a name="l00733"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_object_identifier.html#a42ef0e5436e71a988abd497409c20972">  733</a></span>&#160;        std::string <a class="code" href="classpcpp_1_1_asn1_object_identifier.html#a42ef0e5436e71a988abd497409c20972">toString</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160; </div>
-<div class="line"><a name="l00737"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_object_identifier.html#a314ceb2ec11a1967e3d98fa38a4dc201">  737</a></span>&#160;        std::vector&lt;uint8_t&gt; <a class="code" href="classpcpp_1_1_asn1_object_identifier.html#a314ceb2ec11a1967e3d98fa38a4dc201">toBytes</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160; </div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;        <span class="keyword">friend</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_asn1_object_identifier.html">Asn1ObjectIdentifier</a>&amp; oid)</div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;        {</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;            <span class="keywordflow">return</span> os &lt;&lt; oid.<a class="code" href="classpcpp_1_1_asn1_object_identifier.html#a42ef0e5436e71a988abd497409c20972">toString</a>();</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;        }</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160; </div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_object_identifier.html">Asn1ObjectIdentifier</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160; </div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;        std::vector&lt;uint32_t&gt; m_Components;</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    };</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160; </div>
-<div class="line"><a name="l00753"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_object_identifier_record.html">  753</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_object_identifier_record.html">Asn1ObjectIdentifierRecord</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_asn1_primitive_record.html">Asn1PrimitiveRecord</a></div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;    {</div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_record.html">Asn1Record</a>;</div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160; </div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00760"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_object_identifier_record.html#a6d79440d0cd972957b06fec0c701c12a">  760</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_object_identifier_record.html#a6d79440d0cd972957b06fec0c701c12a">Asn1ObjectIdentifierRecord</a>(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_asn1_object_identifier.html">Asn1ObjectIdentifier</a>&amp; value);</div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160; </div>
-<div class="line"><a name="l00763"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_object_identifier_record.html#a2be0f183474b79e83b899f55a8890082">  763</a></span>&#160;        <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_asn1_object_identifier.html">Asn1ObjectIdentifier</a>&amp; <a class="code" href="classpcpp_1_1_asn1_object_identifier_record.html#a2be0f183474b79e83b899f55a8890082">getValue</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;            decodeValueIfNeeded();</div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;            <span class="keywordflow">return</span> m_Value;</div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;        }</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160; </div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00770"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_object_identifier_record.html#a02661d006b45599faad76bd605afb41e">  770</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_asn1_object_identifier_record.html#a02661d006b45599faad76bd605afb41e">decodeValue</a>(uint8_t <span class="keyword">const</span>* data) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00771"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_object_identifier_record.html#ada9d1607621e03e9c17c325d73da046e">  771</a></span>&#160;        std::vector&lt;uint8_t&gt; <a class="code" href="classpcpp_1_1_asn1_object_identifier_record.html#ada9d1607621e03e9c17c325d73da046e">encodeValue</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160; </div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;        std::vector&lt;std::string&gt; toStringList() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;        std::vector&lt;std::string&gt; toStringList() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160; </div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_boolean_record.html">Asn1BooleanRecord</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160; </div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;        <span class="keyword">mutable</span> <span class="keywordtype">bool</span> m_Value = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    };</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160; </div>
+<div class="line"><a name="l00679"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_null_record.html">  679</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_null_record.html">Asn1NullRecord</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_asn1_primitive_record.html">Asn1PrimitiveRecord</a></div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;    {</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_record.html">Asn1Record</a>;</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160; </div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00685"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_null_record.html#a97c09d1572b9a60e860df5d036f476ee">  685</a></span>&#160;        <a class="code" href="classpcpp_1_1_asn1_null_record.html#a97c09d1572b9a60e860df5d036f476ee">Asn1NullRecord</a>();</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160; </div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00688"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_null_record.html#a0f9d31e8255f6951562fd04b48657e82">  688</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_asn1_null_record.html#a0f9d31e8255f6951562fd04b48657e82">decodeValue</a>(uint8_t <span class="keyword">const</span>* data)<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;<span class="keyword">        </span>{}</div>
+<div class="line"><a name="l00690"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_null_record.html#a2a55ac348ce2059d78d705b93345b366">  690</a></span>&#160;        std::vector&lt;uint8_t&gt; <a class="code" href="classpcpp_1_1_asn1_null_record.html#a2a55ac348ce2059d78d705b93345b366">encodeValue</a>()<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;            <span class="keywordflow">return</span> {};</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;        }</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;    };</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160; </div>
+<div class="line"><a name="l00698"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_object_identifier.html">  698</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_object_identifier.html">Asn1ObjectIdentifier</a></div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;    {</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_object_identifier_record.html">Asn1ObjectIdentifierRecord</a>;</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160; </div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00706"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_object_identifier.html#a58757656f8756ebdbf9f691b43c2f3ed">  706</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_object_identifier.html#a58757656f8756ebdbf9f691b43c2f3ed">Asn1ObjectIdentifier</a>(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> dataLen);</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160; </div>
+<div class="line"><a name="l00711"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_object_identifier.html#aa26caedfe0d7aa0d942d26b59efb1354">  711</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_object_identifier.html#aa26caedfe0d7aa0d942d26b59efb1354">Asn1ObjectIdentifier</a>(<span class="keyword">const</span> std::string&amp; oidString);</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160; </div>
+<div class="line"><a name="l00714"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_object_identifier.html#aeee379dd70526f027dba8ebf5feb364a">  714</a></span>&#160;        <span class="keyword">const</span> std::vector&lt;uint32_t&gt;&amp; <a class="code" href="classpcpp_1_1_asn1_object_identifier.html#aeee379dd70526f027dba8ebf5feb364a">getComponents</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;            <span class="keywordflow">return</span> m_Components;</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;        }</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160; </div>
+<div class="line"><a name="l00721"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_object_identifier.html#a31fe03f2c80b64317a7913f4a44c482b">  721</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_asn1_object_identifier.html#a31fe03f2c80b64317a7913f4a44c482b">operator==</a>(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_asn1_object_identifier.html">Asn1ObjectIdentifier</a>&amp; other)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;            <span class="keywordflow">return</span> m_Components == other.m_Components;</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;        }</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160; </div>
+<div class="line"><a name="l00728"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_object_identifier.html#a61a313d6ee65f6da698ba7054c7c761f">  728</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_asn1_object_identifier.html#a61a313d6ee65f6da698ba7054c7c761f">operator!=</a>(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_asn1_object_identifier.html">Asn1ObjectIdentifier</a>&amp; other)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;            <span class="keywordflow">return</span> m_Components != other.m_Components;</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;        }</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160; </div>
+<div class="line"><a name="l00735"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_object_identifier.html#a42ef0e5436e71a988abd497409c20972">  735</a></span>&#160;        std::string <a class="code" href="classpcpp_1_1_asn1_object_identifier.html#a42ef0e5436e71a988abd497409c20972">toString</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160; </div>
+<div class="line"><a name="l00739"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_object_identifier.html#a314ceb2ec11a1967e3d98fa38a4dc201">  739</a></span>&#160;        std::vector&lt;uint8_t&gt; <a class="code" href="classpcpp_1_1_asn1_object_identifier.html#a314ceb2ec11a1967e3d98fa38a4dc201">toBytes</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160; </div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;        <span class="keyword">friend</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_asn1_object_identifier.html">Asn1ObjectIdentifier</a>&amp; oid)</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;        {</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;            <span class="keywordflow">return</span> os &lt;&lt; oid.<a class="code" href="classpcpp_1_1_asn1_object_identifier.html#a42ef0e5436e71a988abd497409c20972">toString</a>();</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;        }</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160; </div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_object_identifier.html">Asn1ObjectIdentifier</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160; </div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;        std::vector&lt;uint32_t&gt; m_Components;</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;    };</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160; </div>
+<div class="line"><a name="l00755"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_object_identifier_record.html">  755</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_object_identifier_record.html">Asn1ObjectIdentifierRecord</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_asn1_primitive_record.html">Asn1PrimitiveRecord</a></div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;    {</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_record.html">Asn1Record</a>;</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160; </div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00762"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_object_identifier_record.html#a6d79440d0cd972957b06fec0c701c12a">  762</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_object_identifier_record.html#a6d79440d0cd972957b06fec0c701c12a">Asn1ObjectIdentifierRecord</a>(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_asn1_object_identifier.html">Asn1ObjectIdentifier</a>&amp; value);</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160; </div>
+<div class="line"><a name="l00765"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_object_identifier_record.html#a2be0f183474b79e83b899f55a8890082">  765</a></span>&#160;        <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_asn1_object_identifier.html">Asn1ObjectIdentifier</a>&amp; <a class="code" href="classpcpp_1_1_asn1_object_identifier_record.html#a2be0f183474b79e83b899f55a8890082">getValue</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;            decodeValueIfNeeded();</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;            <span class="keywordflow">return</span> m_Value;</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;        }</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160; </div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00772"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_object_identifier_record.html#a02661d006b45599faad76bd605afb41e">  772</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_asn1_object_identifier_record.html#a02661d006b45599faad76bd605afb41e">decodeValue</a>(uint8_t <span class="keyword">const</span>* data) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00773"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_object_identifier_record.html#ada9d1607621e03e9c17c325d73da046e">  773</a></span>&#160;        std::vector&lt;uint8_t&gt; <a class="code" href="classpcpp_1_1_asn1_object_identifier_record.html#ada9d1607621e03e9c17c325d73da046e">encodeValue</a>() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160; </div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;        <span class="keyword">mutable</span> <a class="code" href="classpcpp_1_1_asn1_object_identifier.html">Asn1ObjectIdentifier</a> m_Value;</div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160; </div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_object_identifier_record.html">Asn1ObjectIdentifierRecord</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;    };</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160; </div>
-<div class="line"><a name="l00784"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_time_record.html">  784</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_time_record.html">Asn1TimeRecord</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_asn1_primitive_record.html">Asn1PrimitiveRecord</a></div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;    {</div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00791"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_time_record.html#ac5448d5f09cd70b7fe54b66e4bf69ae6">  791</a></span>&#160;        std::chrono::system_clock::time_point <a class="code" href="classpcpp_1_1_asn1_time_record.html#ac5448d5f09cd70b7fe54b66e4bf69ae6">getValue</a>(<span class="keyword">const</span> std::string&amp; timezone = <span class="stringliteral">&quot;Z&quot;</span>)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;            decodeValueIfNeeded();</div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;            <span class="keywordflow">return</span> adjustTimezones(m_Value, <span class="stringliteral">&quot;Z&quot;</span>, timezone);</div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;        };</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160; </div>
-<div class="line"><a name="l00803"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_time_record.html#ad1ec1fdf90be42f432ce2d8ea2c28f0c">  803</a></span>&#160;        std::string <a class="code" href="classpcpp_1_1_asn1_time_record.html#ad1ec1fdf90be42f432ce2d8ea2c28f0c">getValueAsString</a>(<span class="keyword">const</span> std::string&amp; format = <span class="stringliteral">&quot;%Y-%m-%d %H:%M:%S&quot;</span>, <span class="keyword">const</span> std::string&amp; timezone = <span class="stringliteral">&quot;Z&quot;</span>,</div>
-<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;                                     <span class="keywordtype">bool</span> includeMilliseconds = <span class="keyword">false</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160; </div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_time_record.html">Asn1TimeRecord</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_time_record.html">Asn1TimeRecord</a>(<a class="code" href="namespacepcpp.html#a9b5b777cefd9f4b92bb6686d2c055bbe">Asn1UniversalTagType</a> tagType, <span class="keyword">const</span> std::chrono::system_clock::time_point&amp; value,</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;                                <span class="keyword">const</span> std::string&amp; timezone);</div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160; </div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;        <span class="keyword">mutable</span> std::chrono::system_clock::time_point m_Value;</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;        std::vector&lt;std::string&gt; toStringList() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160; </div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;        <span class="keyword">mutable</span> <a class="code" href="classpcpp_1_1_asn1_object_identifier.html">Asn1ObjectIdentifier</a> m_Value;</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160; </div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_object_identifier_record.html">Asn1ObjectIdentifierRecord</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;    };</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160; </div>
+<div class="line"><a name="l00786"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_time_record.html">  786</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_time_record.html">Asn1TimeRecord</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_asn1_primitive_record.html">Asn1PrimitiveRecord</a></div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;    {</div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00793"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_time_record.html#ac5448d5f09cd70b7fe54b66e4bf69ae6">  793</a></span>&#160;        std::chrono::system_clock::time_point <a class="code" href="classpcpp_1_1_asn1_time_record.html#ac5448d5f09cd70b7fe54b66e4bf69ae6">getValue</a>(<span class="keyword">const</span> std::string&amp; timezone = <span class="stringliteral">&quot;Z&quot;</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;            decodeValueIfNeeded();</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;            <span class="keywordflow">return</span> adjustTimezones(m_Value, <span class="stringliteral">&quot;Z&quot;</span>, timezone);</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;        };</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160; </div>
+<div class="line"><a name="l00805"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_time_record.html#ad1ec1fdf90be42f432ce2d8ea2c28f0c">  805</a></span>&#160;        std::string <a class="code" href="classpcpp_1_1_asn1_time_record.html#ad1ec1fdf90be42f432ce2d8ea2c28f0c">getValueAsString</a>(<span class="keyword">const</span> std::string&amp; format = <span class="stringliteral">&quot;%Y-%m-%d %H:%M:%S&quot;</span>, <span class="keyword">const</span> std::string&amp; timezone = <span class="stringliteral">&quot;Z&quot;</span>,</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;                                     <span class="keywordtype">bool</span> includeMilliseconds = <span class="keyword">false</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160; </div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_time_record.html">Asn1TimeRecord</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_time_record.html">Asn1TimeRecord</a>(<a class="code" href="namespacepcpp.html#a9b5b777cefd9f4b92bb6686d2c055bbe">Asn1UniversalTagType</a> tagType, <span class="keyword">const</span> std::chrono::system_clock::time_point&amp; value,</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;                                <span class="keyword">const</span> std::string&amp; timezone);</div>
 <div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160; </div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;        std::vector&lt;std::string&gt; toStringList() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;        <span class="keyword">mutable</span> std::chrono::system_clock::time_point m_Value;</div>
 <div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160; </div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> validateTimezone(<span class="keyword">const</span> std::string&amp; timezone);</div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;        <span class="keyword">static</span> std::chrono::system_clock::time_point adjustTimezones(<span class="keyword">const</span> std::chrono::system_clock::time_point&amp; value,</div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;                                                                     <span class="keyword">const</span> std::string&amp; fromTimezone,</div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;                                                                     <span class="keyword">const</span> std::string&amp; toTimezone);</div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;    };</div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160; </div>
-<div class="line"><a name="l00823"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_utc_time_record.html">  823</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_utc_time_record.html">Asn1UtcTimeRecord</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_asn1_time_record.html">Asn1TimeRecord</a></div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;    {</div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_record.html">Asn1Record</a>;</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160; </div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00831"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_utc_time_record.html#aeb6de323007668629ab0bd7e70bec64d">  831</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_utc_time_record.html#aeb6de323007668629ab0bd7e70bec64d">Asn1UtcTimeRecord</a>(<span class="keyword">const</span> std::chrono::system_clock::time_point&amp; value, <span class="keywordtype">bool</span> withSeconds = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160; </div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00834"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_utc_time_record.html#ab4149f8b6346e068c09c69c7efccbce9">  834</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_asn1_utc_time_record.html#ab4149f8b6346e068c09c69c7efccbce9">decodeValue</a>(uint8_t <span class="keyword">const</span>* data) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00835"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_utc_time_record.html#a354bd722502e23c0cb6c9063fff6c2a9">  835</a></span>&#160;        std::vector&lt;uint8_t&gt; <a class="code" href="classpcpp_1_1_asn1_utc_time_record.html#a354bd722502e23c0cb6c9063fff6c2a9">encodeValue</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160; </div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_utc_time_record.html">Asn1UtcTimeRecord</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;        <span class="keyword">mutable</span> <span class="keywordtype">bool</span> m_WithSeconds = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;    };</div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160; </div>
-<div class="line"><a name="l00844"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_generalized_time_record.html">  844</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_generalized_time_record.html">Asn1GeneralizedTimeRecord</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_asn1_time_record.html">Asn1TimeRecord</a></div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;    {</div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_record.html">Asn1Record</a>;</div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160; </div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00854"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_generalized_time_record.html#aaab8754feecba5d3772801355b7d5d2a">  854</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_generalized_time_record.html#aaab8754feecba5d3772801355b7d5d2a">Asn1GeneralizedTimeRecord</a>(<span class="keyword">const</span> std::chrono::system_clock::time_point&amp; value,</div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;                                           <span class="keyword">const</span> std::string&amp; timezone = <span class="stringliteral">&quot;Z&quot;</span>);</div>
-<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160; </div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00858"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_generalized_time_record.html#a40782e6faba228286f3f6f002a4dc4f9">  858</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_asn1_generalized_time_record.html#a40782e6faba228286f3f6f002a4dc4f9">decodeValue</a>(uint8_t <span class="keyword">const</span>* data) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00859"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_generalized_time_record.html#aa171d4c55b208607844303752f1138de">  859</a></span>&#160;        std::vector&lt;uint8_t&gt; <a class="code" href="classpcpp_1_1_asn1_generalized_time_record.html#aa171d4c55b208607844303752f1138de">encodeValue</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160; </div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_generalized_time_record.html">Asn1GeneralizedTimeRecord</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;        <span class="keyword">mutable</span> std::string m_Timezone;</div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;    };</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160; </div>
-<div class="line"><a name="l00868"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_bit_string_record.html">  868</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_bit_string_record.html">Asn1BitStringRecord</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_asn1_primitive_record.html">Asn1PrimitiveRecord</a></div>
-<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;    {</div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_record.html">Asn1Record</a>;</div>
-<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160; </div>
-<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00876"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_bit_string_record.html#aa08b5adae9d5cbd965554ef46136cad3">  876</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_bit_string_record.html#aa08b5adae9d5cbd965554ef46136cad3">Asn1BitStringRecord</a>(<span class="keyword">const</span> std::string&amp; value);</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160; </div>
-<div class="line"><a name="l00879"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_bit_string_record.html#a0ba8728a88e61e7176cde5d07f109c33">  879</a></span>&#160;        std::string <a class="code" href="classpcpp_1_1_asn1_bit_string_record.html#a0ba8728a88e61e7176cde5d07f109c33">getValue</a>()</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;        {</div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;            decodeValueIfNeeded();</div>
-<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;            <span class="keywordflow">return</span> m_Value.toString();</div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;        };</div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160; </div>
-<div class="line"><a name="l00886"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_bit_string_record.html#a77dbac1eb7df5bb958c62038179e0979">  886</a></span>&#160;        std::vector&lt;uint8_t&gt; <a class="code" href="classpcpp_1_1_asn1_bit_string_record.html#a77dbac1eb7df5bb958c62038179e0979">getVecValue</a>()</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;        {</div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;            decodeValueIfNeeded();</div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;            <span class="keywordflow">return</span> m_Value.toBytes();</div>
-<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;        }</div>
-<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160; </div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00893"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_bit_string_record.html#ae0d7eb6857c647c4bc763573989d8b04">  893</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_asn1_bit_string_record.html#ae0d7eb6857c647c4bc763573989d8b04">decodeValue</a>(uint8_t <span class="keyword">const</span>* data) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00894"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_bit_string_record.html#ab09a36cbb94fea5ef1352a5ea052f548">  894</a></span>&#160;        std::vector&lt;uint8_t&gt; <a class="code" href="classpcpp_1_1_asn1_bit_string_record.html#ab09a36cbb94fea5ef1352a5ea052f548">encodeValue</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160; </div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;        std::vector&lt;std::string&gt; toStringList() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;        std::vector&lt;std::string&gt; toStringList() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160; </div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> validateTimezone(<span class="keyword">const</span> std::string&amp; timezone);</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;        <span class="keyword">static</span> std::chrono::system_clock::time_point adjustTimezones(<span class="keyword">const</span> std::chrono::system_clock::time_point&amp; value,</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;                                                                     <span class="keyword">const</span> std::string&amp; fromTimezone,</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;                                                                     <span class="keyword">const</span> std::string&amp; toTimezone);</div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;    };</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160; </div>
+<div class="line"><a name="l00825"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_utc_time_record.html">  825</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_utc_time_record.html">Asn1UtcTimeRecord</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_asn1_time_record.html">Asn1TimeRecord</a></div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;    {</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_record.html">Asn1Record</a>;</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160; </div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00833"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_utc_time_record.html#aeb6de323007668629ab0bd7e70bec64d">  833</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_utc_time_record.html#aeb6de323007668629ab0bd7e70bec64d">Asn1UtcTimeRecord</a>(<span class="keyword">const</span> std::chrono::system_clock::time_point&amp; value, <span class="keywordtype">bool</span> withSeconds = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160; </div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00836"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_utc_time_record.html#ab4149f8b6346e068c09c69c7efccbce9">  836</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_asn1_utc_time_record.html#ab4149f8b6346e068c09c69c7efccbce9">decodeValue</a>(uint8_t <span class="keyword">const</span>* data) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00837"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_utc_time_record.html#a354bd722502e23c0cb6c9063fff6c2a9">  837</a></span>&#160;        std::vector&lt;uint8_t&gt; <a class="code" href="classpcpp_1_1_asn1_utc_time_record.html#a354bd722502e23c0cb6c9063fff6c2a9">encodeValue</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160; </div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_utc_time_record.html">Asn1UtcTimeRecord</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;        <span class="keyword">mutable</span> <span class="keywordtype">bool</span> m_WithSeconds = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;    };</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160; </div>
+<div class="line"><a name="l00846"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_generalized_time_record.html">  846</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_generalized_time_record.html">Asn1GeneralizedTimeRecord</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_asn1_time_record.html">Asn1TimeRecord</a></div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;    {</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_record.html">Asn1Record</a>;</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160; </div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00856"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_generalized_time_record.html#aaab8754feecba5d3772801355b7d5d2a">  856</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_generalized_time_record.html#aaab8754feecba5d3772801355b7d5d2a">Asn1GeneralizedTimeRecord</a>(<span class="keyword">const</span> std::chrono::system_clock::time_point&amp; value,</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;                                           <span class="keyword">const</span> std::string&amp; timezone = <span class="stringliteral">&quot;Z&quot;</span>);</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160; </div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00860"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_generalized_time_record.html#a40782e6faba228286f3f6f002a4dc4f9">  860</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_asn1_generalized_time_record.html#a40782e6faba228286f3f6f002a4dc4f9">decodeValue</a>(uint8_t <span class="keyword">const</span>* data) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00861"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_generalized_time_record.html#aa171d4c55b208607844303752f1138de">  861</a></span>&#160;        std::vector&lt;uint8_t&gt; <a class="code" href="classpcpp_1_1_asn1_generalized_time_record.html#aa171d4c55b208607844303752f1138de">encodeValue</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160; </div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;        <a class="code" href="classpcpp_1_1_asn1_generalized_time_record.html">Asn1GeneralizedTimeRecord</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;        <span class="keyword">mutable</span> std::string m_Timezone;</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;    };</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160; </div>
+<div class="line"><a name="l00870"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_bit_string_record.html">  870</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_bit_string_record.html">Asn1BitStringRecord</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_asn1_primitive_record.html">Asn1PrimitiveRecord</a></div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;    {</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classpcpp_1_1_asn1_record.html">Asn1Record</a>;</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160; </div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00878"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_bit_string_record.html#aa08b5adae9d5cbd965554ef46136cad3">  878</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1_asn1_bit_string_record.html#aa08b5adae9d5cbd965554ef46136cad3">Asn1BitStringRecord</a>(<span class="keyword">const</span> std::string&amp; value);</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160; </div>
+<div class="line"><a name="l00881"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_bit_string_record.html#a0ba8728a88e61e7176cde5d07f109c33">  881</a></span>&#160;        std::string <a class="code" href="classpcpp_1_1_asn1_bit_string_record.html#a0ba8728a88e61e7176cde5d07f109c33">getValue</a>()</div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;        {</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;            decodeValueIfNeeded();</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;            <span class="keywordflow">return</span> m_Value.toString();</div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;        };</div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160; </div>
+<div class="line"><a name="l00888"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_bit_string_record.html#a77dbac1eb7df5bb958c62038179e0979">  888</a></span>&#160;        std::vector&lt;uint8_t&gt; <a class="code" href="classpcpp_1_1_asn1_bit_string_record.html#a77dbac1eb7df5bb958c62038179e0979">getVecValue</a>()</div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;        {</div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;            decodeValueIfNeeded();</div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;            <span class="keywordflow">return</span> m_Value.toBytes();</div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;        }</div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160; </div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00895"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_bit_string_record.html#ae0d7eb6857c647c4bc763573989d8b04">  895</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_asn1_bit_string_record.html#ae0d7eb6857c647c4bc763573989d8b04">decodeValue</a>(uint8_t <span class="keyword">const</span>* data) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00896"></a><span class="lineno"><a class="line" href="classpcpp_1_1_asn1_bit_string_record.html#ab09a36cbb94fea5ef1352a5ea052f548">  896</a></span>&#160;        std::vector&lt;uint8_t&gt; <a class="code" href="classpcpp_1_1_asn1_bit_string_record.html#ab09a36cbb94fea5ef1352a5ea052f548">encodeValue</a>() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160; </div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;        <span class="keyword">class </span>BitSet</div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;        {</div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;            BitSet() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;            <span class="keyword">explicit</span> BitSet(<span class="keyword">const</span> std::string&amp; value);</div>
-<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;            BitSet(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> numBits);</div>
-<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160; </div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;            BitSet&amp; operator=(<span class="keyword">const</span> std::string&amp; value);</div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;        std::vector&lt;std::string&gt; toStringList() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160; </div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;        <span class="keyword">class </span>BitSet</div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;        {</div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;            BitSet() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;            <span class="keyword">explicit</span> BitSet(<span class="keyword">const</span> std::string&amp; value);</div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;            BitSet(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> numBits);</div>
 <div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160; </div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;            <span class="keywordtype">size_t</span> sizeInBytes() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;            std::string <a class="code" href="classpcpp_1_1_asn1_record.html#a1e9a40bbe23c6b00457246e44e143f0a">toString</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;            std::vector&lt;uint8_t&gt; toBytes() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;            <span class="keywordtype">size_t</span> getNumBits()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;<span class="keyword">            </span>{</div>
-<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;                <span class="keywordflow">return</span> m_NumBits;</div>
-<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;            }</div>
-<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160; </div>
-<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;            <span class="keywordtype">void</span> initFromString(<span class="keyword">const</span> std::string&amp; value);</div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160; </div>
-<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;            std::vector&lt;std::bitset&lt;8&gt;&gt; m_Data;</div>
-<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;            <span class="keywordtype">size_t</span> m_NumBits = 0;</div>
-<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;        };</div>
-<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160; </div>
-<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;        Asn1BitStringRecord() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;            BitSet&amp; operator=(<span class="keyword">const</span> std::string&amp; value);</div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160; </div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;            <span class="keywordtype">size_t</span> sizeInBytes() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;            std::string <a class="code" href="classpcpp_1_1_asn1_record.html#a1e9a40bbe23c6b00457246e44e143f0a">toString</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;            std::vector&lt;uint8_t&gt; toBytes() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;            <span class="keywordtype">size_t</span> getNumBits()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;<span class="keyword">            </span>{</div>
+<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;                <span class="keywordflow">return</span> m_NumBits;</div>
+<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;            }</div>
+<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160; </div>
+<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;            <span class="keywordtype">void</span> initFromString(<span class="keyword">const</span> std::string&amp; value);</div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160; </div>
+<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;            std::vector&lt;std::bitset&lt;8&gt;&gt; m_Data;</div>
+<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;            <span class="keywordtype">size_t</span> m_NumBits = 0;</div>
+<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;        };</div>
 <div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160; </div>
-<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;        <span class="keyword">mutable</span> BitSet m_Value;</div>
-<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;    };</div>
-<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;        Asn1BitStringRecord() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160; </div>
+<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;        <span class="keyword">mutable</span> BitSet m_Value;</div>
+<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;    };</div>
+<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
 <div class="ttc" id="a_asn1_codec_8h_html_afc72f6fcbe79f8150a6c7f8dcbed2b6d"><div class="ttname"><a href="_asn1_codec_8h.html#afc72f6fcbe79f8150a6c7f8dcbed2b6d">pcpp::internal::Asn1LoadPolicy</a></div><div class="ttdeci">Asn1LoadPolicy</div><div class="ttdoc">Policy for when to evaluate (decode) ASN.1 record values. Determines whether the value is decoded imm...</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:118</div></div>
 <div class="ttc" id="a_asn1_codec_8h_html_afc72f6fcbe79f8150a6c7f8dcbed2b6da46a9ebdb80117bfa1f0cdea65438290a"><div class="ttname"><a href="_asn1_codec_8h.html#afc72f6fcbe79f8150a6c7f8dcbed2b6da46a9ebdb80117bfa1f0cdea65438290a">pcpp::internal::Asn1LoadPolicy::Lazy</a></div><div class="ttdeci">@ Lazy</div><div class="ttdoc">The value is evaluated on first access (lazy decoding).</div></div>
 <div class="ttc" id="a_asn1_codec_8h_html_afc72f6fcbe79f8150a6c7f8dcbed2b6da483c336d7d9fe614a8b5aae1e746e01f"><div class="ttname"><a href="_asn1_codec_8h.html#afc72f6fcbe79f8150a6c7f8dcbed2b6da483c336d7d9fe614a8b5aae1e746e01f">pcpp::internal::Asn1LoadPolicy::Eager</a></div><div class="ttdeci">@ Eager</div><div class="ttdoc">The value is evaluated immediately on construction (eager decoding).</div></div>
 <div class="ttc" id="a_pointer_vector_8h_html"><div class="ttname"><a href="_pointer_vector_8h.html">PointerVector.h</a></div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_bit_string_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_bit_string_record.html">pcpp::Asn1BitStringRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:869</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_bit_string_record_html_a0ba8728a88e61e7176cde5d07f109c33"><div class="ttname"><a href="classpcpp_1_1_asn1_bit_string_record.html#a0ba8728a88e61e7176cde5d07f109c33">pcpp::Asn1BitStringRecord::getValue</a></div><div class="ttdeci">std::string getValue()</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:879</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_bit_string_record_html_a77dbac1eb7df5bb958c62038179e0979"><div class="ttname"><a href="classpcpp_1_1_asn1_bit_string_record.html#a77dbac1eb7df5bb958c62038179e0979">pcpp::Asn1BitStringRecord::getVecValue</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; getVecValue()</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:886</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_bit_string_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_bit_string_record.html">pcpp::Asn1BitStringRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:871</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_bit_string_record_html_a0ba8728a88e61e7176cde5d07f109c33"><div class="ttname"><a href="classpcpp_1_1_asn1_bit_string_record.html#a0ba8728a88e61e7176cde5d07f109c33">pcpp::Asn1BitStringRecord::getValue</a></div><div class="ttdeci">std::string getValue()</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:881</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_bit_string_record_html_a77dbac1eb7df5bb958c62038179e0979"><div class="ttname"><a href="classpcpp_1_1_asn1_bit_string_record.html#a77dbac1eb7df5bb958c62038179e0979">pcpp::Asn1BitStringRecord::getVecValue</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; getVecValue()</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:888</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_bit_string_record_html_aa08b5adae9d5cbd965554ef46136cad3"><div class="ttname"><a href="classpcpp_1_1_asn1_bit_string_record.html#aa08b5adae9d5cbd965554ef46136cad3">pcpp::Asn1BitStringRecord::Asn1BitStringRecord</a></div><div class="ttdeci">Asn1BitStringRecord(const std::string &amp;value)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_bit_string_record_html_ab09a36cbb94fea5ef1352a5ea052f548"><div class="ttname"><a href="classpcpp_1_1_asn1_bit_string_record.html#ab09a36cbb94fea5ef1352a5ea052f548">pcpp::Asn1BitStringRecord::encodeValue</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; encodeValue() const override</div><div class="ttdoc">Encodes the record value into a byte array Prefer using encodeValueSafe() to ensure the value is deco...</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_bit_string_record_html_ae0d7eb6857c647c4bc763573989d8b04"><div class="ttname"><a href="classpcpp_1_1_asn1_bit_string_record.html#ae0d7eb6857c647c4bc763573989d8b04">pcpp::Asn1BitStringRecord::decodeValue</a></div><div class="ttdeci">void decodeValue(uint8_t const *data) const override</div><div class="ttdoc">Decodes the record value from a byte array into the mutable cache variables. This method is marked as...</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_boolean_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_boolean_record.html">pcpp::Asn1BooleanRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:648</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_boolean_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_boolean_record.html">pcpp::Asn1BooleanRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:650</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_boolean_record_html_a06b3dfc32127e50e45ca4d3e55794010"><div class="ttname"><a href="classpcpp_1_1_asn1_boolean_record.html#a06b3dfc32127e50e45ca4d3e55794010">pcpp::Asn1BooleanRecord::decodeValue</a></div><div class="ttdeci">void decodeValue(uint8_t const *data) const override</div><div class="ttdoc">Decodes the record value from a byte array into the mutable cache variables. This method is marked as...</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_boolean_record_html_a1562aadfee2e64389b095db3caeba94d"><div class="ttname"><a href="classpcpp_1_1_asn1_boolean_record.html#a1562aadfee2e64389b095db3caeba94d">pcpp::Asn1BooleanRecord::getValue</a></div><div class="ttdeci">bool getValue() const</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:657</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_boolean_record_html_a1562aadfee2e64389b095db3caeba94d"><div class="ttname"><a href="classpcpp_1_1_asn1_boolean_record.html#a1562aadfee2e64389b095db3caeba94d">pcpp::Asn1BooleanRecord::getValue</a></div><div class="ttdeci">bool getValue() const</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:659</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_boolean_record_html_ab5a7aad24fe1da765a1174a5fa1effad"><div class="ttname"><a href="classpcpp_1_1_asn1_boolean_record.html#ab5a7aad24fe1da765a1174a5fa1effad">pcpp::Asn1BooleanRecord::Asn1BooleanRecord</a></div><div class="ttdeci">Asn1BooleanRecord(bool value)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_boolean_record_html_afb022f9c5f38580b2542c23a9f21faa3"><div class="ttname"><a href="classpcpp_1_1_asn1_boolean_record.html#afb022f9c5f38580b2542c23a9f21faa3">pcpp::Asn1BooleanRecord::encodeValue</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; encodeValue() const override</div><div class="ttdoc">Encodes the record value into a byte array Prefer using encodeValueSafe() to ensure the value is deco...</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_constructed_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_constructed_record.html">pcpp::Asn1ConstructedRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:292</div></div>
@@ -812,9 +812,9 @@ $(document).ready(function(){initNavTree('_asn1_codec_8h_source.html',''); initR
 <div class="ttc" id="aclasspcpp_1_1_asn1_constructed_record_html_a730c97a3670cdc1a9d6320bf9b400a29"><div class="ttname"><a href="classpcpp_1_1_asn1_constructed_record.html#a730c97a3670cdc1a9d6320bf9b400a29">pcpp::Asn1ConstructedRecord::decodeValue</a></div><div class="ttdeci">void decodeValue(uint8_t const *data) const override</div><div class="ttdoc">Decodes the record value from a byte array into the mutable cache variables. This method is marked as...</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_constructed_record_html_a8a26251b3faa5b14e71d5263e1e6f9c1"><div class="ttname"><a href="classpcpp_1_1_asn1_constructed_record.html#a8a26251b3faa5b14e71d5263e1e6f9c1">pcpp::Asn1ConstructedRecord::Asn1ConstructedRecord</a></div><div class="ttdeci">Asn1ConstructedRecord(Asn1TagClass tagClass, uint8_t tagType, const PointerVector&lt; Asn1Record &gt; &amp;subRecords)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_constructed_record_html_aea7ed0250420dd66475a06715958bfab"><div class="ttname"><a href="classpcpp_1_1_asn1_constructed_record.html#aea7ed0250420dd66475a06715958bfab">pcpp::Asn1ConstructedRecord::Asn1ConstructedRecord</a></div><div class="ttdeci">Asn1ConstructedRecord(Asn1TagClass tagClass, uint8_t tagType, const std::vector&lt; Asn1Record * &gt; &amp;subRecords)</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_enumerated_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_enumerated_record.html">pcpp::Asn1EnumeratedRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:516</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_enumerated_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_enumerated_record.html">pcpp::Asn1EnumeratedRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:518</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_enumerated_record_html_a39450d2085a75ddd5c8ffd80ac7d1b20"><div class="ttname"><a href="classpcpp_1_1_asn1_enumerated_record.html#a39450d2085a75ddd5c8ffd80ac7d1b20">pcpp::Asn1EnumeratedRecord::Asn1EnumeratedRecord</a></div><div class="ttdeci">Asn1EnumeratedRecord(uint32_t value)</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_generalized_time_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_generalized_time_record.html">pcpp::Asn1GeneralizedTimeRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:845</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_generalized_time_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_generalized_time_record.html">pcpp::Asn1GeneralizedTimeRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:847</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_generalized_time_record_html_a40782e6faba228286f3f6f002a4dc4f9"><div class="ttname"><a href="classpcpp_1_1_asn1_generalized_time_record.html#a40782e6faba228286f3f6f002a4dc4f9">pcpp::Asn1GeneralizedTimeRecord::decodeValue</a></div><div class="ttdeci">void decodeValue(uint8_t const *data) const override</div><div class="ttdoc">Decodes the record value from a byte array into the mutable cache variables. This method is marked as...</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_generalized_time_record_html_aa171d4c55b208607844303752f1138de"><div class="ttname"><a href="classpcpp_1_1_asn1_generalized_time_record.html#aa171d4c55b208607844303752f1138de">pcpp::Asn1GeneralizedTimeRecord::encodeValue</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; encodeValue() const override</div><div class="ttdoc">Encodes the record value into a byte array Prefer using encodeValueSafe() to ensure the value is deco...</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_generalized_time_record_html_aaab8754feecba5d3772801355b7d5d2a"><div class="ttname"><a href="classpcpp_1_1_asn1_generalized_time_record.html#aaab8754feecba5d3772801355b7d5d2a">pcpp::Asn1GeneralizedTimeRecord::Asn1GeneralizedTimeRecord</a></div><div class="ttdeci">Asn1GeneralizedTimeRecord(const std::chrono::system_clock::time_point &amp;value, const std::string &amp;timezone=&quot;Z&quot;)</div></div>
@@ -824,41 +824,41 @@ $(document).ready(function(){initNavTree('_asn1_codec_8h_source.html',''); initR
 <div class="ttc" id="aclasspcpp_1_1_asn1_generic_record_html_a4cedb308dea409beaeb11bb15159b0e6"><div class="ttname"><a href="classpcpp_1_1_asn1_generic_record.html#a4cedb308dea409beaeb11bb15159b0e6">pcpp::Asn1GenericRecord::Asn1GenericRecord</a></div><div class="ttdeci">Asn1GenericRecord(Asn1TagClass tagClass, bool isConstructed, uint8_t tagType, const uint8_t *value, size_t valueLen)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_generic_record_html_aa250181d441788a4d22134d930e6cbb4"><div class="ttname"><a href="classpcpp_1_1_asn1_generic_record.html#aa250181d441788a4d22134d930e6cbb4">pcpp::Asn1GenericRecord::Asn1GenericRecord</a></div><div class="ttdeci">Asn1GenericRecord(Asn1TagClass tagClass, bool isConstructed, uint8_t tagType, const std::string &amp;value)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_generic_record_html_ad66ac1e5182012cadf34dde3f0e43556"><div class="ttname"><a href="classpcpp_1_1_asn1_generic_record.html#ad66ac1e5182012cadf34dde3f0e43556">pcpp::Asn1GenericRecord::decodeValue</a></div><div class="ttdeci">void decodeValue(uint8_t const *data) const override</div><div class="ttdoc">Decodes the record value from a byte array into the mutable cache variables. This method is marked as...</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_i_a5_string_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_i_a5_string_record.html">pcpp::Asn1IA5StringRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:632</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_i_a5_string_record_html_a036bf5287fb044676fc1d688cd42ae93"><div class="ttname"><a href="classpcpp_1_1_asn1_i_a5_string_record.html#a036bf5287fb044676fc1d688cd42ae93">pcpp::Asn1IA5StringRecord::Asn1IA5StringRecord</a></div><div class="ttdeci">Asn1IA5StringRecord(const std::string &amp;value)</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:638</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_i_a5_string_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_i_a5_string_record.html">pcpp::Asn1IA5StringRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:634</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_i_a5_string_record_html_a036bf5287fb044676fc1d688cd42ae93"><div class="ttname"><a href="classpcpp_1_1_asn1_i_a5_string_record.html#a036bf5287fb044676fc1d688cd42ae93">pcpp::Asn1IA5StringRecord::Asn1IA5StringRecord</a></div><div class="ttdeci">Asn1IA5StringRecord(const std::string &amp;value)</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:640</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_integer_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_integer_record.html">pcpp::Asn1IntegerRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:405</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_integer_record_html_a16c19f833565d9f4a03f05ef17c12afc"><div class="ttname"><a href="classpcpp_1_1_asn1_integer_record.html#a16c19f833565d9f4a03f05ef17c12afc">pcpp::Asn1IntegerRecord::getIntValue</a></div><div class="ttdeci">T getIntValue() const</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:424</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_integer_record_html_a3f745f6567f0dedaf1fd4e687d049e39"><div class="ttname"><a href="classpcpp_1_1_asn1_integer_record.html#a3f745f6567f0dedaf1fd4e687d049e39">pcpp::Asn1IntegerRecord::encodeValue</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; encodeValue() const override</div><div class="ttdoc">Encodes the record value into a byte array Prefer using encodeValueSafe() to ensure the value is deco...</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_integer_record_html_a42bf885318622486447348938f50831d"><div class="ttname"><a href="classpcpp_1_1_asn1_integer_record.html#a42bf885318622486447348938f50831d">pcpp::Asn1IntegerRecord::Asn1IntegerRecord</a></div><div class="ttdeci">Asn1IntegerRecord(uint64_t value)</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_integer_record_html_a93661bd67095e28555a743d6b621b4d9"><div class="ttname"><a href="classpcpp_1_1_asn1_integer_record.html#a93661bd67095e28555a743d6b621b4d9">pcpp::Asn1IntegerRecord::getValueAsString</a></div><div class="ttdeci">std::string getValueAsString() const</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:438</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_integer_record_html_aa924b7fa2d963ff674d7a2a490376921"><div class="ttname"><a href="classpcpp_1_1_asn1_integer_record.html#aa924b7fa2d963ff674d7a2a490376921">pcpp::Asn1IntegerRecord::decodeValue</a></div><div class="ttdeci">void decodeValue(uint8_t const *data) const override</div><div class="ttdoc">Decodes the record value from a byte array into the mutable cache variables. This method is marked as...</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_integer_record_html_ab55607bab1dcfe57d348b380120c6136"><div class="ttname"><a href="classpcpp_1_1_asn1_integer_record.html#ab55607bab1dcfe57d348b380120c6136">pcpp::Asn1IntegerRecord::getValue</a></div><div class="ttdeci">uint32_t getValue()</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:432</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_integer_record_html_ae9c42db83792a28175f7667b4fc645bb"><div class="ttname"><a href="classpcpp_1_1_asn1_integer_record.html#ae9c42db83792a28175f7667b4fc645bb">pcpp::Asn1IntegerRecord::getValueAsString</a></div><div class="ttdeci">std::string getValueAsString(bool removeLeadingZeros=false) const</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:440</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_integer_record_html_afc2b0fb524a27298446fa10f848bd50e"><div class="ttname"><a href="classpcpp_1_1_asn1_integer_record.html#afc2b0fb524a27298446fa10f848bd50e">pcpp::Asn1IntegerRecord::Asn1IntegerRecord</a></div><div class="ttdeci">Asn1IntegerRecord(const std::string &amp;value)</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_null_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_null_record.html">pcpp::Asn1NullRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:678</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_null_record_html_a0f9d31e8255f6951562fd04b48657e82"><div class="ttname"><a href="classpcpp_1_1_asn1_null_record.html#a0f9d31e8255f6951562fd04b48657e82">pcpp::Asn1NullRecord::decodeValue</a></div><div class="ttdeci">void decodeValue(uint8_t const *data) const override</div><div class="ttdoc">Decodes the record value from a byte array into the mutable cache variables. This method is marked as...</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:686</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_null_record_html_a2a55ac348ce2059d78d705b93345b366"><div class="ttname"><a href="classpcpp_1_1_asn1_null_record.html#a2a55ac348ce2059d78d705b93345b366">pcpp::Asn1NullRecord::encodeValue</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; encodeValue() const override</div><div class="ttdoc">Encodes the record value into a byte array Prefer using encodeValueSafe() to ensure the value is deco...</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:688</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_null_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_null_record.html">pcpp::Asn1NullRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:680</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_null_record_html_a0f9d31e8255f6951562fd04b48657e82"><div class="ttname"><a href="classpcpp_1_1_asn1_null_record.html#a0f9d31e8255f6951562fd04b48657e82">pcpp::Asn1NullRecord::decodeValue</a></div><div class="ttdeci">void decodeValue(uint8_t const *data) const override</div><div class="ttdoc">Decodes the record value from a byte array into the mutable cache variables. This method is marked as...</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:688</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_null_record_html_a2a55ac348ce2059d78d705b93345b366"><div class="ttname"><a href="classpcpp_1_1_asn1_null_record.html#a2a55ac348ce2059d78d705b93345b366">pcpp::Asn1NullRecord::encodeValue</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; encodeValue() const override</div><div class="ttdoc">Encodes the record value into a byte array Prefer using encodeValueSafe() to ensure the value is deco...</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:690</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_null_record_html_a97c09d1572b9a60e860df5d036f476ee"><div class="ttname"><a href="classpcpp_1_1_asn1_null_record.html#a97c09d1572b9a60e860df5d036f476ee">pcpp::Asn1NullRecord::Asn1NullRecord</a></div><div class="ttdeci">Asn1NullRecord()</div><div class="ttdoc">A constructor to create a record of type Null.</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_object_identifier_html"><div class="ttname"><a href="classpcpp_1_1_asn1_object_identifier.html">pcpp::Asn1ObjectIdentifier</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:697</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_object_identifier_html"><div class="ttname"><a href="classpcpp_1_1_asn1_object_identifier.html">pcpp::Asn1ObjectIdentifier</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:699</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_object_identifier_html_a314ceb2ec11a1967e3d98fa38a4dc201"><div class="ttname"><a href="classpcpp_1_1_asn1_object_identifier.html#a314ceb2ec11a1967e3d98fa38a4dc201">pcpp::Asn1ObjectIdentifier::toBytes</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; toBytes() const</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_object_identifier_html_a31fe03f2c80b64317a7913f4a44c482b"><div class="ttname"><a href="classpcpp_1_1_asn1_object_identifier.html#a31fe03f2c80b64317a7913f4a44c482b">pcpp::Asn1ObjectIdentifier::operator==</a></div><div class="ttdeci">bool operator==(const Asn1ObjectIdentifier &amp;other) const</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:719</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_object_identifier_html_a31fe03f2c80b64317a7913f4a44c482b"><div class="ttname"><a href="classpcpp_1_1_asn1_object_identifier.html#a31fe03f2c80b64317a7913f4a44c482b">pcpp::Asn1ObjectIdentifier::operator==</a></div><div class="ttdeci">bool operator==(const Asn1ObjectIdentifier &amp;other) const</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:721</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_object_identifier_html_a42ef0e5436e71a988abd497409c20972"><div class="ttname"><a href="classpcpp_1_1_asn1_object_identifier.html#a42ef0e5436e71a988abd497409c20972">pcpp::Asn1ObjectIdentifier::toString</a></div><div class="ttdeci">std::string toString() const</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_object_identifier_html_a58757656f8756ebdbf9f691b43c2f3ed"><div class="ttname"><a href="classpcpp_1_1_asn1_object_identifier.html#a58757656f8756ebdbf9f691b43c2f3ed">pcpp::Asn1ObjectIdentifier::Asn1ObjectIdentifier</a></div><div class="ttdeci">Asn1ObjectIdentifier(const uint8_t *data, size_t dataLen)</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_object_identifier_html_a61a313d6ee65f6da698ba7054c7c761f"><div class="ttname"><a href="classpcpp_1_1_asn1_object_identifier.html#a61a313d6ee65f6da698ba7054c7c761f">pcpp::Asn1ObjectIdentifier::operator!=</a></div><div class="ttdeci">bool operator!=(const Asn1ObjectIdentifier &amp;other) const</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:726</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_object_identifier_html_a61a313d6ee65f6da698ba7054c7c761f"><div class="ttname"><a href="classpcpp_1_1_asn1_object_identifier.html#a61a313d6ee65f6da698ba7054c7c761f">pcpp::Asn1ObjectIdentifier::operator!=</a></div><div class="ttdeci">bool operator!=(const Asn1ObjectIdentifier &amp;other) const</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:728</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_object_identifier_html_aa26caedfe0d7aa0d942d26b59efb1354"><div class="ttname"><a href="classpcpp_1_1_asn1_object_identifier.html#aa26caedfe0d7aa0d942d26b59efb1354">pcpp::Asn1ObjectIdentifier::Asn1ObjectIdentifier</a></div><div class="ttdeci">Asn1ObjectIdentifier(const std::string &amp;oidString)</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_object_identifier_html_aeee379dd70526f027dba8ebf5feb364a"><div class="ttname"><a href="classpcpp_1_1_asn1_object_identifier.html#aeee379dd70526f027dba8ebf5feb364a">pcpp::Asn1ObjectIdentifier::getComponents</a></div><div class="ttdeci">const std::vector&lt; uint32_t &gt; &amp; getComponents() const</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:712</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_object_identifier_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_object_identifier_record.html">pcpp::Asn1ObjectIdentifierRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:754</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_object_identifier_html_aeee379dd70526f027dba8ebf5feb364a"><div class="ttname"><a href="classpcpp_1_1_asn1_object_identifier.html#aeee379dd70526f027dba8ebf5feb364a">pcpp::Asn1ObjectIdentifier::getComponents</a></div><div class="ttdeci">const std::vector&lt; uint32_t &gt; &amp; getComponents() const</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:714</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_object_identifier_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_object_identifier_record.html">pcpp::Asn1ObjectIdentifierRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:756</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_object_identifier_record_html_a02661d006b45599faad76bd605afb41e"><div class="ttname"><a href="classpcpp_1_1_asn1_object_identifier_record.html#a02661d006b45599faad76bd605afb41e">pcpp::Asn1ObjectIdentifierRecord::decodeValue</a></div><div class="ttdeci">void decodeValue(uint8_t const *data) const override</div><div class="ttdoc">Decodes the record value from a byte array into the mutable cache variables. This method is marked as...</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_object_identifier_record_html_a2be0f183474b79e83b899f55a8890082"><div class="ttname"><a href="classpcpp_1_1_asn1_object_identifier_record.html#a2be0f183474b79e83b899f55a8890082">pcpp::Asn1ObjectIdentifierRecord::getValue</a></div><div class="ttdeci">const Asn1ObjectIdentifier &amp; getValue() const</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:763</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_object_identifier_record_html_a2be0f183474b79e83b899f55a8890082"><div class="ttname"><a href="classpcpp_1_1_asn1_object_identifier_record.html#a2be0f183474b79e83b899f55a8890082">pcpp::Asn1ObjectIdentifierRecord::getValue</a></div><div class="ttdeci">const Asn1ObjectIdentifier &amp; getValue() const</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:765</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_object_identifier_record_html_a6d79440d0cd972957b06fec0c701c12a"><div class="ttname"><a href="classpcpp_1_1_asn1_object_identifier_record.html#a6d79440d0cd972957b06fec0c701c12a">pcpp::Asn1ObjectIdentifierRecord::Asn1ObjectIdentifierRecord</a></div><div class="ttdeci">Asn1ObjectIdentifierRecord(const Asn1ObjectIdentifier &amp;value)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_object_identifier_record_html_ada9d1607621e03e9c17c325d73da046e"><div class="ttname"><a href="classpcpp_1_1_asn1_object_identifier_record.html#ada9d1607621e03e9c17c325d73da046e">pcpp::Asn1ObjectIdentifierRecord::encodeValue</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; encodeValue() const override</div><div class="ttdoc">Encodes the record value into a byte array Prefer using encodeValueSafe() to ensure the value is deco...</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_octet_string_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_octet_string_record.html">pcpp::Asn1OctetStringRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:571</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_octet_string_record_html_a0be59e524d12904923f5b99a4eed5673"><div class="ttname"><a href="classpcpp_1_1_asn1_octet_string_record.html#a0be59e524d12904923f5b99a4eed5673">pcpp::Asn1OctetStringRecord::Asn1OctetStringRecord</a></div><div class="ttdeci">Asn1OctetStringRecord(const std::string &amp;value)</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:584</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_octet_string_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_octet_string_record.html">pcpp::Asn1OctetStringRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:573</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_octet_string_record_html_a0be59e524d12904923f5b99a4eed5673"><div class="ttname"><a href="classpcpp_1_1_asn1_octet_string_record.html#a0be59e524d12904923f5b99a4eed5673">pcpp::Asn1OctetStringRecord::Asn1OctetStringRecord</a></div><div class="ttdeci">Asn1OctetStringRecord(const std::string &amp;value)</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:586</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_octet_string_record_html_a4b61ed77a35a6a0a4152b103926ba5b9"><div class="ttname"><a href="classpcpp_1_1_asn1_octet_string_record.html#a4b61ed77a35a6a0a4152b103926ba5b9">pcpp::Asn1OctetStringRecord::decodeValue</a></div><div class="ttdeci">void decodeValue(uint8_t const *data) const override</div><div class="ttdoc">Decodes the record value from a byte array into the mutable cache variables. This method is marked as...</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_octet_string_record_html_a972feedbfdc275c9895f4cf4e342fb11"><div class="ttname"><a href="classpcpp_1_1_asn1_octet_string_record.html#a972feedbfdc275c9895f4cf4e342fb11">pcpp::Asn1OctetStringRecord::encodeValue</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; encodeValue() const override</div><div class="ttdoc">Encodes the record value into a byte array Prefer using encodeValueSafe() to ensure the value is deco...</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_octet_string_record_html_adb7376eb46415f265237d308d8fac3a3"><div class="ttname"><a href="classpcpp_1_1_asn1_octet_string_record.html#adb7376eb46415f265237d308d8fac3a3">pcpp::Asn1OctetStringRecord::Asn1OctetStringRecord</a></div><div class="ttdeci">Asn1OctetStringRecord(const uint8_t *value, size_t valueLength)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_primitive_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_primitive_record.html">pcpp::Asn1PrimitiveRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:394</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_printable_string_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_printable_string_record.html">pcpp::Asn1PrintableStringRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:616</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_printable_string_record_html_a0c603a966035e455898125b8f5172ae4"><div class="ttname"><a href="classpcpp_1_1_asn1_printable_string_record.html#a0c603a966035e455898125b8f5172ae4">pcpp::Asn1PrintableStringRecord::Asn1PrintableStringRecord</a></div><div class="ttdeci">Asn1PrintableStringRecord(const std::string &amp;value)</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:622</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_printable_string_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_printable_string_record.html">pcpp::Asn1PrintableStringRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:618</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_printable_string_record_html_a0c603a966035e455898125b8f5172ae4"><div class="ttname"><a href="classpcpp_1_1_asn1_printable_string_record.html#a0c603a966035e455898125b8f5172ae4">pcpp::Asn1PrintableStringRecord::Asn1PrintableStringRecord</a></div><div class="ttdeci">Asn1PrintableStringRecord(const std::string &amp;value)</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:624</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_record.html">pcpp::Asn1Record</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:131</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_record_html_a1e9a40bbe23c6b00457246e44e143f0a"><div class="ttname"><a href="classpcpp_1_1_asn1_record.html#a1e9a40bbe23c6b00457246e44e143f0a">pcpp::Asn1Record::toString</a></div><div class="ttdeci">std::string toString() const</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_record_html_a465dfd26b514c95c69902bd8800ae72e"><div class="ttname"><a href="classpcpp_1_1_asn1_record.html#a465dfd26b514c95c69902bd8800ae72e">pcpp::Asn1Record::getTagType</a></div><div class="ttdeci">uint8_t getTagType() const</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:163</div></div>
@@ -879,16 +879,16 @@ $(document).ready(function(){initNavTree('_asn1_codec_8h_source.html',''); initR
 <div class="ttc" id="aclasspcpp_1_1_asn1_set_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_set_record.html">pcpp::Asn1SetRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:374</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_set_record_html_abfda91a5d0e27b21b9cd3f7558c867cf"><div class="ttname"><a href="classpcpp_1_1_asn1_set_record.html#abfda91a5d0e27b21b9cd3f7558c867cf">pcpp::Asn1SetRecord::Asn1SetRecord</a></div><div class="ttdeci">Asn1SetRecord(const PointerVector&lt; Asn1Record &gt; &amp;subRecords)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_set_record_html_acd5b4d4cc5d357f60eddb7cce7403059"><div class="ttname"><a href="classpcpp_1_1_asn1_set_record.html#acd5b4d4cc5d357f60eddb7cce7403059">pcpp::Asn1SetRecord::Asn1SetRecord</a></div><div class="ttdeci">Asn1SetRecord(const std::vector&lt; Asn1Record * &gt; &amp;subRecords)</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_string_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_string_record.html">pcpp::Asn1StringRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:532</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_string_record_html_a70afd434a1182f5c7af3c2b5afce4c32"><div class="ttname"><a href="classpcpp_1_1_asn1_string_record.html#a70afd434a1182f5c7af3c2b5afce4c32">pcpp::Asn1StringRecord::getValue</a></div><div class="ttdeci">std::string getValue() const</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:535</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_string_record_html_a96284f4f4dea8d299a5caf52e6d0a1c1"><div class="ttname"><a href="classpcpp_1_1_asn1_string_record.html#a96284f4f4dea8d299a5caf52e6d0a1c1">pcpp::Asn1StringRecord::decodeValue</a></div><div class="ttdeci">void decodeValue(uint8_t const *data) const override</div><div class="ttdoc">Decodes the record value from a byte array into the mutable cache variables. This method is marked as...</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:551</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_string_record_html_aa304c2d098cdaf83df72957643350b90"><div class="ttname"><a href="classpcpp_1_1_asn1_string_record.html#aa304c2d098cdaf83df72957643350b90">pcpp::Asn1StringRecord::encodeValue</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; encodeValue() const override</div><div class="ttdoc">Encodes the record value into a byte array Prefer using encodeValueSafe() to ensure the value is deco...</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:555</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_time_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_time_record.html">pcpp::Asn1TimeRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:785</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_time_record_html_ac5448d5f09cd70b7fe54b66e4bf69ae6"><div class="ttname"><a href="classpcpp_1_1_asn1_time_record.html#ac5448d5f09cd70b7fe54b66e4bf69ae6">pcpp::Asn1TimeRecord::getValue</a></div><div class="ttdeci">std::chrono::system_clock::time_point getValue(const std::string &amp;timezone=&quot;Z&quot;) const</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:791</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_string_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_string_record.html">pcpp::Asn1StringRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:534</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_string_record_html_a70afd434a1182f5c7af3c2b5afce4c32"><div class="ttname"><a href="classpcpp_1_1_asn1_string_record.html#a70afd434a1182f5c7af3c2b5afce4c32">pcpp::Asn1StringRecord::getValue</a></div><div class="ttdeci">std::string getValue() const</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:537</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_string_record_html_a96284f4f4dea8d299a5caf52e6d0a1c1"><div class="ttname"><a href="classpcpp_1_1_asn1_string_record.html#a96284f4f4dea8d299a5caf52e6d0a1c1">pcpp::Asn1StringRecord::decodeValue</a></div><div class="ttdeci">void decodeValue(uint8_t const *data) const override</div><div class="ttdoc">Decodes the record value from a byte array into the mutable cache variables. This method is marked as...</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:553</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_string_record_html_aa304c2d098cdaf83df72957643350b90"><div class="ttname"><a href="classpcpp_1_1_asn1_string_record.html#aa304c2d098cdaf83df72957643350b90">pcpp::Asn1StringRecord::encodeValue</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; encodeValue() const override</div><div class="ttdoc">Encodes the record value into a byte array Prefer using encodeValueSafe() to ensure the value is deco...</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:557</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_time_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_time_record.html">pcpp::Asn1TimeRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:787</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_time_record_html_ac5448d5f09cd70b7fe54b66e4bf69ae6"><div class="ttname"><a href="classpcpp_1_1_asn1_time_record.html#ac5448d5f09cd70b7fe54b66e4bf69ae6">pcpp::Asn1TimeRecord::getValue</a></div><div class="ttdeci">std::chrono::system_clock::time_point getValue(const std::string &amp;timezone=&quot;Z&quot;) const</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:793</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_time_record_html_ad1ec1fdf90be42f432ce2d8ea2c28f0c"><div class="ttname"><a href="classpcpp_1_1_asn1_time_record.html#ad1ec1fdf90be42f432ce2d8ea2c28f0c">pcpp::Asn1TimeRecord::getValueAsString</a></div><div class="ttdeci">std::string getValueAsString(const std::string &amp;format=&quot;%Y-%m-%d %H:%M:%S&quot;, const std::string &amp;timezone=&quot;Z&quot;, bool includeMilliseconds=false) const</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_u_t_f8_string_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_u_t_f8_string_record.html">pcpp::Asn1UTF8StringRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:600</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_u_t_f8_string_record_html_a1ae2092c87bef7378640206945000e5f"><div class="ttname"><a href="classpcpp_1_1_asn1_u_t_f8_string_record.html#a1ae2092c87bef7378640206945000e5f">pcpp::Asn1UTF8StringRecord::Asn1UTF8StringRecord</a></div><div class="ttdeci">Asn1UTF8StringRecord(const std::string &amp;value)</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:606</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_utc_time_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_utc_time_record.html">pcpp::Asn1UtcTimeRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:824</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_u_t_f8_string_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_u_t_f8_string_record.html">pcpp::Asn1UTF8StringRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:602</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_u_t_f8_string_record_html_a1ae2092c87bef7378640206945000e5f"><div class="ttname"><a href="classpcpp_1_1_asn1_u_t_f8_string_record.html#a1ae2092c87bef7378640206945000e5f">pcpp::Asn1UTF8StringRecord::Asn1UTF8StringRecord</a></div><div class="ttdeci">Asn1UTF8StringRecord(const std::string &amp;value)</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:608</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_utc_time_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_utc_time_record.html">pcpp::Asn1UtcTimeRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:826</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_utc_time_record_html_a354bd722502e23c0cb6c9063fff6c2a9"><div class="ttname"><a href="classpcpp_1_1_asn1_utc_time_record.html#a354bd722502e23c0cb6c9063fff6c2a9">pcpp::Asn1UtcTimeRecord::encodeValue</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; encodeValue() const override</div><div class="ttdoc">Encodes the record value into a byte array Prefer using encodeValueSafe() to ensure the value is deco...</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_utc_time_record_html_ab4149f8b6346e068c09c69c7efccbce9"><div class="ttname"><a href="classpcpp_1_1_asn1_utc_time_record.html#ab4149f8b6346e068c09c69c7efccbce9">pcpp::Asn1UtcTimeRecord::decodeValue</a></div><div class="ttdeci">void decodeValue(uint8_t const *data) const override</div><div class="ttdoc">Decodes the record value from a byte array into the mutable cache variables. This method is marked as...</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_utc_time_record_html_aeb6de323007668629ab0bd7e70bec64d"><div class="ttname"><a href="classpcpp_1_1_asn1_utc_time_record.html#aeb6de323007668629ab0bd7e70bec64d">pcpp::Asn1UtcTimeRecord::Asn1UtcTimeRecord</a></div><div class="ttdeci">Asn1UtcTimeRecord(const std::chrono::system_clock::time_point &amp;value, bool withSeconds=true)</div></div>
@@ -944,7 +944,7 @@ $(document).ready(function(){initNavTree('_asn1_codec_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_asn1_codec_8h.html">Asn1Codec.h</a></li>
-    <li class="footer">Generated on Tue Sep 2 2025 07:10:04 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Sep 8 2025 01:54:31 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

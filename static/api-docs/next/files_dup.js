@@ -23,6 +23,25 @@ var files_dup =
       [ "cotphdr", "structpcpp_1_1cotphdr.html", "structpcpp_1_1cotphdr" ],
       [ "CotpLayer", "classpcpp_1_1_cotp_layer.html", "classpcpp_1_1_cotp_layer" ]
     ] ],
+    [ "CryptoDataReader.h", "_crypto_data_reader_8h.html", [
+      [ "CryptoDataReader", "classpcpp_1_1internal_1_1_crypto_data_reader.html", null ]
+    ] ],
+    [ "CryptoKeyDecoder.h", "_crypto_key_decoder_8h.html", [
+      [ "PrivateKeyDataView", "classpcpp_1_1internal_1_1_private_key_data_view.html", null ],
+      [ "RSAPrivateKeyDataView", "classpcpp_1_1internal_1_1_r_s_a_private_key_data_view.html", "classpcpp_1_1internal_1_1_r_s_a_private_key_data_view" ],
+      [ "ECPrivateKeyDataView", "classpcpp_1_1internal_1_1_e_c_private_key_data_view.html", "classpcpp_1_1internal_1_1_e_c_private_key_data_view" ],
+      [ "CryptographicKey", "classpcpp_1_1internal_1_1_cryptographic_key.html", "classpcpp_1_1internal_1_1_cryptographic_key" ],
+      [ "CryptographicKeyAlgorithm", "classpcpp_1_1_cryptographic_key_algorithm.html", "classpcpp_1_1_cryptographic_key_algorithm" ],
+      [ "RSAPrivateKey", "classpcpp_1_1_r_s_a_private_key.html", null ],
+      [ "ECPrivateKey", "classpcpp_1_1_e_c_private_key.html", null ],
+      [ "PKCS8PrivateKey", "classpcpp_1_1_p_k_c_s8_private_key.html", "classpcpp_1_1_p_k_c_s8_private_key" ],
+      [ "PrivateKeyData", "classpcpp_1_1_p_k_c_s8_private_key_1_1_private_key_data.html", "classpcpp_1_1_p_k_c_s8_private_key_1_1_private_key_data" ],
+      [ "RSAPrivateKeyData", "classpcpp_1_1_p_k_c_s8_private_key_1_1_r_s_a_private_key_data.html", null ],
+      [ "ECPrivateKeyData", "classpcpp_1_1_p_k_c_s8_private_key_1_1_e_c_private_key_data.html", null ],
+      [ "Ed25519PrivateKeyData", "classpcpp_1_1_p_k_c_s8_private_key_1_1_ed25519_private_key_data.html", "classpcpp_1_1_p_k_c_s8_private_key_1_1_ed25519_private_key_data" ],
+      [ "RSAPublicKey", "classpcpp_1_1_r_s_a_public_key.html", "classpcpp_1_1_r_s_a_public_key" ],
+      [ "SubjectPublicKeyInfo", "classpcpp_1_1_subject_public_key_info.html", "classpcpp_1_1_subject_public_key_info" ]
+    ] ],
     [ "DeprecationUtils.h", "_deprecation_utils_8h.html", null ],
     [ "Device.h", "_device_8h.html", "_device_8h" ],
     [ "DeviceListBase.h", "_device_list_base_8h_source.html", null ],
