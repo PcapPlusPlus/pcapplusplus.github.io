@@ -86,7 +86,6 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_x509_certificate.html','
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classpcpp_1_1_x509_certificate-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::X509Certificate Class Reference</div>  </div>
@@ -94,6 +93,15 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_x509_certificate.html','
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_x509_decoder_8h_source.html">X509Decoder.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for pcpp::X509Certificate:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classpcpp_1_1_x509_certificate.png" usemap="#pcpp::X509Certificate_map" alt=""/>
+  <map id="pcpp::X509Certificate_map" name="pcpp::X509Certificate_map">
+<area href="classpcpp_1_1internal_1_1_crypto_data_reader.html" alt="pcpp::internal::CryptoDataReader&lt; X509Certificate &gt;" shape="rect" coords="0,0,311,24"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -132,236 +140,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a32ddce776844e6e835c91c83af9d687e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classpcpp_1_1_x509_internal_1_1_x509_certificate.html">X509Internal::X509Certificate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_x509_certificate.html#a32ddce776844e6e835c91c83af9d687e">getRawCertificate</a> () const</td></tr>
 <tr class="separator:a32ddce776844e6e835c91c83af9d687e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab4c73faaf075309338d1b4297396a05f"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_x509_certificate.html#ab4c73faaf075309338d1b4297396a05f">fromDER</a> (uint8_t *derData, size_t derDataLen, bool ownDerData=false)</td></tr>
-<tr class="separator:ab4c73faaf075309338d1b4297396a05f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e787862b9f12331f8390c078d100566"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_x509_certificate.html#a9e787862b9f12331f8390c078d100566">fromDER</a> (const std::string &amp;derData)</td></tr>
-<tr class="separator:a9e787862b9f12331f8390c078d100566"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7084f9406252368c7c38a81304065209"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_x509_certificate.html#a7084f9406252368c7c38a81304065209">fromDERFile</a> (const std::string &amp;derFileName)</td></tr>
-<tr class="separator:a7084f9406252368c7c38a81304065209"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac37a55f89c7088c688c3c9b91fda26d3"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_x509_certificate.html#ac37a55f89c7088c688c3c9b91fda26d3">fromPEM</a> (const std::string &amp;pemData)</td></tr>
-<tr class="separator:ac37a55f89c7088c688c3c9b91fda26d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a819767176423da2ad9a5f4af9c23d951"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_x509_certificate.html#a819767176423da2ad9a5f4af9c23d951">fromPEMFile</a> (const std::string &amp;pemFileName)</td></tr>
-<tr class="separator:a819767176423da2ad9a5f4af9c23d951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_classpcpp_1_1internal_1_1_crypto_data_reader"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classpcpp_1_1internal_1_1_crypto_data_reader')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classpcpp_1_1internal_1_1_crypto_data_reader.html">pcpp::internal::CryptoDataReader&lt; X509Certificate &gt;</a></td></tr>
+<tr class="memitem:a1278c3801da34b7733eb87af6eb24b61 inherit pub_static_methods_classpcpp_1_1internal_1_1_crypto_data_reader"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_crypto_data_reader.html#a1278c3801da34b7733eb87af6eb24b61">fromDER</a> (uint8_t *derData, size_t derDataLen, bool ownDerData=false)</td></tr>
+<tr class="separator:a1278c3801da34b7733eb87af6eb24b61 inherit pub_static_methods_classpcpp_1_1internal_1_1_crypto_data_reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a15d39b3364a7d350e20bb46cbd635 inherit pub_static_methods_classpcpp_1_1internal_1_1_crypto_data_reader"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_crypto_data_reader.html#af9a15d39b3364a7d350e20bb46cbd635">fromDER</a> (const std::string &amp;derData)</td></tr>
+<tr class="separator:af9a15d39b3364a7d350e20bb46cbd635 inherit pub_static_methods_classpcpp_1_1internal_1_1_crypto_data_reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfabf991ea21a708edc6a684f71c1d0a inherit pub_static_methods_classpcpp_1_1internal_1_1_crypto_data_reader"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_crypto_data_reader.html#adfabf991ea21a708edc6a684f71c1d0a">fromDERFile</a> (const std::string &amp;derFileName)</td></tr>
+<tr class="separator:adfabf991ea21a708edc6a684f71c1d0a inherit pub_static_methods_classpcpp_1_1internal_1_1_crypto_data_reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60feef736bf76e2869782336108a6029 inherit pub_static_methods_classpcpp_1_1internal_1_1_crypto_data_reader"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_crypto_data_reader.html#a60feef736bf76e2869782336108a6029">fromPEM</a> (const std::string &amp;pemData)</td></tr>
+<tr class="separator:a60feef736bf76e2869782336108a6029 inherit pub_static_methods_classpcpp_1_1internal_1_1_crypto_data_reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9830d484e273e588b26110de73e35b0 inherit pub_static_methods_classpcpp_1_1internal_1_1_crypto_data_reader"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1internal_1_1_crypto_data_reader.html#ac9830d484e273e588b26110de73e35b0">fromPEMFile</a> (const std::string &amp;pemFileName)</td></tr>
+<tr class="separator:ac9830d484e273e588b26110de73e35b0 inherit pub_static_methods_classpcpp_1_1internal_1_1_crypto_data_reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents an X.509 certificate </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9e787862b9f12331f8390c078d100566"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e787862b9f12331f8390c078d100566">&#9670;&nbsp;</a></span>fromDER() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static std::unique_ptr&lt;<a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a>&gt; pcpp::X509Certificate::fromDER </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>derData</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Creates an <a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a> from a hex string containing DER-encoded data </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">derData</td><td>Hex string containing DER-encoded certificate data </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A unique pointer to the created <a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a> </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">An</td><td>exception if the data is not a valid ASN.1 record </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ab4c73faaf075309338d1b4297396a05f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4c73faaf075309338d1b4297396a05f">&#9670;&nbsp;</a></span>fromDER() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static std::unique_ptr&lt;<a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a>&gt; pcpp::X509Certificate::fromDER </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>derData</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>derDataLen</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>ownDerData</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Creates an <a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a> from DER-encoded data </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">derData</td><td>Pointer to the DER-encoded certificate data </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">derDataLen</td><td>Length of the DER-encoded data </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ownDerData</td><td>If true, the certificate will take ownership of the data and free it when the certificate class is destructed </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A unique pointer to the created <a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a> </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">An</td><td>exception if the data is not a valid ASN.1 record </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a7084f9406252368c7c38a81304065209"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7084f9406252368c7c38a81304065209">&#9670;&nbsp;</a></span>fromDERFile()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static std::unique_ptr&lt;<a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a>&gt; pcpp::X509Certificate::fromDERFile </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>derFileName</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Creates an <a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a> from a file containing DER-encoded data </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">derFileName</td><td>Path to the file containing DER-encoded certificate </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A unique pointer to the created <a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a> </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">An</td><td>exception if the file doesn't exist, cannot be read or contains invalid data </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ac37a55f89c7088c688c3c9b91fda26d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac37a55f89c7088c688c3c9b91fda26d3">&#9670;&nbsp;</a></span>fromPEM()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static std::unique_ptr&lt;<a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a>&gt; pcpp::X509Certificate::fromPEM </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>pemData</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Creates an <a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a> from PEM-encoded data </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pemData</td><td>PEM-encoded certificate data </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A unique pointer to the created <a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a> </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td>exception if the data is not a valid PEM-encoded certificate </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a819767176423da2ad9a5f4af9c23d951"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a819767176423da2ad9a5f4af9c23d951">&#9670;&nbsp;</a></span>fromPEMFile()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static std::unique_ptr&lt;<a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a>&gt; pcpp::X509Certificate::fromPEMFile </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>pemFileName</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Creates an <a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a> from a file containing PEM-encoded data </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pemFileName</td><td>Path to the file containing PEM-encoded certificate </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A unique pointer to the created <a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a> </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::runtime_error</td><td>exception if the file doesn't exist or cannot be read </td></tr>
-    <tr><td class="paramname">std::invalid_argument</td><td>exception if the data is not a valid PEM-encoded certificate </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a11526d35b41e2e83ea62a3c9349d786c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a11526d35b41e2e83ea62a3c9349d786c">&#9670;&nbsp;</a></span>getExtension()</h2>
 
@@ -695,7 +490,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_x509_certificate.html">X509Certificate</a></li>
-    <li class="footer">Generated on Tue Sep 2 2025 07:10:06 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Sep 8 2025 01:54:32 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

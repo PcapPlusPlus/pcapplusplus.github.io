@@ -52,6 +52,42 @@ var hierarchy =
     [ "pcpp::internal::Copier< T, Enable >", "structpcpp_1_1internal_1_1_copier.html", null ],
     [ "pcpp::internal::Copier< T, std::enable_if_t< std::is_polymorphic< T >::value > >", "structpcpp_1_1internal_1_1_copier_3_01_t_00_01std_1_1enable__if__t_3_01std_1_1is__polymorphic_3_01_t_01_4_1_1value_01_4_01_4.html", null ],
     [ "pcpp::cotphdr", "structpcpp_1_1cotphdr.html", null ],
+    [ "pcpp::internal::CryptoDataReader< CryptoDecoder >", "classpcpp_1_1internal_1_1_crypto_data_reader.html", null ],
+    [ "pcpp::internal::CryptoDataReader< ECPrivateKey >", "classpcpp_1_1internal_1_1_crypto_data_reader.html", [
+      [ "pcpp::ECPrivateKey", "classpcpp_1_1_e_c_private_key.html", null ]
+    ] ],
+    [ "pcpp::internal::CryptoDataReader< PKCS8PrivateKey >", "classpcpp_1_1internal_1_1_crypto_data_reader.html", [
+      [ "pcpp::PKCS8PrivateKey", "classpcpp_1_1_p_k_c_s8_private_key.html", null ]
+    ] ],
+    [ "pcpp::internal::CryptoDataReader< RSAPrivateKey >", "classpcpp_1_1internal_1_1_crypto_data_reader.html", [
+      [ "pcpp::RSAPrivateKey", "classpcpp_1_1_r_s_a_private_key.html", null ]
+    ] ],
+    [ "pcpp::internal::CryptoDataReader< RSAPublicKey >", "classpcpp_1_1internal_1_1_crypto_data_reader.html", [
+      [ "pcpp::RSAPublicKey", "classpcpp_1_1_r_s_a_public_key.html", null ]
+    ] ],
+    [ "pcpp::internal::CryptoDataReader< SubjectPublicKeyInfo >", "classpcpp_1_1internal_1_1_crypto_data_reader.html", [
+      [ "pcpp::SubjectPublicKeyInfo", "classpcpp_1_1_subject_public_key_info.html", null ]
+    ] ],
+    [ "pcpp::internal::CryptoDataReader< X509Certificate >", "classpcpp_1_1internal_1_1_crypto_data_reader.html", [
+      [ "pcpp::X509Certificate", "classpcpp_1_1_x509_certificate.html", null ]
+    ] ],
+    [ "pcpp::internal::CryptographicKey< CryptoKey >", "classpcpp_1_1internal_1_1_cryptographic_key.html", null ],
+    [ "pcpp::internal::CryptographicKey< ECPrivateKey >", "classpcpp_1_1internal_1_1_cryptographic_key.html", [
+      [ "pcpp::ECPrivateKey", "classpcpp_1_1_e_c_private_key.html", null ]
+    ] ],
+    [ "pcpp::internal::CryptographicKey< PKCS8PrivateKey >", "classpcpp_1_1internal_1_1_cryptographic_key.html", [
+      [ "pcpp::PKCS8PrivateKey", "classpcpp_1_1_p_k_c_s8_private_key.html", null ]
+    ] ],
+    [ "pcpp::internal::CryptographicKey< RSAPrivateKey >", "classpcpp_1_1internal_1_1_cryptographic_key.html", [
+      [ "pcpp::RSAPrivateKey", "classpcpp_1_1_r_s_a_private_key.html", null ]
+    ] ],
+    [ "pcpp::internal::CryptographicKey< RSAPublicKey >", "classpcpp_1_1internal_1_1_cryptographic_key.html", [
+      [ "pcpp::RSAPublicKey", "classpcpp_1_1_r_s_a_public_key.html", null ]
+    ] ],
+    [ "pcpp::internal::CryptographicKey< SubjectPublicKeyInfo >", "classpcpp_1_1internal_1_1_cryptographic_key.html", [
+      [ "pcpp::SubjectPublicKeyInfo", "classpcpp_1_1_subject_public_key_info.html", null ]
+    ] ],
+    [ "pcpp::CryptographicKeyAlgorithm", "classpcpp_1_1_cryptographic_key_algorithm.html", null ],
     [ "pcpp::LdapSearchRequestLayer::DerefAliases", "classpcpp_1_1_ldap_search_request_layer_1_1_deref_aliases.html", null ],
     [ "pcpp::PcapLiveDevice::DeviceConfiguration", "structpcpp_1_1_pcap_live_device_1_1_device_configuration.html", null ],
     [ "pcpp::PcapLiveDevice::DeviceInterfaceDetails", "structpcpp_1_1_pcap_live_device_1_1_device_interface_details.html", null ],
@@ -436,6 +472,21 @@ var hierarchy =
     [ "pcpp::ppp_pptp_header", "structpcpp_1_1ppp__pptp__header.html", null ],
     [ "pcpp::pppoe_header", "structpcpp_1_1pppoe__header.html", null ],
     [ "pcpp::BgpUpdateMessageLayer::prefix_and_ip", "structpcpp_1_1_bgp_update_message_layer_1_1prefix__and__ip.html", null ],
+    [ "pcpp::PKCS8PrivateKey::PrivateKeyData", "classpcpp_1_1_p_k_c_s8_private_key_1_1_private_key_data.html", [
+      [ "pcpp::PKCS8PrivateKey::ECPrivateKeyData", "classpcpp_1_1_p_k_c_s8_private_key_1_1_e_c_private_key_data.html", null ],
+      [ "pcpp::PKCS8PrivateKey::Ed25519PrivateKeyData", "classpcpp_1_1_p_k_c_s8_private_key_1_1_ed25519_private_key_data.html", null ],
+      [ "pcpp::PKCS8PrivateKey::RSAPrivateKeyData", "classpcpp_1_1_p_k_c_s8_private_key_1_1_r_s_a_private_key_data.html", null ]
+    ] ],
+    [ "pcpp::internal::PrivateKeyDataView", "classpcpp_1_1internal_1_1_private_key_data_view.html", [
+      [ "pcpp::internal::ECPrivateKeyDataView", "classpcpp_1_1internal_1_1_e_c_private_key_data_view.html", [
+        [ "pcpp::ECPrivateKey", "classpcpp_1_1_e_c_private_key.html", null ],
+        [ "pcpp::PKCS8PrivateKey::ECPrivateKeyData", "classpcpp_1_1_p_k_c_s8_private_key_1_1_e_c_private_key_data.html", null ]
+      ] ],
+      [ "pcpp::internal::RSAPrivateKeyDataView", "classpcpp_1_1internal_1_1_r_s_a_private_key_data_view.html", [
+        [ "pcpp::PKCS8PrivateKey::RSAPrivateKeyData", "classpcpp_1_1_p_k_c_s8_private_key_1_1_r_s_a_private_key_data.html", null ],
+        [ "pcpp::RSAPrivateKey", "classpcpp_1_1_r_s_a_private_key.html", null ]
+      ] ]
+    ] ],
     [ "pcpp::radius_header", "structpcpp_1_1radius__header.html", null ],
     [ "pcpp::RawPacket", "classpcpp_1_1_raw_packet.html", [
       [ "pcpp::MBufRawPacket", "classpcpp_1_1_m_buf_raw_packet.html", null ]
@@ -578,7 +629,6 @@ var hierarchy =
     [ "pcpp::X509Internal::X509Base< Asn1SetRecord >", "classpcpp_1_1_x509_internal_1_1_x509_base.html", [
       [ "pcpp::X509Internal::X509RelativeDistinguishedName", "classpcpp_1_1_x509_internal_1_1_x509_relative_distinguished_name.html", null ]
     ] ],
-    [ "pcpp::X509Certificate", "classpcpp_1_1_x509_certificate.html", null ],
     [ "pcpp::X509Internal::X509Certificate", "classpcpp_1_1_x509_internal_1_1_x509_certificate.html", null ],
     [ "pcpp::X509ExtendedKeyUsagePurpose", "classpcpp_1_1_x509_extended_key_usage_purpose.html", null ],
     [ "pcpp::X509Extension", "classpcpp_1_1_x509_extension.html", null ],
