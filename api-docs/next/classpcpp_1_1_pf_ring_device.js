@@ -20,6 +20,7 @@ var classpcpp_1_1_pf_ring_device =
     [ "getTotalNumOfRxChannels", "classpcpp_1_1_pf_ring_device.html#a540956cbcbac10ca854a76e15227aec1", null ],
     [ "isFilterCurrentlySet", "classpcpp_1_1_pf_ring_device.html#aa4088e46b8bd058c6b0832731586dc51", null ],
     [ "isHwClockEnabledForDevice", "classpcpp_1_1_pf_ring_device.html#a3d897e1f5c1f9ef15987b82eff1a736b", null ],
+    [ "isOpened", "classpcpp_1_1_pf_ring_device.html#abebacad70351dd3658fb048c42962541", null ],
     [ "open", "classpcpp_1_1_pf_ring_device.html#a94f3512928cf7ccdb4f8a28532c6ee51", null ],
     [ "openMultiRxChannels", "classpcpp_1_1_pf_ring_device.html#a923fa6c928456417a5985be210e3e487", null ],
     [ "openMultiRxChannels", "classpcpp_1_1_pf_ring_device.html#a42fa0b515215e8801f3e5f955dff095c", null ],

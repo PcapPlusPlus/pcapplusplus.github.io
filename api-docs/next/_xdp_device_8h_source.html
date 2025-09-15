@@ -180,97 +180,104 @@ $(document).ready(function(){initNavTree('_xdp_device_8h_source.html',''); initR
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
 <div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="classpcpp_1_1_xdp_device.html#a4e5b56194dcabfb7902e5e77581feffd">  180</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_xdp_device.html#a4e5b56194dcabfb7902e5e77581feffd">close</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="classpcpp_1_1_xdp_device.html#a1e6a4d7e71c1eb2accad69562821a256">  194</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_xdp_device.html#a1e6a4d7e71c1eb2accad69562821a256">receivePackets</a>(<a class="code" href="classpcpp_1_1_xdp_device.html#ab23d865419e8b9e31bcd3c4e6b5ee3cc">OnPacketsArrive</a> onPacketsArrive, <span class="keywordtype">void</span>* onPacketsArriveUserCookie, <span class="keywordtype">int</span> timeoutMS = 5000);</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
-<div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="classpcpp_1_1_xdp_device.html#aac13038ad577859b7c170523f42fae95">  198</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_xdp_device.html#aac13038ad577859b7c170523f42fae95">stopReceivePackets</a>();</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
-<div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="classpcpp_1_1_xdp_device.html#aa8116e9ebb17889aea13f7481fc3dcb8">  209</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_xdp_device.html#aa8116e9ebb17889aea13f7481fc3dcb8">sendPackets</a>(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_pointer_vector.html">RawPacketVector</a>&amp; packets, <span class="keywordtype">bool</span> waitForTxCompletion = <span class="keyword">false</span>,</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                         <span class="keywordtype">int</span> waitForTxCompletionTimeoutMS = 5000);</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
-<div class="line"><a name="l00222"></a><span class="lineno"><a class="line" href="classpcpp_1_1_xdp_device.html#aae1528138d793c773c28c3766c746418">  222</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_xdp_device.html#aae1528138d793c773c28c3766c746418">sendPackets</a>(<a class="code" href="classpcpp_1_1_raw_packet.html">RawPacket</a> packets[], <span class="keywordtype">size_t</span> packetCount, <span class="keywordtype">bool</span> waitForTxCompletion = <span class="keyword">false</span>,</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                         <span class="keywordtype">int</span> waitForTxCompletionTimeoutMS = 5000);</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
-<div class="line"><a name="l00226"></a><span class="lineno"><a class="line" href="classpcpp_1_1_xdp_device.html#ae2cc3d2cb141a8d77157aa1d4b7266b5">  226</a></span>&#160;        <a class="code" href="structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html">XdpDeviceConfiguration</a>* <a class="code" href="classpcpp_1_1_xdp_device.html#ae2cc3d2cb141a8d77157aa1d4b7266b5">getConfig</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            <span class="keywordflow">return</span> m_Config;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        }</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
-<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="classpcpp_1_1_xdp_device.html#a27ad594dffafa202f9b2a99127d17ebb">  232</a></span>&#160;        <a class="code" href="structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html">XdpDeviceStats</a> <a class="code" href="classpcpp_1_1_xdp_device.html#a27ad594dffafa202f9b2a99127d17ebb">getStatistics</a>();</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keyword">class </span>XdpUmem</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        {</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            <span class="keyword">explicit</span> XdpUmem(uint16_t numFrames, uint16_t frameSize, uint32_t fillRingSize,</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                             uint32_t completionRingSize);</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            <span class="keyword">virtual</span> ~XdpUmem();</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            <span class="keyword">inline</span> uint16_t getFrameSize()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="keyword">            </span>{</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                <span class="keywordflow">return</span> m_FrameSize;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            }</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            <span class="keyword">inline</span> uint16_t getFrameCount()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="keyword">            </span>{</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                <span class="keywordflow">return</span> m_FrameCount;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            }</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            std::pair&lt;bool, std::vector&lt;uint64_t&gt;&gt; allocateFrames(uint32_t count);</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            <span class="keywordtype">void</span> freeFrame(uint64_t addr);</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            <span class="keyword">const</span> uint8_t* getDataPtr(uint64_t addr) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <span class="keywordtype">void</span> setData(uint64_t addr, <span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> dataLen);</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            <span class="keyword">inline</span> <span class="keywordtype">size_t</span> getFreeFrameCount()</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            {</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                <span class="keywordflow">return</span> m_FreeFrames.size();</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            }</div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="classpcpp_1_1_xdp_device.html#a53e529ccf56de06e57ddee110761014d">  182</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_xdp_device.html#a53e529ccf56de06e57ddee110761014d">isOpened</a>()<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <span class="keywordflow">return</span> m_DeviceOpened;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno"><a class="line" href="classpcpp_1_1_xdp_device.html#a1e6a4d7e71c1eb2accad69562821a256">  199</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_xdp_device.html#a1e6a4d7e71c1eb2accad69562821a256">receivePackets</a>(<a class="code" href="classpcpp_1_1_xdp_device.html#ab23d865419e8b9e31bcd3c4e6b5ee3cc">OnPacketsArrive</a> onPacketsArrive, <span class="keywordtype">void</span>* onPacketsArriveUserCookie, <span class="keywordtype">int</span> timeoutMS = 5000);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno"><a class="line" href="classpcpp_1_1_xdp_device.html#aac13038ad577859b7c170523f42fae95">  203</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_xdp_device.html#aac13038ad577859b7c170523f42fae95">stopReceivePackets</a>();</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
+<div class="line"><a name="l00214"></a><span class="lineno"><a class="line" href="classpcpp_1_1_xdp_device.html#aa8116e9ebb17889aea13f7481fc3dcb8">  214</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_xdp_device.html#aa8116e9ebb17889aea13f7481fc3dcb8">sendPackets</a>(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_pointer_vector.html">RawPacketVector</a>&amp; packets, <span class="keywordtype">bool</span> waitForTxCompletion = <span class="keyword">false</span>,</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                         <span class="keywordtype">int</span> waitForTxCompletionTimeoutMS = 5000);</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160; </div>
+<div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="classpcpp_1_1_xdp_device.html#aae1528138d793c773c28c3766c746418">  227</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_xdp_device.html#aae1528138d793c773c28c3766c746418">sendPackets</a>(<a class="code" href="classpcpp_1_1_raw_packet.html">RawPacket</a> packets[], <span class="keywordtype">size_t</span> packetCount, <span class="keywordtype">bool</span> waitForTxCompletion = <span class="keyword">false</span>,</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                         <span class="keywordtype">int</span> waitForTxCompletionTimeoutMS = 5000);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
+<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="classpcpp_1_1_xdp_device.html#ae2cc3d2cb141a8d77157aa1d4b7266b5">  231</a></span>&#160;        <a class="code" href="structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html">XdpDeviceConfiguration</a>* <a class="code" href="classpcpp_1_1_xdp_device.html#ae2cc3d2cb141a8d77157aa1d4b7266b5">getConfig</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            <span class="keywordflow">return</span> m_Config;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        }</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
+<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="classpcpp_1_1_xdp_device.html#a27ad594dffafa202f9b2a99127d17ebb">  237</a></span>&#160;        <a class="code" href="structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html">XdpDeviceStats</a> <a class="code" href="classpcpp_1_1_xdp_device.html#a27ad594dffafa202f9b2a99127d17ebb">getStatistics</a>();</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="keyword">class </span>XdpUmem</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        {</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            <span class="keyword">explicit</span> XdpUmem(uint16_t numFrames, uint16_t frameSize, uint32_t fillRingSize,</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                             uint32_t completionRingSize);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            <span class="keyword">virtual</span> ~XdpUmem();</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            <span class="keyword">inline</span> uint16_t getFrameSize()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="keyword">            </span>{</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                <span class="keywordflow">return</span> m_FrameSize;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            }</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            <span class="keyword">inline</span> uint16_t getFrameCount()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="keyword">            </span>{</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                <span class="keywordflow">return</span> m_FrameCount;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            }</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            std::pair&lt;bool, std::vector&lt;uint64_t&gt;&gt; allocateFrames(uint32_t count);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            <span class="keywordtype">void</span> freeFrame(uint64_t addr);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            <span class="keyword">const</span> uint8_t* getDataPtr(uint64_t addr) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            <span class="keywordtype">void</span> setData(uint64_t addr, <span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> dataLen);</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160; </div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            <span class="keyword">inline</span> <span class="keywordtype">void</span>* getInfo()</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            <span class="keyword">inline</span> <span class="keywordtype">size_t</span> getFreeFrameCount()</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            {</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                <span class="keywordflow">return</span> m_UmemInfo;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                <span class="keywordflow">return</span> m_FreeFrames.size();</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            }</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            <span class="keywordtype">void</span>* m_UmemInfo;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            <span class="keywordtype">void</span>* m_Buffer;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            uint16_t m_FrameSize;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            uint16_t m_FrameCount;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            std::vector&lt;uint64_t&gt; m_FreeFrames;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        };</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <span class="keyword">struct </span>XdpPrevDeviceStats</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        {</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            timespec timestamp;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            uint64_t rxPackets;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;            uint64_t rxBytes;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            uint64_t txSentPackets;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            uint64_t txSentBytes;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            uint64_t txCompletedPackets;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        };</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        std::string m_InterfaceName;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        XdpDeviceConfiguration* m_Config;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <span class="keywordtype">bool</span> m_ReceivingPackets;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        XdpUmem* m_Umem;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        <span class="keywordtype">void</span>* m_SocketInfo;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        XdpDeviceStats m_Stats;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        XdpPrevDeviceStats m_PrevStats;</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160; </div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_xdp_device.html#aa8116e9ebb17889aea13f7481fc3dcb8">sendPackets</a>(<span class="keyword">const</span> std::function&lt;RawPacket(uint32_t)&gt;&amp; getPacketAt,</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                         <span class="keyword">const</span> std::function&lt;uint32_t()&gt;&amp; getPacketCount, <span class="keywordtype">bool</span> waitForTxCompletion = <span class="keyword">false</span>,</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                         <span class="keywordtype">int</span> waitForTxCompletionTimeoutMS = 5000);</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="keywordtype">bool</span> populateFillRing(uint32_t count, uint32_t rxId = 0);</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        <span class="keywordtype">bool</span> populateFillRing(<span class="keyword">const</span> std::vector&lt;uint64_t&gt;&amp; addresses, uint32_t rxId);</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        uint32_t checkCompletionRing();</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <span class="keywordtype">bool</span> configureSocket();</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <span class="keywordtype">bool</span> initUmem();</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="keywordtype">bool</span> initConfig();</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="keywordtype">bool</span> getSocketStats();</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    };</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            <span class="keyword">inline</span> <span class="keywordtype">void</span>* getInfo()</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            {</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                <span class="keywordflow">return</span> m_UmemInfo;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            }</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160; </div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            <span class="keywordtype">void</span>* m_UmemInfo;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            <span class="keywordtype">void</span>* m_Buffer;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            uint16_t m_FrameSize;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            uint16_t m_FrameCount;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            std::vector&lt;uint64_t&gt; m_FreeFrames;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        };</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <span class="keyword">struct </span>XdpPrevDeviceStats</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        {</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            timespec timestamp;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;            uint64_t rxPackets;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            uint64_t rxBytes;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;            uint64_t txSentPackets;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;            uint64_t txSentBytes;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            uint64_t txCompletedPackets;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        };</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <span class="keywordtype">bool</span> m_DeviceOpened = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        std::string m_InterfaceName;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        XdpDeviceConfiguration* m_Config;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <span class="keywordtype">bool</span> m_ReceivingPackets;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        XdpUmem* m_Umem;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="keywordtype">void</span>* m_SocketInfo;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        XdpDeviceStats m_Stats;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        XdpPrevDeviceStats m_PrevStats;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_xdp_device.html#aa8116e9ebb17889aea13f7481fc3dcb8">sendPackets</a>(<span class="keyword">const</span> std::function&lt;RawPacket(uint32_t)&gt;&amp; getPacketAt,</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                         <span class="keyword">const</span> std::function&lt;uint32_t()&gt;&amp; getPacketCount, <span class="keywordtype">bool</span> waitForTxCompletion = <span class="keyword">false</span>,</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                         <span class="keywordtype">int</span> waitForTxCompletionTimeoutMS = 5000);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <span class="keywordtype">bool</span> populateFillRing(uint32_t count, uint32_t rxId = 0);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <span class="keywordtype">bool</span> populateFillRing(<span class="keyword">const</span> std::vector&lt;uint64_t&gt;&amp; addresses, uint32_t rxId);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        uint32_t checkCompletionRing();</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <span class="keywordtype">bool</span> configureSocket();</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <span class="keywordtype">bool</span> initUmem();</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        <span class="keywordtype">bool</span> initConfig();</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <span class="keywordtype">bool</span> getSocketStats();</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    };</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
 <div class="ttc" id="a_device_8h_html"><div class="ttname"><a href="_device_8h.html">Device.h</a></div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_device_html"><div class="ttname"><a href="classpcpp_1_1_i_device.html">pcpp::IDevice</a></div><div class="ttdef"><b>Definition:</b> Device.h:20</div></div>
 <div class="ttc" id="aclasspcpp_1_1_pointer_vector_html"><div class="ttname"><a href="classpcpp_1_1_pointer_vector.html">pcpp::PointerVector</a></div><div class="ttdef"><b>Definition:</b> PointerVector.h:50</div></div>
@@ -281,12 +288,13 @@ $(document).ready(function(){initNavTree('_xdp_device_8h_source.html',''); initR
 <div class="ttc" id="aclasspcpp_1_1_xdp_device_html_a2e0fdfca11e0b8fb8e3c4c35d562761b"><div class="ttname"><a href="classpcpp_1_1_xdp_device.html#a2e0fdfca11e0b8fb8e3c4c35d562761b">pcpp::XdpDevice::open</a></div><div class="ttdeci">bool open(const XdpDeviceConfiguration &amp;config)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_xdp_device_html_a424861eacbf6bf1a0474a9d4a53a6973"><div class="ttname"><a href="classpcpp_1_1_xdp_device.html#a424861eacbf6bf1a0474a9d4a53a6973">pcpp::XdpDevice::open</a></div><div class="ttdeci">bool open() override</div></div>
 <div class="ttc" id="aclasspcpp_1_1_xdp_device_html_a4e5b56194dcabfb7902e5e77581feffd"><div class="ttname"><a href="classpcpp_1_1_xdp_device.html#a4e5b56194dcabfb7902e5e77581feffd">pcpp::XdpDevice::close</a></div><div class="ttdeci">void close() override</div><div class="ttdoc">Close the device. This method closes the AF_XDP socket and frees the UMEM that was allocated for it.</div></div>
+<div class="ttc" id="aclasspcpp_1_1_xdp_device_html_a53e529ccf56de06e57ddee110761014d"><div class="ttname"><a href="classpcpp_1_1_xdp_device.html#a53e529ccf56de06e57ddee110761014d">pcpp::XdpDevice::isOpened</a></div><div class="ttdeci">bool isOpened() const override</div><div class="ttdef"><b>Definition:</b> XdpDevice.h:182</div></div>
 <div class="ttc" id="aclasspcpp_1_1_xdp_device_html_aa8116e9ebb17889aea13f7481fc3dcb8"><div class="ttname"><a href="classpcpp_1_1_xdp_device.html#aa8116e9ebb17889aea13f7481fc3dcb8">pcpp::XdpDevice::sendPackets</a></div><div class="ttdeci">bool sendPackets(const RawPacketVector &amp;packets, bool waitForTxCompletion=false, int waitForTxCompletionTimeoutMS=5000)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_xdp_device_html_aac13038ad577859b7c170523f42fae95"><div class="ttname"><a href="classpcpp_1_1_xdp_device.html#aac13038ad577859b7c170523f42fae95">pcpp::XdpDevice::stopReceivePackets</a></div><div class="ttdeci">void stopReceivePackets()</div></div>
 <div class="ttc" id="aclasspcpp_1_1_xdp_device_html_aae1528138d793c773c28c3766c746418"><div class="ttname"><a href="classpcpp_1_1_xdp_device.html#aae1528138d793c773c28c3766c746418">pcpp::XdpDevice::sendPackets</a></div><div class="ttdeci">bool sendPackets(RawPacket packets[], size_t packetCount, bool waitForTxCompletion=false, int waitForTxCompletionTimeoutMS=5000)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_xdp_device_html_ab23d865419e8b9e31bcd3c4e6b5ee3cc"><div class="ttname"><a href="classpcpp_1_1_xdp_device.html#ab23d865419e8b9e31bcd3c4e6b5ee3cc">pcpp::XdpDevice::OnPacketsArrive</a></div><div class="ttdeci">void(* OnPacketsArrive)(RawPacket packets[], uint32_t packetCount, XdpDevice *device, void *userCookie)</div><div class="ttdef"><b>Definition:</b> XdpDevice.h:28</div></div>
 <div class="ttc" id="aclasspcpp_1_1_xdp_device_html_ae1587c87386589641382a4bb1546efc2"><div class="ttname"><a href="classpcpp_1_1_xdp_device.html#ae1587c87386589641382a4bb1546efc2">pcpp::XdpDevice::XdpDevice</a></div><div class="ttdeci">XdpDevice(std::string interfaceName)</div></div>
-<div class="ttc" id="aclasspcpp_1_1_xdp_device_html_ae2cc3d2cb141a8d77157aa1d4b7266b5"><div class="ttname"><a href="classpcpp_1_1_xdp_device.html#ae2cc3d2cb141a8d77157aa1d4b7266b5">pcpp::XdpDevice::getConfig</a></div><div class="ttdeci">XdpDeviceConfiguration * getConfig() const</div><div class="ttdef"><b>Definition:</b> XdpDevice.h:226</div></div>
+<div class="ttc" id="aclasspcpp_1_1_xdp_device_html_ae2cc3d2cb141a8d77157aa1d4b7266b5"><div class="ttname"><a href="classpcpp_1_1_xdp_device.html#ae2cc3d2cb141a8d77157aa1d4b7266b5">pcpp::XdpDevice::getConfig</a></div><div class="ttdeci">XdpDeviceConfiguration * getConfig() const</div><div class="ttdef"><b>Definition:</b> XdpDevice.h:231</div></div>
 <div class="ttc" id="aclasspcpp_1_1_xdp_device_html_ae77d4b5aeedcd31110b8b30c19728926"><div class="ttname"><a href="classpcpp_1_1_xdp_device.html#ae77d4b5aeedcd31110b8b30c19728926">pcpp::XdpDevice::~XdpDevice</a></div><div class="ttdeci">~XdpDevice() override</div><div class="ttdoc">A d'tor for this class. It closes the device if it's open.</div></div>
 <div class="ttc" id="anamespacepcpp_html"><div class="ttname"><a href="namespacepcpp.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib.</div><div class="ttdef"><b>Definition:</b> AssertionUtils.h:19</div></div>
 <div class="ttc" id="astructpcpp_1_1_xdp_device_1_1_xdp_device_configuration_html"><div class="ttname"><a href="structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html">pcpp::XdpDevice::XdpDeviceConfiguration</a></div><div class="ttdef"><b>Definition:</b> XdpDevice.h:33</div></div>
@@ -333,7 +341,7 @@ $(document).ready(function(){initNavTree('_xdp_device_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1d5e652a4f74c687a1a254f16a4c3d59.html">Pcap++</a></li><li class="navelem"><a class="el" href="dir_24675e680cc699690f9ab00f0f74b528.html">header</a></li><li class="navelem"><a class="el" href="_xdp_device_8h.html">XdpDevice.h</a></li>
-    <li class="footer">Generated on Thu Sep 11 2025 07:25:09 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Sep 15 2025 07:08:58 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

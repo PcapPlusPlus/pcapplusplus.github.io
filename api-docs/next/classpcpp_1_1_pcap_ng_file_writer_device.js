@@ -4,7 +4,6 @@ var classpcpp_1_1_pcap_ng_file_writer_device =
     [ "~PcapNgFileWriterDevice", "classpcpp_1_1_pcap_ng_file_writer_device.html#a93312aab61a193df522f8046af6d291e", null ],
     [ "close", "classpcpp_1_1_pcap_ng_file_writer_device.html#a93f410843d3a47adb8bb6daad56d59a9", null ],
     [ "flush", "classpcpp_1_1_pcap_ng_file_writer_device.html#ae30124bbbca266327a23b54b85c39bca", null ],
-    [ "getStatistics", "classpcpp_1_1_pcap_ng_file_writer_device.html#a85348c9b0cb18eed34ee3b369cfea251", null ],
     [ "open", "classpcpp_1_1_pcap_ng_file_writer_device.html#add853a580d13ece58ce06d09bad6a219", null ],
     [ "open", "classpcpp_1_1_pcap_ng_file_writer_device.html#acba1c1c3dbdc076bb7e6399b00ad14d2", null ],
     [ "open", "classpcpp_1_1_pcap_ng_file_writer_device.html#a61c831f871c33514b934a749f3e4d2b5", null ],

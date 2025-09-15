@@ -192,7 +192,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a78306fe44879e457df4043a117f6863a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2933139d284d7c167283982ec8b56559"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a2933139d284d7c167283982ec8b56559">startCapture</a> (int intervalInSecondsToUpdateStats, <a class="el" href="namespacepcpp.html#a83363d443da98e485f8edb46a4184779">OnStatsUpdateCallback</a> onStatsUpdate, void *onStatsUpdateUserCookie)</td></tr>
 <tr class="separator:a2933139d284d7c167283982ec8b56559"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a821bbac1ffad5a75c6a0be1ff362eb9f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a821bbac1ffad5a75c6a0be1ff362eb9f">startCapture</a> (<a class="el" href="namespacepcpp.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;capturedPacketsVector)</td></tr>
+<tr class="memitem:a821bbac1ffad5a75c6a0be1ff362eb9f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a821bbac1ffad5a75c6a0be1ff362eb9f">startCapture</a> (<a class="el" href="namespacepcpp.html#a48a57c2edc6a66ef77661a54074b2ef9">RawPacketVector</a> &amp;capturedPacketsVector)</td></tr>
 <tr class="separator:a821bbac1ffad5a75c6a0be1ff362eb9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1948c03b6471a5dcea064a7a8950a0a0"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a1948c03b6471a5dcea064a7a8950a0a0">startCaptureBlockingMode</a> (<a class="el" href="namespacepcpp.html#a6a83c8855a6bb3681fafec04b00a6339">OnPacketArrivesStopBlocking</a> onPacketArrives, void *userCookie, const double timeout)</td></tr>
 <tr class="separator:a1948c03b6471a5dcea064a7a8950a0a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,7 +216,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa11efe575402d9e06624376d87caf4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71eb799bb039b9b4b182958bf5fdf563"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a71eb799bb039b9b4b182958bf5fdf563">sendPackets</a> (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> **packetsArr, int arrLength, bool checkMtu=true)</td></tr>
 <tr class="separator:a71eb799bb039b9b4b182958bf5fdf563"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fb54c1f769a409743c6710f02b4de56"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a9fb54c1f769a409743c6710f02b4de56">sendPackets</a> (const <a class="el" href="namespacepcpp.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;rawPackets, bool checkMtu=false)</td></tr>
+<tr class="memitem:a9fb54c1f769a409743c6710f02b4de56"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a9fb54c1f769a409743c6710f02b4de56">sendPackets</a> (const <a class="el" href="namespacepcpp.html#a48a57c2edc6a66ef77661a54074b2ef9">RawPacketVector</a> &amp;rawPackets, bool checkMtu=false)</td></tr>
 <tr class="separator:a9fb54c1f769a409743c6710f02b4de56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae40c27c0bfd5b397af813fd37a819e73"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#ae40c27c0bfd5b397af813fd37a819e73">open</a> () override</td></tr>
 <tr class="separator:ae40c27c0bfd5b397af813fd37a819e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -226,6 +226,8 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a02254c8ce454a469d9846dfc63fab4f6">close</a> () override</td></tr>
 <tr class="memdesc:a02254c8ce454a469d9846dfc63fab4f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the device. <br /></td></tr>
 <tr class="separator:a02254c8ce454a469d9846dfc63fab4f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abed28936a88ce223ff9735e8e31910cc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#abed28936a88ce223ff9735e8e31910cc">isOpened</a> () const override</td></tr>
+<tr class="separator:abed28936a88ce223ff9735e8e31910cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acba1065b450b4caf17e7d0c99959aa99"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#acba1065b450b4caf17e7d0c99959aa99">clone</a> () const</td></tr>
 <tr class="separator:acba1065b450b4caf17e7d0c99959aa99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a5928913d4fb57ffc5b3afe08a10b0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_live_device.html#a3a5928913d4fb57ffc5b3afe08a10b0f">getStatistics</a> (<a class="el" href="structpcpp_1_1internal_1_1_pcap_stats.html">IPcapDevice::PcapStats</a> &amp;stats) const override</td></tr>
@@ -239,9 +241,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:af334503822ac7076373c64109f3e6d64 inherit pub_methods_classpcpp_1_1_i_pcap_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf01bb590d975d28fc38053820a69130 inherit pub_methods_classpcpp_1_1_i_pcap_device"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#adf01bb590d975d28fc38053820a69130">setFilter</a> (std::string filterAsString)=0</td></tr>
 <tr class="separator:adf01bb590d975d28fc38053820a69130 inherit pub_methods_classpcpp_1_1_i_pcap_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classpcpp_1_1_i_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_i_device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_device.html">pcpp::IDevice</a></td></tr>
-<tr class="memitem:a5b75e7491597f271b8f29847bec2ee99 inherit pub_methods_classpcpp_1_1_i_device"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_device.html#a5b75e7491597f271b8f29847bec2ee99">isOpened</a> ()</td></tr>
-<tr class="separator:a5b75e7491597f271b8f29847bec2ee99 inherit pub_methods_classpcpp_1_1_i_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classpcpp_1_1_i_filterable_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_i_filterable_device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_filterable_device.html">pcpp::IFilterableDevice</a></td></tr>
 <tr class="memitem:af334503822ac7076373c64109f3e6d64 inherit pub_methods_classpcpp_1_1_i_filterable_device"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_filterable_device.html#af334503822ac7076373c64109f3e6d64">setFilter</a> (<a class="el" href="classpcpp_1_1_general_filter.html">GeneralFilter</a> &amp;filter)</td></tr>
 <tr class="separator:af334503822ac7076373c64109f3e6d64 inherit pub_methods_classpcpp_1_1_i_filterable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -813,6 +812,34 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="abed28936a88ce223ff9735e8e31910cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abed28936a88ce223ff9735e8e31910cc">&#9670;&nbsp;</a></span>isOpened()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::PcapLiveDevice::isOpened </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>True if the file is opened, false otherwise </dd></dl>
+
+<p>Implements <a class="el" href="classpcpp_1_1_i_device.html#abaee921a017044f025fd5355c1958a53">pcpp::IDevice</a>.</p>
+
+</div>
+</div>
 <a id="ab6ada849695721d0b21ca03a00befc3f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab6ada849695721d0b21ca03a00befc3f">&#9670;&nbsp;</a></span>isPayloadWithinMtu() <span class="overload">[1/4]</span></h2>
 
@@ -1379,7 +1406,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual int pcpp::PcapLiveDevice::sendPackets </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacepcpp.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacepcpp.html#a48a57c2edc6a66ef77661a54074b2ef9">RawPacketVector</a> &amp;&#160;</td>
           <td class="paramname"><em>rawPackets</em>, </td>
         </tr>
         <tr>
@@ -1722,7 +1749,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual bool pcpp::PcapLiveDevice::startCapture </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacepcpp.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcpp.html#a48a57c2edc6a66ef77661a54074b2ef9">RawPacketVector</a> &amp;&#160;</td>
           <td class="paramname"><em>capturedPacketsVector</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1827,7 +1854,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a></li>
-    <li class="footer">Generated on Thu Sep 11 2025 07:25:10 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Sep 15 2025 07:08:59 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

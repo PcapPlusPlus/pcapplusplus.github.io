@@ -195,7 +195,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6c7f3490db464e565322fcf04d1158f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cc950c85c0fada668f978db3d6bf4c0"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#a8cc950c85c0fada668f978db3d6bf4c0">sendPackets</a> (<a class="el" href="namespacepcpp.html#a594cff22cd51c0a8acc36590c9733ecd">MBufRawPacketVector</a> &amp;rawPacketsVec, uint16_t txQueueId=0, bool useTxBuffer=false)</td></tr>
 <tr class="separator:a8cc950c85c0fada668f978db3d6bf4c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99c1da4d0a0187609dffa2951352d4c3"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#a99c1da4d0a0187609dffa2951352d4c3">sendPackets</a> (<a class="el" href="namespacepcpp.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;rawPacketsVec, uint16_t txQueueId=0, bool useTxBuffer=false)</td></tr>
+<tr class="memitem:a99c1da4d0a0187609dffa2951352d4c3"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#a99c1da4d0a0187609dffa2951352d4c3">sendPackets</a> (<a class="el" href="namespacepcpp.html#a48a57c2edc6a66ef77661a54074b2ef9">RawPacketVector</a> &amp;rawPacketsVec, uint16_t txQueueId=0, bool useTxBuffer=false)</td></tr>
 <tr class="separator:a99c1da4d0a0187609dffa2951352d4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d69ce6eec56281db512a80fb1909078"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#a1d69ce6eec56281db512a80fb1909078">sendPacket</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> &amp;rawPacket, uint16_t txQueueId=0, bool useTxBuffer=false)</td></tr>
 <tr class="separator:a1d69ce6eec56281db512a80fb1909078"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,9 +209,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0145dc440ebcd7c0a05709c57c2fa99d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afae6116f6d0d7f515acb1c327fdcebbb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#afae6116f6d0d7f515acb1c327fdcebbb">openMultiQueues</a> (uint16_t numOfRxQueuesToOpen, uint16_t numOfTxQueuesToOpen, const <a class="el" href="structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration.html">DpdkDeviceConfiguration</a> &amp;config=<a class="el" href="structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration.html">DpdkDeviceConfiguration</a>())</td></tr>
 <tr class="separator:afae6116f6d0d7f515acb1c327fdcebbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae200ae83e4eb63c66ff18a1004836f3d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#ae200ae83e4eb63c66ff18a1004836f3d">startCaptureSingleThread</a> (<a class="el" href="namespacepcpp.html#aebc46b2f805a197cd4b79316a9237c26">OnDpdkPacketsArriveCallback</a> onPacketsArrive, void *onPacketsArriveUserCookie)</td></tr>
+<tr class="memitem:ae200ae83e4eb63c66ff18a1004836f3d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#ae200ae83e4eb63c66ff18a1004836f3d">startCaptureSingleThread</a> (<a class="el" href="namespacepcpp.html#a1351bb14caa7943eb51cbd18b949f100">OnDpdkPacketsArriveCallback</a> onPacketsArrive, void *onPacketsArriveUserCookie)</td></tr>
 <tr class="separator:ae200ae83e4eb63c66ff18a1004836f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a092dcc89b546b902698842fade374376"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#a092dcc89b546b902698842fade374376">startCaptureMultiThreads</a> (<a class="el" href="namespacepcpp.html#aebc46b2f805a197cd4b79316a9237c26">OnDpdkPacketsArriveCallback</a> onPacketsArrive, void *onPacketsArriveUserCookie, CoreMask coreMask)</td></tr>
+<tr class="memitem:a092dcc89b546b902698842fade374376"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#a092dcc89b546b902698842fade374376">startCaptureMultiThreads</a> (<a class="el" href="namespacepcpp.html#a1351bb14caa7943eb51cbd18b949f100">OnDpdkPacketsArriveCallback</a> onPacketsArrive, void *onPacketsArriveUserCookie, CoreMask coreMask)</td></tr>
 <tr class="separator:a092dcc89b546b902698842fade374376"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3238998a22eb354c388d68d92285de7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#ae3238998a22eb354c388d68d92285de7">stopCapture</a> ()</td></tr>
 <tr class="separator:ae3238998a22eb354c388d68d92285de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -243,9 +243,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#a674ce896499d738f2c3c83777b7f7fd6">close</a> () override</td></tr>
 <tr class="memdesc:a674ce896499d738f2c3c83777b7f7fd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the <a class="el" href="classpcpp_1_1_dpdk_device.html">DpdkDevice</a>. When device is closed it's not possible work with it. <br /></td></tr>
 <tr class="separator:a674ce896499d738f2c3c83777b7f7fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classpcpp_1_1_i_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_i_device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_device.html">pcpp::IDevice</a></td></tr>
-<tr class="memitem:a5b75e7491597f271b8f29847bec2ee99 inherit pub_methods_classpcpp_1_1_i_device"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_device.html#a5b75e7491597f271b8f29847bec2ee99">isOpened</a> ()</td></tr>
-<tr class="separator:a5b75e7491597f271b8f29847bec2ee99 inherit pub_methods_classpcpp_1_1_i_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a517b8715b4634a164a99d3ded84d4008"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_dpdk_device.html#a517b8715b4634a164a99d3ded84d4008">isOpened</a> () const override</td></tr>
+<tr class="separator:a517b8715b4634a164a99d3ded84d4008"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Encapsulates a DPDK port and enables receiving and sending packets using DPDK as well as getting interface info &amp; status, packet statistics, etc. This class has no public c'tor as it's constructed by <a class="el" href="classpcpp_1_1_dpdk_device_list.html">DpdkDeviceList</a> during initialization.<br  />
@@ -840,6 +839,34 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a id="a517b8715b4634a164a99d3ded84d4008"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a517b8715b4634a164a99d3ded84d4008">&#9670;&nbsp;</a></span>isOpened()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::DpdkDevice::isOpened </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>True if the file is opened, false otherwise </dd></dl>
+
+<p>Implements <a class="el" href="classpcpp_1_1_i_device.html#abaee921a017044f025fd5355c1958a53">pcpp::IDevice</a>.</p>
+
+</div>
+</div>
 <a id="ae45341ad236f07e92be61b33325aa3c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae45341ad236f07e92be61b33325aa3c1">&#9670;&nbsp;</a></span>isVirtual()</h2>
 
@@ -1383,7 +1410,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">uint16_t pcpp::DpdkDevice::sendPackets </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacepcpp.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcpp.html#a48a57c2edc6a66ef77661a54074b2ef9">RawPacketVector</a> &amp;&#160;</td>
           <td class="paramname"><em>rawPacketsVec</em>, </td>
         </tr>
         <tr>
@@ -1510,7 +1537,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">bool pcpp::DpdkDevice::startCaptureMultiThreads </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacepcpp.html#aebc46b2f805a197cd4b79316a9237c26">OnDpdkPacketsArriveCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcpp.html#a1351bb14caa7943eb51cbd18b949f100">OnDpdkPacketsArriveCallback</a>&#160;</td>
           <td class="paramname"><em>onPacketsArrive</em>, </td>
         </tr>
         <tr>
@@ -1553,7 +1580,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">bool pcpp::DpdkDevice::startCaptureSingleThread </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacepcpp.html#aebc46b2f805a197cd4b79316a9237c26">OnDpdkPacketsArriveCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcpp.html#a1351bb14caa7943eb51cbd18b949f100">OnDpdkPacketsArriveCallback</a>&#160;</td>
           <td class="paramname"><em>onPacketsArrive</em>, </td>
         </tr>
         <tr>
@@ -1604,7 +1631,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_dpdk_device.html">DpdkDevice</a></li>
-    <li class="footer">Generated on Thu Sep 11 2025 07:25:10 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Sep 15 2025 07:08:59 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

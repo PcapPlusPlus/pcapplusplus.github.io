@@ -8,6 +8,7 @@ var classpcpp_1_1_xdp_device =
     [ "close", "classpcpp_1_1_xdp_device.html#a4e5b56194dcabfb7902e5e77581feffd", null ],
     [ "getConfig", "classpcpp_1_1_xdp_device.html#ae2cc3d2cb141a8d77157aa1d4b7266b5", null ],
     [ "getStatistics", "classpcpp_1_1_xdp_device.html#a27ad594dffafa202f9b2a99127d17ebb", null ],
+    [ "isOpened", "classpcpp_1_1_xdp_device.html#a53e529ccf56de06e57ddee110761014d", null ],
     [ "open", "classpcpp_1_1_xdp_device.html#a424861eacbf6bf1a0474a9d4a53a6973", null ],
     [ "open", "classpcpp_1_1_xdp_device.html#a2e0fdfca11e0b8fb8e3c4c35d562761b", null ],
     [ "receivePackets", "classpcpp_1_1_xdp_device.html#a1e6a4d7e71c1eb2accad69562821a256", null ],

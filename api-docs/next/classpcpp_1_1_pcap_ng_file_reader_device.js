@@ -9,7 +9,6 @@ var classpcpp_1_1_pcap_ng_file_reader_device =
     [ "getNextPacket", "classpcpp_1_1_pcap_ng_file_reader_device.html#ac62c24f9b47ab9ef382701e6f0860b15", null ],
     [ "getNextPacket", "classpcpp_1_1_pcap_ng_file_reader_device.html#a9bf1e61be8334e31a329451ad2397b27", null ],
     [ "getOS", "classpcpp_1_1_pcap_ng_file_reader_device.html#a235769eb90727183eb9fc1b551b3d07b", null ],
-    [ "getStatistics", "classpcpp_1_1_pcap_ng_file_reader_device.html#a43f8288abc37b84900516613a1ff6fd9", null ],
     [ "open", "classpcpp_1_1_pcap_ng_file_reader_device.html#aea89bc17fd3b560576a20afc6da1d304", null ],
     [ "setFilter", "classpcpp_1_1_pcap_ng_file_reader_device.html#af28e1f52506a83feae30e279adb538a7", null ]
 ];
