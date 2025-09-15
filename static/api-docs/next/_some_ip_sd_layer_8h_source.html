@@ -400,10 +400,10 @@ $(document).ready(function(){initNavTree('_some_ip_sd_layer_8h_source.html','');
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classpcpp_1_1_some_ip_sd_entry.html">SomeIpSdEntry</a>;</div>
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160; </div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classpcpp_1_1_some_ip_sd_entry.html">SomeIpSdEntry</a>* <a class="code" href="classpcpp_1_1_some_ip_sd_entry.html">EntryPtr</a>;</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;        <span class="keyword">typedef</span> std::vector&lt;EntryPtr&gt; EntriesVec;</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="classpcpp_1_1_some_ip_sd_option.html">SomeIpSdOption</a>* <a class="code" href="classpcpp_1_1_some_ip_sd_option.html">OptionPtr</a>;</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;        <span class="keyword">typedef</span> std::vector&lt;OptionPtr&gt; OptionsVec;</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;        <span class="keyword">using</span> <a class="code" href="classpcpp_1_1_some_ip_sd_entry.html">EntryPtr</a> = <a class="code" href="classpcpp_1_1_some_ip_sd_entry.html">SomeIpSdEntry</a>*;</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;        <span class="keyword">using</span> EntriesVec = std::vector&lt;EntryPtr&gt;;</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;        <span class="keyword">using</span> <a class="code" href="classpcpp_1_1_some_ip_sd_option.html">OptionPtr</a> = <a class="code" href="classpcpp_1_1_some_ip_sd_option.html">SomeIpSdOption</a>*;</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;        <span class="keyword">using</span> OptionsVec = std::vector&lt;OptionPtr&gt;;</div>
 <div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160; </div>
 <div class="line"><a name="l00521"></a><span class="lineno"><a class="line" href="classpcpp_1_1_some_ip_sd_layer.html#a6abdb79207dc6dfba26ef2ee14e6d361">  521</a></span>&#160;        <a class="code" href="classpcpp_1_1_some_ip_sd_layer.html#a6abdb79207dc6dfba26ef2ee14e6d361">SomeIpSdLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="classpcpp_1_1_layer.html">Layer</a>* prevLayer, <a class="code" href="classpcpp_1_1_packet.html">Packet</a>* packet);</div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160; </div>
@@ -599,7 +599,7 @@ $(document).ready(function(){initNavTree('_some_ip_sd_layer_8h_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_some_ip_sd_layer_8h.html">SomeIpSdLayer.h</a></li>
-    <li class="footer">Generated on Thu Sep 11 2025 07:25:09 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Sep 15 2025 07:08:58 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

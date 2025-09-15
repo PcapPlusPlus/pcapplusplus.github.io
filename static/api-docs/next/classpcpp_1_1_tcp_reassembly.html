@@ -119,10 +119,10 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a9604d95c87c7023962d2250cd28d5177"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enum for providing reassembly status for each processed packet.  <a href="classpcpp_1_1_tcp_reassembly.html#a9604d95c87c7023962d2250cd28d5177">More...</a><br /></td></tr>
 <tr class="separator:a9604d95c87c7023962d2250cd28d5177"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5c4a693c518ed630d82bbc137e635a6"><td class="memItemLeft" align="right" valign="top"><a id="ad5c4a693c518ed630d82bbc137e635a6"></a>
-typedef std::unordered_map&lt; uint32_t, <a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#ad5c4a693c518ed630d82bbc137e635a6">ConnectionInfoList</a></td></tr>
-<tr class="memdesc:ad5c4a693c518ed630d82bbc137e635a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type for storing the connection information. <br /></td></tr>
-<tr class="separator:ad5c4a693c518ed630d82bbc137e635a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c5ced8f702497d0d233d5a7fc416623"><td class="memItemLeft" align="right" valign="top"><a id="a9c5ced8f702497d0d233d5a7fc416623"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9c5ced8f702497d0d233d5a7fc416623">ConnectionInfoList</a> = std::unordered_map&lt; uint32_t, <a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a> &gt;</td></tr>
+<tr class="memdesc:a9c5ced8f702497d0d233d5a7fc416623"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type for storing the connection information. <br /></td></tr>
+<tr class="separator:a9c5ced8f702497d0d233d5a7fc416623"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8158f56044f2c76978701aecff9b2a40"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a8158f56044f2c76978701aecff9b2a40">OnTcpMessageReady</a> = std::function&lt; void(int8_t side, const <a class="el" href="classpcpp_1_1_tcp_stream_data.html">TcpStreamData</a> &amp;tcpData, void *userCookie)&gt;</td></tr>
 <tr class="separator:a8158f56044f2c76978701aecff9b2a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af626ca261a035086a9881e42323a63aa"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#af626ca261a035086a9881e42323a63aa">OnTcpConnectionStart</a> = std::function&lt; void(const <a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a> &amp;connectionData, void *userCookie)&gt;</td></tr>
@@ -142,7 +142,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae173fc16a427b5e46b1a5417de19d735"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf940b05f75a129f595301012be46005"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#acf940b05f75a129f595301012be46005">closeAllConnections</a> ()</td></tr>
 <tr class="separator:acf940b05f75a129f595301012be46005"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac34344adb7d2289814841096ce971e4d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classpcpp_1_1_tcp_reassembly.html#ad5c4a693c518ed630d82bbc137e635a6">ConnectionInfoList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#ac34344adb7d2289814841096ce971e4d">getConnectionInformation</a> () const</td></tr>
+<tr class="memitem:ac34344adb7d2289814841096ce971e4d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9c5ced8f702497d0d233d5a7fc416623">ConnectionInfoList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#ac34344adb7d2289814841096ce971e4d">getConnectionInformation</a> () const</td></tr>
 <tr class="separator:ac34344adb7d2289814841096ce971e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ef6d80966ab0b0547665b68fde86fbc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_tcp_reassembly.html#a4ef6d80966ab0b0547665b68fde86fbc">isConnectionOpen</a> (const <a class="el" href="structpcpp_1_1_connection_data.html">ConnectionData</a> &amp;connection) const</td></tr>
 <tr class="separator:a4ef6d80966ab0b0547665b68fde86fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -400,7 +400,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classpcpp_1_1_tcp_reassembly.html#ad5c4a693c518ed630d82bbc137e635a6">ConnectionInfoList</a>&amp; pcpp::TcpReassembly::getConnectionInformation </td>
+          <td class="memname">const <a class="el" href="classpcpp_1_1_tcp_reassembly.html#a9c5ced8f702497d0d233d5a7fc416623">ConnectionInfoList</a>&amp; pcpp::TcpReassembly::getConnectionInformation </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -522,7 +522,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_tcp_reassembly.html">TcpReassembly</a></li>
-    <li class="footer">Generated on Thu Sep 11 2025 07:25:10 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Sep 15 2025 07:08:59 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

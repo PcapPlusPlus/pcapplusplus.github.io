@@ -123,8 +123,6 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="separator:afc65d6695ef76737dc61a3e11b8272c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a274b7feb0c015aac3dcc71e370e701bd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_snoop_file_reader_device.html#a274b7feb0c015aac3dcc71e370e701bd">open</a> ()</td></tr>
 <tr class="separator:a274b7feb0c015aac3dcc71e370e701bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6bb1fe5a94e9c021e0729a08913cd49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_snoop_file_reader_device.html#ad6bb1fe5a94e9c021e0729a08913cd49">getStatistics</a> (<a class="el" href="structpcpp_1_1internal_1_1_pcap_stats.html">PcapStats</a> &amp;stats) const</td></tr>
-<tr class="separator:ad6bb1fe5a94e9c021e0729a08913cd49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1711f5e55c789c73de4255332af47463"><td class="memItemLeft" align="right" valign="top"><a id="a1711f5e55c789c73de4255332af47463"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_snoop_file_reader_device.html#a1711f5e55c789c73de4255332af47463">close</a> ()</td></tr>
 <tr class="memdesc:a1711f5e55c789c73de4255332af47463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the snoop file. <br /></td></tr>
@@ -136,11 +134,16 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="separator:a27308d664b9c084069cf54af48462a5e inherit pub_methods_classpcpp_1_1_i_file_reader_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f18812c646fb59957073bb14980ba72 inherit pub_methods_classpcpp_1_1_i_file_reader_device"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_file_reader_device.html#a4f18812c646fb59957073bb14980ba72">getFileSize</a> () const</td></tr>
 <tr class="separator:a4f18812c646fb59957073bb14980ba72 inherit pub_methods_classpcpp_1_1_i_file_reader_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a279a1c148671df93bd85afd43af1f958 inherit pub_methods_classpcpp_1_1_i_file_reader_device"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_file_reader_device.html#a279a1c148671df93bd85afd43af1f958">getNextPackets</a> (<a class="el" href="namespacepcpp.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;packetVec, int numOfPacketsToRead=-1)</td></tr>
+<tr class="memitem:a279a1c148671df93bd85afd43af1f958 inherit pub_methods_classpcpp_1_1_i_file_reader_device"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_file_reader_device.html#a279a1c148671df93bd85afd43af1f958">getNextPackets</a> (<a class="el" href="namespacepcpp.html#a48a57c2edc6a66ef77661a54074b2ef9">RawPacketVector</a> &amp;packetVec, int numOfPacketsToRead=-1)</td></tr>
 <tr class="separator:a279a1c148671df93bd85afd43af1f958 inherit pub_methods_classpcpp_1_1_i_file_reader_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classpcpp_1_1_i_file_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_i_file_device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_file_device.html">pcpp::IFileDevice</a></td></tr>
 <tr class="memitem:a570d8ed7208e8ba9412686f32bc453f3 inherit pub_methods_classpcpp_1_1_i_file_device"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_file_device.html#a570d8ed7208e8ba9412686f32bc453f3">getFileName</a> () const</td></tr>
 <tr class="separator:a570d8ed7208e8ba9412686f32bc453f3 inherit pub_methods_classpcpp_1_1_i_file_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e0513c79444c938c76dbcb2f6fc1891 inherit pub_methods_classpcpp_1_1_i_file_device"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_file_device.html#a8e0513c79444c938c76dbcb2f6fc1891">isOpened</a> () const override</td></tr>
+<tr class="separator:a8e0513c79444c938c76dbcb2f6fc1891 inherit pub_methods_classpcpp_1_1_i_file_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5f8cd834b51ecb007768082612557c8 inherit pub_methods_classpcpp_1_1_i_file_device"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_file_device.html#ae5f8cd834b51ecb007768082612557c8">getStatistics</a> (<a class="el" href="structpcpp_1_1internal_1_1_pcap_stats.html">PcapStats</a> &amp;stats) const override</td></tr>
+<tr class="memdesc:ae5f8cd834b51ecb007768082612557c8 inherit pub_methods_classpcpp_1_1_i_file_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the statistics for this device.  <a href="classpcpp_1_1_i_file_device.html#ae5f8cd834b51ecb007768082612557c8">More...</a><br /></td></tr>
+<tr class="separator:ae5f8cd834b51ecb007768082612557c8 inherit pub_methods_classpcpp_1_1_i_file_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classpcpp_1_1_i_pcap_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_i_pcap_device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_pcap_device.html">pcpp::IPcapDevice</a></td></tr>
 <tr class="memitem:a5308f2b55bb22afdef5ddfda63332398 inherit pub_methods_classpcpp_1_1_i_pcap_device"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#a5308f2b55bb22afdef5ddfda63332398">setFilter</a> (std::string filterAsString) override</td></tr>
 <tr class="separator:a5308f2b55bb22afdef5ddfda63332398 inherit pub_methods_classpcpp_1_1_i_pcap_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,9 +153,6 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="separator:af334503822ac7076373c64109f3e6d64 inherit pub_methods_classpcpp_1_1_i_pcap_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf01bb590d975d28fc38053820a69130 inherit pub_methods_classpcpp_1_1_i_pcap_device"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#adf01bb590d975d28fc38053820a69130">setFilter</a> (std::string filterAsString)=0</td></tr>
 <tr class="separator:adf01bb590d975d28fc38053820a69130 inherit pub_methods_classpcpp_1_1_i_pcap_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classpcpp_1_1_i_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_i_device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_device.html">pcpp::IDevice</a></td></tr>
-<tr class="memitem:a5b75e7491597f271b8f29847bec2ee99 inherit pub_methods_classpcpp_1_1_i_device"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_device.html#a5b75e7491597f271b8f29847bec2ee99">isOpened</a> ()</td></tr>
-<tr class="separator:a5b75e7491597f271b8f29847bec2ee99 inherit pub_methods_classpcpp_1_1_i_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classpcpp_1_1_i_filterable_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_i_filterable_device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_filterable_device.html">pcpp::IFilterableDevice</a></td></tr>
 <tr class="memitem:af334503822ac7076373c64109f3e6d64 inherit pub_methods_classpcpp_1_1_i_filterable_device"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_filterable_device.html#af334503822ac7076373c64109f3e6d64">setFilter</a> (<a class="el" href="classpcpp_1_1_general_filter.html">GeneralFilter</a> &amp;filter)</td></tr>
 <tr class="separator:af334503822ac7076373c64109f3e6d64 inherit pub_methods_classpcpp_1_1_i_filterable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,6 +174,17 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classpcpp_1_1_i_file_reader_device"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classpcpp_1_1_i_file_reader_device')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classpcpp_1_1_i_file_reader_device.html">pcpp::IFileReaderDevice</a></td></tr>
 <tr class="memitem:aaf7d8d9af86c65cf539c5c4e39804295 inherit pro_methods_classpcpp_1_1_i_file_reader_device"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_file_reader_device.html#aaf7d8d9af86c65cf539c5c4e39804295">IFileReaderDevice</a> (const std::string &amp;fileName)</td></tr>
 <tr class="separator:aaf7d8d9af86c65cf539c5c4e39804295 inherit pro_methods_classpcpp_1_1_i_file_reader_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classpcpp_1_1_i_file_device"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classpcpp_1_1_i_file_device')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classpcpp_1_1_i_file_device.html">pcpp::IFileDevice</a></td></tr>
+<tr class="memitem:ac0b00a36f42bd1b86cf1f47e1da63642 inherit pro_methods_classpcpp_1_1_i_file_device"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_file_device.html#ac0b00a36f42bd1b86cf1f47e1da63642">reportPacketProcessed</a> (uint64_t numPackets=1)</td></tr>
+<tr class="memdesc:ac0b00a36f42bd1b86cf1f47e1da63642 inherit pro_methods_classpcpp_1_1_i_file_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report that packets were processed (read or written, depending on the device type).  <a href="classpcpp_1_1_i_file_device.html#ac0b00a36f42bd1b86cf1f47e1da63642">More...</a><br /></td></tr>
+<tr class="separator:ac0b00a36f42bd1b86cf1f47e1da63642 inherit pro_methods_classpcpp_1_1_i_file_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad090733c6d7b7cb010af4e9d27b4fc93 inherit pro_methods_classpcpp_1_1_i_file_device"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_file_device.html#ad090733c6d7b7cb010af4e9d27b4fc93">reportPacketDropped</a> (uint64_t numPackets=1)</td></tr>
+<tr class="memdesc:ad090733c6d7b7cb010af4e9d27b4fc93 inherit pro_methods_classpcpp_1_1_i_file_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report that packets were dropped (not read or not written, depending on the device type).  <a href="classpcpp_1_1_i_file_device.html#ad090733c6d7b7cb010af4e9d27b4fc93">More...</a><br /></td></tr>
+<tr class="separator:ad090733c6d7b7cb010af4e9d27b4fc93 inherit pro_methods_classpcpp_1_1_i_file_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8606a762f4405ed60b053cc71b92ddb inherit pro_methods_classpcpp_1_1_i_file_device"><td class="memItemLeft" align="right" valign="top"><a id="af8606a762f4405ed60b053cc71b92ddb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_file_device.html#af8606a762f4405ed60b053cc71b92ddb">resetStatisticCounters</a> ()</td></tr>
+<tr class="memdesc:af8606a762f4405ed60b053cc71b92ddb inherit pro_methods_classpcpp_1_1_i_file_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the internal statistic counters to zero. <br /></td></tr>
+<tr class="separator:af8606a762f4405ed60b053cc71b92ddb inherit pro_methods_classpcpp_1_1_i_file_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for opening a snoop file in read-only mode. This class enable to open the file and read all packets, packet-by-packet </p>
@@ -272,40 +283,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ad6bb1fe5a94e9c021e0729a08913cd49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6bb1fe5a94e9c021e0729a08913cd49">&#9670;&nbsp;</a></span>getStatistics()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void pcpp::SnoopFileReaderDevice::getStatistics </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structpcpp_1_1internal_1_1_pcap_stats.html">PcapStats</a> &amp;&#160;</td>
-          <td class="paramname"><em>stats</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get statistics of packets read so far. In the PcapStats struct, only the packetsRecv member is relevant. The rest of the members will contain 0 </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">stats</td><td>The stats struct where stats are returned </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="classpcpp_1_1_i_pcap_statistics_provider.html#a04c676bd9013cf597f7b6512924b7ee2">pcpp::IPcapStatisticsProvider</a>.</p>
-
-</div>
-</div>
 <a id="a274b7feb0c015aac3dcc71e370e701bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a274b7feb0c015aac3dcc71e370e701bd">&#9670;&nbsp;</a></span>open()</h2>
 
@@ -340,7 +317,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_snoop_file_reader_device.html">SnoopFileReaderDevice</a></li>
-    <li class="footer">Generated on Thu Sep 11 2025 07:25:10 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Sep 15 2025 07:08:59 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

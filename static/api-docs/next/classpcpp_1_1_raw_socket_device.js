@@ -9,6 +9,7 @@ var classpcpp_1_1_raw_socket_device =
     [ "RawSocketDevice", "classpcpp_1_1_raw_socket_device.html#ad9af5cae14f4e97821e3ada6700cf035", null ],
     [ "~RawSocketDevice", "classpcpp_1_1_raw_socket_device.html#a16669eaf3e120d99ff07a07223aca9b6", null ],
     [ "close", "classpcpp_1_1_raw_socket_device.html#afbfa55120d23c91c9bd2e4ef11161ea3", null ],
+    [ "isOpened", "classpcpp_1_1_raw_socket_device.html#a711e17978700db4d4b002b5cdb5381d5", null ],
     [ "open", "classpcpp_1_1_raw_socket_device.html#aff1eb10c3d601d602322849c31e98e10", null ],
     [ "receivePacket", "classpcpp_1_1_raw_socket_device.html#ad3819d6840a9d1bbdb9bd4d38c464430", null ],
     [ "receivePackets", "classpcpp_1_1_raw_socket_device.html#a130fcdee203ddabc332e612e36da5b12", null ],

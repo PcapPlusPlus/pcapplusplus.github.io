@@ -26,6 +26,7 @@ var classpcpp_1_1_kni_device =
     [ "getPromiscuous", "classpcpp_1_1_kni_device.html#a24e3a5fcb269c6b12ce943fc4e000bde", null ],
     [ "handleRequests", "classpcpp_1_1_kni_device.html#ab1c0ad9cc41211075af60930dc591d8e", null ],
     [ "isInitialized", "classpcpp_1_1_kni_device.html#a40f81fc75157860db3c6ff93c70e228f", null ],
+    [ "isOpened", "classpcpp_1_1_kni_device.html#a76e00dd3d12bd787ac60ac811952e534", null ],
     [ "open", "classpcpp_1_1_kni_device.html#a2f66da689a3403a98d3d4f735b79cc50", null ],
     [ "receivePackets", "classpcpp_1_1_kni_device.html#a52256d09555727c9034037b19aa99c55", null ],
     [ "receivePackets", "classpcpp_1_1_kni_device.html#a85fadba90e945dcbb8915684f862e483", null ],

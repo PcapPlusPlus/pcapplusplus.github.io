@@ -107,8 +107,8 @@ $(document).ready(function(){initNavTree('_kni_device_8h_source.html',''); initR
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">class </span>KniDevice;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">class </span>KniDeviceList;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="namespacepcpp.html#a5d5c27837ffd86e49a6b4ce2cc1ed57b">   89</a></span>&#160;    <span class="keyword">typedef</span> bool (*<a class="code" href="namespacepcpp.html#a5d5c27837ffd86e49a6b4ce2cc1ed57b">OnKniPacketArriveCallback</a>)(<a class="code" href="classpcpp_1_1_m_buf_raw_packet.html">MBufRawPacket</a>* packets, uint32_t numOfPackets, <a class="code" href="classpcpp_1_1_kni_device.html">KniDevice</a>* device,</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                              <span class="keywordtype">void</span>* userCookie);</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="namespacepcpp.html#a82e00fe25b4c9dfdd52717b84deb5597">   89</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="namespacepcpp.html#a82e00fe25b4c9dfdd52717b84deb5597">OnKniPacketArriveCallback</a> = bool (*)(<a class="code" href="classpcpp_1_1_m_buf_raw_packet.html">MBufRawPacket</a>* packets, uint32_t numOfPackets, <a class="code" href="classpcpp_1_1_kni_device.html">KniDevice</a>* device,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                               <span class="keywordtype">void</span>* userCookie);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
 <div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classpcpp_1_1_kni_device.html">  115</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_kni_device.html">KniDevice</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_i_device.html">IDevice</a></div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    {</div>
@@ -208,58 +208,65 @@ $(document).ready(function(){initNavTree('_kni_device_8h_source.html',''); initR
 <div class="line"><a name="l00462"></a><span class="lineno"><a class="line" href="classpcpp_1_1_kni_device.html#a03791dbfd1f8e47ec4ff55613d854719">  462</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_kni_device.html#a03791dbfd1f8e47ec4ff55613d854719">sendPacket</a>(<a class="code" href="classpcpp_1_1_m_buf_raw_packet.html">MBufRawPacket</a>&amp; rawPacket);</div>
 <div class="line"><a name="l00472"></a><span class="lineno"><a class="line" href="classpcpp_1_1_kni_device.html#a295cb561420c5e9d219ef4d3aa4a230b">  472</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_kni_device.html#a295cb561420c5e9d219ef4d3aa4a230b">sendPacket</a>(<a class="code" href="classpcpp_1_1_packet.html">Packet</a>&amp; packet);</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160; </div>
-<div class="line"><a name="l00491"></a><span class="lineno"><a class="line" href="classpcpp_1_1_kni_device.html#a3f5f48e1e2950cb3f2385d1bdda5a25e">  491</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_kni_device.html#a3f5f48e1e2950cb3f2385d1bdda5a25e">startCapture</a>(<a class="code" href="namespacepcpp.html#a5d5c27837ffd86e49a6b4ce2cc1ed57b">OnKniPacketArriveCallback</a> onPacketArrives, <span class="keywordtype">void</span>* onPacketArrivesUserCookie);</div>
+<div class="line"><a name="l00491"></a><span class="lineno"><a class="line" href="classpcpp_1_1_kni_device.html#a3f5f48e1e2950cb3f2385d1bdda5a25e">  491</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_kni_device.html#a3f5f48e1e2950cb3f2385d1bdda5a25e">startCapture</a>(<a class="code" href="namespacepcpp.html#a82e00fe25b4c9dfdd52717b84deb5597">OnKniPacketArriveCallback</a> onPacketArrives, <span class="keywordtype">void</span>* onPacketArrivesUserCookie);</div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160; </div>
-<div class="line"><a name="l00513"></a><span class="lineno"><a class="line" href="classpcpp_1_1_kni_device.html#a7039519dc1d34590bb4a8b31ebc3ffe2">  513</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classpcpp_1_1_kni_device.html#a7039519dc1d34590bb4a8b31ebc3ffe2">startCaptureBlockingMode</a>(<a class="code" href="namespacepcpp.html#a5d5c27837ffd86e49a6b4ce2cc1ed57b">OnKniPacketArriveCallback</a> onPacketArrives, <span class="keywordtype">void</span>* onPacketArrivesUserCookie,</div>
+<div class="line"><a name="l00513"></a><span class="lineno"><a class="line" href="classpcpp_1_1_kni_device.html#a7039519dc1d34590bb4a8b31ebc3ffe2">  513</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classpcpp_1_1_kni_device.html#a7039519dc1d34590bb4a8b31ebc3ffe2">startCaptureBlockingMode</a>(<a class="code" href="namespacepcpp.html#a82e00fe25b4c9dfdd52717b84deb5597">OnKniPacketArriveCallback</a> onPacketArrives, <span class="keywordtype">void</span>* onPacketArrivesUserCookie,</div>
 <div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;                                     <span class="keywordtype">int</span> timeout);</div>
 <div class="line"><a name="l00516"></a><span class="lineno"><a class="line" href="classpcpp_1_1_kni_device.html#aacdb5298cdb0fa1cc8a3563ef91e2546">  516</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_kni_device.html#aacdb5298cdb0fa1cc8a3563ef91e2546">stopCapture</a>();</div>
 <div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160; </div>
 <div class="line"><a name="l00521"></a><span class="lineno"><a class="line" href="classpcpp_1_1_kni_device.html#a2f66da689a3403a98d3d4f735b79cc50">  521</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_kni_device.html#a2f66da689a3403a98d3d4f735b79cc50">open</a>();</div>
 <div class="line"><a name="l00525"></a><span class="lineno"><a class="line" href="classpcpp_1_1_kni_device.html#af1d2bdcdd4ec0ab6db3754af10f0c541">  525</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_kni_device.html#af1d2bdcdd4ec0ab6db3754af10f0c541">close</a>();</div>
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160; </div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;        <span class="keyword">struct </span>rte_kni* m_Device;</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;        <span class="keyword">struct </span>rte_mempool* m_MBufMempool;</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;        <span class="keyword">struct </span>KniDeviceInfo</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;        {</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;            <a class="code" href="classpcpp_1_1_linux_nic_information_socket.html">LinuxNicInformationSocket</a> soc;</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;            <a class="code" href="classpcpp_1_1_kni_device.html#a9a016df4487ece71c8dc911961a4f329">KniLinkState</a> link;</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;            <a class="code" href="classpcpp_1_1_kni_device.html#acfeed0b25fa073d8a74b2d29ca218dc6">KniPromiscuousMode</a> promisc;</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;            uint16_t portId;</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;            uint16_t mtu;</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;            <a class="code" href="classpcpp_1_1_mac_address.html">MacAddress</a> mac;</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;            std::string name;</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160; </div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;            <span class="keywordtype">bool</span> init(<span class="keyword">const</span> <a class="code" href="structpcpp_1_1_kni_device_1_1_kni_device_configuration.html">KniDeviceConfiguration</a>&amp; conf);</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;        } m_DeviceInfo;</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;        <span class="keyword">struct </span>KniThread;</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;        <span class="keyword">struct </span>KniCapturing</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;        {</div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;            <a class="code" href="namespacepcpp.html#a5d5c27837ffd86e49a6b4ce2cc1ed57b">OnKniPacketArriveCallback</a> callback;</div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;            <span class="keywordtype">void</span>* userCookie;</div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;            KniThread* thread;</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160; </div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">void</span> runCapture(<span class="keywordtype">void</span>* devicePointer, std::atomic&lt;bool&gt;&amp; stopThread);</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;            <span class="keyword">inline</span> <span class="keywordtype">bool</span> isRunning()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;<span class="keyword">            </span>{</div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;                <span class="keywordflow">return</span> thread != <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;            }</div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;            <span class="keywordtype">void</span> cleanup();</div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;        } m_Capturing;</div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;        <span class="keyword">struct </span>KniRequests</div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;        {</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;            <span class="keywordtype">long</span> sleepS;</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;            <span class="keywordtype">long</span> sleepNs;</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;            KniThread* thread;</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160; </div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">void</span> runRequests(<span class="keywordtype">void</span>* devicePointer, std::atomic&lt;bool&gt;&amp; stopThread);</div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;            <span class="keywordtype">void</span> cleanup();</div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;        } m_Requests;</div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    };</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160; </div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00527"></a><span class="lineno"><a class="line" href="classpcpp_1_1_kni_device.html#a76e00dd3d12bd787ac60ac811952e534">  527</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_kni_device.html#a76e00dd3d12bd787ac60ac811952e534">isOpened</a>()<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;            <span class="keywordflow">return</span> m_DeviceOpened;</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;        }</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160; </div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;        <span class="keywordtype">bool</span> m_DeviceOpened = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160; </div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;        <span class="keyword">struct </span>rte_kni* m_Device;</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;        <span class="keyword">struct </span>rte_mempool* m_MBufMempool;</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        <span class="keyword">struct </span>KniDeviceInfo</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;        {</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;            <a class="code" href="classpcpp_1_1_linux_nic_information_socket.html">LinuxNicInformationSocket</a> soc;</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;            <a class="code" href="classpcpp_1_1_kni_device.html#a9a016df4487ece71c8dc911961a4f329">KniLinkState</a> link;</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;            <a class="code" href="classpcpp_1_1_kni_device.html#acfeed0b25fa073d8a74b2d29ca218dc6">KniPromiscuousMode</a> promisc;</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;            uint16_t portId;</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;            uint16_t mtu;</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;            <a class="code" href="classpcpp_1_1_mac_address.html">MacAddress</a> mac;</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;            std::string name;</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160; </div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;            <span class="keywordtype">bool</span> init(<span class="keyword">const</span> KniDeviceConfiguration&amp; conf);</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;        } m_DeviceInfo;</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;        <span class="keyword">struct </span>KniThread;</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;        <span class="keyword">struct </span>KniCapturing</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;        {</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;            <a class="code" href="namespacepcpp.html#a82e00fe25b4c9dfdd52717b84deb5597">OnKniPacketArriveCallback</a> callback;</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;            <span class="keywordtype">void</span>* userCookie;</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;            KniThread* thread;</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160; </div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">void</span> runCapture(<span class="keywordtype">void</span>* devicePointer, std::atomic&lt;bool&gt;&amp; stopThread);</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;            <span class="keyword">inline</span> <span class="keywordtype">bool</span> isRunning()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;<span class="keyword">            </span>{</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;                <span class="keywordflow">return</span> thread != <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;            }</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;            <span class="keywordtype">void</span> cleanup();</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;        } m_Capturing;</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;        <span class="keyword">struct </span>KniRequests</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;        {</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;            <span class="keywordtype">long</span> sleepS;</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;            <span class="keywordtype">long</span> sleepNs;</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;            KniThread* thread;</div>
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160; </div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;<span class="comment">// GCOVR_EXCL_STOP</span></div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">void</span> runRequests(<span class="keywordtype">void</span>* devicePointer, std::atomic&lt;bool&gt;&amp; stopThread);</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;            <span class="keywordtype">void</span> cleanup();</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;        } m_Requests;</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    };</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160; </div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160; </div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;<span class="comment">// GCOVR_EXCL_STOP</span></div>
 <div class="ttc" id="a_device_8h_html"><div class="ttname"><a href="_device_8h.html">Device.h</a></div></div>
 <div class="ttc" id="a_mac_address_8h_html"><div class="ttname"><a href="_mac_address_8h.html">MacAddress.h</a></div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_device_html"><div class="ttname"><a href="classpcpp_1_1_i_device.html">pcpp::IDevice</a></div><div class="ttdef"><b>Definition:</b> Device.h:20</div></div>
@@ -282,6 +289,7 @@ $(document).ready(function(){initNavTree('_kni_device_8h_source.html',''); initR
 <div class="ttc" id="aclasspcpp_1_1_kni_device_html_a5a5025025675c14d984adde60a3f0c37"><div class="ttname"><a href="classpcpp_1_1_kni_device.html#a5a5025025675c14d984adde60a3f0c37">pcpp::KniDevice::getMacAddress</a></div><div class="ttdeci">MacAddress getMacAddress(KniInfoState state=INFO_CACHED)</div><div class="ttdoc">Obtains MAC address of KNI device. If called with INFO_CACHED - returns cached data about MAC address...</div></div>
 <div class="ttc" id="aclasspcpp_1_1_kni_device_html_a65ad16846869b52da79397723cd4e691"><div class="ttname"><a href="classpcpp_1_1_kni_device.html#a65ad16846869b52da79397723cd4e691">pcpp::KniDevice::getLinkState</a></div><div class="ttdeci">KniLinkState getLinkState(KniInfoState state=INFO_CACHED)</div><div class="ttdoc">Obtains link status of KNI device. If called with INFO_CACHED - returns cached data about link state ...</div></div>
 <div class="ttc" id="aclasspcpp_1_1_kni_device_html_a7039519dc1d34590bb4a8b31ebc3ffe2"><div class="ttname"><a href="classpcpp_1_1_kni_device.html#a7039519dc1d34590bb4a8b31ebc3ffe2">pcpp::KniDevice::startCaptureBlockingMode</a></div><div class="ttdeci">int startCaptureBlockingMode(OnKniPacketArriveCallback onPacketArrives, void *onPacketArrivesUserCookie, int timeout)</div><div class="ttdoc">Start capturing packets synchronously on this KNI interface in blocking mode. Blocking mode means tha...</div></div>
+<div class="ttc" id="aclasspcpp_1_1_kni_device_html_a76e00dd3d12bd787ac60ac811952e534"><div class="ttname"><a href="classpcpp_1_1_kni_device.html#a76e00dd3d12bd787ac60ac811952e534">pcpp::KniDevice::isOpened</a></div><div class="ttdeci">bool isOpened() const override</div><div class="ttdef"><b>Definition:</b> KniDevice.h:527</div></div>
 <div class="ttc" id="aclasspcpp_1_1_kni_device_html_a84eb855f4a1ca4df14d23374b752edd6"><div class="ttname"><a href="classpcpp_1_1_kni_device.html#a84eb855f4a1ca4df14d23374b752edd6">pcpp::KniDevice::setMtu</a></div><div class="ttdeci">bool setMtu(uint16_t mtu)</div><div class="ttdoc">Sets MTU of KNI device. Unconditionally changes MTU of KNI device. If MTU is updated successfully the...</div></div>
 <div class="ttc" id="aclasspcpp_1_1_kni_device_html_a85fadba90e945dcbb8915684f862e483"><div class="ttname"><a href="classpcpp_1_1_kni_device.html#a85fadba90e945dcbb8915684f862e483">pcpp::KniDevice::receivePackets</a></div><div class="ttdeci">uint16_t receivePackets(MBufRawPacketVector &amp;rawPacketsArr)</div><div class="ttdoc">Receive raw packets from kernel.</div></div>
 <div class="ttc" id="aclasspcpp_1_1_kni_device_html_a9a016df4487ece71c8dc911961a4f329"><div class="ttname"><a href="classpcpp_1_1_kni_device.html#a9a016df4487ece71c8dc911961a4f329">pcpp::KniDevice::KniLinkState</a></div><div class="ttdeci">KniLinkState</div><div class="ttdoc">Various link related constants for KNI device.</div><div class="ttdef"><b>Definition:</b> KniDevice.h:123</div></div>
@@ -313,7 +321,7 @@ $(document).ready(function(){initNavTree('_kni_device_8h_source.html',''); initR
 <div class="ttc" id="aclasspcpp_1_1_pointer_vector_html"><div class="ttname"><a href="classpcpp_1_1_pointer_vector.html">pcpp::PointerVector</a></div><div class="ttdef"><b>Definition:</b> PointerVector.h:50</div></div>
 <div class="ttc" id="aclasspcpp_1_1_raw_packet_html"><div class="ttname"><a href="classpcpp_1_1_raw_packet.html">pcpp::RawPacket</a></div><div class="ttdef"><b>Definition:</b> RawPacket.h:259</div></div>
 <div class="ttc" id="anamespacepcpp_html"><div class="ttname"><a href="namespacepcpp.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib.</div><div class="ttdef"><b>Definition:</b> AssertionUtils.h:19</div></div>
-<div class="ttc" id="anamespacepcpp_html_a5d5c27837ffd86e49a6b4ce2cc1ed57b"><div class="ttname"><a href="namespacepcpp.html#a5d5c27837ffd86e49a6b4ce2cc1ed57b">pcpp::OnKniPacketArriveCallback</a></div><div class="ttdeci">bool(* OnKniPacketArriveCallback)(MBufRawPacket *packets, uint32_t numOfPackets, KniDevice *device, void *userCookie)</div><div class="ttdoc">Defines the signature callback used by capturing API on KNI device.</div><div class="ttdef"><b>Definition:</b> KniDevice.h:89</div></div>
+<div class="ttc" id="anamespacepcpp_html_a82e00fe25b4c9dfdd52717b84deb5597"><div class="ttname"><a href="namespacepcpp.html#a82e00fe25b4c9dfdd52717b84deb5597">pcpp::OnKniPacketArriveCallback</a></div><div class="ttdeci">bool(*)(MBufRawPacket *packets, uint32_t numOfPackets, KniDevice *device, void *userCookie) OnKniPacketArriveCallback</div><div class="ttdoc">Defines the signature callback used by capturing API on KNI device.</div><div class="ttdef"><b>Definition:</b> KniDevice.h:90</div></div>
 <div class="ttc" id="astructpcpp_1_1_kni_device_1_1_kni_device_configuration_html"><div class="ttname"><a href="structpcpp_1_1_kni_device_1_1_kni_device_configuration.html">pcpp::KniDevice::KniDeviceConfiguration</a></div><div class="ttdoc">KNI device initialization data. Used to create new KNI device. Usage of callbacks member or oldCallba...</div><div class="ttdef"><b>Definition:</b> KniDevice.h:201</div></div>
 <div class="ttc" id="astructpcpp_1_1_kni_device_1_1_kni_device_configuration_html_a22df3fac00ba8927f0554bf970e389ac"><div class="ttname"><a href="structpcpp_1_1_kni_device_1_1_kni_device_configuration.html#a22df3fac00ba8927f0554bf970e389ac">pcpp::KniDevice::KniDeviceConfiguration::portId</a></div><div class="ttdeci">uint16_t portId</div><div class="ttdef"><b>Definition:</b> KniDevice.h:219</div></div>
 <div class="ttc" id="astructpcpp_1_1_kni_device_1_1_kni_device_configuration_html_a2df48dfa7610b8e97f48a46403feb4c4"><div class="ttname"><a href="structpcpp_1_1_kni_device_1_1_kni_device_configuration.html#a2df48dfa7610b8e97f48a46403feb4c4">pcpp::KniDevice::KniDeviceConfiguration::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition:</b> KniDevice.h:205</div></div>
@@ -335,7 +343,7 @@ $(document).ready(function(){initNavTree('_kni_device_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1d5e652a4f74c687a1a254f16a4c3d59.html">Pcap++</a></li><li class="navelem"><a class="el" href="dir_24675e680cc699690f9ab00f0f74b528.html">header</a></li><li class="navelem"><a class="el" href="_kni_device_8h.html">KniDevice.h</a></li>
-    <li class="footer">Generated on Thu Sep 11 2025 07:25:09 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Sep 15 2025 07:08:58 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

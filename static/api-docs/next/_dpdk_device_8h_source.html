@@ -138,8 +138,8 @@ $(document).ready(function(){initNavTree('_dpdk_device_8h_source.html',''); init
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <a class="code" href="namespacepcpp.html#adb43f1f8284d4e0b74d1c77b70152fa9a6270057f3a91382d9efb64b469f19e8c">PMD_AF_PACKET</a></div>
 <div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="namespacepcpp.html#adb43f1f8284d4e0b74d1c77b70152fa9a6270057f3a91382d9efb64b469f19e8c">  118</a></span>&#160;    };</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="namespacepcpp.html#aebc46b2f805a197cd4b79316a9237c26">  128</a></span>&#160;    <span class="keyword">typedef</span> void (*<a class="code" href="namespacepcpp.html#aebc46b2f805a197cd4b79316a9237c26">OnDpdkPacketsArriveCallback</a>)(<a class="code" href="classpcpp_1_1_m_buf_raw_packet.html">MBufRawPacket</a>* packets, uint32_t numOfPackets, uint8_t threadId,</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                                                <a class="code" href="classpcpp_1_1_dpdk_device.html">DpdkDevice</a>* device, <span class="keywordtype">void</span>* userCookie);</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="namespacepcpp.html#a1351bb14caa7943eb51cbd18b949f100">  128</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="namespacepcpp.html#a1351bb14caa7943eb51cbd18b949f100">OnDpdkPacketsArriveCallback</a> = void (*)(<a class="code" href="classpcpp_1_1_m_buf_raw_packet.html">MBufRawPacket</a>* packets, uint32_t numOfPackets, uint8_t threadId,</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                                                 <a class="code" href="classpcpp_1_1_dpdk_device.html">DpdkDevice</a>* device, <span class="keywordtype">void</span>* userCookie);</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
 <div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="classpcpp_1_1_dpdk_device.html">  167</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_dpdk_device.html">DpdkDevice</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_i_device.html">IDevice</a></div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    {</div>
@@ -329,9 +329,9 @@ $(document).ready(function(){initNavTree('_dpdk_device_8h_source.html',''); init
 <div class="line"><a name="l00626"></a><span class="lineno"><a class="line" href="classpcpp_1_1_dpdk_device.html#afae6116f6d0d7f515acb1c327fdcebbb">  626</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_dpdk_device.html#afae6116f6d0d7f515acb1c327fdcebbb">openMultiQueues</a>(uint16_t numOfRxQueuesToOpen, uint16_t numOfTxQueuesToOpen,</div>
 <div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;                             <span class="keyword">const</span> <a class="code" href="structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration.html">DpdkDeviceConfiguration</a>&amp; config = <a class="code" href="structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration.html">DpdkDeviceConfiguration</a>());</div>
 <div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160; </div>
-<div class="line"><a name="l00645"></a><span class="lineno"><a class="line" href="classpcpp_1_1_dpdk_device.html#ae200ae83e4eb63c66ff18a1004836f3d">  645</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_dpdk_device.html#ae200ae83e4eb63c66ff18a1004836f3d">startCaptureSingleThread</a>(<a class="code" href="namespacepcpp.html#aebc46b2f805a197cd4b79316a9237c26">OnDpdkPacketsArriveCallback</a> onPacketsArrive, <span class="keywordtype">void</span>* onPacketsArriveUserCookie);</div>
+<div class="line"><a name="l00645"></a><span class="lineno"><a class="line" href="classpcpp_1_1_dpdk_device.html#ae200ae83e4eb63c66ff18a1004836f3d">  645</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_dpdk_device.html#ae200ae83e4eb63c66ff18a1004836f3d">startCaptureSingleThread</a>(<a class="code" href="namespacepcpp.html#a1351bb14caa7943eb51cbd18b949f100">OnDpdkPacketsArriveCallback</a> onPacketsArrive, <span class="keywordtype">void</span>* onPacketsArriveUserCookie);</div>
 <div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160; </div>
-<div class="line"><a name="l00663"></a><span class="lineno"><a class="line" href="classpcpp_1_1_dpdk_device.html#a092dcc89b546b902698842fade374376">  663</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_dpdk_device.html#a092dcc89b546b902698842fade374376">startCaptureMultiThreads</a>(<a class="code" href="namespacepcpp.html#aebc46b2f805a197cd4b79316a9237c26">OnDpdkPacketsArriveCallback</a> onPacketsArrive, <span class="keywordtype">void</span>* onPacketsArriveUserCookie,</div>
+<div class="line"><a name="l00663"></a><span class="lineno"><a class="line" href="classpcpp_1_1_dpdk_device.html#a092dcc89b546b902698842fade374376">  663</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_dpdk_device.html#a092dcc89b546b902698842fade374376">startCaptureMultiThreads</a>(<a class="code" href="namespacepcpp.html#a1351bb14caa7943eb51cbd18b949f100">OnDpdkPacketsArriveCallback</a> onPacketsArrive, <span class="keywordtype">void</span>* onPacketsArriveUserCookie,</div>
 <div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;                                      CoreMask coreMask);</div>
 <div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160; </div>
 <div class="line"><a name="l00668"></a><span class="lineno"><a class="line" href="classpcpp_1_1_dpdk_device.html#ae3238998a22eb354c388d68d92285de7">  668</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_dpdk_device.html#ae3238998a22eb354c388d68d92285de7">stopCapture</a>();</div>
@@ -365,80 +365,87 @@ $(document).ready(function(){initNavTree('_dpdk_device_8h_source.html',''); init
 <div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160; </div>
 <div class="line"><a name="l00732"></a><span class="lineno"><a class="line" href="classpcpp_1_1_dpdk_device.html#a674ce896499d738f2c3c83777b7f7fd6">  732</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_dpdk_device.html#a674ce896499d738f2c3c83777b7f7fd6">close</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160; </div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;        <span class="keyword">struct </span>DpdkCoreConfiguration</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;        {</div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;            <span class="keywordtype">int</span> RxQueueId;</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;            <span class="keywordtype">bool</span> IsCoreInUse;</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160; </div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;            <span class="keywordtype">void</span> clear()</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;            {</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;                RxQueueId = -1;</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;                IsCoreInUse = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;            }</div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160; </div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;            DpdkCoreConfiguration() : RxQueueId(-1), IsCoreInUse(false)</div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;            {}</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;        };</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160; </div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;        DpdkDevice(<span class="keywordtype">int</span> port, uint32_t mBufPoolSize, uint16_t mMbufDataSize);</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;        <span class="keywordtype">bool</span> initMemPool(<span class="keyword">struct</span> rte_mempool*&amp; memPool, <span class="keyword">const</span> <span class="keywordtype">char</span>* mempoolName, uint32_t mBufPoolSize);</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160; </div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;        <span class="keywordtype">bool</span> configurePort(uint8_t numOfRxQueues, uint8_t numOfTxQueues);</div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;        <span class="keywordtype">bool</span> initQueues(uint8_t numOfRxQueuesToInit, uint8_t numOfTxQueuesToInit);</div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;        <span class="keywordtype">bool</span> startDevice();</div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160; </div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">int</span> dpdkCaptureThreadMain(<span class="keywordtype">void</span>* ptr);</div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160; </div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;        <span class="keywordtype">void</span> clearCoreConfiguration();</div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;        <span class="keywordtype">bool</span> initCoreConfigurationByCoreMask(CoreMask coreMask);</div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        <span class="keywordtype">int</span> getCoresInUseCount() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160; </div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;        <span class="keywordtype">void</span> setDeviceInfo();</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160; </div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;        <span class="keyword">typedef</span> rte_mbuf* (*PacketIterator)(<span class="keywordtype">void</span>* packetStorage, <span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;        uint16_t sendPacketsInner(uint16_t txQueueId, <span class="keywordtype">void</span>* packetStorage, PacketIterator iter, <span class="keywordtype">int</span> arrLength,</div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;                                  <span class="keywordtype">bool</span> useTxBuffer);</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160; </div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;        uint64_t convertRssHfToDpdkRssHf(uint64_t rssHF) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;        uint64_t convertDpdkRssHfToRssHf(uint64_t dpdkRssHF) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160; </div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;        std::string m_DeviceName;</div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;        <a class="code" href="namespacepcpp.html#adb43f1f8284d4e0b74d1c77b70152fa9">DpdkPMDType</a> m_PMDType;</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;        std::string m_PMDName;</div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;        std::string m_PciAddress;</div>
+<div class="line"><a name="l00734"></a><span class="lineno"><a class="line" href="classpcpp_1_1_dpdk_device.html#a517b8715b4634a164a99d3ded84d4008">  734</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_dpdk_device.html#a517b8715b4634a164a99d3ded84d4008">isOpened</a>()<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;            <span class="keywordflow">return</span> m_DeviceOpened;</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;        }</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160; </div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;        <span class="keyword">struct </span>DpdkCoreConfiguration</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;        {</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;            <span class="keywordtype">int</span> RxQueueId;</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;            <span class="keywordtype">bool</span> IsCoreInUse;</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160; </div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;            <span class="keywordtype">void</span> clear()</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;            {</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;                RxQueueId = -1;</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;                IsCoreInUse = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;            }</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160; </div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;            DpdkCoreConfiguration() : RxQueueId(-1), IsCoreInUse(false)</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;            {}</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;        };</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160; </div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;        DpdkDevice(<span class="keywordtype">int</span> port, uint32_t mBufPoolSize, uint16_t mMbufDataSize);</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;        <span class="keywordtype">bool</span> initMemPool(<span class="keyword">struct</span> rte_mempool*&amp; memPool, <span class="keyword">const</span> <span class="keywordtype">char</span>* mempoolName, uint32_t mBufPoolSize);</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160; </div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;        <span class="keywordtype">bool</span> configurePort(uint8_t numOfRxQueues, uint8_t numOfTxQueues);</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;        <span class="keywordtype">bool</span> initQueues(uint8_t numOfRxQueuesToInit, uint8_t numOfTxQueuesToInit);</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;        <span class="keywordtype">bool</span> startDevice();</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160; </div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">int</span> dpdkCaptureThreadMain(<span class="keywordtype">void</span>* ptr);</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160; </div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;        <span class="keywordtype">void</span> clearCoreConfiguration();</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;        <span class="keywordtype">bool</span> initCoreConfigurationByCoreMask(CoreMask coreMask);</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;        <span class="keywordtype">int</span> getCoresInUseCount() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160; </div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;        <span class="keywordtype">void</span> setDeviceInfo();</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160; </div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;        <span class="keyword">typedef</span> rte_mbuf* (*PacketIterator)(<span class="keywordtype">void</span>* packetStorage, <span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;        uint16_t sendPacketsInner(uint16_t txQueueId, <span class="keywordtype">void</span>* packetStorage, PacketIterator iter, <span class="keywordtype">int</span> arrLength,</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;                                  <span class="keywordtype">bool</span> useTxBuffer);</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160; </div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;        uint64_t convertRssHfToDpdkRssHf(uint64_t rssHF) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;        uint64_t convertDpdkRssHfToRssHf(uint64_t dpdkRssHF) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160; </div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        DpdkDeviceConfiguration m_Config;</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        <span class="keywordtype">bool</span> m_DeviceOpened = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160; </div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;        <span class="keywordtype">int</span> m_Id;</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;        MacAddress m_MacAddress;</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;        int16_t m_DeviceSocketId;</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;        uint16_t m_DeviceMtu;</div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;        uint16_t m_MBufDataSize;</div>
-<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;        <span class="keyword">struct </span>rte_mempool* m_MBufMempool;</div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;        <span class="keyword">struct </span>rte_eth_dev_tx_buffer** m_TxBuffers;</div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;        uint64_t m_TxBufferDrainTsc;</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;        uint64_t* m_TxBufferLastDrainTsc;</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;        DpdkCoreConfiguration m_CoreConfiguration[MAX_NUM_OF_CORES];</div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;        uint16_t m_TotalAvailableRxQueues;</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;        uint16_t m_TotalAvailableTxQueues;</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;        uint16_t m_NumOfRxQueuesOpened;</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;        uint16_t m_NumOfTxQueuesOpened;</div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;        <a class="code" href="namespacepcpp.html#aebc46b2f805a197cd4b79316a9237c26">OnDpdkPacketsArriveCallback</a> m_OnPacketsArriveCallback;</div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;        <span class="keywordtype">void</span>* m_OnPacketsArriveUserCookie;</div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;        <span class="keywordtype">bool</span> m_StopThread;</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160; </div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;        <span class="keywordtype">bool</span> m_WasOpened;</div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160; </div>
-<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;        <span class="comment">// RSS key used by the NIC for load balancing the packets between cores</span></div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;        <span class="keyword">static</span> uint8_t m_RSSKey[40];</div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160; </div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;        <span class="keyword">mutable</span> DpdkDeviceStats m_PrevStats;</div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;    };</div>
-<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160; </div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160; </div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;<span class="comment">// GCOVR_EXCL_STOP</span></div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;        std::string m_DeviceName;</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;        <a class="code" href="namespacepcpp.html#adb43f1f8284d4e0b74d1c77b70152fa9">DpdkPMDType</a> m_PMDType;</div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;        std::string m_PMDName;</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;        std::string m_PciAddress;</div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160; </div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;        DpdkDeviceConfiguration m_Config;</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160; </div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;        <span class="keywordtype">int</span> m_Id;</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;        MacAddress m_MacAddress;</div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;        int16_t m_DeviceSocketId;</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;        uint16_t m_DeviceMtu;</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;        uint16_t m_MBufDataSize;</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;        <span class="keyword">struct </span>rte_mempool* m_MBufMempool;</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;        <span class="keyword">struct </span>rte_eth_dev_tx_buffer** m_TxBuffers;</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;        uint64_t m_TxBufferDrainTsc;</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;        uint64_t* m_TxBufferLastDrainTsc;</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;        DpdkCoreConfiguration m_CoreConfiguration[MAX_NUM_OF_CORES];</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;        uint16_t m_TotalAvailableRxQueues;</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;        uint16_t m_TotalAvailableTxQueues;</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;        uint16_t m_NumOfRxQueuesOpened;</div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;        uint16_t m_NumOfTxQueuesOpened;</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;        <a class="code" href="namespacepcpp.html#a1351bb14caa7943eb51cbd18b949f100">OnDpdkPacketsArriveCallback</a> m_OnPacketsArriveCallback;</div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;        <span class="keywordtype">void</span>* m_OnPacketsArriveUserCookie;</div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;        <span class="keywordtype">bool</span> m_StopThread;</div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160; </div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;        <span class="keywordtype">bool</span> m_WasOpened;</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160; </div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;        <span class="comment">// RSS key used by the NIC for load balancing the packets between cores</span></div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;        <span class="keyword">static</span> uint8_t m_RSSKey[40];</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160; </div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;        <span class="keyword">mutable</span> DpdkDeviceStats m_PrevStats;</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;    };</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160; </div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160; </div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;<span class="comment">// GCOVR_EXCL_STOP</span></div>
 <div class="ttc" id="a_device_8h_html"><div class="ttname"><a href="_device_8h.html">Device.h</a></div></div>
 <div class="ttc" id="a_mac_address_8h_html"><div class="ttname"><a href="_mac_address_8h.html">MacAddress.h</a></div></div>
 <div class="ttc" id="a_system_utils_8h_html"><div class="ttname"><a href="_system_utils_8h.html">SystemUtils.h</a></div></div>
@@ -455,6 +462,7 @@ $(document).ready(function(){initNavTree('_dpdk_device_8h_source.html',''); init
 <div class="ttc" id="aclasspcpp_1_1_dpdk_device_html_a3e3ec4284c41402b040efae54cc31f60"><div class="ttname"><a href="classpcpp_1_1_dpdk_device.html#a3e3ec4284c41402b040efae54cc31f60">pcpp::DpdkDevice::sendPacket</a></div><div class="ttdeci">bool sendPacket(MBufRawPacket &amp;rawPacket, uint16_t txQueueId=0, bool useTxBuffer=false)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_dpdk_device_html_a3f598ccf4e54db8b89638f4024a07199"><div class="ttname"><a href="classpcpp_1_1_dpdk_device.html#a3f598ccf4e54db8b89638f4024a07199">pcpp::DpdkDevice::getPciAddress</a></div><div class="ttdeci">std::string getPciAddress() const</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:384</div></div>
 <div class="ttc" id="aclasspcpp_1_1_dpdk_device_html_a419b2a336132a9c64649a9588b58613d"><div class="ttname"><a href="classpcpp_1_1_dpdk_device.html#a419b2a336132a9c64649a9588b58613d">pcpp::DpdkDevice::sendPacket</a></div><div class="ttdeci">bool sendPacket(Packet &amp;packet, uint16_t txQueueId=0, bool useTxBuffer=false)</div></div>
+<div class="ttc" id="aclasspcpp_1_1_dpdk_device_html_a517b8715b4634a164a99d3ded84d4008"><div class="ttname"><a href="classpcpp_1_1_dpdk_device.html#a517b8715b4634a164a99d3ded84d4008">pcpp::DpdkDevice::isOpened</a></div><div class="ttdeci">bool isOpened() const override</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:734</div></div>
 <div class="ttc" id="aclasspcpp_1_1_dpdk_device_html_a56fae02490d62b97e0fdddb94787a2f6"><div class="ttname"><a href="classpcpp_1_1_dpdk_device.html#a56fae02490d62b97e0fdddb94787a2f6">pcpp::DpdkDevice::getConfiguredRssHashFunction</a></div><div class="ttdeci">uint64_t getConfiguredRssHashFunction() const</div></div>
 <div class="ttc" id="aclasspcpp_1_1_dpdk_device_html_a5b8addda706921bed8f804a9ba2cc822"><div class="ttname"><a href="classpcpp_1_1_dpdk_device.html#a5b8addda706921bed8f804a9ba2cc822">pcpp::DpdkDevice::getLinkStatus</a></div><div class="ttdeci">bool getLinkStatus(LinkStatus &amp;linkStatus) const</div></div>
 <div class="ttc" id="aclasspcpp_1_1_dpdk_device_html_a64a6c016e10248b9519b14c5618d06a4"><div class="ttname"><a href="classpcpp_1_1_dpdk_device.html#a64a6c016e10248b9519b14c5618d06a4">pcpp::DpdkDevice::getMacAddress</a></div><div class="ttdeci">MacAddress getMacAddress() const</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:364</div></div>
@@ -519,6 +527,7 @@ $(document).ready(function(){initNavTree('_dpdk_device_8h_source.html',''); init
 <div class="ttc" id="aclasspcpp_1_1_pointer_vector_html"><div class="ttname"><a href="classpcpp_1_1_pointer_vector.html">pcpp::PointerVector</a></div><div class="ttdef"><b>Definition:</b> PointerVector.h:50</div></div>
 <div class="ttc" id="aclasspcpp_1_1_raw_packet_html"><div class="ttname"><a href="classpcpp_1_1_raw_packet.html">pcpp::RawPacket</a></div><div class="ttdef"><b>Definition:</b> RawPacket.h:259</div></div>
 <div class="ttc" id="anamespacepcpp_html"><div class="ttname"><a href="namespacepcpp.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib.</div><div class="ttdef"><b>Definition:</b> AssertionUtils.h:19</div></div>
+<div class="ttc" id="anamespacepcpp_html_a1351bb14caa7943eb51cbd18b949f100"><div class="ttname"><a href="namespacepcpp.html#a1351bb14caa7943eb51cbd18b949f100">pcpp::OnDpdkPacketsArriveCallback</a></div><div class="ttdeci">void(*)(MBufRawPacket *packets, uint32_t numOfPackets, uint8_t threadId, DpdkDevice *device, void *userCookie) OnDpdkPacketsArriveCallback</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:129</div></div>
 <div class="ttc" id="anamespacepcpp_html_adb43f1f8284d4e0b74d1c77b70152fa9"><div class="ttname"><a href="namespacepcpp.html#adb43f1f8284d4e0b74d1c77b70152fa9">pcpp::DpdkPMDType</a></div><div class="ttdeci">DpdkPMDType</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:78</div></div>
 <div class="ttc" id="anamespacepcpp_html_adb43f1f8284d4e0b74d1c77b70152fa9a0285f774aac5c7361ba8d37a4661d54c"><div class="ttname"><a href="namespacepcpp.html#adb43f1f8284d4e0b74d1c77b70152fa9a0285f774aac5c7361ba8d37a4661d54c">pcpp::PMD_IGB</a></div><div class="ttdeci">@ PMD_IGB</div><div class="ttdoc">Intel 1GbE PMD.</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:87</div></div>
 <div class="ttc" id="anamespacepcpp_html_adb43f1f8284d4e0b74d1c77b70152fa9a1e1a82a8e62126ffbd49e62fbbd1e3e6"><div class="ttname"><a href="namespacepcpp.html#adb43f1f8284d4e0b74d1c77b70152fa9a1e1a82a8e62126ffbd49e62fbbd1e3e6">pcpp::PMD_MLX4</a></div><div class="ttdeci">@ PMD_MLX4</div><div class="ttdoc">Mellanox ConnectX-3, ConnectX-3 Pro PMD.</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:103</div></div>
@@ -539,7 +548,6 @@ $(document).ready(function(){initNavTree('_dpdk_device_8h_source.html',''); init
 <div class="ttc" id="anamespacepcpp_html_adb43f1f8284d4e0b74d1c77b70152fa9ac9bd02c20553db57a436d2cdcefb19e4"><div class="ttname"><a href="namespacepcpp.html#adb43f1f8284d4e0b74d1c77b70152fa9ac9bd02c20553db57a436d2cdcefb19e4">pcpp::PMD_IGBVF</a></div><div class="ttdeci">@ PMD_IGBVF</div><div class="ttdoc">Intel 1GbE virtual function PMD.</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:89</div></div>
 <div class="ttc" id="anamespacepcpp_html_adb43f1f8284d4e0b74d1c77b70152fa9ad24add478b9c88c8b2d735c98c1d2580"><div class="ttname"><a href="namespacepcpp.html#adb43f1f8284d4e0b74d1c77b70152fa9ad24add478b9c88c8b2d735c98c1d2580">pcpp::PMD_VIRTIO</a></div><div class="ttdeci">@ PMD_VIRTIO</div><div class="ttdoc">VirtIO PMD.</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:111</div></div>
 <div class="ttc" id="anamespacepcpp_html_adb43f1f8284d4e0b74d1c77b70152fa9afcf0ab0cfbf5794de42cb6cd68ab63a9"><div class="ttname"><a href="namespacepcpp.html#adb43f1f8284d4e0b74d1c77b70152fa9afcf0ab0cfbf5794de42cb6cd68ab63a9">pcpp::PMD_NULL</a></div><div class="ttdeci">@ PMD_NULL</div><div class="ttdoc">Null PMD.</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:105</div></div>
-<div class="ttc" id="anamespacepcpp_html_aebc46b2f805a197cd4b79316a9237c26"><div class="ttname"><a href="namespacepcpp.html#aebc46b2f805a197cd4b79316a9237c26">pcpp::OnDpdkPacketsArriveCallback</a></div><div class="ttdeci">void(* OnDpdkPacketsArriveCallback)(MBufRawPacket *packets, uint32_t numOfPackets, uint8_t threadId, DpdkDevice *device, void *userCookie)</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:128</div></div>
 <div class="ttc" id="astructpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration_html"><div class="ttname"><a href="structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration.html">pcpp::DpdkDevice::DpdkDeviceConfiguration</a></div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:229</div></div>
 <div class="ttc" id="astructpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration_html_a225b415490ad496be6e0a93cf0b829ba"><div class="ttname"><a href="structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration.html#a225b415490ad496be6e0a93cf0b829ba">pcpp::DpdkDevice::DpdkDeviceConfiguration::flushTxBufferTimeout</a></div><div class="ttdeci">uint16_t flushTxBufferTimeout</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:242</div></div>
 <div class="ttc" id="astructpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration_html_a2a4ea6838f06b12a2bd539fb7fd7c362"><div class="ttname"><a href="structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration.html#a2a4ea6838f06b12a2bd539fb7fd7c362">pcpp::DpdkDevice::DpdkDeviceConfiguration::DpdkDeviceConfiguration</a></div><div class="ttdeci">DpdkDeviceConfiguration(uint16_t receiveDescriptorsNumber=128, uint16_t transmitDescriptorsNumber=512, uint16_t flushTxBufferTimeout=100, uint64_t rssHashFunction=RSS_DEFAULT, uint8_t *rssKey=DpdkDevice::m_RSSKey, uint8_t rssKeyLength=40)</div><div class="ttdef"><b>Definition:</b> DpdkDevice.h:275</div></div>
@@ -576,7 +584,7 @@ $(document).ready(function(){initNavTree('_dpdk_device_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1d5e652a4f74c687a1a254f16a4c3d59.html">Pcap++</a></li><li class="navelem"><a class="el" href="dir_24675e680cc699690f9ab00f0f74b528.html">header</a></li><li class="navelem"><a class="el" href="_dpdk_device_8h.html">DpdkDevice.h</a></li>
-    <li class="footer">Generated on Thu Sep 11 2025 07:25:09 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Sep 15 2025 07:08:58 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

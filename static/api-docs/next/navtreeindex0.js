@@ -74,7 +74,7 @@ var NAVTREEINDEX0 =
 "_deprecation_utils_8h.html":[5,0,8],
 "_deprecation_utils_8h_source.html":[5,0,8],
 "_device_8h.html":[5,0,9],
-"_device_8h.html#a4c0775fb93a0867d2afa7992d55957f0":[5,0,9,2],
+"_device_8h.html#a48a57c2edc6a66ef77661a54074b2ef9":[5,0,9,2],
 "_device_8h_source.html":[5,0,9],
 "_device_list_base_8h_source.html":[5,0,10],
 "_device_utils_8h.html":[5,0,11],

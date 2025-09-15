@@ -52,6 +52,7 @@ var classpcpp_1_1_dpdk_device =
     [ "getTotalNumOfTxQueues", "classpcpp_1_1_dpdk_device.html#ac58e4e1039dff5eebd8ad7ac0c19704a", null ],
     [ "isDeviceSupportRssHashFunction", "classpcpp_1_1_dpdk_device.html#ad15280f1b6b50e75415e9080615be1ec", null ],
     [ "isDeviceSupportRssHashFunction", "classpcpp_1_1_dpdk_device.html#a99eee1fdff0411f1e3dc6e8ac5a5146b", null ],
+    [ "isOpened", "classpcpp_1_1_dpdk_device.html#a517b8715b4634a164a99d3ded84d4008", null ],
     [ "isVirtual", "classpcpp_1_1_dpdk_device.html#ae45341ad236f07e92be61b33325aa3c1", null ],
     [ "open", "classpcpp_1_1_dpdk_device.html#a27d469aab56898409f8ff43300406880", null ],
     [ "openMultiQueues", "classpcpp_1_1_dpdk_device.html#afae6116f6d0d7f515acb1c327fdcebbb", null ],

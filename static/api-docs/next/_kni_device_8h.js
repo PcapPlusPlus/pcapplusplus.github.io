@@ -4,5 +4,5 @@ var _kni_device_8h =
     [ "KniIoctlCallbacks", "structpcpp_1_1_kni_device_1_1_kni_ioctl_callbacks.html", "structpcpp_1_1_kni_device_1_1_kni_ioctl_callbacks" ],
     [ "KniOldIoctlCallbacks", "structpcpp_1_1_kni_device_1_1_kni_old_ioctl_callbacks.html", "structpcpp_1_1_kni_device_1_1_kni_old_ioctl_callbacks" ],
     [ "KniDeviceConfiguration", "structpcpp_1_1_kni_device_1_1_kni_device_configuration.html", "structpcpp_1_1_kni_device_1_1_kni_device_configuration" ],
-    [ "OnKniPacketArriveCallback", "_kni_device_8h.html#a5d5c27837ffd86e49a6b4ce2cc1ed57b", null ]
+    [ "OnKniPacketArriveCallback", "_kni_device_8h.html#a82e00fe25b4c9dfdd52717b84deb5597", null ]
 ];

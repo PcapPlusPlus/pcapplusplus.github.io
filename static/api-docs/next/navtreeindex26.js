@@ -1,5 +1,11 @@
 var NAVTREEINDEX26 =
 {
+"structpcpp_1_1_kni_device_1_1_kni_device_configuration.html":[4,0,0,351,0],
+"structpcpp_1_1_kni_device_1_1_kni_device_configuration.html#a22df3fac00ba8927f0554bf970e389ac":[4,0,0,351,0,5],
+"structpcpp_1_1_kni_device_1_1_kni_device_configuration.html#a2df48dfa7610b8e97f48a46403feb4c4":[4,0,0,351,0,4],
+"structpcpp_1_1_kni_device_1_1_kni_device_configuration.html#a367e9fa4227ef174aff1f4c9a0f85ab6":[4,0,0,351,0,3],
+"structpcpp_1_1_kni_device_1_1_kni_device_configuration.html#a4e04ae1b8e56cb5cfe523dea16113d1b":[4,0,0,351,0,1],
+"structpcpp_1_1_kni_device_1_1_kni_device_configuration.html#a75e4fec9e87b52e390e1d79e3d8e6dd6":[4,0,0,351,0,0],
 "structpcpp_1_1_kni_device_1_1_kni_device_configuration.html#a971b099355d4da2fc8f85224f50ed42c":[4,0,0,351,0,2],
 "structpcpp_1_1_kni_device_1_1_kni_ioctl_callbacks.html":[4,0,0,351,1],
 "structpcpp_1_1_kni_device_1_1_kni_ioctl_callbacks.html#a1af9caa75f5c83e134e2e606c648762c":[4,0,0,351,1,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX26 =
 "structpcpp_1_1doiphdr.html#a1b4a6c76c1dd3f5de6c4c96c2f62d376":[4,0,0,84,2],
 "structpcpp_1_1doiphdr.html#a29de2069f439308d8134d990e5e34bed":[4,0,0,84,1],
 "structpcpp_1_1doiphdr.html#a29fb22e8c20d85a089af25c671cb5111":[4,0,0,84,0],
-"structpcpp_1_1ether__dot3__header.html":[4,0,0,104],
-"structpcpp_1_1ether__dot3__header.html#a00ac5f8f4c15e39eb8d13b106e19c539":[4,0,0,104,1],
-"structpcpp_1_1ether__dot3__header.html#a3309dc6eaed7c3b7b6797e4615989016":[4,0,0,104,2],
-"structpcpp_1_1ether__dot3__header.html#afb269ef2a0a1e3dd1957eb3976093b9f":[4,0,0,104,0],
-"structpcpp_1_1ether__header.html":[4,0,0,106],
-"structpcpp_1_1ether__header.html#a3200f5fc394812077b6c96d2b15f7658":[4,0,0,106,1],
-"structpcpp_1_1ether__header.html#a466d328a654e445f4d9cb594ff1486ff":[4,0,0,106,2]
+"structpcpp_1_1ether__dot3__header.html":[4,0,0,104]
 };

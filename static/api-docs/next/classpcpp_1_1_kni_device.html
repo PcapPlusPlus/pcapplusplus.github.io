@@ -208,7 +208,7 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memdesc:aa43aa821542e38f67503545175dc334e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a vector of <a class="el" href="classpcpp_1_1_m_buf_raw_packet.html">MBufRawPacket</a> pointers to kernel. Please notice the following:<br  />
   <a href="classpcpp_1_1_kni_device.html#aa43aa821542e38f67503545175dc334e">More...</a><br /></td></tr>
 <tr class="separator:aa43aa821542e38f67503545175dc334e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf6de9a122dcf513108f58daed609afa"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_kni_device.html#acf6de9a122dcf513108f58daed609afa">sendPackets</a> (<a class="el" href="namespacepcpp.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;rawPacketsVec)</td></tr>
+<tr class="memitem:acf6de9a122dcf513108f58daed609afa"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_kni_device.html#acf6de9a122dcf513108f58daed609afa">sendPackets</a> (<a class="el" href="namespacepcpp.html#a48a57c2edc6a66ef77661a54074b2ef9">RawPacketVector</a> &amp;rawPacketsVec)</td></tr>
 <tr class="memdesc:acf6de9a122dcf513108f58daed609afa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a vector of <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> pointers to kernel. Please notice the following:<br  />
   <a href="classpcpp_1_1_kni_device.html#acf6de9a122dcf513108f58daed609afa">More...</a><br /></td></tr>
 <tr class="separator:acf6de9a122dcf513108f58daed609afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,10 +221,10 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memitem:a295cb561420c5e9d219ef4d3aa4a230b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_kni_device.html#a295cb561420c5e9d219ef4d3aa4a230b">sendPacket</a> (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> &amp;packet)</td></tr>
 <tr class="memdesc:a295cb561420c5e9d219ef4d3aa4a230b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a parsed packet to kernel. Please notice that the mbuf used or allocated in this method isn't freed by this method, it will be transparently freed by DPDK.  <a href="classpcpp_1_1_kni_device.html#a295cb561420c5e9d219ef4d3aa4a230b">More...</a><br /></td></tr>
 <tr class="separator:a295cb561420c5e9d219ef4d3aa4a230b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f5f48e1e2950cb3f2385d1bdda5a25e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_kni_device.html#a3f5f48e1e2950cb3f2385d1bdda5a25e">startCapture</a> (<a class="el" href="namespacepcpp.html#a5d5c27837ffd86e49a6b4ce2cc1ed57b">OnKniPacketArriveCallback</a> onPacketArrives, void *onPacketArrivesUserCookie)</td></tr>
+<tr class="memitem:a3f5f48e1e2950cb3f2385d1bdda5a25e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_kni_device.html#a3f5f48e1e2950cb3f2385d1bdda5a25e">startCapture</a> (<a class="el" href="namespacepcpp.html#a82e00fe25b4c9dfdd52717b84deb5597">OnKniPacketArriveCallback</a> onPacketArrives, void *onPacketArrivesUserCookie)</td></tr>
 <tr class="memdesc:a3f5f48e1e2950cb3f2385d1bdda5a25e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start capturing packets asynchronously on this KNI interface. Each time a burst of packets is captured the onPacketArrives callback is called. The capture is done on a new thread created by this method, meaning all callback calls are done in a thread other than the caller thread. Capture process will stop and this capture thread will be terminated when calling <a class="el" href="classpcpp_1_1_kni_device.html#aacdb5298cdb0fa1cc8a3563ef91e2546" title="Stop a currently running asynchronous packet capture.">stopCapture()</a>. This method must be called after the device is opened (i.e the <a class="el" href="classpcpp_1_1_kni_device.html#a2f66da689a3403a98d3d4f735b79cc50">open()</a> method was called), otherwise an error will be returned. Capturing thread will be terminated automatically on KNI device destruction or when <a class="el" href="classpcpp_1_1_kni_device.html#af1d2bdcdd4ec0ab6db3754af10f0c541" title="Close the KNI device. When device is closed it&#39;s not possible to work with it. Stops asynchronous pac...">close()</a> is called.  <a href="classpcpp_1_1_kni_device.html#a3f5f48e1e2950cb3f2385d1bdda5a25e">More...</a><br /></td></tr>
 <tr class="separator:a3f5f48e1e2950cb3f2385d1bdda5a25e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7039519dc1d34590bb4a8b31ebc3ffe2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_kni_device.html#a7039519dc1d34590bb4a8b31ebc3ffe2">startCaptureBlockingMode</a> (<a class="el" href="namespacepcpp.html#a5d5c27837ffd86e49a6b4ce2cc1ed57b">OnKniPacketArriveCallback</a> onPacketArrives, void *onPacketArrivesUserCookie, int timeout)</td></tr>
+<tr class="memitem:a7039519dc1d34590bb4a8b31ebc3ffe2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_kni_device.html#a7039519dc1d34590bb4a8b31ebc3ffe2">startCaptureBlockingMode</a> (<a class="el" href="namespacepcpp.html#a82e00fe25b4c9dfdd52717b84deb5597">OnKniPacketArriveCallback</a> onPacketArrives, void *onPacketArrivesUserCookie, int timeout)</td></tr>
 <tr class="memdesc:a7039519dc1d34590bb4a8b31ebc3ffe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start capturing packets synchronously on this KNI interface in blocking mode. Blocking mode means that this method block and won't return until the user frees the blocking (via onPacketArrives callback) or until a user defined timeout expires. Whenever a burst of packets is captured the onPacketArrives callback is called and lets the user handle the packet. In each callback call the user should return true if he wants to release the block or false if it wants it to keep blocking. Regardless of this callback a timeout is defined when stop capturing. When this timeout expires the method will return.<br  />
  Please notice that <a class="el" href="classpcpp_1_1_kni_device.html#aacdb5298cdb0fa1cc8a3563ef91e2546" title="Stop a currently running asynchronous packet capture.">stopCapture()</a> isn't needed here because when the method returns (after timeout or per user decision) capturing on the device is stopped.  <a href="classpcpp_1_1_kni_device.html#a7039519dc1d34590bb4a8b31ebc3ffe2">More...</a><br /></td></tr>
 <tr class="separator:a7039519dc1d34590bb4a8b31ebc3ffe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -238,9 +238,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_kni_device.html#af1d2bdcdd4ec0ab6db3754af10f0c541">close</a> ()</td></tr>
 <tr class="memdesc:af1d2bdcdd4ec0ab6db3754af10f0c541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the KNI device. When device is closed it's not possible to work with it. Stops asynchronous packet capture if it is running. <br /></td></tr>
 <tr class="separator:af1d2bdcdd4ec0ab6db3754af10f0c541"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classpcpp_1_1_i_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_i_device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_device.html">pcpp::IDevice</a></td></tr>
-<tr class="memitem:a5b75e7491597f271b8f29847bec2ee99 inherit pub_methods_classpcpp_1_1_i_device"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_device.html#a5b75e7491597f271b8f29847bec2ee99">isOpened</a> ()</td></tr>
-<tr class="separator:a5b75e7491597f271b8f29847bec2ee99 inherit pub_methods_classpcpp_1_1_i_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76e00dd3d12bd787ac60ac811952e534"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_kni_device.html#a76e00dd3d12bd787ac60ac811952e534">isOpened</a> () const override</td></tr>
+<tr class="separator:a76e00dd3d12bd787ac60ac811952e534"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class represents special kind of DPDK devices called KNI - Kernel Network Interface that are used to exchange DPDK mbuf packets with Linux kernel network stack. This devices have only one RX and one TX queue so MT receiving or MT sending is not safe but simultaneous receiving and sending packets is MT safe. The RX queue of KNI device is pointed from kernel to application and TX queue is pointed in opposite direction - from application to kernel. So receive* methods will obtain packets from kernel and send* methods will send them to kernel.<br  />
@@ -458,6 +457,34 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <dl class="section return"><dt>Returns</dt><dd>true if no error happened during request handling false otherwise </dd></dl>
 </li>
 </ul>
+
+</div>
+</div>
+<a id="a76e00dd3d12bd787ac60ac811952e534"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76e00dd3d12bd787ac60ac811952e534">&#9670;&nbsp;</a></span>isOpened()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::KniDevice::isOpened </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>True if the file is opened, false otherwise </dd></dl>
+
+<p>Implements <a class="el" href="classpcpp_1_1_i_device.html#abaee921a017044f025fd5355c1958a53">pcpp::IDevice</a>.</p>
 
 </div>
 </div>
@@ -808,7 +835,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">uint16_t pcpp::KniDevice::sendPackets </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacepcpp.html#a4c0775fb93a0867d2afa7992d55957f0">RawPacketVector</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcpp.html#a48a57c2edc6a66ef77661a54074b2ef9">RawPacketVector</a> &amp;&#160;</td>
           <td class="paramname"><em>rawPacketsVec</em></td><td>)</td>
           <td></td>
         </tr>
@@ -964,7 +991,7 @@ Generates promiscuous mode request </dd></dl>
         <tr>
           <td class="memname">bool pcpp::KniDevice::startCapture </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacepcpp.html#a5d5c27837ffd86e49a6b4ce2cc1ed57b">OnKniPacketArriveCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcpp.html#a82e00fe25b4c9dfdd52717b84deb5597">OnKniPacketArriveCallback</a>&#160;</td>
           <td class="paramname"><em>onPacketArrives</em>, </td>
         </tr>
         <tr>
@@ -1007,7 +1034,7 @@ Generates promiscuous mode request </dd></dl>
         <tr>
           <td class="memname">int pcpp::KniDevice::startCaptureBlockingMode </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacepcpp.html#a5d5c27837ffd86e49a6b4ce2cc1ed57b">OnKniPacketArriveCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacepcpp.html#a82e00fe25b4c9dfdd52717b84deb5597">OnKniPacketArriveCallback</a>&#160;</td>
           <td class="paramname"><em>onPacketArrives</em>, </td>
         </tr>
         <tr>
@@ -1136,7 +1163,7 @@ Generates promiscuous mode request </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_kni_device.html">KniDevice</a></li>
-    <li class="footer">Generated on Thu Sep 11 2025 07:25:10 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Sep 15 2025 07:08:59 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
