@@ -548,7 +548,6 @@ var hierarchy =
     ] ],
     [ "pcpp::SSLVersion", "classpcpp_1_1_s_s_l_version.html", null ],
     [ "pcpp::SSLx509Certificate", "classpcpp_1_1_s_s_lx509_certificate.html", null ],
-    [ "pcpp::PcapLiveDevice::StatisticsUpdateWorker", "classpcpp_1_1_pcap_live_device_1_1_statistics_update_worker.html", null ],
     [ "pcpp::stp_tcn_bpdu", "structpcpp_1_1stp__tcn__bpdu.html", [
       [ "pcpp::stp_conf_bpdu", "structpcpp_1_1stp__conf__bpdu.html", [
         [ "pcpp::rstp_conf_bpdu", "structpcpp_1_1rstp__conf__bpdu.html", [
