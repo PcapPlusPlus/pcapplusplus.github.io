@@ -1,9 +1,9 @@
 var classpcpp_1_1_bpf_filter_wrapper =
 [
-    [ "BpfFilterWrapper", "classpcpp_1_1_bpf_filter_wrapper.html#ad16670c3937b6cae90ceb323a3678a57", null ],
-    [ "BpfFilterWrapper", "classpcpp_1_1_bpf_filter_wrapper.html#a4a638e2fba7acdd4ba3030f4046057b0", null ],
-    [ "matchPacketWithFilter", "classpcpp_1_1_bpf_filter_wrapper.html#a0cda4696a98a810756f1180cbdcef92c", null ],
-    [ "matchPacketWithFilter", "classpcpp_1_1_bpf_filter_wrapper.html#a8a668957be8a54b518572a8daab36ee5", null ],
-    [ "operator=", "classpcpp_1_1_bpf_filter_wrapper.html#a7a49c1e1af05c2ff02195ff8d2f67246", null ],
+    [ "BpfFilterWrapper", "classpcpp_1_1_bpf_filter_wrapper.html#a761ec3d30a0b0ba991c94ae01b284453", null ],
+    [ "matches", "classpcpp_1_1_bpf_filter_wrapper.html#a0a74950dc827c2e9a7a9d78cf5bb5073", null ],
+    [ "matches", "classpcpp_1_1_bpf_filter_wrapper.html#a704c0f9bd27c6dd5ed8131cce909e6b1", null ],
+    [ "matchPacketWithFilter", "classpcpp_1_1_bpf_filter_wrapper.html#a3f8e3dd656bc39a0af8ffd66bca19b8d", null ],
+    [ "matchPacketWithFilter", "classpcpp_1_1_bpf_filter_wrapper.html#a0c0f17f30eec0fd34688a71f4c11f2a1", null ],
     [ "setFilter", "classpcpp_1_1_bpf_filter_wrapper.html#ae6e6f30106eea22239f8f59eff701c33", null ]
 ];

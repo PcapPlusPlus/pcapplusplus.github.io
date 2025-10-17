@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_general_filter.html','')
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classpcpp_1_1_general_filter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::GeneralFilter Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -114,21 +115,89 @@ Inheritance diagram for pcpp::GeneralFilter:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae38fb802a74a1d9b7d7025b1b5cb83e5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_general_filter.html#ae38fb802a74a1d9b7d7025b1b5cb83e5">parseToString</a> (std::string &amp;result)=0</td></tr>
-<tr class="separator:ae38fb802a74a1d9b7d7025b1b5cb83e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a343f17fd42d63a17505f7c2d689a3e00"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_general_filter.html#a343f17fd42d63a17505f7c2d689a3e00">matchPacketWithFilter</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *rawPacket)</td></tr>
-<tr class="separator:a343f17fd42d63a17505f7c2d689a3e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad82f956a2746e302a56ff0ba85bb0e7b"><td class="memItemLeft" align="right" valign="top"><a id="ad82f956a2746e302a56ff0ba85bb0e7b"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_general_filter.html#ad82f956a2746e302a56ff0ba85bb0e7b">~GeneralFilter</a> ()=default</td></tr>
 <tr class="memdesc:ad82f956a2746e302a56ff0ba85bb0e7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor, frees the bpf program. <br /></td></tr>
 <tr class="separator:ad82f956a2746e302a56ff0ba85bb0e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad005538b936affe6373fccdf90af5b7e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_general_filter.html#ad005538b936affe6373fccdf90af5b7e">parseToString</a> (std::string &amp;result) const =0</td></tr>
+<tr class="separator:ad005538b936affe6373fccdf90af5b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ba48b56f8600b08ee0f1c8e4a15daa5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_general_filter.html#a9ba48b56f8600b08ee0f1c8e4a15daa5">matchPacketWithFilter</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *rawPacket) const</td></tr>
+<tr class="separator:a9ba48b56f8600b08ee0f1c8e4a15daa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4854d5e498acfd6fd2034d228101e4fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_general_filter.html#a4854d5e498acfd6fd2034d228101e4fa">matches</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> const &amp;rawPacket) const</td></tr>
+<tr class="memdesc:a4854d5e498acfd6fd2034d228101e4fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Match a raw packet against the filter.  <a href="classpcpp_1_1_general_filter.html#a4854d5e498acfd6fd2034d228101e4fa">More...</a><br /></td></tr>
+<tr class="separator:a4854d5e498acfd6fd2034d228101e4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a7835bb24e69c7fbc6efb42dfe48ec439"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_general_filter.html#a7835bb24e69c7fbc6efb42dfe48ec439">cacheFilter</a> () const</td></tr>
+<tr class="memdesc:a7835bb24e69c7fbc6efb42dfe48ec439"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the filter and cache the compiled BPF program.  <a href="classpcpp_1_1_general_filter.html#a7835bb24e69c7fbc6efb42dfe48ec439">More...</a><br /></td></tr>
+<tr class="separator:a7835bb24e69c7fbc6efb42dfe48ec439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b838dbd3d845567cfccb126102d2d3"><td class="memItemLeft" align="right" valign="top"><a id="a15b838dbd3d845567cfccb126102d2d3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_general_filter.html#a15b838dbd3d845567cfccb126102d2d3">invalidateCache</a> () const</td></tr>
+<tr class="memdesc:a15b838dbd3d845567cfccb126102d2d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalidate the cached BPF program. This method should be called whenever the filter changes. <br /></td></tr>
+<tr class="separator:a15b838dbd3d845567cfccb126102d2d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The base class for all filter classes. This class is virtual and abstract, hence cannot be instantiated.</p>
 <p>For deeper understanding of the filter concept please refer to <a class="el" href="_pcap_filter_8h.html">PcapFilter.h</a> </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a343f17fd42d63a17505f7c2d689a3e00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a343f17fd42d63a17505f7c2d689a3e00">&#9670;&nbsp;</a></span>matchPacketWithFilter()</h2>
+<a id="a7835bb24e69c7fbc6efb42dfe48ec439"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7835bb24e69c7fbc6efb42dfe48ec439">&#9670;&nbsp;</a></span>cacheFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::GeneralFilter::cacheFilter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parse the filter and cache the compiled BPF program. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if the filter was successfully parsed and cached, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a4854d5e498acfd6fd2034d228101e4fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4854d5e498acfd6fd2034d228101e4fa">&#9670;&nbsp;</a></span>matches()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pcpp::GeneralFilter::matches </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> const &amp;&#160;</td>
+          <td class="paramname"><em>rawPacket</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Match a raw packet against the filter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rawPacket</td><td>The raw packet to match against. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the filter matches (or if it's empty). False otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a9ba48b56f8600b08ee0f1c8e4a15daa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ba48b56f8600b08ee0f1c8e4a15daa5">&#9670;&nbsp;</a></span>matchPacketWithFilter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -138,7 +207,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
           <td>(</td>
           <td class="paramtype"><a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *&#160;</td>
           <td class="paramname"><em>rawPacket</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -149,11 +218,12 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if a raw packet matches the BPF filter or false otherwise </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000022">Deprecated:</a></b></dt><dd>This method is deprecated, use matches(...) overload instead. </dd></dl>
 
 </div>
 </div>
-<a id="ae38fb802a74a1d9b7d7025b1b5cb83e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae38fb802a74a1d9b7d7025b1b5cb83e5">&#9670;&nbsp;</a></span>parseToString()</h2>
+<a id="ad005538b936affe6373fccdf90af5b7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad005538b936affe6373fccdf90af5b7e">&#9670;&nbsp;</a></span>parseToString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,7 +236,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
           <td>(</td>
           <td class="paramtype">std::string &amp;&#160;</td>
           <td class="paramname"><em>result</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -182,7 +252,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classpcpp_1_1_udp_length_filter.html#a3a072c9570f38e6ed1a75877a8ee35cd">pcpp::UdpLengthFilter</a>, <a class="el" href="classpcpp_1_1_tcp_window_size_filter.html#a75aa8d55e009368ede3ece19e18751b1">pcpp::TcpWindowSizeFilter</a>, <a class="el" href="classpcpp_1_1_tcp_flags_filter.html#a3d9478eb8ebcea406d824a8deac02105">pcpp::TcpFlagsFilter</a>, <a class="el" href="classpcpp_1_1_vlan_filter.html#a2289341c8cebc9c68e2a9e7bf321674e">pcpp::VlanFilter</a>, <a class="el" href="classpcpp_1_1_arp_filter.html#aea2ebff5a3237ab27c8b97f561e161d2">pcpp::ArpFilter</a>, <a class="el" href="classpcpp_1_1_proto_filter.html#a999d630d8f56cd1776732cfe60f6bb75">pcpp::ProtoFilter</a>, <a class="el" href="classpcpp_1_1_not_filter.html#accbc5d455afa1141c63a8e337cc5ae4e">pcpp::NotFilter</a>, <a class="el" href="classpcpp_1_1_composite_logic_filter.html#aa7969eace5db19080f73b6609ea0fd7f">pcpp::CompositeLogicFilter&lt; op &gt;</a>, <a class="el" href="classpcpp_1_1_ether_type_filter.html#adb900f08f28b83599c72368658a117d0">pcpp::EtherTypeFilter</a>, <a class="el" href="classpcpp_1_1_mac_address_filter.html#a92a6757b417d87cf73de839f0d34e96f">pcpp::MacAddressFilter</a>, <a class="el" href="classpcpp_1_1_port_range_filter.html#ac4fad8f7378eb024382b0bc23393e3af">pcpp::PortRangeFilter</a>, <a class="el" href="classpcpp_1_1_port_filter.html#aad5a8f7845f4f1f1be60ec563f8c3801">pcpp::PortFilter</a>, <a class="el" href="classpcpp_1_1_i_pv4_total_length_filter.html#a0b6601cd777004c36b29cf4dd566cd90">pcpp::IPv4TotalLengthFilter</a>, <a class="el" href="classpcpp_1_1_i_pv4_i_d_filter.html#a19329604a372d800a0614f7e518dfd05">pcpp::IPv4IDFilter</a>, <a class="el" href="classpcpp_1_1_i_p_filter.html#a80f8e018615360476f743a7971b15e06">pcpp::IPFilter</a>, and <a class="el" href="classpcpp_1_1_b_p_f_string_filter.html#a07d442f8b9cff36302d068605b72176a">pcpp::BPFStringFilter</a>.</p>
+<p>Implemented in <a class="el" href="classpcpp_1_1_udp_length_filter.html#a6c3f205ec4a436d8e7995acf135be6db">pcpp::UdpLengthFilter</a>, <a class="el" href="classpcpp_1_1_tcp_window_size_filter.html#a39c637feae244487d4b8e6010f8deec6">pcpp::TcpWindowSizeFilter</a>, <a class="el" href="classpcpp_1_1_tcp_flags_filter.html#a533a0b100906f65ae366a0ab475e2b97">pcpp::TcpFlagsFilter</a>, <a class="el" href="classpcpp_1_1_vlan_filter.html#a9d213ebf95d1ed29f5ce1e4fcd9f3368">pcpp::VlanFilter</a>, <a class="el" href="classpcpp_1_1_arp_filter.html#a54f6952a8e1ed0ed4f2dc0a0dab66e57">pcpp::ArpFilter</a>, <a class="el" href="classpcpp_1_1_proto_filter.html#aa3e62f3d5ae9bedd34b8f5300d9461c5">pcpp::ProtoFilter</a>, <a class="el" href="classpcpp_1_1_not_filter.html#a16ca59503e79c51bf70bae0c5ce71a66">pcpp::NotFilter</a>, <a class="el" href="classpcpp_1_1_composite_logic_filter.html#aa2ec29493df59dc0f3b4b26b1cf19866">pcpp::CompositeLogicFilter&lt; op &gt;</a>, <a class="el" href="classpcpp_1_1_ether_type_filter.html#ac1bf4f7ca5eb46887cd915c6c57e2173">pcpp::EtherTypeFilter</a>, <a class="el" href="classpcpp_1_1_mac_address_filter.html#a720ec684e36c4ea607dd0a2789eef1a6">pcpp::MacAddressFilter</a>, <a class="el" href="classpcpp_1_1_port_range_filter.html#a43c8e539be489b06b26f4c585b97a6a2">pcpp::PortRangeFilter</a>, <a class="el" href="classpcpp_1_1_port_filter.html#a85755f3d4631e9259948d0b0e9455d97">pcpp::PortFilter</a>, <a class="el" href="classpcpp_1_1_i_pv4_total_length_filter.html#ab9911b8a76e6cbbf3efc77810ebf8664">pcpp::IPv4TotalLengthFilter</a>, <a class="el" href="classpcpp_1_1_i_pv4_i_d_filter.html#a8bb0e3c2f94981256acf31816e444a47">pcpp::IPv4IDFilter</a>, <a class="el" href="classpcpp_1_1_i_p_filter.html#af11b255598ed8bb0de6948930ae514dd">pcpp::IPFilter</a>, and <a class="el" href="classpcpp_1_1_b_p_f_string_filter.html#ae079cc4d1a0ba335ddee6665f32b526c">pcpp::BPFStringFilter</a>.</p>
 
 </div>
 </div>
@@ -192,7 +262,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_general_filter.html">GeneralFilter</a></li>
-    <li class="footer">Generated on Wed Oct 1 2025 07:34:32 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Oct 17 2025 05:19:00 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
