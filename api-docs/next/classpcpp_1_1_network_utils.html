@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_network_utils.html','');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a342e84b4e1c43657c8912b568b4344f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_mac_address.html">MacAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_network_utils.html#a342e84b4e1c43657c8912b568b4344f2">getMacAddress</a> (<a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> ipAddr, <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> *device, double &amp;arpResponseTimeMS, <a class="el" href="classpcpp_1_1_mac_address.html">MacAddress</a> sourceMac=<a class="el" href="classpcpp_1_1_mac_address.html#a1b210f1cf39a31d9ea947c57e6c65e2e">MacAddress::Zero</a>, <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> sourceIP=<a class="el" href="classpcpp_1_1_i_pv4_address.html#abd6badbf09d36b21ce83d54fd06bd17b">IPv4Address::Zero</a>, int arpTimeout=-1) const</td></tr>
+<tr class="memitem:a342e84b4e1c43657c8912b568b4344f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_mac_address.html">MacAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_network_utils.html#a342e84b4e1c43657c8912b568b4344f2">getMacAddress</a> (<a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> ipAddr, <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> *device, double &amp;arpResponseTimeMS, <a class="el" href="classpcpp_1_1_mac_address.html">MacAddress</a> sourceMac=<a class="el" href="classpcpp_1_1_mac_address.html#a66cb1bbb7d711f38d32f656954844fd9">MacAddress::Zero</a>, <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> sourceIP=<a class="el" href="classpcpp_1_1_i_pv4_address.html#abd6badbf09d36b21ce83d54fd06bd17b">IPv4Address::Zero</a>, int arpTimeout=-1) const</td></tr>
 <tr class="separator:a342e84b4e1c43657c8912b568b4344f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2e738f7f0eb7904726fe87e3579ac52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_network_utils.html#ad2e738f7f0eb7904726fe87e3579ac52">getIPv4Address</a> (const std::string &amp;hostname, <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> *device, double &amp;dnsResponseTimeMS, uint32_t &amp;dnsTTL, int dnsTimeout=-1, <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> dnsServerIP=<a class="el" href="classpcpp_1_1_i_pv4_address.html#abd6badbf09d36b21ce83d54fd06bd17b">IPv4Address::Zero</a>, <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> gatewayIP=<a class="el" href="classpcpp_1_1_i_pv4_address.html#abd6badbf09d36b21ce83d54fd06bd17b">IPv4Address::Zero</a>) const</td></tr>
 <tr class="separator:ad2e738f7f0eb7904726fe87e3579ac52"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -243,7 +243,7 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classpcpp_1_1_mac_address.html">MacAddress</a>&#160;</td>
-          <td class="paramname"><em>sourceMac</em> = <code><a class="el" href="classpcpp_1_1_mac_address.html#a1b210f1cf39a31d9ea947c57e6c65e2e">MacAddress::Zero</a></code>, </td>
+          <td class="paramname"><em>sourceMac</em> = <code><a class="el" href="classpcpp_1_1_mac_address.html#a66cb1bbb7d711f38d32f656954844fd9">MacAddress::Zero</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -269,13 +269,13 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el
     <tr><td class="paramdir">[in]</td><td class="paramname">ipAddr</td><td>The IPv4 address to resolve MAC address to </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>The interface to send and receive the ARP packets on </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">arpResponseTimeMS</td><td>An output parameter that will contain the time in milliseconds that took the ARP response to arrive </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sourceMac</td><td>An optional parameter to set the source MAC address that will be sent with the ARP request if this parameter isn't set or set with <a class="el" href="classpcpp_1_1_mac_address.html#a1b210f1cf39a31d9ea947c57e6c65e2e" title="A static value representing a zero value of MAC address, meaning address of value &quot;00:00:00:00:00:00&quot;...">MacAddress::Zero</a> the MAC address of the interface will be used </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sourceMac</td><td>An optional parameter to set the source MAC address that will be sent with the ARP request if this parameter isn't set or set with <a class="el" href="classpcpp_1_1_mac_address.html#a66cb1bbb7d711f38d32f656954844fd9" title="A static value representing a zero value of MAC address, meaning address of value &quot;00:00:00:00:00:00&quot;...">MacAddress::Zero</a> the MAC address of the interface will be used </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">sourceIP</td><td>An optional parameter to set the source IPv4 address that will be sent with the ARP request if this parameter isn't set or set with <a class="el" href="classpcpp_1_1_i_pv4_address.html#abd6badbf09d36b21ce83d54fd06bd17b" title="A static value representing a zero value of IPv4 address, meaning address of value &quot;0....">IPv4Address::Zero</a> the default IPv4 address of the interface will be used </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">arpTimeout</td><td>An optional parameter to set the timeout to wait for the ARP response to return. If this parameter isn't set or set with a number smaller than 0, a default timeout of 5 seconds will be set </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The resolved MAC address or <a class="el" href="classpcpp_1_1_mac_address.html#a1b210f1cf39a31d9ea947c57e6c65e2e" title="A static value representing a zero value of MAC address, meaning address of value &quot;00:00:00:00:00:00&quot;...">MacAddress::Zero</a> if an error occurred or address could not be resolved. Errors will be printed to log </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The resolved MAC address or <a class="el" href="classpcpp_1_1_mac_address.html#a66cb1bbb7d711f38d32f656954844fd9" title="A static value representing a zero value of MAC address, meaning address of value &quot;00:00:00:00:00:00&quot;...">MacAddress::Zero</a> if an error occurred or address could not be resolved. Errors will be printed to log </dd></dl>
 
 </div>
 </div>
@@ -285,7 +285,7 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_network_utils.html">NetworkUtils</a></li>
-    <li class="footer">Generated on Tue Oct 21 2025 09:44:45 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Nov 5 2025 05:02:10 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
