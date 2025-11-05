@@ -197,7 +197,7 @@ var NAVTREEINDEX25 =
 "structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration.html#adebf03bb242d47ddc1340e7ecae555f6":[4,0,0,348,0,3],
 "structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration.html#af0f377c2974af2766ffcb3bd54ed7e2d":[4,0,0,348,0,2],
 "structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html":[4,0,0,348,1],
-"structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html#a213f66e013a40f84cbfadae0f1232722":[4,0,0,348,1,4],
+"structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html#a37c525bcad2d2aacb12d84979e68afc3":[4,0,0,348,1,4],
 "structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html#a49e5bd913fde8b892d1bbe27dbf53065":[4,0,0,348,1,2],
 "structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html#a77fd3f759f0a227da48089029d1547b8":[4,0,0,348,1,0],
 "structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html#a7be0c63ba880f0b603cad0355e8f9a04":[4,0,0,348,1,7],
