@@ -6,8 +6,8 @@ var classpcpp_1_1_pf_ring_device =
       [ "PerFlow", "classpcpp_1_1_pf_ring_device.html#a2a7113725490fea52c9702998e6a8f78a7b91b5daaad7f4b2f754afa4b69f48b6", null ]
     ] ],
     [ "~PfRingDevice", "classpcpp_1_1_pf_ring_device.html#a72463fcbd7eae62523c58fec6ecd2385", null ],
-    [ "clearFilter", "classpcpp_1_1_pf_ring_device.html#a4077ed601329e70176e0717507a25824", null ],
     [ "close", "classpcpp_1_1_pf_ring_device.html#ad9df26e45654c94c08bfd73c0c18474d", null ],
+    [ "doUpdateFilter", "classpcpp_1_1_pf_ring_device.html#a97254857e5889f9c58c1db530d256dbe", null ],
     [ "getCurrentCoreId", "classpcpp_1_1_pf_ring_device.html#aa7a1e30e857daf58422bbf82b57c68d5", null ],
     [ "getCurrentThreadStatistics", "classpcpp_1_1_pf_ring_device.html#ab087acddadc1c3f65058f4cf54b09c78", null ],
     [ "getDeviceName", "classpcpp_1_1_pf_ring_device.html#a9ac18b4561b579975dfd6c89722eab9e", null ],
@@ -31,9 +31,6 @@ var classpcpp_1_1_pf_ring_device =
     [ "sendPackets", "classpcpp_1_1_pf_ring_device.html#a8fabac9d1c87b2a6e79d5ce0bbfb7eeb", null ],
     [ "sendPackets", "classpcpp_1_1_pf_ring_device.html#af825fb6acf7cfbc6da7dd19f854be1ad", null ],
     [ "sendPackets", "classpcpp_1_1_pf_ring_device.html#a9259bcfd0d7e94822ec2a2930314c52e", null ],
-    [ "setFilter", "classpcpp_1_1_pf_ring_device.html#af334503822ac7076373c64109f3e6d64", null ],
-    [ "setFilter", "classpcpp_1_1_pf_ring_device.html#addd683b41cf717a08248ddf86b08df49", null ],
-    [ "setFilter", "classpcpp_1_1_pf_ring_device.html#adf01bb590d975d28fc38053820a69130", null ],
     [ "startCaptureMultiThread", "classpcpp_1_1_pf_ring_device.html#a2267f74af554b8651d771ab7f453dc50", null ],
     [ "startCaptureSingleThread", "classpcpp_1_1_pf_ring_device.html#a2d15fc696287e4a5dc16bd809fdce893", null ],
     [ "stopCapture", "classpcpp_1_1_pf_ring_device.html#a31d086cb96e4e8de1e1d5ee640812575", null ]

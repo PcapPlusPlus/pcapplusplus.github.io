@@ -352,25 +352,27 @@ var hierarchy =
     ] ],
     [ "pcpp::IDevice", "classpcpp_1_1_i_device.html", [
       [ "pcpp::DpdkDevice", "classpcpp_1_1_dpdk_device.html", null ],
-      [ "pcpp::IPcapDevice", "classpcpp_1_1_i_pcap_device.html", [
-        [ "pcpp::IFileDevice", "classpcpp_1_1_i_file_device.html", [
-          [ "pcpp::IFileReaderDevice", "classpcpp_1_1_i_file_reader_device.html", [
-            [ "pcpp::PcapFileReaderDevice", "classpcpp_1_1_pcap_file_reader_device.html", null ],
-            [ "pcpp::PcapNgFileReaderDevice", "classpcpp_1_1_pcap_ng_file_reader_device.html", null ],
-            [ "pcpp::SnoopFileReaderDevice", "classpcpp_1_1_snoop_file_reader_device.html", null ]
+      [ "pcpp::IFilterableDevice", "classpcpp_1_1_i_filterable_device.html", [
+        [ "pcpp::IPcapDevice", "classpcpp_1_1_i_pcap_device.html", [
+          [ "pcpp::IFileDevice", "classpcpp_1_1_i_file_device.html", [
+            [ "pcpp::IFileReaderDevice", "classpcpp_1_1_i_file_reader_device.html", [
+              [ "pcpp::PcapFileReaderDevice", "classpcpp_1_1_pcap_file_reader_device.html", null ],
+              [ "pcpp::PcapNgFileReaderDevice", "classpcpp_1_1_pcap_ng_file_reader_device.html", null ],
+              [ "pcpp::SnoopFileReaderDevice", "classpcpp_1_1_snoop_file_reader_device.html", null ]
+            ] ],
+            [ "pcpp::IFileWriterDevice", "classpcpp_1_1_i_file_writer_device.html", [
+              [ "pcpp::PcapFileWriterDevice", "classpcpp_1_1_pcap_file_writer_device.html", null ],
+              [ "pcpp::PcapNgFileWriterDevice", "classpcpp_1_1_pcap_ng_file_writer_device.html", null ]
+            ] ]
           ] ],
-          [ "pcpp::IFileWriterDevice", "classpcpp_1_1_i_file_writer_device.html", [
-            [ "pcpp::PcapFileWriterDevice", "classpcpp_1_1_pcap_file_writer_device.html", null ],
-            [ "pcpp::PcapNgFileWriterDevice", "classpcpp_1_1_pcap_ng_file_writer_device.html", null ]
+          [ "pcpp::PcapLiveDevice", "classpcpp_1_1_pcap_live_device.html", [
+            [ "pcpp::PcapRemoteDevice", "classpcpp_1_1_pcap_remote_device.html", null ],
+            [ "pcpp::WinPcapLiveDevice", "classpcpp_1_1_win_pcap_live_device.html", null ]
           ] ]
         ] ],
-        [ "pcpp::PcapLiveDevice", "classpcpp_1_1_pcap_live_device.html", [
-          [ "pcpp::PcapRemoteDevice", "classpcpp_1_1_pcap_remote_device.html", null ],
-          [ "pcpp::WinPcapLiveDevice", "classpcpp_1_1_win_pcap_live_device.html", null ]
-        ] ]
+        [ "pcpp::PfRingDevice", "classpcpp_1_1_pf_ring_device.html", null ]
       ] ],
       [ "pcpp::KniDevice", "classpcpp_1_1_kni_device.html", null ],
-      [ "pcpp::PfRingDevice", "classpcpp_1_1_pf_ring_device.html", null ],
       [ "pcpp::RawSocketDevice", "classpcpp_1_1_raw_socket_device.html", null ],
       [ "pcpp::XdpDevice", "classpcpp_1_1_xdp_device.html", null ]
     ] ],
@@ -384,10 +386,6 @@ var hierarchy =
       [ "pcpp::IPv6DnsResourceData", "classpcpp_1_1_i_pv6_dns_resource_data.html", null ],
       [ "pcpp::MxDnsResourceData", "classpcpp_1_1_mx_dns_resource_data.html", null ],
       [ "pcpp::StringDnsResourceData", "classpcpp_1_1_string_dns_resource_data.html", null ]
-    ] ],
-    [ "pcpp::IFilterableDevice", "classpcpp_1_1_i_filterable_device.html", [
-      [ "pcpp::IPcapDevice", "classpcpp_1_1_i_pcap_device.html", null ],
-      [ "pcpp::PfRingDevice", "classpcpp_1_1_pf_ring_device.html", null ]
     ] ],
     [ "pcpp::igmp_header", "structpcpp_1_1igmp__header.html", null ],
     [ "pcpp::igmpv3_group_record", "structpcpp_1_1igmpv3__group__record.html", null ],
