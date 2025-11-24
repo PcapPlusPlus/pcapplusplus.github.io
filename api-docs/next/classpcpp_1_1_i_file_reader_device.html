@@ -101,14 +101,14 @@ Inheritance diagram for pcpp::IFileReaderDevice:</div>
  <div class="center">
   <img src="classpcpp_1_1_i_file_reader_device.png" usemap="#pcpp::IFileReaderDevice_map" alt=""/>
   <map id="pcpp::IFileReaderDevice_map" name="pcpp::IFileReaderDevice_map">
-<area href="classpcpp_1_1_i_file_device.html" alt="pcpp::IFileDevice" shape="rect" coords="203,112,396,136"/>
-<area href="classpcpp_1_1_i_pcap_device.html" alt="pcpp::IPcapDevice" shape="rect" coords="203,56,396,80"/>
-<area href="classpcpp_1_1_i_device.html" alt="pcpp::IDevice" shape="rect" coords="0,0,193,24"/>
-<area href="classpcpp_1_1_i_filterable_device.html" alt="pcpp::IFilterableDevice" shape="rect" coords="203,0,396,24"/>
-<area href="classpcpp_1_1_i_pcap_statistics_provider.html" title="An interface for providing Pcap-based device statistics." alt="pcpp::IPcapStatisticsProvider" shape="rect" coords="406,0,599,24"/>
-<area href="classpcpp_1_1_pcap_file_reader_device.html" alt="pcpp::PcapFileReaderDevice" shape="rect" coords="0,224,193,248"/>
-<area href="classpcpp_1_1_pcap_ng_file_reader_device.html" alt="pcpp::PcapNgFileReaderDevice" shape="rect" coords="203,224,396,248"/>
-<area href="classpcpp_1_1_snoop_file_reader_device.html" alt="pcpp::SnoopFileReaderDevice" shape="rect" coords="406,224,599,248"/>
+<area href="classpcpp_1_1_i_file_device.html" alt="pcpp::IFileDevice" shape="rect" coords="203,168,396,192"/>
+<area href="classpcpp_1_1_i_pcap_device.html" alt="pcpp::IPcapDevice" shape="rect" coords="203,112,396,136"/>
+<area href="classpcpp_1_1_i_filterable_device.html" alt="pcpp::IFilterableDevice" shape="rect" coords="101,56,294,80"/>
+<area href="classpcpp_1_1_i_pcap_statistics_provider.html" title="An interface for providing Pcap-based device statistics." alt="pcpp::IPcapStatisticsProvider" shape="rect" coords="304,56,497,80"/>
+<area href="classpcpp_1_1_i_device.html" alt="pcpp::IDevice" shape="rect" coords="101,0,294,24"/>
+<area href="classpcpp_1_1_pcap_file_reader_device.html" alt="pcpp::PcapFileReaderDevice" shape="rect" coords="0,280,193,304"/>
+<area href="classpcpp_1_1_pcap_ng_file_reader_device.html" alt="pcpp::PcapNgFileReaderDevice" shape="rect" coords="203,280,396,304"/>
+<area href="classpcpp_1_1_snoop_file_reader_device.html" alt="pcpp::SnoopFileReaderDevice" shape="rect" coords="406,280,599,304"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -134,21 +134,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:ae5f8cd834b51ecb007768082612557c8 inherit pub_methods_classpcpp_1_1_i_file_device"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_file_device.html#ae5f8cd834b51ecb007768082612557c8">getStatistics</a> (<a class="el" href="structpcpp_1_1internal_1_1_pcap_stats.html">PcapStats</a> &amp;stats) const override</td></tr>
 <tr class="memdesc:ae5f8cd834b51ecb007768082612557c8 inherit pub_methods_classpcpp_1_1_i_file_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the statistics for this device.  <a href="classpcpp_1_1_i_file_device.html#ae5f8cd834b51ecb007768082612557c8">More...</a><br /></td></tr>
 <tr class="separator:ae5f8cd834b51ecb007768082612557c8 inherit pub_methods_classpcpp_1_1_i_file_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classpcpp_1_1_i_pcap_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_i_pcap_device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_pcap_device.html">pcpp::IPcapDevice</a></td></tr>
-<tr class="memitem:a5308f2b55bb22afdef5ddfda63332398 inherit pub_methods_classpcpp_1_1_i_pcap_device"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#a5308f2b55bb22afdef5ddfda63332398">setFilter</a> (std::string filterAsString) override</td></tr>
-<tr class="separator:a5308f2b55bb22afdef5ddfda63332398 inherit pub_methods_classpcpp_1_1_i_pcap_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55ad37f74e67d152ca8973535d5f7ddf inherit pub_methods_classpcpp_1_1_i_pcap_device"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#a55ad37f74e67d152ca8973535d5f7ddf">clearFilter</a> () override</td></tr>
-<tr class="separator:a55ad37f74e67d152ca8973535d5f7ddf inherit pub_methods_classpcpp_1_1_i_pcap_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af334503822ac7076373c64109f3e6d64 inherit pub_methods_classpcpp_1_1_i_pcap_device"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#af334503822ac7076373c64109f3e6d64">setFilter</a> (<a class="el" href="classpcpp_1_1_general_filter.html">GeneralFilter</a> &amp;filter)</td></tr>
-<tr class="separator:af334503822ac7076373c64109f3e6d64 inherit pub_methods_classpcpp_1_1_i_pcap_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf01bb590d975d28fc38053820a69130 inherit pub_methods_classpcpp_1_1_i_pcap_device"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#adf01bb590d975d28fc38053820a69130">setFilter</a> (std::string filterAsString)=0</td></tr>
-<tr class="separator:adf01bb590d975d28fc38053820a69130 inherit pub_methods_classpcpp_1_1_i_pcap_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classpcpp_1_1_i_filterable_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_i_filterable_device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_filterable_device.html">pcpp::IFilterableDevice</a></td></tr>
+<tr class="memitem:aeda6dacd6814923f9c6ffaa46ba89a93 inherit pub_methods_classpcpp_1_1_i_filterable_device"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_filterable_device.html#aeda6dacd6814923f9c6ffaa46ba89a93">setFilter</a> (<a class="el" href="classpcpp_1_1_general_filter.html">GeneralFilter</a> &amp;filter)</td></tr>
+<tr class="separator:aeda6dacd6814923f9c6ffaa46ba89a93 inherit pub_methods_classpcpp_1_1_i_filterable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3cf41cda67b2c8f058fd22148e81a2b inherit pub_methods_classpcpp_1_1_i_filterable_device"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_filterable_device.html#aa3cf41cda67b2c8f058fd22148e81a2b">setFilter</a> (std::string const &amp;filterAsString)</td></tr>
+<tr class="separator:aa3cf41cda67b2c8f058fd22148e81a2b inherit pub_methods_classpcpp_1_1_i_filterable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7016d8bdaf7e586b3eefd623576f453 inherit pub_methods_classpcpp_1_1_i_filterable_device"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_filterable_device.html#aa7016d8bdaf7e586b3eefd623576f453">clearFilter</a> ()</td></tr>
+<tr class="separator:aa7016d8bdaf7e586b3eefd623576f453 inherit pub_methods_classpcpp_1_1_i_filterable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classpcpp_1_1_i_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_i_device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_device.html">pcpp::IDevice</a></td></tr>
 <tr class="memitem:ad7bed3f1134e8b4329295b4af6733b9f inherit pub_methods_classpcpp_1_1_i_device"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_device.html#ad7bed3f1134e8b4329295b4af6733b9f">open</a> ()=0</td></tr>
 <tr class="separator:ad7bed3f1134e8b4329295b4af6733b9f inherit pub_methods_classpcpp_1_1_i_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classpcpp_1_1_i_filterable_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_i_filterable_device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_filterable_device.html">pcpp::IFilterableDevice</a></td></tr>
-<tr class="memitem:af334503822ac7076373c64109f3e6d64 inherit pub_methods_classpcpp_1_1_i_filterable_device"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_filterable_device.html#af334503822ac7076373c64109f3e6d64">setFilter</a> (<a class="el" href="classpcpp_1_1_general_filter.html">GeneralFilter</a> &amp;filter)</td></tr>
-<tr class="separator:af334503822ac7076373c64109f3e6d64 inherit pub_methods_classpcpp_1_1_i_filterable_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classpcpp_1_1_i_pcap_statistics_provider"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpcpp_1_1_i_pcap_statistics_provider')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_pcap_statistics_provider.html">pcpp::IPcapStatisticsProvider</a></td></tr>
 <tr class="memitem:affac08c8925f77baf4a5db28dd1a0d83 inherit pub_methods_classpcpp_1_1_i_pcap_statistics_provider"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpcpp_1_1internal_1_1_pcap_stats.html">PcapStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_statistics_provider.html#affac08c8925f77baf4a5db28dd1a0d83">getStatistics</a> () const</td></tr>
 <tr class="memdesc:affac08c8925f77baf4a5db28dd1a0d83 inherit pub_methods_classpcpp_1_1_i_pcap_statistics_provider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get statistics from the device.  <a href="classpcpp_1_1_i_pcap_statistics_provider.html#affac08c8925f77baf4a5db28dd1a0d83">More...</a><br /></td></tr>
@@ -179,6 +174,10 @@ Protected Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_file_device.html#af8606a762f4405ed60b053cc71b92ddb">resetStatisticCounters</a> ()</td></tr>
 <tr class="memdesc:af8606a762f4405ed60b053cc71b92ddb inherit pro_methods_classpcpp_1_1_i_file_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the internal statistic counters to zero. <br /></td></tr>
 <tr class="separator:af8606a762f4405ed60b053cc71b92ddb inherit pro_methods_classpcpp_1_1_i_file_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classpcpp_1_1_i_pcap_device"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classpcpp_1_1_i_pcap_device')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classpcpp_1_1_i_pcap_device.html">pcpp::IPcapDevice</a></td></tr>
+<tr class="memitem:af09addb9bc2afe5dba40aec8c30c5d8b inherit pro_methods_classpcpp_1_1_i_pcap_device"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html#af09addb9bc2afe5dba40aec8c30c5d8b">doUpdateFilter</a> (std::string const *filterAsString) override</td></tr>
+<tr class="memdesc:af09addb9bc2afe5dba40aec8c30c5d8b inherit pro_methods_classpcpp_1_1_i_pcap_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the filter on the device with a BPF string.  <a href="classpcpp_1_1_i_pcap_device.html#af09addb9bc2afe5dba40aec8c30c5d8b">More...</a><br /></td></tr>
+<tr class="separator:af09addb9bc2afe5dba40aec8c30c5d8b inherit pro_methods_classpcpp_1_1_i_pcap_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An abstract class (cannot be instantiated, has a private c'tor) which is the parent class for file reader devices </p>
@@ -309,7 +308,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_file_reader_device.html">IFileReaderDevice</a></li>
-    <li class="footer">Generated on Wed Nov 5 2025 05:02:10 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Nov 24 2025 01:57:12 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

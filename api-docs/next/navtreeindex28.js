@@ -1,10 +1,5 @@
 var NAVTREEINDEX28 =
 {
-"structpcpp_1_1stp__tcn__bpdu.html#ab0762609e9f35f367807dfcbe68d6ff0":[4,0,0,289,2],
-"structpcpp_1_1stp__tcn__bpdu.html#ac2a2bb62505e8d316dbd5170b0c4a012":[4,0,0,289,0],
-"structpcpp_1_1stp__tcn__bpdu.html#acb3ac78b92143eb7f021efc81562dfab":[4,0,0,289,1],
-"structpcpp_1_1tcphdr.html":[4,0,0,299],
-"structpcpp_1_1tcphdr.html#a1561eb6d029e00fe449bbaac3be8d705":[4,0,0,299,10],
 "structpcpp_1_1tcphdr.html#a26d5425128be717916096e577f2561fe":[4,0,0,299,3],
 "structpcpp_1_1tcphdr.html#a2e2c38c9079e807f366b3cc62669b09c":[4,0,0,299,16],
 "structpcpp_1_1tcphdr.html#a2edb7c27d93777ae552eca417cf118d0":[4,0,0,299,13],
