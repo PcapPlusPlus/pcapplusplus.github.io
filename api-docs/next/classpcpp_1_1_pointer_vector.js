@@ -12,6 +12,7 @@ var classpcpp_1_1_pointer_vector =
     [ "begin", "classpcpp_1_1_pointer_vector.html#a45ee37fcf04c2f8339a6378d9db972e2", null ],
     [ "capacity", "classpcpp_1_1_pointer_vector.html#a983bf7d26956e166713fc3cfc0becb71", null ],
     [ "clear", "classpcpp_1_1_pointer_vector.html#a1cdd1289488a27d1bdd8044123e39ec6", null ],
+    [ "data", "classpcpp_1_1_pointer_vector.html#a1d74db8b54e5b679747c2c14555503c8", null ],
     [ "end", "classpcpp_1_1_pointer_vector.html#ad5b3789abbaad1fcba490eb855df0c2c", null ],
     [ "end", "classpcpp_1_1_pointer_vector.html#a45b93dcb043a22c78f7795e06cafaf74", null ],
     [ "erase", "classpcpp_1_1_pointer_vector.html#a4e46476ae4c4a1445c57877c9e8c53ad", null ],
