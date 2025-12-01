@@ -12,8 +12,7 @@ interface TwoColumnsOptionalProps {
 }
 
 interface TwoColumnsProps
-  extends TwoColumnsRequiredProps,
-    TwoColumnsOptionalProps {}
+  extends TwoColumnsRequiredProps, TwoColumnsOptionalProps {}
 
 const defaultProps: TwoColumnsOptionalProps = {
   reverse: false
