@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@argos-ci/cli": "^2.5.6",
-    "@argos-ci/playwright": "^4.1.0",
+    "@argos-ci/playwright": "^6.3.8",
     "@docusaurus/core": "^3.9.2",
     "@docusaurus/plugin-google-analytics": "^3.9.2",
     "@docusaurus/preset-classic": "^3.9.2",
