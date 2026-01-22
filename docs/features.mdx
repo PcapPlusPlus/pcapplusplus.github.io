@@ -230,7 +230,7 @@ sudo insmod <PF_RING_LOCATION>/kernel/pf_ring.ko
 
 ## WinDivert support
 
- Windows Packet Divert (WinDivert) is a user-mode packet capture-and-divert package for Windows. It allows user-mode applications to capture/modify/drop network packets sent to/from the Windows network stack (taken from [WinDivert documentation](https://reqrypt.org/windivert.html)).
+Windows Packet Divert (WinDivert) is a user-mode packet capture-and-divert package for Windows. It allows user-mode applications to capture/modify/drop network packets sent to/from the Windows network stack (taken from [WinDivert documentation](https://reqrypt.org/windivert.html)).
 
 PcapPlusPlus provides support for various features when using WinDivert, including:
 
@@ -240,6 +240,7 @@ PcapPlusPlus provides support for various features when using WinDivert, includi
 - Inspecting and configuring queue parameters (length, time, size)
 
 In order to use PcapPlusPlus with WinDivert support you need to:
+
 - Download WinDivert from [WinDivert's GitHub Repo](https://github.com/basil00/WinDivert/releases)
 - Once WinDivert is downloaded and extracted, you need to run PcapPlusPlus build and use the `-DPCAPPP_USE_WINDIVERT=ON` option
 - Make sure the WinDivert DLLs are accessible to your application (e.g. in the same directory as your executable or in a directory included in your PATH environment variable)
