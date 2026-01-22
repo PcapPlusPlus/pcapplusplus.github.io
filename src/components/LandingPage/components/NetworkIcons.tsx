@@ -20,6 +20,9 @@ function NetworkIcons() {
         <span>NPCAP</span>
       </li>
       <li>
+        <span>WinDivert</span>
+      </li>
+      <li>
         <span>PF_RING</span>
       </li>
     </ul>
