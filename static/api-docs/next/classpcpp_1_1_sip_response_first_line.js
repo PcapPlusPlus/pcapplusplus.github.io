@@ -1,5 +1,6 @@
 var classpcpp_1_1_sip_response_first_line =
 [
+    [ "FirstLineData", "structpcpp_1_1_sip_response_first_line_1_1_first_line_data.html", "structpcpp_1_1_sip_response_first_line_1_1_first_line_data" ],
     [ "SipResponseFirstLineException", "classpcpp_1_1_sip_response_first_line_1_1_sip_response_first_line_exception.html", null ],
     [ "getSize", "classpcpp_1_1_sip_response_first_line.html#a795440a79ae4a93cc24731ac16050da0", null ],
     [ "getStatusCode", "classpcpp_1_1_sip_response_first_line.html#a367150d14a14736e991398f6d2a92994", null ],

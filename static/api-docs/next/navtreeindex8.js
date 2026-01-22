@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"classpcpp_1_1_cisco_hdlc_layer.html#aa03111fe1280e40b2babb0c33cf5006a":[4,0,0,54,5],
+"classpcpp_1_1_cisco_hdlc_layer.html#aabbbb9e928ba5e7a8b9a713f6a33841f":[4,0,0,54,8],
 "classpcpp_1_1_cisco_hdlc_layer.html#ab9ff1befdd22c8bb72974718591d38b9":[4,0,0,54,6],
 "classpcpp_1_1_cisco_hdlc_layer.html#abf03d78bf301c6e202f014eb31e90028":[4,0,0,54,4],
 "classpcpp_1_1_cisco_hdlc_layer.html#acdc48bec7fc697ce9e0230343f04abe6":[4,0,0,54,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "classpcpp_1_1_do_ip_diagnostic_response_message_base.html":[4,0,0,101],
 "classpcpp_1_1_do_ip_diagnostic_response_message_base.html#a68efb9d568c31c3e360d39f80b322d22":[4,0,0,101,2],
 "classpcpp_1_1_do_ip_diagnostic_response_message_base.html#a9145fb8012d215a6096b70151eb4b190":[4,0,0,101,3],
-"classpcpp_1_1_do_ip_diagnostic_response_message_base.html#ae0c48c5fe3a0e8d104d86aa82c3d0cbe":[4,0,0,101,1],
-"classpcpp_1_1_do_ip_diagnostic_response_message_base.html#ae283ecd0053c7aab2ff5d2ebe62d5892":[4,0,0,101,5],
-"classpcpp_1_1_do_ip_diagnostic_response_message_base.html#ae9c4504cf66255b4c00e29c7c6afaef0":[4,0,0,101,0]
+"classpcpp_1_1_do_ip_diagnostic_response_message_base.html#ae0c48c5fe3a0e8d104d86aa82c3d0cbe":[4,0,0,101,1]
 };

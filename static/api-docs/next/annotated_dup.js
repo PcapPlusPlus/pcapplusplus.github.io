@@ -12,10 +12,15 @@ var annotated_dup =
         [ "RSAPrivateKeyDataView", "classpcpp_1_1internal_1_1_r_s_a_private_key_data_view.html", "classpcpp_1_1internal_1_1_r_s_a_private_key_data_view" ],
         [ "ECPrivateKeyDataView", "classpcpp_1_1internal_1_1_e_c_private_key_data_view.html", "classpcpp_1_1internal_1_1_e_c_private_key_data_view" ],
         [ "CryptographicKey", "classpcpp_1_1internal_1_1_cryptographic_key.html", "classpcpp_1_1internal_1_1_cryptographic_key" ],
+        [ "LayerAllocationInfo", "structpcpp_1_1internal_1_1_layer_allocation_info.html", "structpcpp_1_1internal_1_1_layer_allocation_info" ],
         [ "DeviceListBase", "classpcpp_1_1internal_1_1_device_list_base.html", "classpcpp_1_1internal_1_1_device_list_base" ],
         [ "PcapStats", "structpcpp_1_1internal_1_1_pcap_stats.html", "structpcpp_1_1internal_1_1_pcap_stats" ],
         [ "PcapHandle", "classpcpp_1_1internal_1_1_pcap_handle.html", "classpcpp_1_1internal_1_1_pcap_handle" ],
-        [ "BpfProgramDeleter", "structpcpp_1_1internal_1_1_bpf_program_deleter.html", null ]
+        [ "BpfProgramDeleter", "structpcpp_1_1internal_1_1_bpf_program_deleter.html", null ],
+        [ "IOverlappedWrapper", "classpcpp_1_1internal_1_1_i_overlapped_wrapper.html", "classpcpp_1_1internal_1_1_i_overlapped_wrapper" ],
+        [ "WinDivertAddress", "structpcpp_1_1internal_1_1_win_divert_address.html", "structpcpp_1_1internal_1_1_win_divert_address" ],
+        [ "IWinDivertHandle", "classpcpp_1_1internal_1_1_i_win_divert_handle.html", "classpcpp_1_1internal_1_1_i_win_divert_handle" ],
+        [ "IWinDivertDriver", "classpcpp_1_1internal_1_1_i_win_divert_driver.html", "classpcpp_1_1internal_1_1_i_win_divert_driver" ]
       ] ],
       [ "X509Internal", null, [
         [ "X509Base", "classpcpp_1_1_x509_internal_1_1_x509_base.html", null ],
@@ -428,6 +433,8 @@ var annotated_dup =
       [ "PfRingDevice", "classpcpp_1_1_pf_ring_device.html", "classpcpp_1_1_pf_ring_device" ],
       [ "PfRingDeviceList", "classpcpp_1_1_pf_ring_device_list.html", "classpcpp_1_1_pf_ring_device_list" ],
       [ "RawSocketDevice", "classpcpp_1_1_raw_socket_device.html", "classpcpp_1_1_raw_socket_device" ],
+      [ "WinDivertRawPacket", "classpcpp_1_1_win_divert_raw_packet.html", "classpcpp_1_1_win_divert_raw_packet" ],
+      [ "WinDivertDevice", "classpcpp_1_1_win_divert_device.html", "classpcpp_1_1_win_divert_device" ],
       [ "WinPcapLiveDevice", "classpcpp_1_1_win_pcap_live_device.html", "classpcpp_1_1_win_pcap_live_device" ],
       [ "XdpDevice", "classpcpp_1_1_xdp_device.html", "classpcpp_1_1_xdp_device" ]
     ] ],

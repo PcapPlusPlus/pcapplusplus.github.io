@@ -6,6 +6,7 @@ var classpcpp_1_1_m_buf_raw_packet =
     [ "appendData", "classpcpp_1_1_m_buf_raw_packet.html#a87e970f5cf3b0e994bc5e040dc2c1cf5", null ],
     [ "clear", "classpcpp_1_1_m_buf_raw_packet.html#af587f3704dbf2f356ef4b0f497b501ad", null ],
     [ "clone", "classpcpp_1_1_m_buf_raw_packet.html#a74e4efa1c3f7c4b8a16561ecbba73fbf", null ],
+    [ "doSetRawData", "classpcpp_1_1_m_buf_raw_packet.html#a06a17c31a62797fef7006aa69a90c228", null ],
     [ "getMBuf", "classpcpp_1_1_m_buf_raw_packet.html#a203b86f2e4098cd2a51e5e87c7c7ebdc", null ],
     [ "getObjectType", "classpcpp_1_1_m_buf_raw_packet.html#a75ff3b18bc4510106ae045e711fb1827", null ],
     [ "init", "classpcpp_1_1_m_buf_raw_packet.html#a9faebadf686bb3b6351bcb04c335b4e6", null ],
@@ -14,6 +15,5 @@ var classpcpp_1_1_m_buf_raw_packet =
     [ "operator=", "classpcpp_1_1_m_buf_raw_packet.html#ab194bcba22f170560890ee3f73faa027", null ],
     [ "reallocateData", "classpcpp_1_1_m_buf_raw_packet.html#a6130ff96402413dbeb19188300911ebb", null ],
     [ "removeData", "classpcpp_1_1_m_buf_raw_packet.html#a4aebeaba775f1172c2a180c79c7006e5", null ],
-    [ "setFreeMbuf", "classpcpp_1_1_m_buf_raw_packet.html#a6d4727b09d81aed644524a190c4a39db", null ],
-    [ "setRawData", "classpcpp_1_1_m_buf_raw_packet.html#a0f63a85bab7bf81ad20e6167d1cd76f6", null ]
+    [ "setFreeMbuf", "classpcpp_1_1_m_buf_raw_packet.html#a6d4727b09d81aed644524a190c4a39db", null ]
 ];

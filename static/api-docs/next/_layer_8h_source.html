@@ -111,185 +111,224 @@ $(document).ready(function(){initNavTree('_layer_8h_source.html',''); initResiza
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_packet.html">Packet</a>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html">   61</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_layer.html">Layer</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_i_data_container.html">IDataContainer</a></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classpcpp_1_1_packet.html">Packet</a>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#adc5fdf997375b58400a55fdcc3bdff87">   68</a></span>&#160;        <a class="code" href="classpcpp_1_1_layer.html#adc5fdf997375b58400a55fdcc3bdff87">~Layer</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#a73b23d182802ec4ac4021042897eb410">   71</a></span>&#160;        <a class="code" href="classpcpp_1_1_layer.html">Layer</a>* <a class="code" href="classpcpp_1_1_layer.html#a73b23d182802ec4ac4021042897eb410">getNextLayer</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">return</span> m_NextLayer;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#a9ff77f4ee3f160057f49db645a5c19bd">   77</a></span>&#160;        <a class="code" href="classpcpp_1_1_layer.html">Layer</a>* <a class="code" href="classpcpp_1_1_layer.html#a9ff77f4ee3f160057f49db645a5c19bd">getPrevLayer</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordflow">return</span> m_PrevLayer;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#ab8c7cc855405c99b5fdfd778324241ef">   83</a></span>&#160;        <a class="code" href="group___protocol_types.html#ga1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> <a class="code" href="classpcpp_1_1_layer.html#ab8c7cc855405c99b5fdfd778324241ef">getProtocol</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">return</span> m_Protocol;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#a73339cf991e01301a34ec602ba9ec7d9">   91</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_layer.html#a73339cf991e01301a34ec602ba9ec7d9">isMemberOfProtocolFamily</a>(<a class="code" href="group___protocol_types.html#gaa26bae020a295f1089e08c390fb21c52">ProtocolTypeFamily</a> protocolTypeFamily) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#a4e3c72d568a8d43c0fd82d781255e98f">   94</a></span>&#160;        uint8_t* <a class="code" href="classpcpp_1_1_layer.html#a4e3c72d568a8d43c0fd82d781255e98f">getData</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">return</span> m_Data;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#a33e4747c33cba0050ac90beeda45aa7b">  100</a></span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="classpcpp_1_1_layer.html#a33e4747c33cba0050ac90beeda45aa7b">getDataLen</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordflow">return</span> m_DataLen;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#a0bd73bce6a07ea942d3d88bd472944ec">  106</a></span>&#160;        uint8_t* <a class="code" href="classpcpp_1_1_layer.html#a0bd73bce6a07ea942d3d88bd472944ec">getLayerPayload</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordflow">return</span> m_Data + <a class="code" href="classpcpp_1_1_layer.html#acabe7022caf7cf5fabcad4b5a0eec832">getHeaderLen</a>();</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        }</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#abd87dfe9272183c2ea1c00752d7144c8">  112</a></span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="classpcpp_1_1_layer.html#abd87dfe9272183c2ea1c00752d7144c8">getLayerPayloadSize</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keywordflow">return</span> m_DataLen - <a class="code" href="classpcpp_1_1_layer.html#acabe7022caf7cf5fabcad4b5a0eec832">getHeaderLen</a>();</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#a8f9d719253a30852620f9595a99956ed">  126</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_layer.html#a8f9d719253a30852620f9595a99956ed">isAllocatedToPacket</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="keywordflow">return</span> m_Packet != <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        }</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
-<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#a019a07d6f9d8fc7eb233e61826b11964">  133</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_layer.html#a019a07d6f9d8fc7eb233e61826b11964">copyData</a>(uint8_t* toArr) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">namespace </span>internal</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structpcpp_1_1internal_1_1_layer_allocation_info.html">   36</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structpcpp_1_1internal_1_1_layer_allocation_info.html">LayerAllocationInfo</a></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        {</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="structpcpp_1_1internal_1_1_layer_allocation_info.html#a1647a1f5723eb91d24b8439fd114ac70">   50</a></span>&#160;            <a class="code" href="classpcpp_1_1_packet.html">Packet</a>* <a class="code" href="structpcpp_1_1internal_1_1_layer_allocation_info.html#a1647a1f5723eb91d24b8439fd114ac70">attachedPacket</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="structpcpp_1_1internal_1_1_layer_allocation_info.html#a236a7779d087208615efa726d912b3a6">   59</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="structpcpp_1_1internal_1_1_layer_allocation_info.html#a236a7779d087208615efa726d912b3a6">ownedByPacket</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="structpcpp_1_1internal_1_1_layer_allocation_info.html#abd0207c7928b5a1e2112b17f12454afb">   66</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="structpcpp_1_1internal_1_1_layer_allocation_info.html#abd0207c7928b5a1e2112b17f12454afb">attachPacket</a>(<a class="code" href="classpcpp_1_1_packet.html">Packet</a>* packet, <span class="keywordtype">bool</span> managed, <span class="keywordtype">bool</span> force = <span class="keyword">false</span>)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <span class="keywordflow">if</span> (!force &amp;&amp; <a class="code" href="structpcpp_1_1internal_1_1_layer_allocation_info.html#a1647a1f5723eb91d24b8439fd114ac70">attachedPacket</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Layer is already attached to a Packet&quot;</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <a class="code" href="structpcpp_1_1internal_1_1_layer_allocation_info.html#a1647a1f5723eb91d24b8439fd114ac70">attachedPacket</a> = packet;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                <a class="code" href="structpcpp_1_1internal_1_1_layer_allocation_info.html#a236a7779d087208615efa726d912b3a6">ownedByPacket</a> = managed;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="structpcpp_1_1internal_1_1_layer_allocation_info.html#a2c4aa7884ad0ff002b4dad0637a05df5">   78</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="structpcpp_1_1internal_1_1_layer_allocation_info.html#a2c4aa7884ad0ff002b4dad0637a05df5">detach</a>()</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                <a class="code" href="structpcpp_1_1internal_1_1_layer_allocation_info.html#a1647a1f5723eb91d24b8439fd114ac70">attachedPacket</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                <a class="code" href="structpcpp_1_1internal_1_1_layer_allocation_info.html#a236a7779d087208615efa726d912b3a6">ownedByPacket</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        };</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }  <span class="comment">// namespace internal</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html">  114</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_layer.html">Layer</a> : <span class="keyword">public</span> <a class="code" href="classpcpp_1_1_i_data_container.html">IDataContainer</a></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classpcpp_1_1_packet.html">Packet</a>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#adc5fdf997375b58400a55fdcc3bdff87">  121</a></span>&#160;        <a class="code" href="classpcpp_1_1_layer.html#adc5fdf997375b58400a55fdcc3bdff87">~Layer</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#a73b23d182802ec4ac4021042897eb410">  124</a></span>&#160;        <a class="code" href="classpcpp_1_1_layer.html">Layer</a>* <a class="code" href="classpcpp_1_1_layer.html#a73b23d182802ec4ac4021042897eb410">getNextLayer</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <span class="keywordflow">return</span> m_NextLayer;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#a9ff77f4ee3f160057f49db645a5c19bd">  130</a></span>&#160;        <a class="code" href="classpcpp_1_1_layer.html">Layer</a>* <a class="code" href="classpcpp_1_1_layer.html#a9ff77f4ee3f160057f49db645a5c19bd">getPrevLayer</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <span class="keywordflow">return</span> m_PrevLayer;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        }</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="comment">// implement abstract methods</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#a4c5d6f648a6878895a714004f937830d">  137</a></span>&#160;        uint8_t* <a class="code" href="classpcpp_1_1_layer.html#a4c5d6f648a6878895a714004f937830d">getDataPtr</a>(<span class="keywordtype">size_t</span> offset = 0)<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint8_t*<span class="keyword">&gt;</span>(m_Data + offset);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        }</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="comment">// abstract methods</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
-<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#a6a8410015168a7fa42a7d71ac5b86673">  145</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_layer.html#a6a8410015168a7fa42a7d71ac5b86673">parseNextLayer</a>() = 0;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
-<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#acabe7022caf7cf5fabcad4b5a0eec832">  148</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> <a class="code" href="classpcpp_1_1_layer.html#acabe7022caf7cf5fabcad4b5a0eec832">getHeaderLen</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">  151</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">computeCalculateFields</a>() = 0;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#a1d07ea14d02b4a5cb383f89b3f40ed63">  155</a></span>&#160;        <span class="keyword">virtual</span> std::string <a class="code" href="classpcpp_1_1_layer.html#a1d07ea14d02b4a5cb383f89b3f40ed63">toString</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
-<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#af9e51f48a58a3b0dcd1a7341111c66e0">  158</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> <a class="code" href="classpcpp_1_1_layer.html#af9e51f48a58a3b0dcd1a7341111c66e0">getOsiModelLayer</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        uint8_t* m_Data;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordtype">size_t</span> m_DataLen;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <a class="code" href="classpcpp_1_1_packet.html">Packet</a>* m_Packet;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <a class="code" href="group___protocol_types.html#ga1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> m_Protocol;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <a class="code" href="classpcpp_1_1_layer.html">Layer</a>* m_NextLayer;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <a class="code" href="classpcpp_1_1_layer.html">Layer</a>* m_PrevLayer;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordtype">bool</span> m_IsAllocatedInPacket;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <a class="code" href="classpcpp_1_1_layer.html">Layer</a>()</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            : m_Data(nullptr), m_DataLen(0), m_Packet(nullptr), m_Protocol(<a class="code" href="group___protocol_types.html#gad94e3dd833f818889f676d2352eac829">UnknownProtocol</a>), m_NextLayer(nullptr),</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;              m_PrevLayer(nullptr), m_IsAllocatedInPacket(false)</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        {}</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <a class="code" href="classpcpp_1_1_layer.html">Layer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="classpcpp_1_1_layer.html">Layer</a>* prevLayer, <a class="code" href="classpcpp_1_1_packet.html">Packet</a>* packet, <a class="code" href="group___protocol_types.html#ga1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> protocol = <a class="code" href="group___protocol_types.html#gad94e3dd833f818889f676d2352eac829">UnknownProtocol</a>)</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            : m_Data(data), m_DataLen(dataLen), m_Packet(packet), m_Protocol(protocol), m_NextLayer(nullptr),</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;              m_PrevLayer(prevLayer), m_IsAllocatedInPacket(false)</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        {}</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="comment">// Copy c&#39;tor</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        Layer(<span class="keyword">const</span> Layer&amp; other);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        Layer&amp; operator=(<span class="keyword">const</span> Layer&amp; other);</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordtype">void</span> setNextLayer(Layer* nextLayer)</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        {</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            m_NextLayer = nextLayer;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        }</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordtype">void</span> setPrevLayer(Layer* prevLayer)</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        {</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            m_PrevLayer = prevLayer;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        }</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> extendLayer(<span class="keywordtype">int</span> offsetInLayer, <span class="keywordtype">size_t</span> numOfBytesToExtend);</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> shortenLayer(<span class="keywordtype">int</span> offsetInLayer, <span class="keywordtype">size_t</span> numOfBytesToShorten);</div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#ab8c7cc855405c99b5fdfd778324241ef">  136</a></span>&#160;        <a class="code" href="group___protocol_types.html#ga1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> <a class="code" href="classpcpp_1_1_layer.html#ab8c7cc855405c99b5fdfd778324241ef">getProtocol</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <span class="keywordflow">return</span> m_Protocol;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#a73339cf991e01301a34ec602ba9ec7d9">  144</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_layer.html#a73339cf991e01301a34ec602ba9ec7d9">isMemberOfProtocolFamily</a>(<a class="code" href="group___protocol_types.html#gaa26bae020a295f1089e08c390fb21c52">ProtocolTypeFamily</a> protocolTypeFamily) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#a4e3c72d568a8d43c0fd82d781255e98f">  147</a></span>&#160;        uint8_t* <a class="code" href="classpcpp_1_1_layer.html#a4e3c72d568a8d43c0fd82d781255e98f">getData</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordflow">return</span> m_Data;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#a33e4747c33cba0050ac90beeda45aa7b">  153</a></span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="classpcpp_1_1_layer.html#a33e4747c33cba0050ac90beeda45aa7b">getDataLen</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keywordflow">return</span> m_DataLen;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        }</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#a0bd73bce6a07ea942d3d88bd472944ec">  159</a></span>&#160;        uint8_t* <a class="code" href="classpcpp_1_1_layer.html#a0bd73bce6a07ea942d3d88bd472944ec">getLayerPayload</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keywordflow">return</span> m_Data + <a class="code" href="classpcpp_1_1_layer.html#acabe7022caf7cf5fabcad4b5a0eec832">getHeaderLen</a>();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#abd87dfe9272183c2ea1c00752d7144c8">  165</a></span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="classpcpp_1_1_layer.html#abd87dfe9272183c2ea1c00752d7144c8">getLayerPayloadSize</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <span class="keywordflow">return</span> m_DataLen - <a class="code" href="classpcpp_1_1_layer.html#acabe7022caf7cf5fabcad4b5a0eec832">getHeaderLen</a>();</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        }</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#a8f9d719253a30852620f9595a99956ed">  179</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_layer.html#a8f9d719253a30852620f9595a99956ed">isAllocatedToPacket</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            <span class="keywordflow">return</span> m_AllocationInfo.<a class="code" href="structpcpp_1_1internal_1_1_layer_allocation_info.html#a1647a1f5723eb91d24b8439fd114ac70">attachedPacket</a> != <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        }</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#a019a07d6f9d8fc7eb233e61826b11964">  186</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_layer.html#a019a07d6f9d8fc7eb233e61826b11964">copyData</a>(uint8_t* toArr) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="comment">// implement abstract methods</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#a4c5d6f648a6878895a714004f937830d">  190</a></span>&#160;        uint8_t* <a class="code" href="classpcpp_1_1_layer.html#a4c5d6f648a6878895a714004f937830d">getDataPtr</a>(<span class="keywordtype">size_t</span> offset = 0)<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint8_t*<span class="keyword">&gt;</span>(m_Data + offset);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        }</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keywordtype">bool</span> hasNextLayer()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            <span class="keywordflow">return</span> m_NextLayer != <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        }</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="comment">// abstract methods</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#a6a8410015168a7fa42a7d71ac5b86673">  198</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_layer.html#a6a8410015168a7fa42a7d71ac5b86673">parseNextLayer</a>() = 0;</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#a73210de1c3e4361189be96b40bf109d9">  209</a></span>&#160;        <a class="code" href="classpcpp_1_1_layer.html">Layer</a>* <a class="code" href="classpcpp_1_1_layer.html#a73210de1c3e4361189be96b40bf109d9">constructNextLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="classpcpp_1_1_packet.html">Packet</a>* packet, Args&amp;&amp;... extraArgs)</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        {</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            <span class="keywordflow">if</span> (hasNextLayer())</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            {</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Next layer already exists&quot;</span>);</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            }</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            <a class="code" href="classpcpp_1_1_layer.html">Layer</a>* newLayer = <span class="keyword">new</span> T(data, dataLen, <span class="keyword">this</span>, packet, std::forward&lt;Args&gt;(extraArgs)...);</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            setNextLayer(newLayer);</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            <span class="keywordflow">return</span> newLayer;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        }</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> TFallback, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#ac180476870fbef9a104d775d81c70c74">  235</a></span>&#160;        <a class="code" href="classpcpp_1_1_layer.html">Layer</a>* <a class="code" href="classpcpp_1_1_layer.html#ac180476870fbef9a104d775d81c70c74">tryConstructNextLayerWithFallback</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="classpcpp_1_1_packet.html">Packet</a>* packet, Args&amp;&amp;... extraArgs)</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        {</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            <span class="keywordflow">if</span> (tryConstructNextLayer&lt;T&gt;(data, dataLen, packet, std::forward&lt;Args&gt;(extraArgs)...))</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            {</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                <span class="keywordflow">return</span> m_NextLayer;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            }</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            <span class="keywordflow">return</span> constructNextLayer&lt;TFallback&gt;(data, dataLen, packet);</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        }</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
-<div class="line"><a name="l00253"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#acb031e00ee13b0c299cc6c0458a61a18">  253</a></span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_layer.html#acb031e00ee13b0c299cc6c0458a61a18">canReinterpretAs</a>(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> dataLen)</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        {</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            <span class="keywordflow">return</span> data != <span class="keyword">nullptr</span> &amp;&amp; dataLen &gt;= <span class="keyword">sizeof</span>(T);</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        }</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <a class="code" href="classpcpp_1_1_layer.html">Layer</a>* tryConstructNextLayer(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="classpcpp_1_1_packet.html">Packet</a>* packet, Args&amp;&amp;... extraArgs)</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        {</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            <span class="keywordflow">if</span> (T::isDataValid(data, dataLen))</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            {</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                <span class="keywordflow">return</span> constructNextLayer&lt;T&gt;(data, dataLen, packet, std::forward&lt;Args&gt;(extraArgs)...);</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            }</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        }</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    };</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_layer.html">pcpp::Layer</a>&amp; layer)</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    {</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        os &lt;&lt; layer.<a class="code" href="classpcpp_1_1_layer.html#a1d07ea14d02b4a5cb383f89b3f40ed63">toString</a>();</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        <span class="keywordflow">return</span> os;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    }</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#acabe7022caf7cf5fabcad4b5a0eec832">  201</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> <a class="code" href="classpcpp_1_1_layer.html#acabe7022caf7cf5fabcad4b5a0eec832">getHeaderLen</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">  204</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">computeCalculateFields</a>() = 0;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
+<div class="line"><a name="l00208"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#a1d07ea14d02b4a5cb383f89b3f40ed63">  208</a></span>&#160;        <span class="keyword">virtual</span> std::string <a class="code" href="classpcpp_1_1_layer.html#a1d07ea14d02b4a5cb383f89b3f40ed63">toString</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
+<div class="line"><a name="l00211"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#af9e51f48a58a3b0dcd1a7341111c66e0">  211</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> <a class="code" href="classpcpp_1_1_layer.html#af9e51f48a58a3b0dcd1a7341111c66e0">getOsiModelLayer</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        uint8_t* m_Data;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="keywordtype">size_t</span> m_DataLen;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <a class="code" href="group___protocol_types.html#ga1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> m_Protocol;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <a class="code" href="classpcpp_1_1_layer.html">Layer</a>* m_NextLayer;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <a class="code" href="classpcpp_1_1_layer.html">Layer</a>* m_PrevLayer;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <a class="code" href="structpcpp_1_1internal_1_1_layer_allocation_info.html">internal::LayerAllocationInfo</a> m_AllocationInfo;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <a class="code" href="classpcpp_1_1_layer.html">Layer</a>() : m_Data(nullptr), m_DataLen(0), m_Protocol(<a class="code" href="group___protocol_types.html#gad94e3dd833f818889f676d2352eac829">UnknownProtocol</a>), m_NextLayer(nullptr), m_PrevLayer(nullptr)</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        {}</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <a class="code" href="classpcpp_1_1_layer.html">Layer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="classpcpp_1_1_layer.html">Layer</a>* prevLayer, <a class="code" href="classpcpp_1_1_packet.html">Packet</a>* packet, <a class="code" href="group___protocol_types.html#ga1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a> protocol = <a class="code" href="group___protocol_types.html#gad94e3dd833f818889f676d2352eac829">UnknownProtocol</a>)</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            : m_Data(data), m_DataLen(dataLen), m_Protocol(protocol), m_NextLayer(nullptr), m_PrevLayer(prevLayer),</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;              m_AllocationInfo{ packet, false }</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        {}</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="comment">// Copy c&#39;tor</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        Layer(<span class="keyword">const</span> Layer&amp; other);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        Layer&amp; operator=(<span class="keyword">const</span> Layer&amp; other);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
+<div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#a92fb19d907170b212986262074418b09">  238</a></span>&#160;        <a class="code" href="classpcpp_1_1_packet.html">Packet</a>* <a class="code" href="classpcpp_1_1_layer.html#a92fb19d907170b212986262074418b09">getAttachedPacket</a>()</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        {</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            <span class="keywordflow">return</span> m_AllocationInfo.<a class="code" href="structpcpp_1_1internal_1_1_layer_allocation_info.html#a1647a1f5723eb91d24b8439fd114ac70">attachedPacket</a>;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        }</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
+<div class="line"><a name="l00245"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#ad819846b9268987c854502a1bea26965">  245</a></span>&#160;        <a class="code" href="classpcpp_1_1_packet.html">Packet</a> <span class="keyword">const</span>* <a class="code" href="classpcpp_1_1_layer.html#ad819846b9268987c854502a1bea26965">getAttachedPacket</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            <span class="keywordflow">return</span> m_AllocationInfo.<a class="code" href="structpcpp_1_1internal_1_1_layer_allocation_info.html#a1647a1f5723eb91d24b8439fd114ac70">attachedPacket</a>;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        }</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="keywordtype">void</span> setNextLayer(<a class="code" href="classpcpp_1_1_layer.html">Layer</a>* nextLayer)</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        {</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            m_NextLayer = nextLayer;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        }</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="keywordtype">void</span> setPrevLayer(Layer* prevLayer)</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        {</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            m_PrevLayer = prevLayer;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        }</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> extendLayer(<span class="keywordtype">int</span> offsetInLayer, <span class="keywordtype">size_t</span> numOfBytesToExtend);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> shortenLayer(<span class="keywordtype">int</span> offsetInLayer, <span class="keywordtype">size_t</span> numOfBytesToShorten);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="keywordtype">bool</span> hasNextLayer()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            <span class="keywordflow">return</span> m_NextLayer != <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        }</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a name="l00276"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#a73210de1c3e4361189be96b40bf109d9">  276</a></span>&#160;        <a class="code" href="classpcpp_1_1_layer.html">Layer</a>* <a class="code" href="classpcpp_1_1_layer.html#a73210de1c3e4361189be96b40bf109d9">constructNextLayer</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="classpcpp_1_1_packet.html">Packet</a>* packet, Args&amp;&amp;... extraArgs)</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        {</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            <span class="keywordflow">if</span> (hasNextLayer())</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            {</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Next layer already exists&quot;</span>);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            }</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            <a class="code" href="classpcpp_1_1_layer.html">Layer</a>* newLayer = <span class="keyword">new</span> T(data, dataLen, <span class="keyword">this</span>, packet, std::forward&lt;Args&gt;(extraArgs)...);</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            setNextLayer(newLayer);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            <span class="keywordflow">return</span> newLayer;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        }</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> TFallback, <span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a name="l00302"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#ac180476870fbef9a104d775d81c70c74">  302</a></span>&#160;        <a class="code" href="classpcpp_1_1_layer.html">Layer</a>* <a class="code" href="classpcpp_1_1_layer.html#ac180476870fbef9a104d775d81c70c74">tryConstructNextLayerWithFallback</a>(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="classpcpp_1_1_packet.html">Packet</a>* packet, Args&amp;&amp;... extraArgs)</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        {</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;            <span class="keywordflow">if</span> (tryConstructNextLayer&lt;T&gt;(data, dataLen, packet, std::forward&lt;Args&gt;(extraArgs)...))</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;            {</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                <span class="keywordflow">return</span> m_NextLayer;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            }</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;            <span class="keywordflow">return</span> constructNextLayer&lt;TFallback&gt;(data, dataLen, packet);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        }</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160; </div>
+<div class="line"><a name="l00320"></a><span class="lineno"><a class="line" href="classpcpp_1_1_layer.html#acb031e00ee13b0c299cc6c0458a61a18">  320</a></span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_layer.html#acb031e00ee13b0c299cc6c0458a61a18">canReinterpretAs</a>(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> dataLen)</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        {</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            <span class="keywordflow">return</span> data != <span class="keyword">nullptr</span> &amp;&amp; dataLen &gt;= <span class="keyword">sizeof</span>(T);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        }</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160; </div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <a class="code" href="classpcpp_1_1_layer.html">Layer</a>* tryConstructNextLayer(uint8_t* data, <span class="keywordtype">size_t</span> dataLen, <a class="code" href="classpcpp_1_1_packet.html">Packet</a>* packet, Args&amp;&amp;... extraArgs)</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        {</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            <span class="keywordflow">if</span> (T::isDataValid(data, dataLen))</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            {</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                <span class="keywordflow">return</span> constructNextLayer&lt;T&gt;(data, dataLen, packet, std::forward&lt;Args&gt;(extraArgs)...);</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            }</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        }</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    };</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160; </div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keyword">inline</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_layer.html">pcpp::Layer</a>&amp; layer)</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    {</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        os &lt;&lt; layer.<a class="code" href="classpcpp_1_1_layer.html#a1d07ea14d02b4a5cb383f89b3f40ed63">toString</a>();</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    }</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
 <div class="ttc" id="a_protocol_type_8h_html"><div class="ttname"><a href="_protocol_type_8h.html">ProtocolType.h</a></div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_data_container_html"><div class="ttname"><a href="classpcpp_1_1_i_data_container.html">pcpp::IDataContainer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:21</div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_data_container_html_a9b7122e9017fff8e4b2ac59870409abc"><div class="ttname"><a href="classpcpp_1_1_i_data_container.html#a9b7122e9017fff8e4b2ac59870409abc">pcpp::IDataContainer::getDataPtr</a></div><div class="ttdeci">virtual uint8_t * getDataPtr(size_t offset=0) const =0</div></div>
-<div class="ttc" id="aclasspcpp_1_1_layer_html"><div class="ttname"><a href="classpcpp_1_1_layer.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:62</div></div>
+<div class="ttc" id="aclasspcpp_1_1_layer_html"><div class="ttname"><a href="classpcpp_1_1_layer.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:115</div></div>
 <div class="ttc" id="aclasspcpp_1_1_layer_html_a019a07d6f9d8fc7eb233e61826b11964"><div class="ttname"><a href="classpcpp_1_1_layer.html#a019a07d6f9d8fc7eb233e61826b11964">pcpp::Layer::copyData</a></div><div class="ttdeci">void copyData(uint8_t *toArr) const</div></div>
-<div class="ttc" id="aclasspcpp_1_1_layer_html_a0bd73bce6a07ea942d3d88bd472944ec"><div class="ttname"><a href="classpcpp_1_1_layer.html#a0bd73bce6a07ea942d3d88bd472944ec">pcpp::Layer::getLayerPayload</a></div><div class="ttdeci">uint8_t * getLayerPayload() const</div><div class="ttdef"><b>Definition:</b> Layer.h:106</div></div>
+<div class="ttc" id="aclasspcpp_1_1_layer_html_a0bd73bce6a07ea942d3d88bd472944ec"><div class="ttname"><a href="classpcpp_1_1_layer.html#a0bd73bce6a07ea942d3d88bd472944ec">pcpp::Layer::getLayerPayload</a></div><div class="ttdeci">uint8_t * getLayerPayload() const</div><div class="ttdef"><b>Definition:</b> Layer.h:159</div></div>
 <div class="ttc" id="aclasspcpp_1_1_layer_html_a1d07ea14d02b4a5cb383f89b3f40ed63"><div class="ttname"><a href="classpcpp_1_1_layer.html#a1d07ea14d02b4a5cb383f89b3f40ed63">pcpp::Layer::toString</a></div><div class="ttdeci">virtual std::string toString() const =0</div></div>
-<div class="ttc" id="aclasspcpp_1_1_layer_html_a33e4747c33cba0050ac90beeda45aa7b"><div class="ttname"><a href="classpcpp_1_1_layer.html#a33e4747c33cba0050ac90beeda45aa7b">pcpp::Layer::getDataLen</a></div><div class="ttdeci">size_t getDataLen() const</div><div class="ttdef"><b>Definition:</b> Layer.h:100</div></div>
-<div class="ttc" id="aclasspcpp_1_1_layer_html_a4c5d6f648a6878895a714004f937830d"><div class="ttname"><a href="classpcpp_1_1_layer.html#a4c5d6f648a6878895a714004f937830d">pcpp::Layer::getDataPtr</a></div><div class="ttdeci">uint8_t * getDataPtr(size_t offset=0) const override</div><div class="ttdef"><b>Definition:</b> Layer.h:137</div></div>
-<div class="ttc" id="aclasspcpp_1_1_layer_html_a4e3c72d568a8d43c0fd82d781255e98f"><div class="ttname"><a href="classpcpp_1_1_layer.html#a4e3c72d568a8d43c0fd82d781255e98f">pcpp::Layer::getData</a></div><div class="ttdeci">uint8_t * getData() const</div><div class="ttdef"><b>Definition:</b> Layer.h:94</div></div>
+<div class="ttc" id="aclasspcpp_1_1_layer_html_a33e4747c33cba0050ac90beeda45aa7b"><div class="ttname"><a href="classpcpp_1_1_layer.html#a33e4747c33cba0050ac90beeda45aa7b">pcpp::Layer::getDataLen</a></div><div class="ttdeci">size_t getDataLen() const</div><div class="ttdef"><b>Definition:</b> Layer.h:153</div></div>
+<div class="ttc" id="aclasspcpp_1_1_layer_html_a4c5d6f648a6878895a714004f937830d"><div class="ttname"><a href="classpcpp_1_1_layer.html#a4c5d6f648a6878895a714004f937830d">pcpp::Layer::getDataPtr</a></div><div class="ttdeci">uint8_t * getDataPtr(size_t offset=0) const override</div><div class="ttdef"><b>Definition:</b> Layer.h:190</div></div>
+<div class="ttc" id="aclasspcpp_1_1_layer_html_a4e3c72d568a8d43c0fd82d781255e98f"><div class="ttname"><a href="classpcpp_1_1_layer.html#a4e3c72d568a8d43c0fd82d781255e98f">pcpp::Layer::getData</a></div><div class="ttdeci">uint8_t * getData() const</div><div class="ttdef"><b>Definition:</b> Layer.h:147</div></div>
 <div class="ttc" id="aclasspcpp_1_1_layer_html_a6a8410015168a7fa42a7d71ac5b86673"><div class="ttname"><a href="classpcpp_1_1_layer.html#a6a8410015168a7fa42a7d71ac5b86673">pcpp::Layer::parseNextLayer</a></div><div class="ttdeci">virtual void parseNextLayer()=0</div><div class="ttdoc">Each layer is responsible for parsing the next layer.</div></div>
-<div class="ttc" id="aclasspcpp_1_1_layer_html_a73210de1c3e4361189be96b40bf109d9"><div class="ttname"><a href="classpcpp_1_1_layer.html#a73210de1c3e4361189be96b40bf109d9">pcpp::Layer::constructNextLayer</a></div><div class="ttdeci">Layer * constructNextLayer(uint8_t *data, size_t dataLen, Packet *packet, Args &amp;&amp;... extraArgs)</div><div class="ttdef"><b>Definition:</b> Layer.h:209</div></div>
+<div class="ttc" id="aclasspcpp_1_1_layer_html_a73210de1c3e4361189be96b40bf109d9"><div class="ttname"><a href="classpcpp_1_1_layer.html#a73210de1c3e4361189be96b40bf109d9">pcpp::Layer::constructNextLayer</a></div><div class="ttdeci">Layer * constructNextLayer(uint8_t *data, size_t dataLen, Packet *packet, Args &amp;&amp;... extraArgs)</div><div class="ttdef"><b>Definition:</b> Layer.h:276</div></div>
 <div class="ttc" id="aclasspcpp_1_1_layer_html_a73339cf991e01301a34ec602ba9ec7d9"><div class="ttname"><a href="classpcpp_1_1_layer.html#a73339cf991e01301a34ec602ba9ec7d9">pcpp::Layer::isMemberOfProtocolFamily</a></div><div class="ttdeci">bool isMemberOfProtocolFamily(ProtocolTypeFamily protocolTypeFamily) const</div></div>
-<div class="ttc" id="aclasspcpp_1_1_layer_html_a73b23d182802ec4ac4021042897eb410"><div class="ttname"><a href="classpcpp_1_1_layer.html#a73b23d182802ec4ac4021042897eb410">pcpp::Layer::getNextLayer</a></div><div class="ttdeci">Layer * getNextLayer() const</div><div class="ttdef"><b>Definition:</b> Layer.h:71</div></div>
-<div class="ttc" id="aclasspcpp_1_1_layer_html_a8f9d719253a30852620f9595a99956ed"><div class="ttname"><a href="classpcpp_1_1_layer.html#a8f9d719253a30852620f9595a99956ed">pcpp::Layer::isAllocatedToPacket</a></div><div class="ttdeci">bool isAllocatedToPacket() const</div><div class="ttdef"><b>Definition:</b> Layer.h:126</div></div>
-<div class="ttc" id="aclasspcpp_1_1_layer_html_a9ff77f4ee3f160057f49db645a5c19bd"><div class="ttname"><a href="classpcpp_1_1_layer.html#a9ff77f4ee3f160057f49db645a5c19bd">pcpp::Layer::getPrevLayer</a></div><div class="ttdeci">Layer * getPrevLayer() const</div><div class="ttdef"><b>Definition:</b> Layer.h:77</div></div>
-<div class="ttc" id="aclasspcpp_1_1_layer_html_ab8c7cc855405c99b5fdfd778324241ef"><div class="ttname"><a href="classpcpp_1_1_layer.html#ab8c7cc855405c99b5fdfd778324241ef">pcpp::Layer::getProtocol</a></div><div class="ttdeci">ProtocolType getProtocol() const</div><div class="ttdef"><b>Definition:</b> Layer.h:83</div></div>
-<div class="ttc" id="aclasspcpp_1_1_layer_html_abd87dfe9272183c2ea1c00752d7144c8"><div class="ttname"><a href="classpcpp_1_1_layer.html#abd87dfe9272183c2ea1c00752d7144c8">pcpp::Layer::getLayerPayloadSize</a></div><div class="ttdeci">size_t getLayerPayloadSize() const</div><div class="ttdef"><b>Definition:</b> Layer.h:112</div></div>
+<div class="ttc" id="aclasspcpp_1_1_layer_html_a73b23d182802ec4ac4021042897eb410"><div class="ttname"><a href="classpcpp_1_1_layer.html#a73b23d182802ec4ac4021042897eb410">pcpp::Layer::getNextLayer</a></div><div class="ttdeci">Layer * getNextLayer() const</div><div class="ttdef"><b>Definition:</b> Layer.h:124</div></div>
+<div class="ttc" id="aclasspcpp_1_1_layer_html_a8f9d719253a30852620f9595a99956ed"><div class="ttname"><a href="classpcpp_1_1_layer.html#a8f9d719253a30852620f9595a99956ed">pcpp::Layer::isAllocatedToPacket</a></div><div class="ttdeci">bool isAllocatedToPacket() const</div><div class="ttdef"><b>Definition:</b> Layer.h:179</div></div>
+<div class="ttc" id="aclasspcpp_1_1_layer_html_a92fb19d907170b212986262074418b09"><div class="ttname"><a href="classpcpp_1_1_layer.html#a92fb19d907170b212986262074418b09">pcpp::Layer::getAttachedPacket</a></div><div class="ttdeci">Packet * getAttachedPacket()</div><div class="ttdoc">Get a pointer to the Packet this layer is attached to (if any).</div><div class="ttdef"><b>Definition:</b> Layer.h:238</div></div>
+<div class="ttc" id="aclasspcpp_1_1_layer_html_a9ff77f4ee3f160057f49db645a5c19bd"><div class="ttname"><a href="classpcpp_1_1_layer.html#a9ff77f4ee3f160057f49db645a5c19bd">pcpp::Layer::getPrevLayer</a></div><div class="ttdeci">Layer * getPrevLayer() const</div><div class="ttdef"><b>Definition:</b> Layer.h:130</div></div>
+<div class="ttc" id="aclasspcpp_1_1_layer_html_ab8c7cc855405c99b5fdfd778324241ef"><div class="ttname"><a href="classpcpp_1_1_layer.html#ab8c7cc855405c99b5fdfd778324241ef">pcpp::Layer::getProtocol</a></div><div class="ttdeci">ProtocolType getProtocol() const</div><div class="ttdef"><b>Definition:</b> Layer.h:136</div></div>
+<div class="ttc" id="aclasspcpp_1_1_layer_html_abd87dfe9272183c2ea1c00752d7144c8"><div class="ttname"><a href="classpcpp_1_1_layer.html#abd87dfe9272183c2ea1c00752d7144c8">pcpp::Layer::getLayerPayloadSize</a></div><div class="ttdeci">size_t getLayerPayloadSize() const</div><div class="ttdef"><b>Definition:</b> Layer.h:165</div></div>
 <div class="ttc" id="aclasspcpp_1_1_layer_html_abea112176d18e896f48214ca7accac71"><div class="ttname"><a href="classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71">pcpp::Layer::computeCalculateFields</a></div><div class="ttdeci">virtual void computeCalculateFields()=0</div><div class="ttdoc">Each layer can compute field values automatically using this method. This is an abstract method.</div></div>
-<div class="ttc" id="aclasspcpp_1_1_layer_html_ac180476870fbef9a104d775d81c70c74"><div class="ttname"><a href="classpcpp_1_1_layer.html#ac180476870fbef9a104d775d81c70c74">pcpp::Layer::tryConstructNextLayerWithFallback</a></div><div class="ttdeci">Layer * tryConstructNextLayerWithFallback(uint8_t *data, size_t dataLen, Packet *packet, Args &amp;&amp;... extraArgs)</div><div class="ttdef"><b>Definition:</b> Layer.h:235</div></div>
+<div class="ttc" id="aclasspcpp_1_1_layer_html_ac180476870fbef9a104d775d81c70c74"><div class="ttname"><a href="classpcpp_1_1_layer.html#ac180476870fbef9a104d775d81c70c74">pcpp::Layer::tryConstructNextLayerWithFallback</a></div><div class="ttdeci">Layer * tryConstructNextLayerWithFallback(uint8_t *data, size_t dataLen, Packet *packet, Args &amp;&amp;... extraArgs)</div><div class="ttdef"><b>Definition:</b> Layer.h:302</div></div>
 <div class="ttc" id="aclasspcpp_1_1_layer_html_acabe7022caf7cf5fabcad4b5a0eec832"><div class="ttname"><a href="classpcpp_1_1_layer.html#acabe7022caf7cf5fabcad4b5a0eec832">pcpp::Layer::getHeaderLen</a></div><div class="ttdeci">virtual size_t getHeaderLen() const =0</div></div>
-<div class="ttc" id="aclasspcpp_1_1_layer_html_acb031e00ee13b0c299cc6c0458a61a18"><div class="ttname"><a href="classpcpp_1_1_layer.html#acb031e00ee13b0c299cc6c0458a61a18">pcpp::Layer::canReinterpretAs</a></div><div class="ttdeci">static bool canReinterpretAs(const uint8_t *data, size_t dataLen)</div><div class="ttdoc">Check if the data is large enough to reinterpret as a type.</div><div class="ttdef"><b>Definition:</b> Layer.h:253</div></div>
+<div class="ttc" id="aclasspcpp_1_1_layer_html_acb031e00ee13b0c299cc6c0458a61a18"><div class="ttname"><a href="classpcpp_1_1_layer.html#acb031e00ee13b0c299cc6c0458a61a18">pcpp::Layer::canReinterpretAs</a></div><div class="ttdeci">static bool canReinterpretAs(const uint8_t *data, size_t dataLen)</div><div class="ttdoc">Check if the data is large enough to reinterpret as a type.</div><div class="ttdef"><b>Definition:</b> Layer.h:320</div></div>
+<div class="ttc" id="aclasspcpp_1_1_layer_html_ad819846b9268987c854502a1bea26965"><div class="ttname"><a href="classpcpp_1_1_layer.html#ad819846b9268987c854502a1bea26965">pcpp::Layer::getAttachedPacket</a></div><div class="ttdeci">Packet const  * getAttachedPacket() const</div><div class="ttdoc">Get a pointer to the Packet this layer is attached to (if any).</div><div class="ttdef"><b>Definition:</b> Layer.h:245</div></div>
 <div class="ttc" id="aclasspcpp_1_1_layer_html_adc5fdf997375b58400a55fdcc3bdff87"><div class="ttname"><a href="classpcpp_1_1_layer.html#adc5fdf997375b58400a55fdcc3bdff87">pcpp::Layer::~Layer</a></div><div class="ttdeci">~Layer() override</div></div>
 <div class="ttc" id="aclasspcpp_1_1_layer_html_af9e51f48a58a3b0dcd1a7341111c66e0"><div class="ttname"><a href="classpcpp_1_1_layer.html#af9e51f48a58a3b0dcd1a7341111c66e0">pcpp::Layer::getOsiModelLayer</a></div><div class="ttdeci">virtual OsiModelLayer getOsiModelLayer() const =0</div></div>
 <div class="ttc" id="aclasspcpp_1_1_packet_html"><div class="ttname"><a href="classpcpp_1_1_packet.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:22</div></div>
@@ -298,13 +337,18 @@ $(document).ready(function(){initNavTree('_layer_8h_source.html',''); initResiza
 <div class="ttc" id="agroup___protocol_types_html_gad94e3dd833f818889f676d2352eac829"><div class="ttname"><a href="group___protocol_types.html#gad94e3dd833f818889f676d2352eac829">pcpp::UnknownProtocol</a></div><div class="ttdeci">const ProtocolType UnknownProtocol</div><div class="ttdoc">Unknown protocol (or unsupported by PcapPlusPlus)</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:42</div></div>
 <div class="ttc" id="anamespacepcpp_html"><div class="ttname"><a href="namespacepcpp.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib.</div><div class="ttdef"><b>Definition:</b> AssertionUtils.h:19</div></div>
 <div class="ttc" id="anamespacepcpp_html_a69e2ee6a9dc68797612cf8dc38461025"><div class="ttname"><a href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a></div><div class="ttdeci">OsiModelLayer</div><div class="ttdoc">An enum representing OSI model layers.</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:261</div></div>
+<div class="ttc" id="astructpcpp_1_1internal_1_1_layer_allocation_info_html"><div class="ttname"><a href="structpcpp_1_1internal_1_1_layer_allocation_info.html">pcpp::internal::LayerAllocationInfo</a></div><div class="ttdoc">Holds information about a Layer's data and object ownership.</div><div class="ttdef"><b>Definition:</b> Layer.h:37</div></div>
+<div class="ttc" id="astructpcpp_1_1internal_1_1_layer_allocation_info_html_a1647a1f5723eb91d24b8439fd114ac70"><div class="ttname"><a href="structpcpp_1_1internal_1_1_layer_allocation_info.html#a1647a1f5723eb91d24b8439fd114ac70">pcpp::internal::LayerAllocationInfo::attachedPacket</a></div><div class="ttdeci">Packet * attachedPacket</div><div class="ttdoc">Pointer to the Packet this layer is attached to (if any).</div><div class="ttdef"><b>Definition:</b> Layer.h:50</div></div>
+<div class="ttc" id="astructpcpp_1_1internal_1_1_layer_allocation_info_html_a236a7779d087208615efa726d912b3a6"><div class="ttname"><a href="structpcpp_1_1internal_1_1_layer_allocation_info.html#a236a7779d087208615efa726d912b3a6">pcpp::internal::LayerAllocationInfo::ownedByPacket</a></div><div class="ttdeci">bool ownedByPacket</div><div class="ttdoc">Controls if the layer object is considered owned by the attached Packet.</div><div class="ttdef"><b>Definition:</b> Layer.h:59</div></div>
+<div class="ttc" id="astructpcpp_1_1internal_1_1_layer_allocation_info_html_a2c4aa7884ad0ff002b4dad0637a05df5"><div class="ttname"><a href="structpcpp_1_1internal_1_1_layer_allocation_info.html#a2c4aa7884ad0ff002b4dad0637a05df5">pcpp::internal::LayerAllocationInfo::detach</a></div><div class="ttdeci">void detach()</div><div class="ttdoc">Clears the attachment to any Packet, resetting to unmanaged state.</div><div class="ttdef"><b>Definition:</b> Layer.h:78</div></div>
+<div class="ttc" id="astructpcpp_1_1internal_1_1_layer_allocation_info_html_abd0207c7928b5a1e2112b17f12454afb"><div class="ttname"><a href="structpcpp_1_1internal_1_1_layer_allocation_info.html#abd0207c7928b5a1e2112b17f12454afb">pcpp::internal::LayerAllocationInfo::attachPacket</a></div><div class="ttdeci">void attachPacket(Packet *packet, bool managed, bool force=false)</div><div class="ttdoc">Sets the state of attachment to a specified Packet.</div><div class="ttdef"><b>Definition:</b> Layer.h:66</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_layer_8h.html">Layer.h</a></li>
-    <li class="footer">Generated on Mon Dec 1 2025 07:53:24 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jan 22 2026 07:39:07 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

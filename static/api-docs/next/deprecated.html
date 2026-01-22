@@ -94,17 +94,17 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <dt>Member <a class="el" href="classpcpp_1_1_asn1_integer_record.html#ab55607bab1dcfe57d348b380120c6136">pcpp::Asn1IntegerRecord::getValue</a>  ()</dt>
 <dd><a class="anchor" id="_deprecated000007"></a>This method is deprecated, please use <a class="el" href="classpcpp_1_1_asn1_integer_record.html#a16c19f833565d9f4a03f05ef17c12afc">getIntValue()</a>  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_bpf_filter_wrapper.html#a0c0f17f30eec0fd34688a71f4c11f2a1">pcpp::BpfFilterWrapper::matchPacketWithFilter</a>  (const uint8_t *packetData, uint32_t packetDataLength, timespec packetTimestamp, uint16_t linkType) const</dt>
-<dd><a class="anchor" id="_deprecated000021"></a>This method is deprecated, use matches(...) overload instead.  </dd>
+<dd><a class="anchor" id="_deprecated000026"></a>This method is deprecated, use matches(...) overload instead.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_bpf_filter_wrapper.html#a3f8e3dd656bc39a0af8ffd66bca19b8d">pcpp::BpfFilterWrapper::matchPacketWithFilter</a>  (const <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *rawPacket) const</dt>
-<dd><a class="anchor" id="_deprecated000020"></a>This method is deprecated, use matches(...) overload instead.  </dd>
+<dd><a class="anchor" id="_deprecated000025"></a>This method is deprecated, use matches(...) overload instead.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_general_filter.html#a9ba48b56f8600b08ee0f1c8e4a15daa5">pcpp::GeneralFilter::matchPacketWithFilter</a>  (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *rawPacket) const</dt>
-<dd><a class="anchor" id="_deprecated000022"></a>This method is deprecated, use matches(...) overload instead.  </dd>
+<dd><a class="anchor" id="_deprecated000027"></a>This method is deprecated, use matches(...) overload instead.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_http_response_first_line.html#aca6f22cddd6cdafdfdd9325e0a4bffd9">pcpp::HttpResponseFirstLine::setStatusCode</a>  (const <a class="el" href="classpcpp_1_1_http_response_status_code.html" title="The enum wrapper class of HTTP response status codes.">HttpResponseStatusCode</a> &amp;newStatusCode, const std::string &amp;statusCodeString)</dt>
 <dd><a class="anchor" id="_deprecated000009"></a>Use the other overload instead.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_http_response_layer.html#aa291f3cd6289bf92258998ccdd7487ac">pcpp::HttpResponseLayer::HttpResponseLayer</a>  (HttpVersion version, const <a class="el" href="classpcpp_1_1_http_response_status_code.html" title="The enum wrapper class of HTTP response status codes.">HttpResponseStatusCode</a> &amp;statusCode, const std::string &amp;statusCodeString)</dt>
 <dd><a class="anchor" id="_deprecated000008"></a>Use other constructors instead.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_i_pcap_device.html#a9095bdfe0c8e79b656b2651a721a2ea2">pcpp::IPcapDevice::matchPacketWithFilter</a>  (<a class="el" href="classpcpp_1_1_general_filter.html">GeneralFilter</a> &amp;filter, <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *rawPacket)</dt>
-<dd><a class="anchor" id="_deprecated000019"></a>This method is deprecated, use GeneralFilter::matches(...) method directly.  </dd>
+<dd><a class="anchor" id="_deprecated000022"></a>This method is deprecated, use GeneralFilter::matches(...) method directly.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_i_pv6_address.html#a0552d9f226b1aa7dd168deb3436a4f41">pcpp::IPv6Address::copyTo</a>  (uint8_t **arr, size_t &amp;length) const</dt>
 <dd><a class="anchor" id="_deprecated000001"></a>Use copyToNewBuffer instead.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_mac_address.html#aee73706ca1f0e403adbf4c2f691e7da1">pcpp::MacAddress::copyTo</a>  (uint8_t **arr) const</dt>
@@ -113,54 +113,64 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <dd><a class="anchor" id="_deprecated000005"></a>Please use std::this_thread::sleep_for(). It is a standard C++ (since C++11) method which is already cross-platform  </dd>
 <dt>Member <a class="el" href="namespacepcpp.html#aeea6070ccbb359bc4f819a4fbd40130d">pcpp::multiPlatformSleep</a>  (uint32_t seconds)</dt>
 <dd><a class="anchor" id="_deprecated000004"></a>Please use std::this_thread::sleep_for(). It is a standard C++ (since C++11) method which is already cross-platform  </dd>
+<dt>Member <a class="el" href="classpcpp_1_1_pcap_file_reader_device.html#a4ce65614c821fd78d848bdf0a1c55155">pcpp::PcapFileReaderDevice::isNanoSecondPrecisionSupported</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000023"></a>Nanosecond precision is now natively supported by the internal parser and always returns true  </dd>
+<dt>Member <a class="el" href="classpcpp_1_1_pcap_file_writer_device.html#af0596521910ef713ad24ffdb512f3515">pcpp::PcapFileWriterDevice::isNanoSecondPrecisionSupported</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000024"></a>Nanosecond precision is now natively supported by the internal parser and always returns true  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_pcap_live_device.html#a9d8a41394806dd5e5245046908f60f16">pcpp::PcapLiveDevice::sendPacket</a>  (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet, bool checkMtu=true)</dt>
-<dd><a class="anchor" id="_deprecated000023"></a>This method is deprecated. Use <a class="el" href="classpcpp_1_1_pcap_live_device.html#a89a20db2f68dcba1675a4895f03180bb">sendPacket(Packet const&amp; packet, bool checkMtu)</a> instead.  </dd>
+<dd><a class="anchor" id="_deprecated000028"></a>This method is deprecated. Use <a class="el" href="classpcpp_1_1_pcap_live_device.html#a89a20db2f68dcba1675a4895f03180bb">sendPacket(Packet const&amp; packet, bool checkMtu)</a> instead.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#a3581be31dbd64ae71232260a3ba55509">pcpp::PcapLiveDeviceList::getPcapLiveDeviceByIp</a>  (const std::string &amp;ipAddrAsString) const</dt>
-<dd><a class="anchor" id="_deprecated000027"></a>Use <code>getDeviceByIp</code> instead.  </dd>
-<dt>Member <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#a1921e94307197c9b8f613bb35fc1a0c5">pcpp::PcapLiveDeviceList::getPcapLiveDeviceByIp</a>  (const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;ipAddr) const</dt>
-<dd><a class="anchor" id="_deprecated000024"></a>Use <code>getDeviceByIp</code> instead.  </dd>
-<dt>Member <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#a1f1d12c48709db005f267a0add6e1989">pcpp::PcapLiveDeviceList::getPcapLiveDeviceByIp</a>  (const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;ipAddr) const</dt>
-<dd><a class="anchor" id="_deprecated000025"></a>Use <code>getDeviceByIp</code> instead.  </dd>
-<dt>Member <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#a50b86ac3afa835152e98d19734365572">pcpp::PcapLiveDeviceList::getPcapLiveDeviceByIp</a>  (const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> &amp;ip6Addr) const</dt>
-<dd><a class="anchor" id="_deprecated000026"></a>Use <code>getDeviceByIp</code> instead.  </dd>
-<dt>Member <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#aadf609084e161df94c14109d42b94544">pcpp::PcapLiveDeviceList::getPcapLiveDeviceByIpOrName</a>  (const std::string &amp;ipOrName) const</dt>
-<dd><a class="anchor" id="_deprecated000029"></a>Use <code>getDeviceByIpOrName</code> instead.  </dd>
-<dt>Member <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#a44adbf18b7c2dfc5509540848532aadd">pcpp::PcapLiveDeviceList::getPcapLiveDeviceByName</a>  (const std::string &amp;name) const</dt>
-<dd><a class="anchor" id="_deprecated000028"></a>Use <code>getDeviceByName</code> instead.  </dd>
-<dt>Member <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#af5890c36829219ddcf35a6ccf609c1a4">pcpp::PcapRemoteDeviceList::getRemoteDeviceByIP</a>  (const std::string &amp;ipAddrAsString) const</dt>
-<dd><a class="anchor" id="_deprecated000035"></a>Use <code>getDeviceByIP</code> instead.  </dd>
-<dt>Member <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a7bc8bad418fb81558e1350d693fa3161">pcpp::PcapRemoteDeviceList::getRemoteDeviceByIP</a>  (const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;ipAddr) const</dt>
-<dd><a class="anchor" id="_deprecated000034"></a>Use <code>getDeviceByIp</code> instead.  </dd>
-<dt>Member <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#afcf906d4e0ce47f1a8c2d7a542972f6a">pcpp::PcapRemoteDeviceList::getRemoteDeviceByIP</a>  (const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> &amp;ip6Addr) const</dt>
-<dd><a class="anchor" id="_deprecated000033"></a>Use <code>getDeviceByIp</code> instead.  </dd>
-<dt>Member <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#ad6b9e1731e22c6ebb36dae19b3a63acf">pcpp::PcapRemoteDeviceList::getRemoteDeviceByIP</a>  (const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;ip4Addr) const</dt>
 <dd><a class="anchor" id="_deprecated000032"></a>Use <code>getDeviceByIp</code> instead.  </dd>
-<dt>Member <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#af9327198897d5b414815455435b9c037">pcpp::PcapRemoteDeviceList::getRemoteDeviceList</a>  (const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;ipAddress, uint16_t port, <a class="el" href="structpcpp_1_1_pcap_remote_authentication.html">PcapRemoteAuthentication</a> *remoteAuth)</dt>
-<dd><a class="anchor" id="_deprecated000031"></a>This factory function has been deprecated in favor of 'createRemoteDeviceList' factory for better memory safety.  </dd>
+<dt>Member <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#a50b86ac3afa835152e98d19734365572">pcpp::PcapLiveDeviceList::getPcapLiveDeviceByIp</a>  (const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> &amp;ip6Addr) const</dt>
+<dd><a class="anchor" id="_deprecated000031"></a>Use <code>getDeviceByIp</code> instead.  </dd>
+<dt>Member <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#a1f1d12c48709db005f267a0add6e1989">pcpp::PcapLiveDeviceList::getPcapLiveDeviceByIp</a>  (const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;ipAddr) const</dt>
+<dd><a class="anchor" id="_deprecated000030"></a>Use <code>getDeviceByIp</code> instead.  </dd>
+<dt>Member <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#a1921e94307197c9b8f613bb35fc1a0c5">pcpp::PcapLiveDeviceList::getPcapLiveDeviceByIp</a>  (const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;ipAddr) const</dt>
+<dd><a class="anchor" id="_deprecated000029"></a>Use <code>getDeviceByIp</code> instead.  </dd>
+<dt>Member <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#aadf609084e161df94c14109d42b94544">pcpp::PcapLiveDeviceList::getPcapLiveDeviceByIpOrName</a>  (const std::string &amp;ipOrName) const</dt>
+<dd><a class="anchor" id="_deprecated000034"></a>Use <code>getDeviceByIpOrName</code> instead.  </dd>
+<dt>Member <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#a44adbf18b7c2dfc5509540848532aadd">pcpp::PcapLiveDeviceList::getPcapLiveDeviceByName</a>  (const std::string &amp;name) const</dt>
+<dd><a class="anchor" id="_deprecated000033"></a>Use <code>getDeviceByName</code> instead.  </dd>
+<dt>Member <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#ad6b9e1731e22c6ebb36dae19b3a63acf">pcpp::PcapRemoteDeviceList::getRemoteDeviceByIP</a>  (const <a class="el" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a> &amp;ip4Addr) const</dt>
+<dd><a class="anchor" id="_deprecated000037"></a>Use <code>getDeviceByIp</code> instead.  </dd>
+<dt>Member <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#afcf906d4e0ce47f1a8c2d7a542972f6a">pcpp::PcapRemoteDeviceList::getRemoteDeviceByIP</a>  (const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> &amp;ip6Addr) const</dt>
+<dd><a class="anchor" id="_deprecated000038"></a>Use <code>getDeviceByIp</code> instead.  </dd>
+<dt>Member <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a7bc8bad418fb81558e1350d693fa3161">pcpp::PcapRemoteDeviceList::getRemoteDeviceByIP</a>  (const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;ipAddr) const</dt>
+<dd><a class="anchor" id="_deprecated000039"></a>Use <code>getDeviceByIp</code> instead.  </dd>
+<dt>Member <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#af5890c36829219ddcf35a6ccf609c1a4">pcpp::PcapRemoteDeviceList::getRemoteDeviceByIP</a>  (const std::string &amp;ipAddrAsString) const</dt>
+<dd><a class="anchor" id="_deprecated000040"></a>Use <code>getDeviceByIP</code> instead.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a9ad4f27a5e10b9b599b7a2a6412a398e">pcpp::PcapRemoteDeviceList::getRemoteDeviceList</a>  (const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;ipAddress, uint16_t port)</dt>
-<dd><a class="anchor" id="_deprecated000030"></a>This factory function has been deprecated in favor of 'createRemoteDeviceList' factory for better memory safety.  </dd>
+<dd><a class="anchor" id="_deprecated000035"></a>This factory function has been deprecated in favor of 'createRemoteDeviceList' factory for better memory safety.  </dd>
+<dt>Member <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#af9327198897d5b414815455435b9c037">pcpp::PcapRemoteDeviceList::getRemoteDeviceList</a>  (const <a class="el" href="classpcpp_1_1_i_p_address.html">IPAddress</a> &amp;ipAddress, uint16_t port, <a class="el" href="structpcpp_1_1_pcap_remote_authentication.html">PcapRemoteAuthentication</a> *remoteAuth)</dt>
+<dd><a class="anchor" id="_deprecated000036"></a>This factory function has been deprecated in favor of 'createRemoteDeviceList' factory for better memory safety.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_pf_ring_device_list.html#a28072ef36082db19445bb891e58d7318">pcpp::PfRingDeviceList::getPfRingDeviceByName</a>  (const std::string &amp;devName) const</dt>
-<dd><a class="anchor" id="_deprecated000036"></a>Use <code>getDeviceByName</code> instead.  </dd>
+<dd><a class="anchor" id="_deprecated000041"></a>Use <code>getDeviceByName</code> instead.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_pointer_vector.html#ae7e330635cb7107f0097f5056e7976fa">pcpp::PointerVector&lt; T, Deleter &gt;::getAndRemoveFromVector</a>  (VectorIterator &amp;position)</dt>
 <dd><a class="anchor" id="_deprecated000003"></a>Deprecated in favor of 'getAndDetach' as that function provides memory safety.  </dd>
+<dt>Member <a class="el" href="classpcpp_1_1_raw_packet.html#a74ac9d1097c7714f0fc23c6e8198a2a8">pcpp::RawPacket::initWithRawData</a>  (const uint8_t *pRawData, int rawDataLen, timespec timestamp, LinkLayerType layerType=LINKTYPE_ETHERNET)</dt>
+<dd><a class="anchor" id="_deprecated000012"></a>Prefer using <a class="el" href="classpcpp_1_1_raw_packet.html#a5aa4ca46b4f5b1335a7e8064a7dbdc91">setRawData()</a> with takeOwnership <code>false</code>.  </dd>
+<dt>Member <a class="el" href="classpcpp_1_1_raw_packet.html#a47b52568768baafd105298638cd4a355">pcpp::RawPacket::setRawData</a>  (const uint8_t *pRawData, int rawDataLen, timespec timestamp, LinkLayerType layerType=LINKTYPE_ETHERNET, int frameLength=-1)</dt>
+<dd><a class="anchor" id="_deprecated000011"></a>This method does not update ownership of the pRawData pointer, inheriting the previous buffer's ownership. Use the overload that takes bool takeOwnership parameter for explicit control.  </dd>
+<dt>Member <a class="el" href="classpcpp_1_1_raw_packet.html#a5aa4ca46b4f5b1335a7e8064a7dbdc91">pcpp::RawPacket::setRawData</a>  (const uint8_t *pRawData, int rawDataLen, timeval timestamp, LinkLayerType layerType=LINKTYPE_ETHERNET, int frameLength=-1)</dt>
+<dd><a class="anchor" id="_deprecated000010"></a>This method does not update ownership of the pRawData pointer, inheriting the previous buffer's ownership. Use the overload that takes bool takeOwnership parameter for explicit control.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_tcp_layer.html#a90bad5659cf8c12fa486c11d1d46cab1">pcpp::TcpLayer::addTcpOptionAfter</a>  (const <a class="el" href="classpcpp_1_1_tcp_option_builder.html">TcpOptionBuilder</a> &amp;optionBuilder, TcpOptionType prevOptionType=TcpOptionType::TCPOPT_Unknown)</dt>
-<dd><a class="anchor" id="_deprecated000017"></a>This method is deprecated, please use insertTcpOptionAfter(const <a class="el" href="classpcpp_1_1_tcp_option_builder.html">TcpOptionBuilder</a>&amp; optionBuilder, TcpOptionEnumType prevOptionType = <a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca88183b946cc5f0e8c96b2e66e1c74a7e" title="Unknown option.">TcpOptionEnumType::Unknown</a>)  </dd>
+<dd><a class="anchor" id="_deprecated000020"></a>This method is deprecated, please use insertTcpOptionAfter(const <a class="el" href="classpcpp_1_1_tcp_option_builder.html">TcpOptionBuilder</a>&amp; optionBuilder, TcpOptionEnumType prevOptionType = <a class="el" href="namespacepcpp.html#a5532685beb35dba811dc72b4f06dba0ca88183b946cc5f0e8c96b2e66e1c74a7e" title="Unknown option.">TcpOptionEnumType::Unknown</a>)  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_tcp_layer.html#a9502c7f75395c19a44df4457ebafa537">pcpp::TcpLayer::getTcpOption</a>  (TcpOptionType option) const</dt>
-<dd><a class="anchor" id="_deprecated000016"></a>This method is deprecated, please use getTcpOption(TcpOptionEnumType option)  </dd>
+<dd><a class="anchor" id="_deprecated000019"></a>This method is deprecated, please use getTcpOption(TcpOptionEnumType option)  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_tcp_layer.html#ac24e0b402da8a1489379e80876eb8dcf">pcpp::TcpLayer::removeTcpOption</a>  (TcpOptionType optionType)</dt>
-<dd><a class="anchor" id="_deprecated000018"></a>This method is deprecated, please use <a class="el" href="classpcpp_1_1_tcp_layer.html#a12da1f78961105f8ec0ae206fb4910a9">removeTcpOption(TcpOptionEnumType)</a>  </dd>
+<dd><a class="anchor" id="_deprecated000021"></a>This method is deprecated, please use <a class="el" href="classpcpp_1_1_tcp_layer.html#a12da1f78961105f8ec0ae206fb4910a9">removeTcpOption(TcpOptionEnumType)</a>  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_tcp_option.html#a23a5b85b766ac1d26bc8e9588cc20092">pcpp::TcpOption::getTcpOptionType</a>  () const</dt>
-<dd><a class="anchor" id="_deprecated000010"></a>This method is deprecated, please use <a class="el" href="classpcpp_1_1_tcp_option.html#a0496612a4b1d2fcb164597edf3287a5a">getTcpOptionEnumType()</a>  </dd>
+<dd><a class="anchor" id="_deprecated000013"></a>This method is deprecated, please use <a class="el" href="classpcpp_1_1_tcp_option.html#a0496612a4b1d2fcb164597edf3287a5a">getTcpOptionEnumType()</a>  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_tcp_option_builder.html#af9241c4990ee60469eb953550d33eedc">pcpp::TcpOptionBuilder::TcpOptionBuilder</a>  (NopEolOptionTypes optionType)</dt>
-<dd><a class="anchor" id="_deprecated000015"></a>This method is deprecated, please use constructor with NopEolOptionEnumType  </dd>
+<dd><a class="anchor" id="_deprecated000018"></a>This method is deprecated, please use constructor with NopEolOptionEnumType  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_tcp_option_builder.html#a838ad04eeb545f3eb2a97fdfbc6d38f9">pcpp::TcpOptionBuilder::TcpOptionBuilder</a>  (TcpOptionType optionType, uint32_t optionValue)</dt>
-<dd><a class="anchor" id="_deprecated000014"></a>This method is deprecated, please use constructor with TcpOptionEnumType  </dd>
+<dd><a class="anchor" id="_deprecated000017"></a>This method is deprecated, please use constructor with TcpOptionEnumType  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_tcp_option_builder.html#aea645fc4e01e9dc023bd25f629c36d55">pcpp::TcpOptionBuilder::TcpOptionBuilder</a>  (TcpOptionType optionType, uint16_t optionValue)</dt>
-<dd><a class="anchor" id="_deprecated000013"></a>This method is deprecated, please use constructor with TcpOptionEnumType  </dd>
+<dd><a class="anchor" id="_deprecated000016"></a>This method is deprecated, please use constructor with TcpOptionEnumType  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_tcp_option_builder.html#af9d33006fbb68dbe38a2ba2bb37d1bdf">pcpp::TcpOptionBuilder::TcpOptionBuilder</a>  (TcpOptionType optionType, uint8_t optionValue)</dt>
-<dd><a class="anchor" id="_deprecated000012"></a>This method is deprecated, please use constructor with TcpOptionEnumType  </dd>
+<dd><a class="anchor" id="_deprecated000015"></a>This method is deprecated, please use constructor with TcpOptionEnumType  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_tcp_option_builder.html#a53cfd9ab111c7d9ebf2a9b879abec936">pcpp::TcpOptionBuilder::TcpOptionBuilder</a>  (TcpOptionType optionType, const uint8_t *optionValue, uint8_t optionValueLen)</dt>
-<dd><a class="anchor" id="_deprecated000011"></a>This method is deprecated, please use constructor with TcpOptionEnumType </dd>
+<dd><a class="anchor" id="_deprecated000014"></a>This method is deprecated, please use constructor with TcpOptionEnumType </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
@@ -168,7 +178,7 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Dec 1 2025 07:53:24 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jan 22 2026 07:39:07 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

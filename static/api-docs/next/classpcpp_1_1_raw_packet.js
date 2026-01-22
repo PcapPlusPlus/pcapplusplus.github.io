@@ -1,8 +1,8 @@
 var classpcpp_1_1_raw_packet =
 [
     [ "RawPacket", "classpcpp_1_1_raw_packet.html#aad676f9942c34f234deecc7da921dd67", null ],
-    [ "RawPacket", "classpcpp_1_1_raw_packet.html#a8834cea9fc72516c3d22a841479ee684", null ],
-    [ "RawPacket", "classpcpp_1_1_raw_packet.html#a76475bd10f2bda34a6fee2686a26c475", null ],
+    [ "RawPacket", "classpcpp_1_1_raw_packet.html#a301c47b7d784b16ac1b664785888fee0", null ],
+    [ "RawPacket", "classpcpp_1_1_raw_packet.html#abfd5b3ed1c6e853b57e54c6022bd77c0", null ],
     [ "~RawPacket", "classpcpp_1_1_raw_packet.html#abb8b8a3574217ab88b406cba3d2551fb", null ],
     [ "RawPacket", "classpcpp_1_1_raw_packet.html#a38d24eda21061c53f0801f3bcbe34193", null ],
     [ "appendData", "classpcpp_1_1_raw_packet.html#a6ed098d0dfcf60fa561b56e6c73bed9c", null ],
@@ -22,6 +22,8 @@ var classpcpp_1_1_raw_packet =
     [ "removeData", "classpcpp_1_1_raw_packet.html#a9cf289e6bbf461f55c20784615c899ce", null ],
     [ "setPacketTimeStamp", "classpcpp_1_1_raw_packet.html#ade226b4fed36009d01190439430e48a2", null ],
     [ "setPacketTimeStamp", "classpcpp_1_1_raw_packet.html#af487937f955cf1597772228e9ae99729", null ],
-    [ "setRawData", "classpcpp_1_1_raw_packet.html#aa11e800ab071df0a3c1c329868aea5a7", null ],
-    [ "setRawData", "classpcpp_1_1_raw_packet.html#a6babfc371bd3b9eac8c741cba5e097f6", null ]
+    [ "setRawData", "classpcpp_1_1_raw_packet.html#a4586a8f60b572c4210c58f750469efe7", null ],
+    [ "setRawData", "classpcpp_1_1_raw_packet.html#ae8b95c0d3ba16b31a46f52d17c588403", null ],
+    [ "setRawData", "classpcpp_1_1_raw_packet.html#a47b52568768baafd105298638cd4a355", null ],
+    [ "setRawData", "classpcpp_1_1_raw_packet.html#a5aa4ca46b4f5b1335a7e8064a7dbdc91", null ]
 ];
