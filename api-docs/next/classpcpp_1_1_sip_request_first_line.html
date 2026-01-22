@@ -98,6 +98,8 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_sip_request_first_line.h
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_sip_request_first_line_1_1_sip_first_line_data.html">SipFirstLineData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_sip_request_first_line_1_1_sip_request_first_line_exception.html">SipRequestFirstLineException</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -122,6 +124,8 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:abca484be5c25fe85226689d5fae292bb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classpcpp_1_1_sip_request_layer.html#abbc7896e37db434028fd612a74fd8c4d">SipRequestLayer::SipMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_sip_request_first_line.html#abca484be5c25fe85226689d5fae292bb">parseMethod</a> (const char *data, size_t dataLen)</td></tr>
 <tr class="separator:abca484be5c25fe85226689d5fae292bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a004bb2dd74a2be9a0428b4b1c7a06bdf"><td class="memItemLeft" align="right" valign="top">static std::pair&lt; bool, <a class="el" href="structpcpp_1_1_sip_request_first_line_1_1_sip_first_line_data.html">SipFirstLineData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_sip_request_first_line.html#a004bb2dd74a2be9a0428b4b1c7a06bdf">parseFirstLine</a> (const char *data, size_t dataLen)</td></tr>
+<tr class="separator:a004bb2dd74a2be9a0428b4b1c7a06bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents an SIP request first line. The first line includes 3 parameters: SIP method (e.g INVITE, ACK, BYE, etc.), URI (e.g sip:<a href="#" onclick="location.href='mai'+'lto:'+'bla'+'@b'+'la.'+'co'+'m'; return false;">bla@b<span style="display: none;">.nosp@m.</span>la.c<span style="display: none;">.nosp@m.</span>om</a>:12345) and SIP version (usually SIP/2.0). All these parameters are included in this class, and the user can retrieve or set them. This class cannot be instantiated by users, it's created inside <a class="el" href="classpcpp_1_1_sip_request_layer.html">SipRequestLayer</a> and user can get a pointer to an instance of it. All "getters" of this class retrieve the actual data of the SIP request and the "setters" actually change the packet data. Since SIP is a textual protocol, most fields aren't of fixed size and this also applies to the first line parameters. So many "setter" methods of this class may need to shorten or extend the data in <a class="el" href="classpcpp_1_1_sip_request_layer.html">SipRequestLayer</a>. These methods will return a false value if this action failed </p>
@@ -248,6 +252,50 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a004bb2dd74a2be9a0428b4b1c7a06bdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a004bb2dd74a2be9a0428b4b1c7a06bdf">&#9670;&nbsp;</a></span>parseFirstLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::pair&lt;bool, <a class="el" href="structpcpp_1_1_sip_request_first_line_1_1_sip_first_line_data.html">SipFirstLineData</a>&gt; pcpp::SipRequestFirstLine::parseFirstLine </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A static method for parsing the complete SIP request first line from raw data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The raw data containing the SIP request line </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>The raw data length </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pair where first indicates success/failure, and second contains the parsed data. If parsing fails, first is false and second contains empty strings </dd></dl>
+
+</div>
+</div>
 <a id="abca484be5c25fe85226689d5fae292bb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abca484be5c25fe85226689d5fae292bb">&#9670;&nbsp;</a></span>parseMethod()</h2>
 
@@ -348,7 +396,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_sip_request_first_line.html">SipRequestFirstLine</a></li>
-    <li class="footer">Generated on Mon Dec 1 2025 07:53:25 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jan 22 2026 07:39:08 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

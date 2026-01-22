@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['x509version_7944',['X509Version',['../namespacepcpp.html#a42f731d3ee857a7d2967278ab6b83331',1,'pcpp']]]
+  ['windivertparam_8076',['WinDivertParam',['../classpcpp_1_1internal_1_1_i_win_divert_handle.html#abc9f914761a5ebd192990b5093203b46',1,'pcpp::internal::IWinDivertHandle']]],
+  ['wireguardmessagetype_8077',['WireGuardMessageType',['../classpcpp_1_1_wire_guard_layer.html#a2e88b34ce97ccb97f16112fcef512b4d',1,'pcpp::WireGuardLayer']]]
 ];

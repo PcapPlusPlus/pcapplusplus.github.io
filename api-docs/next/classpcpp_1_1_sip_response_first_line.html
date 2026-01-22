@@ -98,6 +98,9 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_sip_response_first_line.
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_sip_response_first_line_1_1_first_line_data.html">FirstLineData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure containing parsed components from a SIP response first line.  <a href="structpcpp_1_1_sip_response_first_line_1_1_first_line_data.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_sip_response_first_line_1_1_sip_response_first_line_exception.html">SipResponseFirstLineException</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -126,6 +129,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a03cfc2fd29669e25fd0ee5a8f61f93bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2888382cdda7e4851393caf6932bb14a"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_sip_response_first_line.html#a2888382cdda7e4851393caf6932bb14a">parseVersion</a> (const char *data, size_t dataLen)</td></tr>
 <tr class="separator:a2888382cdda7e4851393caf6932bb14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fb5664a8e832b3b13267ab0836db3e5"><td class="memItemLeft" align="right" valign="top">static std::pair&lt; bool, <a class="el" href="structpcpp_1_1_sip_response_first_line_1_1_first_line_data.html">FirstLineData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_sip_response_first_line.html#a2fb5664a8e832b3b13267ab0836db3e5">parseFirstLine</a> (const char *data, size_t dataLen)</td></tr>
+<tr class="memdesc:a2fb5664a8e832b3b13267ab0836db3e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A static method for parsing the complete SIP response first line from raw data.  <a href="classpcpp_1_1_sip_response_first_line.html#a2fb5664a8e832b3b13267ab0836db3e5">More...</a><br /></td></tr>
+<tr class="separator:a2fb5664a8e832b3b13267ab0836db3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents an SIP response message first line. The first line includes 2 parameters: status code (e.g 100 Trying ,200 OK, etc.), and SIP version (usually SIP/2.0). These 2 parameters are included in this class, and the user can retrieve or set them. This class cannot be instantiated by users, it's created inside <a class="el" href="classpcpp_1_1_sip_response_layer.html">SipResponseLayer</a> and user can get a pointer to an instance of it. The "getter" methods of this class will retrieve the actual data of the SIP response and the "setter" methods will change the packet data. Since SIP is a textual protocol, most fields aren't of fixed size and this also applies to the first line parameters. So most "setter" methods of this class may need to shorten or extend the data in <a class="el" href="classpcpp_1_1_sip_response_layer.html">SipResponseLayer</a>. These methods will return a false value if this action failed </p>
@@ -267,6 +273,52 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>As explained in <a class="el" href="classpcpp_1_1_sip_response_layer.html">SipResponseLayer</a>, A SIP message can sometimes spread over more than 1 packet, so when looking at a single packet the header can be partial. Same goes for the first line - it can spread over more than 1 packet. This method returns an indication whether the first line is partial </p><dl class="section return"><dt>Returns</dt><dd>False if the first line is partial, true if it's complete </dd></dl>
+
+</div>
+</div>
+<a id="a2fb5664a8e832b3b13267ab0836db3e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fb5664a8e832b3b13267ab0836db3e5">&#9670;&nbsp;</a></span>parseFirstLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::pair&lt;bool, <a class="el" href="structpcpp_1_1_sip_response_first_line_1_1_first_line_data.html">FirstLineData</a>&gt; pcpp::SipResponseFirstLine::parseFirstLine </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A static method for parsing the complete SIP response first line from raw data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The raw data containing the SIP response line </td></tr>
+    <tr><td class="paramname">dataLen</td><td>The raw data length </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pair where first indicates success/failure, and second contains the parsed data. </dd></dl>
 
 </div>
 </div>
@@ -423,7 +475,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_sip_response_first_line.html">SipResponseFirstLine</a></li>
-    <li class="footer">Generated on Mon Dec 1 2025 07:53:25 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jan 22 2026 07:39:08 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

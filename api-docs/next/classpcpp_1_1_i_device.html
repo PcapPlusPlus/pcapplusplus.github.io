@@ -100,23 +100,24 @@ Inheritance diagram for pcpp::IDevice:</div>
   <img src="classpcpp_1_1_i_device.png" usemap="#pcpp::IDevice_map" alt=""/>
   <map id="pcpp::IDevice_map" name="pcpp::IDevice_map">
 <area href="classpcpp_1_1_dpdk_device.html" alt="pcpp::DpdkDevice" shape="rect" coords="0,56,193,80"/>
-<area href="classpcpp_1_1_i_filterable_device.html" alt="pcpp::IFilterableDevice" shape="rect" coords="836,56,1029,80"/>
-<area href="classpcpp_1_1_kni_device.html" alt="pcpp::KniDevice" shape="rect" coords="1039,56,1232,80"/>
-<area href="classpcpp_1_1_raw_socket_device.html" alt="pcpp::RawSocketDevice" shape="rect" coords="1242,56,1435,80"/>
-<area href="classpcpp_1_1_xdp_device.html" alt="pcpp::XdpDevice" shape="rect" coords="1445,56,1638,80"/>
-<area href="classpcpp_1_1_i_pcap_device.html" alt="pcpp::IPcapDevice" shape="rect" coords="734,112,927,136"/>
-<area href="classpcpp_1_1_pf_ring_device.html" alt="pcpp::PfRingDevice" shape="rect" coords="937,112,1130,136"/>
-<area href="classpcpp_1_1_i_file_device.html" alt="pcpp::IFileDevice" shape="rect" coords="456,168,649,192"/>
-<area href="classpcpp_1_1_pcap_live_device.html" alt="pcpp::PcapLiveDevice" shape="rect" coords="1015,168,1208,192"/>
-<area href="classpcpp_1_1_i_file_reader_device.html" alt="pcpp::IFileReaderDevice" shape="rect" coords="203,224,396,248"/>
-<area href="classpcpp_1_1_i_file_writer_device.html" alt="pcpp::IFileWriterDevice" shape="rect" coords="710,224,903,248"/>
-<area href="classpcpp_1_1_pcap_remote_device.html" alt="pcpp::PcapRemoteDevice" shape="rect" coords="913,224,1106,248"/>
-<area href="classpcpp_1_1_win_pcap_live_device.html" alt="pcpp::WinPcapLiveDevice" shape="rect" coords="1116,224,1309,248"/>
-<area href="classpcpp_1_1_pcap_file_reader_device.html" alt="pcpp::PcapFileReaderDevice" shape="rect" coords="0,280,193,304"/>
-<area href="classpcpp_1_1_pcap_ng_file_reader_device.html" alt="pcpp::PcapNgFileReaderDevice" shape="rect" coords="203,280,396,304"/>
-<area href="classpcpp_1_1_snoop_file_reader_device.html" alt="pcpp::SnoopFileReaderDevice" shape="rect" coords="406,280,599,304"/>
-<area href="classpcpp_1_1_pcap_file_writer_device.html" alt="pcpp::PcapFileWriterDevice" shape="rect" coords="609,280,802,304"/>
-<area href="classpcpp_1_1_pcap_ng_file_writer_device.html" alt="pcpp::PcapNgFileWriterDevice" shape="rect" coords="812,280,1005,304"/>
+<area href="classpcpp_1_1_i_filterable_device.html" alt="pcpp::IFilterableDevice" shape="rect" coords="1116,56,1309,80"/>
+<area href="classpcpp_1_1_kni_device.html" alt="pcpp::KniDevice" shape="rect" coords="1319,56,1512,80"/>
+<area href="classpcpp_1_1_raw_socket_device.html" alt="pcpp::RawSocketDevice" shape="rect" coords="1522,56,1715,80"/>
+<area href="classpcpp_1_1_win_divert_device.html" title="A device wrapper around the WinDivert driver for Windows." alt="pcpp::WinDivertDevice" shape="rect" coords="1725,56,1918,80"/>
+<area href="classpcpp_1_1_xdp_device.html" alt="pcpp::XdpDevice" shape="rect" coords="1928,56,2121,80"/>
+<area href="classpcpp_1_1_i_file_device.html" alt="pcpp::IFileDevice" shape="rect" coords="456,112,649,136"/>
+<area href="classpcpp_1_1_i_pcap_device.html" alt="pcpp::IPcapDevice" shape="rect" coords="1116,112,1309,136"/>
+<area href="classpcpp_1_1_pf_ring_device.html" alt="pcpp::PfRingDevice" shape="rect" coords="1319,112,1512,136"/>
+<area href="classpcpp_1_1_i_file_reader_device.html" alt="pcpp::IFileReaderDevice" shape="rect" coords="203,168,396,192"/>
+<area href="classpcpp_1_1_i_file_writer_device.html" alt="pcpp::IFileWriterDevice" shape="rect" coords="710,168,903,192"/>
+<area href="classpcpp_1_1_pcap_live_device.html" alt="pcpp::PcapLiveDevice" shape="rect" coords="1116,168,1309,192"/>
+<area href="classpcpp_1_1_pcap_file_reader_device.html" alt="pcpp::PcapFileReaderDevice" shape="rect" coords="0,224,193,248"/>
+<area href="classpcpp_1_1_pcap_ng_file_reader_device.html" alt="pcpp::PcapNgFileReaderDevice" shape="rect" coords="203,224,396,248"/>
+<area href="classpcpp_1_1_snoop_file_reader_device.html" alt="pcpp::SnoopFileReaderDevice" shape="rect" coords="406,224,599,248"/>
+<area href="classpcpp_1_1_pcap_file_writer_device.html" alt="pcpp::PcapFileWriterDevice" shape="rect" coords="609,224,802,248"/>
+<area href="classpcpp_1_1_pcap_ng_file_writer_device.html" alt="pcpp::PcapNgFileWriterDevice" shape="rect" coords="812,224,1005,248"/>
+<area href="classpcpp_1_1_pcap_remote_device.html" alt="pcpp::PcapRemoteDevice" shape="rect" coords="1015,224,1208,248"/>
+<area href="classpcpp_1_1_win_pcap_live_device.html" alt="pcpp::WinPcapLiveDevice" shape="rect" coords="1218,224,1411,248"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -158,7 +159,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>True if the file is opened, false otherwise </dd></dl>
 
-<p>Implemented in <a class="el" href="classpcpp_1_1_xdp_device.html#a53e529ccf56de06e57ddee110761014d">pcpp::XdpDevice</a>, <a class="el" href="classpcpp_1_1_raw_socket_device.html#a711e17978700db4d4b002b5cdb5381d5">pcpp::RawSocketDevice</a>, <a class="el" href="classpcpp_1_1_pf_ring_device.html#abebacad70351dd3658fb048c42962541">pcpp::PfRingDevice</a>, <a class="el" href="classpcpp_1_1_pcap_live_device.html#abed28936a88ce223ff9735e8e31910cc">pcpp::PcapLiveDevice</a>, <a class="el" href="classpcpp_1_1_i_file_device.html#a8e0513c79444c938c76dbcb2f6fc1891">pcpp::IFileDevice</a>, <a class="el" href="classpcpp_1_1_kni_device.html#a76e00dd3d12bd787ac60ac811952e534">pcpp::KniDevice</a>, and <a class="el" href="classpcpp_1_1_dpdk_device.html#a517b8715b4634a164a99d3ded84d4008">pcpp::DpdkDevice</a>.</p>
+<p>Implemented in <a class="el" href="classpcpp_1_1_xdp_device.html#a53e529ccf56de06e57ddee110761014d">pcpp::XdpDevice</a>, <a class="el" href="classpcpp_1_1_win_divert_device.html#ad882aac3e0d7cca8cac88d4800a25c3e">pcpp::WinDivertDevice</a>, <a class="el" href="classpcpp_1_1_raw_socket_device.html#a711e17978700db4d4b002b5cdb5381d5">pcpp::RawSocketDevice</a>, <a class="el" href="classpcpp_1_1_pf_ring_device.html#abebacad70351dd3658fb048c42962541">pcpp::PfRingDevice</a>, <a class="el" href="classpcpp_1_1_pcap_live_device.html#abed28936a88ce223ff9735e8e31910cc">pcpp::PcapLiveDevice</a>, <a class="el" href="classpcpp_1_1_snoop_file_reader_device.html#ad66b46a303ba5e965baa8207c7c9660a">pcpp::SnoopFileReaderDevice</a>, <a class="el" href="classpcpp_1_1_pcap_ng_file_writer_device.html#a72a2a5b0c736526e64a153b057f67f44">pcpp::PcapNgFileWriterDevice</a>, <a class="el" href="classpcpp_1_1_pcap_ng_file_reader_device.html#a3a3be42a1b13eaa718dd222917967efe">pcpp::PcapNgFileReaderDevice</a>, <a class="el" href="classpcpp_1_1_pcap_file_writer_device.html#a68ca7f65be98b5034f007bda9b3e87d6">pcpp::PcapFileWriterDevice</a>, <a class="el" href="classpcpp_1_1_pcap_file_reader_device.html#a75574bf8c412bd436e5bb26b9476ac43">pcpp::PcapFileReaderDevice</a>, <a class="el" href="classpcpp_1_1_kni_device.html#a76e00dd3d12bd787ac60ac811952e534">pcpp::KniDevice</a>, and <a class="el" href="classpcpp_1_1_dpdk_device.html#a517b8715b4634a164a99d3ded84d4008">pcpp::DpdkDevice</a>.</p>
 
 </div>
 </div>
@@ -186,7 +187,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 <p>Open the device </p><dl class="section return"><dt>Returns</dt><dd>True if device was opened successfully, false otherwise </dd></dl>
 
-<p>Implemented in <a class="el" href="classpcpp_1_1_xdp_device.html#a424861eacbf6bf1a0474a9d4a53a6973">pcpp::XdpDevice</a>, <a class="el" href="classpcpp_1_1_raw_socket_device.html#aff1eb10c3d601d602322849c31e98e10">pcpp::RawSocketDevice</a>, <a class="el" href="classpcpp_1_1_pcap_remote_device.html#a100631422d0528e12c0184ddd79f7c06">pcpp::PcapRemoteDevice</a>, <a class="el" href="classpcpp_1_1_pcap_live_device.html#ae40c27c0bfd5b397af813fd37a819e73">pcpp::PcapLiveDevice</a>, <a class="el" href="classpcpp_1_1_pcap_ng_file_writer_device.html#add853a580d13ece58ce06d09bad6a219">pcpp::PcapNgFileWriterDevice</a>, <a class="el" href="classpcpp_1_1_pcap_ng_file_reader_device.html#a00e9c7016cc01b498a322d3b5d85d1bc">pcpp::PcapNgFileReaderDevice</a>, <a class="el" href="classpcpp_1_1_pcap_file_writer_device.html#aca7b8942a0752be446815fab1014be47">pcpp::PcapFileWriterDevice</a>, <a class="el" href="classpcpp_1_1_dpdk_device.html#a27d469aab56898409f8ff43300406880">pcpp::DpdkDevice</a>, <a class="el" href="classpcpp_1_1_pf_ring_device.html#a94f3512928cf7ccdb4f8a28532c6ee51">pcpp::PfRingDevice</a>, <a class="el" href="classpcpp_1_1_snoop_file_reader_device.html#a274b7feb0c015aac3dcc71e370e701bd">pcpp::SnoopFileReaderDevice</a>, <a class="el" href="classpcpp_1_1_pcap_file_reader_device.html#af9e798abe511b1ba8bd14360535753a1">pcpp::PcapFileReaderDevice</a>, and <a class="el" href="classpcpp_1_1_kni_device.html#a2f66da689a3403a98d3d4f735b79cc50">pcpp::KniDevice</a>.</p>
+<p>Implemented in <a class="el" href="classpcpp_1_1_xdp_device.html#a424861eacbf6bf1a0474a9d4a53a6973">pcpp::XdpDevice</a>, <a class="el" href="classpcpp_1_1_win_divert_device.html#ac9e359f9c5f8896518afb8ae8781a004">pcpp::WinDivertDevice</a>, <a class="el" href="classpcpp_1_1_raw_socket_device.html#aff1eb10c3d601d602322849c31e98e10">pcpp::RawSocketDevice</a>, <a class="el" href="classpcpp_1_1_pcap_remote_device.html#a100631422d0528e12c0184ddd79f7c06">pcpp::PcapRemoteDevice</a>, <a class="el" href="classpcpp_1_1_pcap_live_device.html#ae40c27c0bfd5b397af813fd37a819e73">pcpp::PcapLiveDevice</a>, <a class="el" href="classpcpp_1_1_snoop_file_reader_device.html#a58638cdee522cc6e21ab39cbfef32d4f">pcpp::SnoopFileReaderDevice</a>, <a class="el" href="classpcpp_1_1_pcap_ng_file_writer_device.html#add853a580d13ece58ce06d09bad6a219">pcpp::PcapNgFileWriterDevice</a>, <a class="el" href="classpcpp_1_1_pcap_ng_file_reader_device.html#a00e9c7016cc01b498a322d3b5d85d1bc">pcpp::PcapNgFileReaderDevice</a>, <a class="el" href="classpcpp_1_1_pcap_file_writer_device.html#aca7b8942a0752be446815fab1014be47">pcpp::PcapFileWriterDevice</a>, <a class="el" href="classpcpp_1_1_pcap_file_reader_device.html#a4368ebf4335a939802815ab64a163871">pcpp::PcapFileReaderDevice</a>, <a class="el" href="classpcpp_1_1_dpdk_device.html#a27d469aab56898409f8ff43300406880">pcpp::DpdkDevice</a>, <a class="el" href="classpcpp_1_1_pf_ring_device.html#a94f3512928cf7ccdb4f8a28532c6ee51">pcpp::PfRingDevice</a>, and <a class="el" href="classpcpp_1_1_kni_device.html#a2f66da689a3403a98d3d4f735b79cc50">pcpp::KniDevice</a>.</p>
 
 </div>
 </div>
@@ -196,7 +197,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_device.html">IDevice</a></li>
-    <li class="footer">Generated on Mon Dec 1 2025 07:53:25 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jan 22 2026 07:39:08 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

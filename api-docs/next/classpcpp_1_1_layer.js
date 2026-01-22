@@ -4,6 +4,8 @@ var classpcpp_1_1_layer =
     [ "computeCalculateFields", "classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71", null ],
     [ "constructNextLayer", "classpcpp_1_1_layer.html#a73210de1c3e4361189be96b40bf109d9", null ],
     [ "copyData", "classpcpp_1_1_layer.html#a019a07d6f9d8fc7eb233e61826b11964", null ],
+    [ "getAttachedPacket", "classpcpp_1_1_layer.html#a92fb19d907170b212986262074418b09", null ],
+    [ "getAttachedPacket", "classpcpp_1_1_layer.html#ad819846b9268987c854502a1bea26965", null ],
     [ "getData", "classpcpp_1_1_layer.html#a4e3c72d568a8d43c0fd82d781255e98f", null ],
     [ "getDataLen", "classpcpp_1_1_layer.html#a33e4747c33cba0050ac90beeda45aa7b", null ],
     [ "getDataPtr", "classpcpp_1_1_layer.html#a4c5d6f648a6878895a714004f937830d", null ],

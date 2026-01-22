@@ -1,5 +1,6 @@
 var classpcpp_1_1_sip_request_first_line =
 [
+    [ "SipFirstLineData", "structpcpp_1_1_sip_request_first_line_1_1_sip_first_line_data.html", "structpcpp_1_1_sip_request_first_line_1_1_sip_first_line_data" ],
     [ "SipRequestFirstLineException", "classpcpp_1_1_sip_request_first_line_1_1_sip_request_first_line_exception.html", null ],
     [ "getMethod", "classpcpp_1_1_sip_request_first_line.html#ad29db5410a240ccab5a5bae9dc10a54e", null ],
     [ "getSize", "classpcpp_1_1_sip_request_first_line.html#a670a4ddc01ad92bff3d4ec913569942f", null ],

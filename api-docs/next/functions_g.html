@@ -185,6 +185,9 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>getAsn1Root()
 : <a class="el" href="classpcpp_1_1_x509_internal_1_1_x509_certificate.html#a3a1a0e565cad926f7ea80e796d8ab1e6">pcpp::X509Internal::X509Certificate</a>
 </li>
+<li>getAttachedPacket()
+: <a class="el" href="classpcpp_1_1_layer.html#a92fb19d907170b212986262074418b09">pcpp::Layer</a>
+</li>
 <li>getAttribute()
 : <a class="el" href="classpcpp_1_1_radius_layer.html#a07b3660bd98ea613c7c74fcb9eec90ec">pcpp::RadiusLayer</a>
 </li>
@@ -496,7 +499,7 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 : <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#a2da0085385e6b2ccf2a1d9482820636d">pcpp::PcapLiveDeviceList</a>
 </li>
 <li>getDeviceByIP()
-: <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a9a0dc2f3f8f4f542e740ae17e4a9ded2">pcpp::PcapRemoteDeviceList</a>
+: <a class="el" href="classpcpp_1_1_pcap_remote_device_list.html#a5df72b4b619ed30fdf077a637a06f249">pcpp::PcapRemoteDeviceList</a>
 </li>
 <li>getDeviceByIpOrName()
 : <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#ab889049bc7e4a121792ebe14661c70bd">pcpp::PcapLiveDeviceList</a>
@@ -985,6 +988,7 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>getInterfaceIndex()
 : <a class="el" href="classpcpp_1_1_pf_ring_device.html#a9d939956173c6246d02aa5bcbc576c0f">pcpp::PfRingDevice</a>
 , <a class="el" href="classpcpp_1_1_sll2_layer.html#aebb79efdca720c7c9581b64b3dd274f9">pcpp::Sll2Layer</a>
+, <a class="el" href="classpcpp_1_1_win_divert_raw_packet.html#a10325d570588be79cf73c579b9c8c3b7">pcpp::WinDivertRawPacket</a>
 </li>
 <li>getInterfaceVersion()
 : <a class="el" href="classpcpp_1_1_some_ip_layer.html#aaf3636a680a68f38aabff814110f492d">pcpp::SomeIpLayer</a>
@@ -1347,6 +1351,13 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 , <a class="el" href="classpcpp_1_1_i_pv4_network.html#a0b73fa19a88c9443b2a6458acd8a89a3">pcpp::IPv4Network</a>
 , <a class="el" href="classpcpp_1_1_i_pv6_network.html#a1daf9f832c277080690aa48eb84312ed">pcpp::IPv6Network</a>
 </li>
+<li>getNetworkInterface()
+: <a class="el" href="classpcpp_1_1_win_divert_device.html#a10cbc99b12faa3dd0d95aae8b88c051f">pcpp::WinDivertDevice</a>
+</li>
+<li>getNetworkInterfaces()
+: <a class="el" href="classpcpp_1_1internal_1_1_i_win_divert_driver.html#a87997d4333946f1f97c4d41e6c3870e2">pcpp::internal::IWinDivertDriver</a>
+, <a class="el" href="classpcpp_1_1_win_divert_device.html#a22113971638a9e4f500322946c93cb28">pcpp::WinDivertDevice</a>
+</li>
 <li>getNetworkLayerReachabilityInfo()
 : <a class="el" href="classpcpp_1_1_bgp_update_message_layer.html#ae92fce124d2926c54edd3ce00a3d95cb">pcpp::BgpUpdateMessageLayer</a>
 </li>
@@ -1414,9 +1425,9 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 , <a class="el" href="classpcpp_1_1_dhcp_v6_layer.html#a147f1493bf7bbb199bb4a3efd25a4437">pcpp::DhcpV6Layer</a>
 </li>
 <li>getNextPacket()
-: <a class="el" href="classpcpp_1_1_pcap_file_reader_device.html#afc4c2142b7787e6c191b0d2ab6822c07">pcpp::PcapFileReaderDevice</a>
+: <a class="el" href="classpcpp_1_1_pcap_file_reader_device.html#a22223701ade20aa4cc583dee67368287">pcpp::PcapFileReaderDevice</a>
 , <a class="el" href="classpcpp_1_1_pcap_ng_file_reader_device.html#a9bf1e61be8334e31a329451ad2397b27">pcpp::PcapNgFileReaderDevice</a>
-, <a class="el" href="classpcpp_1_1_snoop_file_reader_device.html#afc65d6695ef76737dc61a3e11b8272c7">pcpp::SnoopFileReaderDevice</a>
+, <a class="el" href="classpcpp_1_1_snoop_file_reader_device.html#a1c8eddbaca037164fb11e6aaf94a2565">pcpp::SnoopFileReaderDevice</a>
 </li>
 <li>getNextPackets()
 : <a class="el" href="classpcpp_1_1_i_file_reader_device.html#a279a1c148671df93bd85afd43af1f958">pcpp::IFileReaderDevice</a>
@@ -1523,7 +1534,7 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>getOption()
 : <a class="el" href="classpcpp_1_1_i_pv4_layer.html#a4fe5a0b8e3de349a6a9bbc941f0d9dd1">pcpp::IPv4Layer</a>
 , <a class="el" href="classpcpp_1_1_i_pv6_t_l_v_option_header.html#a68a90ddf590ed6b0a3c7761fbe3b074c">pcpp::IPv6TLVOptionHeader</a>
-, <a class="el" href="classpcpp_1_1_telnet_layer.html#ad5f93e3caf8fa7e81ec5c382461da954">pcpp::TelnetLayer</a>
+, <a class="el" href="classpcpp_1_1_telnet_layer.html#a0c5b6908a66039045bda047b575bf416">pcpp::TelnetLayer</a>
 </li>
 <li>getOptionalParameters()
 : <a class="el" href="classpcpp_1_1_bgp_open_message_layer.html#a127586f49bc0041230683ca129aeb9e5">pcpp::BgpOpenMessageLayer</a>
@@ -1624,6 +1635,9 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>getOwnerIPv4Address()
 : <a class="el" href="classpcpp_1_1_sdp_layer.html#a4711a2970f57ab1661002afd132b3d85">pcpp::SdpLayer</a>
 </li>
+<li>getPacketQueueParams()
+: <a class="el" href="classpcpp_1_1_win_divert_device.html#a7bb699a2919134b03eedc836cede05eb">pcpp::WinDivertDevice</a>
+</li>
 <li>getPacketTimeStamp()
 : <a class="el" href="classpcpp_1_1_raw_packet.html#a6ccee8471600cd6ed14c184b3252b469">pcpp::RawPacket</a>
 </li>
@@ -1632,6 +1646,9 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 </li>
 <li>getPaddingLength()
 : <a class="el" href="classpcpp_1_1_s_s_h_handshake_message.html#a1baaaa3f4cb9b89ef8ed65800077a19c">pcpp::SSHHandshakeMessage</a>
+</li>
+<li>getParam()
+: <a class="el" href="classpcpp_1_1internal_1_1_i_win_divert_handle.html#a8a143d483e2a3cb1a0a20143b0ccdf33">pcpp::internal::IWinDivertHandle</a>
 </li>
 <li>getParameter()
 : <a class="el" href="classpcpp_1_1_s7_comm_layer.html#a2ad756a8d53e8a496a4bff90009a04a3">pcpp::S7CommLayer</a>
@@ -1696,7 +1713,7 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 : <a class="el" href="classpcpp_1_1_i_pcap_device.html#ac9e91fa6b66ced9a92d09068712ccffc">pcpp::IPcapDevice</a>
 </li>
 <li>getPcapLiveDeviceByIp()
-: <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#a3581be31dbd64ae71232260a3ba55509">pcpp::PcapLiveDeviceList</a>
+: <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#a1921e94307197c9b8f613bb35fc1a0c5">pcpp::PcapLiveDeviceList</a>
 </li>
 <li>getPcapLiveDeviceByIpOrName()
 : <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#aadf609084e161df94c14109d42b94544">pcpp::PcapLiveDeviceList</a>
@@ -2165,6 +2182,9 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>getSllHeader()
 : <a class="el" href="classpcpp_1_1_sll_layer.html#a7fbe447652dd001d7fa9fbccdae1e0c6">pcpp::SllLayer</a>
 </li>
+<li>getSnapshotLength()
+: <a class="el" href="classpcpp_1_1_pcap_file_reader_device.html#aff8a0d88a3f10f5eddb79efc3c47e998">pcpp::PcapFileReaderDevice</a>
+</li>
 <li>getSomeIpHeader()
 : <a class="el" href="classpcpp_1_1_some_ip_layer.html#a8d8dcea065690cb5ca6922d2ede01b3f">pcpp::SomeIpLayer</a>
 </li>
@@ -2358,7 +2378,7 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 : <a class="el" href="classpcpp_1_1_dns_over_tcp_layer.html#ac3987d653dccf94d8be60163ca8bd24a">pcpp::DnsOverTcpLayer</a>
 </li>
 <li>getTcpOption()
-: <a class="el" href="classpcpp_1_1_tcp_layer.html#a1cb24654caae9461d80d77a326f460dd">pcpp::TcpLayer</a>
+: <a class="el" href="classpcpp_1_1_tcp_layer.html#a9502c7f75395c19a44df4457ebafa537">pcpp::TcpLayer</a>
 </li>
 <li>getTcpOptionCount()
 : <a class="el" href="classpcpp_1_1_tcp_layer.html#ade5a826d63447a05e8b1b89586ec8323">pcpp::TcpLayer</a>
@@ -2591,6 +2611,7 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 , <a class="el" href="classpcpp_1_1_stp_layer.html#a318b00c2929306ff61cb3095e2f32527">pcpp::StpLayer</a>
 , <a class="el" href="classpcpp_1_1_tpkt_layer.html#a17bb46b9af09316fd6653fdc290e9ad0">pcpp::TpktLayer</a>
 , <a class="el" href="classpcpp_1_1_vrrp_layer.html#a8bbc1311a306595fb9dd47375e21a931">pcpp::VrrpLayer</a>
+, <a class="el" href="classpcpp_1_1_win_divert_device.html#a9b2ecd2e9d57e211e7f304b998bd78c8">pcpp::WinDivertDevice</a>
 , <a class="el" href="classpcpp_1_1_x509_certificate.html#acb6d729f3c1fdeba3e800edf629f89d3">pcpp::X509Certificate</a>
 , <a class="el" href="classpcpp_1_1_x509_internal_1_1_x509_t_b_s_certificate.html#aa8ce7096747f7016ccffb8c0bf2e6b3c">pcpp::X509Internal::X509TBSCertificate</a>
 , <a class="el" href="classpcpp_1_1_x509_internal_1_1_x509_version_record.html#a92b01454091f8f3c2ea5c3a0427b89f3">pcpp::X509Internal::X509VersionRecord</a>
@@ -2629,6 +2650,9 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>getWeight()
 : <a class="el" href="classpcpp_1_1_some_ip_sd_load_balancing_option.html#a711848578353cd26c868cd475ccd9d29">pcpp::SomeIpSdLoadBalancingOption</a>
 </li>
+<li>getWinDivertTimestamp()
+: <a class="el" href="classpcpp_1_1_win_divert_raw_packet.html#a4983f63ebf1c6e01e09f741c91eff3bc">pcpp::WinDivertRawPacket</a>
+</li>
 <li>getWireGuardMessageType()
 : <a class="el" href="classpcpp_1_1_wire_guard_cookie_reply_layer.html#a21d623cc7f01fdf563b9cd9c0635f6c3">pcpp::WireGuardCookieReplyLayer</a>
 , <a class="el" href="classpcpp_1_1_wire_guard_handshake_initiation_layer.html#a161e07e42dba0d763073abc6c55425ca">pcpp::WireGuardHandshakeInitiationLayer</a>
@@ -2658,7 +2682,7 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 : <a class="el" href="structpcpp_1_1_gratuitous_arp_request.html#a0432be73ead961951b6620481467a72a">pcpp::GratuitousArpRequest</a>
 </li>
 <li>GREv0Layer()
-: <a class="el" href="classpcpp_1_1_g_r_ev0_layer.html#a8cab834d500d69bd53ea9f980080aa66">pcpp::GREv0Layer</a>
+: <a class="el" href="classpcpp_1_1_g_r_ev0_layer.html#a4e6349fa245ab6fec55236aeeff2e79e">pcpp::GREv0Layer</a>
 </li>
 <li>GREv1Layer()
 : <a class="el" href="classpcpp_1_1_g_r_ev1_layer.html#affdd47adeca80911b621a14421853e8e">pcpp::GREv1Layer</a>
@@ -2694,7 +2718,7 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Dec 1 2025 07:53:25 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jan 22 2026 07:39:08 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

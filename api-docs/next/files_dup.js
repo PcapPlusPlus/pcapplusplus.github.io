@@ -333,6 +333,22 @@ var files_dup =
       [ "WakeOnLanLayer", "classpcpp_1_1_wake_on_lan_layer.html", "classpcpp_1_1_wake_on_lan_layer" ],
       [ "wol_header", "structpcpp_1_1_wake_on_lan_layer_1_1wol__header.html", "structpcpp_1_1_wake_on_lan_layer_1_1wol__header" ]
     ] ],
+    [ "WinDivertDevice.h", "_win_divert_device_8h.html", [
+      [ "IOverlappedWrapper", "classpcpp_1_1internal_1_1_i_overlapped_wrapper.html", "classpcpp_1_1internal_1_1_i_overlapped_wrapper" ],
+      [ "WaitResult", "structpcpp_1_1internal_1_1_i_overlapped_wrapper_1_1_wait_result.html", "structpcpp_1_1internal_1_1_i_overlapped_wrapper_1_1_wait_result" ],
+      [ "OverlappedResult", "structpcpp_1_1internal_1_1_i_overlapped_wrapper_1_1_overlapped_result.html", "structpcpp_1_1internal_1_1_i_overlapped_wrapper_1_1_overlapped_result" ],
+      [ "WinDivertAddress", "structpcpp_1_1internal_1_1_win_divert_address.html", "structpcpp_1_1internal_1_1_win_divert_address" ],
+      [ "IWinDivertHandle", "classpcpp_1_1internal_1_1_i_win_divert_handle.html", "classpcpp_1_1internal_1_1_i_win_divert_handle" ],
+      [ "IWinDivertDriver", "classpcpp_1_1internal_1_1_i_win_divert_driver.html", "classpcpp_1_1internal_1_1_i_win_divert_driver" ],
+      [ "NetworkInterface", "structpcpp_1_1internal_1_1_i_win_divert_driver_1_1_network_interface.html", "structpcpp_1_1internal_1_1_i_win_divert_driver_1_1_network_interface" ],
+      [ "WinDivertRawPacket", "classpcpp_1_1_win_divert_raw_packet.html", "classpcpp_1_1_win_divert_raw_packet" ],
+      [ "WinDivertDevice", "classpcpp_1_1_win_divert_device.html", "classpcpp_1_1_win_divert_device" ],
+      [ "ReceiveResult", "structpcpp_1_1_win_divert_device_1_1_receive_result.html", "structpcpp_1_1_win_divert_device_1_1_receive_result" ],
+      [ "SendResult", "structpcpp_1_1_win_divert_device_1_1_send_result.html", "structpcpp_1_1_win_divert_device_1_1_send_result" ],
+      [ "WinDivertVersion", "structpcpp_1_1_win_divert_device_1_1_win_divert_version.html", "structpcpp_1_1_win_divert_device_1_1_win_divert_version" ],
+      [ "NetworkInterface", "structpcpp_1_1_win_divert_device_1_1_network_interface.html", "structpcpp_1_1_win_divert_device_1_1_network_interface" ],
+      [ "WinDivertReceiveCallbackContext", "structpcpp_1_1_win_divert_device_1_1_win_divert_receive_callback_context.html", "structpcpp_1_1_win_divert_device_1_1_win_divert_receive_callback_context" ]
+    ] ],
     [ "WinPcapLiveDevice.h", "_win_pcap_live_device_8h.html", [
       [ "WinPcapLiveDevice", "classpcpp_1_1_win_pcap_live_device.html", "classpcpp_1_1_win_pcap_live_device" ]
     ] ],
