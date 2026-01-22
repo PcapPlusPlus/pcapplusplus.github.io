@@ -366,12 +366,26 @@ html[data-theme='light'] .DisplayNetwork li:nth-child(5) {
 .DisplayNetwork li:nth-child(6) {
   padding-left: 3.3rem;
   padding-right: 1.25rem;
-  background: url('/static/img/packet-engines/pfring_mono_white.png') 3px 0px
+  background: url('/static/img/packet-engines/windivert_mono_white.png') 3px 0px
     no-repeat var(--lp-bg-color-dark1) !important;
   background-size: 2.5rem !important;
 }
 
 html[data-theme='light'] .DisplayNetwork li:nth-child(6) {
+  background: url('/static/img/packet-engines/windivert_mono_grey.png') 3px 0px
+    no-repeat var(--lp-box-color-light) !important;
+  background-size: 2.5rem !important;
+}
+
+.DisplayNetwork li:nth-child(7) {
+  padding-left: 3.3rem;
+  padding-right: 1.25rem;
+  background: url('/static/img/packet-engines/pfring_mono_white.png') 3px 0px
+    no-repeat var(--lp-bg-color-dark1) !important;
+  background-size: 2.5rem !important;
+}
+
+html[data-theme='light'] .DisplayNetwork li:nth-child(7) {
   background: url('/static/img/packet-engines/pfring_mono_grey.png') 3px 0px
     no-repeat var(--lp-box-color-light) !important;
   background-size: 2.5rem !important;

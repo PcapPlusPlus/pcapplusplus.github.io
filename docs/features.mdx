@@ -14,7 +14,7 @@ import APIDocsLink from '@site/src/components/APIDocsLink';
 
 Packet capture (A.K.A packet sniffing or network tapping) is the process of intercepting and logging traffic that passes over a digital network or part of a network (taken from [Wikipedia](https://en.wikipedia.org/wiki/Packet_analyzer)). It is one of the most important and popular features of PcapPlusPlus and it is what PcapPlusPlus is basically all about.
 
-There are multiple packet capture engines out there, the most popular are [libpcap](https://www.tcpdump.org/), [WinPcap](https://www.winpcap.org/) (which is libpcap for Windows), [Npcap](https://nmap.org/npcap/) (WinPcap's successor), [Intel DPDK](https://www.dpdk.org/), [eBPF AF_XDP](https://www.kernel.org/doc/html/next/networking/af_xdp.html), [ntop's PF_RING](https://www.ntop.org/products/packet-capture/pf_ring/) and [raw sockets](https://en.wikipedia.org/wiki/Network_socket#Raw_socket). Each engine has different strengths, purposes and features, works on different platforms and obviously has different APIs and setup process. Most of them are written in C (to achieve the best performance) and don't expose a C++ interface.
+There are multiple packet capture engines out there, the most popular are [libpcap](https://www.tcpdump.org/), [WinPcap](https://www.winpcap.org/) (which is libpcap for Windows), [Npcap](https://nmap.org/npcap/) (WinPcap's successor), [WinDivert](https://reqrypt.org/windivert.html), [Intel DPDK](https://www.dpdk.org/), [eBPF AF_XDP](https://www.kernel.org/doc/html/next/networking/af_xdp.html), [ntop's PF_RING](https://www.ntop.org/products/packet-capture/pf_ring/) and [raw sockets](https://en.wikipedia.org/wiki/Network_socket#Raw_socket). Each engine has different strengths, purposes and features, works on different platforms and obviously has different APIs and setup process. Most of them are written in C (to achieve the best performance) and don't expose a C++ interface.
 
 PcapPlusPlus aims to create a consolidated and easy-to-use C++ API for all of these engines which simplifies their complexity and provides a common infrastructure for capturing, processing, analyzing and forging of network packets.
 
@@ -22,6 +22,7 @@ Here is a list of of the packet capture engines currently supported:
 
 - [libpcap](https://www.tcpdump.org/) live capture (on Linux, MacOS, Android, FreeBSD)
 - [WinPcap](https://www.winpcap.org/)/[Npcap](https://nmap.org/npcap/) live capture (on Windows)
+- [WinDivert](https://reqrypt.org/windivert.html) live capture (on Windows)
 - [Intel DPDK](https://www.dpdk.org/) (on Linux)
 - [eBPF AF_XDP sockets](https://www.kernel.org/doc/html/next/networking/af_xdp.html) (on Linux)
 - [ntop's Vanilla PF_RING](https://www.ntop.org/products/packet-capture/pf_ring/) (on Linux)
@@ -226,6 +227,23 @@ In order to compile PcapPlusPlus with PF_RING you need to:
 ```shell
 sudo insmod <PF_RING_LOCATION>/kernel/pf_ring.ko
 ```
+
+## WinDivert support
+
+Windows Packet Divert (WinDivert) is a user-mode packet capture-and-divert package for Windows. It allows user-mode applications to capture/modify/drop network packets sent to/from the Windows network stack (taken from [WinDivert documentation](https://reqrypt.org/windivert.html)).
+
+PcapPlusPlus provides support for various features when using WinDivert, including:
+
+- Opening a WinDivert handle with a filter
+- Capturing inbound/outbound IPv4/IPv6 packets
+- Sending batches of raw packets
+- Inspecting and configuring queue parameters (length, time, size)
+
+In order to use PcapPlusPlus with WinDivert support you need to:
+
+- Download WinDivert from [WinDivert's GitHub Repo](https://github.com/basil00/WinDivert/releases)
+- Once WinDivert is downloaded and extracted, you need to run PcapPlusPlus build and use the `-DPCAPPP_USE_WINDIVERT=ON` option
+- Make sure the WinDivert DLLs are accessible to your application (e.g. in the same directory as your executable or in a directory included in your PATH environment variable)
 
 ## Packet reassembly
 
