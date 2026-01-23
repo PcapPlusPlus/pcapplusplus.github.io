@@ -23,7 +23,7 @@ function CaptureAndSendNetworkTraffic(): JSX.Element {
                   <a href="https://www.tcpdump.org/">libpcap</a>,{' '}
                   <a href="https://www.winpcap.org/">WinPcap</a>,{' '}
                   <a href="https://nmap.org/npcap/">NPcap</a>,{' '}
-                  <a href="https://www.winpcap.org/">WinDivert</a>,{' '}
+                  <a href="https://reqrypt.org/windivert.html">WinDivert</a>,{' '}
                   <a href="https://www.dpdk.org/">DPDK</a>,{' '}
                   <a href="https://ebpf.io/">eBPF AF_XDP</a> and{' '}
                   <a href="https://www.ntop.org/products/packet-capture/pf_ring/">
