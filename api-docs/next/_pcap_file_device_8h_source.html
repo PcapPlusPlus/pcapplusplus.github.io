@@ -433,10 +433,10 @@ $(document).ready(function(){initNavTree('_pcap_file_device_8h_source.html','');
 <div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;<span class="preprocessor">#pragma pack()</span></div>
 <div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160; </div>
 <div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;        <a class="code" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> m_PcapLinkLayerType;</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;        std::ifstream m_snoopFile;</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;        std::ifstream m_SnoopFile;</div>
 <div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160; </div>
 <div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;        <span class="keywordtype">bool</span> readNextPacket(timespec&amp; packetTimestamp, uint8_t* packetData, uint32_t packetDataLen,</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;                            uint32_t&amp; capturedLength);</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;                            uint32_t&amp; capturedLength, uint32_t&amp; frameLength);</div>
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160; </div>
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00583"></a><span class="lineno"><a class="line" href="classpcpp_1_1_snoop_file_reader_device.html#ab0f91943113031c77eb76ef137c33919">  583</a></span>&#160;        <a class="code" href="classpcpp_1_1_snoop_file_reader_device.html#ab0f91943113031c77eb76ef137c33919">SnoopFileReaderDevice</a>(<span class="keyword">const</span> std::string&amp; fileName)</div>
@@ -461,7 +461,7 @@ $(document).ready(function(){initNavTree('_pcap_file_device_8h_source.html','');
 <div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160; </div>
 <div class="line"><a name="l00613"></a><span class="lineno"><a class="line" href="classpcpp_1_1_snoop_file_reader_device.html#ad66b46a303ba5e965baa8207c7c9660a">  613</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpcpp_1_1_snoop_file_reader_device.html#ad66b46a303ba5e965baa8207c7c9660a">isOpened</a>()<span class="keyword"> const override</span></div>
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;            <span class="keywordflow">return</span> m_snoopFile.is_open();</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;            <span class="keywordflow">return</span> m_SnoopFile.is_open();</div>
 <div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        }</div>
 <div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160; </div>
 <div class="line"><a name="l00619"></a><span class="lineno"><a class="line" href="classpcpp_1_1_snoop_file_reader_device.html#a1029bae8dd2798153a1d3c28b2161309">  619</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_snoop_file_reader_device.html#a1029bae8dd2798153a1d3c28b2161309">close</a>() <span class="keyword">override</span>;</div>
@@ -559,7 +559,7 @@ $(document).ready(function(){initNavTree('_pcap_file_device_8h_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1d5e652a4f74c687a1a254f16a4c3d59.html">Pcap++</a></li><li class="navelem"><a class="el" href="dir_24675e680cc699690f9ab00f0f74b528.html">header</a></li><li class="navelem"><a class="el" href="_pcap_file_device_8h.html">PcapFileDevice.h</a></li>
-    <li class="footer">Generated on Thu Jan 22 2026 07:39:07 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Jan 25 2026 09:18:48 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

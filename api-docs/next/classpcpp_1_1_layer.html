@@ -204,9 +204,23 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ad819846b9268987c854502a1bea26965"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_packet.html">Packet</a> const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#ad819846b9268987c854502a1bea26965">getAttachedPacket</a> () const</td></tr>
 <tr class="memdesc:ad819846b9268987c854502a1bea26965"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the <a class="el" href="classpcpp_1_1_packet.html">Packet</a> this layer is attached to (if any).  <a href="classpcpp_1_1_layer.html#ad819846b9268987c854502a1bea26965">More...</a><br /></td></tr>
 <tr class="separator:ad819846b9268987c854502a1bea26965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68a8be8c14fe832917a84bde6b1158cd"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:a68a8be8c14fe832917a84bde6b1158cd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_layer.html">Layer</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a68a8be8c14fe832917a84bde6b1158cd">constructNextLayer</a> (uint8_t *data, size_t dataLen, Args &amp;&amp;... extraArgs)</td></tr>
+<tr class="memdesc:a68a8be8c14fe832917a84bde6b1158cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the next layer in the protocol stack. No validation is performed on the data.  <a href="classpcpp_1_1_layer.html#a68a8be8c14fe832917a84bde6b1158cd">More...</a><br /></td></tr>
+<tr class="separator:a68a8be8c14fe832917a84bde6b1158cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73210de1c3e4361189be96b40bf109d9"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
 <tr class="memitem:a73210de1c3e4361189be96b40bf109d9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_layer.html">Layer</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a73210de1c3e4361189be96b40bf109d9">constructNextLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet, Args &amp;&amp;... extraArgs)</td></tr>
 <tr class="separator:a73210de1c3e4361189be96b40bf109d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad462a78cb5312d473bdf851355ea6baa"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:ad462a78cb5312d473bdf851355ea6baa"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_layer.html">Layer</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#ad462a78cb5312d473bdf851355ea6baa">tryConstructNextLayer</a> (uint8_t *data, size_t dataLen, Args &amp;&amp;... extraArgs)</td></tr>
+<tr class="separator:ad462a78cb5312d473bdf851355ea6baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6dea5accfe24c976a44ffccc953deed"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:af6dea5accfe24c976a44ffccc953deed"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_layer.html">Layer</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#af6dea5accfe24c976a44ffccc953deed">tryConstructNextLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet, Args &amp;&amp;... extraArgs)</td></tr>
+<tr class="separator:af6dea5accfe24c976a44ffccc953deed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7935625264128cc2842db8260fb2c626"><td class="memTemplParams" colspan="2">template&lt;typename T , typename TFallback , typename... Args&gt; </td></tr>
+<tr class="memitem:a7935625264128cc2842db8260fb2c626"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_layer.html">Layer</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a7935625264128cc2842db8260fb2c626">tryConstructNextLayerWithFallback</a> (uint8_t *data, size_t dataLen, Args &amp;&amp;... extraArgs)</td></tr>
+<tr class="memdesc:a7935625264128cc2842db8260fb2c626"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to construct the next layer in the protocol stack with a fallback option.  <a href="classpcpp_1_1_layer.html#a7935625264128cc2842db8260fb2c626">More...</a><br /></td></tr>
+<tr class="separator:a7935625264128cc2842db8260fb2c626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac180476870fbef9a104d775d81c70c74"><td class="memTemplParams" colspan="2">template&lt;typename T , typename TFallback , typename... Args&gt; </td></tr>
 <tr class="memitem:ac180476870fbef9a104d775d81c70c74"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_layer.html">Layer</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#ac180476870fbef9a104d775d81c70c74">tryConstructNextLayerWithFallback</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet, Args &amp;&amp;... extraArgs)</td></tr>
 <tr class="separator:ac180476870fbef9a104d775d81c70c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -316,8 +330,71 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a68a8be8c14fe832917a84bde6b1158cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68a8be8c14fe832917a84bde6b1158cd">&#9670;&nbsp;</a></span>constructNextLayer() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classpcpp_1_1_layer.html">Layer</a>* pcpp::Layer::constructNextLayer </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>extraArgs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct the next layer in the protocol stack. No validation is performed on the data. </p>
+<p>This overload infers the <a class="el" href="classpcpp_1_1_packet.html">Packet</a> from the current layer.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The type of the layer to construct </td></tr>
+    <tr><td class="paramname">Args</td><td>The types of the arguments to pass to the layer constructor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The data to construct the layer from </td></tr>
+    <tr><td class="paramname">dataLen</td><td>The length of the data </td></tr>
+    <tr><td class="paramname">extraArgs</td><td>Extra arguments to be forwarded to the layer constructor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The constructed layer </dd></dl>
+
+</div>
+</div>
 <a id="a73210de1c3e4361189be96b40bf109d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73210de1c3e4361189be96b40bf109d9">&#9670;&nbsp;</a></span>constructNextLayer()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a73210de1c3e4361189be96b40bf109d9">&#9670;&nbsp;</a></span>constructNextLayer() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -819,8 +896,205 @@ template&lt;typename T , typename... Args&gt; </div>
 
 </div>
 </div>
+<a id="ad462a78cb5312d473bdf851355ea6baa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad462a78cb5312d473bdf851355ea6baa">&#9670;&nbsp;</a></span>tryConstructNextLayer() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classpcpp_1_1_layer.html">Layer</a>* pcpp::Layer::tryConstructNextLayer </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>extraArgs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Try to construct the next layer in the protocol stack.</p>
+<p>This overload infers the <a class="el" href="classpcpp_1_1_packet.html">Packet</a> from the current layer.</p>
+<p>The method checks if the data is valid for the layer type T before constructing it by calling T::isDataValid(data, dataLen). If the data is invalid, no layer is constructed and a nullptr is returned.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The type of the layer to construct </td></tr>
+    <tr><td class="paramname">Args</td><td>The types of the extra arguments to pass to the layer constructor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The data to construct the layer from </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>The length of the data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">extraArgs</td><td>Extra arguments to be forwarded to the layer constructor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The constructed layer or nullptr if the data is invalid </dd></dl>
+
+</div>
+</div>
+<a id="af6dea5accfe24c976a44ffccc953deed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6dea5accfe24c976a44ffccc953deed">&#9670;&nbsp;</a></span>tryConstructNextLayer() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classpcpp_1_1_layer.html">Layer</a>* pcpp::Layer::tryConstructNextLayer </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_packet.html">Packet</a> *&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>extraArgs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Try to construct the next layer in the protocol stack.</p>
+<p>The method checks if the data is valid for the layer type T before constructing it by calling T::isDataValid(data, dataLen). If the data is invalid, no layer is constructed and a nullptr is returned.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The type of the layer to construct </td></tr>
+    <tr><td class="paramname">Args</td><td>The types of the extra arguments to pass to the layer constructor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The data to construct the layer from </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>The length of the data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>The packet the layer belongs to </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">extraArgs</td><td>Extra arguments to be forwarded to the layer constructor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The constructed layer or nullptr if the data is invalid </dd></dl>
+
+</div>
+</div>
+<a id="a7935625264128cc2842db8260fb2c626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7935625264128cc2842db8260fb2c626">&#9670;&nbsp;</a></span>tryConstructNextLayerWithFallback() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename TFallback , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classpcpp_1_1_layer.html">Layer</a>* pcpp::Layer::tryConstructNextLayerWithFallback </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>extraArgs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Try to construct the next layer in the protocol stack with a fallback option. </p>
+<p>This overload infers the <a class="el" href="classpcpp_1_1_packet.html">Packet</a> from the current layer.</p>
+<p>The method checks if the data is valid for the layer type T before constructing it by calling T::isDataValid(data, dataLen). If the data is invalid, it constructs the layer of type TFallback.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The type of the layer to construct </td></tr>
+    <tr><td class="paramname">TFallback</td><td>The fallback layer type to construct if T fails </td></tr>
+    <tr><td class="paramname">Args</td><td>The types of the extra arguments to pass to the layer constructor of T </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The data to construct the layer from </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>The length of the data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">extraArgs</td><td>Extra arguments to be forwarded to the layer constructor of T </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The constructed layer of type T or TFallback </dd></dl>
+
+</div>
+</div>
 <a id="ac180476870fbef9a104d775d81c70c74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac180476870fbef9a104d775d81c70c74">&#9670;&nbsp;</a></span>tryConstructNextLayerWithFallback()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac180476870fbef9a104d775d81c70c74">&#9670;&nbsp;</a></span>tryConstructNextLayerWithFallback() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -895,7 +1169,7 @@ template&lt;typename T , typename TFallback , typename... Args&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_layer.html">Layer</a></li>
-    <li class="footer">Generated on Thu Jan 22 2026 07:39:08 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Jan 25 2026 09:18:49 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
