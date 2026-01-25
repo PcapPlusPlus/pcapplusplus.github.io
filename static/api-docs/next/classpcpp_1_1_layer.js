@@ -2,6 +2,7 @@ var classpcpp_1_1_layer =
 [
     [ "~Layer", "classpcpp_1_1_layer.html#adc5fdf997375b58400a55fdcc3bdff87", null ],
     [ "computeCalculateFields", "classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71", null ],
+    [ "constructNextLayer", "classpcpp_1_1_layer.html#a68a8be8c14fe832917a84bde6b1158cd", null ],
     [ "constructNextLayer", "classpcpp_1_1_layer.html#a73210de1c3e4361189be96b40bf109d9", null ],
     [ "copyData", "classpcpp_1_1_layer.html#a019a07d6f9d8fc7eb233e61826b11964", null ],
     [ "getAttachedPacket", "classpcpp_1_1_layer.html#a92fb19d907170b212986262074418b09", null ],
@@ -20,5 +21,8 @@ var classpcpp_1_1_layer =
     [ "isMemberOfProtocolFamily", "classpcpp_1_1_layer.html#a73339cf991e01301a34ec602ba9ec7d9", null ],
     [ "parseNextLayer", "classpcpp_1_1_layer.html#a6a8410015168a7fa42a7d71ac5b86673", null ],
     [ "toString", "classpcpp_1_1_layer.html#a1d07ea14d02b4a5cb383f89b3f40ed63", null ],
+    [ "tryConstructNextLayer", "classpcpp_1_1_layer.html#ad462a78cb5312d473bdf851355ea6baa", null ],
+    [ "tryConstructNextLayer", "classpcpp_1_1_layer.html#af6dea5accfe24c976a44ffccc953deed", null ],
+    [ "tryConstructNextLayerWithFallback", "classpcpp_1_1_layer.html#a7935625264128cc2842db8260fb2c626", null ],
     [ "tryConstructNextLayerWithFallback", "classpcpp_1_1_layer.html#ac180476870fbef9a104d775d81c70c74", null ]
 ];
