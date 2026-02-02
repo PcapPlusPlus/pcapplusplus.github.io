@@ -365,11 +365,9 @@ var hierarchy =
             [ "pcpp::PcapNgFileWriterDevice", "classpcpp_1_1_pcap_ng_file_writer_device.html", null ]
           ] ]
         ] ],
-        [ "pcpp::IPcapDevice", "classpcpp_1_1_i_pcap_device.html", [
-          [ "pcpp::PcapLiveDevice", "classpcpp_1_1_pcap_live_device.html", [
-            [ "pcpp::PcapRemoteDevice", "classpcpp_1_1_pcap_remote_device.html", null ],
-            [ "pcpp::WinPcapLiveDevice", "classpcpp_1_1_win_pcap_live_device.html", null ]
-          ] ]
+        [ "pcpp::PcapLiveDevice", "classpcpp_1_1_pcap_live_device.html", [
+          [ "pcpp::PcapRemoteDevice", "classpcpp_1_1_pcap_remote_device.html", null ],
+          [ "pcpp::WinPcapLiveDevice", "classpcpp_1_1_win_pcap_live_device.html", null ]
         ] ],
         [ "pcpp::PfRingDevice", "classpcpp_1_1_pf_ring_device.html", null ]
       ] ],
@@ -398,7 +396,7 @@ var hierarchy =
     [ "pcpp::IPAddress", "classpcpp_1_1_i_p_address.html", null ],
     [ "pcpp::IPcapStatisticsProvider", "classpcpp_1_1_i_pcap_statistics_provider.html", [
       [ "pcpp::IFileDevice", "classpcpp_1_1_i_file_device.html", null ],
-      [ "pcpp::IPcapDevice", "classpcpp_1_1_i_pcap_device.html", null ]
+      [ "pcpp::PcapLiveDevice", "classpcpp_1_1_pcap_live_device.html", null ]
     ] ],
     [ "pcpp::iphdr", "structpcpp_1_1iphdr.html", null ],
     [ "pcpp::IPLayer", "classpcpp_1_1_i_p_layer.html", [
@@ -466,7 +464,7 @@ var hierarchy =
     [ "pcpp::BgpUpdateMessageLayer::path_attribute", "structpcpp_1_1_bgp_update_message_layer_1_1path__attribute.html", null ],
     [ "pcpp::internal::PcapHandle", "classpcpp_1_1internal_1_1_pcap_handle.html", null ],
     [ "pcpp::PcapRemoteAuthentication", "structpcpp_1_1_pcap_remote_authentication.html", null ],
-    [ "pcpp::internal::PcapStats", "structpcpp_1_1internal_1_1_pcap_stats.html", null ],
+    [ "pcpp::PcapStats", "structpcpp_1_1_pcap_stats.html", null ],
     [ "pcpp::PemCodec", "classpcpp_1_1_pem_codec.html", null ],
     [ "pcpp::PfRingDevice::PfRingStats", "structpcpp_1_1_pf_ring_device_1_1_pf_ring_stats.html", null ],
     [ "pcpp::PointerVector< T, Deleter >", "classpcpp_1_1_pointer_vector.html", null ],

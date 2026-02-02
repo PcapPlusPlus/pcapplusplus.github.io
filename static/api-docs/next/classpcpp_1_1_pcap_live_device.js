@@ -45,7 +45,7 @@ var classpcpp_1_1_pcap_live_device =
     [ "getMacAddress", "classpcpp_1_1_pcap_live_device.html#a4bc13ec8552ffbf5ae2fe281c4d0905b", null ],
     [ "getMtu", "classpcpp_1_1_pcap_live_device.html#a2eeadb33b0e5097213752a76d1e71ba7", null ],
     [ "getName", "classpcpp_1_1_pcap_live_device.html#a8b4bf1bc2bed7dfcbadd30ace0bc84bf", null ],
-    [ "getStatistics", "classpcpp_1_1_pcap_live_device.html#a3a5928913d4fb57ffc5b3afe08a10b0f", null ],
+    [ "getStatistics", "classpcpp_1_1_pcap_live_device.html#a6eb05ce7db577d3f2c4398a6cf6ce0af", null ],
     [ "isOpened", "classpcpp_1_1_pcap_live_device.html#abed28936a88ce223ff9735e8e31910cc", null ],
     [ "isPayloadWithinMtu", "classpcpp_1_1_pcap_live_device.html#ab6ada849695721d0b21ca03a00befc3f", null ],
     [ "isPayloadWithinMtu", "classpcpp_1_1_pcap_live_device.html#adb224a2e5d31724ac15e11c5bfa7e778", null ],

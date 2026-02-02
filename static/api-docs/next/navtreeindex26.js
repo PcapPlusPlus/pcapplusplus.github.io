@@ -1,7 +1,5 @@
 var NAVTREEINDEX26 =
 {
-"structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration.html#adebf03bb242d47ddc1340e7ecae555f6":[4,0,0,348,0,3],
-"structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration.html#af0f377c2974af2766ffcb3bd54ed7e2d":[4,0,0,348,0,2],
 "structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html":[4,0,0,348,1],
 "structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html#a37c525bcad2d2aacb12d84979e68afc3":[4,0,0,348,1,4],
 "structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html#a49e5bd913fde8b892d1bbe27dbf53065":[4,0,0,348,1,2],
@@ -130,6 +128,10 @@ var NAVTREEINDEX26 =
 "structpcpp_1_1_pcap_remote_authentication.html#a7f1d4e564af1f378e6778d71910d1581":[4,0,0,389,1],
 "structpcpp_1_1_pcap_remote_authentication.html#a85dba51c6b7530db22f029a030374c2d":[4,0,0,389,0],
 "structpcpp_1_1_pcap_remote_authentication.html#ab20a5fd24c937d1432587cbec80a14a7":[4,0,0,389,4],
+"structpcpp_1_1_pcap_stats.html":[4,0,0,356],
+"structpcpp_1_1_pcap_stats.html#a0d59884fbb642180c89327b321118607":[4,0,0,356,2],
+"structpcpp_1_1_pcap_stats.html#a22877afbedf5473477f5e759137d5fa1":[4,0,0,356,1],
+"structpcpp_1_1_pcap_stats.html#a686817e30a0d8fc8d44782c4b49dcf3e":[4,0,0,356,0],
 "structpcpp_1_1_pf_ring_device_1_1_pf_ring_stats.html":[4,0,0,392,0],
 "structpcpp_1_1_pf_ring_device_1_1_pf_ring_stats.html#a83db0ccadf101d72b41c3eb2ff6a72c3":[4,0,0,392,0,0],
 "structpcpp_1_1_pf_ring_device_1_1_pf_ring_stats.html#a9d6a72fc5152c35043b22aedf602a9b6":[4,0,0,392,0,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX26 =
 "structpcpp_1_1_x509_name_1_1_r_d_n.html#a814b19f79739ce2116b3c75b5dd087b1":[4,0,0,337,0,2],
 "structpcpp_1_1_x509_name_1_1_r_d_n.html#af163293e446a43c6149b4a625a85a4b9":[4,0,0,337,0,4],
 "structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html":[4,0,0,398,0],
-"structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#a132dbef29f45c2abff3353f962ec2f8d":[4,0,0,398,0,9],
-"structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#a1be5b4131b92eb80c0e8125414fc9571":[4,0,0,398,0,4],
-"structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#a28bf70b57f2ab069e5ec885354f6167c":[4,0,0,398,0,8]
+"structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#a132dbef29f45c2abff3353f962ec2f8d":[4,0,0,398,0,9]
 };

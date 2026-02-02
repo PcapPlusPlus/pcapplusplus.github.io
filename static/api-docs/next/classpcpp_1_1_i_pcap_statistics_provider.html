@@ -103,26 +103,25 @@ Inheritance diagram for pcpp::IPcapStatisticsProvider:</div>
   <img src="classpcpp_1_1_i_pcap_statistics_provider.png" usemap="#pcpp::IPcapStatisticsProvider_map" alt=""/>
   <map id="pcpp::IPcapStatisticsProvider_map" name="pcpp::IPcapStatisticsProvider_map">
 <area href="classpcpp_1_1_i_file_device.html" alt="pcpp::IFileDevice" shape="rect" coords="456,56,649,80"/>
-<area href="classpcpp_1_1_i_pcap_device.html" alt="pcpp::IPcapDevice" shape="rect" coords="1116,56,1309,80"/>
+<area href="classpcpp_1_1_pcap_live_device.html" alt="pcpp::PcapLiveDevice" shape="rect" coords="1015,56,1208,80"/>
 <area href="classpcpp_1_1_i_file_reader_device.html" alt="pcpp::IFileReaderDevice" shape="rect" coords="203,112,396,136"/>
 <area href="classpcpp_1_1_i_file_writer_device.html" alt="pcpp::IFileWriterDevice" shape="rect" coords="710,112,903,136"/>
-<area href="classpcpp_1_1_pcap_live_device.html" alt="pcpp::PcapLiveDevice" shape="rect" coords="1116,112,1309,136"/>
+<area href="classpcpp_1_1_pcap_remote_device.html" alt="pcpp::PcapRemoteDevice" shape="rect" coords="913,112,1106,136"/>
+<area href="classpcpp_1_1_win_pcap_live_device.html" alt="pcpp::WinPcapLiveDevice" shape="rect" coords="1116,112,1309,136"/>
 <area href="classpcpp_1_1_pcap_file_reader_device.html" alt="pcpp::PcapFileReaderDevice" shape="rect" coords="0,168,193,192"/>
 <area href="classpcpp_1_1_pcap_ng_file_reader_device.html" alt="pcpp::PcapNgFileReaderDevice" shape="rect" coords="203,168,396,192"/>
 <area href="classpcpp_1_1_snoop_file_reader_device.html" alt="pcpp::SnoopFileReaderDevice" shape="rect" coords="406,168,599,192"/>
 <area href="classpcpp_1_1_pcap_file_writer_device.html" alt="pcpp::PcapFileWriterDevice" shape="rect" coords="609,168,802,192"/>
 <area href="classpcpp_1_1_pcap_ng_file_writer_device.html" alt="pcpp::PcapNgFileWriterDevice" shape="rect" coords="812,168,1005,192"/>
-<area href="classpcpp_1_1_pcap_remote_device.html" alt="pcpp::PcapRemoteDevice" shape="rect" coords="1015,168,1208,192"/>
-<area href="classpcpp_1_1_win_pcap_live_device.html" alt="pcpp::WinPcapLiveDevice" shape="rect" coords="1218,168,1411,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:affac08c8925f77baf4a5db28dd1a0d83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpcpp_1_1internal_1_1_pcap_stats.html">PcapStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_statistics_provider.html#affac08c8925f77baf4a5db28dd1a0d83">getStatistics</a> () const</td></tr>
+<tr class="memitem:affac08c8925f77baf4a5db28dd1a0d83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpcpp_1_1_pcap_stats.html">PcapStats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_statistics_provider.html#affac08c8925f77baf4a5db28dd1a0d83">getStatistics</a> () const</td></tr>
 <tr class="memdesc:affac08c8925f77baf4a5db28dd1a0d83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get statistics from the device.  <a href="classpcpp_1_1_i_pcap_statistics_provider.html#affac08c8925f77baf4a5db28dd1a0d83">More...</a><br /></td></tr>
 <tr class="separator:affac08c8925f77baf4a5db28dd1a0d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04c676bd9013cf597f7b6512924b7ee2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_statistics_provider.html#a04c676bd9013cf597f7b6512924b7ee2">getStatistics</a> (<a class="el" href="structpcpp_1_1internal_1_1_pcap_stats.html">PcapStats</a> &amp;stats) const =0</td></tr>
+<tr class="memitem:a04c676bd9013cf597f7b6512924b7ee2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_statistics_provider.html#a04c676bd9013cf597f7b6512924b7ee2">getStatistics</a> (<a class="el" href="structpcpp_1_1_pcap_stats.html">PcapStats</a> &amp;stats) const =0</td></tr>
 <tr class="separator:a04c676bd9013cf597f7b6512924b7ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -135,7 +134,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structpcpp_1_1internal_1_1_pcap_stats.html">PcapStats</a> pcpp::IPcapStatisticsProvider::getStatistics </td>
+          <td class="memname"><a class="el" href="structpcpp_1_1_pcap_stats.html">PcapStats</a> pcpp::IPcapStatisticsProvider::getStatistics </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -160,7 +159,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void pcpp::IPcapStatisticsProvider::getStatistics </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structpcpp_1_1internal_1_1_pcap_stats.html">PcapStats</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structpcpp_1_1_pcap_stats.html">PcapStats</a> &amp;&#160;</td>
           <td class="paramname"><em>stats</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -178,7 +177,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classpcpp_1_1_i_file_device.html#ae5f8cd834b51ecb007768082612557c8">pcpp::IFileDevice</a>, <a class="el" href="classpcpp_1_1_pcap_remote_device.html#a00ca1adcbd9baccfcb89d167934b929d">pcpp::PcapRemoteDevice</a>, and <a class="el" href="classpcpp_1_1_pcap_live_device.html#a3a5928913d4fb57ffc5b3afe08a10b0f">pcpp::PcapLiveDevice</a>.</p>
+<p>Implemented in <a class="el" href="classpcpp_1_1_pcap_remote_device.html#a686343b3cfc4e468d6438039c452f379">pcpp::PcapRemoteDevice</a>, <a class="el" href="classpcpp_1_1_pcap_live_device.html#a6eb05ce7db577d3f2c4398a6cf6ce0af">pcpp::PcapLiveDevice</a>, and <a class="el" href="classpcpp_1_1_i_file_device.html#ae5f8cd834b51ecb007768082612557c8">pcpp::IFileDevice</a>.</p>
 
 </div>
 </div>
@@ -188,7 +187,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_i_pcap_statistics_provider.html">IPcapStatisticsProvider</a></li>
-    <li class="footer">Generated on Thu Jan 29 2026 06:53:19 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Feb 2 2026 07:05:28 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

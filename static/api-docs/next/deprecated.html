@@ -94,17 +94,15 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <dt>Member <a class="el" href="classpcpp_1_1_asn1_integer_record.html#ab55607bab1dcfe57d348b380120c6136">pcpp::Asn1IntegerRecord::getValue</a>  ()</dt>
 <dd><a class="anchor" id="_deprecated000007"></a>This method is deprecated, please use <a class="el" href="classpcpp_1_1_asn1_integer_record.html#a16c19f833565d9f4a03f05ef17c12afc">getIntValue()</a>  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_bpf_filter_wrapper.html#a0c0f17f30eec0fd34688a71f4c11f2a1">pcpp::BpfFilterWrapper::matchPacketWithFilter</a>  (const uint8_t *packetData, uint32_t packetDataLength, timespec packetTimestamp, uint16_t linkType) const</dt>
-<dd><a class="anchor" id="_deprecated000026"></a>This method is deprecated, use matches(...) overload instead.  </dd>
-<dt>Member <a class="el" href="classpcpp_1_1_bpf_filter_wrapper.html#a3f8e3dd656bc39a0af8ffd66bca19b8d">pcpp::BpfFilterWrapper::matchPacketWithFilter</a>  (const <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *rawPacket) const</dt>
 <dd><a class="anchor" id="_deprecated000025"></a>This method is deprecated, use matches(...) overload instead.  </dd>
+<dt>Member <a class="el" href="classpcpp_1_1_bpf_filter_wrapper.html#a3f8e3dd656bc39a0af8ffd66bca19b8d">pcpp::BpfFilterWrapper::matchPacketWithFilter</a>  (const <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *rawPacket) const</dt>
+<dd><a class="anchor" id="_deprecated000024"></a>This method is deprecated, use matches(...) overload instead.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_general_filter.html#a9ba48b56f8600b08ee0f1c8e4a15daa5">pcpp::GeneralFilter::matchPacketWithFilter</a>  (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *rawPacket) const</dt>
-<dd><a class="anchor" id="_deprecated000027"></a>This method is deprecated, use matches(...) overload instead.  </dd>
+<dd><a class="anchor" id="_deprecated000026"></a>This method is deprecated, use matches(...) overload instead.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_http_response_first_line.html#aca6f22cddd6cdafdfdd9325e0a4bffd9">pcpp::HttpResponseFirstLine::setStatusCode</a>  (const <a class="el" href="classpcpp_1_1_http_response_status_code.html" title="The enum wrapper class of HTTP response status codes.">HttpResponseStatusCode</a> &amp;newStatusCode, const std::string &amp;statusCodeString)</dt>
 <dd><a class="anchor" id="_deprecated000009"></a>Use the other overload instead.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_http_response_layer.html#aa291f3cd6289bf92258998ccdd7487ac">pcpp::HttpResponseLayer::HttpResponseLayer</a>  (HttpVersion version, const <a class="el" href="classpcpp_1_1_http_response_status_code.html" title="The enum wrapper class of HTTP response status codes.">HttpResponseStatusCode</a> &amp;statusCode, const std::string &amp;statusCodeString)</dt>
 <dd><a class="anchor" id="_deprecated000008"></a>Use other constructors instead.  </dd>
-<dt>Member <a class="el" href="classpcpp_1_1_i_pcap_device.html#a9095bdfe0c8e79b656b2651a721a2ea2">pcpp::IPcapDevice::matchPacketWithFilter</a>  (<a class="el" href="classpcpp_1_1_general_filter.html">GeneralFilter</a> &amp;filter, <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *rawPacket)</dt>
-<dd><a class="anchor" id="_deprecated000022"></a>This method is deprecated, use GeneralFilter::matches(...) method directly.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_i_pv6_address.html#a0552d9f226b1aa7dd168deb3436a4f41">pcpp::IPv6Address::copyTo</a>  (uint8_t **arr, size_t &amp;length) const</dt>
 <dd><a class="anchor" id="_deprecated000001"></a>Use copyToNewBuffer instead.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_mac_address.html#aee73706ca1f0e403adbf4c2f691e7da1">pcpp::MacAddress::copyTo</a>  (uint8_t **arr) const</dt>
@@ -114,11 +112,13 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <dt>Member <a class="el" href="namespacepcpp.html#aeea6070ccbb359bc4f819a4fbd40130d">pcpp::multiPlatformSleep</a>  (uint32_t seconds)</dt>
 <dd><a class="anchor" id="_deprecated000004"></a>Please use std::this_thread::sleep_for(). It is a standard C++ (since C++11) method which is already cross-platform  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_pcap_file_reader_device.html#a4ce65614c821fd78d848bdf0a1c55155">pcpp::PcapFileReaderDevice::isNanoSecondPrecisionSupported</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000023"></a>Nanosecond precision is now natively supported by the internal parser and always returns true  </dd>
+<dd><a class="anchor" id="_deprecated000022"></a>Nanosecond precision is now natively supported by the internal parser and always returns true  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_pcap_file_writer_device.html#af0596521910ef713ad24ffdb512f3515">pcpp::PcapFileWriterDevice::isNanoSecondPrecisionSupported</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000024"></a>Nanosecond precision is now natively supported by the internal parser and always returns true  </dd>
+<dd><a class="anchor" id="_deprecated000023"></a>Nanosecond precision is now natively supported by the internal parser and always returns true  </dd>
+<dt>Member <a class="el" href="classpcpp_1_1_pcap_live_device.html#a72beff2ab434fd5a27a51b3d499d2865">pcpp::PcapLiveDevice::matchPacketWithFilter</a>  (<a class="el" href="classpcpp_1_1_general_filter.html">GeneralFilter</a> &amp;filter, <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *rawPacket)</dt>
+<dd><a class="anchor" id="_deprecated000028"></a>This method is deprecated, use GeneralFilter::matches(...) method directly.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_pcap_live_device.html#a9d8a41394806dd5e5245046908f60f16">pcpp::PcapLiveDevice::sendPacket</a>  (<a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet, bool checkMtu=true)</dt>
-<dd><a class="anchor" id="_deprecated000028"></a>This method is deprecated. Use <a class="el" href="classpcpp_1_1_pcap_live_device.html#a89a20db2f68dcba1675a4895f03180bb">sendPacket(Packet const&amp; packet, bool checkMtu)</a> instead.  </dd>
+<dd><a class="anchor" id="_deprecated000027"></a>This method is deprecated. Use <a class="el" href="classpcpp_1_1_pcap_live_device.html#a89a20db2f68dcba1675a4895f03180bb">sendPacket(Packet const&amp; packet, bool checkMtu)</a> instead.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#a3581be31dbd64ae71232260a3ba55509">pcpp::PcapLiveDeviceList::getPcapLiveDeviceByIp</a>  (const std::string &amp;ipAddrAsString) const</dt>
 <dd><a class="anchor" id="_deprecated000032"></a>Use <code>getDeviceByIp</code> instead.  </dd>
 <dt>Member <a class="el" href="classpcpp_1_1_pcap_live_device_list.html#a50b86ac3afa835152e98d19734365572">pcpp::PcapLiveDeviceList::getPcapLiveDeviceByIp</a>  (const <a class="el" href="classpcpp_1_1_i_pv6_address.html">IPv6Address</a> &amp;ip6Addr) const</dt>
@@ -178,7 +178,7 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jan 29 2026 06:53:18 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Feb 2 2026 07:05:27 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

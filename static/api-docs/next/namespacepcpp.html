@@ -852,10 +852,10 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_network_utils.html">NetworkUtils</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_pcap_stats.html">PcapStats</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_statistics_provider.html">IPcapStatisticsProvider</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An interface for providing Pcap-based device statistics.  <a href="classpcpp_1_1_i_pcap_statistics_provider.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_pcap_device.html">IPcapDevice</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_file_device.html">IFileDevice</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -984,8 +984,8 @@ using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nam
 <tr class="separator:a700592e5086544411957be0242dec0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a83c8855a6bb3681fafec04b00a6339"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a6a83c8855a6bb3681fafec04b00a6339">OnPacketArrivesStopBlocking</a> = std::function&lt; bool(<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *, <a class="el" href="classpcpp_1_1_pcap_live_device.html">PcapLiveDevice</a> *, void *)&gt;</td></tr>
 <tr class="separator:a6a83c8855a6bb3681fafec04b00a6339"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83363d443da98e485f8edb46a4184779"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a83363d443da98e485f8edb46a4184779">OnStatsUpdateCallback</a> = std::function&lt; void(<a class="el" href="structpcpp_1_1internal_1_1_pcap_stats.html">IPcapDevice::PcapStats</a> &amp;, void *)&gt;</td></tr>
-<tr class="separator:a83363d443da98e485f8edb46a4184779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c853d3273191e173fa0348a950269ad"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a0c853d3273191e173fa0348a950269ad">OnStatsUpdateCallback</a> = std::function&lt; void(<a class="el" href="structpcpp_1_1_pcap_stats.html">PcapStats</a> &amp;, void *)&gt;</td></tr>
+<tr class="separator:a0c853d3273191e173fa0348a950269ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -3096,14 +3096,14 @@ x.x.x.x _AND_ TCP port dst = 80"</p>
 
 </div>
 </div>
-<a id="a83363d443da98e485f8edb46a4184779"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83363d443da98e485f8edb46a4184779">&#9670;&nbsp;</a></span>OnStatsUpdateCallback</h2>
+<a id="a0c853d3273191e173fa0348a950269ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c853d3273191e173fa0348a950269ad">&#9670;&nbsp;</a></span>OnStatsUpdateCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacepcpp.html#a83363d443da98e485f8edb46a4184779">pcpp::OnStatsUpdateCallback</a> = typedef std::function&lt;void(<a class="el" href="structpcpp_1_1internal_1_1_pcap_stats.html">IPcapDevice::PcapStats</a>&amp;, void*)&gt;</td>
+          <td class="memname">using <a class="el" href="namespacepcpp.html#a0c853d3273191e173fa0348a950269ad">pcpp::OnStatsUpdateCallback</a> = typedef std::function&lt;void(<a class="el" href="structpcpp_1_1_pcap_stats.html">PcapStats</a>&amp;, void*)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -8026,7 +8026,7 @@ x.x.x.x _OR_ TCP port dst = 80"</p>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li>
-    <li class="footer">Generated on Thu Jan 29 2026 06:53:18 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Feb 2 2026 07:05:27 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -177,7 +177,10 @@ var files_dup =
     [ "PayloadLayer.h", "_payload_layer_8h.html", [
       [ "PayloadLayer", "classpcpp_1_1_payload_layer.html", "classpcpp_1_1_payload_layer" ]
     ] ],
-    [ "PcapDevice.h", "_pcap_device_8h.html", "_pcap_device_8h" ],
+    [ "PcapDevice.h", "_pcap_device_8h.html", [
+      [ "PcapStats", "structpcpp_1_1_pcap_stats.html", "structpcpp_1_1_pcap_stats" ],
+      [ "IPcapStatisticsProvider", "classpcpp_1_1_i_pcap_statistics_provider.html", "classpcpp_1_1_i_pcap_statistics_provider" ]
+    ] ],
     [ "PcapFileDevice.h", "_pcap_file_device_8h.html", "_pcap_file_device_8h" ],
     [ "PcapFilter.h", "_pcap_filter_8h.html", "_pcap_filter_8h" ],
     [ "PcapLiveDevice.h", "_pcap_live_device_8h.html", "_pcap_live_device_8h" ],

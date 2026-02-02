@@ -62,11 +62,9 @@ var NAVTREEINDEX13 =
 "classpcpp_1_1_i_p_reassembly_1_1_packet_key.html#a36810a692eb627629bf0db6ad04c8fb1":[4,0,0,159,2,3],
 "classpcpp_1_1_i_p_reassembly_1_1_packet_key.html#a38bb114ec2d125fa47d7a1d113203a4c":[4,0,0,159,2,1],
 "classpcpp_1_1_i_p_reassembly_1_1_packet_key.html#abd42f4375f021a1bf7d89a151b231911":[4,0,0,159,2,2],
-"classpcpp_1_1_i_pcap_device.html":[4,0,0,357],
-"classpcpp_1_1_i_pcap_device.html#af09addb9bc2afe5dba40aec8c30c5d8b":[4,0,0,357,0],
-"classpcpp_1_1_i_pcap_statistics_provider.html":[4,0,0,356],
-"classpcpp_1_1_i_pcap_statistics_provider.html#a04c676bd9013cf597f7b6512924b7ee2":[4,0,0,356,1],
-"classpcpp_1_1_i_pcap_statistics_provider.html#affac08c8925f77baf4a5db28dd1a0d83":[4,0,0,356,0],
+"classpcpp_1_1_i_pcap_statistics_provider.html":[4,0,0,357],
+"classpcpp_1_1_i_pcap_statistics_provider.html#a04c676bd9013cf597f7b6512924b7ee2":[4,0,0,357,1],
+"classpcpp_1_1_i_pcap_statistics_provider.html#affac08c8925f77baf4a5db28dd1a0d83":[4,0,0,357,0],
 "classpcpp_1_1_i_pv4_address.html":[4,0,0,4],
 "classpcpp_1_1_i_pv4_address.html#a01541ff239d0b784d3a1c36d3fb21491":[4,0,0,4,8],
 "classpcpp_1_1_i_pv4_address.html#a0d7b4f66bd13de51adbbfdf177e64e85":[4,0,0,4,4],
@@ -249,5 +247,7 @@ var NAVTREEINDEX13 =
 "classpcpp_1_1_i_pv6_network.html#a2c4cdc7a9c06f4f08d6395793f2b4dc0":[4,0,0,8,5],
 "classpcpp_1_1_i_pv6_network.html#a45b6464d883b9528b7a88444ce62fa09":[4,0,0,8,2],
 "classpcpp_1_1_i_pv6_network.html#a4c66cdc6235076ce99165ec16600a77a":[4,0,0,8,1],
-"classpcpp_1_1_i_pv6_network.html#a56646df9acc54144cf9b38f96d1c677b":[4,0,0,8,9]
+"classpcpp_1_1_i_pv6_network.html#a56646df9acc54144cf9b38f96d1c677b":[4,0,0,8,9],
+"classpcpp_1_1_i_pv6_network.html#a8d7cb1eb9621e8ab583ffa35379de890":[4,0,0,8,7],
+"classpcpp_1_1_i_pv6_network.html#abb2272db4e9eecbf92c18aa1345e7168":[4,0,0,8,12]
 };
