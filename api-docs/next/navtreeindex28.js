@@ -1,7 +1,5 @@
 var NAVTREEINDEX28 =
 {
-"structpcpp_1_1ip6__hdr.html#af9eaa28de54512c88c43a95ed6c2a846":[4,0,0,176,2],
-"structpcpp_1_1iphdr.html":[4,0,0,164],
 "structpcpp_1_1iphdr.html#a229d7a9444c63a92532cd17b16e9de70":[4,0,0,164,10],
 "structpcpp_1_1iphdr.html#a2722895dc1ed669dd9b241fc472a284f":[4,0,0,164,3],
 "structpcpp_1_1iphdr.html#a724ead037aaf6310e5b9ebceba77f922":[4,0,0,164,1],
