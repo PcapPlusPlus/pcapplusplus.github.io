@@ -118,6 +118,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a56ef03e8516ee79b8ac397db0f052e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89fc3bb33188900f5a42ae102fa34e7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#a89fc3bb33188900f5a42ae102fa34e7d">setRawPacket</a> (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *rawPacket, bool freeRawPacket, <a class="el" href="group___protocol_types.html#gaa26bae020a295f1089e08c390fb21c52">ProtocolTypeFamily</a> parseUntil=<a class="el" href="group___protocol_types.html#gad94e3dd833f818889f676d2352eac829">UnknownProtocol</a>, <a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a> parseUntilLayer=<a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">OsiModelLayerUnknown</a>)</td></tr>
 <tr class="separator:a89fc3bb33188900f5a42ae102fa34e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf4ddb2e4123db59c796b5e7f2df4415"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#aaf4ddb2e4123db59c796b5e7f2df4415">parsePacket</a> (<a class="el" href="structpcpp_1_1_packet_parse_options.html">PacketParseOptions</a> options, bool incrementalParsing=true)</td></tr>
+<tr class="memdesc:aaf4ddb2e4123db59c796b5e7f2df4415"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the packet according to the provided options.  <a href="classpcpp_1_1_packet.html#aaf4ddb2e4123db59c796b5e7f2df4415">More...</a><br /></td></tr>
+<tr class="separator:aaf4ddb2e4123db59c796b5e7f2df4415"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cbd31f926ca59f3d51f76f235749a59"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#a1cbd31f926ca59f3d51f76f235749a59">getRawPacketReadOnly</a> () const</td></tr>
 <tr class="separator:a1cbd31f926ca59f3d51f76f235749a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbe8bb3d1c8ef829120fa1bc9bac5677"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_layer.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#afbe8bb3d1c8ef829120fa1bc9bac5677">getFirstLayer</a> () const</td></tr>
@@ -965,6 +968,51 @@ template&lt;class TLayer &gt; </div>
 
 </div>
 </div>
+<a id="aaf4ddb2e4123db59c796b5e7f2df4415"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf4ddb2e4123db59c796b5e7f2df4415">&#9670;&nbsp;</a></span>parsePacket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::Packet::parsePacket </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpcpp_1_1_packet_parse_options.html">PacketParseOptions</a>&#160;</td>
+          <td class="paramname"><em>options</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>incrementalParsing</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parse the packet according to the provided options. </p>
+<p>The packet is parsed according to the specified options, constructing the layer hierarchy if it does not exist. If the packet has already been parsed, it will be re-parsed based on the new options.</p>
+<p>If <code>incrementalParsing</code> is true, the procedure will reuse existing layers where possible, only creating new layers for previously unparsed data. Otherwise, all existing layers are discarded and the packet is parsed from scratch.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">options</td><td>Parsing options to configure the parsing behavior. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">incrementalParsing</td><td>If 'true', incremental parsing is performed, reusing existing layers where possible. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>if there is no <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> associated with this <a class="el" href="classpcpp_1_1_packet.html">Packet</a> instance. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a864c0024b5bc88a4ba7c55373ff2ee01"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a864c0024b5bc88a4ba7c55373ff2ee01">&#9670;&nbsp;</a></span>removeAllLayersAfter()</h2>
 
@@ -1177,7 +1225,7 @@ template&lt;class TLayer &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_packet.html">Packet</a></li>
-    <li class="footer">Generated on Mon Feb 2 2026 07:05:28 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Feb 7 2026 07:52:43 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
