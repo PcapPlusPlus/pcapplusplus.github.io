@@ -6,9 +6,7 @@ title: Build on Linux
 
 ## Prerequisites
 
-In order to compile PcapPlusPlus on Linux please make sure you have the following components installed:
-
-1. **libpcap developers pack** - contains the libpcap library PcapPlusPlus is linking with and relevant the header files. You can download it from [http://www.tcpdump.org/#latest-release](http://www.tcpdump.org/#latest-release) or through the standard Linux package managers such as `apt-get` or `yum`:
+1. **OPTIONAL** - if you want to use libpcap features such as packet capture and have `-DPCAPPP_USE_PCAP=ON` , you'll need to install **libpcap developers pack** which contains the libpcap library PcapPlusPlus is linking with and relevant the header files. You can download it from [http://www.tcpdump.org/#latest-release](http://www.tcpdump.org/#latest-release) or through the standard Linux package managers such as `apt-get` or `yum`:
 
    ```bash
    sudo apt-get install libpcap-dev
@@ -57,6 +55,7 @@ The following configuration options are available (on top of CMake's built-in op
 
 | Option                                  | Description                                                                                                                                                                                                                                                |
 | :-------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`-DPCAPPP_USE_PCAP=<ON/OFF>`**        | Build PcapPlusPlus with libpcap support (default value is `ON`)                                                                                                                                                                                            |
 | **`-DPCAPPP_BUILD_EXAMPLES=<ON/OFF>`**  | Build PcapPlusPlus examples (default value is `ON` if building the project itself, otherwise `OFF`)                                                                                                                                                        |
 | **`-DPCAPPP_BUILD_TESTS=<ON/OFF>`**     | Build PcapPlusPlus tests (default value is `ON` if building the project itself, otherwise `OFF`)                                                                                                                                                           |
 | **`-DPCAPPP_BUILD_TUTORIALS=<ON/OFF>`** | Build PcapPlusPlus tutorials. This option is only available if `DPCAPPP_BUILD_EXAMPLES=ON`. The tutorials binaries will be under `build/tutorials_bin` (default value is `OFF`)                                                                            |

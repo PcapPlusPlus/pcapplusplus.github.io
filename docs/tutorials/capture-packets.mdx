@@ -7,7 +7,7 @@ title: 'Part 3: Capture/Send Packets'
 
 ## Introduction
 
-PcapPlusPlus provides simple and easy-to-use wrappers for libpcap/WinPcap APIs for capturing and sending packets over network interfaces. These wrappers pretty much sum up in the following classes:
+PcapPlusPlus provides simple and easy-to-use wrappers for libpcap/WinPcap/Npcap APIs for capturing and sending packets over network interfaces. These wrappers pretty much sum up in the following classes:
 
 - `PcapLiveDevice` - wraps libpcap functionality of capturing and sending packets and also provide information and statistics on the network interface
 - `WinPcapLiveDevice` - wraps WinPcap/Npcap functionality which is basically similar to libpcap but provides adjustments for Windows OS. This class inherits PcapLiveDevice and provides the necessary changes for Windows vs. Linux/MacOS/FreeBSD/Android

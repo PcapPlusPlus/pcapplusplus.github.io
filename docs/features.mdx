@@ -84,8 +84,8 @@ int main(int argc, char* argv[])
     if (parsedPacket.isPacketOfType(pcpp::IPv4))
     {
         // extract source and dest IPs
-        pcpp::IPv4Address srcIP = parsedPacket.getLayerOfType<pcpp::IPv4Layer>()->getSrcIPv4Address();
-        pcpp::IPv4Address destIP = parsedPacket.getLayerOfType<pcpp::IPv4Layer>()->getDstIPv4Address();
+        auto srcIP = parsedPacket.getLayerOfType<pcpp::IPv4Layer>()->getSrcIPv4Address();
+        auto destIP = parsedPacket.getLayerOfType<pcpp::IPv4Layer>()->getDstIPv4Address();
 
         // print source and dest IPs
         std::cout
@@ -170,6 +170,14 @@ while (reader->getNextPacket(rawPacket)) {
   writer.writePacket(rawPacket);
 }
 ```
+
+## libpcap / WinPcap / Npcap support
+
+[libpcap](https://www.tcpdump.org/) is the most popular packet capture engine and is supported on multiple platforms including Linux, MacOS, Android and FreeBSD. [WinPcap](https://www.winpcap.org/) is the Windows version of libpcap but it is no longer maintained and has been replaced by [Npcap](https://npcap.com/) which is a fork of WinPcap with more features and better performance. Both WinPcap and Npcap are supported on Windows.
+
+PcapPlusPlus provides a clean and simple C++ wrapper API for these engines and supports all of their main features such as live packet capture and sending packets to the network. In addition, PcapPlusPlus provides support for remote capture using WinPcap Remote Capture which allows you to capture packets from a remote machine running WinPcap.
+
+These capture engines are required by default but you can choose to build PcapPlusPlus without them and use other capture engines instead (e.g. DPDK, AF_XDP, PF_RING, etc). To build without libpcap/WinPcap/Npcap support you can use the `-DPCAPPP_USE_PCAP=OFF` CMake option.
 
 ## DPDK support
 
