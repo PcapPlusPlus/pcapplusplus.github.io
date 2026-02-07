@@ -12,27 +12,33 @@ In order to build PcapPlusPlus on Windows with Visual Studio you need the follow
 
 1. A [supported version](../platforms) of Microsoft Visual Studio
 2. `CMake` which can be installed from: [https://cmake.org/install/](https://cmake.org/install/) or with `pacman` if using MSYS2: `pacman -S mingw-w64-x86_64-cmake`
-3. Download and install [WinPcap](https://www.winpcap.org/install/) **OR** [Npcap](https://npcap.com/#download) on your system
-   :::tip Note for Npcap:
-   If you install **Npcap** please check the `Install Npcap in WinPcap API-compatilbility mode` option during installation:
+3. **OPTIONAL** If you want to use WinPcap/Npcap features such as packet capture and have `-DPCAPPP_USE_PCAP=ON`:
+   1. Download and install [WinPcap](https://www.winpcap.org/install/) **OR** [Npcap](https://npcap.com/#download) on your system
+      :::tip Note for Npcap:
+      If you install **Npcap** please check the `Install Npcap in WinPcap API-compatilbility mode` option during installation:
 
-   ![Npcap-WinPcap compatilibitly](/img/install/Npcap_compatibility_mode.png)
-   :::
-
-4. [WinPcap developer's pack](https://www.winpcap.org/devel.htm) **OR** [Npcap SDK](https://nmap.org/npcap/guide/npcap-devguide.html) - containing the wpcap library PcapPlusPlus is linking with plus relevant `h` files.
-   1. WinPcap developer's pack can be downloaded from here: [https://www.winpcap.org/devel.htm](https://www.winpcap.org/devel.htm)
-   2. Npcap SDK can be downloaded from here: [https://nmap.org/npcap/#download](https://nmap.org/npcap/#download)
-5. In some cases you also need to download and install:
+      ![Npcap-WinPcap compatilibitly](/img/install/Npcap_compatibility_mode.png)
+      :::
+   2. Download and install [WinPcap developer's pack](https://www.winpcap.org/devel.htm) **OR** [Npcap SDK](https://nmap.org/npcap/#download) - containing the wpcap library PcapPlusPlus is linking with plus relevant `h` files.
+4. In some cases you also need to download and install:
    1. [Microsoft Visual C++ Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads) for your version of Visual Studio
    2. [Microsoft Visual C++ 2010 Redistributable](https://www.microsoft.com/en-us/download/confirmation.aspx?id=14632)
-6. OPTIONAL - download [Zstd](https://github.com/facebook/zstd/releases/latest) libraries if you wish to enable [PCAPNG streaming compression support](../features#readingwriting-pcapng-files-with-compression)
+5. **OPTIONAL** - download [Zstd](https://github.com/facebook/zstd/releases/latest) libraries if you wish to enable [PCAPNG streaming compression support](../features#readingwriting-pcapng-files-with-compression)
 
 ## Build
 
 Assuming you want to build PcapPlusPlus into a `build` directory:
 
+With WinPcap/Npcap support:
+
 ```shell
 cmake -DPCAP_ROOT=<NpcapSDK_or_WinPcapDevPack_Directory> -S . -B build
+```
+
+Without WinPcap/Npcap support:
+
+```shell
+cmake -DPCAPPP_USE_PCAP=OFF -S . -B build
 ```
 
 You can use the following CMake options to determine specific parameters:
@@ -72,7 +78,8 @@ The following configuration options are available (on top of CMake's built-in op
 
 | Option                                  | Description                                                                                                                                                                                                                                                                                                         |
 | :-------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **`-DPCAP_ROOT=<DIR>`**                 | Npcap SDK or WinPcap developer pack directory (mandatory option)                                                                                                                                                                                                                                                    |
+| **`-DPCAPPP_USE_PCAP=<ON/OFF>`**        | Build PcapPlusPlus with WinPcap/Npcap support (default value is `ON`)                                                                                                                                                                                                                                               |
+| **`-DPCAP_ROOT=<DIR>`**                 | Npcap SDK or WinPcap developer pack directory (mandatory option if `-DPCAPPP_USE_PCAP=ON`)                                                                                                                                                                                                                          |
 | **`-DPCAPPP_BUILD_EXAMPLES=<ON/OFF>`**  | Build PcapPlusPlus examples (default value is `ON` if building the project itself, otherwise `OFF`)                                                                                                                                                                                                                 |
 | **`-DPCAPPP_BUILD_TESTS=<ON/OFF>`**     | Build PcapPlusPlus tests (default value is `ON` if building the project itself, otherwise `OFF`)                                                                                                                                                                                                                    |
 | **`-DPCAPPP_BUILD_TUTORIALS=<ON/OFF>`** | Build PcapPlusPlus tutorials. This option is only available if `DPCAPPP_BUILD_EXAMPLES=ON`. The tutorials binaries will be under `build\tutorials_bin` (default value is `OFF`)                                                                                                                                     |

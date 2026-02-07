@@ -14,23 +14,29 @@ In order to compile PcapPlusPlus on Windows using MinGW-w64 you need the followi
    ```shell
    PATH=%PATH%;C:\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin
    ```
-4. Download and install [WinPcap](https://www.winpcap.org/install/) **OR** [Npcap](https://npcap.com/#download) on your system
-   :::tip Note for Npcap:
-   If you install **Npcap** please check the `Install Npcap in WinPcap API-compatilbility mode` option during installation:
+4. **OPTIONAL** If you want to use WinPcap/Npcap features such as packet capture and have `-DPCAPPP_USE_PCAP=ON`:
+   1. Download and install [WinPcap](https://www.winpcap.org/install/) **OR** [Npcap](https://npcap.com/#download) on your system
+      :::tip Note for Npcap:
+      If you install **Npcap** please check the `Install Npcap in WinPcap API-compatilbility mode` option during installation:
 
-   ![Npcap-WinPcap compatilibitly](/img/install/Npcap_compatibility_mode.png)
-   :::
-
-5. [WinPcap developer's pack](https://www.winpcap.org/devel.htm) **OR** [Npcap SDK](https://nmap.org/npcap/guide/npcap-devguide.html) - containing the `wpcap` library PcapPlusPlus is linking with plus relevant `.h` files.
-   1. WinPcap developer's pack can be downloaded from here: [https://www.winpcap.org/devel.htm](https://www.winpcap.org/devel.htm)
-   2. Npcap SDK can be downloaded from here: [https://nmap.org/npcap/#download](https://nmap.org/npcap/#download)
+      ![Npcap-WinPcap compatilibitly](/img/install/Npcap_compatibility_mode.png)
+      :::
+   2. Download and install [WinPcap developer's pack](https://www.winpcap.org/devel.htm) **OR** [Npcap SDK](https://nmap.org/npcap/#download) - containing the wpcap library PcapPlusPlus is linking with plus relevant `h` files.
 
 ## Build
 
 Assuming you want to build PcapPlusPlus into a `build` directory:
 
+With WinPcap/Npcap support:
+
 ```shell
 cmake -G "MinGW Makefiles" -DPCAP_ROOT=<NpcapSDK_or_WinPcapDevPack_Directory> -S . -B build
+```
+
+Without WinPcap/Npcap support:
+
+```shell
+cmake -G "MinGW Makefiles" -DPCAPPP_USE_PCAP=OFF -S . -B build
 ```
 
 And then initiate the build in one of two ways:
@@ -60,7 +66,8 @@ The following configuration options are available (on top of CMake's built-in op
 
 | Option                                  | Description                                                                                                                                                                                                                                                                                                         |
 | :-------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **`-DPCAP_ROOT=<DIR>`**                 | Npcap SDK or WinPcap developer pack directory (mandatory option)                                                                                                                                                                                                                                                    |
+| **`-DPCAPPP_USE_PCAP=<ON/OFF>`**        | Build PcapPlusPlus with WinPcap/Npcap support (default value is `ON`)                                                                                                                                                                                                                                               |
+| **`-DPCAP_ROOT=<DIR>`**                 | Npcap SDK or WinPcap developer pack directory (mandatory option if `-DPCAPPP_USE_PCAP=ON`)                                                                                                                                                                                                                          |
 | **`-DPCAPPP_BUILD_EXAMPLES=<ON/OFF>`**  | Build PcapPlusPlus examples (default value is `ON` if building the project itself, otherwise `OFF`)                                                                                                                                                                                                                 |
 | **`-DPCAPPP_BUILD_TESTS=<ON/OFF>`**     | Build PcapPlusPlus tests (default value is `ON` if building the project itself, otherwise `OFF`)                                                                                                                                                                                                                    |
 | **`-DPCAPPP_BUILD_TUTORIALS=<ON/OFF>`** | Build PcapPlusPlus tutorials. This option is only available if `DPCAPPP_BUILD_EXAMPLES=ON`. The tutorials binaries will be under `build\tutorials_bin` (default value is `OFF`)                                                                                                                                     |

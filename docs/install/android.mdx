@@ -9,16 +9,16 @@ title: Build for Android
 In order to build PcapPlusPlus for Android please make sure you have the following prerequisites:
 
 1. [Android NDK](https://developer.android.com/ndk) should be installed
-2. Pre-compiled `libpcap` library for Android + header files which can be downloaded from [the `libpcap-android` GitHub repo](https://github.com/seladb/libpcap-android) (for Android API versions 21-30)
+2. If you want to to use libpcap and have `-DPCAPPP_USE_PCAP=ON`, you'll need pre-compiled `libpcap` library for Android + header files which can be downloaded from [the `libpcap-android` GitHub repo](https://github.com/seladb/libpcap-android) (for Android API versions 21-30)
 
 ## Build
 
 In order to build for Android a few parameters are needed:
 
 - The path of Android NDK. Let's assume it's stored in `ANDROID_NDK`
-- Android API version - must be between 21 and 30. Let's assume it's stored in `API_VERSIOM`
+- Android API version - must be between 21 and 30. Let's assume it's stored in `API_VERSION`
 - Target architecture which accepts the following values: `arm64-v8a`, `armeabi-v7a`, `x86`, `x86_64`. Let's assume it's stored in `ANDROID_ABI`
-- The path of `libpcap` compiled for Android. Let's assume it's stored in `LIBPCAP_DIR`
+- If you want to to use libpcap features: the path of `libpcap` compiled for Android. Let's assume it's stored in `LIBPCAP_DIR`
 
 Assuming you want to build PcapPlusPlus into a `build` directory:
 
@@ -26,8 +26,8 @@ Assuming you want to build PcapPlusPlus into a `build` directory:
 cmake \
 -DCMAKE_TOOLCHAIN_FILE="${ANDROID_NDK}/build/cmake/android.toolchain.cmake" \
 -DANDROID_PLATFORM="${API_VERSION}" \
--DANDROID_ABI="${ABI}" \
--DPCAP_LIBRARY="${LIBPCAP_DIR}/${ABI}/${API_VERSION}/libpcap.a" \
+-DANDROID_ABI="${ANDROID_ABI}" \
+-DPCAP_LIBRARY="${LIBPCAP_DIR}/${ANDROID_ABI}/${API_VERSION}/libpcap.a" \
 -DPCAP_INCLUDE_DIR="${LIBPCAP_DIR}/include/" \
 -DPCAPPP_BUILD_TESTS=OFF \
 -DPCAPPP_BUILD_EXAMPLES=OFF \
@@ -37,6 +37,12 @@ cmake \
 :::tip NOTE
 
 `-DPCAPPP_BUILD_TESTS=OFF` and `-DPCAPPP_BUILD_EXAMPLES=OFF` are not mandatory, but building PcapPlusPlus tests and examples for Android usually doesn't make sense.
+
+:::
+
+:::tip NOTE 2
+
+`-DPCAP_LIBRARY` and `-DPCAP_INCLUDE_DIR` are only needed if you want to use libpcap features. If you want to build without libpcap support you can use the `-DPCAPPP_USE_PCAP=OFF` CMake option and then you won't need to provide these parameters.
 
 :::
 
@@ -65,6 +71,7 @@ The following configuration options are available (on top of CMake's built-in op
 | **`-DCMAKE_TOOLCHAIN_FILE=<PATH>`**            | Android CMake toolchain file, usuaully resides in: `${ANDROID_NDK}/build/cmake/android.toolchain.cmake`. This is a mandatory option                                                                                                                                         |
 | **`-DANDROID_PLATFORM=<API_VERSION>`**         | Android API version, must be between 21 and. . This is a mandatory option                                                                                                                                                                                                   |
 | **`-DANDROID_ABI=<TARGET_ARCH>`**              | Android target architecture which accepts one of the following values: `arm64-v8a`, `armeabi-v7a`, `x86`, `x86_64`. This is a mandatory option                                                                                                                              |
+| **`-DPCAPPP_USE_PCAP=<ON/OFF>`**               | Build PcapPlusPlus with libpcap support (default value is `ON`). If you set it to `OFF` you won't need to provide `-DPCAP_LIBRARY` and `-DPCAP_INCLUDE_DIR` options and PcapPlusPlus will be built without libpcap support                                                  |
 | **`-DPCAP_LIBRARY=<LIBPCAP_DIR>`**             | The path of `libpcap.a` that is compiled for Android with the target architecture and API version, for example: `${LIBPCAP_DIR}/${ABI}/${API_VERSION}/libpcap.a`. This is a mandatory option                                                                                |
 | **`-DPCAP_INCLUDE_DIR=<LIBPCAP_INCLUDE_DIR>`** | The path of lipbpcap include files, for example: `${LIBPCAP_DIR}/include/`. This is a mandatory option                                                                                                                                                                      |
 | **`-DPCAPPP_BUILD_EXAMPLES=<ON/OFF>`**         | Build PcapPlusPlus examples, in most cases should be set to `OFF`. If you want to run [PcapPlusPlus examples](../examples) on an Android device you need shell access, and for some of them you also need a rooted device. The examples will reside in `build/examples_bin` |
