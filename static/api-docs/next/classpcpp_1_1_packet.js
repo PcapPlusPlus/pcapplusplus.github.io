@@ -24,6 +24,7 @@ var classpcpp_1_1_packet =
     [ "isPacketOfType", "classpcpp_1_1_packet.html#a0638363f7edf78cbedd239c92c647c24", null ],
     [ "isPacketOfType", "classpcpp_1_1_packet.html#a62233a6477fd5f52bfb6efb2a3bb866a", null ],
     [ "operator=", "classpcpp_1_1_packet.html#a26af180628893e454e9d6e0f2f1ebb98", null ],
+    [ "parsePacket", "classpcpp_1_1_packet.html#aaf4ddb2e4123db59c796b5e7f2df4415", null ],
     [ "removeAllLayersAfter", "classpcpp_1_1_packet.html#a864c0024b5bc88a4ba7c55373ff2ee01", null ],
     [ "removeFirstLayer", "classpcpp_1_1_packet.html#a2e7755654f74cc1280409f3f42d9c9e3", null ],
     [ "removeLastLayer", "classpcpp_1_1_packet.html#abda544ac8ac70142f086f63b25ff200c", null ],
