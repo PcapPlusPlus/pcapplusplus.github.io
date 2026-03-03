@@ -111,5 +111,12 @@ var _raw_packet_8h =
       [ "LINKTYPE_ISO_14443", "_raw_packet_8h.html#ab3f43dd3ccd8c93acac8b67909be02beae5cad0d645d0ba0c3d7b65e36b430414", null ],
       [ "LINKTYPE_LINUX_SLL2", "_raw_packet_8h.html#ab3f43dd3ccd8c93acac8b67909be02bea31abc2862b6b2028178dc29039563537", null ],
       [ "LINKTYPE_INVALID", "_raw_packet_8h.html#ab3f43dd3ccd8c93acac8b67909be02bea2857e1fd45f0ef0a7916d153cd4c2572", null ]
-    ] ]
+    ] ],
+    [ "RawPacketImplType", "_raw_packet_8h.html#aa7f22f029830aaa51836bc642b830106", [
+      [ "Unknown", "_raw_packet_8h.html#aa7f22f029830aaa51836bc642b830106a88183b946cc5f0e8c96b2e66e1c74a7e", null ],
+      [ "Standard", "_raw_packet_8h.html#aa7f22f029830aaa51836bc642b830106aeb6d8ae6f20283755b339c0dc273988b", null ],
+      [ "DpdkMBuf", "_raw_packet_8h.html#aa7f22f029830aaa51836bc642b830106ae7e0afd2ff7d381fe20e4ce686f1b7dd", null ],
+      [ "WinDivert", "_raw_packet_8h.html#aa7f22f029830aaa51836bc642b830106ae65457d657f073910286b5cd481c0b72", null ]
+    ] ],
+    [ "getRawPacketImplementationType", "_raw_packet_8h.html#a18a1bc03bd7be4e557779123a9c911d6", null ]
 ];

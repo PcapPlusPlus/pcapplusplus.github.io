@@ -88,7 +88,8 @@ $(document).ready(function(){initNavTree('_raw_packet_8h.html',''); initResizabl
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">RawPacket.h File Reference</div>  </div>
 </div><!--header-->
@@ -259,14 +260,100 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ab3f43dd3ccd8c93acac8b67909be02be"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enum describing all known link layer type. Taken from: <a href="http://www.tcpdump.org/linktypes.html">http://www.tcpdump.org/linktypes.html</a> .  <a href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">More...</a><br /></td></tr>
 <tr class="separator:ab3f43dd3ccd8c93acac8b67909be02be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7f22f029830aaa51836bc642b830106"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_raw_packet_8h.html#aa7f22f029830aaa51836bc642b830106">pcpp::internal::RawPacketImplType</a> : uint8_t { <a class="el" href="_raw_packet_8h.html#aa7f22f029830aaa51836bc642b830106a88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</a> = 0
+, <a class="el" href="_raw_packet_8h.html#aa7f22f029830aaa51836bc642b830106aeb6d8ae6f20283755b339c0dc273988b">Standard</a> = 1
+, <a class="el" href="_raw_packet_8h.html#aa7f22f029830aaa51836bc642b830106ae7e0afd2ff7d381fe20e4ce686f1b7dd">DpdkMBuf</a> = 2
+, <a class="el" href="_raw_packet_8h.html#aa7f22f029830aaa51836bc642b830106ae65457d657f073910286b5cd481c0b72">WinDivert</a> = 3
+ }</td></tr>
+<tr class="memdesc:aa7f22f029830aaa51836bc642b830106"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of RawPacket implementation.  <a href="_raw_packet_8h.html#aa7f22f029830aaa51836bc642b830106">More...</a><br /></td></tr>
+<tr class="separator:aa7f22f029830aaa51836bc642b830106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a18a1bc03bd7be4e557779123a9c911d6"><td class="memItemLeft" align="right" valign="top">RawPacketImplType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_raw_packet_8h.html#a18a1bc03bd7be4e557779123a9c911d6">pcpp::internal::getRawPacketImplementationType</a> (RawPacket const &amp;rawPacket)</td></tr>
+<tr class="memdesc:a18a1bc03bd7be4e557779123a9c911d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the concrete implementation type of a <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> instance.  <a href="_raw_packet_8h.html#a18a1bc03bd7be4e557779123a9c911d6">More...</a><br /></td></tr>
+<tr class="separator:a18a1bc03bd7be4e557779123a9c911d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="aa7f22f029830aaa51836bc642b830106"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7f22f029830aaa51836bc642b830106">&#9670;&nbsp;</a></span>RawPacketImplType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_raw_packet_8h.html#aa7f22f029830aaa51836bc642b830106">pcpp::internal::RawPacketImplType</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Type of RawPacket implementation. </p>
+<p>This is mainly used internally to distinguish between different implementations without using RTTI.</p>
+<p>Only the standard RawPacket implementation is defined in Packet++ library. Other device specific implementations are defined in their respective parts of Pcap++. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa7f22f029830aaa51836bc642b830106a88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"><p>Unknown type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa7f22f029830aaa51836bc642b830106aeb6d8ae6f20283755b339c0dc273988b"></a>Standard&#160;</td><td class="fielddoc"><p>Standard <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa7f22f029830aaa51836bc642b830106ae7e0afd2ff7d381fe20e4ce686f1b7dd"></a>DpdkMBuf&#160;</td><td class="fielddoc"><p>DPDK MBuf based <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa7f22f029830aaa51836bc642b830106ae65457d657f073910286b5cd481c0b72"></a>WinDivert&#160;</td><td class="fielddoc"><p>WinDivert based <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a>. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a18a1bc03bd7be4e557779123a9c911d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18a1bc03bd7be4e557779123a9c911d6">&#9670;&nbsp;</a></span>getRawPacketImplementationType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RawPacketImplType pcpp::internal::getRawPacketImplementationType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> const &amp;&#160;</td>
+          <td class="paramname"><em>rawPacket</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the concrete implementation type of a RawPacket instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rawPacket</td><td>The RawPacket instance </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A value of RawPacketImplType enum representing the concrete implementation type of the given RawPacket instance. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_raw_packet_8h.html">RawPacket.h</a></li>
-    <li class="footer">Generated on Sat Feb 7 2026 07:52:42 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 3 2026 08:28:38 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

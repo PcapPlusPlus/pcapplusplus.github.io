@@ -7,6 +7,7 @@ var classpcpp_1_1_m_buf_raw_packet =
     [ "clear", "classpcpp_1_1_m_buf_raw_packet.html#af587f3704dbf2f356ef4b0f497b501ad", null ],
     [ "clone", "classpcpp_1_1_m_buf_raw_packet.html#a74e4efa1c3f7c4b8a16561ecbba73fbf", null ],
     [ "doSetRawData", "classpcpp_1_1_m_buf_raw_packet.html#a06a17c31a62797fef7006aa69a90c228", null ],
+    [ "getImplType", "classpcpp_1_1_m_buf_raw_packet.html#a10e32c4d9b120a148084c8a3d4b7df15", null ],
     [ "getMBuf", "classpcpp_1_1_m_buf_raw_packet.html#a203b86f2e4098cd2a51e5e87c7c7ebdc", null ],
     [ "getObjectType", "classpcpp_1_1_m_buf_raw_packet.html#a75ff3b18bc4510106ae045e711fb1827", null ],
     [ "init", "classpcpp_1_1_m_buf_raw_packet.html#a9faebadf686bb3b6351bcb04c335b4e6", null ],
