@@ -87,6 +87,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_raw_packet.html',''); in
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classpcpp_1_1_raw_packet-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::RawPacket Class Reference</div>  </div>
@@ -169,6 +170,13 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a23e6987060255d210f0fac7db63b07a6"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#a23e6987060255d210f0fac7db63b07a6">isLinkTypeValid</a> (int linkTypeValue)</td></tr>
 <tr class="separator:a23e6987060255d210f0fac7db63b07a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a005e0dd56166c5db1f74fad3d92e3d34"><td class="memItemLeft" align="right" valign="top"><a id="a005e0dd56166c5db1f74fad3d92e3d34"></a>
+virtual <a class="el" href="_raw_packet_8h.html#aa7f22f029830aaa51836bc642b830106">internal::RawPacketImplType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_raw_packet.html#a005e0dd56166c5db1f74fad3d92e3d34">getImplType</a> () const</td></tr>
+<tr class="memdesc:a005e0dd56166c5db1f74fad3d92e3d34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> implementation. <br /></td></tr>
+<tr class="separator:a005e0dd56166c5db1f74fad3d92e3d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class holds the packet as raw (not parsed) data. The data is held as byte array. In addition to the data itself every instance also holds a timestamp representing the time the packet was received by the NIC. <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> instance isn't read only. The user can change the packet data, add or remove data, etc. </p>
@@ -521,6 +529,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> object type. Each derived class should return a different value </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>Deprecated due to unclear semantics and type safety. The functionality has been moved to the unstable internal API in as internal::getRawPacketImplementationType(RawPacket const&amp; rawPacket). </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classpcpp_1_1_m_buf_raw_packet.html#a75ff3b18bc4510106ae045e711fb1827">pcpp::MBufRawPacket</a>.</p>
 
@@ -651,7 +660,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if raw data was set successfully, false otherwise </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000012">Deprecated:</a></b></dt><dd>Prefer using <a class="el" href="classpcpp_1_1_raw_packet.html#a5aa4ca46b4f5b1335a7e8064a7dbdc91">setRawData()</a> with takeOwnership <code>false</code>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">Deprecated:</a></b></dt><dd>Prefer using <a class="el" href="classpcpp_1_1_raw_packet.html#a5aa4ca46b4f5b1335a7e8064a7dbdc91">setRawData()</a> with takeOwnership <code>false</code>. </dd></dl>
 
 </div>
 </div>
@@ -1127,7 +1136,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if raw data was set successfully, false otherwise </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000011">Deprecated:</a></b></dt><dd>This method does not update ownership of the pRawData pointer, inheriting the previous buffer's ownership. Use the overload that takes bool takeOwnership parameter for explicit control. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000012">Deprecated:</a></b></dt><dd>This method does not update ownership of the pRawData pointer, inheriting the previous buffer's ownership. Use the overload that takes bool takeOwnership parameter for explicit control. </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>Derived classes may not support using the raw data buffer directly. Users should not rely on the <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> always writing to the provided pointer location, and instead get the raw data pointer using <a class="el" href="classpcpp_1_1_raw_packet.html#a095f2d3a3ac095b23c07af2bf095653f">getRawData()</a>. </dd></dl>
 
 </div>
@@ -1186,7 +1195,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if raw data was set successfully, false otherwise </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>This method does not update ownership of the pRawData pointer, inheriting the previous buffer's ownership. Use the overload that takes bool takeOwnership parameter for explicit control. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000011">Deprecated:</a></b></dt><dd>This method does not update ownership of the pRawData pointer, inheriting the previous buffer's ownership. Use the overload that takes bool takeOwnership parameter for explicit control. </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>Derived classes may not support using the raw data buffer directly. Users should not rely on the <a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> always writing to the provided pointer location, and instead get the raw data pointer using <a class="el" href="classpcpp_1_1_raw_packet.html#a095f2d3a3ac095b23c07af2bf095653f">getRawData()</a>. </dd></dl>
 
 </div>
@@ -1197,7 +1206,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a></li>
-    <li class="footer">Generated on Sat Feb 7 2026 07:52:43 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 3 2026 08:28:39 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
