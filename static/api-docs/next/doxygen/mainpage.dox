@@ -79,6 +79,7 @@
 *   - pcpp::ModbusLayer, ModbusLayer.h - Modbus protocol
 *   - pcpp::NtpLayer, NtpLayer.h - NTP (v3, v4) protocol
 *   - pcpp::PemCodec, PemCodec.h - PEM decoder and encoder
+*   - pcpp::PostgresLayer, PostgresLayer.h - PostgreSQL Wire Protocol (PGWire) - parsing only (no editing capabilities)
 *   - pcpp::RadiusLayer, RadiusLayer.h - RADIUS protocol
 *   - pcpp::S7CommLayer, S7CommLayer.h - S7 Communication protocol (S7comm)
 *   - pcpp::SmtpLayer, SmtpLayer.h - SMTP protocol
