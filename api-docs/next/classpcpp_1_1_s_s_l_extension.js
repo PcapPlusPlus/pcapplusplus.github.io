@@ -2,6 +2,7 @@ var classpcpp_1_1_s_s_l_extension =
 [
     [ "SSLExtensionStruct", "structpcpp_1_1_s_s_l_extension_1_1_s_s_l_extension_struct.html", "structpcpp_1_1_s_s_l_extension_1_1_s_s_l_extension_struct" ],
     [ "SSLExtension", "classpcpp_1_1_s_s_l_extension.html#a5b18ea8242d5a74d79e7631abe189153", null ],
+    [ "SSLExtension", "classpcpp_1_1_s_s_l_extension.html#adf34c17bb041076355ad800e46734e8e", null ],
     [ "getData", "classpcpp_1_1_s_s_l_extension.html#ac9f760bf400ea59ec50e81309f381a9b", null ],
     [ "getLength", "classpcpp_1_1_s_s_l_extension.html#a59d43d2c13f55e4c4cf2c1693fd84f67", null ],
     [ "getTotalLength", "classpcpp_1_1_s_s_l_extension.html#a5fae5281f41daf4372936a66bb7de2bb", null ],

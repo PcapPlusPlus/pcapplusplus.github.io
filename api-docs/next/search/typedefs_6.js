@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['mbufrawpacketvector_7959',['MBufRawPacketVector',['../namespacepcpp.html#a594cff22cd51c0a8acc36590c9733ecd',1,'pcpp']]]
+  ['linuxsocket_8127',['LinuxSocket',['../classpcpp_1_1_linux_nic_information_socket.html#a01722c01a7fb72295efbfc5e8aa27723',1,'pcpp::LinuxNicInformationSocket']]],
+  ['logprinter_8128',['LogPrinter',['../classpcpp_1_1_logger.html#af0fd32b6d106cb3eeff8c0338593ae56',1,'pcpp::Logger']]]
 ];
