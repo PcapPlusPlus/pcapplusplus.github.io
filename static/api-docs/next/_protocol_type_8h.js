@@ -56,6 +56,7 @@ var _protocol_type_8h =
     [ "NTP", "_protocol_type_8h.html#ga42aeacd48824aad0f3c672df53b4f3dd", null ],
     [ "NULL_LOOPBACK", "_protocol_type_8h.html#ga795c8790ae95646b61d01d40ac0919c3", null ],
     [ "PacketTrailer", "_protocol_type_8h.html#ga4f7295d39043c96760995e2f08c06389", null ],
+    [ "Postgres", "_protocol_type_8h.html#ga397381f7cd5c2fc531d9103b65c4a3a1", null ],
     [ "PPP_PPTP", "_protocol_type_8h.html#ga5c44d3da15807781b9fd46228f09610d", null ],
     [ "PPPoE", "_protocol_type_8h.html#ga416f257a01839f243cd1354317cfb96f", null ],
     [ "PPPoEDiscovery", "_protocol_type_8h.html#ga9dc88bfe69fb13d599459ca9a7fb05e5", null ],

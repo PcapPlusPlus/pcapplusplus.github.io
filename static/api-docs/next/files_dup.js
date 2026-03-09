@@ -208,6 +208,7 @@ var files_dup =
       [ "Copier< T, std::enable_if_t< std::is_polymorphic< T >::value > >", "structpcpp_1_1internal_1_1_copier_3_01_t_00_01std_1_1enable__if__t_3_01std_1_1is__polymorphic_3_01_t_01_4_1_1value_01_4_01_4.html", null ],
       [ "PointerVector", "classpcpp_1_1_pointer_vector.html", "classpcpp_1_1_pointer_vector" ]
     ] ],
+    [ "PostgresLayer.h", "_postgres_layer_8h.html", "_postgres_layer_8h" ],
     [ "PPPoELayer.h", "_p_p_po_e_layer_8h.html", "_p_p_po_e_layer_8h" ],
     [ "ProtocolType.h", "_protocol_type_8h.html", "_protocol_type_8h" ],
     [ "RadiusLayer.h", "_radius_layer_8h.html", [

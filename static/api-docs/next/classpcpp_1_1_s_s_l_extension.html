@@ -87,6 +87,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_s_s_l_extension.html',''
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classpcpp_1_1_s_s_l_extension-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::SSLExtension Class Reference</div>  </div>
@@ -116,6 +117,9 @@ Classes</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5b18ea8242d5a74d79e7631abe189153"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_extension.html#a5b18ea8242d5a74d79e7631abe189153">SSLExtension</a> (uint8_t *data)</td></tr>
 <tr class="separator:a5b18ea8242d5a74d79e7631abe189153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf34c17bb041076355ad800e46734e8e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_extension.html#adf34c17bb041076355ad800e46734e8e">SSLExtension</a> (uint8_t *data, size_t dataLen)</td></tr>
+<tr class="memdesc:adf34c17bb041076355ad800e46734e8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an <a class="el" href="classpcpp_1_1_s_s_l_extension.html">SSLExtension</a> that interprets the provided data as the raw bytes of the extension.  <a href="classpcpp_1_1_s_s_l_extension.html#adf34c17bb041076355ad800e46734e8e">More...</a><br /></td></tr>
+<tr class="separator:adf34c17bb041076355ad800e46734e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc5e76ced824d76e761294d821c4048e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacepcpp.html#a8d875ad42e200ba191c7cf29c7f469d9">SSLExtensionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_extension.html#abc5e76ced824d76e761294d821c4048e">getType</a> () const</td></tr>
 <tr class="separator:abc5e76ced824d76e761294d821c4048e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa46efd1397084433f572d8dc2934c7c5"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_extension.html#aa46efd1397084433f572d8dc2934c7c5">getTypeAsInt</a> () const</td></tr>
@@ -126,12 +130,19 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5fae5281f41daf4372936a66bb7de2bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9f760bf400ea59ec50e81309f381a9b"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_extension.html#ac9f760bf400ea59ec50e81309f381a9b">getData</a> () const</td></tr>
 <tr class="separator:ac9f760bf400ea59ec50e81309f381a9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a8fb93454308e2554d9ccc8e9c23cf48c"><td class="memTemplParams" colspan="2">template&lt;typename T , typename std::enable_if_t&lt; std::is_base_of&lt; SSLExtension, T &gt;::value, bool &gt;  = true&gt; </td></tr>
+<tr class="memitem:a8fb93454308e2554d9ccc8e9c23cf48c"><td class="memTemplItemLeft" align="right" valign="top">static std::unique_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_s_s_l_extension.html#a8fb93454308e2554d9ccc8e9c23cf48c">tryCreateExtension</a> (uint8_t *data, size_t dataLen)</td></tr>
+<tr class="memdesc:a8fb93454308e2554d9ccc8e9c23cf48c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A static method that tries to create an instance of a specific extension type.  <a href="classpcpp_1_1_s_s_l_extension.html#a8fb93454308e2554d9ccc8e9c23cf48c">More...</a><br /></td></tr>
+<tr class="separator:a8fb93454308e2554d9ccc8e9c23cf48c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a SSL/TLS extension. This is a base class that can represent any type of extension. Inherited classes may contain parsing logic for specific extensions. This class provides capabilities such as getting the extension type, length and viewing the extension data as raw (byte array) </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5b18ea8242d5a74d79e7631abe189153"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b18ea8242d5a74d79e7631abe189153">&#9670;&nbsp;</a></span>SSLExtension()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b18ea8242d5a74d79e7631abe189153">&#9670;&nbsp;</a></span>SSLExtension() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -156,6 +167,52 @@ Public Member Functions</h2></td></tr>
 <p>C'tor for this class </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The raw data for the extension </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000014">Deprecated:</a></b></dt><dd>This constructor is deprecated because it uses an unbound memory span. Use the constructor with bounded span. </dd></dl>
+
+</div>
+</div>
+<a id="adf34c17bb041076355ad800e46734e8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf34c17bb041076355ad800e46734e8e">&#9670;&nbsp;</a></span>SSLExtension() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::SSLExtension::SSLExtension </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs an <a class="el" href="classpcpp_1_1_s_s_l_extension.html">SSLExtension</a> that interprets the provided data as the raw bytes of the extension. </p>
+<p>The memory span defined by data and dataLen can be larger than the actual extension data. If so, only the bytes corresponding to the extension header (type and length fields) + [length] bytes of extension data will be parsed. The rest of the span will be ignored.</p>
+<p>The above behaviour allows variable length extensions to be parsed, as SSL extensions are laid out sequentially in memory on a payload.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The raw data for the extension. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>The length of the data in bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>if data is nullptr or if dataLen is smaller than the size of the extension header (type and length fields). </td></tr>
   </table>
   </dd>
 </dl>
@@ -253,13 +310,68 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a8fb93454308e2554d9ccc8e9c23cf48c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fb93454308e2554d9ccc8e9c23cf48c">&#9670;&nbsp;</a></span>tryCreateExtension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename std::enable_if_t&lt; std::is_base_of&lt; SSLExtension, T &gt;::value, bool &gt;  = true&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::unique_ptr&lt;T&gt; pcpp::SSLExtension::tryCreateExtension </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A static method that tries to create an instance of a specific extension type. </p>
+<p>The factory method handles potential buffer overflows by validating that the data length of the span is sufficient to contain the extension header (type and length fields) and the extension data as specified in the length field.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The type of the extension to create. This type must be a class that inherits from <a class="el" href="classpcpp_1_1_s_s_l_extension.html">SSLExtension</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Pointer to the raw data of the extension. </td></tr>
+    <tr><td class="paramname">dataLen</td><td>Max length of the span to be parsed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The extension instance if the data buffer is valid, nullptr otherwise. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_s_s_l_extension.html">SSLExtension</a></li>
-    <li class="footer">Generated on Tue Mar 3 2026 09:03:03 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Mar 9 2026 06:45:28 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
