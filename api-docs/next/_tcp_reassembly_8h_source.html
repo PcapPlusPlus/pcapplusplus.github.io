@@ -312,7 +312,7 @@ $(document).ready(function(){initNavTree('_tcp_reassembly_8h_source.html',''); i
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;        };</div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160; </div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;        <span class="keyword">using</span> ConnectionList = std::unordered_map&lt;uint32_t, TcpReassemblyData&gt;;</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;        <span class="keyword">using</span> CleanupList = std::map&lt;time_t, std::list&lt;uint32_t&gt;&gt;;</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;        <span class="keyword">using</span> CleanupMultiMap = std::multimap&lt;time_t, uint32_t&gt;;</div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160; </div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        <a class="code" href="classpcpp_1_1_tcp_reassembly.html#a8158f56044f2c76978701aecff9b2a40">OnTcpMessageReady</a> m_OnMessageReadyCallback;</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        <a class="code" href="classpcpp_1_1_tcp_reassembly.html#af626ca261a035086a9881e42323a63aa">OnTcpConnectionStart</a> m_OnConnStart;</div>
@@ -320,7 +320,7 @@ $(document).ready(function(){initNavTree('_tcp_reassembly_8h_source.html',''); i
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;        <span class="keywordtype">void</span>* m_UserCookie;</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;        ConnectionList m_ConnectionList;</div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;        <a class="code" href="classpcpp_1_1_tcp_reassembly.html#a9c5ced8f702497d0d233d5a7fc416623">ConnectionInfoList</a> m_ConnectionInfo;</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;        CleanupList m_CleanupList;</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;        CleanupMultiMap m_CleanupMultimap;</div>
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;        <span class="keywordtype">bool</span> m_RemoveConnInfo;</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;        uint32_t m_ClosedConnectionDelay;</div>
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;        uint32_t m_MaxNumToClean;</div>
@@ -335,7 +335,7 @@ $(document).ready(function(){initNavTree('_tcp_reassembly_8h_source.html',''); i
 <div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160; </div>
 <div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;        <span class="keywordtype">void</span> closeConnectionInternal(uint32_t flowKey, <a class="code" href="classpcpp_1_1_tcp_reassembly.html#aea5fdf7b5322d1bb8f6fe43b59a9edc0">ConnectionEndReason</a> reason);</div>
 <div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160; </div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;        <span class="keywordtype">void</span> insertIntoCleanupList(uint32_t flowKey);</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;        <span class="keywordtype">void</span> scheduleCleanup(uint32_t flowKey);</div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    };</div>
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160; </div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
@@ -407,7 +407,7 @@ $(document).ready(function(){initNavTree('_tcp_reassembly_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_tcp_reassembly_8h.html">TcpReassembly.h</a></li>
-    <li class="footer">Generated on Mon Apr 13 2026 08:44:00 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Apr 23 2026 08:09:31 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
