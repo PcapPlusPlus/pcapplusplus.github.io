@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"classpcpp_1_1_pcap_ng_file_writer_device.html#add853a580d13ece58ce06d09bad6a219":[4,0,0,374,5],
 "classpcpp_1_1_pcap_ng_file_writer_device.html#ae30124bbbca266327a23b54b85c39bca":[4,0,0,374,3],
 "classpcpp_1_1_pcap_remote_device.html":[4,0,0,400],
 "classpcpp_1_1_pcap_remote_device.html#a100631422d0528e12c0184ddd79f7c06":[4,0,0,400,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "classpcpp_1_1_radius_attribute.html#a298f04a1f628f766e528038f79812061":[4,0,0,232,1],
 "classpcpp_1_1_radius_attribute.html#aa88508d5cf4694cfcbe4447d9d7005cd":[4,0,0,232,0],
 "classpcpp_1_1_radius_attribute.html#aadc1ee06ebaf2a20e8f002834e597701":[4,0,0,232,3],
-"classpcpp_1_1_radius_attribute.html#ae350b76bcf43fe56c0a3c0fac7bf7c48":[4,0,0,232,2],
-"classpcpp_1_1_radius_attribute_builder.html":[4,0,0,233]
+"classpcpp_1_1_radius_attribute.html#ae350b76bcf43fe56c0a3c0fac7bf7c48":[4,0,0,232,2]
 };
