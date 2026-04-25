@@ -52,6 +52,7 @@ var _protocol_type_8h =
     [ "LLC", "_protocol_type_8h.html#ga7b2855f37ecc5f6c1d4971b6cee809d2", null ],
     [ "Modbus", "_protocol_type_8h.html#ga3b37175150a1a43a291c824856d3f6d6", null ],
     [ "MPLS", "_protocol_type_8h.html#ga2f69fdca66dec264f99da6e3de96345c", null ],
+    [ "MySQL", "_protocol_type_8h.html#gacf338b179e76850cafcc143af71bb83e", null ],
     [ "NFLOG", "_protocol_type_8h.html#gafac6cd4f566ffec968466a8c056a79d7", null ],
     [ "NTP", "_protocol_type_8h.html#ga42aeacd48824aad0f3c672df53b4f3dd", null ],
     [ "NULL_LOOPBACK", "_protocol_type_8h.html#ga795c8790ae95646b61d01d40ac0919c3", null ],

@@ -270,6 +270,7 @@ var hierarchy =
         ] ],
         [ "pcpp::ModbusLayer", "classpcpp_1_1_modbus_layer.html", null ],
         [ "pcpp::MplsLayer", "classpcpp_1_1_mpls_layer.html", null ],
+        [ "pcpp::MySqlLayer", "classpcpp_1_1_my_sql_layer.html", null ],
         [ "pcpp::NflogLayer", "classpcpp_1_1_nflog_layer.html", null ],
         [ "pcpp::NtpLayer", "classpcpp_1_1_ntp_layer.html", null ],
         [ "pcpp::NullLoopbackLayer", "classpcpp_1_1_null_loopback_layer.html", null ],
@@ -450,6 +451,13 @@ var hierarchy =
     [ "pcpp::ModbusLayer::ModbusReadInputRegisters", "structpcpp_1_1_modbus_layer_1_1_modbus_read_input_registers.html", null ],
     [ "pcpp::msti_conf_msg", "structpcpp_1_1msti__conf__msg.html", null ],
     [ "pcpp::MxDnsResourceData::MxData", "structpcpp_1_1_mx_dns_resource_data_1_1_mx_data.html", null ],
+    [ "pcpp::MySqlMessage", "classpcpp_1_1_my_sql_message.html", [
+      [ "pcpp::MySqlCommandMessage", "classpcpp_1_1_my_sql_command_message.html", [
+        [ "pcpp::MySqlErrorMessage", "classpcpp_1_1_my_sql_error_message.html", null ],
+        [ "pcpp::MySqlQueryMessage", "classpcpp_1_1_my_sql_query_message.html", null ]
+      ] ]
+    ] ],
+    [ "pcpp::MySqlMessageType", "classpcpp_1_1_my_sql_message_type.html", null ],
     [ "pcpp::internal::IWinDivertDriver::NetworkInterface", "structpcpp_1_1internal_1_1_i_win_divert_driver_1_1_network_interface.html", null ],
     [ "pcpp::WinDivertDevice::NetworkInterface", "structpcpp_1_1_win_divert_device_1_1_network_interface.html", null ],
     [ "pcpp::NetworkUtils", "classpcpp_1_1_network_utils.html", null ],
@@ -473,6 +481,7 @@ var hierarchy =
     [ "pcpp::PointerVector< T, Deleter >", "classpcpp_1_1_pointer_vector.html", null ],
     [ "pcpp::PointerVector< IPFragment >", "classpcpp_1_1_pointer_vector.html", null ],
     [ "pcpp::PointerVector< pcpp::Asn1Record >", "classpcpp_1_1_pointer_vector.html", null ],
+    [ "pcpp::PointerVector< pcpp::MySqlMessage >", "classpcpp_1_1_pointer_vector.html", null ],
     [ "pcpp::PointerVector< pcpp::PostgresMessage >", "classpcpp_1_1_pointer_vector.html", null ],
     [ "pcpp::PointerVector< pcpp::SSLExtension >", "classpcpp_1_1_pointer_vector.html", null ],
     [ "pcpp::PointerVector< pcpp::SSLHandshakeMessage >", "classpcpp_1_1_pointer_vector.html", null ],

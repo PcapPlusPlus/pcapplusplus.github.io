@@ -156,6 +156,7 @@ var files_dup =
     [ "MplsLayer.h", "_mpls_layer_8h.html", [
       [ "MplsLayer", "classpcpp_1_1_mpls_layer.html", "classpcpp_1_1_mpls_layer" ]
     ] ],
+    [ "MySqlLayer.h", "_my_sql_layer_8h.html", "_my_sql_layer_8h" ],
     [ "NdpLayer.h", "_ndp_layer_8h.html", "_ndp_layer_8h" ],
     [ "NetworkUtils.h", "_network_utils_8h.html", [
       [ "NetworkUtils", "classpcpp_1_1_network_utils.html", "classpcpp_1_1_network_utils" ]
