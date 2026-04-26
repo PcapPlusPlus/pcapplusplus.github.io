@@ -77,6 +77,7 @@
 *   - pcpp::HttpRequestLayer, pcpp::HttpResponseLayer, HttpLayer.h - HTTP protocol
 *   - pcpp::LdapLayer, LdapLayer.h - LDAP protocol
 *   - pcpp::ModbusLayer, ModbusLayer.h - Modbus protocol
+*.  - pcpp::MySqlLayer, MySqlLayer.h - MySQL - parsing only (no editing capabilities)
 *   - pcpp::NtpLayer, NtpLayer.h - NTP (v3, v4) protocol
 *   - pcpp::PemCodec, PemCodec.h - PEM decoder and encoder
 *   - pcpp::PostgresLayer, PostgresLayer.h - PostgreSQL Wire Protocol (PGWire) - parsing only (no editing capabilities)
