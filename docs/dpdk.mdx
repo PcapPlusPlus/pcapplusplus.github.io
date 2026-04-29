@@ -37,9 +37,9 @@ PcapPlusPlus tries to cover the main functionality of DPDK and its most importan
 
 The following DPDK versions are currently supported:
 
+- DPDK 25.11 (LTS)
 - DPDK 24.11 (LTS)
 - DPDK 23.11 (LTS)
-- DPDK 22.11 (LTS)
 
 Older and newer versions may not work.
 The non-LTS versions may also work, but are not regularly tested.
@@ -50,18 +50,9 @@ The following operating systems and configurations were tested:
 
 - Ubuntu 24.04 LTS 64bit with gcc version >= 4.8
 
-### Download and install DPDK - prior to DPDK 20.11
+### Download and install DPDK
 
-Building and installing DPDK is pretty straight-forward and in a nutshell goes like this:
-
-```shell
-$ cd /dpdk/source/location
-$ make config T=[platform_type_string] && make
-```
-
-### Download and install DPDK - DPDK 20.11 forward
-
-DPDK changed their whole build system in version 20.11 and is now using `meson` and `ninja`. The full build instructions can be found [here](https://doc.dpdk.org/guides-20.11/linux_gsg/build_dpdk.html), but here are the important steps in short:
+The full build instructions can be found [here](https://doc.dpdk.org/guides/prog_guide/build-sdk-meson.html), but here are the important steps in short:
 
 ```shell
 $ meson build
