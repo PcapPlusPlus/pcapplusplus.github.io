@@ -322,7 +322,7 @@ $(document).ready(function(){initNavTree('_logger_8h_source.html',''); initResiz
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
 <div class="line"><a name="l00312"></a><span class="lineno"><a class="line" href="classpcpp_1_1_logger.html#a37ed9835440f66abb3363a9d330d89f7">  312</a></span>&#160;        std::string <a class="code" href="classpcpp_1_1_logger.html#a37ed9835440f66abb3363a9d330d89f7">getLastError</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;            <span class="keywordflow">return</span> m_LastError;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;            <span class="keywordflow">return</span> { m_LastError.data() };</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        }</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160; </div>
 <div class="line"><a name="l00318"></a><span class="lineno"><a class="line" href="classpcpp_1_1_logger.html#acfffd12a85299929559ca494154be3d7">  318</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_logger.html#acfffd12a85299929559ca494154be3d7">suppressLogs</a>()</div>
@@ -379,54 +379,56 @@ $(document).ready(function(){initNavTree('_logger_8h_source.html',''); initResiz
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        std::array&lt;LogLevel, NumOfLogModules&gt; m_LogModulesArray{};</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        <a class="code" href="classpcpp_1_1_logger.html#af0fd32b6d106cb3eeff8c0338593ae56">LogPrinter</a> m_LogPrinter;</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160; </div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        <span class="keyword">static</span> thread_local std::string m_LastError;</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160; </div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="keywordtype">bool</span> m_UseContextPooling = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        <span class="comment">// Keep a maximum of 10 LogContext objects in the pool.</span></div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        <a class="code" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html">internal::DynamicObjectPool&lt;internal::LogContext&gt;</a> m_LogContextPool{ 10, 2 };</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        <span class="comment">// private c&#39;tor - this class is a singleton</span></div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        Logger();</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    };</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160; </div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        <span class="comment">// Using an array instead of std::string because MinGW has issues with TLS destruction.</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        <span class="comment">// The array should be large enough to hold most PCPP errors without cutoffs.</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="keyword">static</span> thread_local std::array&lt;char, 255&gt; m_LastError;</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160; </div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        <span class="keywordtype">bool</span> m_UseContextPooling = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        <span class="comment">// Keep a maximum of 10 LogContext objects in the pool.</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        <a class="code" href="classpcpp_1_1internal_1_1_dynamic_object_pool.html">internal::DynamicObjectPool&lt;internal::LogContext&gt;</a> m_LogContextPool{ 10, 2 };</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160; </div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        <span class="comment">// private c&#39;tor - this class is a singleton</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        Logger();</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    };</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160; </div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="preprocessor">#define PCPP_LOG(level, message)                                                                                       \</span></div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="preprocessor">    do                                                                                                                 \</span></div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="preprocessor">    {                                                                                                                  \</span></div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="preprocessor">        auto&amp; logger = pcpp::Logger::getInstance();                                                                    \</span></div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="preprocessor">        if (logger.shouldLog(level, LOG_MODULE))                                                                       \</span></div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="preprocessor">        {                                                                                                              \</span></div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="preprocessor">            auto ctx =                                                                                                 \</span></div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="preprocessor">                logger.createLogContext(level, pcpp::LogSource(LOG_MODULE, PCAPPP_FILENAME, __FUNCTION__, __LINE__));  \</span></div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="preprocessor">            (*ctx) &lt;&lt; message;                                                                                         \</span></div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="preprocessor">            logger.emit(std::move(ctx));                                                                               \</span></div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="preprocessor">        }                                                                                                              \</span></div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="preprocessor">    } while (0)</span></div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160; </div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="preprocessor">#if PCPP_ACTIVE_LOG_LEVEL &gt;= PCPP_LOG_LEVEL_DEBUG</span></div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="preprocessor">#   define PCPP_LOG_DEBUG(message) PCPP_LOG(pcpp::LogLevel::Debug, message)</span></div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="preprocessor">#   define PCPP_LOG_DEBUG(message) (void)0</span></div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160; </div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="preprocessor">#if PCPP_ACTIVE_LOG_LEVEL &gt;= PCPP_LOG_LEVEL_WARN</span></div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="preprocessor">#   define PCPP_LOG_WARN(message) PCPP_LOG(pcpp::LogLevel::Warn, message)</span></div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="preprocessor">#   define PCPP_LOG_WARN(message) (void)0</span></div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160; </div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="preprocessor">#if PCPP_ACTIVE_LOG_LEVEL &gt;= PCPP_LOG_LEVEL_INFO</span></div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="preprocessor">#   define PCPP_LOG_INFO(message) PCPP_LOG(pcpp::LogLevel::Info, message)</span></div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="preprocessor">#   define PCPP_LOG_INFO(message) (void)0</span></div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160; </div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="preprocessor">#if PCPP_ACTIVE_LOG_LEVEL &gt;= PCPP_LOG_LEVEL_ERROR</span></div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="preprocessor">#   define PCPP_LOG_ERROR(message) PCPP_LOG(pcpp::LogLevel::Error, message)</span></div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="preprocessor">#   define PCPP_LOG_ERROR(message) (void)0</span></div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160; </div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="preprocessor">#define PCPP_LOG(level, message)                                                                                       \</span></div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="preprocessor">    do                                                                                                                 \</span></div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="preprocessor">    {                                                                                                                  \</span></div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="preprocessor">        auto&amp; logger = pcpp::Logger::getInstance();                                                                    \</span></div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="preprocessor">        if (logger.shouldLog(level, LOG_MODULE))                                                                       \</span></div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="preprocessor">        {                                                                                                              \</span></div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="preprocessor">            auto ctx =                                                                                                 \</span></div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="preprocessor">                logger.createLogContext(level, pcpp::LogSource(LOG_MODULE, PCAPPP_FILENAME, __FUNCTION__, __LINE__));  \</span></div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="preprocessor">            (*ctx) &lt;&lt; message;                                                                                         \</span></div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="preprocessor">            logger.emit(std::move(ctx));                                                                               \</span></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="preprocessor">        }                                                                                                              \</span></div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="preprocessor">    } while (0)</span></div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160; </div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="preprocessor">#if PCPP_ACTIVE_LOG_LEVEL &gt;= PCPP_LOG_LEVEL_DEBUG</span></div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="preprocessor">#   define PCPP_LOG_DEBUG(message) PCPP_LOG(pcpp::LogLevel::Debug, message)</span></div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="preprocessor">#   define PCPP_LOG_DEBUG(message) (void)0</span></div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160; </div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="preprocessor">#if PCPP_ACTIVE_LOG_LEVEL &gt;= PCPP_LOG_LEVEL_WARN</span></div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="preprocessor">#   define PCPP_LOG_WARN(message) PCPP_LOG(pcpp::LogLevel::Warn, message)</span></div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="preprocessor">#   define PCPP_LOG_WARN(message) (void)0</span></div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160; </div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;<span class="preprocessor">#if PCPP_ACTIVE_LOG_LEVEL &gt;= PCPP_LOG_LEVEL_INFO</span></div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="preprocessor">#   define PCPP_LOG_INFO(message) PCPP_LOG(pcpp::LogLevel::Info, message)</span></div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="preprocessor">#   define PCPP_LOG_INFO(message) (void)0</span></div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160; </div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="preprocessor">#if PCPP_ACTIVE_LOG_LEVEL &gt;= PCPP_LOG_LEVEL_ERROR</span></div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="preprocessor">#   define PCPP_LOG_ERROR(message) PCPP_LOG(pcpp::LogLevel::Error, message)</span></div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;<span class="preprocessor">#   define PCPP_LOG_ERROR(message) (void)0</span></div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_deprecation_utils_8h_html"><div class="ttname"><a href="_deprecation_utils_8h.html">DeprecationUtils.h</a></div></div>
 <div class="ttc" id="aclasspcpp_1_1_logger_html"><div class="ttname"><a href="classpcpp_1_1_logger.html">pcpp::Logger</a></div><div class="ttdef"><b>Definition:</b> Logger.h:228</div></div>
 <div class="ttc" id="aclasspcpp_1_1_logger_html_a05aa16e3582946c75318abd582ea500a"><div class="ttname"><a href="classpcpp_1_1_logger.html#a05aa16e3582946c75318abd582ea500a">pcpp::Logger::setLogPrinter</a></div><div class="ttdeci">void setLogPrinter(LogPrinter printer)</div><div class="ttdef"><b>Definition:</b> Logger.h:303</div></div>
@@ -538,7 +540,7 @@ $(document).ready(function(){initNavTree('_logger_8h_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b003f564e33ffc88e35d7a9df43b3691.html">Common++</a></li><li class="navelem"><a class="el" href="dir_9a3e9207f3f2c743963c543f58e0ab18.html">header</a></li><li class="navelem"><a class="el" href="_logger_8h.html">Logger.h</a></li>
-    <li class="footer">Generated on Sun May 3 2026 07:35:18 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon May 4 2026 01:33:44 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
