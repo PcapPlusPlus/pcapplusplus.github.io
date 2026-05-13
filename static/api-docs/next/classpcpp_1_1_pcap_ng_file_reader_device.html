@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_pcap_ng_file_reader_devi
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classpcpp_1_1_pcap_ng_file_reader_device-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::PcapNgFileReaderDevice Class Reference</div>  </div>
@@ -162,11 +163,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:affac08c8925f77baf4a5db28dd1a0d83 inherit pub_methods_classpcpp_1_1_i_pcap_statistics_provider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get statistics from the device.  <a href="classpcpp_1_1_i_pcap_statistics_provider.html#affac08c8925f77baf4a5db28dd1a0d83">More...</a><br /></td></tr>
 <tr class="separator:affac08c8925f77baf4a5db28dd1a0d83 inherit pub_methods_classpcpp_1_1_i_pcap_statistics_provider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a6571432163836ec9062ad42b03fcdc0d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pcap_ng_file_reader_device.html#a6571432163836ec9062ad42b03fcdc0d">isZstdSupported</a> ()</td></tr>
+<tr class="memdesc:a6571432163836ec9062ad42b03fcdc0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A static method that checks if the device was built with zstd compression support.  <a href="classpcpp_1_1_pcap_ng_file_reader_device.html#a6571432163836ec9062ad42b03fcdc0d">More...</a><br /></td></tr>
+<tr class="separator:a6571432163836ec9062ad42b03fcdc0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classpcpp_1_1_i_file_reader_device"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classpcpp_1_1_i_file_reader_device')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classpcpp_1_1_i_file_reader_device.html">pcpp::IFileReaderDevice</a></td></tr>
 <tr class="memitem:a86c1f85162fa5f7dea66e96ba8f4c317 inherit pub_static_methods_classpcpp_1_1_i_file_reader_device"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classpcpp_1_1_i_file_reader_device.html">IFileReaderDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_file_reader_device.html#a86c1f85162fa5f7dea66e96ba8f4c317">getReader</a> (const std::string &amp;fileName)</td></tr>
 <tr class="separator:a86c1f85162fa5f7dea66e96ba8f4c317 inherit pub_static_methods_classpcpp_1_1_i_file_reader_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classpcpp_1_1_i_file_reader_device"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classpcpp_1_1_i_file_reader_device')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classpcpp_1_1_i_file_reader_device.html">pcpp::IFileReaderDevice</a></td></tr>
 <tr class="memitem:aaf7d8d9af86c65cf539c5c4e39804295 inherit pro_methods_classpcpp_1_1_i_file_reader_device"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_i_file_reader_device.html#aaf7d8d9af86c65cf539c5c4e39804295">IFileReaderDevice</a> (const std::string &amp;fileName)</td></tr>
 <tr class="separator:aaf7d8d9af86c65cf539c5c4e39804295 inherit pro_methods_classpcpp_1_1_i_file_reader_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -384,6 +391,34 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a id="a6571432163836ec9062ad42b03fcdc0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6571432163836ec9062ad42b03fcdc0d">&#9670;&nbsp;</a></span>isZstdSupported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool pcpp::PcapNgFileReaderDevice::isZstdSupported </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A static method that checks if the device was built with zstd compression support. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if zstd compression is supported, false otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="a00e9c7016cc01b498a322d3b5d85d1bc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a00e9c7016cc01b498a322d3b5d85d1bc">&#9670;&nbsp;</a></span>open()</h2>
 
@@ -418,7 +453,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_pcap_ng_file_reader_device.html">PcapNgFileReaderDevice</a></li>
-    <li class="footer">Generated on Mon May 4 2026 01:33:46 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed May 13 2026 07:15:40 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
