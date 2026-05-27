@@ -45,7 +45,6 @@ var files_dup =
     [ "DeprecationUtils.h", "_deprecation_utils_8h.html", null ],
     [ "Device.h", "_device_8h.html", "_device_8h" ],
     [ "DeviceListBase.h", "_device_list_base_8h_source.html", null ],
-    [ "DeviceUtils.h", "_device_utils_8h.html", null ],
     [ "DhcpLayer.h", "_dhcp_layer_8h.html", "_dhcp_layer_8h" ],
     [ "DhcpV6Layer.h", "_dhcp_v6_layer_8h.html", "_dhcp_v6_layer_8h" ],
     [ "DnsLayer.h", "_dns_layer_8h.html", [
@@ -196,7 +195,6 @@ var files_dup =
     [ "PcapRemoteDeviceList.h", "_pcap_remote_device_list_8h.html", [
       [ "PcapRemoteDeviceList", "classpcpp_1_1_pcap_remote_device_list.html", "classpcpp_1_1_pcap_remote_device_list" ]
     ] ],
-    [ "PcapUtils.h", "_pcap_utils_8h_source.html", null ],
     [ "PemCodec.h", "_pem_codec_8h.html", [
       [ "PemCodec", "classpcpp_1_1_pem_codec.html", null ]
     ] ],

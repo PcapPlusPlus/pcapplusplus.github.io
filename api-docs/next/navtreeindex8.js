@@ -1,8 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"classpcpp_1_1_bpf_filter_wrapper.html#a704c0f9bd27c6dd5ed8131cce909e6b1":[4,0,0,382,2],
-"classpcpp_1_1_bpf_filter_wrapper.html#a761ec3d30a0b0ba991c94ae01b284453":[4,0,0,382,0],
-"classpcpp_1_1_bpf_filter_wrapper.html#ae6e6f30106eea22239f8f59eff701c33":[4,0,0,382,5],
 "classpcpp_1_1_cisco_hdlc_layer.html":[4,0,0,54],
 "classpcpp_1_1_cisco_hdlc_layer.html#a05fbebade21ba90c2a216a226583e25e":[4,0,0,54,7],
 "classpcpp_1_1_cisco_hdlc_layer.html#a27fa3dd3995695ced9b886cf0b4ddbf4":[4,0,0,54,0],
@@ -249,5 +246,8 @@ var NAVTREEINDEX8 =
 "classpcpp_1_1_do_ip_diagnostic_message_nack.html#a201065264e3570c4ef4f4f19749da7e5":[4,0,0,103,3],
 "classpcpp_1_1_do_ip_diagnostic_message_nack.html#a548be72822a5cfc82771e359cadff19a":[4,0,0,103,2],
 "classpcpp_1_1_do_ip_diagnostic_message_nack.html#a7ad22017e9728e36e6c912bf6c34d7ae":[4,0,0,103,1],
-"classpcpp_1_1_do_ip_diagnostic_message_nack.html#aa39845319bd03cc51449ddcde0b4ea5f":[4,0,0,103,5]
+"classpcpp_1_1_do_ip_diagnostic_message_nack.html#aa39845319bd03cc51449ddcde0b4ea5f":[4,0,0,103,5],
+"classpcpp_1_1_do_ip_diagnostic_message_nack.html#af929882564ea6709c73df496e00f64a9":[4,0,0,103,0],
+"classpcpp_1_1_do_ip_diagnostic_power_mode_request.html":[4,0,0,97],
+"classpcpp_1_1_do_ip_diagnostic_power_mode_request.html#a20cef76af116269050ca0db36eb41a28":[4,0,0,97,0]
 };
