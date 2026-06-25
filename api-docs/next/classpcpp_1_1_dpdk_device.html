@@ -990,7 +990,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Receive raw packets from the network. Please notice that in terms of performance, this is the best method to use for receiving packets because out of all receivePackets overloads this method requires the least overhead and is almost as efficient as receiving packets directly through DPDK. So if performance is a critical factor in your application, please use this method </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">rawPacketsArr</td><td>A pointer to an array of <a class="el" href="classpcpp_1_1_m_buf_raw_packet.html">MBufRawPacket</a> pointers where all received packets will be written into. The array is expected to be allocated by the user and its length should be provided in rawPacketArrLength. Number of packets received will be returned. Notice it's the user responsibility to free the array and its content when done using it </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">rawPacketArrLength</td><td>The length of <a class="el" href="classpcpp_1_1_m_buf_raw_packet.html">MBufRawPacket</a> pointers array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rawPacketArrLength</td><td>The length of <a class="el" href="classpcpp_1_1_m_buf_raw_packet.html">MBufRawPacket</a> pointers array </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">rxQueueId</td><td>The RX queue to receive packets from </td></tr>
   </table>
   </dd>
@@ -1069,7 +1069,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Receive parsed packets from the network </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">packetsArr</td><td>A pointer to an allocated array of <a class="el" href="classpcpp_1_1_packet.html">Packet</a> pointers where all received packets will be written into. The array is expected to be allocated by the user and its length should be provided in packetsArrLength. Number of packets received will be returned. Notice it's the user responsibility to free the array and its content when done using it </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">packetsArrLength</td><td>The length of <a class="el" href="classpcpp_1_1_packet.html">Packet</a> pointers array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packetsArrLength</td><td>The length of <a class="el" href="classpcpp_1_1_packet.html">Packet</a> pointers array </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">rxQueueId</td><td>The RX queue to receive packets from </td></tr>
   </table>
   </dd>
@@ -1631,7 +1631,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_dpdk_device.html">DpdkDevice</a></li>
-    <li class="footer">Generated on Wed May 27 2026 07:04:22 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jun 25 2026 06:21:31 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

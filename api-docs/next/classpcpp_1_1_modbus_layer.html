@@ -203,6 +203,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a24c81fcc2aef302008a48f6a1fe84218"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_modbus_layer.html#a24c81fcc2aef302008a48f6a1fe84218">isModbusPort</a> (uint16_t port)</td></tr>
 <tr class="memdesc:a24c81fcc2aef302008a48f6a1fe84218"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a port is a valid MODBUS port.  <a href="classpcpp_1_1_modbus_layer.html#a24c81fcc2aef302008a48f6a1fe84218">More...</a><br /></td></tr>
 <tr class="separator:a24c81fcc2aef302008a48f6a1fe84218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0821b9081acda65cae8975718397e81c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_modbus_layer.html#a0821b9081acda65cae8975718397e81c">isDataValid</a> (const uint8_t *data, size_t dataSize)</td></tr>
+<tr class="separator:a0821b9081acda65cae8975718397e81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -547,6 +549,50 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a0821b9081acda65cae8975718397e81c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0821b9081acda65cae8975718397e81c">&#9670;&nbsp;</a></span>isDataValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool pcpp::ModbusLayer::isDataValid </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A static method that checks whether the data is large enough to hold a MODBUS header </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>A pointer to the raw data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataSize</td><td>The size of the data in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the data is large enough to be parsed as a MODBUS layer, false otherwise </dd></dl>
+
+</div>
+</div>
 <a id="a24c81fcc2aef302008a48f6a1fe84218"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a24c81fcc2aef302008a48f6a1fe84218">&#9670;&nbsp;</a></span>isModbusPort()</h2>
 
@@ -695,7 +741,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_modbus_layer.html">ModbusLayer</a></li>
-    <li class="footer">Generated on Wed May 27 2026 07:04:21 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jun 25 2026 06:21:30 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
