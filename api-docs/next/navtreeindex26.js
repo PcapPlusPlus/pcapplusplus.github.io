@@ -1,5 +1,7 @@
 var NAVTREEINDEX26 =
 {
+"functions_o.html":[4,3,0,13],
+"functions_p.html":[4,3,0,14],
 "functions_q.html":[4,3,0,15],
 "functions_r.html":[4,3,0,16],
 "functions_rela.html":[4,3,6],
@@ -40,8 +42,8 @@ var NAVTREEINDEX26 =
 "functions_~.html":[4,3,0,25],
 "globals.html":[5,1,0],
 "globals.html":[5,1,0,0],
-"globals_defs.html":[5,1,2,0],
 "globals_defs.html":[5,1,2],
+"globals_defs.html":[5,1,2,0],
 "globals_func.html":[5,1,1],
 "globals_p.html":[5,1,0,1],
 "group___protocol_types.html":[2,0],
@@ -128,8 +130,8 @@ var NAVTREEINDEX26 =
 "index.html#api_reference_sec":[0,1],
 "index.html#intro_sec":[0,0],
 "modules.html":[2],
-"namespacemembers.html":[3,0],
 "namespacemembers.html":[3,0,0],
+"namespacemembers.html":[3,0],
 "namespacemembers_b.html":[3,0,1],
 "namespacemembers_c.html":[3,0,2],
 "namespacemembers_d.html":[3,0,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX26 =
 "structpcpp_1_1_dpdk_device_1_1_link_status.html#a6177ed98446f18d57be88d8c2411a473":[4,0,0,364,2,2],
 "structpcpp_1_1_dpdk_device_1_1_link_status.html#a64cfc43e13a80ba49369288ad220bd1b":[4,0,0,364,2,1],
 "structpcpp_1_1_dpdk_device_1_1_link_status.html#a67ef869fa855fbe7c29add4e9d6ac45b":[4,0,0,364,2,0],
-"structpcpp_1_1_dpdk_device_1_1_link_status.html#a67ef869fa855fbe7c29add4e9d6ac45bab1bd6b662c271f72d4a3a9c3c95e9947":[4,0,0,364,2,0,0],
-"structpcpp_1_1_dpdk_device_1_1_link_status.html#a67ef869fa855fbe7c29add4e9d6ac45babfef29ba9e52e5596eff0235d8e69a14":[4,0,0,364,2,0,1],
-"structpcpp_1_1_dpdk_device_1_1_link_status.html#ac71de439a1f9d3f7c95aadd5b20b0469":[4,0,0,364,2,3]
+"structpcpp_1_1_dpdk_device_1_1_link_status.html#a67ef869fa855fbe7c29add4e9d6ac45bab1bd6b662c271f72d4a3a9c3c95e9947":[4,0,0,364,2,0,0]
 };

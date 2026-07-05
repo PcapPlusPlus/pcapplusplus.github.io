@@ -1,11 +1,13 @@
 var classpcpp_1_1_layer =
 [
     [ "~Layer", "classpcpp_1_1_layer.html#adc5fdf997375b58400a55fdcc3bdff87", null ],
+    [ "allocData", "classpcpp_1_1_layer.html#aab03fdaa084e63c5266a015ed154c4c9", null ],
     [ "computeCalculateFields", "classpcpp_1_1_layer.html#abea112176d18e896f48214ca7accac71", null ],
     [ "constructNextLayer", "classpcpp_1_1_layer.html#a68a8be8c14fe832917a84bde6b1158cd", null ],
     [ "constructNextLayer", "classpcpp_1_1_layer.html#a73210de1c3e4361189be96b40bf109d9", null ],
     [ "constructNextLayerFromFactory", "classpcpp_1_1_layer.html#a05fae5f6d5cf8f11f90e4f810f7b1db6", null ],
     [ "constructNextLayerFromFactory", "classpcpp_1_1_layer.html#a55c244dbb220d5dad3a16987ed93a2ac", null ],
+    [ "copyData", "classpcpp_1_1_layer.html#ad6d7b5dcb95b95101bf41fa9a3f77b82", null ],
     [ "copyData", "classpcpp_1_1_layer.html#a019a07d6f9d8fc7eb233e61826b11964", null ],
     [ "getAttachedPacket", "classpcpp_1_1_layer.html#a92fb19d907170b212986262074418b09", null ],
     [ "getAttachedPacket", "classpcpp_1_1_layer.html#ad819846b9268987c854502a1bea26965", null ],

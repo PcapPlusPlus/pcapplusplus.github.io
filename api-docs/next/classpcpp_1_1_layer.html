@@ -180,7 +180,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8f9d719253a30852620f9595a99956ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a8f9d719253a30852620f9595a99956ed">isAllocatedToPacket</a> () const</td></tr>
 <tr class="separator:a8f9d719253a30852620f9595a99956ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a019a07d6f9d8fc7eb233e61826b11964"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a019a07d6f9d8fc7eb233e61826b11964">copyData</a> (uint8_t *toArr) const</td></tr>
+<tr class="memdesc:a019a07d6f9d8fc7eb233e61826b11964"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the raw data of this layer to another array.  <a href="classpcpp_1_1_layer.html#a019a07d6f9d8fc7eb233e61826b11964">More...</a><br /></td></tr>
 <tr class="separator:a019a07d6f9d8fc7eb233e61826b11964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6d7b5dcb95b95101bf41fa9a3f77b82"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#ad6d7b5dcb95b95101bf41fa9a3f77b82">copyData</a> (uint8_t *dest, size_t destSize) const</td></tr>
+<tr class="memdesc:ad6d7b5dcb95b95101bf41fa9a3f77b82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the raw data of this layer to another array, with a specified maximum size.  <a href="classpcpp_1_1_layer.html#ad6d7b5dcb95b95101bf41fa9a3f77b82">More...</a><br /></td></tr>
+<tr class="separator:ad6d7b5dcb95b95101bf41fa9a3f77b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c5d6f648a6878895a714004f937830d"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a4c5d6f648a6878895a714004f937830d">getDataPtr</a> (size_t offset=0) const override</td></tr>
 <tr class="separator:a4c5d6f648a6878895a714004f937830d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a8410015168a7fa42a7d71ac5b86673"><td class="memItemLeft" align="right" valign="top"><a id="a6a8410015168a7fa42a7d71ac5b86673"></a>
@@ -206,6 +210,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ad819846b9268987c854502a1bea26965"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_packet.html">Packet</a> const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#ad819846b9268987c854502a1bea26965">getAttachedPacket</a> () const</td></tr>
 <tr class="memdesc:ad819846b9268987c854502a1bea26965"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the <a class="el" href="classpcpp_1_1_packet.html">Packet</a> this layer is attached to (if any).  <a href="classpcpp_1_1_layer.html#ad819846b9268987c854502a1bea26965">More...</a><br /></td></tr>
 <tr class="separator:ad819846b9268987c854502a1bea26965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab03fdaa084e63c5266a015ed154c4c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#aab03fdaa084e63c5266a015ed154c4c9">allocData</a> (size_t dataLen, bool zeroInit=true)</td></tr>
+<tr class="memdesc:aab03fdaa084e63c5266a015ed154c4c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests the layer to allocate a new data buffer of the specified length.  <a href="classpcpp_1_1_layer.html#aab03fdaa084e63c5266a015ed154c4c9">More...</a><br /></td></tr>
+<tr class="separator:aab03fdaa084e63c5266a015ed154c4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68a8be8c14fe832917a84bde6b1158cd"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
 <tr class="memitem:a68a8be8c14fe832917a84bde6b1158cd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_layer.html">Layer</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a68a8be8c14fe832917a84bde6b1158cd">constructNextLayer</a> (uint8_t *data, size_t dataLen, Args &amp;&amp;... extraArgs)</td></tr>
 <tr class="memdesc:a68a8be8c14fe832917a84bde6b1158cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the next layer in the protocol stack. No validation is performed on the data.  <a href="classpcpp_1_1_layer.html#a68a8be8c14fe832917a84bde6b1158cd">More...</a><br /></td></tr>
@@ -293,6 +300,60 @@ Static Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aab03fdaa084e63c5266a015ed154c4c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab03fdaa084e63c5266a015ed154c4c9">&#9670;&nbsp;</a></span>allocData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::Layer::allocData </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>zeroInit</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Requests the layer to allocate a new data buffer of the specified length. </p>
+<p>If the layer is not attached to a <a class="el" href="classpcpp_1_1_packet.html">Packet</a>, it will allocate a new buffer of the specified length. If the layer is attached to a <a class="el" href="classpcpp_1_1_packet.html">Packet</a>, it will throw a std::logic_error, as that case is not yet supported.</p>
+<p>The primary use case for this method is initial allocation of the data buffer in derived classes.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataLen</td><td>The length of the new data buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zeroInit</td><td>If true, the new buffer will be zero-initialized. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>if the layer already has allocated data. </td></tr>
+    <tr><td class="paramname">std::logic_error</td><td>if the layer is attached to a <a class="el" href="classpcpp_1_1_packet.html">Packet</a> (not yet supported). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="acb031e00ee13b0c299cc6c0458a61a18"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acb031e00ee13b0c299cc6c0458a61a18">&#9670;&nbsp;</a></span>canReinterpretAs()</h2>
 
@@ -628,8 +689,48 @@ template&lt;typename TFactory , typename... Args&gt; </div>
 
 </div>
 </div>
+<a id="ad6d7b5dcb95b95101bf41fa9a3f77b82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6d7b5dcb95b95101bf41fa9a3f77b82">&#9670;&nbsp;</a></span>copyData() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t pcpp::Layer::copyData </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>destSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy the raw data of this layer to another array, with a specified maximum size. </p>
+<p>The method copies up to 'destSize' bytes of the layer's raw data into the provided destination array. If the layer's data length is greater than 'destSize', only the first 'destSize' bytes will be copied.</p>
+<p>To ensure sufficient space is available in the destination array, use <a class="el" href="classpcpp_1_1_layer.html#a33e4747c33cba0050ac90beeda45aa7b">getDataLen()</a> to determine the actual length of the layer's data before calling this method.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">dest</td><td>The destination byte array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">destSize</td><td>The maximum number of bytes to copy </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of bytes copied to the destination array. </dd></dl>
+
+</div>
+</div>
 <a id="a019a07d6f9d8fc7eb233e61826b11964"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a019a07d6f9d8fc7eb233e61826b11964">&#9670;&nbsp;</a></span>copyData()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a019a07d6f9d8fc7eb233e61826b11964">&#9670;&nbsp;</a></span>copyData() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -643,7 +744,12 @@ template&lt;typename TFactory , typename... Args&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Copy the raw data of this layer to another array </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Copy the raw data of this layer to another array. </p>
+<dl class="section warning"><dt>Warning</dt><dd>The method does not perform any bounds checking on the destination array. The caller MUST ensure that the destination array has enough space to hold the <a class="el" href="classpcpp_1_1_layer.html#a33e4747c33cba0050ac90beeda45aa7b">getDataLen()</a> bytes.</dd>
+<dd>
+Prefer the overload of <a class="el" href="classpcpp_1_1_layer.html#a019a07d6f9d8fc7eb233e61826b11964" title="Copy the raw data of this layer to another array.">copyData()</a> that accepts a destination size to ensure safe copying of data.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">toArr</td><td>The destination byte array </td></tr>
   </table>
@@ -1493,7 +1599,7 @@ template&lt;typename T , typename TFallback , typename... Args&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_layer.html">Layer</a></li>
-    <li class="footer">Generated on Fri Jun 26 2026 07:08:12 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Jul 5 2026 20:21:17 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
