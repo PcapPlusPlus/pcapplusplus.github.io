@@ -328,6 +328,36 @@ ServerHello TLS fingerprinting (JA3S) is almost similar but for `pcpp::SSLServer
 
 To learn more please take a look at the [TLS fingerprinting example](https://github.com/seladb/PcapPlusPlus/tree/{{site.github_label}}/Examples/TLSFingerprinting) in PcapPlusPlus GitHub repo which demonstrates how to collect ClientHello and ServerHello fingerprints from live traffic or pcap files, write them to an output file and display various statistics.
 
+## X.509 & Cryptography Support
+
+[X.509](https://en.wikipedia.org/wiki/X.509) is the standard format for public key certificates, used extensively in TLS/SSL, S/MIME, code signing and other PKI-based systems. Since PcapPlusPlus already parses SSL/TLS traffic, being able to decode the certificates exchanged during a TLS handshake and to work with certificates and keys more generally - is a natural extension of that capability.
+This includes not just certificates but the RSA and EC private/public keys behind them."
+
+PcapPlusPlus provides:
+
+- A full X.509 certificate decoder that parses all of the certificate fields
+- Export and import of X.509 certificates from both PEM and DER formats, and decoding of certificates embedded in SSL/TLS handshake messages
+- Cryptographic key decoders for RSA and EC private keys (including PKCS#8) and public keys
+
+Consider this simple code snippet that shows how to read a DER-encoded certificate file, parse it and print some of its basic properties:
+
+```cpp
+// parse a certificate from a PEM-encoded file
+auto cert = pcpp::X509Certificate::fromPEMFile("certificate.pem");
+
+// print the certificate's subject, issuer and validity period
+std::cout
+    << "Subject: " << cert->getSubject().toString() << std::endl
+    << "Issuer: " << cert->getIssuer().toString() << std::endl
+    << "Valid from: " << cert->getNotBefore().toString() << std::endl
+    << "Valid until: " << cert->getNotAfter().toString() << std::endl;
+
+// convert the certificate to DER format
+auto der = cert->toDER();
+```
+
+To learn more please take a look at the <APIDocsLink relativePath="/classpcpp_1_1_x509_certificate.html">API documentation</APIDocsLink> and browse through the code of the [X509Toolkit](./examples#x509toolkit) example app.
+
 ## Supported network protocols
 
 PcapPlusPlus currently supports parsing, editing and generation of packets of the following protocols:
