@@ -1,0 +1,33 @@
+---
+title: API Reference
+sidebar_position: 99
+---
+
+# API Reference
+
+import ButtonLink from '/src/components/ButtonLink';
+import { useActiveVersion } from '@docusaurus/plugin-content-docs/client';
+import { ThemedImageWithBaseUrl } from '@site/src/components/ImageWithBaseUrl';
+
+<ButtonLink
+  text="Go to Doxygen API reference"
+  link={'pathname:///api-docs/' + useActiveVersion().label.toLowerCase()}
+></ButtonLink>
+<br />
+<br />
+PcapPlusPlus consists of 3 libraries:
+
+- **Packet++** - a library for parsing, creating and editing network packets
+- **Pcap++** - a library for intercepting and sending packets, providing network and NIC info, stats, etc. It is actually a C++ wrapper for packet capturing engines such as libpcap, WinPcap, Npcap, DPDK and PF_RING
+- **Common++** - a library with some common code utilities used by both Packet++ and Pcap++
+
+The dependency model between the libraries is as follows:
+
+<ThemedImageWithBaseUrl
+  srcLight="/api-docs/libraries-light.svg"
+  srcDark="/api-docs/libraries-dark.svg"
+/>
+
+That means, you can use **Common++** separately from the other libraries, and you can also use **Packet++** without **Pcap++**.
+
+All of PcapPlusPlus APIs including classes for all of these libraries, files, data structures, etc. are documented in details using [Doxygen](http://www.doxygen.nl/).

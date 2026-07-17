@@ -1,0 +1,90 @@
+import ReleaseLink from '@site/src/components/ReleaseLink';
+
+### Step 1 - install PcapPlusPlus
+
+Before installing PcapPlusPlus make sure you have the prerequisites installed for [Visual Studio](./install/vs#prerequisites). Please notice that the currently supported versions of Visual Studio are 2019 and 2022.
+
+Download the pre-compiled package for the Visual Studio version you have (VS2019 or VS2022) from the <ReleaseLink/>. Please notice there are 4 different configurations
+for each VS version - x64 / Win32 and Debug / Release. It's important to remember because you'll use them later.
+
+### Step 2 - create your first app
+
+Go to: `Drive:\path\to\your\package\example-app`.
+
+Make sure you see the following files:
+
+```shell
+ |-- main.cpp
+ |-- 1_packet.pcap
+ |-- CMakeLists.txt
+```
+
+`main.cpp` is the example application we'll use.
+
+`1_packet.pcap` is a pcap file the app reads from.
+
+`CMakeLists.txt` will help us build the app.
+
+### Step 3 - build and run your app
+
+Configure CMake:
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+<TabItem value="vs2019-x64" label="VS2019 - x64" default>
+
+```cmd
+cmake -A x64 -G "Visual Studio 16 2019" -S . -B build -DPcapPlusPlus_ROOT=Drive:\path\to\your\package -DPCAP_ROOT=Drive:\path\to\npcap-sdk -DPacket_ROOT=Drive:\path\to\npcap-sdk
+```
+
+</TabItem>
+<TabItem value="vs2019-win32" label="VS2019 - Win32" default>
+
+```cmd
+cmake -A Win32 -G "Visual Studio 16 2019" -S . -B build -DPcapPlusPlus_ROOT=Drive:\path\to\your\package -DPCAP_ROOT=Drive:\path\to\npcap-sdk -DPacket_ROOT=Drive:\path\to\npcap-sdk
+```
+
+</TabItem>
+<TabItem value="vs2022-x64" label="VS2022 - x64">
+
+```cmd
+cmake -A x64 -G "Visual Studio 17 2022" -S . -B build -DPcapPlusPlus_ROOT=Drive:\path\to\your\package -DPCAP_ROOT=Drive:\path\to\npcap-sdk -DPacket_ROOT=Drive:\path\to\npcap-sdk
+```
+
+</TabItem>
+<TabItem value="vs2022-win32" label="VS2022 - Win32">
+
+```cmd
+cmake -A Win32 -G "Visual Studio 17 2022" -S . -B build -DPcapPlusPlus_ROOT=Drive:\path\to\your\package -DPCAP_ROOT=Drive:\path\to\npcap-sdk -DPacket_ROOT=Drive:\path\to\npcap-sdk
+```
+
+</TabItem>
+</Tabs>
+
+Build the app:
+
+<Tabs>
+<TabItem value="debug" label="Debug">
+
+```cmd
+cmake --build build --config Debug
+```
+
+</TabItem>
+<TabItem value="release" label="Release">
+
+```cmd
+cmake --build build --config Release
+```
+
+</TabItem>
+</Tabs>
+
+An executable file will be created which contains the compiled app. You can now run it and should be able to see the following output:
+
+```cmd
+example-app.exe
+Source IP is '10.0.0.138'; Dest IP is '10.0.0.1'
+```
