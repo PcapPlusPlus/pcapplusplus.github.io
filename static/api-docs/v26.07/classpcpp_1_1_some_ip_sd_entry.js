@@ -1,0 +1,37 @@
+var classpcpp_1_1_some_ip_sd_entry =
+[
+    [ "someipsdhdrentry", "structpcpp_1_1_some_ip_sd_entry_1_1someipsdhdrentry.html", "structpcpp_1_1_some_ip_sd_entry_1_1someipsdhdrentry" ],
+    [ "EntryType", "classpcpp_1_1_some_ip_sd_entry.html#a74334e18cd309a1abfcbbae37d1ef2e6", [
+      [ "FindService", "classpcpp_1_1_some_ip_sd_entry.html#a74334e18cd309a1abfcbbae37d1ef2e6af411b8172b12793cca7bd5b6966a1ec3", null ],
+      [ "OfferService", "classpcpp_1_1_some_ip_sd_entry.html#a74334e18cd309a1abfcbbae37d1ef2e6aebff47fbbfdbbeb0c020cc9c288c99d0", null ],
+      [ "StopOfferService", "classpcpp_1_1_some_ip_sd_entry.html#a74334e18cd309a1abfcbbae37d1ef2e6a6226ae17df2123ccce1825530a9e1b2c", null ],
+      [ "SubscribeEventgroup", "classpcpp_1_1_some_ip_sd_entry.html#a74334e18cd309a1abfcbbae37d1ef2e6a47518a79d8ab095251ef413fb69b3f03", null ],
+      [ "StopSubscribeEventgroup", "classpcpp_1_1_some_ip_sd_entry.html#a74334e18cd309a1abfcbbae37d1ef2e6a6dcd7b877477784dc03fc61e8030ae2b", null ],
+      [ "SubscribeEventgroupAck", "classpcpp_1_1_some_ip_sd_entry.html#a74334e18cd309a1abfcbbae37d1ef2e6a7356f354b222bfd02e68e331020fe4b5", null ],
+      [ "SubscribeEventgroupNack", "classpcpp_1_1_some_ip_sd_entry.html#a74334e18cd309a1abfcbbae37d1ef2e6a3730000cfc624e2533afc18c2808aa7a", null ],
+      [ "UnknownEntryType", "classpcpp_1_1_some_ip_sd_entry.html#a74334e18cd309a1abfcbbae37d1ef2e6a4f31685334f6c35f8521888b664040cf", null ]
+    ] ],
+    [ "SomeIpSdEntry", "classpcpp_1_1_some_ip_sd_entry.html#aeb03b172ed13aac8781f306692b49e8c", null ],
+    [ "SomeIpSdEntry", "classpcpp_1_1_some_ip_sd_entry.html#a7627295df2122c6b1f24e51804836a8f", null ],
+    [ "SomeIpSdEntry", "classpcpp_1_1_some_ip_sd_entry.html#aed3367354d7183b700ef4ec2217a15bc", null ],
+    [ "~SomeIpSdEntry", "classpcpp_1_1_some_ip_sd_entry.html#a8791d4fa3175832ecdff84985b23d66d", null ],
+    [ "getCounter", "classpcpp_1_1_some_ip_sd_entry.html#add82e123b8b8fb8f9aca05910948e3e5", null ],
+    [ "getDataPtr", "classpcpp_1_1_some_ip_sd_entry.html#a2710291faffbb04c851e251e9fda1791", null ],
+    [ "getEventgroupId", "classpcpp_1_1_some_ip_sd_entry.html#a1aff4df4e9d0f41b1f0e13281b9a63bb", null ],
+    [ "getInstanceId", "classpcpp_1_1_some_ip_sd_entry.html#a9091323f775d7654cf10bc9dfb4007e3", null ],
+    [ "getLength", "classpcpp_1_1_some_ip_sd_entry.html#a1e0bb48c0d44a7251fb43b62332805e1", null ],
+    [ "getMajorVersion", "classpcpp_1_1_some_ip_sd_entry.html#a54a662fb051b3f82ff8ae5ec8646bbbe", null ],
+    [ "getMinorVersion", "classpcpp_1_1_some_ip_sd_entry.html#af08410a2c453eee37331fd969e5274b0", null ],
+    [ "getNumOptions", "classpcpp_1_1_some_ip_sd_entry.html#a5f7dc107bb2730de9455a739a85e5838", null ],
+    [ "getServiceId", "classpcpp_1_1_some_ip_sd_entry.html#aec135f4b2dbae3cff5c340ac5670477b", null ],
+    [ "getSomeIpSdEntryHeader", "classpcpp_1_1_some_ip_sd_entry.html#af42fd1797f67566016e1f012f7335cff", null ],
+    [ "getTtl", "classpcpp_1_1_some_ip_sd_entry.html#a2e43d3663e9b44b38c8bbe397b085208", null ],
+    [ "getType", "classpcpp_1_1_some_ip_sd_entry.html#a110c1e7dd46d203f6e8b5e1102dfcf60", null ],
+    [ "setCounter", "classpcpp_1_1_some_ip_sd_entry.html#a357df6fd48db4626398d97046970d5fd", null ],
+    [ "setEventgroupId", "classpcpp_1_1_some_ip_sd_entry.html#a4135c2912412e398bd88c238d7488d88", null ],
+    [ "setInstanceId", "classpcpp_1_1_some_ip_sd_entry.html#a9d9d25d27770a21dd19b7b4014190a3a", null ],
+    [ "setMajorVersion", "classpcpp_1_1_some_ip_sd_entry.html#a2a7b5627eedd2c59b328adf671d1b0d9", null ],
+    [ "setMinorVersion", "classpcpp_1_1_some_ip_sd_entry.html#a8450f190e49be034a6db6cf09deb6e21", null ],
+    [ "setServiceId", "classpcpp_1_1_some_ip_sd_entry.html#ae94504fb540cd47f5d361296567faff2", null ],
+    [ "setTtl", "classpcpp_1_1_some_ip_sd_entry.html#ac5211f78a2ba46510beaefc66cc7ba9c", null ]
+];
