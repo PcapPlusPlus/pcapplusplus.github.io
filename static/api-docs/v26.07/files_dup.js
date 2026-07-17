@@ -187,6 +187,7 @@ var files_dup =
     [ "PcapLiveDeviceList.h", "_pcap_live_device_list_8h.html", [
       [ "PcapLiveDeviceList", "classpcpp_1_1_pcap_live_device_list.html", "classpcpp_1_1_pcap_live_device_list" ]
     ] ],
+    [ "PcapNgFileReaderDevice.h", "_pcap_ng_file_reader_device_8h.html", "_pcap_ng_file_reader_device_8h" ],
     [ "PcapPlusPlusVersion.h", "_pcap_plus_plus_version_8h.html", "_pcap_plus_plus_version_8h" ],
     [ "PcapRemoteDevice.h", "_pcap_remote_device_8h.html", [
       [ "PcapRemoteAuthentication", "structpcpp_1_1_pcap_remote_authentication.html", "structpcpp_1_1_pcap_remote_authentication" ],

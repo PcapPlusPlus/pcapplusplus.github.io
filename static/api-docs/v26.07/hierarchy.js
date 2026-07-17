@@ -361,6 +361,7 @@ var hierarchy =
           [ "pcpp::IFileReaderDevice", "classpcpp_1_1_i_file_reader_device.html", [
             [ "pcpp::PcapFileReaderDevice", "classpcpp_1_1_pcap_file_reader_device.html", null ],
             [ "pcpp::PcapNgFileReaderDevice", "classpcpp_1_1_pcap_ng_file_reader_device.html", null ],
+            [ "pcpp::PcapNgFileReaderDevice", "classpcpp_1_1_pcap_ng_file_reader_device.html", null ],
             [ "pcpp::SnoopFileReaderDevice", "classpcpp_1_1_snoop_file_reader_device.html", null ]
           ] ],
           [ "pcpp::IFileWriterDevice", "classpcpp_1_1_i_file_writer_device.html", [
@@ -474,6 +475,12 @@ var hierarchy =
     [ "pcpp::PacketParseOptions", "structpcpp_1_1_packet_parse_options.html", null ],
     [ "pcpp::BgpUpdateMessageLayer::path_attribute", "structpcpp_1_1_bgp_update_message_layer_1_1path__attribute.html", null ],
     [ "pcpp::internal::PcapHandle", "classpcpp_1_1internal_1_1_pcap_handle.html", null ],
+    [ "pcpp::PcapNgBlockHeader", "structpcpp_1_1_pcap_ng_block_header.html", null ],
+    [ "pcpp::PcapNgEnhancedPacketBlock", "structpcpp_1_1_pcap_ng_enhanced_packet_block.html", null ],
+    [ "pcpp::PcapNgInterfaceDescriptionBlock", "structpcpp_1_1_pcap_ng_interface_description_block.html", null ],
+    [ "pcpp::PcapNgOptionHeader", "structpcpp_1_1_pcap_ng_option_header.html", null ],
+    [ "pcpp::PcapNgSectionHeaderBlock", "structpcpp_1_1_pcap_ng_section_header_block.html", null ],
+    [ "pcpp::PcapNgSimplePacketBlock", "structpcpp_1_1_pcap_ng_simple_packet_block.html", null ],
     [ "pcpp::PcapRemoteAuthentication", "structpcpp_1_1_pcap_remote_authentication.html", null ],
     [ "pcpp::PcapStats", "structpcpp_1_1_pcap_stats.html", null ],
     [ "pcpp::PemCodec", "classpcpp_1_1_pem_codec.html", null ],
