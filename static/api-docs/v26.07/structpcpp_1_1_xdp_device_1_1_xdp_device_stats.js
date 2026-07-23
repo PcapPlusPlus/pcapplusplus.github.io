@@ -1,0 +1,26 @@
+var structpcpp_1_1_xdp_device_1_1_xdp_device_stats =
+[
+    [ "cqRingId", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#aecfefe59d795a5bd4052ec6c7962e254", null ],
+    [ "fqRingId", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#aac8e31d9587c97ee5d0f1be80ea898ae", null ],
+    [ "rxBytes", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#af725d5e57a43957ecd2f18eb2a82822a", null ],
+    [ "rxBytesPerSec", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#aec59d81e4405120babe65fbe2a21c1b3", null ],
+    [ "rxDroppedFillRingPackets", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#ad8348b8fb7e78e8274319d21318c0164", null ],
+    [ "rxDroppedInvalidPackets", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#a011b72149d85028e4fe6237e3d3fcc39", null ],
+    [ "rxDroppedRxRingFullPackets", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#ac1b10da020b007869b4362e5759a4976", null ],
+    [ "rxDroppedTotalPackets", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#ab5289b4baa3b142eb24f31001b33c0cf", null ],
+    [ "rxPackets", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#a37bf5195ef7c1cde404e7145538e53a5", null ],
+    [ "rxPacketsPerSec", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#ab6674101fcad492555657088ba1581fc", null ],
+    [ "rxPollTimeout", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#afaf1e608ac5858ab0baba6ff4e35fcbf", null ],
+    [ "rxRingId", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#a882cffd637127a8b17407d33bd8758f9", null ],
+    [ "timestamp", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#a26c9a54bd4b9098a4ee86f0e92366034", null ],
+    [ "txCompletedPackets", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#ad4e6578284fa2109401544003cea0e05", null ],
+    [ "txCompletedPacketsPerSec", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#ae0d8ab6744a09857d33af4b696bab702", null ],
+    [ "txDroppedInvalidPackets", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#aaa3b8cbcec9def4e636818128766f6c6", null ],
+    [ "txRingId", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#a6c3a7353d4455488a0ce9cbfab546a71", null ],
+    [ "txSentBytes", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#a4647346e5705d16f6842f9a33081d429", null ],
+    [ "txSentBytesPerSec", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#a9c85ae2989f17448c9e9711928a60f78", null ],
+    [ "txSentPackets", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#af9481e747c98592beb5cc238917d9a57", null ],
+    [ "txSentPacketsPerSec", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#afd4e17223d65f34d6a8bef7fd285cb69", null ],
+    [ "umemAllocatedFrames", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#a91eed24af7bf815fa7ab70e66d3facdb", null ],
+    [ "umemFreeFrames", "structpcpp_1_1_xdp_device_1_1_xdp_device_stats.html#af170a03c0e49a172c984930f3bde2e1f", null ]
+];
