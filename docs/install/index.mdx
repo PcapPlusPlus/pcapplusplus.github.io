@@ -88,9 +88,10 @@ Integrate in an xmake project:
 <CodeBlock language="lua">{`add_requires("pcapplusplus ${getReleaseNumber()}")
 
 target("demo")
-      set_kind("binary")
-      add_files("src/*.cpp")
-      add_packages("pcapplusplus")`}
+set_kind("binary")
+add_files("src/\*.cpp")
+add_packages("pcapplusplus")`}
+
 </CodeBlock>
 
 The Xmake package can be found here: https://packages.xmake.io/packages/pcapplusplus
