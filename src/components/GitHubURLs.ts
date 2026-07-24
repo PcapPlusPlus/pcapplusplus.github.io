@@ -17,6 +17,10 @@ export function getRelease(): string {
     : activeVersion.label;
 }
 
+export function getReleaseNumber(): string {
+  return getRelease().replace(/^v/, '');
+}
+
 export function getSpecificReleaseURL(release: string): string {
   return `${repo}/releases/tag/${release}`;
 }
