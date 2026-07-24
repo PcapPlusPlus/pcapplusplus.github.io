@@ -3,8 +3,10 @@ slug: /install
 title: 'Setting Up PcapPlusPlus'
 ---
 
+import CodeBlock from '@theme/CodeBlock';
 import {
   getRelease,
+  getReleaseNumber,
   getReleaseZipURL,
   getReleaseTarURL,
   getSourceCodeZipURL,
@@ -72,6 +74,27 @@ conan install "pcapplusplus/[>0]@" -u
 ```
 
 This command will fetch PcapPlusPlus directly from ConanCenter: [https://conan.io/center/pcapplusplus](https://conan.io/center/pcapplusplus)
+
+## Xmake
+
+Available for: <ImageWithBaseUrl src="/img/os-logos/logo-windows.png" alt="drawing" width="24" title="Windows"/> <ImageWithBaseUrl src="/img/os-logos/logo-linux.png" alt="drawing" width="24" title="Linux"/> <ThemedImageWithBaseUrl srcLight="/img/os-logos/logo-apple.png" srcDark="/img/os-logos/logo-apple-dark.png" width="24" title="MacOS"/> <ImageWithBaseUrl src="/img/os-logos/logo-freebsd.png" alt="drawing" width="24" title="FreeBSD"/> <ImageWithBaseUrl src="/img/os-logos/logo-android.png" alt="drawing" width="24" title="Android"/>
+
+Standalone CLI install:
+
+<CodeBlock>xrepo install "pcapplusplus {getReleaseNumber()}"</CodeBlock>
+
+Integrate in an xmake project:
+
+<CodeBlock language="lua">{`add_requires("pcapplusplus ${getReleaseNumber()}")
+
+target("demo")
+set_kind("binary")
+add_files("src/\*.cpp")
+add_packages("pcapplusplus")`}
+
+</CodeBlock>
+
+The Xmake package can be found here: https://packages.xmake.io/packages/pcapplusplus
 
 ## GitHub Release
 
