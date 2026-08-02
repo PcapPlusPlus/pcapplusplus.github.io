@@ -95,46 +95,84 @@ $(document).ready(function(){initNavTree('_pcap_plus_plus_version_8h_source.html
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepcpp.html">pcpp</a></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define PCAPPLUSPLUS_VERSION &quot;26.07&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define PCAPPLUSPLUS_VERSION_OFFICIAL &quot;official release&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define PCAPPLUSPLUS_VERSION_FULL &quot;v&quot;</span> PCAPPLUSPLUS_VERSION &quot; (&quot; PCAPPLUSPLUS_VERSION_OFFICIAL &quot;)&quot;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespacepcpp.html#aa818bc85ee8391b470263dc3aefa945b">   19</a></span>&#160;    <span class="keyword">inline</span> std::string <a class="code" href="namespacepcpp.html#aa818bc85ee8391b470263dc3aefa945b">getPcapPlusPlusVersion</a>()</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">return</span> PCAPPLUSPLUS_VERSION;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="namespacepcpp.html#a405f96d13d38a7b86a8321c31edc6ef0">   26</a></span>&#160;    <span class="keyword">inline</span> std::string <a class="code" href="namespacepcpp.html#a405f96d13d38a7b86a8321c31edc6ef0">getPcapPlusPlusVersionFull</a>()</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">return</span> PCAPPLUSPLUS_VERSION_FULL;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="_pcap_plus_plus_version_8h.html#ab0b93929bab65ff9924265d499a2f72a">   13</a></span>&#160;<span class="preprocessor">#define PCAPPLUSPLUS_VERSION_YEAR 26</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="_pcap_plus_plus_version_8h.html#a4a92c441ed30c83f829432fedcc17fea">   17</a></span>&#160;<span class="preprocessor">#define PCAPPLUSPLUS_VERSION_MONTH 7</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="_pcap_plus_plus_version_8h.html#a6f06506bcabba7c3844011917f337212">   21</a></span>&#160;<span class="preprocessor">#define PCAPPLUSPLUS_VERSION_PATCH 0</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="_pcap_plus_plus_version_8h.html#a3f2007c3280a224b68cff09388ecb30c">   25</a></span>&#160;<span class="preprocessor">#define PCAPPLUSPLUS_VERSION_DEV 1</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="_pcap_plus_plus_version_8h.html#a98e0844597bd29f4413a9da897ef9ba9">   29</a></span>&#160;<span class="preprocessor">#define PCAPPLUSPLUS_VERSION &quot;26.07-dev&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#ifdef PCAPPP_BUILD_REPRODUCIBLE</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">inline</span> std::string <a class="code" href="namespacepcpp.html#aa6e2dd1c0d8281b957fd0a52555c9908">getBuildDateTime</a>()</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="namespacepcpp.html#aa6e2dd1c0d8281b957fd0a52555c9908">   38</a></span>&#160;    <span class="keyword">inline</span> std::string <a class="code" href="namespacepcpp.html#aa6e2dd1c0d8281b957fd0a52555c9908">getBuildDateTime</a>()</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">return</span> __DATE__ <span class="stringliteral">&quot; &quot;</span> __TIME__;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="namespacepcpp.html#acae7542122e659b88073dc6b76564e6b">   45</a></span>&#160;    std::string <a class="code" href="namespacepcpp.html#acae7542122e659b88073dc6b76564e6b">getGitCommit</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#if PCAPPLUSPLUS_VERSION_DEV</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="_pcap_plus_plus_version_8h.html#a4c0115a13f39df2a81a3a1eb9610a35e">   34</a></span>&#160;<span class="preprocessor">#   define PCAPPLUSPLUS_VERSION_OFFICIAL &quot;development build&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#   define PCAPPLUSPLUS_VERSION_OFFICIAL &quot;official release&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="_pcap_plus_plus_version_8h.html#a6646e500837ddd23c0333782089ac215">   45</a></span>&#160;<span class="preprocessor">#define PCAPPLUSPLUS_MAKE_VERSION_FULL(year, month, patch, dev) ((year) * 100000 + (month) * 1000 + (patch) * 10 + dev)</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="namespacepcpp.html#a85b9d50917da9312e11f3373e2999073">   48</a></span>&#160;    std::string <a class="code" href="namespacepcpp.html#a85b9d50917da9312e11f3373e2999073">getGitBranch</a>();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="namespacepcpp.html#aa1b1b04caac37857e13624c044924bf7">   52</a></span>&#160;    std::string <a class="code" href="namespacepcpp.html#aa1b1b04caac37857e13624c044924bf7">getGitInfo</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="_pcap_plus_plus_version_8h.html#a053ec25d6c47a62e91993be49116e2fe">   52</a></span>&#160;<span class="preprocessor">#define PCAPPLUSPLUS_MAKE_VERSION(year, month, patch) PCAPPLUSPLUS_MAKE_VERSION_FULL(year, month, patch, 0)</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="_pcap_plus_plus_version_8h.html#a516851e575d45df6793f529df1414526">   56</a></span>&#160;<span class="preprocessor">#define PCAPPLUSPLUS_VERSION_NUM                                                                                       \</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">    PCAPPLUSPLUS_MAKE_VERSION_FULL(PCAPPLUSPLUS_VERSION_YEAR, PCAPPLUSPLUS_VERSION_MONTH, PCAPPLUSPLUS_VERSION_PATCH,  \</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">                                   PCAPPLUSPLUS_VERSION_DEV)</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="_pcap_plus_plus_version_8h.html#a6894ee31b7681b7f9c9b6a6b5d5942c6">   65</a></span>&#160;<span class="preprocessor">#define PCAPPLUSPLUS_VERSION_EQUALS(major, minor, patch)                                                               \</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">    PCAPPLUSPLUS_VERSION_NUM == PCAPPLUSPLUS_MAKE_VERSION(major, minor, patch)</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="_pcap_plus_plus_version_8h.html#a14d11d578a603d97f87beff91488df66">   73</a></span>&#160;<span class="preprocessor">#define PCAPPLUSPLUS_VERSION_LOWER_THAN(year, month, patch)                                                            \</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">    PCAPPLUSPLUS_VERSION_NUM &lt; PCAPPLUSPLUS_MAKE_VERSION(year, month, patch)</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="_pcap_plus_plus_version_8h.html#a0536a6e8740e001b34f3039cfb8e4222">   81</a></span>&#160;<span class="preprocessor">#define PCAPPLUSPLUS_VERSION_LOWER_OR_EQUAL_THAN(year, month, patch)                                                   \</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">    PCAPPLUSPLUS_VERSION_NUM &lt;= PCAPPLUSPLUS_MAKE_VERSION(year, month, patch)</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="_pcap_plus_plus_version_8h.html#a645f2655d18ed89da029cb546b5a84dd">   89</a></span>&#160;<span class="preprocessor">#define PCAPPLUSPLUS_VERSION_HIGHER_THAN(year, month, patch)                                                           \</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">    PCAPPLUSPLUS_VERSION_NUM &gt; PCAPPLUSPLUS_MAKE_VERSION(year, month, patch)</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="_pcap_plus_plus_version_8h.html#ab6c63109bb6481a383be217835258697">   97</a></span>&#160;<span class="preprocessor">#define PCAPPLUSPLUS_VERSION_HIGHER_OR_EQUAL_THAN(year, month, patch)                                                  \</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">    PCAPPLUSPLUS_VERSION_NUM &gt;= PCAPPLUSPLUS_MAKE_VERSION(year, month, patch)</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="_pcap_plus_plus_version_8h.html#a02df4e8d7c7693b0c5e1baf0909c1f7a">  102</a></span>&#160;<span class="preprocessor">#define PCAPPLUSPLUS_VERSION_FULL &quot;v&quot;</span> PCAPPLUSPLUS_VERSION &quot; (&quot; PCAPPLUSPLUS_VERSION_OFFICIAL &quot;)&quot;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="namespacepcpp.html#aa818bc85ee8391b470263dc3aefa945b">  107</a></span>&#160;    <span class="keyword">inline</span> std::string <a class="code" href="namespacepcpp.html#aa818bc85ee8391b470263dc3aefa945b">getPcapPlusPlusVersion</a>()</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_pcap_plus_plus_version_8h.html#a98e0844597bd29f4413a9da897ef9ba9">PCAPPLUSPLUS_VERSION</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="namespacepcpp.html#a405f96d13d38a7b86a8321c31edc6ef0">  114</a></span>&#160;    <span class="keyword">inline</span> std::string <a class="code" href="namespacepcpp.html#a405f96d13d38a7b86a8321c31edc6ef0">getPcapPlusPlusVersionFull</a>()</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_pcap_plus_plus_version_8h.html#a02df4e8d7c7693b0c5e1baf0909c1f7a">PCAPPLUSPLUS_VERSION_FULL</a>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#ifdef PCAPPP_BUILD_REPRODUCIBLE</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">inline</span> std::string <a class="code" href="namespacepcpp.html#aa6e2dd1c0d8281b957fd0a52555c9908">getBuildDateTime</a>()</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="namespacepcpp.html#aa6e2dd1c0d8281b957fd0a52555c9908">  126</a></span>&#160;    <span class="keyword">inline</span> std::string <a class="code" href="namespacepcpp.html#aa6e2dd1c0d8281b957fd0a52555c9908">getBuildDateTime</a>()</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">return</span> __DATE__ <span class="stringliteral">&quot; &quot;</span> __TIME__;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="namespacepcpp.html#acae7542122e659b88073dc6b76564e6b">  133</a></span>&#160;    std::string <a class="code" href="namespacepcpp.html#acae7542122e659b88073dc6b76564e6b">getGitCommit</a>();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="namespacepcpp.html#a85b9d50917da9312e11f3373e2999073">  136</a></span>&#160;    std::string <a class="code" href="namespacepcpp.html#a85b9d50917da9312e11f3373e2999073">getGitBranch</a>();</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="namespacepcpp.html#aa1b1b04caac37857e13624c044924bf7">  140</a></span>&#160;    std::string <a class="code" href="namespacepcpp.html#aa1b1b04caac37857e13624c044924bf7">getGitInfo</a>();</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="ttc" id="a_pcap_plus_plus_version_8h_html_a02df4e8d7c7693b0c5e1baf0909c1f7a"><div class="ttname"><a href="_pcap_plus_plus_version_8h.html#a02df4e8d7c7693b0c5e1baf0909c1f7a">PCAPPLUSPLUS_VERSION_FULL</a></div><div class="ttdeci">#define PCAPPLUSPLUS_VERSION_FULL</div><div class="ttdoc">Full version string including version and release type (e.g., &quot;v26.07-dev (development build)&quot;)</div><div class="ttdef"><b>Definition:</b> PcapPlusPlusVersion.h:102</div></div>
+<div class="ttc" id="a_pcap_plus_plus_version_8h_html_a98e0844597bd29f4413a9da897ef9ba9"><div class="ttname"><a href="_pcap_plus_plus_version_8h.html#a98e0844597bd29f4413a9da897ef9ba9">PCAPPLUSPLUS_VERSION</a></div><div class="ttdeci">#define PCAPPLUSPLUS_VERSION</div><div class="ttdoc">Short version string (e.g., &quot;26.07&quot; for official release or &quot;26.07-dev&quot; for development build)</div><div class="ttdef"><b>Definition:</b> PcapPlusPlusVersion.h:29</div></div>
 <div class="ttc" id="anamespacepcpp_html"><div class="ttname"><a href="namespacepcpp.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib.</div><div class="ttdef"><b>Definition:</b> AssertionUtils.h:19</div></div>
-<div class="ttc" id="anamespacepcpp_html_a405f96d13d38a7b86a8321c31edc6ef0"><div class="ttname"><a href="namespacepcpp.html#a405f96d13d38a7b86a8321c31edc6ef0">pcpp::getPcapPlusPlusVersionFull</a></div><div class="ttdeci">std::string getPcapPlusPlusVersionFull()</div><div class="ttdef"><b>Definition:</b> PcapPlusPlusVersion.h:26</div></div>
+<div class="ttc" id="anamespacepcpp_html_a405f96d13d38a7b86a8321c31edc6ef0"><div class="ttname"><a href="namespacepcpp.html#a405f96d13d38a7b86a8321c31edc6ef0">pcpp::getPcapPlusPlusVersionFull</a></div><div class="ttdeci">std::string getPcapPlusPlusVersionFull()</div><div class="ttdef"><b>Definition:</b> PcapPlusPlusVersion.h:114</div></div>
 <div class="ttc" id="anamespacepcpp_html_a85b9d50917da9312e11f3373e2999073"><div class="ttname"><a href="namespacepcpp.html#a85b9d50917da9312e11f3373e2999073">pcpp::getGitBranch</a></div><div class="ttdeci">std::string getGitBranch()</div></div>
 <div class="ttc" id="anamespacepcpp_html_aa1b1b04caac37857e13624c044924bf7"><div class="ttname"><a href="namespacepcpp.html#aa1b1b04caac37857e13624c044924bf7">pcpp::getGitInfo</a></div><div class="ttdeci">std::string getGitInfo()</div></div>
-<div class="ttc" id="anamespacepcpp_html_aa6e2dd1c0d8281b957fd0a52555c9908"><div class="ttname"><a href="namespacepcpp.html#aa6e2dd1c0d8281b957fd0a52555c9908">pcpp::getBuildDateTime</a></div><div class="ttdeci">std::string getBuildDateTime()</div><div class="ttdef"><b>Definition:</b> PcapPlusPlusVersion.h:38</div></div>
-<div class="ttc" id="anamespacepcpp_html_aa818bc85ee8391b470263dc3aefa945b"><div class="ttname"><a href="namespacepcpp.html#aa818bc85ee8391b470263dc3aefa945b">pcpp::getPcapPlusPlusVersion</a></div><div class="ttdeci">std::string getPcapPlusPlusVersion()</div><div class="ttdef"><b>Definition:</b> PcapPlusPlusVersion.h:19</div></div>
+<div class="ttc" id="anamespacepcpp_html_aa6e2dd1c0d8281b957fd0a52555c9908"><div class="ttname"><a href="namespacepcpp.html#aa6e2dd1c0d8281b957fd0a52555c9908">pcpp::getBuildDateTime</a></div><div class="ttdeci">std::string getBuildDateTime()</div><div class="ttdef"><b>Definition:</b> PcapPlusPlusVersion.h:126</div></div>
+<div class="ttc" id="anamespacepcpp_html_aa818bc85ee8391b470263dc3aefa945b"><div class="ttname"><a href="namespacepcpp.html#aa818bc85ee8391b470263dc3aefa945b">pcpp::getPcapPlusPlusVersion</a></div><div class="ttdeci">std::string getPcapPlusPlusVersion()</div><div class="ttdef"><b>Definition:</b> PcapPlusPlusVersion.h:107</div></div>
 <div class="ttc" id="anamespacepcpp_html_acae7542122e659b88073dc6b76564e6b"><div class="ttname"><a href="namespacepcpp.html#acae7542122e659b88073dc6b76564e6b">pcpp::getGitCommit</a></div><div class="ttdeci">std::string getGitCommit()</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -142,7 +180,7 @@ $(document).ready(function(){initNavTree('_pcap_plus_plus_version_8h_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b003f564e33ffc88e35d7a9df43b3691.html">Common++</a></li><li class="navelem"><a class="el" href="dir_9a3e9207f3f2c743963c543f58e0ab18.html">header</a></li><li class="navelem"><a class="el" href="_pcap_plus_plus_version_8h.html">PcapPlusPlusVersion.h</a></li>
-    <li class="footer">Generated on Wed Jul 22 2026 08:14:55 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 2 2026 07:46:48 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
