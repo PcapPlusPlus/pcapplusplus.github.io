@@ -1,5 +1,8 @@
 var NAVTREEINDEX29 =
 {
+"structpcpp_1_1internal_1_1_layer_allocation_info.html#abd0207c7928b5a1e2112b17f12454afb":[4,0,0,0,10,0],
+"structpcpp_1_1internal_1_1_win_divert_address.html":[4,0,0,0,15],
+"structpcpp_1_1internal_1_1_win_divert_address.html#a4f1aab51ef4f74ab16b94fa5369f4e76":[4,0,0,0,15,1],
 "structpcpp_1_1internal_1_1_win_divert_address.html#aa8390487e1edd9d422d9f2faece3ec3b":[4,0,0,0,15,0],
 "structpcpp_1_1internal_1_1_win_divert_address.html#ad55d68d5d7dc36db6fc5711c8acf75b0":[4,0,0,0,15,2],
 "structpcpp_1_1ip6__hdr.html":[4,0,0,176],
