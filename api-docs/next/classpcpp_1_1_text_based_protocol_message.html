@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_text_based_protocol_mess
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classpcpp_1_1_text_based_protocol_message-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::TextBasedProtocolMessage Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -183,8 +184,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:af9e51f48a58a3b0dcd1a7341111c66e0 inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">OsiModelLayer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#af9e51f48a58a3b0dcd1a7341111c66e0">getOsiModelLayer</a> () const =0</td></tr>
 <tr class="separator:af9e51f48a58a3b0dcd1a7341111c66e0 inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a19021ab6d1a651dab6f9c47022ca303b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_text_based_protocol_message.html#a19021ab6d1a651dab6f9c47022ca303b">setFieldsOffset</a> (int fieldsOffset)</td></tr>
+<tr class="memdesc:a19021ab6d1a651dab6f9c47022ca303b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the base offset of the fields in the message.  <a href="classpcpp_1_1_text_based_protocol_message.html#a19021ab6d1a651dab6f9c47022ca303b">More...</a><br /></td></tr>
+<tr class="separator:a19021ab6d1a651dab6f9c47022ca303b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93bf401465425111b0a296eb79c17b14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_text_based_protocol_message.html#a93bf401465425111b0a296eb79c17b14">shiftFieldsOffset</a> (int numOfBytesToShift)</td></tr>
+<tr class="memdesc:a93bf401465425111b0a296eb79c17b14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shifts the fields offset by a specified number of bytes.  <a href="classpcpp_1_1_text_based_protocol_message.html#a93bf401465425111b0a296eb79c17b14">More...</a><br /></td></tr>
+<tr class="separator:a93bf401465425111b0a296eb79c17b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a430c51958eb58f65f7f15a4fedcb83c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_text_based_protocol_message.html#a430c51958eb58f65f7f15a4fedcb83c4">shiftFieldsOffset</a> (<a class="el" href="classpcpp_1_1_header_field.html">HeaderField</a> *fromField, int numOfBytesToShift)</td></tr>
+<tr class="memdesc:a430c51958eb58f65f7f15a4fedcb83c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shifts the fields offset of all headers after a specified header field by a specified number of bytes.  <a href="classpcpp_1_1_text_based_protocol_message.html#a430c51958eb58f65f7f15a4fedcb83c4">More...</a><br /></td></tr>
+<tr class="separator:a430c51958eb58f65f7f15a4fedcb83c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classpcpp_1_1_layer"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classpcpp_1_1_layer')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td></tr>
 <tr class="memitem:a92fb19d907170b212986262074418b09 inherit pro_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_packet.html">Packet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a92fb19d907170b212986262074418b09">getAttachedPacket</a> ()</td></tr>
 <tr class="memdesc:a92fb19d907170b212986262074418b09 inherit pro_methods_classpcpp_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the <a class="el" href="classpcpp_1_1_packet.html">Packet</a> this layer is attached to (if any).  <a href="classpcpp_1_1_layer.html#a92fb19d907170b212986262074418b09">More...</a><br /></td></tr>
@@ -231,6 +241,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a06c29d3fe229518514ef483b153a0775 inherit pro_methods_classpcpp_1_1_layer"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_layer.html">Layer</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a06c29d3fe229518514ef483b153a0775">tryConstructNextLayerFromFactoryWithFallback</a> (TFactory factoryFn, uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet, Args &amp;&amp;... extraArgs)</td></tr>
 <tr class="memdesc:a06c29d3fe229518514ef483b153a0775 inherit pro_methods_classpcpp_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to construct the next layer in the protocol stack using a factory functor with a fallback option.  <a href="classpcpp_1_1_layer.html#a06c29d3fe229518514ef483b153a0775">More...</a><br /></td></tr>
 <tr class="separator:a06c29d3fe229518514ef483b153a0775 inherit pro_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_static_methods_classpcpp_1_1_layer"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classpcpp_1_1_layer')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td></tr>
 <tr class="memitem:acb031e00ee13b0c299cc6c0458a61a18 inherit pro_static_methods_classpcpp_1_1_layer"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:acb031e00ee13b0c299cc6c0458a61a18 inherit pro_static_methods_classpcpp_1_1_layer"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#acb031e00ee13b0c299cc6c0458a61a18">canReinterpretAs</a> (const uint8_t *data, size_t dataLen)</td></tr>
@@ -709,13 +722,130 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a19021ab6d1a651dab6f9c47022ca303b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19021ab6d1a651dab6f9c47022ca303b">&#9670;&nbsp;</a></span>setFieldsOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::TextBasedProtocolMessage::setFieldsOffset </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fieldsOffset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the base offset of the fields in the message. </p>
+<p>This offset is used to determine where in the message to begin parsing the header fields.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fieldsOffset</td><td>A non-negative integer representing the offset in bytes from the start of the message to the first header field. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a430c51958eb58f65f7f15a4fedcb83c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a430c51958eb58f65f7f15a4fedcb83c4">&#9670;&nbsp;</a></span>shiftFieldsOffset() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::TextBasedProtocolMessage::shiftFieldsOffset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_header_field.html">HeaderField</a> *&#160;</td>
+          <td class="paramname"><em>fromField</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numOfBytesToShift</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Shifts the fields offset of all headers after a specified header field by a specified number of bytes. </p>
+<dl class="section warning"><dt>Warning</dt><dd>This method does not adjust the main fields offset.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fromField</td><td>The header field from which to start shifting the offsets. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">numOfBytesToShift</td><td>The number of bytes to shift the offsets. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a93bf401465425111b0a296eb79c17b14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93bf401465425111b0a296eb79c17b14">&#9670;&nbsp;</a></span>shiftFieldsOffset() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::TextBasedProtocolMessage::shiftFieldsOffset </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numOfBytesToShift</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Shifts the fields offset by a specified number of bytes. </p>
+<p>The operation adjusts the main offset and all header fields' offsets accordingly.</p>
+<p>This can be used when adding or removing data that is located before the header fields, ensuring that the offsets remain accurate.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">numOfBytesToShift</td><td>The number of bytes to shift the offsets. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_text_based_protocol_message.html">TextBasedProtocolMessage</a></li>
-    <li class="footer">Generated on Sun Aug 2 2026 07:46:49 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Aug 6 2026 07:22:55 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

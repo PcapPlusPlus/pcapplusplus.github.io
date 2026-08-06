@@ -91,12 +91,12 @@ var NAVTREEINDEX =
 "classpcpp_1_1_sip_response_layer.html#a05536b7d8719b76e84ea4c539cb9e5b6a27fda5afb1ed5ed581717000539fc23e",
 "classpcpp_1_1_some_ip_sd_configuration_option.html#a69398991f75337046c559a55f3709fbc",
 "classpcpp_1_1_tcp_option.html#a0496612a4b1d2fcb164597edf3287a5a",
-"classpcpp_1_1_vrrp_layer.html#ada6835095bf4476ddcd72789413ab2e0a76ce8b6ca5c3bf26583b86958b7fc746",
-"classpcpp_1_1_x509_extension_type.html#ac903fd87521eb613169a30f921d38d23a7a0b0e3a592b685e1516c5dc38e911cf",
-"functions_func_r.html",
-"structpcpp_1_1_dpdk_device_1_1_dpdk_device_stats.html",
-"structpcpp_1_1_win_divert_device_1_1_win_divert_version.html#a3da57d31928bb6992cbe344cc266195c",
-"structpcpp_1_1internal_1_1_win_divert_address.html#aa8390487e1edd9d422d9f2faece3ec3b"
+"classpcpp_1_1_vrrp_layer.html#abccd0e888b5a7ec9a344acc02a100992",
+"classpcpp_1_1_x509_extension_type.html#ac903fd87521eb613169a30f921d38d23a50b47e4d4d55570fbfb93df6e0fe67e2",
+"functions_func_n.html",
+"structpcpp_1_1_dpdk_device_1_1_dpdk_device_configuration.html#ad3ce4d27e30d5382fbdfe882cc5ab1f5",
+"structpcpp_1_1_win_divert_device_1_1_win_divert_version.html",
+"structpcpp_1_1internal_1_1_layer_allocation_info.html#abd0207c7928b5a1e2112b17f12454afb"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

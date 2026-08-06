@@ -1,5 +1,8 @@
 var NAVTREEINDEX28 =
 {
+"structpcpp_1_1_win_divert_device_1_1_win_divert_version.html":[4,0,0,412,4],
+"structpcpp_1_1_win_divert_device_1_1_win_divert_version.html#a021fbe513c07cc45d16928d67415643b":[4,0,0,412,4,0],
+"structpcpp_1_1_win_divert_device_1_1_win_divert_version.html#a25ae5355e9e18f0d254dc7726264b8af":[4,0,0,412,4,1],
 "structpcpp_1_1_win_divert_device_1_1_win_divert_version.html#a3da57d31928bb6992cbe344cc266195c":[4,0,0,412,4,2],
 "structpcpp_1_1_wire_guard_layer_1_1wg__common__header.html":[4,0,0,342,0],
 "structpcpp_1_1_wire_guard_layer_1_1wg__common__header.html#a7be1bc265d41b88d5adbfb2141f1b731":[4,0,0,342,0,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX28 =
 "structpcpp_1_1internal_1_1_layer_allocation_info.html":[4,0,0,0,10],
 "structpcpp_1_1internal_1_1_layer_allocation_info.html#a1647a1f5723eb91d24b8439fd114ac70":[4,0,0,0,10,2],
 "structpcpp_1_1internal_1_1_layer_allocation_info.html#a236a7779d087208615efa726d912b3a6":[4,0,0,0,10,3],
-"structpcpp_1_1internal_1_1_layer_allocation_info.html#a2c4aa7884ad0ff002b4dad0637a05df5":[4,0,0,0,10,1],
-"structpcpp_1_1internal_1_1_layer_allocation_info.html#abd0207c7928b5a1e2112b17f12454afb":[4,0,0,0,10,0],
-"structpcpp_1_1internal_1_1_win_divert_address.html":[4,0,0,0,15],
-"structpcpp_1_1internal_1_1_win_divert_address.html#a4f1aab51ef4f74ab16b94fa5369f4e76":[4,0,0,0,15,1]
+"structpcpp_1_1internal_1_1_layer_allocation_info.html#a2c4aa7884ad0ff002b4dad0637a05df5":[4,0,0,0,10,1]
 };

@@ -15,5 +15,8 @@ var classpcpp_1_1_text_based_protocol_message =
     [ "isHeaderComplete", "classpcpp_1_1_text_based_protocol_message.html#a05cf5d4c1c076b719f7b3ad0b11efdfa", null ],
     [ "parseNextLayer", "classpcpp_1_1_text_based_protocol_message.html#a42d1e9c827b864b795015c3160815690", null ],
     [ "removeField", "classpcpp_1_1_text_based_protocol_message.html#a3751401eb05f223685abd0c7c6990c66", null ],
-    [ "removeField", "classpcpp_1_1_text_based_protocol_message.html#a9712764bb961cc7485335d1d30920232", null ]
+    [ "removeField", "classpcpp_1_1_text_based_protocol_message.html#a9712764bb961cc7485335d1d30920232", null ],
+    [ "setFieldsOffset", "classpcpp_1_1_text_based_protocol_message.html#a19021ab6d1a651dab6f9c47022ca303b", null ],
+    [ "shiftFieldsOffset", "classpcpp_1_1_text_based_protocol_message.html#a430c51958eb58f65f7f15a4fedcb83c4", null ],
+    [ "shiftFieldsOffset", "classpcpp_1_1_text_based_protocol_message.html#a93bf401465425111b0a296eb79c17b14", null ]
 ];
