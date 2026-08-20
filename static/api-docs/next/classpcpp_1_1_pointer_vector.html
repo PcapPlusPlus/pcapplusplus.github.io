@@ -149,9 +149,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a983bf7d26956e166713fc3cfc0becb71"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pointer_vector.html#a983bf7d26956e166713fc3cfc0becb71">capacity</a> () const</td></tr>
 <tr class="memdesc:a983bf7d26956e166713fc3cfc0becb71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current capacity of the vector.  <a href="classpcpp_1_1_pointer_vector.html#a983bf7d26956e166713fc3cfc0becb71">More...</a><br /></td></tr>
 <tr class="separator:a983bf7d26956e166713fc3cfc0becb71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3329338e258fef17889f4a5042f60a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pointer_vector.html#ad3329338e258fef17889f4a5042f60a3">reserve</a> (size_t <a class="el" href="classpcpp_1_1_pointer_vector.html#aaab1c8e0577964dad9a0e144f44baa60">size</a>)</td></tr>
-<tr class="memdesc:ad3329338e258fef17889f4a5042f60a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve storage for the vector.  <a href="classpcpp_1_1_pointer_vector.html#ad3329338e258fef17889f4a5042f60a3">More...</a><br /></td></tr>
-<tr class="separator:ad3329338e258fef17889f4a5042f60a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7918c74343c397246f9678d68088dc5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pointer_vector.html#a7918c74343c397246f9678d68088dc5d">reserve</a> (size_t newSize)</td></tr>
+<tr class="memdesc:a7918c74343c397246f9678d68088dc5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve storage for the vector.  <a href="classpcpp_1_1_pointer_vector.html#a7918c74343c397246f9678d68088dc5d">More...</a><br /></td></tr>
+<tr class="separator:a7918c74343c397246f9678d68088dc5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b62d747e90beeabddacdf65d8c68705"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pointer_vector.html#a1b62d747e90beeabddacdf65d8c68705">front</a> () const</td></tr>
 <tr class="separator:a1b62d747e90beeabddacdf65d8c68705"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ee111c27546aaf1fea89e8e31cce244"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_pointer_vector.html#a8ee111c27546aaf1fea89e8e31cce244">back</a> () const</td></tr>
@@ -894,8 +894,8 @@ template&lt;typename T , typename Deleter  = std::default_delete&lt;T&gt;&gt; </
 
 </div>
 </div>
-<a id="ad3329338e258fef17889f4a5042f60a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3329338e258fef17889f4a5042f60a3">&#9670;&nbsp;</a></span>reserve()</h2>
+<a id="a7918c74343c397246f9678d68088dc5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7918c74343c397246f9678d68088dc5d">&#9670;&nbsp;</a></span>reserve()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -909,7 +909,7 @@ template&lt;typename T , typename Deleter  = std::default_delete&lt;T&gt;&gt; </
           <td class="memname">void <a class="el" href="classpcpp_1_1_pointer_vector.html">pcpp::PointerVector</a>&lt; T, Deleter &gt;::reserve </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em></td><td>)</td>
+          <td class="paramname"><em>newSize</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -923,7 +923,7 @@ template&lt;typename T , typename Deleter  = std::default_delete&lt;T&gt;&gt; </
 <p>Reserve storage for the vector. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>The number of elements to reserve space for. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newSize</td><td>The number of elements to reserve space for. </td></tr>
   </table>
   </dd>
 </dl>
@@ -965,7 +965,7 @@ template&lt;typename T , typename Deleter  = std::default_delete&lt;T&gt;&gt; </
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_pointer_vector.html">PointerVector</a></li>
-    <li class="footer">Generated on Tue Aug 11 2026 07:23:36 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Aug 20 2026 06:32:05 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

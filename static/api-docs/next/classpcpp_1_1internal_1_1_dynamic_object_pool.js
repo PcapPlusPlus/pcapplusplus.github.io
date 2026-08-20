@@ -9,6 +9,6 @@ var classpcpp_1_1internal_1_1_dynamic_object_pool =
     [ "preallocate", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#ad199ed85caaa825bcaa86360161e1843", null ],
     [ "releaseObject", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#a1226c587591f5125a257c4b72cf1fff1", null ],
     [ "releaseObjectRaw", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#a992bb463cedab3267a2572dbb5371c73", null ],
-    [ "setMaxSize", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#abab9013a32be4caadae909b9573991e5", null ],
+    [ "setMaxSize", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#a46b081fd79fab5e27825630c0ffd1c3d", null ],
     [ "size", "classpcpp_1_1internal_1_1_dynamic_object_pool.html#a9eeb9296ecf4b9c144332ecb56d49ff0", null ]
 ];
