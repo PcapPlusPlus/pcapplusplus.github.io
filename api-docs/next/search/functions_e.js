@@ -49,7 +49,7 @@ var searchData=
   ['removetcpoption_7278',['removeTcpOption',['../classpcpp_1_1_tcp_layer.html#ac24e0b402da8a1489379e80876eb8dcf',1,'pcpp::TcpLayer::removeTcpOption(TcpOptionType optionType)'],['../classpcpp_1_1_tcp_layer.html#a12da1f78961105f8ec0ae206fb4910a9',1,'pcpp::TcpLayer::removeTcpOption(TcpOptionEnumType optionType)']]],
   ['reportpacketdropped_7279',['reportPacketDropped',['../classpcpp_1_1_i_file_device.html#ad090733c6d7b7cb010af4e9d27b4fc93',1,'pcpp::IFileDevice']]],
   ['reportpacketprocessed_7280',['reportPacketProcessed',['../classpcpp_1_1_i_file_device.html#ac0b00a36f42bd1b86cf1f47e1da63642',1,'pcpp::IFileDevice']]],
-  ['reserve_7281',['reserve',['../classpcpp_1_1_pointer_vector.html#ad3329338e258fef17889f4a5042f60a3',1,'pcpp::PointerVector']]],
+  ['reserve_7281',['reserve',['../classpcpp_1_1_pointer_vector.html#a7918c74343c397246f9678d68088dc5d',1,'pcpp::PointerVector']]],
   ['reset_7282',['reset',['../classpcpp_1_1internal_1_1_pcap_handle.html#a4c51d1548314bef5579eebd564703151',1,'pcpp::internal::PcapHandle::reset()'],['../classpcpp_1_1_pcap_live_device_list.html#af4e002ab316a892b4ea46f5294447830',1,'pcpp::PcapLiveDeviceList::reset()']]],
   ['resetlogprinter_7283',['resetLogPrinter',['../classpcpp_1_1_logger.html#a90be870adb5dad753552392ffe2c89dd',1,'pcpp::Logger']]],
   ['resetstatisticcounters_7284',['resetStatisticCounters',['../classpcpp_1_1_i_file_device.html#af8606a762f4405ed60b053cc71b92ddb',1,'pcpp::IFileDevice']]],

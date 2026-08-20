@@ -27,6 +27,6 @@ var classpcpp_1_1_pointer_vector =
     [ "pushBack", "classpcpp_1_1_pointer_vector.html#a142a841760e23c5803b597d8a848b297", null ],
     [ "pushBack", "classpcpp_1_1_pointer_vector.html#aba366932b3b4413041131a7586175473", null ],
     [ "pushBack", "classpcpp_1_1_pointer_vector.html#aecd961fdb65b3eb7b2c1f90a556f289b", null ],
-    [ "reserve", "classpcpp_1_1_pointer_vector.html#ad3329338e258fef17889f4a5042f60a3", null ],
+    [ "reserve", "classpcpp_1_1_pointer_vector.html#a7918c74343c397246f9678d68088dc5d", null ],
     [ "size", "classpcpp_1_1_pointer_vector.html#aaab1c8e0577964dad9a0e144f44baa60", null ]
 ];
