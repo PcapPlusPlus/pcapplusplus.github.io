@@ -254,129 +254,131 @@ $(document).ready(function(){initNavTree('_t_l_v_data_8h_source.html',''); initR
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        }</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
-<div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="classpcpp_1_1_t_l_v_record_reader.html#ad538303ed8a3da31db16d505933da7f2">  238</a></span>&#160;        TLVRecordType <a class="code" href="classpcpp_1_1_t_l_v_record_reader.html#ad538303ed8a3da31db16d505933da7f2">getFirstTLVRecord</a>(uint8_t* tlvDataBasePtr, <span class="keywordtype">size_t</span> tlvDataLen)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            TLVRecordType resRec(<span class="keyword">nullptr</span>);  <span class="comment">// for NRVO optimization</span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            <span class="keywordflow">if</span> (!TLVRecordType::canAssign(tlvDataBasePtr, tlvDataLen))</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                <span class="keywordflow">return</span> resRec;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            resRec.assign(tlvDataBasePtr);</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            <span class="comment">// resRec pointer is out-bounds of the TLV records memory</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            <span class="keywordflow">if</span> (resRec.getRecordBasePtr() + resRec.getTotalSize() &gt; tlvDataBasePtr + tlvDataLen)</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                resRec.assign(<span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            <span class="comment">// check if there are records at all and the total size is not zero</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            <span class="keywordflow">if</span> (!resRec.isNull() &amp;&amp; (tlvDataLen == 0 || resRec.getTotalSize() == 0))</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                resRec.assign(<span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            <span class="keywordflow">return</span> resRec;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        }</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
-<div class="line"><a name="l00263"></a><span class="lineno"><a class="line" href="classpcpp_1_1_t_l_v_record_reader.html#ac16f028f4d3cfb8bd9f5544e78ed8cef">  263</a></span>&#160;        TLVRecordType <a class="code" href="classpcpp_1_1_t_l_v_record_reader.html#ac16f028f4d3cfb8bd9f5544e78ed8cef">getNextTLVRecord</a>(TLVRecordType&amp; record, <span class="keyword">const</span> uint8_t* tlvDataBasePtr, <span class="keywordtype">size_t</span> tlvDataLen)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            TLVRecordType resRec(<span class="keyword">nullptr</span>);  <span class="comment">// for NRVO optimization</span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            <span class="keywordflow">if</span> (record.isNull())</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                <span class="keywordflow">return</span> resRec;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            <span class="keywordflow">if</span> (!TLVRecordType::canAssign(record.getRecordBasePtr() + record.getTotalSize(),</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                                          tlvDataBasePtr - record.getRecordBasePtr() + tlvDataLen -</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                                              record.getTotalSize()))</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                <span class="keywordflow">return</span> resRec;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160; </div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            resRec.assign(record.getRecordBasePtr() + record.getTotalSize());</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="comment">// cppcheck-suppress functionStatic</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno"><a class="line" href="classpcpp_1_1_t_l_v_record_reader.html#ad538303ed8a3da31db16d505933da7f2">  239</a></span>&#160;<span class="comment"></span>        TLVRecordType <a class="code" href="classpcpp_1_1_t_l_v_record_reader.html#ad538303ed8a3da31db16d505933da7f2">getFirstTLVRecord</a>(uint8_t* tlvDataBasePtr, <span class="keywordtype">size_t</span> tlvDataLen)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            TLVRecordType resRec(<span class="keyword">nullptr</span>);  <span class="comment">// for NRVO optimization</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            <span class="keywordflow">if</span> (!TLVRecordType::canAssign(tlvDataBasePtr, tlvDataLen))</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                <span class="keywordflow">return</span> resRec;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            resRec.assign(tlvDataBasePtr);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            <span class="comment">// resRec pointer is out-bounds of the TLV records memory</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            <span class="keywordflow">if</span> (resRec.getRecordBasePtr() + resRec.getTotalSize() &gt; tlvDataBasePtr + tlvDataLen)</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                resRec.assign(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            <span class="comment">// check if there are records at all and the total size is not zero</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            <span class="keywordflow">if</span> (!resRec.isNull() &amp;&amp; (tlvDataLen == 0 || resRec.getTotalSize() == 0))</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                resRec.assign(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            <span class="keywordflow">return</span> resRec;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        }</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <span class="comment">// cppcheck-suppress [constParameterReference, functionStatic]</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno"><a class="line" href="classpcpp_1_1_t_l_v_record_reader.html#ac16f028f4d3cfb8bd9f5544e78ed8cef">  265</a></span>&#160;<span class="comment"></span>        TLVRecordType <a class="code" href="classpcpp_1_1_t_l_v_record_reader.html#ac16f028f4d3cfb8bd9f5544e78ed8cef">getNextTLVRecord</a>(TLVRecordType&amp; record, <span class="keyword">const</span> uint8_t* tlvDataBasePtr, <span class="keywordtype">size_t</span> tlvDataLen)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            TLVRecordType resRec(<span class="keyword">nullptr</span>);  <span class="comment">// for NRVO optimization</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            <span class="keywordflow">if</span> (record.isNull())</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                <span class="keywordflow">return</span> resRec;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            <span class="keywordflow">if</span> (!TLVRecordType::canAssign(record.getRecordBasePtr() + record.getTotalSize(),</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                                          tlvDataBasePtr - record.getRecordBasePtr() + tlvDataLen -</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                                              record.getTotalSize()))</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                <span class="keywordflow">return</span> resRec;</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            <span class="keywordflow">if</span> (resRec.getTotalSize() == 0)</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                resRec.assign(<span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            <span class="comment">// resRec pointer is out-bounds of the TLV records memory</span></div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            <span class="keywordflow">if</span> ((resRec.getRecordBasePtr() - tlvDataBasePtr) &lt; 0)</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                resRec.assign(<span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            <span class="comment">// resRec pointer is out-bounds of the TLV records memory</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            <span class="keywordflow">if</span> (!resRec.isNull() &amp;&amp; resRec.getRecordBasePtr() + resRec.getTotalSize() &gt; tlvDataBasePtr + tlvDataLen)</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                resRec.assign(<span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;            <span class="keywordflow">return</span> resRec;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        }</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
-<div class="line"><a name="l00297"></a><span class="lineno"><a class="line" href="classpcpp_1_1_t_l_v_record_reader.html#a3c9f5348e84ebf14034bc47fa5063829">  297</a></span>&#160;        TLVRecordType <a class="code" href="classpcpp_1_1_t_l_v_record_reader.html#a3c9f5348e84ebf14034bc47fa5063829">getTLVRecord</a>(uint32_t recordType, uint8_t* tlvDataBasePtr, <span class="keywordtype">size_t</span> tlvDataLen)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;            TLVRecordType curRec = <a class="code" href="classpcpp_1_1_t_l_v_record_reader.html#ad538303ed8a3da31db16d505933da7f2">getFirstTLVRecord</a>(tlvDataBasePtr, tlvDataLen);</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;            <span class="keywordflow">while</span> (!curRec.isNull())</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;            {</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                <span class="keywordflow">if</span> (curRec.getType() == recordType)</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                {</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                    <span class="keywordflow">return</span> curRec;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                }</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                curRec = <a class="code" href="classpcpp_1_1_t_l_v_record_reader.html#ac16f028f4d3cfb8bd9f5544e78ed8cef">getNextTLVRecord</a>(curRec, tlvDataBasePtr, tlvDataLen);</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;            }</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;            curRec.assign(<span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            <span class="keywordflow">return</span> curRec;  <span class="comment">// for NRVO optimization</span></div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        }</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
-<div class="line"><a name="l00321"></a><span class="lineno"><a class="line" href="classpcpp_1_1_t_l_v_record_reader.html#ae5e7a221fbc407af3cb3245ecb74826a">  321</a></span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="classpcpp_1_1_t_l_v_record_reader.html#ae5e7a221fbc407af3cb3245ecb74826a">getTLVRecordCount</a>(uint8_t* tlvDataBasePtr, <span class="keywordtype">size_t</span> tlvDataLen)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;            <span class="keywordflow">if</span> (m_RecordCount != <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(-1))</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                <span class="keywordflow">return</span> m_RecordCount;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            m_RecordCount = 0;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            TLVRecordType curRec = <a class="code" href="classpcpp_1_1_t_l_v_record_reader.html#ad538303ed8a3da31db16d505933da7f2">getFirstTLVRecord</a>(tlvDataBasePtr, tlvDataLen);</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            <span class="keywordflow">while</span> (!curRec.isNull())</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            {</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                m_RecordCount++;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                curRec = <a class="code" href="classpcpp_1_1_t_l_v_record_reader.html#ac16f028f4d3cfb8bd9f5544e78ed8cef">getNextTLVRecord</a>(curRec, tlvDataBasePtr, tlvDataLen);</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            }</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;            <span class="keywordflow">return</span> m_RecordCount;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        }</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160; </div>
-<div class="line"><a name="l00342"></a><span class="lineno"><a class="line" href="classpcpp_1_1_t_l_v_record_reader.html#a0454e680a3ba777f77b10f462a7a6b43">  342</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_t_l_v_record_reader.html#a0454e680a3ba777f77b10f462a7a6b43">changeTLVRecordCount</a>(<span class="keywordtype">int</span> changedBy)</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        {</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            <span class="keywordflow">if</span> (m_RecordCount != <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(-1))</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                m_RecordCount += changedBy;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        }</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    };</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160; </div>
-<div class="line"><a name="l00356"></a><span class="lineno"><a class="line" href="classpcpp_1_1_t_l_v_record_builder.html">  356</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a></div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    {</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        <a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a>();</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a>(uint32_t recType, <span class="keyword">const</span> uint8_t* recValue, uint8_t recValueLen);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            resRec.assign(record.getRecordBasePtr() + record.getTotalSize());</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            <span class="keywordflow">if</span> (resRec.getTotalSize() == 0)</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                resRec.assign(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;            <span class="comment">// resRec pointer is out-bounds of the TLV records memory</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            <span class="keywordflow">if</span> ((resRec.getRecordBasePtr() - tlvDataBasePtr) &lt; 0)</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                resRec.assign(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;            <span class="comment">// resRec pointer is out-bounds of the TLV records memory</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            <span class="keywordflow">if</span> (!resRec.isNull() &amp;&amp; resRec.getRecordBasePtr() + resRec.getTotalSize() &gt; tlvDataBasePtr + tlvDataLen)</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                resRec.assign(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160; </div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            <span class="keywordflow">return</span> resRec;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        }</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
+<div class="line"><a name="l00299"></a><span class="lineno"><a class="line" href="classpcpp_1_1_t_l_v_record_reader.html#a3c9f5348e84ebf14034bc47fa5063829">  299</a></span>&#160;        TLVRecordType <a class="code" href="classpcpp_1_1_t_l_v_record_reader.html#a3c9f5348e84ebf14034bc47fa5063829">getTLVRecord</a>(uint32_t recordType, uint8_t* tlvDataBasePtr, <span class="keywordtype">size_t</span> tlvDataLen)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;            TLVRecordType curRec = <a class="code" href="classpcpp_1_1_t_l_v_record_reader.html#ad538303ed8a3da31db16d505933da7f2">getFirstTLVRecord</a>(tlvDataBasePtr, tlvDataLen);</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;            <span class="keywordflow">while</span> (!curRec.isNull())</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;            {</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                <span class="keywordflow">if</span> (curRec.getType() == recordType)</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                {</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                    <span class="keywordflow">return</span> curRec;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                }</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                curRec = <a class="code" href="classpcpp_1_1_t_l_v_record_reader.html#ac16f028f4d3cfb8bd9f5544e78ed8cef">getNextTLVRecord</a>(curRec, tlvDataBasePtr, tlvDataLen);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;            }</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160; </div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;            curRec.assign(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;            <span class="keywordflow">return</span> curRec;  <span class="comment">// for NRVO optimization</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        }</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
+<div class="line"><a name="l00323"></a><span class="lineno"><a class="line" href="classpcpp_1_1_t_l_v_record_reader.html#ae5e7a221fbc407af3cb3245ecb74826a">  323</a></span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="classpcpp_1_1_t_l_v_record_reader.html#ae5e7a221fbc407af3cb3245ecb74826a">getTLVRecordCount</a>(uint8_t* tlvDataBasePtr, <span class="keywordtype">size_t</span> tlvDataLen)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            <span class="keywordflow">if</span> (m_RecordCount != <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(-1))</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                <span class="keywordflow">return</span> m_RecordCount;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            m_RecordCount = 0;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            TLVRecordType curRec = <a class="code" href="classpcpp_1_1_t_l_v_record_reader.html#ad538303ed8a3da31db16d505933da7f2">getFirstTLVRecord</a>(tlvDataBasePtr, tlvDataLen);</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            <span class="keywordflow">while</span> (!curRec.isNull())</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            {</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                m_RecordCount++;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                curRec = <a class="code" href="classpcpp_1_1_t_l_v_record_reader.html#ac16f028f4d3cfb8bd9f5544e78ed8cef">getNextTLVRecord</a>(curRec, tlvDataBasePtr, tlvDataLen);</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;            }</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            <span class="keywordflow">return</span> m_RecordCount;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        }</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
+<div class="line"><a name="l00344"></a><span class="lineno"><a class="line" href="classpcpp_1_1_t_l_v_record_reader.html#a0454e680a3ba777f77b10f462a7a6b43">  344</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_t_l_v_record_reader.html#a0454e680a3ba777f77b10f462a7a6b43">changeTLVRecordCount</a>(<span class="keywordtype">int</span> changedBy)</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        {</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;            <span class="keywordflow">if</span> (m_RecordCount != <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(-1))</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                m_RecordCount += changedBy;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        }</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    };</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
+<div class="line"><a name="l00358"></a><span class="lineno"><a class="line" href="classpcpp_1_1_t_l_v_record_builder.html">  358</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    {</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a>();</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160; </div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a>(uint32_t recType, uint8_t recValue);</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a>(uint32_t recType, <span class="keyword">const</span> uint8_t* recValue, uint8_t recValueLen);</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160; </div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        <a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a>(uint32_t recType, uint16_t recValue);</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        <a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a>(uint32_t recType, uint8_t recValue);</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160; </div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a>(uint32_t recType, uint32_t recValue);</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a>(uint32_t recType, uint16_t recValue);</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160; </div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        <a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a>(uint32_t recType, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a>&amp; recValue);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        <a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a>(uint32_t recType, uint32_t recValue);</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a>(uint32_t recType, <span class="keyword">const</span> std::string&amp; recValue, <span class="keywordtype">bool</span> valueIsHexString = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a>(uint32_t recType, <span class="keyword">const</span> <a class="code" href="classpcpp_1_1_i_pv4_address.html">IPv4Address</a>&amp; recValue);</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a>(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a>&amp; other);</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a>(uint32_t recType, <span class="keyword">const</span> std::string&amp; recValue, <span class="keywordtype">bool</span> valueIsHexString = <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160; </div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        <a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a>&amp; other);</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        <a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a>(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a>&amp; other);</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; </div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a>();</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a>&amp; other);</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160; </div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <span class="keywordtype">void</span> init(uint32_t recType, <span class="keyword">const</span> uint8_t* recValue, <span class="keywordtype">size_t</span> recValueLen);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a>();</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160; </div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        uint8_t* m_RecValue;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        <span class="keywordtype">size_t</span> m_RecValueLen;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        uint32_t m_RecType;</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        <span class="keywordtype">void</span> copyData(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a>&amp; other);</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    };</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <span class="keywordtype">void</span> init(uint32_t recType, <span class="keyword">const</span> uint8_t* recValue, <span class="keywordtype">size_t</span> recValueLen);</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160; </div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        uint8_t* m_RecValue;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        <span class="keywordtype">size_t</span> m_RecValueLen;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        uint32_t m_RecType;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160; </div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        <span class="keywordtype">void</span> copyData(<span class="keyword">const</span> <a class="code" href="classpcpp_1_1_t_l_v_record_builder.html">TLVRecordBuilder</a>&amp; other);</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    };</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
 <div class="ttc" id="a_ip_address_8h_html"><div class="ttname"><a href="_ip_address_8h.html">IpAddress.h</a></div></div>
 <div class="ttc" id="a_layer_8h_html"><div class="ttname"><a href="_layer_8h.html">Layer.h</a></div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_pv4_address_html"><div class="ttname"><a href="classpcpp_1_1_i_pv4_address.html">pcpp::IPv4Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:30</div></div>
-<div class="ttc" id="aclasspcpp_1_1_t_l_v_record_builder_html"><div class="ttname"><a href="classpcpp_1_1_t_l_v_record_builder.html">pcpp::TLVRecordBuilder</a></div><div class="ttdef"><b>Definition:</b> TLVData.h:357</div></div>
+<div class="ttc" id="aclasspcpp_1_1_t_l_v_record_builder_html"><div class="ttname"><a href="classpcpp_1_1_t_l_v_record_builder.html">pcpp::TLVRecordBuilder</a></div><div class="ttdef"><b>Definition:</b> TLVData.h:359</div></div>
 <div class="ttc" id="aclasspcpp_1_1_t_l_v_record_html"><div class="ttname"><a href="classpcpp_1_1_t_l_v_record.html">pcpp::TLVRecord</a></div><div class="ttdef"><b>Definition:</b> TLVData.h:19</div></div>
 <div class="ttc" id="aclasspcpp_1_1_t_l_v_record_html_a026522df3430ba5cc60f03c1a41aceb6"><div class="ttname"><a href="classpcpp_1_1_t_l_v_record.html#a026522df3430ba5cc60f03c1a41aceb6">pcpp::TLVRecord::TLVRecord</a></div><div class="ttdeci">TLVRecord(uint8_t *recordRawData)</div><div class="ttdef"><b>Definition:</b> TLVData.h:39</div></div>
 <div class="ttc" id="aclasspcpp_1_1_t_l_v_record_html_a06c65d738332174555360bf0fcf79752"><div class="ttname"><a href="classpcpp_1_1_t_l_v_record.html#a06c65d738332174555360bf0fcf79752">pcpp::TLVRecord::TLVRecord</a></div><div class="ttdeci">TLVRecord(const TLVRecord &amp;other)</div><div class="ttdef"><b>Definition:</b> TLVData.h:47</div></div>
@@ -397,15 +399,15 @@ $(document).ready(function(){initNavTree('_t_l_v_data_8h_source.html',''); initR
 <div class="ttc" id="aclasspcpp_1_1_t_l_v_record_html_ae083ae0b87a8a0f4fd097a52b7dd41fa"><div class="ttname"><a href="classpcpp_1_1_t_l_v_record.html#ae083ae0b87a8a0f4fd097a52b7dd41fa">pcpp::TLVRecord::purgeRecordData</a></div><div class="ttdeci">void purgeRecordData()</div><div class="ttdoc">Free the memory of the TLV record raw data.</div><div class="ttdef"><b>Definition:</b> TLVData.h:145</div></div>
 <div class="ttc" id="aclasspcpp_1_1_t_l_v_record_html_afc60806af9572d14483ed3b961579a60"><div class="ttname"><a href="classpcpp_1_1_t_l_v_record.html#afc60806af9572d14483ed3b961579a60">pcpp::TLVRecord::assign</a></div><div class="ttdeci">void assign(uint8_t *recordRawData)</div><div class="ttdef"><b>Definition:</b> TLVData.h:57</div></div>
 <div class="ttc" id="aclasspcpp_1_1_t_l_v_record_reader_html"><div class="ttname"><a href="classpcpp_1_1_t_l_v_record_reader.html">pcpp::TLVRecordReader</a></div><div class="ttdef"><b>Definition:</b> TLVData.h:204</div></div>
-<div class="ttc" id="aclasspcpp_1_1_t_l_v_record_reader_html_a0454e680a3ba777f77b10f462a7a6b43"><div class="ttname"><a href="classpcpp_1_1_t_l_v_record_reader.html#a0454e680a3ba777f77b10f462a7a6b43">pcpp::TLVRecordReader::changeTLVRecordCount</a></div><div class="ttdeci">void changeTLVRecordCount(int changedBy)</div><div class="ttdef"><b>Definition:</b> TLVData.h:342</div></div>
+<div class="ttc" id="aclasspcpp_1_1_t_l_v_record_reader_html_a0454e680a3ba777f77b10f462a7a6b43"><div class="ttname"><a href="classpcpp_1_1_t_l_v_record_reader.html#a0454e680a3ba777f77b10f462a7a6b43">pcpp::TLVRecordReader::changeTLVRecordCount</a></div><div class="ttdeci">void changeTLVRecordCount(int changedBy)</div><div class="ttdef"><b>Definition:</b> TLVData.h:344</div></div>
 <div class="ttc" id="aclasspcpp_1_1_t_l_v_record_reader_html_a2eb181115696d48dd678e8fcb785f35e"><div class="ttname"><a href="classpcpp_1_1_t_l_v_record_reader.html#a2eb181115696d48dd678e8fcb785f35e">pcpp::TLVRecordReader::operator=</a></div><div class="ttdeci">TLVRecordReader &amp; operator=(const TLVRecordReader &amp;other)</div><div class="ttdef"><b>Definition:</b> TLVData.h:226</div></div>
 <div class="ttc" id="aclasspcpp_1_1_t_l_v_record_reader_html_a300a1b62adf4663de53ec997d49db5cd"><div class="ttname"><a href="classpcpp_1_1_t_l_v_record_reader.html#a300a1b62adf4663de53ec997d49db5cd">pcpp::TLVRecordReader::~TLVRecordReader</a></div><div class="ttdeci">virtual ~TLVRecordReader()=default</div><div class="ttdoc">A d'tor for this class which currently does nothing.</div></div>
-<div class="ttc" id="aclasspcpp_1_1_t_l_v_record_reader_html_a3c9f5348e84ebf14034bc47fa5063829"><div class="ttname"><a href="classpcpp_1_1_t_l_v_record_reader.html#a3c9f5348e84ebf14034bc47fa5063829">pcpp::TLVRecordReader::getTLVRecord</a></div><div class="ttdeci">TLVRecordType getTLVRecord(uint32_t recordType, uint8_t *tlvDataBasePtr, size_t tlvDataLen) const</div><div class="ttdef"><b>Definition:</b> TLVData.h:297</div></div>
+<div class="ttc" id="aclasspcpp_1_1_t_l_v_record_reader_html_a3c9f5348e84ebf14034bc47fa5063829"><div class="ttname"><a href="classpcpp_1_1_t_l_v_record_reader.html#a3c9f5348e84ebf14034bc47fa5063829">pcpp::TLVRecordReader::getTLVRecord</a></div><div class="ttdeci">TLVRecordType getTLVRecord(uint32_t recordType, uint8_t *tlvDataBasePtr, size_t tlvDataLen) const</div><div class="ttdef"><b>Definition:</b> TLVData.h:299</div></div>
 <div class="ttc" id="aclasspcpp_1_1_t_l_v_record_reader_html_aa7d2352e6346b2ad098111bfb3e53458"><div class="ttname"><a href="classpcpp_1_1_t_l_v_record_reader.html#aa7d2352e6346b2ad098111bfb3e53458">pcpp::TLVRecordReader::TLVRecordReader</a></div><div class="ttdeci">TLVRecordReader(const TLVRecordReader &amp;other)</div><div class="ttdoc">A default copy c'tor for this class.</div><div class="ttdef"><b>Definition:</b> TLVData.h:216</div></div>
-<div class="ttc" id="aclasspcpp_1_1_t_l_v_record_reader_html_ac16f028f4d3cfb8bd9f5544e78ed8cef"><div class="ttname"><a href="classpcpp_1_1_t_l_v_record_reader.html#ac16f028f4d3cfb8bd9f5544e78ed8cef">pcpp::TLVRecordReader::getNextTLVRecord</a></div><div class="ttdeci">TLVRecordType getNextTLVRecord(TLVRecordType &amp;record, const uint8_t *tlvDataBasePtr, size_t tlvDataLen) const</div><div class="ttdef"><b>Definition:</b> TLVData.h:263</div></div>
+<div class="ttc" id="aclasspcpp_1_1_t_l_v_record_reader_html_ac16f028f4d3cfb8bd9f5544e78ed8cef"><div class="ttname"><a href="classpcpp_1_1_t_l_v_record_reader.html#ac16f028f4d3cfb8bd9f5544e78ed8cef">pcpp::TLVRecordReader::getNextTLVRecord</a></div><div class="ttdeci">TLVRecordType getNextTLVRecord(TLVRecordType &amp;record, const uint8_t *tlvDataBasePtr, size_t tlvDataLen) const</div><div class="ttdef"><b>Definition:</b> TLVData.h:265</div></div>
 <div class="ttc" id="aclasspcpp_1_1_t_l_v_record_reader_html_acee327e44fb0381301ae28b52dc44573"><div class="ttname"><a href="classpcpp_1_1_t_l_v_record_reader.html#acee327e44fb0381301ae28b52dc44573">pcpp::TLVRecordReader::TLVRecordReader</a></div><div class="ttdeci">TLVRecordReader()</div><div class="ttdoc">A default c'tor for this class.</div><div class="ttdef"><b>Definition:</b> TLVData.h:210</div></div>
-<div class="ttc" id="aclasspcpp_1_1_t_l_v_record_reader_html_ad538303ed8a3da31db16d505933da7f2"><div class="ttname"><a href="classpcpp_1_1_t_l_v_record_reader.html#ad538303ed8a3da31db16d505933da7f2">pcpp::TLVRecordReader::getFirstTLVRecord</a></div><div class="ttdeci">TLVRecordType getFirstTLVRecord(uint8_t *tlvDataBasePtr, size_t tlvDataLen) const</div><div class="ttdef"><b>Definition:</b> TLVData.h:238</div></div>
-<div class="ttc" id="aclasspcpp_1_1_t_l_v_record_reader_html_ae5e7a221fbc407af3cb3245ecb74826a"><div class="ttname"><a href="classpcpp_1_1_t_l_v_record_reader.html#ae5e7a221fbc407af3cb3245ecb74826a">pcpp::TLVRecordReader::getTLVRecordCount</a></div><div class="ttdeci">size_t getTLVRecordCount(uint8_t *tlvDataBasePtr, size_t tlvDataLen) const</div><div class="ttdef"><b>Definition:</b> TLVData.h:321</div></div>
+<div class="ttc" id="aclasspcpp_1_1_t_l_v_record_reader_html_ad538303ed8a3da31db16d505933da7f2"><div class="ttname"><a href="classpcpp_1_1_t_l_v_record_reader.html#ad538303ed8a3da31db16d505933da7f2">pcpp::TLVRecordReader::getFirstTLVRecord</a></div><div class="ttdeci">TLVRecordType getFirstTLVRecord(uint8_t *tlvDataBasePtr, size_t tlvDataLen) const</div><div class="ttdef"><b>Definition:</b> TLVData.h:239</div></div>
+<div class="ttc" id="aclasspcpp_1_1_t_l_v_record_reader_html_ae5e7a221fbc407af3cb3245ecb74826a"><div class="ttname"><a href="classpcpp_1_1_t_l_v_record_reader.html#ae5e7a221fbc407af3cb3245ecb74826a">pcpp::TLVRecordReader::getTLVRecordCount</a></div><div class="ttdeci">size_t getTLVRecordCount(uint8_t *tlvDataBasePtr, size_t tlvDataLen) const</div><div class="ttdef"><b>Definition:</b> TLVData.h:323</div></div>
 <div class="ttc" id="anamespacepcpp_html"><div class="ttname"><a href="namespacepcpp.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib.</div><div class="ttdef"><b>Definition:</b> AssertionUtils.h:19</div></div>
 <div class="ttc" id="astructpcpp_1_1_t_l_v_record_1_1_t_l_v_raw_data_html"><div class="ttname"><a href="structpcpp_1_1_t_l_v_record_1_1_t_l_v_raw_data.html">pcpp::TLVRecord::TLVRawData</a></div><div class="ttdoc">A struct representing the TLV construct.</div><div class="ttdef"><b>Definition:</b> TLVData.h:24</div></div>
 <div class="ttc" id="astructpcpp_1_1_t_l_v_record_1_1_t_l_v_raw_data_html_a3535899bfd262b5fd109b7c22833125b"><div class="ttname"><a href="structpcpp_1_1_t_l_v_record_1_1_t_l_v_raw_data.html#a3535899bfd262b5fd109b7c22833125b">pcpp::TLVRecord::TLVRawData::recordValue</a></div><div class="ttdeci">uint8_t recordValue[]</div><div class="ttdoc">Record value (variable size)</div><div class="ttdef"><b>Definition:</b> TLVData.h:30</div></div>
@@ -417,7 +419,7 @@ $(document).ready(function(){initNavTree('_t_l_v_data_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_t_l_v_data_8h.html">TLVData.h</a></li>
-    <li class="footer">Generated on Tue Aug 25 2026 08:16:31 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Aug 27 2026 07:30:43 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
