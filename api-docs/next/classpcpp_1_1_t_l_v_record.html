@@ -477,7 +477,13 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>A templated method to retrieve the record data as a certain type T. For example, if record data is 4B long (integer) then this method should be used as <a class="el" href="classpcpp_1_1_t_l_v_record.html#ac69de0f3ed861718067b2ab81629c1d5">getValueAs&lt;int&gt;()</a> and it will return the record data as an integer.<br  />
- Notice this return value is a copy of the data, not a pointer to the actual data </p><dl class="params"><dt>Parameters</dt><dd>
+ Notice this return value is a copy of the data, not a pointer to the actual data </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>A non-pointer, default-constructible, trivially copyable type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>The offset in the record data to start reading the value from. Useful for cases when you want to read some of the data that doesn't start at offset 0. This is an optional parameter and the default value is 0, meaning start reading the value at the beginning of the record data </td></tr>
   </table>
@@ -684,7 +690,13 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A templated method to copy data of type T into the TLV record data. For example: if record data is 4[Bytes] long use this method with &lt;int&gt; to set an integer value into the record data: setValue&lt;int&gt;(num) </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A templated method to copy data of type T into the TLV record data. For example: if record data is 4[Bytes] long use this method with &lt;int&gt; to set an integer value into the record data: setValue&lt;int&gt;(num) </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>A non-pointer, trivially copyable type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">newValue</td><td>The value of type T to copy to the record data </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">valueOffset</td><td>An optional parameter that specifies where to start setting the record data (default set to 0). For example: if record data is 20 bytes long and you only need to set the 4 last bytes as integer then use this method like this: setValue&lt;int&gt;(num, 16) </td></tr>
@@ -701,7 +713,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_t_l_v_record.html">TLVRecord</a></li>
-    <li class="footer">Generated on Tue Sep 1 2026 02:39:06 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Sep 5 2026 08:13:26 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
