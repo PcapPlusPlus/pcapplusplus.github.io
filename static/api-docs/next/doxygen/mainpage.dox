@@ -60,6 +60,7 @@
 *   - pcpp::CotpLayer, CotpLayer.h - COTP protocol
 *   - pcpp::GtpV1Layer, pcpp::GtpV2Layer, GtpLayer.h - GTP (v1 & v2) protocol
 *   - pcpp::AuthenticationHeaderLayer, pcpp::ESPLayer - IPSec AH & ESP - parsing only (no editing capabilities)
+*   - pcpp::QuicV1Layer, QuicLayer.h - QUIC v1 - parsing only (no editing capabilities)
 *   - pcpp::TcpLayer, TcpLayer.h - TCP protocol
 *   - pcpp::TpktLayer, TpktLayer.h - TPKT protocol
 *   - pcpp::UdpLayer, UdpLayer.h - UDP protocol
