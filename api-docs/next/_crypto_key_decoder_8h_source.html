@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('_crypto_key_decoder_8h_source.html',''
 <div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classpcpp_1_1internal_1_1_r_s_a_private_key_data_view.html#a252502051373d347582d1a158901aa97">   76</a></span>&#160;            std::string <a class="code" href="classpcpp_1_1internal_1_1_r_s_a_private_key_data_view.html#a252502051373d347582d1a158901aa97">getCoefficient</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1internal_1_1_r_s_a_private_key_data_view.html">RSAPrivateKeyDataView</a>(<a class="code" href="classpcpp_1_1_asn1_sequence_record.html">Asn1SequenceRecord</a>* root, std::string decoderType)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keyword">explicit</span> <a class="code" href="classpcpp_1_1internal_1_1_r_s_a_private_key_data_view.html">RSAPrivateKeyDataView</a>(<a class="code" href="classpcpp_1_1_asn1_sequence_record.html">Asn1SequenceRecord</a>* root, std::string <span class="keyword">const</span>&amp; decoderType)</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                : <a class="code" href="classpcpp_1_1internal_1_1_private_key_data_view.html">PrivateKeyDataView</a>(root, decoderType)</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            {}</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
@@ -211,8 +211,8 @@ $(document).ready(function(){initNavTree('_crypto_key_decoder_8h_source.html',''
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            {}</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            CryptographicKey(uint8_t* derData, <span class="keywordtype">size_t</span> derDataLen, <span class="keywordtype">bool</span> ownDerData)</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            {</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                m_Root = <a class="code" href="classpcpp_1_1_asn1_record.html#aeabfd091f67d8ab2d8e154eeefd6d8f5">Asn1Record::decode</a>(derData, derDataLen);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                : m_Root(<a class="code" href="classpcpp_1_1_asn1_record.html">Asn1Record</a>::decode(derData, derDataLen))</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            {</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                <span class="keywordflow">if</span> (ownDerData)</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                {</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                    m_DerData.reset(derData);</div>
@@ -464,9 +464,8 @@ $(document).ready(function(){initNavTree('_crypto_key_decoder_8h_source.html',''
 <div class="ttc" id="a_asn1_codec_8h_html"><div class="ttname"><a href="_asn1_codec_8h.html">Asn1Codec.h</a></div></div>
 <div class="ttc" id="a_crypto_data_reader_8h_html"><div class="ttname"><a href="_crypto_data_reader_8h.html">CryptoDataReader.h</a></div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_constructed_record_html_a2311c4a787cbc8ff796346966decfa1f"><div class="ttname"><a href="classpcpp_1_1_asn1_constructed_record.html#a2311c4a787cbc8ff796346966decfa1f">pcpp::Asn1ConstructedRecord::getSubRecords</a></div><div class="ttdeci">PointerVector&lt; Asn1Record &gt; &amp; getSubRecords()</div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:312</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_object_identifier_html"><div class="ttname"><a href="classpcpp_1_1_asn1_object_identifier.html">pcpp::Asn1ObjectIdentifier</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:699</div></div>
+<div class="ttc" id="aclasspcpp_1_1_asn1_object_identifier_html"><div class="ttname"><a href="classpcpp_1_1_asn1_object_identifier.html">pcpp::Asn1ObjectIdentifier</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:698</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_record.html">pcpp::Asn1Record</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:131</div></div>
-<div class="ttc" id="aclasspcpp_1_1_asn1_record_html_aeabfd091f67d8ab2d8e154eeefd6d8f5"><div class="ttname"><a href="classpcpp_1_1_asn1_record.html#aeabfd091f67d8ab2d8e154eeefd6d8f5">pcpp::Asn1Record::decode</a></div><div class="ttdeci">static std::unique_ptr&lt; Asn1Record &gt; decode(const uint8_t *data, size_t dataLen, bool lazy=true)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_asn1_sequence_record_html"><div class="ttname"><a href="classpcpp_1_1_asn1_sequence_record.html">pcpp::Asn1SequenceRecord</a></div><div class="ttdef"><b>Definition:</b> Asn1Codec.h:355</div></div>
 <div class="ttc" id="aclasspcpp_1_1_cryptographic_key_algorithm_html"><div class="ttname"><a href="classpcpp_1_1_cryptographic_key_algorithm.html">pcpp::CryptographicKeyAlgorithm</a></div><div class="ttdef"><b>Definition:</b> CryptoKeyDecoder.h:198</div></div>
 <div class="ttc" id="aclasspcpp_1_1_cryptographic_key_algorithm_html_a3717efa7bedb5e88287dbe4be4f7dba6"><div class="ttname"><a href="classpcpp_1_1_cryptographic_key_algorithm.html#a3717efa7bedb5e88287dbe4be4f7dba6">pcpp::CryptographicKeyAlgorithm::fromOidValue</a></div><div class="ttdeci">static CryptographicKeyAlgorithm fromOidValue(const Asn1ObjectIdentifier &amp;value)</div><div class="ttdoc">Creates a CryptographicKeyAlgorithm object from an OID value.</div></div>
@@ -530,7 +529,7 @@ $(document).ready(function(){initNavTree('_crypto_key_decoder_8h_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_crypto_key_decoder_8h.html">CryptoKeyDecoder.h</a></li>
-    <li class="footer">Generated on Sat Sep 5 2026 08:13:24 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 11 2026 09:43:23 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

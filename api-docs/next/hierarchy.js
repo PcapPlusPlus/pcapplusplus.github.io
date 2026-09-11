@@ -284,6 +284,18 @@ var hierarchy =
           [ "pcpp::FtpDataLayer", "classpcpp_1_1_ftp_data_layer.html", null ]
         ] ],
         [ "pcpp::PostgresLayer", "classpcpp_1_1_postgres_layer.html", null ],
+        [ "pcpp::QuicV1Layer", "classpcpp_1_1_quic_v1_layer.html", [
+          [ "pcpp::QuicV1LongHeaderLayer", "classpcpp_1_1_quic_v1_long_header_layer.html", [
+            [ "pcpp::QuicV1EstablishmentLayer", "classpcpp_1_1_quic_v1_establishment_layer.html", [
+              [ "pcpp::QuicV1HandshakeLayer", "classpcpp_1_1_quic_v1_handshake_layer.html", null ],
+              [ "pcpp::QuicV1InitialLayer", "classpcpp_1_1_quic_v1_initial_layer.html", null ],
+              [ "pcpp::QuicV1ZeroRttLayer", "classpcpp_1_1_quic_v1_zero_rtt_layer.html", null ]
+            ] ],
+            [ "pcpp::QuicV1RetryLayer", "classpcpp_1_1_quic_v1_retry_layer.html", null ],
+            [ "pcpp::QuicV1VersionNegotiationLayer", "classpcpp_1_1_quic_v1_version_negotiation_layer.html", null ]
+          ] ],
+          [ "pcpp::QuicV1OneRttLayer", "classpcpp_1_1_quic_v1_one_rtt_layer.html", null ]
+        ] ],
         [ "pcpp::RadiusLayer", "classpcpp_1_1_radius_layer.html", null ],
         [ "pcpp::S7CommLayer", "classpcpp_1_1_s7_comm_layer.html", null ],
         [ "pcpp::SSHLayer", "classpcpp_1_1_s_s_h_layer.html", [
@@ -463,6 +475,7 @@ var hierarchy =
     [ "pcpp::NetworkUtils", "classpcpp_1_1_network_utils.html", null ],
     [ "pcpp::nflog_header", "structpcpp_1_1nflog__header.html", null ],
     [ "pcpp::NflogTlv", "classpcpp_1_1_nflog_tlv.html", null ],
+    [ "pcpp::QuicV1LongHeaderLayer::OffsetAndLength", "structpcpp_1_1_quic_v1_long_header_layer_1_1_offset_and_length.html", null ],
     [ "pcpp::BgpOpenMessageLayer::optional_parameter", "structpcpp_1_1_bgp_open_message_layer_1_1optional__parameter.html", null ],
     [ "pcpp::OUILookup", "classpcpp_1_1_o_u_i_lookup.html", null ],
     [ "pcpp::internal::IOverlappedWrapper::OverlappedResult", "structpcpp_1_1internal_1_1_i_overlapped_wrapper_1_1_overlapped_result.html", null ],
@@ -516,6 +529,10 @@ var hierarchy =
         [ "pcpp::RSAPrivateKey", "classpcpp_1_1_r_s_a_private_key.html", null ]
       ] ]
     ] ],
+    [ "pcpp::QuicV1Layer::ProtectedPayload", "structpcpp_1_1_quic_v1_layer_1_1_protected_payload.html", null ],
+    [ "pcpp::QuicV1Layer::quic_common_header", "structpcpp_1_1_quic_v1_layer_1_1quic__common__header.html", null ],
+    [ "pcpp::QuicV1Layer::quic_long_header", "structpcpp_1_1_quic_v1_layer_1_1quic__long__header.html", null ],
+    [ "pcpp::QuicV1Layer::quic_short_header", "structpcpp_1_1_quic_v1_layer_1_1quic__short__header.html", null ],
     [ "pcpp::radius_header", "structpcpp_1_1radius__header.html", null ],
     [ "pcpp::RawPacket", "classpcpp_1_1_raw_packet.html", [
       [ "pcpp::MBufRawPacket", "classpcpp_1_1_m_buf_raw_packet.html", null ],
@@ -639,6 +656,7 @@ var hierarchy =
     [ "std::unique_ptr< T >", null, [
       [ "pcpp::DnsResourceDataPtr", "classpcpp_1_1_dns_resource_data_ptr.html", null ]
     ] ],
+    [ "pcpp::QuicV1EstablishmentLayer::VarintValueAndSize", "structpcpp_1_1_quic_v1_establishment_layer_1_1_varint_value_and_size.html", null ],
     [ "pcpp::vlan_header", "structpcpp_1_1vlan__header.html", null ],
     [ "pcpp::vrrp_header", "structpcpp_1_1vrrp__header.html", null ],
     [ "pcpp::vxlan_header", "structpcpp_1_1vxlan__header.html", null ],

@@ -210,6 +210,23 @@ var files_dup =
     [ "PostgresLayer.h", "_postgres_layer_8h.html", "_postgres_layer_8h" ],
     [ "PPPoELayer.h", "_p_p_po_e_layer_8h.html", "_p_p_po_e_layer_8h" ],
     [ "ProtocolType.h", "_protocol_type_8h.html", "_protocol_type_8h" ],
+    [ "QuicLayer.h", "_quic_layer_8h.html", [
+      [ "QuicV1Layer", "classpcpp_1_1_quic_v1_layer.html", "classpcpp_1_1_quic_v1_layer" ],
+      [ "ProtectedPayload", "structpcpp_1_1_quic_v1_layer_1_1_protected_payload.html", "structpcpp_1_1_quic_v1_layer_1_1_protected_payload" ],
+      [ "quic_common_header", "structpcpp_1_1_quic_v1_layer_1_1quic__common__header.html", null ],
+      [ "quic_long_header", "structpcpp_1_1_quic_v1_layer_1_1quic__long__header.html", null ],
+      [ "quic_short_header", "structpcpp_1_1_quic_v1_layer_1_1quic__short__header.html", null ],
+      [ "QuicV1LongHeaderLayer", "classpcpp_1_1_quic_v1_long_header_layer.html", "classpcpp_1_1_quic_v1_long_header_layer" ],
+      [ "OffsetAndLength", "structpcpp_1_1_quic_v1_long_header_layer_1_1_offset_and_length.html", "structpcpp_1_1_quic_v1_long_header_layer_1_1_offset_and_length" ],
+      [ "QuicV1EstablishmentLayer", "classpcpp_1_1_quic_v1_establishment_layer.html", "classpcpp_1_1_quic_v1_establishment_layer" ],
+      [ "VarintValueAndSize", "structpcpp_1_1_quic_v1_establishment_layer_1_1_varint_value_and_size.html", "structpcpp_1_1_quic_v1_establishment_layer_1_1_varint_value_and_size" ],
+      [ "QuicV1InitialLayer", "classpcpp_1_1_quic_v1_initial_layer.html", "classpcpp_1_1_quic_v1_initial_layer" ],
+      [ "QuicV1ZeroRttLayer", "classpcpp_1_1_quic_v1_zero_rtt_layer.html", null ],
+      [ "QuicV1HandshakeLayer", "classpcpp_1_1_quic_v1_handshake_layer.html", null ],
+      [ "QuicV1RetryLayer", "classpcpp_1_1_quic_v1_retry_layer.html", "classpcpp_1_1_quic_v1_retry_layer" ],
+      [ "QuicV1VersionNegotiationLayer", "classpcpp_1_1_quic_v1_version_negotiation_layer.html", "classpcpp_1_1_quic_v1_version_negotiation_layer" ],
+      [ "QuicV1OneRttLayer", "classpcpp_1_1_quic_v1_one_rtt_layer.html", "classpcpp_1_1_quic_v1_one_rtt_layer" ]
+    ] ],
     [ "RadiusLayer.h", "_radius_layer_8h.html", [
       [ "radius_header", "structpcpp_1_1radius__header.html", "structpcpp_1_1radius__header" ],
       [ "RadiusAttribute", "classpcpp_1_1_radius_attribute.html", "classpcpp_1_1_radius_attribute" ],
