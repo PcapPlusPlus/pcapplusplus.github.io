@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['radiuslayer_2eh_5965',['RadiusLayer.h',['../_radius_layer_8h.html',1,'']]],
-  ['rawpacket_2eh_5966',['RawPacket.h',['../_raw_packet_8h.html',1,'']]],
-  ['rawsocketdevice_2eh_5967',['RawSocketDevice.h',['../_raw_socket_device_8h.html',1,'']]]
+  ['quiclayer_2eh_6035',['QuicLayer.h',['../_quic_layer_8h.html',1,'']]]
 ];

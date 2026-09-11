@@ -7,7 +7,8 @@ var _protocol_type_8h =
       [ "OsiModelDataLinkLayer", "_protocol_type_8h.html#a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2", null ],
       [ "OsiModelNetworkLayer", "_protocol_type_8h.html#a69e2ee6a9dc68797612cf8dc38461025a94d470045f06f720e3cd7db069535412", null ],
       [ "OsiModelTransportLayer", "_protocol_type_8h.html#a69e2ee6a9dc68797612cf8dc38461025a4677ae253cb3e93cbf8b6d0edaecf5fc", null ],
-      [ "OsiModelSesionLayer", "_protocol_type_8h.html#a69e2ee6a9dc68797612cf8dc38461025a7b97a36ede97b0fba585c8a2ec8476d7", null ],
+      [ "OsiModelSessionLayer", "_protocol_type_8h.html#a69e2ee6a9dc68797612cf8dc38461025a9eb44fab90e7dcb1b0d7d21448b4eeea", null ],
+      [ "PCPP_DEPRECATED", "_protocol_type_8h.html#a69e2ee6a9dc68797612cf8dc38461025a295fd57c3238659ea732a541d349e4f4", null ],
       [ "OsiModelPresentationLayer", "_protocol_type_8h.html#a69e2ee6a9dc68797612cf8dc38461025aa5b41414b37b1c9f2796138fc73076af", null ],
       [ "OsiModelApplicationLayer", "_protocol_type_8h.html#a69e2ee6a9dc68797612cf8dc38461025a56f0bba682cc695d49efecf8a0152270", null ],
       [ "OsiModelLayerUnknown", "_protocol_type_8h.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f", null ]
@@ -62,6 +63,7 @@ var _protocol_type_8h =
     [ "PPPoE", "_protocol_type_8h.html#ga416f257a01839f243cd1354317cfb96f", null ],
     [ "PPPoEDiscovery", "_protocol_type_8h.html#ga9dc88bfe69fb13d599459ca9a7fb05e5", null ],
     [ "PPPoESession", "_protocol_type_8h.html#ga2300a265174edb1daecfd97697c67d79", null ],
+    [ "QUICv1", "_protocol_type_8h.html#gadd6804cdfc8cd7e5be7b3a180fbd3239", null ],
     [ "Radius", "_protocol_type_8h.html#ga77b7ee03eb7a3de9be466af98b7f1f69", null ],
     [ "S7COMM", "_protocol_type_8h.html#ga151840f4ada46323351b89725c26f640", null ],
     [ "SDP", "_protocol_type_8h.html#gaeb798bf954a057003adfa79648befa2a", null ],

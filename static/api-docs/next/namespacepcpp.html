@@ -609,6 +609,24 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_p_p_po_e_discovery_layer.html">PPPoEDiscoveryLayer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_quic_v1_layer.html">QuicV1Layer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_quic_v1_long_header_layer.html">QuicV1LongHeaderLayer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_quic_v1_establishment_layer.html">QuicV1EstablishmentLayer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_quic_v1_initial_layer.html">QuicV1InitialLayer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_quic_v1_zero_rtt_layer.html">QuicV1ZeroRttLayer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_quic_v1_handshake_layer.html">QuicV1HandshakeLayer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_quic_v1_retry_layer.html">QuicV1RetryLayer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_quic_v1_version_negotiation_layer.html">QuicV1VersionNegotiationLayer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_quic_v1_one_rtt_layer.html">QuicV1OneRttLayer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1radius__header.html">radius_header</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_radius_attribute.html">RadiusAttribute</a></td></tr>
@@ -2010,10 +2028,12 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a94d470045f06f720e3cd7db069535412">OsiModelNetworkLayer</a> = 3
 , <a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a4677ae253cb3e93cbf8b6d0edaecf5fc">OsiModelTransportLayer</a> = 4
 , <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a7b97a36ede97b0fba585c8a2ec8476d7">OsiModelSesionLayer</a> = 5
+&#160;&#160;<a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a9eb44fab90e7dcb1b0d7d21448b4eeea">OsiModelSessionLayer</a> = 5
+, <a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a295fd57c3238659ea732a541d349e4f4">PCPP_DEPRECATED</a> =("Use OsiModelSessionLayer instead") = OsiModelSessionLayer
 , <a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025aa5b41414b37b1c9f2796138fc73076af">OsiModelPresentationLayer</a> = 6
 , <a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a56f0bba682cc695d49efecf8a0152270">OsiModelApplicationLayer</a> = 7
-, <a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">OsiModelLayerUnknown</a> = 8
+, <br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">OsiModelLayerUnknown</a> = 8
 <br />
  }</td></tr>
 <tr class="memdesc:a69e2ee6a9dc68797612cf8dc38461025"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enum representing OSI model layers.  <a href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">More...</a><br /></td></tr>
@@ -2277,58 +2297,58 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ac69d37a9aeebc03af63de459ec6b5189"><td class="mdescLeft">&#160;</td><td class="mdescRight">SSL/TLS authentication algorithms.  <a href="namespacepcpp.html#ac69d37a9aeebc03af63de459ec6b5189">More...</a><br /></td></tr>
 <tr class="separator:ac69d37a9aeebc03af63de459ec6b5189"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4f9e906dad88c5eb6a34390e5ea54b7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7">SSLSymetricEncryptionAlgorithm</a> { <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7aab3cd85229cf3b4efd96dc0aae2b8e03">SSL_SYM_NULL</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7a502e0b6014b015307e9f60cc2475f7ad">SSL_SYM_RC4_40</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7adb05ac8f8f3af24c98f619fb5a246ca9">SSL_SYM_RC4_128</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7a20b88661acfd021f45dbbcdf2c13785e">SSL_SYM_RC2_CBC_40</a>
+<tr class="memitem:a782f485c2054bd4b49385f2e4dcdbb9f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9f">SSLSymmetricEncryptionAlgorithm</a> { <br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9faab3cd85229cf3b4efd96dc0aae2b8e03">SSL_SYM_NULL</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fa502e0b6014b015307e9f60cc2475f7ad">SSL_SYM_RC4_40</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fadb05ac8f8f3af24c98f619fb5a246ca9">SSL_SYM_RC4_128</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fa20b88661acfd021f45dbbcdf2c13785e">SSL_SYM_RC2_CBC_40</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7a3444b8f1d3053fe62aa25404dbd66250">SSL_SYM_IDEA_CBC</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7ac2da350c757c7c61ce872338b5444b02">SSL_SYM_DES40_CBC</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7af70a32b18ca2c9c069ae4fd0e575a2d0">SSL_SYM_DES_CBC</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7a7f393fc4c9b13f7787bdd30c7b8e4a85">SSL_SYM_3DES_EDE_CBC</a>
+&#160;&#160;<a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fa3444b8f1d3053fe62aa25404dbd66250">SSL_SYM_IDEA_CBC</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fac2da350c757c7c61ce872338b5444b02">SSL_SYM_DES40_CBC</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9faf70a32b18ca2c9c069ae4fd0e575a2d0">SSL_SYM_DES_CBC</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fa7f393fc4c9b13f7787bdd30c7b8e4a85">SSL_SYM_3DES_EDE_CBC</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7a6d729a917dbbac7d23e25e8347193b39">SSL_SYM_FORTEZZA_CBC</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7abd715cc7bc1ab05936f7cc9a9fa6de4f">SSL_SYM_DES_CBC_40</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7a60620469b50971e8d74d9534cedadf4a">SSL_SYM_AES_128_CBC</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7a38f9672e3f028a9c014bd89e24d04a81">SSL_SYM_AES_256_CBC</a>
+&#160;&#160;<a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fa6d729a917dbbac7d23e25e8347193b39">SSL_SYM_FORTEZZA_CBC</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fabd715cc7bc1ab05936f7cc9a9fa6de4f">SSL_SYM_DES_CBC_40</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fa60620469b50971e8d74d9534cedadf4a">SSL_SYM_AES_128_CBC</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fa38f9672e3f028a9c014bd89e24d04a81">SSL_SYM_AES_256_CBC</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7a7bbb0ae814fafbce00ba2de4240a4be2">SSL_SYM_CAMELLIA_128_CBC</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7ac191e34ae4721160868947be578dd96c">SSL_SYM_CAMELLIA_128_GCM</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7abdfdee83df956423b35efc6d538c6331">SSL_SYM_CAMELLIA_256_GCM</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7acf6b205f2624cd8418aea321ff669566">SSL_SYM_RC4_56</a>
+&#160;&#160;<a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fa7bbb0ae814fafbce00ba2de4240a4be2">SSL_SYM_CAMELLIA_128_CBC</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fac191e34ae4721160868947be578dd96c">SSL_SYM_CAMELLIA_128_GCM</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fabdfdee83df956423b35efc6d538c6331">SSL_SYM_CAMELLIA_256_GCM</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9facf6b205f2624cd8418aea321ff669566">SSL_SYM_RC4_56</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7aafa31db4503927c3dff1731286a96219">SSL_SYM_RC2_CBC_56</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7a17eb2a6634cab679489f3a04fb6a6798">SSL_SYM_GOST28147</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7a094a5e6dcae91b402fb6d9a4fc72173e">SSL_SYM_CAMELLIA_256_CBC</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7a662e340d72350b0df86797fef643335e">SSL_SYM_SEED_CBC</a>
+&#160;&#160;<a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9faafa31db4503927c3dff1731286a96219">SSL_SYM_RC2_CBC_56</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fa17eb2a6634cab679489f3a04fb6a6798">SSL_SYM_GOST28147</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fa094a5e6dcae91b402fb6d9a4fc72173e">SSL_SYM_CAMELLIA_256_CBC</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fa662e340d72350b0df86797fef643335e">SSL_SYM_SEED_CBC</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7a7077a502b872dcb0c41803b0a348c2a0">SSL_SYM_AES_128</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7acfdd527032cdae1521634a4a199ef52a">SSL_SYM_AES_256</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7ac25b6ba75c213cd4d3ba923e67f42ec1">SSL_SYM_AES_128_GCM</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7a8c6ddd13a5694c0aca928b41064b5e4e">SSL_SYM_AES_256_GCM</a>
+&#160;&#160;<a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fa7077a502b872dcb0c41803b0a348c2a0">SSL_SYM_AES_128</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9facfdd527032cdae1521634a4a199ef52a">SSL_SYM_AES_256</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fac25b6ba75c213cd4d3ba923e67f42ec1">SSL_SYM_AES_128_GCM</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fa8c6ddd13a5694c0aca928b41064b5e4e">SSL_SYM_AES_256_GCM</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7ad27a76a5a4cf668bef685ab6383c4877">SSL_SYM_RC4_128_EXPORT40</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7a1f5bf3c3b70fb07789cc0fbd9071370a">SSL_SYM_RC2_CBC_128_CBC</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7a9877f338e16135eebe8024101b55c899">SSL_SYM_IDEA_128_CBC</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7ad1d51daf1570d84087bcd59226514748">SSL_SYM_DES_64_CBC</a>
+&#160;&#160;<a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fad27a76a5a4cf668bef685ab6383c4877">SSL_SYM_RC4_128_EXPORT40</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fa1f5bf3c3b70fb07789cc0fbd9071370a">SSL_SYM_RC2_CBC_128_CBC</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fa9877f338e16135eebe8024101b55c899">SSL_SYM_IDEA_128_CBC</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fad1d51daf1570d84087bcd59226514748">SSL_SYM_DES_64_CBC</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7ad8873faca6c666aa2f5ee29f5272595d">SSL_SYM_DES_192_EDE3_CBC</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7a1df9d18335cf429bf1d83a7f8ed662a5">SSL_SYM_RC4_64</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7a4257bb00a0f184fe13b095ad3c12a5b2">SSL_SYM_ARIA_128_CBC</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7a92f5f71abd1bbf8e4ef4dd704e8a9e1a">SSL_SYM_ARIA_256_CBC</a>
+&#160;&#160;<a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fad8873faca6c666aa2f5ee29f5272595d">SSL_SYM_DES_192_EDE3_CBC</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fa1df9d18335cf429bf1d83a7f8ed662a5">SSL_SYM_RC4_64</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fa4257bb00a0f184fe13b095ad3c12a5b2">SSL_SYM_ARIA_128_CBC</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fa92f5f71abd1bbf8e4ef4dd704e8a9e1a">SSL_SYM_ARIA_256_CBC</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7ab63644aadcb749e34d2649ee3e266889">SSL_SYM_ARIA_128_GCM</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7a21c4070230ec1524cc14155aa0c2e351">SSL_SYM_ARIA_256_GCM</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7aad408ebc9eac82d3d70db4e75d054bb3">SSL_SYM_CHACHA20_POLY1305</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7a1ac4744eed7a873433eaeb203cd30981">SSL_SYM_AES_128_CCM</a>
+&#160;&#160;<a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fab63644aadcb749e34d2649ee3e266889">SSL_SYM_ARIA_128_GCM</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fa21c4070230ec1524cc14155aa0c2e351">SSL_SYM_ARIA_256_GCM</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9faad408ebc9eac82d3d70db4e75d054bb3">SSL_SYM_CHACHA20_POLY1305</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fa1ac4744eed7a873433eaeb203cd30981">SSL_SYM_AES_128_CCM</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7af8828777b92f49e1cfdc9cfd2f54e9e7">SSL_SYM_AES_128_CCM_8</a>
-, <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7adeb4feda65f41612cd9d614bc1115790">SSL_SYM_Unknown</a>
+&#160;&#160;<a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9faf8828777b92f49e1cfdc9cfd2f54e9e7">SSL_SYM_AES_128_CCM_8</a>
+, <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9fadeb4feda65f41612cd9d614bc1115790">SSL_SYM_Unknown</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ac4f9e906dad88c5eb6a34390e5ea54b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">SSL/TLS symmetric encryption algorithms.  <a href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7">More...</a><br /></td></tr>
-<tr class="separator:ac4f9e906dad88c5eb6a34390e5ea54b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a782f485c2054bd4b49385f2e4dcdbb9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">SSL/TLS symmetric encryption algorithms.  <a href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9f">More...</a><br /></td></tr>
+<tr class="separator:a782f485c2054bd4b49385f2e4dcdbb9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae983b30bc6e1c3461d5f81eb50a56afa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ae983b30bc6e1c3461d5f81eb50a56afa">SSLHashingAlgorithm</a> { <br />
 &#160;&#160;<a class="el" href="namespacepcpp.html#ae983b30bc6e1c3461d5f81eb50a56afaa7565ce3d2cad884fb60a117282ef6c5a">SSL_HASH_NULL</a>
 , <a class="el" href="namespacepcpp.html#ae983b30bc6e1c3461d5f81eb50a56afaab5c0e104a849cbc439ae28ef3213b103">SSL_HASH_MD5</a>
@@ -2944,6 +2964,10 @@ const <a class="el" href="group___protocol_types.html#ga1d761f7cf37d3b1efb1574fb
 const <a class="el" href="group___protocol_types.html#gaa26bae020a295f1089e08c390fb21c52">ProtocolTypeFamily</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___protocol_types.html#ga6f040b9fb2d37ca2c0772364dda70213">FTP</a> = 0x3c29</td></tr>
 <tr class="memdesc:ga6f040b9fb2d37ca2c0772364dda70213"><td class="mdescLeft">&#160;</td><td class="mdescRight">FTP protocol family (FTPControl and FtpData protocols) <br /></td></tr>
 <tr class="separator:ga6f040b9fb2d37ca2c0772364dda70213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd6804cdfc8cd7e5be7b3a180fbd3239"><td class="memItemLeft" align="right" valign="top">
+const <a class="el" href="group___protocol_types.html#ga1d761f7cf37d3b1efb1574fb1177e6eb">ProtocolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___protocol_types.html#gadd6804cdfc8cd7e5be7b3a180fbd3239">QUICv1</a> = 64</td></tr>
+<tr class="memdesc:gadd6804cdfc8cd7e5be7b3a180fbd3239"><td class="mdescLeft">&#160;</td><td class="mdescRight">QUIC v1 protocol. <br /></td></tr>
+<tr class="separator:gadd6804cdfc8cd7e5be7b3a180fbd3239"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The main namespace for the PcapPlusPlus lib. </p>
@@ -5886,7 +5910,9 @@ x.x.x.x _OR_ TCP port dst = 80"</p>
 </td></tr>
 <tr><td class="fieldname"><a id="a69e2ee6a9dc68797612cf8dc38461025a4677ae253cb3e93cbf8b6d0edaecf5fc"></a>OsiModelTransportLayer&#160;</td><td class="fielddoc"><p>Transport layer (layer 4) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a69e2ee6a9dc68797612cf8dc38461025a7b97a36ede97b0fba585c8a2ec8476d7"></a>OsiModelSesionLayer&#160;</td><td class="fielddoc"><p>Session layer (layer 5) </p>
+<tr><td class="fieldname"><a id="a69e2ee6a9dc68797612cf8dc38461025a9eb44fab90e7dcb1b0d7d21448b4eeea"></a>OsiModelSessionLayer&#160;</td><td class="fielddoc"><p>Session layer (layer 5) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a69e2ee6a9dc68797612cf8dc38461025a295fd57c3238659ea732a541d349e4f4"></a>PCPP_DEPRECATED&#160;</td><td class="fielddoc"><p>Deprecated typo, use OsiModelSessionLayer instead. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a69e2ee6a9dc68797612cf8dc38461025aa5b41414b37b1c9f2796138fc73076af"></a>OsiModelPresentationLayer&#160;</td><td class="fielddoc"><p>Presentation layer (layer 6) </p>
 </td></tr>
@@ -6369,95 +6395,95 @@ x.x.x.x _OR_ TCP port dst = 80"</p>
 
 </div>
 </div>
-<a id="ac4f9e906dad88c5eb6a34390e5ea54b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4f9e906dad88c5eb6a34390e5ea54b7">&#9670;&nbsp;</a></span>SSLSymetricEncryptionAlgorithm</h2>
+<a id="a782f485c2054bd4b49385f2e4dcdbb9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a782f485c2054bd4b49385f2e4dcdbb9f">&#9670;&nbsp;</a></span>SSLSymmetricEncryptionAlgorithm</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespacepcpp.html#ac4f9e906dad88c5eb6a34390e5ea54b7">pcpp::SSLSymetricEncryptionAlgorithm</a></td>
+          <td class="memname">enum <a class="el" href="namespacepcpp.html#a782f485c2054bd4b49385f2e4dcdbb9f">pcpp::SSLSymmetricEncryptionAlgorithm</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>SSL/TLS symmetric encryption algorithms. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7aab3cd85229cf3b4efd96dc0aae2b8e03"></a>SSL_SYM_NULL&#160;</td><td class="fielddoc"><p>Null value. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9faab3cd85229cf3b4efd96dc0aae2b8e03"></a>SSL_SYM_NULL&#160;</td><td class="fielddoc"><p>Null value. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7a502e0b6014b015307e9f60cc2475f7ad"></a>SSL_SYM_RC4_40&#160;</td><td class="fielddoc"><p>RC4_40. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fa502e0b6014b015307e9f60cc2475f7ad"></a>SSL_SYM_RC4_40&#160;</td><td class="fielddoc"><p>RC4_40. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7adb05ac8f8f3af24c98f619fb5a246ca9"></a>SSL_SYM_RC4_128&#160;</td><td class="fielddoc"><p>RC4_128. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fadb05ac8f8f3af24c98f619fb5a246ca9"></a>SSL_SYM_RC4_128&#160;</td><td class="fielddoc"><p>RC4_128. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7a20b88661acfd021f45dbbcdf2c13785e"></a>SSL_SYM_RC2_CBC_40&#160;</td><td class="fielddoc"><p>RC2_CBC_40. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fa20b88661acfd021f45dbbcdf2c13785e"></a>SSL_SYM_RC2_CBC_40&#160;</td><td class="fielddoc"><p>RC2_CBC_40. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7a3444b8f1d3053fe62aa25404dbd66250"></a>SSL_SYM_IDEA_CBC&#160;</td><td class="fielddoc"><p>IDEA_CBC. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fa3444b8f1d3053fe62aa25404dbd66250"></a>SSL_SYM_IDEA_CBC&#160;</td><td class="fielddoc"><p>IDEA_CBC. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7ac2da350c757c7c61ce872338b5444b02"></a>SSL_SYM_DES40_CBC&#160;</td><td class="fielddoc"><p>DES40_CBC. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fac2da350c757c7c61ce872338b5444b02"></a>SSL_SYM_DES40_CBC&#160;</td><td class="fielddoc"><p>DES40_CBC. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7af70a32b18ca2c9c069ae4fd0e575a2d0"></a>SSL_SYM_DES_CBC&#160;</td><td class="fielddoc"><p>DES_CBC. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9faf70a32b18ca2c9c069ae4fd0e575a2d0"></a>SSL_SYM_DES_CBC&#160;</td><td class="fielddoc"><p>DES_CBC. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7a7f393fc4c9b13f7787bdd30c7b8e4a85"></a>SSL_SYM_3DES_EDE_CBC&#160;</td><td class="fielddoc"><p>3DES_EDE_CBC </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fa7f393fc4c9b13f7787bdd30c7b8e4a85"></a>SSL_SYM_3DES_EDE_CBC&#160;</td><td class="fielddoc"><p>3DES_EDE_CBC </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7a6d729a917dbbac7d23e25e8347193b39"></a>SSL_SYM_FORTEZZA_CBC&#160;</td><td class="fielddoc"><p>FORTEZZA_CBC. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fa6d729a917dbbac7d23e25e8347193b39"></a>SSL_SYM_FORTEZZA_CBC&#160;</td><td class="fielddoc"><p>FORTEZZA_CBC. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7abd715cc7bc1ab05936f7cc9a9fa6de4f"></a>SSL_SYM_DES_CBC_40&#160;</td><td class="fielddoc"><p>DES_CBC_40. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fabd715cc7bc1ab05936f7cc9a9fa6de4f"></a>SSL_SYM_DES_CBC_40&#160;</td><td class="fielddoc"><p>DES_CBC_40. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7a60620469b50971e8d74d9534cedadf4a"></a>SSL_SYM_AES_128_CBC&#160;</td><td class="fielddoc"><p>AES_128_CBC. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fa60620469b50971e8d74d9534cedadf4a"></a>SSL_SYM_AES_128_CBC&#160;</td><td class="fielddoc"><p>AES_128_CBC. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7a38f9672e3f028a9c014bd89e24d04a81"></a>SSL_SYM_AES_256_CBC&#160;</td><td class="fielddoc"><p>AES_256_CBC. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fa38f9672e3f028a9c014bd89e24d04a81"></a>SSL_SYM_AES_256_CBC&#160;</td><td class="fielddoc"><p>AES_256_CBC. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7a7bbb0ae814fafbce00ba2de4240a4be2"></a>SSL_SYM_CAMELLIA_128_CBC&#160;</td><td class="fielddoc"><p>CAMELLIA_128_CBC. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fa7bbb0ae814fafbce00ba2de4240a4be2"></a>SSL_SYM_CAMELLIA_128_CBC&#160;</td><td class="fielddoc"><p>CAMELLIA_128_CBC. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7ac191e34ae4721160868947be578dd96c"></a>SSL_SYM_CAMELLIA_128_GCM&#160;</td><td class="fielddoc"><p>CAMELLIA_128_GCM. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fac191e34ae4721160868947be578dd96c"></a>SSL_SYM_CAMELLIA_128_GCM&#160;</td><td class="fielddoc"><p>CAMELLIA_128_GCM. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7abdfdee83df956423b35efc6d538c6331"></a>SSL_SYM_CAMELLIA_256_GCM&#160;</td><td class="fielddoc"><p>CAMELLIA_256_GCM. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fabdfdee83df956423b35efc6d538c6331"></a>SSL_SYM_CAMELLIA_256_GCM&#160;</td><td class="fielddoc"><p>CAMELLIA_256_GCM. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7acf6b205f2624cd8418aea321ff669566"></a>SSL_SYM_RC4_56&#160;</td><td class="fielddoc"><p>RC4_56. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9facf6b205f2624cd8418aea321ff669566"></a>SSL_SYM_RC4_56&#160;</td><td class="fielddoc"><p>RC4_56. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7aafa31db4503927c3dff1731286a96219"></a>SSL_SYM_RC2_CBC_56&#160;</td><td class="fielddoc"><p>RC2_CBC_56. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9faafa31db4503927c3dff1731286a96219"></a>SSL_SYM_RC2_CBC_56&#160;</td><td class="fielddoc"><p>RC2_CBC_56. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7a17eb2a6634cab679489f3a04fb6a6798"></a>SSL_SYM_GOST28147&#160;</td><td class="fielddoc"><p>GOST28147. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fa17eb2a6634cab679489f3a04fb6a6798"></a>SSL_SYM_GOST28147&#160;</td><td class="fielddoc"><p>GOST28147. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7a094a5e6dcae91b402fb6d9a4fc72173e"></a>SSL_SYM_CAMELLIA_256_CBC&#160;</td><td class="fielddoc"><p>CAMELLIA_256_CBC. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fa094a5e6dcae91b402fb6d9a4fc72173e"></a>SSL_SYM_CAMELLIA_256_CBC&#160;</td><td class="fielddoc"><p>CAMELLIA_256_CBC. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7a662e340d72350b0df86797fef643335e"></a>SSL_SYM_SEED_CBC&#160;</td><td class="fielddoc"><p>SEED_CBC. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fa662e340d72350b0df86797fef643335e"></a>SSL_SYM_SEED_CBC&#160;</td><td class="fielddoc"><p>SEED_CBC. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7a7077a502b872dcb0c41803b0a348c2a0"></a>SSL_SYM_AES_128&#160;</td><td class="fielddoc"><p>AES_128. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fa7077a502b872dcb0c41803b0a348c2a0"></a>SSL_SYM_AES_128&#160;</td><td class="fielddoc"><p>AES_128. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7acfdd527032cdae1521634a4a199ef52a"></a>SSL_SYM_AES_256&#160;</td><td class="fielddoc"><p>AES_256. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9facfdd527032cdae1521634a4a199ef52a"></a>SSL_SYM_AES_256&#160;</td><td class="fielddoc"><p>AES_256. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7ac25b6ba75c213cd4d3ba923e67f42ec1"></a>SSL_SYM_AES_128_GCM&#160;</td><td class="fielddoc"><p>SSL_SYM_AES_128_GCM. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fac25b6ba75c213cd4d3ba923e67f42ec1"></a>SSL_SYM_AES_128_GCM&#160;</td><td class="fielddoc"><p>SSL_SYM_AES_128_GCM. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7a8c6ddd13a5694c0aca928b41064b5e4e"></a>SSL_SYM_AES_256_GCM&#160;</td><td class="fielddoc"><p>AES_256_GCM. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fa8c6ddd13a5694c0aca928b41064b5e4e"></a>SSL_SYM_AES_256_GCM&#160;</td><td class="fielddoc"><p>AES_256_GCM. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7ad27a76a5a4cf668bef685ab6383c4877"></a>SSL_SYM_RC4_128_EXPORT40&#160;</td><td class="fielddoc"><p>RC4_128_EXPORT40. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fad27a76a5a4cf668bef685ab6383c4877"></a>SSL_SYM_RC4_128_EXPORT40&#160;</td><td class="fielddoc"><p>RC4_128_EXPORT40. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7a1f5bf3c3b70fb07789cc0fbd9071370a"></a>SSL_SYM_RC2_CBC_128_CBC&#160;</td><td class="fielddoc"><p>RC2_CBC_128_CBC. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fa1f5bf3c3b70fb07789cc0fbd9071370a"></a>SSL_SYM_RC2_CBC_128_CBC&#160;</td><td class="fielddoc"><p>RC2_CBC_128_CBC. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7a9877f338e16135eebe8024101b55c899"></a>SSL_SYM_IDEA_128_CBC&#160;</td><td class="fielddoc"><p>IDEA_128_CBC. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fa9877f338e16135eebe8024101b55c899"></a>SSL_SYM_IDEA_128_CBC&#160;</td><td class="fielddoc"><p>IDEA_128_CBC. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7ad1d51daf1570d84087bcd59226514748"></a>SSL_SYM_DES_64_CBC&#160;</td><td class="fielddoc"><p>DES_64_CBC. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fad1d51daf1570d84087bcd59226514748"></a>SSL_SYM_DES_64_CBC&#160;</td><td class="fielddoc"><p>DES_64_CBC. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7ad8873faca6c666aa2f5ee29f5272595d"></a>SSL_SYM_DES_192_EDE3_CBC&#160;</td><td class="fielddoc"><p>DES_192_EDE3_CBC. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fad8873faca6c666aa2f5ee29f5272595d"></a>SSL_SYM_DES_192_EDE3_CBC&#160;</td><td class="fielddoc"><p>DES_192_EDE3_CBC. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7a1df9d18335cf429bf1d83a7f8ed662a5"></a>SSL_SYM_RC4_64&#160;</td><td class="fielddoc"><p>RC4_64. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fa1df9d18335cf429bf1d83a7f8ed662a5"></a>SSL_SYM_RC4_64&#160;</td><td class="fielddoc"><p>RC4_64. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7a4257bb00a0f184fe13b095ad3c12a5b2"></a>SSL_SYM_ARIA_128_CBC&#160;</td><td class="fielddoc"><p>ARIA_128_CBC. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fa4257bb00a0f184fe13b095ad3c12a5b2"></a>SSL_SYM_ARIA_128_CBC&#160;</td><td class="fielddoc"><p>ARIA_128_CBC. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7a92f5f71abd1bbf8e4ef4dd704e8a9e1a"></a>SSL_SYM_ARIA_256_CBC&#160;</td><td class="fielddoc"><p>ARIA_256_CBC. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fa92f5f71abd1bbf8e4ef4dd704e8a9e1a"></a>SSL_SYM_ARIA_256_CBC&#160;</td><td class="fielddoc"><p>ARIA_256_CBC. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7ab63644aadcb749e34d2649ee3e266889"></a>SSL_SYM_ARIA_128_GCM&#160;</td><td class="fielddoc"><p>ARIA_128_GCM. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fab63644aadcb749e34d2649ee3e266889"></a>SSL_SYM_ARIA_128_GCM&#160;</td><td class="fielddoc"><p>ARIA_128_GCM. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7a21c4070230ec1524cc14155aa0c2e351"></a>SSL_SYM_ARIA_256_GCM&#160;</td><td class="fielddoc"><p>ARIA_256_GCM. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fa21c4070230ec1524cc14155aa0c2e351"></a>SSL_SYM_ARIA_256_GCM&#160;</td><td class="fielddoc"><p>ARIA_256_GCM. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7aad408ebc9eac82d3d70db4e75d054bb3"></a>SSL_SYM_CHACHA20_POLY1305&#160;</td><td class="fielddoc"><p>CHACHA20_POLY1305. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9faad408ebc9eac82d3d70db4e75d054bb3"></a>SSL_SYM_CHACHA20_POLY1305&#160;</td><td class="fielddoc"><p>CHACHA20_POLY1305. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7a1ac4744eed7a873433eaeb203cd30981"></a>SSL_SYM_AES_128_CCM&#160;</td><td class="fielddoc"><p>AES_128_CCM. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fa1ac4744eed7a873433eaeb203cd30981"></a>SSL_SYM_AES_128_CCM&#160;</td><td class="fielddoc"><p>AES_128_CCM. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7af8828777b92f49e1cfdc9cfd2f54e9e7"></a>SSL_SYM_AES_128_CCM_8&#160;</td><td class="fielddoc"><p>AES_128_CCM_8. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9faf8828777b92f49e1cfdc9cfd2f54e9e7"></a>SSL_SYM_AES_128_CCM_8&#160;</td><td class="fielddoc"><p>AES_128_CCM_8. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ac4f9e906dad88c5eb6a34390e5ea54b7adeb4feda65f41612cd9d614bc1115790"></a>SSL_SYM_Unknown&#160;</td><td class="fielddoc"><p>Unknown algorithm. </p>
+<tr><td class="fieldname"><a id="a782f485c2054bd4b49385f2e4dcdbb9fadeb4feda65f41612cd9d614bc1115790"></a>SSL_SYM_Unknown&#160;</td><td class="fielddoc"><p>Unknown algorithm. </p>
 </td></tr>
 </table>
 
@@ -8125,7 +8151,7 @@ x.x.x.x _OR_ TCP port dst = 80"</p>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li>
-    <li class="footer">Generated on Sat Sep 5 2026 08:13:25 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 11 2026 09:43:23 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

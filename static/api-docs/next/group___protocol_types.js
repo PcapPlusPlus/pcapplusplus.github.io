@@ -52,6 +52,7 @@ var group___protocol_types =
     [ "PPPoE", "group___protocol_types.html#ga416f257a01839f243cd1354317cfb96f", null ],
     [ "PPPoEDiscovery", "group___protocol_types.html#ga9dc88bfe69fb13d599459ca9a7fb05e5", null ],
     [ "PPPoESession", "group___protocol_types.html#ga2300a265174edb1daecfd97697c67d79", null ],
+    [ "QUICv1", "group___protocol_types.html#gadd6804cdfc8cd7e5be7b3a180fbd3239", null ],
     [ "Radius", "group___protocol_types.html#ga77b7ee03eb7a3de9be466af98b7f1f69", null ],
     [ "S7COMM", "group___protocol_types.html#ga151840f4ada46323351b89725c26f640", null ],
     [ "SDP", "group___protocol_types.html#gaeb798bf954a057003adfa79648befa2a", null ],

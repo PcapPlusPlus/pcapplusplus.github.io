@@ -95,6 +95,7 @@ $(document).ready(function(){initNavTree('_protocol_type_8h.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_deprecation_utils_8h_source.html">DeprecationUtils.h</a>&quot;</code><br />
 </div>
 <p><a href="_protocol_type_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -119,10 +120,12 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a94d470045f06f720e3cd7db069535412">pcpp::OsiModelNetworkLayer</a> = 3
 , <a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a4677ae253cb3e93cbf8b6d0edaecf5fc">pcpp::OsiModelTransportLayer</a> = 4
 , <br />
-&#160;&#160;<a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a7b97a36ede97b0fba585c8a2ec8476d7">pcpp::OsiModelSesionLayer</a> = 5
+&#160;&#160;<a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a9eb44fab90e7dcb1b0d7d21448b4eeea">pcpp::OsiModelSessionLayer</a> = 5
+, <a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a295fd57c3238659ea732a541d349e4f4">pcpp::PCPP_DEPRECATED</a> =("Use OsiModelSessionLayer instead") = OsiModelSessionLayer
 , <a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025aa5b41414b37b1c9f2796138fc73076af">pcpp::OsiModelPresentationLayer</a> = 6
 , <a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a56f0bba682cc695d49efecf8a0152270">pcpp::OsiModelApplicationLayer</a> = 7
-, <a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">pcpp::OsiModelLayerUnknown</a> = 8
+, <br />
+&#160;&#160;<a class="el" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f">pcpp::OsiModelLayerUnknown</a> = 8
 <br />
  }</td></tr>
 <tr class="memdesc:a69e2ee6a9dc68797612cf8dc38461025"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enum representing OSI model layers.  <a href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">More...</a><br /></td></tr>
@@ -432,6 +435,10 @@ const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="
 const ProtocolTypeFamily&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___protocol_types.html#ga6f040b9fb2d37ca2c0772364dda70213">pcpp::FTP</a> = 0x3c29</td></tr>
 <tr class="memdesc:ga6f040b9fb2d37ca2c0772364dda70213"><td class="mdescLeft">&#160;</td><td class="mdescRight">FTP protocol family (FTPControl and FtpData protocols) <br /></td></tr>
 <tr class="separator:ga6f040b9fb2d37ca2c0772364dda70213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd6804cdfc8cd7e5be7b3a180fbd3239"><td class="memItemLeft" align="right" valign="top">
+const ProtocolType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___protocol_types.html#gadd6804cdfc8cd7e5be7b3a180fbd3239">pcpp::QUICv1</a> = 64</td></tr>
+<tr class="memdesc:gadd6804cdfc8cd7e5be7b3a180fbd3239"><td class="mdescLeft">&#160;</td><td class="mdescRight">QUIC v1 protocol. <br /></td></tr>
+<tr class="separator:gadd6804cdfc8cd7e5be7b3a180fbd3239"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -439,7 +446,7 @@ const ProtocolTypeFamily&#160;</td><td class="memItemRight" valign="bottom"><a c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_protocol_type_8h.html">ProtocolType.h</a></li>
-    <li class="footer">Generated on Sat Sep 5 2026 08:13:25 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 11 2026 09:43:23 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
