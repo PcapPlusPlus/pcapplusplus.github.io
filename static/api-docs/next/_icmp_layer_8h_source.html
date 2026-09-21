@@ -414,42 +414,46 @@ $(document).ready(function(){initNavTree('_icmp_layer_8h_source.html',''); initR
 <div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160; </div>
 <div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;        uint8_t type = data[0];</div>
 <div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160; </div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;        <span class="comment">// ICMP_ECHO_REQUEST, ICMP_ECHO_REPLY, ICMP_ROUTER_SOL, ICMP_INFO_REQUEST, ICMP_INFO_REPLY</span></div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;        <span class="keywordflow">if</span> (type == 8 || type == 0 || type == 10 || type == 15 || type == 16)</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;        <span class="comment">// ICMP_ECHO_REQUEST, ICMP_ECHO_REPLY, ICMP_ROUTER_SOL</span></div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;        <span class="keywordflow">if</span> (type == 8 || type == 0 || type == 10)</div>
 <div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160; </div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;        <span class="comment">// ICMP_TIMESTAMP_REQUEST, ICMP_TIMESTAMP_REPLY</span></div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;        <span class="keywordflow">if</span> (type == 13 || type == 14)</div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;            <span class="keywordflow">return</span> dataLen &gt;= <span class="keyword">sizeof</span>(<a class="code" href="structpcpp_1_1icmp__timestamp__request.html">icmp_timestamp_request</a>);</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;        <span class="comment">// ICMP_INFO_REQUEST, ICMP_INFO_REPLY</span></div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;        <span class="keywordflow">if</span> (type == 15 || type == 16)</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;            <span class="keywordflow">return</span> dataLen &gt;= <span class="keyword">sizeof</span>(<a class="code" href="structpcpp_1_1icmp__info__request.html">icmp_info_request</a>);</div>
 <div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160; </div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;        <span class="comment">// ICMP_ADDRESS_MASK_REPLY, ICMP_ADDRESS_MASK_REQUEST</span></div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;        <span class="keywordflow">if</span> (type == 17 || type == 18)</div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;            <span class="keywordflow">return</span> dataLen &gt;= <span class="keyword">sizeof</span>(<a class="code" href="structpcpp_1_1icmp__address__mask__request.html">icmp_address_mask_request</a>);</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;        <span class="comment">// ICMP_TIMESTAMP_REQUEST, ICMP_TIMESTAMP_REPLY</span></div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;        <span class="keywordflow">if</span> (type == 13 || type == 14)</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;            <span class="keywordflow">return</span> dataLen &gt;= <span class="keyword">sizeof</span>(<a class="code" href="structpcpp_1_1icmp__timestamp__request.html">icmp_timestamp_request</a>);</div>
 <div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160; </div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;        <span class="comment">// ICMP_DEST_UNREACHABLE</span></div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;        <span class="keywordflow">if</span> (type == 3)</div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;            <span class="keywordflow">return</span> dataLen &gt;= <span class="keyword">sizeof</span>(<a class="code" href="structpcpp_1_1icmp__destination__unreachable.html">icmp_destination_unreachable</a>);</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;        <span class="comment">// ICMP_ADDRESS_MASK_REPLY, ICMP_ADDRESS_MASK_REQUEST</span></div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;        <span class="keywordflow">if</span> (type == 17 || type == 18)</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;            <span class="keywordflow">return</span> dataLen &gt;= <span class="keyword">sizeof</span>(<a class="code" href="structpcpp_1_1icmp__address__mask__request.html">icmp_address_mask_request</a>);</div>
 <div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160; </div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;        <span class="comment">// ICMP_REDIRECT</span></div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;        <span class="keywordflow">if</span> (type == 5)</div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;            <span class="keywordflow">return</span> dataLen &gt;= <span class="keyword">sizeof</span>(<a class="code" href="structpcpp_1_1icmp__redirect.html">icmp_redirect</a>);</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;        <span class="comment">// ICMP_DEST_UNREACHABLE</span></div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;        <span class="keywordflow">if</span> (type == 3)</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;            <span class="keywordflow">return</span> dataLen &gt;= <span class="keyword">sizeof</span>(<a class="code" href="structpcpp_1_1icmp__destination__unreachable.html">icmp_destination_unreachable</a>);</div>
 <div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160; </div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;        <span class="comment">// ICMP_TIME_EXCEEDED, ICMP_SOURCE_QUENCH</span></div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;        <span class="keywordflow">if</span> (type == 4 || type == 11)</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;            <span class="keywordflow">return</span> dataLen &gt;= <span class="keyword">sizeof</span>(<a class="code" href="structpcpp_1_1icmp__time__exceeded.html">icmp_time_exceeded</a>);</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;        <span class="comment">// ICMP_REDIRECT</span></div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;        <span class="keywordflow">if</span> (type == 5)</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;            <span class="keywordflow">return</span> dataLen &gt;= <span class="keyword">sizeof</span>(<a class="code" href="structpcpp_1_1icmp__redirect.html">icmp_redirect</a>);</div>
 <div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160; </div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;        <span class="comment">// ICMP_PARAM_PROBLEM</span></div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;        <span class="keywordflow">if</span> (type == 12)</div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;            <span class="keywordflow">return</span> dataLen &gt;= <span class="keyword">sizeof</span>(<a class="code" href="structpcpp_1_1icmp__param__problem.html">icmp_param_problem</a>);</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;        <span class="comment">// ICMP_TIME_EXCEEDED, ICMP_SOURCE_QUENCH</span></div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;        <span class="keywordflow">if</span> (type == 4 || type == 11)</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;            <span class="keywordflow">return</span> dataLen &gt;= <span class="keyword">sizeof</span>(<a class="code" href="structpcpp_1_1icmp__time__exceeded.html">icmp_time_exceeded</a>);</div>
 <div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160; </div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;        <span class="comment">// ICMP_ROUTER_ADV</span></div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;        <span class="keywordflow">if</span> (type == 9)</div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;            <span class="keywordflow">return</span> dataLen &gt;= <span class="keyword">sizeof</span>(<a class="code" href="structpcpp_1_1icmp__router__advertisement__hdr.html">icmp_router_advertisement_hdr</a>);</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;        <span class="comment">// ICMP_PARAM_PROBLEM</span></div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;        <span class="keywordflow">if</span> (type == 12)</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;            <span class="keywordflow">return</span> dataLen &gt;= <span class="keyword">sizeof</span>(<a class="code" href="structpcpp_1_1icmp__param__problem.html">icmp_param_problem</a>);</div>
 <div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160; </div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;    }</div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160; </div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;        <span class="comment">// ICMP_ROUTER_ADV</span></div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;        <span class="keywordflow">if</span> (type == 9)</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;            <span class="keywordflow">return</span> dataLen &gt;= <span class="keyword">sizeof</span>(<a class="code" href="structpcpp_1_1icmp__router__advertisement__hdr.html">icmp_router_advertisement_hdr</a>);</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160; </div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;    }</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160; </div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
 <div class="ttc" id="a_i_pv4_layer_8h_html"><div class="ttname"><a href="_i_pv4_layer_8h.html">IPv4Layer.h</a></div></div>
 <div class="ttc" id="a_layer_8h_html"><div class="ttname"><a href="_layer_8h.html">Layer.h</a></div></div>
 <div class="ttc" id="aclasspcpp_1_1_i_pv4_address_html"><div class="ttname"><a href="classpcpp_1_1_i_pv4_address.html">pcpp::IPv4Address</a></div><div class="ttdef"><b>Definition:</b> IpAddress.h:30</div></div>
@@ -596,7 +600,7 @@ $(document).ready(function(){initNavTree('_icmp_layer_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_icmp_layer_8h.html">IcmpLayer.h</a></li>
-    <li class="footer">Generated on Mon Sep 14 2026 02:31:44 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Sep 21 2026 00:07:13 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
