@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_packet.html',''); initRe
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classpcpp_1_1_packet-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -94,6 +95,11 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_packet.html',''); initRe
 
 <p><code>#include &lt;<a class="el" href="_packet_8h_source.html">Packet.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_packet_1_1_serialized_fields.html">SerializedFields</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad1ebb4cce7a9569106d6820739d3adf1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#ad1ebb4cce7a9569106d6820739d3adf1">Packet</a> (size_t maxPacketLen=1, <a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> linkType=<a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02bea4a7bd3283e7f9b30aa9e71e7807de215">LINKTYPE_ETHERNET</a>)</td></tr>
@@ -166,6 +172,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa4ffed34a919a61fd1f8e4fef7a0de7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab565f9f2bb5099c83ccf25e917e6257c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#ab565f9f2bb5099c83ccf25e917e6257c">toStringList</a> (std::vector&lt; std::string &gt; &amp;result, bool timeAsLocalTime=true) const</td></tr>
 <tr class="separator:ab565f9f2bb5099c83ccf25e917e6257c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2321b19ead983c31154fe544bbf020c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_packet.html#a2321b19ead983c31154fe544bbf020c3">serialize</a> (<a class="el" href="classpcpp_1_1_i_serializer.html">ISerializer</a> &amp;serializer) const</td></tr>
+<tr class="separator:a2321b19ead983c31154fe544bbf020c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class represents a parsed packet. It contains the raw data (<a class="el" href="classpcpp_1_1_raw_packet.html">RawPacket</a> instance), and a linked list of layers, each layer is a parsed protocol that this packet contains. The layers linked list is ordered where the first layer is the lowest in the packet (currently it's always Ethernet protocol as PcapPlusPlus supports only Ethernet packets), the next layer will be L2.5 or L3 (e.g VLAN, IPv4, IPv6, etc.), and so on. etc.), etc. The last layer in the linked list will be the highest in the packet. For example: for a standard HTTP request packet the layer will look like this: <a class="el" href="classpcpp_1_1_eth_layer.html">EthLayer</a> -&gt; <a class="el" href="classpcpp_1_1_i_pv4_layer.html">IPv4Layer</a> -&gt; <a class="el" href="classpcpp_1_1_tcp_layer.html">TcpLayer</a> -&gt; <a class="el" href="classpcpp_1_1_http_request_layer.html">HttpRequestLayer</a> <br  />
@@ -1171,6 +1179,30 @@ template&lt;class TLayer &gt; </div>
 
 </div>
 </div>
+<a id="a2321b19ead983c31154fe544bbf020c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2321b19ead983c31154fe544bbf020c3">&#9670;&nbsp;</a></span>serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::Packet::serialize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_i_serializer.html">ISerializer</a> &amp;&#160;</td>
+          <td class="paramname"><em>serializer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Serialize the packet using the provided serializer. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">serializer</td><td>The serializer to use. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a89fc3bb33188900f5a42ae102fa34e7d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a89fc3bb33188900f5a42ae102fa34e7d">&#9670;&nbsp;</a></span>setRawPacket()</h2>
 
@@ -1286,7 +1318,7 @@ template&lt;class TLayer &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_packet.html">Packet</a></li>
-    <li class="footer">Generated on Mon Sep 21 2026 00:07:14 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 25 2026 05:19:25 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

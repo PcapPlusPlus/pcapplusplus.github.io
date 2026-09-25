@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('_general_utils_8h_source.html',''); in
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="namespacepcpp.html#a117af2ac2f57cf90b06a2557c1c06825">   45</a></span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="namespacepcpp.html#a117af2ac2f57cf90b06a2557c1c06825">cross_platform_memmem</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* haystack, <span class="keywordtype">size_t</span> haystackLen, <span class="keyword">const</span> <span class="keywordtype">char</span>* needle, <span class="keywordtype">size_t</span> needleLen);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> alignment&gt; <span class="keyword">static</span> <span class="keywordtype">int</span> align(<span class="keywordtype">int</span> number)</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="namespacepcpp.html#a53f52f87ae877811fd64e92514abeaf0">   50</a></span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> alignment&gt; <span class="keywordtype">int</span> <a class="code" href="namespacepcpp.html#a53f52f87ae877811fd64e92514abeaf0">align</a>(<span class="keywordtype">int</span> number)</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">// Only works for alignment with power of 2</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        constexpr <span class="keywordtype">bool</span> isPowerOfTwo = alignment &amp;&amp; ((alignment &amp; (alignment - 1)) == 0);</div>
@@ -160,6 +160,7 @@ $(document).ready(function(){initNavTree('_general_utils_8h_source.html',''); in
 <div class="ttc" id="anamespacepcpp_html"><div class="ttname"><a href="namespacepcpp.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib.</div><div class="ttdef"><b>Definition:</b> AssertionUtils.h:19</div></div>
 <div class="ttc" id="anamespacepcpp_html_a117af2ac2f57cf90b06a2557c1c06825"><div class="ttname"><a href="namespacepcpp.html#a117af2ac2f57cf90b06a2557c1c06825">pcpp::cross_platform_memmem</a></div><div class="ttdeci">char * cross_platform_memmem(const char *haystack, size_t haystackLen, const char *needle, size_t needleLen)</div></div>
 <div class="ttc" id="anamespacepcpp_html_a13d338c123afbd98ee99a9b2ac78f59a"><div class="ttname"><a href="namespacepcpp.html#a13d338c123afbd98ee99a9b2ac78f59a">pcpp::byteArrayToHexString</a></div><div class="ttdeci">std::string byteArrayToHexString(const uint8_t *byteArr, size_t byteArrSize, int stringSizeLimit=-1)</div></div>
+<div class="ttc" id="anamespacepcpp_html_a53f52f87ae877811fd64e92514abeaf0"><div class="ttname"><a href="namespacepcpp.html#a53f52f87ae877811fd64e92514abeaf0">pcpp::align</a></div><div class="ttdeci">int align(int number)</div><div class="ttdef"><b>Definition:</b> GeneralUtils.h:50</div></div>
 <div class="ttc" id="anamespacepcpp_html_a6213cd87b4851342b47ee3b769e9299d"><div class="ttname"><a href="namespacepcpp.html#a6213cd87b4851342b47ee3b769e9299d">pcpp::hexStringToByteArray</a></div><div class="ttdeci">size_t hexStringToByteArray(const std::string &amp;hexString, uint8_t *resultByteArr, size_t resultByteArrSize)</div></div>
 <div class="ttc" id="astructpcpp_1_1_enum_class_hash_html"><div class="ttname"><a href="structpcpp_1_1_enum_class_hash.html">pcpp::EnumClassHash</a></div><div class="ttdef"><b>Definition:</b> GeneralUtils.h:121</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -168,7 +169,7 @@ $(document).ready(function(){initNavTree('_general_utils_8h_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b003f564e33ffc88e35d7a9df43b3691.html">Common++</a></li><li class="navelem"><a class="el" href="dir_9a3e9207f3f2c743963c543f58e0ab18.html">header</a></li><li class="navelem"><a class="el" href="_general_utils_8h.html">GeneralUtils.h</a></li>
-    <li class="footer">Generated on Mon Sep 21 2026 00:07:13 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 25 2026 05:19:24 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

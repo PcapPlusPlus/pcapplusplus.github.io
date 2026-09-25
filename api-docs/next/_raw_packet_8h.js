@@ -118,5 +118,6 @@ var _raw_packet_8h =
       [ "DpdkMBuf", "_raw_packet_8h.html#aa7f22f029830aaa51836bc642b830106ae7e0afd2ff7d381fe20e4ce686f1b7dd", null ],
       [ "WinDivert", "_raw_packet_8h.html#aa7f22f029830aaa51836bc642b830106ae65457d657f073910286b5cd481c0b72", null ]
     ] ],
-    [ "getRawPacketImplementationType", "_raw_packet_8h.html#a18a1bc03bd7be4e557779123a9c911d6", null ]
+    [ "getRawPacketImplementationType", "_raw_packet_8h.html#a18a1bc03bd7be4e557779123a9c911d6", null ],
+    [ "linkLayerToString", "_raw_packet_8h.html#ad310a2148eeb01375017ae9466727152", null ]
 ];

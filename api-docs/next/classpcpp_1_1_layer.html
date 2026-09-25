@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_layer.html',''); initRes
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
@@ -158,6 +159,11 @@ Inheritance diagram for pcpp::Layer:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_layer_1_1_serialized_fields.html">SerializedFields</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:adc5fdf997375b58400a55fdcc3bdff87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#adc5fdf997375b58400a55fdcc3bdff87">~Layer</a> () override</td></tr>
@@ -186,6 +192,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad6d7b5dcb95b95101bf41fa9a3f77b82"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#ad6d7b5dcb95b95101bf41fa9a3f77b82">copyData</a> (uint8_t *dest, size_t destSize) const</td></tr>
 <tr class="memdesc:ad6d7b5dcb95b95101bf41fa9a3f77b82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the raw data of this layer to another array, with a specified maximum size.  <a href="classpcpp_1_1_layer.html#ad6d7b5dcb95b95101bf41fa9a3f77b82">More...</a><br /></td></tr>
 <tr class="separator:ad6d7b5dcb95b95101bf41fa9a3f77b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b1ae47c27266a4540656f1bfe53aadc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a7b1ae47c27266a4540656f1bfe53aadc">serialize</a> (<a class="el" href="classpcpp_1_1_i_serializer.html">ISerializer</a> &amp;serializer) const</td></tr>
+<tr class="separator:a7b1ae47c27266a4540656f1bfe53aadc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c5d6f648a6878895a714004f937830d"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a4c5d6f648a6878895a714004f937830d">getDataPtr</a> (size_t offset=0) const override</td></tr>
 <tr class="separator:a4c5d6f648a6878895a714004f937830d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a8410015168a7fa42a7d71ac5b86673"><td class="memItemLeft" align="right" valign="top"><a id="a6a8410015168a7fa42a7d71ac5b86673"></a>
@@ -250,6 +258,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a06c29d3fe229518514ef483b153a0775"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_layer.html">Layer</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a06c29d3fe229518514ef483b153a0775">tryConstructNextLayerFromFactoryWithFallback</a> (TFactory factoryFn, uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet, Args &amp;&amp;... extraArgs)</td></tr>
 <tr class="memdesc:a06c29d3fe229518514ef483b153a0775"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to construct the next layer in the protocol stack using a factory functor with a fallback option.  <a href="classpcpp_1_1_layer.html#a06c29d3fe229518514ef483b153a0775">More...</a><br /></td></tr>
 <tr class="separator:a06c29d3fe229518514ef483b153a0775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8392ededd5fe3a5ab1c315e5ed53496f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a8392ededd5fe3a5ab1c315e5ed53496f">serializeLayer</a> (<a class="el" href="classpcpp_1_1_object_scope.html">ObjectScope</a> &amp;serializer) const</td></tr>
+<tr class="separator:a8392ededd5fe3a5ab1c315e5ed53496f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
@@ -1143,6 +1153,63 @@ Prefer the overload of <a class="el" href="classpcpp_1_1_layer.html#a019a07d6f9d
 
 </div>
 </div>
+<a id="a7b1ae47c27266a4540656f1bfe53aadc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b1ae47c27266a4540656f1bfe53aadc">&#9670;&nbsp;</a></span>serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::Layer::serialize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_i_serializer.html">ISerializer</a> &amp;&#160;</td>
+          <td class="paramname"><em>serializer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Serialize the layer using the provided serializer. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">serializer</td><td>The serializer to use. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8392ededd5fe3a5ab1c315e5ed53496f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8392ededd5fe3a5ab1c315e5ed53496f">&#9670;&nbsp;</a></span>serializeLayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void pcpp::Layer::serializeLayer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_object_scope.html">ObjectScope</a> &amp;&#160;</td>
+          <td class="paramname"><em>serializer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Serializes the layer's data into a provided serializer object. This is used for generating serialized representations (like JSON) of the packet layers. This method should be overridden by derived layers to provide specific serialization logic.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">serializer</td><td>The object scope serializer to which the layer details should be written. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a1d07ea14d02b4a5cb383f89b3f40ed63"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1d07ea14d02b4a5cb383f89b3f40ed63">&#9670;&nbsp;</a></span>toString()</h2>
 
@@ -1600,7 +1667,7 @@ template&lt;typename T , typename TFallback , typename... Args&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_layer.html">Layer</a></li>
-    <li class="footer">Generated on Mon Sep 21 2026 00:07:14 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 25 2026 05:19:25 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

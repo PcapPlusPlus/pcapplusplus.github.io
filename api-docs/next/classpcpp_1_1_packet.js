@@ -1,5 +1,6 @@
 var classpcpp_1_1_packet =
 [
+    [ "SerializedFields", "structpcpp_1_1_packet_1_1_serialized_fields.html", "structpcpp_1_1_packet_1_1_serialized_fields" ],
     [ "Packet", "classpcpp_1_1_packet.html#ad1ebb4cce7a9569106d6820739d3adf1", null ],
     [ "Packet", "classpcpp_1_1_packet.html#a62bcbe09251ec6c6c99138fb783c90e2", null ],
     [ "Packet", "classpcpp_1_1_packet.html#aaf61c3f9a5c12a7047774b42f31ee2ec", null ],
@@ -30,6 +31,7 @@ var classpcpp_1_1_packet =
     [ "removeFirstLayer", "classpcpp_1_1_packet.html#a2e7755654f74cc1280409f3f42d9c9e3", null ],
     [ "removeLastLayer", "classpcpp_1_1_packet.html#abda544ac8ac70142f086f63b25ff200c", null ],
     [ "removeLayer", "classpcpp_1_1_packet.html#a28fbabf49349df90548ac7c085b1cff3", null ],
+    [ "serialize", "classpcpp_1_1_packet.html#a2321b19ead983c31154fe544bbf020c3", null ],
     [ "setRawPacket", "classpcpp_1_1_packet.html#a89fc3bb33188900f5a42ae102fa34e7d", null ],
     [ "toString", "classpcpp_1_1_packet.html#aa4ffed34a919a61fd1f8e4fef7a0de7c", null ],
     [ "toStringList", "classpcpp_1_1_packet.html#ab565f9f2bb5099c83ccf25e917e6257c", null ]
