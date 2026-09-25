@@ -131,6 +131,12 @@ var hierarchy =
         [ "pcpp::internal::AssertionError", "classpcpp_1_1internal_1_1_assertion_error.html", null ]
       ] ]
     ] ],
+    [ "pcpp::FieldDescriptor", "structpcpp_1_1_field_descriptor.html", [
+      [ "pcpp::ObjectFieldDescriptor< TimestampObject >", "structpcpp_1_1_object_field_descriptor.html", [
+        [ "pcpp::Packet::SerializedFields::TimestampObject", "structpcpp_1_1_packet_1_1_serialized_fields_1_1_timestamp_object.html", null ]
+      ] ],
+      [ "pcpp::ObjectFieldDescriptor< Derived >", "structpcpp_1_1_object_field_descriptor.html", null ]
+    ] ],
     [ "pcpp::SipResponseFirstLine::FirstLineData", "structpcpp_1_1_sip_response_first_line_1_1_first_line_data.html", null ],
     [ "pcpp::GeneralFilter", "classpcpp_1_1_general_filter.html", [
       [ "pcpp::ArpFilter", "classpcpp_1_1_arp_filter.html", null ],
@@ -439,6 +445,13 @@ var hierarchy =
       ] ]
     ] ],
     [ "pcpp::IPv6Network", "classpcpp_1_1_i_pv6_network.html", null ],
+    [ "pcpp::ISerializer", "classpcpp_1_1_i_serializer.html", [
+      [ "pcpp::JsonSerializer", "classpcpp_1_1_json_serializer.html", null ],
+      [ "pcpp::ScopeBase", "classpcpp_1_1_scope_base.html", [
+        [ "pcpp::ArrayScope", "classpcpp_1_1_array_scope.html", null ],
+        [ "pcpp::ObjectScope", "classpcpp_1_1_object_scope.html", null ]
+      ] ]
+    ] ],
     [ "pcpp::internal::IWinDivertDriver", "classpcpp_1_1internal_1_1_i_win_divert_driver.html", null ],
     [ "pcpp::internal::IWinDivertHandle", "classpcpp_1_1internal_1_1_i_win_divert_handle.html", null ],
     [ "pcpp::KniDevice::KniDeviceConfiguration", "structpcpp_1_1_kni_device_1_1_kni_device_configuration.html", null ],
@@ -549,6 +562,8 @@ var hierarchy =
     [ "pcpp::ScalarBuffer< T >", "structpcpp_1_1_scalar_buffer.html", null ],
     [ "pcpp::LdapSearchRequestLayer::SearchRequestScope", "classpcpp_1_1_ldap_search_request_layer_1_1_search_request_scope.html", null ],
     [ "pcpp::WinDivertDevice::SendResult", "structpcpp_1_1_win_divert_device_1_1_send_result.html", null ],
+    [ "pcpp::Layer::SerializedFields", "structpcpp_1_1_layer_1_1_serialized_fields.html", null ],
+    [ "pcpp::Packet::SerializedFields", "structpcpp_1_1_packet_1_1_serialized_fields.html", null ],
     [ "pcpp::SSLServerHelloMessage::ServerHelloTLSFingerprint", "structpcpp_1_1_s_s_l_server_hello_message_1_1_server_hello_t_l_s_fingerprint.html", null ],
     [ "pcpp::SipRequestFirstLine::SipFirstLineData", "structpcpp_1_1_sip_request_first_line_1_1_sip_first_line_data.html", null ],
     [ "pcpp::SipRequestFirstLine", "classpcpp_1_1_sip_request_first_line.html", null ],

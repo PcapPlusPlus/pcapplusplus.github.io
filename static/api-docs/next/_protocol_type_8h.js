@@ -13,6 +13,7 @@ var _protocol_type_8h =
       [ "OsiModelApplicationLayer", "_protocol_type_8h.html#a69e2ee6a9dc68797612cf8dc38461025a56f0bba682cc695d49efecf8a0152270", null ],
       [ "OsiModelLayerUnknown", "_protocol_type_8h.html#a69e2ee6a9dc68797612cf8dc38461025aaa1b22ad907997f669b20cc0d3b7e87f", null ]
     ] ],
+    [ "protocolTypeToString", "_protocol_type_8h.html#af81780ed3de4567bf160199a76877ad2", null ],
     [ "protoFamilyContainsProtocol", "_protocol_type_8h.html#gae5f6d95f269b594fc413882772bf9867", null ],
     [ "ARP", "_protocol_type_8h.html#gaead5ebeefddfe9c93b70ede2c99cea9d", null ],
     [ "AuthenticationHeader", "_protocol_type_8h.html#ga39b3b994d91261bc96f7ff25172ce9d0", null ],
