@@ -1,5 +1,6 @@
 var classpcpp_1_1_mpls_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_mpls_layer_1_1_serialized_fields.html", null ],
     [ "MplsLayer", "classpcpp_1_1_mpls_layer.html#a78a145f83cfa7322875f9b6ea16e7b01", null ],
     [ "MplsLayer", "classpcpp_1_1_mpls_layer.html#ad5fd3bbf43aef97ee7a1646ee58ec63c", null ],
     [ "computeCalculateFields", "classpcpp_1_1_mpls_layer.html#a76f0a12e0c4060c7c5fd7873a6b73ed2", null ],
@@ -10,6 +11,7 @@ var classpcpp_1_1_mpls_layer =
     [ "getTTL", "classpcpp_1_1_mpls_layer.html#a10be1c8f277ab1bec8512ac203eb0b32", null ],
     [ "isBottomOfStack", "classpcpp_1_1_mpls_layer.html#ac328b74e4960b4e96456e9c63015a695", null ],
     [ "parseNextLayer", "classpcpp_1_1_mpls_layer.html#a35fc50f7e8eef88433ae38b23c204139", null ],
+    [ "serializeLayer", "classpcpp_1_1_mpls_layer.html#ac7b3089f7739f1537ffbda4ffdf31d6d", null ],
     [ "setBottomOfStack", "classpcpp_1_1_mpls_layer.html#ad36043d44c2a5c3dbb0a9809756ccbc6", null ],
     [ "setExperimentalUseValue", "classpcpp_1_1_mpls_layer.html#a6d47d4dbc8d592c384577dd87726ded7", null ],
     [ "setMplsLabel", "classpcpp_1_1_mpls_layer.html#a21cf86ca8c689c68d70a6451e337a706", null ],

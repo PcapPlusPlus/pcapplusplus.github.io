@@ -1,5 +1,6 @@
 var classpcpp_1_1_i_pv4_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_i_pv4_layer_1_1_serialized_fields.html", null ],
     [ "IPv4Layer", "classpcpp_1_1_i_pv4_layer.html#a4f0053a3866503b87803140b5ea2b8fe", null ],
     [ "IPv4Layer", "classpcpp_1_1_i_pv4_layer.html#a7a61390d0fe81e53fc92e5ddf4037c7e", null ],
     [ "IPv4Layer", "classpcpp_1_1_i_pv4_layer.html#a0e84eff3c7ac732a1a934ee507fdb2ce", null ],
@@ -28,6 +29,7 @@ var classpcpp_1_1_i_pv4_layer =
     [ "parseNextLayer", "classpcpp_1_1_i_pv4_layer.html#a2f15a23dd9617ef6c639679acc16b06a", null ],
     [ "removeAllOptions", "classpcpp_1_1_i_pv4_layer.html#a03640d65fc57a0b78541a369eec391c2", null ],
     [ "removeOption", "classpcpp_1_1_i_pv4_layer.html#ac99e55cc416df24b19241493fe4d9906", null ],
+    [ "serializeLayer", "classpcpp_1_1_i_pv4_layer.html#a6ef70a4fb88c5ec06b1935acb7faa155", null ],
     [ "setDstIPv4Address", "classpcpp_1_1_i_pv4_layer.html#a6dfa29c3f8e93ce0e72d5abb96e59ce8", null ],
     [ "setSrcIPv4Address", "classpcpp_1_1_i_pv4_layer.html#a73890160a9c3a32df28aa6cb0f4a752f", null ],
     [ "toString", "classpcpp_1_1_i_pv4_layer.html#ae8fb318c4185d63e55ee08f1991529be", null ]

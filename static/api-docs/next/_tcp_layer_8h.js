@@ -4,6 +4,7 @@ var _tcp_layer_8h =
     [ "TcpOption", "classpcpp_1_1_tcp_option.html", "classpcpp_1_1_tcp_option" ],
     [ "TcpOptionBuilder", "classpcpp_1_1_tcp_option_builder.html", "classpcpp_1_1_tcp_option_builder" ],
     [ "TcpLayer", "classpcpp_1_1_tcp_layer.html", "classpcpp_1_1_tcp_layer" ],
+    [ "SerializedFields", "structpcpp_1_1_tcp_layer_1_1_serialized_fields.html", null ],
     [ "PCPP_TCPOLEN_CC", "_tcp_layer_8h.html#a2ba3f9ff28dbd65780526d5306b653a0", null ],
     [ "PCPP_TCPOLEN_CCECHO", "_tcp_layer_8h.html#ab5e2e3231f1117d3735a163fb160dee6", null ],
     [ "PCPP_TCPOLEN_CCNEW", "_tcp_layer_8h.html#afc4ee0fb5f33243d1cd7cd9c856ea5b7", null ],

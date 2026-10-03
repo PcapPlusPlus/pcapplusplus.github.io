@@ -1,5 +1,6 @@
 var classpcpp_1_1_vlan_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_vlan_layer_1_1_serialized_fields.html", null ],
     [ "VlanLayer", "classpcpp_1_1_vlan_layer.html#a5f6f8f15642dd1f0a88550bde0fb51b0", null ],
     [ "VlanLayer", "classpcpp_1_1_vlan_layer.html#a3f0f8a200a5956b6e1bd52c6c1311b5b", null ],
     [ "computeCalculateFields", "classpcpp_1_1_vlan_layer.html#ac2a4f92912138bf9f429ed66c501b77f", null ],
@@ -10,6 +11,7 @@ var classpcpp_1_1_vlan_layer =
     [ "getVlanHeader", "classpcpp_1_1_vlan_layer.html#a67a01cdf9bab94ed23c5182775f4baf5", null ],
     [ "getVlanID", "classpcpp_1_1_vlan_layer.html#a2a0c09dcb6672f4ac371df94502bea16", null ],
     [ "parseNextLayer", "classpcpp_1_1_vlan_layer.html#a44b77ea2ea59f82d90383f3ab0546c77", null ],
+    [ "serializeLayer", "classpcpp_1_1_vlan_layer.html#acd2e0521f9ff6871fc67ed46b31b59cd", null ],
     [ "setCFI", "classpcpp_1_1_vlan_layer.html#ac9702d193a250da803639863ecf12373", null ],
     [ "setPriority", "classpcpp_1_1_vlan_layer.html#a92084616cf00c45903ecaaeed0c20cd5", null ],
     [ "setVlanID", "classpcpp_1_1_vlan_layer.html#aeb6dcaefa11775c2b64e0be74094116d", null ],
