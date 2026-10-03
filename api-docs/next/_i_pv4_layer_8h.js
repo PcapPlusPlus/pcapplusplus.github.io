@@ -5,6 +5,7 @@ var _i_pv4_layer_8h =
     [ "IPv4Option", "classpcpp_1_1_i_pv4_option.html", "classpcpp_1_1_i_pv4_option" ],
     [ "IPv4OptionBuilder", "classpcpp_1_1_i_pv4_option_builder.html", "classpcpp_1_1_i_pv4_option_builder" ],
     [ "IPv4Layer", "classpcpp_1_1_i_pv4_layer.html", "classpcpp_1_1_i_pv4_layer" ],
+    [ "SerializedFields", "structpcpp_1_1_i_pv4_layer_1_1_serialized_fields.html", null ],
     [ "IPProtocolTypes", "_i_pv4_layer_8h.html#ace8e2e21b82a8adc602f561e1e612fb0", [
       [ "PACKETPP_IPPROTO_IP", "_i_pv4_layer_8h.html#ace8e2e21b82a8adc602f561e1e612fb0a37ebd16dbd9fae867a264e290501dd0d", null ],
       [ "PACKETPP_IPPROTO_HOPOPTS", "_i_pv4_layer_8h.html#ace8e2e21b82a8adc602f561e1e612fb0ab4b438a108e462f86dc5d62f51d105dc", null ],

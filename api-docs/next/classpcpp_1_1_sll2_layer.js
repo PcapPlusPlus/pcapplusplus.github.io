@@ -1,5 +1,6 @@
 var classpcpp_1_1_sll2_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_sll2_layer_1_1_serialized_fields.html", null ],
     [ "Sll2Layer", "classpcpp_1_1_sll2_layer.html#a4ca0cd24eaf61ed71657c72d17dbbc8b", null ],
     [ "Sll2Layer", "classpcpp_1_1_sll2_layer.html#ad52736f149ffc277434028ba3411e277", null ],
     [ "computeCalculateFields", "classpcpp_1_1_sll2_layer.html#a4e8a7c00eb9624a169c379c3b210d08e", null ],
@@ -14,6 +15,7 @@ var classpcpp_1_1_sll2_layer =
     [ "getProtocolType", "classpcpp_1_1_sll2_layer.html#a4f0891c288960d2ef6f6768e1f4883c6", null ],
     [ "getSll2Header", "classpcpp_1_1_sll2_layer.html#abaa0bd79a3b72bbb4d28c64db3f14a81", null ],
     [ "parseNextLayer", "classpcpp_1_1_sll2_layer.html#acd59cd1449def77294e6161924c01149", null ],
+    [ "serializeLayer", "classpcpp_1_1_sll2_layer.html#ae5572dfc83759a460c5b46f74d5fb5b4", null ],
     [ "setArphrdType", "classpcpp_1_1_sll2_layer.html#a209e7065f94e212c38e4cbda7419dfd2", null ],
     [ "setInterfaceIndex", "classpcpp_1_1_sll2_layer.html#ad867335b41d939f5c75f7ebf02fcc609", null ],
     [ "setLinkLayerAddr", "classpcpp_1_1_sll2_layer.html#a2db2eadd4bfb405440dec392bb215bed", null ],

@@ -1,5 +1,6 @@
 var classpcpp_1_1_udp_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_udp_layer_1_1_serialized_fields.html", null ],
     [ "UdpLayer", "classpcpp_1_1_udp_layer.html#add55cec282d7f33152b83424ceb2710b", null ],
     [ "UdpLayer", "classpcpp_1_1_udp_layer.html#ab14e8e5fc416560f055bae317aa3ebed", null ],
     [ "calculateChecksum", "classpcpp_1_1_udp_layer.html#a98ae7478c27ae01ae6be6c887506e8f4", null ],
@@ -10,5 +11,6 @@ var classpcpp_1_1_udp_layer =
     [ "getSrcPort", "classpcpp_1_1_udp_layer.html#a64ed4aa70ff472d0e5cdfd7f608712c5", null ],
     [ "getUdpHeader", "classpcpp_1_1_udp_layer.html#a03737760761dcfd0d88a3d60945c0fb7", null ],
     [ "parseNextLayer", "classpcpp_1_1_udp_layer.html#a83d383a3a674b916ff798add5ce3bf42", null ],
+    [ "serializeLayer", "classpcpp_1_1_udp_layer.html#a5f7bb2444a6b225e171f765981f195da", null ],
     [ "toString", "classpcpp_1_1_udp_layer.html#ae7de278b9ca35a9aa294136ccba42477", null ]
 ];

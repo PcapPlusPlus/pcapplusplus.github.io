@@ -1,5 +1,6 @@
 var classpcpp_1_1_vxlan_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_vxlan_layer_1_1_serialized_fields.html", null ],
     [ "VxlanLayer", "classpcpp_1_1_vxlan_layer.html#aea5e8a6d3cf3a9fc45bbb30030ddc8ea", null ],
     [ "VxlanLayer", "classpcpp_1_1_vxlan_layer.html#a95d29aa1bc7b26c82f2f39068cdeaca0", null ],
     [ "computeCalculateFields", "classpcpp_1_1_vxlan_layer.html#a293abbcf7ff89a978cbb6fb396c56b5f", null ],
@@ -8,6 +9,7 @@ var classpcpp_1_1_vxlan_layer =
     [ "getVNI", "classpcpp_1_1_vxlan_layer.html#a096910a7081e9fd027ccbb3e3669e6f6", null ],
     [ "getVxlanHeader", "classpcpp_1_1_vxlan_layer.html#a5ba29d6d64acb3eb1f63b1d5bf5698d9", null ],
     [ "parseNextLayer", "classpcpp_1_1_vxlan_layer.html#a5cd3717ac564ab3444eb479c00a58f9d", null ],
+    [ "serializeLayer", "classpcpp_1_1_vxlan_layer.html#aa9ea671b4a421d572f18d29bebd0deb3", null ],
     [ "setVNI", "classpcpp_1_1_vxlan_layer.html#ae03a61d99376b70b8f92b30d1a3b429e", null ],
     [ "toString", "classpcpp_1_1_vxlan_layer.html#a542887a0095a23607ec8849532a6d279", null ]
 ];

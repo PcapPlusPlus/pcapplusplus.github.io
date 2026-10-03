@@ -1,5 +1,6 @@
 var classpcpp_1_1_tpkt_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_tpkt_layer_1_1_serialized_fields.html", null ],
     [ "TpktLayer", "classpcpp_1_1_tpkt_layer.html#a7cda4d85fe76e21701aeba0babf57689", null ],
     [ "TpktLayer", "classpcpp_1_1_tpkt_layer.html#a2b73869d720f268bcc47f53120952b31", null ],
     [ "computeCalculateFields", "classpcpp_1_1_tpkt_layer.html#a5f8fde3aea1f90852027d23cb9387375", null ],
@@ -9,6 +10,7 @@ var classpcpp_1_1_tpkt_layer =
     [ "getReserved", "classpcpp_1_1_tpkt_layer.html#a5da6aadc8b42e6794fbbe52a3786c7d5", null ],
     [ "getVersion", "classpcpp_1_1_tpkt_layer.html#a17bb46b9af09316fd6653fdc290e9ad0", null ],
     [ "parseNextLayer", "classpcpp_1_1_tpkt_layer.html#acf8e2c9d3e66c0468f722a0c728e31b6", null ],
+    [ "serializeLayer", "classpcpp_1_1_tpkt_layer.html#ab4215112d6878b4e21afae62e4da142a", null ],
     [ "setLength", "classpcpp_1_1_tpkt_layer.html#ae8dd46cd480bb7eaea3ba70948255dae", null ],
     [ "setVersion", "classpcpp_1_1_tpkt_layer.html#a0180d8fa07e6d89b6254d039adc8b6cd", null ],
     [ "toString", "classpcpp_1_1_tpkt_layer.html#a05dc0bfc7c4f5c8f72ffa0aafab05d3c", null ]

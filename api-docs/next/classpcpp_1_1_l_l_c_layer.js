@@ -1,5 +1,6 @@
 var classpcpp_1_1_l_l_c_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_l_l_c_layer_1_1_serialized_fields.html", null ],
     [ "LLCLayer", "classpcpp_1_1_l_l_c_layer.html#ab8945fabfc081a7642a1bcd4aed229c6", null ],
     [ "LLCLayer", "classpcpp_1_1_l_l_c_layer.html#a9fbb912f53d2eec910c68f419245e259", null ],
     [ "computeCalculateFields", "classpcpp_1_1_l_l_c_layer.html#a99103844a17161019841343b8dac5a11", null ],
@@ -7,5 +8,6 @@ var classpcpp_1_1_l_l_c_layer =
     [ "getLlcHeader", "classpcpp_1_1_l_l_c_layer.html#ae4a4233064040c866aacccf26b384c5f", null ],
     [ "getOsiModelLayer", "classpcpp_1_1_l_l_c_layer.html#a0b75c772baad4740877741e1c52619d3", null ],
     [ "parseNextLayer", "classpcpp_1_1_l_l_c_layer.html#a0d59069ad3a906070a44e596da8ed782", null ],
+    [ "serializeLayer", "classpcpp_1_1_l_l_c_layer.html#abe88d8bc6d16ff89c6129c5d56634c36", null ],
     [ "toString", "classpcpp_1_1_l_l_c_layer.html#afa1ac7214364fa312302237e2e4b2a25", null ]
 ];

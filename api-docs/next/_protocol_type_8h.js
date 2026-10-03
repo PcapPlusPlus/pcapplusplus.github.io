@@ -37,6 +37,7 @@ var _protocol_type_8h =
     [ "GTP", "_protocol_type_8h.html#gab70943e3982ec8faf4cf7c145d8e0311", null ],
     [ "GTPv1", "_protocol_type_8h.html#gab1a8b83ad72bbbbaebf25a86304ee3d7", null ],
     [ "GTPv2", "_protocol_type_8h.html#gab566bc5d89ce0f34bc1ed909b1bc010c", null ],
+    [ "GVCP", "_protocol_type_8h.html#ga2bd65ef195861d18778178192c996281", null ],
     [ "HTTP", "_protocol_type_8h.html#ga4818bf02f268ca6fa442451860d6dda5", null ],
     [ "HTTPRequest", "_protocol_type_8h.html#gacd42edf1ca5da0c50d131e2ba801720d", null ],
     [ "HTTPResponse", "_protocol_type_8h.html#gaf6b953db5db49c9e04b36112cca3822e", null ],

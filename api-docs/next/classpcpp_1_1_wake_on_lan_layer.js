@@ -1,5 +1,6 @@
 var classpcpp_1_1_wake_on_lan_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_wake_on_lan_layer_1_1_serialized_fields.html", null ],
     [ "wol_header", "structpcpp_1_1_wake_on_lan_layer_1_1wol__header.html", "structpcpp_1_1_wake_on_lan_layer_1_1wol__header" ],
     [ "WakeOnLanLayer", "classpcpp_1_1_wake_on_lan_layer.html#af218dc9fb99ec11e8ab9909fbc73729a", null ],
     [ "WakeOnLanLayer", "classpcpp_1_1_wake_on_lan_layer.html#a4814d44f301b228ed62a7be4bc55c14e", null ],
@@ -13,6 +14,7 @@ var classpcpp_1_1_wake_on_lan_layer =
     [ "getTargetAddr", "classpcpp_1_1_wake_on_lan_layer.html#a26c869ce80a54b8202a99fbaae591ce6", null ],
     [ "getWakeOnLanHeader", "classpcpp_1_1_wake_on_lan_layer.html#a64038c0d5cebdc85e0ea20c1a9652910", null ],
     [ "parseNextLayer", "classpcpp_1_1_wake_on_lan_layer.html#afad3525201852d25337d29cbd72a31e8", null ],
+    [ "serializeLayer", "classpcpp_1_1_wake_on_lan_layer.html#a579e359583388d41849c8a0f4c0dc0e7", null ],
     [ "setPassword", "classpcpp_1_1_wake_on_lan_layer.html#a8b91786f49c24d96bcb2c67567fa3780", null ],
     [ "setPassword", "classpcpp_1_1_wake_on_lan_layer.html#a86e3a2bc14065829f9203a96246beb87", null ],
     [ "setPassword", "classpcpp_1_1_wake_on_lan_layer.html#a3c931808482b37b273c4b2790b00130e", null ],

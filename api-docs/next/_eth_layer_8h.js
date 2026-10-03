@@ -2,6 +2,7 @@ var _eth_layer_8h =
 [
     [ "ether_header", "structpcpp_1_1ether__header.html", "structpcpp_1_1ether__header" ],
     [ "EthLayer", "classpcpp_1_1_eth_layer.html", "classpcpp_1_1_eth_layer" ],
+    [ "SerializedFields", "structpcpp_1_1_eth_layer_1_1_serialized_fields.html", null ],
     [ "PCPP_ETHERTYPE_AARP", "_eth_layer_8h.html#ab8cff68aa7d47eeb5e608246c8727615", null ],
     [ "PCPP_ETHERTYPE_ARP", "_eth_layer_8h.html#aa2d96bc006e5d45a033943b55c498903", null ],
     [ "PCPP_ETHERTYPE_AT", "_eth_layer_8h.html#a16ad61f226417b0ec229061052e02ff5", null ],

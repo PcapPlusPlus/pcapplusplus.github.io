@@ -1,6 +1,7 @@
 var _null_loopback_layer_8h =
 [
     [ "NullLoopbackLayer", "classpcpp_1_1_null_loopback_layer.html", "classpcpp_1_1_null_loopback_layer" ],
+    [ "SerializedFields", "structpcpp_1_1_null_loopback_layer_1_1_serialized_fields.html", null ],
     [ "PCPP_BSD_AF_APPLETALK", "_null_loopback_layer_8h.html#a071b913aa88e800c09b87bf426696fe3", null ],
     [ "PCPP_BSD_AF_INET", "_null_loopback_layer_8h.html#a72b9931b8ad1b827b2fce31ace25cd1c", null ],
     [ "PCPP_BSD_AF_INET6_BSD", "_null_loopback_layer_8h.html#a4733862a795ae56d21d1b14f5def3629", null ],
