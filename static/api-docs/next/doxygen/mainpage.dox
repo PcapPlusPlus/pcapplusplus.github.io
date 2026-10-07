@@ -75,6 +75,7 @@
 *   - pcpp::DnsLayer, DnsLayer.h - DNS protocol
 *   - pcpp::DoIpLayer, DoIpLayer.h - DoIP protocol
 *   - pcpp::FtpRequestLayer, pcpp::FtpResponseLayer, FtpLayer.h - FTP protocol
+*.  - pcpp::GvcpLayer, GvcpLayer.h - GVCP protocol
 *   - pcpp::HttpRequestLayer, pcpp::HttpResponseLayer, HttpLayer.h - HTTP protocol
 *   - pcpp::LdapLayer, LdapLayer.h - LDAP protocol
 *   - pcpp::ModbusLayer, ModbusLayer.h - Modbus protocol
