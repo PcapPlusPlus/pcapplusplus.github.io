@@ -294,6 +294,81 @@ dev->setFilter(andFilter);
 
 You can read more in the <APIDocsLink relativePath="/_pcap_filter_8h.html">`PcapFilter.h` API documentation</APIDocsLink> and in the [capture packets tutorial](./tutorials/capture-packets#filtering-packets).
 
+## Packet serialization
+
+Parsed packets often need to leave the C++ process that analyzed them, for example to be logged, sent to a data pipeline, shown in a dashboard or compared in tests. PcapPlusPlus provides a generic serialization mechanism that converts a parsed `Packet` and its layers into a structured representation, rather than the free-form text returned by `toString()`.
+
+The mechanism is built around a serializer interface (`ISerializer`) that is separate from the layers themselves. Each layer writes its named fields through that interface, so the same layer code works with any output format. Three serializers are provided out of the box: **JSON**, **XML**, **YAML**. Need a different format? Implement `ISerializer` and your serializer works with every layer that supports serialization, with no changes to PcapPlusPlus itself.
+
+The main features include:
+
+- Serialize a single layer, a whole packet, a list of packets, or an entire PCAP/PCAPNG file
+- A field catalog that each layer can expose to describe which fields it serializes, so you don't have to reverse-engineer them from sample output
+
+Consider this simple code snippet that reads a packet from a PCAP file, parses it and prints it as JSON:
+
+```cpp
+// rawPacket comes from any source: a capture device, a file reader, etc.
+pcpp::Packet parsedPacket(&rawPacket);
+
+std::ostringstream oss;
+pcpp::JsonSerializer serializer(oss);
+parsedPacket.serialize(serializer);
+std::cout << oss.str() << std::endl;
+```
+
+<details>
+<summary>Example JSON output</summary>
+```json
+{
+    "timestamp": { "sec": 1791362041, "nsec": 742262000 },
+    "frameLength": 16,
+    "linkLayer": 1,
+    "linkLayerName": "Ethernet",
+    "layers": [
+        {
+            "protocolName": "Ethernet",
+            "protocolId": 1,
+            "length": 14,
+            "srcMacAddress": "06:07:08:09:0a:0b",
+            "dstMacAddress": "00:01:02:03:04:05",
+            "etherType": 3085
+        },
+        {
+            "protocolName": "IPv4",
+            "protocolId": 2,
+            "length": 20,
+            "srcIP": "10.0.0.4",
+            "dstIP": "1.1.1.1",
+            "ipID": 6743,
+            "ipProtocol": 1,
+            "totalLength": 60,
+            "isFragment": false,
+            "fragmentOffset": 0,
+            "options": []
+        },
+        {
+            "protocolName": "TCP",
+            "protocolId": 4,
+            "length": 20,
+            "srcPort": 80,
+            "dstPort": 60388,
+            "sequenceNumber": 3198891594,
+            "tcpFlags": ["PSH", "ACK"],
+            "windowSize": 11580,
+            "checksum": "0x4c03",
+            "options": []
+        },
+        {
+            "protocolName": "GenericPayload",
+            "protocolId": 25,
+            "length": 2
+        }
+    ]
+}
+```
+</details>
+
 ## TLS Fingerprinting
 
 TLS Fingerprinting is a technique that extracts specific parameters from TLS handshake messages such as ClientHello and ServerHello. Most applications that need network access (such as browsers, apps, etc.) have a unique combination(s) of these parameters while making network connections, so this technique can be used to fingerprint those applications. By using a database of curated fingerprints it's possible to detect network traffic anomalies which can point to malware, security vulnerabilities or other undesired behavior. It can also be used for network visibility, for example identify popular applications, detect applications that use weak encryption, etc. This method of fingerprinting is very effective because TLS handshake is often done in lower levels of the application hence it's difficult to forge or tamper with it.
