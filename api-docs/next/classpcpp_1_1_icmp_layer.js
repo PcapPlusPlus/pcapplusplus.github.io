@@ -1,5 +1,6 @@
 var classpcpp_1_1_icmp_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_icmp_layer_1_1_serialized_fields.html", null ],
     [ "IcmpLayer", "classpcpp_1_1_icmp_layer.html#a661343d03545a5bffe6b84af76f0f968", null ],
     [ "IcmpLayer", "classpcpp_1_1_icmp_layer.html#a70f6b190cbc25b0feb04607ff77a10af", null ],
     [ "computeCalculateFields", "classpcpp_1_1_icmp_layer.html#ae38e08c75a1a3e06aaddc0e5871af346", null ],
@@ -24,6 +25,7 @@ var classpcpp_1_1_icmp_layer =
     [ "getTimestampRequestData", "classpcpp_1_1_icmp_layer.html#a94788972d9bac20bfa921a79b3cd8baa", null ],
     [ "isMessageOfType", "classpcpp_1_1_icmp_layer.html#a95140b023993113ca90f22ac0d4e2e66", null ],
     [ "parseNextLayer", "classpcpp_1_1_icmp_layer.html#ac96ac6b3c0c776b57d171534770d0645", null ],
+    [ "serializeLayer", "classpcpp_1_1_icmp_layer.html#ad45df0857246ffef573af16abe9b6b4d", null ],
     [ "setAddressMaskReplyData", "classpcpp_1_1_icmp_layer.html#a7342d244c4176335efc06bb22366897e", null ],
     [ "setAddressMaskRequestData", "classpcpp_1_1_icmp_layer.html#a156d4f76ec75ace8b6fff64219fcc140", null ],
     [ "setDestUnreachableData", "classpcpp_1_1_icmp_layer.html#aac4f1335c0513b88e5bdde28bf898c3b", null ],

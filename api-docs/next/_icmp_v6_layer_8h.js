@@ -3,7 +3,9 @@ var _icmp_v6_layer_8h =
     [ "icmpv6hdr", "structpcpp_1_1icmpv6hdr.html", "structpcpp_1_1icmpv6hdr" ],
     [ "icmpv6_echo_hdr", "structpcpp_1_1icmpv6__echo__hdr.html", "structpcpp_1_1icmpv6__echo__hdr" ],
     [ "IcmpV6Layer", "classpcpp_1_1_icmp_v6_layer.html", "classpcpp_1_1_icmp_v6_layer" ],
+    [ "SerializedFields", "structpcpp_1_1_icmp_v6_layer_1_1_serialized_fields.html", null ],
     [ "ICMPv6EchoLayer", "classpcpp_1_1_i_c_m_pv6_echo_layer.html", "classpcpp_1_1_i_c_m_pv6_echo_layer" ],
+    [ "SerializedFields", "structpcpp_1_1_i_c_m_pv6_echo_layer_1_1_serialized_fields.html", null ],
     [ "ICMPv6MessageType", "_icmp_v6_layer_8h.html#a69f4e4ed66464f2f5b6ddee70b9274f4", [
       [ "ICMPv6_UNKNOWN_MESSAGE", "_icmp_v6_layer_8h.html#a69f4e4ed66464f2f5b6ddee70b9274f4abc7b5d16664bd28781b6fedcd6154341", null ],
       [ "ICMPv6_DESTINATION_UNREACHABLE", "_icmp_v6_layer_8h.html#a69f4e4ed66464f2f5b6ddee70b9274f4a9b2377b4fcf62a5ab8b75bc1d6d028c2", null ],

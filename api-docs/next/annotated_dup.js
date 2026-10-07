@@ -60,6 +60,8 @@ var annotated_dup =
       [ "ArrayScope", "classpcpp_1_1_array_scope.html", "classpcpp_1_1_array_scope" ],
       [ "ObjectScope", "classpcpp_1_1_object_scope.html", "classpcpp_1_1_object_scope" ],
       [ "JsonSerializer", "classpcpp_1_1_json_serializer.html", "classpcpp_1_1_json_serializer" ],
+      [ "YamlSerializer", "classpcpp_1_1_yaml_serializer.html", "classpcpp_1_1_yaml_serializer" ],
+      [ "XmlSerializer", "classpcpp_1_1_xml_serializer.html", "classpcpp_1_1_xml_serializer" ],
       [ "SystemCore", "structpcpp_1_1_system_core.html", "structpcpp_1_1_system_core" ],
       [ "SystemCores", "structpcpp_1_1_system_cores.html", null ],
       [ "AppName", "classpcpp_1_1_app_name.html", null ],

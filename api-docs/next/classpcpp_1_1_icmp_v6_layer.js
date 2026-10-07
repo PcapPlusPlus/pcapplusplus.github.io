@@ -1,5 +1,6 @@
 var classpcpp_1_1_icmp_v6_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_icmp_v6_layer_1_1_serialized_fields.html", null ],
     [ "IcmpV6Layer", "classpcpp_1_1_icmp_v6_layer.html#a8d9d133af5ea354c3e27ef3c70171eac", null ],
     [ "IcmpV6Layer", "classpcpp_1_1_icmp_v6_layer.html#ac54cee1608c70d6a94d9c5c87e66bfd0", null ],
     [ "computeCalculateFields", "classpcpp_1_1_icmp_v6_layer.html#a3dc435d2a698a4a3e5d0c7ca33bb5f98", null ],
@@ -10,5 +11,6 @@ var classpcpp_1_1_icmp_v6_layer =
     [ "getOsiModelLayer", "classpcpp_1_1_icmp_v6_layer.html#aad0a9f1b628170c107d95412c8260174", null ],
     [ "isMessageOfType", "classpcpp_1_1_icmp_v6_layer.html#aa1f882b431456efbd0d96291651ef2ab", null ],
     [ "parseNextLayer", "classpcpp_1_1_icmp_v6_layer.html#ae3b4b61c0414c54a247097d150717d1f", null ],
+    [ "serializeLayer", "classpcpp_1_1_icmp_v6_layer.html#ad9d0b6a570271909483f5af9e3492987", null ],
     [ "toString", "classpcpp_1_1_icmp_v6_layer.html#ab5b8cf0ebbd1417453ec33a6fbd779ee", null ]
 ];

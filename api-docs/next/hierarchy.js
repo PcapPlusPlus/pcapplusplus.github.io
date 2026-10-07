@@ -466,7 +466,9 @@ var hierarchy =
       [ "pcpp::ScopeBase", "classpcpp_1_1_scope_base.html", [
         [ "pcpp::ArrayScope", "classpcpp_1_1_array_scope.html", null ],
         [ "pcpp::ObjectScope", "classpcpp_1_1_object_scope.html", null ]
-      ] ]
+      ] ],
+      [ "pcpp::XmlSerializer", "classpcpp_1_1_xml_serializer.html", null ],
+      [ "pcpp::YamlSerializer", "classpcpp_1_1_yaml_serializer.html", null ]
     ] ],
     [ "pcpp::internal::IWinDivertDriver", "classpcpp_1_1internal_1_1_i_win_divert_driver.html", null ],
     [ "pcpp::internal::IWinDivertHandle", "classpcpp_1_1internal_1_1_i_win_divert_handle.html", null ],
@@ -592,6 +594,14 @@ var hierarchy =
       ] ],
       [ "pcpp::IPv4Layer::SerializedFields", "structpcpp_1_1_i_pv4_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::IPv6Layer::SerializedFields", "structpcpp_1_1_i_pv6_layer_1_1_serialized_fields.html", null ],
+      [ "pcpp::IcmpLayer::SerializedFields", "structpcpp_1_1_icmp_layer_1_1_serialized_fields.html", null ],
+      [ "pcpp::IcmpV6Layer::SerializedFields", "structpcpp_1_1_icmp_v6_layer_1_1_serialized_fields.html", [
+        [ "pcpp::ICMPv6EchoLayer::SerializedFields", "structpcpp_1_1_i_c_m_pv6_echo_layer_1_1_serialized_fields.html", null ],
+        [ "pcpp::NDPLayerBase::SerializedFields", "structpcpp_1_1_n_d_p_layer_base_1_1_serialized_fields.html", [
+          [ "pcpp::NDPNeighborAdvertisementLayer::SerializedFields", "structpcpp_1_1_n_d_p_neighbor_advertisement_layer_1_1_serialized_fields.html", null ],
+          [ "pcpp::NDPNeighborSolicitationLayer::SerializedFields", "structpcpp_1_1_n_d_p_neighbor_solicitation_layer_1_1_serialized_fields.html", null ]
+        ] ]
+      ] ],
       [ "pcpp::LLCLayer::SerializedFields", "structpcpp_1_1_l_l_c_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::MplsLayer::SerializedFields", "structpcpp_1_1_mpls_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::NullLoopbackLayer::SerializedFields", "structpcpp_1_1_null_loopback_layer_1_1_serialized_fields.html", null ],

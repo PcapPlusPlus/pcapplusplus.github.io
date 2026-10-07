@@ -85,8 +85,10 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_icmp_layer.html',''); in
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classpcpp_1_1_icmp_layer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::IcmpLayer Class Reference</div>  </div>
@@ -105,6 +107,11 @@ Inheritance diagram for pcpp::IcmpLayer:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_icmp_layer_1_1_serialized_fields.html">SerializedFields</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a661343d03545a5bffe6b84af76f0f968"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_icmp_layer.html#a661343d03545a5bffe6b84af76f0f968">IcmpLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_layer.html">Layer</a> *prevLayer, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet)</td></tr>
@@ -226,8 +233,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac6f31e98a5969049408c4cf69f1d3091"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_icmp_layer.html#ac6f31e98a5969049408c4cf69f1d3091">isDataValid</a> (const uint8_t *data, size_t dataLen)</td></tr>
 <tr class="separator:ac6f31e98a5969049408c4cf69f1d3091"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ad45df0857246ffef573af16abe9b6b4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_icmp_layer.html#ad45df0857246ffef573af16abe9b6b4d">serializeLayer</a> (<a class="el" href="classpcpp_1_1_object_scope.html">ObjectScope</a> &amp;serializer) const override</td></tr>
+<tr class="separator:ad45df0857246ffef573af16abe9b6b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classpcpp_1_1_layer"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classpcpp_1_1_layer')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td></tr>
 <tr class="memitem:a92fb19d907170b212986262074418b09 inherit pro_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_packet.html">Packet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a92fb19d907170b212986262074418b09">getAttachedPacket</a> ()</td></tr>
 <tr class="memdesc:a92fb19d907170b212986262074418b09 inherit pro_methods_classpcpp_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the <a class="el" href="classpcpp_1_1_packet.html">Packet</a> this layer is attached to (if any).  <a href="classpcpp_1_1_layer.html#a92fb19d907170b212986262074418b09">More...</a><br /></td></tr>
@@ -274,8 +283,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a06c29d3fe229518514ef483b153a0775 inherit pro_methods_classpcpp_1_1_layer"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_layer.html">Layer</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a06c29d3fe229518514ef483b153a0775">tryConstructNextLayerFromFactoryWithFallback</a> (TFactory factoryFn, uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet, Args &amp;&amp;... extraArgs)</td></tr>
 <tr class="memdesc:a06c29d3fe229518514ef483b153a0775 inherit pro_methods_classpcpp_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to construct the next layer in the protocol stack using a factory functor with a fallback option.  <a href="classpcpp_1_1_layer.html#a06c29d3fe229518514ef483b153a0775">More...</a><br /></td></tr>
 <tr class="separator:a06c29d3fe229518514ef483b153a0775 inherit pro_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8392ededd5fe3a5ab1c315e5ed53496f inherit pro_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a8392ededd5fe3a5ab1c315e5ed53496f">serializeLayer</a> (<a class="el" href="classpcpp_1_1_object_scope.html">ObjectScope</a> &amp;serializer) const</td></tr>
-<tr class="separator:a8392ededd5fe3a5ab1c315e5ed53496f inherit pro_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_static_methods_classpcpp_1_1_layer"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classpcpp_1_1_layer')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td></tr>
 <tr class="memitem:acb031e00ee13b0c299cc6c0458a61a18 inherit pro_static_methods_classpcpp_1_1_layer"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:acb031e00ee13b0c299cc6c0458a61a18 inherit pro_static_methods_classpcpp_1_1_layer"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#acb031e00ee13b0c299cc6c0458a61a18">canReinterpretAs</a> (const uint8_t *data, size_t dataLen)</td></tr>
@@ -833,6 +843,41 @@ Additional Inherited Members</h2></td></tr>
 <p>ICMP messages of types: ICMP_DEST_UNREACHABLE, ICMP_SOURCE_QUENCH, ICMP_TIME_EXCEEDED, ICMP_REDIRECT, ICMP_PARAM_PROBLEM have data that contains IPv4 header and some L4 header (TCP/UDP/ICMP). This method parses these headers as separate layers on top of the ICMP layer </p>
 
 <p>Implements <a class="el" href="classpcpp_1_1_layer.html#a6a8410015168a7fa42a7d71ac5b86673">pcpp::Layer</a>.</p>
+
+</div>
+</div>
+<a id="ad45df0857246ffef573af16abe9b6b4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad45df0857246ffef573af16abe9b6b4d">&#9670;&nbsp;</a></span>serializeLayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::IcmpLayer::serializeLayer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_object_scope.html">ObjectScope</a> &amp;&#160;</td>
+          <td class="paramname"><em>serializer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Serializes the layer's data into a provided serializer object. This is used for generating serialized representations (like JSON) of the packet layers. This method should be overridden by derived layers to provide specific serialization logic.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">serializer</td><td>The object scope serializer to which the layer details should be written. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="classpcpp_1_1_layer.html#a8392ededd5fe3a5ab1c315e5ed53496f">pcpp::Layer</a>.</p>
 
 </div>
 </div>
@@ -1532,7 +1577,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_icmp_layer.html">IcmpLayer</a></li>
-    <li class="footer">Generated on Sat Oct 3 2026 08:32:34 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 7 2026 06:40:04 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

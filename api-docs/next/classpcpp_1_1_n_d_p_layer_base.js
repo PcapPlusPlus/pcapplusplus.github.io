@@ -1,5 +1,6 @@
 var classpcpp_1_1_n_d_p_layer_base =
 [
+    [ "SerializedFields", "structpcpp_1_1_n_d_p_layer_base_1_1_serialized_fields.html", null ],
     [ "addNdpOption", "classpcpp_1_1_n_d_p_layer_base.html#ac28bc65c2601d1c7b0a3afdb19efb472", null ],
     [ "getFirstNdpOption", "classpcpp_1_1_n_d_p_layer_base.html#a0cb016e13437994baa76be4c35cfbadb", null ],
     [ "getNdpOption", "classpcpp_1_1_n_d_p_layer_base.html#ab5112c68d2ef73b9fb79a5164816a747", null ],
