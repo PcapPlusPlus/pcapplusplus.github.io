@@ -14,6 +14,7 @@ var _icmp_layer_8h =
     [ "icmp_address_mask_request", "structpcpp_1_1icmp__address__mask__request.html", "structpcpp_1_1icmp__address__mask__request" ],
     [ "icmp_info_request", "structpcpp_1_1icmp__info__request.html", "structpcpp_1_1icmp__info__request" ],
     [ "IcmpLayer", "classpcpp_1_1_icmp_layer.html", "classpcpp_1_1_icmp_layer" ],
+    [ "SerializedFields", "structpcpp_1_1_icmp_layer_1_1_serialized_fields.html", null ],
     [ "icmp_address_mask_reply", "_icmp_layer_8h.html#a061cad9d9ae05c46c200eb0b7ec31a53", null ],
     [ "icmp_echo_reply", "_icmp_layer_8h.html#adf2017ac215e1036aef59097d6ccc034", null ],
     [ "icmp_info_reply", "_icmp_layer_8h.html#a4338f6a7c2d4ccd9d5bb20a617bdc04f", null ],

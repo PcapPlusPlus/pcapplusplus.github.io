@@ -1,6 +1,7 @@
 var classpcpp_1_1_n_d_p_neighbor_advertisement_layer =
 [
     [ "ndpneighboradvertisementhdr", "structpcpp_1_1_n_d_p_neighbor_advertisement_layer_1_1ndpneighboradvertisementhdr.html", "structpcpp_1_1_n_d_p_neighbor_advertisement_layer_1_1ndpneighboradvertisementhdr" ],
+    [ "SerializedFields", "structpcpp_1_1_n_d_p_neighbor_advertisement_layer_1_1_serialized_fields.html", null ],
     [ "NDPNeighborAdvertisementLayer", "classpcpp_1_1_n_d_p_neighbor_advertisement_layer.html#a4d3e58c8948c8b670cd121056a5d6949", null ],
     [ "NDPNeighborAdvertisementLayer", "classpcpp_1_1_n_d_p_neighbor_advertisement_layer.html#a93680e5352387cec6884e31155eaef42", null ],
     [ "NDPNeighborAdvertisementLayer", "classpcpp_1_1_n_d_p_neighbor_advertisement_layer.html#aa8158b117802795b7c6a95dc8d0c11c2", null ],
@@ -10,5 +11,6 @@ var classpcpp_1_1_n_d_p_neighbor_advertisement_layer =
     [ "getTargetMac", "classpcpp_1_1_n_d_p_neighbor_advertisement_layer.html#a184df2681f9981c3df55cbe3459760b1", null ],
     [ "getUnicastFlag", "classpcpp_1_1_n_d_p_neighbor_advertisement_layer.html#abfbfca78cdc0b6d903b05ca3151eabce", null ],
     [ "hasTargetMacInfo", "classpcpp_1_1_n_d_p_neighbor_advertisement_layer.html#a1ebcabccc3e92582e214dcf449ce6e1d", null ],
+    [ "serializeLayer", "classpcpp_1_1_n_d_p_neighbor_advertisement_layer.html#ab789a9a6bf2ab01e26d4aec598a4d220", null ],
     [ "toString", "classpcpp_1_1_n_d_p_neighbor_advertisement_layer.html#a5c89730666160f08c1e9f68aad93cbe1", null ]
 ];
