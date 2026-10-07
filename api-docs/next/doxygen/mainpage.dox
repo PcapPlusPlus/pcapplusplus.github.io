@@ -104,5 +104,6 @@
 *   - SystemUtils.h - several useful utilities for interacting with the operating system
 *   - pcpp::Logger, Logger.h - PcapPlusPlus logger
 *   - PcapPlusPlusVersion.h - version and Git info
+*   - Serializers.h - the `ISerializer` inteface as well as JSON, XML and YAML implementations
 */
 
