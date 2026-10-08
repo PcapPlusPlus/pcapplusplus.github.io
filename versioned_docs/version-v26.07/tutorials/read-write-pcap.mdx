@@ -41,12 +41,12 @@ int main(int argc, char* argv[])
 
 Next thing would be to open a pcap file for reading. We'll assume we have a pcap file named "input.pcap" and we want to open it for reading. If we know it's a pcap file we can use the pcap reader class `PcapFileReaderDevice`, and same for pcap-ng files we can use `PcapNgFileReaderDevice` class.
 
-But PcapPlusPlus also contains an interface class that automatically identifies the file type by its extension and creates an interface instance which both classes implement, so you can use it without really knowing which class hides behind it. This interface is called `IFileReaderDevice`. Let's use it in our application:
+But PcapPlusPlus also contains an interface class that automatically identifies the file type based on its contents and creates an interface instance which both classes implement, so you can use it without really knowing which class hides behind it. This interface is called `IFileReaderDevice`. Let's use it in our application:
 
 ```cpp
 // use the IFileReaderDevice interface to automatically identify file type (pcap/pcap-ng)
 // and create an interface instance that both readers implement
-std::unique_ptr<pcpp::IFileReaderDevice> reader(pcpp::IFileReaderDevice::getReader("input.pcap"));
+auto reader = pcpp::IFileReaderDevice::tryCreateReader("input.pcap");
 
 // verify that a reader interface was indeed created
 if (reader == nullptr)
@@ -56,7 +56,7 @@ if (reader == nullptr)
 }
 ```
 
-As you can see we used the static method `pcpp::IFileReaderDevice::getReader()` to create the interface.
+As you can see we used the static factory method `pcpp::IFileReaderDevice::tryCreateReader()` to create the reader. This method returns a `std::unique_ptr<IFileReaderDevice>`, or `nullptr` if the file cannot be opened or its format is unsupported.
 
 Now let's open the reader for reading:
 
@@ -159,7 +159,7 @@ pcapNgWriter.getStatistics(stats);
 printStats("pcap-ng writer", stats);
 ```
 
-We're done reading and writing packets. The only thing left is closing the reader and writers. We also need to free the reader because it was created by the `pcpp::IFileReaderDevice::getReader()` static method.
+We're done reading and writing packets. The only thing left is closing the reader and writers. The reader is automatically deleted when its `std::unique_ptr` goes out of scope.
 
 ```cpp
 // close reader

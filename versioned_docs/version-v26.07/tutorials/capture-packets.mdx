@@ -18,14 +18,15 @@ In this tutorial we'll write a simple application that demonstrates how to captu
 
 ## PcapLiveDevice and WinPcapLiveDevice instances
 
-Let's start out application with a "main" method and an include to "PcapLiveDeviceList.h". This header file contains another include to "PcapLiveDevice.h" and those 2 files contain all the APIs for capturing and sending packets:
+Let's start our application with a "main" method and an include to "PcapLiveDeviceList.h". This header file contains another include to "PcapLiveDevice.h" and those 2 files contain all the APIs for capturing and sending packets:
 
 ```cpp
 #include <iostream>
 #include <algorithm>
-#include "stdlib.h"
+#include <thread>
+#include <chrono>
+#include "Packet.h"
 #include "PcapLiveDeviceList.h"
-#include "SystemUtils.h"
 
 /**
 * main method of the application
@@ -43,7 +44,7 @@ The next step would be to find the `PcapLiveDevice` or `WinPcapLiveDevice` insta
 std::string interfaceIPAddr = "10.0.0.1";
 
 // find the interface by IP address
-auto* dev = pcpp::PcapLiveDeviceList::getInstance().getPcapLiveDeviceByIp(interfaceIPAddr);
+auto* dev = pcpp::PcapLiveDeviceList::getInstance().getDeviceByIp(interfaceIPAddr);
 if (dev == nullptr)
 {
     std::cerr << "Cannot find interface with IPv4 address of '" << interfaceIPAddr << "'" << std::endl;
@@ -205,17 +206,18 @@ std::cout << std::endl << "Starting async capture..." << std::endl;
 dev->startCapture(onPacketArrives, &stats);
 ```
 
-Please remember the packet capture is happening in a different thread so code written from now on in our main thread will work in parallel. For the sake of this demo let's choose not to do anything and wait (sleep) for 10 seconds and then stop the capture. Since there is no one "sleep" method compatible for all operating systems PcapPlusPlus provides a method called `pcpp::multiPlatformSleep()` which runs the right "sleep" method according to the operating system the application is currently running on. For using this macro we need to add an include phrase to `SystemUtils.h` in Common++:
+Please remember the packet capture is happening in a different thread so code written from now on in our main thread will work in parallel. For this demo, we'll pause the main thread for 10 seconds using the function `std::this_thread::sleep_for()`, then stop the capture. This requires the `<thread>` and `<chrono>` headers:
 
 ```cpp
-#include "SystemUtils.h"
+#include <thread>
+#include <chrono>
 ```
 
 Now let's write the code that sleeps for 10 seconds and then stops the packet capture:
 
 ```cpp
 // sleep for 10 seconds in main thread, in the meantime packets are captured in the async thread
-pcpp::multiPlatformSleep(10);
+std::this_thread::sleep_for(std::chrono::seconds(10));
 
 // stop capturing packets
 dev->stopCapture();
@@ -266,7 +268,7 @@ As we said the packet capture happens in another thread so like in the previous 
 
 ```cpp
 // sleep for 10 seconds in main thread, in the meantime packets are captured in the async thread
-pcpp::multiPlatformSleep(10);
+std::this_thread::sleep_for(std::chrono::seconds(10));
 
 // stop capturing packets
 dev->stopCapture();
@@ -454,7 +456,7 @@ std::cout << std::endl << "Starting packet capture with a filter in place..." <<
 dev->startCapture(onPacketArrives, &stats);
 
 // sleep for 10 seconds in main thread, in the meantime packets are captured in the async thread
-pcpp::multiPlatformSleep(10);
+std::this_thread::sleep_for(std::chrono::seconds(10));
 
 // stop capturing packets
 dev->stopCapture();
