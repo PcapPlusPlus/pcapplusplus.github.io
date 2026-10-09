@@ -206,7 +206,7 @@ std::cout << std::endl << "Starting async capture..." << std::endl;
 dev->startCapture(onPacketArrives, &stats);
 ```
 
-Please remember the packet capture is happening in a different thread so code written from now on in our main thread will work in parallel. For this demo, we'll pause the main thread for 10 seconds using the function `std::this_thread::sleep_for()`, then stop the capture. This requires the `<thread>` and `<chrono>` headers:
+Please remember the packet capture is happening in a different thread so code written from now on in our main thread will work in parallel. For the sake of this demo, let's choose not to do anything and wait (sleep) for 10 seconds, then stop the capture. We will use the function `std::this_thread::sleep_for()`, which requires the `<thread>` and `<chrono>` headers:
 
 ```cpp
 #include <thread>
