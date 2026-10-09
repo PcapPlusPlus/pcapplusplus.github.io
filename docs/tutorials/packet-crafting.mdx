@@ -28,7 +28,6 @@ In this part of the tutorial we'll read a packet from a pcap file, let PcapPlusP
 ```cpp
 #include <iostream>
 #include <memory>
-#include "stdlib.h"
 #include "SystemUtils.h"
 #include "Packet.h"
 #include "EthLayer.h"
@@ -53,7 +52,7 @@ Now let's read the packet from the pcap file. This pcap file contains only 1 pac
 ```cpp
 // use the IFileReaderDevice interface to automatically identify file type (pcap/pcap-ng)
 // and create an interface instance that both readers implement
-std::unique_ptr<pcpp::IFileReaderDevice> reader(pcpp::IFileReaderDevice::getReader("1_http_packet.pcap"));
+auto reader = pcpp::IFileReaderDevice::tryCreateReader("1_http_packet.pcap");
 
 // verify that a reader interface was indeed created
 if (reader == nullptr)
@@ -65,7 +64,7 @@ if (reader == nullptr)
 // open the reader for reading
 if (!reader->open())
 {
-    std::cerr << "Cannot open input.pcap for reading" << std::endl;
+    std::cerr << "Cannot open 1_http_packet.pcap for reading" << std::endl;
     return 1;
 }
 
