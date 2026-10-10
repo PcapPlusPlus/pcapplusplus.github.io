@@ -1,5 +1,6 @@
 var classpcpp_1_1_dhcp_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_dhcp_layer_1_1_serialized_fields.html", null ],
     [ "DhcpLayer", "classpcpp_1_1_dhcp_layer.html#aa6ee3731af2a08321b161322ecfd77af", null ],
     [ "DhcpLayer", "classpcpp_1_1_dhcp_layer.html#a1e95b430eb8680a236b1cd1606f5c7f5", null ],
     [ "DhcpLayer", "classpcpp_1_1_dhcp_layer.html#ab7a48441e634bf10774a96a5f06cec51", null ],
@@ -24,6 +25,7 @@ var classpcpp_1_1_dhcp_layer =
     [ "parseNextLayer", "classpcpp_1_1_dhcp_layer.html#a158168214c937681b4b31bce26963580", null ],
     [ "removeAllOptions", "classpcpp_1_1_dhcp_layer.html#a186908c746f18d88e7d635705a679795", null ],
     [ "removeOption", "classpcpp_1_1_dhcp_layer.html#af270fbb9aedff23c70780f871e595bbc", null ],
+    [ "serializeLayer", "classpcpp_1_1_dhcp_layer.html#aaf92c5477212b5a217385581f0564914", null ],
     [ "setClientHardwareAddress", "classpcpp_1_1_dhcp_layer.html#a288e186222df73177e9bf3825f36aa97", null ],
     [ "setClientIpAddress", "classpcpp_1_1_dhcp_layer.html#a81ecf66e70f4f10426e2b813a5aef39d", null ],
     [ "setGatewayIpAddress", "classpcpp_1_1_dhcp_layer.html#a9686ef6b404394964049c13f565d68cc", null ],

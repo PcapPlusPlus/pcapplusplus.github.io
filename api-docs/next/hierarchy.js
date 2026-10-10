@@ -581,6 +581,8 @@ var hierarchy =
     [ "pcpp::LdapSearchRequestLayer::SearchRequestScope", "classpcpp_1_1_ldap_search_request_layer_1_1_search_request_scope.html", null ],
     [ "pcpp::WinDivertDevice::SendResult", "structpcpp_1_1_win_divert_device_1_1_send_result.html", null ],
     [ "pcpp::Layer::SerializedFields", "structpcpp_1_1_layer_1_1_serialized_fields.html", [
+      [ "pcpp::DhcpLayer::SerializedFields", "structpcpp_1_1_dhcp_layer_1_1_serialized_fields.html", null ],
+      [ "pcpp::DhcpV6Layer::SerializedFields", "structpcpp_1_1_dhcp_v6_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::EthDot3Layer::SerializedFields", "structpcpp_1_1_eth_dot3_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::EthLayer::SerializedFields", "structpcpp_1_1_eth_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::GvcpLayer::SerializedFields", "structpcpp_1_1_gvcp_layer_1_1_serialized_fields.html", [
