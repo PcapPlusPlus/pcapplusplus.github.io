@@ -1,5 +1,6 @@
 var classpcpp_1_1_dhcp_v6_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_dhcp_v6_layer_1_1_serialized_fields.html", null ],
     [ "DhcpV6Layer", "classpcpp_1_1_dhcp_v6_layer.html#ac82868c411fe62e81ee0972d11f17c28", null ],
     [ "DhcpV6Layer", "classpcpp_1_1_dhcp_v6_layer.html#a38a2a8240ce73a82f8f0a1ef77d00655", null ],
     [ "addOption", "classpcpp_1_1_dhcp_v6_layer.html#aeead1b532f00dc881150fb22ccc76d23", null ],
@@ -18,6 +19,7 @@ var classpcpp_1_1_dhcp_v6_layer =
     [ "parseNextLayer", "classpcpp_1_1_dhcp_v6_layer.html#a69b53037beea9372646abb45873cf981", null ],
     [ "removeAllOptions", "classpcpp_1_1_dhcp_v6_layer.html#a756eacbfe74be65daebef0f214d64f4e", null ],
     [ "removeOption", "classpcpp_1_1_dhcp_v6_layer.html#a2c26e88530a720aa470205737ff66aec", null ],
+    [ "serializeLayer", "classpcpp_1_1_dhcp_v6_layer.html#a3f2a90e748d3d6f84f89e6971798cfd2", null ],
     [ "setMessageType", "classpcpp_1_1_dhcp_v6_layer.html#a2f530fc4fe9da7431a14217df4d6a67c", null ],
     [ "setTransactionID", "classpcpp_1_1_dhcp_v6_layer.html#a5a9c039586860a3691fc40bb20955f57", null ],
     [ "toString", "classpcpp_1_1_dhcp_v6_layer.html#a188893e6b8b25d20287d8b432844142a", null ]

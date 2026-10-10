@@ -4,6 +4,7 @@ var _dhcp_v6_layer_8h =
     [ "DhcpV6OptionBuilder", "classpcpp_1_1_dhcp_v6_option_builder.html", "classpcpp_1_1_dhcp_v6_option_builder" ],
     [ "dhcpv6_header", "structpcpp_1_1dhcpv6__header.html", "structpcpp_1_1dhcpv6__header" ],
     [ "DhcpV6Layer", "classpcpp_1_1_dhcp_v6_layer.html", "classpcpp_1_1_dhcp_v6_layer" ],
+    [ "SerializedFields", "structpcpp_1_1_dhcp_v6_layer_1_1_serialized_fields.html", null ],
     [ "DhcpV6MessageType", "_dhcp_v6_layer_8h.html#a7a966385d715f881fce403e1fb820b1b", [
       [ "DHCPV6_UNKNOWN_MSG_TYPE", "_dhcp_v6_layer_8h.html#a7a966385d715f881fce403e1fb820b1ba8b2a003f64def2e5e3338a6318733b5a", null ],
       [ "DHCPV6_SOLICIT", "_dhcp_v6_layer_8h.html#a7a966385d715f881fce403e1fb820b1ba1727b3893e71a590b90322b21a6c7bac", null ],

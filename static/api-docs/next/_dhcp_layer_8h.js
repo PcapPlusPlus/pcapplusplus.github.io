@@ -4,6 +4,7 @@ var _dhcp_layer_8h =
     [ "DhcpOption", "classpcpp_1_1_dhcp_option.html", "classpcpp_1_1_dhcp_option" ],
     [ "DhcpOptionBuilder", "classpcpp_1_1_dhcp_option_builder.html", "classpcpp_1_1_dhcp_option_builder" ],
     [ "DhcpLayer", "classpcpp_1_1_dhcp_layer.html", "classpcpp_1_1_dhcp_layer" ],
+    [ "SerializedFields", "structpcpp_1_1_dhcp_layer_1_1_serialized_fields.html", null ],
     [ "BootpOpCodes", "_dhcp_layer_8h.html#a977d5d1fabe89dba06443bbca6a711bb", [
       [ "DHCP_BOOTREQUEST", "_dhcp_layer_8h.html#a977d5d1fabe89dba06443bbca6a711bbac2dc2a02d77464f2ad09460e52027547", null ],
       [ "DHCP_BOOTREPLY", "_dhcp_layer_8h.html#a977d5d1fabe89dba06443bbca6a711bbad6aa627bfd992b58dcb027c7c453483f", null ]
