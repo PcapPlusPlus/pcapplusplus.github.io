@@ -1,5 +1,6 @@
 var classpcpp_1_1_vrrp_v2_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_vrrp_v2_layer_1_1_serialized_fields.html", null ],
     [ "VrrpAuthType", "classpcpp_1_1_vrrp_v2_layer.html#a278349e2e5c6aa43e979f32d3cf03ef0", [
       [ "NoAuthentication", "classpcpp_1_1_vrrp_v2_layer.html#a278349e2e5c6aa43e979f32d3cf03ef0ab98041444922643919ec49be09e831ce", null ],
       [ "SimpleTextPassword", "classpcpp_1_1_vrrp_v2_layer.html#a278349e2e5c6aa43e979f32d3cf03ef0aee18d8d527facd8078fe59ce8a0f68fd", null ],

@@ -1,5 +1,6 @@
 var classpcpp_1_1_vrrp_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_vrrp_layer_1_1_serialized_fields.html", null ],
     [ "VrrpPriority", "classpcpp_1_1_vrrp_layer.html#ada6835095bf4476ddcd72789413ab2e0", [
       [ "Default", "classpcpp_1_1_vrrp_layer.html#ada6835095bf4476ddcd72789413ab2e0aaf5cfb90fa184cdd29cfcc39b154d7b2", null ],
       [ "Stop", "classpcpp_1_1_vrrp_layer.html#ada6835095bf4476ddcd72789413ab2e0a76ce8b6ca5c3bf26583b86958b7fc746", null ],
@@ -30,6 +31,7 @@ var classpcpp_1_1_vrrp_layer =
     [ "parseNextLayer", "classpcpp_1_1_vrrp_layer.html#a48b595bc759b8cf39def9ea149622ddc", null ],
     [ "removeAllIPAddresses", "classpcpp_1_1_vrrp_layer.html#abccd0e888b5a7ec9a344acc02a100992", null ],
     [ "removeIPAddressAtIndex", "classpcpp_1_1_vrrp_layer.html#a8d723400efe99635f6760fa06d232bf0", null ],
+    [ "serializeLayer", "classpcpp_1_1_vrrp_layer.html#af01e37034d28ece28a6fd7e3f3fd98e2", null ],
     [ "setPriority", "classpcpp_1_1_vrrp_layer.html#aa3bdeef80e12ec0f1ef4b1633eca2cab", null ],
     [ "setVirtualRouterID", "classpcpp_1_1_vrrp_layer.html#a1c4109782ab9a6801dcf8c98db786513", null ],
     [ "toString", "classpcpp_1_1_vrrp_layer.html#a4fac6931386ecef6d3fa3d54836f870d", null ]

@@ -1,5 +1,6 @@
 var classpcpp_1_1_ntp_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_ntp_layer_1_1_serialized_fields.html", null ],
     [ "ClockSource", "classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7", [
       [ "GOES", "classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7a1ceb10e4767555f663a1789a5e9be18b", null ],
       [ "GPS", "classpcpp_1_1_ntp_layer.html#a6503ccedcd279b455e4deb7a0835c4b7a8c578de37278ada488d763ea86c5cf20", null ],
@@ -105,6 +106,7 @@ var classpcpp_1_1_ntp_layer =
     [ "getTransmitTimestampInSecs", "classpcpp_1_1_ntp_layer.html#a08a38fa10169b8b250e1f7969a0a552d", null ],
     [ "getVersion", "classpcpp_1_1_ntp_layer.html#adde5c87238411a47df1fc2ab8069c03d", null ],
     [ "parseNextLayer", "classpcpp_1_1_ntp_layer.html#a9508aaf1bac099ce0cdd83c7cef95edb", null ],
+    [ "serializeLayer", "classpcpp_1_1_ntp_layer.html#ae5ebc710a0c50ad75292cbb12340aa77", null ],
     [ "setLeapIndicator", "classpcpp_1_1_ntp_layer.html#ace7b249855967ad7e55ae12157c6ccfd", null ],
     [ "setMode", "classpcpp_1_1_ntp_layer.html#ac0ca1ee3bb4a91202d680e4c0e818e00", null ],
     [ "setOriginTimestamp", "classpcpp_1_1_ntp_layer.html#a80fae57dbddfe6b0c221177b6c40ba87", null ],

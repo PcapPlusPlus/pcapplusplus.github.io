@@ -2,10 +2,12 @@ var _p_p_po_e_layer_8h =
 [
     [ "pppoe_header", "structpcpp_1_1pppoe__header.html", "structpcpp_1_1pppoe__header" ],
     [ "PPPoELayer", "classpcpp_1_1_p_p_po_e_layer.html", "classpcpp_1_1_p_p_po_e_layer" ],
+    [ "SerializedFields", "structpcpp_1_1_p_p_po_e_layer_1_1_serialized_fields.html", null ],
     [ "PPPoESessionLayer", "classpcpp_1_1_p_p_po_e_session_layer.html", "classpcpp_1_1_p_p_po_e_session_layer" ],
     [ "PPPoEDiscoveryLayer", "classpcpp_1_1_p_p_po_e_discovery_layer.html", "classpcpp_1_1_p_p_po_e_discovery_layer" ],
     [ "PPPoETag", "classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag.html", "classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag" ],
     [ "PPPoETagBuilder", "classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag_builder.html", "classpcpp_1_1_p_p_po_e_discovery_layer_1_1_p_p_po_e_tag_builder" ],
+    [ "SerializedFields", "structpcpp_1_1_p_p_po_e_discovery_layer_1_1_serialized_fields.html", null ],
     [ "PCPP_PPP_ACSP", "_p_p_po_e_layer_8h.html#a634242ecff91dc9975ac68599b283e33", null ],
     [ "PCPP_PPP_ACSPC", "_p_p_po_e_layer_8h.html#ae5e8f9f639154e2aff01663e2ec7ce61", null ],
     [ "PCPP_PPP_ASCOM", "_p_p_po_e_layer_8h.html#a26f7e5d9185e01b85d2cecd0c883c410", null ],

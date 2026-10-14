@@ -302,7 +302,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>SSL/TLS alert description. Will return <a class="el" href="namespacepcpp.html#a49ab6e738d527b3e3fbbe112eed0fc32aa490048a983efef63c575ff1c2d89124" title="Encrtpyed alert (cannot determine its type)">SSL_ALERT_ENCRYPTED</a> if alert is encrypted </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>SSL/TLS alert description. Will return <a class="el" href="namespacepcpp.html#a49ab6e738d527b3e3fbbe112eed0fc32aa490048a983efef63c575ff1c2d89124" title="Encrtpyed alert (cannot determine its type)">SSL_ALERT_ENCRYPTED</a> if alert is encrypted or if the record is too short to hold the alert description </dd></dl>
 
 </div>
 </div>
@@ -320,7 +320,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>SSL/TLS alert level. Will return <a class="el" href="namespacepcpp.html#ab3ca83a56e04fa5115ce2f2084a24b3cad88deab3ab72ce524eaaebbaeecbd7f6" title="For encrypted alerts the level is unknown so this type will be returned.">SSL_ALERT_LEVEL_ENCRYPTED</a> if alert is encrypted </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>SSL/TLS alert level. Will return <a class="el" href="namespacepcpp.html#ab3ca83a56e04fa5115ce2f2084a24b3cad88deab3ab72ce524eaaebbaeecbd7f6" title="For encrypted alerts the level is unknown so this type will be returned.">SSL_ALERT_LEVEL_ENCRYPTED</a> if alert is encrypted or if the record is too short to hold the alert level </dd></dl>
 
 </div>
 </div>
@@ -358,7 +358,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_s_s_l_alert_layer.html">SSLAlertLayer</a></li>
-    <li class="footer">Generated on Sat Oct 10 2026 07:57:46 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 14 2026 06:56:02 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

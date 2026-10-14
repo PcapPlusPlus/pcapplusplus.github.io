@@ -1,5 +1,6 @@
 var classpcpp_1_1_p_p_po_e_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_p_p_po_e_layer_1_1_serialized_fields.html", null ],
     [ "PPPoECode", "classpcpp_1_1_p_p_po_e_layer.html#aa170ba4bb5e03d3ac1dddb45118ed9cb", [
       [ "PPPOE_CODE_SESSION", "classpcpp_1_1_p_p_po_e_layer.html#aa170ba4bb5e03d3ac1dddb45118ed9cba9fb4696beb11d854841cb2f34a74c2c6", null ],
       [ "PPPOE_CODE_PADO", "classpcpp_1_1_p_p_po_e_layer.html#aa170ba4bb5e03d3ac1dddb45118ed9cbadd39fce4cc7ba1175c40bdd2fc0c4ea6", null ],
@@ -15,5 +16,6 @@ var classpcpp_1_1_p_p_po_e_layer =
     ] ],
     [ "computeCalculateFields", "classpcpp_1_1_p_p_po_e_layer.html#ada38ffe6c5f43e66fb8cb13295106690", null ],
     [ "getOsiModelLayer", "classpcpp_1_1_p_p_po_e_layer.html#a532264ee2b2bc39b5b35010f595a136e", null ],
-    [ "getPPPoEHeader", "classpcpp_1_1_p_p_po_e_layer.html#af8eb0e3151849bb73e161ce925d9ec5e", null ]
+    [ "getPPPoEHeader", "classpcpp_1_1_p_p_po_e_layer.html#af8eb0e3151849bb73e161ce925d9ec5e", null ],
+    [ "serializeLayer", "classpcpp_1_1_p_p_po_e_layer.html#a741c7ee2bcfa63ca42ecd28b2f073753", null ]
 ];

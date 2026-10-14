@@ -1,5 +1,6 @@
 var classpcpp_1_1_arp_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_arp_layer_1_1_serialized_fields.html", null ],
     [ "ArpLayer", "classpcpp_1_1_arp_layer.html#aa067af1ff96f04fa052ce58b48fedf16", null ],
     [ "ArpLayer", "classpcpp_1_1_arp_layer.html#a9c3eaa9ffa08ea0c687adf463ce106cd", null ],
     [ "ArpLayer", "classpcpp_1_1_arp_layer.html#a05f24931a4238bbf1246764b8e6e6b2e", null ],
@@ -20,5 +21,6 @@ var classpcpp_1_1_arp_layer =
     [ "isReply", "classpcpp_1_1_arp_layer.html#a55487337c4b674b9b507db9382788de3", null ],
     [ "isRequest", "classpcpp_1_1_arp_layer.html#a9b706b494e8830d241f50a5b5ae205f7", null ],
     [ "parseNextLayer", "classpcpp_1_1_arp_layer.html#a4a1d714c4b37f8eb2d89b27c8d10dcfe", null ],
+    [ "serializeLayer", "classpcpp_1_1_arp_layer.html#a2a5e4c7182f0e10b777f20ec9fd779ab", null ],
     [ "toString", "classpcpp_1_1_arp_layer.html#a9fe8dac3273e04e86ff2fe65699412d7", null ]
 ];

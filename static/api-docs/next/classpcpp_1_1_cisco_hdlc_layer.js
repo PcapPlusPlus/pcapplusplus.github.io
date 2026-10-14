@@ -1,5 +1,6 @@
 var classpcpp_1_1_cisco_hdlc_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_cisco_hdlc_layer_1_1_serialized_fields.html", null ],
     [ "AddressType", "classpcpp_1_1_cisco_hdlc_layer.html#a27fa3dd3995695ced9b886cf0b4ddbf4", [
       [ "Unicast", "classpcpp_1_1_cisco_hdlc_layer.html#a27fa3dd3995695ced9b886cf0b4ddbf4a3408ed5466760957648b16ffcffce170", null ],
       [ "Multicast", "classpcpp_1_1_cisco_hdlc_layer.html#a27fa3dd3995695ced9b886cf0b4ddbf4af98714815862cc6a2f47e6a3e6f045a5", null ],
@@ -15,6 +16,7 @@ var classpcpp_1_1_cisco_hdlc_layer =
     [ "getNextProtocol", "classpcpp_1_1_cisco_hdlc_layer.html#aabbbb9e928ba5e7a8b9a713f6a33841f", null ],
     [ "getOsiModelLayer", "classpcpp_1_1_cisco_hdlc_layer.html#a5d5d4fa9274cee4102d20f3865647bc7", null ],
     [ "parseNextLayer", "classpcpp_1_1_cisco_hdlc_layer.html#acdc48bec7fc697ce9e0230343f04abe6", null ],
+    [ "serializeLayer", "classpcpp_1_1_cisco_hdlc_layer.html#a71dcc7081d9413b0ee585f1e3f16e042", null ],
     [ "setAddress", "classpcpp_1_1_cisco_hdlc_layer.html#a85c916f29dc0c22322d78c8e4a8b5f9a", null ],
     [ "setAddressValue", "classpcpp_1_1_cisco_hdlc_layer.html#a28ccbee2e6690c48e442deff07cc2b38", null ],
     [ "toString", "classpcpp_1_1_cisco_hdlc_layer.html#a90c452ce85f89d24f604950e2bd5673e", null ]

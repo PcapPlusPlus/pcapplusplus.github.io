@@ -275,6 +275,7 @@ var annotated_dup =
       [ "Packet", "classpcpp_1_1_packet.html", "classpcpp_1_1_packet" ],
       [ "PacketTrailerLayer", "classpcpp_1_1_packet_trailer_layer.html", "classpcpp_1_1_packet_trailer_layer" ],
       [ "ScalarBuffer", "structpcpp_1_1_scalar_buffer.html", "structpcpp_1_1_scalar_buffer" ],
+      [ "PacketSerializer", "classpcpp_1_1_packet_serializer.html", "classpcpp_1_1_packet_serializer" ],
       [ "PayloadLayer", "classpcpp_1_1_payload_layer.html", "classpcpp_1_1_payload_layer" ],
       [ "PemCodec", "classpcpp_1_1_pem_codec.html", null ],
       [ "PostgresMessageType", "classpcpp_1_1_postgres_message_type.html", "classpcpp_1_1_postgres_message_type" ],

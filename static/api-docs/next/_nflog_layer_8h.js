@@ -3,6 +3,7 @@ var _nflog_layer_8h =
     [ "nflog_header", "structpcpp_1_1nflog__header.html", "structpcpp_1_1nflog__header" ],
     [ "NflogTlv", "classpcpp_1_1_nflog_tlv.html", "classpcpp_1_1_nflog_tlv" ],
     [ "NflogLayer", "classpcpp_1_1_nflog_layer.html", "classpcpp_1_1_nflog_layer" ],
+    [ "SerializedFields", "structpcpp_1_1_nflog_layer_1_1_serialized_fields.html", null ],
     [ "NflogTlvType", "_nflog_layer_8h.html#afead5cd7592a51c16c121ed4a545dfd7", [
       [ "NFULA_PACKET_HDR", "_nflog_layer_8h.html#afead5cd7592a51c16c121ed4a545dfd7ad63945c39fd448100ab35a2de69074a7", null ],
       [ "NFULA_MARK", "_nflog_layer_8h.html#afead5cd7592a51c16c121ed4a545dfd7ab1fdbed9becade4e45bddcffef165408", null ],

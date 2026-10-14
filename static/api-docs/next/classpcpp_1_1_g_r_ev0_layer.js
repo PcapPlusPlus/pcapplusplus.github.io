@@ -1,12 +1,14 @@
 var classpcpp_1_1_g_r_ev0_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_g_r_ev0_layer_1_1_serialized_fields.html", null ],
     [ "GREv0Layer", "classpcpp_1_1_g_r_ev0_layer.html#a8cab834d500d69bd53ea9f980080aa66", null ],
     [ "GREv0Layer", "classpcpp_1_1_g_r_ev0_layer.html#a4e6349fa245ab6fec55236aeeff2e79e", null ],
     [ "computeCalculateFields", "classpcpp_1_1_g_r_ev0_layer.html#aae6bc8fee0bc0cb7be059abe5f437fdd", null ],
-    [ "getChecksum", "classpcpp_1_1_g_r_ev0_layer.html#a7a31ac3661be643b434564a0275cd044", null ],
+    [ "getChecksum", "classpcpp_1_1_g_r_ev0_layer.html#a3b7e6a253fa07552c74b36c54aacef81", null ],
     [ "getGreHeader", "classpcpp_1_1_g_r_ev0_layer.html#a8a2e31d26ebf2f2437e780a38cecd0cc", null ],
     [ "getKey", "classpcpp_1_1_g_r_ev0_layer.html#a8ee814a5469ff981c6a2677d46ec1d89", null ],
     [ "getOffset", "classpcpp_1_1_g_r_ev0_layer.html#aa9eec34dc2e939e8b599504e9e2552a6", null ],
+    [ "serializeLayer", "classpcpp_1_1_g_r_ev0_layer.html#a07ff79c857be8ea016b81c9be638e298", null ],
     [ "setChecksum", "classpcpp_1_1_g_r_ev0_layer.html#ac8e0328698bf7208f6a68c828a36a91b", null ],
     [ "setKey", "classpcpp_1_1_g_r_ev0_layer.html#a8658b40f8017cf2f91eb292a7d9fee16", null ],
     [ "toString", "classpcpp_1_1_g_r_ev0_layer.html#a1222bbaf612d885989063618caac4e9a", null ],

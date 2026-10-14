@@ -1,6 +1,7 @@
 var _packet_utils_8h =
 [
     [ "ScalarBuffer", "structpcpp_1_1_scalar_buffer.html", "structpcpp_1_1_scalar_buffer" ],
+    [ "PacketSerializer", "classpcpp_1_1_packet_serializer.html", "classpcpp_1_1_packet_serializer" ],
     [ "computeChecksum", "_packet_utils_8h.html#a6a311c92be6e4e970aeab4984e87ae1a", null ],
     [ "computePseudoHdrChecksum", "_packet_utils_8h.html#a222eeb2e4e394af40795150154dabf8e", null ],
     [ "fnvHash", "_packet_utils_8h.html#ac0368530f5aa515fa7f656dfde7bfddc", null ],

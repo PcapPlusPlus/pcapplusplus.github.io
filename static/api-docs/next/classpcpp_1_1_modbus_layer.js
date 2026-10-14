@@ -1,6 +1,7 @@
 var classpcpp_1_1_modbus_layer =
 [
     [ "ModbusReadInputRegisters", "structpcpp_1_1_modbus_layer_1_1_modbus_read_input_registers.html", "structpcpp_1_1_modbus_layer_1_1_modbus_read_input_registers" ],
+    [ "SerializedFields", "structpcpp_1_1_modbus_layer_1_1_serialized_fields.html", null ],
     [ "ModbusFunctionCode", "classpcpp_1_1_modbus_layer.html#a70f2b10f45d432d3392f9eed5f3327aa", [
       [ "ReadCoils", "classpcpp_1_1_modbus_layer.html#a70f2b10f45d432d3392f9eed5f3327aaa758445e5304896c5a17151e26ad64836", null ],
       [ "ReadDiscreteInputs", "classpcpp_1_1_modbus_layer.html#a70f2b10f45d432d3392f9eed5f3327aaa746fb8801d4b37e44b9d3b268643997b", null ],
@@ -24,6 +25,7 @@ var classpcpp_1_1_modbus_layer =
     [ "getTransactionId", "classpcpp_1_1_modbus_layer.html#a7cb753283a3ea1aae95242b80982d4be", null ],
     [ "getUnitId", "classpcpp_1_1_modbus_layer.html#a5ae9098979f659502196c1ed1a548169", null ],
     [ "parseNextLayer", "classpcpp_1_1_modbus_layer.html#a81c55d393aee0d3a6cef60816deb16ca", null ],
+    [ "serializeLayer", "classpcpp_1_1_modbus_layer.html#a9c156c19a08ce875dddc6ba1f4005a52", null ],
     [ "setFunctionCode", "classpcpp_1_1_modbus_layer.html#a6c03798db73c9fca84ba19bf2a52cf94", null ],
     [ "setTransactionId", "classpcpp_1_1_modbus_layer.html#a0c2901fdd289fa4f86222918279eb9a8", null ],
     [ "setUnitId", "classpcpp_1_1_modbus_layer.html#a4bf52903c0333774de1a015369f137fb", null ],

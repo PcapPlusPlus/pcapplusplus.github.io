@@ -1,5 +1,6 @@
 var classpcpp_1_1_vrrp_v3_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_vrrp_v3_layer_1_1_serialized_fields.html", null ],
     [ "VrrpV3Layer", "classpcpp_1_1_vrrp_v3_layer.html#ab7c6b71a17e677bb3607b1529f0d2771", null ],
     [ "VrrpV3Layer", "classpcpp_1_1_vrrp_v3_layer.html#ad9c8664ab92df8c66c21dac4d428158a", null ],
     [ "~VrrpV3Layer", "classpcpp_1_1_vrrp_v3_layer.html#a266c79f7c46f5b529b6169293db11c2b", null ],

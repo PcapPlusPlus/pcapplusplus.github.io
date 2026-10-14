@@ -21,7 +21,8 @@ var files_dup =
     [ "CiscoHdlcLayer.h", "_cisco_hdlc_layer_8h_source.html", null ],
     [ "CotpLayer.h", "_cotp_layer_8h.html", [
       [ "cotphdr", "structpcpp_1_1cotphdr.html", "structpcpp_1_1cotphdr" ],
-      [ "CotpLayer", "classpcpp_1_1_cotp_layer.html", "classpcpp_1_1_cotp_layer" ]
+      [ "CotpLayer", "classpcpp_1_1_cotp_layer.html", "classpcpp_1_1_cotp_layer" ],
+      [ "SerializedFields", "structpcpp_1_1_cotp_layer_1_1_serialized_fields.html", null ]
     ] ],
     [ "CryptoDataReader.h", "_crypto_data_reader_8h.html", [
       [ "CryptoDataReader", "classpcpp_1_1internal_1_1_crypto_data_reader.html", null ]
@@ -92,9 +93,13 @@ var files_dup =
       [ "gre1_header", "structpcpp_1_1gre1__header.html", "structpcpp_1_1gre1__header" ],
       [ "ppp_pptp_header", "structpcpp_1_1ppp__pptp__header.html", "structpcpp_1_1ppp__pptp__header" ],
       [ "GreLayer", "classpcpp_1_1_gre_layer.html", "classpcpp_1_1_gre_layer" ],
+      [ "SerializedFields", "structpcpp_1_1_gre_layer_1_1_serialized_fields.html", null ],
       [ "GREv0Layer", "classpcpp_1_1_g_r_ev0_layer.html", "classpcpp_1_1_g_r_ev0_layer" ],
+      [ "SerializedFields", "structpcpp_1_1_g_r_ev0_layer_1_1_serialized_fields.html", null ],
       [ "GREv1Layer", "classpcpp_1_1_g_r_ev1_layer.html", "classpcpp_1_1_g_r_ev1_layer" ],
-      [ "PPP_PPTPLayer", "classpcpp_1_1_p_p_p___p_p_t_p_layer.html", "classpcpp_1_1_p_p_p___p_p_t_p_layer" ]
+      [ "SerializedFields", "structpcpp_1_1_g_r_ev1_layer_1_1_serialized_fields.html", null ],
+      [ "PPP_PPTPLayer", "classpcpp_1_1_p_p_p___p_p_t_p_layer.html", "classpcpp_1_1_p_p_p___p_p_t_p_layer" ],
+      [ "SerializedFields", "structpcpp_1_1_p_p_p___p_p_t_p_layer_1_1_serialized_fields.html", null ]
     ] ],
     [ "GtpLayer.h", "_gtp_layer_8h.html", "_gtp_layer_8h" ],
     [ "GvcpLayer.h", "_gvcp_layer_8h.html", "_gvcp_layer_8h" ],
@@ -112,7 +117,9 @@ var files_dup =
       [ "ipsec_authentication_header", "structpcpp_1_1ipsec__authentication__header.html", "structpcpp_1_1ipsec__authentication__header" ],
       [ "ipsec_esp", "structpcpp_1_1ipsec__esp.html", "structpcpp_1_1ipsec__esp" ],
       [ "AuthenticationHeaderLayer", "classpcpp_1_1_authentication_header_layer.html", "classpcpp_1_1_authentication_header_layer" ],
-      [ "ESPLayer", "classpcpp_1_1_e_s_p_layer.html", "classpcpp_1_1_e_s_p_layer" ]
+      [ "SerializedFields", "structpcpp_1_1_authentication_header_layer_1_1_serialized_fields.html", null ],
+      [ "ESPLayer", "classpcpp_1_1_e_s_p_layer.html", "classpcpp_1_1_e_s_p_layer" ],
+      [ "SerializedFields", "structpcpp_1_1_e_s_p_layer_1_1_serialized_fields.html", null ]
     ] ],
     [ "IpUtils.h", "_ip_utils_8h.html", "_ip_utils_8h" ],
     [ "IPv4Layer.h", "_i_pv4_layer_8h.html", "_i_pv4_layer_8h" ],
@@ -155,7 +162,8 @@ var files_dup =
     [ "ModbusLayer.h", "_modbus_layer_8h.html", [
       [ "modbus_header", "structpcpp_1_1modbus__header.html", "structpcpp_1_1modbus__header" ],
       [ "ModbusLayer", "classpcpp_1_1_modbus_layer.html", "classpcpp_1_1_modbus_layer" ],
-      [ "ModbusReadInputRegisters", "structpcpp_1_1_modbus_layer_1_1_modbus_read_input_registers.html", "structpcpp_1_1_modbus_layer_1_1_modbus_read_input_registers" ]
+      [ "ModbusReadInputRegisters", "structpcpp_1_1_modbus_layer_1_1_modbus_read_input_registers.html", "structpcpp_1_1_modbus_layer_1_1_modbus_read_input_registers" ],
+      [ "SerializedFields", "structpcpp_1_1_modbus_layer_1_1_serialized_fields.html", null ]
     ] ],
     [ "MplsLayer.h", "_mpls_layer_8h.html", [
       [ "MplsLayer", "classpcpp_1_1_mpls_layer.html", "classpcpp_1_1_mpls_layer" ],
@@ -168,7 +176,8 @@ var files_dup =
     ] ],
     [ "NflogLayer.h", "_nflog_layer_8h.html", "_nflog_layer_8h" ],
     [ "NtpLayer.h", "_ntp_layer_8h.html", [
-      [ "NtpLayer", "classpcpp_1_1_ntp_layer.html", "classpcpp_1_1_ntp_layer" ]
+      [ "NtpLayer", "classpcpp_1_1_ntp_layer.html", "classpcpp_1_1_ntp_layer" ],
+      [ "SerializedFields", "structpcpp_1_1_ntp_layer_1_1_serialized_fields.html", null ]
     ] ],
     [ "NullLoopbackLayer.h", "_null_loopback_layer_8h.html", "_null_loopback_layer_8h" ],
     [ "ObjectPool.h", "_object_pool_8h_source.html", null ],
@@ -237,7 +246,8 @@ var files_dup =
       [ "radius_header", "structpcpp_1_1radius__header.html", "structpcpp_1_1radius__header" ],
       [ "RadiusAttribute", "classpcpp_1_1_radius_attribute.html", "classpcpp_1_1_radius_attribute" ],
       [ "RadiusAttributeBuilder", "classpcpp_1_1_radius_attribute_builder.html", "classpcpp_1_1_radius_attribute_builder" ],
-      [ "RadiusLayer", "classpcpp_1_1_radius_layer.html", "classpcpp_1_1_radius_layer" ]
+      [ "RadiusLayer", "classpcpp_1_1_radius_layer.html", "classpcpp_1_1_radius_layer" ],
+      [ "SerializedFields", "structpcpp_1_1_radius_layer_1_1_serialized_fields.html", null ]
     ] ],
     [ "RawPacket.h", "_raw_packet_8h.html", "_raw_packet_8h" ],
     [ "RawSocketDevice.h", "_raw_socket_device_8h.html", [
@@ -354,8 +364,11 @@ var files_dup =
     [ "VrrpLayer.h", "_vrrp_layer_8h.html", [
       [ "vrrp_header", "structpcpp_1_1vrrp__header.html", "structpcpp_1_1vrrp__header" ],
       [ "VrrpLayer", "classpcpp_1_1_vrrp_layer.html", "classpcpp_1_1_vrrp_layer" ],
+      [ "SerializedFields", "structpcpp_1_1_vrrp_layer_1_1_serialized_fields.html", null ],
       [ "VrrpV2Layer", "classpcpp_1_1_vrrp_v2_layer.html", "classpcpp_1_1_vrrp_v2_layer" ],
-      [ "VrrpV3Layer", "classpcpp_1_1_vrrp_v3_layer.html", "classpcpp_1_1_vrrp_v3_layer" ]
+      [ "SerializedFields", "structpcpp_1_1_vrrp_v2_layer_1_1_serialized_fields.html", null ],
+      [ "VrrpV3Layer", "classpcpp_1_1_vrrp_v3_layer.html", "classpcpp_1_1_vrrp_v3_layer" ],
+      [ "SerializedFields", "structpcpp_1_1_vrrp_v3_layer_1_1_serialized_fields.html", null ]
     ] ],
     [ "VxlanLayer.h", "_vxlan_layer_8h.html", [
       [ "vxlan_header", "structpcpp_1_1vxlan__header.html", "structpcpp_1_1vxlan__header" ],
