@@ -1,5 +1,6 @@
 var classpcpp_1_1_authentication_header_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_authentication_header_layer_1_1_serialized_fields.html", null ],
     [ "AuthenticationHeaderLayer", "classpcpp_1_1_authentication_header_layer.html#af5f15ad09ece550002dbb3264dea68dc", null ],
     [ "computeCalculateFields", "classpcpp_1_1_authentication_header_layer.html#a871995d047ea5d8430d633c3e21c7b86", null ],
     [ "getAHHeader", "classpcpp_1_1_authentication_header_layer.html#a8b58f36e8c035339ff5b88d5d3e5c151", null ],
@@ -11,5 +12,6 @@ var classpcpp_1_1_authentication_header_layer =
     [ "getSequenceNumber", "classpcpp_1_1_authentication_header_layer.html#ad61dd236c26926cf0ae6d852bc836ea9", null ],
     [ "getSPI", "classpcpp_1_1_authentication_header_layer.html#a12bfbb53a8eb93cfafd22c9c837ae901", null ],
     [ "parseNextLayer", "classpcpp_1_1_authentication_header_layer.html#a60a881b738a6697c2a956274290ba447", null ],
+    [ "serializeLayer", "classpcpp_1_1_authentication_header_layer.html#a90be529ef87c335c3c27e3be75c39943", null ],
     [ "toString", "classpcpp_1_1_authentication_header_layer.html#a7bc8ff9c02f4f9b03c4b978e3345dd3d", null ]
 ];

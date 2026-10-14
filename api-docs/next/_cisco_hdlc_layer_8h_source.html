@@ -144,26 +144,44 @@ $(document).ready(function(){initNavTree('_cisco_hdlc_layer_8h_source.html','');
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2">OsiModelDataLinkLayer</a>;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#pragma pack(push, 1)</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keyword">struct </span>cisco_hdlc_header</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            uint8_t address;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            uint8_t control;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            uint16_t protocol;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        };</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#pragma pack(pop)</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        static_assert(<span class="keyword">sizeof</span>(cisco_hdlc_header) == 4, <span class="stringliteral">&quot;cisco_hdlc_header size is not 4 bytes&quot;</span>);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        cisco_hdlc_header* getCiscoHdlcHeader()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span>cisco_hdlc_header*<span class="keyword">&gt;</span>(m_Data);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordtype">void</span> setNextProtocol(uint16_t protocol);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    };</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="structpcpp_1_1_cisco_hdlc_layer_1_1_serialized_fields.html">   88</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structpcpp_1_1_cisco_hdlc_layer_1_1_serialized_fields.html">SerializedFields</a> : <a class="code" href="structpcpp_1_1_layer_1_1_serialized_fields.html">Layer::SerializedFields</a></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        {</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="structpcpp_1_1_cisco_hdlc_layer_1_1_serialized_fields.html#a2c2bc01dfae14804533cf80d89f74fa3">   91</a></span>&#160;            <span class="keyword">static</span> std::vector&lt;FieldDescriptor&gt; <a class="code" href="structpcpp_1_1_cisco_hdlc_layer_1_1_serialized_fields.html#a2c2bc01dfae14804533cf80d89f74fa3">all</a>()</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                <span class="keyword">auto</span> result = <a class="code" href="structpcpp_1_1_layer_1_1_serialized_fields.html#a75be2aed926382bcf73b6eb2b5ecdeb6">Layer::SerializedFields::all</a>();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                std::initializer_list&lt;FieldDescriptor&gt; extra{ <a class="code" href="structpcpp_1_1_cisco_hdlc_layer_1_1_serialized_fields.html#a467485673797e37fd7de10088e04c40d">Address</a>, <a class="code" href="structpcpp_1_1_cisco_hdlc_layer_1_1_serialized_fields.html#a110a723bd7edc93205ae953dc24bb03d">NextProtocol</a> };</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                std::copy(extra.begin(), extra.end(), std::back_inserter(result));</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="structpcpp_1_1_cisco_hdlc_layer_1_1_serialized_fields.html#a467485673797e37fd7de10088e04c40d">  100</a></span>&#160;            <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="structpcpp_1_1_field_descriptor.html">FieldDescriptor</a> <a class="code" href="structpcpp_1_1_cisco_hdlc_layer_1_1_serialized_fields.html#a467485673797e37fd7de10088e04c40d">Address</a>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="structpcpp_1_1_cisco_hdlc_layer_1_1_serialized_fields.html#a110a723bd7edc93205ae953dc24bb03d">  103</a></span>&#160;            <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="structpcpp_1_1_field_descriptor.html">FieldDescriptor</a> <a class="code" href="structpcpp_1_1_cisco_hdlc_layer_1_1_serialized_fields.html#a110a723bd7edc93205ae953dc24bb03d">NextProtocol</a>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        };</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classpcpp_1_1_cisco_hdlc_layer.html#a71dcc7081d9413b0ee585f1e3f16e042">  107</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classpcpp_1_1_cisco_hdlc_layer.html#a71dcc7081d9413b0ee585f1e3f16e042">serializeLayer</a>(<a class="code" href="classpcpp_1_1_object_scope.html">ObjectScope</a>&amp; serializer) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#pragma pack(push, 1)</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keyword">struct </span>cisco_hdlc_header</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            uint8_t address;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            uint8_t control;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            uint16_t protocol;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        };</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#pragma pack(pop)</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        static_assert(<span class="keyword">sizeof</span>(cisco_hdlc_header) == 4, <span class="stringliteral">&quot;cisco_hdlc_header size is not 4 bytes&quot;</span>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        cisco_hdlc_header* getCiscoHdlcHeader()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span>cisco_hdlc_header*<span class="keyword">&gt;</span>(m_Data);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordtype">void</span> setNextProtocol(uint16_t protocol);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    };</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}  <span class="comment">// namespace pcpp</span></div>
 <div class="ttc" id="a_layer_8h_html"><div class="ttname"><a href="_layer_8h.html">Layer.h</a></div></div>
 <div class="ttc" id="aclasspcpp_1_1_cisco_hdlc_layer_html"><div class="ttname"><a href="classpcpp_1_1_cisco_hdlc_layer.html">pcpp::CiscoHdlcLayer</a></div><div class="ttdef"><b>Definition:</b> CiscoHdlcLayer.h:10</div></div>
 <div class="ttc" id="aclasspcpp_1_1_cisco_hdlc_layer_html_a05fbebade21ba90c2a216a226583e25e"><div class="ttname"><a href="classpcpp_1_1_cisco_hdlc_layer.html#a05fbebade21ba90c2a216a226583e25e">pcpp::CiscoHdlcLayer::getHeaderLen</a></div><div class="ttdeci">size_t getHeaderLen() const override</div><div class="ttdef"><b>Definition:</b> CiscoHdlcLayer.h:67</div></div>
@@ -176,6 +194,7 @@ $(document).ready(function(){initNavTree('_cisco_hdlc_layer_8h_source.html','');
 <div class="ttc" id="aclasspcpp_1_1_cisco_hdlc_layer_html_a5d5d4fa9274cee4102d20f3865647bc7"><div class="ttname"><a href="classpcpp_1_1_cisco_hdlc_layer.html#a5d5d4fa9274cee4102d20f3865647bc7">pcpp::CiscoHdlcLayer::getOsiModelLayer</a></div><div class="ttdeci">OsiModelLayer getOsiModelLayer() const override</div><div class="ttdef"><b>Definition:</b> CiscoHdlcLayer.h:80</div></div>
 <div class="ttc" id="aclasspcpp_1_1_cisco_hdlc_layer_html_a60a337652d6f4a25e5654b47d690cb55"><div class="ttname"><a href="classpcpp_1_1_cisco_hdlc_layer.html#a60a337652d6f4a25e5654b47d690cb55">pcpp::CiscoHdlcLayer::~CiscoHdlcLayer</a></div><div class="ttdeci">~CiscoHdlcLayer() override=default</div><div class="ttdoc">Default destructor for this layer.</div></div>
 <div class="ttc" id="aclasspcpp_1_1_cisco_hdlc_layer_html_a671539cd6fc4146c2b4aee8af1244c59"><div class="ttname"><a href="classpcpp_1_1_cisco_hdlc_layer.html#a671539cd6fc4146c2b4aee8af1244c59">pcpp::CiscoHdlcLayer::CiscoHdlcLayer</a></div><div class="ttdeci">CiscoHdlcLayer(uint8_t *data, size_t dataLen, Packet *packet)</div><div class="ttdef"><b>Definition:</b> CiscoHdlcLayer.h:28</div></div>
+<div class="ttc" id="aclasspcpp_1_1_cisco_hdlc_layer_html_a71dcc7081d9413b0ee585f1e3f16e042"><div class="ttname"><a href="classpcpp_1_1_cisco_hdlc_layer.html#a71dcc7081d9413b0ee585f1e3f16e042">pcpp::CiscoHdlcLayer::serializeLayer</a></div><div class="ttdeci">void serializeLayer(ObjectScope &amp;serializer) const override</div></div>
 <div class="ttc" id="aclasspcpp_1_1_cisco_hdlc_layer_html_a85c916f29dc0c22322d78c8e4a8b5f9a"><div class="ttname"><a href="classpcpp_1_1_cisco_hdlc_layer.html#a85c916f29dc0c22322d78c8e4a8b5f9a">pcpp::CiscoHdlcLayer::setAddress</a></div><div class="ttdeci">void setAddress(AddressType address)</div></div>
 <div class="ttc" id="aclasspcpp_1_1_cisco_hdlc_layer_html_a90c452ce85f89d24f604950e2bd5673e"><div class="ttname"><a href="classpcpp_1_1_cisco_hdlc_layer.html#a90c452ce85f89d24f604950e2bd5673e">pcpp::CiscoHdlcLayer::toString</a></div><div class="ttdeci">std::string toString() const override</div></div>
 <div class="ttc" id="aclasspcpp_1_1_cisco_hdlc_layer_html_a9ce8dcb0c6779b8e39ea72ea11a3a4fb"><div class="ttname"><a href="classpcpp_1_1_cisco_hdlc_layer.html#a9ce8dcb0c6779b8e39ea72ea11a3a4fb">pcpp::CiscoHdlcLayer::CiscoHdlcLayer</a></div><div class="ttdeci">CiscoHdlcLayer(AddressType address)</div></div>
@@ -185,18 +204,26 @@ $(document).ready(function(){initNavTree('_cisco_hdlc_layer_8h_source.html','');
 <div class="ttc" id="aclasspcpp_1_1_cisco_hdlc_layer_html_abf03d78bf301c6e202f014eb31e90028"><div class="ttname"><a href="classpcpp_1_1_cisco_hdlc_layer.html#abf03d78bf301c6e202f014eb31e90028">pcpp::CiscoHdlcLayer::computeCalculateFields</a></div><div class="ttdeci">void computeCalculateFields() override</div><div class="ttdoc">Calculate the Next Protocol when possible.</div></div>
 <div class="ttc" id="aclasspcpp_1_1_cisco_hdlc_layer_html_acdc48bec7fc697ce9e0230343f04abe6"><div class="ttname"><a href="classpcpp_1_1_cisco_hdlc_layer.html#acdc48bec7fc697ce9e0230343f04abe6">pcpp::CiscoHdlcLayer::parseNextLayer</a></div><div class="ttdeci">void parseNextLayer() override</div><div class="ttdoc">Parses the next layer. Currently, supports IPv4 and IPv6.</div></div>
 <div class="ttc" id="aclasspcpp_1_1_layer_html"><div class="ttname"><a href="classpcpp_1_1_layer.html">pcpp::Layer</a></div><div class="ttdef"><b>Definition:</b> Layer.h:117</div></div>
+<div class="ttc" id="aclasspcpp_1_1_object_scope_html"><div class="ttname"><a href="classpcpp_1_1_object_scope.html">pcpp::ObjectScope</a></div><div class="ttdef"><b>Definition:</b> Serializers.h:230</div></div>
 <div class="ttc" id="aclasspcpp_1_1_packet_html"><div class="ttname"><a href="classpcpp_1_1_packet.html">pcpp::Packet</a></div><div class="ttdef"><b>Definition:</b> Packet.h:49</div></div>
 <div class="ttc" id="agroup___protocol_types_html_gabc8840ff6a854c8b275ab93d6789cd26"><div class="ttname"><a href="group___protocol_types.html#gabc8840ff6a854c8b275ab93d6789cd26">pcpp::CiscoHDLC</a></div><div class="ttdeci">const ProtocolType CiscoHDLC</div><div class="ttdoc">Cisco HDLC protocol.</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:246</div></div>
 <div class="ttc" id="anamespacepcpp_html"><div class="ttname"><a href="namespacepcpp.html">pcpp</a></div><div class="ttdoc">The main namespace for the PcapPlusPlus lib.</div><div class="ttdef"><b>Definition:</b> AssertionUtils.h:19</div></div>
 <div class="ttc" id="anamespacepcpp_html_a69e2ee6a9dc68797612cf8dc38461025"><div class="ttname"><a href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025">pcpp::OsiModelLayer</a></div><div class="ttdeci">OsiModelLayer</div><div class="ttdoc">An enum representing OSI model layers.</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:420</div></div>
 <div class="ttc" id="anamespacepcpp_html_a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2"><div class="ttname"><a href="namespacepcpp.html#a69e2ee6a9dc68797612cf8dc38461025a585981311c60726970e4991365720cb2">pcpp::OsiModelDataLinkLayer</a></div><div class="ttdeci">@ OsiModelDataLinkLayer</div><div class="ttdoc">Data link layer (layer 2)</div><div class="ttdef"><b>Definition:</b> ProtocolType.h:424</div></div>
+<div class="ttc" id="astructpcpp_1_1_cisco_hdlc_layer_1_1_serialized_fields_html"><div class="ttname"><a href="structpcpp_1_1_cisco_hdlc_layer_1_1_serialized_fields.html">pcpp::CiscoHdlcLayer::SerializedFields</a></div><div class="ttdef"><b>Definition:</b> CiscoHdlcLayer.h:89</div></div>
+<div class="ttc" id="astructpcpp_1_1_cisco_hdlc_layer_1_1_serialized_fields_html_a110a723bd7edc93205ae953dc24bb03d"><div class="ttname"><a href="structpcpp_1_1_cisco_hdlc_layer_1_1_serialized_fields.html#a110a723bd7edc93205ae953dc24bb03d">pcpp::CiscoHdlcLayer::SerializedFields::NextProtocol</a></div><div class="ttdeci">static const FieldDescriptor NextProtocol</div><div class="ttdoc">Field descriptor for the protocol type of the encapsulated payload, written as a number.</div><div class="ttdef"><b>Definition:</b> CiscoHdlcLayer.h:103</div></div>
+<div class="ttc" id="astructpcpp_1_1_cisco_hdlc_layer_1_1_serialized_fields_html_a2c2bc01dfae14804533cf80d89f74fa3"><div class="ttname"><a href="structpcpp_1_1_cisco_hdlc_layer_1_1_serialized_fields.html#a2c2bc01dfae14804533cf80d89f74fa3">pcpp::CiscoHdlcLayer::SerializedFields::all</a></div><div class="ttdeci">static std::vector&lt; FieldDescriptor &gt; all()</div><div class="ttdef"><b>Definition:</b> CiscoHdlcLayer.h:91</div></div>
+<div class="ttc" id="astructpcpp_1_1_cisco_hdlc_layer_1_1_serialized_fields_html_a467485673797e37fd7de10088e04c40d"><div class="ttname"><a href="structpcpp_1_1_cisco_hdlc_layer_1_1_serialized_fields.html#a467485673797e37fd7de10088e04c40d">pcpp::CiscoHdlcLayer::SerializedFields::Address</a></div><div class="ttdeci">static const FieldDescriptor Address</div><div class="ttdoc">Field descriptor for the address field, written as a string (see CiscoHdlcLayer::AddressType).</div><div class="ttdef"><b>Definition:</b> CiscoHdlcLayer.h:100</div></div>
+<div class="ttc" id="astructpcpp_1_1_field_descriptor_html"><div class="ttname"><a href="structpcpp_1_1_field_descriptor.html">pcpp::FieldDescriptor</a></div><div class="ttdef"><b>Definition:</b> Serializers.h:18</div></div>
+<div class="ttc" id="astructpcpp_1_1_layer_1_1_serialized_fields_html"><div class="ttname"><a href="structpcpp_1_1_layer_1_1_serialized_fields.html">pcpp::Layer::SerializedFields</a></div><div class="ttdef"><b>Definition:</b> Layer.h:212</div></div>
+<div class="ttc" id="astructpcpp_1_1_layer_1_1_serialized_fields_html_a75be2aed926382bcf73b6eb2b5ecdeb6"><div class="ttname"><a href="structpcpp_1_1_layer_1_1_serialized_fields.html#a75be2aed926382bcf73b6eb2b5ecdeb6">pcpp::Layer::SerializedFields::all</a></div><div class="ttdeci">static std::vector&lt; FieldDescriptor &gt; all()</div><div class="ttdef"><b>Definition:</b> Layer.h:214</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><b>CiscoHdlcLayer.h</b></li>
-    <li class="footer">Generated on Sat Oct 10 2026 07:57:45 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 14 2026 06:56:01 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

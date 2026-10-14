@@ -12,5 +12,6 @@ var _pcap_file_device_8h =
       [ "Unknown", "_pcap_file_device_8h.html#a1993be71383c1533f46eab6af15bcb4ba88183b946cc5f0e8c96b2e66e1c74a7e", null ],
       [ "Microseconds", "_pcap_file_device_8h.html#a1993be71383c1533f46eab6af15bcb4ba64068ed47d979c5efa036f027d656433", null ],
       [ "Nanoseconds", "_pcap_file_device_8h.html#a1993be71383c1533f46eab6af15bcb4bafba00bdab687ce01136a86bac8bac578", null ]
-    ] ]
+    ] ],
+    [ "serializePackets", "_pcap_file_device_8h.html#a59ba2f7e485efbd579074bacb52aae82", null ]
 ];

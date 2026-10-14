@@ -6,6 +6,7 @@ var _arp_layer_8h =
     [ "GratuitousArpRequest", "structpcpp_1_1_gratuitous_arp_request.html", "structpcpp_1_1_gratuitous_arp_request" ],
     [ "GratuitousArpReply", "structpcpp_1_1_gratuitous_arp_reply.html", "structpcpp_1_1_gratuitous_arp_reply" ],
     [ "ArpLayer", "classpcpp_1_1_arp_layer.html", "classpcpp_1_1_arp_layer" ],
+    [ "SerializedFields", "structpcpp_1_1_arp_layer_1_1_serialized_fields.html", null ],
     [ "ArpMessageType", "_arp_layer_8h.html#afbe9bd8f96381b2738b21806783fd710", [
       [ "Unknown", "_arp_layer_8h.html#afbe9bd8f96381b2738b21806783fd710a88183b946cc5f0e8c96b2e66e1c74a7e", null ],
       [ "Request", "_arp_layer_8h.html#afbe9bd8f96381b2738b21806783fd710a15c2d85f1fae22a3c3a0594510a1f611", null ],

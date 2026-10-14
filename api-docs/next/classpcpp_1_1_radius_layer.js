@@ -1,5 +1,6 @@
 var classpcpp_1_1_radius_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_radius_layer_1_1_serialized_fields.html", null ],
     [ "RadiusLayer", "classpcpp_1_1_radius_layer.html#a686bd44354ada532b305ca17996e6304", null ],
     [ "RadiusLayer", "classpcpp_1_1_radius_layer.html#a24b8e066bb934019f838f226eff2e96e", null ],
     [ "RadiusLayer", "classpcpp_1_1_radius_layer.html#ac72d091251c369a023c45e4c6078f05e", null ],
@@ -18,6 +19,7 @@ var classpcpp_1_1_radius_layer =
     [ "parseNextLayer", "classpcpp_1_1_radius_layer.html#a8e9f693473ad9af94273de5f70b8692b", null ],
     [ "removeAllAttributes", "classpcpp_1_1_radius_layer.html#a0f0fe6d64980e46a48f1e14aa0257e3f", null ],
     [ "removeAttribute", "classpcpp_1_1_radius_layer.html#a899b783e9afadbce7bbcf77a6258089a", null ],
+    [ "serializeLayer", "classpcpp_1_1_radius_layer.html#a4b2831300e3de0fb67329196435555a7", null ],
     [ "setAuthenticatorValue", "classpcpp_1_1_radius_layer.html#a67b8bba9bdbd7c114e61bfa30c11bc8e", null ],
     [ "toString", "classpcpp_1_1_radius_layer.html#a7d2c62758da47fcd271d715fbd1d9c29", null ]
 ];
