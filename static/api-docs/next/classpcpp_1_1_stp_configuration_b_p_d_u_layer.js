@@ -1,5 +1,7 @@
 var classpcpp_1_1_stp_configuration_b_p_d_u_layer =
 [
+    [ "BridgeIdSerializedFields", "structpcpp_1_1_stp_configuration_b_p_d_u_layer_1_1_bridge_id_serialized_fields.html", null ],
+    [ "SerializedFields", "structpcpp_1_1_stp_configuration_b_p_d_u_layer_1_1_serialized_fields.html", null ],
     [ "StpConfigurationBPDULayer", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#a047e3d9f6de577bc01ca4adc771c4092", null ],
     [ "StpConfigurationBPDULayer", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#a12d5e2e3a3501d67b64132ce14bd0854", null ],
     [ "getBridgeId", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#a2278086a9213e914e3f25ab87f302925", null ],
@@ -20,6 +22,7 @@ var classpcpp_1_1_stp_configuration_b_p_d_u_layer =
     [ "getStpConfHeader", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#a957375ab588aa0916bd7899a4c8137b9", null ],
     [ "getTransmissionInterval", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#a73f31fe685aba596039fcfe64ad6af59", null ],
     [ "parseNextLayer", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#a4c1acef3402e2fe7c0817f72b13164ad", null ],
+    [ "serializeLayer", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#af736e20d0e6b62a6ceafb73278bbc1ca", null ],
     [ "setBridgeId", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#aebe27395a30d2fa4250b8786fb324625", null ],
     [ "setBridgePriority", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#a041a613d87f19072a3660ecf77004630", null ],
     [ "setBridgeSystemID", "classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#a6875a4d0fcc7a5983d453231793c5094", null ],

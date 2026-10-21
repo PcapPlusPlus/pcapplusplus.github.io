@@ -1,5 +1,6 @@
 var classpcpp_1_1_multiple_stp_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_multiple_stp_layer_1_1_serialized_fields.html", null ],
     [ "MultipleStpLayer", "classpcpp_1_1_multiple_stp_layer.html#ac62ce2eb14f7422a1593e7e75f6e8882", null ],
     [ "MultipleStpLayer", "classpcpp_1_1_multiple_stp_layer.html#aabde2d0b90af60d23e816ae3d451f1fa", null ],
     [ "getCISTBridgeId", "classpcpp_1_1_multiple_stp_layer.html#a31c50b66df70e9bd2c2529a3439511f3", null ],
@@ -17,6 +18,7 @@ var classpcpp_1_1_multiple_stp_layer =
     [ "getRemainingHopCount", "classpcpp_1_1_multiple_stp_layer.html#afc2405a0cdb775a075195dfb23265a71", null ],
     [ "getVersion3Len", "classpcpp_1_1_multiple_stp_layer.html#ad8fe14901d117f44631ce5dde80ed089", null ],
     [ "parseNextLayer", "classpcpp_1_1_multiple_stp_layer.html#a2ab6eb3ac01e737121bd90177fe87fc7", null ],
+    [ "serializeLayer", "classpcpp_1_1_multiple_stp_layer.html#a11cf8e5def96ea02dd0cc70895760d35", null ],
     [ "setCISTBridgeId", "classpcpp_1_1_multiple_stp_layer.html#a851b37c2d86b563dd1f557e28e47d62b", null ],
     [ "setCISTBridgePriority", "classpcpp_1_1_multiple_stp_layer.html#abcc92a33c22d436a23c9ac8cc294150c", null ],
     [ "setCISTBridgeSystemID", "classpcpp_1_1_multiple_stp_layer.html#a869223467d6312c6d60dc4e55da7dddf", null ],

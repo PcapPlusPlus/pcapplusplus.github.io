@@ -85,8 +85,10 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_stp_configuration_b_p_d_
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classpcpp_1_1_stp_configuration_b_p_d_u_layer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::StpConfigurationBPDULayer Class Reference</div>  </div>
@@ -109,6 +111,15 @@ Inheritance diagram for pcpp::StpConfigurationBPDULayer:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_stp_configuration_b_p_d_u_layer_1_1_bridge_id_serialized_fields.html">BridgeIdSerializedFields</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fields describing an STP bridge identifier.  <a href="structpcpp_1_1_stp_configuration_b_p_d_u_layer_1_1_bridge_id_serialized_fields.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_stp_configuration_b_p_d_u_layer_1_1_serialized_fields.html">SerializedFields</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fields serialized for <a class="el" href="classpcpp_1_1_stp_configuration_b_p_d_u_layer.html">StpConfigurationBPDULayer</a>, including its base layer fields.  <a href="structpcpp_1_1_stp_configuration_b_p_d_u_layer_1_1_serialized_fields.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a047e3d9f6de577bc01ca4adc771c4092"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#a047e3d9f6de577bc01ca4adc771c4092">StpConfigurationBPDULayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_layer.html">Layer</a> *prevLayer, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet)</td></tr>
@@ -258,17 +269,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a1402cacd6ed46930fe027a2b8158d7b3 inherit pub_static_methods_classpcpp_1_1_stp_layer"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classpcpp_1_1_stp_layer.html">StpLayer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_stp_layer.html#a1402cacd6ed46930fe027a2b8158d7b3">parseStpLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_layer.html">Layer</a> *prevLayer, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet)</td></tr>
 <tr class="separator:a1402cacd6ed46930fe027a2b8158d7b3 inherit pub_static_methods_classpcpp_1_1_stp_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_static_attribs_classpcpp_1_1_stp_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classpcpp_1_1_stp_layer')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classpcpp_1_1_stp_layer.html">pcpp::StpLayer</a></td></tr>
-<tr class="memitem:ab62888e0cf7fc39c622f0b3a42ba47c8 inherit pub_static_attribs_classpcpp_1_1_stp_layer"><td class="memItemLeft" align="right" valign="top"><a id="ab62888e0cf7fc39c622f0b3a42ba47c8"></a>
-static <a class="el" href="classpcpp_1_1_mac_address.html">pcpp::MacAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_stp_layer.html#ab62888e0cf7fc39c622f0b3a42ba47c8">StpMulticastDstMAC</a></td></tr>
-<tr class="memdesc:ab62888e0cf7fc39c622f0b3a42ba47c8 inherit pub_static_attribs_classpcpp_1_1_stp_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">STP protocol uses "01:80:C2:00:00:00" multicast address as destination MAC. <br /></td></tr>
-<tr class="separator:ab62888e0cf7fc39c622f0b3a42ba47c8 inherit pub_static_attribs_classpcpp_1_1_stp_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d2e2d40af97d9c6a8a6ebf5606f1931 inherit pub_static_attribs_classpcpp_1_1_stp_layer"><td class="memItemLeft" align="right" valign="top"><a id="a4d2e2d40af97d9c6a8a6ebf5606f1931"></a>
-static <a class="el" href="classpcpp_1_1_mac_address.html">pcpp::MacAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_stp_layer.html#a4d2e2d40af97d9c6a8a6ebf5606f1931">StpUplinkFastMulticastDstMAC</a></td></tr>
-<tr class="memdesc:a4d2e2d40af97d9c6a8a6ebf5606f1931 inherit pub_static_attribs_classpcpp_1_1_stp_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">STP Uplink Fast protocol uses "01:00:0C:CD:CD:CD" as destination MAC. <br /></td></tr>
-<tr class="separator:a4d2e2d40af97d9c6a8a6ebf5606f1931 inherit pub_static_attribs_classpcpp_1_1_stp_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:af736e20d0e6b62a6ceafb73278bbc1ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_stp_configuration_b_p_d_u_layer.html#af736e20d0e6b62a6ceafb73278bbc1ca">serializeLayer</a> (<a class="el" href="classpcpp_1_1_object_scope.html">ObjectScope</a> &amp;serializer) const override</td></tr>
+<tr class="separator:af736e20d0e6b62a6ceafb73278bbc1ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classpcpp_1_1_layer"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classpcpp_1_1_layer')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td></tr>
 <tr class="memitem:a92fb19d907170b212986262074418b09 inherit pro_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_packet.html">Packet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a92fb19d907170b212986262074418b09">getAttachedPacket</a> ()</td></tr>
 <tr class="memdesc:a92fb19d907170b212986262074418b09 inherit pro_methods_classpcpp_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the <a class="el" href="classpcpp_1_1_packet.html">Packet</a> this layer is attached to (if any).  <a href="classpcpp_1_1_layer.html#a92fb19d907170b212986262074418b09">More...</a><br /></td></tr>
@@ -315,8 +319,18 @@ static <a class="el" href="classpcpp_1_1_mac_address.html">pcpp::MacAddress</a>&
 <tr class="memitem:a06c29d3fe229518514ef483b153a0775 inherit pro_methods_classpcpp_1_1_layer"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_layer.html">Layer</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a06c29d3fe229518514ef483b153a0775">tryConstructNextLayerFromFactoryWithFallback</a> (TFactory factoryFn, uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet, Args &amp;&amp;... extraArgs)</td></tr>
 <tr class="memdesc:a06c29d3fe229518514ef483b153a0775 inherit pro_methods_classpcpp_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to construct the next layer in the protocol stack using a factory functor with a fallback option.  <a href="classpcpp_1_1_layer.html#a06c29d3fe229518514ef483b153a0775">More...</a><br /></td></tr>
 <tr class="separator:a06c29d3fe229518514ef483b153a0775 inherit pro_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8392ededd5fe3a5ab1c315e5ed53496f inherit pro_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a8392ededd5fe3a5ab1c315e5ed53496f">serializeLayer</a> (<a class="el" href="classpcpp_1_1_object_scope.html">ObjectScope</a> &amp;serializer) const</td></tr>
-<tr class="separator:a8392ededd5fe3a5ab1c315e5ed53496f inherit pro_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_attribs_classpcpp_1_1_stp_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classpcpp_1_1_stp_layer')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classpcpp_1_1_stp_layer.html">pcpp::StpLayer</a></td></tr>
+<tr class="memitem:ab62888e0cf7fc39c622f0b3a42ba47c8 inherit pub_static_attribs_classpcpp_1_1_stp_layer"><td class="memItemLeft" align="right" valign="top"><a id="ab62888e0cf7fc39c622f0b3a42ba47c8"></a>
+static <a class="el" href="classpcpp_1_1_mac_address.html">pcpp::MacAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_stp_layer.html#ab62888e0cf7fc39c622f0b3a42ba47c8">StpMulticastDstMAC</a></td></tr>
+<tr class="memdesc:ab62888e0cf7fc39c622f0b3a42ba47c8 inherit pub_static_attribs_classpcpp_1_1_stp_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">STP protocol uses "01:80:C2:00:00:00" multicast address as destination MAC. <br /></td></tr>
+<tr class="separator:ab62888e0cf7fc39c622f0b3a42ba47c8 inherit pub_static_attribs_classpcpp_1_1_stp_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d2e2d40af97d9c6a8a6ebf5606f1931 inherit pub_static_attribs_classpcpp_1_1_stp_layer"><td class="memItemLeft" align="right" valign="top"><a id="a4d2e2d40af97d9c6a8a6ebf5606f1931"></a>
+static <a class="el" href="classpcpp_1_1_mac_address.html">pcpp::MacAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_stp_layer.html#a4d2e2d40af97d9c6a8a6ebf5606f1931">StpUplinkFastMulticastDstMAC</a></td></tr>
+<tr class="memdesc:a4d2e2d40af97d9c6a8a6ebf5606f1931 inherit pub_static_attribs_classpcpp_1_1_stp_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">STP Uplink Fast protocol uses "01:00:0C:CD:CD:CD" as destination MAC. <br /></td></tr>
+<tr class="separator:a4d2e2d40af97d9c6a8a6ebf5606f1931 inherit pub_static_attribs_classpcpp_1_1_stp_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_static_methods_classpcpp_1_1_layer"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classpcpp_1_1_layer')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td></tr>
 <tr class="memitem:acb031e00ee13b0c299cc6c0458a61a18 inherit pro_static_methods_classpcpp_1_1_layer"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:acb031e00ee13b0c299cc6c0458a61a18 inherit pro_static_methods_classpcpp_1_1_layer"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#acb031e00ee13b0c299cc6c0458a61a18">canReinterpretAs</a> (const uint8_t *data, size_t dataLen)</td></tr>
@@ -796,6 +810,43 @@ static <a class="el" href="classpcpp_1_1_mac_address.html">pcpp::MacAddress</a>&
 
 </div>
 </div>
+<a id="af736e20d0e6b62a6ceafb73278bbc1ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af736e20d0e6b62a6ceafb73278bbc1ca">&#9670;&nbsp;</a></span>serializeLayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::StpConfigurationBPDULayer::serializeLayer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_object_scope.html">ObjectScope</a> &amp;&#160;</td>
+          <td class="paramname"><em>serializer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Serializes the layer's data into a provided serializer object. This is used for generating serialized representations (like JSON) of the packet layers. This method should be overridden by derived layers to provide specific serialization logic.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">serializer</td><td>The object scope serializer to which the layer details should be written. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="classpcpp_1_1_stp_layer.html#a2a99d21d6951b8d43c9565e18bde8ad1">pcpp::StpLayer</a>.</p>
+
+<p>Reimplemented in <a class="el" href="classpcpp_1_1_multiple_stp_layer.html#a11cf8e5def96ea02dd0cc70895760d35">pcpp::MultipleStpLayer</a>, and <a class="el" href="classpcpp_1_1_rapid_stp_layer.html#aa58edd754741789417e0735577638337">pcpp::RapidStpLayer</a>.</p>
+
+</div>
+</div>
 <a id="aebe27395a30d2fa4250b8786fb324625"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aebe27395a30d2fa4250b8786fb324625">&#9670;&nbsp;</a></span>setBridgeId()</h2>
 
@@ -1200,7 +1251,7 @@ static <a class="el" href="classpcpp_1_1_mac_address.html">pcpp::MacAddress</a>&
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_stp_configuration_b_p_d_u_layer.html">StpConfigurationBPDULayer</a></li>
-    <li class="footer">Generated on Thu Oct 15 2026 09:05:26 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 21 2026 06:15:54 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -47,6 +47,7 @@ var hierarchy =
     ] ],
     [ "pcpp::BpfFilterWrapper", "classpcpp_1_1_bpf_filter_wrapper.html", null ],
     [ "pcpp::internal::BpfProgramDeleter", "structpcpp_1_1internal_1_1_bpf_program_deleter.html", null ],
+    [ "pcpp::StpConfigurationBPDULayer::BridgeIdSerializedFields", "structpcpp_1_1_stp_configuration_b_p_d_u_layer_1_1_bridge_id_serialized_fields.html", null ],
     [ "pcpp::SSLClientHelloMessage::ClientHelloTLSFingerprint", "structpcpp_1_1_s_s_l_client_hello_message_1_1_client_hello_t_l_s_fingerprint.html", null ],
     [ "pcpp::PostgresDataRowMessage::ColumnData", "classpcpp_1_1_postgres_data_row_message_1_1_column_data.html", null ],
     [ "pcpp::ConnectionData", "structpcpp_1_1_connection_data.html", null ],
@@ -132,12 +133,14 @@ var hierarchy =
       ] ]
     ] ],
     [ "pcpp::FieldDescriptor", "structpcpp_1_1_field_descriptor.html", [
+      [ "pcpp::ObjectFieldDescriptor< pcpp::StpConfigurationBPDULayer::BridgeIdSerializedFields >", "structpcpp_1_1_object_field_descriptor.html", null ],
       [ "pcpp::ObjectFieldDescriptor< TimestampObject >", "structpcpp_1_1_object_field_descriptor.html", [
         [ "pcpp::Packet::SerializedFields::TimestampObject", "structpcpp_1_1_packet_1_1_serialized_fields_1_1_timestamp_object.html", null ]
       ] ],
       [ "pcpp::ObjectFieldDescriptor< IPv6ExtensionObject >", "structpcpp_1_1_object_field_descriptor.html", [
         [ "pcpp::IPv6Layer::SerializedFields::IPv6ExtensionObject", "structpcpp_1_1_i_pv6_layer_1_1_serialized_fields_1_1_i_pv6_extension_object.html", null ]
       ] ],
+      [ "pcpp::ObjectFieldDescriptor< BridgeIdSerializedFields >", "structpcpp_1_1_object_field_descriptor.html", null ],
       [ "pcpp::ObjectFieldDescriptor< Derived >", "structpcpp_1_1_object_field_descriptor.html", null ]
     ] ],
     [ "pcpp::SipResponseFirstLine::FirstLineData", "structpcpp_1_1_sip_response_first_line_1_1_first_line_data.html", null ],
@@ -627,6 +630,13 @@ var hierarchy =
       [ "pcpp::RadiusLayer::SerializedFields", "structpcpp_1_1_radius_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::Sll2Layer::SerializedFields", "structpcpp_1_1_sll2_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::SllLayer::SerializedFields", "structpcpp_1_1_sll_layer_1_1_serialized_fields.html", null ],
+      [ "pcpp::StpLayer::SerializedFields", "structpcpp_1_1_stp_layer_1_1_serialized_fields.html", [
+        [ "pcpp::StpConfigurationBPDULayer::SerializedFields", "structpcpp_1_1_stp_configuration_b_p_d_u_layer_1_1_serialized_fields.html", [
+          [ "pcpp::RapidStpLayer::SerializedFields", "structpcpp_1_1_rapid_stp_layer_1_1_serialized_fields.html", [
+            [ "pcpp::MultipleStpLayer::SerializedFields", "structpcpp_1_1_multiple_stp_layer_1_1_serialized_fields.html", null ]
+          ] ]
+        ] ]
+      ] ],
       [ "pcpp::TcpLayer::SerializedFields", "structpcpp_1_1_tcp_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::TpktLayer::SerializedFields", "structpcpp_1_1_tpkt_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::UdpLayer::SerializedFields", "structpcpp_1_1_udp_layer_1_1_serialized_fields.html", null ],
