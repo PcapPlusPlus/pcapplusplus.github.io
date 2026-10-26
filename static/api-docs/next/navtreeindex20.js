@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"classpcpp_1_1_postgres_message_type.html#aa981dfe649e9d90b0e9e7d0c03b06a98a9c8347be8edfa19b5b1f914bd3b80c7d":[4,0,0,241,0,26],
 "classpcpp_1_1_postgres_message_type.html#aa981dfe649e9d90b0e9e7d0c03b06a98a9d517c79dece305d5e598c16704ad436":[4,0,0,241,0,1],
 "classpcpp_1_1_postgres_message_type.html#aa981dfe649e9d90b0e9e7d0c03b06a98aa3b35e802ec89f9b6d94d3c1b0045b2a":[4,0,0,241,0,29],
 "classpcpp_1_1_postgres_message_type.html#aa981dfe649e9d90b0e9e7d0c03b06a98aa8a646322474ac2ab04f71027715ae84":[4,0,0,241,0,31],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "classpcpp_1_1_s_s_h_key_exchange_init_message.html#a6f4270ce76d7973e194d71b1f74ff73d":[4,0,0,298,5],
 "classpcpp_1_1_s_s_h_key_exchange_init_message.html#a704ffc9ebd49a6388da4b8748b758ab2":[4,0,0,298,12],
 "classpcpp_1_1_s_s_h_key_exchange_init_message.html#a71dc4daae35790fe87106ceba0fece2a":[4,0,0,298,3],
-"classpcpp_1_1_s_s_h_key_exchange_init_message.html#a755b5bbcbed4634c39b4d2bd59df2274":[4,0,0,298,8],
-"classpcpp_1_1_s_s_h_key_exchange_init_message.html#a7832acf8e68877ff440bbd54a1034b57":[4,0,0,298,2]
+"classpcpp_1_1_s_s_h_key_exchange_init_message.html#a755b5bbcbed4634c39b4d2bd59df2274":[4,0,0,298,8]
 };

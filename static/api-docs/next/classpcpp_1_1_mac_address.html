@@ -108,9 +108,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a73902a4cbfee4aee51805bb5a72bce12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a257d6fd3d08de6766389f15423ca3e22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_mac_address.html#a257d6fd3d08de6766389f15423ca3e22">MacAddress</a> (const std::string &amp;addr)</td></tr>
 <tr class="separator:a257d6fd3d08de6766389f15423ca3e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f481baf3a799061e5f43f0bcb545dc5"><td class="memTemplParams" colspan="2">template&lt;typename T , typename  = std::enable_if_t&lt;std::is_convertible&lt;T, std::string&gt;::value&gt;&gt; </td></tr>
+<tr class="memitem:a0f481baf3a799061e5f43f0bcb545dc5"><td class="memTemplParams" colspan="2">template&lt;typename T , typename  = std::enable_if_t&lt;std::is_convertible&lt;T, std::string&gt;::value &amp;&amp; !std::is_array&lt;T&gt;::value&gt;&gt; </td></tr>
 <tr class="memitem:a0f481baf3a799061e5f43f0bcb545dc5"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_mac_address.html#a0f481baf3a799061e5f43f0bcb545dc5">MacAddress</a> (const T &amp;addr)</td></tr>
 <tr class="separator:a0f481baf3a799061e5f43f0bcb545dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a061fc3ded901d071ef8754c1e1e6e0cc"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
+<tr class="memitem:a061fc3ded901d071ef8754c1e1e6e0cc"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_mac_address.html#a061fc3ded901d071ef8754c1e1e6e0cc">MacAddress</a> (const char(&amp;addr)[N])</td></tr>
+<tr class="separator:a061fc3ded901d071ef8754c1e1e6e0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d1561f4cc845ee612ff061ace76f378"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_mac_address.html#a4d1561f4cc845ee612ff061ace76f378">MacAddress</a> (uint8_t firstOctet, uint8_t secondOctet, uint8_t thirdOctet, uint8_t fourthOctet, uint8_t fifthOctet, uint8_t sixthOctet)</td></tr>
 <tr class="separator:a4d1561f4cc845ee612ff061ace76f378"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b540108ab9845bd38291ba78648c3e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_mac_address.html#a7b540108ab9845bd38291ba78648c3e8">MacAddress</a> (std::initializer_list&lt; uint8_t &gt; octets)</td></tr>
@@ -153,7 +156,7 @@ static const <a class="el" href="classpcpp_1_1_mac_address.html">MacAddress</a>&
 <div class="textblock"><p>Represents L2 MAC addresses. Can be constructed from string or a series of 6 byte octets </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7a078d6cd0997e81b1b33b42a9675624"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a078d6cd0997e81b1b33b42a9675624">&#9670;&nbsp;</a></span>MacAddress() <span class="overload">[1/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a078d6cd0997e81b1b33b42a9675624">&#9670;&nbsp;</a></span>MacAddress() <span class="overload">[1/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,7 +182,7 @@ static const <a class="el" href="classpcpp_1_1_mac_address.html">MacAddress</a>&
 </div>
 </div>
 <a id="a598dff4498c2c11e284dd469626f3a96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a598dff4498c2c11e284dd469626f3a96">&#9670;&nbsp;</a></span>MacAddress() <span class="overload">[2/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a598dff4498c2c11e284dd469626f3a96">&#9670;&nbsp;</a></span>MacAddress() <span class="overload">[2/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,7 +215,7 @@ static const <a class="el" href="classpcpp_1_1_mac_address.html">MacAddress</a>&
 </div>
 </div>
 <a id="a7b1cf223e87683eb53ffcba4c756b970"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b1cf223e87683eb53ffcba4c756b970">&#9670;&nbsp;</a></span>MacAddress() <span class="overload">[3/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b1cf223e87683eb53ffcba4c756b970">&#9670;&nbsp;</a></span>MacAddress() <span class="overload">[3/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -264,7 +267,7 @@ static const <a class="el" href="classpcpp_1_1_mac_address.html">MacAddress</a>&
 </div>
 </div>
 <a id="a73902a4cbfee4aee51805bb5a72bce12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73902a4cbfee4aee51805bb5a72bce12">&#9670;&nbsp;</a></span>MacAddress() <span class="overload">[4/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a73902a4cbfee4aee51805bb5a72bce12">&#9670;&nbsp;</a></span>MacAddress() <span class="overload">[4/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -296,7 +299,7 @@ static const <a class="el" href="classpcpp_1_1_mac_address.html">MacAddress</a>&
 </div>
 </div>
 <a id="a257d6fd3d08de6766389f15423ca3e22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a257d6fd3d08de6766389f15423ca3e22">&#9670;&nbsp;</a></span>MacAddress() <span class="overload">[5/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a257d6fd3d08de6766389f15423ca3e22">&#9670;&nbsp;</a></span>MacAddress() <span class="overload">[5/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -328,12 +331,12 @@ static const <a class="el" href="classpcpp_1_1_mac_address.html">MacAddress</a>&
 </div>
 </div>
 <a id="a0f481baf3a799061e5f43f0bcb545dc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f481baf3a799061e5f43f0bcb545dc5">&#9670;&nbsp;</a></span>MacAddress() <span class="overload">[6/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f481baf3a799061e5f43f0bcb545dc5">&#9670;&nbsp;</a></span>MacAddress() <span class="overload">[6/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename  = std::enable_if_t&lt;std::is_convertible&lt;T, std::string&gt;::value&gt;&gt; </div>
+template&lt;typename T , typename  = std::enable_if_t&lt;std::is_convertible&lt;T, std::string&gt;::value &amp;&amp; !std::is_array&lt;T&gt;::value&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -361,8 +364,42 @@ template&lt;typename T , typename  = std::enable_if_t&lt;std::is_convertible&lt;
 
 </div>
 </div>
+<a id="a061fc3ded901d071ef8754c1e1e6e0cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a061fc3ded901d071ef8754c1e1e6e0cc">&#9670;&nbsp;</a></span>MacAddress() <span class="overload">[7/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcpp::MacAddress::MacAddress </td>
+          <td>(</td>
+          <td class="paramtype">const char(&amp;)&#160;</td>
+          <td class="paramname"><em>addr</em>[N]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A constructor that creates an instance of the class out of a char array holding a string. The string ends at the first null character or at the end of the array, whichever comes first, so an array without a null terminator is never read past its end. If the string doesn't represent a valid MAC address, the constructor throws an exception. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>the char array holding the MAC address in format "00:00:00:00:00:00" </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a4d1561f4cc845ee612ff061ace76f378"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d1561f4cc845ee612ff061ace76f378">&#9670;&nbsp;</a></span>MacAddress() <span class="overload">[7/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d1561f4cc845ee612ff061ace76f378">&#9670;&nbsp;</a></span>MacAddress() <span class="overload">[8/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -433,7 +470,7 @@ template&lt;typename T , typename  = std::enable_if_t&lt;std::is_convertible&lt;
 </div>
 </div>
 <a id="a7b540108ab9845bd38291ba78648c3e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b540108ab9845bd38291ba78648c3e8">&#9670;&nbsp;</a></span>MacAddress() <span class="overload">[8/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b540108ab9845bd38291ba78648c3e8">&#9670;&nbsp;</a></span>MacAddress() <span class="overload">[9/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -800,7 +837,7 @@ template&lt;typename T , typename  = std::enable_if_t&lt;std::is_convertible&lt;
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_mac_address.html">MacAddress</a></li>
-    <li class="footer">Generated on Wed Oct 21 2026 06:15:53 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Oct 26 2026 01:39:20 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

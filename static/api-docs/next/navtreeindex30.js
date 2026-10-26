@@ -1,5 +1,6 @@
 var NAVTREEINDEX30 =
 {
+"structpcpp_1_1ether__header.html":[4,0,0,115],
 "structpcpp_1_1ether__header.html#a3200f5fc394812077b6c96d2b15f7658":[4,0,0,115,1],
 "structpcpp_1_1ether__header.html#a466d328a654e445f4d9cb594ff1486ff":[4,0,0,115,2],
 "structpcpp_1_1ether__header.html#a6fbac47e840aa3f6055d0b97c684bd45":[4,0,0,115,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX30 =
 "structpcpp_1_1ssl__tls__alert.html#a0acc72153dcbe55e0f453461cd856346":[4,0,0,304,1],
 "structpcpp_1_1ssl__tls__alert.html#ac4c45f54bcc165e118945b4abd60c453":[4,0,0,304,0],
 "structpcpp_1_1ssl__tls__change__cipher__spec.html":[4,0,0,303],
-"structpcpp_1_1ssl__tls__change__cipher__spec.html#a188d68450805f01ee83f6660903fe2a3":[4,0,0,303,0],
-"structpcpp_1_1ssl__tls__client__server__hello.html":[4,0,0,302]
+"structpcpp_1_1ssl__tls__change__cipher__spec.html#a188d68450805f01ee83f6660903fe2a3":[4,0,0,303,0]
 };

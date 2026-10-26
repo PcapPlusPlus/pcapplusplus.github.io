@@ -2712,8 +2712,8 @@ Functions</h2></td></tr>
 <tr class="separator:af81780ed3de4567bf160199a76877ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad310a2148eeb01375017ae9466727152"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#ad310a2148eeb01375017ae9466727152">linkLayerToString</a> (<a class="el" href="namespacepcpp.html#ab3f43dd3ccd8c93acac8b67909be02be">LinkLayerType</a> linkLayer)</td></tr>
 <tr class="separator:ad310a2148eeb01375017ae9466727152"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59ba2f7e485efbd579074bacb52aae82"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#a59ba2f7e485efbd579074bacb52aae82">serializePackets</a> (<a class="el" href="classpcpp_1_1_i_file_reader_device.html">IFileReaderDevice</a> &amp;reader, <a class="el" href="classpcpp_1_1_i_serializer.html">ISerializer</a> &amp;serializer)</td></tr>
-<tr class="separator:a59ba2f7e485efbd579074bacb52aae82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac3d88a79b51aea039113a54cd5e21ab"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepcpp.html#aac3d88a79b51aea039113a54cd5e21ab">serializePackets</a> (<a class="el" href="classpcpp_1_1_i_file_reader_device.html">IFileReaderDevice</a> &amp;reader, <a class="el" href="classpcpp_1_1_i_serializer.html">ISerializer</a> &amp;serializer, size_t maxPackets=0)</td></tr>
+<tr class="separator:aac3d88a79b51aea039113a54cd5e21ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -8366,8 +8366,8 @@ template&lt;int alignment&gt; </div>
 
 </div>
 </div>
-<a id="a59ba2f7e485efbd579074bacb52aae82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59ba2f7e485efbd579074bacb52aae82">&#9670;&nbsp;</a></span>serializePackets()</h2>
+<a id="aac3d88a79b51aea039113a54cd5e21ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac3d88a79b51aea039113a54cd5e21ab">&#9670;&nbsp;</a></span>serializePackets()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8382,7 +8382,13 @@ template&lt;int alignment&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classpcpp_1_1_i_serializer.html">ISerializer</a> &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em>&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>maxPackets</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -8395,6 +8401,7 @@ template&lt;int alignment&gt; </div>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">reader</td><td>The file reader device to read packets from </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">serializer</td><td>The serializer to write the packets into </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxPackets</td><td>The maximum number of packets to serialize. The default value of 0 means no limit, so all packets in the file are serialized </td></tr>
   </table>
   </dd>
 </dl>
@@ -8408,7 +8415,7 @@ template&lt;int alignment&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li>
-    <li class="footer">Generated on Wed Oct 21 2026 06:15:53 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Oct 26 2026 01:39:20 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

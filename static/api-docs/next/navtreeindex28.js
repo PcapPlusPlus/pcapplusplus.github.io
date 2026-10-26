@@ -1,5 +1,6 @@
 var NAVTREEINDEX28 =
 {
+"structpcpp_1_1_bgp_open_message_layer_1_1bgp__open__message.html":[4,0,0,58,0],
 "structpcpp_1_1_bgp_open_message_layer_1_1bgp__open__message.html#a21f5d2a212b2cb6db91703ed9e15a3fc":[4,0,0,58,0,1],
 "structpcpp_1_1_bgp_open_message_layer_1_1bgp__open__message.html#a559f22c82f43395b1d7402521c4ffe2c":[4,0,0,58,0,4],
 "structpcpp_1_1_bgp_open_message_layer_1_1bgp__open__message.html#a83290dbefe0a66f3e7c6ff73c9a2a10a":[4,0,0,58,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX28 =
 "structpcpp_1_1_pcap_stats.html#a686817e30a0d8fc8d44782c4b49dcf3e":[4,0,0,398,0],
 "structpcpp_1_1_pf_ring_device_1_1_pf_ring_stats.html":[4,0,0,434,0],
 "structpcpp_1_1_pf_ring_device_1_1_pf_ring_stats.html#a83db0ccadf101d72b41c3eb2ff6a72c3":[4,0,0,434,0,0],
-"structpcpp_1_1_pf_ring_device_1_1_pf_ring_stats.html#a9d6a72fc5152c35043b22aedf602a9b6":[4,0,0,434,0,1],
-"structpcpp_1_1_postgres_row_description_message_1_1_postgres_column_info.html":[4,0,0,246,0]
+"structpcpp_1_1_pf_ring_device_1_1_pf_ring_stats.html#a9d6a72fc5152c35043b22aedf602a9b6":[4,0,0,434,0,1]
 };
