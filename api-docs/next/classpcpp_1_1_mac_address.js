@@ -6,6 +6,7 @@ var classpcpp_1_1_mac_address =
     [ "MacAddress", "classpcpp_1_1_mac_address.html#a73902a4cbfee4aee51805bb5a72bce12", null ],
     [ "MacAddress", "classpcpp_1_1_mac_address.html#a257d6fd3d08de6766389f15423ca3e22", null ],
     [ "MacAddress", "classpcpp_1_1_mac_address.html#a0f481baf3a799061e5f43f0bcb545dc5", null ],
+    [ "MacAddress", "classpcpp_1_1_mac_address.html#a061fc3ded901d071ef8754c1e1e6e0cc", null ],
     [ "MacAddress", "classpcpp_1_1_mac_address.html#a4d1561f4cc845ee612ff061ace76f378", null ],
     [ "MacAddress", "classpcpp_1_1_mac_address.html#a7b540108ab9845bd38291ba78648c3e8", null ],
     [ "copyTo", "classpcpp_1_1_mac_address.html#aee73706ca1f0e403adbf4c2f691e7da1", null ],
