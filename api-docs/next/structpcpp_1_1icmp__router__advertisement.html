@@ -103,9 +103,11 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a3d7ac9a46e261e4710db729aed32361d"><td class="memItemLeft" align="right" valign="top"><a id="a3d7ac9a46e261e4710db729aed32361d"></a>
-<a class="el" href="structpcpp_1_1icmp__router__advertisement__hdr.html">icmp_router_advertisement_hdr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1icmp__router__advertisement.html#a3d7ac9a46e261e4710db729aed32361d">header</a></td></tr>
+<a class="el" href="structpcpp_1_1icmp__router__advertisement__hdr.html">icmp_router_advertisement_hdr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1icmp__router__advertisement.html#a3d7ac9a46e261e4710db729aed32361d">header</a> = nullptr</td></tr>
 <tr class="memdesc:a3d7ac9a46e261e4710db729aed32361d"><td class="mdescLeft">&#160;</td><td class="mdescRight">a pointer to the header data on the packet <br /></td></tr>
 <tr class="separator:a3d7ac9a46e261e4710db729aed32361d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4fdc978016c27065a1930fdee576528"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1icmp__router__advertisement.html#aa4fdc978016c27065a1930fdee576528">dataLen</a> = 0</td></tr>
+<tr class="separator:aa4fdc978016c27065a1930fdee576528"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>ICMP router advertisement message structure </p>
@@ -131,7 +133,23 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the router advertisement on the packet or null if index is out of range (less than zero or greater than the number of router advertisement records on this message, determined by advertisementCount field) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the router advertisement on the packet or null if index is out of range: less than zero, greater than or equal to the number of router advertisement records on this message (determined by advertisementCount field), or pointing to an entry that is not present in the layer data </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa4fdc978016c27065a1930fdee576528"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4fdc978016c27065a1930fdee576528">&#9670;&nbsp;</a></span>dataLen</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t pcpp::icmp_router_advertisement::dataLen = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The number of bytes available for this message, meaning the fixed header and the router address entries. This value is set by <a class="el" href="classpcpp_1_1_icmp_layer.html">IcmpLayer</a> and is used to verify that a requested entry actually exists in the layer </p>
 
 </div>
 </div>
@@ -141,7 +159,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="structpcpp_1_1icmp__router__advertisement.html">icmp_router_advertisement</a></li>
-    <li class="footer">Generated on Mon Oct 26 2026 01:39:21 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Oct 27 2026 06:08:08 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

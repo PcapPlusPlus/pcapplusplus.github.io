@@ -1,5 +1,6 @@
 var classpcpp_1_1_smtp_response_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_smtp_response_layer_1_1_serialized_fields.html", null ],
     [ "SmtpStatusCode", "classpcpp_1_1_smtp_response_layer.html#a7a2bbbfd8b35cebc0bbb0afc5dbc4375", [
       [ "SYSTEM_STATUS", "classpcpp_1_1_smtp_response_layer.html#a7a2bbbfd8b35cebc0bbb0afc5dbc4375a58775d26af090b5159b2c611ea653c9e", null ],
       [ "HELP_MESSAGE", "classpcpp_1_1_smtp_response_layer.html#a7a2bbbfd8b35cebc0bbb0afc5dbc4375a192fbf5f3f353bc028512bf38108c639", null ],
@@ -41,6 +42,7 @@ var classpcpp_1_1_smtp_response_layer =
     [ "getStatusCode", "classpcpp_1_1_smtp_response_layer.html#af925870d511f195395865630ed31ac96", null ],
     [ "getStatusCodeString", "classpcpp_1_1_smtp_response_layer.html#ab5808d3a94dc79d9555460d1b49dd84f", null ],
     [ "getStatusOption", "classpcpp_1_1_smtp_response_layer.html#ac00027bca959fb7058a2dcb2c4811597", null ],
+    [ "serializeLayer", "classpcpp_1_1_smtp_response_layer.html#af8b4146bad630b5c23a67db793da5df0", null ],
     [ "setStatusCode", "classpcpp_1_1_smtp_response_layer.html#aad9739e017cdb33a7a34c0a84f033dd9", null ],
     [ "setStatusOption", "classpcpp_1_1_smtp_response_layer.html#a4ab31a7397843d85c8c560ef48905a3c", null ],
     [ "toString", "classpcpp_1_1_smtp_response_layer.html#a9d138973f4908f2a376012b3bfbb1c38", null ]

@@ -1,5 +1,6 @@
 var classpcpp_1_1_some_ip_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_some_ip_layer_1_1_serialized_fields.html", null ],
     [ "someiphdr", "structpcpp_1_1_some_ip_layer_1_1someiphdr.html", "structpcpp_1_1_some_ip_layer_1_1someiphdr" ],
     [ "MsgType", "classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1", [
       [ "REQUEST", "classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1aad6c35880c58d97c03d60a6ad0f23737", null ],
@@ -40,6 +41,7 @@ var classpcpp_1_1_some_ip_layer =
     [ "getSessionID", "classpcpp_1_1_some_ip_layer.html#af755142d2599424be88105dca608227d", null ],
     [ "getSomeIpHeader", "classpcpp_1_1_some_ip_layer.html#a8d8dcea065690cb5ca6922d2ede01b3f", null ],
     [ "parseNextLayer", "classpcpp_1_1_some_ip_layer.html#a8adfa4ea34760494df2776d35202bf37", null ],
+    [ "serializeLayer", "classpcpp_1_1_some_ip_layer.html#a30b2b0ec9dcd75551e9d68eb89a2e79b", null ],
     [ "setClientID", "classpcpp_1_1_some_ip_layer.html#a38ada2c20448563d1af5d43d2067477f", null ],
     [ "setInterfaceVersion", "classpcpp_1_1_some_ip_layer.html#ae55d09fa67c2e5e397055fd16ae2f9ae", null ],
     [ "setMessageID", "classpcpp_1_1_some_ip_layer.html#a666f0afd47671b1d6909eceb83962e7a", null ],

@@ -1,5 +1,6 @@
 var classpcpp_1_1_s7_comm_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_s7_comm_layer_1_1_serialized_fields.html", null ],
     [ "S7CommLayer", "classpcpp_1_1_s7_comm_layer.html#ae9241c7d40b9fe1ba5c4a9e678e915a4", null ],
     [ "S7CommLayer", "classpcpp_1_1_s7_comm_layer.html#aabf27c9265be78771b579acb7aa41113", null ],
     [ "computeCalculateFields", "classpcpp_1_1_s7_comm_layer.html#a26db71b3a10519de2128fa189dbe4347", null ],
@@ -14,6 +15,7 @@ var classpcpp_1_1_s7_comm_layer =
     [ "getPduRef", "classpcpp_1_1_s7_comm_layer.html#a183dce10214f2243acfcd8a7d3d22ca3", null ],
     [ "getProtocolId", "classpcpp_1_1_s7_comm_layer.html#a3745911df19fd90c6e0024dd29418cf7", null ],
     [ "parseNextLayer", "classpcpp_1_1_s7_comm_layer.html#af724d955e93e1730e584140ff0c30039", null ],
+    [ "serializeLayer", "classpcpp_1_1_s7_comm_layer.html#a88bcca905b41a91ed3ab12835362633a", null ],
     [ "setErrorClass", "classpcpp_1_1_s7_comm_layer.html#a414c8cad2c054a01c12b63003b229196", null ],
     [ "setErrorCode", "classpcpp_1_1_s7_comm_layer.html#a01c52d2bb9fc97f59c35821a6a1572d2", null ],
     [ "setMsgType", "classpcpp_1_1_s7_comm_layer.html#ae55d857b5904ab1a6c54eba61a5147c8", null ],

@@ -1,5 +1,6 @@
 var classpcpp_1_1_some_ip_sd_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_some_ip_sd_layer_1_1_serialized_fields.html", "structpcpp_1_1_some_ip_sd_layer_1_1_serialized_fields" ],
     [ "SomeIpSdLayer", "classpcpp_1_1_some_ip_sd_layer.html#a6abdb79207dc6dfba26ef2ee14e6d361", null ],
     [ "SomeIpSdLayer", "classpcpp_1_1_some_ip_sd_layer.html#af674813b3ce7229ad5e5bda21766ce0e", null ],
     [ "~SomeIpSdLayer", "classpcpp_1_1_some_ip_sd_layer.html#aec78a08050dec105d489f54f1787099f", null ],
@@ -12,6 +13,7 @@ var classpcpp_1_1_some_ip_sd_layer =
     [ "getNumOptions", "classpcpp_1_1_some_ip_sd_layer.html#afc76c540278b25b64da0df7fd12113fc", null ],
     [ "getOptions", "classpcpp_1_1_some_ip_sd_layer.html#af3710991e750393be51163dfca040498", null ],
     [ "getOptionsFromEntry", "classpcpp_1_1_some_ip_sd_layer.html#a20b562ca5824f0d72bc148cb3272c1f6", null ],
+    [ "serializeLayer", "classpcpp_1_1_some_ip_sd_layer.html#a5c19d984d0583503f39a8d505fd6a479", null ],
     [ "setFlags", "classpcpp_1_1_some_ip_sd_layer.html#af9a519e99bae3e0ad6301ba566f31d3b", null ],
     [ "toString", "classpcpp_1_1_some_ip_sd_layer.html#a251f55d7dfd3eaca69c63af3aeaad1ed", null ]
 ];
