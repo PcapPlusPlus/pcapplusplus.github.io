@@ -9,6 +9,9 @@ var _some_ip_sd_layer_8h =
     [ "SomeIpSdEntry", "classpcpp_1_1_some_ip_sd_entry.html", "classpcpp_1_1_some_ip_sd_entry" ],
     [ "someipsdhdrentry", "structpcpp_1_1_some_ip_sd_entry_1_1someipsdhdrentry.html", "structpcpp_1_1_some_ip_sd_entry_1_1someipsdhdrentry" ],
     [ "SomeIpSdLayer", "classpcpp_1_1_some_ip_sd_layer.html", "classpcpp_1_1_some_ip_sd_layer" ],
+    [ "SerializedFields", "structpcpp_1_1_some_ip_sd_layer_1_1_serialized_fields.html", "structpcpp_1_1_some_ip_sd_layer_1_1_serialized_fields" ],
+    [ "EntryObject", "structpcpp_1_1_some_ip_sd_layer_1_1_serialized_fields_1_1_entry_object.html", "structpcpp_1_1_some_ip_sd_layer_1_1_serialized_fields_1_1_entry_object" ],
+    [ "OptionObject", "structpcpp_1_1_some_ip_sd_layer_1_1_serialized_fields_1_1_option_object.html", "structpcpp_1_1_some_ip_sd_layer_1_1_serialized_fields_1_1_option_object" ],
     [ "SomeIpSdProtocolType", "_some_ip_sd_layer_8h.html#a6baede81a5b946387fb413e171e91cfa", [
       [ "SD_TCP", "_some_ip_sd_layer_8h.html#a6baede81a5b946387fb413e171e91cfaac8f624a4ce3ca2ddc736259e34178f6d", null ],
       [ "SD_UDP", "_some_ip_sd_layer_8h.html#a6baede81a5b946387fb413e171e91cfaa10da4356c68c2dbb4d594d17cec25030", null ]

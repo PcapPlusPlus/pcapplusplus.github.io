@@ -1,5 +1,6 @@
 var classpcpp_1_1_ftp_response_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_ftp_response_layer_1_1_serialized_fields.html", null ],
     [ "FtpStatusCode", "classpcpp_1_1_ftp_response_layer.html#aebec062665c1d8c6e4eba941782a59cd", [
       [ "UNKNOWN", "classpcpp_1_1_ftp_response_layer.html#aebec062665c1d8c6e4eba941782a59cda696b031073e74bf2cb98e5ef201d4aa3", null ],
       [ "RESTART_MARKER", "classpcpp_1_1_ftp_response_layer.html#aebec062665c1d8c6e4eba941782a59cdacf800ee1b29f76c374678a7cf819ac19", null ],
@@ -64,6 +65,7 @@ var classpcpp_1_1_ftp_response_layer =
     [ "getStatusCode", "classpcpp_1_1_ftp_response_layer.html#a0f0fcd2daf2a12d0c81f23ebd9213f6b", null ],
     [ "getStatusCodeString", "classpcpp_1_1_ftp_response_layer.html#aa10863ca0b9f8dd073db80d12d53f1da", null ],
     [ "getStatusOption", "classpcpp_1_1_ftp_response_layer.html#a4827c8f0adcfb250c1874b43006d57d7", null ],
+    [ "serializeLayer", "classpcpp_1_1_ftp_response_layer.html#a2c7e53c70b2ca8d71cbd909454053d66", null ],
     [ "setStatusCode", "classpcpp_1_1_ftp_response_layer.html#a60b21691fa71b3634d0ff8b2a5cc9ad4", null ],
     [ "setStatusOption", "classpcpp_1_1_ftp_response_layer.html#ac4057d918a2a4d87a53f15565e58b630", null ],
     [ "toString", "classpcpp_1_1_ftp_response_layer.html#a86e40eeee782a8aec8def860e4246286", null ]

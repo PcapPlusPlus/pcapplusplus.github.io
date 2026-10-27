@@ -84,7 +84,9 @@ var files_dup =
     [ "FtpLayer.h", "_ftp_layer_8h.html", [
       [ "FtpLayer", "classpcpp_1_1_ftp_layer.html", "classpcpp_1_1_ftp_layer" ],
       [ "FtpRequestLayer", "classpcpp_1_1_ftp_request_layer.html", "classpcpp_1_1_ftp_request_layer" ],
+      [ "SerializedFields", "structpcpp_1_1_ftp_request_layer_1_1_serialized_fields.html", null ],
       [ "FtpResponseLayer", "classpcpp_1_1_ftp_response_layer.html", "classpcpp_1_1_ftp_response_layer" ],
+      [ "SerializedFields", "structpcpp_1_1_ftp_response_layer_1_1_serialized_fields.html", null ],
       [ "FtpDataLayer", "classpcpp_1_1_ftp_data_layer.html", "classpcpp_1_1_ftp_data_layer" ]
     ] ],
     [ "GeneralUtils.h", "_general_utils_8h.html", "_general_utils_8h" ],
@@ -273,13 +275,17 @@ var files_dup =
     [ "SmtpLayer.h", "_smtp_layer_8h.html", [
       [ "SmtpLayer", "classpcpp_1_1_smtp_layer.html", "classpcpp_1_1_smtp_layer" ],
       [ "SmtpRequestLayer", "classpcpp_1_1_smtp_request_layer.html", "classpcpp_1_1_smtp_request_layer" ],
-      [ "SmtpResponseLayer", "classpcpp_1_1_smtp_response_layer.html", "classpcpp_1_1_smtp_response_layer" ]
+      [ "SerializedFields", "structpcpp_1_1_smtp_request_layer_1_1_serialized_fields.html", null ],
+      [ "SmtpResponseLayer", "classpcpp_1_1_smtp_response_layer.html", "classpcpp_1_1_smtp_response_layer" ],
+      [ "SerializedFields", "structpcpp_1_1_smtp_response_layer_1_1_serialized_fields.html", null ]
     ] ],
     [ "SomeIpLayer.h", "_some_ip_layer_8h.html", [
       [ "SomeIpLayer", "classpcpp_1_1_some_ip_layer.html", "classpcpp_1_1_some_ip_layer" ],
       [ "someiphdr", "structpcpp_1_1_some_ip_layer_1_1someiphdr.html", "structpcpp_1_1_some_ip_layer_1_1someiphdr" ],
+      [ "SerializedFields", "structpcpp_1_1_some_ip_layer_1_1_serialized_fields.html", null ],
       [ "SomeIpTpLayer", "classpcpp_1_1_some_ip_tp_layer.html", "classpcpp_1_1_some_ip_tp_layer" ],
-      [ "someiptphdr", "structpcpp_1_1_some_ip_tp_layer_1_1someiptphdr.html", "structpcpp_1_1_some_ip_tp_layer_1_1someiptphdr" ]
+      [ "someiptphdr", "structpcpp_1_1_some_ip_tp_layer_1_1someiptphdr.html", "structpcpp_1_1_some_ip_tp_layer_1_1someiptphdr" ],
+      [ "SerializedFields", "structpcpp_1_1_some_ip_tp_layer_1_1_serialized_fields.html", null ]
     ] ],
     [ "SomeIpSdLayer.h", "_some_ip_sd_layer_8h.html", "_some_ip_sd_layer_8h" ],
     [ "SSHLayer.h", "_s_s_h_layer_8h.html", [
@@ -402,10 +408,15 @@ var files_dup =
     [ "WireGuardLayer.h", "_wire_guard_layer_8h.html", [
       [ "WireGuardLayer", "classpcpp_1_1_wire_guard_layer.html", "classpcpp_1_1_wire_guard_layer" ],
       [ "wg_common_header", "structpcpp_1_1_wire_guard_layer_1_1wg__common__header.html", "structpcpp_1_1_wire_guard_layer_1_1wg__common__header" ],
+      [ "SerializedFields", "structpcpp_1_1_wire_guard_layer_1_1_serialized_fields.html", null ],
       [ "WireGuardHandshakeInitiationLayer", "classpcpp_1_1_wire_guard_handshake_initiation_layer.html", "classpcpp_1_1_wire_guard_handshake_initiation_layer" ],
+      [ "SerializedFields", "structpcpp_1_1_wire_guard_handshake_initiation_layer_1_1_serialized_fields.html", null ],
       [ "WireGuardHandshakeResponseLayer", "classpcpp_1_1_wire_guard_handshake_response_layer.html", "classpcpp_1_1_wire_guard_handshake_response_layer" ],
+      [ "SerializedFields", "structpcpp_1_1_wire_guard_handshake_response_layer_1_1_serialized_fields.html", null ],
       [ "WireGuardCookieReplyLayer", "classpcpp_1_1_wire_guard_cookie_reply_layer.html", "classpcpp_1_1_wire_guard_cookie_reply_layer" ],
-      [ "WireGuardTransportDataLayer", "classpcpp_1_1_wire_guard_transport_data_layer.html", "classpcpp_1_1_wire_guard_transport_data_layer" ]
+      [ "SerializedFields", "structpcpp_1_1_wire_guard_cookie_reply_layer_1_1_serialized_fields.html", null ],
+      [ "WireGuardTransportDataLayer", "classpcpp_1_1_wire_guard_transport_data_layer.html", "classpcpp_1_1_wire_guard_transport_data_layer" ],
+      [ "SerializedFields", "structpcpp_1_1_wire_guard_transport_data_layer_1_1_serialized_fields.html", null ]
     ] ],
     [ "X509Decoder.h", "_x509_decoder_8h_source.html", null ],
     [ "X509ExtensionDataDecoder.h", "_x509_extension_data_decoder_8h_source.html", null ],

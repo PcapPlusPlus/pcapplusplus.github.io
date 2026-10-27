@@ -1,6 +1,7 @@
 var classpcpp_1_1_gtp_v1_layer =
 [
     [ "GtpExtension", "classpcpp_1_1_gtp_v1_layer_1_1_gtp_extension.html", "classpcpp_1_1_gtp_v1_layer_1_1_gtp_extension" ],
+    [ "SerializedFields", "structpcpp_1_1_gtp_v1_layer_1_1_serialized_fields.html", null ],
     [ "GtpV1Layer", "classpcpp_1_1_gtp_v1_layer.html#adeb4912ab05772b47ecd3cd64e1a8549", null ],
     [ "GtpV1Layer", "classpcpp_1_1_gtp_v1_layer.html#a400504112c4045cd6eb09f06734e168a", null ],
     [ "GtpV1Layer", "classpcpp_1_1_gtp_v1_layer.html#a7f6fb8b6b02cc960b7e162c898f2c3c4", null ],
@@ -18,6 +19,7 @@ var classpcpp_1_1_gtp_v1_layer =
     [ "isGTPCMessage", "classpcpp_1_1_gtp_v1_layer.html#a12bbb923dc2fd557b0233d515b203f82", null ],
     [ "isGTPUMessage", "classpcpp_1_1_gtp_v1_layer.html#a3ec7019f97751549c6c1a8ad850c8cdd", null ],
     [ "parseNextLayer", "classpcpp_1_1_gtp_v1_layer.html#a8caaacc0e8534a8ab00c5173a02c3966", null ],
+    [ "serializeLayer", "classpcpp_1_1_gtp_v1_layer.html#a7e44ae2d249d8b3962ab83dd95193ed9", null ],
     [ "setNpduNumber", "classpcpp_1_1_gtp_v1_layer.html#a57e21974cdf8f6e2226562ca1e153a92", null ],
     [ "setSequenceNumber", "classpcpp_1_1_gtp_v1_layer.html#a04eebb848fedecb475e020769873f775", null ],
     [ "toString", "classpcpp_1_1_gtp_v1_layer.html#a297acd5c7da5baf3e199ddeaea7e4069", null ]

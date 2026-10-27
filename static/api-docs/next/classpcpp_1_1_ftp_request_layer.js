@@ -1,5 +1,6 @@
 var classpcpp_1_1_ftp_request_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_ftp_request_layer_1_1_serialized_fields.html", null ],
     [ "FtpCommand", "classpcpp_1_1_ftp_request_layer.html#ad293dabbe652aed3ac548eb01963e781", [
       [ "UNK", "classpcpp_1_1_ftp_request_layer.html#ad293dabbe652aed3ac548eb01963e781a0708dad23080f2c5981fceb97af02108", null ],
       [ "ABOR", "classpcpp_1_1_ftp_request_layer.html#ad293dabbe652aed3ac548eb01963e781a23093bdd98f6160e1c1508adb2247345", null ],
@@ -76,6 +77,7 @@ var classpcpp_1_1_ftp_request_layer =
     [ "getCommand", "classpcpp_1_1_ftp_request_layer.html#ab00e0542d21d5cd6960b236a164119b1", null ],
     [ "getCommandOption", "classpcpp_1_1_ftp_request_layer.html#ac2e1577aa292984ed6f4a938b327b783", null ],
     [ "getCommandString", "classpcpp_1_1_ftp_request_layer.html#ae194e4f6b6ce006896719ba5ad961d67", null ],
+    [ "serializeLayer", "classpcpp_1_1_ftp_request_layer.html#a92bc2c3d117f518b468f8f63f4adc902", null ],
     [ "setCommand", "classpcpp_1_1_ftp_request_layer.html#ae287ae4db787255fef58f1626d602998", null ],
     [ "setCommandOption", "classpcpp_1_1_ftp_request_layer.html#a31b754ea177afbcb4000b5c79fd1233c", null ],
     [ "toString", "classpcpp_1_1_ftp_request_layer.html#ad5e741717e750b681a844d729f3ddd14", null ]

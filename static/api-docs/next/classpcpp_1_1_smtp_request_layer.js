@@ -1,5 +1,6 @@
 var classpcpp_1_1_smtp_request_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_smtp_request_layer_1_1_serialized_fields.html", null ],
     [ "SmtpCommand", "classpcpp_1_1_smtp_request_layer.html#a1128b00b6ca2592f837feea1bf9706dd", [
       [ "UNK", "classpcpp_1_1_smtp_request_layer.html#a1128b00b6ca2592f837feea1bf9706dda0708dad23080f2c5981fceb97af02108", null ],
       [ "DATA", "classpcpp_1_1_smtp_request_layer.html#a1128b00b6ca2592f837feea1bf9706ddae44f9e348e41cb272efa87387728571b", null ],
@@ -32,6 +33,7 @@ var classpcpp_1_1_smtp_request_layer =
     [ "getCommand", "classpcpp_1_1_smtp_request_layer.html#a89fcafba9cd189db31fe5260665b65fc", null ],
     [ "getCommandOption", "classpcpp_1_1_smtp_request_layer.html#aafe456ff99ef2ff3705907c4a6504c83", null ],
     [ "getCommandString", "classpcpp_1_1_smtp_request_layer.html#a109e1a85d75d9270d447760003e381fe", null ],
+    [ "serializeLayer", "classpcpp_1_1_smtp_request_layer.html#a0cfa04f374c87de4633e22e6cbadfcd4", null ],
     [ "setCommand", "classpcpp_1_1_smtp_request_layer.html#a4f40465f72ddb6e1cfb153f4c50dd05c", null ],
     [ "setCommandOption", "classpcpp_1_1_smtp_request_layer.html#ade283aa9eb860c8dba4ec2ca06aa2cab", null ],
     [ "toString", "classpcpp_1_1_smtp_request_layer.html#a72cf3e6d152ea2069b2de2ef8cb6addc", null ]

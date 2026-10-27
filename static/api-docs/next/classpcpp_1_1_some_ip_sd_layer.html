@@ -88,6 +88,7 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_some_ip_sd_layer.html','
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classpcpp_1_1_some_ip_sd_layer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::SomeIpSdLayer Class Reference</div>  </div>
@@ -107,6 +108,11 @@ Inheritance diagram for pcpp::SomeIpSdLayer:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_some_ip_sd_layer_1_1_serialized_fields.html">SerializedFields</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6abdb79207dc6dfba26ef2ee14e6d361"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_sd_layer.html#a6abdb79207dc6dfba26ef2ee14e6d361">SomeIpSdLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_layer.html">Layer</a> *prevLayer, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet)</td></tr>
@@ -264,32 +270,10 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memdesc:afabdf97fa63b0fb24348ff7839f44ce6 inherit pub_static_methods_classpcpp_1_1_some_ip_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all ports from a list of ports where pcap checks for SOME/IP communication. <br /></td></tr>
 <tr class="separator:afabdf97fa63b0fb24348ff7839f44ce6 inherit pub_static_methods_classpcpp_1_1_some_ip_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_classpcpp_1_1_some_ip_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classpcpp_1_1_some_ip_layer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classpcpp_1_1_some_ip_layer.html">pcpp::SomeIpLayer</a></td></tr>
-<tr class="memitem:a9cf342f59c28ade99336103189f097c1 inherit pub_types_classpcpp_1_1_some_ip_layer"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1">MsgType</a> : uint8_t { <br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1aad6c35880c58d97c03d60a6ad0f23737">REQUEST</a> = 0x00
-, <a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1a5dd3f5618610085f751ea151d8a5fe1c">REQUEST_ACK</a> = 0x40
-, <a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1ae1e7e94b723432614a8d5a6ac164f059">REQUEST_NO_RETURN</a> = 0x01
-, <a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1a0b3c0494b6f5668498228386aa6af8aa">REQUEST_NO_RETURN_ACK</a> = 0x41
-, <br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1a9814d942b7e24870084a3dce24867ab3">NOTIFICATION</a> = 0x02
-, <a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1abad4bcf3377a81877a9278f439763c94">NOTIFICATION_ACK</a> = 0x42
-, <a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1a4fa1a4d2e48aa765093ca6aae57a5150">RESPONSE</a> = 0x80
-, <a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1a3fc82a25abb83232a4ef0e41a73a0b79">RESPONSE_ACK</a> = 0xC0
-, <br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1a6f3a603fac4d817f1848c3173b243b57">ERRORS</a> = 0x81
-, <a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1aace06615e719801d944ce1192c7a93c7">ERROR_ACK</a> = 0xC1
-, <a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1a657e441b358cc02440b1f2c6aa5c9d93">TP_REQUEST</a> = 0x20
-, <a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1a7018452c9a9fc8df6064eb089df0fbc1">TP_REQUEST_NO_RETURN</a> = 0x21
-, <br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1a8626d09405574f50e5e3db8968817063">TP_NOTIFICATION</a> = 0x22
-, <a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1a93f7ea21ef403f978eb1023df539354a">TP_RESPONSE</a> = 0xa0
-, <a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1a2642758711d7d85c17cb19b2549ebef4">TP_ERROR</a> = 0xa1
-<br />
- }</td></tr>
-<tr class="memdesc:a9cf342f59c28ade99336103189f097c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">SOME/IP message types.  <a href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1">More...</a><br /></td></tr>
-<tr class="separator:a9cf342f59c28ade99336103189f097c1 inherit pub_types_classpcpp_1_1_some_ip_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a5c19d984d0583503f39a8d505fd6a479"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_sd_layer.html#a5c19d984d0583503f39a8d505fd6a479">serializeLayer</a> (<a class="el" href="classpcpp_1_1_object_scope.html">ObjectScope</a> &amp;serializer) const override</td></tr>
+<tr class="separator:a5c19d984d0583503f39a8d505fd6a479"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classpcpp_1_1_layer"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classpcpp_1_1_layer')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td></tr>
 <tr class="memitem:a92fb19d907170b212986262074418b09 inherit pro_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_packet.html">Packet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a92fb19d907170b212986262074418b09">getAttachedPacket</a> ()</td></tr>
 <tr class="memdesc:a92fb19d907170b212986262074418b09 inherit pro_methods_classpcpp_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the <a class="el" href="classpcpp_1_1_packet.html">Packet</a> this layer is attached to (if any).  <a href="classpcpp_1_1_layer.html#a92fb19d907170b212986262074418b09">More...</a><br /></td></tr>
@@ -336,8 +320,33 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a06c29d3fe229518514ef483b153a0775 inherit pro_methods_classpcpp_1_1_layer"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_layer.html">Layer</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a06c29d3fe229518514ef483b153a0775">tryConstructNextLayerFromFactoryWithFallback</a> (TFactory factoryFn, uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet, Args &amp;&amp;... extraArgs)</td></tr>
 <tr class="memdesc:a06c29d3fe229518514ef483b153a0775 inherit pro_methods_classpcpp_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to construct the next layer in the protocol stack using a factory functor with a fallback option.  <a href="classpcpp_1_1_layer.html#a06c29d3fe229518514ef483b153a0775">More...</a><br /></td></tr>
 <tr class="separator:a06c29d3fe229518514ef483b153a0775 inherit pro_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8392ededd5fe3a5ab1c315e5ed53496f inherit pro_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a8392ededd5fe3a5ab1c315e5ed53496f">serializeLayer</a> (<a class="el" href="classpcpp_1_1_object_scope.html">ObjectScope</a> &amp;serializer) const</td></tr>
-<tr class="separator:a8392ededd5fe3a5ab1c315e5ed53496f inherit pro_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classpcpp_1_1_some_ip_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classpcpp_1_1_some_ip_layer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classpcpp_1_1_some_ip_layer.html">pcpp::SomeIpLayer</a></td></tr>
+<tr class="memitem:a9cf342f59c28ade99336103189f097c1 inherit pub_types_classpcpp_1_1_some_ip_layer"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1">MsgType</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1aad6c35880c58d97c03d60a6ad0f23737">REQUEST</a> = 0x00
+, <a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1a5dd3f5618610085f751ea151d8a5fe1c">REQUEST_ACK</a> = 0x40
+, <a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1ae1e7e94b723432614a8d5a6ac164f059">REQUEST_NO_RETURN</a> = 0x01
+, <a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1a0b3c0494b6f5668498228386aa6af8aa">REQUEST_NO_RETURN_ACK</a> = 0x41
+, <br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1a9814d942b7e24870084a3dce24867ab3">NOTIFICATION</a> = 0x02
+, <a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1abad4bcf3377a81877a9278f439763c94">NOTIFICATION_ACK</a> = 0x42
+, <a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1a4fa1a4d2e48aa765093ca6aae57a5150">RESPONSE</a> = 0x80
+, <a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1a3fc82a25abb83232a4ef0e41a73a0b79">RESPONSE_ACK</a> = 0xC0
+, <br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1a6f3a603fac4d817f1848c3173b243b57">ERRORS</a> = 0x81
+, <a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1aace06615e719801d944ce1192c7a93c7">ERROR_ACK</a> = 0xC1
+, <a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1a657e441b358cc02440b1f2c6aa5c9d93">TP_REQUEST</a> = 0x20
+, <a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1a7018452c9a9fc8df6064eb089df0fbc1">TP_REQUEST_NO_RETURN</a> = 0x21
+, <br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1a8626d09405574f50e5e3db8968817063">TP_NOTIFICATION</a> = 0x22
+, <a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1a93f7ea21ef403f978eb1023df539354a">TP_RESPONSE</a> = 0xa0
+, <a class="el" href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1a2642758711d7d85c17cb19b2549ebef4">TP_ERROR</a> = 0xa1
+<br />
+ }</td></tr>
+<tr class="memdesc:a9cf342f59c28ade99336103189f097c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">SOME/IP message types.  <a href="classpcpp_1_1_some_ip_layer.html#a9cf342f59c28ade99336103189f097c1">More...</a><br /></td></tr>
+<tr class="separator:a9cf342f59c28ade99336103189f097c1 inherit pub_types_classpcpp_1_1_some_ip_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_static_methods_classpcpp_1_1_layer"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classpcpp_1_1_layer')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td></tr>
 <tr class="memitem:acb031e00ee13b0c299cc6c0458a61a18 inherit pro_static_methods_classpcpp_1_1_layer"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:acb031e00ee13b0c299cc6c0458a61a18 inherit pro_static_methods_classpcpp_1_1_layer"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#acb031e00ee13b0c299cc6c0458a61a18">canReinterpretAs</a> (const uint8_t *data, size_t dataLen)</td></tr>
@@ -727,6 +736,41 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a5c19d984d0583503f39a8d505fd6a479"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c19d984d0583503f39a8d505fd6a479">&#9670;&nbsp;</a></span>serializeLayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::SomeIpSdLayer::serializeLayer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_object_scope.html">ObjectScope</a> &amp;&#160;</td>
+          <td class="paramname"><em>serializer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Serializes the layer's data into a provided serializer object. This is used for generating serialized representations (like JSON) of the packet layers. This method should be overridden by derived layers to provide specific serialization logic.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">serializer</td><td>The object scope serializer to which the layer details should be written. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="classpcpp_1_1_some_ip_layer.html#a30b2b0ec9dcd75551e9d68eb89a2e79b">pcpp::SomeIpLayer</a>.</p>
+
+</div>
+</div>
 <a id="af9a519e99bae3e0ad6301ba566f31d3b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af9a519e99bae3e0ad6301ba566f31d3b">&#9670;&nbsp;</a></span>setFlags()</h2>
 
@@ -785,7 +829,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_some_ip_sd_layer.html">SomeIpSdLayer</a></li>
-    <li class="footer">Generated on Mon Oct 26 2026 01:39:21 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Oct 27 2026 06:08:08 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
