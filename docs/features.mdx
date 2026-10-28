@@ -369,6 +369,8 @@ std::cout << oss.str() << std::endl;
 ```
 </details>
 
+To learn more please take a look at the [PcapSerializer](./examples#pcapserializer) example app, which serializes packets from a capture file or a live interface to JSON, YAML or XML.
+
 ## TLS Fingerprinting
 
 TLS Fingerprinting is a technique that extracts specific parameters from TLS handshake messages such as ClientHello and ServerHello. Most applications that need network access (such as browsers, apps, etc.) have a unique combination(s) of these parameters while making network connections, so this technique can be used to fingerprint those applications. By using a database of curated fingerprints it's possible to detect network traffic anomalies which can point to malware, security vulnerabilities or other undesired behavior. It can also be used for network visibility, for example identify popular applications, detect applications that use weak encryption, etc. This method of fingerprinting is very effective because TLS handshake is often done in lower levels of the application hence it's difficult to forge or tamper with it.

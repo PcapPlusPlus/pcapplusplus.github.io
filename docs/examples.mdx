@@ -65,6 +65,10 @@ A simple application that outputs packets from a pcap file as a readable string.
 
 An application that splits pcap files into smaller pcap files by various criteria defined by the user like file size, packet count, split per connection, per client-ip, per server-ip, per server-port (protocol) or per IP src + IP dst (2-tuple). This application is very advanced compared to similar tools, for example: there is no limit on input file size or packet count, no technical limit on number of output files (unless the user sets a limit), support for both IPv4 and IPv6, and a lot more.
 
+## <CodeLink relativePath="/Examples/PcapSerializer">PcapSerializer</CodeLink>
+
+An application that serializes packets to JSON, YAML or XML using PcapPlusPlus [packet serialization](./features#packet-serialization) APIs. Packets can be read from a capture file (pcap, pcapng or snoop) or captured from a live network interface. The user can limit the number of packets, apply a BPF filter, and write the output to a file or to stdout.
+
 ## <CodeLink relativePath="/Examples/PcapSearch">PcapSearch</CodeLink>
 
 An application that search inside pcap files in a directory/ies given by the user and counts how many packet match a user-defined pattern given in a BPF format.
