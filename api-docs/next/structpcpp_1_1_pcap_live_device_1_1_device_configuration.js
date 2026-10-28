@@ -1,6 +1,7 @@
 var structpcpp_1_1_pcap_live_device_1_1_device_configuration =
 [
-    [ "DeviceConfiguration", "structpcpp_1_1_pcap_live_device_1_1_device_configuration.html#a717dd138fb1fac9f540585d9d51d0725", null ],
+    [ "DeviceConfiguration", "structpcpp_1_1_pcap_live_device_1_1_device_configuration.html#ae75a59f0e17d1a5574bb7dd5b7ce155d", null ],
+    [ "bufferingMode", "structpcpp_1_1_pcap_live_device_1_1_device_configuration.html#ada69577a2a91f62df4aff60175c73fe2", null ],
     [ "direction", "structpcpp_1_1_pcap_live_device_1_1_device_configuration.html#ab5d5b0ed427abf26af79ed8cc80486a5", null ],
     [ "mode", "structpcpp_1_1_pcap_live_device_1_1_device_configuration.html#af44933f7a8a561384201368ef54b2d01", null ],
     [ "nflogGroup", "structpcpp_1_1_pcap_live_device_1_1_device_configuration.html#aa693ec55a5483958814c8a0e819630ca", null ],

@@ -158,6 +158,8 @@ var annotated_dup =
       [ "FtpRequestLayer", "classpcpp_1_1_ftp_request_layer.html", "classpcpp_1_1_ftp_request_layer" ],
       [ "FtpResponseLayer", "classpcpp_1_1_ftp_response_layer.html", "classpcpp_1_1_ftp_response_layer" ],
       [ "FtpDataLayer", "classpcpp_1_1_ftp_data_layer.html", "classpcpp_1_1_ftp_data_layer" ],
+      [ "GeneveOption", "classpcpp_1_1_geneve_option.html", "classpcpp_1_1_geneve_option" ],
+      [ "GeneveLayer", "classpcpp_1_1_geneve_layer.html", "classpcpp_1_1_geneve_layer" ],
       [ "gre_basic_header", "structpcpp_1_1gre__basic__header.html", "structpcpp_1_1gre__basic__header" ],
       [ "gre1_header", "structpcpp_1_1gre1__header.html", "structpcpp_1_1gre1__header" ],
       [ "ppp_pptp_header", "structpcpp_1_1ppp__pptp__header.html", "structpcpp_1_1ppp__pptp__header" ],

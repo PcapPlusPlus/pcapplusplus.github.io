@@ -2,6 +2,10 @@ var classpcpp_1_1_pcap_live_device =
 [
     [ "DeviceConfiguration", "structpcpp_1_1_pcap_live_device_1_1_device_configuration.html", "structpcpp_1_1_pcap_live_device_1_1_device_configuration" ],
     [ "DeviceInterfaceDetails", "structpcpp_1_1_pcap_live_device_1_1_device_interface_details.html", "structpcpp_1_1_pcap_live_device_1_1_device_interface_details" ],
+    [ "BufferingMode", "classpcpp_1_1_pcap_live_device.html#aadb0ec61d35cbf1eb9c04fb3e2cb8a01", [
+      [ "Immediate", "classpcpp_1_1_pcap_live_device.html#aadb0ec61d35cbf1eb9c04fb3e2cb8a01a43f6615bbb2c40a5306ff804094420b1", null ],
+      [ "Buffered", "classpcpp_1_1_pcap_live_device.html#aadb0ec61d35cbf1eb9c04fb3e2cb8a01a97010abc74ca9d1176408d3ef61b8c24", null ]
+    ] ],
     [ "DeviceMode", "classpcpp_1_1_pcap_live_device.html#a2381e7f053285090f0f9620bcbd8f0f3", [
       [ "Normal", "classpcpp_1_1_pcap_live_device.html#a2381e7f053285090f0f9620bcbd8f0f3ad57df3ce2415ba6f804539bb268aecdf", null ],
       [ "Promiscuous", "classpcpp_1_1_pcap_live_device.html#a2381e7f053285090f0f9620bcbd8f0f3af1c5bb543295a735a99cc9f88ac67bca", null ]
