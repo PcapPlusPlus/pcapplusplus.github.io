@@ -1,5 +1,6 @@
 var NAVTREEINDEX25 =
 {
+"classpcpp_1_1_text_based_protocol_message.html#a94b61378d9778bdd3669599ca55e7d86":[4,0,0,353,8],
 "classpcpp_1_1_text_based_protocol_message.html#a9712764bb961cc7485335d1d30920232":[4,0,0,353,15],
 "classpcpp_1_1_text_based_protocol_message.html#aa54b61f3f13b9528af2400da7a800a21":[4,0,0,353,3],
 "classpcpp_1_1_text_based_protocol_message.html#abf28607ed41ed3bfdb1c476bda303ae9":[4,0,0,353,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX25 =
 "classpcpp_1_1_wire_guard_layer.html#afd4c5206b2a3ff4a33f21be0ce864864":[4,0,0,370,12],
 "classpcpp_1_1_wire_guard_transport_data_layer.html":[4,0,0,374],
 "classpcpp_1_1_wire_guard_transport_data_layer.html#a00dce7c64c8c98598f295b9370f9edaf":[4,0,0,374,9],
-"classpcpp_1_1_wire_guard_transport_data_layer.html#a4583c3c0600f0e5bc3274a0a8ce9146b":[4,0,0,374,8],
-"classpcpp_1_1_wire_guard_transport_data_layer.html#a542f49d80ffb04066df8658c3dd4f8a3":[4,0,0,374,7]
+"classpcpp_1_1_wire_guard_transport_data_layer.html#a4583c3c0600f0e5bc3274a0a8ce9146b":[4,0,0,374,8]
 };

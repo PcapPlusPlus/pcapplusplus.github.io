@@ -167,10 +167,11 @@ var NAVTREEINDEX13 =
 "classpcpp_1_1_i_dns_resource.html#ade6a140a8bba212a15bf58b0e5e6fe4a":[4,0,0,83,1],
 "classpcpp_1_1_i_dns_resource.html#af08da68e8e0133db0723fd117be4217e":[4,0,0,83,8],
 "classpcpp_1_1_i_dns_resource_data.html":[4,0,0,86],
-"classpcpp_1_1_i_dns_resource_data.html#a2f101c592a4e955fa9abe09fc80989b3":[4,0,0,86,3],
+"classpcpp_1_1_i_dns_resource_data.html#a0425f026e1d0b183961771e87531a7ce":[4,0,0,86,4],
+"classpcpp_1_1_i_dns_resource_data.html#a0e794bd0375d9c7f20d8191c01d9e5f7":[4,0,0,86,3],
 "classpcpp_1_1_i_dns_resource_data.html#a56a9d85bb7e5cbdb9dad80f50f398202":[4,0,0,86,1],
 "classpcpp_1_1_i_dns_resource_data.html#a8a0aba99fc544c523a10ed41b3fc80a4":[4,0,0,86,2],
-"classpcpp_1_1_i_dns_resource_data.html#aa288ea1d592f1003b75fb0a63a0e5eca":[4,0,0,86,4],
+"classpcpp_1_1_i_dns_resource_data.html#aa288ea1d592f1003b75fb0a63a0e5eca":[4,0,0,86,5],
 "classpcpp_1_1_i_dns_resource_data.html#aad86fb391e74eb3e156b38a281928241":[4,0,0,86,0],
 "classpcpp_1_1_i_file_device.html":[4,0,0,402],
 "classpcpp_1_1_i_file_device.html#a1ff7024e88289ccc507e8fa76e2f7f71":[4,0,0,402,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "classpcpp_1_1_i_p_network.html#a8587b18bc1593b268bfaa2047f12787e":[4,0,0,9,15],
 "classpcpp_1_1_i_p_network.html#a9ac3298e7a56e719a681b26c974eb069":[4,0,0,9,4],
 "classpcpp_1_1_i_p_network.html#aa1616c2c4b779e0ba4ca94146559a10d":[4,0,0,9,8],
-"classpcpp_1_1_i_p_network.html#ab0cf1373bb8a3ee5f9f6de847dd385b6":[4,0,0,9,2],
-"classpcpp_1_1_i_p_network.html#ab20d73418474fa44b0d89547c8d05897":[4,0,0,9,10]
+"classpcpp_1_1_i_p_network.html#ab0cf1373bb8a3ee5f9f6de847dd385b6":[4,0,0,9,2]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"classpcpp_1_1_wire_guard_transport_data_layer.html#a542f49d80ffb04066df8658c3dd4f8a3":[4,0,0,374,7],
 "classpcpp_1_1_wire_guard_transport_data_layer.html#a58566b48aa5a2f4c6f07c972e83d01f0":[4,0,0,374,5],
 "classpcpp_1_1_wire_guard_transport_data_layer.html#a613cb1fa4c4a3c82c50241c0148e58eb":[4,0,0,374,3],
 "classpcpp_1_1_wire_guard_transport_data_layer.html#a682a0b9e454c7b02b40341a4720bf1ea":[4,0,0,374,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "classpcpp_1_1internal_1_1_dynamic_object_pool.html#aac550df86432a1d9db5cebb4419071c5":[4,0,0,0,2,1],
 "classpcpp_1_1internal_1_1_dynamic_object_pool.html#ac73a2347803422a42800f4ad69df9599":[4,0,0,0,2,3],
 "classpcpp_1_1internal_1_1_dynamic_object_pool.html#ad199ed85caaa825bcaa86360161e1843":[4,0,0,0,2,6],
-"classpcpp_1_1internal_1_1_dynamic_object_pool.html#adb80fa06643bbe341cefa2c636bad601":[4,0,0,0,2,5],
-"classpcpp_1_1internal_1_1_dynamic_object_pool.html#aec5f94744dde14751e9f9e3d7cc4f5ad":[4,0,0,0,2,2]
+"classpcpp_1_1internal_1_1_dynamic_object_pool.html#adb80fa06643bbe341cefa2c636bad601":[4,0,0,0,2,5]
 };

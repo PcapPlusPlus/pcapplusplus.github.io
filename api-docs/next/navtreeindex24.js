@@ -1,5 +1,6 @@
 var NAVTREEINDEX24 =
 {
+"classpcpp_1_1_t_l_s_supported_groups_extension.html":[4,0,0,312],
 "classpcpp_1_1_t_l_s_supported_groups_extension.html#a5b18ea8242d5a74d79e7631abe189153":[4,0,0,312,1],
 "classpcpp_1_1_t_l_s_supported_groups_extension.html#a743656bc3ce0dd177d90a136521770d5":[4,0,0,312,0],
 "classpcpp_1_1_t_l_s_supported_groups_extension.html#adf34c17bb041076355ad800e46734e8e":[4,0,0,312,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX24 =
 "classpcpp_1_1_text_based_protocol_message.html#a430c51958eb58f65f7f15a4fedcb83c4":[4,0,0,353,17],
 "classpcpp_1_1_text_based_protocol_message.html#a61195c4c3b1a2d7221a90a0104e8765b":[4,0,0,353,6],
 "classpcpp_1_1_text_based_protocol_message.html#a8917992953e2a38885af837a2c49abd0":[4,0,0,353,11],
-"classpcpp_1_1_text_based_protocol_message.html#a93bf401465425111b0a296eb79c17b14":[4,0,0,353,18],
-"classpcpp_1_1_text_based_protocol_message.html#a94b61378d9778bdd3669599ca55e7d86":[4,0,0,353,8]
+"classpcpp_1_1_text_based_protocol_message.html#a93bf401465425111b0a296eb79c17b14":[4,0,0,353,18]
 };
