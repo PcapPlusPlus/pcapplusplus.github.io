@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"classpcpp_1_1_pcap_file_writer_device.html#af2193647eeb2ef552251db99e26fd93f":[4,0,0,406,3],
 "classpcpp_1_1_pcap_file_writer_device.html#afb762a21a8bec1b3b9cd081091006851":[4,0,0,406,8],
 "classpcpp_1_1_pcap_live_device.html":[4,0,0,431],
 "classpcpp_1_1_pcap_live_device.html#a00efdbd7aca92b696dd585cf3301add5":[4,0,0,431,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "classpcpp_1_1_postgres_layer.html#a4157d4ae2486bf9f07fcabb691288e15":[4,0,0,251,8],
 "classpcpp_1_1_postgres_layer.html#a509eb4219d4286734c973107753ec516":[4,0,0,251,2],
 "classpcpp_1_1_postgres_layer.html#a58fe5ecca0909b120bf06ff618833fe6":[4,0,0,251,3],
-"classpcpp_1_1_postgres_layer.html#ac7432a2d8bfbffa2d24674f9fc931747":[4,0,0,251,6],
-"classpcpp_1_1_postgres_layer.html#adb14125b6fa5f2687f9484a848da534e":[4,0,0,251,4]
+"classpcpp_1_1_postgres_layer.html#ac7432a2d8bfbffa2d24674f9fc931747":[4,0,0,251,6]
 };

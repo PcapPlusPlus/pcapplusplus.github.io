@@ -246,8 +246,8 @@ var NAVTREEINDEX10 =
 "classpcpp_1_1_generic_dns_resource_data.html":[4,0,0,92],
 "classpcpp_1_1_generic_dns_resource_data.html#a002904e1c014581b87277fcf23b3ae4f":[4,0,0,92,3],
 "classpcpp_1_1_generic_dns_resource_data.html#a3b4027f8f5860834cb55c9b2477d0b49":[4,0,0,92,1],
-"classpcpp_1_1_generic_dns_resource_data.html#a679808e8c86d96b2b04dd2274ea419f8":[4,0,0,92,4],
 "classpcpp_1_1_generic_dns_resource_data.html#a72b52f7913bbd563139c4096fde9ebaa":[4,0,0,92,5],
+"classpcpp_1_1_generic_dns_resource_data.html#abdb0f0767e8871c9dab85bf252664131":[4,0,0,92,4],
 "classpcpp_1_1_generic_dns_resource_data.html#abf0efb342019f57028ea15473cdd0d9d":[4,0,0,92,0],
 "classpcpp_1_1_generic_dns_resource_data.html#af5e9af4b57f24bf19f0ff12ae1c76458":[4,0,0,92,2]
 };
