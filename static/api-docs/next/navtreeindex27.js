@@ -1,5 +1,7 @@
 var NAVTREEINDEX27 =
 {
+"classpcpp_1_1internal_1_1_dynamic_object_pool.html#ad199ed85caaa825bcaa86360161e1843":[4,0,0,0,2,6],
+"classpcpp_1_1internal_1_1_dynamic_object_pool.html#adb80fa06643bbe341cefa2c636bad601":[4,0,0,0,2,5],
 "classpcpp_1_1internal_1_1_dynamic_object_pool.html#aec5f94744dde14751e9f9e3d7cc4f5ad":[4,0,0,0,2,2],
 "classpcpp_1_1internal_1_1_e_c_private_key_data_view.html":[4,0,0,0,8],
 "classpcpp_1_1internal_1_1_e_c_private_key_data_view.html#a1885dfd0b6525d2c99ea9ff1c3320889":[4,0,0,0,8,0],
@@ -128,8 +130,8 @@ var NAVTREEINDEX27 =
 "functions_type.html":[4,3,3],
 "functions_u.html":[4,3,0,20],
 "functions_v.html":[4,3,0,21],
-"functions_vars.html":[4,3,2],
 "functions_vars.html":[4,3,2,0],
+"functions_vars.html":[4,3,2],
 "functions_vars_b.html":[4,3,2,1],
 "functions_vars_c.html":[4,3,2,2],
 "functions_vars_d.html":[4,3,2,3],
@@ -160,8 +162,8 @@ var NAVTREEINDEX27 =
 "functions_~.html":[4,3,0,26],
 "globals.html":[5,1,0],
 "globals.html":[5,1,0,0],
-"globals_defs.html":[5,1,2],
 "globals_defs.html":[5,1,2,0],
+"globals_defs.html":[5,1,2],
 "globals_func.html":[5,1,1],
 "globals_p.html":[5,1,0,1],
 "group___protocol_types.html":[2,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX27 =
 "group___protocol_types.html#gaff4d6cf6335201f8e9fc80ec7aedb6a7":[2,0,60],
 "hierarchy.html":[4,2],
 "index.html":[0],
-"index.html":[],
-"index.html#api_reference_sec":[0,1],
-"index.html#intro_sec":[0,0]
+"index.html":[]
 };

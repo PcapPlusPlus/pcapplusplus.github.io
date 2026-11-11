@@ -134,6 +134,9 @@ var hierarchy =
     ] ],
     [ "pcpp::FieldDescriptor", "structpcpp_1_1_field_descriptor.html", [
       [ "pcpp::ObjectFieldDescriptor< pcpp::StpConfigurationBPDULayer::BridgeIdSerializedFields >", "structpcpp_1_1_object_field_descriptor.html", null ],
+      [ "pcpp::ObjectFieldDescriptor< HeaderFieldObject >", "structpcpp_1_1_object_field_descriptor.html", [
+        [ "pcpp::HttpMessage::SerializedFields::HeaderFieldObject", "structpcpp_1_1_http_message_1_1_serialized_fields_1_1_header_field_object.html", null ]
+      ] ],
       [ "pcpp::ObjectFieldDescriptor< TimestampObject >", "structpcpp_1_1_object_field_descriptor.html", [
         [ "pcpp::Packet::SerializedFields::TimestampObject", "structpcpp_1_1_packet_1_1_serialized_fields_1_1_timestamp_object.html", null ]
       ] ],
@@ -620,6 +623,10 @@ var hierarchy =
           [ "pcpp::GvcpDiscoveryRequestLayer::SerializedFields", "structpcpp_1_1_gvcp_discovery_request_layer_1_1_serialized_fields.html", null ],
           [ "pcpp::GvcpForceIpRequestLayer::SerializedFields", "structpcpp_1_1_gvcp_force_ip_request_layer_1_1_serialized_fields.html", null ]
         ] ]
+      ] ],
+      [ "pcpp::HttpMessage::SerializedFields", "structpcpp_1_1_http_message_1_1_serialized_fields.html", [
+        [ "pcpp::HttpRequestLayer::SerializedFields", "structpcpp_1_1_http_request_layer_1_1_serialized_fields.html", null ],
+        [ "pcpp::HttpResponseLayer::SerializedFields", "structpcpp_1_1_http_response_layer_1_1_serialized_fields.html", null ]
       ] ],
       [ "pcpp::IPv4Layer::SerializedFields", "structpcpp_1_1_i_pv4_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::IPv6Layer::SerializedFields", "structpcpp_1_1_i_pv6_layer_1_1_serialized_fields.html", null ],

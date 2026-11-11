@@ -1,5 +1,6 @@
 var classpcpp_1_1_http_request_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_http_request_layer_1_1_serialized_fields.html", null ],
     [ "HttpMethod", "classpcpp_1_1_http_request_layer.html#a71d3731486391e8356628dae79023fd6", [
       [ "HttpGET", "classpcpp_1_1_http_request_layer.html#a71d3731486391e8356628dae79023fd6aca2c0c8c436248769c39cb34739cec5c", null ],
       [ "HttpHEAD", "classpcpp_1_1_http_request_layer.html#a71d3731486391e8356628dae79023fd6a84812d8086233153a0a3157cfc85b4cd", null ],
@@ -18,5 +19,6 @@ var classpcpp_1_1_http_request_layer =
     [ "getFirstLine", "classpcpp_1_1_http_request_layer.html#af15a86ab7f6686a27066f3acf45331d4", null ],
     [ "getUrl", "classpcpp_1_1_http_request_layer.html#ad0a049a2a862a8dcaaa45aaacd695f17", null ],
     [ "operator=", "classpcpp_1_1_http_request_layer.html#a56153c001fed50c2cc0a4697640fd048", null ],
+    [ "serializeLayer", "classpcpp_1_1_http_request_layer.html#a01dedc641813a26399ea730cfa49664a", null ],
     [ "toString", "classpcpp_1_1_http_request_layer.html#aa69e602d7b0a767191fbcd201cf6bc97", null ]
 ];

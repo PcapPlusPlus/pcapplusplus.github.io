@@ -1,9 +1,13 @@
 var _http_layer_8h =
 [
     [ "HttpMessage", "classpcpp_1_1_http_message.html", "classpcpp_1_1_http_message" ],
+    [ "SerializedFields", "structpcpp_1_1_http_message_1_1_serialized_fields.html", "structpcpp_1_1_http_message_1_1_serialized_fields" ],
+    [ "HeaderFieldObject", "structpcpp_1_1_http_message_1_1_serialized_fields_1_1_header_field_object.html", "structpcpp_1_1_http_message_1_1_serialized_fields_1_1_header_field_object" ],
     [ "HttpRequestLayer", "classpcpp_1_1_http_request_layer.html", "classpcpp_1_1_http_request_layer" ],
+    [ "SerializedFields", "structpcpp_1_1_http_request_layer_1_1_serialized_fields.html", null ],
     [ "HttpResponseStatusCode", "classpcpp_1_1_http_response_status_code.html", "classpcpp_1_1_http_response_status_code" ],
     [ "HttpResponseLayer", "classpcpp_1_1_http_response_layer.html", "classpcpp_1_1_http_response_layer" ],
+    [ "SerializedFields", "structpcpp_1_1_http_response_layer_1_1_serialized_fields.html", null ],
     [ "HttpRequestFirstLine", "classpcpp_1_1_http_request_first_line.html", "classpcpp_1_1_http_request_first_line" ],
     [ "HttpRequestFirstLineException", "classpcpp_1_1_http_request_first_line_1_1_http_request_first_line_exception.html", null ],
     [ "HttpResponseFirstLine", "classpcpp_1_1_http_response_first_line.html", "classpcpp_1_1_http_response_first_line" ],

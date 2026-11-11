@@ -104,12 +104,24 @@ $(document).ready(function(){initNavTree('_http_layer_8h.html',''); initResizabl
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_message.html">pcpp::HttpMessage</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_http_message_1_1_serialized_fields.html">pcpp::HttpMessage::SerializedFields</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fields shared by <a class="el" href="classpcpp_1_1_http_request_layer.html">HttpRequestLayer</a> and <a class="el" href="classpcpp_1_1_http_response_layer.html">HttpResponseLayer</a>. They're written after the first line fields, which use IDs <a class="el" href="structpcpp_1_1_layer_1_1_serialized_fields.html#aa4c22a5920ef5517a22dfb7d165a9303" title="Maximum field ID used by the layer.">Layer::SerializedFields::MaxID</a> + 1 to <a class="el" href="structpcpp_1_1_layer_1_1_serialized_fields.html#aa4c22a5920ef5517a22dfb7d165a9303" title="Maximum field ID used by the layer.">Layer::SerializedFields::MaxID</a> + 3.  <a href="structpcpp_1_1_http_message_1_1_serialized_fields.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_http_message_1_1_serialized_fields_1_1_header_field_object.html">pcpp::HttpMessage::SerializedFields::HeaderFieldObject</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fields describing one element of the HeaderFields array of <a class="el" href="classpcpp_1_1_http_request_layer.html">HttpRequestLayer</a> and <a class="el" href="classpcpp_1_1_http_response_layer.html">HttpResponseLayer</a>.  <a href="structpcpp_1_1_http_message_1_1_serialized_fields_1_1_header_field_object.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_request_layer.html">pcpp::HttpRequestLayer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_http_request_layer_1_1_serialized_fields.html">pcpp::HttpRequestLayer::SerializedFields</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fields written by <a class="el" href="classpcpp_1_1_http_request_layer.html">HttpRequestLayer</a>'s <a class="el" href="classpcpp_1_1_http_request_layer.html#a01dedc641813a26399ea730cfa49664a">serializeLayer()</a>, in addition to <a class="el" href="structpcpp_1_1_http_message_1_1_serialized_fields.html" title="Fields shared by HttpRequestLayer and HttpResponseLayer. They&#39;re written after the first line fields,...">HttpMessage::SerializedFields</a>.  <a href="structpcpp_1_1_http_request_layer_1_1_serialized_fields.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_response_status_code.html">pcpp::HttpResponseStatusCode</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The enum wrapper class of HTTP response status codes.  <a href="classpcpp_1_1_http_response_status_code.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_response_layer.html">pcpp::HttpResponseLayer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_http_response_layer_1_1_serialized_fields.html">pcpp::HttpResponseLayer::SerializedFields</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fields written by <a class="el" href="classpcpp_1_1_http_response_layer.html">HttpResponseLayer</a>'s <a class="el" href="classpcpp_1_1_http_response_layer.html#ae4cc44653785870cd2f9957720358dae">serializeLayer()</a>, in addition to <a class="el" href="structpcpp_1_1_http_message_1_1_serialized_fields.html" title="Fields shared by HttpRequestLayer and HttpResponseLayer. They&#39;re written after the first line fields,...">HttpMessage::SerializedFields</a>.  <a href="structpcpp_1_1_http_response_layer_1_1_serialized_fields.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_http_request_first_line.html">pcpp::HttpRequestFirstLine</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,7 +209,7 @@ Enumerations</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a0102b96c48c4cdcedcedf8f364687c5.html">Packet++</a></li><li class="navelem"><a class="el" href="dir_fe1d50cd56397826e8c67fd39e5ee46e.html">header</a></li><li class="navelem"><a class="el" href="_http_layer_8h.html">HttpLayer.h</a></li>
-    <li class="footer">Generated on Thu Oct 29 2026 08:42:56 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Nov 11 2026 08:19:28 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
