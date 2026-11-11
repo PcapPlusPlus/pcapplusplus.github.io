@@ -1,5 +1,6 @@
 var classpcpp_1_1_http_message =
 [
+    [ "SerializedFields", "structpcpp_1_1_http_message_1_1_serialized_fields.html", "structpcpp_1_1_http_message_1_1_serialized_fields" ],
     [ "addField", "classpcpp_1_1_http_message.html#ae1c9808d55ef7f22a12143ad073d45f4", null ],
     [ "addField", "classpcpp_1_1_http_message.html#afe32f4a762cec3e5a5288bff1324cc54", null ],
     [ "getOsiModelLayer", "classpcpp_1_1_http_message.html#a3657c00b08106746860ad95a2357fd8d", null ],
