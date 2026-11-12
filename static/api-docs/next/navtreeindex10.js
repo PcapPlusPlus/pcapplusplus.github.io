@@ -1,5 +1,7 @@
 var NAVTREEINDEX10 =
 {
+"classpcpp_1_1_dpdk_device_list.html#a231f0417a70c8b014e68dea5454b00d9":[4,0,0,394,7],
+"classpcpp_1_1_dpdk_device_list.html#a3ccd03caaa382d986cf90bf18b920b35":[4,0,0,394,2],
 "classpcpp_1_1_dpdk_device_list.html#a657c71a0fb7d3e591445823f3882b016":[4,0,0,394,1],
 "classpcpp_1_1_dpdk_device_list.html#a6a2d2fdf700451adb9a27567f6e6eda3":[4,0,0,394,6],
 "classpcpp_1_1_dpdk_device_list.html#a7a1bd61f1afbd224d6f033d6084fe6a0":[4,0,0,394,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX10 =
 "classpcpp_1_1_generic_dns_resource_data.html#a002904e1c014581b87277fcf23b3ae4f":[4,0,0,92,3],
 "classpcpp_1_1_generic_dns_resource_data.html#a3b4027f8f5860834cb55c9b2477d0b49":[4,0,0,92,1],
 "classpcpp_1_1_generic_dns_resource_data.html#a72b52f7913bbd563139c4096fde9ebaa":[4,0,0,92,5],
-"classpcpp_1_1_generic_dns_resource_data.html#abdb0f0767e8871c9dab85bf252664131":[4,0,0,92,4],
-"classpcpp_1_1_generic_dns_resource_data.html#abf0efb342019f57028ea15473cdd0d9d":[4,0,0,92,0],
-"classpcpp_1_1_generic_dns_resource_data.html#af5e9af4b57f24bf19f0ff12ae1c76458":[4,0,0,92,2]
+"classpcpp_1_1_generic_dns_resource_data.html#abdb0f0767e8871c9dab85bf252664131":[4,0,0,92,4]
 };

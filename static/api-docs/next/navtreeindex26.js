@@ -1,5 +1,7 @@
 var NAVTREEINDEX26 =
 {
+"classpcpp_1_1_wire_guard_layer.html#afd4c5206b2a3ff4a33f21be0ce864864":[4,0,0,370,12],
+"classpcpp_1_1_wire_guard_transport_data_layer.html":[4,0,0,374],
 "classpcpp_1_1_wire_guard_transport_data_layer.html#a00dce7c64c8c98598f295b9370f9edaf":[4,0,0,374,9],
 "classpcpp_1_1_wire_guard_transport_data_layer.html#a4583c3c0600f0e5bc3274a0a8ce9146b":[4,0,0,374,8],
 "classpcpp_1_1_wire_guard_transport_data_layer.html#a542f49d80ffb04066df8658c3dd4f8a3":[4,0,0,374,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX26 =
 "classpcpp_1_1internal_1_1_dynamic_object_pool.html#a46b081fd79fab5e27825630c0ffd1c3d":[4,0,0,0,2,9],
 "classpcpp_1_1internal_1_1_dynamic_object_pool.html#a6f64f271ddd6dba78a9e1c63dbce81fc":[4,0,0,0,2,4],
 "classpcpp_1_1internal_1_1_dynamic_object_pool.html#a992bb463cedab3267a2572dbb5371c73":[4,0,0,0,2,8],
-"classpcpp_1_1internal_1_1_dynamic_object_pool.html#a9eeb9296ecf4b9c144332ecb56d49ff0":[4,0,0,0,2,10],
-"classpcpp_1_1internal_1_1_dynamic_object_pool.html#aac550df86432a1d9db5cebb4419071c5":[4,0,0,0,2,1],
-"classpcpp_1_1internal_1_1_dynamic_object_pool.html#ac73a2347803422a42800f4ad69df9599":[4,0,0,0,2,3]
+"classpcpp_1_1internal_1_1_dynamic_object_pool.html#a9eeb9296ecf4b9c144332ecb56d49ff0":[4,0,0,0,2,10]
 };

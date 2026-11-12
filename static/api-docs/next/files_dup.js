@@ -51,7 +51,11 @@ var files_dup =
     [ "DnsLayer.h", "_dns_layer_8h.html", [
       [ "dnshdr", "structpcpp_1_1dnshdr.html", "structpcpp_1_1dnshdr" ],
       [ "DnsLayer", "classpcpp_1_1_dns_layer.html", "classpcpp_1_1_dns_layer" ],
-      [ "DnsOverTcpLayer", "classpcpp_1_1_dns_over_tcp_layer.html", "classpcpp_1_1_dns_over_tcp_layer" ]
+      [ "SerializedFields", "structpcpp_1_1_dns_layer_1_1_serialized_fields.html", "structpcpp_1_1_dns_layer_1_1_serialized_fields" ],
+      [ "QueryObject", "structpcpp_1_1_dns_layer_1_1_serialized_fields_1_1_query_object.html", "structpcpp_1_1_dns_layer_1_1_serialized_fields_1_1_query_object" ],
+      [ "ResourceObject", "structpcpp_1_1_dns_layer_1_1_serialized_fields_1_1_resource_object.html", "structpcpp_1_1_dns_layer_1_1_serialized_fields_1_1_resource_object" ],
+      [ "DnsOverTcpLayer", "classpcpp_1_1_dns_over_tcp_layer.html", "classpcpp_1_1_dns_over_tcp_layer" ],
+      [ "SerializedFields", "structpcpp_1_1_dns_over_tcp_layer_1_1_serialized_fields.html", null ]
     ] ],
     [ "DnsLayerEnums.h", "_dns_layer_enums_8h.html", "_dns_layer_enums_8h" ],
     [ "DnsResource.h", "_dns_resource_8h.html", [
