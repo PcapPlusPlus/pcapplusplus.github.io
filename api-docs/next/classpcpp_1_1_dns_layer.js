@@ -1,5 +1,6 @@
 var classpcpp_1_1_dns_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_dns_layer_1_1_serialized_fields.html", "structpcpp_1_1_dns_layer_1_1_serialized_fields" ],
     [ "DnsLayer", "classpcpp_1_1_dns_layer.html#a0436e0ee0837c38dea261bba282186f5", null ],
     [ "DnsLayer", "classpcpp_1_1_dns_layer.html#a265b0721e4d566fc58a5407dd343fa14", null ],
     [ "DnsLayer", "classpcpp_1_1_dns_layer.html#a86121249746b9e95024788b6ef398a72", null ],
@@ -42,5 +43,6 @@ var classpcpp_1_1_dns_layer =
     [ "removeAuthority", "classpcpp_1_1_dns_layer.html#ae957f7b50adade0c014ab8007f4009bd", null ],
     [ "removeQuery", "classpcpp_1_1_dns_layer.html#a5952988d68c6a82e38347a403f43f389", null ],
     [ "removeQuery", "classpcpp_1_1_dns_layer.html#aa62ae344b6dd0ff36ac17242ba7971e2", null ],
+    [ "serializeLayer", "classpcpp_1_1_dns_layer.html#aa8b960d5fe16aff4015331d48a221ee2", null ],
     [ "toString", "classpcpp_1_1_dns_layer.html#a6baa949f6174f120cb2c911ac77fcb92", null ]
 ];

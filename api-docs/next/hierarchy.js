@@ -143,7 +143,13 @@ var hierarchy =
       [ "pcpp::ObjectFieldDescriptor< IPv6ExtensionObject >", "structpcpp_1_1_object_field_descriptor.html", [
         [ "pcpp::IPv6Layer::SerializedFields::IPv6ExtensionObject", "structpcpp_1_1_i_pv6_layer_1_1_serialized_fields_1_1_i_pv6_extension_object.html", null ]
       ] ],
+      [ "pcpp::ObjectFieldDescriptor< ResourceObject >", "structpcpp_1_1_object_field_descriptor.html", [
+        [ "pcpp::DnsLayer::SerializedFields::ResourceObject", "structpcpp_1_1_dns_layer_1_1_serialized_fields_1_1_resource_object.html", null ]
+      ] ],
       [ "pcpp::ObjectFieldDescriptor< BridgeIdSerializedFields >", "structpcpp_1_1_object_field_descriptor.html", null ],
+      [ "pcpp::ObjectFieldDescriptor< QueryObject >", "structpcpp_1_1_object_field_descriptor.html", [
+        [ "pcpp::DnsLayer::SerializedFields::QueryObject", "structpcpp_1_1_dns_layer_1_1_serialized_fields_1_1_query_object.html", null ]
+      ] ],
       [ "pcpp::ObjectFieldDescriptor< OptionObject >", "structpcpp_1_1_object_field_descriptor.html", [
         [ "pcpp::GeneveLayer::SerializedFields::OptionObject", "structpcpp_1_1_geneve_layer_1_1_serialized_fields_1_1_option_object.html", null ],
         [ "pcpp::SomeIpSdLayer::SerializedFields::OptionObject", "structpcpp_1_1_some_ip_sd_layer_1_1_serialized_fields_1_1_option_object.html", null ]
@@ -603,6 +609,9 @@ var hierarchy =
       [ "pcpp::CotpLayer::SerializedFields", "structpcpp_1_1_cotp_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::DhcpLayer::SerializedFields", "structpcpp_1_1_dhcp_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::DhcpV6Layer::SerializedFields", "structpcpp_1_1_dhcp_v6_layer_1_1_serialized_fields.html", null ],
+      [ "pcpp::DnsLayer::SerializedFields", "structpcpp_1_1_dns_layer_1_1_serialized_fields.html", [
+        [ "pcpp::DnsOverTcpLayer::SerializedFields", "structpcpp_1_1_dns_over_tcp_layer_1_1_serialized_fields.html", null ]
+      ] ],
       [ "pcpp::ESPLayer::SerializedFields", "structpcpp_1_1_e_s_p_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::EthDot3Layer::SerializedFields", "structpcpp_1_1_eth_dot3_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::EthLayer::SerializedFields", "structpcpp_1_1_eth_layer_1_1_serialized_fields.html", null ],
