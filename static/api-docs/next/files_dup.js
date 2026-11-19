@@ -18,6 +18,11 @@ var files_dup =
       [ "BgpRouteRefreshMessageLayer", "classpcpp_1_1_bgp_route_refresh_message_layer.html", "classpcpp_1_1_bgp_route_refresh_message_layer" ],
       [ "bgp_route_refresh_message", "structpcpp_1_1_bgp_route_refresh_message_layer_1_1bgp__route__refresh__message.html", "structpcpp_1_1_bgp_route_refresh_message_layer_1_1bgp__route__refresh__message" ]
     ] ],
+    [ "BluetoothHciLayer.h", "_bluetooth_hci_layer_8h.html", [
+      [ "BluetoothHciLayer", "classpcpp_1_1_bluetooth_hci_layer.html", "classpcpp_1_1_bluetooth_hci_layer" ],
+      [ "BluetoothHciEventLayer", "classpcpp_1_1_bluetooth_hci_event_layer.html", "classpcpp_1_1_bluetooth_hci_event_layer" ],
+      [ "SerializedFields", "structpcpp_1_1_bluetooth_hci_event_layer_1_1_serialized_fields.html", null ]
+    ] ],
     [ "CiscoHdlcLayer.h", "_cisco_hdlc_layer_8h_source.html", null ],
     [ "CotpLayer.h", "_cotp_layer_8h.html", [
       [ "cotphdr", "structpcpp_1_1cotphdr.html", "structpcpp_1_1cotphdr" ],

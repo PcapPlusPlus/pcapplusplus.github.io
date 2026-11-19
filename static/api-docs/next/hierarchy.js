@@ -230,6 +230,9 @@ var hierarchy =
           [ "pcpp::BgpRouteRefreshMessageLayer", "classpcpp_1_1_bgp_route_refresh_message_layer.html", null ],
           [ "pcpp::BgpUpdateMessageLayer", "classpcpp_1_1_bgp_update_message_layer.html", null ]
         ] ],
+        [ "pcpp::BluetoothHciLayer", "classpcpp_1_1_bluetooth_hci_layer.html", [
+          [ "pcpp::BluetoothHciEventLayer", "classpcpp_1_1_bluetooth_hci_event_layer.html", null ]
+        ] ],
         [ "pcpp::CiscoHdlcLayer", "classpcpp_1_1_cisco_hdlc_layer.html", null ],
         [ "pcpp::CotpLayer", "classpcpp_1_1_cotp_layer.html", null ],
         [ "pcpp::DhcpLayer", "classpcpp_1_1_dhcp_layer.html", null ],
@@ -605,6 +608,7 @@ var hierarchy =
     [ "pcpp::Layer::SerializedFields", "structpcpp_1_1_layer_1_1_serialized_fields.html", [
       [ "pcpp::ArpLayer::SerializedFields", "structpcpp_1_1_arp_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::AuthenticationHeaderLayer::SerializedFields", "structpcpp_1_1_authentication_header_layer_1_1_serialized_fields.html", null ],
+      [ "pcpp::BluetoothHciEventLayer::SerializedFields", "structpcpp_1_1_bluetooth_hci_event_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::CiscoHdlcLayer::SerializedFields", "structpcpp_1_1_cisco_hdlc_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::CotpLayer::SerializedFields", "structpcpp_1_1_cotp_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::DhcpLayer::SerializedFields", "structpcpp_1_1_dhcp_layer_1_1_serialized_fields.html", null ],
