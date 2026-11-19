@@ -100,6 +100,8 @@ var annotated_dup =
       [ "BgpNotificationMessageLayer", "classpcpp_1_1_bgp_notification_message_layer.html", "classpcpp_1_1_bgp_notification_message_layer" ],
       [ "BgpKeepaliveMessageLayer", "classpcpp_1_1_bgp_keepalive_message_layer.html", "classpcpp_1_1_bgp_keepalive_message_layer" ],
       [ "BgpRouteRefreshMessageLayer", "classpcpp_1_1_bgp_route_refresh_message_layer.html", "classpcpp_1_1_bgp_route_refresh_message_layer" ],
+      [ "BluetoothHciLayer", "classpcpp_1_1_bluetooth_hci_layer.html", "classpcpp_1_1_bluetooth_hci_layer" ],
+      [ "BluetoothHciEventLayer", "classpcpp_1_1_bluetooth_hci_event_layer.html", "classpcpp_1_1_bluetooth_hci_event_layer" ],
       [ "CiscoHdlcLayer", "classpcpp_1_1_cisco_hdlc_layer.html", "classpcpp_1_1_cisco_hdlc_layer" ],
       [ "cotphdr", "structpcpp_1_1cotphdr.html", "structpcpp_1_1cotphdr" ],
       [ "CotpLayer", "classpcpp_1_1_cotp_layer.html", "classpcpp_1_1_cotp_layer" ],
