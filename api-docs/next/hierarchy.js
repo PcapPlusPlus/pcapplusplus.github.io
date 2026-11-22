@@ -137,6 +137,12 @@ var hierarchy =
       [ "pcpp::ObjectFieldDescriptor< HeaderFieldObject >", "structpcpp_1_1_object_field_descriptor.html", [
         [ "pcpp::HttpMessage::SerializedFields::HeaderFieldObject", "structpcpp_1_1_http_message_1_1_serialized_fields_1_1_header_field_object.html", null ]
       ] ],
+      [ "pcpp::ObjectFieldDescriptor< CommandObject >", "structpcpp_1_1_object_field_descriptor.html", [
+        [ "pcpp::TelnetLayer::SerializedFields::CommandObject", "structpcpp_1_1_telnet_layer_1_1_serialized_fields_1_1_command_object.html", null ]
+      ] ],
+      [ "pcpp::ObjectFieldDescriptor< PathAttributeObject >", "structpcpp_1_1_object_field_descriptor.html", [
+        [ "pcpp::BgpUpdateMessageLayer::SerializedFields::PathAttributeObject", "structpcpp_1_1_bgp_update_message_layer_1_1_serialized_fields_1_1_path_attribute_object.html", null ]
+      ] ],
       [ "pcpp::ObjectFieldDescriptor< TimestampObject >", "structpcpp_1_1_object_field_descriptor.html", [
         [ "pcpp::Packet::SerializedFields::TimestampObject", "structpcpp_1_1_packet_1_1_serialized_fields_1_1_timestamp_object.html", null ]
       ] ],
@@ -154,8 +160,14 @@ var hierarchy =
         [ "pcpp::GeneveLayer::SerializedFields::OptionObject", "structpcpp_1_1_geneve_layer_1_1_serialized_fields_1_1_option_object.html", null ],
         [ "pcpp::SomeIpSdLayer::SerializedFields::OptionObject", "structpcpp_1_1_some_ip_sd_layer_1_1_serialized_fields_1_1_option_object.html", null ]
       ] ],
+      [ "pcpp::ObjectFieldDescriptor< OptionalParameterObject >", "structpcpp_1_1_object_field_descriptor.html", [
+        [ "pcpp::BgpOpenMessageLayer::SerializedFields::OptionalParameterObject", "structpcpp_1_1_bgp_open_message_layer_1_1_serialized_fields_1_1_optional_parameter_object.html", null ]
+      ] ],
       [ "pcpp::ObjectFieldDescriptor< EntryObject >", "structpcpp_1_1_object_field_descriptor.html", [
         [ "pcpp::SomeIpSdLayer::SerializedFields::EntryObject", "structpcpp_1_1_some_ip_sd_layer_1_1_serialized_fields_1_1_entry_object.html", null ]
+      ] ],
+      [ "pcpp::ObjectFieldDescriptor< PrefixAndIpObject >", "structpcpp_1_1_object_field_descriptor.html", [
+        [ "pcpp::BgpUpdateMessageLayer::SerializedFields::PrefixAndIpObject", "structpcpp_1_1_bgp_update_message_layer_1_1_serialized_fields_1_1_prefix_and_ip_object.html", null ]
       ] ],
       [ "pcpp::ObjectFieldDescriptor< Derived >", "structpcpp_1_1_object_field_descriptor.html", null ]
     ] ],
@@ -608,6 +620,13 @@ var hierarchy =
     [ "pcpp::Layer::SerializedFields", "structpcpp_1_1_layer_1_1_serialized_fields.html", [
       [ "pcpp::ArpLayer::SerializedFields", "structpcpp_1_1_arp_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::AuthenticationHeaderLayer::SerializedFields", "structpcpp_1_1_authentication_header_layer_1_1_serialized_fields.html", null ],
+      [ "pcpp::BgpLayer::SerializedFields", "structpcpp_1_1_bgp_layer_1_1_serialized_fields.html", [
+        [ "pcpp::BgpKeepaliveMessageLayer::SerializedFields", "structpcpp_1_1_bgp_keepalive_message_layer_1_1_serialized_fields.html", null ],
+        [ "pcpp::BgpNotificationMessageLayer::SerializedFields", "structpcpp_1_1_bgp_notification_message_layer_1_1_serialized_fields.html", null ],
+        [ "pcpp::BgpOpenMessageLayer::SerializedFields", "structpcpp_1_1_bgp_open_message_layer_1_1_serialized_fields.html", null ],
+        [ "pcpp::BgpRouteRefreshMessageLayer::SerializedFields", "structpcpp_1_1_bgp_route_refresh_message_layer_1_1_serialized_fields.html", null ],
+        [ "pcpp::BgpUpdateMessageLayer::SerializedFields", "structpcpp_1_1_bgp_update_message_layer_1_1_serialized_fields.html", null ]
+      ] ],
       [ "pcpp::BluetoothHciEventLayer::SerializedFields", "structpcpp_1_1_bluetooth_hci_event_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::CiscoHdlcLayer::SerializedFields", "structpcpp_1_1_cisco_hdlc_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::CotpLayer::SerializedFields", "structpcpp_1_1_cotp_layer_1_1_serialized_fields.html", null ],
@@ -661,6 +680,16 @@ var hierarchy =
       [ "pcpp::PPPoELayer::SerializedFields", "structpcpp_1_1_p_p_po_e_layer_1_1_serialized_fields.html", [
         [ "pcpp::PPPoEDiscoveryLayer::SerializedFields", "structpcpp_1_1_p_p_po_e_discovery_layer_1_1_serialized_fields.html", null ]
       ] ],
+      [ "pcpp::QuicV1Layer::SerializedFields", "structpcpp_1_1_quic_v1_layer_1_1_serialized_fields.html", [
+        [ "pcpp::QuicV1LongHeaderLayer::SerializedFields", "structpcpp_1_1_quic_v1_long_header_layer_1_1_serialized_fields.html", [
+          [ "pcpp::QuicV1EstablishmentLayer::SerializedFields", "structpcpp_1_1_quic_v1_establishment_layer_1_1_serialized_fields.html", [
+            [ "pcpp::QuicV1InitialLayer::SerializedFields", "structpcpp_1_1_quic_v1_initial_layer_1_1_serialized_fields.html", null ]
+          ] ],
+          [ "pcpp::QuicV1RetryLayer::SerializedFields", "structpcpp_1_1_quic_v1_retry_layer_1_1_serialized_fields.html", null ],
+          [ "pcpp::QuicV1VersionNegotiationLayer::SerializedFields", "structpcpp_1_1_quic_v1_version_negotiation_layer_1_1_serialized_fields.html", null ]
+        ] ],
+        [ "pcpp::QuicV1OneRttLayer::SerializedFields", "structpcpp_1_1_quic_v1_one_rtt_layer_1_1_serialized_fields.html", null ]
+      ] ],
       [ "pcpp::RadiusLayer::SerializedFields", "structpcpp_1_1_radius_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::S7CommLayer::SerializedFields", "structpcpp_1_1_s7_comm_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::Sll2Layer::SerializedFields", "structpcpp_1_1_sll2_layer_1_1_serialized_fields.html", null ],
@@ -679,6 +708,7 @@ var hierarchy =
         ] ]
       ] ],
       [ "pcpp::TcpLayer::SerializedFields", "structpcpp_1_1_tcp_layer_1_1_serialized_fields.html", null ],
+      [ "pcpp::TelnetLayer::SerializedFields", "structpcpp_1_1_telnet_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::TpktLayer::SerializedFields", "structpcpp_1_1_tpkt_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::UdpLayer::SerializedFields", "structpcpp_1_1_udp_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::VlanLayer::SerializedFields", "structpcpp_1_1_vlan_layer_1_1_serialized_fields.html", null ],

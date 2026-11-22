@@ -4,6 +4,7 @@ var classpcpp_1_1_quic_v1_layer =
     [ "quic_common_header", "structpcpp_1_1_quic_v1_layer_1_1quic__common__header.html", null ],
     [ "quic_long_header", "structpcpp_1_1_quic_v1_layer_1_1quic__long__header.html", null ],
     [ "quic_short_header", "structpcpp_1_1_quic_v1_layer_1_1quic__short__header.html", null ],
+    [ "SerializedFields", "structpcpp_1_1_quic_v1_layer_1_1_serialized_fields.html", null ],
     [ "QuicHeaderForm", "classpcpp_1_1_quic_v1_layer.html#a0e3b109f2ab54e8aab2511c00bfa024a", [
       [ "ShortHeader", "classpcpp_1_1_quic_v1_layer.html#a0e3b109f2ab54e8aab2511c00bfa024aa6c9689edee628af15659a682c8c81459", null ],
       [ "LongHeader", "classpcpp_1_1_quic_v1_layer.html#a0e3b109f2ab54e8aab2511c00bfa024aaa6244c7b658a91e974123523474be7da", null ]
@@ -22,5 +23,6 @@ var classpcpp_1_1_quic_v1_layer =
     [ "getOsiModelLayer", "classpcpp_1_1_quic_v1_layer.html#ade6bcf00738e7f18f9dabedac316bbcf", null ],
     [ "getPacketType", "classpcpp_1_1_quic_v1_layer.html#af8a97eee0656b17f8c5caff296a69e19", null ],
     [ "parseNextLayer", "classpcpp_1_1_quic_v1_layer.html#adeaf5c13e9caeef3eab76e122abb024b", null ],
+    [ "serializeLayer", "classpcpp_1_1_quic_v1_layer.html#a2f7ba84b4e21a23e07ba301539ea823c", null ],
     [ "toString", "classpcpp_1_1_quic_v1_layer.html#a482623483a8968e4692d3cca037ccace", null ]
 ];

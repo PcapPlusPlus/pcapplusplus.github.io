@@ -85,7 +85,9 @@ $(document).ready(function(){initNavTree('classpcpp_1_1_quic_v1_version_negotiat
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classpcpp_1_1_quic_v1_version_negotiation_layer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pcpp::QuicV1VersionNegotiationLayer Class Reference</div>  </div>
@@ -106,6 +108,11 @@ Inheritance diagram for pcpp::QuicV1VersionNegotiationLayer:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpcpp_1_1_quic_v1_version_negotiation_layer_1_1_serialized_fields.html">SerializedFields</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6338515eeb2165ae644aaca3b4d1aad6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_quic_v1_layer.html#a337284e195df2ba07ec1aa4dea0b6bc7">QuicPacketType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_quic_v1_version_negotiation_layer.html#a6338515eeb2165ae644aaca3b4d1aad6">getPacketType</a> () const override</td></tr>
@@ -172,29 +179,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a4c5d6f648a6878895a714004f937830d inherit pub_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a4c5d6f648a6878895a714004f937830d">getDataPtr</a> (size_t offset=0) const override</td></tr>
 <tr class="separator:a4c5d6f648a6878895a714004f937830d inherit pub_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_classpcpp_1_1_quic_v1_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classpcpp_1_1_quic_v1_layer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classpcpp_1_1_quic_v1_layer.html">pcpp::QuicV1Layer</a></td></tr>
-<tr class="memitem:a337284e195df2ba07ec1aa4dea0b6bc7 inherit pub_types_classpcpp_1_1_quic_v1_layer"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_quic_v1_layer.html#a337284e195df2ba07ec1aa4dea0b6bc7">QuicPacketType</a> : uint8_t { <br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_quic_v1_layer.html#a337284e195df2ba07ec1aa4dea0b6bc7a4f2a91e15af2631ff9424564b8a45fb2">Initial</a> = 0
-, <a class="el" href="classpcpp_1_1_quic_v1_layer.html#a337284e195df2ba07ec1aa4dea0b6bc7a7bcc8e7fd95b765217b8edf33693100a">ZeroRTT</a> = 1
-, <a class="el" href="classpcpp_1_1_quic_v1_layer.html#a337284e195df2ba07ec1aa4dea0b6bc7a7559811a22a9c4b79332bd85a197e4c5">Handshake</a> = 2
-, <a class="el" href="classpcpp_1_1_quic_v1_layer.html#a337284e195df2ba07ec1aa4dea0b6bc7a6327b4e59f58137083214a1fec358855">Retry</a> = 3
-, <br />
-&#160;&#160;<a class="el" href="classpcpp_1_1_quic_v1_layer.html#a337284e195df2ba07ec1aa4dea0b6bc7aefca5a1dffc169639af2a0b4fbf88754">VersionNegotiation</a> = 253
-, <a class="el" href="classpcpp_1_1_quic_v1_layer.html#a337284e195df2ba07ec1aa4dea0b6bc7ae04f1d94c053a439406ce62ba6f0ad41">OneRtt</a> = 254
-<br />
- }</td></tr>
-<tr class="separator:a337284e195df2ba07ec1aa4dea0b6bc7 inherit pub_types_classpcpp_1_1_quic_v1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e3b109f2ab54e8aab2511c00bfa024a inherit pub_types_classpcpp_1_1_quic_v1_layer"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_quic_v1_layer.html#a0e3b109f2ab54e8aab2511c00bfa024a">QuicHeaderForm</a> : uint8_t { <a class="el" href="classpcpp_1_1_quic_v1_layer.html#a0e3b109f2ab54e8aab2511c00bfa024aa6c9689edee628af15659a682c8c81459">ShortHeader</a> = 0
-, <a class="el" href="classpcpp_1_1_quic_v1_layer.html#a0e3b109f2ab54e8aab2511c00bfa024aaa6244c7b658a91e974123523474be7da">LongHeader</a> = 1
- }</td></tr>
-<tr class="separator:a0e3b109f2ab54e8aab2511c00bfa024a inherit pub_types_classpcpp_1_1_quic_v1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_methods_classpcpp_1_1_quic_v1_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classpcpp_1_1_quic_v1_layer')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classpcpp_1_1_quic_v1_layer.html">pcpp::QuicV1Layer</a></td></tr>
-<tr class="memitem:ac4158afd80641f70bd85166471da3ec5 inherit pub_static_methods_classpcpp_1_1_quic_v1_layer"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classpcpp_1_1_quic_v1_layer.html">QuicV1Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_quic_v1_layer.html#ac4158afd80641f70bd85166471da3ec5">parseQuicLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_layer.html">Layer</a> *prevLayer, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet)</td></tr>
-<tr class="separator:ac4158afd80641f70bd85166471da3ec5 inherit pub_static_methods_classpcpp_1_1_quic_v1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6f0d306f930fbf9e11a4aeb64c0c0fd inherit pub_static_methods_classpcpp_1_1_quic_v1_layer"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_quic_v1_layer.html#ab6f0d306f930fbf9e11a4aeb64c0c0fd">isQuicPort</a> (uint16_t port)</td></tr>
-<tr class="separator:ab6f0d306f930fbf9e11a4aeb64c0c0fd inherit pub_static_methods_classpcpp_1_1_quic_v1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:acd323e7da65790809f7ee1228f754d6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_quic_v1_version_negotiation_layer.html#acd323e7da65790809f7ee1228f754d6b">serializeLayer</a> (<a class="el" href="classpcpp_1_1_object_scope.html">ObjectScope</a> &amp;serializer) const override</td></tr>
+<tr class="separator:acd323e7da65790809f7ee1228f754d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classpcpp_1_1_layer"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classpcpp_1_1_layer')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td></tr>
 <tr class="memitem:a92fb19d907170b212986262074418b09 inherit pro_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_packet.html">Packet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a92fb19d907170b212986262074418b09">getAttachedPacket</a> ()</td></tr>
 <tr class="memdesc:a92fb19d907170b212986262074418b09 inherit pro_methods_classpcpp_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the <a class="el" href="classpcpp_1_1_packet.html">Packet</a> this layer is attached to (if any).  <a href="classpcpp_1_1_layer.html#a92fb19d907170b212986262074418b09">More...</a><br /></td></tr>
@@ -241,8 +229,30 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a06c29d3fe229518514ef483b153a0775 inherit pro_methods_classpcpp_1_1_layer"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classpcpp_1_1_layer.html">Layer</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a06c29d3fe229518514ef483b153a0775">tryConstructNextLayerFromFactoryWithFallback</a> (TFactory factoryFn, uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet, Args &amp;&amp;... extraArgs)</td></tr>
 <tr class="memdesc:a06c29d3fe229518514ef483b153a0775 inherit pro_methods_classpcpp_1_1_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to construct the next layer in the protocol stack using a factory functor with a fallback option.  <a href="classpcpp_1_1_layer.html#a06c29d3fe229518514ef483b153a0775">More...</a><br /></td></tr>
 <tr class="separator:a06c29d3fe229518514ef483b153a0775 inherit pro_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8392ededd5fe3a5ab1c315e5ed53496f inherit pro_methods_classpcpp_1_1_layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#a8392ededd5fe3a5ab1c315e5ed53496f">serializeLayer</a> (<a class="el" href="classpcpp_1_1_object_scope.html">ObjectScope</a> &amp;serializer) const</td></tr>
-<tr class="separator:a8392ededd5fe3a5ab1c315e5ed53496f inherit pro_methods_classpcpp_1_1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classpcpp_1_1_quic_v1_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classpcpp_1_1_quic_v1_layer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classpcpp_1_1_quic_v1_layer.html">pcpp::QuicV1Layer</a></td></tr>
+<tr class="memitem:a337284e195df2ba07ec1aa4dea0b6bc7 inherit pub_types_classpcpp_1_1_quic_v1_layer"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_quic_v1_layer.html#a337284e195df2ba07ec1aa4dea0b6bc7">QuicPacketType</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_quic_v1_layer.html#a337284e195df2ba07ec1aa4dea0b6bc7a4f2a91e15af2631ff9424564b8a45fb2">Initial</a> = 0
+, <a class="el" href="classpcpp_1_1_quic_v1_layer.html#a337284e195df2ba07ec1aa4dea0b6bc7a7bcc8e7fd95b765217b8edf33693100a">ZeroRTT</a> = 1
+, <a class="el" href="classpcpp_1_1_quic_v1_layer.html#a337284e195df2ba07ec1aa4dea0b6bc7a7559811a22a9c4b79332bd85a197e4c5">Handshake</a> = 2
+, <a class="el" href="classpcpp_1_1_quic_v1_layer.html#a337284e195df2ba07ec1aa4dea0b6bc7a6327b4e59f58137083214a1fec358855">Retry</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="classpcpp_1_1_quic_v1_layer.html#a337284e195df2ba07ec1aa4dea0b6bc7aefca5a1dffc169639af2a0b4fbf88754">VersionNegotiation</a> = 253
+, <a class="el" href="classpcpp_1_1_quic_v1_layer.html#a337284e195df2ba07ec1aa4dea0b6bc7ae04f1d94c053a439406ce62ba6f0ad41">OneRtt</a> = 254
+<br />
+ }</td></tr>
+<tr class="separator:a337284e195df2ba07ec1aa4dea0b6bc7 inherit pub_types_classpcpp_1_1_quic_v1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e3b109f2ab54e8aab2511c00bfa024a inherit pub_types_classpcpp_1_1_quic_v1_layer"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_quic_v1_layer.html#a0e3b109f2ab54e8aab2511c00bfa024a">QuicHeaderForm</a> : uint8_t { <a class="el" href="classpcpp_1_1_quic_v1_layer.html#a0e3b109f2ab54e8aab2511c00bfa024aa6c9689edee628af15659a682c8c81459">ShortHeader</a> = 0
+, <a class="el" href="classpcpp_1_1_quic_v1_layer.html#a0e3b109f2ab54e8aab2511c00bfa024aaa6244c7b658a91e974123523474be7da">LongHeader</a> = 1
+ }</td></tr>
+<tr class="separator:a0e3b109f2ab54e8aab2511c00bfa024a inherit pub_types_classpcpp_1_1_quic_v1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classpcpp_1_1_quic_v1_layer"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classpcpp_1_1_quic_v1_layer')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classpcpp_1_1_quic_v1_layer.html">pcpp::QuicV1Layer</a></td></tr>
+<tr class="memitem:ac4158afd80641f70bd85166471da3ec5 inherit pub_static_methods_classpcpp_1_1_quic_v1_layer"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classpcpp_1_1_quic_v1_layer.html">QuicV1Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_quic_v1_layer.html#ac4158afd80641f70bd85166471da3ec5">parseQuicLayer</a> (uint8_t *data, size_t dataLen, <a class="el" href="classpcpp_1_1_layer.html">Layer</a> *prevLayer, <a class="el" href="classpcpp_1_1_packet.html">Packet</a> *packet)</td></tr>
+<tr class="separator:ac4158afd80641f70bd85166471da3ec5 inherit pub_static_methods_classpcpp_1_1_quic_v1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f0d306f930fbf9e11a4aeb64c0c0fd inherit pub_static_methods_classpcpp_1_1_quic_v1_layer"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_quic_v1_layer.html#ab6f0d306f930fbf9e11a4aeb64c0c0fd">isQuicPort</a> (uint16_t port)</td></tr>
+<tr class="separator:ab6f0d306f930fbf9e11a4aeb64c0c0fd inherit pub_static_methods_classpcpp_1_1_quic_v1_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_static_methods_classpcpp_1_1_layer"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classpcpp_1_1_layer')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="classpcpp_1_1_layer.html">pcpp::Layer</a></td></tr>
 <tr class="memitem:acb031e00ee13b0c299cc6c0458a61a18 inherit pro_static_methods_classpcpp_1_1_layer"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:acb031e00ee13b0c299cc6c0458a61a18 inherit pro_static_methods_classpcpp_1_1_layer"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classpcpp_1_1_layer.html#acb031e00ee13b0c299cc6c0458a61a18">canReinterpretAs</a> (const uint8_t *data, size_t dataLen)</td></tr>
@@ -326,13 +336,48 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="acd323e7da65790809f7ee1228f754d6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd323e7da65790809f7ee1228f754d6b">&#9670;&nbsp;</a></span>serializeLayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pcpp::QuicV1VersionNegotiationLayer::serializeLayer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classpcpp_1_1_object_scope.html">ObjectScope</a> &amp;&#160;</td>
+          <td class="paramname"><em>serializer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Serializes the layer's data into a provided serializer object. This is used for generating serialized representations (like JSON) of the packet layers. This method should be overridden by derived layers to provide specific serialization logic.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">serializer</td><td>The object scope serializer to which the layer details should be written. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="classpcpp_1_1_quic_v1_long_header_layer.html#a7fd08795f7eec2b5988abd7840299748">pcpp::QuicV1LongHeaderLayer</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacepcpp.html">pcpp</a></li><li class="navelem"><a class="el" href="classpcpp_1_1_quic_v1_version_negotiation_layer.html">QuicV1VersionNegotiationLayer</a></li>
-    <li class="footer">Generated on Fri Nov 20 2026 06:26:58 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Nov 22 2026 08:57:22 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
