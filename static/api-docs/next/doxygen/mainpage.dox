@@ -32,6 +32,7 @@
 *   - pcpp::Layer, Layer.h - protocol base class
 *
 * <b>Supported protocols (Packet++):</b>
+*   - pcpp::BluetoothHciLayer, pcpp::BluetoothHciEventLayer, BluetoothHciLayer.h - Bluetooth HCI protocol
 *   - pcpp::CiscoHdlcLayer, CiscoHdlcLayer.h - Cisco HDLC protocol
 *   - pcpp::EthLayer, EthLayer.h - Ethernet II protocol
 *   - pcpp::GeneveLayer, GeneveLayer.h - GENEVE protocol
