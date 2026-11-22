@@ -1,5 +1,6 @@
 var classpcpp_1_1_bgp_keepalive_message_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_bgp_keepalive_message_layer_1_1_serialized_fields.html", null ],
     [ "bgp_keepalive_message", "classpcpp_1_1_bgp_keepalive_message_layer.html#a23e6c00d4eb469cd2d315e98edd15601", null ],
     [ "BgpKeepaliveMessageLayer", "classpcpp_1_1_bgp_keepalive_message_layer.html#a4fee9ec727c087173c4d7a89b5a04040", null ],
     [ "BgpKeepaliveMessageLayer", "classpcpp_1_1_bgp_keepalive_message_layer.html#abd74914ad693ae89d792739a795765d9", null ],

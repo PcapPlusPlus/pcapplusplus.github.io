@@ -6,17 +6,26 @@ var files_dup =
     [ "BgpLayer.h", "_bgp_layer_8h.html", [
       [ "BgpLayer", "classpcpp_1_1_bgp_layer.html", "classpcpp_1_1_bgp_layer" ],
       [ "bgp_common_header", "structpcpp_1_1_bgp_layer_1_1bgp__common__header.html", "structpcpp_1_1_bgp_layer_1_1bgp__common__header" ],
+      [ "SerializedFields", "structpcpp_1_1_bgp_layer_1_1_serialized_fields.html", null ],
       [ "BgpOpenMessageLayer", "classpcpp_1_1_bgp_open_message_layer.html", "classpcpp_1_1_bgp_open_message_layer" ],
       [ "bgp_open_message", "structpcpp_1_1_bgp_open_message_layer_1_1bgp__open__message.html", "structpcpp_1_1_bgp_open_message_layer_1_1bgp__open__message" ],
       [ "optional_parameter", "structpcpp_1_1_bgp_open_message_layer_1_1optional__parameter.html", "structpcpp_1_1_bgp_open_message_layer_1_1optional__parameter" ],
+      [ "SerializedFields", "structpcpp_1_1_bgp_open_message_layer_1_1_serialized_fields.html", "structpcpp_1_1_bgp_open_message_layer_1_1_serialized_fields" ],
+      [ "OptionalParameterObject", "structpcpp_1_1_bgp_open_message_layer_1_1_serialized_fields_1_1_optional_parameter_object.html", "structpcpp_1_1_bgp_open_message_layer_1_1_serialized_fields_1_1_optional_parameter_object" ],
       [ "BgpUpdateMessageLayer", "classpcpp_1_1_bgp_update_message_layer.html", "classpcpp_1_1_bgp_update_message_layer" ],
       [ "prefix_and_ip", "structpcpp_1_1_bgp_update_message_layer_1_1prefix__and__ip.html", "structpcpp_1_1_bgp_update_message_layer_1_1prefix__and__ip" ],
       [ "path_attribute", "structpcpp_1_1_bgp_update_message_layer_1_1path__attribute.html", "structpcpp_1_1_bgp_update_message_layer_1_1path__attribute" ],
+      [ "SerializedFields", "structpcpp_1_1_bgp_update_message_layer_1_1_serialized_fields.html", "structpcpp_1_1_bgp_update_message_layer_1_1_serialized_fields" ],
+      [ "PrefixAndIpObject", "structpcpp_1_1_bgp_update_message_layer_1_1_serialized_fields_1_1_prefix_and_ip_object.html", "structpcpp_1_1_bgp_update_message_layer_1_1_serialized_fields_1_1_prefix_and_ip_object" ],
+      [ "PathAttributeObject", "structpcpp_1_1_bgp_update_message_layer_1_1_serialized_fields_1_1_path_attribute_object.html", "structpcpp_1_1_bgp_update_message_layer_1_1_serialized_fields_1_1_path_attribute_object" ],
       [ "BgpNotificationMessageLayer", "classpcpp_1_1_bgp_notification_message_layer.html", "classpcpp_1_1_bgp_notification_message_layer" ],
       [ "bgp_notification_message", "structpcpp_1_1_bgp_notification_message_layer_1_1bgp__notification__message.html", "structpcpp_1_1_bgp_notification_message_layer_1_1bgp__notification__message" ],
+      [ "SerializedFields", "structpcpp_1_1_bgp_notification_message_layer_1_1_serialized_fields.html", null ],
       [ "BgpKeepaliveMessageLayer", "classpcpp_1_1_bgp_keepalive_message_layer.html", "classpcpp_1_1_bgp_keepalive_message_layer" ],
+      [ "SerializedFields", "structpcpp_1_1_bgp_keepalive_message_layer_1_1_serialized_fields.html", null ],
       [ "BgpRouteRefreshMessageLayer", "classpcpp_1_1_bgp_route_refresh_message_layer.html", "classpcpp_1_1_bgp_route_refresh_message_layer" ],
-      [ "bgp_route_refresh_message", "structpcpp_1_1_bgp_route_refresh_message_layer_1_1bgp__route__refresh__message.html", "structpcpp_1_1_bgp_route_refresh_message_layer_1_1bgp__route__refresh__message" ]
+      [ "bgp_route_refresh_message", "structpcpp_1_1_bgp_route_refresh_message_layer_1_1bgp__route__refresh__message.html", "structpcpp_1_1_bgp_route_refresh_message_layer_1_1bgp__route__refresh__message" ],
+      [ "SerializedFields", "structpcpp_1_1_bgp_route_refresh_message_layer_1_1_serialized_fields.html", null ]
     ] ],
     [ "BluetoothHciLayer.h", "_bluetooth_hci_layer_8h.html", [
       [ "BluetoothHciLayer", "classpcpp_1_1_bluetooth_hci_layer.html", "classpcpp_1_1_bluetooth_hci_layer" ],
@@ -245,19 +254,26 @@ var files_dup =
     [ "QuicLayer.h", "_quic_layer_8h.html", [
       [ "QuicV1Layer", "classpcpp_1_1_quic_v1_layer.html", "classpcpp_1_1_quic_v1_layer" ],
       [ "ProtectedPayload", "structpcpp_1_1_quic_v1_layer_1_1_protected_payload.html", "structpcpp_1_1_quic_v1_layer_1_1_protected_payload" ],
+      [ "SerializedFields", "structpcpp_1_1_quic_v1_layer_1_1_serialized_fields.html", null ],
       [ "quic_common_header", "structpcpp_1_1_quic_v1_layer_1_1quic__common__header.html", null ],
       [ "quic_long_header", "structpcpp_1_1_quic_v1_layer_1_1quic__long__header.html", null ],
       [ "quic_short_header", "structpcpp_1_1_quic_v1_layer_1_1quic__short__header.html", null ],
       [ "QuicV1LongHeaderLayer", "classpcpp_1_1_quic_v1_long_header_layer.html", "classpcpp_1_1_quic_v1_long_header_layer" ],
+      [ "SerializedFields", "structpcpp_1_1_quic_v1_long_header_layer_1_1_serialized_fields.html", null ],
       [ "OffsetAndLength", "structpcpp_1_1_quic_v1_long_header_layer_1_1_offset_and_length.html", "structpcpp_1_1_quic_v1_long_header_layer_1_1_offset_and_length" ],
       [ "QuicV1EstablishmentLayer", "classpcpp_1_1_quic_v1_establishment_layer.html", "classpcpp_1_1_quic_v1_establishment_layer" ],
+      [ "SerializedFields", "structpcpp_1_1_quic_v1_establishment_layer_1_1_serialized_fields.html", null ],
       [ "VarintValueAndSize", "structpcpp_1_1_quic_v1_establishment_layer_1_1_varint_value_and_size.html", "structpcpp_1_1_quic_v1_establishment_layer_1_1_varint_value_and_size" ],
       [ "QuicV1InitialLayer", "classpcpp_1_1_quic_v1_initial_layer.html", "classpcpp_1_1_quic_v1_initial_layer" ],
+      [ "SerializedFields", "structpcpp_1_1_quic_v1_initial_layer_1_1_serialized_fields.html", null ],
       [ "QuicV1ZeroRttLayer", "classpcpp_1_1_quic_v1_zero_rtt_layer.html", null ],
       [ "QuicV1HandshakeLayer", "classpcpp_1_1_quic_v1_handshake_layer.html", null ],
       [ "QuicV1RetryLayer", "classpcpp_1_1_quic_v1_retry_layer.html", "classpcpp_1_1_quic_v1_retry_layer" ],
+      [ "SerializedFields", "structpcpp_1_1_quic_v1_retry_layer_1_1_serialized_fields.html", null ],
       [ "QuicV1VersionNegotiationLayer", "classpcpp_1_1_quic_v1_version_negotiation_layer.html", "classpcpp_1_1_quic_v1_version_negotiation_layer" ],
-      [ "QuicV1OneRttLayer", "classpcpp_1_1_quic_v1_one_rtt_layer.html", "classpcpp_1_1_quic_v1_one_rtt_layer" ]
+      [ "SerializedFields", "structpcpp_1_1_quic_v1_version_negotiation_layer_1_1_serialized_fields.html", null ],
+      [ "QuicV1OneRttLayer", "classpcpp_1_1_quic_v1_one_rtt_layer.html", "classpcpp_1_1_quic_v1_one_rtt_layer" ],
+      [ "SerializedFields", "structpcpp_1_1_quic_v1_one_rtt_layer_1_1_serialized_fields.html", null ]
     ] ],
     [ "RadiusLayer.h", "_radius_layer_8h.html", [
       [ "radius_header", "structpcpp_1_1radius__header.html", "structpcpp_1_1radius__header" ],
@@ -357,7 +373,9 @@ var files_dup =
       [ "TcpReassembly", "classpcpp_1_1_tcp_reassembly.html", "classpcpp_1_1_tcp_reassembly" ]
     ] ],
     [ "TelnetLayer.h", "_telnet_layer_8h.html", [
-      [ "TelnetLayer", "classpcpp_1_1_telnet_layer.html", "classpcpp_1_1_telnet_layer" ]
+      [ "TelnetLayer", "classpcpp_1_1_telnet_layer.html", "classpcpp_1_1_telnet_layer" ],
+      [ "SerializedFields", "structpcpp_1_1_telnet_layer_1_1_serialized_fields.html", "structpcpp_1_1_telnet_layer_1_1_serialized_fields" ],
+      [ "CommandObject", "structpcpp_1_1_telnet_layer_1_1_serialized_fields_1_1_command_object.html", "structpcpp_1_1_telnet_layer_1_1_serialized_fields_1_1_command_object" ]
     ] ],
     [ "TextBasedProtocol.h", "_text_based_protocol_8h.html", "_text_based_protocol_8h" ],
     [ "TimespecTimeval.h", "_timespec_timeval_8h_source.html", null ],

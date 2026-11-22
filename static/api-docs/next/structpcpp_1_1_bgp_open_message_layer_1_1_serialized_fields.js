@@ -1,0 +1,4 @@
+var structpcpp_1_1_bgp_open_message_layer_1_1_serialized_fields =
+[
+    [ "OptionalParameterObject", "structpcpp_1_1_bgp_open_message_layer_1_1_serialized_fields_1_1_optional_parameter_object.html", "structpcpp_1_1_bgp_open_message_layer_1_1_serialized_fields_1_1_optional_parameter_object" ]
+];

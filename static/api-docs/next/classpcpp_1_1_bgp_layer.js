@@ -1,6 +1,7 @@
 var classpcpp_1_1_bgp_layer =
 [
     [ "bgp_common_header", "structpcpp_1_1_bgp_layer_1_1bgp__common__header.html", "structpcpp_1_1_bgp_layer_1_1bgp__common__header" ],
+    [ "SerializedFields", "structpcpp_1_1_bgp_layer_1_1_serialized_fields.html", null ],
     [ "BgpMessageType", "classpcpp_1_1_bgp_layer.html#a2490690b9c7e6b33c1e5133ebd64ebe8", [
       [ "Open", "classpcpp_1_1_bgp_layer.html#a2490690b9c7e6b33c1e5133ebd64ebe8a955d0fce69e217cc22632d707dd062d4", null ],
       [ "Update", "classpcpp_1_1_bgp_layer.html#a2490690b9c7e6b33c1e5133ebd64ebe8a2e044daae934f4f4495e829c590678b1", null ],
@@ -14,5 +15,6 @@ var classpcpp_1_1_bgp_layer =
     [ "getMessageTypeAsString", "classpcpp_1_1_bgp_layer.html#a5594eb5a1adbaeab0323cdfc76a7d7a4", null ],
     [ "getOsiModelLayer", "classpcpp_1_1_bgp_layer.html#a7e723f68da36e621e5ccd104f624d6c3", null ],
     [ "parseNextLayer", "classpcpp_1_1_bgp_layer.html#aaab01980b32075c66f57024f5fdd32fb", null ],
+    [ "serializeLayer", "classpcpp_1_1_bgp_layer.html#a5eefddd244e1876574546b470daf6485", null ],
     [ "toString", "classpcpp_1_1_bgp_layer.html#a2798dd63e178d477734309e65987706b", null ]
 ];

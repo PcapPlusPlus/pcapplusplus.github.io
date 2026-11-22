@@ -1,0 +1,5 @@
+var structpcpp_1_1_bgp_update_message_layer_1_1_serialized_fields =
+[
+    [ "PathAttributeObject", "structpcpp_1_1_bgp_update_message_layer_1_1_serialized_fields_1_1_path_attribute_object.html", "structpcpp_1_1_bgp_update_message_layer_1_1_serialized_fields_1_1_path_attribute_object" ],
+    [ "PrefixAndIpObject", "structpcpp_1_1_bgp_update_message_layer_1_1_serialized_fields_1_1_prefix_and_ip_object.html", "structpcpp_1_1_bgp_update_message_layer_1_1_serialized_fields_1_1_prefix_and_ip_object" ]
+];

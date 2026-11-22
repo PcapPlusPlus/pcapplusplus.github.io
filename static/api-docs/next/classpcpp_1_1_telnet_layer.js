@@ -1,5 +1,6 @@
 var classpcpp_1_1_telnet_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_telnet_layer_1_1_serialized_fields.html", "structpcpp_1_1_telnet_layer_1_1_serialized_fields" ],
     [ "TelnetCommand", "classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589", [
       [ "TelnetCommandEndOfPacket", "classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589a11f501615c77a0eb9d18a89c0360ce29", null ],
       [ "EndOfFile", "classpcpp_1_1_telnet_layer.html#abe18a98c3b5908e72f446e52042ba589a9556e151da49cd4bcf0352857cb33509", null ],
@@ -82,7 +83,7 @@ var classpcpp_1_1_telnet_layer =
     ] ],
     [ "TelnetLayer", "classpcpp_1_1_telnet_layer.html#abca8635ca2fc5a39d26e7c7497c0e302", null ],
     [ "computeCalculateFields", "classpcpp_1_1_telnet_layer.html#a0c4ad8d22cf1ce9a29c1b518b9cb0806", null ],
-    [ "getDataAsString", "classpcpp_1_1_telnet_layer.html#ae89af0cbd8aadb79b8e0212b312f06b8", null ],
+    [ "getDataAsString", "classpcpp_1_1_telnet_layer.html#aa361267bade001794430e67a776423e7", null ],
     [ "getFirstCommand", "classpcpp_1_1_telnet_layer.html#ad6dffd3d1295d98bef2ce94daec38a15", null ],
     [ "getHeaderLen", "classpcpp_1_1_telnet_layer.html#af410e8eac0ba887c9fdf1b2aff352de4", null ],
     [ "getNextCommand", "classpcpp_1_1_telnet_layer.html#a6e5366ce34dd207aa861fbe6b62e8365", null ],
@@ -94,5 +95,6 @@ var classpcpp_1_1_telnet_layer =
     [ "getOsiModelLayer", "classpcpp_1_1_telnet_layer.html#a7b08665e0479e5cbb8c889f6ea59f340", null ],
     [ "getTotalNumberOfCommands", "classpcpp_1_1_telnet_layer.html#ab09bace32749aa90fda52bf2d170b763", null ],
     [ "parseNextLayer", "classpcpp_1_1_telnet_layer.html#ad53f6e842cca414b6922e2ada866b20f", null ],
+    [ "serializeLayer", "classpcpp_1_1_telnet_layer.html#a86fa045ef1beaefb2d9de59981089f17", null ],
     [ "toString", "classpcpp_1_1_telnet_layer.html#a726623895751a15a81b7759aa992c243", null ]
 ];
