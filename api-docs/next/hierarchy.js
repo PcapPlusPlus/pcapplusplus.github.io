@@ -111,6 +111,7 @@ var hierarchy =
     ] ],
     [ "pcpp::dhcp_header", "structpcpp_1_1dhcp__header.html", null ],
     [ "pcpp::dhcpv6_header", "structpcpp_1_1dhcpv6__header.html", null ],
+    [ "pcpp::dhcpv6_relay_header", "structpcpp_1_1dhcpv6__relay__header.html", null ],
     [ "pcpp::dnshdr", "structpcpp_1_1dnshdr.html", null ],
     [ "pcpp::doiphdr", "structpcpp_1_1doiphdr.html", [
       [ "pcpp::DoIpDiagnosticBase::common_diagnostic_header", "structpcpp_1_1_do_ip_diagnostic_base_1_1common__diagnostic__header.html", null ]
@@ -248,7 +249,10 @@ var hierarchy =
         [ "pcpp::CiscoHdlcLayer", "classpcpp_1_1_cisco_hdlc_layer.html", null ],
         [ "pcpp::CotpLayer", "classpcpp_1_1_cotp_layer.html", null ],
         [ "pcpp::DhcpLayer", "classpcpp_1_1_dhcp_layer.html", null ],
-        [ "pcpp::DhcpV6Layer", "classpcpp_1_1_dhcp_v6_layer.html", null ],
+        [ "pcpp::DhcpV6LayerBase", "classpcpp_1_1_dhcp_v6_layer_base.html", [
+          [ "pcpp::DhcpV6Layer", "classpcpp_1_1_dhcp_v6_layer.html", null ],
+          [ "pcpp::DhcpV6RelayLayer", "classpcpp_1_1_dhcp_v6_relay_layer.html", null ]
+        ] ],
         [ "pcpp::DnsLayer", "classpcpp_1_1_dns_layer.html", [
           [ "pcpp::DnsOverTcpLayer", "classpcpp_1_1_dns_over_tcp_layer.html", null ]
         ] ],
@@ -632,6 +636,7 @@ var hierarchy =
       [ "pcpp::CotpLayer::SerializedFields", "structpcpp_1_1_cotp_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::DhcpLayer::SerializedFields", "structpcpp_1_1_dhcp_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::DhcpV6Layer::SerializedFields", "structpcpp_1_1_dhcp_v6_layer_1_1_serialized_fields.html", null ],
+      [ "pcpp::DhcpV6RelayLayer::SerializedFields", "structpcpp_1_1_dhcp_v6_relay_layer_1_1_serialized_fields.html", null ],
       [ "pcpp::DnsLayer::SerializedFields", "structpcpp_1_1_dns_layer_1_1_serialized_fields.html", [
         [ "pcpp::DnsOverTcpLayer::SerializedFields", "structpcpp_1_1_dns_over_tcp_layer_1_1_serialized_fields.html", null ]
       ] ],
