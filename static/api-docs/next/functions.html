@@ -187,17 +187,17 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 </li>
 <li>addOption()
 : <a class="el" href="classpcpp_1_1_dhcp_layer.html#acb42fbbbfe2166aa0dc08de7abd6e380">pcpp::DhcpLayer</a>
-, <a class="el" href="classpcpp_1_1_dhcp_v6_layer.html#aeead1b532f00dc881150fb22ccc76d23">pcpp::DhcpV6Layer</a>
+, <a class="el" href="classpcpp_1_1_dhcp_v6_layer_base.html#aecb8b1a6087aecdec1cffb89ba7d9687">pcpp::DhcpV6LayerBase</a>
 , <a class="el" href="classpcpp_1_1_geneve_layer.html#afc5c97f79689e2d9fb69bc84866cd306">pcpp::GeneveLayer</a>
 , <a class="el" href="classpcpp_1_1_i_pv4_layer.html#a3582be94404086c66a1432eef261e888">pcpp::IPv4Layer</a>
 </li>
 <li>addOptionAfter()
 : <a class="el" href="classpcpp_1_1_dhcp_layer.html#a4f8ae85e51c60486772b358a240cb749">pcpp::DhcpLayer</a>
-, <a class="el" href="classpcpp_1_1_dhcp_v6_layer.html#a295ca834c645bb274bb1d0864bfaedef">pcpp::DhcpV6Layer</a>
+, <a class="el" href="classpcpp_1_1_dhcp_v6_layer_base.html#a8b766f771c42fe223ca1c3fafcd55f9f">pcpp::DhcpV6LayerBase</a>
 , <a class="el" href="classpcpp_1_1_i_pv4_layer.html#ac2c675c0aae851a13565f614b89e412f">pcpp::IPv4Layer</a>
 </li>
 <li>addOptionBefore()
-: <a class="el" href="classpcpp_1_1_dhcp_v6_layer.html#a30c83bf5887f74b3fccd328fc9e40558">pcpp::DhcpV6Layer</a>
+: <a class="el" href="classpcpp_1_1_dhcp_v6_layer_base.html#a4ccf3ae6551d4b40e054229dcfb9419c">pcpp::DhcpV6LayerBase</a>
 </li>
 <li>addOptionTo()
 : <a class="el" href="classpcpp_1_1_some_ip_sd_layer.html#a3493ecbf628eb87d4f7787b1d7007f32">pcpp::SomeIpSdLayer</a>
@@ -331,6 +331,7 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 , <a class="el" href="structpcpp_1_1_cotp_layer_1_1_serialized_fields.html#a9ee08c21b780e96fe5b5aacd474de8bb">pcpp::CotpLayer::SerializedFields</a>
 , <a class="el" href="structpcpp_1_1_dhcp_layer_1_1_serialized_fields.html#a16cec32f200fcf8c6ed7f8d1623fa397">pcpp::DhcpLayer::SerializedFields</a>
 , <a class="el" href="structpcpp_1_1_dhcp_v6_layer_1_1_serialized_fields.html#ae06325cc3dc35534d2bc06178aa6ed65">pcpp::DhcpV6Layer::SerializedFields</a>
+, <a class="el" href="structpcpp_1_1_dhcp_v6_relay_layer_1_1_serialized_fields.html#af790ca190afec40b47505734214df965">pcpp::DhcpV6RelayLayer::SerializedFields</a>
 , <a class="el" href="structpcpp_1_1_dns_layer_1_1_serialized_fields.html#a0c2889ece9dc44c57dce3dd8ea4142d6">pcpp::DnsLayer::SerializedFields</a>
 , <a class="el" href="structpcpp_1_1_dns_layer_1_1_serialized_fields_1_1_query_object.html#a8a1b690591a2ad695c3844389ecbc6ee">pcpp::DnsLayer::SerializedFields::QueryObject</a>
 , <a class="el" href="structpcpp_1_1_dns_layer_1_1_serialized_fields_1_1_resource_object.html#aacb92b8defbca7aca8eb1455397ff507">pcpp::DnsLayer::SerializedFields::ResourceObject</a>
@@ -526,11 +527,11 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>attachedPacket
 : <a class="el" href="structpcpp_1_1internal_1_1_layer_allocation_info.html#a1647a1f5723eb91d24b8439fd114ac70">pcpp::internal::LayerAllocationInfo</a>
 </li>
-<li>attachMode
-: <a class="el" href="structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#af0229c98a683ba3b6d50c7f0045093b6">pcpp::XdpDevice::XdpDeviceConfiguration</a>
-</li>
 <li>AttachMode
 : <a class="el" href="structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#a32b2d451b6989425730a8bcd94e9b127">pcpp::XdpDevice::XdpDeviceConfiguration</a>
+</li>
+<li>attachMode
+: <a class="el" href="structpcpp_1_1_xdp_device_1_1_xdp_device_configuration.html#af0229c98a683ba3b6d50c7f0045093b6">pcpp::XdpDevice::XdpDeviceConfiguration</a>
 </li>
 <li>attachPacket()
 : <a class="el" href="structpcpp_1_1internal_1_1_layer_allocation_info.html#abd0207c7928b5a1e2112b17f12454afb">pcpp::internal::LayerAllocationInfo</a>
@@ -600,7 +601,7 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Nov 22 2026 08:57:23 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Nov 25 2026 08:12:05 for PcapPlusPlus by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
