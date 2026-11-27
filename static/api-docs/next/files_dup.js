@@ -321,10 +321,14 @@ var files_dup =
     [ "SomeIpSdLayer.h", "_some_ip_sd_layer_8h.html", "_some_ip_sd_layer_8h" ],
     [ "SSHLayer.h", "_s_s_h_layer_8h.html", [
       [ "SSHLayer", "classpcpp_1_1_s_s_h_layer.html", "classpcpp_1_1_s_s_h_layer" ],
+      [ "SerializedFields", "structpcpp_1_1_s_s_h_layer_1_1_serialized_fields.html", null ],
       [ "SSHIdentificationMessage", "classpcpp_1_1_s_s_h_identification_message.html", "classpcpp_1_1_s_s_h_identification_message" ],
+      [ "SerializedFields", "structpcpp_1_1_s_s_h_identification_message_1_1_serialized_fields.html", null ],
       [ "SSHHandshakeMessage", "classpcpp_1_1_s_s_h_handshake_message.html", "classpcpp_1_1_s_s_h_handshake_message" ],
+      [ "SerializedFields", "structpcpp_1_1_s_s_h_handshake_message_1_1_serialized_fields.html", null ],
       [ "ssh_message_base", "structpcpp_1_1_s_s_h_handshake_message_1_1ssh__message__base.html", null ],
       [ "SSHKeyExchangeInitMessage", "classpcpp_1_1_s_s_h_key_exchange_init_message.html", "classpcpp_1_1_s_s_h_key_exchange_init_message" ],
+      [ "SerializedFields", "structpcpp_1_1_s_s_h_key_exchange_init_message_1_1_serialized_fields.html", null ],
       [ "SSHEncryptedMessage", "classpcpp_1_1_s_s_h_encrypted_message.html", "classpcpp_1_1_s_s_h_encrypted_message" ]
     ] ],
     [ "SSLCommon.h", "_s_s_l_common_8h.html", "_s_s_l_common_8h" ],

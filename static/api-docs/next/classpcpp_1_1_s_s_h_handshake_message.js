@@ -1,5 +1,6 @@
 var classpcpp_1_1_s_s_h_handshake_message =
 [
+    [ "SerializedFields", "structpcpp_1_1_s_s_h_handshake_message_1_1_serialized_fields.html", null ],
     [ "ssh_message_base", "structpcpp_1_1_s_s_h_handshake_message_1_1ssh__message__base.html", null ],
     [ "SSHHandshakeMessageType", "classpcpp_1_1_s_s_h_handshake_message.html#a4dbb7d358bef567cfe920c90f0f72508", [
       [ "SSH_MSG_KEX_INIT", "classpcpp_1_1_s_s_h_handshake_message.html#a4dbb7d358bef567cfe920c90f0f72508ab6d105ca6f529a61846e4263ee25b64d", null ],
@@ -17,5 +18,6 @@ var classpcpp_1_1_s_s_h_handshake_message =
     [ "getPaddingLength", "classpcpp_1_1_s_s_h_handshake_message.html#a1baaaa3f4cb9b89ef8ed65800077a19c", null ],
     [ "getSSHHandshakeMessage", "classpcpp_1_1_s_s_h_handshake_message.html#a641b8a4a6c4b72d8469ec33b60540063", null ],
     [ "getSSHHandshakeMessageLength", "classpcpp_1_1_s_s_h_handshake_message.html#acba347f580109dd62ae94f30adb5a883", null ],
+    [ "serializeLayer", "classpcpp_1_1_s_s_h_handshake_message.html#a6458346e251fc89afd227bfc4a511182", null ],
     [ "toString", "classpcpp_1_1_s_s_h_handshake_message.html#a141797b4434c82323f827cf1a3dc9779", null ]
 ];
