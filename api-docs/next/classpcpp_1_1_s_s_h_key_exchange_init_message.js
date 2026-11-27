@@ -1,17 +1,19 @@
 var classpcpp_1_1_s_s_h_key_exchange_init_message =
 [
+    [ "SerializedFields", "structpcpp_1_1_s_s_h_key_exchange_init_message_1_1_serialized_fields.html", null ],
     [ "SSHKeyExchangeInitMessage", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#aff9fdebccb1a80f135e74671b15e2993", null ],
-    [ "getCompressionAlgorithmsClientToServer", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#a09918814a3e46602c9f81adc5455b501", null ],
-    [ "getCompressionAlgorithmsServerToClient", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#a7832acf8e68877ff440bbd54a1034b57", null ],
-    [ "getCookie", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#a71dc4daae35790fe87106ceba0fece2a", null ],
-    [ "getCookieAsHexStream", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#a33b15454f731a8487276975bb78e5948", null ],
-    [ "getEncryptionAlgorithmsClientToServer", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#a6f4270ce76d7973e194d71b1f74ff73d", null ],
-    [ "getEncryptionAlgorithmsServerToClient", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#adf794eca27f68d3e1c3219d6295bed03", null ],
-    [ "getKeyExchangeAlgorithms", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#a5036df2d97b1629240878733d8b4ed50", null ],
-    [ "getLanguagesClientToServer", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#a755b5bbcbed4634c39b4d2bd59df2274", null ],
-    [ "getLanguagesServerToClient", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#ad75b27680bca6aefcc051e3ff283c18e", null ],
-    [ "getMacAlgorithmsClientToServer", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#a79389d6112eec6d98680d484e863e087", null ],
-    [ "getMacAlgorithmsServerToClient", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#aa968fc81abf0d94c7e258cde5b0ec8d9", null ],
-    [ "getServerHostKeyAlgorithms", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#a704ffc9ebd49a6388da4b8748b758ab2", null ],
-    [ "isFirstKexPacketFollows", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#ad725f536301fe13c463b48ebb2cda49f", null ]
+    [ "getCompressionAlgorithmsClientToServer", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#ab57561bf17b669c895583776fd338cf6", null ],
+    [ "getCompressionAlgorithmsServerToClient", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#afd9d8028379a0d7f7ffbdbf544b8dbc7", null ],
+    [ "getCookie", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#ac980366dbad1fcf0e99a251e27aa72a7", null ],
+    [ "getCookieAsHexStream", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#a5275419c82a3a0e389ef58af07072211", null ],
+    [ "getEncryptionAlgorithmsClientToServer", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#a5a0854b66d21cd497da7374f7b6907ad", null ],
+    [ "getEncryptionAlgorithmsServerToClient", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#a3d14fad411121190304fb7925142ec6e", null ],
+    [ "getKeyExchangeAlgorithms", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#af98f9c6ac0c97d500aaf9b22792f99ef", null ],
+    [ "getLanguagesClientToServer", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#ac8b2597a6c8fa3ed8ca84e464c416fc5", null ],
+    [ "getLanguagesServerToClient", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#a6b717240bc764896d4c1fbed0a3a3483", null ],
+    [ "getMacAlgorithmsClientToServer", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#a20e9c9ab52f86601a08dec86816ac76c", null ],
+    [ "getMacAlgorithmsServerToClient", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#a8dbca980b9f7ac45c02fc9952603f4dc", null ],
+    [ "getServerHostKeyAlgorithms", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#ac9abef345005d4f63ecd8a857af4b99b", null ],
+    [ "isFirstKexPacketFollows", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#a971cc843723f9ec0ce3dc5d1cc1da89e", null ],
+    [ "serializeLayer", "classpcpp_1_1_s_s_h_key_exchange_init_message.html#a400330f86a954b8c74416328fe283642", null ]
 ];

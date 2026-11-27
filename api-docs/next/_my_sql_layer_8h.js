@@ -6,6 +6,11 @@ var _my_sql_layer_8h =
     [ "MySqlQueryMessage", "classpcpp_1_1_my_sql_query_message.html", "classpcpp_1_1_my_sql_query_message" ],
     [ "MySqlErrorMessage", "classpcpp_1_1_my_sql_error_message.html", "classpcpp_1_1_my_sql_error_message" ],
     [ "MySqlLayer", "classpcpp_1_1_my_sql_layer.html", "classpcpp_1_1_my_sql_layer" ],
+    [ "SerializedFields", "structpcpp_1_1_my_sql_layer_1_1_serialized_fields.html", "structpcpp_1_1_my_sql_layer_1_1_serialized_fields" ],
+    [ "MessageFields", "structpcpp_1_1_my_sql_layer_1_1_serialized_fields_1_1_message_fields.html", null ],
+    [ "MessageObject", "structpcpp_1_1_my_sql_layer_1_1_serialized_fields_1_1_message_object.html", "structpcpp_1_1_my_sql_layer_1_1_serialized_fields_1_1_message_object" ],
+    [ "ErrorMessageObject", "structpcpp_1_1_my_sql_layer_1_1_serialized_fields_1_1_error_message_object.html", "structpcpp_1_1_my_sql_layer_1_1_serialized_fields_1_1_error_message_object" ],
+    [ "QueryMessageObject", "structpcpp_1_1_my_sql_layer_1_1_serialized_fields_1_1_query_message_object.html", "structpcpp_1_1_my_sql_layer_1_1_serialized_fields_1_1_query_message_object" ],
     [ "MySqlMessageOrigin", "_my_sql_layer_8h.html#a453cd53757c429f25d96dbbea6cea874", [
       [ "Client", "_my_sql_layer_8h.html#a453cd53757c429f25d96dbbea6cea874a577d7068826de925ea2aec01dbadf5e4", null ],
       [ "Server", "_my_sql_layer_8h.html#a453cd53757c429f25d96dbbea6cea874a9aa1b03934893d7134a660af4204f2a9", null ]

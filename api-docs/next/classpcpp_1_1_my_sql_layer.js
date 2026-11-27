@@ -1,5 +1,6 @@
 var classpcpp_1_1_my_sql_layer =
 [
+    [ "SerializedFields", "structpcpp_1_1_my_sql_layer_1_1_serialized_fields.html", "structpcpp_1_1_my_sql_layer_1_1_serialized_fields" ],
     [ "~MySqlLayer", "classpcpp_1_1_my_sql_layer.html#ac7fb163b15e182f96be96fe9e59afa54", null ],
     [ "computeCalculateFields", "classpcpp_1_1_my_sql_layer.html#ad008f05ee216e0af4ecee91cbf382f79", null ],
     [ "getHeaderLen", "classpcpp_1_1_my_sql_layer.html#ab1fef155e08af597355746e57eeb641a", null ],
@@ -9,5 +10,6 @@ var classpcpp_1_1_my_sql_layer =
     [ "getMySqlOrigin", "classpcpp_1_1_my_sql_layer.html#aa4a0ede60a121034f08768a55ca38cf3", null ],
     [ "getOsiModelLayer", "classpcpp_1_1_my_sql_layer.html#aa64e3f072aa61dac91a835d1c9db2d95", null ],
     [ "parseNextLayer", "classpcpp_1_1_my_sql_layer.html#a06e5e2d3d455bbd06f9834344b855532", null ],
+    [ "serializeLayer", "classpcpp_1_1_my_sql_layer.html#accfd4225bd1d1bb7b091ca67874cbf3f", null ],
     [ "toString", "classpcpp_1_1_my_sql_layer.html#a198eae3db2577c71b9600b5cc2567de0", null ]
 ];
